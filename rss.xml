@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+	<atom:link href="http://www.slitaz.org/rss.xml" rel="self" type="application/rss+xml" />
+	<title>Slitaz GNU/Linux RSS feed</title>
+	<link>http://www.slitaz.org/rss.xml</link>
+	<language>fr</language>
+	<description>
+		Actualités du projet de la mini distribution SliTaz GNU/Linux.
+	</description>
+	<copyright>Copyright © www.slitaz.org - GNU gpl</copyright>
+	<lastBuildDate>Sat, 22 Mar 2008 21:00:00 GMT</lastBuildDate>
+    
+	<item>
+		<title>Publication de SliTaz GNU/Linux 1.0</title>
+		<link>http://www.slitaz.org/</link>
+		<guid isPermaLink="true">http://www.slitaz.org/get/#stable</guid>
+		<pubDate>Sat, 22 Mar 2008 21:00:00 GMT</pubDate>
+		<description>
+		L'équipe des contributeurs SliTaz est fière de vous annoncer la publication
+		de SliTaz GNU/Linux 1.0. C'est la première version stable après plus de
+		deux ans de travail. Le système est distribué sous la forme d'un LiveCD de 
+		24,8 Mb fournissant un bureau complet avec une séléction d'applications 
+		soigeusement intégrées et multi-usages. SliTaz GNU/Linux 1.0 utilise le noyau 
+		Linux 2.6.24.2, propose Firefox 2.0.0.12, Rsync 3.0.0, Gparted 0.3.5, le son 
+		avec Alsa 1.0.16, de quoi écouter ou éditer des fichiers audio, chatter, 
+		créer des videos ou encore développer. La distribution propose 448 paquets 
+		facilement installables, des outils de création de LiveCD à saveur et de 
+		LiveUSB. Des mises à jour de sécurité de l'ensemble des paquets sont 
+		assurées par le projet et des mises à jour de fonctionnalités sont fournies
+		pour les paquets populaires tel que Firefox. Vous pouvez obtenir SliTaz 
+		GNU/Linux 1.0 depuis la partie téléchargement du site et lire les
+		notes de publication inclues dans la distribution pour plus de détails sur
+		cette version.
+		</description>
+	</item>
+
+</channel>
+</rss>
