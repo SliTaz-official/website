@@ -1,0 +1,202 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+    <title>SliTaz Handbook - Multimedia</title>
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <meta name="description" content="slitaz *book template" />
+    <meta name="expires" content="never" />
+    <meta name="modified" content="2007-12-03 12:30:00" />
+    <meta name="publisher" content="www.slitaz.org" />
+    <meta name="author" content="Christophe Lincoln"/>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="book.css" />
+</head>
+<body bgcolor="#ffffff">
+
+<!-- Header and quick navigation -->
+<div id="header">
+<div align="right" id="quicknav">
+    <a name="top"></a>
+    <a href="development.html">Developpement</a> |
+    <a href="index.html">Table des matières</a>
+</div>
+<h1><font color="#3E1220">SliTaz Handbook</font></h1>
+</div>
+
+<!-- Content. -->
+<div id="content">
+<div class="content-right"></div>
+
+<h2><font color="#DF8F06">Multimedia</font></h2>
+
+<ul>
+	<li><a href="#intro">Slitaz le son et la video.</a></li>
+	<li><a href="#config">Configurer une carte son.</a></li>
+	<li><a href="#alsamixer">Alsamixer</a> - Mixer simple et efficace.</li>
+	<li><a href="#alsaplayer">Alsaplayer</a> - Lecteur de musique.</li>
+	<li><a href="#asunder">Asunder</a> - Audio CD Ripper.</li>
+	<li><a href="#xine">Xine</a> - Lecteur multimedia.</li>
+	<li><a href="#mpg123">mpg123</a> - Lecteur audio et encodeur en ligne de
+	commande.</li>
+</ul>
+
+<a name="intro"></a>
+<h3><font color="#6c0023">Slitaz le son et la video</font></h3>
+<p>
+En mode LiveCD SliTaz fournit le support du son mais pas de lecteur video, 
+cela dit vous pouvez visionner des videos en flash sur Youtube par exemple. 
+Pour regarder des videos vous pouvez utiliser Xine, il supporte la plus part des
+formats tels que OGG ou AVI, à noter que Xine peut aussi faire office de
+lecteur de musique. Au niveau du son, vous avez un mixer avec Alsamixer et un
+lecteur avec Alsaplayer, ils sont tous deux installée par défaut sur la version
+standard du LiveCD et permettent d'écouter des fichiers OGG, MP3 ou WAV. Pour
+configurer ou reconfigurer votre carte son, vous avez le choix entre deux 
+petit programmes permettant de configurer le son simplement via des boîtes de
+dialogue.
+</p>
+
+<a name="conf"></a>
+<h3><font color="#6c0023">Configurer une carte son</font></h3>
+<p>
+En mode LiveCD SliTaz configure automatiquement le son au démarrage en lançant
+une boîte de dialogue, dans la majeur partie des cas, la carte son est reconnue
+et il suffit d'appuyer sur ENTER pour continuer, se loguer et avoir le son
+fonctionnel. Cela dit, il se peut que votre carte son ne soit pas reconnue au
+démarrage ou simplement pas supportée. Avant de jeter l'éponge, vous pouvez
+tenter de configurer manuellement votre carte et demander le l'aide sur la liste
+de discussion ou le forum de support matériel.
+</p>
+<h4>Soundconf</h4>
+<p>
+Pour configurer ou reconfigurer une carte son, SliTaz fournit le script
+<code>soundconf</code>, cet utilitaire est utilisé au démarrage, ne pose
+qu'une question, charge les bons modules automatiquement et configure 
+<code>/etc/rcS.conf</code> pour que le driver soit chargé à chaque démarrage.
+Soundconf va aussi régler les volumes automatiquement, vous pourrez modifier
+les réglages par la suite via le mixer et alsactl. Pour lancer l'interface de
+configuration du son, il faut avoir les droits d'administrateur et taper :
+</p>
+<pre>
+ # soundconf
+</pre>
+<h4>Alsactl</h4>
+<p>
+Alsactl pour <em>Alsa control</em> permet de stocker ou restaurer les réglages
+du son, utile par exemple pour restaurer ses préférences à chaque démarrage. 
+Lors de la configuration du son avec Soundconf les volumes sont réglés
+automatiquement, vous pouvez utiliser <code>alsamixer</code> avec <em>root</em>
+pour modifier les valeurs et ensuite lancer <code>alsactl</code> pour stocker
+la configuration
+</p>
+<pre>
+ # alsactl store
+</pre>
+<p>
+Pour restaurer ensuite la configuration vous pouvez utiliser la commande
+<code>alsactl restore</code> et pour restaurer vos préférences à chaque
+démarrage vous pouvez ajouter la commande au script /etc/init.d/local.sh en
+l'éditant avec un éditeur de texte ou avec :
+</p>
+<pre>
+ # echo 'alsactl restore' > /etc/init.d/local.sh
+</pre>
+
+<a name="alsamixer"></a>
+<h3><font color="#6c0023">Alsamixer</font></h3>
+<p>
+Alsamixer et le mixer officiel du projet Alsa, il est simple et efficace. Vous
+pouvez le lancer via le menu du gestionnaire de fenêtre ou directement depuis
+un terminal. Les volumes se réglent avec les flèches et le mode muet se met ou 
+s'enlève via la touche <code>m</code>. Pour lancer le mixer depuis un terminal
+Linux ou un graphique :
+</p>
+<pre>
+ $ alsamixer
+</pre>
+
+<a name="alsaplayer"></a>
+<h3><font color="#6c0023">Alsaplayer</font></h3>
+<p>
+Le lecteur de musique Alsaplayer se veut simple, épuré et intuitif. Il est réactif
+et se prend rapidement en main, l'interface est sobre et adaptable. Alsaplayer
+sur SliTaz fournit le support des fichiers OGG, MP3 (via libmad) et WAV, des
+playlists, propose des visualisateurs pour accompager le son, la possibilité
+de régler la vitesse de lecture ou le volume. Une fois lancé via le menu du
+gestionnaire de fenêtre, il suffit de cliquer sur le bouton play ou celui de
+la liste de lecture pour commencer à charger un ou des morceaux.
+</p>
+
+<a name="asunder"></a>
+<h3><font color="#6c0023">Asunder -  Audio CD Ripper</font></h3>
+<p>
+Asunder est un logiciel d'extraction et encodage de pistes audio depuis un CD.
+L'outils est très simple d'utilisation, permet d'encoder les morceaux au format
+wav, ogg ou mp3 via le paquet <code>lame</code>. Il peut aussi faire une
+recheche CDDB, créer une liste de lecture et modifier les noms des fichiers.
+Vous trouverez Asunder dans la catégorie Multimedia, il est très rapidement
+pris en main et efficace.
+</p>
+
+<a name="xine"></a>
+<h3><font color="#6c0023">Xine</font></h3>
+<p>
+Xine est un projet fournissant des bibliothèques et divers visionneurs de video,
+SliTaz fournit les blibliothèques et un <em>media player</em> contenu dans
+le paquet <code>xine-ui</code> (ui pour <em>User Interface</em>). Le lecteur
+Xine propose un interface Xlib, un pannel de contrôle, une interface de
+configuration via un clique de droite sur la fenêtre principale et des plugins.
+Il lit la musique OGG, MP3, etc, et les videos au format OGG, AVI ou MPG. Pour
+installer Xine et ses dépendances :
+</p>
+<pre>
+ # tazpkg get-install xine-ui
+</pre>
+<p>
+Une fois installé vous pouvez lancer <code>xine</code> depuis la ligne de
+commande ou ajouter un entrée dans la catégorie Multimedia du menu de JWM :
+</p>
+<pre class="script">
+&lt;Program icon="xine.xpm" label="Xine media player"&gt;xine&lt;/Program&gt;
+</pre>
+
+<a name="mpg123"></a>
+<h3><font color="#6c0023">mpg123</font></h3>
+<p>
+mpg123 est un lecteur et convertisseur de fichiers audio et s'utilise en ligne
+de commande. C'est à dire que vous pouvez écouter ou convertir de la musique
+depuis un terminal, pour afficher l'aide vous pouvez utiliser l'option 
+<code>--help</code>. Pour lire un fichier MP3 par exemple, il suffit de lancer
+<code>mpg123</code> suivi du nom du fuchier audio :
+</p>
+<pre>
+ $ mpg123 sound.mp3
+</pre>
+<p>
+mpg123 permet aussi de convertir et encoder un fichier audio dans un autre
+format. Vous pouvez par exemple convertir un fichier MP3 en WAV, exemple :
+</p>
+<pre>
+ $ mpg123 -w sound.wav sound.mp3
+</pre>
+
+<!-- End of content -->
+</div>
+
+<!-- Footer. -->
+<div id="footer">
+	<div class="footer-right"></div>
+	<a href="#top">Haut de la page</a> | 
+	<a href="index.html">Table des matières</a>
+</div>
+
+<div id="copy">
+    Copyright © 2007 <a href="http://www.slitaz.org/">SliTaz</a> -
+    <a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>;<br />
+    Documentation publiée sous
+    <a href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License</a>
+    et codée en <a href="http://validator.w3.org/">xHTML 1.0 valide</a>.
+</div>
+
+</body>
+</html>

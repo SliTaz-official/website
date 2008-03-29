@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+    <title>SliTaz Handbook - Paquets logiciels</title>
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <meta name="description" content="slitaz tazpkg package paquets logiciel précompilés" />
+    <meta name="expires" content="never" />
+    <meta name="modified" content="2007-12-04 12:30:00" />
+    <meta name="publisher" content="www.slitaz.org" />
+    <meta name="author" content="Christophe Lincoln"/>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="book.css" />
+</head>
+<body bgcolor="#ffffff">
+
+<!-- Header and quick navigation -->
+<div id="header">
+<div align="right" id="quicknav">
+    <a name="top"></a>
+    <a href="security.html">Sécurité du système</a> |
+    <a href="index.html">Table des matières</a>
+</div>
+<h1><font color="#3E1220">SliTaz Handbook</font></h1>
+</div>
+
+<!-- Content. -->
+<div id="content">
+<div class="content-right"></div>
+
+<h2><font color="#DF8F06">Gestion des paquets</font></h2>
+
+<ul>
+    <li><a href="#tazpkg">Gestionnaire de paquet Tazpkg.</a></li>
+    <li><a href="#packages-intro">C'est quoi des paquets ?</a></li>
+    <li><a href="#commands">Commandes principales.</a></li>
+    <li>
+    <a href="http://www.slitaz.org/doc/manuals/tazpkg.html">Tazpkg manuel</a>
+    - Sur un système SliTaz le manuel de Tazpkg se trouvent dans le répertoire
+    /usr/share/doc/tazpkg, disponible au format xHTML, vous pouvez directement
+    le consulter via l'entrée Documentation du menu du gestionnaire de fenêtre
+    JWM.</li>
+</ul>
+
+<a name="tazpkg"></a>
+<h3><font color="#6c0023">Gestionnaire de paquet Tazpkg</font></h3>
+<p>
+Ce chapître décrit la gestion des paquets (.tazpkg) sur votre système. SliTaz
+fournit <code>tazpkg</code>, c'est une petite application gérant les paquets
+SliTaz portant l'extension <code>.tazpkg</code>. Le gestionnaire de paquets
+vous permet de lister les paquets installés, d'afficher une courte description
+du paquet, d'en installer de nouveaux depuis le Web, d'en désintaller, ou encore
+d'extraire un paquet dans un répertoire donné.
+Tazpkg a été créé pour SliTaz, il est écrit en script SHell depuis rien
+(<em>from scratch</em>). De plus, il propose une gestion des dépendances et
+un système de mises à jour de tous les paquets installés.
+</p>
+<p>
+Pour utiliser les commandes de <code>tazpkg</code> touchant au système , vous
+devez avoir un accès administrateur (root), vous pouvez utiliser
+<code>su</code> suivi du mot de passe root. Lancé sans arguments <code>tazpkg</code>
+affichera une petite aide, avec une liste des commandes possibles, vous pouvez
+aussi utiliser la commande <code>usage</code> pour afficher cette aide.
+</p>
+
+<h4>Fonctionnement de Tazpkg</h4>
+<p>
+Tazpkg utilise quelques répertoires et fichiers pour puiser des informations
+et stocker les paquets téléchargés en cache. Pour connaître le miroir depuis
+lequel les paquets doivent être télécharger, Tazpkg lit le fichier texte :
+/var/lib/tazpkg/mirror contenant simplement l'URL sur une ligne. Pour
+connaître la liste des paquets disponibles, Tazpkg télécharge et lit un
+fichier nommé packages.list (ce fichier peut aussi être lu en ligne via un
+navigateur web). Pour connaître les informations au sujet des paquets
+installés sur le système, Tazpkg scrute le contenu du répertoire :
+/var/lib/tazpkg/installed. Ce répertoire réunit tous les meta fichiers
+d'informations sur les paquets. Ces meta fichiers, quand à eux, contiennent
+toutes les données utiles pour installer/désinstaller un paquet, lister les
+fichiers installés ou encore afficher une brève description.
+</p>
+
+<a name="packages-intro"></a>
+<h3><font color="#6c0023">C'est quoi des paquets ?</font></h3>
+<p>
+Dans le monde GNU/Linux et open source en général, les logiciels sont appelés
+des paquets (<em>packages</em>). Les développeurs de ces paquets distribuent leur
+travail sous forme de fichiers contenant le code source, ces fichiers sont au
+format text et peuvent se lire avec un simple éditeur de texte, le code est
+donc ouvert (<em>open source</em>).
+</p>
+<p>
+Pour que ce code source fonctionne sur un ordinnateur, il faut qu'il soit
+compilé ou construit, afin de produire un ou des fichiers binaires que la
+machine sait utiliser. Les binaires sont des séquences de 0 et 1. Pour vous
+éviter de compiler le code source des applications, les distributions GNU/Linux
+ou BSD, vous proposent un système de paquets précompilés et prêts à fonctionner.
+Ces paquets précompilés sont facilement installables via une seule commande ou
+quelques manipulations à la souris, plusieurs distributions ont créé leur
+propre format de paquets binaires telles que Debian, RedHat ou Gentoo.
+SliTaz fournit les outils minimaux pour manipuler des paquets Debian (.deb)
+et RedHat (.rmp), ces outils sont propulsés par Busybox et ne sont pas aussi
+puissant que les originaux.
+</p>
+<p>
+SliTaz a créé son propre format de paquet (.tazpkg), simple, rapide, utilisant
+un minimum de dépendances et surtout ultra léger. Le format des paquets est aussi
+spécifique à SliTaz. La gestionairre de paquet permet d'avoir le contrôle sur
+tous les fichiers installés et leur version, ce qui permet une maintenance plus
+simple et une mise à jour automatique des paquets. Si vous compilez vos propres
+paquets depuis les sources de manière traditionnelle, vous serez obligé de
+recompiler pour avoir une nouvelle version et vous devrez surveiller en amont,
+pour chaque nouvelle version. Cela dit, SliTaz offre la possibilité d'installer
+des paquets sources de manière semi-automatisée, via l'utilisation de
+<a href="http://www.slitaz.org/doc/cookbook/wok-tools.html">Tazwok</a>, notez
+que c'est plutôt destiné à un public averti et que les mises à jour ne sont
+pas fournies pour ce genre de paquets.
+</p>
+
+<a name="commands"></a>
+<h2><font color="#DF8F06">Commandes principales</font></h2>
+<p>
+Le gestionnaire de paquet Tazpkg est un outil en ligne de commandes, il a été
+conçu pour être simple et rapide à prendre en main. Toutes les commandes sont
+décrites dans <a href="http://www.slitaz.org/doc/manuals/tazpkg.html"
+>le manuel du gestionnaire de paquet</a>. Pour commencer il vous suffit de
+connaître le nom du gestionnaire de paquet : <code>tazpkg</code>. Lancé sans
+arguments, tazpkg va afficher une liste des commandes disponibles avec une
+courte description.
+</p>
+
+<h4>Garder un système à jour</h4>
+<p>
+Il y deux commandes qui devraient être lancées régulièrement par
+l'administrateur (root). La commande qui recharge la dernière liste des paquets
+et celle qui met à jour tous les paquets installés. Cela permet de garder un
+système plus sécurisé et d'avoir les dernières nouveautés. Pour recharger la
+liste c'est <code>recharge</code> et pour mettre à jour <code>upgrade</code>,
+vous pouvez lancer ces deux commandes sur la même ligne et utiliser le
+copier/coller dans un terminal :
+</p>
+<pre>
+ # tazpkg recharge &amp;&amp; tazpkg upgrade
+</pre>
+
+<h4>Installer des paquets</h4>
+<p>
+Le gestionnaire de paquet vous permet d'installer de nombreux paquets pour
+ajouter des fonctionnalités au système ou de disposer d'applications
+supplémentaires. La manière la plus courante d'installer un paquet est
+d'utiliser la commande <code>get-install</code> qui va télécharger, installer,
+vérifier les dépendances sur le paquet et cela de manière automatique. Pour
+installer un paquet vous devez connaître le nom du paquet. Pour vous aider à
+trouver le nom d'un paquet, vous pouvez utiliser la commande de recherhe
+<code>search</code> ou afficher la liste complète des paquets disponibles sur
+le miroir via la commande <code>list-mirror</code>. Pour installer le client
+de messagerie Sylpheed, il faudra par exemple lancer :
+</p>
+<pre>
+ # tazpkg get-install sylpheed
+</pre>
+
+
+<!-- End of content -->
+</div>
+
+<!-- Footer. -->
+<div id="footer">
+	<div class="footer-right"></div>
+	<a href="#top">Haut de la page</a> | 
+	<a href="index.html">Table des matières</a>
+</div>
+
+<div id="copy">
+    Copyright © 2007 <a href="http://www.slitaz.org/">SliTaz</a> -
+    <a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>;<br />
+    Documentation publiées sous
+    <a href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License</a>
+    et codée en <a href="http://validator.w3.org/">xHTML 1.0 valide</a>.
+</div>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+SliTaz cookbook - SliTaz User /home/hacker
+================================================================================
+SliTaz et l'utilisateur hacker.
+
+
+L'utilisateur hacker, est l'utilisateur par défaut en mode LiveCD, il n'a pas
+de mot de passe. Son répertoire personnel est: /home/hacker. Il y a divers
+répertoires est fichiers préinstallés que l'on peut trouver dans /home, des
+SliTaz tools. Si l'option home=usb est spécifiée au boot, le script 
+d'initialisation slitaz-bootopts.sh vérifie que le répertoire /home/hacker,
+si ce n'est pas le cas, les fichiers par défaut sont copier sur la clé USB.
+
+
+Adduser hacker
+--------------
+Ajout de l'utilisateur hacker avec le shell ash, en se chrootant dans le rootfs:
+
+ # chroot rootfs /bin/ash
+ # adduser hacker -s /bin/ash
+ Enter new password:
+ ...
+ # exit
+
+
+/home/hacker/*
+--------------
+Le contenu du répertoire /home/hacker sur SliTaz:
+
+ * Documents/       - Répertoire déstiné aux documents personnel.
+   * bookmarks.html - Fichier de marques pages utilisé par retawq.
+ * Images/          - Répertoire d'images: Art ASCII, Logos, Icons, etc.
+ * Templates/       - Répertoire des modèles, html, shell script, etc.
+ * Public/          - Répertoire public du serveur web.
+ * .                - Les fichiers cachés (commence par un point). Ce
+                      sont les fichiers de configuration des divers
+                      applications.
+
+A vous de copier depuis SliTaz tools, les fichiers qui vous semblent utiles,
+et ou de les modifier à votre convenance.
+
+
+Les permissions
+---------------
+Si vous copié les fichiers d'hacker avec un utilisateur qui n'a pas la même id,
+les fichiers ne seront pas modifiables par hacker. Pour cela il faut modifier
+les permissions en ce chrootant:
+
+ # chroot rootfs /bin/ash
+ # chown -R hacker.hacker /home/hacker
+ Si besoin est:
+ # chmod 755 /home/hacker
+ # chmod 755 /home/hacker/Art
+ etc...
+ # exit
+
+
+================================================================================
+                                                         http://www.slitaz.org/

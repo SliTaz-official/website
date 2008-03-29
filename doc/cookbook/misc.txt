@@ -1,0 +1,28 @@
+SliTaz Cookbook - misc
+===============================================================================
+Divers, tout ce qui ne va pas bien ailleur.
+
+
+    * HicolorTheme - Thème par défaut des icons.
+
+
+HicolorTheme
+------------
+Thème par défaut des icons, en soit il n'est pas indispensable, mais
+son installation évite des messages d'erreurs sur la console.
+
+ # wget http://icon-theme.freedesktop.org/releases/hicolor-icon-theme-0.10.tar.gz
+ # tar xzf hicolor-icon-theme-0.10.tar.gz
+ # cd hicolor-icon-theme-0.10
+ # ./configure --prefix
+ # make DESTDIR=$PWD/_pkg install
+
+ Install dans le $fs de SliTaz:
+
+ # cp -a _pkg/usr $fs
+
+Vous pouvez ensuite copier les icons que vous désirez, tel que
+gnome-fs-home.png.
+
+===============================================================================
+                                                         http://www.slitaz.org/

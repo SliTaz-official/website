@@ -1,0 +1,807 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+    <title>SliTaz Cookbook - Base system - Créer la base du LiveCD</title>
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <meta name="description" content="SliTaz BusyBox création system gnu linux fonctionnant en RAM howto Documentation du projet SliTaz GNU/Linux création system gnu linux fonctionnant en RAM" />
+    <meta name="expires" content="never" />
+    <meta name="modified" content="2007-12-24 12:30:00" />
+    <meta name="publisher" content="www.slitaz.org" />
+    <meta name="author" content="Christophe Lincoln"/>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="book.css" />
+</head>
+<body bgcolor="#ffffff">
+
+<!-- Header and quick navigation -->
+<div id="header">
+<div align="right" id="quicknav">
+	<a name="top"></a>
+	<a href="index.html#intro">Introduction</a> |
+	<a href="index.html">Table des matières</a> |
+	<a href="base-apps.html">Base apps</a>
+</div>
+<h1><font color="#3E1220">SliTaz Cookbook</font></h1>
+</div>
+
+<!-- Content. -->
+<div id="content">
+<div class="content-right"></div>
+
+
+<h2><font color="#DF8F06">Système de base</font></h2>
+<p>
+Construire une distro SliTaz GNU/Linux utilisant Busybox et fonctionnant en RAM.
+</p>
+<ul>
+    <li><a href="#about">A propos de ce document.</a></li>
+    <li><a href="#src">Wget src.</a></li>
+    <li><a href="#prepa">Désarchiver et préparer le noyau Linux.</a></li>
+    <li><a href="#rootfs">Création de la racine du système</a>, the root
+     file System (rootfs).</li>
+    <li><a href="#config">Configurer sa box.</a></li>
+    <li><a href="#initramfs">Génération de l'initramfs</a>, archive cpio compressée.</li>
+    <li><a href="#rootcd">Construction de la racine du cdrom</a> (rootcd), et
+    des fichiers de config de Syslinux.</li>
+    <li><a href="#mkiso">Créer un image ISO avec genisoimage ou mkisofs.</a></li>
+    <li><a href="#testiso">Craver ou tester l'ISO avec Qemu.</a></li>
+</ul>
+<a name="about"></a>
+<h3><font color="#6c0023">A propos</font></h3>
+<p>
+Ce document décrit la construction de la base de SliTaz, pour cela nous
+utilisons: un noyau Linux, BusyBox, et Syslinux pour booter le système.
+Slitaz utilise une archive initramfs décompressée en RAM par le
+kernel au démarrage du système. Nous allons créer la box, pour qu'elle tienne
+dans un système de fichier racine de 3 à 4 Mb, en utilisant 'strip' sur
+les bibliothèques et les binaires, pour gagner de la place.
+</p>
+<p>
+Les scripts et les fichiers de configuration sont crées avec GNU nano, il faut
+utiliser la combinaison de touches &lt;Ctrl+X&gt; pour enregistrer et quitter.
+Mais vous pouvez biensûr, utiliser votre éditeur de texte préféré à la place.
+</p>
+<p>
+Ce document est inspiré d'un howto trouvé dans l'archive de BusyBox.
+Qui est lui-même basé sur un papier présenté par Erik Andersen
+à la conférence Embedded Systems en 2001.
+</p>
+<a name="src"></a>
+<h3><font color="#6c0023">Wget src</font></h3>
+<p>
+Création d'un répertoire src pour le téléchargement et
+la compilation:
+</p>
+<pre>
+ # mkdir -p src
+ # cd src
+</pre>
+<ul>
+    <li>Linux Kernel 2.6.20
+    (<a href="http://www.kernel.org/">http://www.kernel.org/</a>).
+    <pre># wget ftp://ftp.kernel.org/pub/linux/kernel/v2.6/linux-2.6.20.tar.bz2</pre>
+    </li>
+    <li>Busybox 1.2.2
+    (<a href="http://www.busybox.net/">http://www.busybox.net/</a>).
+    <pre># wget http://www.busybox.net/downloads/busybox-1.2.2.tar.bz2</pre>
+    </li>
+    <li>Syslinux 3.35
+    (<a href="http://syslinux.zytor.com/">http://syslinux.zytor.com/</a>).
+    <pre># wget ftp://ftp.kernel.org/pub/linux/boot/syslinux/syslinux-3.35.tar.gz</pre>
+    </li>
+    <li>SliTaz tools 1.1
+    Télécharger SliTaz tools, détarrer, sauver l'archive dans src/, et c'est tout :
+	<pre>
+ # wget http://download.tuxfamily.org/slitaz/sources/tools/slitaz-tools-1.1.tar.gz
+ # tar xzf slitaz-tools-1.1.tar.gz</pre>
+    </li>
+</ul>
+<a name="prepa"></a>
+<h3><font color="#6c0023">Désarchiver et préparer le noyau Linux</font></h3>
+<p>
+Nous allons commencer par compiler un noyau Linux, ce qui peut prendre un
+peu de temps.
+</p>
+<h4>Noyau Linux</h4>
+<p>
+Votre kernel doit supporter le système de fichier intramfs, sinon le
+cd-rom ne pourra démarrer. Vous pouvez aussi installer les modules dans
+un répertoire donné afin de ne pas toucher au système hôte. La configuration
+des sources du noyau Linux se fait avec <code>make menuconfig</code>, en
+ncurser ou graphiquement avec <code>make gconfig</code> ou,
+<code>make xconfig</code>. Pour cela il faut que les paquets de développements
+GTK et/ou QT soient installés. Vous trouverez dans
+<a href="http://www.slitaz.org/get/tools.html">SliTaz tools</a> les 
+Makefiles de divers noyau 2.6.xx.
+</p>
+<p>
+Une fonctionnalité des noyaux 2.6 est que si nous lançons make menuconfig,
+xconfig, ou config, pour la première fois, le menu de configuration affiché
+est basé sur la configuration de notre noyau actuel.
+</p>
+<p>
+Les options choisies dépendent de vos besoins, sachez que vous pouvez installer
+module-init-tools pour prendre en charge les modules compressés. Pour un système
+minimum vous pouvez ne choisir que les options vitales.
+</p>
+<p>
+Nous commençons par un <code>cd</code> dans les sources, <code>mrproper</code>
+pour mettre un peu d'ordre, puis on lance une interface de configuration,
+<code>gconfig</code>, <code>xconfig</code>, <code>menuconfig</code>, ou
+<code>oldconfig</code>:
+</p>
+<pre>
+ # tar xjf linux-2.6.20.tar.bz2
+ # cd linux-2.6.20
+ # make mrproper
+ # cp ../slitaz-tools-1.1/Makefiles/linux-2.6.20-slitaz.config .config
+ # make oldconfig
+ (# make menuconfig)
+ # make bzImage
+ # make modules
+ # make INSTALL_MOD_PATH=$PWD/_pkg modules_install
+ # cd ..
+</pre>
+<p>
+Si vous désirez plus d'info sur la compilation du noyau, référez-vous aux
+pages de manuels. A noter que vous pouvez installer ce noyau et
+redémarrer dessus, vous compilerez la suite avec votre propre noyau.
+</p>
+<a name="rootfs"></a>
+<h3><font color="#6c0023">Création de la racine du sytème (rootfs)</font></h3>
+<p>
+La prochaine étape créera un système de fichier racine nommé 'rootfs',
+pour Root File System, dans l'espace de travail SliTaz.
+</p>
+<pre>
+ # mkdir ../rootfs
+</pre>
+<h4>Install BusyBox</h4>
+<p>
+BusyBox (<a href="http://www.busybox.net/">www.busybox.net</a>) est un
+exécutable unique qui propose des versions allégées des principaux outils
+indispensables pour utiliser un noyau Linux. Il est principalement destiné
+à l'embarqué et permet de presque tout faire. C'est un shell proposant les
+commandes de coreutils et des démons système. Il y a même un serveur web, et
+un client/serveur DHCP (udhcpc).
+</p>
+<pre>
+ # tar xjf busybox-1.2.2.tar.bz2
+</pre>
+<p>
+Pour configurer et compiler. N'oubliez pas les options dumpkmap, init, etc,
+pour vous aider, vous trouverez le Makefile de BusyBox dans SliTaz tools. Le
+make install créera un répertoire _install dans le répertoire courant:
+</p>
+<pre>
+ # cd busybox-1.2.2
+ # cp ../slitaz-tools-1.1/Makefiles/busybox-1.2.2.config .config
+ # make oldconfig
+ (# make menuconfig)
+ # make
+ # make install
+ # chmod 4755 _install/bin/busybox
+</pre>
+<p>
+Copier les fichiers de la compilation de Busybox, se trouvant dans le
+répertoire _install, dans le système de fichiers racine (rootfs):
+</p>
+<pre>
+ # cp -a _install/* ../../rootfs
+</pre>
+<p>
+Le lien linuxrc pointant vers bin/busybox, les dossiers /bin, /lib, et /sbin,
+on été ajoué au répertoire /rootfs. On peut le vérifier avec ls. Il se peut que
+le lien linuxrc ne soit pas présent si vous n'avez pas séléctionner l'option du
+support initrd dans BusyBox. Nous effaçons le lien linuxrc, et créons un lien
+pour init qui pointe sur bin/busybox:
+</p>
+<pre>
+ # cd ../../rootfs
+ # ls -CF
+ bin/  linuxrc@  sbin/  usr/
+
+ # rm linuxrc
+ # ln -s bin/busybox init
+</pre>
+<h4>ldd sur BusyBox</h4>
+<p>
+La commande <code>ldd</code> permet de connaître les bibliothèques utilisées par
+un programme. Les bibliothèques utilisées par Busybox peuvent différer sen fonction
+du système hôte utilisé, sur Debian par exemple vous devrez copier les bibliothèques
+situées dans /lib/tls. Les commandes ci-dessous sont donnée avec l'option '-v' pour
+verbose ou volubile. Pour éliminer les symboles des binaires exécutable et des
+bibliothèques partagées qui servent au débuggage nous utilison strip. A noter 
+que vous pourriez aussi utiliser les bibliothèques uClibc ou mklibs :
+</p>
+<pre>
+ # mkdir lib
+</pre>
+<p>
+Exemple sur SliTaz ou autres:
+</p>
+<pre>
+ # cp /lib/{libcrypt.so.1,libm.so.6,libc.so.6} lib
+ # cp /lib/ld-linux.so.2 lib
+</pre>
+<p>
+Exemple sur Debian Etch:
+</p>
+<pre>
+ # cp /lib/tls/{libcrypt.so.1,libm.so.6,libc.so.6} lib
+ # cp /lib/ld-linux.so.2 lib
+</pre>
+<p>
+Nettoyage de bibliothèques avec <code>strip</code>:
+</p>
+<pre>
+ # strip -v lib/*
+</pre>
+<h4>Linux tree et config</h4>
+<p>
+Création de quelques répertoires pour créer une arborrescence Linux classique pour
+SliTaz. /dev pour les devices, /etc, /home, /usr, /proc, /root, et compagnie.
+Pour en savoir plus sur la hierarchie d'un système de fichiers, et son contenu, il
+existe le Filesystem Hierarchy Standard, disponible en plusieurs formats sur
+<a href="http://www.pathname.com/fhs/">www.pathname.com/fhs/</a>.
+</p>
+<p>
+Vous êtes libre de créer votre propre arbre. Dans les systèmes unix traditionnels,
+/usr contient généralement des fichiers provenant de la distribution, /dev contient
+les périphériques (devices), /etc contient les fichiers de configuration, /lib des
+bibliothèques, /home pour la maison des utilisateurs, et /var des données variables.
+A noter que nous ne créons pas /lib, /bin, /sbin, ils seront crée lors de
+l'installation de BusyBox:
+</p>
+<pre>
+ # mkdir -p dev etc root home proc media mnt sys tmp var
+ # mkdir -p usr/{lib,local,games,share} \
+   var/{cache,lib,lock,log,games,run,spool} \
+   media/{cdrom,flash,usbdisk}
+</pre>
+<p>
+Changement des permissions sur le répertoire /tmp:
+</p>
+<pre>
+ # chmod 1777 tmp
+</pre>
+<p>
+Configuration de base de la glibc, /etc/ld.so.conf et /etc/rpc ne sont pas
+indispensable pour un micro système:
+</p>
+<pre>
+ # touch etc/ld.so.conf
+ # cp /etc/rpc etc
+</pre>
+<h4>Créer le devices dans /dev</h4>
+<p>
+Ceci peut se faire avec le script 'mkdevs.sh' trouvé dans busybox.
+ou avec notre script 'mktazdevs.sh' contenu dans SliTaz tools. Si vous
+voulez des détails, lisez les scripts. Si vous utilisé la version BusyBox,
+il faut encore créer le réperoire pts:
+</p>
+<pre>
+ # cp ../src/slitaz-tools-1.1/utils/mktazdevs.sh bin
+ # ./bin/mktazdevs.sh dev
+ou:
+ # cp ../src/busybox-1.2.2/examples/bootfloppy/mkdevs.sh bin
+ # ./bin/mkdevs.sh dev
+ # mkdir -p dev/{pts,input,shm,net,usb}
+</pre>
+<p>
+A noter que nous démarrons mdev -s avec le script rcS, pour créer
+les devices dynamiquement lors du boot.
+</p>
+<h4>Support de la résolution des noms d'hôtes (DNS)</h4>
+<p>
+Copie des bibliothèques libnss_* du système hôte, dans notre
+système SliTaz, ces bibliothèques sont utilisées pour la résolution
+des noms et nettoyage avec strip:
+</p>
+<pre>
+ # cp /lib/{libnss_dns.so.2,libnss_files.so.2} lib
+ # cp /lib/libresolv.so.2 lib
+ # strip -v lib/*.so*
+</pre>
+<a name="config"></a>
+<h3><font color="#6c0023">Configuration de votre Box</font></h3>
+<p>
+Créer les fichiers nécessaires dans /etc. Pour plus d'infos, il faut
+simplement regarder le contenu des fichiers. Nous commençons par créer
+quelques fichiers utiles au fonctionnement de base du sytème:
+</p>
+<h4>Réseau</h4>
+<p>
+Création des fichiers de base utilisés pour configurer le réseau:
+</p>
+<pre>
+ # echo "127.0.0.1      localhost" > etc/hosts
+ # echo "localnet    127.0.0.1" > etc/networks
+ # echo "slitaz" > etc/hostname
+ # echo "order hosts,bind" > etc/host.conf
+ # echo "multi on" >> etc/host.conf
+</pre>
+<h4>/etc/nsswitch.conf</h4>
+<p>
+Fichier de configuration utilisé pour la résolution des noms:
+</p>
+<pre>
+ # nano etc/nsswitch.conf
+</pre>
+<pre class="script">
+# /etc/nsswitch.conf: GNU Name Service Switch config.
+#
+
+passwd:     files
+group:      files
+shadow:     files
+
+hosts:      files dns
+networks:   files
+
+</pre>
+<h4>/etc/securetty</h4>
+<p>
+Le fichier /etc/securetty, liste les terminaux sur lesquels root peut se
+connecter:
+</p>
+<pre>
+ # nano etc/securetty
+</pre>
+<pre class="script">
+# /etc/securetty: List of terminals on which root is allowed to login.
+#
+console
+
+# For people with serial port consoles
+ttyS0
+
+# Standard consoles
+tty1
+tty2
+tty3
+tty4
+tty5
+tty6
+tty7
+
+</pre>
+<h4>/etc/shells</h4>
+<p>
+Le fichier /etc/shells, liste les shells de connection valides. Ce fichier est
+entre autre utilisé par le serveur SSH dropbear:
+</p>
+<pre>
+ # nano etc/shells
+</pre>
+<pre class="script">
+# /etc/shells: valid login shells.
+/bin/sh
+/bin/ash
+/bin/hush
+
+</pre>
+<h4>/etc/issue et /etc/motd</h4>
+<p>
+Création des fichiers /etc/issue affiché à la fin du boot, et du message du
+jour affiché après le login:
+</p>
+<pre>
+ # echo "SliTaz GNU/Linux 1.0 Kernel \r \l" > etc/issue
+ # echo "" >> etc/issue
+ # nano etc/motd
+</pre>
+<pre class="script">
+
+ (°-  { Get documentation in: /usr/share/doc.
+ //\    Use: 'less' or 'more' to read files, 'su' to be root. }
+ v_/_
+
+SliTaz is distributed in the hope that it will be useful, but
+with ABSOLUTELY NO WARRANTY.
+
+</pre>
+<h4>/etc/busybox.conf</h4>
+<p>
+Ce fichier est le fichiers de configuration de BusyBox, il permet
+de configurer, entre autre des droits sur les applications Busybox.
+Pour plus d'informations vous pouvez lire le document texte:
+<a href="http://www.slitaz.org/doc/handbook/security.html">sécurité du système</a>
+du Handbook. Fichier busybox.conf :
+</p>
+<pre>
+ # nano etc/busybox.conf
+</pre>
+<pre class="script">
+# /etc/busybox.conf: SliTaz GNU/linux Busybox configuration.
+#
+
+[SUID]
+# Allow command to be run by anyone.
+su = ssx root.root
+passwd = ssx root.root
+loadkmap = ssx root.root
+mount = ssx root.root
+reboot = ssx root.root
+halt = ssx root.root
+
+</pre>
+<p>
+Pour plus de sécurité, on change les permission sur ce fichier:
+</p>
+<pre>
+ # chmod 600 etc/busybox.conf
+</pre>
+<h4>/etc/inittab</h4>
+<p>
+Fichier de configuration d'init minimal. Il permet d'avoir d'avoir une
+console root sans passer par le login, et une console activable sur tty2.
+</p>
+<pre>
+ # nano etc/inittab
+</pre>
+<pre class="script">
+# /etc/inittab: init configuration for SliTaz GNU/Linux.
+
+::sysinit:/etc/init.d/rcS
+::respawn:-/bin/sh
+tty2::askfirst:-/bin/sh
+::ctrlaltdel:/bin/umount -a -r
+::ctrlaltdel:/sbin/reboot
+
+</pre>
+<p>
+Vous trouverez aussi un large exemple d'un fichier inittab dans
+l'archive de BusyBox.
+</p>
+<h4>/etc/profile</h4>
+<p>
+Ce fichier est lu lors de chaque login, et affecte tous les utilisateurs.
+Il faut utiliser le fichier ~/.profile pour la config propre à chaque user.
+</p>
+<pre>
+ # nano etc/profile
+</pre>
+<pre class="script">
+# /etc/profile: system-wide .profile file for the Bourne shells
+
+PATH="/usr/sbin:/usr/bin:/sbin:/bin:/usr/games"
+LD_LIBRARY_PATH="/usr/lib:/lib"
+
+if [ "`id -u`" -eq 0 ]; then
+  PS1='\e[1m\u@\h:\w\#\e[m '
+else
+  PS1='\e[1m\u@\h:\w\$\e[m '
+fi
+
+DISPLAY=:0.0
+
+export PATH LD_LIBRARY_PATH PS1 DISPLAY ignoreeof
+umask 022
+
+</pre>
+<h4>Utilisateurs, groupes, et mots de passes</h4>
+<p>
+Création des fichiers de configuration des utilisateurs, des groupes,
+des mots de passes situé dans: etc/{passwd,shadow,group,gshadow},
+et ajustage des permissions:
+</p>
+<pre>
+ # echo "root:x:0:0:root:/root:/bin/sh" > etc/passwd
+ # echo "root::13525:0:99999:7:::" > etc/shadow
+ # echo "root:x:0:" > etc/group
+ # echo "root:*::" > etc/gshadow
+ # chmod 640 etc/shadow
+ # chmod 640 etc/gshadow
+</pre>
+<p>
+Vous pouvez ajouter d'autres utilisateurs, tel que <a href="hacker.txt">hacker</a>
+utilisé par le mode liveCD de SliTaz. Vous pouvez aussi configuer un mot de passe pour
+le super-utilisateur root, avec la commande passwd. Pour ajouter un utilisateur existant
+dans un groupe existant, vous devez éditer les fichiers /etc/group et /etc/gshadow, car
+l'applet adduser fourni avec busybox n'offre pas toutes les options fournies par le
+programme original.
+</p>
+<h4>/etc/fstab et /etc/mtab</h4>
+<p>
+Liste les systèmes de fchiers à monter:
+</p>
+<pre>
+ # nano etc/fstab
+</pre>
+<pre class="script">
+# /etc/fstab: informations on static file system.
+#
+proc            /proc        proc    defaults          0       0
+sysfs           /sys         sysfs   defaults          0       0
+devpts          /dev/pts     devpts  defaults          0       0
+tmpfs           /dev/shm     tmpfs   defaults          0       0
+
+</pre>
+<p>
+Le fichier /etc/mtab est utilisé entre autre par mkfs*, il liste les partitions montées.
+Il a besoin de /proc, car c'est un lien sur /proc/mounts:
+</p>
+<pre>
+ # chroot . /bin/ash
+ /# ln -s /proc/mounts /etc/mtab
+</pre>
+<h4>Clavier</h4>
+<p>
+Vous pouvez créer un fichier .kmap spécifique à votre clavier grâce à la
+commande dumpkmap fournie avec BusyBox. Vous trouverez quelques fichiers kmap
+dans l'archive <a href="http://www.slitaz.org/get/tools.html">SliTaz tools</a>
+tel que fr_CH. Pour créer un fichier .kmap (changez fr_CH à votre
+configuration):
+</p>
+<pre>
+ /# mkdir /usr/share/kmap
+ /# /bin/busybox dumpkmap &gt; /usr/share/kmap/fr_CH.kmap
+ /# exit
+</pre>
+<p>
+Une fois ceci fait vous pouvez charger automatiquement votre clavier
+avec loadkmap dans un script tel que etc/ini.d/rcS, par exemple.
+</p>
+<h4>/usr/share/doc</h4>
+<p>
+Vous pouvez aussi ajouter divers documents, comme le manuel d'utilisateur
+de SliTaz, que vous pouvez télécharger sous forme d'archive tar.gz, depuis le
+site web de SliTaz.
+</p>
+<pre>
+ # mkdir -p usr/share/doc
+</pre>
+<h4>Installation du script udhcpc</h4>
+<p>
+Udhcpc est un client DHCP stable et rapide, fourni avec Busybox, mais
+ayant un développemnt indépandent. Site web: <a href="http://udhcp.busybox.net/"
+ >http://udhcp.busybox.net/</a>. Vous pouvez utiliser default.script
+de l'archive BusyBox. Ce script se met dans /usr/share/udhcpc/default.script,
+mais cela peut être modifié en ligne de commande. Sur SliTaz le client est lancé au boot
+par le script /etc/init.d/network.sh via le fichier de configuration /etc/network.conf:
+</p>
+<pre>
+ # mkdir usr/share/udhcpc
+ # cp ../src/busybox-1.2.2/examples/udhcp/simple.script \
+   usr/share/udhcpc/default.script
+ # chmod +x usr/share/udhcpc/default.script
+</pre>
+<h4>/etc/init.d/rcS</h4>
+<p>
+Pour finir cette première mouture il faut encore créer le script d'initialisation
+/etc/init.d/rcS pour monter les systèmes de fichiers, et lancer quelques commandes.
+Pour plus d'information vous pouvez jeter un coup d'oeil au chapitre sur
+<a href="boot-scripts.html">les scripts de démarrage et d'arrêt</a>. Vous pouvez
+changer la valeur de la variable KMAP= pour que le bon clavier soit chargé:
+</p>
+<pre>
+ # mkdir etc/init.d
+ # nano etc/init.d/rcS
+</pre>
+<pre class="script">
+#! /bin/sh
+# /etc/init.d/rcS: rcS initial script.
+#
+
+KMAP=fr_CH
+
+echo "Processing /etc/init.d/rcS... "
+
+/bin/mount proc
+/bin/mount -a
+/bin/hostname -F /etc/hostname
+/sbin/ifconfig lo 127.0.0.1 up
+/sbin/loadkmap &lt; /usr/share/kmap/$KMAP.kmap
+
+
+</pre>
+<pre>
+ # chmod +x etc/init.d/rcS
+</pre>
+<h4>Note</h4>
+<p>
+A noter que vous pouvez encore installer 
+<a href="http://www.slitaz.org/get/tazpkg.html">tazpkg</a> (10 Ko).
+C'est un gestionnaire de paquets que nous avons créé, vous touverez toutes les
+infos d'install dans l'archive source. Vous pouvez aussi installer divers
+fichiers depuis SliTaz tools, tel les lisences.
+</p>
+<a name="initramfs"></a>
+<h3><font color="#6c0023">Build a initramfs cpio archive</font></h3>
+<p>
+L'initramfs est une archive <code>cpio</code> du système générée depuis la racine,
+elle est décompressée en RAM par le noyau Linux lors du démarrage (boot), pour créer
+le système de fichiers en mémoire vive. Pour générer une archive initramfs, nous
+nous plaçons dans le répertoire racine du système de fichiers (rootfs), nous fesons
+une recherche avec <code>find</code>, et nous utilisons des pipes <code>|</code>.
+Ensuite nous créons une archive<code>cpio</code> gzipée avec <code>gzip</code>,
+que nous plaçons dans le répertoire de travail.
+</p>
+<p>
+L'initramfs de SliTaz se nomme <strong>rootfs.gz</strong>, c'est le nom du
+système racine, mais avec l'extension <code>.gz</code>. Si vous changé
+le nom, il faudrat le spécifier dans le fichier isolinux.cfg pour isolinux,
+ou menu.lst pour GRUB.
+</p>
+<p>
+Génération de l'initramfs:
+</p>
+<pre>
+ # find . -print | cpio -o -H newc | gzip -9 &gt; ../rootfs.gz
+</pre>
+<p>
+Vous devriez avoir un fichier rootfs.gz d'environ 1 à 2 Mb dans le
+répertoire de travail de SliTaz.
+</p>
+<p>
+Pour une nouvelle image, lors de modif dans rootfs, il suffit de copier
+la nouvelle archive rootfs.gz dans rootcd/boot, et de créer une nouvelle
+image ISO avec <code>genisoimage</code> ou <code>mkisofs</code>. Pour cela vous
+pouvez utiliser <strong>mktaziso</strong> se trouvant dans SliTaz tools. Ce script
+se chargera de vérifier si les répertoires sont bien présents, de générer une
+nouvelle archive cpio compressée et de créer une nouvelle image ISO bootable.
+</p>
+<a name="rootcd"></a>
+<h3><font color="#6c0023">Make rootcd files</font></h3>
+<p>
+Les étapes suivantes vont vous permettre de créer la racine du cd-rom
+bootable. Nous commençons par créer le répertoire rootcd, boot, et isolinux
+pour les fichiers déstinés au cd-rom:
+</p>
+<pre>
+ # cd ..
+ # mkdir -p rootcd/boot/isolinux
+</pre>
+<p>
+En option vous pouvez créer d'autres repértoires pour y mettre divers données,
+tel que des documents html ou des paquets.
+</p>
+<a name="linux"></a>
+<h4>Copier le kernel</h4>
+<p>
+Il suffit de copier le noyau préalablement compilé, dans rootcd/boot:
+</p>
+<pre>
+ # cp src/linux-2.6.20/arch/i386/boot/bzImage rootcd/boot
+</pre>
+<h4>Copie de l'initramfs dans rootcd/boot</h4>
+<p>
+Il ne faut pas oublier de générer une nouvelle archive initramfs
+lors de modification dans le rootfs (root file system).
+</p>
+<pre>
+ # cp rootfs.gz rootcd/boot
+</pre>
+<h4>Install du bootloader isolinux</h4>
+<p>
+Le bootloader isolinux, il suffit de copier isolinux.bin depuis l'archive
+des source de Syslinux:
+</p>
+<pre>
+ # cd src
+ # tar xzf syslinux-3.35.tar.gz
+ # cp syslinux-3.35/isolinux.bin ../rootcd/boot/isolinux
+ # cd ..
+</pre>
+<h4>isolinux.cfg - Configuration d'isolinux</h4>
+<p>
+Voici un exemple du fichier isolinux.cfg qui devrait bien fonctionner. Vous
+pouvez le modifier à volonté:
+</p>
+<pre>
+ # nano rootcd/boot/isolinux/isolinux.cfg
+</pre>
+<pre class="script">
+display display.txt
+default slitaz
+label slitaz
+    kernel /boot/bzImage
+    append initrd=/boot/rootfs.gz rw root=/dev/null vga=788
+implicit 0
+prompt 1
+timeout 80
+
+</pre>
+<p>
+Voici quelques changements que vous pourriez faire dans isolinux.cfg:
+</p>
+<ul>
+    <li>La valeur timeout correspond au nombre de secondes à attendre
+    avantde booter. Vous pouvez la mettre à 0, ou hôter la ligne pour
+    démarrer instantanément, ou choisir un temps d'attente plus long tel
+    que 10 s.</li>
+    <li>prompt peut être mis à 0 pour désactiver le 'boot:' prompt.</li>
+    <li>Vous pouvez encore ajouter plus de lignes pour afficher le contenu
+    de plusieurs fichiers textes lorsque l'utilisateur appuie sur F1, F2,
+    F3, etc.</li>
+</ul>
+<h4>display.txt</h4>
+<p>
+Un petit message de bienvenue, propulsé par isolinux, à vous de modifier
+ce fichier comme bon vous semble:
+</p>
+<pre>
+ # nano rootcd/boot/isolinux/display.txt
+</pre>
+<pre class="script">
+/*       _\|/_
+         (o o)
+ +----oOO-{_}-OOo---------------------------------------------------+
+     ____  _ _ _____
+    / ___|| (_)_   _|_ _ ____
+    \___ \| | | | |/ _` |_  /
+     ___) | | | | | (_| |/ /
+    |____/|_|_| |_|\__,_/___|
+
+ SliTaz GNU/Linux - Temporary Autonomous Zone
+
+     &lt;ENTER&gt; to boot.
+
+                                                                   */
+</pre>
+<a name="mkiso"></a>
+<h3><font color="#6c0023">Créer un image ISO avec genisoimage ou mkisofs</font></h3>
+<pre>
+ # genisoimage -R -o slitaz-cooking.iso -b boot/isolinux/isolinux.bin \
+   -c boot/isolinux/boot.cat -no-emul-boot -boot-load-size 4 \
+   -V "SliTaz" -input-charset iso8859-1 -boot-info-table rootcd
+</pre>
+<p>
+Pour chaque nouvelle modification dans le système de fichier racine
+de la box, vous devez créer une nouvelle image ISO.
+</p>
+<p>
+Vous pouvez créer un petit script qui se chargera de générer une nouvelle
+archive cpio compressée et une nouvelle image ISO, ou utiliser mktaziso se
+trouvant dans SliTaz tools. A noter que vous pouvez aussi utiliser GRUB pour
+booter la box.
+</p>
+<a name="testiso"></a>
+<h3><font color="#6c0023">Craver ou tester l'ISO avec Qemu</font></h3>
+<p>
+Vous pouvez graver l'image ISO avec Graveman, k3b, ou wodim, et booter
+dessus. Voisi un exemple de commande de gravure avec wodim (valable aussi pour
+cdrecord), avec un kernel 2.6.*:
+</p>
+<pre>
+# wodim -v -speed=24 -data slitaz-cooking.iso
+</pre>
+<h4>Qemu</h4>
+<p>
+A noter que vous pouvez tester l'image ISO avec le logiciel d'émulation Qemu
+(Sur Debian # aptitude install qemu). Pour émuler l'image ISO fraîchement crée,
+il suffit de taper :
+</p>
+<pre>
+# qemu -cdrom slitaz-cooking.iso
+</pre>
+<h4>Suite</h4>
+<p>
+La suite logique du Cookbook est le chapitre <a href="base-apps.html"
+>Base apps</a> fournissant toutes les instructions pour installer et
+configurer les applications de base distribuée par SliTaz.
+</p>
+
+
+<!-- End of content -->
+</div>
+
+<!-- Footer. -->
+<div id="footer">
+	<div class="footer-right"></div>
+	<a href="#top">Haut de la page</a> | 
+	<a href="index.html">Table des matières</a>
+</div>
+
+<div id="copy">
+    Copyright © 2007 <a href="http://www.slitaz.org/">SliTaz</a> -
+    <a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>;<br />
+    Documentation publiées sous
+    <a href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License</a>
+    et codée en <a href="http://validator.w3.org/">xHTML 1.0 valide</a>.
+</div>
+
+</body>
+</html>
