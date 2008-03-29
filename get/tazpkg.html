@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+    <title>Tazpkg - Tiny packages manager</title>
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <meta name="description" content="Gestionnaire de paquet ultra légé créé pour SliTaz GNU/Linux" />
+    <meta name="keywords" lang="fr" content="paquet tazpkg packages downloads source" />
+    <meta name="robots" content="index, follow, all" />
+    <meta name="revisit-after" content="7 days" />
+    <meta name="expires" content="never" />
+    <meta name="modified" content="2008-03-05 20:00:00" />
+    <meta name="author" content="Christophe Lincoln"/>
+    <meta name="publisher" content="www.slitaz.org" />
+    <link rel="shortcut icon" href="../favicon.ico" />
+    <link rel="stylesheet"  type="text/css" href="../slitaz.css" />
+</head>
+<body bgcolor="#ffffff">
+
+<!-- Header -->
+<div id="header">
+    <a name="top"></a>
+<!-- Access -->
+<div id="access">
+    <a href="#content" title="Aller au contenu de la page">Contenu</a>
+</div>
+    <a href="http://www.slitaz.org/"><img id="logo"
+    src="../pics/website/logo.png" title="www.slitaz.org" alt="www.slitaz.org"
+    style="border: 0px solid ; width: 200px; height: 74px;" /></a>
+    <p id="titre">#!/GNU/Linux</p>
+</div>
+
+<!-- Navigation menu -->
+<div id="nav">
+<div id="nav_top"></div>
+    <ul>
+        <li><a href="../about/" title="Informations au sujet du projet SliTaz">A propos du projet</a></li>
+        <li><a href="../get/" title="Téléchargements - LiveCD et sous projets">Obtenir SliTaz</a></li>
+        <li><a href="../doc/" title="Handbook, Cookbook et manuels">Documentation</a></li>
+        <li><a href="../packages/" title="Paquets logiciels disponibles">Paquets</a></li>
+        <li><a href="../mailing-list.html" title="Support, contact et collaboration">Liste de discussion</a></li>
+        <li><a href="../devel/" title="Le coin du développeur">Développement</a></li>
+        <li><a href="../artwork/" title="Artwork, couleurs et images">Art &amp; graphisme</a></li>
+        <li><a href="../search.html" title="Rechercher des infos et/ou de la doc">Recherche</a></li>
+        <li><a href="../sitemap.html" title="Vue globale du site web">Plan du site</a></li>
+        <li><a href="http://forum.slitaz.org/" title="Forum d'aide et support">Forum</a></li>
+    </ul>
+<div id="nav_bottom">
+<div id="nav_bottom_img"></div>
+</div>
+</div>
+
+<!-- Content top. -->
+<div id="content_top">
+<div class="top_left"></div>
+<div class="top_right"></div>
+</div>
+
+<!-- Content -->
+<div id="content">
+<a name="content"></a>
+
+<h1><font color="#3E1220">Tazpkg</font></h1>
+<h2><font color="#DF8F06">Tiny autonomus zone package manager</font></h2>
+
+<p>
+Tazpkg est un gestionnaire de paquets ultra légé (~25 Ko) permettant
+d'installer, lister, télécharger, enlever des paquets sur un système
+GNU/Linux. Tazpkg propose aussi une commande de recherche, pour générer une
+liste et des commandes pour la création de paquets. Il a été créé pour les
+besoins de SliTaz GNU/Linux, mini distribution autonome. Le format des paquets
+utilisent l'extension *.tazpkg, c'est une archive cpio contenant un système de
+fichiers (fs) compressés avec gzip, la recette et une éventuelle description.
+Tazpkg fournit aussi un système de gestion des dépendances basé sur les
+recettes des paquets. La recette contient toutes les informations au sujet du
+paquet, elle peu aussi contenir les fonctions de pre et post installation.
+Cette même recette est par ailleur utilisée par l'utilitaire
+<a href="tazwok.html">Tazwok</a> pour compiler les sources et créer un
+paquet.tazpkg.
+</p>
+<p>
+Tazpkg est écript en script shell depuis rien (from scratch), compatible
+Bash, et fonctionnant avec Ash du projet Busybox. Tazpkg est distribué
+sous license libre GNU gpl v3. Dans l'archive des sources de Tazpkg vous
+trouverez le <a href="../doc/manuals/tazpkg.html">manuel au format xHTML</a>
+dans le répertoire <code>/doc</code> et les informations d'installation dans
+le fichier README.
+</p>
+<h3>Download Tazpkg - Current version 1.9 (20080305)</h3>
+<ul>
+    <li><a href="http://download.tuxfamily.org/slitaz/sources/tazpkg/tazpkg-1.9.tar.gz"
+     >tazpkg-1.9.tar.gz</a></li>
+    <li><a href="http://download.tuxfamily.org/slitaz/sources/tazpkg/"
+     >http://download.tuxfamily.org/slitaz/sources/tazpkg/</a></li>
+</ul>
+
+<h3>Mercurial repo</h3>
+<p>
+Tazpkg a son propore dépôt Mercurial sur le serveur de SliTaz, il peut être 
+cloné via la commande :
+</p>
+<pre>
+ $ hg clone http://hg.slitaz.org/tazpkg/
+</pre>
+
+<!-- End of content with round corner -->
+</div>
+<div id="content_bottom">
+<div class="bottom_left"></div>
+<div class="bottom_right"></div>
+</div>
+
+<!-- Start of footer and copy notice -->
+<div id="copy">
+<p>
+Dernière modification : 2008-03-05 20:00:00 -
+<a href="#top">Haut de la page</a>
+</p>
+<p>
+Copyright &copy; 2008 <a href="http://www.slitaz.org/">SliTaz</a> -
+<a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>
+</p>
+<!-- End of copy -->
+</div>
+
+<!-- Bottom and logo's -->
+<div id="bottom">
+<p>
+<a href="http://validator.w3.org/check?uri=referer"><img
+   src="../pics/website/xhtml10.png" alt="Valid XHTML 1.0"
+   title="Code validé XHTML 1.0"
+   style="width: 80px; height: 15px;" /></a>
+</p>
+</div>
+
+</body>
+</html>
