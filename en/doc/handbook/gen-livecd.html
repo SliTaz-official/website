@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>SliTaz Handbook (en) - Gen LiveCD flavor</title>
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <meta name="description" content="slitaz tazlito build livecd flavor support all in RAM" />
+    <meta name="expires" content="never" />
+    <meta name="modified" content="2008-02-26 18:30:00" />
+    <meta name="publisher" content="www.slitaz.org" />
+    <meta name="author" content="Christophe Lincoln"/>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="book.css" />
+</head>
+<body bgcolor="#ffffff">
+
+<!-- Header and quick navigation -->
+<div id="header">
+<div align="right" id="quicknav">
+    <a name="top"></a>
+    <a href="liveusb.html">LiveUSB media</a> |
+    <a href="index.html">Table of contents</a>
+</div>
+<h1><font color="#3E1220">SliTaz Handbook (en)</font></h1>
+</div>
+
+<!-- Content. -->
+<div id="content">
+<div class="content-right"></div>
+
+<h2><font color="#DF8F06">Generate a LiveCD flavor</font></h2>
+
+<ul>
+	<li><a href="#tazlito">Tazlito</a> - SliTaz Live Tool.</li>
+	<li><a href="#get-flavor">Get a flavor</a> - Download a flavor file.</li>
+	<li><a href="#gen-distro">Gen your own distro</a> - Generate a Live distro in
+	one single command.</li>
+</ul>
+
+<a name="tazlito"></a>
+<h3>Tazlito - SliTaz Live Tool</h3>
+<p>
+Tazlito is a tool to help generate and configure SliTaz LiveCD ISO images.
+You can create a custom distro in two commands from a list of packages and a
+flavor file, extract an existing ISO image to hack it, create new initramfs 
+and/or a new ISO. Most commands must be run by root, except the stats and the
+configuration file manipulation. Like other SliTaz tiny utils, you can simply
+type <code>tazlito usage</code> in a terminal to get a list of all 
+commands with a short description in English.
+</p>
+
+<a name="get-flavor"></a>
+<h3>Get a flavor</h3>
+<p>
+SliTaz LiveCD can easily be rebuilt using Tazlito flavor support. A special 
+LiveCD flavor can be built from the LiveCD/RAM itself or from an installed
+system. If you want to rebuild SliTaz from the LiveCD you need at least 256 Mb
+of RAM and we recommend that you store the file on persistent media (USB key, HD,
+etc). To start you need to get a flavor file from a SliTaz mirror, open a Xterm,
+become root administrator and get the default core system:
+</p>
+<pre>
+ # tazlito get-flavor core
+</pre>
+
+<a name="gen-distro"></a>
+<h3>Generate your own distro</h3>
+<p>
+The command <code>get-flavor</code> will download the core flavor, giving you a description
+and a list of packages in the current directory with some additional files in 
+/home/slitaz/distro/addfiles (JWM menu, wallpapers, hacker files). From now on 
+you can add or remove packages in the list (<code>distro-packages.list</code>), 
+modify configuration files (<code>tazlito.conf</code>) and optionally modify 
+additional files. Then simply generate a LiveCD ISO image:
+</p>
+<pre>
+ # tazlito gen-distro
+</pre>
+<p>
+The LiveCD ISO image, root filesystem (rootfs) and the content of the CD 
+(rootcd) are in /home/slitaz/distro.  All repacked or downloaded packages are
+stored by default in /home/slitaz/packages. If you want to chroot in the
+rootfs to preconfigure the system, add more files in the rootcd directory or 
+add users, you just have to rebuild initramfs and the ISO image to generate 
+your new LiveCD:
+</p>
+<pre>
+ # tazlito gen-initiso
+</pre>
+
+<h4>Burn ISO and gen a flavor file</h4>
+<p>
+Tazlito can also burn the LiveCD and/or create a flavor file to keep your 
+modifications:
+</p>
+<pre>
+ # tazlito burn-iso
+ # tazlito gen-flavor
+</pre>
+
+
+<!-- End of content -->
+</div>
+
+<!-- Footer. -->
+<div id="footer">
+	<div class="footer-right"></div>
+	<a href="#top">Top of the page</a> | 
+	<a href="index.html">Table of contents</a>
+</div>
+
+<div id="copy">
+    Copyright &copy; 2008 <a href="http://www.slitaz.org/en/">SliTaz</a> -
+    <a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>;<br />
+    Documentation is under
+    <a href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License</a>
+    and code is <a href="http://validator.w3.org/">valid xHTML 1.0</a>.
+</div>
+
+</body>
+</html>

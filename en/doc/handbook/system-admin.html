@@ -1,0 +1,239 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>SliTaz Handbook (en) - System administration</title>
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <meta name="description" content="slitaz English handbook" />
+    <meta name="expires" content="never" />
+    <meta name="modified" content="2008-02-26 21:30:00" />
+    <meta name="publisher" content="www.slitaz.org" />
+    <meta name="author" content="Christophe Lincoln"/>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="book.css" />
+</head>
+<body bgcolor="#ffffff">
+
+<!-- Header and quick navigation -->
+<div id="header">
+<div align="right" id="quicknav">
+    <a name="top"></a>
+    <a href="x-window.html">X Window System</a> |
+    <a href="index.html">Table of contents</a>
+</div>
+<h1><font color="#3E1220">SliTaz Handbook (en)</font></h1>
+</div>
+
+<!-- Content. -->
+<div id="content">
+<div class="content-right"></div>
+
+<h2><font color="#df8f06">System administration</font></h2>
+
+<ul>
+	<li><a href="#network">Network configuration.</a></li>
+	<li><a href="#devices">Devices and disks access.</a></li>
+	<li><a href="#users-admin">Users, groups and passwords.</a></li>
+	<li><a href="#locale">Language and keyboard.</a></li>
+    <li><a href="#bash">Install the Bash shell</a></li> 
+    <li><a href="#time">Set the system time</a></li>
+</ul>
+
+<a name="network"></a>
+<h3>Network configuration</h3>
+<p>
+By default SliTaz starts a DHCP client (udhcpc) on eth0 at boot time. If your
+network card has been identified as an <code>eth0</code> interface and you use
+a router, your connection should already be working. DHCP is dynamically
+configured, on each boot the client asks for a new IP address from 
+the DHCP server, which is integrated into the router, or on another computer.
+If you need a static IP, you can directly edit config files or use the GUI
+<code>netbox</code> available from JWM menu --&gt; System tools. In a terminal
+or a Linux console, you can list all available network interfaces with the 
+command <code>ifconfig</code> followed by the <code>-a</code> option:
+</p>
+<pre>
+ $ ifconfig -a
+</pre>
+<p>
+The system wide network configuration file is <code>/etc/network.conf</code>,
+it can be graphically configured with <code>netbox</code> or directly edited by
+the root administrator.
+</p>
+<h4>Install network card driver</h4>
+<p>
+In case you need a network card driver and dont know the driver name, you can
+use the command <code>lspci</code> to find your card and then <code>modprobe</code>
+to load a module. In Live mode you can use the SliTaz boot option 
+<code>modprobe=modules</code> to automatically load Kernel modules. To get a 
+list of all available network card drivers, display PCI eth cards and load a
+module:
+</p>
+<pre>
+ # modprobe -l | grep drivers/net
+ # lspci | grep [Ee]th
+ # modprobe -v module_name
+</pre>
+<p>
+On an installed system you just need to add the module_name to the variable 
+<code>LOAD_MODULES </code> in <code>/etc/rcS.conf</code> to load your module 
+on each boot.
+</p>
+
+<a name="devices"></a>
+<h3>Devices and disks access</h3>
+<p>
+With Linux your disks and USB media are seen as devices. To access them you must
+first mount a device on a mount point (directory). On SliTaz you can graphically
+mount devices using <code>mountbox</code> or use the command line. To mount the
+first disk of a local hard disk on <code>/mnt/disk</code>:
+</p>
+<pre>
+ # mkdir -p /mnt/disk
+ # mount /dev/hda1 /mnt/disk
+</pre>
+<p>
+To mount a cdrom or an USB media you should use mount points located in 
+<code>/media</code>. Note that for a cdrom, you just have to specify
+the device path and for a flash key the mount point already exists:
+</p>
+<pre>
+ # mount /dev/cdrom
+ # mount /dev/sda1 /media/flash
+</pre>
+<h4>ntfs filesystem</h4>
+<p> 
+If you need read/write access to Windows ntfs filesystems you must install a
+few additional packages from the mirror. The <code>ntfs-3g</code> driver
+provides stable access to ntfs partitions and the <code>ntfsprogs</code> provides
+manipulation tools dependent on Fuse. Note that you can format, move or resize
+ntfs partitions graphically with Gparted.
+</p>
+
+<a name="users-admin"></a>
+<h3>Users, groups and passwords</h3>
+<p>
+To manage users and groups on your SliTaz system you must use the command line,
+but file permissions can be changed graphically using the emelFM2 file manager. To
+add or remove users and groups you must be root. Root can also change all
+user passwords and a single user can only change his/her own password. To add 
+or remove a user named linux:
+</p>
+<pre> # adduser linux
+ # deluser linux
+</pre>
+<p>
+To add or remove a group you must use <code>addgroup</code> or 
+<code>delgroup</code>. To change the current user password or change the
+password of a specific user, you must use the command <code>passwd</code>:
+</p>
+<pre> $ passwd
+ # passwd username
+</pre>
+
+<a name="locale"></a>
+<h3>Language and keyboard layout</h3>
+<p>
+SliTaz saves the configuration of the default locale in <code>/etc/locale.conf</code> 
+which is read by <code>/etc/profile</code> on each login and the keyboard 
+setting is stored in <code>/etc/kmap.conf</code>. These two files can be
+edited with your favorite editor or configured respectively with
+<code>tazlocale</code> and <code>tazkmap</code>. You can modify the settings
+you chose on the first boot by typing as root administrator:
+</p>
+<pre>
+ # tazlocale
+ Or:
+ # tazkmap
+</pre>
+<p>
+To check all available locales or your current configuration you can use the
+command <code>locale</code> as a single user or root (C for English):
+</p>
+<pre> $ locale -a
+ $ locale
+</pre>
+<a name="bash"></a>
+<h3>Bash Shell</h3>
+<p>
+On SliTaz you have the ash and sh shell with a link to Ash, this shell is 
+provided by Busybox. If you wish to use the Bash (Bourne Again SHell), first 
+as <code>su</code> install bash, copy the <code>.profile</code> found in your 
+home directory and rename it <code>.bashrc</code>, then edit the 
+<code>/etc/passwd</code> file with your favorite text editor and change your 
+shell to :/bin/bash
+</p>
+<pre>
+ # tazpkg get-install bash
+ # cp /home/hacker/.profile home/hacker/.bashrc
+ # Note root user: cp /home/hacker/.profile ~/.bashrc
+ # nano /etc/passwd   # :/bin/bash
+</pre>
+<p>
+The next time you login bash will be your default shell, you can confirm this 
+by typing <code>env</code> in the command line.
+</p>
+
+<a name="time"></a>
+<h3>System Time</h3>
+<p>
+To know the current system time, you can simply type <code>date</code>. On 
+SliTaz, the timezone configuration file is saved in <code>/etc/TZ</code>, you 
+can edit with your favorite text editor or simply <code>echo</code> the changes.
+Here's an example using the timezone Europe/London:
+</p>
+<pre># echo "Europe/London" > /etc/TZ
+</pre>
+<h4>Rdate</h4>
+<p>
+To syncronize the system clock with a network time server, you can as the 
+<code>root</code> administrator use the <code>rdate -s</code> command:
+</p>
+<pre>
+ # rdate -s tick.grayware.com
+</pre>
+<p>
+To display the time on the remote server, use the <code>rdate -p</code> command.
+</p>
+<pre>
+ $ rdate -p tick.grayware.com
+</pre>
+<h4>Hwclock</h4>
+<p>
+Hwclock allows you to syncronize the time of your hardware clock to the system
+clock or vice versa.
+</p>
+<p>
+Syncronize the system clock to the hardware clock ( --utc = universal time, 
+-l = local time):
+</p>
+<pre>
+ # hwclock -w --utc
+</pre>
+<p>
+Syncronize the hardware clock to the system clock:
+</p>
+<pre>
+ # hwclock -s --utc
+</pre>
+
+<!-- End of content -->
+</div>
+
+<!-- Footer. -->
+<div id="footer">
+	<div class="footer-right"></div>
+	<a href="#top">Top of the page</a> | 
+	<a href="index.html">Table of contents</a>
+</div>
+
+<div id="copy">
+    Copyright &copy; 2008 <a href="http://www.slitaz.org/en/">SliTaz</a> -
+    <a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>;<br />
+    Documentation is under
+    <a href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License</a>
+    and code is <a href="http://validator.w3.org/">valid xHTML 1.0</a>.
+</div>
+
+</body>
+</html>

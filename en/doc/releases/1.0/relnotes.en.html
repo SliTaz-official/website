@@ -1,0 +1,281 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+	<title>SliTaz GNU/Linux 1.0 - Release Notes</title>
+	<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+	<meta name="description" content="slitaz doc system releases notes information cooking" />
+	<meta name="expires" content="never" />
+	<meta name="modified" content="2008-03-14 11:30:00" />
+	<meta name="publisher" content="www.slitaz.org" />
+	<meta name="author" content="Paul Issot"/>
+	<link rel="shortcut icon" href="favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="book.css" />
+</head>
+<body bgcolor="#ffffff">
+
+<!-- Header and quick navigation -->
+<div id="header">
+<div align="right" id="quicknav">
+    <a name="top"></a>
+	<a href="http://www.slitaz.org/en/doc/">www.slitaz.org/en/doc/</a>
+</div>
+<h1><font color="#3E1220">SliTaz GNU/Linux 1.0</font></h1>
+</div>
+
+<!-- Content. -->
+<div id="content">
+<div class="content-right"></div>
+
+<h2><font color="#DF8F06">Releases notes</font></h2>
+
+<ul>
+	<li><a href="#overview">Overview.</a></li>
+	<li><a href="#hardware">Supported Hardware.</a></li>
+	<li><a href="#livecd">LiveCD Flavors.</a></li>
+	<li><a href="#install">Installation.</a></li>
+	<li><a href="#kernel">Linux Kernel.</a></li>
+	<li><a href="#packages">Software Packages.</a></li>
+	<li><a href="#desktop">Graphical Desktops.</a></li>
+	<li><a href="#support">Support and Documentation.</a></li>
+	<li><a href="#security">Security.</a></li>
+	<li><a href="#upgrade">From Cooking to Stable.</a></li>
+	<li><a href="#people">People of the Project.</a></li>
+</ul>
+
+<a name="overview"></a>
+<h3><font color="#6c0023"></font>Overview</h3>
+<p>
+SliTaz GNU/Linux is a free, open source community project. Version 1.0 was 
+released on March 22 2008 after two years of hard work. Slitaz comprises of 448 
+software packages easily installed via the "Tazpkg" package manager. The LiveCD
+can be fully configured to taste, to easily create a custom distribution 
+specificically for tasks such as multimedia, graphics or development. 
+</p>
+<p>
+Slitaz can also be installed to your hard drive, or used with USB media - with
+"TazUSB" you are only a few simple commands away from a fully formatted and 
+configured USB device, ready to boot.
+</p>
+<p>
+Technical support is provided to users via the mailing list and the official
+forum. The "Slitaz Handbook" is an instructive manual on how to use and finely
+configure the system. Slitaz can be updated easily via the graphic installer or
+by using the simple fast text installer. 
+</p>
+
+<a name="hardware"></a>
+<h3><font color="#6c0023">Supported Hardware</font></h3>
+<p>
+SliTaz GNU/Linux supports all machines based on i486 or x86 Intel compatible
+processors. A minimum 128MB of memory is recommended to use the main LiveCD. 
+64MB is needed for the "slitaz-loram" flavor and 16MB for the 
+"slitaz-loram-cdrom" flavor.
+</p>
+<p>
+With the slitaz-loram flavour, the system is less responsive, but allows you to
+graphically install SliTaz on very old machines. Once installed, Slitaz works
+well with a minimum of 16MB memory, but forget about using Firefox to surf the 
+web - you'll have to use the text based 'links' for example.  
+</p>
+<p>
+Most network and sound card drivers are supported in the Kernel. Presently, 
+power management is enabled by default with ACPI and support for laptops is 
+enabled with the "ac" and "battery" modules.
+</p>
+
+<a name="livecd"></a>
+<h3><font color="#6c0023">LiveCD Flavors</font></h3>
+<p>
+SliTaz GNU/Linux is distributed as a bootable LiveCD allowing you to
+graphically install to the hard drive and retain the use of your previous 
+system including all settings, applications, documents etc. 
+</p>
+<p>
+The project distributes an ISO image called "core", which is the body of the 
+system, providing a selection of multi-use packages for surfing the web, 
+listening to music, audio editing, image manipulation, developing (including 
+PHP/SQL), editing ISOs or burning to optical media. It's just one click in the 
+application menu to find software installed by category.
+</p>
+<p>
+The "core" LiveCD can also be customised and rebuilt both graphically or from
+the command line. Install your own custom set of packages, or simply use one
+of the preset flavors on the mirror. Then simply generate your distribution 
+with the "Tazlito" tool.
+</p>
+
+<a name="install"></a>
+<h3><font color="#6c0023">Installation</font></h3>
+<p>
+The installation is fully automated and can be done graphically or in text
+mode. The prerequisite material and other useful information can be found in the 
+Manual and Handbook. 
+</p>
+<p>
+If you want to partition a disk before installation, you can quickly use 
+Gparted in LiveCD mode or use a flavor containing the partitioning tool. At 
+the end of the installation it is possible to setup the "GRUB" bootloader which
+is capable of starting almost all operating systems. This allows SliTaz to 
+co-exist with a previously installed operating system, such as Windows.
+</p>
+
+<a name="kernel"></a>
+<h3><font color="#6c0023">Linux Kernel</font></h3>
+<p>
+Slitaz GNU/Linux is distributed with the Linux Kernel 2.6.24.2, patched for
+LZMA compression support and display correction for the virtual console. The
+support for IDE and SCSI is integrated, as are the filesystems ext2 and ext3.
+</p>
+<p>
+Most network cards are supported either directly or as loadable modules with
+'modprobe'. Video capture, if needed, requires the ieee1394, raw1394 and
+oci1394 modules installed. The management of the sound card drivers is obtained
+with 'soundconf'.
+</p>
+<p>
+The configuration of startup modules is located in /etc/rcS.conf. In 
+LiveCD/LiveUSB mode you can use 'modprobe=mod1, mod2' to load various modules 
+at boot time.
+</p>
+<p>
+The Linux Kernel configuration of SliTaz is available in the compressed file
+/proc/config.gz and also in the Mercurial repositories.
+</p>
+
+<a name="packages"></a>
+<h3><font color="#6c0023">Software Packages</font></h3>
+<p>
+The management of software packages is done with the custom package manager 
+"Tazpkg". It's simple, fast, stable and offers an interactive mode. Among the 
+448 packages available you will find anything you need to transform your 
+machine to a complete graphical desktop (e17), a graphics studio with The Gimp
+or Inkscape, or to a video editor with Kino. You can experience the world wide
+web with instant messaging, VOIP, email and of course through a web browser. 
+</p>
+<p>
+Slitaz is also designed to function as a powerful web server, using the stable
+LightTPD/PHP package (installed by default), supporting CGI, Perl and Python.
+</p>
+<p>
+Rsync is used for incremental backup and iptables functions as the firewall. 
+SliTaz can of course also provide a complete development environment with the 
+GCC 4.2.2 compiler, Geany IDE, Mercurial Repostitories and all development 
+libraries. Packages can be found through the search function of Tazpkg or via 
+the website: http://www.slitaz.org/packages/
+</p>
+<p>
+The binary packages on the mirror can all be compiled by using the "wok" or
+"Tazwok" to cook. All of the developer documentation is contained in the
+"SliTaz Cookbook" and is available online.
+</p>
+
+<a name="desktop"></a>
+<h3><font color="#6c0023">Graphical Desktops</font></h3>
+<p>
+By default, the Slitaz LiveCD uses the very light and stable JWM window manager.
+The integration of the taskbar "LXpanel" makes it possible to dynamically 
+provide a menu based on the Freedesktop standards. The principle is to have a 
+small menu accessible via a screen click with the favourites, windows effects,
+LiveCD and LiveUSB tools, JWM configuration and system actions made available.
+Applications can also be accessed through the menu supplied by LXpanel.
+</p>
+<p>
+Through the support of a LiveCD flavor or an installed system you can install
+the Enlightenment (e17) desktop environment or the Openbox window manager.
+The different sessions can be selected via the F1 key when using the "Slim"
+login window. To change the default session you can use 'tazx' or manually edit
+the ~/.Xinitrc file.
+</p>
+
+<a name="support"></a>
+<h3><font color="#6c0023">Support and Documentation</font></h3>
+<p></p>
+The SliTaz project offers various means of help and support to users of the
+system, using the mailing list, forum or IRC channel. User documentation
+is contained in the SliTaz Handbook, making it possible to configure SliTaz
+to some degree. The Handbook is also available on the web site. The manuals
+of the various tools are installed on the system and are available through the
+documentation menu - they describe all the various commands made possible by
+the tools. The development of the operating system and the use of the wok and
+receipts are described in the "Slitaz Cookbook". The books, manuals and memos
+are all available online: http://www.slitaz.org/doc/
+
+<a name="security"></a>
+<h3><font color="#6c0023">Security</font></h3>
+<p>
+For the benefit of a safe and secure system it's important to recharge and
+update packages regularly. The Firewall is provided by iptables, and the
+LightTPD server supports authentication by encrypted passwords and Dropbear
+provides a secure SSH client and server. The passwords for the users of the
+system are encrypted and only the root administrator can modify system files.
+For information about how to configure the firewall, you can refer to the
+Handbook. The packages related to security are all classified under the topic:
+Security.
+</p>
+
+<a name="upgrade"></a>
+<h3><font color="#6c0023">From Cooking to Stable</font></h3>
+<p>
+The installer of SLiTaz GNU/linux offers an update function allowing you to
+upgrade from a 'Cooking' to 'Stable' version. To upgrade the system you first
+need to boot the 'Stable' LiveCD, launch the installer, select upgrade and then
+specify the partition containing the system that you want to update. The
+installer will then clean out the system and reinstall all the packages not
+present on the CD from the mirror. When this has finished you can reboot
+with your new version of SliTaz. Note that this method can also be used to
+rebuild an already installed system, while retaining the selection of packages
+already installed.
+</p>
+<p>
+Note that the installer will keep a copy of the list of packages and a complete
+archive of the /etc directory (etc.tar.gz) in /var/lib/slitaz-install.
+</p>
+
+<a name="people"></a>
+<h3><font color="#6c0023">People of the Project</font></h3>
+<p>
+SliTaz is proud to be an international community project. The people of the
+project are the ones who develop the distribution, correct the website,
+develop the HG repositories and write the official documentation. Passing
+through Switzerland, France, Quebec, Algeria and England.
+</p>
+<ul>
+	<li>Christophe Lincoln</li>
+	<li>Pascal Bellard</li>
+	<li>Eric Joseph-Alexandre</li>
+	<li>Julien Rabier</li>
+	<li>Paul Issot</li>
+	<li>Andrew Miller</li>
+	<li>Serge Daigle</li>
+	<li>Gauthier Bar</li>
+	<li>Mohamed Jabara</li>
+	<li>Gwenhaël Goavec-Merou</li>
+	<li>Didier Bretin</li>
+</ul>
+<p>
+The project also wishes to thank all the reviewers, testers, hackers and users
+who have taken the time to help advance the distribution.
+</p>
+
+
+<!-- End of content -->
+</div>
+
+<!-- Footer. -->
+<div id="footer">
+	<div class="footer-right"></div>
+	<a href="#top">Haut de la page</a> | 
+	<a href="index.html">Index of /usr/share/doc/slitaz</a>
+</div>
+
+<div id="copy">
+	Copyright &copy; 2008 <a href="http://www.slitaz.org/">SliTaz</a> -
+	<a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>;<br />
+	Documentation published under
+	<a href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License</a>
+	and <a href="http://validator.w3.org/">xHTML 1.0 valid</a>.
+</div>
+
+</body>
+</html>

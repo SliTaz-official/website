@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>SliTaz Handbook (en) - X Window System</title>
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <meta name="description" content="slitaz English handbook" />
+    <meta name="expires" content="never" />
+    <meta name="modified" content="2008-03-01 22:30:00" />
+    <meta name="publisher" content="www.slitaz.org" />
+    <meta name="author" content="Christophe Lincoln"/>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="book.css" />
+</head>
+<body bgcolor="#ffffff">
+
+<!-- Header and quick navigation -->
+<div id="header">
+<div align="right" id="quicknav">
+    <a name="top"></a>
+    <a href="gen-livecd.html">Generate a LiveCD flavor</a> |
+    <a href="index.html">Table of contents</a>
+</div>
+<h1><font color="#3E1220">SliTaz Handbook (en)</font></h1>
+</div>
+
+<!-- Content. -->
+<div id="content">
+<div class="content-right"></div>
+
+<h2><font color="#DF8F06">X Window System</font></h2>
+
+<ul>
+	<li><a href="#X11">X Window System</a></li>
+	<li><a href="#slim">Slim.</a></li>
+	<li><a href="#jwm">JWM.</a></li>
+	<li><a href="#enlightenment">Enlightenment (e17).</a></li>
+	<li><a href="#openbox">Openbox.</a></li>
+</ul>
+
+<a name="X11"></a>
+<h3>X11 - X Window System</h3>
+<p>
+The X Window System or X11 provides a window manager running on
+top of a X server. SliTaz uses by default the lightweight X server called
+<code>Xvesa</code> from the Xorg project (<a href="http://www.x.org/">www.x.org</a>).
+Xvesa can be started with the Slim login manager or directly from a Linux console
+with the command <code>startx</code>, but for this you must first disable the 
+Login Manager. To reconfigure your X session you can use <code>tazx</code>
+as root or as the current user if you start X from the command line.
+</p>
+
+<a name="slim"></a>
+<h3>Slim - Simple Login Manager</h3>
+<p>
+Slim is a lightweight session manager that is very easy to configure and is 
+customizable using system themes. The configuration file is found in 
+<code>/etc/slim.conf</code>, it defines window managers available via the 
+<code>F1</code> key, the default user or theme and the X window system parameters.
+Slim offers special users commands like <code>console</code> to help manage 
+the session.
+</p>
+<p>
+In LiveCD mode you can disable Slim with the boot option <code>screen=text</code>.
+On an installed system you can remove the package or delete slim from the 
+<code>RUN_DAEMONS</code> variable in <code>/etc/rcS.conf</code>.
+</p>
+<p>
+More details and themes can be found on the 
+<a href="http://slim.berlios.de">website.</a>
+</p>
+
+<a name="jwm"></a>
+<h3>JWM - Window manager</h3>
+<p>
+JWM (Joe's Window Manger) is a lightweight Window Manager, easy to use, fast,
+stable and insanely configurable. The menu and theme can all be changed from a 
+single configuration file found in your home directory: <code>~/.jwmrc</code>,
+the file uses XML syntax and the code is nicely colored if you use Geany to 
+edit it. To add an entry in the menu you can use the following example:
+</p>
+<pre class="script">
+ &lt;Program icon="kino.png" label="Kino (Video Editor)"&gt;kino&lt;/Program&gt;
+</pre>
+<p>
+The <a href="http://www.joewing.net/programs/jwm/config.shtml">JWM Web site</a> 
+has got more information on how to configure the application to your needs 
+and preferences.
+</p>
+
+<a name="enlightenment"></a>
+<h3>Enlightenment (e17)</h3>
+<p>
+Enlightenment aka e17 is a lightweight and fast desktop environment that can be
+configured graphically. To install e17:
+</p>
+<pre> # tazpkg get-install enlightenment
+</pre>
+<p>
+Logout your current X session, type <code>F1</code> at Slim login and choose
+<code>e17</code> to start Enlightenment.
+</p>
+
+<a name="openbox"></a>
+<h3>Openbox</h3>
+<p>
+Openbox is a lightweight window manager than can be configured using the obconf 
+utility. To install openbox:
+</p>
+<pre># tazpkg get-install openbox
+# tazpkg get-install obconf
+</pre>
+<p>
+Logout your current X session, type <code>F1</code> at Slim login and choose
+<code>openbox</code> to start Openbox. To make Openbox your default Window
+Manager just type: <code>tazx openbox</code>.
+</p>
+<p>
+Note: you can also use the configuration file <code>menu.xml</code> found 
+in <code>/etc/xdg/openbox</code> to edit menu items. Here's an example using 
+Htop:
+</p>
+<pre class="script">
+&lt;item label="Htop"&gt;
+  &lt;action name="Execute"&gt;&lt;command&gt;xterm -e htop&lt;/command&gt;&lt;/action&gt;
+&lt;/item&gt;
+</pre>
+<p>
+More information can be found on the 
+<a href="http://icculus.org/openbox/index.php/Help:Menus">openbox</a> site.
+</p>
+
+<!-- End of content -->
+</div>
+
+<!-- Footer. -->
+<div id="footer">
+	<div class="footer-right"></div>
+	<a href="#top">Top of the page</a> | 
+	<a href="index.html">Table of contents</a>
+</div>
+
+<div id="copy">
+    Copyright &copy; 2008 <a href="http://www.slitaz.org/en/">SliTaz</a> -
+    <a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>;<br />
+    Documentation is under
+    <a href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License</a>
+    and code is <a href="http://validator.w3.org/">valid xHTML 1.0</a>.
+</div>
+
+</body>
+</html>
+
