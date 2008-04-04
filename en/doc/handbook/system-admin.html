@@ -31,54 +31,12 @@
 <h2><font color="#df8f06">System administration</font></h2>
 
 <ul>
-	<li><a href="#network">Network configuration.</a></li>
 	<li><a href="#devices">Devices and disks access.</a></li>
 	<li><a href="#users-admin">Users, groups and passwords.</a></li>
 	<li><a href="#locale">Language and keyboard.</a></li>
-    <li><a href="#bash">Install the Bash shell</a></li> 
-    <li><a href="#time">Set the system time</a></li>
+        <li><a href="#bash">Install the Bash shell.</a></li> 
+        <li><a href="#time">Adjust the system time.</a></li>
 </ul>
-
-<a name="network"></a>
-<h3>Network configuration</h3>
-<p>
-By default SliTaz starts a DHCP client (udhcpc) on eth0 at boot time. If your
-network card has been identified as an <code>eth0</code> interface and you use
-a router, your connection should already be working. DHCP is dynamically
-configured, on each boot the client asks for a new IP address from 
-the DHCP server, which is integrated into the router, or on another computer.
-If you need a static IP, you can directly edit config files or use the GUI
-<code>netbox</code> available from JWM menu --&gt; System tools. In a terminal
-or a Linux console, you can list all available network interfaces with the 
-command <code>ifconfig</code> followed by the <code>-a</code> option:
-</p>
-<pre>
- $ ifconfig -a
-</pre>
-<p>
-The system wide network configuration file is <code>/etc/network.conf</code>,
-it can be graphically configured with <code>netbox</code> or directly edited by
-the root administrator.
-</p>
-<h4>Install network card driver</h4>
-<p>
-In case you need a network card driver and dont know the driver name, you can
-use the command <code>lspci</code> to find your card and then <code>modprobe</code>
-to load a module. In Live mode you can use the SliTaz boot option 
-<code>modprobe=modules</code> to automatically load Kernel modules. To get a 
-list of all available network card drivers, display PCI eth cards and load a
-module:
-</p>
-<pre>
- # modprobe -l | grep drivers/net
- # lspci | grep [Ee]th
- # modprobe -v module_name
-</pre>
-<p>
-On an installed system you just need to add the module_name to the variable 
-<code>LOAD_MODULES </code> in <code>/etc/rcS.conf</code> to load your module 
-on each boot.
-</p>
 
 <a name="devices"></a>
 <h3>Devices and disks access</h3>
@@ -119,7 +77,8 @@ add or remove users and groups you must be root. Root can also change all
 user passwords and a single user can only change his/her own password. To add 
 or remove a user named linux:
 </p>
-<pre> # adduser linux
+<pre>
+ # adduser linux
  # deluser linux
 </pre>
 <p>
@@ -127,8 +86,17 @@ To add or remove a group you must use <code>addgroup</code> or
 <code>delgroup</code>. To change the current user password or change the
 password of a specific user, you must use the command <code>passwd</code>:
 </p>
-<pre> $ passwd
+<pre>
+ $ passwd
  # passwd username
+</pre>
+<h4>Audio group</h4>
+<p>
+If you want a new user to be able to listen to music he must be in the 
+<code>audio</code> group. To add an existing user to the audio group:
+</p>
+<pre>
+ # adduser -G audio user_name
 </pre>
 
 <a name="locale"></a>
@@ -150,9 +118,11 @@ you chose on the first boot by typing as root administrator:
 To check all available locales or your current configuration you can use the
 command <code>locale</code> as a single user or root (C for English):
 </p>
-<pre> $ locale -a
+<pre>
+ $ locale -a
  $ locale
 </pre>
+
 <a name="bash"></a>
 <h3>Bash Shell</h3>
 <p>
@@ -161,7 +131,7 @@ provided by Busybox. If you wish to use the Bash (Bourne Again SHell), first
 as <code>su</code> install bash, copy the <code>.profile</code> found in your 
 home directory and rename it <code>.bashrc</code>, then edit the 
 <code>/etc/passwd</code> file with your favorite text editor and change your 
-shell to :/bin/bash
+shell to: /bin/bash
 </p>
 <pre>
  # tazpkg get-install bash
@@ -182,7 +152,8 @@ SliTaz, the timezone configuration file is saved in <code>/etc/TZ</code>, you
 can edit with your favorite text editor or simply <code>echo</code> the changes.
 Here's an example using the timezone Europe/London:
 </p>
-<pre># echo "Europe/London" > /etc/TZ
+<pre>
+ # echo "Europe/London" &gt; /etc/TZ
 </pre>
 <h4>Rdate</h4>
 <p>
@@ -195,8 +166,7 @@ To syncronize the system clock with a network time server, you can as the
 <p>
 To display the time on the remote server, use the <code>rdate -p</code> command.
 </p>
-<pre>
- $ rdate -p tick.grayware.com
+<pre> $ rdate -p tick.grayware.com
 </pre>
 <h4>Hwclock</h4>
 <p>
@@ -237,3 +207,4 @@ Syncronize the hardware clock to the system clock:
 
 </body>
 </html>
+
