@@ -4,11 +4,11 @@
 <head>
     <title>SliTaz Handbook (en) - X Window System</title>
     <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
-    <meta name="description" content="slitaz English handbook" />
+    <meta name="description" content="slitaz English handbook X server window manager jwm openbox e17 slim login" />
     <meta name="expires" content="never" />
     <meta name="modified" content="2008-03-01 22:30:00" />
     <meta name="publisher" content="www.slitaz.org" />
-    <meta name="author" content="Christophe Lincoln"/>
+    <meta name="author" content="Christophe Lincoln, Paul Issot"/>
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="stylesheet" type="text/css" href="book.css" />
 </head>
@@ -32,10 +32,11 @@
 
 <ul>
 	<li><a href="#X11">X Window System</a></li>
-	<li><a href="#slim">Slim.</a></li>
-	<li><a href="#jwm">JWM.</a></li>
-	<li><a href="#enlightenment">Enlightenment (e17).</a></li>
-	<li><a href="#openbox">Openbox.</a></li>
+	<li><a href="#slim">Slim</a> - Simple Login Manager</li>
+	<li><a href="#jwm">JWM</a> - Window Manager</li>
+	<li><a href="#enlightenment">Enlightenment (e17)</a> - Desktop
+	environement.</li>
+	<li><a href="#openbox">Openbox</a> - Window Manager.</li>
 </ul>
 
 <a name="X11"></a>
@@ -69,6 +70,16 @@ On an installed system you can remove the package or delete slim from the
 More details and themes can be found on the 
 <a href="http://slim.berlios.de">website.</a>
 </p>
+<h4>Default user</h4>
+<p>
+Slim offer a way to pre-load a user login name, by defaut hacker is configured
+for convenience. You can change this by editing Slim configuration file
+<code>/etc/slim.conf</code> and modifiy the line <code>default_user</code> or
+leave the line blank to avoid pre-loading user name. Example:
+</p>
+<pre class="script">
+default_user        hacker
+</pre>
 
 <a name="jwm"></a>
 <h3>JWM - Window manager</h3>
@@ -94,7 +105,8 @@ and preferences.
 Enlightenment aka e17 is a lightweight and fast desktop environment that can be
 configured graphically. To install e17:
 </p>
-<pre> # tazpkg get-install enlightenment
+<pre>
+ # tazpkg get-install enlightenment
 </pre>
 <p>
 Logout your current X session, type <code>F1</code> at Slim login and choose
@@ -107,8 +119,9 @@ Logout your current X session, type <code>F1</code> at Slim login and choose
 Openbox is a lightweight window manager than can be configured using the obconf 
 utility. To install openbox:
 </p>
-<pre># tazpkg get-install openbox
-# tazpkg get-install obconf
+<pre>
+ # tazpkg get-install openbox
+ # tazpkg get-install obconf
 </pre>
 <p>
 Logout your current X session, type <code>F1</code> at Slim login and choose
