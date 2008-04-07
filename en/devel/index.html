@@ -61,14 +61,26 @@
 <h1><font color="#3e1220">Developement</font></h1>
 <h2><font color="#df8f06">SliTaz Developers corner</font></h2>
 
+<ul>
+	<li><a href="#repos">Mercurial repositories.</a></li>
+	<li><a href="#pkgs">Tazpkg packages.</a></li>
+	<li><a href="#website">Website Management.</a></li>
+</ul>
+
 <p>
 SliTaz is an open source and community driven distribution. Everyone is welcome 
 to join and contribute, from  users, to hackers and developers there is always
 something to do, ie. Proofreading or writing documentation, sending bugs or 
 patches to the Mailing list, gaining access to the wok and pushing some new 
-packages or simply to help others on the Mailing list or forum. SliTaz has got Mercurial
-repositories hosted on a SliTaz system, developers can ask for a new repo if 
-needed and contributors have write access to correct typos, scripts, etc.
+packages or simply to help others on the Mailing list or forum. SliTaz has got
+Mercurial repositories hosted on a SliTaz system, developers can ask for a new
+repo if needed and contributors have write access to correct typos, scripts, etc.
+</p>
+
+<p>
+SliTaz is a tiny community and listens to it's users. There are several 
+developers who are active on the <a href="http://forum.slitaz.org/">forum</a>
+and the <a href="../mailing-list.html">Mailing List</a>.
 </p>
 
 <a name="repos"></a>
@@ -125,6 +137,72 @@ transaction. Before pushing changes to the server it is safe to pull once:
 Done, your changes, code or corrections are now on the server.
 </p>
 
+<a name="pkgs"></a>
+<h3>Tazpkg Packages</h3>
+<p>
+The packages tazpkg in SliTaz are automatically created via Tazwok and a 
+receipt in the wok, the Cookbook describes the 
+<a href="http://www.slitaz.org/doc/cookbook/wok-tools.html">use of tools (fr)</a> 
+and the format <a href="http://www.slitaz.org/doc/cookbook/receipts.html">receipts (fr)</a>,
+These are required reading before we begin.
+</p>
+<p>
+In terms of choice of package, the idea is to offer a package by task or 
+functionality, ie. the lightest application in the field and not duplicated. 
+Note that the current packages are not immutable, if you find an alternative 
+that is lighter, with more features or more <em>sexy</em> for a few extra KB, 
+you can suggest it on the Mailing List. Particular attention is given to 
+packages for the LiveCD; these should be stripped, removing unnecesary 
+dependancies and compiler options. In general candidate packages for the core 
+LiveCD are discussed on the Mailing List.
+</p>
+<p>
+Before you begin to compile and create packages for SliTaz, be sure that the 
+work doesn't already exist in the wok indigest provided by the primary SliTaz
+mirror. Don't forget that the members of the list are there to help you
+and that the documentation of the 
+<a href="http://www.slitaz.org/doc/cookbook/wok-tools.html">wok and tools (fr)</a> 
+exists to help you get started.
+</p>
+
+<a name="site"></a>
+<h3>Website Management and Books</h3>
+<p>
+The management of the website and books (Handbook &amp; Cookbook) is made via 
+a rsync module, Mercurial, diff and patch utilities and the Mailing List. 
+Rsync is a tool for incremental backup; using an ultra-fast algorithm, It can 
+transfer or syncronize data both locally or over the network. The 
+<code>diff</code> utility is used to send the list of files containing only 
+the changes and <code>patch</code> to apply the changes to the original pages.
+</p>
+<p>
+You can syncronize the site and books graphically using Grsync or via the 
+command line. To download the site for the first time or syncronize the pages 
+in the directory <code>/home/hacker/Public/slitaz/website</code>, 
+use the module <code>rsync://slitaz.org/website</code>:
+</p>
+<pre>
+ $ rsync -r -t -p -v \
+       --progress --delete \
+       rsync://slitaz.org/website /home/hacker/Public/slitaz/website
+</pre>
+<h4>Diff and patch</h4>
+<p>
+The utilities <code>diff</code> and <code>patch</code> are command-line tools 
+for creating and implementing the differences between two files. This technique
+is often used for collaboration and the changes made to the original file can 
+be clearly extracted. To create a <code>diff</code> file readable by humans in
+a simple text editor, you must supply the <code>-u</code> option:
+</p>
+<pre>
+ $ diff -u file.orig file.new &gt; file.diff
+</pre>
+<p>
+To apply a patch:
+</p>
+<pre>
+ $ patch file.orig file.diff
+</pre>
 
 <!-- End of content with round corner -->
 </div>

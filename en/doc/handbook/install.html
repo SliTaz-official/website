@@ -40,34 +40,34 @@
 <a name="intro"></a>
 <h3>Introduction</h3>
 <p>
-This document give some informations and necessary instructions on how to 
-install SliTaz on a hard disk. You will need about 10 minutes, SliTaz core
-LiveCD expand to 80 Mb so we suggest a minimum of 120 Mb of free space like
-this you will be able to install a few more packages. If you can
+This document gives information and necessary instructions on how to 
+install SliTaz on a hard disk. This should take about 10 minutes, SliTaz core
+LiveCD expands to 80 Mb, so we suggest a minimum of 120 Mb of free space. 
+That way you will be able to install a few more packages. If you can
 <a href="livecd.html">use the LiveCD</a>, you should be able to install SliTaz.
 </p>
 
 <a name="installer"></a>
 <h3>SliTaz Installer</h3>
 <p>
-SliTaz provide a simple to use Installer who can be launch from the 
-"System Tools" menu. SliTaz 1.0 Installer messages are only in French and can
-be considered as an errata, but English speakers should manage to use it with
-this complemantary documentation.
+SliTaz provides a simple to use Installer which can be launched from the 
+"System Tools" menu. SliTaz 1.0 Installer messages are only available in French
+and can be considered as an errata, but English speakers should be able to 
+manage to use it with these complimentary instructions.
 </p>
 <h4>Install type</h4>
 <p>
-The first step let you choose the type of installation: new install or system 
-upgrade. In most case you will want a new and clean installation. When accepted
+The first step lets you choose the type of installation: new install or system 
+upgrade. In most cases you will want a new and clean installation. Once accepted
 the installer will mount the master cdrom device and search for the compressed
-filesystem (<code>rootfs.gz</code>). If any filesystem was found installation
+filesystem (<code>rootfs.gz</code>). If any filesystem was found, then installation
 will abort.
 </p>
 <p>
 If you get into trouble because the compressed filesystem is not found, please
-check that SliTaz is in the master CD/DVD device, if the problem persist you
+check that SliTaz is in the master CD/DVD device. If the problem persists you
 can use a downloaded ISO image and mount it on <code>/media/cdrom</code> where
-the HD Installer wanted to find it: 
+the HD Installer expects to find it: 
 </p>
 <pre>
  # mount -o loop slitaz-1.0.iso /media/cdrom
@@ -75,43 +75,42 @@ the HD Installer wanted to find it:
 <h4>Target partition</h4>
 <p>
 Second step is the partition configuration. If you have already a free partition
-you can directly use it, if not you will have to creat one graphicaly with 
+you can directly use it, if not you will have to create one graphically with 
 Gparted or from the command line with fdisk. For example if you want to install
 SliTaz on the first partition of the first disk recognized as <code>hda</code>: 
 </p>
-<pre class="script">
-/dev/hda1
+<pre class="script">/dev/hda1
 </pre>
 <h4>Formating</h4>
 <p>
-The next step let you format the target partition into <code>ext3</code>. Ext3
+The next step lets you format the target partition into <code>ext3</code>. Ext3
 is a robust, stable and journalised filesystem. If the partition is already 
-formated you dont need to reformat if not just accept. Warning formating a
+formated you dont need to reformat, if not just accept. <em>Warning</em> formating a
 partition will destroy all current data.
 </p>
 <h4>Hostname</h4>
 <p>
-Hostname configuration let you set the machine name. The hostname is used 
-internaly and to indentify the host on the network. This value can also be
+Hostname configuration lets you set the machine name. The hostname is used 
+internally to indentify the host on the network. This value can be
 changed when the system is installed.
 </p>
 <h4>Bootloader - GRUB</h4>
 <p>
-When the installation process is finish you have the option to install the GRUB
-bootloader who is capable of booting almost all kind of operating system. If
+When the installation process is finished you have the option to install the GRUB
+bootloader which is capable of booting almost any kind of operating system. If
 you want to use an existing GRUB installation, skip this step and add the
 correct lines to your GRUB configuration file (<code>menu.lst</code>). Note 
-that SliTaz Installer created a configuration file on the target who can be
-used as example (/mnt/target/boot/grub/menu.lst).
+that the SliTaz Installer creates a configuration file on the target which can be
+used as an example (/mnt/target/boot/grub/menu.lst).
 </p>
 <h4>End of installation</h4>
 <p>
-When the Installer did all his job you have the option to exit or directly 
-reboot on your new SliTaz GNU/Linux operating system. First boot is like the
-LiveCD, you will be prompt for locale, keyboard, sound card and screen 
-selection, future reboot will not prompt you anymore for configuration but
-all the values can be changed manually or with the project tools such as
-<code>tazlocale</code> or <code>tazx</code>.
+When the Installer has finally done it's job you have the option to exit or
+directly reboot your new SliTaz GNU/Linux operating system. First boot is like
+the LiveCD, you will be prompted for locale, keyboard, sound card and screen 
+selection. Future reboots will not prompt you anymore for configuration details,
+but all the values can be changed either manually or with the project tools 
+such as <code>tazlocale</code> or <code>tazx</code>.
 </p>
 
 <a name="byhand"></a>
@@ -119,7 +118,7 @@ all the values can be changed manually or with the project tools such as
 <p>
 SliTaz can also be installed by hand from the command line. To install SliTaz
 by hand you can use a cdrom or an ISO image. The given commands can be
-copy/past from Firefox to Xterm.
+copied/pasted from Firefox to Xterm.
 </p>
 <p>
 The first thing you have to do is prepare a target partition and mount it. 
@@ -137,15 +136,15 @@ Now you have to mount the cdrom:
  # mount /dev/cdrom /media/cdrom
 </pre>
 <p>
-Or an ISO image
+Or an ISO image:
 </p>
 <pre>
  # mount -o loop slitaz-1.0.iso /media/cdrom
 </pre>
 <h4>Install and extract</h4>
 <p>
-The goal now is to copy neede files from the media into the target partition
-and then extract the compressed filesystem (<code>rootfs.gz</code>). Creat a
+The goal now is to copy needed files from the media into the target partition
+and then extract the compressed filesystem (<code>rootfs.gz</code>). Create a
 boot directory and install the Linux Kernel:
 </p>
 <pre>
@@ -160,7 +159,7 @@ Copy the rootfs:
 </pre>
 <p>
 Now the necessary files are present so you can change directory (<code>cd</code>)
-to the target and uncompress the the filesystem with <code>lzma</code> and
+to the target and uncompress the filesystem with <code>lzma</code> and
 <code>cpio</code>:
 </p>
 <pre>
@@ -169,7 +168,7 @@ to the target and uncompress the the filesystem with <code>lzma</code> and
  # rm rootfs.gz init
 </pre>
 <p>
-That's all, SliTaz is installed. Before rebooting on you new SliTaz GNU/Linux
+That's all, SliTaz is installed. Before rebooting on your new SliTaz GNU/Linux
 installation please check that you have a bootloader (GRUB or Lilo) and add 
 the necessary lines to boot SliTaz.
 </p>
@@ -177,20 +176,20 @@ the necessary lines to boot SliTaz.
 <a name="grub"></a>
 <h3>GRUB bootloader</h3>
 <p>
-GRUB is an universal bootloader capable of booting almost all operating such
-as Linux, BSD or Windows. GRUB use single configuration file named 
-<code>menu.lst</code>, if you used <a href="#installer">SliTaz Installer</a>
-and installed GRUB you dont need to install manually GRUB, just reboot.
+GRUB is an universal bootloader capable of booting almost any operating system
+such as Linux, BSD or Windows. GRUB uses a single configuration file named 
+<code>menu.lst</code>, if you used the <a href="#installer">SliTaz Installer</a>
+and installed GRUB you dont need to manually install GRUB, just reboot.
 </p>
 <p>
-Installation of GRUB onto the mbr, using root directory /mnt/target (the taget
-mounted partition) and the disk named <code>hda</code>:
+Installation of GRUB onto the mbr, using root directory <code>/mnt/target</code>
+(the target mounted partition) and the disk named <code>hda</code>:
 </p>
 <pre>
  # grub-install --root-directory=/mnt/target /dev/hda
 </pre>
 <p>
-You can now creat GRUB configuration file and add the lines who will boot
+You can now create a GRUB configuration file and add the lines which will boot
 SliTaz. Menu.lst can be edited with your favorite text editor such as Nano or
 Leafpad:
 </p>
@@ -199,11 +198,9 @@ Leafpad:
 </pre>
 <h4>/boot/grub/menu.lst - Example</h4>
 <pre class="script">
-
 title  SliTaz GNU/Linux 1.0 (Kernel 2.6.24.2-slitaz)
        root(hd0,0)
        kernel /boot/vmlinuz-2.6.24.2-slitaz root=/dev/hda1 vga=normal
-
 </pre>
 <p>
 Verify again that everything is in place before rebooting:
