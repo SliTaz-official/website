@@ -1,0 +1,236 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>SliTaz Cookbook (en) - Receipts</title>
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <meta name="description" content="slitaz English cookbook" />
+    <meta name="expires" content="never" />
+    <meta name="modified" content="2008-02-26 18:30:00" />
+    <meta name="publisher" content="www.slitaz.org" />
+    <meta name="author" content="Christophe Lincoln"/>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="book.css" />
+</head>
+<body bgcolor="#ffffff">
+
+<!-- Header and quick navigation -->
+<div id="header">
+<div align="right" id="quicknav">
+    <a name="top"></a>
+    <a href="wok-tools.html">Wok &amp; Tools.</a> |
+    <a href="index.html">Table of contents</a>
+</div>
+<h1><font color="#3E1220">SliTaz Cookbook (en)</font></h1>
+</div>
+
+<!-- Content. -->
+<div id="content">
+<div class="content-right"></div>
+
+
+<h2><font color="#df8f06">Receipts</font></h2>
+
+<p>
+This document describes the opportunities offered by the receipt used by 
+Tazwok to compile and generate packages for SliTaz and tazpkg through 
+<a href="wok-tools.html">The wok and tools</a>. The receipt for a package is 
+also used by tazpkg to install/uninstall and provide information about a 
+.tazpkg package. Each receipt begins with a comment in English:
+</p>
+<pre class="script">
+# SliTaz package receipt.
+</pre>
+
+<h3>Variables</h3>
+<p>
+The first 5 variables should always be present and defined. They respectively 
+configure the package ($PACKAGE), it's version, it's category, a short 
+description and the name of the maintainer. Example for the package, file 
+manager Clex:
+</p>
+<pre class="script">
+PACKAGE="clex"
+VERSION="3.16"
+CATEGORY="base-apps"
+SHORT_DESC="Text mode file manager."
+MAINTAINER="pankso@slitaz.org"
+</pre>
+
+<h3>Variables (optional)</h3>
+<p>
+Tazwok also knows how to use various optional variables, it can for example 
+use the name of another source package. There are also variables that are 
+used by tazpkg to manage dependencies or provide information about the package.
+</p>
+<p>
+<code>$DEPENDS</code>: Set dependencies, there may be several dependencies 
+seperated by a space or on several lines. This variable is used mainly by 
+tazpkg when installing the package and tazwok to build large packages such 
+as Xorg. Example for Clex which depends on ncurses:
+</p>
+<pre class="script">
+DEPENDS="ncurses"
+</pre>
+<p>
+<code>$BUILD_DEPENDS</code>: Set compilation dependencies, again seperated 
+by a space or several lines. This variable is used by tazwok during the 
+cooking of a package. Example:
+</p>
+<pre class="script">
+BUILD_DEPENDS="ncurses-dev"
+</pre>
+<p>
+<code>$TARBALL</code> : The archive is a source with the extension (tar.gz, 
+tgz or tar.bz2). In general, the variables $PACKAGE and $VERSION are used to 
+just change the extension, it helps to upgrade the package without changing 
+the $VERSION variable. Generic example (see also $SOURCE example):
+</p>
+<pre class="script">
+TARBALL="$PACKAGE-$VERSION.tar.gz"
+</pre>
+<p>
+<code>$WEB_SITE</code> : The official website of the package. It may be that 
+some libraries have no website, in this case, there is no need to specify a 
+URL. Note tazwok and tazpkg both expect to find a URL with the complete HTTP:
+</p>
+<pre class="script">
+WEB_SITE="http://www.clex.sk/"
+</pre>
+<p>
+<code>$WGET_URL</code> : URL to download the source file. In general the 
+variable $TARBALL should be used to facilitate the updating of the package
+without changing the $VERSION. Using a configuration file, tazwok also 
+configures by default 3 mirrors: $GNU_MIRROR for the GNU mirror, $SF_MIRROR 
+for SourceForge and XORG_MIRROR for mirroring the graphical server Xorg. 
+Example for Clex:
+</p>
+<pre class="script">
+WGET_URL="http://www.clex.sk/download/$TARBALL"
+</pre>
+<p>
+<code>$WANTED</code> : SliTaz packages normally depend on the compilation of 
+a source package. Sometimes the receipt of a package requires no compilation 
+of rules, then $WANTED is used to copy files from the source of another 
+package by using the variable $ src.
+</p>
+<p>
+<code>$SOURCE</code> : It may be that the tazpkg package name differs from 
+the name of the source package. Example for Xorg packages, the name of tazpkg 
+library X11 is 'xorg-libX11' and the name of the package source is libX11. 
+$SOURCE allows you to use the variables $src and $_pkg during the cooking of 
+a package. It should be noted that in the case of libX11, the name of the 
+source archive becomes $SOURCE-$VERSION.tar.gz.
+</p>
+
+<h3>Variables used in functions</h3>
+<p>
+Tazwok configures several variables that facilitate the compilation and 
+construction of tazpkg packages. These variables are controlled automatically
+by tazwok using the information contained in the receipt; they can be used
+by the functions compile_rules and genpkg_rules described in the chapter 
+Functions.
+</p>
+<p>
+<code>$src</code> : Defines the path to the directory of unarchived sources.
+</p>
+<p>
+<code>$_pkg</code> : Defines the path to the binary compiles installed via 
+'make DESTDIR=$PWD/_pkg install'. This variable is used to copy the generated 
+files and create tazpkg packages.
+</p>
+<p>
+<code>$fs</code> : Defines the path to the pseudo filesystem (fs) in each 
+package. The 'fs' of the package corresponds to the root of the system, a bit
+like Clex will for example in $fs/usr/bin/clex, note the need to create the 
+necessary directories via function genpkg_rules() before copying the files.
+</p>
+<p>
+<code>$CONFIGURE_ARGS</code> : This variable is defined in the Tazwok 
+configuration file (tazwok.conf), it allows you to specify generic optimization
+arguments during construction of a package. Default is the i486 architecture.
+</p>
+
+<h3>Functions</h3>
+<p>
+A receipt may contain 4 functions. Tazwok knows how to deal with functions 
+containing compilation rules (compile_rules) and rules used to generate a 
+package (genpkg_rules). These functions may contain all sorts of GNU/Linux 
+standard commands, such as sed, awk, patch and variables automatically 
+configured.
+</p>
+<h4>compile_rules()</h4>
+<p>
+To compile a package you can use the variable $src to move (cd) in the 
+directory of sources and use $CONFIGURE_ARGS to include arguments from the 
+tazwok configuration file. To build the package you usually launch 'make' 
+without any arguments and to install the package into the directory _pkg, 
+it is necessary to use the command 'make DESTDIR=$PWD/_pkg install'. Generic
+example:
+</p>
+<pre class="script">
+# Rules to configure and make the package.
+compile_rules()
+{
+	cd $src
+	./configure --prefix=/usr --infodir=/usr/share/info \
+	--mandir=/usr/share/man $CONFIGURE_ARGS
+	make
+	make DESTDIR=$PWD/_pkg install
+}
+</pre>
+<h4>genpkg_rules()</h4>
+<p>
+To generate a tazkg package we must specify commands in the function 
+<code>genpkg_rules</code>. In this example we create a psuedo directory 
+<code>usr/</code> in the filesystem of the package, copy the whole 
+binary(s) and finally use strip to clean the files:
+</p>
+<pre class="script">
+# Rules to gen a SliTaz package suitable for Tazpkg.
+genpkg_rules()
+{
+	mkdir -p $fs/usr
+	cp -a $_pkg/usr/bin $fs/usr
+	strip -s $fs/usr/bin/*
+}
+</pre>
+<h4>pre_install() and post_install()</h4>
+<p>
+These 2 functions are initiated by tazpkg when installing the package. They 
+must be defined before generating the .tazpkg package with tazwok. If no rules 
+are given for these functions, they have no raison d'etre and can be removed.
+Example using echo to display some text (no function should be empty).
+</p>
+<pre class="script">
+# Pre and post install commands for Tazpkg.
+pre_install()
+{
+	echo "Processing pre-install commands..."
+}
+post_install()
+{
+	echo "Processing post-install commands..."
+}
+</pre>
+
+<!-- End of content -->
+</div>
+
+<!-- Footer. -->
+<div id="footer">
+	<div class="footer-right"></div>
+	<a href="#top">Top of the page</a> | 
+	<a href="index.html">Table of contents</a>
+</div>
+
+<div id="copy">
+    Copyright &copy; 2008 <a href="http://www.slitaz.org/en/">SliTaz</a> -
+    <a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>;<br />
+    Documentation is under
+    <a href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License</a>
+    and code is <a href="http://validator.w3.org/">valid xHTML 1.0</a>.
+</div>
+
+</body>
+</html>
