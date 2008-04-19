@@ -36,6 +36,8 @@
 	<li><a href="#locale">Language and keyboard.</a></li>
     <li><a href="#bash">Install the Bash shell.</a></li> 
     <li><a href="#time">Set the system time.</a></li>
+    <li><a href="#cron">Execute scheduled commands.</a></li>
+    <li><a href="#local.sh">Add commands at boot time.</a></li>
 </ul>
 
 <a name="devices"></a>
@@ -185,6 +187,66 @@ Syncronize the hardware clock to the system clock:
 </p>
 <pre>
  # hwclock -s --utc
+</pre>
+
+<a name="cron"></a>
+<h3>Execute scheduled commands</h3>
+<p>
+The daemon 'crond' allows you to run commands automatically at a scheduled specific date or time. This is very
+useful for routine tasks such as system administration. The directory cron uses is  
+<code>/var/spool/cron/crontabs</code>.
+</p>
+<p>
+Each user of the system can have his/her own tasks, they are defined in the file: <code>/var/spool/cron/crontabs/user</code>.
+The crontab utility allows you amongst other things, to list the tasks specific to the user. The syntax of the
+files is as follows:
+</p>
+<pre class="script">mm hh dd MMM DDD command &gt; log
+</pre>
+<p>
+We will create a file with root priviledges and test the daemon 'crond' with a task performed every minute -
+writing the date to a file /tmp/crond.test. It should be noted that the utility has an option
+<code>crontab</code> for editing cron file using 'vi', this is not provided by SliTaz. In it's place you can use
+GNU nano (&lt;Ctrl+X&gt; to save &amp; exit):
+</p>
+<pre> # nano /var/spool/cron/crontabs/root
+</pre>
+<pre class="script">* * * * * date &gt;&gt; /tmp/crond.test
+</pre>
+<p>
+Launch <code>crond</code> with the option <code>-b</code> (background),
+configured via <code>/etc/daemons.conf</code> and using the startup script:
+</p>
+<pre> # /etc/init.d/crond start
+</pre>
+<p>
+You can wait a few minutes and view the contents of the file: /tmp/crond.test... OK:
+</p>
+<pre> # cat /tmp/crond.test
+</pre>
+<p>
+To stop or restart the daemon crond:
+</p>
+<pre> # /etc/init.d/crond stop
+ Or :
+ # /etc/init.d/crond restart
+</pre>
+<h4>Invoke the daemon crond on every boot</h4>
+<p>
+To launch the daemon 'crond' each time you boot the system, just add it to the variable <code>START_DAEMONS</code>
+in the configuration file <code>/etc/rcS.conf</code>, either before or after the web server or SSH server.
+</p>
+
+<a name="local.sh"></a>
+<h3>Add commands to be executed at boot</h3>
+<p>
+During the boot process, various scripts are executed to configure services, such as the start of the 
+web server, networking etc. On SliTaz there is a script <code>/etc/init.d/local.sh</code> which allows
+you to add commands to be launched at system startup. You can also create new scripts in /etc/init.d,
+their links in /etc/rc.scripts for shell scripts and use /etc/rc.d for links to the startup script daemon in
+/etc/rcS.conf:
+</p>
+<pre> # nano /etc/init.d/local.sh
 </pre>
 
 <!-- End of content -->
