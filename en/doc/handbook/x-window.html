@@ -29,13 +29,14 @@
 <h2><font color="#df8f06">X Window System</font></h2>
 
 <ul>
-	<li><a href="#X11">X Window System</a></li>
-	<li><a href="#slim">Slim</a> - Simple Login Manager</li>
-	<li><a href="#jwm">JWM</a> - Window Manager</li>
-	<li><a href="#enlightenment">Enlightenment (e17)</a> - Desktop
+	<li><a href="#X11">X Window System.</a></li>
+	<li><a href="#slim">Slim</a> - Simple Login Manager.</li>
+	<li><a href="#xorg">Xorg</a> - X server.</li>
+	<li><a href="#jwm">JWM</a> - Window Manager.</li>
+	<li><a href="#enlightenment">Enlightenment (e17).</a> - Desktop
 	environment.</li>
 	<li><a href="#openbox">Openbox</a> - Window Manager.</li>
-	<li><a href="#fonts">Fonts</a> - System Fonts</li>
+	<li><a href="#fonts">Fonts</a> - System Fonts.</li>
 </ul>
 
 <a name="X11"></a>
@@ -77,6 +78,101 @@ for convenience. You can change this by editing the Slim configuration file
 leave the line blank to avoid pre-loading a user name. Example:
 </p>
 <pre class="script">default_user        hacker
+</pre>
+
+<a name="xorg"></a>
+<h3>Xorg</h3>
+<p>
+By default SliTaz provides the graphical mini-server Xvesa. Xorg server is available 
+in the packages on the mirror. Xorg is a very comprehensive server, but uses a lot more 
+resources than Xvesa. If your resolution is supported by the mini-server and you're happy
+with the refresh rate, then there's no reason to use Xorg.
+</p>
+<p>
+There is no GUI configuration, it means having to use the command line in console mode. The installation
+and configuration of the server is relatively simple and you can always go back and reuse Xvesa at any time.
+Xorg is distributed in modular form, which means that you'll need to install the server, a few configuration
+files and the right driver for your graphics card. However the <code>xorg-server</code> package has all 
+the correct dependancies to work directly with the <code>vesa</code> driver. Minimal install:
+</p>
+<pre> # tazpkg get-install xorg-server
+</pre>
+<p>
+Once installed, you can go directly to the configuration or you can install the correct driver for your card
+(if you know it). Example using the Nvidia driver and listing all available drivers:
+</p>
+<pre> # tazpkg get-install xorg-xf86-video-nv
+ List:
+ # tazpkg search xorg-xf86-video
+</pre>
+<h4>Automatic configuration of the server</h4>
+
+<p>To configure the Xorg server you have two options: <code>Xorg -configure</code> 
+or the script <code>xorgconfig</code>. It is recommended that you start by using Xorg with 
+the <code>-configure</code> option. The automatic configuration of Xorg must be done in console
+mode without an X-server running; this is achieved by closing all applications and windows and hitting
+the <code>alt-ctrl-del</code> buttons. You should now be in console mode. Now you need to run Xorg with the
+<code>-configure</code> option and copy the newly generated file to <code>/etc/X11</code>: 
+</p>
+<pre> # Xorg -configure
+ # cp /root/xorg.conf.new /etc/X11/xorg.conf
+</pre>
+<p>
+Finally you then change the configuration of Slim to use Xorg instead of Xvesa and restart the window manager.
+</p>
+<h4>Using Xorg with Slim</h4>
+<p>
+In the Slim configuration file (<code>/etc/slim.conf</code>), we need to comment out
+(<code>#</code>) the lines pertaining to Xvesa and change Xorg to the <code>default_xserver</code>:
+</p>
+<pre class="script">default_xserver     /usr/bin/Xorg
+#default_xserver     /usr/bin/Xvesa
+#xserver_arguments   -ac -shadow dpms +extension Composite -screen 1024x768x24
+</pre>
+<p>
+Now we can start Slim to return us to an X server session. 
+Slim works likes a daemon, it can be stopped or started from the console:
+</p>
+<pre> # /etc/init.d/slim start
+</pre>
+<h4>xorg.conf - Configuration file</h4>
+<p>
+Xorg uses the configuration file <code>/etc/X11/xorg.conf</code>, this file can be
+automatically generated and edited with your favorite text editor. The file is divided into
+several sections, including the specification of paths, modules to be loaded, default screen, 
+mouse, keyboard etc. This document provides only a few examples, it is advisable to run
+<code>xorgconfig</code> once to generate a complete file to use as an example.
+
+</p>
+<p>
+Keyboard (en):
+</p>
+<pre class="script">Section "InputDevice"
+	Identifier  "Keyboard0"
+	Driver      "kbd"
+	Option      "XkbRules"	"xorg"
+	Option      "XkbModel"	"pc105"
+	Option      "XkbLayout"	"en"
+	Option      "XkbVariant"	"en"
+EndSection
+</pre>
+<p>
+Mice with auto detection protocol:
+</p>
+<pre class="script">Section "InputDevice"
+	Identifier  "Mouse0"
+	Driver      "mouse"
+	Option	    "Protocol" "auto"
+	Option	    "Device" "/dev/input/mice"
+	Option	    "ZAxisMapping" "4 5 6 7"
+EndSection
+</pre>
+<p>
+Composite extensions:
+</p>
+<pre class="script">Section "Extensions"
+	Option      "Composite" "1"
+EndSection
 </pre>
 
 <a name="jwm"></a>
