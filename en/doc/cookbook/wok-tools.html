@@ -31,7 +31,7 @@
 <h2><font color="#DF8F06">Wok &amp; Tools</font></h2>
 
 <ul>
-	<li><a href="#tazwok">Tazwok and the wok.</a></li>
+	<li><a href="#tazwok">Overview.</a></li>
 	<li><a href="#wok">Wok tools.</a></li>
 	<li><a href="#cook">Compile and generate packages.</a></li>
 	<li><a href="#opts">Options during compilation of package.</a></li>
@@ -43,7 +43,7 @@
 </ul>
 
 <a name="tazwok"></a>
-<h3>Tazwok and the wok</h3>
+<h3>Overview - Tazwok and the wok</h3>
 <p>
 The idea is to use a directory (wok) containing all the available packages, each package contains 
 at least one receipt to download, unpack, compile and generate the binary package. To operate,
@@ -57,7 +57,7 @@ repository of generated packages ($PACKAGES_REPOSITORY), these values can be con
 <p>
 To begin, tazwok must already be installed
 on the system and the main development tools (binutils, compiler, libraries-dev, make) must be downloaded.
-On Slitaz you have to install the meta-package <code>slitaz-toolchain</code>:
+On Slitaz you need to install the meta-package <code>slitaz-toolchain</code>:
 </p>
 <pre> # tazpkg recharge
  # tazpkg get-install slitaz-toolchain
@@ -92,7 +92,7 @@ dependancies. M4 is an ideal candidate for your first <code>cook</code>:
 <p>
 Once the work is finished, the package is located in the directory specified by the configuration file
 (default <code>/home/slitaz/packages</code>). If all went well, you can install the package on the host system
-or use it to generate a LiveCD distribution via tazlito. To create a new package you can use  <code>new-tree</code> 
+or use it to generate a LiveCD distribution via tazlito. To create a new package you can use <code>new-tree</code> 
 with the option <code>--interactive</code> and read the documentation on the options provided by the
 <a href="receipts.html">receipt</a>.
 </p>
@@ -108,7 +108,7 @@ Cook-list example using mypkgs.cooklist:
 <a name="opts"></a>
 <h3>Options during compilation of package</h3>
 <p>
-You are free to use any options you want, it is necessary to respect the FSH, the docs in /usr/share/doc for example
+You are free to use any options you want, it is necessary to respect the FSH, the docs in <code>/usr/share/doc</code>
 and follow the Freedesktop standards (.desktop). Then it's just a question of choice, for example you can disable 
 support for XML, have smaller binaries for PHP and get rid of libxml2, but in the case of PHP, it's not worth the
 cost in terms of loss of functionality. If you have any doubts, look at the receipts and compiler options in
@@ -127,7 +127,7 @@ If you want to compile a package with different arguments, you can modify the ta
 <h3>Files included or excluded packages</h3>
 <p>
 Generally the base packages contain no man, info, doc or static libraries, we have to create them via a package-doc
-or a package-dev. Note that SliTaz is not proposing to use the man command or info, so there's no manual or GNU
+or a package-dev. Note that SliTaz is not intending to use the man or info command, so there's no manual or GNU
 info file. The creation of packages containing docs is really optional, especially if the material is in English
 (I say). By contrast a piece of text on the package in the Handbook is more appreciated.
 </p>
@@ -142,7 +142,7 @@ for example configurations and other kinds of useful infomation.
 <a name="categories"></a>
 <h3>Categories of packages</h3>
 <p>
-The categories of packages exist only for informational purposes and are not fixed. the idea is to classify
+The categories of packages exist only for informational purposes and are not fixed, the idea is to classify
 packages so that a web page can be generated each night recovering data in the package receipt. For the short term, place
 developement packages in 'devel', Xorg in 'x-window' and the variety of new packages in 'extra'
 </p>
@@ -150,7 +150,7 @@ developement packages in 'devel', Xorg in 'x-window' and the variety of new pack
 <a name="woktree"></a>
 <h3>Structure of a package in the wok</h3>
 <p>
-The structure of the packages in the wok should be respected so that tazwok can find the correct files and directories.
+The structure of the packages in the wok should always be respected so that tazwok can find the correct files and directories.
 Possible contents of a package (note the directory taz/ is created at time of cooking):
 </p>
 <ul>
