@@ -70,11 +70,21 @@ packages, system settings etc by backing up the entire current filesystem with:
 This effectively compresses and backs up everything to 'rootfs.gz' to be 
 loaded the next time you boot.
 </p>
+<p>
+If anything should go wrong when writing your filesystem, you can simply rollback 
+to your previous filesystem by typing 'previous' at the 'boot:' prompt. Older backups are 
+named 'rootfs.gz.unixtimestamp' and can be safely deleted from the /home folder to save disk space.
+</p>
 <h4>Tazusb Manual</h4>
 <p>
 The official Tazusb manual can be found in SliTaz 
 <a href="http://www.slitaz.org/en/doc/manuals/tazusb.en.html">Web site documentation</a>, 
 it contains a lot more useful information. The manual is also available through the documentation menu on the LiveCD.
+</p>
+<p>
+The maintainer of Tazusb has also written a nice
+<a href="http://www.custompc.co.uk/features/602451/make-any-pc-your-own-with-linux-on-a-usb-key.html">article</a> 
+about the utility.
 </p>
 
 <!-- End of content -->
