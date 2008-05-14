@@ -41,7 +41,7 @@
 Control and administer remotely with the Dropbear SSH secure server. Dropbear is a small SSH client/server
 supporting SSH 2, it's compatible with OpenSSH and uses ~/.ssh/authorized_keys for the management of public keys.
 Dropbear also provides it's own version of <code>scp</code>, allowing you to copy files
-between remote machines in a secure manner.
+between machines in a secure manner.
 </p>
 <p>
 Project website:
@@ -53,10 +53,10 @@ Project website:
 <p>
 The configuration files for the SSH client are located in the ~/.ssh directory of each user, this contains
 the authorized_keys and known_hosts files. The directory ~/.ssh and known_hosts file are automatically created
-the first time you run the Dropbear server.
+the first time you run the Dropbear client (dbclient).
 </p>
 <p>
-To connect to a remote host using the user and machine name:
+To connect to a remote host employing the user and machine name:
 </p>
 <pre> $ dbclient user@machine.org
 </pre>
@@ -69,7 +69,7 @@ You can also connect using the IP address of the machine:
 <a name="scp"></a>
 <h3>Transfer of remote files with scp</h3>
 <p>
-To copy a file from your computer to another, scp can be utilized in the following way. To copy a file
+To copy a file from one computer to another, scp can be utilized in the following ways. To copy a file
 named page.html to a remote directory of the user (don't forget the <code>:</code> after the machine name or 
 IP address):
 </p>
