@@ -232,14 +232,14 @@ At the bottom of the configuration file:  /etc/firewall.conf. you will find a
 function named: <code>iptables_rules()</code>, this contains all of the iptables
 commands to launch when the firewall starts. To delete a rule, It is advisable
 to comment out the corresponding line with a <code>#</code>. It is not 
-advisable to leave the function completely empty, if you want to disable 
+advisable to leave the function completely empty, if you want to disable the
 iptables rules just add "no" to the variable IPTABLES_RULES= in the 
 configuration file.
 </p>
 <p>
 Here's an example of using iptables rules, it refuses all connections incoming
 and outgoing, only allowing connections on the localhost, the local network, 
-ports 80 and 22 used respectively by the web server HTTP and SSH secure server
+ports 80 and 22 respectively used by the web server HTTP and SSH secure server
 and port 21 for FTP; so it's very restrictive.
 </p>
 <pre class="script">

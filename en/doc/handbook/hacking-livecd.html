@@ -272,7 +272,7 @@ everything together. This command must be launched from the root system (<code>r
 and creates a compressed file <code>rootfs.gz</code> in the preceding directory:
 </p>
 <pre> # find . -print | cpio -o -H newc | lzma e -si -so &gt; ../rootfs.gz
- Ou avec gzip :
+ Or with gzip:
  # find . -print | cpio -o -H newc | gzip -9 &gt; ../rootfs.gz
 </pre>
 <p>
