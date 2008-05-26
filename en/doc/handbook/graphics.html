@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><title>SliTaz Handbook (en) - Template</title>
+
+
+    
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <meta name="description" content="slitaz English handbook" />
+    <meta name="expires" content="never" />
+    <meta name="modified" content="2008-02-26 18:30:00" />
+    <meta name="publisher" content="www.slitaz.org" />
+    <meta name="author" content="Christophe Lincoln" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="book.css" /></head><body bgcolor="#ffffff">
+
+<!-- Header and quick navigation -->
+<div id="header">
+<div id="quicknav" align="right">
+    <a name="top"></a>
+    <a href="index.html">Table of contents</a>
+</div>
+<h1><font color="#3e1220">SliTaz Handbook (en)</font></h1>
+</div>
+
+<!-- Content. -->
+<div id="content">
+<div class="content-right"></div>
+
+<h2><font color="#df8f06">Graphics and Image management</font></h2>
+
+<ul>
+	<li><a href="#gcolor2">Gcolor2</a> - Color selector.</li>
+	<li><a href="#gimp">Gimp</a> - Manipulate and create images.</li>
+	<li><a href="#gqview">GQview</a> - Images manager.</li>
+	<li><a href="#jpeg">jpeg</a> - JPEG command line tools.</li>
+	<li><a href="#mtPaint">mtPaint</a> -  Image processing.</li>
+</ul>
+
+<a name="gcolor2"></a>
+<h3>Gcolor2 - Select and manage colors</h3>
+<p>
+Gcolor2 is a tool to select and retain palette colors. It can be useful for the creation of SliTaz themes 
+for example. It can be found in the Graphics category or run from the command line:
+</p>
+<pre> $ gcolor2 &amp;
+</pre>
+
+<a name="gimp"></a>
+<h3>Gimp - Manipulate and create images</h3>
+<p>
+The GIMP (GNU Image Manipulation) is software that can manipulate images to a high quality level.
+It allows you to do what you would expect from an application that processes images, ie layers, filters, 
+support scripts adding functionality etc. GIMP supports a large number of image formats such as:
+PNG, JPEG, XPM, PPM, TIFF, PostScript, PSD, it also offers it's own XCF format. To install GIMP:
+</p>
+<pre> # tazpkg get-install gimp
+</pre>
+<p>
+GIMP is scalable and can be configured with the main interface - configuration files, brushes and personal
+scripts are located in the <code>~/.gimp-2.2</code> directory.
+</p>
+
+<a name="gqview"></a>
+<h3>GQview - Images manager</h3>
+<p>
+GQview is very light and quick and allows you to navigate rapidly between images by selecting files
+in your directory tree with a single mouse click. It supports slideshows, image rotation, adding
+keywords and tags, drag and drop and can display EXIF data. It also allows you to edit images
+in the software of your choice (Mtpaint, GIMP for example). To install GQview:
+</p>
+<pre> # tazpkg get-install gqview
+</pre>
+
+<a name="jpeg"></a>
+<h3>jpeg - JPEG command line tools</h3>
+<p>
+To allow applications that use JPEG to function, linked libraries must be provided by the package
+<code>jpeg-6b</code>, this package also contains some tiny utilities that can be used on the command
+line such as <code>cjpeg</code> and <code>djpeg</code>. To modify JPEG images on the command line you 
+can also use <code>jpegtran</code>, installed by default on SliTaz, <code>jpegtran</code> allows you to 
+rotate images via the <code>-rotate</code> option. To find out all of the options available for these 
+tools, just specify the <code>--help</code> option. Example:
+</p>
+<pre> $ cjpeg --help
+</pre>
+
+<a name="mtPaint"></a>
+<h3>mtPaint -  Image processing</h3>
+<p>
+mtPaint is an application for the creation and retouching of PNG, TIFF, 
+XPM and BMP images. It offers many simple, lightweight, fast functions like
+capture screen (screenshot) which you can access via the menu --&gt; Graphics --&gt; 
+Grab screenshot, or by simply typing the following:
+</p>
+<pre> $ mtpaint -s
+</pre>
+
+<!-- End of content -->
+</div>
+
+<!-- Footer. -->
+<div id="footer">
+	<div class="footer-right"></div>
+	<a href="#top">Top of the page</a> | 
+	<a href="http://www.slitaz.org/en/doc/handbook/index.html">Table of contents</a>
+</div>
+
+<div id="copy">
+    Copyright © 2008 <a href="http://www.slitaz.org/en/">SliTaz</a> -
+    <a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>;<br />
+    Documentation is under
+    <a href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License</a>
+    and code is <a href="http://validator.w3.org/">valid xHTML 1.0</a>.
+</div>
+
+</body></html>
+
