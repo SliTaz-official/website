@@ -18,7 +18,7 @@
 <div id="header">
 <div align="right" id="quicknav">
     <a name="top"></a>
-    <a href="http://www.slitaz.org/en/">www.slitaz.org/en</a> |
+    <a href="system-admin.html">System administration</a> |
     <a href="index.html">Table of contents</a>
 </div>
 <h1><font color="#3E1220">SliTaz Handbook (en)</font></h1>
@@ -34,10 +34,11 @@
 	<li><a href="#eth">Ethernet connection</a> - DHCP or static IP.</li>
 	<li><a href="#driver">Install network card driver</a> - Find and load Kernel
 	modules.</li>
+	<li><a href="#netbox">Netbox</a> - Configure network.</li>
 	<li><a href="#pppoe">PPPoE kernel-mode</a> - Dial-up modem connection in 
 	Kernel mode.</li>
 	<li><a href="#rp-pppoe">PPPoE with rp-pppoe</a> - Dial-up modem.</li>
-        <li><a href="#firewall">Firewall</a> - Manage the Firewall (Iptables).</li>
+     <li><a href="#firewall">Firewall</a> - Manage the Firewall (Iptables).</li>
 </ul>
 
 <a name="eth"></a>
@@ -88,6 +89,15 @@ On an installed system you just need to add the module_name to the variable
 <code>LOAD_MODULES </code> in <code>/etc/rcS.conf</code> to load your module 
 on each boot.
 </p>
+
+<a name="netbox"></a>
+<h3>Netbox - Configure network</h3>
+<p>
+Netbox is a small GTK+ application to configure a network interface using <em>DCHP</em> or a fixed (<em>static</em>) IP address. The tabs can be used to  start/stop the connections and automatically change the values in the system files. Netbox also provides a <em>system wide</em> tab from which you can directly edit network configuration files. You can start netbox from the system tools menu or via a terminal:
+</p>
+<pre>
+ $ netbox 
+</pre>
 
 <a name="pppoe"></a>
 <h3><font color="#6c0023">PPPoE connection kernel-mode</font></h3>

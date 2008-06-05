@@ -39,7 +39,7 @@
 <a name="calc"></a>
 <h3>Calculator</h3>
 <p>
-Simple mathematical operations can be done with the text mode calculator bc. Open a terminal and directly type
+Mathematical operations can be done with the text mode calculator bc. Open a terminal and directly type
 <code>bc</code>, to exit, simply type <code>quit</code>:
 </p>
 <pre> $ bc
@@ -86,8 +86,8 @@ specify the root directory containing the files to be included in the ISO:
 </pre>
 <p>
 Note that there are many options that you can use to create ISOs, one of the most widely used is the
-extension <code>-R</code>, signifying <em>Rock ridge</em>, this allows the use of names of up to 255 characters,
-it also supports symlinks and file permissions. To see all the available options,
+extension <code>-R</code>, signifying <em>Rock ridge</em>, this allows the use of names of up to 255 characters
+(with a few exceptions), it also supports symlinks and file permissions. To see all the available options,
 simply type <code>-help</code>. Example of creating an ISO image using the <code>-R</code> option:
 </p>
 <pre> $ genisoimage -o image.iso -R ~/iso
