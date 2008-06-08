@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><title>SliTaz Handbook (en) - Template</title>
+
+
+    
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <meta name="description" content="slitaz English handbook" />
+    <meta name="expires" content="never" />
+    <meta name="modified" content="2008-02-26 18:30:00" />
+    <meta name="publisher" content="www.slitaz.org" />
+    <meta name="author" content="Christophe Lincoln" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="book.css" /></head><body bgcolor="#ffffff">
+
+<!-- Header and quick navigation -->
+<div id="header">
+<div id="quicknav" align="right">
+    <a name="top"></a>
+    <a href="index.html">Table of contents</a>
+</div>
+<h1><font color="#3e1220">SliTaz Handbook (en)</font></h1>
+</div>
+
+<!-- Content. -->
+<div id="content">
+<div class="content-right"></div>
+
+<h2><font color="#df8f06">Internet</font></h2>
+
+<ul>
+	<li><a href="#firefox">Mozilla Firefox</a> - Firefox web browser.</li>
+	<li><a href="#retawq">Retawq</a> - Text mode web browser.</li>
+	<li><a href="#links">Links</a> - Graphical &amp; Text browser.</li>
+	<li><a href="#lostirc">LostIRC</a> - IRC chat client.</li>
+	<li><a href="#gitmail">Ghost In The Mail </a> - Email client.</li>
+	<li><a href="#transmission">Transmission</a> - Lightweight BitTorrent client.</li>
+	<li><a href="#gftp">gFTP</a> - Simple FTP client.</li>
+	<li><a href="security.html#pscan">pscan</a> - Port scanner.</li>
+</ul>
+
+<a name="firefox"></a>
+<h3>Mozilla Firefox - Web Browser</h3>
+<p>
+SliTaz is proud to provide Mozilla Firefox, one of the world's best web
+browsers, secure, fast, standards compliant and customizable via a
+system of <em>plugins</em>.
+To launch Firefox on SliTaz simply select from the menu ---&gt;
+Internet --&gt; Mozilla Firefox. The web browser configuration files are stored in the hidden 
+(dot) directory <code>~/.mozilla/firefox</code>.
+</p>
+<p>
+Tip: When you combine LiveCD with USB media, you can keep your bookmarks and plugins wherever you go.
+</p>
+
+<a name="retawq"></a>
+<h3>Retawq - Text mode web browser</h3>
+<p>
+All versions of SliTaz provide the text mode web browser Retawq. You
+can run 'retawq' from the console, a graphical terminal or in X from
+the menu ---&gt; Internet --&gt; Retawq. To
+start <code>retawq</code> from a terminal, just type (with or without the url):
+</p>
+<pre> $ retawq
+ $ retawq <a href="http://www.slitaz.org/en">http://www.slitaz.org/en</a>
+</pre>
+<p>
+The configuration files are in ~/.retawq, you can edit them with a text
+editor. Pressing &lt;b&gt; will display the bookmarks (bookmarks.html)
+and the &lt;h&gt; key will display the home page.
+</p>
+
+<a name="links"></a>
+<h3>Links - Graphical &amp; Text browser</h3>
+<p>
+Links was the first graphical web browser on the SliTaz LiveCD, it has since been replaced
+by Firefox, but Links is always available as a package:
+</p>
+<pre> # tazpkg get-install links
+</pre>
+<p>
+Links offers a graphical and a text mode. To use the graphical mode, we can use the option <code>-g</code>.
+</p>
+<pre> $ links -g &amp;
+ $ links -g <a href="http://www.slitaz.org/en">http://www.slitaz.org/en</a> &amp;
+ $ links
+</pre>
+<p>The configuration files are stored in ~/.links, it's not advisible
+to modify them. However, Links provides a configuration interface via
+the toolbar at the top, this is where you can configure the languages,
+bookmarks etc. When you change options; you must save them via the menu
+bar --&gt; Configuration --&gt; Save options.
+</p>
+
+<a name="lostirc"></a>
+<h3>LostIRC - IRC chat client</h3>
+<p>LostIRC is a simple, yet useful IRC client that supports multiple
+servers and automatic joining of servers/channels. The configuration
+files are located in ~/.lostirc. Simply select from the menu --&gt;
+Internet --&gt; LostIRC. The documentation on the 
+<a href="http://lostirc.sourceforge.net/index.php?page=about">website</a> contains a lot of 
+useful information.
+</p>
+<p>
+SliTaz channel: <small>irc.freenode.net / #slitaz</small>
+</p>
+
+<a name="gitmail"></a>
+<h3>Ghost In The Mail - Email client</h3>
+<p>
+To send messages quickly without having to set up an email account, you
+can use Ghost In The Mail (gitmail). The minimal mail client offers a
+simple GTK interface and supports attachments. It allows you to send
+mail using SMTP with your existing mail account. You will find gitmail
+via the menu --&gt; Internet --&gt; Ghost In The Mail.
+</p>
+
+<a name="transmission"></a>
+<h3>Transmission - Lightweight BitTorrent client</h3>
+<p>Transmission is a GTK+ BitTorrent client, very fast, light and easy
+to use. It offers a 'Preferences' option which allows you to limit the
+rate of uploads/downloads, specify port, download folders etc. You will
+find Transmission via the menu --&gt; Internet --&gt; Transmission.
+Project website: <a href="http://transmission.m0k.org/">http://transmission.m0k.org/</a>
+</p>
+
+<a name="gftp"></a>
+<h3>gFTP - FTP client</h3>
+<p>
+The gFTP application is a fast, ergonomic client for FTP transfers. It
+can resume interrupted transfers, manage bookmarks (favorites) or FTP
+and HTTP proxies. In addition
+gFTP supports the use of drag and drop between windows, can make
+several transfers at the same time, compares windows, remembers
+passwords and can define external applications for viewing or editing
+files. On SliTaz, you will find gFTP via the menu --&gt; Internet
+--&gt;
+gFTP.
+</p>
+
+<!-- End of content -->
+</div>
+
+<!-- Footer. -->
+<div id="footer">
+	<div class="footer-right"></div>
+	<a href="#top">Top of the page</a> | 
+	<a href="index.html">Table of contents</a>
+</div>
+
+<div id="copy">
+    Copyright © 2008 <a href="http://www.slitaz.org/en/">SliTaz</a> -
+    <a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>;<br />
+    Documentation is under
+    <a href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License</a>
+    and code is <a href="http://validator.w3.org/">valid xHTML 1.0</a>.
+</div>
+
+</body></html>
+
