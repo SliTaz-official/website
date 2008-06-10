@@ -2,11 +2,11 @@
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
 <head>
-    <title>SliTaz Cookbook - Boot scripts</title>
+    <title>SliTaz Scratchbook- Boot scripts</title>
     <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
     <meta name="description" content="liTaz GNU/Linux boot scripts démarrage du système initialisation linux kernel services" />
     <meta name="expires" content="never" />
-    <meta name="modified" content="2008-06-09 12:30:00" />
+    <meta name="modified" content="2007-12-24 12:30:00" />
     <meta name="publisher" content="www.slitaz.org" />
     <meta name="author" content="Christophe Lincoln"/>
     <link rel="shortcut icon" href="favicon.ico" />
@@ -18,9 +18,11 @@
 <div id="header">
 <div align="right" id="quicknav">
 	<a name="top"></a>
-	<a href="index.html">Table des matières</a>
+	<a href="locale.html">Locale &amp; i18n</a> |
+	<a href="index.html">Table des matières</a> |
+	<a href="x-window-system.html">X window system</a>
 </div>
-<h1><font color="#3E1220">SliTaz Cookbook</font></h1>
+<h1><font color="#3E1220">SliTaz Scratchbook</font></h1>
 </div>
 
 <!-- Content. -->
@@ -44,7 +46,15 @@ Les scripts de démarrage et d'arrêt avec leurs fichiers de configuration.
 
 <a name="intro"></a>
 <h3><font color="#6c0023">SliTaz et son démarrage</font></h3>
-
+<p>
+Dans les premières version du livre, les scripts étaient créer à la main avec
+la commande <code>cat</code>. Avec le temps, les scripts de démarrage et le
+fichier de configuration principale sont devenu trop gros et sont trop souvent
+modifiés pour être inclus dans le Cookbook. Tous les scripts et configuration
+se trouve dans l'archive des outils SliTaz ou le paquet 
+<a href="http://www.slitaz.org/get/tools.html">slitaz-tools</a>. Vous pouvez
+ouvrir avec un éditeur de texte et les étudier.
+</p>
 <p>
 SliTaz n'utilise pas de niveau d'execution, tout le système est initialisé via
 un script principale et son fichier de configuration. Ce script lance lui-même
@@ -118,13 +128,14 @@ SliTaz sauvegarde la configuration de la locale par défaut dans le fichier
 /etc/locale.conf qui est lu par /etc/profile, à chaque login. Le fichier 
 /etc/locale.conf est généré lors du boot grâce au script /etc/init.d/i18n.sh.
 Ce script lance l'application 'tazlocale' que vous trouverez dans 
-<a href="http://www.slitaz.org/get/tools.html">SliTaz tools</a>, si le fichier
+<a href="http://www.slitaz.org/get/tools">SliTaz tools</a>, si le fichier
 de configuration /etc/locale.conf n'existe pas. Nous utilisons le même processus
 pour la configuration du clavier en utilisant 'tazkmap' et le fichier de 
 configuration /etc/kmap.conf. Ces deux applications s'intallent dans 
-/sbin sur SliTaz, et utilise les bibliothèques ncurses, ainsi que dialog.
-Ce script vérifie aussi si le fichier de configuration du fuseau horaire
-/etc/TZ existe, sinon il le crée en se basant sur la configuration du clavier.
+/sbin sur SliTaz, et utilise <a href="base-ncurses.html">les bibliothèques ncurses</a>,
+ainsi que <a href="base-ncurses.html#dialog">dialog</a>. Ce script vérifie
+aussi si le fichier de configuration du fuseau horaire /etc/TZ existe,
+sinon il le crée en se basant sur la configuration du clavier.
 </p>
 
 <h4>local.sh - Commande local</h4>
@@ -180,6 +191,12 @@ tty6::respawn:/sbin/getty 38400 tty6
 ::shutdown:/etc/init.d/rc.shutdown
 
 </pre>
+
+<h4>Suite</h4>
+<p>
+Le Cookbook continue via le chapitre : <a href="x-window-system.html">X window system</a>.
+</p>
+
 
 <!-- End of content -->
 </div>
