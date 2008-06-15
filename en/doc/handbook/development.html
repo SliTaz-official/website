@@ -28,7 +28,7 @@
 <div id="content">
 <div class="content-right"></div>
 
-<h2><font color="#DF8F06">Developement</font></h2>
+<h2><font color="#DF8F06">Development</font></h2>
 
 <ul>
     <li><a href="#about">About Development</a></li>
@@ -37,7 +37,7 @@
     <li><a href="#geany">Geany</a> - IDE or Integrated Development Environment.
     </li>
     <li><a href="#perl">Perl or Microperl</a> - Code Perl scripts.</li>
-    <li><a href="#python">Python</a> - The Python Language</li>
+    <li><a href="#python">Python</a> - The Python Language.</li>
     <li><a href="#ruby">Ruby</a> - The Ruby Language.</li>
     <li><a href="#toolchain">Toolchain</a> - Libraries, C compiler and tools.</li>
 </ul>
@@ -65,7 +65,7 @@ name your script as you see fit and the .sh extension is widely used.
 Before starting a new SHell script, you must pay attention to the interpreter used. Most SHell 
 scripts use <code>/bin/sh</code>, because it's more portable, but there are scripts that rely on 
 <code>/bin/bash</code> and this must be installed on the system. For a SHell script to function it 
-must be made executable by the current user, changing permissions on the command line can be 
+must be made executable by the current user; changing permissions on the command line can be 
 made by using the <code>chmod</code> tool. To create a <code>script.sh</code> and make it executable:
 </p>
 <pre>
@@ -151,7 +151,7 @@ Skywalker!
 <p>
 On SliTaz you can use the powerful scripting language Perl
 via the <code>perl</code> or <code>microperl</code> binary. Microperl is a streamlined version of perl - 
-compiled from official sources, Perl scripts running Microperl are compatible with the full version of Perl. 
+compiled from official sources, Perl scripts running Microperl are compatible with the complete version of Perl. 
 One of Perl's strengths is it's portability, it can used on any system and it's an interpreted language, 
 this means that the code doesn't need to be compiled and can be used directly. On SliTaz Perl and Microperl 
 are not installed by default on LiveCD; you can either rebuild your ISO or install through the package 
@@ -165,7 +165,7 @@ manager. Note: Microperl is only 1 MB and provides no modules:
 
 <h4>Hello world!</h4>
 <p>
-The purpose of this script is to display <em>Hello World</em>. You start
+The purpose of this script is to display <em>Hello World</em>. You can start
 by creating the file and then making it executable on the command line and then editing with IDE Geany. 
 Note the script is called <code>hello.pl</code>, but you can name it as you see
 fit with or without the <code>.pl</code> extension:
@@ -225,8 +225,8 @@ print "Hello World!\n";
 The Python programming language is available as an installable package. Once installed, you can create your 
 own scripts/programs and use CGI applications with the LightTPD web server, taking care to 
 <a href="web-server.html#cgi-python">configure the server</a> properly. The official SliTaz Mercurial 
-repositories are provided by a CGI/Python web interface - a solution best suited to a robust, reliable 
-combination. To install the <code>python</code> package with tazpkg:
+repositories are provided by a CGI/Python web interface - a solution best suited to a product that's
+reliable and robust. To install the <code>python</code> package with tazpkg:
 </p>
 <pre>
  # tazpkg get-install python
@@ -238,10 +238,8 @@ combination. To install the <code>python</code> package with tazpkg:
 The Ruby programming language is available as an installable package. Ruby is 
 (to quote the official website):- "A dynamic, open source programming language with a focus on simplicity 
 and productivity. It has an elegant syntax that is natural to read and easy to write".
-</p>
-<p>
-Ruby supports Object-Orientated Programming (OOP), automatic memory management and is portable. 
-To install Ruby:
+Ruby handles exceptions, supports Object-Orientated Programming (OOP), automatic memory management and is 
+highly portable. To install the <code>ruby</code> package with tazpkg:
 </p>
 <pre>
  # tazpkg get-install ruby
