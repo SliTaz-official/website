@@ -48,8 +48,8 @@ and creating packages and was created independently.
 The format of the packages using the *.tazpkg extension is a
 cpio archive containing a filesystem compressed with gzip,
 a receipt and a possible description. Tazpkg also manages
-dependencies based on package receipts. Each receipt holds
-all the information about the package, it can also contain
+dependencies based on package receipts. Each receipt contains
+all the information about the package, it can also include
 pre and post installation functions. The same receipt is 
 used by Tazwok to compile sources and generate a .tazpkg 
 package.
@@ -291,11 +291,11 @@ use the 'list-mirror' command. To install the package Grub:
 </pre>
 <h3><font color="#6c0023">clean-cache</font></h3>
 <p>
-Remove tazpkg packages downloaded to the cache. During 
+Remove *.tazpkg packages downloaded to the cache. During 
 installation, Tazpkg keeps a copy of packages downloaded
 from the web, it's done to save bandwidth in case of 
 reinstalment, but you may want to free up space on the hard
-drive or make room for packages:
+drive or re-download the packages:
 </p>
 <pre>
  # tazpkg clean-cache
