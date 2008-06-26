@@ -118,6 +118,12 @@ body {
 	display: block;
 }
 
+#nav hr {
+	margin: 2px 0px 1px 0px;
+	border: 0px;
+	border-top: 1px solid #BDBDBD;
+	
+}
 /* Page content */
 
 #content, #content_bottom, #content_top {
