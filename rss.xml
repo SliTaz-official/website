@@ -9,8 +9,38 @@
 		Actualités du projet de la mini distribution SliTaz GNU/Linux.
 	</description>
 	<copyright>Copyright © www.slitaz.org - GNU gpl</copyright>
-	<lastBuildDate>Sun, 18 May 2008 23:50:00 GMT</lastBuildDate>
-
+	<lastBuildDate>Sun, 28 Jun 2008 10:50:00 GMT</lastBuildDate>
+	
+	<item>
+		<title>Cooking 20080626 avec nouveau noyau</title>
+		<link>http://www.slitaz.org/</link>
+		<guid isPermaLink="true">http://www.slitaz.org/get/</guid>
+		<pubDate>Sun, 28 Jun 2008 10:50:00 GMT</pubDate>
+		<description>
+		L'été est là et la nouvelle cooking aussi depuis le 26 juin.
+		Beaucoup de travail pour un rendu plus soigné et un meilleur
+		confort pour l'utilisateur. Cette nouvelle version Cooking 
+		apporte entre autres: une nouvelle version du noyau Linux (2.6.25.5),
+		le paquet a été repensé pour le rendre plus  modulaire, d'où une
+		taille réduite (2.6Mo contre 3.7Mo sur la version stable); tout
+		en incluant de nouveaux modules pour une meilleur prise en charge 
+		des périphériques les plus courant. L'utilisateur par défaut 
+		(hacker) à été remplacé par tux et la nouvelle option 
+		user=name permet de choisir son nom d'utilisateur.
+		La plus part des outils SliTaz ont été améliorés et/ou 
+		enrichis: tazpkgbox propose maintenant la commande sizes,
+		search-file, check, block/unblock, reconfigure et list-files.
+		Bootfloppybox peut fonctionner en mode texte, avec dialog.
+		Netbox à été amélioré sur la prise en charge du WiFi, des 
+		protocoles PPP/PPPOE; une nouvelle fonction (zeroconf) vient
+		s'ajouter à toutes les possibilités déjà présentes. Pour finir,
+		Firefox est disponible dans sa dernière version stable 3.0. Cette
+		nouvelle version peut-être librement téléchargée
+		via le site web du projet. Les Bugs peuvent être signalés via le
+		système de suivi de Bugs de SliTaz
+		</description>
+	</item>
+	
     <item>
 		<title>Cooking 20080518 et LinuxDays.ch</title>
 		<link>http://www.slitaz.org/get/</link>
