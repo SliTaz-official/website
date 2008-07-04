@@ -1,0 +1,365 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>SliTaz Handbook (en) - Commands</title>
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <meta name="description" content="slitaz English handbook" />
+    <meta name="expires" content="never" />
+    <meta name="modified" content="2008-02-26 18:30:00" />
+    <meta name="publisher" content="www.slitaz.org" />
+    <meta name="author" content="Christophe Lincoln"/>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="book.css" />
+</head>
+<body bgcolor="#ffffff">
+
+<!-- Header and quick navigation -->
+<div id="header">
+<div align="right" id="quicknav">
+    <a name="top"></a>
+    <a href="install.html">Installation</a> |
+    <a href="index.html">Table of contents</a>
+</div>
+<h1><font color="#3E1220">SliTaz Handbook (en)</font></h1>
+</div>
+
+<!-- Content. -->
+<div id="content">
+<div class="content-right"></div>
+
+<h2><font color="#DF8F06">Command Line Reference (<em>cmdline</em>)</font></h2>
+
+<ul>
+    <li><a href="#intro">Introduction to the commands.</a></li>
+    <li><a href="#help">Help and list available commands.</a></li>
+    <li><a href="#ls">List the files in a directory.</a></li>
+    <li><a href="#cd">Moving around directories.</a></li>
+    <li><a href="#cp">Copy files.</a></li>
+    <li><a href="#mkdir">Create a new directory.</a></li>
+    <li><a href="#rm">Remove files or directories.</a></li>
+    <li><a href="#read">View the files.</a></li>
+    <li><a href="#edit">Edit files in ncurses mode.</a></li>
+    <li><a href="#cat">Cat</a> - Edit a line of commands.</li>
+    <li><a href="#web-nav">Navigate the web.</a></li>
+    <li><a href="#irc-chat">Chat on IRC channels.</a></li>
+    <li><a href="#wget">Download files.</a></li>
+    <li><a href="#partitions">List the available partitions.</a></li>
+    <li><a href="#mount">Mount a partition, cdrom or USB key.</a></li>
+    <li><a href="#halt">Halt the system or Reboot.</a></li>
+</ul>
+
+<a name="intro"></a>
+<h3><font color="#6c0023">Introduction to the commands</font></h3>
+<p>
+This document is intended as a quick reference for using commands on SliTaz via
+a Linux terminal or a graphical terminal (xterm). There are many GNU/Linux commands
+for file handling, system maintenance or network management. You can also browse 
+the web, chat on IRC, download files, edit scripts or even play games in text mode.
+Note it is necessary to operate in <em>root</em> to assemble the hard drive or cdrom.
+You can use the command <code>su</code> to become system administrator.
+</p>
+<a name="help"></a>
+<h3><font color="#6c0023">Help and list available commands</font></h3>
+<p>
+Most GNU/Linux system commands have an option for assisting information on
+their use. For support on the use of a command it is necessary to type the
+command followed by the <code>--help</code> option. Example using the 
+<code>cp</code> command to copy files:
+</p>
+<pre>
+ $ cp --help
+</pre>
+<p>
+To list all the commands available on the system, you can simply press the 
+Tab button to the left of the keyboard twice. For commands provided by the
+Busybox utility you can type <code>busybox --help</code>.
+</p>
+
+<a name="ls"></a>
+<h3><font color="#6c0023">List the files in a directory</font></h3>
+<p>
+To list the files and folders contained in a directory, you can use the
+<code>ls</code> command. For all options remember to use the <code>--help</code>
+flag. To simply list the files in the current directory:
+</p>
+<pre>
+ $ ls
+</pre>
+<p>
+List all the files using the <code>-al</code> option:
+</p>
+<pre>
+ $ ls -al
+</pre>
+<p>
+List a directory:
+</p>
+<pre>
+ $ ls /home/slitaz
+</pre>
+
+<a name="cd"></a>
+<h3><font color="#6c0023">Moving around directories</font></h3>
+<p>
+To browse to the files you can use the <code>cd</code> command:
+</p>
+<pre>
+ $ cd /usr/share/doc
+ Back to the parent directory:
+ $ cd ..
+</pre>
+<p>
+To go into the directory of the user (root = /root):
+</p>
+<pre>
+ $ cd
+ Or :
+ $ cd ~
+ Or :
+ $ cd $HOME
+</pre>
+
+<a name="cp"></a>
+<h3><font color="#6c0023">Copy files</font></h3>
+<p>
+The <code>cp</code> command copies files or folders. The example copies the
+info.txt file in the current directory into the Documents directory:
+</p>
+<pre>
+ $ cp info.txt Documents/
+</pre>
+<p>
+Copy a whole directory. Here the command copies the Templates directory
+into /home/hacker:
+</p>
+<pre>
+ $ cp -a Templates /home/hacker
+</pre>
+
+<a name="mkdir"></a>
+<h3><font color="#6c0023">Create a new directory</font></h3>
+<p>
+This command will create a new directory. The following command creates a
+directory called Projects. It will be created in the directory /home of the 
+current user or in the directory which one is in. Note you can display 
+your current working directory with the <code>pwd</code> command:
+</p>
+<pre>
+ $ mkdir Projects
+</pre>
+<p>
+Creation of a directory named script-1.0 in the Projects folder:
+</p>
+<pre>
+ $ mkdir Projects/script-1.0
+</pre>
+<p>
+You can also create a directory tree with the <code>-p</code> parents option:
+</p>
+<pre>
+ $ mkdir -p one/two/three/four
+</pre>
+
+<a name="rm"></a>
+<h3><font color="#6c0023">Delete files or directories</font></h3>
+<p>
+The command <code>rm</code> lets you delete a file. Let's remove the
+file work.txt which is in the current directory:
+</p>
+<pre>
+ $ rm work.txt
+</pre>
+<p>
+The command <code>rm</code> has several options. To delete a directory and
+it's contents, we use the <code>-rf</code> option.
+Example:
+</p>
+<pre>
+ $ rm -rf /home/hacker/Templates
+</pre>
+<p>
+Note you can also use the <code>-i</code> option to remove files interactively.
+</p>
+
+<a name="read"></a>
+<h3><font color="#6c0023">View files</font></h3>
+<p>
+To read the contents of a file or script, you can use the
+<code>less</code>, <code>more</code> or <code>cat</code> commands, or the web
+browser Retawq. Examples with a README file, essential.txt, and  
+script.sh:
+</p>
+<pre>
+ $ less -EM essential.txt
+ or :
+ $ more README
+ or :
+ $ cat /path/to/script.sh
+</pre>
+<p>
+Display a text or html file with the web browser Retawq:
+</p>
+<pre>
+ $ retawq /usr/share/doc/index.html
+</pre>
+
+<a name="edit"></a>
+<h3><font color="#6c0023">Edit files</font></h3>
+<p>
+Editing text files, scripts, configuration files etc, can be done easily using
+the text editor GNU Nano in a console or graphical terminal.
+Example with a file bookmarks.html (&lt;Ctrl+X&gt; to quit
+and save):
+</p>
+<pre>
+ $ nano Public/bookmarks.html
+</pre>
+
+<a name="cat"></a>
+<h3><font color="#6c0023">Cat</font></h3>
+<p>
+You can use the <code>cat</code> command to create various text files. EOF signifies
+End Of File, this is where the file ends. Example with a file packages.list, this 
+removes the current contents of the file and lets you add some new text:
+</p>
+<pre>
+ $ cat &gt; packages.list &lt;&lt; "EOF"
+ The text...
+ and more text
+ 
+ EOF
+</pre>
+<p>
+To amend to the following text file, put two greater than signs 
+(&gt;&gt;) after <code>cat</code>, example:
+</p>
+<pre>
+ $ cat &gt;&gt; packages.list &lt;&lt; "EOF"
+ The text...
+ 
+ EOF
+</pre>
+
+<a name="web-nav"></a>
+<h3><font color="#6c0023">Navigate the web</font></h3>
+<p>
+Surf the web quickly and simply with the 'retawq' text-mode web browser.
+Note that you can also use the local browser. You can then navigate easily
+with the arrows on your keyboard - links are colored blue and can be
+followed by pressing &lt;ENTER&gt;:
+</p>
+<pre>
+ $ retawq http://slitaz.org/en
+ or :
+ $ retawq http://localhost/
+</pre>
+
+<a name="irc-chat"></a>
+<h3><font color="#6c0023">Talk on IRC</font></h3>
+<p>
+To discuss and transfer files via the many IRC servers available, SliTaz
+provides Rhapsody. The IRC client is simple, fast and lightweight, providing
+a pleasant, easy to handle ncurses configuration menu. To start the application
+from a terminal connecting to server (irc.freenode.net) and joining #slitaz:
+</p>
+<pre>
+ $ rhapsody
+ /connect irc.freenode.net
+ /join #slitaz
+</pre>
+<a name="wget"></a>
+<h3><font color="#6c0023">Download files</font></h3>
+<p>
+To download various file formats on the internet, you have the <code>wget</code>
+command. To grab a simple html page, the contents of a folder or an entire
+website:
+</p>
+<pre>
+ $ wget http://www.slitaz.org/en/doc/handbook/
+</pre>
+
+<a name="partitions"></a>
+<h3><font color="#6c0023">List the available partitions</font></h3>
+<p>
+To list the partitions on an internal or external hard drive, you can use
+<code>cat</code> to display the contents of <code>/proc/partitions</code>
+or use the <code>fdisk</code> utility with the <code>-l</code> option
+meaning <em>list</em>. You can then mount the individual partition(s)
+that you want to use:
+</p>
+<pre>
+ $ cat /proc/partitions
+ or :
+ # fdisk -l
+</pre>
+
+<a name="mount"></a>
+<h3><font color="#6c0023">Mount a partition, CD or USB drive</font></h3>
+<p>
+To mount a local partition in the SliTaz filesystem, we advise you to use
+the /mnt directory. Example creating the necessary directory and mounting
+the <code>hda6</code> partition of the first local hard drive on /mnt/hda6:
+</p>
+<pre>
+ # mkdir -p /mnt/hda6
+ # mount -t ext3 /dev/hda6 /mnt/hda6
+</pre>
+<p>
+SliTaz functions in RAM, you can mount the same cdrom or remove it 
+to mount another (/dev/cdrom is a link on the first cdrom drive).
+Note that a cdrom is a removable medium, it should be
+mounted on /media:
+</p>
+<pre>
+ # mount -t iso9660 /dev/cdrom /media/cdrom
+</pre>
+<p>
+To mount a USB or flash drive you must specify the proper filesystem. 
+Normally a USB key is formatted in FAT32 which can be read from GNU/Linux
+and Windows operating systems. On a GNU/Linux system is it generally
+recognized as the sda1 device - we now prepare a link <code>sda1</code> on
+<code>flash</code> to facilitate the task. Note it is also a removable medium
+and should be mounted on /media:
+</p>
+<pre>
+ # mount -t vfat /dev/flash /media/flash
+</pre>
+
+<a name="halt"></a>
+<h3><font color="#6c0023">Turn off the system or restart</font></h3>
+<p>
+To stop or restart SliTaz, you can use the <code>halt</code>, <code>reboot</code>
+commands or the &lt;Ctrl+Alt+Delete&gt; key combinations, which enable a
+system reboot. In case of any problems you can use the <code>-f</code>
+option signifing <em>forced</em>:
+</p>
+<pre>
+ # halt
+ To restart :
+ # reboot
+ Or :
+ # reboot -f
+</pre>
+
+<!-- End of content -->
+</div>
+
+<!-- Footer. -->
+<div id="footer">
+	<div class="footer-right"></div>
+	<a href="#top">Top of the page</a> | 
+	<a href="index.html">Table of contents</a>
+</div>
+
+<div id="copy">
+    Copyright &copy; 2008 <a href="http://www.slitaz.org/en/">SliTaz</a> -
+    <a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>;<br />
+    Documentation is under
+    <a href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License</a>
+    and code is <a href="http://validator.w3.org/">valid xHTML 1.0</a>.
+</div>
+
+</body>
+</html>
+
