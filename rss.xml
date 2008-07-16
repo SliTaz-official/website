@@ -9,7 +9,29 @@
 		Actualités du projet de la mini distribution SliTaz GNU/Linux.
 	</description>
 	<copyright>Copyright © www.slitaz.org - GNU gpl</copyright>
-	<lastBuildDate>Sun, 28 Jun 2008 10:50:00 GMT</lastBuildDate>
+	<lastBuildDate>Wed, 16 Jul 2008 22:50:00 GMT</lastBuildDate>
+	
+	<item>
+		<title>Cooking 20080716 - Web boot and MPlayer</title>
+		<link>http://www.slitaz.org/get/#cooking</link>
+		<guid isPermaLink="true">http://www.slitaz.org/get/</guid>
+		<pubDate>Wed, 16 Jul 2008 22:50:00 GMT</pubDate>
+		<description>
+		Les membres du projet SliTaz sont fiers fier d'annoncer la disponibilité
+		d'une nouvelle image ISO de la version Cooking, comprenant de nombreuses
+		résolution de bugs et beaucoup de nouvelles fonctionnalités. Cette 
+		version fourni l'option de démarrage 'web' permettant de démarrer
+		la dernière version de SliTaz depuis internet en utilisant gPXE depuis
+		boot.slitaz.org. Ce nouveau service unique permet d'utiliser SliTaz
+		en mode Live (tout en RAM), d'utiliser les options propres à SliTaz 
+		pour stocker ses données de manière permanente et préconfigurer
+		le système. Cette nouvelle Cooking prend 3 Mb afin de fournir: un
+		lecteur video avec MPlayer, un traitement de notes avec Notecase,
+		une nouvelle version du gestionnaire de paquet Tazpkg avec le support
+		md5sum, le support du système de fichier XFS nativement, la command man
+		et plusieurs mise à jours.
+		</description>
+	</item>
 	
 	<item>
 		<title>Cooking 20080626 avec nouveau noyau</title>
