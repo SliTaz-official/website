@@ -220,8 +220,19 @@ post_install()
 	echo "Processing post-install commands..."
 }
 </pre>
-
-
+<h4>clean_wok()</h4>
+<p>
+Cette fonction est lancée par Tazwok avec la commande clean.
+Elle permet définir des commandes supplémentaires à exécuter lors nettoyage du wok.
+Elle est très utiles pour supprimer des fichiers ou répertoires qui ne sont pas pris en charge par Tazwok.
+</p>
+<pre class="script">
+# clean commands for Tazwok.
+clean_wok()
+{
+	rm -rf $WOK/$PACKAGE/vim71
+}
+</pre>
 <!-- End of content -->
 </div>
 
