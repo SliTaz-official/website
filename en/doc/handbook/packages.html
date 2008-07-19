@@ -6,7 +6,7 @@
     <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
     <meta name="description" content="slitaz packages tazpkg install new applications upgrade list extract" />
     <meta name="expires" content="never" />
-    <meta name="modified" content="2008-02-26 18:30:00" />
+    <meta name="modified" content="2008-07-18 05:30:00" />
     <meta name="publisher" content="www.slitaz.org" />
     <meta name="author" content="Christophe Lincoln"/>
     <link rel="shortcut icon" href="favicon.ico" />
@@ -82,7 +82,7 @@ $ tazpkg xhtml-list
 </pre>
 <p>
 To get a single list of all available packages on the mirror you can use
-the command <code>list-mirror</code>, you can then examine the list in your favorite editor
+the command <code>list-mirror</code>. You can then examine the list in your favorite editor
 or use the Web site interface. 
 </p>
 
@@ -122,10 +122,10 @@ The Tazpkg <a href="../manuals/tazpkg.en.html">Manual</a> contains a lot more us
 <p>
 All SliTaz packages are built with a tool named Tazwok and a receipt found
 in the wok. The receipt provides all the necessary information to build a suitable
-package for Tazpkg, variables to give us the package name, source tarball format, 
-download URL, etc. With a receipt then the <code>compile_rules</code> function has got all
-the necessary commands to configure, make and install the package in a specific directory.
-After the compilation, Tazwok will execute the function <code>genpkg_rules</code>
+package for Tazpkg including variables to give us the package name, source tarball format, 
+download URL, etc. Given a receipt the <code>compile_rules</code> function has all of
+the necessary commands to configure, make, and install the package in a specific directory.
+After compilation, Tazwok will execute the function <code>genpkg_rules</code>
 to pick up only the needed/wanted files and generate a pkg.tazpkg (cpio archive).
 On SliTaz you will find all installed package receipts in the directory
 <code>/var/lib/tazpkg/installed</code>, feel free to examine them or even use one as an
@@ -133,9 +133,9 @@ example.
 </p>
 <p>
 Tazwok will search by default for a wok in <code>/home/slitaz/wok</code> and
-put generated packages in <code>/home/slitaz/packages</code>, these paths are
+put generated packages in <code>/home/slitaz/packages</code>. These paths are
 set by a Tazwok configuration file which can be located in
-<code>/etc/tazwok.conf</code> or in the current directory, this is useful if you 
+<code>/etc/tazwok.conf</code> or in the current directory, which is useful if you 
 want to work with multiple woks. Now, if the <code>slitaz-toolchain</code> is 
 installed, you can start to create and build a package which doesn't need many 
 dependencies. Small example:

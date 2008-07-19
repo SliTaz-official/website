@@ -1,12 +1,12 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 	<title>TazUSB - SliTaz Live utility English manual</title>
 	<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
 	<meta name="description" content="slitaz bootable media LiveUSB key hd SD card" />
 	<meta name="expires" content="never" />
-	<meta name="modified" content="2008-03-05 00:16:42" />
+	<meta name="modified" content="2008-07-18 20:00:00" />
 	<style type="text/css"><!--
 	body { font: 90% sans-serif, vernada, arial; margin: 0; }
 	#header { background: #f0ba08; color: black; height: 50px;
@@ -31,7 +31,7 @@
 
 <h2>NAME</h2>
 <p>
-TazUSB - Slitaz LiveUSB utility
+TazUSB - SliTaz LiveUSB utility
 </p>
 
 <h2>SYNTAX</h2>
@@ -41,7 +41,7 @@ tazusb [command] [compression|device]
 
 <h2>DESCRIPTION</h2>
 <p>
-TazUSB is a utility designed for installing Slitaz to a USB drive. Unlike a hard drive install, the filesystem is kept in a compressed "rootfs.gz". The filesystem is loaded entirely into memory upon boot. This should increase responsiveness, protect the filesystem against accidental corruption and reduce read/writes to the USB drive. Once setup, this utility can also rewrite the root filesystem with any changes you have made since booting up, giving the effective benefits of a hard drive install.
+TazUSB is a utility designed for installing SliTaz to a USB drive. Unlike a hard drive install, the filesystem is kept in a compressed "rootfs.gz" file. The filesystem is loaded entirely into memory upon boot. This should increase responsiveness, protect the filesystem against accidental corruption and reduce read/writes to the USB drive. Once setup, this utility can also rewrite the root filesystem with any changes you have made since booting up, giving the effective benefits of a hard drive install.
 </p>
 <p>
 TazUSB supports both FAT32/EXT3 formatted drives using SYSLINUX and EXTLINUX respectively. "/home" is mounted on boot using the UUID of your particular flash drive. Unlike a device name, the UUID has the benefit of never changing from machine to machine.  
@@ -58,7 +58,7 @@ The command 'usage' will display a short summary of all available commands.
 
 <h3><font color="#6c0023">writefs</font></h3>
 <p>
-The command 'writefs' will take the current memory resident filesystem and create a "rootfs.gz". If your flash drive is mounted as /home (as it should be), the new filesystem will be copied to the drive for you, otherwise it is left on the root of the drive. Your previous filesystem will be renamed to "previous.gz" and can be accessed on bootup by typing "previous" at the "boot:" prompt. All previous filesystems are renamed to rootfs.gz.unixtimestamp. These are not removed automatically, so you should periodically delete these to keep disk usage down.
+The command 'writefs' will take the current memory resident filesystem and create a "rootfs.gz" file. If your flash drive is mounted as /home (as it should be), the new filesystem will be copied to the drive for you, otherwise it is left on the root of the drive. Your previous filesystem will be renamed to "previous.gz" and can be accessed on bootup by typing "previous" at the "boot:" prompt. All previous filesystems are renamed to rootfs.gz.unixtimestamp. These are not removed automatically, so you should periodically delete these to keep disk usage down.
 </p>
 <p>
 Filesystem compression is supported in the form of lzma, gzip or none. Using no compression is very quick (under 5 seconds) and useful if you are experimenting with a lot of changes. By comparison, using lzma or gzip takes a few minutes but will dramatically reduce file size. This is recommended when committing permanent changes to the filesystem.
@@ -85,7 +85,7 @@ Example:
 
 <h3><font color="#6c0023">gen-liveusb</font></h3>
 <p>
-"gen-liveusb" will install a fresh MBR, set your partition as bootable and install syslinux/extlinux depending on the detected filesystem. It will then copy the kernel and filesystem from the CDROM drive, and place this on the target USB drive. This will leave you with a bootable USB copy of Slitaz. 
+"gen-liveusb" will install a fresh MBR, set your partition as bootable and install syslinux/extlinux depending on the detected filesystem. It will then copy the kernel and filesystem from the CDROM drive, and place this on the target USB drive. This will leave you with a bootable USB copy of SliTaz. 
 </p>
 <pre>
  # tazusb gen-liveusb /dev/name

@@ -6,7 +6,7 @@
     <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
     <meta name="description" content="slitaz tazlito build livecd flavor support all in RAM" />
     <meta name="expires" content="never" />
-    <meta name="modified" content="2008-02-26 18:30:00" />
+    <meta name="modified" content="2008-07-18 05:45:00" />
     <meta name="publisher" content="www.slitaz.org" />
     <meta name="author" content="Christophe Lincoln"/>
     <link rel="shortcut icon" href="favicon.ico" />
@@ -42,7 +42,7 @@
 <p>
 Tazlito is a tool to help generate and configure SliTaz LiveCD ISO images.
 You can create a custom distro in two commands from a list of packages and a
-flavor file, extract an existing ISO image to hack it, create new initramfs 
+flavor file, extract an existing ISO image to hack it, create a new initramfs 
 and/or a new ISO. Most commands must be run by root, except the stats and the
 configuration file manipulation. Like other SliTaz tiny utils, you can simply
 type <code>tazlito usage</code> in a terminal to get a list of all 
@@ -78,8 +78,8 @@ additional files. Then simply generate a LiveCD ISO image:
 </pre>
 <p>
 The LiveCD ISO image, root filesystem (rootfs) and the content of the CD 
-(rootcd) are in /home/slitaz/distro.  All repacked or downloaded packages are
-stored by default in /home/slitaz/packages. If you want to chroot in the
+(rootcd) are in /home/slitaz/distro. All repacked or downloaded packages are
+stored by default in /home/slitaz/packages. If you want to chroot into the
 rootfs to preconfigure the system, add more files in the rootcd directory or 
 add users, you just have to rebuild initramfs and the ISO image to generate 
 your new LiveCD:

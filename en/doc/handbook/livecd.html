@@ -6,7 +6,7 @@
     <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
     <meta name="description" content="slitaz LveCD usage boot options boot" />
     <meta name="expires" content="never" />
-    <meta name="modified" content="2008-02-25 13:20:00" />
+    <meta name="modified" content="2008-04-17 04:45:00" />
     <meta name="publisher" content="www.slitaz.org" />
     <meta name="author" content="Christophe Lincoln"/>
     <link rel="shortcut icon" href="favicon.ico" />
@@ -56,7 +56,7 @@
 To boot SliTaz from a cdrom, just burn the ISO image onto a blank disc, then
 reboot your computer with the disc in your cdrom drive. The first splash image
 is powered by isolinux bootloader, you can then just press <code>ENTER</code>
-with or without any options to start system initialisation. Note that pressing
+with or without any options to start system initialization. Note that pressing
 <code>F1-F4</code> will display help and information. SliTaz runs entirely
 in memory and will not damage the installed host system. When the boot
 process is finished, you can login without any password as user 
@@ -69,9 +69,9 @@ the Linux console. In LiveCD mode the <em>root</em> password is <code>root</code
 <h3>Options and parameters to pass at boot</h3>
 <p>
 The SliTaz LiveCD can pass various <em>boot</em> options via the command prompt powered by syslinux. 
-There are two types of option: those of SliTaz and those of the Linux Kernel. 
+There are two types of options: those of SliTaz and those of the Linux Kernel. 
 The options for SliTaz are used by various startup scripts and the parameters 
-such as the VGA mode, are managed directly by the Kernel (<em>kernel boot parameters</em>).
+such as the VGA mode are managed directly by the Kernel (<em>kernel boot parameters</em>).
 To pass options at startup, just precede your commands with <code>slitaz</code>
 </p>
 <pre> slitaz vga=791 no387
@@ -122,7 +122,7 @@ device using the partition UUID or label by using <code>home=*</code>. Example:
 <h4>Prepare USB media</h4>
 <p>
 All USB media can formatted in the native Linux <code>ext3</code> filesystem.
-Ext3 is a journalized, stable filesystem, it allows you to keep permissions
+Ext3 is a journaled, stable filesystem, it allows you to keep permissions
 on all files and is much more secure than the default Windows FAT32 filesystem.
 To format USB media you have a few options: the command line with
 <code>mkfs.ext3</code>, the <code>tazusb</code> utility or graphically with Gparted.
@@ -138,7 +138,7 @@ To get a full list of available partitions including the USB drive you can use t
 <h3>Options : lang=XX and kmap=XX</h3>
 <p>
 When you use the LiveCD you have two options to directly configure the system 
-language and keyboard mapping, these options can be set by simply navigating to
+language and keyboard mapping. These options can be set by simply navigating to
 your country code and reloading the bootloader configuration with <code>ENTER</code>. 
 To skip the language and keyboard configuration you can simply type options on the command
 line, for English/UK:

@@ -7,7 +7,7 @@
     <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
     <meta name="description" content="slitaz English handbook" />
     <meta name="expires" content="never" />
-    <meta name="modified" content="2008-02-26 18:30:00" />
+    <meta name="modified" content="2008-07-17 00:15:00" />
     <meta name="publisher" content="www.slitaz.org" />
     <meta name="author" content="Christophe Lincoln" />
     <link rel="shortcut icon" href="favicon.ico" />
@@ -33,7 +33,7 @@
 
 <ul>
     <li><a href="#intro">Introduction.</a></li>
-    <li><a href="#pre">Organisation and preparation.</a></li>
+    <li><a href="#pre">Organization and preparation.</a></li>
     <li><a href="#add-files">Add files to the ISO.</a></li>
     <li><a href="#isolinux">Modify the isolinux configuration.</a></li>
     <li><a href="#memtest">Install and use Memtest86.</a></li>
@@ -47,7 +47,7 @@
 <em>Hacking SliTaz LiveCD</em> or how to have fun with the LiveCD ISO image. Note that you can also
 <a href="gen-livecd.html">create a custom flavor with Tazlito</a>.
 Creating your own bootable ISO image is easily achievable and the steps are carefully described here. The manipulation of a personal ISO image can add new files or modify existing
-ones found on the Slitaz Live CD. The Slitaz ISO image  is less than 30 MB and a CD-R or CD-RW provides around 700 MB,
+ones found on the SliTaz Live CD. The SliTaz ISO image is less than 30 MB and a CD-R or CD-RW provides around 700 MB,
 so there's plenty of scope for expansion. For example, you could store your images and even provide a <em>live</em> slideshow 
 using GQview. The <em>hacking</em> of the ISO image allows you to modify boot loader configuration files 
 (<em>boot loader</em>), <em>splash</em> images and GRUB itself. You could also add the
@@ -55,7 +55,7 @@ Memtest86 utility (tool used to test system RAM). Using the same techniques it's
 modify the filesystem - this does however require some extra manipulation and a bit more time.</p>
 
 <a name="pre"></a>
-<h3>Organisation and preparation</h3>
+<h3>Organization and preparation</h3>
 <p>
 To begin, first we must define where we are going to work by creating a directory and several sub directories
 to accomodate all the different files. The <em>hacking</em> of the ISO can be done from within a SliTaz system or any
@@ -77,9 +77,9 @@ inside:
 </pre>
 <h4>Getting the contents of the ISO</h4>
 <p>
-Now that you are in the working directory, we must create the root of the amended CD-ROM and retrieve the files contained on the original Slitaz ISO - namely, the Linux Kernel (<code>bzImage</code>), the compressed
+Now that you are in the working directory, we must create the root of the amended CD-ROM and retrieve the files contained on the original SliTaz ISO - namely, the Linux Kernel (<code>bzImage</code>), the compressed
 filesystem (<code>rootfs.gz</code>) and the isolinux bootloader files. To recover these files you have two
-options, either take them from a burnt CD or from an ISO image stored locally. To create the root of your CD
+options, either take them from a burned CD or from an ISO image stored locally. To create the root of your CD
 (<code>rootcd</code>) and copy files from the cdrom device <code>/dev/cdrom</code> mounted on 
 <code>/media/cdrom</code>:
 </p>
@@ -110,16 +110,16 @@ To be sure, you can list all of the files recursively with the <code>ls</code> c
 <p>
 The addition of various files and directories to the ISO image simply consists of copying data to
 the root of the cdrom (<code>rootcd/</code>) and generating a new image. The data may be classified
-in one or two directories created in the root of the CD. Once the ISO image is burnt to a CD-R/CD-RW
+in one or two directories created in the root of the CD. Once the ISO image is burned to a CD-R/CD-RW
 you can use SliTaz as before, mounted on <code>/media/cdrom</code> and navigate through your data using
-emelFM2, Clex or the command line. You data will also be legible from all GNU/Linux systems, BSD or even
+emelFM2, Clex or the command line. Your data will also be legible from all GNU/Linux systems, BSD or even
 ... Windows.
 </p>
 <h4>Create directories and copy data</h4>
 <p>
 To create and copy files, you can start by using the command line and then continue on graphically as a simple
-user. We will create a <code>images/</code> directory as <em>root</em> and change the permissions so that all
-users can have write access:
+user. We will create an <code>images/</code> directory as <em>root</em> and change the permissions so that all
+users have write access:
 </p>
 <pre> # mkdir rootcd/images
  # chmod 777 rootcd/images
@@ -183,8 +183,8 @@ Once you've finished modifying the configuration file, don't forget to save your
 <a name="memtest"></a>
 <h3>Install and use Memtest86</h3>
 <p>
-The application memtest86 (92 kB) is a tool for  testing your system memory (RAM).
-Memtest86 performs in depth tests, that if failed, point heavily towards a hardware fault.
+The application memtest86 (92 kB) is a tool for testing your system memory (RAM).
+Memtest86 performs indepth tests, that if failed, point heavily towards a hardware fault.
 The tool resides in the <code>boot/</code> directory and can be launched directly by typing
 <code>memtest</code> at the isolinux boot prompt. Navigate to <code>/home/slitaz/src</code>
 (if the directory dosen't exist: <code>mkdir -p /home/slitaz/src</code>), download the source
@@ -196,7 +196,7 @@ and unpack:</p>
 <p>
 On unpacking the source of the memtest86 package you'll find a 
 <code>README</code> providing information about the tool. Now you can install
-into the <em>root CD</em> of your ISO hacked. Based on the premise that you'll be
+into the <em>root CD</em> of your hacked ISO. Based on the premise that you'll be
 working with a <code>/home/slitaz/hacked</code> directory, we will copy the binary 
 you precompiled into the <code>boot/</code> directory of the root of the CD:
 </p>
@@ -238,7 +238,7 @@ directory, create the root directory and copy the compressed file system from <c
 Now that you have the compressed copy of the system, just unpack with <code>cpio</code>.
 Technically <code>rootfs.gz</code> is a cpio file compressed with lzma or gzip. It's recognized like an
 <code>initramfs</code> image by the Linux Kernel. At the start up of the machine, the Kernel is loaded into
-memory, which then decompresses the system image and carries out the initialization scripts. </p>
+memory and then decompresses the system image and carries out the initialization scripts. </p>
 <p>To extract the file system
   into <code>rootfs/</code> and delete the unarchived copy (remember you can copy &amp; paste):
 </p>

@@ -6,7 +6,7 @@
     <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
     <meta name="description" content="slitaz English handbook installation" />
     <meta name="expires" content="never" />
-    <meta name="modified" content="2008-04-07 11:30:00" />
+    <meta name="modified" content="2008-07-17 04:15:00" />
     <meta name="publisher" content="www.slitaz.org" />
     <meta name="author" content="Christophe Lincoln"/>
     <link rel="shortcut icon" href="favicon.ico" />
@@ -60,8 +60,8 @@ manage to use it with these complimentary instructions.
 The first step lets you choose the type of installation: new install or system 
 upgrade. In most cases you will want a new and clean installation. On confirming this
 the installer will mount the master cdrom device and search for the compressed
-filesystem (<code>rootfs.gz</code>). If any filesystem was found, then installation
-will abort.
+filesystem (<code>rootfs.gz</code>). If no filesystem is found, then the
+installation will abort.
 </p>
 <p>
 If you get into trouble because the compressed filesystem is not found, please
@@ -74,7 +74,7 @@ the HD Installer expects to find it:
 </pre>
 <h4>Target partition</h4>
 <p>
-Second step is the partition configuration. If you have already a free partition
+Second step is the partition configuration. If you already have a free partition
 you can directly use it, if not you will have to create one graphically with 
 Gparted or from the command line with fdisk. For example if you want to install
 SliTaz on the first partition of the first disk recognized as <code>hda</code>: 
@@ -84,7 +84,7 @@ SliTaz on the first partition of the first disk recognized as <code>hda</code>:
 <h4>Formating</h4>
 <p>
 The next step lets you format the target partition into <code>ext3</code>. Ext3
-is a robust, stable and journalised filesystem. If the partition is already 
+is a robust, stable and journaled filesystem. If the partition is already 
 formated you can skip this step, if not just accept. <em>Warning</em> formating a
 partition will destroy all current data.
 </p>
@@ -92,7 +92,7 @@ partition will destroy all current data.
 <p>
 Hostname configuration lets you set the machine name. The hostname is used 
 internally to identify the host on the network. This value can be
-changed when the system is installed.
+changed after the system is installed.
 </p>
 <h4>Bootloader - GRUB</h4>
 <p>
@@ -158,8 +158,8 @@ Copy the rootfs:
  # cp /media/cdrom/boot/rootfs.gz /mnt/target
 </pre>
 <p>
-Now the necessary files are present so you can change directory (<code>cd</code>)
-to the target and uncompress the filesystem with <code>lzma</code> and
+Now the necessary files are present so you can change (<code>cd</code>)
+to the target directory and uncompress the filesystem with <code>lzma</code> and
 <code>cpio</code>:
 </p>
 <pre>

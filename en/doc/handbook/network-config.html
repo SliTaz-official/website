@@ -6,7 +6,7 @@
     <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
     <meta name="description" content="slitaz English handbook network config pppoe ppp eth dhcp" />
     <meta name="expires" content="never" />
-    <meta name="modified" content="2008-02-26 18:30:00" />
+    <meta name="modified" content="2008-07-17 22:30:00" />
     <meta name="publisher" content="www.slitaz.org" />
     <meta name="author" content="Paul Issot, Christophe Lincoln"/>
     <link rel="shortcut icon" href="favicon.ico" />
@@ -64,15 +64,15 @@ without any arguments:
 $ route
 </pre>
 <p>
-The system wide network configuration file is <code>/etc/network.conf</code>,
-it can be graphically configured with <code>netbox</code> or directly edited by
+The system wide network configuration file is <code>/etc/network.conf</code>.
+It can be graphically configured with <code>netbox</code> or directly edited by
 the root administrator.
 </p>
 
 <a name="driver"></a>
 <h3>Install network card driver</h3>
 <p>
-In case you need a network card driver and dont know the driver name, you can
+In case you need a network card driver and don't know the driver name, you can
 use the command <code>lspci</code> to find your card and then <code>modprobe</code>
 to load a module. In Live mode you can use the SliTaz boot option 
 <code>modprobe=modules</code> to automatically load Kernel modules. To get a 
@@ -96,7 +96,7 @@ on each boot.
 Netbox is a small GTK+ application to configure a network interface using <em>DCHP</em> or a fixed (<em>static</em>) IP address. The tabs can be used to  start/stop the connections and automatically change the values in the system files. Netbox also provides a <em>system wide</em> tab from which you can directly edit network configuration files. You can start netbox from the system tools menu or via a terminal:
 </p>
 <pre>
- $ netbox 
+ # netbox 
 </pre>
 
 <a name="pppoe"></a>
@@ -136,13 +136,13 @@ script: <code>/etc/init.d/local.sh</code>
 <a name="rp-pppoe"></a>
 <h3><font color="#6c0023">Enable Dial-up Modem -  PPPoE with rp-pppoe</font></h3>
 <p>
-To set an ASDL protocol via PPPoE, SliTaz provides the following utilities 
+To set an ASDL protocol via PPPoE, SliTaz provides the utilities 
 package <code>rp-pppoe</code>. Using <code>pppoe-setup</code> is a snap and you
 can quickly configure the network. If you use DCHP it's even easier, because 
 the server from your ISP will take care of everything. If you do not have DHCP,
-you must first disable it's use via <code>DHCP="no"</code> from the 
+you must first disable its use via <code>DHCP="no"</code> from the 
 configuration file <code>/etc/network.conf</code>. It should be noted that to
-modify configuration files and system logs you must first become <code>su</code>.
+modify configuration files and system logs you must first become <code>root</code>.
 To install and change the variable DHCP with Nano (ctrl + x to save &amp; exit):
 </p>
 <pre>
@@ -153,7 +153,7 @@ To install and change the variable DHCP with Nano (ctrl + x to save &amp; exit):
 <h4>Configure with pppoe-setup</h4>
 <p>
 To begin to configure your PPPoE connection, you must first open an Xterm or 
-Linux consule and launch <code>pppoe-setup</code> and then begin to answer
+Linux console and launch <code>pppoe-setup</code> and then begin to answer
 the following questions:
 </p>
 <pre>
@@ -166,11 +166,11 @@ the following questions:
 	    in which case you will have eth1, eth2 etc. Usually the Enter key is 
 	    sufficient.</li>
 	<li>If you have a permanent ASDL link answer
-	    <strong>yes</strong>, or <strong>no</strong> (default).</li>
-	<li>Specify primary and secondary DNS your ISP uses (you may have to ask).</li>
+	    <strong>yes</strong>, otherwise answer <strong>no</strong> (default).</li>
+	<li>Specify the primary and secondary DNS your ISP uses (you may have to ask).</li>
 	<li>Enter the password with which you communicate with your ISP (you need 
-	    to enter twice).</li>
-	<li>Choose the firewall or firewall depending on your hardware. If you 
+	    to enter it twice).</li>
+	<li>Choose the firewall settings depending on your hardware. If you 
 	    have a router you can enter 1 or 2. If in doubt enter 1.</li>
 </ol>
 <h4>Start and Stop the connection</h4>
@@ -221,7 +221,7 @@ after editing the configuration file. Example:
 </pre>
 <h4>Enable/Disable the firewall at boot</h4>
 <p>
-To enable/disable options specific to the Kernel place, "yes"
+To enable/disable options specific to the Kernel place "yes"
 or "no" in the variable KERNEL_SECURITY= :
 </p>
 <pre class="script">
@@ -238,29 +238,29 @@ IPTABLES_RULES="yes"
 </pre>
 <h4>Add, delete or modify the iptables rules</h4>
 <p>
-At the bottom of the configuration file:  /etc/firewall.conf. you will find a 
-function named: <code>iptables_rules()</code>, this contains all of the iptables
-commands to launch when the firewall starts. To delete a rule, It is advisable
-to comment out the corresponding line with a <code>#</code>. It is not 
-advisable to leave the function completely empty, if you want to disable the
+At the bottom of the configuration file:  /etc/firewall.conf, you will find a 
+function named: <code>iptables_rules()</code>. This function contains all of
+the iptables commands to launch when the firewall starts. To delete a rule, It
+is advisable to comment out the corresponding line with a <code>#</code>. It is
+<em>not</em> advisable to leave the function completely empty, if you want to disable the
 iptables rules just add "no" to the variable IPTABLES_RULES= in the 
 configuration file.
 </p>
 <p>
-Here's an example of using iptables rules, it refuses all connections incoming
-and outgoing, only allowing connections on the localhost, the local network, 
-ports 80 and 22 respectively used by the web server HTTP and SSH secure server
-and port 21 for FTP; so it's very restrictive.
+Here's an example of using iptables rules. It only allows connections on the
+localhost and the local network, and ports 80, 22, and 21 used by the web server
+HTTP, the SSH secure server and FTP respectively. All other incoming and
+outgoing connections are refused, so it's fairly restrictive.
 </p>
 <pre class="script">
 # Netfilter/iptables rules.
-# This shell function is include in /etc/init.d/firewall.sh
+# This shell function is included in /etc/init.d/firewall.sh
 # to start iptables rules.
 #
 iptables_rules()
 {
 
-# Drop all connexions.
+# Drop all connections.
 iptables -P INPUT DROP
 iptables -P OUTPUT DROP
 

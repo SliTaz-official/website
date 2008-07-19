@@ -6,7 +6,7 @@
     <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
     <meta name="description" content="slitaz English handbook X server window manager jwm openbox e17 slim login" />
     <meta name="expires" content="never" />
-    <meta name="modified" content="2008-03-01 22:30:00" />
+    <meta name="modified" content="2008-07-18 07:00:00" />
     <meta name="publisher" content="www.slitaz.org" />
     <meta name="author" content="Christophe Lincoln, Paul Issot" />
     <link rel="shortcut icon" href="favicon.ico" />
@@ -45,7 +45,7 @@
 <h3>X11 - X Window System</h3>
 <p>
 The X Window System or X11 provides a window manager running on
-top of a X server. SliTaz uses by default the lightweight X server called
+top of a X server. SliTaz by default uses the lightweight X server called
 <code>Xvesa</code> from the Xorg project (<a href="http://www.x.org/">www.x.org</a>).
 Xvesa can be started with the Slim login manager or directly from a Linux console
 with the command <code>startx</code>, but for this you must first disable the 
@@ -58,9 +58,9 @@ as root or as the current user if you start X from the command line.
 <p>
 Slim is a lightweight session manager that is very easy to configure and is 
 customizable using system themes. The configuration file is found in 
-<code>/etc/slim.conf</code>, it defines window managers available via the 
-<code>F1</code> key, the default user or theme and the X window system parameters.
-Slim offers special users commands like <code>console</code> to help manage 
+<code>/etc/slim.conf</code>. It defines window managers available via the 
+<code>F1</code> key, the default user or theme, and the X window system parameters.
+Slim offers special user commands like <code>console</code> to help manage 
 the session.
 </p>
 <p>
@@ -85,13 +85,13 @@ leave the line blank to avoid pre-loading a user name. Example:
 <a name="xorg"></a>
 <h3>Xorg</h3>
 <p>
-By default SliTaz provides the graphical mini-server Xvesa. Xorg server is available 
+By default, SliTaz provides the graphical mini-server Xvesa. Xorg server is available 
 in the packages on the mirror. Xorg is a very comprehensive server, but uses a lot more 
 resources than Xvesa. If your resolution is supported by the mini-server and you're happy
 with the refresh rate, then there's no reason to use Xorg.
 </p>
 <p>
-There is no GUI configuration, it means having to use the command line in console mode. The installation
+There is no GUI configuration which means having to use the command line in console mode. The installation
 and configuration of the server is relatively simple and you can always go back and reuse Xvesa at any time.
 Xorg is distributed in modular form, which means that you'll need to install the server, a few configuration
 files and the right driver for your graphics card. However the <code>xorg-server</code> package has all 
@@ -139,10 +139,10 @@ Slim works likes a daemon, it can be stopped or started from the console:
 </pre>
 <h4>xorg.conf - Configuration file</h4>
 <p>
-Xorg uses the configuration file <code>/etc/X11/xorg.conf</code>, this file can be
-automatically generated and edited with your favorite text editor. The file is divided into
+Xorg uses the configuration file <code>/etc/X11/xorg.conf</code>. This file can be
+automatically generated and edited with your favorite text editor. It is divided into
 several sections, including the specification of paths, modules to be loaded, default screen, 
-mouse, keyboard etc. This document provides only a few examples, it is advisable to run
+mouse, keyboard, etc. This document provides only a few examples, it is advisable to run
 <code>xorgconfig</code> once to generate a complete file to use as an example.
 
 </p>
@@ -252,8 +252,8 @@ you can easily install fonts and retain them the next time you use the cdrom.
 <p>
 At the system level fonts are installed in the directory:
 <code>/usr/share/fonts</code>, core SliTaz provides TTF Vera fonts,
-they take up little space and are rendered correctly. In user space fonts are found in the hidden
-directory: <code>.fonts</code>, this directory should be at the root of user space.
+they take up little space and are rendered correctly. In user space, fonts are found in the hidden
+directory: <code>.fonts</code>. This directory should be at the root of user space.
 To create a home directory to accomodate new fonts, you can use the graphical window manager emelFM2, 
 Clex or use the command line:
 </p>

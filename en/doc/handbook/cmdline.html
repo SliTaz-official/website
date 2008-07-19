@@ -6,7 +6,7 @@
     <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
     <meta name="description" content="slitaz English handbook" />
     <meta name="expires" content="never" />
-    <meta name="modified" content="2008-02-26 18:30:00" />
+    <meta name="modified" content="2008-07-16 22:00:00" />
     <meta name="publisher" content="www.slitaz.org" />
     <meta name="author" content="Christophe Lincoln"/>
     <link rel="shortcut icon" href="favicon.ico" />
@@ -56,13 +56,13 @@ This document is intended as a quick reference for using commands on SliTaz via
 a Linux terminal or a graphical terminal (xterm). There are many GNU/Linux commands
 for file handling, system maintenance or network management. You can also browse 
 the web, chat on IRC, download files, edit scripts or even play games in text mode.
-Note it is necessary to operate in <em>root</em> to assemble the hard drive or cdrom.
+Note it is necessary to operate as <em>root</em> to assemble the hard drive or cdrom.
 You can use the command <code>su</code> to become system administrator.
 </p>
 <a name="help"></a>
 <h3><font color="#6c0023">Help and list available commands</font></h3>
 <p>
-Most GNU/Linux system commands have an option for assisting information on
+Most GNU/Linux system commands have an option for providing information on
 their use. For support on the use of a command it is necessary to type the
 command followed by the <code>--help</code> option. Example using the 
 <code>cp</code> command to copy files:
@@ -72,7 +72,7 @@ command followed by the <code>--help</code> option. Example using the
 </pre>
 <p>
 To list all the commands available on the system, you can simply press the 
-Tab button to the left of the keyboard twice. For commands provided by the
+Tab button on the left of the keyboard twice. For commands provided by the
 Busybox utility you can type <code>busybox --help</code>.
 </p>
 
@@ -300,7 +300,7 @@ that you want to use:
 <a name="mount"></a>
 <h3><font color="#6c0023">Mount a partition, CD or USB drive</font></h3>
 <p>
-To mount a local partition in the SliTaz filesystem, we advise you to use
+To mount a local partition in the SliTaz filesystem, we recommend you use
 the /mnt directory. Example creating the necessary directory and mounting
 the <code>hda6</code> partition of the first local hard drive on /mnt/hda6:
 </p>
@@ -311,7 +311,7 @@ the <code>hda6</code> partition of the first local hard drive on /mnt/hda6:
 <p>
 SliTaz functions in RAM, you can mount the same cdrom or remove it 
 to mount another (/dev/cdrom is a link on the first cdrom drive).
-Note that a cdrom is a removable medium, it should be
+Note that a cdrom is a removable medium and should be
 mounted on /media:
 </p>
 <pre>
@@ -332,8 +332,8 @@ and should be mounted on /media:
 <a name="halt"></a>
 <h3><font color="#6c0023">Turn off the system or restart</font></h3>
 <p>
-To stop or restart SliTaz, you can use the <code>halt</code>, <code>reboot</code>
-commands or the &lt;Ctrl+Alt+Delete&gt; key combinations, which enable a
+To stop or restart SliTaz, you can use the <code>halt</code> or <code>reboot</code>
+commands or the &lt;Ctrl+Alt+Delete&gt; key combination, which enables a
 system reboot. In case of any problems you can use the <code>-f</code>
 option signifing <em>forced</em>:
 </p>

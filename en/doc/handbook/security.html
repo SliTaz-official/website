@@ -6,7 +6,7 @@
     <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
     <meta name="description" content="slitaz English handbook" />
     <meta name="expires" content="never" />
-    <meta name="modified" content="2008-02-26 18:30:00" />
+    <meta name="modified" content="2008-07-18 05:30:00" />
     <meta name="publisher" content="www.slitaz.org" />
     <meta name="author" content="Christophe Lincoln" />
     <link rel="shortcut icon" href="favicon.ico" />
@@ -30,9 +30,9 @@
 <h2><font color="#df8f06">SliTaz and System Security</font></h2>
 
 <ul>
-	<li><a href="#policy">Security Policy</a></li>
+	<li><a href="#policy">Security Policy.</a></li>
 	<li><a href="#root">Root</a> - The system administrator.</li>
-	<li><a href="#passwords">Passwords</a></li>
+	<li><a href="#passwords">Passwords.</a></li>
 	<li><a href="#busybox">Busybox</a> - Configuration file /etc/busybox.conf.</li>
 	<li><a href="#web-server">LightTPD web server</a> - Disable the LightTPD web server.</li>
 	<li><a href="#ssh">SSH server</a> - Default options.</li>
@@ -44,7 +44,7 @@
 <a name="policy"></a>
 <h3>Security Policy</h3>
 <p>
-SliTaz has given a lot of consideration to system security. Applications are tested for many months before being 
+SliTaz has given a lot of consideration to system security. Applications are tested for many months before being
 included in the distribution. At boot time, a minimum of services are launched by the rc scripts. For a complete
 lists of daemons enabled, you can look in the <code>RUN_DAEMONS</code> variable in the <code>/etc/rcS.conf</code> configuration
 file:
@@ -62,11 +62,11 @@ utility:
 <a name="root"></a>
 <h3>Root - The system administrator</h3>
 <p>
-In a GNU/Linux system, the <em>root</em> user is the system administrator, <em>root</em> has all the rights 
+In a GNU/Linux system, the <em>root</em> user is the system administrator. <em>root</em> has all the rights 
 to the system files and that of the users. It is advisable never to log in as <em>root</em> by using the command 
-<code>su</code>  followed by the password to obtain absolute rights over the system. Never log in as <em>root</em> and surf the 
-internet for example, this allows you to create a double barrier in the case of an attack or intrusion after a 
-download. This makes it harder for a <em>cracker</em> to take control of your machine - first he must crack your
+<code>su</code> followed by the password to obtain absolute rights over the system. Never log in as <em>root</em> and surf the 
+internet for example. This allows you to create a double barrier in the case of an attack or intrusion after a 
+download and makes it harder for a <em>cracker</em> to take control of your machine - first he must crack your
 password and then crack the <em>root</em> password of the system administrator.
 </p>
 <p>
@@ -102,7 +102,7 @@ On SliTaz the LightTPD web server is enabled by default at system startup, if yo
 environment, you can safely disable it by removing it from the <code>RUN_DAEMONS</code> variable in the
 <code>/etc/rcS.conf</code> configuration file or to stop it manually:
 </p>
-<pre> # etc/init.d/lighttpd stop
+<pre> # /etc/init.d/lighttpd stop
 </pre>
 
 <a name="ssh"></a>
@@ -117,7 +117,7 @@ enabled at system boot. Or to start the server manually:
 <pre> # /etc/init.d/dropbear start
 </pre>
 <p>
-By default Dropbear is launched with the following options:
+By default, Dropbear is launched with the following options:
 </p>
 <pre class="script"> -w   Disallow root logins.
  -g   Disallow logins for root password.
@@ -130,7 +130,7 @@ For all options, you can type: <code>dropbear -h</code>.
 <a name="pscan"></a>
 <h3>Pscan - Ports scanner</h3>
 <p>
-Pscan is a small utility of the Busybox project, it scans the ports of your machine. You can use 
+Pscan is a small utility of the Busybox project that scans the ports of your machine. You can use 
 <code>pscan</code> to scan the localhost or a remote host using the name or IP address of the machine.
 Pscan will test all the ports from 1 - 1024 by default and list those that are open, their protocol
 and associated service (ssh, www, etc):

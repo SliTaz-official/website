@@ -6,7 +6,7 @@
 	<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
 	<meta name="description" content="" />
 	<meta name="expires" content="never" />
-	<meta name="modified" content="2007-08-03 13:26:42" />
+	<meta name="modified" content="2008-07-18 14:00:00" />
 	<style type="text/css"><!--
 	body { font: 90% sans-serif, vernada, arial; margin: 0; }
 	#header { background: #f0ba08; color: black; height: 50px;
@@ -44,17 +44,17 @@ tazlito [command] [list|iso|flavor] [dir]
 Tazlito is a small utility to extract a LiveCD, rebuild the
 ISO image and regenerate the root filesystem of the LiveCD. 
 Tazlito can also generate a distribution from a list of packages 
-previously downloaded. To run Tazlito uses a configuration file 
+previously downloaded. To run, Tazlito uses the configuration file 
 /etc/slitaz-tools/tazlito.conf or a tazlito.conf found in the 
-current directory, this can be easily generated 
-by Tazlito, it specifies the name of the ISO, volume, maintainer and 
+current directory that can be easily generated 
+by Tazlito. It specifies the name of the ISO, volume, maintainer and 
 the paths of the packages to distribute and the generated ISO. 
 Tazlito can also set up a directory containing additional files, 
-which will be copied into the LiveCD when generating the distribution.
+which will be copied to the LiveCD when generating the distribution.
 </p>
 <p>
 Tazlito is distributed under the free GNU licence GPL V3,
-Installed by default of SliTaz and installed/sucessfully tested
+installed by default on SliTaz and installed/sucessfully tested
 on Debian GNU/Linux. You will find additional information
 about creating a LiveCD in the Handbook.
 </p>
@@ -63,7 +63,7 @@ about creating a LiveCD in the Handbook.
 <h3><font color="#6c0023">usage</font></h3>
 <p>
 The 'usage' command displays a list of available commands
-with a short description:
+with short descriptions:
 </p>
 <pre>
  # tazlito usage
@@ -99,9 +99,9 @@ file or one found in the current directory:
 <p>
 The 'gen-iso' command can generate a 
 new LiveCD image following modifications and additions to the 
-root filesystem of the cdrom. To function this command needs 
-a directory containing the distro-tree of the Live system, 
-this tree can easily be built with the 'extract-distro' command, 
+root filesystem of the cdrom. To function, this command needs 
+a directory containing the distro-tree of the Live system. 
+This tree can easily be built with the 'extract-distro' command, 
 modified and rebuilt via:
 </p>
 <pre>
@@ -110,7 +110,7 @@ modified and rebuilt via:
 <h3><font color="#6c0023">gen-initiso</font></h3>
 <p>
 The 'gen'initso' command will do the same work as 'gen-iso',
-but rebuilds the initramfs compressed system prior.
+but it rebuilds the initramfs compressed system prior.
 The initramfs contains the root filesystem and
 must be rebuilt if modified:
 </p>
@@ -120,7 +120,7 @@ must be rebuilt if modified:
 <h3><font color="#6c0023">list-flavors</font></h3>
 <p>
 The 'list-flavors' command downloads (if necessary) and displays 
-the list of the different flavors available. You can force the
+a list of the different flavors available. You can force the
 download with the -recharge option:
 </p>
 <pre>
@@ -138,7 +138,7 @@ files for 'gen-distro' to generate a flavor:
 <h3><font color="#6c0023">show-flavor</font></h3>
 <p>
 The 'show-flavor' command displays the description of the 
-flavor and it's size after regenerating. The options
+flavor and its size after regenerating. The options
 --brief and --noheader reduce the output displayed:
 </p>
 <pre>
@@ -149,7 +149,7 @@ flavor and it's size after regenerating. The options
 <h3><font color="#6c0023">gen-flavor</font></h3>
 <p>
 The 'gen-flavor' command creates a description file of a new
-flavor from the results of generating a distro (gen-distro)
+flavor from the results of generating a distro (gen-distro).
 The .flavor file can then be sent to slitaz.org:
 </p>
 <pre>
@@ -158,8 +158,8 @@ The .flavor file can then be sent to slitaz.org:
 <h3><font color="#6c0023">extract-distro</font></h3>
 <p>
 The 'extract-distro' command is used to extract an ISO image
-from the LiveCD to rebuild the structure (of the root cdrom
-and system). It is then possible to make the desired changes
+from the LiveCD to rebuild the structure of the root cdrom
+and system. It is then possible to make the desired changes
 or additions and rebuild the ISO image via 'gen-iso' and 
 'gen-initiso'. Example of use:
 </p>
@@ -171,7 +171,7 @@ or additions and rebuild the ISO image via 'gen-iso' and
 The <em>Generate Distribution</em> command can generate the
 distro-tree and an ISO image via a list of packages. To function,
 this command needs a list of packages, a directory containing
-all the (.tazpkg) packages on the list and a directory to
+all the (.tazpkg) packages on the list, and a directory to
 generate the distribution. The list of packages can be extracted
 from a flavor by the 'get-flavor' command. If one uses the
 LiveCD, the options --cdrom and --iso= permit the regeneration
@@ -190,7 +190,7 @@ a distribution:
 </pre>
 <h3><font color="#6c0023">clean-distro</font></h3>
 <p>
-Remove all files generated or extracts of the structure
+Removes all files generated or extracts of the structure
 of the LiveCD:
 </p>
 <pre>
@@ -216,7 +216,7 @@ by the packages are present on the system:
 </pre>
 <h3><font color="#6c0023">burn-iso</font></h3>
 <p>
-Burn-iso will guess the cdrom device, it's speed and wodim
+Burn-iso will guess the cdrom device and its speed, and wodim
 (part of cdrkit) will begin to burn an ISO image. The default
 ISO image is the one in the current configuration file,
 but it's possible to specify a different image via the

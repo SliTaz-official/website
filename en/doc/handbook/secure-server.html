@@ -6,7 +6,7 @@
     <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
     <meta name="description" content="slitaz English handbook" />
     <meta name="expires" content="never" />
-    <meta name="modified" content="2008-02-26 18:30:00" />
+    <meta name="modified" content="2008-07-18 05:30:00" />
     <meta name="publisher" content="www.slitaz.org" />
     <meta name="author" content="Christophe Lincoln" />
     <link rel="shortcut icon" href="favicon.ico" />
@@ -32,9 +32,9 @@
 
 <ul>
     <li><a href="#about">About Dropbear.</a></li>
-    <li><a href="#dbclient">Connecting to a remote host.</a> - (dbclient).</li>
+    <li><a href="#dbclient">Connecting to a remote host</a> - (dbclient).</li>
     <li><a href="#scp">Transfer files</a> - (scp).</li>
-    <li><a href="#dropbearkey">Generate keys rsa/dss.</a> - (dropbearkey).</li>
+    <li><a href="#dropbearkey">Generate keys rsa/dss</a> - (dropbearkey).</li>
     <li><a href="#start-stop-restart">Start, stop, restart SSH server.</a></li>
 </ul>
 
@@ -42,7 +42,7 @@
 <h3>About Dropbear</h3>
 <p>
 Control and administer remotely with the Dropbear SSH secure server. Dropbear is a small SSH client/server
-supporting SSH 2, it's compatible with OpenSSH and uses ~/.ssh/authorized_keys for the management of public keys.
+supporting SSH 2. It's compatible with OpenSSH and uses ~/.ssh/authorized_keys for the management of public keys.
 Dropbear also provides it's own version of <code>scp</code>, allowing you to copy files
 between machines in a secure manner.
 </p>
@@ -87,8 +87,8 @@ Copy a file from a remote machine to your local machine:
 <a name="dropbearkey"></a>
 <h3>Generate rsa/dss keys with dropbearkey</h3>
 <p>
-Dropbear provides <code>dropbearkey</code> to generate the protected keys rsa
-and dss. Note that when you start the server for the first time, secure keys will be 
+Dropbear provides <code>dropbearkey</code> to generate the protected rsa and
+dss keys. Note that when you start the server for the first time, secure keys will be 
 automatically generated if they don't already exist. You can use <code>dropbearkey</code> with 
 the following argurments:
 </p>
@@ -99,9 +99,9 @@ the following argurments:
 <a name="start-stop-restart"></a>
 <h3>Start, stop, restart the SSH server</h3>
 <p>
-By default SliTaz will not start the SSH server at boot, to be launched automatically <code>dropbear</code> 
+By default SliTaz will not start the SSH server at boot. To be launched automatically, <code>dropbear</code> 
 must be added to the variable RUN_DAEMONS in the <code>/etc/rcS.conf</code> file. To start, stop or restart
-the SSH server; use the following commands: <code>/etc/init.d/dropbear [start|stop|restart]</code>.
+the SSH server, use the following commands: <code>/etc/init.d/dropbear [start|stop|restart]</code>.
 Example to start the server:
 </p>
 <pre> # /etc/init.d/dropbear start

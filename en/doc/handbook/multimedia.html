@@ -6,7 +6,7 @@
     <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
     <meta name="description" content="slitaz English handbook" />
     <meta name="expires" content="never" />
-    <meta name="modified" content="2008-02-26 18:30:00" />
+    <meta name="modified" content="2008-07-17 16:00:00" />
     <meta name="publisher" content="www.slitaz.org" />
     <meta name="author" content="Christophe Lincoln"/>
     <link rel="shortcut icon" href="favicon.ico" />
@@ -46,14 +46,14 @@
 SliTaz LiveCD mode provides sound support, but no video player, however you can watch YouTube by installing 
 the <code>get-flash-plugin</code> package. To watch videos you can use Xine, it supports most formats such 
 as avi, mov, mpeg etc, note Xine can also act as an audio player. At the sound level, you have a mixer 
-(alsamixer) and audio player (alsaplayer), both installed by default on standard CD. SliTaz also provides 
-tools to configure your sound card.
+(alsamixer) and audio player (alsaplayer), both installed by default on the standard LiveCD. SliTaz also
+provides tools to configure your sound card.
 </p>
 
 <a name="config"></a>
 <h3>Configure the sound card</h3>
 <p>
-In LiveCD mode SliTaz automatically configures the sound card by launching a dialog, in most cases the sound 
+In LiveCD mode SliTaz automatically configures the sound card by launching a dialog. In most cases the sound 
 card is instantly recognized and you just press ENTER to continue to login and have your sound working. 
 However, sometimes your card is not recognized at startup or simply not supported. Before throwing in the 
 towel, you can try to manually configure your card by asking for help on the discussion list or on the 
@@ -74,7 +74,7 @@ and type:
 <h4>Alsactl</h4>
 <p>
 Alsactl controls <code>alsa</code> and can store settings or restore sound for example, to retain 
-preferences for each start. When configuring sound with soundconf, volumes are automatically adjusted, you 
+preferences for each start. When configuring sound with soundconf, volumes are automatically adjusted. You 
 can use <code>alsamixer</code> as <em>root</em> to change the values and then launch <code>alsactl</code> 
 to store the configuration:
 </p>
@@ -111,10 +111,10 @@ start.
 </p>
 
 <a name="asunder"></a>
-<h3>Asunder -  Audio CD Ripper</h3>
+<h3>Asunder - Audio CD Ripper</h3>
 <p>
-Asunder retrieves and encodes audio tracks from a CD. The toolkit is simple and easy to use encoding 
-songs into wav, ogg or mp3 (via <code>lame</code> package). It can search CDDB, create a playlist and 
+Asunder retrieves and encodes audio tracks from a CD. The toolkit is simple and easy to use, encoding 
+songs into wav, ogg or mp3 (via <code>lame</code> package). It can search CDDB, create playlists and 
 edit file names. You will find Asunder in the Multimedia category on the menu.
 </p>
 
@@ -124,7 +124,7 @@ edit file names. You will find Asunder in the Multimedia category on the menu.
 Xine is a multimedia project providing various video viewers and audio players. SliTaz provides libraries 
 and a media player contained in the package <code>xine-ui</code>. Xine uses a Xlib interface, a control 
 panel, a right click configuration menu and various plugins. It can play ogg, mp3 and flac audio codecs 
-and mov, avi or mpg video formats. To install xine and it's dependancies:
+and mov, avi or mpg video formats. To install xine and its dependancies:
 </p>
 <pre>
  # tazpkg get-install xine-ui
@@ -136,7 +136,7 @@ and mov, avi or mpg video formats. To install xine and it's dependancies:
 <h3><font color="#6c0023">mpg123</font></h3>
 <p>
 Mpg123 is a command line audio player and file converter. This means that you can listen to music or 
-convert files from a terminal, to display help (<code>--help</code>).
+convert files from a terminal. To display help, use the <code>--help</code> option.
 To play a mp3 file, just launch <code>mpg123</code> followed by the name of the audio file:
 </p>
 <pre>

@@ -6,7 +6,7 @@
     <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
     <meta name="description" content="slitaz English cookbook" />
     <meta name="expires" content="never" />
-    <meta name="modified" content="2008-02-26 18:30:00" />
+    <meta name="modified" content="2008-07-16 21:45:00" />
     <meta name="publisher" content="www.slitaz.org" />
     <meta name="author" content="Christophe Lincoln"/>
     <link rel="shortcut icon" href="favicon.ico" />
@@ -45,7 +45,7 @@ also used by tazpkg to install/uninstall and provide information about a
 <h3>Variables</h3>
 <p>
 The first 5 variables should always be present and defined. They respectively 
-configure the package ($PACKAGE), it's version, it's category, a short 
+configure the package ($PACKAGE), its version, its category, provide a short 
 description and the name of the maintainer. Example for the package, file 
 manager Clex:
 </p>
@@ -59,7 +59,7 @@ MAINTAINER="pankso@slitaz.org"
 
 <h3>Variables (optional)</h3>
 <p>
-Tazwok also knows how to use various optional variables, it can for example 
+Tazwok also knows how to use various optional variables. It can, for example, 
 use the name of another source package. There are also variables that are 
 used by tazpkg to manage dependencies or provide information about the package.
 </p>
@@ -135,19 +135,19 @@ Functions.
 <code>$src</code> : Defines the path to the directory of unarchived sources.
 </p>
 <p>
-<code>$_pkg</code> : Defines the path to the binary compiles installed via 
+<code>$_pkg</code> : Defines the path to the compiled binaries installed via 
 'make DESTDIR=$PWD/_pkg install'. This variable is used to copy the generated 
 files and create tazpkg packages.
 </p>
 <p>
 <code>$fs</code> : Defines the path to the pseudo filesystem (fs) in each 
 package. The 'fs' of the package corresponds to the root of the system, a bit
-like Clex will for example in $fs/usr/bin/clex, note the need to create the 
+like Clex will for example be in $fs/usr/bin/clex. Note the need to create the 
 necessary directories via function genpkg_rules() before copying the files.
 </p>
 <p>
 <code>$CONFIGURE_ARGS</code> : This variable is defined in the Tazwok 
-configuration file (tazwok.conf), it allows you to specify generic optimization
+configuration file (tazwok.conf). It allows you to specify generic optimization
 arguments during construction of a package. Default is the i486 architecture.
 </p>
 
@@ -164,7 +164,7 @@ configured.
 To compile a package you can use the variable $src to move (cd) in the 
 directory of sources and use $CONFIGURE_ARGS to include arguments from the 
 tazwok configuration file. To build the package you usually launch 'make' 
-without any arguments and to install the package into the directory _pkg, 
+without any arguments, and to install the package into the directory _pkg, 
 it is necessary to use the command 'make DESTDIR=$PWD/_pkg install'. Generic
 example:
 </p>

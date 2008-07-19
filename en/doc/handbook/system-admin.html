@@ -6,7 +6,7 @@
     <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
     <meta name="description" content="slitaz English handbook" />
     <meta name="expires" content="never" />
-    <meta name="modified" content="2008-07-14 22:15:00" />
+    <meta name="modified" content="2008-07-18 06:00:00" />
     <meta name="publisher" content="www.slitaz.org" />
     <meta name="author" content="Christophe Lincoln"/>
     <link rel="shortcut icon" href="favicon.ico" />
@@ -31,9 +31,9 @@
 <h2><font color="#df8f06">System administration</font></h2>
 
 <ul>
-	<li><a href="#devices">Devices and disks access.</a></li>
-	<li><a href="#users-admin">Users, groups and passwords.</a></li>
-	<li><a href="#locale">Language and keyboard.</a></li>
+    <li><a href="#devices">Devices and disk access.</a></li>
+    <li><a href="#users-admin">Users, groups and passwords.</a></li>
+    <li><a href="#locale">Language and keyboard.</a></li>
     <li><a href="#bash">Install the Bash shell.</a></li> 
     <li><a href="#time">Set the system time.</a></li>
     <li><a href="#cron">Execute scheduled commands.</a></li>
@@ -41,7 +41,7 @@
 </ul>
 
 <a name="devices"></a>
-<h3>Devices and disks access</h3>
+<h3>Devices and disk access</h3>
 <p>
 With Linux your disks and USB media are seen as devices. To access them you must
 first mount a device on a mount point (directory). On SliTaz you can graphically
@@ -130,7 +130,7 @@ command <code>locale</code> as a single user or root (C for English):
 <p>
 On SliTaz you have the ash and sh shell with a link to Ash, this shell is 
 provided by Busybox. If you wish to use the Bash (Bourne Again SHell), first 
-as <code>su</code> install bash, copy the <code>.profile</code> found in your 
+as <code>root</code> install bash, copy the <code>.profile</code> found in your 
 home directory and rename it <code>.bashrc</code>, then edit the 
 <code>/etc/passwd</code> file with your favorite text editor and change your 
 shell to :/bin/bash
@@ -152,6 +152,8 @@ by typing <code>env</code> in the command line.
 To know the current system time, you can simply type <code>date</code>. On 
 SliTaz, the timezone configuration file is saved in <code>/etc/TZ</code>, you 
 can edit with your favorite text editor or simply <code>echo</code> the changes.
+To see the avaliable timezones, you can look in the
+<code>/usr/share/zoneinfo</code> directory.
 Here's an example using the timezone Europe/London:
 </p>
 <pre>

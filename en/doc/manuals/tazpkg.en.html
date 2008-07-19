@@ -6,7 +6,7 @@
 	<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
 	<meta name="description" content="" />
 	<meta name="expires" content="never" />
-	<meta name="modified" content="2008-02-06 00:02:00" />
+	<meta name="modified" content="2008-07-18 19:45:00" />
 	<style type="text/css"><!--
 	body { font: 90% sans-serif, vernada, arial; margin: 0; }
 	#header { background: #f0ba08; color: black; height: 50px;
@@ -47,9 +47,9 @@ on a GNU/Linux system. Tazpkg offers commands for searching
 and creating packages and was created independently.
 The format of the packages using the *.tazpkg extension is a
 cpio archive containing a filesystem compressed with gzip,
-a receipt and a possible description. Tazpkg also manages
+a receipt and an optional description. Tazpkg also manages
 dependencies based on package receipts. Each receipt contains
-all the information about the package, it can also include
+all the information about a package and can also include
 pre and post installation functions. The same receipt is 
 used by Tazwok to compile sources and generate a .tazpkg 
 package.
@@ -78,8 +78,8 @@ on a term or package name:
 <p>
 The 'xhtml-list' command can create a XHTML list
 of all the packages installed on the system which can be read
-with your preferred Web browser. It can be started as a simple
-user and creates a page 'installed-packages.html' in
+with your preferred Web browser. It can be run as a normal
+user and creates a page called 'installed-packages.html' in
 your current directory. Note that you can change the name of the
 generated list via the command line:
 </p>
@@ -103,7 +103,7 @@ the differences between the last and current list of packages:
 <h3><font color="#6c0023">info</font></h3>
 <p>
 Display any information available in the receipt for the 
-package in question,  it's version, category, maintainer,
+package in question - its version, category, maintainer,
 Web site and any dependencies (see also Tazwok for more
 information on receipts):
 </p>
@@ -122,7 +122,7 @@ text file not more than 80 characters to fit in a standard terminal):
 <h3><font color="#6c0023">list-files</font></h3>
 <p>
 List all files installed with a package. This command will
-simply read and display the 'files.list' of each package, this file is
+simply read and display the 'files.list' of each package which is
 automatically generated when the package is created and is
 also used to remove files when uninstalling a package.
 To list the files installed with the package bc:
@@ -132,7 +132,7 @@ To list the files installed with the package bc:
 </pre>
 <h3><font color="#6c0023">search</font></h3>
 <p>
-Search for packages by owner or name of package. This command
+Search for packages by owner or package name. This command
 will search for the term wanted in the installed packages and the
 list of available packages on the mirror. To obtain the 
 latest list of installable packages on the mirror, just
@@ -145,7 +145,7 @@ run 'tazpkg recharge' before conducting a search:
 <p>
 The 'search-file' command allows you to search for a file
 among the files installed by the packages. This command is very
-useful to find the full path to a file and determines if 
+useful to find the full path to a file and determine if 
 a file is present on the system. Example:
 </p>
 <pre>
@@ -171,7 +171,7 @@ packages via the -root= option:
 <p>
 Install a set of packages listed in a file. This command
 allows you to install several packages with a single command
-and can also be enforced:
+and can also be forced:
 </p>
 <pre>
  # tazpkg install-list my-packages.list
@@ -179,9 +179,9 @@ and can also be enforced:
 </pre>
 <h3><font color="#6c0023">remove</font></h3>
 <p>
-Remove a package, you will be asked for confirmation (y/N).
-This command will delete all files installed with the package;
-to view the list of files, use the 'list-files' command
+Remove a package. You will be asked for confirmation (y/N).
+This command will delete all files installed with the package.
+To view the list of files, use the 'list-files' command
 followed by the name of the package. Example
 with the package bc:
 </p>
@@ -249,7 +249,7 @@ system shutdown. To upgrade:
 <h3><font color="#6c0023">check</font></h3>
 <p>
 The 'check' command can check dependencies on installed
-packages and whether all the files needed for the 
+packages and determine whether all the files needed for the 
 repacking of packages are present:
 </p>
 <pre>
@@ -272,7 +272,7 @@ Grub:
 <h3><font color="#6c0023">get</font></h3>
 <p>
 Get a package from the mirror (if it exists). The downloaded
-package is stored in the current directory, to find the path
+package is stored in the current directory. To find the path
 you can use 'pwd'. To get the Grub package:
 </p>
 <pre>
@@ -293,8 +293,8 @@ use the 'list-mirror' command. To install the package Grub:
 <p>
 Remove *.tazpkg packages downloaded to the cache. During 
 installation, Tazpkg keeps a copy of packages downloaded
-from the web, it's done to save bandwidth in case of 
-reinstalment, but you may want to free up space on the hard
+from the web. This is done to save bandwidth in case of 
+reinstallation, but you may want to free up space on the hard
 drive or re-download the packages:
 </p>
 <pre>
@@ -304,7 +304,7 @@ drive or re-download the packages:
 <p>
 Setup the URL for the mirror. The 'setup-mirror' command
 will ask for the URL for the new mirror. You can specify
-multiple URLs separated by spaces, note that you can also
+multiple URLs separated by spaces. Note that you can also
 modify the main /var/lib/tazpkg/mirror file. The URL must
 point to the directory containing the 'packages.list' and
 packages:
