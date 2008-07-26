@@ -62,7 +62,7 @@ about creating a LiveCD in the Handbook.
 <h2>COMMANDS</h2>
 <h3><font color="#6c0023">usage</font></h3>
 <p>
-The 'usage' command displays a list of available commands
+The 'usage' command displays a summary of available commands
 with short descriptions:
 </p>
 <pre>
@@ -80,7 +80,7 @@ various files and directories and information on the ISO image:
 <p>
 The 'gen-config' command allows you to generate a configuration
 file ready to be edited. By default the file is created in
-the current directory and can also be in another directory
+the current directory, but can also be in another directory
 if specified:
 </p>
 <pre>
@@ -121,7 +121,7 @@ must be rebuilt if modified:
 <p>
 The 'list-flavors' command downloads (if necessary) and displays 
 a list of the different flavors available. You can force the
-download with the -recharge option:
+download with the --recharge option:
 </p>
 <pre>
  # tazlito list-flavors
@@ -129,7 +129,7 @@ download with the -recharge option:
 </pre>
 <h3><font color="#6c0023">get-flavor</font></h3>
 <p>
-The 'get-flavor' command downloads (if necessary) and prepares the necesssary
+The 'get-flavor' command downloads (if necessary) and prepares the
 files for 'gen-distro' to generate a flavor:
 </p>
 <pre>
@@ -138,7 +138,7 @@ files for 'gen-distro' to generate a flavor:
 <h3><font color="#6c0023">show-flavor</font></h3>
 <p>
 The 'show-flavor' command displays the description of the 
-flavor and its size after regenerating. The options
+flavor and its size after regeneration. The options
 --brief and --noheader reduce the output displayed:
 </p>
 <pre>
