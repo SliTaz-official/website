@@ -79,7 +79,7 @@ on a term or package name:
 The 'xhtml-list' command can create a XHTML list
 of all the packages installed on the system which can be read
 with your preferred Web browser. It can be run as a normal
-user and creates a page called 'installed-packages.html' in
+user and creates a page 'installed-packages.html' in
 your current directory. Note that you can change the name of the
 generated list via the command line:
 </p>
@@ -93,7 +93,7 @@ List packages available on the mirror. This command will
 display the 'packages.list' file recharged from the mirror.
 If this doesn't exist, you will be asked to launch
 'tazpkg recharge' as administrator (root) for a list of 
-available packages . The -diff option is used to display
+available packages . The --diff option is used to display
 the differences between the last and current list of packages:
 </p>
 <pre>
@@ -114,7 +114,7 @@ information on receipts):
 <p>
 Description of the package (if it exists). This command
 displays the 'description.txt' file of each package (a simple
-text file not more than 80 characters to fit in a standard terminal):
+text file, not more than 80 characters to fit in a standard terminal):
 </p>
 <pre>
  # tazpkg desc busybox
@@ -156,8 +156,8 @@ a file is present on the system. Example:
 This command allows the installation of a local package with
 the .tazpkg extension. See 'get-install' to install a 
 package from the internet. Note that you can force the
-installation via the -forced, uninstall and reinstall options
-or specify the root system where you want to install the
+installation via the --forced, uninstall and reinstall options.
+You can also specify the root system where you want to install the
 packages via the -root= option:
 </p>
 <pre>
@@ -224,7 +224,7 @@ This command will download the most recent 'packages.list'
 of installable packages on the mirror and before starting 
 will save the old list. Once the list is updated
 you can then use the 'list' and 'search' commands. To view
-the list of differences, you can use 'list-mirror -diff' and to view 
+and list the differences, you can use 'list-mirror --diff' and to view 
 and update packages, you can 'upgrade'. To recharge the
 latest list of packages:
 </p>
@@ -235,7 +235,7 @@ latest list of packages:
 <p>
 Upgrade allows you to update all installed packages available
 on the current mirror. Upgrading packages is an important
-part of security, it helps to keep the system secure with
+part of system security, it helps to keep you secure with
 the latest updates and fixes. The SliTaz project,
 although tiny, provides regular updates on security and generally
 offers the latest versions of software. Note that this 
