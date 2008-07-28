@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+	<atom:link href="http://www.slitaz.org/en/rss.xml" rel="self" type="application/rss+xml" />
+	<title>Slitaz GNU/Linux RSS feed</title>
+	<link>http://www.slitaz.org/en/rss.xml</link>
+	<language>en</language>
+	<description>
+		SliTaz GNU/Linux News.
+	</description>
+	<copyright>Copyright © www.slitaz.org - GNU gpl</copyright>
+	<lastBuildDate>Wed, 16 Jul 2008 22:50:00 GMT</lastBuildDate>
+	
+	<item>
+		<title>Cooking 20080716 - Web boot and MPlayer</title>
+		<link>http://www.slitaz.org/en/get/#cooking</link>
+		<guid isPermaLink="true">http://www.slitaz.org/en/get/</guid>
+		<pubDate>Wed, 16 Jul 2008 22:50:00 GMT</pubDate>
+		<description>
+	SliTaz project members are proud to announce the availability of a new
+	Cooking version, including many new features and bug fixes. This version 
+	provides the boot option web which lets you boot SliTaz from the internet 
+	using gPXE from boot.slitaz.org. This new unique service offers the 
+	possibility to use SliTaz in Live mode (all in RAM), using the Live options 
+	to store your data permanently and preconfigure the system. This new Cooking 
+	takes an extra 3 Mb so we can provide: a multimedia player with MPlayer, a 
+	notes manager with Notecase, a new version of Tazpkg package manager with 
+	md5sum support, XFS filesystem support built into the Kernel, a 'man' command 
+	and a few updates. This version requires at least 160 Mb to boot and run 
+	properly, we offer loram flavors for machines with less resources.
+		</description>
+	</item>
+	
+	<item>
+		<title>Cooking 20080626 with new Kernel</title>
+		<link>http://www.slitaz.org/en/</link>
+		<guid isPermaLink="true">http://www.slitaz.org/en/get/</guid>
+		<pubDate>Sun, 28 Jun 2008 10:50:00 GMT</pubDate>
+		<description>
+	Summer time is here and also the new Cooking from the 26 June. A lot
+	of work has been done to improve user experience. This Cooking version
+	provides a new Kernel (2.6.25.5) with many new built-in drivers and 
+	modules, linux package was also split to have a fairly modular Kernel.
+	Default user has changed to tux and the new option 
+	user=name lets you choose the default user name. Most
+	of the Slitaz utils and tools have been improved: tazpkgbox provides
+	some new commands for package management and bootfloppybox can be used in
+	text mode, Netbox wifi and PPPoE support are now both working well and
+	a new function called zeroconf is available. Most packages are up-to-date
+	and Firefox 3.0 is part of the 25.2 Mb ISO. Cooking version can be
+	downloaded from SliTaz mirror. Bugs can be reported on SliTaz Bug 
+	Tracking System.
+		</description>
+	</item>
+	
+    <item>
+		<title>Cooking 20080518 and LinuxDays.ch</title>
+		<link>http://www.slitaz.org/en/</link>
+		<guid isPermaLink="true">http://www.slitaz.org/en/get/</guid>
+		<pubDate>Sun, 18 May 2008 23:50:00 GMT</pubDate>
+		<description>
+	SliTaz team is proud to announce the availability of a new Cooking
+	LiveCD ISO image providing huge changes from the stable release.
+	SliTaz now uses Openbox as it's default Window Manager, desktop icons let
+	you launch your favorite applications and manage files and dbus and hal
+	will automatically mount removable media such as USB keys or Hard disks.
+	Packages can now be managed through the graphical Packages Manager
+	Tazpkgbox and mountbox and netbox are now much more usable and complete.
+	The LiveCD now offers: lua, a desktop search engine with searchmonkey,
+	system information with Hardinfo, task management with LXTasks and a
+	password and clipboard manager. All the major packages have been updated -
+	SliTaz now uses a new toolchain using the last glibc-2.7, GTK 2.12.9
+	and Firefox 3.0 RC1! You will now find 580 packages on the mirror
+	including wireless support for the kernel and the necessary tools 
+	for a manual connection or one managed by SliTaz netbox. This new announced
+	Cooking version can be downloaded from SliTaz mirror. Note: This version is 
+	going to be used at the LinuxDay.ch in Geneva, Switzerland.
+		</description>
+	</item>
+
+	<item>
+		<title>March 2008 - SliTaz GNU/Linux 1.0 release</title>
+		<link>http://www.slitaz.org/en/</link>
+		<guid isPermaLink="true">http://www.slitaz.org/en/get/#stable</guid>
+		<pubDate>Sat, 22 Mar 2008 21:00:00 GMT</pubDate>
+		<description>
+	The SliTaz contributors team are proud to announce the publication of SliTaz
+	GNU/Linux 1.0. This is the first stable release after 2 years of work. The
+	system is distributed as a bootable LiveCD of 24.8 MB providing a fully
+	featured desktop environment and a generous selection of multi-use applications.
+	SliTaz GNU/Linux 1.0 uses the Linux Kernel 2.6.24.2, providing Firefox 2.0.0.12,
+	Rsync 3.0.0, Gparted 0.3.5 and sound support with Alsa 1.0.16. The distribution
+	lets you listen to music, surf the Web, edit a video studio and much more
+	with the 448 available packages that can be installed with our own
+	package manager Tazpkg. The LiveCD lets you create a custom distro or a LiveUSB
+	device in one single command. Security updates are provided by the project and
+	popular packages like Firefox will also get upgraded for functionality. You
+	can get SliTaz GNU/Linux 1.0 from the Web site download page. Read the Release 
+	Notes for more detailed information on this stable version.
+		</description>
+	</item>
+
+</channel>
+</rss>
