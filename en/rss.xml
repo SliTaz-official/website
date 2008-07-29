@@ -6,7 +6,7 @@
 	<link>http://www.slitaz.org/en/rss.xml</link>
 	<language>en</language>
 	<description>
-		SliTaz GNU/Linux News.
+		SliTaz GNU/Linux News
 	</description>
 	<copyright>Copyright © www.slitaz.org - GNU gpl</copyright>
 	<lastBuildDate>Wed, 16 Jul 2008 22:50:00 GMT</lastBuildDate>
@@ -32,7 +32,7 @@
 	</item>
 	
 	<item>
-		<title>Cooking 20080626 with new Kernel</title>
+		<title>Cooking 20080626 - New Kernel</title>
 		<link>http://www.slitaz.org/en/</link>
 		<guid isPermaLink="true">http://www.slitaz.org/en/get/</guid>
 		<pubDate>Sun, 28 Jun 2008 10:50:00 GMT</pubDate>
@@ -54,7 +54,7 @@
 	</item>
 	
     <item>
-		<title>Cooking 20080518 and LinuxDays.ch</title>
+		<title>Cooking 20080518 - LinuxDays.ch</title>
 		<link>http://www.slitaz.org/en/</link>
 		<guid isPermaLink="true">http://www.slitaz.org/en/get/</guid>
 		<pubDate>Sun, 18 May 2008 23:50:00 GMT</pubDate>
@@ -80,8 +80,8 @@
 
 	<item>
 		<title>March 2008 - SliTaz GNU/Linux 1.0 release</title>
-		<link>http://www.slitaz.org/en/</link>
-		<guid isPermaLink="true">http://www.slitaz.org/en/get/#stable</guid>
+		<link>http://www.slitaz.org/en/get/#stable</link>
+		<guid isPermaLink="true">http://www.slitaz.org/en/get/</guid>
 		<pubDate>Sat, 22 Mar 2008 21:00:00 GMT</pubDate>
 		<description>
 	The SliTaz contributors team are proud to announce the publication of SliTaz
