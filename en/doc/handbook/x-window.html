@@ -197,13 +197,8 @@ and preferences.
 <a name="enlightenment"></a>
 <h3>Enlightenment (e17)</h3>
 <p>
-Enlightenment is a complete desktop environment, fully configurable with the
-mouse and offering many themes. The version supplied by the SliTaz project
-is known as e17 and still in development, this version is considered stable
-enough to be incorporated in the distribution. Enlightenment was designed to 
-be deployed on systems with limited resources, as well as more powerful
-systems. It allows for wallpapers, menus, animated and interactive gadgets
-and knows how to manage virtual desktops. To install e17:
+Enlightenment aka e17 is a lightweight and fast desktop environment that can be
+configured graphically. To install e17:
 </p>
 <pre> # tazpkg get-install enlightenment
 </pre>
@@ -211,41 +206,6 @@ and knows how to manage virtual desktops. To install e17:
 Logout your current X session, type <code>F1</code> at Slim login and choose
 <code>e17</code> to start Enlightenment.
 </p>
-<h4>Menu and desktop icons</h4>
-<p>
-Enlightenment is compliant to the Freedesktop standards. 
-Applications are sorted by category and icons automatically appear
-if a desktop file is supplied. The (<code>.desktop</code>) system files are
-contained in the <code>/usr/share/applications</code> directory or hidden home
-<code>~/.local/share/applications</code> directory. These files
-have a simple syntax and are editable from the panel or with
-a simple text editor. The file menus displaying categories
-in the Enlightenment menu are found in the <code>slitaz-menus</code> 
-package:
-</p>
-<pre>
- # tazpkg get-install slitaz-menus
-</pre>
-<h4>An icon on the desktop</h4>
-<p>
-To have an icon on the desktop launching applications, you can
-create by hand a <code>.desktop</code> file in your local directory 
-<code>~/Desktop</code>. Desktop files placed in this directory are automatically
-recognized by Enlightenment. A single .desktop file can 
-contain eight lines with respectively:- the name (<code>Name</code>), generic
-name, comment, the command to execute (<code>Exec</code>), icon, type
-and Freedesktop categories. Example of a .desktop file for Xterm icon:
-</p>
-<pre class="script">
-[Desktop Entry]
-Name=XTerm
-GenericName=Terminal
-Comment=Run commands in a shell
-Exec=xterm -bg black -fg white -cr orange -sb -bd violet -rightbar
-Icon=/usr/share/icons/Tango/jwm/utilities-terminal.png
-Type=Application
-Categories=Utility;Terminal;
-</pre>
 <p>
 Additional themes can be found on the <a href="http://www1.get-e.org/Themes/E17/">website</a>
 </p>
