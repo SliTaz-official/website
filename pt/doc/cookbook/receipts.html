@@ -1,0 +1,237 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt">
+<head>
+    <title>Livro de Receitas do SliTaz - Receitas</title>
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <meta name="description" content="slitaz portuguese cookbook" />
+    <meta name="expires" content="never" />
+    <meta name="modified" content="2008-07-16 21:45:00" />
+    <meta name="publisher" content="www.slitaz.org" />
+    <meta name="author" content="Christophe Lincoln"/>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="book.css" />
+</head>
+<body bgcolor="#ffffff">
+
+<!-- Header and quick navigation -->
+<div id="header">
+<div align="right" id="quicknav">
+    <a name="top"></a>
+    <a href="wok-tools.html">Wok &amp; Ferramentas</a> |
+    <a href="index.html">Conteúdo</a>
+</div>
+<h1><font color="#3E1220">SliTaz Cookbook (pt)</font></h1>
+</div>
+
+<!-- Content. -->
+<div id="content">
+<div class="content-right"></div>
+
+
+<h2><font color="#df8f06">Receitas</font></h2>
+
+<p>
+Este documento descreve as oportunidades oferecidas pela receita usada pelo
+Tazwok para compilar e gerar pacotes para o SliTaz e o Tazpkg por meio do
+<a href="wok-tools.html">wok e ferramentas</a>. A receita para um pacote é
+também usada pelo Tazpkg para instalar/desinstalar e prover informações sobre
+um pacote .tazpkg. Cada receita começa com um comentário em inglês:
+</p>
+<pre class="script">
+# SliTaz package receipt.
+</pre>
+
+<h3>Variáveis</h3>
+<p>
+As 5 primeiras variáveis devem sempre estar presentes e definidas. Elas,
+respectivamente, configuram o pacote ($PACKAGE), sua versão, sua categoria,
+fornecem uma curta descrição e o nome do mantenedor. Exemplo para um pacote,
+o gerenciador de arquivos Clex:
+</p>
+<pre class="script">
+PACKAGE="clex"
+VERSION="3.16"
+CATEGORY="base-apps"
+SHORT_DESC="Text mode file manager."
+MAINTAINER="pankso@slitaz.org"
+</pre>
+
+<h3>Variáveis (opcionais)</h3>
+<p>
+O Tazwok também lida com diversas variáveis opcionais. Pode, por exemplo, usar
+o nome de outro pacote fonte. Também há variáveis que são usadas pelo Tazpkg
+para gerenciar dependências ou prover informações sobre o pacote.
+</p>
+<p>
+<code>$DEPENDS</code>: Define dependências - pode haver muitas dependências
+separada por um espaço ou por linhas. Esta variável é usada principalmente pelo
+Tazpkg ao instalar o pacote e pelo Tazwok para construir grandes pacotes como
+o Xorg. Exemplo para o Clex que depende do ncurses:
+</p>
+<pre class="script">
+DEPENDS="ncurses"
+</pre>
+<p>
+<code>$BUILD_DEPENDS</code>: Define as dependências de compilação, novamente
+separadas por espaços ou por linhas. Esta variável é usada pelo Tazwok durante
+a geração de um pacote. Exemplo:
+</p>
+<pre class="script">
+BUILD_DEPENDS="ncurses-dev"
+</pre>
+<p>
+<code>$TARBALL</code> : O arquivo é um fonte com a extensão (tar.gz, tgz ou 
+tar.bz2). Em geral, as variáveis $PACKAGE e $VERSION são usadas somente para
+mudar a extensão, ajudando a atualizar o pacote sem mudar a variável $VERSION.
+Um exemplo genérico (veja também o exemplo para a variável $SOURCE):
+</p>
+<pre class="script">
+TARBALL="$PACKAGE-$VERSION.tar.gz"
+</pre>
+<p>
+<code>$WEB_SITE</code> : 
+O website oficial do pacote. Pode ocorrer que algumas bibliotecas não possuam
+um website, neste caso não há necessidade de especificar uma URL. Note que tanto 
+o Tazwok e o Tazpkg esperam encontram uma URL completa:
+</p>
+<pre class="script">
+WEB_SITE="http://www.clex.sk/"
+</pre>
+<p>
+<code>$WGET_URL</code> : 
+URL para baixar o arquivo fonte. Em geral, a variável $TARBALL pode ser usada 
+para facilitar a atualização de um pacote sem mudar a variável $VERSION. Usando
+o arquivo de configuração, o Tazwok pode também configurar por padrão 3 mirrors:
+$GNU_MIRROR para o mirror GNU, $SF_MIRROR para o SourceForge e $XORG_MIRROR para
+o mirror do servidor gráfico Xorg. Exemplo para o Clex:
+</p>
+<pre class="script">
+WGET_URL="http://www.clex.sk/download/$TARBALL"
+</pre>
+<p>
+<code>$WANTED</code> : 
+Os pacotes do SliTaz normalmente dependem da compilação de um pacote fonte. 
+Algumas vezes a receita de um pacote não depende de compilação de regras, então
+a variável $WANTED é usada para copiar arquivos do fonte para outro pacote
+usando a variável $src.
+</p>
+<p>
+<code>$SOURCE</code> : Pode ocorrer de o nome do pacote .tazpkg ser diferente
+do nome do pacote fonte. Um exemplo é o dos pacotes Xorg: o nome da biblioteca
+X11 é "xorg-libX11" e o nome do pacote fonte é "libX11". Esta variável permite
+usar as variáveis $src e $_pkg durante a geração de um pacote. Pode-se notar
+que no caso da libX11, o nome do arquivo fonte torna-se $SOURCE-$VERSION.tar.gz.
+</p>
+
+<h3>Variáveis usadas em funções</h3>
+<p>
+O Tazwok configura diversas variáveis que facilitam a compilação e construção
+de pacotes .tazpgk. Estas são controladas automaticamente pelo Tazwok usando
+as informações contidas na receita: elas podem ser usadas pela funções 
+compile_rules e genpkg_rules descritas no capítulos Funções.
+</p>
+<p>
+<code>$src</code> : Define o caminho para o diretório de fontes ainda não arquivados.
+</p>
+<p>
+<code>$_pkg</code> : Define o caminho para os binários compilados instalados via
+"make DESTDIR=$PWD/_pkg install". Esta variável é usada para copiar os arquivos
+gerados e criar pacotes .tazpkg.
+</p>
+<p>
+<code>$fs</code> : Define o caminho para o pseudo sistema de arquivos (fs) em
+cada pacote. O "fs" de cada pacote corresponde à raiz do sistema, como se, por
+exemplo, o Clex estivesse em $fs/usr/bin/clex. Note a necessidade de criar
+os diretórios necessários por meio da função genpkg_rules() antes de copiar os
+arquivos.
+</p>
+<p>
+<code>$CONFIGURE_ARGS</code> : Variável definida no arquivo de configuração do
+Tazwok (tazwok.conf). Permite que sejam especificados argumentos de otimização
+genéricos durante a construção do pacote. O padrão é o argumento para a 
+arquitetura i486.
+</p>
+
+<h3>Funções</h3>
+<p>
+Uma receita deve conter 4 funções. O Tazwok lida com as funções contendo as
+regras de compilação (compile_rules) e as regras usadas para gerar um pacote
+(genpkg_rules). Estas funções podem conter todos os tipos de comandos padrão
+GNU/Linux, como sed, awk, patch e variáveis automaticamente configuradas.
+</p>
+<h4>compile_rules()</h4>
+<p>
+Para compilar um pacote pode-se usar a variável $src para mudar (cd) o diretório
+de fontes e usar a variável $CONFIGURE_ARGS para incluir argumentos do arquivo
+de configuração do Tazwok. Para construir um pacote normalmente se roda o "make"
+sem argumentos, e para instalar um pacote no diretório _pkg é necessário usar 
+o comando "make DESTDIR=$PWD/_pkg install". Um exemplo genérico:
+</p>
+<pre class="script">
+# Regras para configurar e criar um pacote.
+compile_rules()
+{
+    cd $src
+    ./configure --prefix=/usr --infodir=/usr/share/info \
+    --mandir=/usr/share/man $CONFIGURE_ARGS
+    make
+    make DESTDIR=$PWD/_pkg install
+}
+</pre>
+<h4>genpkg_rules()</h4>
+<p>
+Para gerar um pacote .tazpkg deve-se especificar comandos na função
+<code>genpkg_rules</code>. Neste exemplo criamos um pseudo diretório
+<code>usr/</code> no sistema de arquivos do pacote, copiamos todos os binários
+e por fim usamos "strip" para limpar os arquivos:
+</p>
+<pre class="script">
+# Rules to gen a SliTaz package suitable for Tazpkg.
+genpkg_rules()
+{
+    mkdir -p $fs/usr
+    cp -a $_pkg/usr/bin $fs/usr
+    strip -s $fs/usr/bin/*
+}
+</pre>
+<h4>pre_install() e post_install()</h4>
+<p>
+Estas duas funções são iniciadas pelo Tazpkg ao instalar algum pacote. Elas 
+devem ser definidas antes da geração do pacote .tazpkg pelo Tazwok. Se nenhuma
+regra é passada a estas funções, não há razão para mantê-las e elas podem ser
+removidas. Exemplo usando o comando "echo" para mostrar algum texto (nenhuma
+função pode estar vazia):
+</p>
+<pre class="script">
+# Comandos de pré e pós-instalação para o Tazpkg.
+pre_install()
+{
+    echo "Processing pre-install commands..."
+}
+post_install()
+{
+    echo "Processing post-install commands..."
+}
+</pre>
+
+<!-- End of content -->
+</div>
+
+<!-- Footer. -->
+<div id="footer">
+    <div class="footer-right"></div>
+    <a href="#top">Topo da Página</a> | 
+    <a href="index.html">Conteúdo</a>
+</div>
+
+<div id="copy">
+    Copyright &copy; 2008 <a href="http://www.slitaz.org/pt/">SliTaz</a> -
+    <a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>;<br />
+    Documentation is under
+    <a href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License</a>
+    and code is <a href="http://validator.w3.org/">valid xHTML 1.0</a>.
+</div>
+
+</body>
+</html>

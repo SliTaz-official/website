@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>SliTaz Handbook (en) - Chroot environment</title>
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <meta name="description" content="slitaz English handbook" />
+    <meta name="expires" content="never" />
+    <meta name="modified" content="2008-07-26 21:45:00" />
+    <meta name="publisher" content="www.slitaz.org" />
+    <meta name="author" content="Christophe Lincoln" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="book.css" />
+</head>
+<body bgcolor="#ffffff">
+
+<!-- Header and quick navigation -->
+<div id="header">
+<div id="quicknav" align="right">
+    <a name="top"></a>
+    <a href="secure-server.html">Secure SHell (SSH)</a> |
+    <a href="index.html">Table of contents</a>
+</div>
+<h1><font color="#3e1220">SliTaz Handbook (en)</font></h1>
+</div>
+
+<!-- Content. -->
+<div id="content">
+<div class="content-right"></div>
+
+<h2><font color="#df8f06">Chroot environment</font></h2>
+
+<p>
+This document describes the necessary steps to create a chrooted environment, in order to change the root 
+of the system so that you can work. This makes it possible to compile, test and develop SliTaz without any risk to
+the host system you're working on. The host system can be SliTaz installed to a hard drive or any other GNU/Linux system
+such as Debian, Fedora, PCLinuxOS and so on. You can also create a chrooted environment in LiveCD mode
+associated with USB media. The only prerequisite is to have a SliTaz ISO image available and a little
+time. Note that all commands are carried out as system administrator (<em>root</em>).
+</p>
+<h3>Prepare the environment</h3>
+<p>
+To begin, we must extract the contents of the ISO image into the directory that will serve as our chroot.
+The directory can be created any place you choose, we'll use a directory <code>/home/slitaz/chroot-env</code>.
+To extract the contents of an ISO image, we must mount it in a <em>loop</em> directory and then copy the compressed
+root filesystem (<code>rootfs.gz</code>) into the chroot directory. Assuming the ISO is in the current directory:
+</p>
+<pre> # mkdir /tmp/loop
+ # mount -o loop slitaz-cooking.iso /tmp/loop
+ # mkdir -p /home/slitaz/chroot-env
+ # cp /tmp/loop/boot/rootfs.gz \
+   /home/slitaz/chroot-env
+ # umount /tmp/loop
+</pre>
+<p>
+Now we have a copy of the compressed filesystem, we must extract and unpack it (this is a <code>cpio</code>
+archive compressed with either gzip or lzma). To complete this stage, we can remove the
+<code>rootfs</code> which is no longer required:
+</p>
+<pre> # cd /home/slitaz/chroot-env
+ # (zcat rootfs.gz 2&gt;/dev/null || lzma d rootfs.gz -so) | cpio -id
+ # rm rootfs rootfs.gz
+</pre>
+<p>
+If the unpacking of the rootfs compressed with lzma fails; you can use the following method:
+</p>
+<pre> # unlzma rootfs.gz -S .gz 
+ # cat rootfs | cpio -id
+</pre>
+
+<h3>Using the environment</h3>
+<p>
+To begin using the chrooted environment, you just need to mount some virtual filesystems and use the <code>chroot</code>
+command. To simplify things, we can write a small script automating the process. Example using the 
+chroot directory <code>/home/slitaz/chroot-env</code> and creating a script
+<code>chroot_in_env.sh</code> in <code>/home/slitaz</code>.
+On any systems other than SliTaz you can uncomment the lines about <code>/dev</code> and
+<code>/tmp</code> - <em>Note</em> to save typing you can copy and paste:
+</p>
+<pre> # cat &gt; /home/slitaz/chroot_in_env.sh &lt;&lt; "EOF"
+</pre>
+<pre class="script">#!/bin/sh
+# Chroot in SliTaz to hack.
+#
+ROOTFS="/home/slitaz/chroot-env"
+
+# Mount virtual Kernel file systems and chroot.
+#
+#mount --bind /dev $ROOTFS/dev
+#mount --bind /tmp $ROOTFS/tmp
+mount -t proc proc $ROOTFS/proc
+mount -t sysfs sysfs $ROOTFS/sys
+mount -t devpts devpts $ROOTFS/dev/pts
+mount -t tmpfs shm $ROOTFS/dev/shm
+
+echo "Chrooting into $ROOTFS... "
+chroot $ROOTFS /bin/sh --login
+
+# Unmount virtual Kernel file systems on exit.
+#
+umount $ROOTFS/dev/shm
+umount $ROOTFS/dev/pts
+umount $ROOTFS/sys
+umount $ROOTFS/proc
+#umount $ROOTFS/tmp
+#umount $ROOTFS/dev
+
+echo "Exiting $ROOTFS chroot environment... "
+
+EOF
+</pre>
+<p>
+To finish and test the environment, you just make the script executable and run:
+</p>
+<pre> # chmod +x /home/slitaz/chroot_in_env.sh
+ # sh /home/slitaz/chroot_in_env.sh
+</pre>
+<h4>To activate the network</h4>
+<p>
+In order to have the network up to download and install some development packages, just start the
+DHCP client on the correct interface. Example using <code>eth1</code>:
+</p>
+<pre> /# udhcpc -i eth1
+</pre>
+<h4>Installing packages</h4>
+<p>
+If the network is functional, just reload the list of packages and use <code>tazpkg get-install</code> to
+install them. If a connection is not possible, you can download the packages from another system, copy them 
+to the chrooted environment and install them with the <code>tazpkg install</code> command. To install the basic
+compilation tools:
+</p>
+<pre> /# tazpkg recharge
+ /# tazpkg get-install slitaz-toolchain
+</pre>
+<p>
+Once the environment is configured, you can compile applications from source to create packages, test scripts etc.
+The <a href="../cookbook/">Cookbook</a> should help you out here:
+</p>
+<h4>Exit the environment</h4>
+<p>
+To exit the chrooted environment, just type <code>exit</code>, the <code>chroot_in_env.sh</code> script will then end
+by unmounting the virtual filesystems from the Linux Kernel:
+</p>
+<pre> /# exit
+ #
+</pre>
+
+<!-- End of content -->
+</div>
+
+<!-- Footer. -->
+<div id="footer">
+	<div class="footer-right"></div>
+	<a href="#top">Top of the page</a> | 
+	<a href="index.html">Table of contents</a>
+</div>
+
+<div id="copy">
+    Copyright © 2008 <a href="http://www.slitaz.org/en/">SliTaz</a> -
+    <a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>;<br />
+    Documentation is under
+    <a href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License</a>
+    and code is <a href="http://validator.w3.org/">valid xHTML 1.0</a>.
+</div>
+
+</body>
+</html>
+

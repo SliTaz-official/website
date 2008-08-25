@@ -1,0 +1,254 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt">
+<head>
+    <title>SliTaz - Espaço dos Desenvolvedores</title>
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <meta name="description" content="SliTaz GNU/Linux project information overview" />
+    <meta name="keywords" lang="pt" content="about slitaz, gnu, linux, mini distro, livecd" />
+    <meta name="robots" content="index, follow, all" />
+    <meta name="revisit-after" content="7 days" />
+    <meta name="expires" content="never" />
+    <meta name="modified" content="2008-07-16 21:45:00" />
+    <meta name="author" content="Christophe Lincoln"/>
+    <meta name="publisher" content="www.slitaz.org" />
+    <link rel="shortcut icon" href="../../favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../slitaz.css" />
+    <link rel="Content" href="#content" />
+</head>
+<body bgcolor="#ffffff">
+<!-- Header -->
+<div id="header">
+    <a name="top"></a>
+<!-- Access -->
+<div id="access">
+    Language:
+    <a href="../../en/devel/" title="Site em inglês">English</a> |
+    <a href="../../devel/" title="A propos de SliTaz en français">Français</a>
+</div>
+    <a href="http://www.slitaz.org/pt/"><img id="logo"
+    src="../../pics/website/logo.png" title="www.slitaz.org/pt" alt="www.slitaz.org"
+    style="border: 0px solid ; width: 200px; height: 74px;" /></a>
+    <p id="titre">#!/GNU/Linux</p>
+</div>
+<div id="nav">
+<div id="nav_top"></div>
+    <ul>
+        <li><a href="../about/" title="Informações sobre o projeto">Sobre o projeto</a></li>
+        <li><a href="../get/" title="Obtenha a ISO do LiveCD">Faça o download</a></li>
+        <li><a href="../doc/" title="Utilização do LiveCD e howto">Documentação</a></li>
+        <li><a href="../packages/" title="Pacotes (programas)">Pacotes</a></li>
+        <li><a href="../mailing-list.html" title="Suporte, contato, colaboração">Lista de discussão</a></li>
+        <li><a href="../devel/" title="Desenvolvedores">Desenvolvimento</a></li>
+        <li><a href="../artwork/" title="Arte, cores e imagens">Artwork</a></li>
+        <li><a href="../search.html" title="Buscar">Procurar</a></li>
+        <li><a href="../sitemap.html" title="Mapa do Site">Mapa do site</a></li>
+    </ul>
+    <hr />
+    <ul>
+        <li><a href="http://forum.slitaz.org/#idx4" title="Fórum de Suporte">Fórum de suporte</a></li>
+        <li><a href="http://wiki.slitaz.org/" title="Comunidades Wiki">Wiki - Recursos</a></li>
+        <li><a href="http://wiki.slitaz.org/doku.php?id=bts:bts" title="Sistema de Informação de Bugs">Reporte um bug</a></li>
+    </ul>
+<div id="nav_bottom">
+<div id="nav_bottom_img"></div>
+</div>
+</div>
+
+<!-- Content top. -->
+<div id="content_top">
+<div class="top_left"></div>
+<div class="top_right"></div>
+</div>
+
+<!-- Content -->
+<div id="content">
+<a name="content"></a>
+
+<h1><font color="#3e1220">Desenvolvimento</font></h1>
+<h2><font color="#df8f06">Espaço dos Desenvolvedores do SliTaz</font></h2>
+
+<ul>
+    <li><a href="#repos">Repositórios Mercurial.</a></li>
+    <li><a href="#pkgs">Pacotes Tazpkg.</a></li>
+    <li><a href="#website">Gerenciamento do Website.</a></li>
+    <li><a href="../mailing-list.html">Lista de Discussão.</a></li>
+    <li><a href="../doc/cookbook/wok-tools.html">Wok &amp; Ferramentas.</a></li>
+    <li>Repositórios Hg: <a href="http://hg.slitaz.org" >hg.slitaz.org</a></li>
+    <li>Scratchpad: <a href="http://wiki.slitaz.org/">wiki.slitaz.org</a></li>
+</ul>
+
+<p>
+SliTaz é uma distribuição de código aberto mantida pela comunidade. Todos são
+convidados a se juntar a nós e a contribuir: usuários, hackers e desenvolvedores
+sempre podem fazer algo, isto é, revisar ou escrever documentação, informar bugs
+ou enviar patches pela lista de discussão, usando o wok e criando novos pacotes
+ou simplesmente ajudando os outros na lista de discussão ou no fórum. O SliTaz
+possui seus repositórios Mercurial hospedados num sistema rodando SliTaz, 
+desenvolvedores podem requisitar um novo repositório se necessário e
+contribuintes tem acesso de escrita para corrigir erros, scripts, etc.
+</p>
+<p>
+SliTaz é uma pequena comunidade e ouve seus usuários. Há vários desenvolvedores
+ativos no <a href="http://forum.slitaz.org/">fórum</a> e na 
+<a href="../mailing-list.html">lista de discussão</a>.
+</p>
+
+<a name="repos"></a>
+<h3>Repositórios Mercurial</h3>
+<p>
+Os repositórios Mercurial ou Hg do SliTaz podem ser listados ou clonados por 
+qualquer um na URL: <a href="http://hg.slitaz.org/">http://hg.slitaz.org/</a>. 
+Pessoas com acesso de escrita podem acessar diretamente pelo endereço
+<code>repos.slitaz.org</code> que necessita de autenticação.
+O Mercurial usa Python e é instalável com o comando: 
+<code>tazpkg get-install mercurial</code>
+</p>
+<h4>~/.hgrc</h4>
+<p>
+Antes de sua primeira transferência no servidor, assegure-se de que possui
+o arquivo de configuração do Hg correto com seu nome e endereço de e-mail
+e lembre-se de checar que você não está acessando como usuário root.
+Exemplo de arquivo ~/.hgrc:
+</p>
+<pre class="script">
+[ui]
+username = FirstName LastName &lt;you@example.org&gt;
+</pre>
+<h4>Clonar, modificar, transferir e finalizar</h4>
+<p>
+Clonar (clone) um repositório, exemplo para slitaz-doc:
+</p>
+<pre>
+ $ hg clone http://repos.slitaz.org/slitaz-doc
+</pre>
+<p>
+Mude de diretório para slitaz-doc, note que você deve estar no repositório
+para poder utilizar os comandos "hg". Para marcar todos os logs ou somente o
+último log:
+</p>
+<pre>
+ $ hg log
+ $ hg head
+</pre>
+<p>
+Modifique um ou mais arquivos e transfira (commit):
+</p>
+<pre>
+ $ hg status
+ $ hg commit -m "Log message..."
+ $ hg log
+</pre>
+<p>
+Note que você pode usar o comando <code>rollback</code> para desfazer a última
+transação. Antes de finalizar (push) as mudanças no servidor é seguro executar 
+o comando pull ao menos uma vez:
+</p>
+<pre>
+ $ hg pull
+ $ hg push
+</pre>
+<p>
+Está feito, suas mudanças, código ou correções estão agora no servidor
+</p>
+
+<a name="pkgs"></a>
+<h3>Pacotes Tazpkg</h3>
+<p>
+Os pacotes tazpkg no SliTaz são automaticamente criados via Tazwok e receitas
+no wok. O Livro de Receitas descreve o 
+<a href="../doc/cookbook/wok-tools.html">uso das ferramentas</a> 
+e o formato das <a href="../doc/cookbook/receipts.html">receitas</a>.
+É necessário que estes dois textos sejam lidos antes de prosseguirmos.
+</p>
+<p>
+Em termos de escolha de pacote, a idéia é oferecer o pacote por tarefa ou 
+funcionalidade, isto é, a mais leve aplicação em seu campo e sem duplicações.
+Note que a atual seleção de pacotes não é imutável, se você souber de uma 
+alternativa mais leve, com mais funcionalidades ou mais <em>sexy</em> por apenas
+alguns KB a mais, sugira na lista de discussão. Atenção redobrada é prestada
+aos pacotes do LiveCD: eles devem ser "limpos", removendo-se dependências
+desnecessárias e opções do compilador. Em geral os pacotes candidatos a fazer
+parte do LiveCD são discutidos na lista.
+</p>
+<p>
+Antes de você começar a compilar e a criar pacotes para o SliTaz, certifique-se
+que o trabalho ainda não existe na relação do wok disponível no mirror principal
+do SliTaz. Não se esqueça que os membros da lista podem te ajudar e que a 
+documentação do <a href="../doc/cookbook/wok-tools.html">wok e ferramentas</a> 
+existe para te guiar nos primeiros passos.
+</p>
+
+<a name="website"></a>
+<h3>Gerenciamento do website e livros</h3>
+<p>
+O gerenciamento do website e dos livros (Manual SliTaz &amp; Livro de Receitas)
+é feito via módulo rsync, Mercurial, utilidades diff e patch e a lista de 
+discussão. Rsync é uma ferramente de backup incremental: usando um algoritmo
+ultra-rápido, transfere ou sincroniza dados tanto localmente quanto em rede.
+A utilidade <code>diff</code> é usada para enviar somente a lista de arquivos
+modificados e a <code>patch</code> para aplicar estas modificações às páginas 
+originais.
+</p>
+<p>
+Você pode sincronizar o site e os livros graficamente usando o Grsync ou através
+da linha de comando. Para baixar o site pela primeira vez ou sincronizar as
+páginas no diretório <code>/home/hacker/Public/slitaz/website</code>, 
+use o módulo <code>rsync://slitaz.org/website</code>:
+</p>
+<pre>
+ $ rsync -r -t -p -v \
+       --progress --delete \
+       rsync://slitaz.org/website /home/hacker/Public/slitaz/website
+</pre>
+<h4>Diff e patch</h4>
+<p>
+As utilidades <code>diff</code> e <code>patch</code> são ferramentas de linha
+de comando para criação e implementação de diferenças entre dois arquivos. Esta
+técnica é freqüentemente usada para colaboração e as mudanças feitas no arquivo
+original podem ser extraídas facilmente. Para criar um arquivo <code>diff</code> 
+legível aos humanos em um simples editor de textos, você deve fornecer a opção
+<code>-u</code> :
+</p>
+<pre>
+ $ diff -u file.orig file.new &gt; file.diff
+</pre>
+<p>
+Para aplicar um patch:
+</p>
+<pre>
+ $ patch file.orig file.diff
+</pre>
+
+<!-- End of content with round corner -->
+</div>
+<div id="content_bottom">
+<div class="bottom_left"></div>
+<div class="bottom_right"></div>
+</div>
+
+<!-- Start of footer and copy notice -->
+<div id="copy">
+<p>
+Last modification : 2008-07-16 21:45:00 -
+<a href="#top">Topo da Página</a>
+</p>
+<p>
+Copyright &copy; 2008 <a href="http://www.slitaz.org/">SliTaz</a> -
+<a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>
+</p>
+<!-- End of copy -->
+</div>
+
+<!-- Bottom and logo's -->
+<div id="bottom">
+<p>
+<a href="http://validator.w3.org/check?uri=referer"><img
+   src="../../pics/website/xhtml10.png" alt="Valid XHTML 1.0"
+   title="Code validé XHTML 1.0"
+   style="width: 80px; height: 15px;" /></a>
+</p>
+</div>
+
+</body>
+</html>

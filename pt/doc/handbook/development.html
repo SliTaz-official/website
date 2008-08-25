@@ -1,0 +1,298 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>SliTaz Handbook (en) - Development</title>
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <meta name="description" content="slitaz English handbook" />
+    <meta name="expires" content="never" />
+    <meta name="modified" content="2008-07-16 23:00:00" />
+    <meta name="publisher" content="www.slitaz.org" />
+    <meta name="author" content="Christophe Lincoln"/>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="book.css" />
+</head>
+<body bgcolor="#ffffff">
+
+<!-- Header and quick navigation -->
+<div id="header">
+<div align="right" id="quicknav">
+    <a name="top"></a>
+    <a href="multimedia.html">Multimedia</a> |
+    <a href="index.html">Table of contents</a>
+</div>
+<h1><font color="#3E1220">SliTaz Handbook (en)</font></h1>
+</div>
+
+<!-- Content. -->
+<div id="content">
+<div class="content-right"></div>
+
+<h2><font color="#DF8F06">Development</font></h2>
+
+<ul>
+    <li><a href="#about">About Development</a></li>
+    <li><a href="#shell-scripts">SHell scripts</a> - #!/bin/sh</li>
+    <li><a href="#dialog">Dialog</a> - GUI based console.</li>
+    <li><a href="#geany">Geany</a> - IDE or Integrated Development Environment.
+    </li>
+    <li><a href="#perl">Perl or Microperl</a> - Code Perl scripts.</li>
+    <li><a href="#python">Python</a> - The Python Language.</li>
+    <li><a href="#ruby">Ruby</a> - The Ruby Language.</li>
+    <li><a href="#toolchain">Toolchain</a> - Libraries, C compiler and tools.</li>
+</ul>
+
+<a name="about"></a>
+<h3>About Development</h3>
+<p>
+SliTaz provides development tools for web design, editing scripts and source code.
+On the website, the <a href="http://www.slitaz.org/en/devel/">Development</a> page will 
+give you general information about the developers and opportunities for involvement.
+</p>
+
+<a name="shell-scripts"></a>
+<h3>SHell scripts</h3>
+<p>
+Writing SHell scripts is the easiest way to start coding, they can provide quick results and 
+the only prerequisites are being able to open a terminal and using a text editor such as Nano, 
+Leafpad or Geany. SHell scripts can do many things on a GNU/Linux system - initialize the system, 
+make backups, perform repetitive tasks, display system information, create or modify files and so on. 
+In a SHell script you can use variables, functions or calls to include a file. Note that you can 
+name your script as you see fit and the .sh extension is widely used.
+</p>
+<h4>Create a SHell script</h4>
+<p>
+Before starting a new SHell script, you must pay attention to the interpreter used. Most SHell 
+scripts use <code>/bin/sh</code>, because it's more portable, but there are scripts that rely on 
+<code>/bin/bash</code> and this must be installed on the system. For a SHell script to function, it 
+must be made executable by the current user by changing permissions on the command line 
+using the <code>chmod</code> tool. To create a <code>script.sh</code> and make it executable:
+</p>
+<pre>
+ $ touch script.sh
+ $ chmod +x script.sh
+</pre>
+<p>
+Now that you have a new executable file, you can edit it. You can continue to stay in the terminal 
+and use the Nano editor (ctrl + x to save &amp; exit) or IDE Geany to edit:
+</p>
+<pre>
+ $ nano script.sh
+ Or :
+ $ geany script.sh &amp;
+</pre>
+<p>
+Here's a script that contains a variable <code>NAME</code> and displays the value with the <code>echo</code> 
+command:
+</p>
+<pre class="script">
+#!/bin/sh
+
+NAME="kayam"
+
+echo "$NAME is nice."
+
+</pre>
+<p>
+Once you have created/modified your <code>script.sh</code>, you can execute it to see the result:
+</p>
+<pre>
+ $ ./script.sh
+</pre>
+<p>
+So much for this brief introduction to SHell scripts. The Web is full of information if you wish to 
+explore further.
+</p>
+
+<a name="dialog"></a>
+<h3>Dialog</h3>
+<p>
+Dialog can create GUI-based consoles such as 'tazkmap'. The configuration files are /etc/dialogrc 
+and/or ~/dialogrc for each user. Here's a simple example of using dialog via a console or terminal:
+</p>
+<pre>
+ $ dialog --title "Hello $USER" \
+   --msgbox "Message made by dialog." 5 54
+</pre>
+<p>
+You can find plenty of example scripts in the /sample directory inside the source code of dialog, 
+which can be downloaded from: <a href="http://invisible-island.net/dialog/dialog.html"
+ >invisible-island.net/dialog/dialog.html</a>. Download sources and decompress:
+</p>
+<pre>
+ $ wget ftp://invisible-island.net/dialog/dialog.tar.gz
+ $ tar xzf dialog.tar.gz
+</pre>
+
+<a name="geany"></a>
+<h3>Geany IDE</h3>
+<p>
+Geany is an IDE or Integrated Development Environment. Geany is simple, quick and light, offering colored 
+syntax, tabs and auto completion. Geany was used to create this page and most of the website documentation 
+(with a little bit of Nano as well).
+</p>
+<h4>Launch Geany</h4>
+<p>
+You will find Geany in the menu --&gt; Development --&gt; Geany.
+Once launched for the first time, you can adjust your preferences via Edit --&gt; Preferences. 
+You can also launch Geany via a terminal:
+</p>
+<pre>
+ $ geany &amp;
+</pre>
+<p>
+Note: when compiling the source code, the <code>./configure</code> script offers the option: 
+<code>-enable-the-force</code>... Which you can use if you ever feel the need to become a
+Jedi Knight!
+</p>
+
+<a name="perl"></a>
+<h3><font color="#6c0023">Perl or Microperl - Code/use Perl scripts</font></h3>
+<p>
+On SliTaz you can use the powerful scripting language Perl
+via the <code>perl</code> or <code>microperl</code> binary. Microperl is a streamlined version of perl - 
+compiled from official sources, Perl scripts running Microperl are compatible with the complete version of Perl. 
+One of Perl's strengths is its portability, it can be used on any system and it's an interpreted language, 
+which means that the code doesn't need to be compiled and can be used directly. On SliTaz Perl and Microperl 
+are not installed by default on LiveCD; you can either rebuild your ISO or install through the package 
+manager. Note: Microperl is only 1 MB and provides no modules:
+</p>
+<pre>
+ # tazpkg install perl
+ Or :
+ # tazpkg install microperl
+</pre>
+
+<h4>Hello world!</h4>
+<p>
+The purpose of this script is to display <em>Hello World</em>. You can start
+by creating the file and then making it executable on the command line and then editing with IDE Geany. 
+Note the script is called <code>hello.pl</code>, but you can name it as you see
+fit with or without the <code>.pl</code> extension:
+</p>
+<pre>
+ $ touch hello.pl
+ $ chmod +x hello.pl
+ $ geany hello.pl &amp;
+</pre>
+<p>
+The first line of a Perl script begins by defining the path
+to the Perl interpreter, usually <code>/usr/bin/perl</code> and to display text, just use the 
+<code>print</code> command. It should be noted that Perl is case sensitive and a line of code should 
+always end with a semicolon. Example code (you can copy and paste):
+</p>
+<pre class="script">
+#!/usr/bin/perl
+#
+
+print "Hello World!\n";
+
+</pre>
+<p>
+To execute and test the script:
+</p>
+<pre>
+ $ ./hello.pl
+</pre>
+
+<h4>CGI Scripts and Perl</h4>
+<p>
+CGI scripts are designed to display dynamically generated
+web pages. The Perl language associated with the LightTPD
+web server allows you to use CGI scripts through your public space or via virtual hosts. 
+Perl is quite adapted to Web 2.0 and can generate xHTML pages. On SliTaz you must 
+have Perl or Microperl installed and the <a href="web-server.html#cgi-perl">LightTPD server</a>
+configured before you can use CGI scripts coded in Perl. Note that
+by default SHell scripts (.sh) can be placed in /cgi-bin/.
+</p>
+<p>
+Once the server is properly configured, you can put your CGI in your <code>$HOME/Public/cgi-bin</code> using 
+the <code>.pl</code> or <code>.cgi</code> extension and view them locally or remotely. Example of using a 
+Perl CGI script:
+</p>
+<pre class="script">
+#!/usr/bin/perl
+#
+print "content-type : text/html\n\n";
+
+print "Hello World!\n";
+
+</pre>
+
+<a name="python"></a>
+<h3>Python</h3>
+<p>
+The Python programming language is available as an installable package. Once installed, you can create your 
+own scripts/programs and use CGI applications with the LightTPD web server, taking care to 
+<a href="web-server.html#cgi-python">configure the server</a> properly. The official SliTaz Mercurial 
+repositories are provided by a CGI/Python web interface - something best suited to a product that's
+reliable and robust. To install the <code>python</code> package with tazpkg:
+</p>
+<pre>
+ # tazpkg get-install python
+</pre>
+
+<a name="ruby"></a>
+<h3>Ruby</h3>
+<p>
+The Ruby programming language is available as an installable package. Ruby is 
+(to quote the official website):- "A dynamic, open source programming language with a focus on simplicity 
+and productivity. It has an elegant syntax that is natural to read and easy to write".
+Ruby handles exceptions, supports Object-Orientated Programming (OOP), automatic memory management and is 
+highly portable. To install the <code>ruby</code> package with tazpkg:
+</p>
+<pre>
+ # tazpkg get-install ruby
+</pre>
+
+<a name="toolchain"></a>
+<h3>Toolchain - Libraries, C compiler and tools</h3>
+<p>
+To compile software from sources or your own code, you need
+at least the basic <em>toolchain</em>, comprising of Binutils,
+Glibc, C compiler, Kernel <em>headers</em> and the Make utility.
+Note that the <em>toolchain</em> is used by the SliTaz developers to compile the entire system from source. 
+To install the meta package and all dependancies:
+</p>
+<pre>
+ # tazpkg get-install slitaz-toolchain
+</pre>
+<p>
+The installation of the toolchain can now compile basic applications in console mode without a problem using 
+the Busybox Ash SHell, but some other packages will not compile without Bash. GNU Bash is available as 
+a <a href="system-admin.html#bash">package</a> along with various other development tools such as 
+Flex, M4, Bison or Pkg-config. If you are looking for pkg-config for example:
+</p>
+<pre>
+ $ tazpkg search pkg-config
+</pre>
+<p>
+If you would like to compile applications utilizing the Ncurses library, you must install the 
+<code>ncurses-dev</code> package.
+Note the ncurses package also provides a variety of small programs such as <code>tic</code> or 
+<code>tack</code>:
+</p>
+<pre>
+ $ tazpkg search ncurses
+</pre>
+
+<!-- End of content -->
+</div>
+
+<!-- Footer. -->
+<div id="footer">
+	<div class="footer-right"></div>
+	<a href="#top">Top of the page</a> | 
+	<a href="index.html">Table of contents</a>
+</div>
+
+<div id="copy">
+    Copyright &copy; 2008 <a href="http://www.slitaz.org/en/">SliTaz</a> -
+    <a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>;<br />
+    Documentation is under
+    <a href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License</a>
+    and code is <a href="http://validator.w3.org/">valid xHTML 1.0</a>.
+</div>
+
+</body>
+</html>

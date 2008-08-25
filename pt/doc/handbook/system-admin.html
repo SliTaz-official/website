@@ -1,0 +1,273 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>SliTaz Handbook (en) - System administration</title>
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <meta name="description" content="slitaz English handbook" />
+    <meta name="expires" content="never" />
+    <meta name="modified" content="2008-07-18 06:00:00" />
+    <meta name="publisher" content="www.slitaz.org" />
+    <meta name="author" content="Christophe Lincoln"/>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="book.css" />
+</head>
+<body bgcolor="#ffffff">
+
+<!-- Header and quick navigation -->
+<div id="header">
+<div align="right" id="quicknav">
+    <a name="top"></a>
+    <a href="x-window.html">X Window System</a> |
+    <a href="index.html">Table of contents</a>
+</div>
+<h1><font color="#3E1220">SliTaz Handbook (en)</font></h1>
+</div>
+
+<!-- Content. -->
+<div id="content">
+<div class="content-right"></div>
+
+<h2><font color="#df8f06">System administration</font></h2>
+
+<ul>
+    <li><a href="#devices">Devices and disk access.</a></li>
+    <li><a href="#users-admin">Users, groups and passwords.</a></li>
+    <li><a href="#locale">Language and keyboard.</a></li>
+    <li><a href="#bash">Install the Bash shell.</a></li> 
+    <li><a href="#time">Set the system time.</a></li>
+    <li><a href="#cron">Execute scheduled commands.</a></li>
+    <li><a href="#local.sh">Add commands at boot time.</a></li>
+</ul>
+
+<a name="devices"></a>
+<h3>Devices and disk access</h3>
+<p>
+With Linux your disks and USB media are seen as devices. To access them you must
+first mount a device on a mount point (directory). On SliTaz you can graphically
+mount devices using <code>mountbox</code> or use the command line. To mount the
+first disk of a local hard disk on <code>/mnt/disk</code>:
+</p>
+<pre>
+ # mkdir -p /mnt/disk
+ # mount /dev/hda1 /mnt/disk
+</pre>
+<p>
+To mount a cdrom or an USB media you should use mount points located in 
+<code>/media</code>. Note that for a cdrom, you just have to specify
+the device path and for a flash key the mount point already exists:
+</p>
+<pre>
+ # mount /dev/cdrom
+ # mount /dev/sda1 /media/flash
+</pre>
+<h4>ntfs filesystem</h4>
+<p> 
+If you need read/write access to Windows ntfs filesystems you must install a
+few additional packages from the mirror. The <code>ntfs-3g</code> driver
+provides stable access to ntfs partitions and <code>ntfsprogs</code> provides
+manipulation tools dependent on <code>fuse</code>. Note that you can format, move or resize
+ntfs partitions graphically with Gparted.
+</p>
+
+<a name="users-admin"></a>
+<h3>Users, groups and passwords</h3>
+<p>
+To manage users and groups on your SliTaz system you must use the command line,
+but file permissions can be changed graphically using the emelFM2 file manager. To
+add or remove users and groups you must be root. Root can also change all
+user passwords and a single user can only change his/her own password. To add 
+or remove a user named linux:
+</p>
+<pre>
+ # adduser linux
+ # deluser linux
+</pre>
+<p>
+To add or remove a group you must use <code>addgroup</code> or 
+<code>delgroup</code>. To change the current user password or change the
+password of a specific user, you must use the command <code>passwd</code>:
+</p>
+<pre>
+ $ passwd
+ # passwd username
+</pre>
+<h4>Audio group</h4>
+<p>
+If you want a new user to be able to listen to music he must be in the 
+<code>audio</code> group. To add an existing user to the audio group:
+</p>
+<pre>
+ # adduser -G audio user_name
+</pre>
+
+<a name="locale"></a>
+<h3>Language and keyboard layout</h3>
+<p>
+SliTaz saves the configuration of the default locale in <code>/etc/locale.conf</code> 
+which is read by <code>/etc/profile</code> on each login and the keyboard 
+setting is stored in <code>/etc/kmap.conf</code>. These two files can be
+edited with your favorite editor or configured respectively with
+<code>tazlocale</code> and <code>tazkmap</code>. You can modify the settings
+you chose on the first boot by typing as root administrator:
+</p>
+<pre>
+ # tazlocale
+ Or:
+ # tazkmap
+</pre>
+<p>
+To check all available locales or your current configuration you can use the
+command <code>locale</code> as a single user or root (C for English):
+</p>
+<pre>
+ $ locale -a
+ $ locale
+</pre>
+
+<a name="bash"></a>
+<h3>Bash Shell</h3>
+<p>
+On SliTaz you have the ash and sh shell with a link to Ash, this shell is 
+provided by Busybox. If you wish to use the Bash (Bourne Again SHell), first 
+as <code>root</code> install bash, copy the <code>.profile</code> found in your 
+home directory and rename it <code>.bashrc</code>, then edit the 
+<code>/etc/passwd</code> file with your favorite text editor and change your 
+shell to :/bin/bash
+</p>
+<pre>
+ # tazpkg get-install bash
+ # cp /home/hacker/.profile home/hacker/.bashrc
+ # Note root user: cp /home/hacker/.profile ~/.bashrc
+ # nano /etc/passwd   # :/bin/bash
+</pre>
+<p>
+The next time you login bash will be your default shell, you can confirm this 
+by typing <code>env</code> in the command line.
+</p>
+
+<a name="time"></a>
+<h3>System Time</h3>
+<p>
+To know the current system time, you can simply type <code>date</code>. On 
+SliTaz, the timezone configuration file is saved in <code>/etc/TZ</code>, you 
+can edit with your favorite text editor or simply <code>echo</code> the changes.
+To view the available timezones, you can look in the
+<code>/usr/share/zoneinfo</code> directory.
+Here's an example using the timezone Europe/London:
+</p>
+<pre>
+ # echo "Europe/London" &gt; /etc/TZ
+</pre>
+<h4>Rdate</h4>
+<p>
+To syncronize the system clock with a network time server, you can as the 
+<code>root</code> administrator use the <code>rdate -s</code> command:
+</p>
+<pre>
+ # rdate -s tick.greyware.com
+</pre>
+<p>
+To display the time on the remote server, use the <code>rdate -p</code> command.
+</p>
+<pre> $ rdate -p tick.greyware.com
+</pre>
+<h4>Hwclock</h4>
+<p>
+Hwclock allows you to syncronize the time of your hardware clock to the system
+clock or vice versa.
+</p>
+<p>
+Syncronize the system clock to the hardware clock ( --utc = universal time, 
+-l = local time):
+</p>
+<pre>
+ # hwclock -w --utc
+</pre>
+<p>
+Syncronize the hardware clock to the system clock:
+</p>
+<pre>
+ # hwclock -s --utc
+</pre>
+
+<a name="cron"></a>
+<h3>Execute scheduled commands</h3>
+<p>
+The daemon 'crond' allows you to run commands automatically at a scheduled specific date or time. This is very
+useful for routine tasks such as system administration. The directory cron uses is  
+<code>/var/spool/cron/crontabs</code>.
+</p>
+<p>
+Each user of the system can have his/her own tasks, they are defined in the file: <code>/var/spool/cron/crontabs/user</code>.
+The crontab utility allows you amongst other things, to list the tasks specific to the user. The syntax of the
+files is as follows:
+</p>
+<pre class="script">mm hh dd MMM DDD command &gt; log
+</pre>
+<p>
+We will create a file with root priviledges and test the daemon 'crond' with a task performed every minute -
+writing the date to a file /tmp/crond.test. It should be noted that the utility has an option
+<code>crontab</code> for editing cron file using 'vi', this is not provided by SliTaz. In it's place you can use
+GNU nano (&lt;Ctrl+X&gt; to save &amp; exit):
+</p>
+<pre> # nano /var/spool/cron/crontabs/root
+</pre>
+<pre class="script">* * * * * date &gt;&gt; /tmp/crond.test
+</pre>
+<p>
+Launch <code>crond</code> with the option <code>-b</code> (background),
+configured via <code>/etc/daemons.conf</code> and using the startup script:
+</p>
+<pre> # /etc/init.d/crond start
+</pre>
+<p>
+You can wait a few minutes and view the contents of the file: /tmp/crond.test... OK:
+</p>
+<pre> # cat /tmp/crond.test
+</pre>
+<p>
+To stop or restart the daemon crond:
+</p>
+<pre> # /etc/init.d/crond stop
+ Or :
+ # /etc/init.d/crond restart
+</pre>
+<h4>Invoke the daemon crond on every boot</h4>
+<p>
+To launch the daemon 'crond' each time you boot the system, just add it to the variable <code>START_DAEMONS</code>
+in the configuration file <code>/etc/rcS.conf</code>, either before or after the web server or SSH server.
+</p>
+
+<a name="local.sh"></a>
+<h3>Add commands to be executed at boot</h3>
+<p>
+During the boot process, various scripts are executed to configure services, such as the start of the 
+web server, networking etc. On SliTaz there is a script <code>/etc/init.d/local.sh</code> which allows
+you to add commands to be launched at system startup. You can also create new scripts in /etc/init.d,
+their links in /etc/rc.scripts for shell scripts and use /etc/rc.d for links to the startup script daemon in
+/etc/rcS.conf:
+</p>
+<pre> # nano /etc/init.d/local.sh
+</pre>
+
+<!-- End of content -->
+</div>
+
+<!-- Footer. -->
+<div id="footer">
+	<div class="footer-right"></div>
+	<a href="#top">Top of the page</a> | 
+	<a href="index.html">Table of contents</a>
+</div>
+
+<div id="copy">
+    Copyright &copy; 2008 <a href="http://www.slitaz.org/en/">SliTaz</a> -
+    <a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>;<br />
+    Documentation is under
+    <a href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License</a>
+    and code is <a href="http://validator.w3.org/">valid xHTML 1.0</a>.
+</div>
+
+</body>
+</html>

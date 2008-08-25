@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>SliTaz Handbook (en) - System Tools</title>
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <meta name="description" content="slitaz English handbook" />
+    <meta name="expires" content="never" />
+    <meta name="modified" content="2008-07-18 06:30:00" />
+    <meta name="publisher" content="www.slitaz.org" />
+    <meta name="author" content="Christophe Lincoln"/>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="book.css" />
+</head>
+<body bgcolor="#ffffff">
+
+<!-- Header and quick navigation -->
+<div id="header">
+<div align="right" id="quicknav">
+    <a name="top"></a>
+    <a href="packages.html">Packages</a> |
+    <a href="index.html">Table of contents</a>
+</div>
+<h1><font color="#3E1220">SliTaz Handbook (en)</font></h1>
+</div>
+
+<!-- Content. -->
+<div id="content">
+<div class="content-right"></div>
+
+<h2><font color="#DF8F06">System Tools</font></h2>
+
+<ul>
+	<li><a href="#clex">Clex</a> - Command line File Manager.</li>
+	<li><a href="#emelfm2">emelFM2</a> - File Manager.</li>
+	<li><a href="#htop">Htop</a> - View system processes.</li>
+	<li><a href="#mountbox">Mountbox</a> - Mount devices.</li>
+	<li><a href="#gparted">Gparted</a> - Partition a hard drive.</li>
+	<li><a href="network-config.html#netbox">Netbox</a> - Configure network.</li>
+</ul>
+
+<a name="clex"></a>
+<h3>Clex - Command line File Manager</h3>
+<p>
+To navigate through your folders and directories you can use <code>cd</code> on the command line or 
+launch the 'Clex File Manager'. Using ncurses, clex is fast and easy to use and can be configured through 
+the files ~/.clexrc and ~/.clexbm (bookmarks) or via the panel (ctrl -g). To start clex from a terminal or 
+console:
+</p>
+<pre>
+ $ clex
+</pre>
+
+<a name="emelfm2"></a>
+<h3>emelFM2 - File Manager</h3>
+<p>
+EmelFM2 is a file manager providing many useful functions for daily tasks such as managing devices, opening 
+a terminal in the current directory, drag and drop, creating directories, key bindings or managing file 
+permissions. It contains bookmarks to allow you to browse faster, a text editor/viewer and much more.
+EmelFM2 can be launched with some command line options - you can specify the dustbin directory or set the 
+start directory to display. For a full list of options:
+<code>$ emelfm2 --help</code>.
+</p>
+<p>
+The context menu (right click on file/directory) makes it easy to unpack <code>.taz .gz</code> archives, 
+compress and create archives or compare files. You can also create symbolic links via 'Create a link...'. 
+Once learned, emelFM2 will allow you to work quickly and effectively.
+</p>
+
+<a name="htop"></a>
+<h3>Htop - View system processes</h3>
+<p>
+Htop is a system process viewer that displays cpu load, memory state (RAM) and swap used. It can also 
+display the number of tasks, uptime and PIDs of active processes. Htop can be used with the keyboard in 
+console mode, the mouse with a X terminal (xterm) and provides configuration options (F2). Htop can also 
+kill processes and you can select items with the up/down arrows or a mouse click. Note htop also functions 
+via SSH and can be used to monitor a remote server:
+</p>
+<pre>
+ $ htop
+</pre>
+
+<a name="mountbox"></a>
+<h3>Mountbox - Mount devices</h3>
+<p>
+Mountbox is a small GTK+ application to quickly mount media
+such as a USB drive, hard drive or cdrom. Mountbox can be launched from a terminal or via the Tools menu 
+(System Tools). Simply specify the peripheral (Device) and the mount point, ie the directory where you want 
+to access the media in question. Typically a CD is mounted on /media/cdrom, a USB key on /media/flash and 
+disk drives on the local machine on /mnt. Note the <a href="system-admin.html#devices">handbook</a> also 
+contains some information.
+</p>
+
+<a name="gparted"></a>
+<h3>Gparted - Partition a hard drive</h3>
+<p>
+Gparted is a graphical application making it possible to manage the partitions of a local hard drive or USB media.
+It allows you to reformat, resize or check a partition on a hard drive and is the tool of choice if you need 
+to prepare a partition to install SliTaz. Gparted supports proper GNU/Linux filesystems (ext2 and ext3) 
+via mkfs and Parted automatically handles dependancies.
+</p>
+
+<h4>Support FAT and NTFS filesystems</h4>
+<p>
+To have the support of FAT16 or Windows FAT32 filesystems, you must install the package 
+<code>dosfstools</code>. To enable read/write support for NTFS partitions, you need to install: <code>fuse</code>, 
+<code>ntfs-3g</code> and <code>ntfsprogs</code>.
+</p>
+
+<!-- End of content -->
+</div>
+
+<!-- Footer. -->
+<div id="footer">
+	<div class="footer-right"></div>
+	<a href="#top">Top of the page</a> | 
+	<a href="index.html">Table of contents</a>
+</div>
+
+<div id="copy">
+    Copyright &copy; 2008 <a href="http://www.slitaz.org/en/">SliTaz</a> -
+    <a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>;<br />
+    Documentation is under
+    <a href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License</a>
+    and code is <a href="http://validator.w3.org/">valid xHTML 1.0</a>.
+</div>
+
+</body>
+</html>
+

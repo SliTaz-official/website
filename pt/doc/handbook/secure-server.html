@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>SliTaz Handbook (en) - Secure SHell (SSH)</title>
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <meta name="description" content="slitaz English handbook" />
+    <meta name="expires" content="never" />
+    <meta name="modified" content="2008-07-18 05:30:00" />
+    <meta name="publisher" content="www.slitaz.org" />
+    <meta name="author" content="Christophe Lincoln" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="book.css" />
+</head>
+<body bgcolor="#ffffff">
+
+<!-- Header and quick navigation -->
+<div id="header">
+<div id="quicknav" align="right">
+    <a name="top"></a>
+    <a href="security.html">Security</a> |
+    <a href="index.html">Table of contents</a>
+</div>
+<h1><font color="#3e1220">SliTaz Handbook (en)</font></h1>
+</div>
+
+<!-- Content. -->
+<div id="content">
+<div class="content-right"></div>
+
+<h2><font color="#df8f06">Secure SHell (SSH)</font></h2>
+
+<ul>
+    <li><a href="#about">About Dropbear.</a></li>
+    <li><a href="#dbclient">Connecting to a remote host</a> - (dbclient).</li>
+    <li><a href="#scp">Transfer files</a> - (scp).</li>
+    <li><a href="#dropbearkey">Generate keys rsa/dss</a> - (dropbearkey).</li>
+    <li><a href="#start-stop-restart">Start, stop, restart SSH server.</a></li>
+</ul>
+
+<a name="about"></a>
+<h3>About Dropbear</h3>
+<p>
+Control and administer remotely with the Dropbear SSH secure server. Dropbear is a small SSH client/server
+supporting SSH 2. It's compatible with OpenSSH and uses ~/.ssh/authorized_keys for the management of public keys.
+Dropbear also provides it's own version of <code>scp</code>, allowing you to copy files
+between machines in a secure manner.
+</p>
+<p>
+Project website:
+<a href="http://matt.ucc.asn.au/dropbear/dropbear.html">matt.ucc.asn.au/dropbear/dropbear.html</a>
+</p>
+
+<a name="dbclient"></a>
+<h3>Connecting to a remote host with dbclient</h3>
+<p>
+The configuration files for the SSH client are located in the ~/.ssh directory of each user, this contains
+the authorized_keys and known_hosts files. The directory ~/.ssh and known_hosts file are automatically created
+the first time you run the Dropbear client (dbclient).
+</p>
+<p>
+To connect to a remote host employing the user and machine name:
+</p>
+<pre> $ dbclient user@machine.org
+</pre>
+<p>
+You can also connect using the IP address of the machine:
+</p>
+<pre> $ dbclient user@192.168.0.2
+</pre>
+
+<a name="scp"></a>
+<h3>Transfer of remote files with scp</h3>
+<p>
+To copy a file from one computer to another, scp can be utilized in the following ways. To copy a file
+named page.html to a remote directory of the user (don't forget the <code>:</code> after the machine name or 
+IP address):
+</p>
+<pre> $ scp page.html user@machine.org:path/remote/directory
+</pre>
+<p>
+Copy a file from a remote machine to your local machine:
+</p>
+<pre> $ scp user@machine.org:path/remote/directory/page.html /path/your/directory
+</pre>
+
+<a name="dropbearkey"></a>
+<h3>Generate rsa/dss keys with dropbearkey</h3>
+<p>
+Dropbear provides <code>dropbearkey</code> to generate the protected rsa and
+dss keys. Note that when you start the server for the first time, secure keys will be 
+automatically generated if they don't already exist. You can use <code>dropbearkey</code> with 
+the following argurments:
+</p>
+<pre> # dropbearkey -t rsa -f /etc/dropbear/dropbear_rsa_host_key
+ # dropbearkey -t dss -f /etc/dropbear/dropbear_dss_host_key
+</pre>
+
+<a name="start-stop-restart"></a>
+<h3>Start, stop, restart the SSH server</h3>
+<p>
+By default SliTaz will not start the SSH server at boot. To be launched automatically, <code>dropbear</code> 
+must be added to the variable RUN_DAEMONS in the <code>/etc/rcS.conf</code> file. To start, stop or restart
+the SSH server, use the following commands: <code>/etc/init.d/dropbear [start|stop|restart]</code>.
+Example to start the server:
+</p>
+<pre> # /etc/init.d/dropbear start
+</pre>
+<p>
+Note that the server supports the passing of various options when launched. To change the default values,
+simple modify the daemons configuration file <code>/etc/daemons.conf</code>.
+</p>
+
+<!-- End of content -->
+</div>
+
+<!-- Footer. -->
+<div id="footer">
+	<div class="footer-right"></div>
+	<a href="#top">Top of the page</a> | 
+	<a href="index.html">Table of contents</a>
+</div>
+
+<div id="copy">
+    Copyright © 2008 <a href="http://www.slitaz.org/en/">SliTaz</a> -
+    <a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>;<br />
+    Documentation is under
+    <a href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License</a>
+    and code is <a href="http://validator.w3.org/">valid xHTML 1.0</a>.
+</div>
+
+</body>
+</html>
+

@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>SliTaz Handbook (en) - Multimedia</title>
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <meta name="description" content="slitaz English handbook" />
+    <meta name="expires" content="never" />
+    <meta name="modified" content="2008-07-17 16:00:00" />
+    <meta name="publisher" content="www.slitaz.org" />
+    <meta name="author" content="Christophe Lincoln"/>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="book.css" />
+</head>
+<body bgcolor="#ffffff">
+
+<!-- Header and quick navigation -->
+<div id="header">
+<div align="right" id="quicknav">
+    <a name="top"></a>
+    <a href="system-tools.html">System Tools</a> |
+    <a href="index.html">Table of contents</a>
+</div>
+<h1><font color="#3E1220">SliTaz Handbook (en)</font></h1>
+</div>
+
+<!-- Content. -->
+<div id="content">
+<div class="content-right"></div>
+
+<h2><font color="#DF8F06">Multimedia</font></h2>
+
+<ul>
+	<li><a href="#intro">SliTaz sound and video.</a></li>
+	<li><a href="#config">Configure the sound card.</a></li>
+	<li><a href="#alsamixer">Alsamixer</a> - Mixer.</li>
+	<li><a href="#alsaplayer">Alsaplayer</a> - Audio Player.</li>
+	<li><a href="#asunder">Asunder</a> - Audio CD Ripper.</li>
+	<li><a href="#xine">Xine</a> - Multimedia Player.</li>
+	<li><a href="#mpg123">mpg123</a> - Command line audio player.</li>
+</ul>
+
+<a name="intro"></a>
+<h3>SliTaz sound and video</h3>
+<p>
+SliTaz LiveCD mode provides sound support, but no video player, however you can watch YouTube by installing 
+the <code>get-flash-plugin</code> package. To watch videos you can use Xine, it supports most formats such 
+as avi, mov, mpeg etc, note Xine can also act as an audio player. At the sound level, you have a mixer 
+(alsamixer) and audio player (alsaplayer), both installed by default on the standard LiveCD. SliTaz also
+provides tools to configure your sound card.
+</p>
+
+<a name="config"></a>
+<h3>Configure the sound card</h3>
+<p>
+In LiveCD mode SliTaz automatically configures the sound card by launching a dialog. In most cases the sound 
+card is instantly recognized and you just press ENTER to continue to login and have your sound working. 
+However, sometimes your card is not recognized at startup or simply not supported. Before throwing in the 
+towel, you can try to manually configure your card by asking for help on the discussion list or on the 
+hardware support forum.
+</p>
+<h4>Soundconf</h4>
+<p>
+To configure or reconfigure a sound card, SliTaz provides a script (<code>soundconf</code>), this utility 
+is used at startup and doesn't pose any questions, supports the right modules and automatically configures 
+<code>/etc/rsS.conf</code> so that the right driver is loaded on each start. Soundconf will also 
+automatically adjust volume levels, you can change the settings later through the mixer and 
+<code>alsactl</code>. To start the sound configuration interface, you must have administrator priviledges 
+and type:
+</p>
+<pre>
+ # soundconf
+</pre>
+<h4>Alsactl</h4>
+<p>
+Alsactl controls <code>alsa</code> and can store settings or restore sound for example, to retain 
+preferences for each start. When configuring sound with soundconf, volumes are automatically adjusted. You 
+can use <code>alsamixer</code> as <em>root</em> to change the values and then launch <code>alsactl</code> 
+to store the configuration:
+</p>
+<pre>
+ # alsactl store
+</pre>
+<p>
+To restore the configuration, you can use the <code>alsactl restore</code> command or to restore your 
+preferences at each system startup you can edit /etc/init.d/local.sh with your favorite text editor or simply 
+'echo' the changes:
+</p>
+<pre>
+ # echo 'alsactl restore' > /etc/init.d/local.sh
+</pre>
+
+<a name="alsamixer"></a>
+<h3>Alsamixer</h3>
+<p>
+Alsamixer is the official mixer of the Alsa project. It is simple and effective and can be run from the 
+menu or directly from a terminal. The volumes can be regulated with the up/down arrows or muted using 
+the <code>m</code> key. To start from a Linux terminal:
+</p>
+<pre>
+ $ alsamixer
+</pre>
+
+<a name="alsaplayer"></a>
+<h3>Alsaplayer</h3>
+<p>
+The audio player Alsaplayer is designed to be simple, clean and intuitive. Alsaplayer on SliTaz provides 
+support for ogg, mp3 (via libmad) and wav files, playlists and viewers to accompany sound and the ability 
+to adjust pitch and volume. Once launched from the menu just click the play button or load a playlist to 
+start.
+</p>
+
+<a name="asunder"></a>
+<h3>Asunder - Audio CD Ripper</h3>
+<p>
+Asunder retrieves and encodes audio tracks from a CD. The toolkit is simple and easy to use, encoding 
+songs into wav, ogg or mp3 (via <code>lame</code> package). It can search CDDB, create playlists and 
+edit file names. You will find Asunder in the Multimedia category on the menu.
+</p>
+
+<a name="xine"></a>
+<h3>Xine</h3>
+<p>
+Xine is a multimedia project providing various video viewers and audio players. SliTaz provides libraries 
+and a media player contained in the package <code>xine-ui</code>. Xine uses a Xlib interface, a control 
+panel, a right click configuration menu and various plugins. It can play ogg, mp3 and flac audio codecs 
+and mov, avi or mpg video formats. To install xine and its dependancies:
+</p>
+<pre>
+ # tazpkg get-install xine-ui
+</pre>
+<p>Official Xine <a href="http://xinehq.de/index.php/home">website</a>
+</p>
+
+<a name="mpg123"></a>
+<h3><font color="#6c0023">mpg123</font></h3>
+<p>
+Mpg123 is a command line audio player and file converter. This means that you can listen to music or 
+convert files from a terminal. To display help, use the <code>--help</code> option.
+To play a mp3 file, just launch <code>mpg123</code> followed by the name of the audio file:
+</p>
+<pre>
+ $ mpg123 sound.mp3
+</pre>
+<p>
+Mpg123 can also encode a file into another format, for example you can convert
+a wav file into a mp3 file. Example:
+</p>
+<pre>
+ $ mpg123 -w sound.mp3 sound.wav 
+</pre>
+
+<!-- End of content -->
+</div>
+
+<!-- Footer. -->
+<div id="footer">
+	<div class="footer-right"></div>
+	<a href="#top">Top of the page</a> | 
+	<a href="index.html">Table of contents</a>
+</div>
+
+<div id="copy">
+    Copyright &copy; 2008 <a href="http://www.slitaz.org/en/">SliTaz</a> -
+    <a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>;<br />
+    Documentation is under
+    <a href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License</a>
+    and code is <a href="http://validator.w3.org/">valid xHTML 1.0</a>.
+</div>
+
+</body>
+</html>
+

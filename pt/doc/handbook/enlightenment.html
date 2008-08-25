@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>SliTaz Handbook (en) - Enlightenment</title>
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <meta name="description" content="slitaz English handbook" />
+    <meta name="expires" content="never" />
+    <meta name="modified" content="2008-02-26 18:30:00" />
+    <meta name="publisher" content="www.slitaz.org" />
+    <meta name="author" content="Christophe Lincoln"/>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="book.css" />
+</head>
+<body bgcolor="#ffffff">
+
+<!-- Header and quick navigation -->
+<div id="header">
+<div align="right" id="quicknav">
+    <a name="top"></a>
+    <a href="cmdline.html">Commands</a> |
+    <a href="index.html">Table of contents</a>
+</div>
+<h1><font color="#3E1220">SliTaz Handbook (en)</font></h1>
+</div>
+
+<!-- Content. -->
+<div id="content">
+<div class="content-right"></div>
+
+<h2><font color="#DF8F06">Enlightenment</font></h2>
+
+<a name="enlightenment"></a>
+<h3>Enlightenment (e17)</h3>
+<p>
+Enlightenment is a complete desktop environment, fully configurable with the
+mouse and offering many themes. The version supplied by the SliTaz project
+is known as e17 and is still in development, this version is considered stable
+enough to be incorporated into the distribution. Enlightenment was designed to 
+be deployed on systems with limited resources, as well as more powerful
+systems. It allows for wallpapers, menus, animated and interactive gadgets
+and knows how to manage virtual desktops. To install e17:
+</p>
+<pre> # tazpkg get-install enlightenment
+</pre>
+<p>
+Logout your current X session, type <code>F1</code> at Slim login and choose
+<code>e17</code> to start Enlightenment.
+</p>
+<h4>Menu and desktop icons</h4>
+<p>
+Enlightenment is compliant to the Freedesktop standards. 
+Applications are sorted by category and icons automatically appear
+if a desktop file is supplied. The (<code>.desktop</code>) system files are
+contained in the <code>/usr/share/applications</code> directory or hidden home
+<code>~/.local/share/applications</code> directory. These files
+have a simple syntax and are editable from the panel or with
+a simple text editor. The file menus displaying categories
+in the Enlightenment menu are found in the <code>slitaz-menus</code> 
+package:
+</p>
+<pre> # tazpkg get-install slitaz-menus
+</pre>
+<h4>An icon on the desktop</h4>
+<p>
+To have an icon on the desktop launching applications, you can
+create by hand a <code>.desktop</code> file in your local directory 
+<code>~/Desktop</code>. Desktop files placed in this directory are automatically
+recognized by Enlightenment. A single .desktop file can 
+contain eight lines with respectively:- the name (<code>Name</code>), generic
+name, comment, the command to execute (<code>Exec</code>), icon, type
+and Freedesktop categories. Example of a .desktop file for Xterm icon:
+</p>
+<pre class="script">[Desktop Entry]
+Name=XTerm
+GenericName=Terminal
+Comment=Run commands in a shell
+Exec=xterm -bg black -fg white -cr orange -sb -bd violet -rightbar
+Icon=/usr/share/icons/Tango/jwm/utilities-terminal.png
+Type=Application
+Categories=Utility;Terminal;
+</pre>
+<p>
+Additional themes can be found on the <a href="http://www1.get-e.org/Themes/E17/">website</a>
+</p>
+
+<!-- End of content -->
+</div>
+
+<!-- Footer. -->
+<div id="footer">
+	<div class="footer-right"></div>
+	<a href="#top">Top of the page</a> | 
+	<a href="index.html">Table of contents</a>
+</div>
+
+<div id="copy">
+    Copyright &copy; 2008 <a href="http://www.slitaz.org/en/">SliTaz</a> -
+    <a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>;<br />
+    Documentation is under
+    <a href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License</a>
+    and code is <a href="http://validator.w3.org/">valid xHTML 1.0</a>.
+</div>
+
+</body>
+</html>
+
