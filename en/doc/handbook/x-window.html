@@ -243,7 +243,7 @@ More information can be found on the
 <a name="terminalX"></a>
 <h3>Use Xvesa as X terminal</h3>
 <p>
-You can use Xvesa as X terminal, if you have a machine on 
+You can use Xvesa as X terminal if you have a machine on 
 the network that accepts Xdmcp connections. To enable this,
 you can start the server with the option <code>-query</code> followed by
 the machine name or IP address. Example of machine 192.168.0.2
@@ -257,7 +257,7 @@ reponse times of applications depend greatly on Internet
 speed and the remote machine's power. This technique works
 very well within a local area network (LAN) and allows you 
 to control applications installed on the remote machine directly
-from the screen of the local machine on which you work. 
+from the screen of the local machine from which you work. 
 Note that the distant remote machine may have 
 multiple accounts in use simultaneously and/or direct access.
 </p>
@@ -268,8 +268,8 @@ multiple accounts in use simultaneously and/or direct access.
 The management of Fonts (<em>fonts</em>) is powered by the package Fontconfig. 
 This package provides tools to add, list and manipulate fonts. The <em>fonts</em> 
 can be installed in user space or at the system level, this means that each user can use his/her own
-fonts or the adminstrator (<em>root</em>) can install fonts available to all users of the system.
-If you use USB media associated with SliTaz <a href="http://www.slitaz.org/en/doc/handbook/livecd.html">LiveCD</a>, 
+fonts or the system adminstrator (<em>root</em>) can install fonts available to all users of the system.
+If you use USB media associated with the SliTaz <a href="http://www.slitaz.org/en/doc/handbook/livecd.html">LiveCD</a>, 
 you can easily install fonts and retain them the next time you use the cdrom.
 </p>
 <h4>Installing <em>fonts</em></h4>
@@ -277,9 +277,8 @@ you can easily install fonts and retain them the next time you use the cdrom.
 At the system level fonts are installed in the directory:
 <code>/usr/share/fonts</code>, core SliTaz provides TTF Vera fonts,
 they take up little space and are rendered correctly. In user space, fonts are found in the hidden
-directory: <code>.fonts</code>. This directory should be at the root of user space.
-To create a home directory to accomodate new fonts, you can use the graphical window manager emelFM2, 
-Clex or use the command line:
+home directory: <code>.fonts</code>. To create a home directory to accomodate new fonts, you can use 
+the graphical window manager emelFM2, Clex or the command line:
 </p>
 <pre> $ mkdir ~/.fonts
 </pre>
