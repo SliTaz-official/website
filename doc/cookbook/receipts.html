@@ -112,6 +112,17 @@ pour le mirroir du serveur graphique Xorg. Exemple pour Clex :
  WGET_URL="http://www.clex.sk/download/$TARBALL"
 </pre>
 <p>
+<code>$CONFIG_FILES</code> : Certains paquets fournissent des fichiers de
+configuration à adapter. La variable $CONFIG_FILES donne la liste de ces
+fichiers qui pourront être sauvegardés par la commande 'tazpkg repack-config'.
+Ces fichiers ne seront pas écrasés lors de l'installation du paquet s'ils
+existent déjà et le paquet pourra être récréé avec 'tazpkg repack' même s'ils
+ont été modifiés par la suite. Exemple pour Netatalk :
+</p>
+<pre class="script">
+ CONFIG_FILES="/etc/netatalk/AppleVolumes.* /etc/netatalk/*.conf"
+</pre>
+<p>
 <code>$WANTED</code> : Il y a des paquets SliTaz qui sont dépendants de la
 compilation d'un paquet source. La recette de ces paquets ne nécessite pas de
 règles de compilation, une variable $WANTED peut être utilisée pour copier des
