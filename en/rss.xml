@@ -61,7 +61,7 @@
 		<description>
 	SliTaz team is proud to announce the availability of a new Cooking
 	LiveCD ISO image providing huge changes from the stable release.
-	SliTaz now uses Openbox as it's default Window Manager, desktop icons let
+	SliTaz now uses Openbox as its default Window Manager, desktop icons let
 	you launch your favorite applications and manage files and dbus and hal
 	will automatically mount removable media such as USB keys or Hard disks.
 	Packages can now be managed through the graphical Packages Manager
