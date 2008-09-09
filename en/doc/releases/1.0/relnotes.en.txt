@@ -54,7 +54,7 @@ LiveCD Flavors
 --------------
 SliTaz GNU/Linux is distributed as a bootable LiveCD allowing you to
 graphically install to the hard drive and retain the use of your previous 
-system including all settings, applications, documents etc. 
+system including all settings, applications, documents, etc. 
 
 The project distributes an ISO image called "core", which is the body of the 
 system, providing a selection of multi-use packages for surfing the web, 
