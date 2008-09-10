@@ -46,7 +46,7 @@ Descriptions of files contained on the cdrom.
 <h3>Syslinux/isolinux</h3>
 <p>
 Syslinux and main bootloader of SliTaz - we use the isolinux version to start 
-the system contained on the CD-ROM. Simple effective and configurable, it
+the system contained on the CD-ROM. Simple effective and configurable, isolinux
 was installed during the creation of the base system.
 The binary is named isolinux.bin and its configuration file isolinux.cfg.
 Here's an example of isolinux.cfg using isolinux.msg to post the splash
@@ -81,7 +81,7 @@ The Syslinux file (sample/syslogo.lss) provides an official logo which you can
 directly use by copying to the root of the CD-ROM. SliTaz 
 provides a logo (rootcd/boot/isolinux/splash.lss) which you can locate in 
 <a href="slitaz-tools.html">SliTaz tools</a>.
-To display a splash image when booting; it's necessary that the 'display' option calls 
+To display a splash image when booting, it's necessary that the 'display' option calls 
 the isolinux.msg file which loads the *.lss format image. Note that the isolinux.msg file 
 uses 24 ASCII characters. Example using 'echo' and an isolinux.msg file incorporating a .lss 
 splash image:
