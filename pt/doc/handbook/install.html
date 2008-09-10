@@ -1,10 +1,10 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt">
 <head>
-    <title>SliTaz - HD Installation</title>
+    <title>SliTaz - Instalação no HD</title>
     <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
-    <meta name="description" content="slitaz English handbook installation" />
+    <meta name="description" content="slitaz portuguese handbook installation" />
     <meta name="expires" content="never" />
     <meta name="modified" content="2008-07-17 04:15:00" />
     <meta name="publisher" content="www.slitaz.org" />
@@ -18,149 +18,153 @@
 <div id="header">
 <div align="right" id="quicknav">
     <a name="top"></a>
-    <a href="utilities.html">Utilities</a> |
-    <a href="index.html">Table of contents</a>
+    <a href="utilities.html">Utilitários</a> |
+    <a href="index.html">Conteúdo</a>
 </div>
-<h1><font color="#3E1220">SliTaz Handbook (en)</font></h1>
+<h1><font color="#3E1220">Manual SliTaz (pt)</font></h1>
 </div>
 
 <!-- Content. -->
 <div id="content">
 <div class="content-right"></div>
 
-<h2><font color="#DF8F06">HD Installation</font></h2>
+<h2><font color="#DF8F06">Instalação no HD</font></h2>
 
 <ul>
-	<li><a href="#intro">Introduction.</a></li>
-	<li><a href="#installer">SliTaz Installer.</a></li>
-	<li><a href="#byhand">Installation by hand.</a></li>
-	<li><a href="#grub">GRUB bootloader.</a></li>
+    <li><a href="#intro">Introdução.</a></li>
+    <li><a href="#installer">Instalador do SliTaz.</a></li>
+    <li><a href="#byhand">Instalação manual.</a></li>
+    <li><a href="#grub">Gerenciador de boot GRUB.</a></li>
 </ul>
 
 <a name="intro"></a>
 <h3>Introduction</h3>
 <p>
-This document gives information and necessary instructions on how to 
-install SliTaz on a hard disk. This should take about 10 minutes, SliTaz core
-LiveCD expands to 80 Mb, so we suggest a minimum of 120 Mb of free space. 
-This way you will be able to install a few more packages. If you can
-<a href="livecd.html">use the LiveCD</a>, you should be able to install SliTaz.
+Este documento fornece informações e instruções necessárias sobre como instalar 
+o SliTaz em um disco rígido - isto deve levar aproximadamente 10 minutos. O 
+LiveCD do SliTaz se expande a 80 Mb, assim nós sugerimos um mínimo de 120 Mb de 
+espaço livre. Deste modo você poderá instalar mais alguns pacotes. Se você puder 
+<a href="livecd.html">usar o LiveCD</a>, você provavelmente pode instalar o 
+SliTaz.
 </p>
 
 <a name="installer"></a>
-<h3>SliTaz Installer</h3>
+<h3>Instalador do SliTaz</h3>
 <p>
-SliTaz provides a simple to use Installer which can be launched from the 
-"System Tools" menu. SliTaz 1.0 Installer messages are only available in French
-and can be considered as an errata, but English speakers should be able to 
-manage to use it with these complimentary instructions.
+O SliTaz provê um instalador simples de usar que pode ser iniciado do menu 
+"System Tools" (Ferramentas de Sistema). As mensagens do instalador do SliTaz 
+1.0 só estão disponíveis em francês e podem ser consideradas como uma errata, 
+mas usuários de outras línguas deverão estar aptos a usá-lo com estas 
+instruções complementares.
 </p>
-<h4>Install type</h4>
+<h4>Tipo de instalação</h4>
 <p>
-The first step lets you choose the type of installation: new install or system 
-upgrade. In most cases you will want a new and clean installation. On confirming this
-the installer will mount the master cdrom device and search for the compressed
-filesystem (<code>rootfs.gz</code>). If no filesystem is found, then the
-installation will abort.
+O primeiro passo lhe permite escolher o tipo de instalação: nova instalação 
+ou upgrade de sistema. Na maioria dos casos você irá querer uma instalação nova 
+e limpa. Confirmando isto o instalador irá montar o dispositivo de cdrom master 
+e procurará o sistema de arquivos comprimido (<code>rootfs.gz</code>). Se 
+nenhum sistema de arquivos for achado, então a instalação será abortada.   
 </p>
 <p>
-If you get into trouble because the compressed filesystem is not found, please
-check that SliTaz is in the master CD/DVD device. If the problem persists you
-can use a downloaded ISO image and mount it on <code>/media/cdrom</code> where
-the HD Installer expects to find it: 
+Se você tiver dificuldades porque o sistema de arquivos comprimido não foi 
+achado, por favor confira se o CD do SliTaz está no dispositivo de CD/DVD master. 
+Se o problema persistir você pode usar uma imagem ISO baixada da internet e 
+montá-la em <code>/media/cdrom</code> onde o HD Installer espera encontrá-la:
 </p>
 <pre>
  # mount -o loop slitaz-1.0.iso /media/cdrom
 </pre>
-<h4>Target partition</h4>
+<h4>Partição alvo</h4>
 <p>
-Second step is the partition configuration. If you already have a free partition
-you can directly use it, if not you will have to create one graphically with 
-Gparted or from the command line with fdisk. For example if you want to install
-SliTaz on the first partition of the first disk recognized as <code>hda</code>: 
+O segundo passo é a configuração de partição. Se você já tem uma partição 
+livre você pode usá-la diretamente, se não você terá que criar uma em modo 
+gráfico com o Gparted ou a partir da linha de comando com fdisk. Por exemplo, 
+se você quer instalar o SliTaz na primeira partição do primeiro disco 
+reconhecido como <code>hda</code>:
 </p>
 <pre class="script">/dev/hda1
 </pre>
-<h4>Formating</h4>
+<h4>Formatação</h4>
 <p>
-The next step lets you format the target partition into <code>ext3</code>. Ext3
-is a robust, stable and journaled filesystem. If the partition is already 
-formated you can skip this step, if not just accept. <em>Warning</em> formating a
-partition will destroy all current data.
+O próximo passo o permite formatar a partição alvo em <code>ext3</code>. Ext3 é 
+um sistema de arquivos robusto, estável e com suporte a journaling. Se a 
+partição já estiver formatada, você pode pular este passo, se não só confirme. 
+<em>Aviso:</em> Formatar uma partição destruirá todos os dados atuais.
 </p>
-<h4>Hostname</h4>
+<h4>Hostname (Nome do Anfitrião)</h4>
 <p>
-Hostname configuration lets you set the machine name. The hostname is used 
-internally to identify the host on the network. This value can be
-changed after the system is installed.
+A configuração de Hostname o deixa colocar o nome da máquina. O hostname é 
+internamente usado para identificar o anfitrião na rede. Este valor pode ser 
+mudado depois do sistema ser instalado.
 </p>
-<h4>Bootloader - GRUB</h4>
+<h4>Gerenciador de Boot - GRUB</h4>
 <p>
-When the installation process is finished you have the option to install the GRUB
-bootloader which is capable of booting almost any kind of operating system. If
-you want to use an existing GRUB installation, skip this step and add the
-correct lines to your GRUB configuration file (<code>menu.lst</code>). Note 
-that the SliTaz Installer creates a configuration file on the target which can be
-used as an example (/mnt/target/boot/grub/menu.lst).
+Quando o processo de instalação é finalizado você tem a opção para instalar 
+o gerenciador de boot GRUB que é capaz de dar boot em quase qualquer tipo de 
+sistema operacional. Se você quer usar uma instalação existente do GRUB, pule 
+este passo e acrescente as linhas corretas para o arquivo de configuração do 
+GRUB (<code>menu.lst</code>). Note que o Instalador do SliTaz cria um arquivo 
+de configuração no local especificado que pode ser usado como um exemplo 
+(/mnt/target/boot/grub/menu.lst).
 </p>
-<h4>End of installation</h4>
+<h4>Fim da instalação</h4>
 <p>
-When the Installer has finally done it's job you have the option to exit or
-directly reboot your new SliTaz GNU/Linux operating system. First boot is like
-the LiveCD, you will be prompted for locale, keyboard, sound card and screen 
-selection. Future reboots will not prompt you anymore for configuration details,
-but all the values can be changed either manually or with the project tools 
-such as <code>tazlocale</code> or <code>tazx</code>.
+Quando o Instalador finalmente terminar seu trabalho você tem a opção de 
+sair ou diretamente reiniciar seu novo sistema operacional GNU/Linux SliTaz. 
+O primeiro boot é semelhante ao LiveCD, você será questionado sobre linguagem, 
+teclado, placa de som e seleção de tela. Reinicios futuros não pedirão mais 
+detalhes de configuração, mas todos os valores ou podem ser mudados manualmente 
+ou com as ferramentas do projeto como <code>tazlocale</code> ou <code>tazx</code>.
 </p>
 
 <a name="byhand"></a>
-<h3>Installation by hand</h3>
+<h3>Instalação manual</h3>
 <p>
-SliTaz can also be installed by hand from the command line. To install SliTaz
-by hand you can use a cdrom or an ISO image. The following commands can be
-copied/pasted from Firefox to Xterm.
+O SliTaz também pode ser instalado manualmente a partir da linha de comando. 
+Para a instalação manual do SliTaz você pode usar um cdrom ou uma imagem ISO. 
+Os comandos seguintes podem ser copiados/colados do Firefox para Xterm.
 </p>
 <p>
-The first thing you have to do is prepare a target partition and mount it. 
-Example using partition <code>/dev/hda1</code>:
+A primeira coisa que você tem que fazer é preparar uma partição alvo e 
+montá-la. Exemplo que usa partição <code>/dev/hda1</code>:
 </p>
 <pre>
  # mkdir /mnt/target
  # mount /dev/hda1 /mnt/target
 </pre>
-<h4>Mount cdrom or ISO image</h4>
+<h4>Montagem do cdrom ou imagem ISO</h4>
 <p>
-Now you have to mount the cdrom:
+Agora você tem que montar o cdrom:
 </p>
 <pre>
  # mount /dev/cdrom /media/cdrom
 </pre>
 <p>
-Or an ISO image:
+Ou uma imagem ISO:
 </p>
 <pre>
  # mount -o loop slitaz-1.0.iso /media/cdrom
 </pre>
-<h4>Install and extract</h4>
+<h4>Instalar e extrair</h4>
 <p>
-The goal now is to copy needed files from the media into the target partition
-and then extract the compressed filesystem (<code>rootfs.gz</code>). Create a
-boot directory and install the Linux Kernel:
+A meta agora é copiar os arquivos necessários da mídia na partição alvo e 
+então extrair o sistema de arquivos comprimido (<code>rootfs.gz</code>). Crie 
+um diretório de boot e instale o Kernel Linux:
 </p>
 <pre>
  # mkdir /mnt/target/boot
  # cp -a /media/cdrom/boot/vmlinuz-* /mnt/target/boot
 </pre>
 <p>
-Copy the rootfs:
+Copie o rootfs:
 </p>
 <pre>
  # cp /media/cdrom/boot/rootfs.gz /mnt/target
 </pre>
 <p>
-Now the necessary files are present so you can change (<code>cd</code>)
-to the target directory and uncompress the filesystem with <code>lzma</code> and
-<code>cpio</code>:
+Agora que os arquivos necessários estão presentes, você pode mudar (<code>cd</code>) 
+para o diretório alvo e descomprimir o sistema de arquivos com <code>lzma</code> 
+e <code>cpio</code>:
 </p>
 <pre>
  # cd /mnt/target
@@ -168,42 +172,43 @@ to the target directory and uncompress the filesystem with <code>lzma</code> and
  # rm rootfs.gz init
 </pre>
 <p>
-That's all, SliTaz is installed. Before rebooting on your new SliTaz GNU/Linux
-installation please check that you have a bootloader (GRUB or Lilo) and add 
-the necessary lines to boot SliTaz.
+Isso é tudo, o SliTaz está instalado. Antes de reiniciar seu novo GNU/Linux 
+SliTaz por favor cheque se você tem um gerenciador de boot (GRUB ou Lilo) e 
+adicione as linhas necessárias para dar boot no SliTaz.
 </p>
 
 <a name="grub"></a>
-<h3>GRUB bootloader</h3>
+<h3>Gerenciador de boot GRUB</h3>
 <p>
-GRUB is an universal bootloader capable of booting almost any operating system
-such as Linux, BSD or Windows. GRUB uses a single configuration file named 
-<code>menu.lst</code>, if you used the <a href="#installer">SliTaz Installer</a>
-and installed GRUB you dont need to manually install GRUB, just reboot.
+O GRUB é um gerenciador de boot universal capaz de dar boot em quase 
+qualquer sistema operacional, como Linux, BSD ou Windows. O GRUB usa um único 
+arquivo de configuração nomeado <code>menu.lst</code>, se você usou o 
+<a href="#installer">instalador do SliTaz </a> e instalou o GRUB não precisa 
+instalar o GRUB manualmente, só reinicie.
 </p>
 <p>
-Installation of GRUB onto the mbr, using root directory <code>/mnt/target</code>
-(the target mounted partition) and the disk named <code>hda</code>:
+Instalação do GRUB no mbr, usando o diretório raiz <code>/mnt/target</code>
+(a partição alvo montada) e o disco nomeado <code>hda</code>:
 </p>
 <pre>
  # grub-install --root-directory=/mnt/target /dev/hda
 </pre>
 <p>
-You can now create a GRUB configuration file and add the lines which will boot
-SliTaz. Menu.lst can be edited with your favorite text editor such as Nano or
-Leafpad:
+Agora você pode criar um arquivo de configuração do GRUB e adicionar as 
+linhas que darão boot no SliTaz. O arquivo menu.lst pode ser editado com seu 
+editor de texto favorito como Nano ou Leafpad:
 </p>
 <pre>
  # leafpad /mnt/target/boot/grub/menu.lst
 </pre>
-<h4>/boot/grub/menu.lst - Example</h4>
+<h4>/boot/grub/menu.lst - Exemplo</h4>
 <pre class="script">
-title  SliTaz GNU/Linux 1.0 (Kernel 2.6.24.2-slitaz)
-       root(hd0,0)
-       kernel /boot/vmlinuz-2.6.24.2-slitaz root=/dev/hda1 vga=normal
+title    SliTaz GNU/Linux 1.0 (Kernel 2.6.24.2-slitaz)
+root     (hd0,0)
+kernel   /boot/vmlinuz-2.6.24.2-slitaz root=/dev/hda1 vga=normal
 </pre>
 <p>
-Verify again that everything is in place before rebooting:
+Verifique novamente se tudo está no lugar antes de reiniciar:
 </p>
 <pre>
  # reboot
@@ -214,13 +219,13 @@ Verify again that everything is in place before rebooting:
 
 <!-- Footer. -->
 <div id="footer">
-	<div class="footer-right"></div>
-	<a href="#top">Top of the page</a> | 
-	<a href="index.html">Table of contents</a>
+    <div class="footer-right"></div>
+    <a href="#top">Topo da Página</a> | 
+    <a href="index.html">Conteúdo</a>
 </div>
 
 <div id="copy">
-    Copyright &copy; 2008 <a href="http://www.slitaz.org/en/">SliTaz</a> -
+    Copyright &copy; 2008 <a href="http://www.slitaz.org/pt/">SliTaz</a> -
     <a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>;<br />
     Documentation is under
     <a href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License</a>

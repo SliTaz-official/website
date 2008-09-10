@@ -1,10 +1,10 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt">
 <head>
-    <title>SliTaz Handbook (en) - Desktop</title>
+    <title>Manual SliTaz(pt) - Desktop</title>
     <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
-    <meta name="description" content="slitaz English handbook" />
+    <meta name="description" content="slitaz portuguese handbook" />
     <meta name="expires" content="never" />
     <meta name="modified" content="2008-02-26 18:30:00" />
     <meta name="publisher" content="www.slitaz.org" />
@@ -19,168 +19,164 @@
 <div align="right" id="quicknav">
     <a name="top"></a>
     <a href="enlightenment.html">Enlightenment</a> |
-    <a href="index.html">Table of contents</a>
+    <a href="index.html">Conteúdo</a>
 </div>
-<h1><font color="#3E1220">SliTaz Handbook (en)</font></h1>
+<h1><font color="#3E1220">Manual SliTaz(pt)</font></h1>
 </div>
 
 <!-- Content. -->
 <div id="content">
 <div class="content-right"></div>
 
-<h2><font color="#DF8F06">SliTaz Desktop</font></h2>
+<h2><font color="#DF8F06">Desktop SliTaz</font></h2>
 
 <ul>
-   	<li><a href="#intro">Introduction.</a></li>
-   	<li><a href="#jwm">JWM.</a></li>
-   	<li><a href="#lxpanel">LxPanel.</a></li>
-	<li><a href="x-window.html#openbox">Openbox.</a></li>
-	<li><a href="enlightenment.html">Enlightenment.</a></li>
+    <li><a href="#intro">Introdução.</a></li>
+    <li><a href="#jwm">JWM.</a></li>
+    <li><a href="#lxpanel">LxPanel.</a></li>
+    <li><a href="x-window.html#openbox">Openbox.</a></li>
+    <li><a href="enlightenment.html">Enlightenment.</a></li>
 </ul>
 
 <a name="intro"></a>
-<h3>Introduction</h3>
+<h3>Introdução</h3>
 <p>
-The default SliTaz desktop is brought to you by many different components. 
-JWM (Joe's Window Manager) and LXPanel combine to provide a Desktop providing 
-simplicity and functionality.
+O desktop padrão do SliTaz é formado por muitos componentes diferentes. JWM 
+(Joe's Window Manager) e LXPanel combinam-se para prover um 
+desktop que seja simples e funcional.
 </p>
 
 <a name="jwm"></a>
 <h3>JWM - Joe's Window Manager</h3>
 <p>
-Joe's window manager, written in C is quick, simple, clean, stable and efficient. 
-JWM proposes a taskbar, a menu of icons and a 
-pager for the management of virtual desktops, the taskbar can also act as a dock. 
-In addition it is easily configurable with a single text file that can
-change the menu, fonts and their sizes and different colors.
+O Joe's Windows manager, escrito em C, é rápido, simples, limpo, estável e 
+eficiente. JWM possui uma barra de tarefas, um menu de ícones e um paginador 
+para a administração de desktops virtuais, a barra de tarefas também podem agir 
+como um dock. Além disso é facilmente configurável com um único arquivo de 
+texto que pode mudar o menu, fontes e seus tamanhos e cores diferentes.   
 </p>
 
-<h4>Use and configure JWM</h4>
+<h4>Usando e configurando o JWM</h4>
 <p>
-The application of Joe's Window Manager is very fast. To view the menu just
-click somewhere on the desktop. You can resize a window through the edges or 
-corners, minimize or pass a virtual desktop to another via a pager. You
-also have configurable keyboard shortcuts for faster access to the applications 
-that you use the most. On SliTaz the system configuration file is
-<code>/etc/jwm/system.jwmrc</code>. Apart from this file, each user can use
-its own configuration file hidden in <code>~/.jwmrc</code>. This is a text file using XML
-syntax, it can edited with a simple text editor - lines beginning with: 
-<code>&lt;!--</code> are comments that let you understand what each tag does.
+O aplicativo Joe's Window Manager é muito rápido. Para ver o menu apenas 
+clique com qualquer botão do mouse em algum lugar do desktop. Você pode 
+redimensionar uma janela pelas extremidades ou cantos, minimizar ou passar de 
+um desktop virtual a outro pelo paginador. Você também tem atalhos de teclado 
+configuráveis para acesso mais rápido às aplicações que você mais usa. No 
+SliTaz o arquivo de configuração do sistema é <code>/etc/jwm/system.jwmrc</code>. 
+Alem deste arquivo, cada usuário pode usar seu próprio arquivo de configuração 
+escondido dentro de <code>~/.jwmrc</code>. Este é um arquivo de texto que usa 
+sintaxe XML, e pode ser editado com um editor de texto simples - as linhas que 
+começam com: 
+<code>&lt;!--</code> são comentários que explicam o que cada tag faz.   
 </p>
 <p>
-To facilitate the customization of the desktop, SliTaz automatically copies
-at the launch of the first (graphical) session, a system configuration file to
-the root directory of the user. You can directly modify this file and test 
-without risk. To edit with your favorite text editor:
+Para facilitar a customização do desktop, o SliTaz automaticamente copia 
+durante a inicialização da primeira sessão (gráfica) um arquivo de configuração 
+do sistema para o diretório raiz do usuário. Você pode modificar este arquivo 
+diretamente e pode testar sem risco. Para editar com seu editor de texto 
+favorito:
 </p>
 <pre>
  $ geany $HOME/.jwmrc &amp;
 </pre>
 <p>
-To retrieve an original configuration file, you can copy the system configuration 
-file and rename it <code>.jwmrc</code> in your home directory:
+Para recuperar um arquivo de configuração original, você pode copiar o 
+arquivo de configuração do sistema e pode renomeá-lo para <code>.jwmrc</code> 
+em seu diretório home:
 </p>
 <pre>
  $ cp /etc/jwm/system.jwmrc $HOME/.jwmrc
 </pre>
 <p>
-The tag <code>RootMenu</code> corresponds to the menu displayed by clicking on one of the
-(three) buttons on the mouse. To add a category, you must use the tag: <code>Menu</code>
- - this contains entries for various programs. Any entry in the JWM menu can
-fit on one line. Example using the GQview image management application:
+A tag <code>RootMenu</code> corresponde ao menu exibido clicando com um dos 
+(três) botões do mouse. Para adicionar uma categoria, você tem que usar a tag: 
+<code>Menu</code> - ela contém entradas para vários programas. Qualquer entrada 
+no menu do JWM pode ajustar-se em uma linha. Exemplo usando o aplicativo de 
+gerenciamento de imagem GQview:
 </p>
 <pre class="script">
 &lt;Program icon="gqview.png" label="GQview"&gt;gqview&lt;/Program&gt;
 </pre>
 <p>
-There are still many opportunities to configure <code>RootMenu</code> according to the 
-mouse buttons, the choice of method to move windows, create groups, etc.
-The Manual is available online at the official website of the project. To view 
-a list of command-line options, just type <code>jwm -h</code> in a terminal.
+Ainda há muitas possibilidades para configurar o <code>RootMenu</code> de acordo 
+com os botões do mouse, a escolha de método para mover janelas, criar grupos, 
+etc. O Manual está disponível on-line no website oficial do projeto. Para ver 
+uma lista de opções de linha de comando, apenas digite <code>jwm -h</code> em 
+um terminal.  
 </p>
 
-<h4>Create your own JWM style</h4>
+<h4>Personalize seu JWM</h4>
 <p>
-Creating your own graphical style with JWM is relatively quick
-and easy, the tags are clear and the attributes possible
-are given in the comments. When preparing your work, you can
-see your amendments by restarting the window manager from the
-menu or via the <code>jwm -restart</code> command. In the configuration
-file, style tags start after the &lt;!-- Visual Styles --&gt; comment. To
-begin, here is a short list of the main style tags with a short 
-description:
+Criar seu próprio estilo gráfico com JWM é relativamente rápido e fácil, as 
+tags são claras e os atributos possíveis são determinados nos comentários. 
+Quando estiver preparando seu trabalho, você pode ver suas modificações 
+reiniciando o gerenciador de janela a partir do menu ou pelo comando <code>jwm 
+-restart</code>. No arquivo de configuração, as tags de estilo vem depois do 
+comentário &lt;!-- Visual Styles--&gt;. Para começar, aqui está uma pequena lista das principais 
+tags de estilo com uma curta descrição:  
 </p>
 <ul>
-	<li><code>Background</code> manages the wallpaper. This tag supports the
-	<code>solid</code>, <code>gradient</code>, <code>image</code> or <code>tile</code>
-	attributes, to respectively; use a solid color, create a gradient, 
-	display a resized image or tile an image.</li>
-
-	<li><code>BorderStyle</code> controls the windows border.</li>
-
-	<li><code>TrayStyle</code> controls a taskbar. The taskbar may, among other 
-	things be automatically hidden or only fill a part of the
-	screen with the <code>width</code> attribute.</li>
-
-	<li><code>TrayListStyle</code> controls the style of the list of open windows
-	on the current desktop.</li>
-
-	<li><code>PagerStyle</code> controls the pager displaying different virtual
-	desktops (4 by default).</li>
-
-	<li><code>MenuStyle</code> defines the menu style.</li>
-
-	<li>The icons are defined by the <code>IconPath</code> tag, you can use your
-	own personal icons by specifing the full path to the directory
-	that contains them. Note that you can specify more than
-	one path, if you want, you can use your own icons <em>and</em> those 
-	contained in the <code>/usr/share/pixmaps</code> and <code>/usr/share/icons</code>
-	system directories. SliTaz uses the Tango theme icons: 
-	<a href="http://tango.freedesktop.org/">tango.freedesktop.org</a>
-	for the menu, they are 16x16 and are stored in
-	<code>/usr/share/icons/Tango</code>. You can add, edit, delete
-	these... If you want to install new icons in your user
-	space, we advise you to use <code>~/Picture/Icons</code> (set as default)
-	or a hidden directory <code>~/.Icons</code>.</li>
+    <li><code>Background</code> gerencia o papel de parede. Esta tag suporta os
+     atributos <code>solid</code>, <code>gradient</code>, <code>image</code> or 
+     <code>tile</code> para, respectivamente: usar uma cor sólida, criar um 
+     gradiente, exibir uma imagem redimencionada ou ladrilhar uma imagem.</li>
+    <li><code>BorderStyle</code> controla a borda das janelas.</li>
+    <li><code>TrayStyle</code> controla a barra de tarefas. A barra de tarefas
+     pode, entre outras coisas, ser escondida automaticamente ou só ocupar uma
+     parte da tela com o atributo <code>width</code> (largura).</li>
+    <li><code>TrayListStyle</code> controla o estilo da lista de janelas abertas
+     no desktop atual.</li>
+    <li><code>PagerStyle</code> controla o paginador que exibe os diferentes
+     desktops virtuais (4 por padrão).</li>
+    <li><code>MenuStyle</code> define o estilo do menu.</li>
+    <li>Os ícones são definidos pela tag <code>IconPath</code>, você pode usar 
+    seus próprios ícones especificando o caminho completo para o diretório onde 
+    eles estão. Note que você pode especificar mais de um caminho, se quiser, 
+    pode usar seus próprios ícones <em>e</em> aqueles contidos nos diretórios 
+    <code>/usr/share/pixmaps</code> e <code>/usr/share/icons</code>. O SliTaz 
+    usa os ícones do tema Tango: 
+    <a href="http://tango.freedesktop.org/">tango.freedesktop.org</a>.
+    Para o menu, eles têm 16x16 e são armazenados em 
+    <code>/usr/share/icons/Tango</code>. Você pode adicionar, editá-los, 
+    apagá-los... Se quiser instalar ícones novos em seu espaço de usuário, 
+    nós lhe aconselhamos que use <code>~/Picture/Icons</code> (definido por 
+    padrão) ou o diretório oculto <code>~/.Icons</code>.</li>
 </ul>
 <p>
-The colors can be defined by their name or RGB number, such
-as <code>#3A4956</code>. To use colors in their gradient mode, you must
-specify the two colors separated by a colon, example
-<code>#6C0023:#3E1220</code>. You can change fonts and their sizes by 
-using the <code>Font</code> tag. There are still some small things that
-you can change to customize your desktop, such as the name
-of a menu item and its icon. Before restarting JWM with your
-new configuration file, you can check its syntax by using
-the command: <code>jwm -p</code>. To explore further, the official 
-handbook describes all the tags, options and valid attributes.
-You can view it online at the JWM website.
+As cores podem ser definidas pelo nome ou número RGB, como <code>#3A4956</code>. 
+Para usar cores no modo gradiente, você tem que especificar as duas cores 
+separadas por dois pontos, exemplo <code>#6C0023:#3E1220</code>. Você pode mudar 
+fontes e seus tamanhos usando a tag <code>Font</code>. Ainda há algumas coisas 
+pequenas que você pode mudar para personalizar seu desktop, como o nome de um 
+item de menu e seu ícone. Antes de reiniciar o JWM com seu novo arquivo de 
+configuração, você pode conferir sua sintaxe usando o comando: <code>jwm -p</code>. 
+Para maiores detalhes, o manual oficial descreve todas as tags, opções e 
+atributos válidos. Você pode vê-los on-line no website do JWM.   
 </p>
 
 <h4>JWM website</h4>
 <ul>
-    	<li><a href="http://www.joewing.net/programs/jwm/"
-   	 >www.joewing.net/programs/jwm/</a> - The official website of 
-	Joe's Window Manager, providing news and a comprehensive manual.</li>
-	<li>#jwm on irc.freenode.net - The JWM IRC discussion channel on 
-	Freenode server.</li>
+    <li><a href="http://www.joewing.net/programs/jwm/"
+         >www.joewing.net/programs/jwm/</a> - O website oficial do Joe's
+     Window Manager, que provê notícias e um extenso manual.</li>
+    <li>#jwm em irc.freenode.net - O canal de discussão IRC no servidor Freenode 
+     sobre o JWM.</li>
 </ul>
 
 <a name="lxpanel"></a>
 <h3>LXPanel</h3>
 <p>
-LXPanel is part of the LXDE project and follows the Freedesktop standards. Menus 
-are dynamically generated by adding <code>.desktop</code> files to the
-<code>/usr/share/applications</code> directory.
+LXPanel é parte do projeto LXDE e segue os padrões Freedesktop. Menus são 
+gerados dinamicamente, acrescentando arquivos <code>.desktop</code> ao diretório 
+<code>/usr/share/applications</code>.  
 </p>
 <h4>*.desktop files</h4>
 <p> 
-A single .desktop file 
-can contain eight lines with respectively:- 
-the name (<code>Name</code>), generic name, comment, the command to 
-execute (<code>Exec</code>), icon, type and Freedesktop categories. 
-Example of a .desktop file:
+Um único arquivo .desktop pode conter oito linhas com, respectivamente: 
+- o nome (<code>Name</code>), nome genérico, comentário, o comando para executar 
+(<code>Exec</code>), ícone, tipo e categorias Freedesktop. Exemplo de um 
+arquivo .desktop: 
 </p>
 <pre class="script">[Desktop Entry]
 Name=XTerm
@@ -192,32 +188,32 @@ Type=Application
 Categories=Utility;Terminal;
 </pre>
 <p>
-Note that the icons are located in <code>/usr/share/icons</code> or
-<code>/usr/share/pixmaps</code> directory. The <code>Categories</code>
-entry states where the program will sit in the menu.
+Note que os ícones ficam situados nos diretórios <code>/usr/share/icons</code> 
+ou <code>/usr/share/pixmaps</code>. A entrada <code>Categories</code> 
+(categorias) declara onde o programa se localizará no menu.
 </p>
 <p>
-The system configuration file is located in <code>/etc/lxpanel</code>
-and can also be stored locally in <code>~/.config</code> though it is 
-recommended that you configure LXPanel graphically by using the
-preferences entry in the main menu.
+O arquivo de configuração do sistema fica situado em <code>/etc/lxpanel</code> 
+e também pode ser armazenado localmente dentro de <code>~/.config</code>, 
+entretanto é recomendado que você configure o LXPanel em modo gráfico usando a 
+entrada preferences (preferências) no menu principal.   
 </p>
 
-<h4>LXPanel configurator</h4>
+<h4>Configurador do LXPanel</h4>
 <p>
-The LXPanel configurator has 3 tabs:-
+O configurador do LXPanel possui 3 abas:
 </p>
 <ul>
-	<li><code>General</code> handles the position, size - either dynamic
-	or fixed, panel background and properties.</li>
-	<li><code>Plugins</code> lets you add, remove, edit and move plugins
-	around on the panel.</li>
-	<li><code>Applications</code> allows you to set preferred applications
-	like the file manager, terminal and logout command.</li>
+    <li><code>General</code> define a posição, tamanho - dinâmico ou fixo -, 
+     fundo e propriedades do painel.</li>
+    <li><code>Plugins</code> lhe permite adicionar, remover, editar e mover 
+     plugins pelo painel.</li>
+    <li><code>Applications</code> lhe permite definir aplicações preferidas 
+    como o gerenciador de arquivo, terminal e comando de logout.</li>
 </ul>
 <p>
-The official website for the LXDE project and LXPanel can be found 
-<a href="http://lxde.org/">here</a>.
+O website oficial para o projeto LXDE e LXPanel pode ser encontrado 
+<a href="http://lxde.org/">aqui</a>.
 </p>
 
 <!-- End of content -->
@@ -225,13 +221,13 @@ The official website for the LXDE project and LXPanel can be found
 
 <!-- Footer. -->
 <div id="footer">
-	<div class="footer-right"></div>
-	<a href="#top">Top of the page</a> | 
-	<a href="index.html">Table of contents</a>
+    <div class="footer-right"></div>
+    <a href="#top">Topo da Página</a> | 
+    <a href="index.html">Conteúdo</a>
 </div>
 
 <div id="copy">
-    Copyright &copy; 2008 <a href="http://www.slitaz.org/en/">SliTaz</a> -
+    Copyright &copy; 2008 <a href="http://www.slitaz.org/pt/">SliTaz</a> -
     <a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>;<br />
     Documentation is under
     <a href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License</a>

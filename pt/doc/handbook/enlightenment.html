@@ -1,10 +1,10 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt">
 <head>
-    <title>SliTaz Handbook (en) - Enlightenment</title>
+    <title>Manual SliTaz(pt) - Enlightenment</title>
     <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
-    <meta name="description" content="slitaz English handbook" />
+    <meta name="description" content="slitaz portuguese handbook" />
     <meta name="expires" content="never" />
     <meta name="modified" content="2008-02-26 18:30:00" />
     <meta name="publisher" content="www.slitaz.org" />
@@ -18,10 +18,10 @@
 <div id="header">
 <div align="right" id="quicknav">
     <a name="top"></a>
-    <a href="cmdline.html">Commands</a> |
-    <a href="index.html">Table of contents</a>
+    <a href="cmdline.html">Comandos</a> |
+    <a href="index.html">Conteúdo</a>
 </div>
-<h1><font color="#3E1220">SliTaz Handbook (en)</font></h1>
+<h1><font color="#3E1220">Manual SliTaz (pt)</font></h1>
 </div>
 
 <!-- Content. -->
@@ -33,43 +33,44 @@
 <a name="enlightenment"></a>
 <h3>Enlightenment (e17)</h3>
 <p>
-Enlightenment is a complete desktop environment, fully configurable with the
-mouse and offering many themes. The version supplied by the SliTaz project
-is known as e17 and is still in development, this version is considered stable
-enough to be incorporated into the distribution. Enlightenment was designed to 
-be deployed on systems with limited resources, as well as more powerful
-systems. It allows for wallpapers, menus, animated and interactive gadgets
-and knows how to manage virtual desktops. To install e17:
+Enlightenment é um ambiente de desktop completo, completamente configurável 
+com o mouse e que oferece muitos temas. A versão oferecida pelo projeto SliTaz 
+é conhecida como e17 e ainda está em desenvolvimento, porém esta versão é 
+considerada estável o bastante ser incorporada na distribuição. Enlightenment 
+foi projetado para ser usado tanto em sistemas com recursos limitados como 
+também em sistemas mais poderosos. Ele permite papéis de parede, menus, 
+dispositivos animados e interativos e administra desktops virtuais. Para 
+instalar o e17: 
 </p>
 <pre> # tazpkg get-install enlightenment
 </pre>
 <p>
-Logout your current X session, type <code>F1</code> at Slim login and choose
-<code>e17</code> to start Enlightenment.
+Faça logout de sua sessão X atual, aperte <code>F1</code> no login do Slim e 
+escolha <code>e17</code> para começar o enlightenment.
 </p>
-<h4>Menu and desktop icons</h4>
+<h4>Menu e ícones de desktops</h4>
 <p>
-Enlightenment is compliant to the Freedesktop standards. 
-Applications are sorted by category and icons automatically appear
-if a desktop file is supplied. The (<code>.desktop</code>) system files are
-contained in the <code>/usr/share/applications</code> directory or hidden home
-<code>~/.local/share/applications</code> directory. These files
-have a simple syntax and are editable from the panel or with
-a simple text editor. The file menus displaying categories
-in the Enlightenment menu are found in the <code>slitaz-menus</code> 
-package:
+O Enlightenment é compatível aos padrões Freedesktop. Aplicações são ordenadas 
+por categoria e ícones aparecem automaticamente se um arquivo do desktop é 
+fornecido. Os arquivos de sistema (<code>.desktop</code>) estão no diretório 
+<code>/usr/share/applications</code> ou ocultos em 
+<code>~/.local/share/applications</code>. Estes arquivos têm uma sintaxe simples 
+e são editáveis pelo painel ou com um editor de texto simples. Os menus de 
+arquivos exibindo categorias no menu do Enlightenment podem ser achados no 
+pacote <code>slitaz-menus</code>:
 </p>
 <pre> # tazpkg get-install slitaz-menus
 </pre>
-<h4>An icon on the desktop</h4>
+<h4>Um ícone no desktop</h4>
 <p>
-To have an icon on the desktop launching applications, you can
-create by hand a <code>.desktop</code> file in your local directory 
-<code>~/Desktop</code>. Desktop files placed in this directory are automatically
-recognized by Enlightenment. A single .desktop file can 
-contain eight lines with respectively:- the name (<code>Name</code>), generic
-name, comment, the command to execute (<code>Exec</code>), icon, type
-and Freedesktop categories. Example of a .desktop file for Xterm icon:
+Para ter um ícone no desktop que lança uma aplicação, você pode criar um 
+arquivo <code>.desktop</code> manualmente em seu diretório local 
+<code>~/Desktop</code>. Arquivos de desktop colocados neste diretório são 
+reconhecidos automaticamente pelo Enlightenment. Um único arquivo .desktop pode 
+conter oito linhas com, respectivamente: - o nome (<code>Name</code>), nome 
+genérico, comentário, o comando para executar (<code>Exec</code>), ícone, tipo 
+e categorias Freedesktop. Exemplo de um arquivo .desktop para ícone do
+Xterm:   
 </p>
 <pre class="script">[Desktop Entry]
 Name=XTerm
@@ -81,7 +82,8 @@ Type=Application
 Categories=Utility;Terminal;
 </pre>
 <p>
-Additional themes can be found on the <a href="http://www1.get-e.org/Themes/E17/">website</a>
+Temas adicionais podem ser encontrados no 
+<a href="http://www1.get-e.org/Themes/E17/">website</a>.
 </p>
 
 <!-- End of content -->
@@ -89,13 +91,13 @@ Additional themes can be found on the <a href="http://www1.get-e.org/Themes/E17/
 
 <!-- Footer. -->
 <div id="footer">
-	<div class="footer-right"></div>
-	<a href="#top">Top of the page</a> | 
-	<a href="index.html">Table of contents</a>
+    <div class="footer-right"></div>
+    <a href="#top">Topo da Página</a> | 
+    <a href="index.html">Conteúdo</a>
 </div>
 
 <div id="copy">
-    Copyright &copy; 2008 <a href="http://www.slitaz.org/en/">SliTaz</a> -
+    Copyright &copy; 2008 <a href="http://www.slitaz.org/pt/">SliTaz</a> -
     <a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>;<br />
     Documentation is under
     <a href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License</a>

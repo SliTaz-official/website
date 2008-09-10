@@ -1,8 +1,8 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt">
 <head>
-    <title>SliTaz Handbook (en) - LiveCD usage and options</title>
+    <title>Manual SliTaz (pt) - Uso e Opções do LiveCD</title>
     <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
     <meta name="description" content="slitaz LveCD usage boot options boot" />
     <meta name="expires" content="never" />
@@ -19,83 +19,88 @@
 <div align="right" id="quicknav">
     <a name="top"></a>
     <a href="desktop.html">Desktop</a> |
-    <a href="index.html">Table of contents</a>
+    <a href="index.html">Conteúdo</a>
 </div>
-<h1><font color="#3E1220">SliTaz Handbook (en)</font></h1>
+<h1><font color="#3E1220">Manual SliTaz (pt)</font></h1>
 </div>
 
 <!-- Content. -->
 <div id="content">
 <div class="content-right"></div>
 
-<h2><font color="#DF8F06">LiveCD usage and options</font></h2>
+<h2><font color="#DF8F06">Uso e opções do LiveCD</font></h2>
 
 <ul>
-	<li><a href="#boot">Boot from a cdrom.</a></li>
-	<li><a href="#options">Options to pass at boot.</a></li>
-	<li><a href="#kernel-param">Linux Kernel Parameters.</a></li>
-	<li><a href="#usbmedia">Option : home=usb</a> - Use USB media as /home 
-	partition.</li>
-	<li><a href="#mapping">Options : lang=XX and kmap=XX</a> - Specify language 
-	and keyboard.</li>
-	<li><a href="#config">Option : config=&lt;device&gt;,&lt;path&gt;</a> - 
-	Execute a script at boot time.</li>
-	<li><a href="#screen">Option : screen=&lt;type&gt;</a> - Specify screen resolution.</li>
-	<li><a href="#sound">Option : sound=*</a> - Disable sound support.</li>
-	<li><a href="#modprobe">Option : modprobe=modules</a> - Load needed Kernel
-	modules.</li>
-	<li><a href="#laptop">Option : laptop</a> - Load ac and battery modules.</li>
-	<li><a href="#prev">Option : previous</a> - Rollback to previous filesystem.</li>
-	<li><a href="#sessions">Sessions</a> - Logins, passwords and X.</li>
-	
+    <li><a href="#boot">Boot a partir de um cdrom.</a></li>
+    <li><a href="#options">Opções de boot.</a></li>
+    <li><a href="#kernel-param">Parâmetros do Kernel Linux.</a></li>
+    <li><a href="#usbmedia">Opção : home=usb</a> - Use uma mídia USB como
+     partição /home.</li>
+    <li><a href="#mapping">Opções : lang=XX e kmap=XX</a> - Especifique a
+     linguagem e a configuração de teclado.</li>
+    <li><a href="#config">Opção : config=&lt;dispositivo&gt;,&lt;caminho&gt;</a> - 
+     Execute um script no momento do boot.</li>
+    <li><a href="#screen">Opção : screen=&lt;tipo&gt;</a> - 
+     Especifique a resolução de tela.</li>
+    <li><a href="#sound">Opção : sound=*</a> - Desabilite o suporte a som.</li>
+    <li><a href="#modprobe">Opção : modprobe=modules</a> - Carregue módulos 
+     do Kernel necessários.</li>
+    <li><a href="#laptop">Opção : laptop</a> - Carregue módulos battery e ac.</li>
+    <li><a href="#prev">Opção : previous</a> - Retorne ao sistema de arquivos
+     anterior.</li>
+    <li><a href="#sessions">Sessões</a> - Logins, passwords e X.</li>
+    
 </ul>
 
 <a name="boot"></a>
-<h3>Boot from a cdrom</h3>
+<h3>Boot a partir de um cdrom</h3>
 <p>
-To boot SliTaz from a cdrom, just burn the ISO image onto a blank disc, then
-reboot your computer with the disc in your cdrom drive. The first splash image
-is powered by isolinux bootloader, you can then just press <code>ENTER</code>
-with or without any options to start system initialization. Note that pressing
-<code>F1-F4</code> will display help and information. SliTaz runs entirely
-in memory and will not damage the installed host system. When the boot
-process is finished, you can login without any password as user 
-<code>hacker</code>. To become root administrator, you can use the command 
-<code>su</code> with the password <code>root</code> in a XTerm window or 
-the Linux console. In LiveCD mode the <em>root</em> password is <code>root</code>.
+Para dar boot com o SliTaz a partir de um cdrom, apenas grave a imagem ISO 
+em um CD virgem, então reinicie seu computador com o CD em seu drive de cdrom. 
+A primeira imagem de apresentação é gerada pelo gerenciador de boot isolinux, 
+você pode então apenas apertar <code>ENTER</code> com ou sem qualquer opção 
+para começar a inicialização do sistema. Note que apertando <code>F1-F4</code> 
+será exibida ajuda e informação. O SliTaz roda completamente na memória e não 
+danificará o sistema anfitrião instalado. Quando o processo de boot terminar, 
+você pode logar-se sem qualquer password com o usuário <code>hacker</code>. 
+Para se tornar root (administrador), você pode usar o comando <code>su</code> 
+com o password <code>root</code> em uma janela do XTerm ou no terminal do Linux. 
+No modo LiveCD o password da conta <em>root</em> é <code>root</code>.  
 </p>
 
 <a name="options"></a>
-<h3>Options and parameters to pass at boot</h3>
+<h3>Opções de boot</h3>
 <p>
-The SliTaz LiveCD can pass various <em>boot</em> options via the command prompt powered by syslinux. 
-There are two types of options: those of SliTaz and those of the Linux Kernel. 
-The options for SliTaz are used by various startup scripts and the parameters 
-such as the VGA mode are managed directly by the Kernel (<em>kernel boot parameters</em>).
-To pass options at startup, just precede your commands with <code>slitaz</code>
+O SliTaz LiveCD pode passar várias opções de <em>boot</em> pelo prompt de comando 
+fornecido pelo syslinux. Há dois tipos de opções: as do próprio SliTaz e as do 
+Kernel Linux. As opções para o SliTaz são usadas por vários scripts de 
+inicialização e os parâmetros como o modo VGA são administrados diretamente 
+pelo Kernel (<em>parâmetros de boot do kernel</em>). Para passar as opções ao 
+iniciar, apenas preceda seus comandos com <code>slitaz</code>:
 </p>
 <pre> slitaz vga=791 no387
 </pre>
 <p>
-Note that the Linux Kernel keeps data passed to <em>boot</em> in the text file <code>/proc/cmdline</code>. 
-On a GNU/Linux system, you can view this information by running the command:
+Note que o Kernel Linux mantém dados passados para o <em>boot</em> no arquivo de 
+texto /proc/cmdline. Em um sistema GNU/Linux, você pode ver esta informação com 
+o comando:
 </p>
 <pre> $ cat /proc/cmdline 
 </pre>
 
 <a name="kernel-param"></a>
-<h3>Parameters of the Linux Kernel</h3>
+<h3>Parâmetros do Kernel Linux</h3>
 <p>
-On GNU/Linux systems, parameters specific to the Kernel vary greatly depending on
-the configuration used in compiling it. The kernel used by SliTaz 
-is constructed with a minimum of modules and offers very 
-few modifiable parameters at startup. However, you can disable the 
-emulation of a math coprocessor via option: <code>no387</code> and/or activate
-<code>irqpoll</code> in the case of problems with interrupts (CD/DVD). The SliTaz
-Kernel also provides a video output mode for the VGA Vesa <em>framebuffer</em>
- - this is what displays the tux logo and manages the display of the Linux terminal. 
-Once the system has started you have access to six pseudo terminals via the key combinations 
-<code>Ctrl+alt+F1</code>, <code>Ctrl+alt+F2</code>, and so on.
+Em sistemas GNU/Linux, parâmetros específicos do Kernel variam muito 
+dependendo da configuração usada em sua compilação. O kernel usado pelo SliTaz 
+é construído com um mínimo de módulos e oferece poucos parâmetros modificáveis 
+na inicialização. Porém, você pode desabilitar a emulação de um co-processador 
+matemático pela opção: <code>no387</code> e/ou ativar <code>irqpoll</code> no 
+caso de problemas com interrupções (CD/DVD). O Kernel do SliTaz também provê um 
+modo de saída de vídeo para o <em>framebuffer</em> VGA Vesa - isto é o que 
+exibe o logotipo do tux e administra a exibição do terminal do Linux. Uma vez 
+iniciado o sistema você tem acesso a seis pseudo terminais pelas combinações de 
+teclas <code>Ctrl+alt+F1</code>, <code>Ctrl+alt+F2</code>, e assim por diante. 
 </p>
 
 <h4>vga=XXX - VGA Kernel modes</h4>
@@ -108,26 +113,28 @@ Once the system has started you have access to six pseudo terminals via the key 
 </pre>
 
 <a name="usbmedia"></a>
-<h3>Option : home=usb</h3>
+<h3>Opção : home=usb</h3>
 <p>
-To store your data permanently (bookmarks, downloads, Firefox Add-ons, etc),
-you need USB media with a partition formatted in <code>ext3</code> and it must
-specify <code>home=usb</code> for <code>sda1</code> (most cases) or
-<code>home=devname</code> at boot time. Note that you can also specify the
-device using the partition UUID or label by using <code>home=*</code>. Example:
+Para armazenar seus dados permanentemente (bookmarks, downloads, Firefox 
+Add-ons, etc), você precisa de uma mídia USB com uma partição formatada em 
+<code>ext3</code> e deve especificar <code>home=usb</code> para <code>sda1</code>
+(na maioria dos casos) ou <code>home=nomedodispositivo</code> durante o boot. 
+Note que você também pode especificar o dispositivo pelo UIDD da partição ou 
+pelo rótulo usando <code>home=*</code>. Exemplo:
 </p>
 <pre>
  slitaz home=sda1
 </pre>
-<h4>Prepare USB media</h4>
+<h4>Preparando uma mídia USB  </h4>
 <p>
-All USB media can formatted in the native Linux <code>ext3</code> filesystem.
-Ext3 is a journaled, stable filesystem, it allows you to keep permissions
-on all files and is much more secure than the default Windows FAT32 filesystem.
-To format USB media you have a few options: the command line with
-<code>mkfs.ext3</code>, the <code>tazusb</code> utility or graphically with Gparted.
-To get a full list of available partitions including the USB drive you can use the command
-<code>fdisk -l</code> and then format. Example:
+Toda e qualquer mídia USB pode ser formatada no sistema de arquivos nativo 
+do Linux, <code>ext3</code>. Ext3 é um sistema de arquivos estável, com suporte 
+a jounaling, que lhe permite manter permissões em todos os arquivos e é muito 
+mais seguro que o sistema de arquivos padrão do Windows, FAT32. Para formatar 
+uma mídia USB você tem algumas opções: a linha de comando com <code>mkfs.ext3</code>, 
+o utilitário <code>tazusb</code> ou em modo gráfico com o Gparted. Para obter 
+uma lista completa de partições disponíveis, inclusive o drive USB, você pode 
+usar o comando <code>fdisk -l</code> e então formatar. Exemplo:   
 </p>
 <pre>
  # fdisk -l
@@ -135,117 +142,123 @@ To get a full list of available partitions including the USB drive you can use t
 </pre>
 
 <a name="mapping"></a>
-<h3>Options : lang=XX and kmap=XX</h3>
+<h3>Opções : lang=XX e kmap=XX</h3>
 <p>
-When you use the LiveCD you have two options to directly configure the system 
-language and keyboard mapping. These options can be set by simply navigating to
-your country code and reloading the bootloader configuration with <code>ENTER</code>. 
-To skip the language and keyboard configuration you can simply type options on the command
-line, for English/UK:
+Quando você usa o LiveCD você tem duas opções para configurar diretamente o 
+idioma do sistema e a configuração do teclado. Estas opções podem ser escolhidas 
+simplesmente selecionando o código de seu país e reiniciando a configuração do 
+gerenciador de boot com <code>ENTER</code>. Para pular a escolha do idioma e a 
+configuração do teclado você pode simplesmente digitar as opções na linha de 
+comando. Exemplo para English/UK,:  
 </p>
 <pre>
  slitaz lang=en kmap=en
 </pre>
 
 <a name="config"></a>
-<h3>Option : config=&lt;device&gt;,&lt;path&gt;</h3>
+<h3>Opção : config=&lt;dispositivo&gt;,&lt;caminho&gt;</h3>
 <p>
-The <code>config=</code> option lets you execute a script at SliTaz boot time,
-the script can be located on external media or a HD partition. For example, the
-script can mount an ISO image on <code>/usr</code> to save memory and boot the
-LiveCD on computers with only 32 Mb of RAM. An example with a script named 
-<code>slitaz.sh</code> located on the first disk and partition: 
+A opção <code>config=</code> o permite executar um script no SliTaz durante o 
+boot, o script pode estar localizado em mídias externas ou em uma partição do HD. 
+Por exemplo, o script pode montar uma imagem ISO em <code>/usr</code> para 
+economizar memória e dar boot com o LiveCD em computadores com só 32 Mb de RAM. 
+Um exemplo com um script de nome <code>slitaz.sh</code> localizado no primeiro 
+disco e partição:   
 </p>
 <pre>
  slitaz config=/dev/hda1,slitaz.sh
 </pre>
 
 <a name="screen"></a>
-<h3>Option : screen=&lt;type&gt;</h3>
+<h3>Opção : screen=&lt;tipo&gt;</h3>
 <p>
-The <code>screen=</code> option lets you specify your screen resolution at boot.
-Note that the <code>screen=text</code> option disables the Slim login manager. Example:
+A opção <code>screen=</code> o permite especificar sua resolução de tela durante 
+o boot. Note que a opção <code>screen=text</code> desabilita o gerenciador de 
+login Slim. Exemplo:
 </p>
 <pre> slitaz screen=1024x768x24
 </pre>
 
 <a name="sound"></a>
-<h3>Option : sound=*</h3>
+<h3>Opção : sound=*</h3>
 <p>
-The option <code>sound=no</code> or <code>sound=noconf</code> lets you respectively disable all
-of the modules and applications relating to sound to save memory (ram) or skip the automatic setup
-of the sound card, but still allow you to manually configure if needed:
+A opção <code>sound=no</code> ou <code>sound=noconf</code> o permite desabilitar 
+todos os módulos e aplicações relativos a som para economizar memória (ram) ou 
+pula a configuração automática da placa de som, mas ainda lhe permite configurar 
+manualmente se precisar:   
 </p>
 <pre> slitaz sound=no
 </pre>
 
 <a name="modprobe"></a>
-<h3>Option : modprobe=modules</h3>
+<h3>Opção : modprobe=modules</h3>
 <p>
-To load Kernel modules at boot time use the following example:
+Para carregar módulos do Kernel durante o boot, siga o exemplo seguinte:
 </p>
 <pre>
  slitaz modprobe=module1,module2
 </pre>
 
 <a name="laptop"></a>
-<h3>Option : laptop</h3>
+<h3>Opção : laptop</h3>
 <p>
-The option <code>laptop</code> will automatically load ac and battery Kernel 
-modules - useful for laptop computers:
+A opção <code>laptop</code> carregará automaticamente os módulos do Kernel  
+ac (Corrente Alternada) e battery (bateria) - úteis para laptop:
 </p>
 <pre>
  slitaz laptop
 </pre>
 
 <a name="prev"></a>
-<h3>Option : previous</h3>
+<h3>Opção : previous</h3>
 <p>
-Used by the Tazusb utility to rollback to a previous filesystem:
+Usado pelo utilitário Tazusb para voltar para um sistema de arquivos prévio: 
 </p>
 <pre>
 slitaz previous
 </pre>
 
 <a name="sessions"></a>
-<h3>Sessions - Login, passwords and X</h3>
+<h3>Sessões - Login, passwords e X</h3>
 <p>
-When the system has finished it's initialization, the screen is cleared and the
-login prompt or the session manager Slim is displayed. Now you can choose to login
-as <code>hacker</code> (without password) or as <code>root</code> administrator (password <code>root</code>).
-Once logged into a session, you can use the many commands available in Busybox, 
-the GNU text editor Nano or the Clex file manager. You can initiate a graphical server
-(X) via <code>startx</code> or connect to a remote machine via SSH or X.
-The <code>startx</code> command will launch Xvesa and start the window manager.
+Quando o sistema terminar sua inicialização, a tela é limpa e o prompt de 
+login ou o gerenciador de sessão Slim é exibido. Agora você pode escolher 
+logar-se como o usuário <code>hacker</code> (sem password) ou como <code>root</code> 
+(administrador) com o password <code>root</code>.
+Uma vez logado em uma sessão, você pode usar os muitos comandos disponíveis no 
+Busybox, Nano (o editor de texto do GNU) ou o gerenciador de arquivos Clex. 
+Você pode iniciar um servidor gráfico (X) por <code>startx</code> ou conectar a 
+uma máquina remota por SSH ou X. O comando <code>startx</code> iniciará o Xvesa 
+e iniciará o gerenciador de janela.  
 </p>
 <p>
-The desktop is powered by JWM (Joe's Window Manager), you can get the menu by
-clicking on the screen with one of the mouse buttons. Applications are
-classified by category and are available in English. Menu, theme and wallpaper 
-can all be changed to your needs/preferences by editing one single file - 
-personal settings and data can be stored on USB media (Flash key, SD card, etc).
+O desktop é fornecido pelo JWM (Joe's Windows Manager), você pode ver o menu 
+clicando na tela com um dos botões do mouse. Aplicações são classificadas por 
+categoria e estão disponíveis em inglês. Menu, tema e papel de parede podem ser 
+mudados de acordo com suas necessidades/preferências editando um único arquivo - 
+configurações pessoais e dados podem ser armazenados em uma mídia USB (cartão 
+Flash, cartão SD etc). 
 </p>
 <p>
-To launch a X session from the Linux console, for example if you have passed the 
-<code>screen=text</code> option or if Slim is not configured to run at startup:
+Para iniciar uma sessão X a partir do console do Linux, por exemplo se 
+você usou a opção <code>screen=text</code> ou se o Slim não está configurado 
+para rodar na inicialização:   
 </p>
 <pre> $ startx
 </pre>
-
-
 
 <!-- End of content -->
 </div>
 
 <!-- Footer. -->
 <div id="footer">
-	<div class="footer-right"></div>
-	<a href="#top">Top of the page</a> | 
-	<a href="index.html">Table of contents</a>
+    <div class="footer-right"></div>
+    <a href="#top">Topo da Página</a> | 
+    <a href="index.html">Conteúdo</a>
 </div>
 
 <div id="copy">
-    Copyright &copy; 2008 <a href="http://www.slitaz.org/en/">SliTaz</a> -
+    Copyright &copy; 2008 <a href="http://www.slitaz.org/pt/">SliTaz</a> -
     <a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>;<br />
     Documentation is under
     <a href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License</a>

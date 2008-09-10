@@ -1,10 +1,10 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt">
 <head>
-    <title>SliTaz Handbook (en) - Commands</title>
+    <title>Manual SliTaz (pt) - Comandos</title>
     <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
-    <meta name="description" content="slitaz English handbook" />
+    <meta name="description" content="slitaz portuguese handbook" />
     <meta name="expires" content="never" />
     <meta name="modified" content="2008-07-16 22:00:00" />
     <meta name="publisher" content="www.slitaz.org" />
@@ -18,202 +18,203 @@
 <div id="header">
 <div align="right" id="quicknav">
     <a name="top"></a>
-    <a href="install.html">Installation</a> |
-    <a href="index.html">Table of contents</a>
+    <a href="install.html">Instalação</a> |
+    <a href="index.html">Conteúdo</a>
 </div>
-<h1><font color="#3E1220">SliTaz Handbook (en)</font></h1>
+<h1><font color="#3E1220">Manual SliTaz (pt)</font></h1>
 </div>
 
 <!-- Content. -->
 <div id="content">
 <div class="content-right"></div>
 
-<h2><font color="#DF8F06">Command Line Reference (<em>cmdline</em>)</font></h2>
+<h2><font color="#DF8F06">Referência da Linha de Comando (<em>cmdline</em>)</font></h2>
 
 <ul>
-    <li><a href="#intro">Introduction to the commands.</a></li>
-    <li><a href="#help">Help and list available commands.</a></li>
-    <li><a href="#ls">List the files in a directory.</a></li>
-    <li><a href="#cd">Moving around directories.</a></li>
-    <li><a href="#cp">Copy files.</a></li>
-    <li><a href="#mkdir">Create a new directory.</a></li>
-    <li><a href="#rm">Remove files or directories.</a></li>
-    <li><a href="#read">View the files.</a></li>
-    <li><a href="#edit">Edit files in ncurses mode.</a></li>
-    <li><a href="#cat">Cat</a> - Edit a line of commands.</li>
-    <li><a href="#web-nav">Navigate the web.</a></li>
-    <li><a href="#irc-chat">Chat on IRC channels.</a></li>
-    <li><a href="#wget">Download files.</a></li>
-    <li><a href="#partitions">List the available partitions.</a></li>
-    <li><a href="#mount">Mount a partition, cdrom or USB key.</a></li>
-    <li><a href="#halt">Halt the system or Reboot.</a></li>
+    <li><a href="#intro">Introdução aos comandos.</a></li>
+    <li><a href="#help">Ajuda e lista dos comandos disponíveis.</a></li>
+    <li><a href="#ls">Liste arquivos de um diretório.</a></li>
+    <li><a href="#cd">Mova-se entre diretórios.</a></li>
+    <li><a href="#cp">Copie arquivos.</a></li>
+    <li><a href="#mkdir">Crie um novo diretório.</a></li>
+    <li><a href="#rm">Remova arquivos ou diretórios.</a></li>
+    <li><a href="#read">Visualize arquivos.</a></li>
+    <li><a href="#edit">Edite arquivos em modo texto.</a></li>
+    <li><a href="#cat">Cat</a> - Edite uma linha de comandos.</li>
+    <li><a href="#web-nav">Navegue na web.</a></li>
+    <li><a href="#irc-chat">Converse em canais IRC.</a></li>
+    <li><a href="#wget">Baixe arquivos.</a></li>
+    <li><a href="#partitions">Liste partições disponíveis.</a></li>
+    <li><a href="#mount">Monte uma partição, cdrom ou mídia USB.</a></li>
+    <li><a href="#halt">Desligue ou reinicie o sistema.</a></li>
 </ul>
 
 <a name="intro"></a>
-<h3><font color="#6c0023">Introduction to the commands</font></h3>
+<h3><font color="#6c0023">Introdução aos comandos</font></h3>
 <p>
-This document is intended as a quick reference for using commands on SliTaz via
-a Linux terminal or a graphical terminal (xterm). There are many GNU/Linux commands
-for file handling, system maintenance or network management. You can also browse 
-the web, chat on IRC, download files, edit scripts or even play games in text mode.
-Note it is necessary to operate as <em>root</em> to assemble the hard drive or cdrom.
-You can use the command <code>su</code> to become system administrator.
+Este documento é planejado como uma referência rápida para usar comandos no
+SliTaz por um terminal Linux ou um terminal gráfico (xterm). Existem muitos 
+comandos GNU/Linux para manipulação de arquivo, manutenção de sistema ou 
+administração de rede. Você também pode navegar na internet, conversar no IRC, 
+baixar arquivos, editar scripts ou até mesmo jogar em modo de texto. Note que é 
+necessário operar como <em>root</em> (administrador) para montar o disco 
+rígido ou cdrom. Você pode usar o comando <code>su</code> para se tornar o 
+administrador do sistema.
 </p>
 <a name="help"></a>
-<h3><font color="#6c0023">Help and list available commands</font></h3>
+<h3><font color="#6c0023">Ajuda e lista dos comandos disponíveis</font></h3>
 <p>
-Most GNU/Linux system commands have an option for providing information on
-their use. For support on the use of a command it is necessary to type the
-command followed by the <code>--help</code> option. Example using the 
-<code>cp</code> command to copy files:
+A maioria dos comandos de sistemas do GNU/Linux têm uma opção para fornecer 
+informação sobre o seu uso. Para suporte no uso de um comando é necessário 
+digitar o comando seguido pela opção <code>--help</code>. Exemplo usando o 
+comando <code>cp</code> (que serve para copiar arquivos):
 </p>
 <pre>
  $ cp --help
 </pre>
 <p>
-To list all the commands available on the system, you can simply press the 
-Tab button on the left of the keyboard twice. For commands provided by the
-Busybox utility you can type <code>busybox --help</code>.
+Para listar todos os comandos disponíveis no sistema, você pode simplesmente 
+pressionar duas vezes o botão Tab na esquerda do teclado. Para comandos providos 
+pelo utilitário Busybox você pode digitar <code>busybox --help</code>.
 </p>
 
 <a name="ls"></a>
-<h3><font color="#6c0023">List the files in a directory</font></h3>
+<h3><font color="#6c0023">Liste arquivos de um diretório</font></h3>
 <p>
-To list the files and folders contained in a directory, you can use the
-<code>ls</code> command. For all options remember to use the <code>--help</code>
-flag. To simply list the files in the current directory:
+Para listar os arquivos e pastas contidas em um diretório, você pode usar o 
+comando <code>ls</code>. Para todas as opções lembre-se de usar a opção 
+<code>--help</code>. Para simplesmente listar os arquivos diretório atual:
 </p>
 <pre>
  $ ls
 </pre>
 <p>
-List all the files using the <code>-al</code> option:
+Liste todos os arquivos com a opção <code>-al</code>:
 </p>
 <pre>
  $ ls -al
 </pre>
 <p>
-List a directory:
+Liste um diretório:
 </p>
 <pre>
  $ ls /home/slitaz
 </pre>
 
 <a name="cd"></a>
-<h3><font color="#6c0023">Moving around directories</font></h3>
+<h3><font color="#6c0023">Mova-se entre diretórios</font></h3>
 <p>
-To browse to the files you can use the <code>cd</code> command:
+Para navegar entre os arquivos você pode usar o comando <code>cd</code>:
 </p>
 <pre>
  $ cd /usr/share/doc
- Back to the parent directory:
+Voltar para o diretório anterior:
  $ cd ..
 </pre>
 <p>
-To go into the directory of the user (root = /root):
+Entrar no diretório do usuário (root = /root):
 </p>
 <pre>
  $ cd
- Or :
+ Ou :
  $ cd ~
- Or :
+ Ou :
  $ cd $HOME
 </pre>
 
 <a name="cp"></a>
-<h3><font color="#6c0023">Copy files</font></h3>
+<h3><font color="#6c0023">Copie arquivos</font></h3>
 <p>
-The <code>cp</code> command copies files or folders. The example copies the
-info.txt file in the current directory into the Documents directory:
+O comando <code>cp</code> copia arquivos ou pastas. O exemplo copia o arquivo 
+info.txt que está no diretório atual para o diretório Documents:
 </p>
 <pre>
  $ cp info.txt Documents/
 </pre>
 <p>
-Copy a whole directory. Here the command copies the Templates directory
-into /home/hacker:
+Copie um diretório inteiro. Aqui o comando copia o diretório Templates em 
+/home/hacker:   
 </p>
 <pre>
  $ cp -a Templates /home/hacker
 </pre>
 
 <a name="mkdir"></a>
-<h3><font color="#6c0023">Create a new directory</font></h3>
+<h3><font color="#6c0023">Crie um novo diretório</font></h3>
 <p>
-This command will create a new directory. The following command creates a
-directory called Projects. It will be created in the directory /home of the 
-current user or in the directory which one is in. Note you can display 
-your current working directory with the <code>pwd</code> command:
+Este comando criará um diretório novo. O comando seguinte cria um diretório 
+chamado Projects. Será criado no diretório /home do usuário atual ou no 
+diretório atual. Note que você pode exibir seu diretório de funcionamento atual 
+com o comando <code>pwd</code>:
 </p>
 <pre>
  $ mkdir Projects
 </pre>
 <p>
-Creation of a directory named script-1.0 in the Projects folder:
+Criação de um diretório chamado script-1.0 na pasta Projects:
 </p>
 <pre>
  $ mkdir Projects/script-1.0
 </pre>
 <p>
-You can also create a directory tree with the <code>-p</code> parents option:
+Você também pode criar uma árvore de diretórios com a opção <code>-p</code>:
 </p>
 <pre>
  $ mkdir -p one/two/three/four
 </pre>
 
 <a name="rm"></a>
-<h3><font color="#6c0023">Delete files or directories</font></h3>
+<h3><font color="#6c0023">Remova arquivos ou diretórios</font></h3>
 <p>
-The command <code>rm</code> lets you delete a file. Let's remove the
-file work.txt which is in the current directory:
+O comando <code>rm</code> apaga um arquivo. Vamos remover o arquivo work.txt 
+que está no diretório atual:
 </p>
 <pre>
  $ rm work.txt
 </pre>
 <p>
-The command <code>rm</code> has several options. To delete a directory and
-it's contents, we use the <code>-rf</code> option.
-Example:
+O comando <code>rm</code> possui várias opções. Para apagar um diretório e seu 
+conteúdo, nós usamos a opção <code>-rf</code>. Exemplo:
 </p>
 <pre>
  $ rm -rf /home/hacker/Templates
 </pre>
 <p>
-Note you can also use the <code>-i</code> option to remove files or directories and their contents interactively:
+Note que você também pode usar a opção <code>-i</code> para remover arquivos ou 
+diretórios e o seu conteúdo de forma interativa:  
 </p>
 <pre>
  $ rm -ir /home/hacker/Templates
 </pre>
 
 <a name="read"></a>
-<h3><font color="#6c0023">View files</font></h3>
+<h3><font color="#6c0023">Visualize arquivos</font></h3>
 <p>
-To read the contents of a file or script, you can use the
-<code>less</code>, <code>more</code> or <code>cat</code> commands, or the web
-browser Retawq. Examples with a README file, essential.txt, and  
-script.sh:
+Para ler os conteúdos de um arquivo ou script, você pode usar os comandos 
+<code>less</code>, <code>more</code>, <code>cat</code> ou o navegador web 
+Retawq. Exemplos com os arquivos README, essential.txt e script.sh: 
 </p>
 <pre>
  $ less -EM essential.txt
- or :
+ ou :
  $ more README
- or :
+ ou :
  $ cat /path/to/script.sh
 </pre>
 <p>
-Display a text or html file with the web browser Retawq:
+Exiba um arquivo de texto ou html com o navegador web Retawq:
 </p>
 <pre>
  $ retawq /usr/share/doc/index.html
 </pre>
 
 <a name="edit"></a>
-<h3><font color="#6c0023">Edit files</font></h3>
+<h3><font color="#6c0023">Edite arquivos</font></h3>
 <p>
-Editing text files, scripts, configuration files etc, can be done easily using
-the text editor GNU Nano in a console or graphical terminal.
-Example with a file bookmarks.html (&lt;Ctrl+X&gt; to quit
-and save):
+A edição de arquivos de texto, scripts, arquivos de configuração, etc, pode ser 
+feita facilmente usando-se o editor de texto GNU Nano em um console ou terminal 
+gráfico. Exemplo com um arquivo bookmarks.html (&lt;Ctrl+X&gt; para salvar e 
+sair):
 </p>
 <pre>
  $ nano Public/bookmarks.html
@@ -222,49 +223,51 @@ and save):
 <a name="cat"></a>
 <h3><font color="#6c0023">Cat</font></h3>
 <p>
-You can use the <code>cat</code> command to create various text files. EOF signifies
-End Of File, this is where the file ends. Example with a file packages.list, this 
-removes the current contents of the file and lets you add some new text:
+Você pode usar o comando <code>cat</code> para criar vários arquivos de texto. 
+EOF significa Final de Arquivo (End Of File, em inglês) que é onde o arquivo 
+acaba. Exemplo com um arquivo packages.list, isto remove os conteúdos atuais do 
+arquivo e o deixa adicionar algum texto novo:   
 </p>
 <pre>
  $ cat &gt; packages.list &lt;&lt; "EOF"
- The text...
- and more text
+ O texto...
+ e mais texto
  
  EOF
 </pre>
 <p>
-To append to the following text file, put two greater than signs 
-(&gt;&gt;) after <code>cat</code>, example:
+Para juntar ao arquivo de texto seguinte, ponha dois sinais de maior que 
+(&gt;&gt;) depois de <code>cat</code>. Exemplo:
 </p>
 <pre>
  $ cat &gt;&gt; packages.list &lt;&lt; "EOF"
- The text...
+ O texto...
  
  EOF
 </pre>
 
 <a name="web-nav"></a>
-<h3><font color="#6c0023">Navigate the web</font></h3>
+<h3><font color="#6c0023">Navegue na web</font></h3>
 <p>
-Surf the web quickly and simply with the 'retawq' text-mode web browser.
-Note that you can also use the local browser. You can then navigate easily
-with the arrows on your keyboard - links are colored blue and can be
-followed by pressing &lt;ENTER&gt;:
+Surfe na web com rapidez e de forma simples com o web-browser modo-texto 
+'retawq'. Note que você também pode usar o browser local. Você pode navegar 
+então facilmente com as setas em seu teclado - links estão na cor azul e podem 
+ser seguidos apertando &lt;ENTER&gt;:
 </p>
 <pre>
  $ retawq http://www.slitaz.org/en
- or :
+ ou :
  $ retawq http://localhost/
 </pre>
 
 <a name="irc-chat"></a>
-<h3><font color="#6c0023">Talk on IRC</font></h3>
+<h3><font color="#6c0023">Converse no IRC</font></h3>
 <p>
-To discuss and transfer files via the many IRC servers available, SliTaz
-provides Rhapsody. The IRC client is simple, fast and lightweight, providing
-a pleasant, easy to handle ncurses configuration menu. To start the application
-from a terminal connecting to server (irc.toile-libre.org) and joining #slitaz:
+Para discutir e transferir arquivos pelos muitos servidores de IRC 
+disponíveis, o SliTaz provê o aplicativo Rhapsody. Este cliente de IRC é simples, 
+rápido e leve, fornecendo um menu de configuração em ncurses agradável e fácil 
+de controlar. Para iniciar o aplicativo de um terminal conectado ao servidor 
+(irc.toile-libre.org) e entrar no canal #slitaz:
 </p>
 <pre>
  $ rhapsody
@@ -272,76 +275,78 @@ from a terminal connecting to server (irc.toile-libre.org) and joining #slitaz:
  /join #slitaz
 </pre>
 <a name="wget"></a>
-<h3><font color="#6c0023">Download files</font></h3>
+<h3><font color="#6c0023">Baixe arquivos</font></h3>
 <p>
-To download various file formats on the internet, you have the <code>wget</code>
-command. To grab a simple html page, the contents of a folder or an entire
-website:
+Para baixar vários formatos de arquivo da internet, você tem o comando 
+<code>wget</code>. Para baixar uma página html simples, os conteúdos de uma 
+pasta ou um website inteiro:
 </p>
 <pre>
  $ wget http://www.slitaz.org/en/doc/handbook/
 </pre>
 
 <a name="partitions"></a>
-<h3><font color="#6c0023">List the available partitions</font></h3>
+<h3><font color="#6c0023">Liste as partições disponíveis</font></h3>
 <p>
-To list the partitions on an internal or external hard drive, you can use
-<code>cat</code> to display the contents of <code>/proc/partitions</code>
-or use the <code>fdisk</code> utility with the <code>-l</code> option
-meaning <em>list</em>. You can then mount the individual partition(s)
-that you want to use:
+Para listar as partições em um disco rígido interno ou externo, você pode 
+usar <code>cat</code> para exibir os conteúdos de <code>/proc/partitions</code>
+ou usar o utilitário <code>fdisk</code> com a opção <code>-l</code>, que 
+significa lista (do inglês <em>list</em>). Você pode montar a/as 
+partição/partições que deseja usar:
 </p>
 <pre>
  $ cat /proc/partitions
- or :
+ ou :
  # fdisk -l
 </pre>
 
 <a name="mount"></a>
-<h3><font color="#6c0023">Mount a partition, CD or USB drive</font></h3>
+<h3><font color="#6c0023">Monte uma partição, CD ou drive USB</font></h3>
 <p>
-To mount a local partition in the SliTaz filesystem, we recommend you use
-the /mnt directory. Example creating the necessary directory and mounting
-the <code>hda6</code> partition of the first local hard drive on /mnt/hda6:
+Para montar uma partição local no sistema de arquivos do SliTaz, nós 
+recomendamos que você use o diretório /mnt. Exemplo criando o diretório 
+necessário e montando a partição <code>hda6</code> do primeiro disco rígido 
+local em /mnt/hda6:
 </p>
 <pre>
  # mkdir -p /mnt/hda6
  # mount -t ext3 /dev/hda6 /mnt/hda6
 </pre>
 <p>
-SliTaz functions in RAM, you can mount the same cdrom or remove it 
-to mount another (/dev/cdrom is a link on the first cdrom drive).
-Note that a cdrom is a removable medium and should be
-mounted on /media:
+SliTaz funciona carregado na memória RAM, então você pode montar o mesmo cdrom 
+ou pode removê-lo para montar outro (/dev/cdrom é um link para o primeiro drive 
+de cdrom). Note que um cdrom é uma mídia removível e deveria ser montado em 
+/media:
 </p>
 <pre>
  # mount -t iso9660 /dev/cdrom /media/cdrom
 </pre>
 <p>
-To mount a USB or flash drive you must specify the proper filesystem. 
-Normally a USB key is formatted in FAT32 which can be read from GNU/Linux
-and Windows operating systems. On a GNU/Linux system is it generally
-recognized as the sda1 device - we now prepare a link <code>sda1</code> on
-<code>flash</code> to facilitate the task. Note it is also a removable medium
-and should be mounted on /media:
+Para montar um drive flash ou USB você tem que especificar o sistema de 
+arquivos apropriado. Normalmente um drive USB é formatado em FAT32 que pode ser 
+lido em GNU/Linux e sistemas operacionais Windows. Em um sistema GNU/Linux ele 
+geralmente é reconhecido como o dispositivo sda1 - nós faremos agora um link 
+para <code>sda1</code> no <code>flash</code> para facilitar a tarefa. Note que 
+ele também é uma mídia removível e deveria ser montado em /media:
 </p>
 <pre>
  # mount -t vfat /dev/flash /media/flash
 </pre>
 
 <a name="halt"></a>
-<h3><font color="#6c0023">Turn off the system or restart</font></h3>
+<h3><font color="#6c0023">Desligue ou reinicie o sistema</font></h3>
 <p>
-To stop or restart SliTaz, you can use the <code>halt</code> or <code>reboot</code>
-commands or the &lt;Ctrl+Alt+Delete&gt; key combination which enables a
-system reboot. In case of any problems you can use the <code>-f</code>
-option signifing <em>forced</em>:
+Para parar ou reiniciar o SliTaz, você pode usar os comandos <code>halt</code>, 
+<code>reboot</code> ou a combinação de teclas &lt;Ctrl+Alt+Delete&gt; que 
+habilita uma reinicialização do sistema. No caso de qualquer problema você pode 
+usar a opção <code>-f</code>, que significa forçado (do inglês, 
+<code>forced</code>):
 </p>
 <pre>
  # halt
- To restart :
+ Reiniciar :
  # reboot
- Or :
+ ou :
  # reboot -f
 </pre>
 
@@ -350,13 +355,13 @@ option signifing <em>forced</em>:
 
 <!-- Footer. -->
 <div id="footer">
-	<div class="footer-right"></div>
-	<a href="#top">Top of the page</a> | 
-	<a href="index.html">Table of contents</a>
+    <div class="footer-right"></div>
+    <a href="#top">Topo da Página</a> | 
+    <a href="index.html">Conteúdo</a>
 </div>
 
 <div id="copy">
-    Copyright &copy; 2008 <a href="http://www.slitaz.org/en/">SliTaz</a> -
+    Copyright &copy; 2008 <a href="http://www.slitaz.org/pt/">SliTaz</a> -
     <a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>;<br />
     Documentation is under
     <a href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License</a>
