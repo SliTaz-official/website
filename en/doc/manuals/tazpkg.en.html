@@ -224,8 +224,8 @@ This command will download the most recent 'packages.list'
 of installable packages on the mirror and before starting 
 will save the old list. Once the list is updated
 you can then use the 'list' and 'search' commands. To view
-and list the differences, you can use 'list-mirror --diff' and to view 
-and update packages, you can 'upgrade'. To recharge the
+and list the differences, you can use 'list-mirror --diff', and to view 
+and update packages, you can simply 'upgrade'. To recharge the
 latest list of packages:
 </p>
 <pre>
@@ -260,7 +260,7 @@ repacking of packages are present:
 The 'block' and 'unblock' commands permit you to block
 installed package versions so that they are not maintained
 by an 'upgrade'. The list of packages on hold are contained
-in the /var/lib/tazpkg/blocked-packages.list, this file can also
+in the /var/lib/tazpkg/blocked-packages.list. This file can also
 be edited by hand. To block or unblock a package such as
 Grub:
 </p>
@@ -303,7 +303,7 @@ drive or re-download the packages:
 <h3><font color="#6c0023">setup-mirror</font></h3>
 <p>
 Setup the URL for the mirror. The 'setup-mirror' command
-will ask for the URL for the new mirror. You can specify
+will ask for the URL of the new mirror. You can specify
 multiple URLs separated by spaces. Note that you can also
 modify the main /var/lib/tazpkg/mirror file. The URL must
 point to the directory containing the 'packages.list' and
