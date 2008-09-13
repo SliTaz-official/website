@@ -1,10 +1,10 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt">
 <head>
-    <title>SliTaz Handbook (en) - Graphics</title>
+    <title>Manual SliTaz (pt) - Gráficos</title>
     <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
-    <meta name="description" content="slitaz English handbook" />
+    <meta name="description" content="slitaz portuguese handbook" />
     <meta name="expires" content="never" />
     <meta name="modified" content="2008-07-17 00:15:00" />
     <meta name="publisher" content="www.slitaz.org" />
@@ -18,81 +18,89 @@
 <div id="header">
 <div id="quicknav" align="right">
     <a name="top"></a>
-    <a href="development.html">Development</a> |
-    <a href="index.html">Table of contents</a>
+    <a href="development.html">Desenvolvimento</a> |
+    <a href="index.html">Conteúdo</a>
 </div>
-<h1><font color="#3e1220">SliTaz Handbook (en)</font></h1>
+<h1><font color="#3e1220">Manual SliTaz (pt)</font></h1>
 </div>
 
 <!-- Content. -->
 <div id="content">
 <div class="content-right"></div>
 
-<h2><font color="#df8f06">Graphics and Image management</font></h2>
+<h2><font color="#df8f06">Gráficos e gerenciamento de imagens</font></h2>
 
 <ul>
-	<li><a href="#gcolor2">Gcolor2</a> - Color selector.</li>
-	<li><a href="#gimp">Gimp</a> - Manipulate and create images.</li>
-	<li><a href="#gqview">GQview</a> - Image manager.</li>
-	<li><a href="#jpeg">jpeg</a> - JPEG command line tools.</li>
-	<li><a href="#mtPaint">mtPaint</a> -  Image processing.</li>
+    <li><a href="#gcolor2">Gcolor2</a> - Seletor de cores.</li>
+    <li><a href="#gimp">Gimp</a> - Manipulação e criação de imagens.</li>
+    <li><a href="#gqview">GQview</a> - Gerenciador de imagens.</li>
+    <li><a href="#jpeg">jpeg</a> - Ferramentas JPEG em linha de comando.</li>
+    <li><a href="#mtPaint">mtPaint</a> - Processamento de imagens.</li>
 </ul>
 
 <a name="gcolor2"></a>
-<h3>Gcolor2 - Select and manage colors</h3>
+<h3>Gcolor2 - Selecione e gerencie cores</h3>
 <p>
-Gcolor2 is a tool to select and retain palette colors. It can be useful for the creation of SliTaz themes 
-for example. It can be found in the Graphics category or run from the command line:
+O Gcolor2 é uma ferramenta para selecionar e manter uma paleta de cores. Pode
+ser útil para a criação de temas para o SliTaz, por exemplo. Pode ser encontrado
+na categoria "Graphics" ou ser executado pela linha de comando:
 </p>
 <pre> $ gcolor2 &amp;
 </pre>
 
 <a name="gimp"></a>
-<h3>Gimp - Manipulate and create images</h3>
+<h3>Gimp - Manipule e crie imagens</h3>
 <p>
-The GIMP (GNU Image Manipulation) is software that can manipulate images to a very high quality level.
-It allows you to do what you would expect from an application that processes images, ie layers, filters, 
-support scripts adding functionality, etc. GIMP supports a large number of image formats such as:
-PNG, JPEG, XPM, PPM, TIFF, PostScript, PSD, it also offers it's own XCF format. To install GIMP:
+O GIMP (GNU Image Manipulation) é um programa que pode manipular imagens até um
+nível muito alto de qualidade. Oferece tudo aquilo que se espera de um
+aplicativo que processa imagens, ou seja, camadas, filtros, adição de 
+funcionalidades por meio de scripts, etc. o GIMP suporta um grande número de 
+formatos de imagem, tais como: PNG, JPEG, XPM, PPM, TIFF, PostScript, PSD, 
+além de oferecer seu próprio formato de imagens (o XCF). Para instalá-lo:
 </p>
 <pre> # tazpkg get-install gimp
 </pre>
 <p>
-GIMP is scalable and can be configured with the main interface - configuration files, brushes and personal
-scripts are located in the <code>~/.gimp-2.2</code> directory.
+O GIMP é escalonável e pode ser configurado através da interface principal -
+seus arquivos de configuração, pincéis e scripts pessoais estão localizados 
+no diretório <code>~/.gimp-2.2</code>.
 </p>
 
 <a name="gqview"></a>
-<h3>GQview - Image manager</h3>
+<h3>GQview - Gerenciador de imagens</h3>
 <p>
-GQview is very light and quick and allows you to navigate rapidly between images by selecting files
-in a directory tree with a single mouse click. It supports slideshows, image rotation, adding
-keywords and tags, drag and drop and can display EXIF data. It also allows you to edit images
-in the software of your choice (Mtpaint, GIMP for example). To install GQview:
+O GQview é muito rápido e leve e permite a você navegar rapidamente por imagens 
+pela seleção de arquivos em uma árvore de diretórios por um simples clique
+do mouse. Suporta slideshows, rotação de imagens, adição de palavras-chave e 
+tags, "drag and drop" (arrastar) e pode exibir informações EXIF. Também permite
+a edição de imagens por meio de um programa de sua escolha (Mtpaint ou o GIMP,
+por exemplo). Para instalar o GQview:
 </p>
 <pre> # tazpkg get-install gqview
 </pre>
 
 <a name="jpeg"></a>
-<h3>jpeg - JPEG command line tools</h3>
+<h3>jpeg - Ferramentas JPEG em linha de comando.</h3>
 <p>
-To allow applications that use JPEG to function, linked libraries must be provided by the package
-<code>jpeg-6b</code>, this package also contains some tiny utilities that can be used on the command
-line such as <code>cjpeg</code> and <code>djpeg</code>. To modify JPEG images on the command line you 
-can also use <code>jpegtran</code>, installed by default on SliTaz, <code>jpegtran</code> allows you to 
-rotate images via the <code>-rotate</code> option. To find out all of the options available for these 
-tools, just specify the <code>--help</code> option. Example:
+Para permitir o uso de aplicativos que utilizam JPEG para funcionar, bibliotecas
+interligadas devem ser fornecidas pelo pacote <code>jpeg-6b</code>, que contém
+também alguns pequenos utilitários que podem ser usados pela linha de comando
+como o <code>cjpeg</code> e o <code>djpeg</code>. Para modificar imagens JPEG
+pela linha de comando pode-se usar o <code>jpegtran</code>, instalado por padrão
+no SliTaz. Este utilitário permite a rotação de imagens por meio da opção 
+<code>-rotate</code>. Para encontrar todas as opções disponíveis para estas
+ferramentas, utilize-se da opção <code>--help</code>. Exemplo:
 </p>
 <pre> $ cjpeg --help
 </pre>
 
 <a name="mtPaint"></a>
-<h3>mtPaint -  Image processing</h3>
+<h3>mtPaint - Processamento de imagens</h3>
 <p>
-mtPaint is an application for the creation and retouching of PNG, TIFF, 
-XPM and BMP images. It offers many simple, lightweight, fast functions like
-capture screen (screenshot) which you can access from the menu --&gt; Graphics --&gt; 
-Grab screenshot, or via a terminal:
+O mtPaint é um aplicativo para a criação e retoque de imagens em formato PNG,
+TIFF, XPM e BMP. Oferece muitas funções que são simples, leves e rápidas, como
+captura de tela (screenshot), a qual pode ser acessada pelo menu --&gt; 
+Graphics --&gt; Grab screenshot, ou pelo terminal:
 </p>
 <pre> $ mtpaint -s
 </pre>
@@ -102,13 +110,13 @@ Grab screenshot, or via a terminal:
 
 <!-- Footer. -->
 <div id="footer">
-	<div class="footer-right"></div>
-	<a href="#top">Top of the page</a> | 
-	<a href="index.html">Table of contents</a>
+    <div class="footer-right"></div>
+    <a href="#top">Topo da Página</a> | 
+    <a href="index.html">Conteúdo</a>
 </div>
 
 <div id="copy">
-    Copyright © 2008 <a href="http://www.slitaz.org/en/">SliTaz</a> -
+    Copyright © 2008 <a href="http://www.slitaz.org/pt/">SliTaz</a> -
     <a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>;<br />
     Documentation is under
     <a href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License</a>

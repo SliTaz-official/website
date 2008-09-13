@@ -1,10 +1,11 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt">
 <head>
-    <title>SliTaz Handbook (en) - Packages</title>
+    <title>Manual SliTaz - Pacotes</title>
     <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
-    <meta name="description" content="slitaz packages tazpkg install new applications upgrade list extract" />
+    <meta name="description" content="slitaz packages tazpkg install new 
+     applications upgrade list extract" />
     <meta name="expires" content="never" />
     <meta name="modified" content="2008-07-18 05:30:00" />
     <meta name="publisher" content="www.slitaz.org" />
@@ -18,82 +19,84 @@
 <div id="header">
 <div align="right" id="quicknav">
     <a name="top"></a>
-    <a href="network-config.html">Network configuration</a> |
-    <a href="index.html">Table of contents</a>
+    <a href="network-config.html">Configuração de rede</a> |
+    <a href="index.html">Conteúdo</a>
 </div>
-<h1><font color="#3E1220">SliTaz Handbook (en)</font></h1>
+<h1><font color="#3E1220">Manual SliTaz (pt)</font></h1>
 </div>
 
 <!-- Content. -->
 <div id="content">
 <div class="content-right"></div>
 
-<h2><font color="#DF8F06">Packages</font></h2>
+<h2><font color="#DF8F06">Pacotes</font></h2>
 
 <ul>
-	<li><a href="#tazpkg">Tazpkg</a> - Package manager.</li>
-	<li><a href="#list">List of packages</a> -  Display or generate a list 
-	of packages.</li>
-	<li><a href="#install">Install packages</a> - Get and install new 
-	packages.</li>
-	<li><a href="#upgrade">Upgrade</a> - Keep your system secure.</li>
-	<li><a href="#tazwok">Tazwok &amp; the wok</a> - Package format and build
-	tools.</li>
+    <li><a href="#tazpkg">Tazpkg</a> - Gerenciador de pacotes.</li>
+    <li><a href="#list">Lista de Pacotes</a> - Mostre ou gere uma lista de 
+     pacotes.</li>
+    <li><a href="#install">Instale pacotes</a> - Obtenha e instale novos 
+     pacotes.</li>
+    <li><a href="#upgrade">Upgrade</a> - Mantenha seu sistema seguro.</li>
+    <li><a href="#tazwok">Tazwok &amp; o wok</a> - Ferramentas para construção
+     de pacotes.</li>
 </ul>
 
 <a name="tazpkg"></a>
-<h3>Tazpkg - Package manager</h3>
+<h3>Tazpkg - Gerenciador de pacotes</h3>
 <p>
-SliTaz provides a tiny package manager which can easily install more software
-on the system. Tazpkg is a lightweight package manager for <code>.tazpkg</code>
-files, completely written in SHell script. It works well with Busybox ash shell and
-bash. Tazpkg lets you list, install, remove, download, extract, pack, search,
-or get information about available or installed packages. You can also repack 
-an installed package and automatically upgrade all installed packages. On SliTaz
-you can type <code>tazpkg usage</code> in a terminal to get a list of all the
-commands with a short description in English. 
-You can also read the <a href="../manuals/tazpkg.en.html">manual</a>.
+O SliTaz fornece um pequeno gerenciador de pacotes que pode instalar facilmente
+mais pacotes no sistema. O Tazpkg é leve e gerencia arquivos <code>.tazpkg</code>,
+tendo sido escrito completamente em SHell script. Funciona bem em conjunto com
+o shell Ash do Busybox e também com o Bash. Este aplicativo permite a listagem,
+instalação, remoção, download, extração, empacotamento, busca ou obtenção de 
+informações sobre pacotes disponíveis ou instalados. Pode-se também re-empacotar
+um pacote já instalado e fazer o upgrade automático de todos os pacotes instalados.
+No SliTaz digite <code>tazpkg usage</code> em um terminal para obter uma lista
+de todos os comandos possíveis descritos brevemente em inglês. Você também pode
+ler o <a href="../manuals/tazpkg.pt.html">manual</a>.
 </p>
 
 <a name="list"></a>
-<h3>List of packages</h3>
+<h3>Lista de pacotes</h3>
 <p>
-Tazpkg lets you list all installed packages, installed 
-packages by category or it can display the list of available packages on the mirror.
-To display a single list of all installed packages on the system just type:
+O Tazpkg permite a listagem de todos os pacotes instalados, divididos por 
+categorias ou pode mostrar  uma lista de pacotes disponíveis no mirror. Para 
+mostrar uma única lista com todos os pacotes instalados no sistema digite:
 </p>
 <pre>
  $ tazpkg list
 </pre>
 <p>
-To display all categories or packages sorted by category, you must specifiy
-<code>cat</code> or <code>category</code>.
- Examples:
+Para mostrar todos as categorias ou pacotes divididos por categoria, deve-se
+utilizar a opção <code>cat</code> ou informar a <code>categoria</code>. Exemplos:
 </p>
 <pre>
  $ tazpkg list cat
  $ tazpkg list base-system
 </pre>
 <p>
-Tazpkg can also generate a nice  xHTML list (default: <code>installed-packages.html</code>) in the local directory of all installed packages on the system:
+O Tazpkg também pode gerar uma bela lista de todos os pacotes instalados em 
+formato xHTML (o padrão é: <code>installed-packages.html</code>) localizada no
+diretório local.
 </p>
 <pre>
 $ tazpkg xhtml-list
 </pre>
 <p>
-To get a single list of all available packages on the mirror you can use
-the command <code>list-mirror</code>. You can then examine the list in your favorite editor
-or use the Web site interface. 
+Para obter uma listagem simples de todos os pacotes disponíveis no mirror pode-se
+usar o comando <code>list-mirror</code>. Você pode, então, examinar a lista
+em seu editor favorito ou pela interface do website.
 </p>
 
 <a name="install"></a>
-<h3>Install packages</h3>
+<h3>Instale pacotes</h3>
 <p>
-To install some new applications such as The Gimp, AbiWord, ePDFView, Perl or 
-Python, you first need to recharge the list of available packages on the 
-mirror and then install. If the package dependencies are not installed 
-Tazpkg will install them for you. For example, the installation of Gparted a 
-GTK+ partition editor using GNU parted:
+Para instalar novos aplicativos como o GIMP, Abiword, ePDFView, Perl ou Python,
+deve-se primeiro recarregar a lista de pacotes disponíveis no mirror e só então
+proceder à instalação. Se as dependências de um pacote não estiverem instaladas,
+o Tazpkg as instalará para você. Por exemplo, para instalar o Gparted (um
+editor GTK+ de partições que usa o GNU parted):
 </p>
 <pre>
  # tazpkg recharge
@@ -101,62 +104,67 @@ GTK+ partition editor using GNU parted:
 </pre>
 
 <a name="upgrade"></a>
-<h3>Upgrade installed packages</h3>
+<h3>Upgrade de pacotes instalados</h3>
 <p>
-To keep your system up-to-date and secure after recharging the packages list, 
-you can automatically install all new versions and security updates from the 
-mirror with the command:
+Para manter o sistema atualizado e seguro após a recarga da lista de pacotes, 
+pode-se instalar automaticamente todas as novas versões de pacotes e 
+atualizações de segurança disponíveis no mirror com o comando:
 </p>
 <pre>
  # tazpkg upgrade
 </pre>
 
 <a name="manual"></a>
-<h4>Tazpkg Manual</h4>
+<h4>Manual Tazpkg</h4>
 <p>
-The Tazpkg <a href="../manuals/tazpkg.en.html">Manual</a> contains a lot more useful information.
+O <a href="../manuals/tazpkg.pt.html">Manual</a> Tazpkg contem diversas outras 
+informações úteis.
 </p>
 
 <a name="tazwok"></a>
 <h3>Tazwok &amp; the wok</h3>
 <p>
-All SliTaz packages are built with a tool named Tazwok and a receipt found
-in the wok. The receipt provides all the necessary information to build a suitable
-package for Tazpkg including variables to give us the package name, source tarball format, 
-download URL, etc. Given a receipt the <code>compile_rules</code> function has all of
-the necessary commands to configure, make, and install the package in a specific directory.
-After compilation, Tazwok will execute the function <code>genpkg_rules</code>
-to pick up only the needed/wanted files and generate a pkg.tazpkg (cpio archive).
-On SliTaz you will find all installed package receipts in the directory
-<code>/var/lib/tazpkg/installed</code>, feel free to examine them or even use one as an
-example.
+Todos os pacotes do SliTaz são construídos com a ferramenta chamada Tazwok e 
+com uma "receita" encontrada no wok. Esta receita provê todas as informações
+necessárias para a construção de um pacote adequado para instalação pelo Tazpkg, 
+o que inclui variáveis contendo o nome do pacote, fonte em formato tarball,
+URL de download, etc. Dada uma receita a função <code>compile_rules</code> 
+possui todos os comandos necessários para configurar, construir e instalar o 
+pacote em um diretório específico. Após a compilação, o Tazwok executa
+a função <code>genpkg_rules</code> para obter somentes os arquivos necessários
+ou requeridos e gera um pacote .tazpkg (que na verdade é um arquivo cpio). No
+SliTaz você encontra todas as receitas dos pacotes instalados no diretório
+<code>/var/lib/tazpkg/installed</code> - sinta-se livre para examiná-los ou até
+mesmo usar um como exemplo.
 </p>
 <p>
-Tazwok will search by default for a wok in <code>/home/slitaz/wok</code> and
-put generated packages in <code>/home/slitaz/packages</code>. These paths are
-set by a Tazwok configuration file which can be located in
-<code>/etc/tazwok.conf</code> or in the current directory, which is useful if you 
-want to work with multiple woks. Now, if the <code>slitaz-toolchain</code> is 
-installed, you can start to create and build a package which doesn't need many 
-dependencies. Small example:
+O Tazwok procura, por padrão, por um wok no diretório <code>/home/slitaz/wok</code>
+e coloca os pacotes gerados em <code>/home/slitaz/packages</code>. Estes 
+caminhos são definidos pelo arquivo de configuração do Tazwok que pode ser 
+localizado em <code>/etc/tazwok.conf</code> ou no diretório atual, o que é útil
+se você trabalha com múltiplos woks. Agora, se o <code>slitaz-toolchain</code>
+está instalado, você pode começar a criar e construir um pacote que não necessita
+de muitas dependências. Pequeno exemplo:
 </p>
 <pre>
  # tazwok new-tree pkgname --interactive
 </pre>
 <p>
-When a new package tree and receipt has been created in the wok, you can edit the
-receipt with your favorite editor (Geany provides nicely colored code), modify
-the rules functions, add dependencies to the <code>DEPENDS</code> variable 
-if needed and try a first cook:
+Assim que uma nova árvore de pacote e uma receita são criadas no wok, você pode
+editar a receita com seu editor favorito (o Geany fornece código belamente
+colorizado), modificar as regras de funções, adicionar dependências na variável
+<code>DEPENDS</code>, se necessário, e tentar sua primeira geração (cook) de 
+pacote:
 </p>
 <pre>
  # tazwok cook pkgname
 </pre>
 <p>
-Note that you can now browse the generated files, modify the cooking receipt again or
-just rebuild the package with <code>tazwok genpkg</code>. When you are happy with
-your work you can install the package with <code>tazpkg install</code> and 
-test the application or library.
+Note que você pode agora navegar pelos pacotes gerados, modificar a receita de
+geração novamente ou apenas reconstruir o pacote com o comando 
+<code>tazwok genpkg</code>. Quando você estiver feliz com seu trabalho você
+pode instalar o pacote criado com o comando <code>tazpkg install</code> 
+e então testar o aplicativo ou biblioteca.
 </p>
 
 <!-- End of content -->
@@ -164,13 +172,13 @@ test the application or library.
 
 <!-- Footer. -->
 <div id="footer">
-	<div class="footer-right"></div>
-	<a href="#top">Top of the page</a> | 
-	<a href="index.html">Table of contents</a>
+    <div class="footer-right"></div>
+    <a href="#top">Topo da página</a> | 
+    <a href="index.html">Conteúdo</a>
 </div>
 
 <div id="copy">
-    Copyright &copy; 2008 <a href="http://www.slitaz.org/en/">SliTaz</a> -
+    Copyright &copy; 2008 <a href="http://www.slitaz.org/pt/">SliTaz</a> -
     <a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>;<br />
     Documentation is under
     <a href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License</a>
