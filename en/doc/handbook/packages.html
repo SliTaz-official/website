@@ -123,7 +123,7 @@ The Tazpkg <a href="../manuals/tazpkg.en.html">Manual</a> contains a lot more us
 All SliTaz packages are built with a tool named Tazwok and a receipt found
 in the wok. The receipt provides all the necessary information to build a suitable
 package for Tazpkg including variables to give us the package name, source tarball format, 
-download URL, etc. Given a receipt the <code>compile_rules</code> function has all of
+download URL, etc. Given a receipt, the <code>compile_rules</code> function has all of
 the necessary commands to configure, make, and install the package in a specific directory.
 After compilation, Tazwok will execute the function <code>genpkg_rules</code>
 to pick up only the needed/wanted files and generate a pkg.tazpkg (cpio archive).
