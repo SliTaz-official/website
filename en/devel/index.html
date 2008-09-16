@@ -79,7 +79,7 @@
 
 <p>
 SliTaz is an open source and community driven distribution. Everyone is welcome 
-to join and contribute, from  users, to hackers and developers there is always
+to join and contribute, from  users, to hackers and developers, there is always
 something to do, ie. Proofreading or writing documentation, sending bugs or 
 patches to the Mailing list, gaining access to the wok and pushing some new 
 packages or simply to help others on the Mailing list or forum. SliTaz has got
@@ -98,14 +98,14 @@ and the <a href="../mailing-list.html">Mailing List</a>.
 <p>
 SliTaz Mercurial or Hg repos can be browsed or cloned by anyone using the URL:
 <a href="http://hg.slitaz.org/">http://hg.slitaz.org/</a>. People with write
-access can directly use <code>repos.slitaz.org</code> which needs authentication.
+access can directly use <code>repos.slitaz.org</code> which requires authentication.
 Mercurial uses Python and is installable with: 
 <code>tazpkg get-install mercurial</code>
 </p>
 <h4>~/.hgrc</h4>
 <p>
-Before you push your first commit onto the server, be sure you have a correct
-Hg configuration file with your name and email address and remember to check 
+Before you push your first commit onto the server, be sure that you have a correct
+Hg configuration file with your name and email address, and remember to check 
 that you are not root. Personal ~/.hgrc file example:
 </p>
 <pre class="script">
@@ -137,7 +137,7 @@ Modify one or more files and commit:
 </pre>
 <p>
 Note that you can use the command <code>rollback</code> to roll back to the last 
-transaction. Before pushing changes to the server it is safe to pull once:
+transaction. Before pushing changes to the server, it is safe to pull once:
 </p>
 <pre>
  $ hg pull
@@ -187,8 +187,8 @@ the changes and <code>patch</code> to apply the changes to the original pages.
 </p>
 <p>
 You can syncronize the site and books graphically using Grsync or via the 
-command line. To download the site for the first time or syncronize the pages 
-in the directory <code>/home/hacker/Public/slitaz/website</code>, 
+command line. To download the site for the first time or syncronize pages 
+in the directory <code>/home/hacker/Public/slitaz/website</code>; 
 use the module <code>rsync://slitaz.org/website</code>:
 </p>
 <pre>
@@ -199,7 +199,7 @@ use the module <code>rsync://slitaz.org/website</code>:
 <h4>Diff and patch</h4>
 <p>
 The utilities <code>diff</code> and <code>patch</code> are command-line tools 
-for creating and implementing the differences between two files. This technique
+for creating and implementing differences between two files. This technique
 is often used for collaboration and the changes made to the original file can 
 be clearly extracted. To create a <code>diff</code> file readable by humans in
 a simple text editor, you must supply the <code>-u</code> option:
