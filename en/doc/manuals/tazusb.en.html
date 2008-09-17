@@ -36,7 +36,7 @@ TazUSB - SliTaz LiveUSB utility
 
 <h2>SYNTAX</h2>
 <pre>
-tazusb [command] [compression|device]
+tazusb [command] [compression|device|file]
 </pre>
 
 <h2>DESCRIPTION</h2>
@@ -94,6 +94,35 @@ Example:
 <pre>
  # tazusb gen-liveusb /dev/sda1
 </pre>
+
+<h3><font color="#6c0023">gen-swap-file</font></h3>
+<p>
+The 'gen-swap-file' command re/creates a virtual swap file and places 
+it in the /home directory to be activated on each boot. This is useful
+for old systems with low memory.
+</p>
+<pre> # tazusb gen-swap-file
+</pre>
+
+<h3><font color="#6c0023">gen-iso2usb</font></h3>
+<p>
+This command performs the same task as gen-liveusb, only copying the Kernel
+and filesystem from a downloaded ISO image instead of the CDROM drive.
+</p>
+<pre> # tazusb gen-iso2usb /path/to/iso
+</pre>
+Example:
+<pre> # tazusb gen-iso2usb /home/tux/slitaz.iso
+</pre>
+
+<h3><font color="#6c0023">clean</font></h3>
+<p>
+"clean" removes old rootfs.gz.unixtimestamp filesystems (see writefs)
+to keep disk usage down.
+</p>
+<pre> # tazusb clean
+</pre>
+
 <!-- End content -->
 </div>
 </body>
