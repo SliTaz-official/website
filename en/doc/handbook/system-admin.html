@@ -35,6 +35,7 @@
     <li><a href="#users-admin">Users, groups and passwords.</a></li>
     <li><a href="#locale">Language and keyboard.</a></li>
     <li><a href="#bash">Install the Bash shell.</a></li> 
+    <li><a href="#editors">Text editors.</a></li>
     <li><a href="#time">Set the system time.</a></li>
     <li><a href="#cron">Execute scheduled commands.</a></li>
     <li><a href="#local.sh">Add commands at boot time.</a></li>
@@ -145,6 +146,20 @@ shell to :/bin/bash
 The next time you login bash will be your default shell, you can confirm this 
 by typing <code>env</code> in the command line.
 </p>
+
+<a name="editors"></a>
+<h3>Editors</h3>
+<p>
+Busybox supplies a clone of vi for normal text editing, but it does have its limitations. 
+You can install the full vim editor with the command:
+</p>
+<pre> # tazpkg get-install vim
+</pre>
+<p>
+Or alternatively if you prefer emacs, SliTaz offers a tiny version:
+</p>
+<pre> # tazpkg get-install emacs
+</pre>
 
 <a name="time"></a>
 <h3>System Time</h3>
