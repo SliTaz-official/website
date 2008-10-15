@@ -36,14 +36,17 @@
 	<li><a href="#alsamixer">Alsamixer</a> - Mixer.</li>
 	<li><a href="#alsaplayer">Alsaplayer</a> - Audio Player.</li>
 	<li><a href="#asunder">Asunder</a> - Audio CD Ripper.</li>
-	<li><a href="#xine">Xine</a> - Multimedia Player.</li>
+	<li><a href="#mpd">MPD</a> - Music Player Daemon.</li>
 	<li><a href="#mpg123">mpg123</a> - Command line audio player.</li>
+	<li><a href="#mplayer">Mplayer</a> - Movie Player.</li>
+	<li><a href="#xine">Xine</a> - Multimedia Player.</li>
+	
 </ul>
 
 <a name="intro"></a>
 <h3>SliTaz sound and video</h3>
 <p>
-SliTaz LiveCD mode provides sound support, but no video player, however you can watch YouTube by installing 
+SliTaz LiveCD mode provides sound support, but no video player<sup>**</sup>, however you can watch YouTube by installing 
 the <code>get-flash-plugin</code> package. To watch videos you can use Xine, it supports most formats such 
 as avi, mov, mpeg, etc. Note Xine can also act as an audio player. At the sound level, you have a mixer 
 (alsamixer) and audio player (alsaplayer), both installed by default on the standard LiveCD. SliTaz also
@@ -118,18 +121,36 @@ songs into wav, ogg or mp3 (via <code>lame</code> package). It can search CDDB, 
 edit file names. You will find Asunder in the Multimedia category on the menu.
 </p>
 
-<a name="xine"></a>
-<h3>Xine</h3>
+<a name="mpd"></a>
+<h3>MPD - Music Player Daemon</h3>
 <p>
-Xine is a multimedia project providing various video viewers and audio players. SliTaz provides libraries 
-and a media player contained in the package <code>xine-ui</code>. Xine uses a Xlib interface, a control 
-panel, a right click configuration menu and various plugins. It can play ogg, mp3 and flac audio codecs, 
-and mov, avi or mpg video formats. To install xine and its dependancies:
+MPD is a great little music player that uses the server/client architecture, this means it can be even
+run remotely without a X server operating. To install MPD on SliTaz: <code>tazpkg get-install mpd</code>.
+MPD on SliTaz drops root priviledges, so to start the server, just run:
 </p>
-<pre>
- # tazpkg get-install xine-ui
+<pre> $ mpd
 </pre>
-<p>Official Xine <a href="http://xinehq.de/index.php/home">website</a>
+<p>
+And to stop it:
+</p>
+<pre> $ mpd --kill
+</pre>
+<p>
+Simply drag your music files into the ~/music folder (or create a link) and then run <code>mpd --create-db</code> as <code>root</code> to update the database
+and you're ready to use one of the many clients. The <code>mpd --version</code> command lets you have a full list of available formats and outputs.
+</p>
+
+<h4>MPC - Music Player Client</h4>
+<p>
+MPC is a popular client for MPD, to load all the files into MPC from the MPD database 
+and start to play them, simply install: <code>tazpkg get-install mpc</code> and run:
+</p>
+<pre> $ mpc add /
+ $ mpc play
+</pre>
+<p>
+The command <code>mpc --help</code> gives you a full list of all the available options that allow you to edit the playlist, enable crossfade,
+adjust the volume and shuffle tracks, etc.
 </p>
 
 <a name="mpg123"></a>
@@ -149,6 +170,33 @@ a wav file into a mp3 file. Example:
 <pre>
  $ mpg123 -w sound.mp3 sound.wav 
 </pre>
+
+<a name="mplayer"></a>
+<h3>Mplayer</h3>
+<p>
+Mplayer is a popular movie player for Linux suppporting many formats including, DVD, VCD, mpeg, wmv, realvideo, etc.
+It can also play various audio codecs such as aac, wma, realaudio, as well as ogg, flac, etc. Mplayer is configurable
+via a right click menu and customizable using various skins and GUIs that easily enable you to configure your own video 
+drivers, output devices and so on.
+</p>
+
+<a name="xine"></a>
+<h3>Xine</h3>
+<p>
+Xine is a multimedia project providing various video viewers and audio players. SliTaz provides libraries 
+and a media player contained in the package <code>xine-ui</code>. Xine uses a Xlib interface, a control 
+panel, a right click configuration menu and various plugins. It can play ogg, mp3 and flac audio codecs, 
+and mov, avi or mpg video formats. To install xine and its dependancies:
+</p>
+<pre>
+ # tazpkg get-install xine-ui
+</pre>
+<p>Official Xine <a href="http://xinehq.de/index.php/home">website</a>
+</p>
+
+<p>
+** <em>Note</em>: mplayer now included in 'cooking' versions.
+</p>
 
 <!-- End of content -->
 </div>
