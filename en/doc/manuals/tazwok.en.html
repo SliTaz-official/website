@@ -172,6 +172,26 @@ Removes the package specified from the wok, including the receipt, stuff, all fi
 </p>
 <pre> # tazwok remove package
 </pre>
+<h3><font color="#6c0023">build-depends</font></h3>
+<p>
+Build-depends generates a list of packages to build a wok:
+</p>
+<pre> # tazwok build-depends
+</pre>
+<h3><font color="#6c0023">cmp|compare</font></h3>
+<p>
+Compares the wok and the cooked packages and generates a report.
+Note old .tazpkgs can be deleted with the --remove option:
+</p>
+<pre> # tazwok compare
+ # tazwok compare --remove
+</pre> 
+<h3><font color="#6c0023">check</font></h3>
+<p>
+Checks the receipts for common errors:
+</p>
+<pre> # tazwok check
+</pre>
 
 <h2>MAINTAINER</h2>
 <p>
