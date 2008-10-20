@@ -59,7 +59,7 @@ Tazwok est écript en script shell depuis rien (from scratch), compatible Bash,
 et fonctionnant avec Ash du projet Busybox. Tazwok est distribué sous license
 libre GNU gpl v3. Les recettes avec leures commades sont basée sur le livre
 de cuisine de SliTaz, le Cookbook fournit aussi de la documentation au sujet
-de Tazwok et du dévellopement de SliTaz.
+de Tazwok et du développement de SliTaz.
 </p>
 
 <h2>COMMANDES</h2>
@@ -218,6 +218,31 @@ y compris :
 </p>
 <pre>
  # tazwok remove package
+</pre>
+<h3><font color="#6c0023">build-depends</font></h3>
+<p>
+Build-depends génère une liste de paquets nécessaires pour compiler le wok :
+</p>
+<pre>
+ # tazwok build-depends
+</pre>
+<h3><font color="#6c0023">cmp|compare</font></h3>
+<p>
+Compare le wok avec les paquets déjà cuits et génère un rapport.
+Les paquets obsolètes peuvent être effacés avec l'option --remove.
+Les paquets à compiler peuvent l'être avec l'option --cook.
+</p>
+<pre>
+ # tazwok compare
+ # tazwok compare --remove
+ # tazwok compare --cook
+</pre>
+<h3><font color="#6c0023">check</font></h3>
+<p>
+Recherche les erreurs courantes dans les receipts :
+</p>
+<pre>
+ # tazwok check
 </pre>
 
 <h2>MAINTENEUR</h2>
