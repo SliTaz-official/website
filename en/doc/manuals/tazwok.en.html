@@ -181,10 +181,12 @@ Build-depends generates a list of packages to build a wok:
 <h3><font color="#6c0023">cmp|compare</font></h3>
 <p>
 Compares the wok and the cooked packages and generates a report.
-Note old .tazpkgs can be deleted with the --remove option:
+Obsolete packages can be deleted with the --remove option.
+The --cook option compiles the packages:
 </p>
 <pre> # tazwok compare
  # tazwok compare --remove
+ # tazwok compare --cook
 </pre> 
 <h3><font color="#6c0023">check</font></h3>
 <p>
