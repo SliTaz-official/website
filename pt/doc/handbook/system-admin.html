@@ -1,10 +1,10 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt">
 <head>
-    <title>SliTaz Handbook (en) - System administration</title>
+    <title>Manual SliTaz (pt) - Administração do Sistema</title>
     <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
-    <meta name="description" content="slitaz English handbook" />
+    <meta name="description" content="slitaz portuguese handbook" />
     <meta name="expires" content="never" />
     <meta name="modified" content="2008-07-18 06:00:00" />
     <meta name="publisher" content="www.slitaz.org" />
@@ -19,106 +19,113 @@
 <div align="right" id="quicknav">
     <a name="top"></a>
     <a href="x-window.html">X Window System</a> |
-    <a href="index.html">Table of contents</a>
+    <a href="index.html">Conteúdo</a>
 </div>
-<h1><font color="#3E1220">SliTaz Handbook (en)</font></h1>
+<h1><font color="#3E1220">Manual SliTaz (pt)</font></h1>
 </div>
 
 <!-- Content. -->
 <div id="content">
 <div class="content-right"></div>
 
-<h2><font color="#df8f06">System administration</font></h2>
+<h2><font color="#df8f06">Administração do Sistema</font></h2>
 
 <ul>
-    <li><a href="#devices">Devices and disk access.</a></li>
-    <li><a href="#users-admin">Users, groups and passwords.</a></li>
-    <li><a href="#locale">Language and keyboard.</a></li>
-    <li><a href="#bash">Install the Bash shell.</a></li> 
-    <li><a href="#time">Set the system time.</a></li>
-    <li><a href="#cron">Execute scheduled commands.</a></li>
-    <li><a href="#local.sh">Add commands at boot time.</a></li>
+    <li><a href="#devices">Dispositivos e acesso a discos.</a></li>
+    <li><a href="#users-admin">Usuários, grupos e passwords.</a></li>
+    <li><a href="#locale">Linguagem e teclado.</a></li>
+    <li><a href="#bash">Instalação do shell Bash.</a></li> 
+    <li><a href="#time">Ajuste do relógio do sistema.</a></li>
+    <li><a href="#cron">Agendar a execução de comandos.</a></li>
+    <li><a href="#local.sh">Acrescentar comandos para execução durante o boot.</a></li>
 </ul>
 
 <a name="devices"></a>
-<h3>Devices and disk access</h3>
+<h3>Dispositivos e acesso a discos</h3>
 <p>
-With Linux your disks and USB media are seen as devices. To access them you must
-first mount a device on a mount point (directory). On SliTaz you can graphically
-mount devices using <code>mountbox</code> or use the command line. To mount the
-first disk of a local hard disk on <code>/mnt/disk</code>:
+Com o Linux, os discos e as mídias USB são considerados dispositivos. Para 
+acessá-los é necessário montá-los num ponto de montagem (um diretório). No 
+SliTaz, os dispositivos podem ser montados através de uma interface gráfica, 
+usando o <code>mountbox</code>, ou através da linha de comandos. Para montar a
+primeira partição de um disco rígido em <code>/mnt/disk</code>: 
 </p>
 <pre>
  # mkdir -p /mnt/disk
  # mount /dev/hda1 /mnt/disk
 </pre>
 <p>
-To mount a cdrom or an USB media you should use mount points located in 
-<code>/media</code>. Note that for a cdrom, you just have to specify
-the device path and for a flash key the mount point already exists:
+Para montar um CD-ROM ou uma mídia USB devem ser usados pontos de montagem 
+localizados em <code>/media</code>. Note que, para um CD-ROM, basta especificar 
+o caminho do dispositivo e que também já existe um ponto de montagem para um 
+disco USB:
 </p>
 <pre>
  # mount /dev/cdrom
  # mount /dev/sda1 /media/flash
 </pre>
-<h4>ntfs filesystem</h4>
+<h4>Sistema de Arquivos ntfs</h4>
 <p> 
-If you need read/write access to Windows ntfs filesystems you must install a
-few additional packages from the mirror. The <code>ntfs-3g</code> driver
-provides stable access to ntfs partitions and <code>ntfsprogs</code> provides
-manipulation tools dependent on <code>fuse</code>. Note that you can format, move or resize
-ntfs partitions graphically with Gparted.
+Caso seja necessário acesso de leitura e escrita em um sistema de arquivos ntfs
+do Windows deve-se instalar pacotes adicionais a partir do mirror. O driver 
+<code>ntfs-3g</code> permite um acesso estável a partições NTFS e o pacote 
+<code>ntfsprogs</code> fornece ferramentas de manipulação que dependem do
+<code>fuse</code>. Note que as partições NTFS podem ser formatadas, movidas ou 
+redimensionadas em modo gráfico com o programa Gparted. 
 </p>
 
 <a name="users-admin"></a>
-<h3>Users, groups and passwords</h3>
+<h3>Usuários, grupos e passwords</h3>
 <p>
-To manage users and groups on your SliTaz system you must use the command line,
-but file permissions can be changed graphically using the emelFM2 file manager. To
-add or remove users and groups you must be root. Root can also change all
-user passwords and a single user can only change his/her own password. To add 
-or remove a user named linux:
+Para gerenciar usuários e grupos no SliTaz é necessário usar a linha de comando, 
+mas as permissões dos arquivos podem ser alteradas em modo gráfico com o 
+gerenciador de arquivos emelFM2. Para adicionar ou remover usuários e grupos, é
+necessário estar logado como root (administrador). O super usuário root pode 
+também alterar todas as passwords de usuários, enquanto um usuário comum pode 
+apenas alterar a sua própria password. Para adicionar ou remover um usuário
+chamado linux: 
 </p>
 <pre>
  # adduser linux
  # deluser linux
 </pre>
 <p>
-To add or remove a group you must use <code>addgroup</code> or 
-<code>delgroup</code>. To change the current user password or change the
-password of a specific user, you must use the command <code>passwd</code>:
+Para adicionar ou remover um grupo, deve usar-se <code>addgroup</code> ou 
+<code>delgroup</code>. Para alterar a password do usuário atual ou a de um 
+usuário específico, deve-se usar o comando <code>passwd</code>: 
 </p>
 <pre>
  $ passwd
  # passwd username
 </pre>
-<h4>Audio group</h4>
+<h4>Grupo 'audio'</h4>
 <p>
-If you want a new user to be able to listen to music he must be in the 
-<code>audio</code> group. To add an existing user to the audio group:
+Para que um novo usuário possa ouvir música ou arquivos de áudio, ele deve 
+pertencer ao grupo <code>audio</code>. Para adicionar um usuário ao grupo audio: 
 </p>
 <pre>
  # adduser -G audio user_name
 </pre>
 
 <a name="locale"></a>
-<h3>Language and keyboard layout</h3>
+<h3>Linguagem e layout de teclado</h3>
 <p>
-SliTaz saves the configuration of the default locale in <code>/etc/locale.conf</code> 
-which is read by <code>/etc/profile</code> on each login and the keyboard 
-setting is stored in <code>/etc/kmap.conf</code>. These two files can be
-edited with your favorite editor or configured respectively with
-<code>tazlocale</code> and <code>tazkmap</code>. You can modify the settings
-you chose on the first boot by typing as root administrator:
+O SliTaz armazena a configuração da localização geográfica em 
+<code>/etc/locale.conf</code>, arquivo que é lido por <code>/etc/profile</code> 
+a cada login, e a configuração do teclado é armazenada em <code>/etc/kmap.conf</code>. 
+Estes dois arquivos podem ser editados com o editor de texto de sua
+preferência ou então configurados, respectivamente, com os comandos 
+<code>tazlocale</code> e <code>tazkmap</code>. As configurações que você escolheu 
+no primeiro boot podem ser alteradas digitando, root (administrador): 
 </p>
 <pre>
  # tazlocale
- Or:
+ Ou:
  # tazkmap
 </pre>
 <p>
-To check all available locales or your current configuration you can use the
-command <code>locale</code> as a single user or root (C for English):
+Para listar todas as localizações geográficas disponíveis ou a sua configuração 
+atual pode ser usado o comando <code>locale</code>, tanto como usuário comum 
+quanto como root:
 </p>
 <pre>
  $ locale -a
@@ -126,14 +133,14 @@ command <code>locale</code> as a single user or root (C for English):
 </pre>
 
 <a name="bash"></a>
-<h3>Bash Shell</h3>
+<h3>Shell Bash</h3>
 <p>
-On SliTaz you have the ash and sh shell with a link to Ash, this shell is 
-provided by Busybox. If you wish to use the Bash (Bourne Again SHell), first 
-as <code>root</code> install bash, copy the <code>.profile</code> found in your 
-home directory and rename it <code>.bashrc</code>, then edit the 
-<code>/etc/passwd</code> file with your favorite text editor and change your 
-shell to :/bin/bash
+No SliTaz estão disponíveis os shells ash e sh com uma ligação para Ash, que é o
+shell fornecido pelo Busybox. Caso pretenda usar o Bash (Bourne Again SHell), 
+deverá primeiro instalar o pacote bash como <code>root</code>, copiar o arquivo 
+<code>.profile</code> localizado na pasta home e renomeá-lo para <code>.bashrc</code> e,
+então, editar o arquivo <code>/etc/passwd</code> com o editor de sua preferência
+e mudar o shell para :/bin/bash 
 </p>
 <pre>
  # tazpkg get-install bash
@@ -142,111 +149,120 @@ shell to :/bin/bash
  # nano /etc/passwd   # :/bin/bash
 </pre>
 <p>
-The next time you login bash will be your default shell, you can confirm this 
-by typing <code>env</code> in the command line.
+No primeiro login posterior a estas operações o shell padrão será o bash, o que 
+pode ser confirmado teclando <code>env</code> na linha de comando. 
 </p>
 
 <a name="time"></a>
-<h3>System Time</h3>
+<h3>Relógio do Sistema</h3>
 <p>
-To know the current system time, you can simply type <code>date</code>. On 
-SliTaz, the timezone configuration file is saved in <code>/etc/TZ</code>, you 
-can edit with your favorite text editor or simply <code>echo</code> the changes.
-To view the available timezones, you can look in the
-<code>/usr/share/zoneinfo</code> directory.
-Here's an example using the timezone Europe/London:
+Para saber a hora e data atuais do sistema, basta teclar <code>date</code>. No 
+SliTaz, o arquivo de configuração do fuso horário está armazenado em  
+<code>/etc/TZ</code> e pode ser editado com o editor de texto de sua preferência 
+ou pode-se, simplesmente, utilizar o comando <code>echo</code> para efetuar as 
+alterações. Podem consultar-se os fusos horários disponíveis na pasta 
+<code>/usr/share/zoneinfo</code>. Eis um exemplo, usando o fuso horário 
+Europe/London (Europa/Londres): 
 </p>
 <pre>
  # echo "Europe/London" &gt; /etc/TZ
 </pre>
 <h4>Rdate</h4>
 <p>
-To syncronize the system clock with a network time server, you can as the 
-<code>root</code> administrator use the <code>rdate -s</code> command:
+Para sincronizar o relógio do sistema com um servidor NTS (network time server),
+pode-se usar, como <code>root</code>, o comando <code>rdate -s</code>: 
 </p>
 <pre>
  # rdate -s tick.greyware.com
 </pre>
 <p>
-To display the time on the remote server, use the <code>rdate -p</code> command.
+Para exibir a hora no servidor remoto, deve-se usar o comando <code>rdate -p</code>:
 </p>
 <pre> $ rdate -p tick.greyware.com
 </pre>
 <h4>Hwclock</h4>
 <p>
-Hwclock allows you to syncronize the time of your hardware clock to the system
-clock or vice versa.
-</p>
-<p>
-Syncronize the system clock to the hardware clock ( --utc = universal time, 
--l = local time):
+O comando hwclock permite sincronizar a hora do relógio de hardware com o do 
+sistema e vice-versa. 
+Para sincronizar o relógio do sistema com o do hardware ( --utc = hora universal, 
+-l = hora local): 
 </p>
 <pre>
  # hwclock -w --utc
 </pre>
 <p>
-Syncronize the hardware clock to the system clock:
+Para sincronizar o relógio do hardware com o do sistema: 
 </p>
 <pre>
  # hwclock -s --utc
 </pre>
 
 <a name="cron"></a>
-<h3>Execute scheduled commands</h3>
+<h3>Agendar a execução de comandos</h3>
 <p>
-The daemon 'crond' allows you to run commands automatically at a scheduled specific date or time. This is very
-useful for routine tasks such as system administration. The directory cron uses is  
-<code>/var/spool/cron/crontabs</code>.
+O daemon 'crond' permite executar comandos automaticamente, agendando-os para um
+dia ou hora específicos. Isto pode ser de grande utilidade para tarefas de 
+rotina, como é o caso da administração do sistema. A pasta usada pelo cron é 
+<code>/var/spool/cron/crontabs</code>. 
 </p>
 <p>
-Each user of the system can have his/her own tasks, they are defined in the file: <code>/var/spool/cron/crontabs/user</code>.
-The crontab utility allows you amongst other things, to list the tasks specific to the user. The syntax of the
-files is as follows:
+Cada utilizador do sistema pode ter as suas tarefas agendadas; estas são 
+definidas no arquivo <code>/var/spool/cron/crontabs/user</code>. O utilitário 
+crontab permite, entre outras funções, mostrar uma lista das tarefas de um 
+utilizador específico. A sintaxe dos arquivos é a seguinte: 
 </p>
 <pre class="script">mm hh dd MMM DDD command &gt; log
 </pre>
 <p>
-We will create a file with root priviledges and test the daemon 'crond' with a task performed every minute -
-writing the date to a file /tmp/crond.test. It should be noted that the utility has an option
-<code>crontab</code> for editing cron file using 'vi', this is not provided by SliTaz. In it's place you can use
-GNU nano (&lt;Ctrl+X&gt; to save &amp; exit):
+Como exemplo, iremos criar um arquivo com privilégios de administrador root e 
+testar o daemon 'crond' com uma tarefa que será executada uma vez por minuto - 
+escrever a data num arquivo chamado /tmp/crond.test. Note que este utilitário 
+possui uma opção, <code>crontab</code>, que permite editar o arquivo cron usando
+o editor 'vi', que não é fornecido com o SliTaz. Em vez deste, pode-se usar o 
+GNU nano (teclando &lt;Ctrl+X&gt; para gravar e sair do programa): 
 </p>
 <pre> # nano /var/spool/cron/crontabs/root
 </pre>
 <pre class="script">* * * * * date &gt;&gt; /tmp/crond.test
 </pre>
 <p>
-Launch <code>crond</code> with the option <code>-b</code> (background),
-configured via <code>/etc/daemons.conf</code> and using the startup script:
+Executar o <code>crond</code> com a opção <code>-b</code> (background), 
+configurada a partir de <code>/etc/daemons.conf</code> e usando o script de 
+inicialização: 
 </p>
 <pre> # /etc/init.d/crond start
 </pre>
 <p>
-You can wait a few minutes and view the contents of the file: /tmp/crond.test... OK:
+Você pode agora aguardar alguns minutos e, em seguida, ver o conteúdo do 
+arquivo: /tmp/crond.test... OK: 
 </p>
 <pre> # cat /tmp/crond.test
 </pre>
 <p>
-To stop or restart the daemon crond:
+Para parar ou reiniciar o daemon crond: 
 </p>
 <pre> # /etc/init.d/crond stop
- Or :
+ Ou :
  # /etc/init.d/crond restart
 </pre>
-<h4>Invoke the daemon crond on every boot</h4>
+<h4>Executar o daemon crond a cada boot</h4>
 <p>
-To launch the daemon 'crond' each time you boot the system, just add it to the variable <code>START_DAEMONS</code>
-in the configuration file <code>/etc/rcS.conf</code>, either before or after the web server or SSH server.
+Para executar o daemon 'crond' a cada boot do sistema, basta acrescentá-lo à 
+variável <code>START_DAEMONS</code> no arquivo de configuração 
+<code>/etc/rcS.conf</code>, quer antes quer depois do servidor web ou do 
+servidor SSH. 
 </p>
 
 <a name="local.sh"></a>
-<h3>Add commands to be executed at boot</h3>
+<h3>Acrescentar comandos para execução durante o boot</h3>
 <p>
-During the boot process, various scripts are executed to configure services, such as the start of the 
-web server, networking etc. On SliTaz there is a script <code>/etc/init.d/local.sh</code> which allows
-you to add commands to be launched at system startup. You can also create new scripts in /etc/init.d,
-their links in /etc/rc.scripts for shell scripts and use /etc/rc.d for links to the startup script daemon in
-/etc/rcS.conf:
+Durante o processo de boot são executados alguns scripts que permitem configurar
+diversos serviços, caso da inicialização do servidor web, da rede, etc. No SliTaz, 
+o script <code>/etc/init.d/local.sh</code> permite que sejam adicionados comandos 
+que se pretendam executar durante a inicialização do sistema. Pode-se também criar 
+novos scripts em /etc/init.d, ligações a estes em /etc/rc.scripts para 
+scripts shell e, ainda, usar o arquivo /etc/rc.d para links ao daemon/script de 
+inicialização em /etc/rcS.conf: 
 </p>
 <pre> # nano /etc/init.d/local.sh
 </pre>
@@ -257,12 +273,12 @@ their links in /etc/rc.scripts for shell scripts and use /etc/rc.d for links to 
 <!-- Footer. -->
 <div id="footer">
 	<div class="footer-right"></div>
-	<a href="#top">Top of the page</a> | 
-	<a href="index.html">Table of contents</a>
+	<a href="#top">Topo da Página</a> | 
+	<a href="index.html">Conteúdo</a>
 </div>
 
 <div id="copy">
-    Copyright &copy; 2008 <a href="http://www.slitaz.org/en/">SliTaz</a> -
+    Copyright &copy; 2008 <a href="http://www.slitaz.org/pt/">SliTaz</a> -
     <a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>;<br />
     Documentation is under
     <a href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License</a>
