@@ -1,10 +1,10 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt">
 <head>
-    <title>SliTaz Handbook (en) - X Window System</title>
+    <title>Manual SliTaz (pt) - X Window System</title>
     <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
-    <meta name="description" content="slitaz English handbook X server window manager jwm openbox e17 slim login" />
+    <meta name="description" content="slitaz portuguese handbook X server window manager jwm openbox e17 slim login" />
     <meta name="expires" content="never" />
     <meta name="modified" content="2008-07-18 07:00:00" />
     <meta name="publisher" content="www.slitaz.org" />
@@ -18,66 +18,68 @@
 <div id="header">
 <div id="quicknav" align="right">
     <a name="top"></a>
-    <a href="gen-livecd.html">Generate a LiveCD flavor</a> |
-    <a href="index.html">Table of contents</a>
+    <a href="gen-livecd.html">Geração de uma variante do LiveCD</a> |
+    <a href="index.html">Conteúdo</a>
 </div>
-<h1><font color="#3e1220">SliTaz Handbook (en)</font></h1>
+<h1><font color="#3e1220">Manual SliTaz (pt)</font></h1>
 </div>
 
 <!-- Content. -->
 <div id="content">
 <div class="content-right"></div>
 
-<h2><font color="#df8f06">X Window System</font></h2>
+<h2><font color="#df8f06">X Window System (Sistema de Janelas)</font></h2>
 
 <ul>
 	<li><a href="#X11">X Window System.</a></li>
-	<li><a href="#slim">Slim</a> - Simple Login Manager.</li>
-	<li><a href="#xorg">Xorg</a> - X server.</li>
-	<li><a href="#jwm">JWM</a> - Window Manager.</li>
-	<li><a href="#enlightenment">Enlightenment (e17).</a> - Desktop
-	environment.</li>
-	<li><a href="#openbox">Openbox</a> - Window Manager.</li>
-	<li><a href="#fonts">Fonts</a> - System Fonts.</li>
+	<li><a href="#slim">Slim</a> - Simple Login Manager (Gerenciador de Login).</li>
+	<li><a href="#xorg">Xorg</a> - X server (Servidor Gráfico).</li>
+	<li><a href="#jwm">JWM</a> - Gerenciador de Janelas.</li>
+	<li><a href="#enlightenment">Enlightenment (e17)</a> - Ambiente Desktop.</li>
+	<li><a href="#openbox">Openbox</a> - Gerenciador de Janelas.</li>
+	<li><a href="#fonts">Fonts</a> - Fontes do Sistema.</li>
 </ul>
 
 <a name="X11"></a>
 <h3>X11 - X Window System</h3>
 <p>
-The X Window System or X11 provides a window manager running on
-top of a X server. SliTaz by default uses the lightweight X server called
-<code>Xvesa</code> from the Xorg project (<a href="http://www.x.org/">www.x.org</a>).
-Xvesa can be started with the Slim login manager or directly from a Linux console
-with the command <code>startx</code>, but for this you must first disable the 
-Login Manager. To reconfigure your X session you can use <code>tazx</code>
-as root or as the current user if you start X from the command line.
+O Sistema de Janelas X Window System, ou X11, disponibiliza um gerenciador de 
+janelas que roda sobre um servidor gráfico (X). O Slitaz usa, por padrão, o 
+servidor gráfico leve <code>Xvesa</code>, proveniente do projeto Xorg 
+(<a href="http://www.x.org/">www.x.org</a>). O Xvesa pode ser iniciado a 
+partir do gerenciador de login Slim ou diretamente a partir de terminal com
+o comando <code>startx</code>, mas neste último caso é necessário desativar
+o gerenciador de login. Para reconfigurar a sessão gráfica você pode usar 
+o <code>tazx</code> logado como root (administrador) ou como usuário comum, 
+se tiver iniciado o X a partir da linha de comandos.
 </p>
 
 <a name="slim"></a>
 <h3>Slim - Simple Login Manager</h3>
 <p>
-Slim is a lightweight session manager that is very easy to configure and is 
-customizable using system themes. The configuration file is found in 
-<code>/etc/slim.conf</code>. It defines window managers available via the 
-<code>F1</code> key, the default user or theme, and the X window system parameters.
-Slim offers special user commands like <code>console</code> to help manage 
-the session.
+O Slim é um gerenciador de sessões leve, muito fácil de configurar, e que pode 
+ser personalizado usando temas do sistema. O arquivo de configuração encontra-se
+em <code>/etc/slim.conf</code>. Permite definir, a partir da tecla <code>F1</code>, 
+os gerenciadores de janela disponíveis, o usuário ou tema padrão e os parâmetros
+do sistema de janelas X. O Slim fornece alguns comandos especiais de usuário, 
+como <code>console</code>, que facilitam o gerenciamento da sessão. 
 </p>
 <p>
-In LiveCD mode you can disable Slim with the boot option <code>screen=text</code>.
-On an installed system you can remove the package or delete slim from the 
-<code>RUN_DAEMONS</code> variable in <code>/etc/rcS.conf</code>.
+No modo LiveCD você pode desabilitar o Slim com a opção de boot <code>screen=text</code>. 
+Num sistema já instalado este pacote pode ser removido ou, então, pode-se apagar
+a entrada slim da variável <code>RUN_DAEMONS</code> em <code>/etc/rcS.conf</code>. 
 </p>
 <p>
-More details and themes can be found on the 
+Mais detalhes, bem como outros temas, podem ser encontrados no 
 <a href="http://slim.berlios.de/">website</a>
 </p>
-<h4>Default user</h4>
+<h4>Usuário Padrão</h4>
 <p>
-Slim offers a way to pre-load a user login name, by default hacker is configured
-for convenience. You can change this by editing the Slim configuration file
-<code>/etc/slim.conf</code> and modifying the line <code>default_user</code> or just
-leave the line blank to avoid pre-loading a user name. Example:
+O Slim permite pré-carregar um usuário no processo de login; por conveniência, 
+'hacker' é o usuário predefinido. Isto pode ser alterado editando-se o 
+arquivo de configuração do Slim <code>/etc/slim.conf</code> e alterando a linha 
+<code>default_user</code>. Como alternativa, pode-se deixar a linha em branco, 
+evitando assim que seja pré-carregado um nome de usuário. Exemplo: 
 </p>
 <pre class="script">default_user        hacker
 </pre>
@@ -85,66 +87,78 @@ leave the line blank to avoid pre-loading a user name. Example:
 <a name="xorg"></a>
 <h3>Xorg</h3>
 <p>
-By default, SliTaz provides the graphical mini-server Xvesa. Xorg server is available 
-in the packages on the mirror. Xorg is a very comprehensive server, but uses a lot more 
-resources than Xvesa. If your resolution is supported by the mini-server and you're happy
-with the refresh rate, then there's no reason to use Xorg.
+O SliTaz traz, por padrão, o mini-servidor gráfico Xvesa. O servidor Xorg pode 
+ser encontrado nos pacotes disponíveis no mirror. O Xorg é um servidor bastante 
+completo, mas consome muito mais recursos do que o Xvesa. Se a resolução do 
+monitor for suportada pelo mini-servidor e a taxa de atualização (refresh rate) 
+for satisfatória, não há qualquer razão para recorrer ao Xorg. 
 </p>
 <p>
-There is no GUI configuration which means having to use the command line in console mode. The installation
-and configuration of the server is relatively simple and you can always go back and reuse Xvesa at any time.
-Xorg is distributed in modular form, which means that you'll need to install the server, a few configuration
-files and the right driver for your graphics card. However the <code>xorg-server</code> package has all 
-the correct dependancies to work directly with the <code>vesa</code> driver. Minimal install:
+Não existe nenhuma configuração através de interface gráfica, então tudo deverá
+ser feito pela linha de comando. A instalação e a configuração do servidor são 
+operações relativamente simples e, a qualquer momento, é possível desistir e 
+voltar ao Xvesa. O Xorg é distribuído em módulos, o que significa que é 
+necessário instalar o servidor, alguns arquivos de configuração e o driver 
+adequado para a placa de vídeo. Em todo o caso, o pacote <code>xorg-server</code>
+possui todas as dependências necessárias para funcionar diretamente com o driver
+<code>vesa</code>. Instalação mínima: 
 </p>
 <pre> # tazpkg get-install xorg-server
 </pre>
 <p>
-Once installed, you can go directly to the configuration or you can install the correct driver for your card
-(if you know it). Example using the Nvidia driver and listing all available drivers:
+Depois de instalado, pode-se ir diretamente à configuração ou fazer a instalação
+adicional do driver adequado para sua placa de vídeo (caso saiba qual). Exemplo,
+usando o driver Nvidia e listando todos os drivers disponíveis: 
 </p>
 <pre> # tazpkg get-install xorg-xf86-video-nv
- List:
+ Listar:
  # tazpkg search xorg-xf86-video
 </pre>
-<h4>Automatic configuration of the server</h4>
-
-<p>To configure the Xorg server you have two options: <code>Xorg -configure</code> 
-or the script <code>xorgconfig</code>. It is recommended that you start by using Xorg with 
-the <code>-configure</code> option. The automatic configuration of Xorg must be done in console
-mode without an X-server running; this is achieved by closing all applications and windows and hitting
-the <code>alt-ctrl-del</code> buttons. You should now be in console mode. Now you need to run Xorg with the
-<code>-configure</code> option and copy the newly generated file to <code>/etc/X11</code>: 
+<h4>Configuração automática do servidor</h4>
+<p>
+Existem duas opções para a configuração do servidor Xorg: <code>Xorg -configure</code> 
+ou o script <code>xorgconfig</code>. Recomenda-se que, de início, seja usado o 
+comando Xorg com a opção <code>-configure</code>. A configuração automática do 
+Xorg tem necessariamente de ser feita em modo de terminal, sem estar em execução 
+uma instância do servidor X; para tanto, todas as aplicações e janelas devem ser
+encerradas e, então, deve-ser pressionar a combinação de teclas 
+<code>alt-ctrl-del</code>. Feito isto, deve-se estar em modo terminal e pode-se 
+executar-se o Xorg com a opção <code>-configure</code>, copiando o novo
+arquivo que foi gerado para <code>/etc/X11</code>: 
 </p>
 <pre> # Xorg -configure
  # cp /root/xorg.conf.new /etc/X11/xorg.conf
 </pre>
 <p>
-Finally you then change the configuration of Slim to use Xorg instead of Xvesa and restart the window manager.
+Por último, altera-se a configuração do Slim para usar o Xorg em vez do Xvesa 
+e reinicia-se o gerenciador de janelas. 
 </p>
-<h4>Using Xorg with Slim</h4>
+<h4>Usando o Xorg com o Slim</h4>
 <p>
-In the Slim configuration file (<code>/etc/slim.conf</code>), we need to comment out
-(<code>#</code>) the lines pertaining to Xvesa and change Xorg to the <code>default_xserver</code>:
+No arquivo de configuração do Slim (<code>/etc/slim.conf</code>), é necessário 
+comentar (utilizando <code>#</code>) as linhas que dizem respeito ao Xvesa e 
+definir o Xorg na variável <code>default_xserver</code>: 
 </p>
 <pre class="script">default_xserver     /usr/bin/Xorg
 #default_xserver     /usr/bin/Xvesa
 #xserver_arguments   -ac -shadow dpms +extension Composite -screen 1024x768x24
 </pre>
 <p>
-Now we can start Slim to return us to an X server session. 
-Slim works likes a daemon, it can be stopped or started from the console:
+Neste momento, pode já ser iniciado o Slim para regressar a uma sessão com o 
+servidor X. O Slim funciona tal qual um daemon, podendo ser iniciado ou 
+interrompido a partir do terminal: 
 </p>
 <pre> # /etc/init.d/slim start
 </pre>
-<h4>xorg.conf - Configuration file</h4>
+<h4>xorg.conf - Arquivo de Configuração</h4>
 <p>
-Xorg uses the configuration file <code>/etc/X11/xorg.conf</code>. This file can be
-automatically generated and edited with your favorite text editor. It is divided into
-several sections, including the specification of paths, modules to be loaded, default screen, 
-mouse, keyboard, etc. This document provides only a few examples, it is advisable to run
-<code>xorgconfig</code> once to generate a complete file to use as an example.
-
+O Xorg usa o arquivo de configuração <code>/etc/X11/xorg.conf</code>. Este 
+arquivo pode ser gerado automaticamente e editado com o editor de texto de sua 
+preferência. Está dividido em diversas seções, incluindo a especificação de 
+caminhos (paths), módulos a carregar, monitor padrão, mouse, teclado, etc. Este 
+documento fornece apenas alguns exemplos, sendo aconselhável executar o comando 
+<code>xorgconfig</code> uma vez para gerar um arquivo completo que pode ser usado 
+como exemplo. 
 </p>
 <p>
 Keyboard (en):
@@ -159,7 +173,7 @@ Keyboard (en):
 EndSection
 </pre>
 <p>
-Mice with auto detection protocol:
+Mouse com protocolo de auto-detecção:
 </p>
 <pre class="script">Section "InputDevice"
 	Identifier  "Mouse0"
@@ -170,7 +184,7 @@ Mice with auto detection protocol:
 EndSection
 </pre>
 <p>
-Composite extensions:
+Extensões "Composite":
 </p>
 <pre class="script">Section "Extensions"
 	Option      "Composite" "1"
@@ -178,90 +192,99 @@ EndSection
 </pre>
 
 <a name="jwm"></a>
-<h3>JWM - Window manager</h3>
+<h3>JWM - Gerenciador de Janelas</h3>
 <p>
-JWM (Joe's Window Manger) is a lightweight Window Manager, easy to use, fast,
-stable and insanely configurable. The menu and theme can all be changed from a 
-single configuration file found in your home directory: <code>~/.jwmrc</code>,
-the file uses XML syntax and the code is nicely colored if you use Geany to 
-edit it. To add an entry in the menu you can use the following example:
+O JWM (Joe's Window Manger) é um gerenciador de janelas leve, fácil de usar, 
+rápido, estável e com um conjunto inacreditável de possibilidades de configuração. 
+O menu e o tema podem ser alterados a partir de um único arquivo de configuração 
+armazenado em seu diretório /home: <code>~/.jwmrc</code>. Este arquivo utiliza  
+sintaxe XML e, se for editado com o Geany, pode-se melhor visualizá-lo através
+do recurso de coloração de sintaxe desse editor. Para adicionar uma entrada no 
+menu, pode-se seguir o seguinte exemplo: 
 </p>
 <pre class="script"> &lt;Program icon="kino.png" label="Kino (Video Editor)"&gt;kino&lt;/Program&gt;
 </pre>
 <p>
-The <a href="http://www.joewing.net/programs/jwm/config.shtml">JWM Web site</a> 
-has got more information on how to configure the application to your needs 
-and preferences.
+O <a href="http://www.joewing.net/programs/jwm/config.shtml">site do JWM</a> 
+possui mais informações sobre como pode ser configurada a aplicação de modo a 
+ajustar-se às suas necessidades e preferências. 
 </p>
 
 <a name="enlightenment"></a>
 <h3>Enlightenment (e17)</h3>
 <p>
-Enlightenment aka e17 is a lightweight and fast desktop environment that can be
-configured graphically. To install e17:
+O Enlightenment (também conhecido como <code>e17</code>) é um ambiente desktop
+leve e rápido que pode ser totalmente configurado por meio de ferramentas gráficas.
+Para instalar o e17:
 </p>
 <pre> # tazpkg get-install enlightenment
 </pre>
 <p>
-Logout your current X session, type <code>F1</code> at Slim login and choose
-<code>e17</code> to start Enlightenment.
+Saia da sessão gráfica atual, tecle <code>F1</code> na tela de login do Slim e
+escolha <code>e17</code> para iniciar o Enlightenment.
 </p>
 <p>
-Additional themes can be found on the <a href="http://www1.get-e.org/Themes/E17/">website</a>
+Temas adicionais podem ser encontrados no <a href="http://www1.get-e.org/Themes/E17/">website</a>
 </p>
 
 <a name="openbox"></a>
 <h3>Openbox</h3>
 <p>
-Openbox is a lightweight window manager that can be configured using the obconf 
-utility. To install openbox:
+O Openbox é um gerenciador de janelas leve que pode ser configurado usando-se
+o utilitário obconf. Para instalar o Openbox:
 </p>
 <pre> # tazpkg get-install openbox
  # tazpkg get-install obconf
 </pre>
 <p>
-Logout your current X session, type <code>F1</code> at Slim login and choose
-<code>openbox</code> to start Openbox. To make Openbox your default Window
-Manager just type: <code>tazx openbox</code>.
+Saia da sessão gráfica atual, tecle <code>F1</code> na tela de login do Slim e
+escolha <code>openbox</code> para iniciar o Openbox. Para tornar o Openbox seu 
+gerenciador de janelas padrão, digite na linha de comando: <code>tazx openbox</code>.
 </p>
 <p>
-Note: you can also use the configuration file <code>menu.xml</code> found 
-in <code>/etc/xdg/openbox</code> to edit menu items. Here's an example using 
-Htop:
+Nota: você pode usar o arquivo de configuração <code>menu.xml</code> localizado
+em <code>/etc/xdg/openbox</code> para editar ítens do menu. Um exemplo que inclui
+o aplicativo Htop no menu:
 </p>
 <pre class="script">&lt;item label="Htop"&gt;
   &lt;action name="Execute"&gt;&lt;command&gt;xterm -e htop&lt;/command&gt;&lt;/action&gt;
 &lt;/item&gt;
 </pre>
 <p>
-More information can be found on the 
-<a href="http://icculus.org/openbox/index.php/Help:Menus">openbox</a> site.
+Mais informações podem ser encontradas no site do 
+<a href="http://icculus.org/openbox/index.php/Help:Menus">openbox</a>.
 </p>
 
 <a name="fonts"></a>
-<h3>Fonts</h3>
+<h3>Fontes</h3>
 <p>
-The management of Fonts (<em>fonts</em>) is powered by the package Fontconfig. 
-This package provides tools to add, list and manipulate fonts. The <em>fonts</em> 
-can be installed in user space or at the system level, this means that each user can use his/her own
-fonts or the adminstrator (<em>root</em>) can install fonts available to all users of the system.
-If you use USB media associated with SliTaz <a href="http://www.slitaz.org/en/doc/handbook/livecd.html">LiveCD</a>, 
-you can easily install fonts and retain them the next time you use the cdrom.
+O gerenciamento das fontes está a cargo do pacote Fontconfig. Este pacote 
+disponibiliza um conjunto de ferramentas para adicionar, listar e manipular
+fontes. As <em>fontes</em> podem ser instaladas no espaço do usuário ou
+ao nível do sistema, o que significa que cada usuário pode usar o seu conjunto 
+de fontes, podendo o administrador (<em>root</em>) instalar fontes que fiquem 
+disponíveis para todos os usuários do sistema. Se você usa mídias USB associadas
+ao <a href="http://www.slitaz.org/pt/doc/handbook/livecd.html">LiveCD</a> SliTaz, 
+pode facilmente instalar fontes e conservá-las para a próxima vez que utilizar o
+CD-ROM. 
 </p>
-<h4>Installing <em>fonts</em></h4>
+<h4>Instalando <em>fontes</em></h4>
 <p>
-At the system level fonts are installed in the directory:
-<code>/usr/share/fonts</code>, core SliTaz provides TTF Vera fonts,
-they take up little space and are rendered correctly. In user space, fonts are found in the hidden
-directory: <code>.fonts</code>. This directory should be at the root of user space.
-To create a home directory to accomodate new fonts, you can use the graphical window manager emelFM2, 
-Clex or use the command line:
+Ao nível do sistema, as fontes estão instaladas na pasta 
+<code>/usr/share/fonts</code>. O SliTaz fornece fontes TTF Vera, que ocupam pouco 
+espaço e são adequadamente exibidas no monitor. No espaço do usuário, as fontes 
+podem ser encontradas na pasta oculta <code>.fonts</code>, que deve estar 
+na pasta <em>home</em> do usuário. Para criar uma pasta para armazenar novas 
+fontes podem ser usados os gerenciadores de arquivos emelFM2 ou Clex ou, ainda,
+a linha de comandos: 
 </p>
 <pre> $ mkdir ~/.fonts
 </pre>
 <p>
-Once you have installed the fonts you need to run the <code>fc-cache</code> tool to generate
-configuration files, this ensures that your <em>fonts</em> are available for use in applications:
+Logo que as fontes estejam instaladas, é necessário executar a ferramenta 
+<code>fc-cache</code> para gerar os arquivos de configuração, o que permite 
+assegurar que as fontes fiquem disponíveis para serem usadas em qualquer 
+aplicação: 
 </p>
 <pre> $ fc-cache
 </pre>
@@ -272,12 +295,12 @@ configuration files, this ensures that your <em>fonts</em> are available for use
 <!-- Footer. -->
 <div id="footer">
 	<div class="footer-right"></div>
-	<a href="#top">Top of the page</a> | 
-	<a href="index.html">Table of contents</a>
+	<a href="#top">Topo da Página</a> | 
+	<a href="index.html">Conteúdo</a>
 </div>
 
 <div id="copy">
-    Copyright © 2008 <a href="http://www.slitaz.org/en/">SliTaz</a> -
+    Copyright © 2008 <a href="http://www.slitaz.org/pt/">SliTaz</a> -
     <a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>;<br />
     Documentation is under
     <a href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License</a>

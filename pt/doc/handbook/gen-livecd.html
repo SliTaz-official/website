@@ -1,8 +1,8 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt">
 <head>
-    <title>SliTaz Handbook (en) - Gen a LiveCD to taste</title>
+    <title>Manual SliTaz (pt) - Gerar um LiveCD personalizado</title>
     <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
     <meta name="description" content="slitaz tazlito build livecd flavor support all in RAM" />
     <meta name="expires" content="never" />
@@ -18,206 +18,198 @@
 <div id="header">
 <div align="right" id="quicknav">
     <a name="top"></a>
-    <a href="liveusb.html">LiveUSB media</a> |
-    <a href="index.html">Table of contents</a>
+    <a href="liveusb.html">Mídia LiveUSB</a> |
+    <a href="index.html">Conteúdo</a>
 </div>
-<h1><font color="#3E1220">SliTaz Handbook (en)</font></h1>
+<h1><font color="#3E1220">Manual SliTaz (pt)</font></h1>
 </div>
 
 <!-- Content. -->
 <div id="content">
 <div class="content-right"></div>
 
-<h2><font color="#DF8F06">Generate a LiveCD to taste</font></h2>
+<h2><font color="#DF8F06">Gerar um LiveCD personalizado</font></h2>
 <p>
-Create your own LiveCD quickly and easily with Tazlito.
+Crie seu próprio LiveCD de forma rápida e fácil com o Tazlito.
 </p>
 
 <ul>
-	<li><a href="#intro">To begin.</a></li>
-	<li><a href="#2cmds">A LiveCD in 2 commands.</a></li>
-	<li><a href="#get-flavor">Get a taste.</a></li>
-	<li><a href="#gen-distro">Generate the distribution.</a></li>
-	<li><a href="#gen-flavor">Create a flavor.</a></li>
-	<li><a href="#addfiles">Additional files.</a></li>
-	<li><a href="#pkgs">Packages used.</a></li>
-	<li><a href="#configure">Configuration file.</a></li>
+	<li><a href="#intro">Introdução.</a></li>
+	<li><a href="#2cmds">Um LiveCD em 2 comandos.</a></li>
+	<li><a href="#get-flavor">Escolha uma variante.</a></li>
+	<li><a href="#gen-distro">Gere a distribuição.</a></li>
+	<li><a href="#gen-flavor">Crie uma variante.</a></li>
+	<li><a href="#addfiles">Arquivos adicionais.</a></li>
+	<li><a href="#pkgs">Pacotes usados.</a></li>
+	<li><a href="#configure">Arquivo de Configuração.</a></li>
 </ul>
 
 <a name="intro"></a>
-<h3>To begin</h3>
+<h3>Introdução</h3>
 <p>
-Creating your own LiveCD version of SliTaz with Tazlito 
-takes very little time and you can choose precisely the software
-packages that you want to find on the system. The support
-of flavors permits you to generate a customized LiveCD
-amended by a list of packages or flavors created by the SliTaz
-community. Tazlito is a command line tool that is not too
-demanding, you can have your own ISO image in two commands
-or burned in one.
+A criação de uma versão personalizada de um LiveCD do SliTaz por meio do Tazlito 
+é uma tarefa bastante rápida, podendo ser escolhidos um a um os pacotes de 
+software que se pretende que fiquem associados ao sistema. O suporte a variantes
+permite gerar um LiveCD personalizado, recorrendo a uma lista de pacotes criada 
+pela comunidade SliTaz. O Tazlito é uma ferramenta de linha de comandos que não 
+exige grandes conhecimentos por parte do usuário, que permite gerar uma imagem ISO 
+com apenas dois comandos e gravá-la num CD com apenas um. 
 </p>
 <p>
-The generation of the LiveCD requires a minimum of 256 MB 
-RAM and system compression with LZMA may take some time. It's
-possible to create a distribution from the LiveCD or from an
-installed system. In LiveCD mode, it's advisable to use persistent
-media or a USB drive to store generated files and save space in RAM.
+A criação de um LiveCD exige um mínimo de 256 MB de RAM, e a compressão do 
+sistema com o LZMA pode demorar algum tempo. É possível criar uma distribuição 
+quer a partir do LiveCD quer a partir de um sistema instalado. No modo LiveCD, 
+é aconselhável  usar uma mídia de forma a gravar dados persistentemente ou um 
+drive USB para armazenar os arquivos gerados e poupar espaço na RAM. 
 </p>
 <p>
-Tazlito is used by developers to generate the official LiveCD.
-The only prerequisite is to have Tazlito installed, this is installed
-by default on SliTaz, but you can generate from another 
-LiveCD distribution if they have the necessary packages on hand
-or can be downloaded.
+O Tazlito é a ferramenta usada pelos desenvolvedores para gerar o LiveCD oficial. 
+O único pré-requisito é que o Tazlito esteja instalado, algo que já está 
+predefinido no SliTaz, mas que pode ser gerado para qualquer outra distribuição
+em formato LiveCD, desde que os pacotes necessários estejam disponíveis ou possam ser
+baixados da Internet. 
 </p>
-<h4>Install Tazlito on another distribution</h4>
+<h4>Instalar o Tazlito em outra distribuição</h4>
 <p>
-Tazlito does not generate dependencies for the LiveCD, but
-it depends of Cdrkit to burn the image and Tazpkg to 
-regenerate SliTaz packages not already installed. To retrieve 
-and install Tazlito, follow the instructions in the README
-file in <a href="http://download.tuxfamily.org/slitaz/sources/tazlito/"
-	>the sources of Tazlito</a>.
+O Tazlito não gera uma árvore de dependências para o LiveCD, dependendo contudo 
+do Cdrkit para gravar a imagem em CD e do Tazpkg para regenerar pacotes do SliTaz 
+que não estejam previamente instalados. Para obter e instalar o Tazlito, devem 
+ser seguidas as instruções do arquivo README no 
+<a href="http://download.tuxfamily.org/slitaz/sources/tazlito/"
+	>código fonte do Tazlito</a>.
 </p>
 
 <a name="2cmds"></a>
-<h3>A LiveCD in 2 commands</h3>
+<h3>Um LiveCD em 2 comandos</h3>
 <ul>
-	<li>Get a flavor : <code>tazlito get-flavor core</code></li>
-	<li>Optional : Amend the list of packages or add 
-	  additional files.</li>
-	<li>Generate the distribution : <code>tazlito gen-distro</code></li>
+	<li>Obtenha uma variante (flavor) : <code>tazlito get-flavor core</code></li>
+	<li>Opcional : altere a lista de pacotes ou adicione arquivos.</li>
+	<li>Gere a distribuição : <code>tazlito gen-distro</code></li>
 </ul>
 <p>
-Once finished, you will find the LiveCD ISO image in the
+Tendo terminado, a imagem ISO do LiveCD pode ser encontrada em
 <code>/home/slitaz/distro</code>.
 </p>
 <p>
-For simple instructions click <a href="simple-gen-livecd.html">here</a> .
+Para outras instruções clique <a href="simple-gen-livecd.html">aqui</a> .
 </p>
 
 <a name="get-flavor"></a>
-<h3>Get a taste</h3>
+<h3>Obtenha uma variante</h3>
 <p>
-A flavor is a <code>.flavor</code> file containing all the necessary information
-for the creation of the CD. The flavor provides the list of
-packages (<code>distro-packages.list</code>) and additional files for the
-chosen flavor.  A list of flavors can be downloaded and
-updated with Tazlito:
+Uma variante (flavor) consiste num arquivo <code>.flavor</code> que contém todas 
+as informações necessárias para a criação do CD. A variante provê a lista de
+pacotes (<code>distro-packages.list</code>) e arquivos adicionais para a variante
+escolhida. Uma lista de variantes pode ser baixada e atualizada com o Tazlito:
 </p>
 <pre>
  # tazlito list-flavors
- Or :
+ Ou :
  # tazlito list-flavors --recharge
 </pre>
 <p>
-A list of flavors will automatically be displayed, giving the
-size of the LiveCD and a brief description. For the remainder,
-the <code>get-flavor</code> command will download the flavor file, 
-automatically extract the package list and description in 
-the current directory and put additional files in the
-<code>/home/slitaz/distro/addfiles</code> directory. To store <em>flavors</em>,
-we suggest that you use a specific directory such as
-<code>/home/slitaz/flavors</code>, you can create this yourself and proceed
-inside:
+Será automaticamente exibida uma lista de variantes, apresentando o tamanho do 
+LiveCD e uma descrição sumária. Para as tarefas restantes, o comando 
+<code>get -flavor</code> permitirá baixar o arquivo que define a variante, 
+extrair automaticamente a lista de pacotes e a respectiva descrição na pasta 
+atual e guardar os arquivos adicionais na pasta <code>/home/slitaz/distro/addfiles</code>. 
+Para armazenar as variantes, sugere-se que seja usada uma pasta específica, por 
+exemplo <code>/home/slitaz/flavors</code>, o que pode ser feito pelo usuário, 
+devendo então entrar-se nessa pasta: 
 </p>
 <pre>
  # mkdir -p /home/slitaz/flavors
  # cd /home/slitaz/flavors
 </pre>
 <p>
-To download and/or extract the files in a particular flavor:
+Para baixar e/ou extrair arquivos de uma variante em particular:
 </p>
 <pre>
  # tazlito get-flavor particular-flavor
 </pre>
 <p>
-The description of the flavor can be displayed with the 
-<code>show-flavor</code> command. Once the chosen flavor is downloaded
-you can start to generate the distribution.
-
+A descrição de uma variante pode ser obtida com o comando <code>show-flavor</code>.
+Uma vez que a variante escolhida estiver baixada, pode-se iniciar a geração da 
+distribuição
 </p>
 
 <a name="gen-distro"></a>
-<h3>Generate the distribution</h3>
+<h3>Gere a distribuição</h3>
 <p>
-For your first ISO, we advise you to test without modifying
-the list, then you can start to delete or add packages
-at will. But beware, the base system packages are essential.
-The <code>gen-distro</code> command generates an ISO image with all the
-packages on the list, it must be run as root and be in the
-same directory as the list and the configuration file.
-To generate a LiveCD:
+Para sua primeira imagem ISO, nós o alertamos que faça um teste sem modificar a
+listagem original. Após ter criado a primeira ISO, você pode adicionar ou deletar
+pacotes à vontade. Mas cuidado! Os pacotes base do sistema são essenciais. O 
+comando <code>gen-distro</code> gera uma imagem ISO com todos os pacotes da lista:
+deve ser executado como <em>root</em> e no mesmo diretório em que se encontram
+a lista e o arquivo de configuração. Para gerar um LiveCD:
 </p>
 <pre>
  # tazlito gen-distro
 </pre>
 <p>
-Voil&agrave;, your first LiveCD ISO image is generated in <code>/home/slitaz/distro</code>,
-but without an account for the user hacker.
+Voil&agrave;, sua primeira imagem ISO é gerada no diretório 
+<code>/home/slitaz/distro/</code>, mas sem uma conta para o usuário 'hacker'.
 </p>
-<h4>The user hacker</h4>
+<h4>O usuário 'hacker'</h4>
 <p>
-If you want to have a hacker user account, we must add one
-and then recreate the compressed root filesystem:
+Se você quiser adicionar a conta de usuário 'hacker' à sua ISO recém gerada, deve
+adicioná-la e então recriar o sistema de arquivos raiz comprimido:
 </p>
 <pre>
  # tazlito addhacker
  # tazlito gen-initiso
 </pre>
-<h4>Clean and regenerate distro</h4>
+<h4>Limpar e recriar a distro</h4>
 <p>
-To continue to go further, you can simply add one or two packages
-to the list, clean the distro and regenerate the root
-filesystem with a new ISO image:
+Continuando, você pode simplesmente adicionar um ou dois pacotes à lista, limpar
+a distro e recriar o sistema de arquivos raiz, gerando uma nova imagem ISO:
 </p>
 <pre>
  # tazlito clean-distro
  # tazlito gen-distro
 </pre>
 <p>
-Tazlito also offers several possibilities, such as burning the 
-ISO or copying additional files in the system or directly
-on to the cdrom. The Tazlito <a href="../manuals/tazlito.en.html">Manual</a>
-provides more information.
+O Tazlito também oferece várias possibilidades, como gravar a ISO para um CD ou
+copiar arquivos adicionais no sistema ou diretamente para o cdrom. O
+<a href="../manuals/tazlito.pt.html">Manual do Tazlito</a> fornece maiores
+informações.
 
 </p>
 
 <a name="gen-flavor"></a>
-<h3>Create a flavor</h3>
+<h3>Crie uma variante (flavor)</h3>
 <p>
-Tazlito allows you to easily create your own flavor from
-the results of generating the distribution (<code>gen-distro</code>).
-The file will contain all the flavor's additional files,
-a description and a list of packages which can be reused later
-and updated according to the versions of packages. To generate
-your own flavor responding to one or two questions:
+O Tazlito permite a criação de sua própria variante a partir dos resultados obtidos
+na geração da distribuição (<code>gen-distro</code>). O arquivo conterá
+todos os arquivos adicionais da variante, uma descrição e uma lista de pacotes
+que pode ser utilizada posteriormente e atualizada de acordo com a versão dos
+pacotes. Para gerar sua própria variante, respondendo a uma ou duas perguntas:
 </p>
 <pre>
  # tazlito gen-flavor new-flavor
 </pre>
 <p>
-Once your flavor is fully functioning and well tested, you 
-can send it to slitaz.org to make it available to all and sundry,
-listed via <code>list-flavor</code> and usable via <code>get-flavor</code>. To send
-a flavor you have several means, announce through the mailing list, 
-save the file online and report on the forum or send by mail
-to a contributor of the project. 
+Uma vez que a variante esteja totalmente funcional e bem testada, você pode 
+enviá-la para o site slitaz.org para torná-la disponível a todos, podendo ser
+listada pelo comando <code>list-flavor</code> e utilizável por meio do comando
+<code>get-flavor</code>. Para enviar uma variante você dispõe de diversos meios,
+como por exemplo anuncia-la na lista de discussão, salvar o arquivo num servidor 
+online e enviar o link para o fórum de discussão ou mandar por email para algum
+contribuidor do projeto.
 </p>
 
 <a name="addfiles"></a>
-<h3>Additional files</h3>
+<h3>Arquivos adicionais</h3>
 <p>
-The files containing flavors usually have additional files
-copied directly into the filesystem or the root of the cdrom.
-The path to the files used is specified in the configuration
-file <code>tazlito.conf</code> - by default the files are 
-located in <code>/home/slitaz/distro/addfiles</code>. The additional files
-the core flavor provides are for example the window manager
-JWM and some wallpapers. It is easy enough to modify, add
-or delete files in the root filesystem (<code>rootfs</code>) or the root
-of the CD (<code>rootcd</code>) and regenerate the distribution. 
-To clean and regenerate the distribution:
+Os arquivos contendo variantes geralmente possuem arquivos adicionais copiados
+diretamente no sistema de arquivo ou na raíz do cdrom. O caminho para os arquivos
+usados é especificado no arquivo de configuração <code>tazlito.conf</code> - que
+se encontra, por padrão, no diretório <code>/home/slitaz/distro/addfiles</code>.
+Os arquivos adicionais que a variante padrão fornece são, por exemplo, os que se
+referem ao gerenciador de janelas JWM e alguns papéis de parede. É fácil modificar,
+adicionar ou apagar arquivos no sistema de arquivos raiz (<code>rootfs</code>) ou
+na raiz do CD (<code>rootcd</code>) e recriar a distribuição. Para limpar e 
+recriar a distribuição:
 </p>
 <pre>
  # tazlito clean-distro
@@ -225,52 +217,47 @@ To clean and regenerate the distribution:
 </pre>
 
 <a name="pkgs"></a>
-<h3>Packages used</h3>
+<h3>Pacotes Usados</h3>
 <p>
-To create your distro you need SliTaz packages. Tazlito and
-Tazpkg allow us to recreate packages from a SliTaz system
-in operation or to download packages directly depending on
-the flavor chosen. By default, SliTaz packages are located
-in the directory <code>/home/slitaz/packages</code>, but you can change
-this via the Tazlito configuration file (tazlito.conf).
+Para criar sua própria distro você precisa dos pacotes do SliTaz. O Tazlito e o 
+Tazpkg permitem a recriação de pacotes de um sistema SliTaz em operação ou a 
+obtenção de pacotes diretamente, dependendo da variante escolhida. Por padrão,
+os pacotes do SliTaz estão localizados no diretório <code>/home/slitaz/packages</code>,
+mas você pode mudar isso através do arquivo de configuração do Tazlito (tazlito.conf).
 </p>
 <p>
-If you want to retrieve packages manually, you can use
-FTP software such as gFTP (installed by default on SliTaz)
-or the command line and <code>wget</code> to download official packages.
-The direct URL to package versions: 
+Se você quiser obter os pacotes manualmente, pode usar um cliente FTP como o gFTP
+(instalado por padrão no SliTaz) ou pela linha de comando com o <code>wget</code>
+para o download dos pacotes oficiais. A URL para obtenção dos pacotes é:
 <a href="ftp://download.tuxfamily.org/slitaz/packages/"
 	>ftp://download.tuxfamily.org/slitaz/packages/</a>
 </p>
 <p>
-You can also use your own packages by putting them in the
-packages directory. If you are looking for documentation
-about the creation of SliTaz packages, you can refer to the
-<a href="../cookbook/">Cookbook</a>.
+Você também pode usar seus próprios pacotes, colocando-os no diretório destinado
+a isso. Se você procura por documentação relacionada à criação de pacotes para o
+SliTaz, pode consultar o <a href="../cookbook/">Cookbook</a>.
 </p>
 
 <a name="configure"></a>
-<h3>Configuration file</h3>
+<h3>Arquivo de Configuração</h3>
 <p>
-By default, Tazlito uses the system configuration file 
-<code>/etc/tazlito/tazlito.conf</code> or the <code>tazlito.conf</code>
- located in the current directory. This means that you can use the default 
-file or a configuration file specific to the distro you want to 
-create. This file can change the name of the ISO image, the
-name of the maintainer and the paths to the working 
-directories. To create and configure your own configuration
-file, you just need to run Tazlito with the <code>configure</code> 
-command from the working directory of the distro. 
-Assuming you have the tree of the distro in <code>/home/slitaz/distro</code>
-and you're located within:
+Por padrão, o Tazlito usa o arquivo de configuração do sistema 
+<code>/etc/tazlito/tazlito.conf</code> ou o <code>tazlito.conf</code> localizado
+no diretório corrente. Isto significa que você pode usar o arquivo padrão ou um
+arquivo de configuração específico para a distro que deseja criar. Este arquivo
+pode mudar o nome da imagem ISO, o nome do mantenedor e os caminhos para os 
+diretórios de trabalho. Para criar e modificar seu próprio arquivo de configuração,
+você somente precisa executar o Tazlito com a opção <code>configure</code> a 
+partir do diretório de trabalho da distro. Assumindo que o diretório de trabalho
+é <code>/home/slitaz/distro</code> e que você se encontra nele:
 </p>
 <pre>
  $ tazlito configure
 </pre>
 <p>
-Once you've answered the questions, you can either
-create the ISO image, rebuild the root filesystem and ISO or
-generate a new distro with the list of packages.
+Uma vez respondidas respondidas as questões feitas pelo programa, você pode criar
+a imagem ISO, reconstruir o sistema de arquivos raiz e a ISO ou gerar uma nova
+distro com a lista de pacotes.
 </p>
 
 <!-- End of content -->
@@ -279,12 +266,12 @@ generate a new distro with the list of packages.
 <!-- Footer. -->
 <div id="footer">
 	<div class="footer-right"></div>
-	<a href="#top">Top of the page</a> | 
-	<a href="index.html">Table of contents</a>
+	<a href="#top">Topo da Página</a> | 
+	<a href="index.html">Conteúdo</a>
 </div>
 
 <div id="copy">
-    Copyright &copy; 2008 <a href="http://www.slitaz.org/en/">SliTaz</a> -
+    Copyright &copy; 2008 <a href="http://www.slitaz.org/pt/">SliTaz</a> -
     <a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>;<br />
     Documentation is under
     <a href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License</a>
