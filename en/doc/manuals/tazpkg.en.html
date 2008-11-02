@@ -119,6 +119,14 @@ text file, justified to 80 characters to fit in a standard terminal):
 <pre>
  # tazpkg desc busybox
 </pre>
+<h3><font color="#6c0023">list-config</font></h3>
+<p>
+Lists the system configuration files. The --box option displays
+in table format:
+</p>
+<pre> # tazpkg list-config
+ # tazpkg list-config --box
+</pre>
 <h3><font color="#6c0023">list-files</font></h3>
 <p>
 List all files installed with a package. This command will
@@ -167,15 +175,14 @@ packages via the -root= option:
  Or :
  # tazpkg install path/to/package-1.0.tazpkg --root=/mnt/rootfs
 </pre>
-<h3><font color="#6c0023">install-list</font></h3>
+<h3><font color="#6c0023">install-list or get-install-list</font></h3>
 <p>
 Install a set of packages listed in a file. This command
-allows you to install several packages with a single command
+allows you to (download and) install several packages with a single command
 and can also be forced:
 </p>
-<pre>
- # tazpkg install-list my-packages.list
- # tazpkg install-list my-packages.list --forced
+<pre> # tazpkg install-list my-packages.list
+ # tazpkg get-install-list my-packages.list --forced
 </pre>
 <h3><font color="#6c0023">remove</font></h3>
 <p>
@@ -216,6 +223,15 @@ To repack a package:
 </p>
 <pre>
  # tazpkg repack package
+</pre>
+<h3><font color="#6c0023">repack-config</font></h3>
+<p>
+The 'repack-config' command recreates a package
+of the system configuration files (see list-config). It is enough 
+to install the package to find the current configuration. To repack 
+the configuration files:
+</p>
+<pre> # tazpkg repack-config
 </pre>
 <h3><font color="#6c0023">recharge</font></h3>
 <p>
@@ -311,6 +327,26 @@ packages:
 </p>
 <pre>
  # tazpkg setup-mirror
+</pre>
+<h3><font color="#6c0023">reconfigure</font></h3>
+<p>
+Replays the post-install script from the package.
+Example using gcc:
+</p>
+<pre> # tazpkg reconfigure gcc
+</pre>
+<h3><font color="#6c0023">set-release</font></h3>
+<p>
+The 'set-release' command changes the current version and 
+upgrades the packages to the latest release:
+</p>
+<pre> # tazpkg set-release cooking
+</pre>
+<h3><font color="#6c0023">bugs</font></h3>
+<p>
+Generates a list of known bugs in the packages:
+</p>
+<pre> # tazpkg bugs
 </pre>
 
 <h2>MAINTAINER</h2>
