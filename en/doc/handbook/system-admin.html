@@ -36,6 +36,7 @@
     <li><a href="#locale">Language and keyboard.</a></li>
     <li><a href="#bash">Install the Bash shell.</a></li> 
     <li><a href="#editors">Text editors.</a></li>
+    <li><a href="#sudo">Sudo command.</a></li>
     <li><a href="#time">Set the system time.</a></li>
     <li><a href="#cron">Execute scheduled commands.</a></li>
     <li><a href="#local.sh">Add commands at boot time.</a></li>
@@ -160,6 +161,18 @@ Or alternatively if you prefer emacs, SliTaz offers a tiny version:
 </p>
 <pre> # tazpkg get-install emacs
 </pre>
+
+<a name="sudo"></a>
+<h3>Sudo</h3>
+<p>
+The <code>sudo</code> command can be applied on SliTaz:
+</p>
+<pre> # tazpkg get-install sudo
+</pre>
+<p>
+The configuration file /etc/sudoers, should <em>always</em> be edited by the <code>visudo</code> command
+which locks the file and checks for errors.
+</p>
 
 <a name="time"></a>
 <h3>System Time</h3>
