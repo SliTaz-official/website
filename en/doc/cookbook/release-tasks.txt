@@ -1,0 +1,39 @@
+ SliTaz Cookbook - LiveCD release tasks
+ ==============================================================================
+ Things to do before publishing a new version.
+
+  * Prepare the distribution tree and list of packages, generate a
+    configuration file and then configure with Tazlito
+    (tazlito gen-config && tazlito configure).
+
+  * Check the Window manager menus so that all applications are available
+    and that the screen is properly configured (/usr/share/images). Note
+    that the window manager menu is installed by SliTaz tools.
+
+  * Add the user hacker, with the addhacker script, copy files from addfiles/ 
+    and use examples from system tools (slitaz-tools).
+
+  * Check that the SliTaz version specified in /etc/issue message is 
+    the same as displayed in the isolinux.msg file and the Tazpkg mirror
+    configuration file /var/lib/tazpkg/mirror.
+
+  * Edit the isolinux.msg file to change the date of publication/version
+    and check it's in agreement with /etc/issue.
+
+  * Chroot, in case we need to make any changes to rootfs. Note: we can 
+    rebuild the system with 'tazlito gen-initso'.
+
+  * Add and check that documents and images are in the root of the CD - ie.
+    README, index.html, style.css and the directory of images. All files are
+    in the slitaz-tools archive; just copy the addfiles/ and        
+    regenerate the ISO.
+
+  * Test, test, and test ...
+
+  * Prepare the website announcement and RSS feeds, update the Handbook
+    if needed and change the TODO list on the developers Wiki.
+
+ ==============================================================================
+                                                                 www.slitaz.org
+    
+    
