@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>SliTaz Scratchbook</title>
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <meta name="description" content="" />
+    <meta name="expires" content="never" />
+    <meta name="modified" content="2008-11-22 17:00:00" />
+    <meta name="publisher" content="www.slitaz.org" />
+    <meta name="author" content="Christophe Lincoln"/>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="book.css" />
+</head>
+<body bgcolor="#ffffff">
+
+<!-- Header and quick navigation -->
+<div id="header">
+<div align="right" id="quicknav">
+    <a name="top"></a>
+    <a href="../index.html">SliTaz doc</a>
+</div>
+<h1><font color="#3E1220">SliTaz Scratchbook</font></h1>
+</div>
+
+<!-- Content. -->
+<div id="content">
+<div class="content-right"></div>
+
+
+<h2><font color="#df8f06">SliTaz Scratchpad</font></h2>
+<p>
+Index of documents, step by step construction of a mini GNU/LINUX
+LiveCD and installation instructions.
+</p>
+<h3><font color="#6c0023">Table of contents</font></h3>
+<h4>LiveCD</h4>
+<ul>
+	<li><a href="#intro">Introduction.</a></li>
+	<li><a href="#org">Organize a working directory.</a></li>
+	<li><a href="base-system.html">Construction of the base SliTaz system.</a></li>
+</ul>
+
+<a name="intro"></a>
+<h3><font color="#6c0023">Introduction</font></h3>
+<p>
+The scratchbook allows you to track the creation of the first public 
+release of SliTaz and make a trip to the heart of GNU/LINUX. You'll
+be able to customize your new system or create your own autonomous
+distro running in system memory (RAM) that's fully installable on
+a hard drive or USB key. Once started you'll be able to remove the
+CD-ROM and still have SliTaz working. SliTaz can also be used as an
+environment in which we can chroot or use the cdrom for multitasking. 
+The only prerequisite is a host distribution in which you can store
+libraries, use a compiler and development tools, etc. The host
+system can be a chrooted development environment, a minimal
+distro, SliTaz installed on a hard drive or a 'general' distro such
+as Debian, Slackware, Fedora, Gentoo, Mandriva, Arch, etc. Note
+that nothing is installed in the host system by our commands.
+</p>
+<p>
+SliTaz uses the 'Swiss Army Knife' BusyBox as the basis of the system and 
+the Linux Kernel, it runs embedded using a small memory footprint and 
+provides many files. BusyBox is our main source of information 
+and it's a utility of the Debian project which we use and cherish.
+</p>
+<p>
+SliTaz uses the Syslinux bootloader and an archived initramfs 
+compressed with cpio. This archive is them decompressed in memory
+at boot by the kernel into a system of no fixed size, retaining
+control over init. At the time of compilation or copying of 
+applications, we use strip to clean the repositoiries. The system commands
+genisoimage or mkisofs are used to create the iso images. To
+finish, you can test the iso image with Qemu or engrave the 
+generated iso on to a rewritable cdrom.
+</p>
+<a name="org"></a>
+<h3><font color="#6c0023">Organize a working directory</font></h3>
+<p>
+To create SliTaz, we need a working directory and several subdirectories
+Whether you have a chrooted environment for developing or a host
+system, we advise to use a directory named distro/ in which to 
+work. The distro/ directory can be a simple folder or a partition,
+but you are obviously free to put all of this elsewhere.
+</p>
+<h4>distro/</h4>
+<p>Contents of a working directory:
+</p>
+<ul>
+	<li>rootfs/ --&gt; The root filesystem - this is the root system, designed 
+	to operate in RAM, it is used to generate the initramfs image.</li>
+	<li>rootfs.gz --&gt; The initramfs image of our system - a cpio 
+	archive compressed with gzip.</li>
+	<li>rootcd/ --&gt; The rootcd. This is the root of the cdrom files.</li>
+	<li>src/ --&gt; The sources, Kernel, Syslinux, Busybox, Dropbear,
+	etc (it can also be a symbolic link).</li>
+</ul>
+<p>
+Thereafter, the initramfs and bootable ISO image (slitaz-cooking.iso)
+will be created in the root directory of our work named SliTaz/.
+</p>
+<h4>Option: rootfs.ext2 - using a virtual hard drive</h4>
+<p>
+Option: rootfs.ext2 (root filesystem in ext2) is a virtual hard disk
+formatted with ext2 and mounted on a (rootfs) loop. A device loop allows
+a file to be used as a standard device (hard drive, floppy, etc) to build
+a filesystem inside. This file can be any number of megabytes, we propose
+20,480, which corresponds to 20MB:
+</p>
+<pre> # dd if=/dev/zero of=rootfs.ext2 bs=1k count=20480
+</pre>
+<p>
+Create a ext2 filesystem named rootfs.ext2, the option -F formats the
+file. Note that the -m 0 option doesn't allocate any space for the user
+root - by default it occupies approximately 5% and the -t option defines
+the type of filesystem to be used, such as ext2 or ext3:
+</p>
+<pre> # mkfs -t ext2 -F -m 0 rootfs.ext2
+</pre>
+<p>
+We can now assemble rootfs.ext2 with a loop, thanks to the -o loop option
+provided by the mount utility in the rootfs/ directory. You can check if 
+the assembly went well with the <code>df-h</code> command:
+</p>
+<pre> # mkdir rootfs
+ # mount -o loop rootfs.ext2 rootfs
+ # df -h
+</pre>
+<p>
+At the end of the session, you can dismount the volume with umount:
+</p>
+<pre> # umount rootfs
+</pre>
+<p>
+Now we can proceed to the construction of the <a href="base-system.html">base SliTaz system</a>.
+</p>
+
+<!-- End of content -->
+</div>
+
+<!-- Footer. -->
+<div id="footer">
+	<div class="footer-right"></div>
+	<a href="#top">Top of the page</a> | 
+	<a href="index.html">Table of contents</a>
+</div>
+
+<div id="copy">
+    Copyright &copy; 2008 <a href="http://www.slitaz.org/en/">SliTaz</a> -
+    <a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>;<br />
+    Documentation is under
+    <a href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License</a>
+    and code is <a href="http://validator.w3.org/">valid xHTML 1.0</a>.
+</div>
+
+</body>
+</html>
