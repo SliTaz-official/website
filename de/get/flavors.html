@@ -23,9 +23,9 @@
 <!-- Access -->
 <div id="access">
     Language:
-    <a href="../../en/packages" title="English website">English</a> |
-    <a href="../../packages" title="Site Wen en français">Français</a> |
-    <a href="../../pt/packages" title="Português">Português</a> 
+    <a href="../../en/get/flavors.html" title="English website">English</a> |
+    <a href="../../get/flavors.html" title="Site Wen en français">Français</a> |
+    <a href="../../pt/get/flavors.html" title="Português">Português</a> 
 </div>
     <a href="http://www.slitaz.org/de/"><img id="logo"
     src="../../pics/website/logo.png" title="www.slitaz.org/de" alt="www.slitaz.org"
@@ -68,47 +68,56 @@
 <div id="content">
 <a name="content"></a>
 
-<h1><font color="#3e1220">Pakete</font></h1>
-<h2><font color="#df8f06"># tazpkg get-install pkg</font></h2>
+<h1><font color="#3E1220">Flavors Downloaden</font></h1>
+<h2><font color="#DF8F06">Live-CD </font></h2>
 
 <p>
-Über die folgenden Listen können Sie alle auf dem SliTaz-Mirror verfügbaren Pakete 
-einsehen. Die Listen werden jeden Tag automatisch neu generiert. 
-Sofern Sie einen Internetzugang besitzen können Sie jedes dieser Pakete mit dem Befehl
-<code>tazpkg get-install "pkgname"</code> installieren. Genauere Informationen dazu erhalten Sie im 
-<a href="http://wiki.slitaz.org/doku.php?id=lang:de:einleitung" target="_blank">Wiki</a>.
-</p>
-<p>
-Falls Sie Pakete manuell herunterladen möchten, besuchen Sie bitte einen der 
-<a href="../get/">SliTaz-Mirrors</a>.
-</p>
-<h3>Stable</h3>
-<p>
-Pakete der stabilen Version: 
-<a href="http://www.slitaz.org/packages/stable/">Webinterface</a>
-</p>
-<p>
-Automatisch generierte Paketlisten: <a 
-	href="ftp://download.tuxfamily.org/slitaz/packages/1.0/packages.list"
-	>packages.list</a> | <a 
-	href="ftp://download.tuxfamily.org/slitaz/packages/1.0/packages.txt"
-	>packages.txt</a>
+Flavors sind SliTaz Derivate, die mit Tazlito und einer *.flavor-Datei erstellt wurden.  
+Mit Tazlito besteht eine einfache Möglichkeit für bestimmte Zwecke angepasste ISO-Images
+zu erstellen. Um dieses Image zu erzeugen benötigt Tazlito eine .flavor-Datei. 
+Auf ihr sind alle Anweisungen enthalten, welche Pakete und Konfigurationsdateien das ISO-Image des 
+Flavors einst enthalten soll. Man kann wahlweise eine eigene .flavor-Datei kreieren, oder eine 
+vorgefertigte, die z.B. von der Community zur Verfügung gestellt wird verwenden.
 </p>
 
-<h3>Cooking</h3>
+<h3>Live-CD ISO Images</h3>
 <p>
-Pakete der Cooking-Version: <a 
-	href="http://www.slitaz.org/packages/cooking/"
-	>Webinterface</a>
+Diese Flavors werden vom SliTaz-Team veröffentlicht. Sie basieren auf der 
+Cooking-Version. 
+</p>
+<p>Das <em>Loram</em> Flavor startet SliTaz auf Rechnern mit älterer Hardware,
+benötigt werden blos 64 MB RAM.  Das
+<em>Loram-cdrom-sqfs</em> Flavor benötigt nur  10 MB Arbeitsspeicher und eine 
+kleine <a href="http://wiki.slitaz.org/doku.php?id=lang:de:term:swap" target="_blank">Swap</a>-Partition, 
+allerdings kann die CD nicht mehr dem Laufwerk entnommen werden.
 </p>
 <p>
-Automatisch generierte Paketlisten: <a 
-	href="ftp://download.tuxfamily.org/slitaz/packages/cooking/packages.list"
-	>packages.list</a>
-    | <a href="ftp://download.tuxfamily.org/slitaz/packages/cooking/packages.txt"
-    >packages.txt</a>
+<a href="http://mirror.slitaz.org/iso/cooking/flavors/" target="_blank">Ein fertiges Flavor-Image downloaden</a>
 </p>
 
+<h3>Eine .flavor Datei generieren</h3>
+<p>
+Mit dem grafischen Tool Tazlitobox können Sie mit einigen wenigen Mouseklicks eine .flavor Datei 
+erstellen. Das <a href="http://wiki.slitaz.org/doku.php?id=lang:de:tazlito-manual" target="_blank">Tazlito-Manual</a> 
+(Achtung: noch keine vollständige Übersetzung) 
+und das <a href="http://wiki.slitaz.org/doku.php?id=lang:de" target="_blank">Wiki</a> im Allgemeinen bieten ausführliche 
+Anweisungen zum Erzeugen einer .flavor-Datei. Über die Shell können Sie mit dem Befehl
+<code>tazlito list-flavors</code> eine Liste der verfügbaren Dateien anzeigen lassen.
+</p>
+
+<h3>Das Flavor (-Image) erzeugen und verteilen</h3>
+<p>
+Von SliTaz Stable und Cooking gibt es ein <em>core</em> Flavor auf dem Mirror. 
+Es kann gut als Basis für eigene Flavors genutzt werden. 
+Weitere Informationen und Anweisungen finden Sie auch im 
+<a href="<http://wiki.slitaz.org/doku.php?id=lang:de:einleitung" target="_blank">SliTaz Wiki</a>.
+</p>
+<p>
+Erstellte Flavors können gerne über die 
+<a href="../mailing-list.html" target="_blank">Mailing Liste</a> eingesandt werden, 
+getested und für gut befunden wird das Flavor auf dem offiziellen 
+Mirror veröffentlicht.
+</p>
 
 <!-- End of content with round corner -->
 </div>
@@ -120,7 +129,7 @@ Automatisch generierte Paketlisten: <a
 <!-- Start of footer and copy notice -->
 <div id="copy">
 <p>
-Letzte Änderung : 2008-11-28 21:30:00
+Letzte Änderung : 2008-11-29 21:30:00
 <a href="#top">Nach oben</a>
 </p>
 <p>

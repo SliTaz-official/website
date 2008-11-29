@@ -26,7 +26,8 @@
     Language:
     <a href="../en/" title="English website">English</a> |
     <a href="../" title="Site Wen en français">Français</a> | 
-    <a href="../pt/" title="Português">Português</a> 
+    <a href="../pt/" title="Português">Português</a> |
+    <a href="../i18n.html" title="Internationalisation">i18n</a>
 </div>
     <a href="http://www.slitaz.org/de/"><img id="logo"
     src="../pics/website/logo.png" title="www.slitaz.org/de" alt="www.slitaz.org - Startseite"
@@ -36,10 +37,10 @@
 <div id="nav">
 <div id="nav_top"></div>
 	<ul>
-		<li><a href="about/" title="Informationen über das SliTaz-Projekt">Über Slitaz</a></li>
+		<li><a href="about/" title="Informationen über das SliTaz-Projekt">Über SliTaz</a></li>
 		<li><a href="get/" title="Downloadsektion">Download SliTaz</a></li>
 		<li><a href="http://wiki.slitaz.org/doku.php?id=lang:de:manual:manualstart" 
-		target="_blank" title="Dokumentation">Dokumentation</a></li>
+		target="_blank" title="Dokumentation">Handbuch</a></li>
 		<li><a href="packages/" title="Pakete für Slitaz">Pakete</a></li>
 		<li><a href="mailing-list.html" title="Support, Kontakt und Mitarbeit">Mailing List</a></li>
 		<li><a href="devel/" title="Entwicklerseite">Entwicklung</a></li>
@@ -81,19 +82,26 @@
 Willkommen auf der Website von SliTaz GNU/Linux.
 </p>
 <p>
-<a href="../artwork/screenshots.html"><img
-    src="../pics/screenshots/index-desktop.png"
-    title="SliTaz Desktop" alt="slitaz-dektop"
-    style="width: 180px; height: 115px; float: left; margin: 0px 8px 0px 0px" /></a>
 SliTaz ist eine minimale, freie GNU/Linux Distribution. Sie nutzt BusyBox, den Linux Kernel und GNU
-freie Software. Das Ziel von Slitaz ist es, eine GNU/Linux Distribution zu schaffen, die vollkommen aus 
+freie Software. Das Ziel von SliTaz ist es, eine GNU/Linux Distribution zu schaffen, die vollkommen aus 
 dem Arbeitsspeicher (RAM) läuft. Dadurch erhalten Sie ein Betriebssystem mit hoher Performance und Stabilität,  
 auch und gerade für ältere Systeme. Natürlich wird auch die Installation auf die Festplatte unterstützt.
 SliTaz bootet mit Syslinux; es bietet mehr als 200 Linux Befehle und eine große Anzahl grafischer Anwendungen 
 (X Window system, JWM - Joe's Window Manager, gFTP, Geany IDE,
 Mozilla Firefox, Alsaplayer, Gparted, Audio-Editor, LightTPD Webserver, SQLite Datenbank, diverse 
 Rettungstools, IRC Client, SSH Client/Server powered by
-Dropbear und noch einige mehr). Zudem lässt sich das System über eine eigene Paketverwaltung mit weiterer 
+Dropbear und noch einige mehr). </p>
+<table width="100%">
+    <tr>
+        <td align="center">
+        <a href="../artwork/screenshots.html"><img
+    src="../pics/website/screenpresentation.jpg"
+    title="SliTaz Desktops" alt="slitaz-dektop"
+    style="width: 450px; " /></a>
+        </td>
+    </tr>
+</table>
+<p>Zudem lässt sich das System über eine eigene Paketverwaltung mit weiterer 
 Software ausbauen.
 SliTaz's CD-Image wird nie eine Größe von 30 MB übersteigen - bei einer sinnvollen Auswahl nützlicher 
 Software.
@@ -121,8 +129,8 @@ Syndication Format, so können Sie sich stets auf dem neuesten Stand halten.
 	<li><strong>16. Juli 2008 - Neue Cooking-Version (20080716) - Web Boot und MPlayer!</strong><br />
 	Diese Cooking-Version enthält viele neue Funktionen und Bugfixes. So existiert nun mit der Boot-Option 
 	<code>web</code> die Möglichkeit SliTaz mit Hilfe von gPXE über das Internet zu starten:
-	<a href="http://boot.slitaz.org/" target="_blank">boot.slitaz.org</a>. 3 MB schwerer wurde Slitaz-Cooking, dafür 
-	beinhaltet Slitaz einige Neuerungen: Der Multimediaplayer MPlayer, ein Desktop-Notizzettel namens Notecase, 
+	<a href="http://boot.slitaz.org/" target="_blank">boot.slitaz.org</a>. 3 MB schwerer wurde SliTaz-Cooking, dafür 
+	beinhaltet SliTaz einige Neuerungen: Der Multimediaplayer MPlayer, ein Desktop-Notizzettel namens Notecase, 
 	eine neue Version des Paketmanagers Tazpkg mit md5sum-Support, XFS 
 	Dateisystemunterstützung des Kernels, ein 'man' Kommando 
 	sind nur einige Beispiele. Für den Bootvorgang und flüssiges Arbeiten wird ein mindestens 160 MB großer Arbeitsspeicher 
@@ -140,14 +148,14 @@ Syndication Format, so können Sie sich stets auf dem neuesten Stand halten.
 	werden, Netbox Wifi und PPPoE-Support arbeiten nun stabil. Bestehende Anwendungen 
 	wurden auf den neuesten Stand gebracht, so zum Beispiel
 	Firefox auf die neueste Version 3.0. Ein neuer Kernel (2.6.25.5) mit vielen integrierten Treibern und 
-	Modulen verrichtet nun seine Arbeit in Slitaz. Downloaden kann man die 25,2MB große Version
+	Modulen verrichtet nun seine Arbeit in SliTaz. Downloaden kann man die 25,2MB große Version
 	<a href="get/#cooking">vom SliTaz-Mirror</a>. Bugs sind bitte 
 	über das <a href="http://wiki.slitaz.org/doku.php?id=bts:bts" target="_blank">Bug Tracking System</a>
 	zu melden.
 	</li>
 	<li><strong>18. Mai 2008 - Cooking 20080518 und LinuxDays.ch</strong><br />
 	Eine neue Cooking Version steht nun zum Download!!! Grundlegende Änderungen wurden
-	vorgenommen. So nutzt Slitaz jetzt Openbox als Standard-Fenstermanager, Tazpkg kann über eine grafische
+	vorgenommen. So nutzt SliTaz jetzt Openbox als Standard-Fenstermanager, Tazpkg kann über eine grafische
 	Oberfläche verwendet werden, Dienste mounten automatisch 
 	USB-Sticks oder Festplatten. Tazpkgbox, Mountbox und Netbox sind
 	nun vollständig benutzbar. Außerdem wurde ein lua-Interpreter, eine Suchmaschine (Searchmoneky) zum 
@@ -156,7 +164,7 @@ Syndication Format, so können Sie sich stets auf dem neuesten Stand halten.
 	Pakete haben ein Update bekommen, so glibc (2.7), GTK (2.12.9) und Firefox (3.0 RC1). 
 	Die Anzahl der Pakete auf den Mirrors hat sich auf etwa 580 erhöht, enthalten sind jetzt 
 	auch Wireless-Tools (wpa-Supplicant..).
-	Die Cooking-Version steht auf dem Slitaz-Mirror zum <a href="get/#cooking">Download</a>. 
+	Die Cooking-Version steht auf dem SliTaz-Mirror zum <a href="get/#cooking">Download</a>. 
 	Übrigens: Diese Version wird auf dem 
 	<a href="http://www.linuxdays.ch/" target="_blank">LinuxDay.ch</a> in Genf (Schweiz) genutzt werden.
 	</li>
@@ -170,28 +178,28 @@ Syndication Format, so können Sie sich stets auf dem neuesten Stand halten.
 	Sie können Musik hören, im Internet surfen, Dokumente bearbeiten, betrachten und erstellen, 
 	weitere Software installieren und damit den Einsatzbereich vom
 	Einsatz als Rettungssystem bis hin zur Multimediabearbeitung erweitern. 448 Pakete stellt
-	Slitaz Ihnen hierfür in den Paketlagern (Software-Repositories) zur Verfügung. 
-	Weiter bietet Slitaz 1.0 Entwicklern auch die Möglichkeit modifizierte (mit Tazlito)
+	SliTaz Ihnen hierfür in den Paketlagern (Software-Repositories) zur Verfügung. 
+	Weiter bietet SliTaz 1.0 Entwicklern auch die Möglichkeit modifizierte (mit Tazlito)
 	Versionen zu erstellen. Auch der Einsatz als Live-USB-System ist leicht möglich.<br />
 	Sicherheitsupdates werden ebenso wie Softwareupdates weiterhin veröffentlicht 
-	werden. Herunterladen können Sie Slitaz 1.0 vom
-	<a href="get/#stable">Slitaz Mirror</a> . Lesen Sie bitte auch die
+	werden. Herunterladen können Sie SliTaz 1.0 vom
+	<a href="get/#stable">SliTaz Mirror</a> . Lesen Sie bitte auch die
 	<a href="doc/releases/1.0/relnotes.de.html" target="_blank">"Release Notes"</a> und die 
 	<a href="http://wiki.slitaz.org/doku.php?id=lang:de:slitazinst" target="_blank">
 	Übersicht über die installierten Programme</a> für detailliertere
-	Informationen zur stabilen Version Slitaz 1.0.
+	Informationen zur stabilen Version SliTaz 1.0.
 	</li>
 	<li><strong>26. Februar 2008 - Cooking-Version (20080225) Update!</strong><br />
 	Ein weiteres Update der Cooking-Version ist veröffentlicht. Wieder mit einigen Bugfixes, neuen
 	Bootoptionen und Softwareupdates, wie Alsa 1.0.16, PHP 5.2.5, Htop 0.7, Firefox 2.0.0.12, 
 	Nano 2.0.7 und Sqlite 3.5.6. Die Option <code>home=*</code> unterstützt nun auch 
 	UUIDs oder Labels (Danke Andrew). Mit dem Kommando <code>laptop</code> werden  
-	automatisch Kernelmodule für Laptops (Batterie) geladen. Desweiteren besteht durch ein neues Slitaz 
+	automatisch Kernelmodule für Laptops (Batterie) geladen. Desweiteren besteht durch ein neues SliTaz 
 	Tool, TazUSB, die Möglichkeit mit einem einzigen Befehlen einen USB-Stick bootfähig zu machen. 
-	Damit ist Slitaz bereit für die stabile Version 1.0. Momentan wird an den 
+	Damit ist SliTaz bereit für die stabile Version 1.0. Momentan wird an den 
 	"Release Notes" und einem neuen Repository gearbeitet.
 	Die Cooking-Version gibt es zum
-	<a href="get/#cooking">Download</a> auf der Slitaz Website.
+	<a href="get/#cooking">Download</a> auf der SliTaz Website.
 	</li>
 	<li><strong>10. Januar 2008 - Neue Cooking-Version (20080107)</strong><br />
 	Der Roadmap zur stabilen Version folgend, wird heute (10.Januar 2008) eine
@@ -206,12 +214,12 @@ Syndication Format, so können Sie sich stets auf dem neuesten Stand halten.
 	in die <a href="get/#cooking">Download Sektion</a> 
 	</li>
 	<li><strong>16. Dezember 2007 - Neues Forum</strong><br />
-	Nun gibt es für Slitaz ein englischsprachiges Support-Forum: 
+	Nun gibt es für SliTaz ein englischsprachiges Support-Forum: 
 	<a href="http://forum.slitaz.org/#idx2" target="_blank">English Forum</a>
 	Seitdem das Projekt auf der französischen Sprache basiert habe wir eine Menge
 	Zusprüche und Anfragen von der englisch sprechenden Gemeinde bekommen, die
 	wir hiermit belohnen wollen. Das Forum hat eine eigene Domain: 
-	<a href="http://forum.slitaz.org/" target="_blank">forum.slitaz.org</a>. Slitaz ist standardmäßig
+	<a href="http://forum.slitaz.org/" target="_blank">forum.slitaz.org</a>. SliTaz ist standardmäßig
 	auf französisch, die Spracheinstellung kann aber nach dem Login geändert werden. 
     Wir arbeiten momentan auch an einer englischen Dokumentation, für dieses Projekt ist Hilfe
     natürlich herzlich willkommen.
@@ -228,28 +236,28 @@ Syndication Format, so können Sie sich stets auf dem neuesten Stand halten.
 	Besserer Hardware-Support auf der Live-CD, wie Sound- und PCMCIA-Unterstützung sind der Grund
 	für eine weitere Cooking vor dem stabilen Release 1.0. Das hat eine komplette Neugestaltung der Roadmap
 	erforderlich gemacht. Das Releasedatum hat sich auf März 2008 verschoben, ein Jahr nach 
-	der ersten Veröffentlichung von Slitaz. In dieser Zeit wird Slitaz neben den ganzen neuen Funktionen
+	der ersten Veröffentlichung von SliTaz. In dieser Zeit wird SliTaz neben den ganzen neuen Funktionen
 	auch hochstabil werden. <br />
     Diese Cooking-Version enthält Alsa und den zugehörigen Mixer, Alsaplayer, mpg123, Gcolor2,
     pcmciautils und einen neuen Kernel. Dazu gibt es noch eine neue Bootoption und isapnptools 
     für sehr alte Hardware wie IBM GL300 6272/6282 oder P133/32M. All das passt in
-    das ISO-Archiv mit einer Größe von 22,4 Mb. Die "Simple
-    Light Incredible Temporary Autonomous Zone" eben! SliTaz (cooking) LiveCD ist vom Slitaz Mirror
+    das ISO-Archiv mit einer Größe von 22,4 MB. Die "Simple
+    Light Incredible Temporary Autonomous Zone" eben! SliTaz (cooking) LiveCD ist vom SliTaz Mirror
     zu beziehen.  <a href="get/#cooking">Download</a>. Enjoy!
     </li>
     <li><strong>06. November 2007 - Letzte Cooking-Version vor 1.0 Release</strong><br />
     Die letzte Cooking vor dem 1.0 Release ist veröffentlicht! 
     Neu sind auf dem 24,7 MB großen ISO-Image PHP 5.2.5, Grsync, ISO Master 1.2,
     Busybox 1.7.2, ein neues GTK-Theme, Tango-Icon-Theme und ein neues Wallpaper. 
-    Zum kostenlosen <a href="get/#cooking">Download</a>  gibt es Slitaz wie immer vom TuxFamily Mirror.
+    Zum kostenlosen <a href="get/#cooking">Download</a>  gibt es SliTaz wie immer vom TuxFamily Mirror.
     Feedback ist willkommen, nutzt dazu bitte die Mailing List oder eine normale
-    E-Mail an &lt;devel at slitaz.org&gt;.
+    E-Mail an &lt;devel at Slitaz.org&gt;.
     </li>
     <li><strong>12. Oktober 2007 - Neue Cooking-Version und Erhöhung der Stabilität</strong><br />
-    Das 24MB großen ISO-Image enthält Firefox 2.0.0.7,
+    Das 24 MB großen ISO-Image enthält Firefox 2.0.0.7,
 	Linux Kernel 2.6.22.9, Rsync, ISO Master 1.1, LightTPD 1.4.18, SQLite 3.5.1,
 	ein neues Theme und Hintergrundbild. Ebenso wurde die Paketverwaltung mit
-	Tazwok und den Slitaz-Tools ausgebaut. Mit Transmission 0.82 ist es nun möglich Torrent-Filesharing 
+	Tazwok und den SliTaz-Tools ausgebaut. Mit Transmission 0.82 ist es nun möglich Torrent-Filesharing 
 	zu nutzen.
 	SliTaz (cooking) LiveCD kann kostenlos bei "TuxFamily" heruntergeladen werden.
 	<a href="get/#cooking">Download</a>.
