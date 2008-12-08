@@ -46,8 +46,8 @@ ISO image and regenerate the root filesystem of the LiveCD.
 Tazlito can also generate a distribution from a list of packages 
 previously downloaded. To run, Tazlito uses the configuration file 
 /etc/slitaz-tools/tazlito.conf or a tazlito.conf found in the 
-current directory that can be generated 
-by Tazlito. It specifies the name of the ISO, volume, maintainer and 
+current directory that can be easily generated. 
+It specifies the name of the ISO, volume, maintainer and 
 the paths of the packages to distribute and the generated ISO. 
 Tazlito can also set up a directory containing additional files, 
 which will be copied to the LiveCD when generating the distribution.
@@ -71,7 +71,7 @@ with a short description:
 <h3><font color="#6c0023">stats</font></h3>
 <p>
 Stats displays the configuration variables, the paths to the
-various files and directories and information on the ISO image:
+various files and directories, and information on the ISO image:
 </p>
 <pre>
  # tazlito stats
@@ -81,7 +81,7 @@ various files and directories and information on the ISO image:
 The 'gen-config' command allows you to generate a configuration
 file ready to be edited. By default the file is created in
 the current directory, but can be in another directory
-if specified on the command line:
+if specified via the command line:
 </p>
 <pre>
  # tazlito gen-config
@@ -89,7 +89,7 @@ if specified on the command line:
 </pre>
 <h3><font color="#6c0023">configure</font></h3>
 <p>
-This command can configure the system configuration
+This command configures the system configuration
 file or one found in the current directory:
 </p>
 <pre>
