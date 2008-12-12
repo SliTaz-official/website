@@ -81,7 +81,7 @@
 <p>
 Le projet SliTaz dispose de divers moyens pour gérer le travail des
 développeurs et collaborer. Un système de gestion de révision avec Mercurial
-(Hg), des modules de synchronisations avec Rsync, de la documentation, une 
+(Hg), des modules de synchronisation avec Rsync, de la documentation, une 
 <a href="../mailing-list.html">liste de discussion</a> et un canal IRC. Tous
 les développeurs sont inscrits sur la liste, c'est le moyen de collaboration
 principal et privilégié.
@@ -90,11 +90,11 @@ principal et privilégié.
 <a name="repos"></a>
 <h3>Dépôts Mercurial</h3>
 <p>
-Tous les sous projets tels que Tazpkg, Tazwok ou Tazlito ont leurs propres 
+Tous les sous-projets tels que Tazpkg, Tazwok ou Tazlito ont leurs propres 
 dépôts Hg sur le serveur du projet, tout comme le wok. Les développeurs ont
 un compte et des droits en écriture afin de pouvoir envoyer leurs recettes,
 mises à jour ou modifications. Il est bien sûr possible de demander la création  
-d'un nouveau dépôt pour collaborer sur un nouveau sous projet lié à SliTaz.
+d'un nouveau dépôt pour collaborer sur un nouveau sous-projet lié à SliTaz.
 A noter qu'il y a 2 domaines : <a href="http://hg.slitaz.org/">hg.slitaz.org</a>
 est public et <code>repos.slitaz.org</code> nécessite authentification, c'est 
 a dire que vous pouvez cloner hg.slitaz.org mais pas y pousser vos changements 
@@ -134,7 +134,7 @@ savoir quels fichiers ont été modifiés :
 <p>
 La commande commit va ouvrir l'éditeur de texte Nano pour écrire le message
 déstiné aux logs (Ctrl + X pour enregistrer et quitter). Vous pouvez éviter
-Nano en utilisant l'option : <code>-m "Meassage"</code>. And please, 
+Nano en utilisant l'option : <code>-m "Message"</code>. And please, 
 messages in English if possible :
 </p>
 <pre>
@@ -173,22 +173,22 @@ Des commandes hg qui peuvent servir.
 	<li><code>hg help</code> : Affiche la liste complète des commandes.</li>
 	<li><code>hg rollback</code> : Annule la dernière action exécutée (commit,
 	pull, push).</li>
-	<li><code>hg log &lt;paquet&gt;</code> : Affiche les log pour un paquet.</li>
+	<li><code>hg log &lt;paquet&gt;</code> : Affiche les logs pour un paquet.</li>
 	<li><code>hg head</code> : Affiche le dernier log.</li>
 </ul>
 
 <a name="pkgs"></a>
 <h3>Paquets tazpkg</h3>
 <p>
-Les paquets tazpkg de SliTaz sont créer automatiquement via Tazwok et les
+Les paquets tazpkg de SliTaz sont créés automatiquement via Tazwok et les
 recettes contenues dans le wok, <a href="../doc/cookbook/">le Cookbook</a>
 décrit <a href="../doc/cookbook/wok-tools.html">l'utilisation des outils SliTaz</a> 
 et le format des <a href="../doc/cookbook/receipts.html">recettes</a>,
-c'est sans doutes par un petit peu de lecture qu'il faut commencer.
+c'est sans doute par un petit peu de lecture qu'il faut commencer.
 </p>
 <p>
 Au niveau du choix des paquets, l'idée est de proposer un paquet par tâche ou 
-fonctionnalités, c'est à dire pas (trop) de doublons et de trouver 
+fonctionnalité, c'est à dire pas (trop) de doublons et de trouver 
 l'application la plus légère dans son domaine. A noter que les paquets actuels
 ne sont pas figés, si vous trouvez une alternative à un paquet existant, étant
 plus légère, ayant plus de fonctionnalités ou soyant plus <em>sexy</em> pour
@@ -199,9 +199,9 @@ En général, les paquets candidats pour le corps du LiveCD sont discutés sur
 la liste.
 </p>
 <p>
-Avant de commencer à compiler et créer des paquets pour SliTaz assurez-vous 
-qu'une recettes n'existe pas dans le wok indigest disponible sur le miroir
-principale de SliTaz. N'oubliez pas non plus que les membres de la liste sont
+Avant de commencer à compiler et créer des paquets pour SliTaz, assurez-vous 
+qu'une recette n'existe pas dans le wok indigest disponible sur le miroir
+principal de SliTaz. N'oubliez pas non plus que les membres de la liste sont
 là pour vous aider et que <a href="../doc/cookbook/wok-tools.html"
 	>la documentation du wok et des outils</a> existe pour bien commencer.
 </p>
@@ -209,17 +209,17 @@ là pour vous aider et que <a href="../doc/cookbook/wok-tools.html"
 <a name="site"></a>
 <h3>Gestion du site Web et des livres</h3>
 <p>
-La gestion du site et des livres (Handbook et Cookbook) est faites via un
-modules Rsync, diff et patch et la liste de discussion. Rsync est un outil de 
+La gestion du site et des livres (Handbook et Cookbook) est faite via un
+module Rsync, diff et patch et la liste de discussion. Rsync est un outil de 
 sauvegarde incrémentale, utilisant un algorithme ultra rapide. Il permet de 
 transférer, synchroniser ou sauvegarder des données en local ou en réseau. 
-L'utilitaire <code>diff</code> est utilisés pour envoyer sur la liste des
+L'utilitaire <code>diff</code> est utilisé pour envoyer sur la liste des
 fichiers contenant uniquement les modifications et <code>patch</code> pour
-appliquer les modifications au pages originales.
+appliquer les modifications aux pages originales.
 </p>
 <p>
 Vous pouver synchroniser le site et les livres graphiquement avec Grsync ou via
-la ligne de commandes. Pour rapatrier une première fois ou synchroniser le site
+la ligne de commande. Pour rapatrier une première fois ou synchroniser le site
 dans un répertoire <code>/home/hacker/Public/slitaz/site</code> et cela depuis 
 <code>rsync://slitaz.org/site</code> :
 </p>
@@ -233,7 +233,7 @@ dans un répertoire <code>/home/hacker/Public/slitaz/site</code> et cela depuis
 Les utilitaires <code>diff</code> et <code>patch</code> sont des outils en
 ligne de commande permettant de créer et d'appliquer un fichier contenant
 les différences entre deux fichiers. Cette technique est souvent utilisée
-pour collaborer et permet d'extraire clairement les modifications apportée
+pour collaborer et permet d'extraire clairement les modifications apportées
 au fichier original. Pour créer un fichier <code>diff</code> lisible par
 les humains dans un simple éditeur de texte, il faut utiliser l'option
 <code>-u</code> en argument :
