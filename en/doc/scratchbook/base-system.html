@@ -99,7 +99,7 @@ Your kernel must support the intramfs filesystem, otherwise the cdrom will not s
 also install the modules in a directory so as not to touch the host system. The configuration 
 of the Linux kernel sources is done by <code>make menuconfig</code> using ncurses or graphically 
 with <code>make gconfig</code> or <code>make xconfig</code> using GTK development packages and/or 
-QT respectively. You can find in <a href="http://www.slitaz.org/en/doc/cookbook/slitaz-tools.html">SliTaz tools</a> 
+QT respectively. You can find in <a href="http://www.slitaz.org/en/doc/cookbook/slitaz-tools.html">SliTaz tools</a>,
 Makefiles for the various 2.6.xx kernels.
 </p>
 <p>
@@ -210,7 +210,7 @@ there is a File System Hierarchy Standard available in various formats at
 </p>
 <p>
 You are free to create your own directory tree. In traditional Unix systems, /usr usually contains
-files from the distribution, /dev contains devices (devices), /etc contains configuation files,
+files from the distribution, /dev contains devices (devices), /etc contains configuration files,
 /lib libraries, /home for home users and /var for variable data. Note that we do not create 
 /lib, /bin or /sbin - these are created when BusyBox is installed.
 </p>
@@ -537,7 +537,7 @@ You should have a file rootfs.gz about 1 to 2MB in the working directory SliTaz.
 For a new image, when making changes in rootfs, simply copy the new rootfs.gz archive to rootcd/boot 
 and create a new image with <code>genisoimage</code> or <code>mkisofs</code>. For this you can also 
 use <strong>mktaziso</strong> within SliTaz tools. This script will check if the directories are present, 
-generate a new compressed cpio archive and create a new bootable ISO image.
+create a new compressed cpio archive and generate a new bootable ISO image.
 </p>
 <a name="rootcd"></a>
 <h3><font color="#6c0023">Make rootcd files</font></h3>
