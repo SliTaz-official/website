@@ -1,0 +1,303 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>SliTaz Scratchbook - GTK+ Applications</title>
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <meta name="description" content="" />
+    <meta name="expires" content="never" />
+    <meta name="modified" content="2008-11-22 17:00:00" />
+    <meta name="publisher" content="www.slitaz.org" />
+    <meta name="author" content="Christophe Lincoln"/>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="book.css" />
+</head>
+<body bgcolor="#ffffff">
+
+<!-- Header and quick navigation -->
+<div id="header">
+<div id="quicknav" align="right">
+    <a name="top"></a>
+    <a href="gtk-libs.html">Gtk-libs</a> |
+    <a href="index.html">Table of contents</a>
+</div>
+<h1><font color="#3e1220">SliTaz Scratchbook</font></h1>
+</div>
+
+<!-- Content. -->
+<div id="content">
+<div class="content-right"></div>
+
+
+<h2><font color="#df8f06">GTK+ Applications</font></h2>
+<p>
+Compiliation and installation of applications using GTK+.
+</p>
+<ul>
+    <li><a href="#about">About this chapter.</a> - Description and environmental variable ($fs)</li>
+    <li><a href="#leafpad">leafpad-0.8.10</a> - Simple text editor.</li>
+    <li><a href="#gitmail">gitmail-0.4</a> -  Ghost In The Mail, mail client.</li>
+    <li><a href="#gqview">gqview-2.0.4</a>  - Images Manager.</li>
+    <li><a href="#mtpaint">mtpaint-3.11</a>  - Image creation and processing.</li>
+    <li><a href="#transmission">Transmission-0.72</a> - Lightweight BitTorrent client.</li>
+    <li><a href="#emelfm2">emelfm2-0.3.5</a> - File Manager.</li>
+    <li><a href="#geany">geany-0.11</a> - Integrated Development Environment.</li>
+    <li><a href="#gftp">gftp-2.0.18</a> - Fast and simple FTP client.</li>
+    <li><a href="#xpad">xpad-2.12</a> - Mini note taking application.</li>
+</ul>
+<a name="about"></a>
+<h3><font color="#6c0023">About</font></h3>
+<p>
+This chapter describes the commands for the compilation and installation of
+GTK+ applications distributed by default on the SliTaz LiveCD. The installation 
+of GTK+ libraries are described in the
+<a href="http://www.slitaz.org/doc/scratchbook/gtk-libs.html">GTK+ libs</a> chapter.
+</p>
+<h4>Environmental variable ($fs)</h4>
+<p>
+If you do not specify any path to the rootfs directory, export the environmental variable:
+</p>
+<pre> # export fs=$PWD/rootfs
+</pre>
+<p>
+To check:
+</p>
+<pre> # echo $fs
+</pre>
+<a name="leafpad"></a>
+<h3><font color="#6c0023">leafpad-0.8.10 - Simple text editor</font></h3>
+<p>
+Website: <a href="http://tarot.freeshell.org/leafpad/">http://tarot.freeshell.org/leafpad/</a>
+</p>
+<pre> # wget http://savannah.nongnu.org/download/leafpad/leafpad-0.8.10.tar.gz
+ # tar xzf leafpad-0.8.10.tar.gz
+ # cd leafpad-0.8.10
+ # ./configure --prefix=/usr
+ # make
+ # make DESTDIR=$PWD/_pkg install
+ # strip _pkg/usr/bin/*
+</pre>
+<h4>Install in rootfs</h4>
+<pre> # cp _pkg/usr/bin/* $fs/usr/bin
+ # cp _pkg/usr/share/pixmaps/leafpad.png $fs/usr/share/pixmaps
+ # cp -a _pkg/usr/share/locale/fr $fs/usr/share/locale
+</pre>
+<a name="gitmail"></a>
+<h3><font color="#6c0023">gitmail-0.4 - Ghost In The Mail, mail client</font></h3>
+<p>
+Ghost in the mail allows users to quickly and easily send mail via SMTP.
+</p>
+<p>
+Website: <a href="http://gitmail.sourceforge.net/">http://gitmail.sourceforge.net/</a>
+</p>
+<pre> # wget http://switch.dl.sourceforge.net/sourceforge/gitmail/gitmail-0.4.tar.gz
+ # tar xzf gitmail-0.4.tar.gz
+ # cd GhostInTheMail-0.4
+ # ./configure --prefix=/usr
+ # make
+ # make DESTDIR=$PWD/_pkg \
+   gitmaildocdir=/usr/share/doc/GhostInTheMail \
+   install
+ # strip _pkg/usr/bin/*
+</pre>
+<h4>Install in rootfs</h4>
+<pre> # cp _pkg/usr/bin/* $fs/usr/bin
+</pre>
+<a name="gqview"></a>
+<h3><font color="#6c0023">gqview-2.0.4 - Images Manager</font></h3>
+<p>
+Website: <a href="http://gqview.sourceforge.net/">http://gqview.sourceforge.net/</a>
+</p>
+<pre> # wget http://belnet.dl.sourceforge.net/sourceforge/gqview/gqview-2.0.4.tar.gz
+ # tar xzf gqview-2.0.4.tar.gz
+ # cd gqview-2.0.4
+ # ./configure --prefix=/usr --mandir=/usr/share/man
+ # make
+ # make DESTDIR=$PWD/_pkg install
+ # strip _pkg/usr/bin/*
+</pre>
+<h4>Install in rootfs</h4>
+<pre> # cp _pkg/usr/bin/* $fs/usr/bin
+ # cp _pkg/usr/share/pixmaps/* $fs/usr/share/pixmaps
+ # cp -a _pkg/usr/share/locale/fr $fs/usr/share/locale
+</pre>
+<a name="mtpaint"></a>
+<h3><font color="#6c0023">mtpaint-3.11 - Image creation and processing</font></h3>
+<p>
+Website: <a href="http://mtpaint.sourceforge.net/">http://mtpaint.sourceforge.net/</a>
+</p>
+<pre> # wget http://switch.dl.sourceforge.net/sourceforge/mtpaint/mtpaint-3.11.tar.bz2
+ # tar xjf mtpaint-3.11.tar.bz2
+ # cd mtpaint-3.11
+ # ./configure --cpu=i486 --prefix=/usr intl
+ # make
+ # strip src/mtpaint
+</pre>
+<h4>Install in rootfs</h4>
+<pre> # cp src/mtpaint $fs/usr/bin
+ # cp po/fr.mo $fs/usr/share/locale/fr/LC_MESSAGES/mtpaint.mo
+ # cp src/icons1/icon.xpm $fs/usr/share/pixmaps/mtpaint.xpm
+</pre>
+<a name="transmission"></a>
+<h3><font color="#6c0023">Transmission-0.72 - Lightweight BitTorrent client</font></h3>
+<p>
+Tranmission BitTorrent client is fast, lightweight and easy to use. The compiled package provides 
+the command line client (transmissioncli) and a GTK+ client (transmission-gtk). We install the GTK+ client, 
+the command line client is distributed as a separate SliTaz package (*.tazpkg).
+</p>
+<p>
+Website: <a href="http://transmission.m0k.org/">http://transmission.m0k.org/</a>
+</p>
+<pre> # wget http://download.m0k.org/transmission/files/Transmission-0.72.tar.gz
+ # tar xzf Transmission-0.72.tar.gz
+
+ La version 0.72 est mal archivée:
+ # mv "Transmission .72" Transmission-0.72
+
+ # cd Transmission-0.72
+ # ./configure --prefix=/usr  --disable-openssl
+ # make
+ # strip gtk/transmission-gtk
+ # strip cli/transmissioncli
+</pre>
+<h4>Install in rootfs</h4>
+<pre> # cp gtk/transmission-gtk $fs/usr/bin
+ # cp gtk/transmission.png $fs/usr/share/pixmaps
+ # cp gtk/po/fr.mo $fs/usr/share/locale/fr/LC_MESSAGES/transmission-gtk.mo
+</pre>
+<a name="emelfm2"></a>
+<h3><font color="#6c0023">emelfm2-0.3.5 - File Manager</font></h3>
+<p>
+The emelFM2 application is a file manager providing lots of useful functions, such as mounting 
+devices, a text viewer, opening a terminal in the current directory and so on.
+</p>
+<p>
+Website: <a href="http://emelfm2.net/">http://emelfm2.net/</a>
+</p>
+<pre> # cd ..
+ # wget http://emelfm2.net/rel/emelfm2-0.3.5.tar.gz
+ # tar xzf emelfm2-0.3.5.tar.gz
+ # cd emelfm2-0.3.5
+ # make PREFIX=/usr
+ # make i18n PREFIX=/usr
+ # make install PREFIX=$PWD/_pkg/usr
+ # make install_i18n PREFIX=$PWD/_pkg/usr
+ # strip -v _pkg/usr/bin/*
+ # strip -v _pkg/usr/lib/emelfm2/plugins/*
+</pre>
+<h4>Install in rootfs</h4>
+<pre> # cp _pkg/usr/bin/* $fs/usr/bin
+ # cp -a _pkg/usr/lib/* $fs/usr/lib
+ # cp -a _pkg/usr/share/pixmaps $fs/usr/share
+ # cp -a _pkg/usr/share/locale/fr $fs/usr/share/locale
+</pre>
+<a name="geany"></a>
+<h3><font color="#6c0023">geany-0.11 - Integrated Development Environment</font></h3>
+<p>
+Geany is a simple, fast and light IDE offering colored syntax, tabs, autocompletion, aids to scripts and much more.
+</p>
+<p>
+Website: <a href="http://geany.uvena.de/">http://geany.uvena.de/</a>
+</p>
+<p>
+To compile and run geany on SliTaz, you must have the libstdc++ and libgcc1 libraries, 
+both provided by gcc (we recompiled with gcc-4.1.1), but you can copy the libraries from the host system.
+</p>
+<p>
+Note: The force is with you, if you activate it via the option --enable-the-force.
+</p>
+<pre> # wget http://mesh.dl.sourceforge.net/sourceforge/geany/geany-0.11.tar.gz
+ # tar xzf geany-0.11.tar.gz
+ # cd geany-0.11
+ # ./configure --prefix=/usr --mandir=/usr/share/man \
+   --disable-vte --enable-the-force
+ # make
+ # make DESTDIR=$PWD/_pkg install
+ # strip -v _pkg/usr/bin/*
+</pre>
+<h4>Install in rootfs</h4>
+<pre> # cp _pkg/usr/bin/* $fs/usr/bin
+ # cp -a _pkg/usr/share/geany $fs/usr/share
+ # cp _pkg/usr/share/pixmaps/geany.png $fs/usr/share/pixmaps
+ # cp -a _pkg/usr/share/locale/fr $fs/usr/share/locale
+</pre>
+<a name="gftp"></a>
+<h3><font color="#6c0023">gftp-2.0.18 - Fast and simple FTP client</font></h3>
+<p>
+The gFTP application is a fast and efficient FTP client with a GTK+ graphical interface. 
+Note that we compile without support for a text interface and ssl support. Get, untar, 
+configure, compile and install.
+</p>
+<p>
+Website: <a href="http://www.gftp.org/">http://www.gftp.org/</a>
+</p>
+<pre> # wget http://www.gftp.org/gftp-2.0.18.tar.gz
+ # tar xzf gftp-2.0.18.tar.gz
+ # cd gftp-2.0.18
+ # ./configure --prefix=/usr --mandir=/usr/share/man \
+   --disable-ssl --disable-textport \
+   --build=i486-pc-linux-gnu --host=i486-pc-linux-gnu
+ # make
+ # make DESTDIR=$PWD/_pkg install
+ # strip _pkg/usr/bin/*
+</pre>
+<h4>Install in rootfs</h4>
+<p>
+SliTaz provides only the GTK+ client on the CD. Note that <code>gftp</code> is just a small 
+script that detects the environment (console or X) and launches the right interface:
+</p>
+<pre> # cp _pkg/usr/bin/gftp $fs/usr/bin
+ # cp _pkg/usr/bin/gftp-gtk $fs/usr/bin
+ # cp -a _pkg/usr/share/gftp $fs/usr/share
+ # cp -a _pkg/usr/share/pixmaps $fs/usr/share
+ # cp -a _pkg/usr/share/locale/fr $fs/usr/share/locale
+</pre>
+<p>
+To save a little space and avoid duplication, you can delete 'COPYING' (17 KB) 
+included in /usr/share/gftp. The GNU licence is already present in /usr/share/licence, 
+if you want to create a symbolic link.
+</p>
+<a name="xpad"></a>
+<h3><font color="#6c0023">xpad-2.12 - Mini note taking application</font></h3>
+<p>
+The Xpad application can quickly take notes via various customizable (GTK+) windows.
+</p>
+<p>
+Website: <a href="http://xpad.sourceforge.net/">http://xpad.sourceforge.net/</a>
+</p>
+<pre> # wget http://surfnet.dl.sourceforge.net/sourceforge/xpad/xpad-2.12.tar.bz2
+ # tar xjf xpad-2.12.tar.bz2
+ # cd xpad-2.12
+ # ./configure --prefix=/usr --mandir=/usr/share/man \
+   --build=i486-pc-linux-gnu --host=i486-pc-linux-gnu
+ # make
+ # make DESTDIR=$PWD/_pkg install
+ # strip _pkg/usr/bin/*
+</pre>
+<h4>Install in rootfs</h4>
+<pre> # cp _pkg/usr/bin/xpad $fs/usr/bin
+ # cp -a _pkg/usr/share/pixmaps $fs/usr/share
+ # cp -a _pkg/usr/share/locale/fr $fs/usr/share/locale
+</pre>
+
+
+<!-- End of content -->
+</div>
+
+<!-- Footer. -->
+<div id="footer">
+	<div class="footer-right"></div>
+	<a href="#top">Top of the page</a> | 
+	<a href="index.html">Table of contents</a>
+</div>
+
+<div id="copy">
+    Copyright &copy; 2008 <a href="http://www.slitaz.org/en/">SliTaz</a> -
+    <a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>;<br />
+    Documentation is under
+    <a href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License</a>
+    and code is <a href="http://validator.w3.org/">valid xHTML 1.0</a>.
+</div>
+
+</body>
+</html>

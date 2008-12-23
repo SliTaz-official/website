@@ -1,0 +1,553 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>SliTaz Scratchbook - Base Applications</title>
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <meta name="description" content="" />
+    <meta name="expires" content="never" />
+    <meta name="modified" content="2008-11-22 17:00:00" />
+    <meta name="publisher" content="www.slitaz.org" />
+    <meta name="author" content="Christophe Lincoln"/>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="book.css" />
+</head>
+<body bgcolor="#ffffff">
+
+<!-- Header and quick navigation -->
+<div id="header">
+<div align="right" id="quicknav">
+    <a name="top"></a>
+    <a href="base-system.html">Base system</a> |
+    <a href="index.html">Table of contents</a> |
+    <a href="base-ncurses.html">Base ncurses</a>
+</div>
+<h1><font color="#3E1220">SliTaz Scratchbook</font></h1>
+</div>
+
+<!-- Content. -->
+<div id="content">
+<div class="content-right"></div>
+
+
+<h2><font color="#df8f06">Base Applications</font></h2>
+<p>
+Install and configure libraries and basic applications.
+</p>
+<ul>
+    <li><a href="#about">About the chapter</a> - Description and environmental variable ($fs)</li>
+    <li><a href="#bc">bc-1.06</a> - Text mode calculator.</li>
+    <li><a href="#zlib">zlib-1.2.3</a> - Compression libraries.</li>
+    <li><a href="#pcre">pcre-7.4</a> - Perl-compatible regular expressions.</li>
+    <li><a href="#e2fsprogs">e2fsprogs-1.39</a> - Filesystem management utilities.</li>
+    <li><a href="#dropbear">dropbear-0.50</a> - Lightweight SSH server and client.</li>
+    <li><a href="#lighttpd">lighttpd-1.4.18</a> - HTTP web server.</li>
+    <li><a href="#iptables">iptables-1.3.7</a> - Netfilter, Linux firewall.</li>
+    <li><a href="#sqlite">sqlite-3.5.1</a> - Small SQL database engine.</li>
+    <li><a href="#cdrkit">cdrkit-1.1.5</a> - Tools for manipulating cdrom
+    and ISO images.</li>
+    <li><a href="#cpio">cpio-2.8</a> - Archiver used for SliTaz packages and
+    initramfs.</li>
+    <li><a href="#microperl">microperl-5.8.8</a> - A tiny Perl.</li>
+    <li><a href="#module-init-tools">module-init-tools-3.2</a> - Tools for
+    manipulating the kernel modules.</li>
+    <li><a href="#kernel-modules">Copy and compress the Kernel modules.</a></li>
+    <li><a href="#initramfs-iso">Generate the initramfs and an ISO image.</a></li>
+</ul>
+<a name="about"></a>
+<h3><font color="#6c0023">About</font></h3>
+<p>
+This chaper describes the facilities libraries and basic text applications supplied with
+SliTaz.
+</p>
+<h4>Assign an environment variable ($fs)</h4>
+<p>
+An environmental variable can't specify the path to the directory, just the name of the directory. 
+We will affect a variable '$fs' to indicate the path to the root filesystem
+(rootfs). To do this, we venture into the working directory SliTaz/, and type:
+</p>
+<pre> # export fs=$PWD/rootfs
+</pre>
+<p>
+To check:
+</p>
+<pre> # echo $fs
+</pre>
+<a name="bc"></a>
+<h3><font color="#6c0023">bc-1.06 - Text mode calculator</font></h3>
+<p>
+The application bc (<a href="http://www.gnu.org/software/bc/">www.gnu.org/software/bc/</a>) provides 
+a small calculator. When compiling the utility, dc is also built, 
+but not installed by SliTaz. Note that dc is also available with BusyBox. If you decide to copy dc, you 
+need to delete the link to BusyBox (if it exists). We use a directory _pkg (package) for installation, 
+use strip to clean the executables and copy the utilities:
+</p>
+<pre> # cd src
+ # wget http://ftp.gnu.org/pub/gnu/bc/bc-1.06.tar.gz
+ # tar xzfv bc-1.06.tar.gz
+ # cd bc-1.06
+ # ./configure --prefix=/usr --infodir=/usr/share/info \
+   --mandir=/usr/share/man
+ # make
+ # make DESTDIR=$PWD/_pkg install
+ # strip -vs _pkg/usr/bin/*
+ # cp -avi _pkg/usr/bin/bc $fs/usr/bin
+</pre>
+<h4>libs</h4>
+<p>
+A small <code>ldd</code> on bc should produce:
+</p>
+<pre class="script">        libc.so.6 =&gt; /lib/libc.so.6 (0x40029000)
+        /lib/ld-linux.so.2 =&gt; /lib/ld-linux.so.2 (0x40000000)
+</pre>
+<a name="zlib"></a>
+<h3><font color="#6c0023">zlib-1.2.3 - Compression libraries</font></h3>
+<p>
+The zlib (<a href="http://www.zlib.net/">http://www.zlib.net/</a>) package provides compression 
+and decompression functions used by among others, the SSH server Dropbear and the X server:
+</p>
+<pre> # cd ..
+ # wget http://www.gzip.org/zlib/zlib-1.2.3.tar.bz2
+ # tar xjfv zlib-1.2.3.tar.bz2
+ # cd zlib-1.2.3
+ # ./configure --shared --prefix=/usr
+ # make
+ # strip -vs libz.so*
+ # cp -av libz.so* $fs/usr/lib
+</pre>
+<a name="pcre"></a>
+<h3><font color="#6c0023">pcre-7.4 - Perl-compatible regular expressions</font></h3>
+<p>
+The package pcre (<a href="http://www.pcre.org/">http://www.pcre.org/</a>) provides libraries of 
+functions for Perl compatible regular expressions used by among others, the web server Lighttpd:
+</p>
+<pre> # cd ..
+ # wget ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-7.4.tar.gz
+ # tar xzfv pcre-7.4.tar.gz
+ # cd pcre-7.4
+ # ./configure --prefix=/usr
+ # make
+ # make DESTDIR=$PWD/_pkg install
+ # strip -vs _pkg/usr/bin/*
+ # strip -vs _pkg/usr/lib/*
+ # cp -av _pkg/usr/bin/* $fs/usr/bin
+ # cp -av _pkg/usr/lib/*.so* $fs/usr/lib
+</pre>
+<a name="e2fsprogs"></a>
+<h3><font color="#6c0023">e2fsprogs-1.39 - Filesystem management utilities</font></h3>
+<p>
+The e3fsprogs (<a href="http://e2fsprogs.sourceforge.net/">http://e2fsprogs.sourceforge.net/</a>) provides 
+utilities for handling ext2 and ext3 filesystems. We will not take all of them because we need the space. 
+It should be noted that we use fsck of BusyBox:
+</p>
+<pre> # cd ..
+ # wget http://puzzle.dl.sourceforge.net/sourceforge/e2fsprogs/e2fsprogs-1.39.tar.gz
+ # tar xzf e2fsprogs-1.39.tar.gz
+ # cd e2fsprogs-1.39
+ # ./configure --prefix=/usr --with-root-prefix="" \
+   --enable-elf-shlibs --disable-evms --sysconfdir=/etc \
+   --infodir=/usr/share/info --mandir=/usr/share/man
+ # make
+ # make DESTDIR=$PWD/_pkg install
+ # strip -vs _pkg/sbin/*
+ # strip -vs _pkg/lib/*
+ # strip -vs _pkg/usr/bin/*
+ # strip -vs _pkg/usr/sbin/*
+ # strip -vs _pkg/usr/lib/*
+</pre>
+<p>
+Install the utilities, configuration files and libraries in the rootfs of SliTaz. Be careful if you  
+used fsck, that you didn't destroy the link to BusyBox:
+</p>
+<pre> # cp -i _pkg/sbin/{badblocks,blkid,dumpe2fs,e2fsck,e2image} $fs/sbin
+ # cp -i _pkg/sbin/{e2label,findfs,logsave,mke2fs,mkfs.*} $fs/sbin
+ # cp -i _pkg/sbin/{resize2fs,tune2fs} $fs/sbin
+ # cp -a _pkg/lib/* $fs/lib
+ # rm -rf $fs/lib/libss*
+ # cp -a _pkg/etc/* $fs/etc
+ # cp -a _pkg/usr/bin/* $fs/usr/bin
+ # cp -a _pkg/usr/sbin/* $fs/usr/sbin
+ # cp -ad _pkg/usr/lib/*.so $fs/usr/lib
+ # rm -rf $fs/usr/lib/libss*
+</pre>
+<p>
+You can also copy files from the French locale:
+</p>
+<pre> # mkdir $fs/usr/share/locale
+ # cp -a _pkg/usr/share/locale/fr $fs/usr/share/locale
+</pre>
+<a name="dropbear"></a>
+<h3><font color="#6c0023">Dropbear-0.50 - Lightweight SSH client and server</font></h3>
+<p>
+Dropbear (<a href="http://matt.ucc.asn.au/dropbear/dropbear.html">http://matt.ucc.asn.au/dropbear/dropbear.html</a>) 
+is a small secure client/server supporting SSH 2. Dropbear is compatible with
+OpenSSH and uses ~/.ssh/authorized_keys for the management of public keys. Dropbear also
+provides a version of scp, which must be compiled with 'make scp':
+</p>
+<pre> # cd ..
+ # wget http://matt.ucc.asn.au/dropbear/releases/dropbear-0.50.tar.gz
+ # tar xzf dropbear-0.50.tar.gz
+ # cd dropbear-0.50
+ # ./configure --prefix=/usr
+ # make
+ # make scp
+ # make DESTDIR=$PWD/_pkg install
+ # strip -v scp
+ # strip -v _pkg/usr/bin/*
+ # strip -v _pkg/usr/sbin/*
+</pre>
+<p>
+Install the client and tools in /usr/bin, and the server in /usr/sbin:
+</p>
+<pre> # cp scp $fs/usr/bin
+ # cp -a _pkg/usr/bin/* $fs/usr/bin
+ # cp -a _pkg/usr/sbin/* $fs/usr/sbin
+</pre>
+<h4>libs</h4>
+<pre class="script">        libutil.so.1 =&gt; /lib/libutil.so.1 (0x40025000)
+        libz.so.1 =&gt; /usr/lib/libz.so.1 (0x40028000)
+        libcrypt.so.1 =&gt; /lib/libcrypt.so.1 (0x4003b000)
+        libc.so.6 =&gt; /lib/libc.so.6 (0x40068000)
+        /lib/ld-linux.so.2 =&gt; /lib/ld-linux.so.2 (0x40000000)
+</pre>
+<p>
+Copy the library libutil.so.1 to $fs/lib, is this is not already the case. Other libraries 
+should be present following the construction of the base system:
+</p>
+<pre> # cp -a /lib/libutil* $fs/lib
+</pre>
+<h4>Configure Dropbear</h4>
+<p>
+The user configuration files authorized_keys and known_hosts are in ~/.ssh. This directory and the 
+file known_hosts are created automatically the first time the user launches dbclient. The system 
+configuration files for the Dropbear server are in /etc/Dropbear:
+ </p>
+<pre> # mkdir $fs/etc/dropbear
+</pre>
+<p>
+You must generate the secure keys before starting the Dropbear server on SliTaz. 
+You can use dropbearkey with the following commands:
+</p>
+<pre> # dropbearkey -t rsa -f /etc/dropbear/dropbear_rsa_host_key
+ # dropbearkey -t dss -f /etc/dropbear/dropbear_dss_host_key
+</pre>
+<p>
+On SliTaz, you can start the SSH server with the command:
+</p>
+<pre> # /etc/init.d/dropbear start
+</pre>
+<a name="lighttpd"></a>
+<h3><font color="#6c0023">lighttpd-1.4.18 - HTTP Web server</font></h3>
+<p>
+Lighttpd (<a href="http://www.lighttpd.net/">www.lighttpd.net</a>) is a light, secure and powerful web server. 
+The project is very active and the server's configuration simple. It supports virtual hosts, CGI scripts, 
+and allows intelligent management of the CPU:
+</p>
+<pre> # cd ..
+ # wget http://www.lighttpd.net/download/lighttpd-1.4.18.tar.gz
+ # tar xzf lighttpd-1.4.18.tar.gz
+ # cd lighttpd-1.4.18
+ # ./configure -enable-shared --disable-ipv6 --prefix=/usr \
+   --libdir=/usr/lib/lighttpd --mandir=/usr/share/man
+ # make
+ # make DESTDIR=$PWD/_pkg install
+ # strip -vs _pkg/usr/bin/*
+ # strip -vs _pkg/usr/sbin/*
+ # strip -vs _pkg/usr/lib/lighttpd/*
+</pre>
+<p>
+Install the server and generated libraries. We will then copy some of the modules (9):
+</p>
+<pre> # cp _pkg/usr/bin/* $fs/usr/bin
+ # cp _pkg/usr/sbin/* $fs/usr/sbin
+ # mkdir $fs/usr/lib/lighttpd
+ Modules :
+ # cp _pkg/usr/lib/lighttpd/mod_access.so $fs/usr/lib/lighttpd
+ # cp _pkg/usr/lib/lighttpd/mod_accesslog.so $fs/usr/lib/lighttpd
+ # cp _pkg/usr/lib/lighttpd/mod_alias.so $fs/usr/lib/lighttpd
+ # cp _pkg/usr/lib/lighttpd/mod_auth.so $fs/usr/lib/lighttpd
+ # cp _pkg/usr/lib/lighttpd/mod_cgi.so $fs/usr/lib/lighttpd
+ # cp _pkg/usr/lib/lighttpd/mod_compress.so $fs/usr/lib/lighttpd
+ # cp _pkg/usr/lib/lighttpd/mod_rewrite.so $fs/usr/lib/lighttpd
+ # cp _pkg/usr/lib/lighttpd/mod_status.so $fs/usr/lib/lighttpd
+ # cp _pkg/usr/lib/lighttpd/mod_userdir.so $fs/usr/lib/lighttpd
+</pre>
+<h4>libs</h4>
+<p>
+There should be a libdl.so.2 library; if missing, we can copy:
+</p>
+<pre> # cp -a /lib/libdl* $fs/lib
+</pre>
+<h4>/var/www - root of documents served</h4>
+<p>
+/var/www is the root directory of documents served by default. You can access this via the url http://localhost/. 
+This directory contains an <code>index.html</code> automatically displayed by a query. 
+We will create the directory /var/www, to see what's placed inside:
+</p>
+<pre> # mkdir -p $fs/var/www
+</pre>
+<h4>lighttpd.conf - Lighttpd configuration file</h4>
+<p>
+The Lighttpd main configuration file is located at /etc/lighttpd and is called lighttpd.conf. 
+The configuration file SliTaz provides is self-explanatary, just browse. You can find other examples on the 
+Lighttpd website and as well as a example configuration in /doc in the Lighttpd archive:
+</p>
+<pre> # cp -a ../slitaz-tools-1.1/etc/lighttpd $fs/etc
+</pre>
+<p>
+Creating the directory containing the log files:
+</p>
+<pre> # mkdir $fs/var/log/lighttpd
+</pre>
+<h4>User and group www</h4>
+<p>
+We will add a user and a group for the web server, it adds security and there is no reason for it to be run a root. 
+The default user on SliTaz is 'www', but you can change this in the configuration file lighttpd.conf. 
+The BusyBox application adduser has some limitations, so we add user 'www' manually. We also change permissions on 
+the directory of web server logs:
+</p>
+<pre> # echo "www:x:80:80:www:/var/www:/bin/sh" &gt;&gt; $fs/etc/passwd
+ # echo "www:*:13509:0:99999:7:::" &gt;&gt; $fs/etc/shadow
+ # echo "www:*:13509:0:99999:7:::" &gt;&gt; $fs/etc/shadow-
+ # chroot $fs /bin/ash
+ /# addgroup -g 80 www
+ /# chown www.www /var/log/lighttpd
+ # exit
+</pre>
+<p>
+To start the web server, you can use script /etc/init.d/lighttpd provided by SliTaz tools, by typing: 
+<code>/etc/init.d/lighttpd start</code>. You can also automate its 
+launch at boot with a link /etc/init.d/lighttpd pointing to /etc/rc.d/60lighttpd.
+</p>
+<a name="iptables"></a>
+<h3><font color="#6c0023">iptables-1.3.7 - Netfilter, Linux firewall</font></h3>
+<p>
+Netfilter (<a href="http://www.netfilter.org/">www.netfilter.org</a>) is the module which provides the Linux 
+kernel firewall functions, shared internet connections (NAT) and the archiving of network traffic. 
+The iptables command allows you to configure Netfilter using iptables-restore 
+and iptable-save, to save and restore the Netfilter configuration:
+</p>
+<pre> # cd ..
+ # wget http://www.netfilter.org/projects/iptables/files/iptables-1.3.7.tar.bz2
+ # tar xjf iptables-1.3.7.tar.bz2
+ # cd iptables-1.3.7
+ # make KERNEL_DIR=../linux-2.6.20 BINDIR=/sbin \
+   LIBDIR=/lib MANDIR=/usr/share/man
+ # make KERNEL_DIR=../linux-2.6.20 BINDIR=/sbin \
+   LIBDIR=/lib MANDIR=/usr/share/man \
+   DESTDIR=$PWD/_pkg install
+ # strip  _pkg/sbin/*
+ # strip  _pkg/lib/iptables/*
+</pre>
+<p>
+Installing the iptables* applications and libraries sufficient for a basic firewall:
+</p>
+<pre> # cp -a _pkg/sbin/iptables* $fs/sbin
+ # mkdir $fs/lib/iptables
+ # cp -a _pkg/lib/iptables/{libipt_standard.so,libipt_conntrack.so} \
+   $fs/lib/iptables
+ # cp -a _pkg/lib/iptables/{libipt_tcp.so,libipt_udp.so} $fs/lib/iptables
+</pre>
+<p>
+To satisfy the iptables dependencies, you must copy the libnsl* library:
+</p>
+<pre> # cp -va /lib/libnsl* $fs/lib/tls
+ # strip $fs/lib/libnsl*
+</pre>
+<a name="sqlite"></a>
+<h3><font color="#6c0023">sqlite-3.5.1 - Small SQL database engine</font></h3>
+<p>
+This package provides sqlite3 (<a href="http://www.sqlite.org/">www.sqlite.org</a>) and sqlite3.so* 
+libraries. SQLite is fast and efficient and integrates directly to programs using database files: 
+</p>
+<pre> # cd ..
+ # wget http://www.sqlite.org/sqlite-3.5.1.tar.gz
+ # tar xzf sqlite-3.5.1.tar.gz
+ # cd sqlite-3.5.1
+ # ./configure --prefix=/usr --disable-tcl
+ # make
+ # make DESTDIR=$PWD/_pkg install
+ # strip _pkg/usr/lib/*.so*
+ # strip _pkg/usr/bin/*
+</pre>
+<p>
+Installing the sqlite3 utility and libraries in the rootfs of SliTaz:
+</p>
+<pre> # cp -a _pkg/usr/lib/*.so* $fs/usr/lib
+ # cp -a _pkg/usr/bin/* $fs/usr/bin
+</pre>
+<a name="cdrkit"></a>
+<h3><font color="#6c0023">cdrkit-1.1.5 - Tools for manipulating cdrom and ISO images</font></h3>
+<p>
+cdrkit (<a href="http://www.cdrkit.org/">www.cdrkit.org</a>) provides tools for manipulating cdroms. 
+SliTaz installs by default wodim for burning and genisoimage to create an ISO image. 
+The compilation is a bit different (cmake), but shouldn't pose any problems:
+</p>
+<pre> # cd ..
+ # wget http://cdrkit.org/releases/cdrkit-1.1.5.tar.gz
+ # tar xzf cdrkit-1.1.5.tar.gz
+ # cd cdrkit-1.1.5
+ # make
+ # make install PREFIX=$PWD/_pkg/usr
+ # strip -v _pkg/usr/bin/*
+ # strip -v _pkg/usr/sbin/*
+ # cp _pkg/usr/bin/genisoimage $fs/usr/bin
+ # cp _pkg/usr/bin/wodim $fs/usr/bin
+</pre>
+<p>
+Copy the library libcap.so.1 required by wodim:
+</p>
+<pre> # cp -a /lib/libcap.so* $fs/lib
+</pre>
+<a name="cpio"></a>
+<h3><font color="#6c0023">cpio-2.8 - Archiver</font></h3>
+<p>
+<code>cpio</code> (<a href="http://www.gnu.org/software/cpio/">http://www.gnu.org/software/cpio/</a>) provides tools for 
+manipulating cpio archives. The archive format is used for packages and the SliTaz initramfs image of the cdrom. 
+Note that BusyBox provides a version of cpio that only unpacks archives:
+</p>
+<pre> # cd ..
+ # wget ftp://sunsite.cnlab-switch.ch/mirror/gnu/cpio/cpio-2.8.tar.gz
+ # tar xzf cpio-2.8.tar.gz
+ # cd cpio-2.8
+ # ./configure --prefix=/usr --bindir=/bin \
+   --libexecdir=/usr/bin --mandir=/usr/share/man \
+   --infodir=/usr/share/info
+ # make
+ # make DESTDIR=$PWD/_pkg install
+ # strip -v _pkg/bin/*
+ # strip -v _pkg/usr/bin/*
+</pre>
+<p>
+Installing <code>cpio</code> in /bin and <code>rmt</code> in /usr/bin. You can also install the French locale files:
+</p>
+<pre> # cp -a _pkg/bin/* $fs/bin
+ # cp -a _pkg/usr/bin/* $fs/usr/bin
+ # cp -a _pkg/usr/share/locale/fr $fs/usr/share/locale
+</pre>
+<a name="microperl"></a>
+<h3><font color="#6c0023">microperl-5.8.8 - A tiny Perl</font></h3>
+<p>
+Microperl is a tiny implementation of Perl using the most basic functions of the language. 
+You can find more info in the source archive and the file <code>README.micro</code>. 
+We use a small <code>sed</code> on the configuration file that searches for microperl modules 
+in /usr/lib/perl5. We also create a link to the #! /usr/bin/perl script:
+</p>
+<pre> # wget http://ftp.funet.fi/pub/CPAN/src/perl-5.8.8.tar.gz
+ # tar xzf perl-5.8.8.tar.gz
+ # cd perl-5.8.8
+ # sed -i s/'usr\/local'/'usr'/ uconfig.sh
+ # sed -i s/'perl5\/5.9'/'perl5'/ uconfig.sh
+ # sed -i s/'unknown'/'i486-pc-linux-gnu'/ uconfig.sh
+ # make -f Makefile.micro regen_uconfig
+ # make -f Makefile.micro
+ # strip microperl
+ # cp microperl $fs/usr/bin
+ # chroot $fs /bin/ash
+ /# cd /usr/bin
+ /# ln -s microperl perl
+ /# exit
+</pre>
+<a name="module-init-tools"></a>
+<h3><font color="#6c0023">module-init-tools-3.2 - Utilities for manipulating kernel modules</font></h3>
+<p>
+The <a href="http://ftp.kernel.org/pub/linux/utils/kernel/module-init-tools/">module-init-tools</a> 
+from kernel.org: modprobe, insmod, rmmod and lsmod. We have chosen to use these because we can compile 
+modutils/modprobe to support compressed (.gz) modules to save space. To do this we use the option 
+--enable-zlib, we then clean and copy the binaries. We do not take everything that has been created, 
+only what we need: depmod, insmod, modinfo, modprobe and rmmod in /sbin and lsmod in /bin:
+</p>
+<pre> # cd ..
+ # wget http://ftp.kernel.org/pub/linux/utils/kernel/module-init-tools/module-init-tools-3.2.tar.bz2
+ # tar xjf module-init-tools-3.2.tar.bz2
+ # cd module-init-tools-3.2
+ # ./configure --enable-zlib --prefix=/usr --sbindir=/sbin --bindir=/bin \
+   --sysconfdir=/etc --infodir=/usr/share/info --mandir=/usr/share/man
+ # make
+ # make DESTDIR=$PWD/_pkg install
+ # strip -v _pkg/sbin/{depmod,insmod,modinfo,modprobe,rmmod}
+ # strip -v _pkg/bin/lsmod
+ # cp -i _pkg/sbin/{depmod,insmod,modinfo,modprobe,rmmod} $fs/sbin
+ # cp -i _pkg/bin/lsmod $fs/bin
+ # cd ..
+</pre>
+<a name="kernel-modules"></a>
+<h3><font color="#6c0023">Copy kernel modules</font></h3>
+<p>
+Copy files from linux-2.6.20/_pkg:
+</p>
+<pre> # cp -a linux-2.6.20/_pkg/lib/* $fs/lib
+</pre>
+<h4>Compress kernel modules</h4>
+<p>
+Compress modules, this step will us gain back around 50% of available space.
+We begin by moving into the rootfs, then we search for all files with the 
+<code>.ko</code> extension, and compress them. You
+can also do this with the 'gzmodtaz.sh' script found in SliTaz tools:
+</p>
+<pre> # cd $fs
+</pre>
+<p>
+With 'gztazmod.sh':
+</p>
+<pre> # cp -v ../src/slitaz-tools-1.1/utils/gztazmod.sh sbin
+ # ./sbin/gztazmod.sh lib/modules/2.6.20-slitaz
+</pre>
+<p>
+Or by hand:
+</p>
+<pre> # cd lib/modules/2.6.20-slitaz
+ # find . -name "*.ko" -exec gzip '{}' \;
+ # sed 's/\.ko/.ko.gz/g' modules.dep &gt; tmp.dep
+ # rm modules.dep
+ # mv tmp.dep modules.dep
+</pre>
+<a name="initramfs-iso"></a>
+<h3><font color="#6c0023">Generate the initramfs and an ISO image</font></h3>
+<p>
+To create a new ISO image, you can use 'mktaziso' in 
+<a href="http://www.slitaz.org/en/doc/cookbook/slitaz-tools.html">SliTaz tools</a>.  
+Or you can create a new initramfs image, copy it to /boot in the root of the cdrom
+(rootcd) and finally generate an ISO image with genisoimage:
+</p>
+<pre> # cd $fs
+ # find . -print | cpio -o -H newc | gzip -9 &gt; ../rootfs.gz
+ # cd ..
+ # cp rootfs.gz rootcd/boot
+ # genisoimage -R -o slitaz-test.iso -b boot/isolinux/isolinux.bin \
+   -c boot/isolinux/boot.cat -no-emul-boot -boot-load-size 4 \
+   -V "SliTaz" -input-charset iso8859-1 -boot-info-table rootcd
+</pre>
+<p>
+Test iso image:
+</p>
+<pre> # qemu -cdrom slitaz-test.iso
+</pre>
+
+<h4>Following chapter</h4>
+<p>
+The next chapter is called <a href="base-ncurses.html">Base Ncurses</a>. It
+covers the installation and configuration of the ncurses libraries and
+applications.
+</p> 
+
+<!-- End of content -->
+</div>
+
+<!-- Footer. -->
+<div id="footer">
+	<div class="footer-right"></div>
+	<a href="#top">Top of the page</a> | 
+	<a href="index.html">Table of contents</a>
+</div>
+
+<div id="copy">
+    Copyright &copy; 2008 <a href="http://www.slitaz.org/en/">SliTaz</a> -
+    <a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>;<br />
+    Documentation is under
+    <a href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License</a>
+    and code is <a href="http://validator.w3.org/">valid xHTML 1.0</a>.
+</div>
+
+</body>
+</html>

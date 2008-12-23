@@ -1,0 +1,470 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>SliTaz Scratchbook - X Window System</title>
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <meta name="description" content="" />
+    <meta name="expires" content="never" />
+    <meta name="modified" content="2008-11-22 17:00:00" />
+    <meta name="publisher" content="www.slitaz.org" />
+    <meta name="author" content="Christophe Lincoln"/>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="book.css" />
+</head>
+<body bgcolor="#ffffff">
+
+<!-- Header and quick navigation -->
+<div id="header">
+<div id="quicknav" align="right">
+	<a name="top"></a>
+	<a href="boot-scripts.html">Boot scripts</a> |
+	<a href="index.html">Table of contents</a> |
+	<a href="gtk-libs.html">GTK+ libs</a>
+</div>
+<h1><font color="#3e1220">SliTaz Scratchbook</font></h1>
+</div>
+
+<!-- Content. -->
+<div id="content">
+<div class="content-right"></div>
+
+
+<h2><font color="#df8f06">X window system</font></h2>
+<p>
+Installation and basic configuration of the X window system.
+</p>
+<ul>
+    <li><a href="#about">About this chapter</a> - Description and environmental
+    variable ($fs)</li>
+    <li><a href="#expat">expat-2.0.0</a> - XML parser library.</li>
+    <li><a href="#freetype">freetype-2.3.1</a> - System font libraries.</li>
+    <li><a href="#fontconfig">fontconfig 2.4.2</a> - Font management tools.</li>
+    <li><a href="#xserver">Xserver</a> - Graphical server Xvesa of Xfree86
+    4.6.0 and Xorg libraries.</li>
+    <li><a href="#xterm">xterm-223</a> - Terminal emulator.</li>
+    <li><a href="#libpng">libpng-1.2.18</a> - Libraries that manipulate PNG images.</li>
+    <li><a href="#jwm">jwm-2.0</a> - Window manager.</li>
+    <li><a href="#jpeg">jpeg-6b</a> - Libraries that manipulate JPEG images.</li>
+    <li><a href="#tiff">tiff-3.8.2</a> - TIFF libraries and utilities.</li>
+    <li><a href="#links">links-2.1pre29</a> - Graphical and text web browser.</li>
+    <li><a href="#initramfs-iso">Generate the initramfs and an ISO image.</a></li>
+</ul>
+<a name="about"></a>
+<h3><font color="#6c0023">About</font></h3>
+<p>
+This chapter describes the installation and configuration of the X window system on SliTaz. We will 
+install libraries for expat, XML, fonts, a graphical server (Xvesa), a terminal emulator (xterm), 
+various small tools and a window manager (JWM). We'll also install the JPEG libraries and Links web browser.
+</p>
+<h4>Environmental variable ($fs)</h4>
+<p>
+If you do not specify any path to the rootfs directory, export the environmental variable:
+</p>
+<pre> # export fs=$PWD/rootfs
+</pre>
+<p>
+To check:
+</p>
+<pre> # echo $fs
+</pre>
+<a name="expat"></a>
+<h3><font color="#6c0023">expat-2.0.0 - XML parser library</font></h3>
+<p>
+Expat (<a href="http://expat.sourceforge.net/">http://expat.sourceforge.net/</a>)
+contains the XML parsing libraries:
+</p>
+<pre> # cd ..
+ # wget http://switch.dl.sourceforge.net/sourceforge/expat/expat-2.0.0.tar.gz
+ # tar xzf expat-2.0.0.tar.gz
+ # cd expat-2.0.0
+ # ./configure --sysconfdir=/etc --prefix=/usr \
+   --mandir=/usr/share/man
+ # make
+ # make DESTDIR=$PWD/_pkg install
+ # strip -v _pkg/usr/lib/*
+ # strip -v _pkg/usr/bin/*
+</pre>
+<p>
+Thereafter, we will install 'xterm' which needs libexpat.so.0, simply create a symbolic link and voil&agrave;. 
+Then you can install the 'xmlwf' application and libraries in the rootfs:
+</p>
+<pre> # cd _pkg/usr/lib
+ # ln -s libexpat.so.1.5.0 libexpat.so.0
+ # cp -a *.so* $fs/usr/lib
+ # cd ..
+ # cp -a bin/* $fs/usr/bin
+ # cd ../..
+</pre>
+<h4>libs</h4>
+Libraries used by xmlwf:
+<pre class="script">        libexpat.so.1 =&gt; /usr/lib/libexpat.so.1 (0x40021000)
+        libc.so.6 =&gt; /lib/tls/libc.so.6 (0x40041000)
+        /lib/ld-linux.so.2 =&gt; /lib/ld-linux.so.2 (0x40000000)
+</pre>
+<a name="freetype"></a>
+<h3><font color="#6c0023">freetype-2.3.1 - System font libraries</font></h3>
+<p>
+The package freetype (<a href="http://www.freetype.org/">http://www.freetype.org/</a>) 
+contains libraries used by X for configuring the system fonts:
+</p>
+<pre> # cd ..
+ # wget http://download.savannah.gnu.org/releases/freetype/freetype-2.3.1.tar.bz2
+ # tar xjf freetype-2.3.1.tar.bz2
+ # cd freetype-2.3.1
+ # ./configure --sysconfdir=/etc --prefix=/usr \
+   --mandir=/usr/share/man
+ # make
+ # make DESTDIR=$PWD/_pkg install
+ # strip -vs _pkg/usr/lib/*
+ # cp -a _pkg/usr/bin/* $fs/usr/bin
+ # cp -a _pkg/usr/lib/*.so* $fs/usr/lib
+</pre>
+<a name="fontconfig"></a>
+<h3><font color="#6c0023">fontconfig-2.4.2 - Manage system fonts</font></h3>
+<p>
+The fontconfig package (<a href="http://www.fontconfig.org/wiki/">www.fontconfig.org/wiki/</a>) 
+provides the libfontconfig library used by many programs under X. Note XFree86 also provides these 
+utilities. We chose the original package because it works better with JWM:
+</p>
+<pre> # cd ..
+ # wget http://fontconfig.org/release/fontconfig-2.4.2.tar.gz
+ # tar xzf fontconfig-2.4.2.tar.gz
+ # cd fontconfig-2.4.2
+ # ./configure --sysconfdir=/etc --prefix=/usr \
+   --mandir=/usr/share/man --localstatedir=/var
+ # make
+ # make DESTDIR=$PWD/_pkg install
+ # strip -v _pkg/usr/bin/*
+ # strip -v _pkg/usr/lib/*
+ # cp -a _pkg/usr/bin/* $fs/usr/bin
+ # cp -a _pkg/usr/lib/*.so* $fs/usr/lib
+ # cp -a _pkg/etc $fs
+ # cp -a _pkg/var $fs
+</pre>
+<h4>libs</h4>
+<p>
+A 'ldd' on fc-cache gives the libraries below. You can also use libfreetype of XFree86:
+</p>
+<pre class="script">        libfreetype.so.6 =&gt; /usr/lib/libfreetype.so.6 (0xb7f12000)
+        libz.so.1 =&gt; /usr/lib/libz.so.1 (0xb7eff000)
+        libexpat.so.1 =&gt; /usr/lib/libexpat.so.1 (0xb7edf000)
+        libfontconfig.so.1 =&gt; /usr/lib/libfontconfig.so.1 (0xb7eb0000)
+        libc.so.6 =&gt; /lib/tls/libc.so.6 (0xb7d7b000)
+        /lib/ld-linux.so.2 =&gt; /lib/ld-linux.so.2 (0xb7f8c000)
+</pre>
+<a name="xserver"></a>
+<h3><font color="#6c0023">Xserver - Graphical Xvesa server of Xfree86</font></h3>
+<p>
+We will use the binary versions of Xvesa server (<a href="http://www.xfree86.org/">www.xfree86.org/</a>) 
+and fonts distributed by Xfree86.org. We could also copy Xorg libraries from the host system that would 
+be used for compiling X applications. Xvesa works well like this and simplifies things. You can also rebuild
+<a href="xorg.html">Xorg packages</a> on your development system.
+</p>
+<h4>Xtinyx server - Xvesa</h4>
+<p>
+The Xvesa server is very light and uses tiny libraries; it is contained in the Xtinyx.tgz archive. 
+Download and install in /usr/bin of SliTaz rootfs:
+</p>
+<pre> # cd ..
+ # mkdir -p XFree86-4.6.0 &amp;&amp; cd XFree86-4.6.0
+ # wget http://ftp.xfree86.org/pub/XFree86/4.6.0/binaries/Linux-ix86-glibc23/Xtinyx.tgz
+ # tar xzf Xtinyx.tgz
+ # cp bin/Xvesa $fs/usr/bin
+ # strip $fs/usr/bin/Xvesa
+ # chmod 4711 $fs/usr/bin/Xvesa
+</pre>
+<h4>libs for Xvesa</h4>
+<pre class="script">        libz.so.1 =&gt; /usr/lib/libz.so.1 (0xb7ed6000)
+        libm.so.6 =&gt; /lib/tls/libm.so.6 (0xb7eb1000)
+        libc.so.6 =&gt; /lib/tls/libc.so.6 (0xb7d7e000)
+        /lib/ld-linux.so.2 (0xb7ef8000)
+</pre>
+<h4>rgb.txt - RGB colors in X</h4>
+<p>
+The colors configuration file used by the X server is called: <code>rgb.txt</code>; we suggest 
+that you copy it to the host system. The library libX11.so will seek the configuration files in 
+/usr/share/X11, and the Xvesa server in /usr/X11R6/lib/X11; we create a link in /usr/share/X11 to enable this:
+</p>
+<pre> # mkdir -p $fs/usr/share/X11
+ # cp /usr/share/X11/rgb.txt $fs/usr/share/X11
+ # chroot $fs /bin/ash
+ /# mkdir -p /usr/X11R6/lib/X11/
+ /# ln -s /usr/share/X11/rgb.txt /usr/X11R6/lib/X11/rgb.txt
+ /# exit
+</pre>
+<h4>Xfnts - Fonts</h4>
+<p>
+To operate the server, we need the basic fonts; you can download them from Xfree86.org and then compile 
+packages from Xorg, or copy them from your host system. The system fonts can be put into different folders 
+and the cache updated with <code>lc-cache</code>. Attention, fonts take pride of place and you can only install 
+the minimum. /usr/share/fonts contains the TrueType fonts such as bitstream-vera:
+</p>
+<pre> # wget http://ftp.xfree86.org/pub/XFree86/4.6.0/binaries/Linux-ix86-glibc23/Xfnts.tgz
+ # tar xzf Xfnts.tgz
+ # mkdir -p $fs/usr/X11R6/lib/X11/fonts
+ # mkdir -p $fs/usr/share/fonts/truetype
+
+ Copy the fonts...
+ (# cp -a lib/X11/fonts/* $fs/usr/X11R6/lib/X11/fonts)
+ (# cp -a /usr/share/fonts/truetype/* $fs/usr/share/fonts/truetype
+</pre>
+<p>
+Then regenerate the fonts.dir file, you must run mkfontdir on the directory in question:
+</p>
+<pre> # mkfontdir $fs/usr/X11R6/lib/X11/fonts/75dpi
+</pre>
+<p>
+Fontconfig configuration files can be found in /etc/fonts provided by the fontconfig package. 
+Now you can run 'fc-cache' to update the cache, and 'fc-list' for a list of fonts. You do this 
+by chrooting into the rootfs:
+</p>
+<pre> # chroot $fs /bin/ash
+ # fc-cache -v
+ # fc-list
+ # exit
+</pre>
+<h4>Xlib locale - Localization files</h4>
+<p>
+On SliTaz, we installed 4 locales: C, iso8859-1, iso8859-15 and iso 8859-2 from the 
+<a href="xorg.html">compilation of Xorg</a>. 
+You can copy the files from the host system or use the files distributed by XFree86. 
+Sample copy of all the locales from the host system:
+</p>
+<pre> # mkdir -p $fs/usr/share/X11/locale
+ # cp -a /usr/share/X11/locale/* $fs/usr/share/X11/locale
+</pre>
+<h4>Using X</h4>
+<p>
+Note that can already use Xvesa as a X terminal if you have a machine on the network accepting XDMCP connections. 
+For this, you can start the server with <code>-query</code>, for example:
+</p>
+<pre> # Xvesa -ac -shadow -screen 1024x768x24 -query 192.168.0.2
+</pre>
+<a name="xterm"></a>
+<h3><font color="#6c0023">xterm - Terminal Emulator</font></h3>
+<p>
+The xterm package (<a href="http://invisible-island.net/xterm/">invisible-island.net/xterm/</a>) 
+provides a terminal emulator for X:
+</p>
+<pre> # wget ftp://invisible-island.net/xterm/xterm-223.tgz
+ # tar xzf xterm-223.tgz
+ # cd xterm-223
+ # ./configure --prefix=/usr --sysconfdir=/etc \
+   --mandir=/usr/share/man --localstatedir=/var \
+   --with-app-defaults=/usr/share/X11/app-defaults \
+   --build=i486-pc-linux-gnu --host=i486-pc-linux-gnu
+ # make
+ # make DESTDIR=$PWD/_pkg install
+ # strip _pkg/usr/bin/*
+ # cp _pkg/usr/bin/* $fs/usr/bin
+ # cp -a _pkg/usr/share/X11/* $fs/usr/share/X11
+</pre>
+<h4>libs</h4>
+<p>
+A ldd on XTerm, we copy (and strip) the missing libraries from the host system:
+</p>
+<pre class="script">    libXft.so.2 =&gt; /usr/lib/libXft.so.2 (0xb7f09000)
+    libXrender.so.1 =&gt; /usr/lib/libXrender.so.1 (0xb7f00000)
+    libfontconfig.so.1 =&gt; /usr/lib/libfontconfig.so.1 (0xb7ed5000)
+    libfreetype.so.6 =&gt; /usr/lib/libfreetype.so.6 (0xb7e68000)
+    libz.so.1 =&gt; /usr/lib/libz.so.1 (0xb7e54000)
+    libX11.so.6 =&gt; /usr/lib/libX11.so.6 (0xb7d68000)
+    libXaw.so.7 =&gt; /usr/lib/libXaw.so.7 (0xb7d0f000)
+    libXmu.so.6 =&gt; /usr/lib/libXmu.so.6 (0xb7cfa000)
+    libXext.so.6 =&gt; /usr/lib/libXext.so.6 (0xb7cec000)
+    libXt.so.6 =&gt; /usr/lib/libXt.so.6 (0xb7c9e000)
+    libSM.so.6 =&gt; /usr/lib/libSM.so.6 (0xb7c96000)
+    libICE.so.6 =&gt; /usr/lib/libICE.so.6 (0xb7c7f000)
+    libncurses.so.5 =&gt; /lib/libncurses.so.5 (0xb7c3c000)
+    libc.so.6 =&gt; /lib/libc.so.6 (0xb7b2c000)
+    libexpat.so.1 =&gt; /usr/lib/libexpat.so.1 (0xb7b0b000)
+    libXau.so.6 =&gt; /usr/lib/libXau.so.6 (0xb7b08000)
+    libXdmcp.so.6 =&gt; /usr/lib/libXdmcp.so.6 (0xb7b03000)
+    libdl.so.2 =&gt; /lib/libdl.so.2 (0xb7aff000)
+    libXpm.so.4 =&gt; /usr/lib/libXpm.so.4 (0xb7aee000)
+</pre>
+<a name="libpng"></a>
+<h3><font color="#6c0023">libpng-1.2.18 - PNG Libraries</font></h3>
+<p>
+PNG libraries (<a href="http://libpng.org/pub/png/libpng.html">http://libpng.org/pub/png/libpng.html</a>) 
+are used to manipulate and format PNG images:
+</p>
+<pre> # wget http://puzzle.dl.sourceforge.net/sourceforge/libpng/libpng-1.2.18.tar.bz2
+ # tar xjf libpng-1.2.18.tar.bz2
+ # cd libpng-1.2.18
+ # ./configure --enable-shared --prefix=/usr \
+   --mandir=/usr/share/man
+ # make
+ # make DESTDIR=$PWD/_pkg install
+ # strip _pkg/usr/lib/*.so*
+ # cp -a _pkg/usr/lib/libpng12.so* $fs/usr/lib
+ # cp -a _pkg/usr/bin/libpng12* $fs/usr/bin
+</pre>
+<a name="jwm"></a>
+<h3><font color="#6c0023">jwm-2.0 - Window manager</font></h3>
+<p>
+Joe's Window Manager (<a href="http://www.joewing.net/programs/jwm/">http://www.joewing.net/programs/jwm/</a>) 
+is an ultra light and friendly window manager. This is the default SliTaz window manager. The main configuration 
+file: /etc/jwm/system.jwnrc includes the style and config menu:
+</p>
+<pre> # cd ..
+ # wget http://www.joewing.net/programs/jwm/releases/jwm-2.0.tar.bz2
+ # tar xjf jwm-2.0.tar.bz2
+ # cd jwm-2.0
+ # ./configure --prefix=/usr --mandir=/usr/share/man \
+   --sysconfdir=/etc/jwm --disable-xinerama
+ # make
+ # strip src/jwm
+ # cp src/jwm $fs/usr/bin
+ # mkdir $fs/etc/jwm
+ # cp example.jwmrc $fs/etc/jwm/system.jwmrc
+</pre>
+<h4>libs</h4>
+<p>
+Ldd libraries that we have provided:
+</p>
+<pre class="script">    libX11.so.6 =&gt; /usr/lib/libX11.so.6 (0xb7e35000)
+    libpng12.so.0 =&gt; /usr/lib/libpng12.so.0 (0xb7e12000)
+    libXft.so.2 =&gt; /usr/lib/libXft.so.2 (0xb7e00000)
+    libXrender.so.1 =&gt; /usr/lib/libXrender.so.1 (0xb7df7000)
+    libfontconfig.so.1 =&gt; /usr/lib/libfontconfig.so.1 (0xb7dcc000)
+    libfreetype.so.6 =&gt; /usr/lib/libfreetype.so.6 (0xb7d5f000)
+    libz.so.1 =&gt; /usr/lib/libz.so.1 (0xb7d4a000)
+    libXpm.so.4 =&gt; /usr/lib/libXpm.so.4 (0xb7d3a000)
+    libXext.so.6 =&gt; /usr/lib/libXext.so.6 (0xb7d2c000)
+    libc.so.6 =&gt; /lib/libc.so.6 (0xb7c1c000)
+    libXau.so.6 =&gt; /usr/lib/libXau.so.6 (0xb7c19000)
+    libXdmcp.so.6 =&gt; /usr/lib/libXdmcp.so.6 (0xb7c14000)
+    libdl.so.2 =&gt; /lib/libdl.so.2 (0xb7c0f000)
+    libm.so.6 =&gt; /lib/libm.so.6 (0xb7bea000)
+    libexpat.so.1 =&gt; /usr/lib/libexpat.so.1 (0xb7bc9000)
+</pre>
+<p>
+You can start the X server and JWM with the command below or create a script in 
+/usr/bin/startx with the content:
+</p>
+<pre>Xvesa -ac -shadow -screen 1024x768x24 &amp; exec jwm
+</pre>
+<h4>On SliTaz</h4>
+<p>
+SliTaz uses the ~/.Xsession file to start a graphical session. The 'startx' command checks 
+whether the file exists or it runs 'tazx' to configure the X system. The user guide on X 
+window is located in: /usr/share/doc/slitaz/user-guide/x-window.html or is on the website:
+</p>
+<p>
+We chose to use the Tango icons theme <a href="http://tango.freedesktop.org/">http://tango.freedesktop.org/</a>, 
+that aren't compiled. We only use the minimum: images in 16 x 16 format that we put in /usr/share/icons.
+</p>
+<p>
+To test JWM with a cooking ISO:
+</p>
+<pre> # Xvesa -ac -shadow -screen 800x600x24 &amp; exec jwm
+</pre>
+<a name="jpeg"></a>
+<h3><font color="#6c0023">jpeg-6b - JPEG Libraries</font></h3>
+<p>
+Libraries handling JPEG images, and some small utilities:
+</p>
+<pre> # wget http://www.ijg.org/files/jpegsrc.v6b.tar.gz
+ # tar xzf jpegsrc.v6b.tar.gz
+ # cd jpeg-6b
+ # ./configure --enable-shared --prefix=/usr \
+   --mandir=/usr/share/man
+ # make
+ # strip .libs/*
+ # cp -a .libs/*.so* $fs/usr/lib
+ # cp .libs/{cjpeg,djpeg,jpegtran} $fs/usr/bin
+</pre>
+<a name="tiff"></a>
+<h3><font color="#6c0023">tiff-3.8.2 - TIFF Libraries and Utilities</font></h3>
+<p>
+Libraries handling TIFF images and some small optional utilities:
+</p>
+<pre> # wget ftp://ftp.remotesensing.org/pub/libtiff/tiff-3.8.2.tar.gz
+ # tar xzf tiff-3.8.2.tar.gz
+ # cd tiff-3.8.2
+ # ./configure  --prefix=/usr --mandir=/usr/share/man
+ # make
+ # make DESTDIR=$PWD/_pkg install
+ # strip _pkg/usr/bin/*
+ # strip _pkg/usr/lib/*.so*
+ # cp -a _pkg/usr/lib/*.so* $fs/usr/lib
+</pre>
+<p>
+You can install the utilities you want.
+</p>
+<a name="links"></a>
+<h3><font color="#6c0023">links-2.1pre29 - Graphical and text mode web browser</font></h3>
+<p>
+Links (<a href="http://links.twibright.com/">links.twibright.com</a>) is a web browser offering 
+graphical and text modes. It is translated into multiple languages, including French:
+</p>
+<pre> # cd ..
+ # wget http://links.twibright.com/download/links-2.1pre28.tar.gz
+ # tar xzf links-2.1pre28.tar.gz
+ # cd links-2.1pre28
+ # ./configure --prefix=/usr --sysconfdir=/etc --mandir=/usr/share/man \
+   --without-directfb --without-ssl --enable-graphics --enable-javascript
+ # make
+ # make DESTDIR=$PWD/_pkg install
+ # strip -v _pkg/usr/bin/*
+ # cp -v _pkg/usr/bin/* $fs/usr/bin
+</pre>
+<h4>libs</h4>
+<pre class="script">    libtiff.so.3 =&gt; /usr/lib/libtiff.so.3
+    libjpeg.so.62 =&gt; /usr/lib/libjpeg.so.62 (0xb7ede000)
+    libpng12.so.0 =&gt; /usr/lib/libpng12.so.0 (0xb7eba000)
+    libz.so.1 =&gt; /usr/lib/libz.so.1 (0xb7ea7000)
+    libX11.so.6 =&gt; /usr/lib/libX11.so.6 (0xb7dbb000)
+    libdl.so.2 =&gt; /lib/tls/libdl.so.2 (0xb7db7000)
+    libpcre.so.0 =&gt; /usr/lib/libpcre.so.0 (0xb7d96000)
+    libm.so.6 =&gt; /lib/tls/libm.so.6 (0xb7d70000)
+    libc.so.6 =&gt; /lib/tls/libc.so.6 (0xb7c3e000)
+    libXau.so.6 =&gt; /usr/lib/libXau.so.6 (0xb7c3b000)
+    libXdmcp.so.6 =&gt; /usr/lib/libXdmcp.so.6 (0xb7c36000)
+    /lib/ld-linux.so.2 (0xb7f5d000)
+</pre>
+<a name="initramfs-iso"></a>
+<h3><font color="#6c0023">Generate the initramfs and an ISO image</font></h3>
+<p>
+To create a new ISO image, you can use 'mktaziso' in 
+<a href="http://www.slitaz.org/en/doc/cookbook/slitaz-tools.html">SliTaz tools</a> .  
+Or you can create a new initramfs image, copy it to /boot in the root of the cdrom
+(rootcd) and finally generate an ISO image with genisoimage:
+</p>
+<pre> # cd $fs
+ # find . -print | cpio -o -H newc | gzip -9 &gt; ../rootfs.gz
+ # cd ..
+ # cp rootfs.gz rootcd/boot
+ # genisoimage -R -o slitaz-cooking.iso -b boot/isolinux/isolinux.bin \
+   -c boot/isolinux/boot.cat -no-emul-boot -boot-load-size 4 \
+   -V "SliTaz" -boot-info-table rootcd
+</pre>
+<h4>Following chapter</h4>
+<p>
+The next chapter <a href="gtk-libs.html">GTK+ libs</a> 
+describes the installation of GTK libraries.
+</p>
+
+
+<!-- End of content -->
+</div>
+
+<!-- Footer. -->
+<div id="footer">
+	<div class="footer-right"></div>
+	<a href="#top">Top of the page</a> | 
+	<a href="index.html">Table of contents</a>
+</div>
+
+<div id="copy">
+    Copyright &copy; 2008 <a href="http://www.slitaz.org/en/">SliTaz</a> -
+    <a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>;<br />
+    Documentation is under
+    <a href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License</a>
+    and code is <a href="http://validator.w3.org/">valid xHTML 1.0</a>.
+</div>
+
+</body>
+</html>
