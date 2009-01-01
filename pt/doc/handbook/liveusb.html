@@ -1,10 +1,10 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt">
 <head>
-    <title>SliTaz Handbook (en) - LiveUSB media</title>
+    <title>Manual SliTaz (pt) - Mídia LiveUSB</title>
     <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
-    <meta name="description" content="slitaz English handbook liveUSB bootable media" />
+    <meta name="description" content="slitaz portuguese handbook liveUSB bootable media" />
     <meta name="expires" content="never" />
     <meta name="modified" content="2008-03-09 22:30:00" />
     <meta name="publisher" content="www.slitaz.org" />
@@ -18,74 +18,80 @@
 <div id="header">
 <div align="right" id="quicknav">
     <a name="top"></a>
-    <a href="hacking-livecd.html">Hacking LiveCD</a> |
-    <a href="index.html">Table of contents</a>
+    <a href="hacking-livecd.html">Hackeando o LiveCD</a> |
+    <a href="index.html">Conteúdo</a>
 </div>
-<h1><font color="#3E1220">SliTaz Handbook (en)</font></h1>
+<h1><font color="#3E1220">Manual SliTaz (pt)</font></h1>
 </div>
 
 <!-- Content. -->
 <div id="content">
 <div class="content-right"></div>
 
-<h2><font color="#DF8F06">LiveUSB media</font></h2>
+<h2><font color="#DF8F06">Mídia LiveUSB</font></h2>
 
 <a name="tazusb"></a>
-<h3>Tazusb - Live USB Tool</h3>
+<h3>Tazusb - Ferramenta LiveUSB</h3>
 <p>
-Tazusb is a tool that can create bootable usb media with a few simple commands.
-It can also compress and backup the entire current filesystem to the media, 
-thus preserving all modifications for future use. Type <code>tazusb usage</code>
-for a full list of commands or read the
-<a href="http://www.slitaz.org/en/doc/manuals/tazusb.en.html">TazUSB manual</a>.
+O utilitário Tazusb cria, com apenas alguns comandos, mídias usb bootáveis. Pode,
+também, comprimir e fazer backup de todo um sistema de arquivos para a mídia,
+preservando assim todas as modificações para uso posterior. Digite 
+<code>tazusb</code> para uma lista completa de comandos ou leia o 
+<a href="http://www.slitaz.org/pt/doc/manuals/tazusb.pt.html">Manual TazUSB</a>.
 </p>
-<h4>Generate your own LiveUSB media</h4>
+<h4>Crie sua própria mídia LiveUSB</h4>
 <p>
-To generate your own LiveUSB media, first you need to login as root with
-<code>su</code> and locate your usb storage device using the command:
+Para gerar uma mídia LiveUSB você precisa, primeiramente, logar-se como root com
+o comando <code>su</code> e localizar seu dispositivo de armazenamento usb,
+digitando no terminal:
 </p>
-<pre># fdisk -l     # normally /dev/sda1
+<pre># fdisk -l     # normalmente /dev/sda1
 </pre>
 <p>
-Then format and label your device 
-(<em>Warning</em>: this will erase all data, make sure you specify the right device):
+Então formate e defina uma nome para o dispositivo:
+(<em>cuidado</em>: isto irá apagar todos os dados existentes, certifique-se de 
+que você tenha especificado o dispositivo correto):
 </p>
 <pre># tazusb format /dev/sda1 
 </pre>
 <p>
-And finally generate LiveUSB media device:
+Finalmente crie a mídia USB com o comando:
 </p>
 <pre># tazusb gen-liveusb /dev/sda1
 </pre>
 <p>
-And that's all you need to do, you can now boot SliTaz from usb media (providing
-your computer bios supports this method). 
+Seguidos estes passos, você pode iniciar o SliTaz a partir da mídia usb (desde
+que a bios de seu computador ofereça esta opção).
 </p>
-<h4>Maintaining system settings</h4>
-<p>When you finish your LiveUSB session, make sure you maintain your installed 
-packages, system settings etc by backing up the entire current filesystem with:
+<h4>Manutenção das configurações do sistema</h4>
+<p>
+Ao término de sua sessão LiveUSB, certifique-se de que os pacotes instalados e
+configurações modificadas sejam mantidas, criando um backup de todo o sistema de
+arquivos:
 </p>
 <pre># tazusb writefs gzip
 </pre>
 <p>
-This effectively compresses and backs up everything to 'rootfs.gz' to be 
-loaded the next time you boot.
+Este comando comprime e faz backup de todos os arquivos do sistema para o arquivo
+'rootfs.gz', que será carregado no próximo boot.
 </p>
 <p>
-If anything should go wrong when writing your filesystem, you can simply rollback 
-to your previous filesystem by typing 'previous' at the 'boot:' prompt. Older backups are 
-named 'rootfs.gz.unixtimestamp' and can be safely deleted from the /home folder to save disk space.
+Se algo der errado durante o processo de backup, você pode simplesmente retornar
+para o sistema de arquivos utilizado anteriomente, digitando 'previous' no prompt
+de boot. Backups antigos são nomeados 'rootfs.gz.dataehoraunix' e podem ser 
+deletados de forma segura de sua localização - na pasta /home.
 </p>
-<h4>Tazusb Manual</h4>
+<h4>Manual Tazusb</h4>
 <p>
-The official Tazusb manual can be found in SliTaz 
-<a href="http://www.slitaz.org/en/doc/manuals/tazusb.en.html">Web site documentation</a>.
-which contains a lot more useful information. The manual is also available through the documentation menu on the LiveCD.
+O Manual Oficial do Tazusb pode ser acessado na
+<a href="http://www.slitaz.org/pt/doc/manuals/tazusb.pt.html">Documentação do site</a>,
+que contem várias informações úteis. O manual também pode ser encontrado no menu
+'documentação' no LiveCD.
 </p>
 <p>
-The maintainer of Tazusb has also written a nice
-<a href="http://www.custompc.co.uk/features/602451/make-any-pc-your-own-with-linux-on-a-usb-key.html">article</a> 
-about the utility.
+O mantenedor do Tazusb escreveu um ótimo 
+<a href="http://www.custompc.co.uk/features/602451/make-any-pc-your-own-with-linux-on-a-usb-key.html">artigo</a> 
+sobre o utilitário.
 </p>
 
 <!-- End of content -->
@@ -94,12 +100,12 @@ about the utility.
 <!-- Footer. -->
 <div id="footer">
 	<div class="footer-right"></div>
-	<a href="#top">Top of the page</a> | 
-	<a href="index.html">Table of contents</a>
+	<a href="#top">Topo da Página</a> | 
+	<a href="index.html">Conteúdo</a>
 </div>
 
 <div id="copy">
-    Copyright &copy; 2008 <a href="http://www.slitaz.org/en/">SliTaz</a> -
+    Copyright &copy; 2008 <a href="http://www.slitaz.org/pt/">SliTaz</a> -
     <a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>;<br />
     Documentation is under
     <a href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License</a>
