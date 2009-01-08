@@ -17,21 +17,20 @@
 		<guid isPermaLink="true">http://www.slitaz.org/de/get/</guid>
 		<pubDate>Mon, 05 Jan 2009 17:30:00 GMT</pubDate>
 		<description>
-	Das SliTaz Projekt veröffentlicht eine neue Cooking-Version.
-	Alle Neuerungen, Bugfixes und Updates 
-	der letzten Monate können getestet bzw. verwendet 
-	werden. Wieder sind einige Änderungen vorgenommen worden. SliTaz 
-	beinhaltet nun ein eigenes Kontrollzentrum und WiFi Unterstützung mit 
-	Netbox und tazndis, einer verkleinerten Version von ndiswrapper für
-	den Gebrauch von (proprietären) Windows-Treibern. Lua (Interpreter)
-	wurde durch Perl ersetzt, MPlayer wurde aus den Standard-Paketen 
-	der Live-CD entfernt. Tazpkg ist noch mächtiger geworden, so werden 
-	nun Updates nach den Build-Zeiten des Paketes ausgeführt. 
-	Auch einige Bugs wurden behoben. Ebenfalls verbessert wurden die 
-	Boot-Skripte und Tazlito. Die Paketquelle der Cooking-Version umfasst 
-	nun (dank der Arbeit vieler Entwickler) mehr als 1100 Pakete.
-	Zum Herunterladen gibt es die neue Version  von den offiziellen Mirrors 
-	des Projektes.
+	Das SliTaz Projekt veröffentlicht eine neue Cooking-Version.Alle 
+	Neuerungen, Bugfixes und Updates der letzten Monate können getestet 
+	bzw. verwendet werden. Wieder sind einige Änderungen vorgenommen 
+	worden. SliTaz beinhaltet nun ein eigenes Kontrollzentrum und WiFi 
+	Unterstützung mit Netbox und tazndis, einer verkleinerten Version 
+	von ndiswrapper für den Gebrauch von (proprietären) 
+	Windows-Treibern. Lua (Interpreter) wurde durch Perl ersetzt, 
+	MPlayer wurde aus den Standard-Paketen der Live-CD entfernt. Tazpkg 
+	ist noch mächtiger geworden, so werden nun Updates nach den 
+	Build-Zeiten des Paketes ausgeführt. Auch einige Bugs wurden 
+	behoben. Ebenfalls verbessert wurden die Boot-Skripte und Tazlito. 
+	Die Paketquelle der Cooking-Version umfasst nun (dank der Arbeit 
+	vieler Entwickler) mehr als 1100 Pakete. Zum Herunterladen gibt es 
+	die neue Version  von den offiziellen Mirrors des Projektes.
 		</description>
 	</item>
 
