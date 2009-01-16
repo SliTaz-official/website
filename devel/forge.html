@@ -9,7 +9,7 @@
 	<meta name="robots" content="index, follow, all" />
 	<meta name="revisit-after" content="7 days" />
 	<meta name="expires" content="never" />
-	<meta name="modified" content="2008-01-30 11:00:00" />
+	<meta name="modified" content="2009-16-01 16:00:00" />
 	<meta name="author" content="Christophe Lincoln"/>
 	<meta name="publisher" content="www.slitaz.org" />
 	<link rel="shortcut icon" href="../favicon.ico" />
@@ -72,6 +72,7 @@
 <h2><font color="#DF8F06">Gestion collaborative du développement</font></h2>
 
 <ul>
+	<li><a href="#tank">Build host &amp; home.</a></li>
 	<li><a href="#repos">Dépôts Mercurial.</a></li>
 	<li><a href="#pkgs">Paquets tazpkg.</a></li>
 	<li><a href="#site">Gestion du site Web et des livres.</a></li>
@@ -85,6 +86,17 @@ développeurs et collaborer. Un système de gestion de révision avec Mercurial
 <a href="../mailing-list.html">liste de discussion</a> et un canal IRC. Tous
 les développeurs sont inscrits sur la liste, c'est le moyen de collaboration
 principal et privilégié.
+</p>
+
+<a name="tank"></a>
+<h3>Tank - Build host &amp; home</h3>
+<p>
+Chaque contributeur peut avoir un compte sur le serveur principale du
+projet, avec un accès sécurisé, de l'espace disque, un répertoire public
+et tous les outils de développement. Les développeurs peuvent y complier
+leurs paquets et les mainteneurs du miroir s'occupent de la synchronisation.
+Tank héberge aussi le site intenet, le web boot et les dépôts Mercurial: 
+<a href="http://tank.slitaz.org/">tank.slitaz.org</a>
 </p>
 
 <a name="repos"></a>
@@ -210,25 +222,15 @@ là pour vous aider et que <a href="../doc/cookbook/wok-tools.html"
 <h3>Gestion du site Web et des livres</h3>
 <p>
 La gestion du site et des livres (Handbook et Cookbook) est faite via un
-module Rsync, diff et patch et la liste de discussion. Rsync est un outil de 
-sauvegarde incrémentale, utilisant un algorithme ultra rapide. Il permet de 
-transférer, synchroniser ou sauvegarder des données en local ou en réseau. 
-L'utilitaire <code>diff</code> est utilisé pour envoyer sur la liste des
-fichiers contenant uniquement les modifications et <code>patch</code> pour
-appliquer les modifications aux pages originales.
-</p>
-<p>
-Vous pouver synchroniser le site et les livres graphiquement avec Grsync ou via
-la ligne de commande. Pour rapatrier une première fois ou synchroniser le site
-dans un répertoire <code>/home/hacker/Public/slitaz/site</code> et cela depuis 
-<code>rsync://slitaz.org/site</code> :
+un dépôt Mercirial, il peut être cloné via:
 </p>
 <pre>
- $ rsync -r -t -p -v \
-       --progress --delete \
-       rsync://slitaz.org/site /home/hacker/Public/slitaz/site
+ $ hg clone http://hg.slitaz.org/website
+ si vous avez les droits:
+ $ hg clone http://repos.slitaz.org/website
 </pre>
-<h4>Diff et patch</h4>
+
+<h3>Diff et patch</h3>
 <p>
 Les utilitaires <code>diff</code> et <code>patch</code> sont des outils en
 ligne de commande permettant de créer et d'appliquer un fichier contenant
@@ -258,11 +260,11 @@ Pour appliquer un patch :
 <!-- Start of footer and copy notice -->
 <div id="copy">
 <p>
-Dernière modification : 2008-01-01 12:00:00 -
+Dernière modification : 2009-16-01 16:00:00 -
 <a href="#top">Haut de la page</a>
 </p>
 <p>
-Copyright &copy; 2008 <a href="http://www.slitaz.org/">SliTaz</a> -
+Copyright &copy; 2009 <a href="http://www.slitaz.org/">SliTaz</a> -
 <a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>
 </p>
 <!-- End of copy -->
