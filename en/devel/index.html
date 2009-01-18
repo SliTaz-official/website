@@ -68,6 +68,7 @@
 <h2><font color="#df8f06">SliTaz Developers corner</font></h2>
 
 <ul>
+	<li><a href="#tank">Build host &amp; home.</a></li>
 	<li><a href="#repos">Mercurial repositories.</a></li>
 	<li><a href="#pkgs">Tazpkg packages.</a></li>
 	<li><a href="#website">Website Management.</a></li>
@@ -93,6 +94,16 @@ developers who are active on the <a href="http://forum.slitaz.org/">forum</a>
 and the <a href="../mailing-list.html">Mailing List</a>.
 </p>
 
+<a name="tank"></a>
+<h3>Tank - Build host &amp; home</h3>
+<p>
+Each contributor may have an account on the project server with secure access,
+disk space, a public directory and all development tools. Developers can compile 
+packages and maintainers of the mirror can handle sychronization. Tank also 
+hosts the website, web boot and mercurial repositories:
+<a href="http://tank.slitaz.org/">tank.slitaz.org</a>
+</p>
+
 <a name="repos"></a>
 <h3>Mercurial repositories</h3>
 <p>
@@ -114,13 +125,13 @@ username = FirstName LastName &lt;you@example.org&gt;
 </pre>
 <h4>Clone, modify, commit and push</h4>
 <p>
-Clone a repo, example for slitaz-doc:
+Clone a repo, example for wok:
 </p>
 <pre>
- $ hg clone http://repos.slitaz.org/slitaz-doc
+ $ hg clone http://repos.slitaz.org/wok
 </pre>
 <p>
-Change directory to slitaz-doc, note you must be in the repository to be able 
+Change directory to wok, note you must be in the repository to be able 
 to use 'hg' commands. To check all logs or just the last log:
 </p>
 <pre>
@@ -128,9 +139,10 @@ to use 'hg' commands. To check all logs or just the last log:
  $ hg head
 </pre>
 <p>
-Modify one or more files and commit:
+Add or modify one or more files and commit:
 </p>
 <pre>
+ $ hg add
  $ hg status
  $ hg commit -m "Log message..."
  $ hg log
@@ -146,6 +158,25 @@ transaction. Before pushing changes to the server, it is safe to pull once:
 <p>
 Done, your changes, code or corrections are now on the server.
 </p>
+<h4>Updating a local wok</h4>
+<p>
+To update your wok with the local server (<em>pull</em> to pull the changes) :
+</p>
+<pre>
+ $ hg pull
+ $ hg update
+</pre>
+<h4>Hg commands</h4>
+<p>
+Hg commands that can be used.
+</p>
+<ul>
+	<li><code>hg help</code> : Display the full list of commands.</li>
+	<li><code>hg rollback</code> : Undo the last action performed (commit,
+	pull, push).</li>
+	<li><code>hg log &lt;package&gt;</code> : Display a package log.</li>
+	<li><code>hg head</code> : Display the last log.</li>
+</ul>
 
 <a name="pkgs"></a>
 <h3>Tazpkg Packages</h3>
@@ -168,7 +199,7 @@ LiveCD are discussed on the Mailing List.
 </p>
 <p>
 Before you begin to compile and create packages for SliTaz, be sure that the 
-work doesn't already exist in the wok indigest provided by the primary SliTaz
+work doesn't already exist in the wok undigest provided by the primary SliTaz
 mirror. Don't forget that the members of the list are there to help you
 and that the documentation of the 
 <a href="../doc/cookbook/wok-tools.html">wok and tools</a> 
@@ -178,31 +209,22 @@ exists to help you get started.
 <a name="website"></a>
 <h3>Website Management and Books</h3>
 <p>
-The management of the website and books (Handbook &amp; Cookbook) is made via 
-a rsync module, Mercurial, diff and patch utilities and the Mailing List. 
-Rsync is a tool for incremental backup; using an ultra-fast algorithm, It can 
-transfer or syncronize data both locally or over the network. The 
-<code>diff</code> utility is used to send the list of files containing only 
-the changes and <code>patch</code> to apply the changes to the original pages.
-</p>
-<p>
-You can syncronize the site and books graphically using Grsync or via the 
-command line. To download the site for the first time or syncronize pages 
-in the directory <code>/home/hacker/Public/slitaz/website</code>; 
-use the module <code>rsync://slitaz.org/website</code>:
+The website and books (Handbook and Cookbook) are managed via
+a mercurial repository, they can be cloned using:
 </p>
 <pre>
- $ rsync -r -t -p -v \
-       --progress --delete \
-       rsync://slitaz.org/website /home/hacker/Public/slitaz/website
+ $ hg clone http://hg.slitaz.org/website
+  Or if you have the proper permissions:
+ $ hg clone http://repos.slitaz.org/website
 </pre>
+
 <h4>Diff and patch</h4>
 <p>
 The utilities <code>diff</code> and <code>patch</code> are command-line tools 
-for creating and implementing differences between two files. This technique
-is often used for collaboration and the changes made to the original file can 
-be clearly extracted. To create a <code>diff</code> file readable by humans in
-a simple text editor, you must supply the <code>-u</code> option:
+for creating and implementing a file containing differences between two files. 
+This technique is often used for collaboration and the changes made to the 
+original file can be clearly extracted. To create a <code>diff</code> file 
+readable by humans in a simple text editor, you must supply the <code>-u</code> option:
 </p>
 <pre>
  $ diff -u file.orig file.new &gt; file.diff
