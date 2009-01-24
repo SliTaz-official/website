@@ -211,7 +211,7 @@ Install the client and tools in /usr/bin, and the server in /usr/sbin:
         /lib/ld-linux.so.2 =&gt; /lib/ld-linux.so.2 (0x40000000)
 </pre>
 <p>
-Copy the library libutil.so.1 to $fs/lib, is this is not already the case. Other libraries 
+Copy the library libutil.so.1 to $fs/lib, if this is not already the case. Other libraries 
 should be present following the construction of the base system:
 </p>
 <pre> # cp -a /lib/libutil* $fs/lib
@@ -290,7 +290,7 @@ We will create the directory /var/www, to see what's placed inside:
 <p>
 The Lighttpd main configuration file is located at /etc/lighttpd and is called lighttpd.conf. 
 The configuration file SliTaz provides is self-explanatary, just browse. You can find other examples on the 
-Lighttpd website and as well as a example configuration in /doc in the Lighttpd archive:
+Lighttpd website and as well as an example configuration in /doc in the Lighttpd archive:
 </p>
 <pre> # cp -a ../slitaz-tools-1.1/etc/lighttpd $fs/etc
 </pre>

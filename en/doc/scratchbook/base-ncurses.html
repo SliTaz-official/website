@@ -95,7 +95,7 @@ We install the libraries in /lib and the rest in /usr/bin with a small strip to 
  # strip -v _pkg/usr/bin/*
 </pre>
 <p>
-Copy the libcurses library and some applications in SliTaz. The reset utility is used at the end of 
+Copy the libncurses library and some applications in SliTaz. The reset utility is used at the end of 
 the rcS initialization script to remove the Linux logo. If you wish, you can copy the associated utilities 
 (tic, tack, toe, etc), being careful not to delete the link to BusyBox:
 </p>
@@ -216,7 +216,7 @@ For a system configuration file, you can copy the file in SliTaz tools to /etc i
 <p>
 retawq (<a href="http://retawq.sourceforge.net/">retawq.sourceforge.net</a>) 
 is a small text-only web browser. We only flag a few useful options when configuring, 
-retawq needs terminfo files, libcurses libraries and libthread:
+retawq needs terminfo files, libncurses libraries and libthread:
 </p>
 <pre> # wget http://switch.dl.sourceforge.net/sourceforge/retawq/retawq-0.2.6c.tar.gz
  # tar xzf retawq-0.2.6c.tar.gz
