@@ -137,6 +137,27 @@ $src et $_pkg lors la cuisson d'un paquet. A noter que dans le cas libX11,
 le nom de l'archive source devient $SOURCE-$VERSION.tar.gz.
 </p>
 
+<h3>Variables générées automatiquement par tazwok</h3>
+<p>
+Certaines variables ne sont connues qu'au moment la cuisson du paquet ou 
+juste après la cuisson. Tazwok se charge de les ajouter au receipt 
+automatiquement.
+</p>
+<p>
+<code>$PACKED_SIZE</code> : Taille du ficher tazpkg.
+</p>
+<p>
+<code>$UNPACKED_SIZE</code> : Taille utilisée par le paquet après son 
+installation.
+</p>
+<p>
+<code>$EXTRAVERSION</code> : Certains packages ont besion de 2 numéros de
+version distincts. C'est le cas des modules ajoutés au noyau linux comme
+squashfs car le module produit dépend aussi de la version du noyau avec 
+laquelle il a été compilé. Dans ce cas EXTRAVERSION contient la version du
+noyau et tazwok le détermine à partir du contenu de /lib/modules.
+</p>
+
 <h3>Variables utilisables dans les fonctions</h3>
 <p>
 Tazwok configure plusieurs variables permettant de faciliter la compilation et
