@@ -38,7 +38,7 @@
 	<li><a href="#files">Files included or excluded packages.</a></li>
 	<li><a href="#categories">Categories of packages.</a></li>
 	<li><a href="#woktree">Structure of packages in the wok.</a></li>
-	<li><a href="#pkgtree">Structure of tazpkg package.</a></li>
+	<li><a href="#pkgtree">Structure of Tazpkg package.</a></li>
 	<li><a href="receipts.html">Receipts.</a></li>
 </ul>
 
@@ -63,7 +63,7 @@ management.
 <p>
 The idea is to use a directory (wok) containing all the available packages, each package contains 
 at least one receipt to download, unpack, compile and generate the binary package. To operate,
-tazwok also needs to create a directory to store downloaded sources ($SOURCES_REPOSITORY) and a
+Tazwok also needs to create a directory to store downloaded sources ($SOURCES_REPOSITORY) and a
 repository of generated packages ($PACKAGES_REPOSITORY), these values can be configured using the
 <code>/etc/tazwok.conf</code> file.
 </p>
@@ -71,7 +71,7 @@ repository of generated packages ($PACKAGES_REPOSITORY), these values can be con
 <a name="wok"></a>
 <h3><font color="#6c0023">Wok tools</font></h3>
 <p>
-To begin, tazwok must already be installed
+To begin, Tazwok must already be installed
 on the system and the main development tools (binutils, compiler, libraries-dev, make) must be downloaded.
 On Slitaz you need to install the meta-package <code>slitaz-toolchain</code>:
 </p>
@@ -94,9 +94,9 @@ the primary mirror (TuxFamily). Example using SliTaz to be built in <code>/home/
 The archives are also available from the URL: 
 <a href="ftp://download.tuxfamily.org/slitaz/wok/">ftp://download.tuxfamily.org/slitaz/wok/</a>.
 Just take the latest version from the cooking or undigest directories. Before compiling your first package,
-tazwok must know where to look for the files. By default the path is <code>/home/slitaz/wok</code>,
-you can change this or rename the wok you want to download. To view/check tazwok paths that will be used 
-and the number of packages in the wok, you can use the tazwok command <code>stats</code>:
+Tazwok must know where to look for the files. By default the path is <code>/home/slitaz/wok</code>,
+you can change this or rename the wok you want to download. To view/check Tazwok paths that will be used 
+and the number of packages in the wok, you can use the Tazwok command <code>stats</code>:
 </p>
 <pre> # tazwok stats
 </pre>
@@ -113,7 +113,7 @@ dependancies. M4 is an ideal candidate for your first <code>cook</code>:
 <p>
 Once the work is finished, the package is located in the directory specified by the configuration file
 (default <code>/home/slitaz/packages</code>). If all went well, you can install the package on the host system
-or use it to generate a LiveCD distribution via tazlito. To create a new package you can use <code>new-tree</code> 
+or use it to generate a LiveCD distribution via Tazlito. To create a new package you can use <code>new-tree</code> 
 with the option <code>--interactive</code> and read the documentation on the options provided by the
 <a href="receipts.html">receipt</a>.
 </p>
@@ -139,7 +139,7 @@ cost in terms of loss of functionality. If you have any doubts, look at the rece
 <p>
 The official SliTaz packages are optimized for i486, the optimization arguments used to configure are specified in
 <code>/etc/tazwok.conf</code> and can be called via the variable <code>$CONFIGURE_ARGS</code>. 
-If you want to compile a package with different arguments, you can modify the tazwok configuration file:
+If you want to compile a package with different arguments, you can modify the Tazwok configuration file:
 </p>
 <pre class="script">CONFIGURE_ARGS="--build=i486-pc-linux-gnu --host=i486-pc-linux-gnu"
 </pre>
@@ -171,22 +171,22 @@ developement packages in 'devel', Xorg in 'x-window' and the variety of new pack
 <a name="woktree"></a>
 <h3>Structure of a package in the wok</h3>
 <p>
-The structure of the packages in the wok should always be respected so that tazwok can find the correct files and directories.
+The structure of the packages in the wok should always be respected so that Tazwok can find the correct files and directories.
 Possible contents of a package (note the directory taz/ is created at time of cooking):
 </p>
 <ul>
 	<li><code>stuff/</code> : The material used to configure, compile and generate the package
 	 (patch(es), Makefile, pseudo fs, etc).</li>
-	<li><code>taz/</code> : Directory tree containing the package tazpkg generated, the compressed package is stored
-	in the directory specified by $PACKAGES_REPOSITORY in the tazwok configuraton file.</li>
+	<li><code>taz/</code> : Directory tree containing the package Tazpkg generated, the compressed package is stored
+	in the directory specified by $PACKAGES_REPOSITORY in the Tazwok configuraton file.</li>
 	<li><code>receipt</code> : The receipt (see 
 	<a href="receipts.html">receipts</a>).</li>
-	<li><code>description.txt</code> : (optional) The description of the package is copied to the root of the tazpkg
-	package. Once installed, tazpkg knows how do deal with this file via 'tazpkg desc pkgname'.</li>
+	<li><code>description.txt</code> : (optional) The description of the package is copied to the root of the Tazpkg
+	package. Once installed, Tazpkg knows how do deal with this file via 'tazpkg desc pkgname'.</li>
 </ul>
 
 <a name="pkgtree"></a>
-<h3>Structure of a tazpkg package </h3>
+<h3>Structure of a Tazpkg package </h3>
 <p>
 The SliTaz packages are cpio archives containing files and a filesystem compressed with gzip:
 </p>
