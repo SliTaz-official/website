@@ -136,6 +136,26 @@ libX11. Cette astuces permet aussi de continuer à utiliser les varibables
 $src et $_pkg lors la cuisson d'un paquet. A noter que dans le cas libX11,
 le nom de l'archive source devient $SOURCE-$VERSION.tar.gz.
 </p>
+<p>
+<code>$PROVIDE</code> : Certains paquets offrent la même fonctionalité. Par
+exemple, le serveur web de Slitaz fut dans un premier temps lighttpd.
+Maintenant apache est aussi disponible. Tous les paquets dépendants d'un
+serveur web font référence à lighttpd. Le ligne <code>PROVIDE="lighttpd"</code>
+de la recette de apache signale qu'il peut se subsituer à lighttpd, c'est à
+dire qu'un paquet dépendant de lighttpd n'a pas à l'installer si apache est
+déjà installé.<br>
+Mais cette alternative peut avoir des conséquences sur le choix des paquets qui
+en dépendent. Le paquet php est prévu pour fonctionner uniquement avec lighttpd.
+C'est php-apache qu'il faut installer avec apache. Le ligne 
+<code>PROVIDE="php:apache"</code> dans la recette de php-apache indique qu'il
+faut substituer php-apache à php si apache est installé.
+Les paquets dépendants de php installeront alors php-apache ou php selon le
+serveur web installé.<br>
+Cette variable permet aussi d'avoir un paquet compilé avec différentes options.
+La ligne <code>PROVIDE="epdfview:cups"</code> du paquet epdfview-cups permet
+d'installer un package epdfview compilé avec le support de l'impression par 
+cups.
+</p>
 
 <h3>Variables générées automatiquement par tazwok</h3>
 <p>
