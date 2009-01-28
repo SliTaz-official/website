@@ -82,6 +82,11 @@ lors de la cuisson d'un paquet et Tazwok. Exemple :
  BUILD_DEPENDS="ncurses-dev"
 </pre>
 <p>
+<code>$SUGGESTED</code> : Liste les paquets pouvant être utiles sans pour
+autant être indispensables. Ils serviront à activer des fonctionnalités
+optionnelles.
+</p>
+<p>
 <code>$TARBALL</code> : L'archive source avec sont extension (tar.gz, tgz ou
 tar.bz2). En générale, les variables $PACAKAGE et $VERSION sont utilisées et
 il suffit de modifier l'extension, cela permet de mettre à jour le paquet en
@@ -140,7 +145,7 @@ le nom de l'archive source devient $SOURCE-$VERSION.tar.gz.
 <code>$PROVIDE</code> : Certains paquets offrent la même fonctionalité. Par
 exemple, le serveur web de Slitaz fut dans un premier temps lighttpd.
 Maintenant apache est aussi disponible. Tous les paquets dépendants d'un
-serveur web font référence à lighttpd. Le ligne <code>PROVIDE="lighttpd"</code>
+serveur web font référence à lighttpd. La ligne <code>PROVIDE="lighttpd"</code>
 de la recette de apache signale qu'il peut se subsituer à lighttpd, c'est à
 dire qu'un paquet dépendant de lighttpd n'a pas à l'installer si apache est
 déjà installé.<br>
