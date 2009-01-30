@@ -1,0 +1,444 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>SliTaz Scratchbook - Base Ncurses</title>
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <meta name="description" content="" />
+    <meta name="expires" content="never" />
+    <meta name="modified" content="2008-11-22 17:00:00" />
+    <meta name="publisher" content="www.slitaz.org" />
+    <meta name="author" content="Christophe Lincoln"/>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="book.css" />
+</head>
+<body bgcolor="#ffffff">
+
+<!-- Header and quick navigation -->
+<div id="header">
+<div align="right" id="quicknav">
+    <a name="top"></a>
+    <a href="base-apps.html">Base apps</a> |
+    <a href="index.html">Table of contents</a> |
+    <a href="locale.html">Locale &amp; i18n</a>
+</div>
+<h1><font color="#3E1220">SliTaz Scratchbook</font></h1>
+</div>
+
+<!-- Content. -->
+<div id="content">
+<div class="content-right"></div>
+
+
+<h2><font color="#df8f06">Ncurses libraries and applications</font></h2>
+<p>
+Installation and configuration of ncurses libraries and applications.
+</p>
+<ul>
+    <li><a href="#about">About the chapter.</a> - Description and environmental
+    variable ($fs)</li>
+    <li><a href="#ncurses">ncurses-5.6</a> -  Utilities and libraries for terminal.</li>
+    <li><a href="#clex">clex-3.16</a> - File manager.</li>
+    <li><a href="#nano">nano-2.0.6</a> - Advanced text editor with colored syntax.</li>
+    <li><a href="#retawq">retawq-0.2.6c</a> - Navigate the web in text 
+    mode using ncurses.</li>
+    <li><a href="#htop">htop-0.6.5</a> - System process viewer.</li>
+    <li><a href="#dialog">dialog-1.1-20070409</a> - GUI shell scripts.</li>
+    <li><a href="#ninvaders">ninvaders-0.1.1</a> - Space Invaders clone.</li>
+    <li><a href="#bastet">bastet-0.41</a> - Bastard Tetris clone.</li>
+    <li><a href="#rhapsody">rhapsody-0.28b</a> - IRC chat client.</li>
+    <li><a href="#initramfs-iso">Generate the initramfs and an ISO image.</a></li>
+</ul>
+<a name="about"></a>
+<h3><font color="#6c0023">About</font></h3>
+<p>
+This chapter describes the construction and installation of some ncurses applications 
+and libraries in SliTaz. The procedure consists of moving into the /src directory, 
+downloading the sources for the application in question, unpacking, reading the README or 
+INSTALL file(s), compiling and installing the binary in SliTaz. Once the applications 
+are installed, we can create a new initramfs, copy it to the root of the cdrom and generate 
+a new ISO image. For this you can also use <code>mktaziso</code> in 
+<a href="http://www.slitaz.org/en/doc/cookbook/slitaz-tools.html">SliTaz tools</a>.
+</p>
+<h4>Assign an environment variable ($fs)</h4>
+<p>
+An environmental variable can't specify the path to the directory, just the name of the directory. 
+We will affect a variable '$fs' to indicate the path to the root filesystem
+(rootfs). To do this, we venture into the working directory SliTaz/, and type:
+</p>
+<pre> # export fs=$PWD/rootfs
+</pre>
+<p>
+To check:
+</p>
+<pre> # echo $fs
+</pre>
+<a name="ncurses"></a>
+<h3><font color="#6c0023">ncurses-5.6 - Terminal utilities and libraries</font></h3>
+<p>
+ncurses (<a href="http://dickey.his.com/ncurses/">dickey.his.com/ncurses/</a>) contains 
+functions to display text in different ways on the screen of a Linux terminal and also provides 
+the terminfo file. Ncurses libraries are used among others by retawq, nano and some games. 
+We install the libraries in /lib and the rest in /usr/bin with a small strip to clean the executables:
+</p>
+<pre> # cd src
+ # wget ftp://invisible-island.net/ncurses/ncurses-5.6.tar.gz
+ # tar xzf ncurses-5.6.tar.gz
+ # cd ncurses-5.6
+ # ./configure --prefix=/usr \
+   --libdir=/lib --sysconfdir=/etc \
+   --infodir=/usr/share/info --mandir=/usr/share/man \
+   --with-shared --without-debug --without-ada
+ # make
+ # make DESTDIR=$PWD/_pkg install
+ # strip -v _pkg/lib/*
+ # strip -v _pkg/usr/bin/*
+</pre>
+<p>
+Copy the libncurses library and some applications in SliTaz. The reset utility is used at the end of 
+the rcS initialization script to remove the Linux logo. If you wish, you can copy the associated utilities 
+(tic, tack, toe, etc), being careful not to delete the link to BusyBox:
+</p>
+<pre> # cp -a _pkg/lib/libncurses.so* $fs/lib
+ # cp -ia _pkg/usr/bin/{clear,ncurses5-config,tset,reset} \
+   $fs/usr/bin
+</pre>
+<p>
+Copy terminfo files, we only use a few files. If you want more, you can copy:
+</p>
+<pre> # mkdir -v $fs/usr/share/terminfo
+ # mkdir -v $fs/usr/share/terminfo/{a,l,r,v,x}
+ # cp _pkg/usr/share/terminfo/a/ansi \
+   $fs/usr/share/terminfo/a
+ # cp _pkg/usr/share/terminfo/l/linux \
+   $fs/usr/share/terminfo/l
+ # cp _pkg/usr/share/terminfo/r/rxvt \
+   $fs/usr/share/terminfo/r
+ # cp _pkg/usr/share/terminfo/x/{xterm,xterm-color,xterm-new,xterm-vt220} \
+   $fs/usr/share/terminfo/x
+ # cp _pkg/usr/share/terminfo/v/{vt100,vt102*} \
+   $fs/usr/share/terminfo/v
+</pre>
+<p>
+Copy the tabset files:
+</p>
+<pre> # cp -a _pkg/usr/share/tabset $fs/usr/share
+</pre>
+<a name="clex"></a>
+<h3><font color="#6c0023">clex-3.16 - File Manager</font></h3>
+<p>
+CLEX (<a href="http://www.clex.sk/">http://www.clex.sk/</a>) is a small ncurses file 
+manager (160 KB). The configuration file (rc) is ~/clexrc; ~/.clexbm is used for 
+bookmarks:
+</p>
+<pre> # cd ..
+ # wget http://www.clex.sk/download/clex-3.16.tar.gz
+ # tar xzf clex-3.16.tar.gz
+ # cd clex-3.16
+ # ./configure --prefix=/usr --infodir=/usr/share/info \
+   --mandir=/usr/share/man
+ # make
+ # make DESTDIR=$PWD/_pkg install
+ # strip -v _pkg/usr/bin/clex
+</pre>
+<p>
+Install the clex binary in the rootfs of SliTaz:
+</p>
+<pre> # cp _pkg/usr/bin/clex $fs/usr/bin
+</pre>
+<h4>libs</h4>
+<p>
+If we execute the <code>ldd</code> command on clex, the following dependancies should be displayed:
+</p>
+<pre class="script">        libncurses.so.5 =&gt; /lib/libncurses.so.5 (0x40025000)
+        libc.so.6 =&gt; /lib/libc.so.6 (0x40064000)
+        /lib/ld-linux.so.2 =&gt; /lib/ld-linux.so.2 (0x40000000)
+</pre>
+<a name="nano"></a>
+<h3><font color="#6c0023">nano-2.0.6 - Advanced Text Editor</font></h3>
+<p>
+GNU nano (<a href="http://www.nano-editor.org/">www.nano-editor.org</a>)  is a well known, 
+fast, effective GNU/Linux text editor that supports colored syntax.
+This is the default text editor in SliTaz:
+</p>
+<pre> # cd ..
+ # wget http://www.nano-editor.org/dist/v2.0/nano-2.0.6.tar.gz
+ # tar xzf nano-2.0.6.tar.gz
+ # cd nano-2.0.6
+ # ./configure --enable-all --enable-extra --prefix=/usr \
+   --infodir=/usr/share/info --mandir=/usr/share/man \
+   --sysconfdir=/etc
+ # make
+ # make DESTDIR=$PWD/_pkg install
+ # strip -v _pkg/usr/bin/nano
+</pre>
+<p>
+Copy the nano binary and the rnano link in SliTaz:
+</p>
+<pre> # cp -a _pkg/usr/bin/* $fs/usr/bin
+</pre>
+<p>
+Copy the configuration files in _pkg/usr/share/nano to our rootfs:
+</p>
+<pre> # cp -a _pkg/usr/share/nano $fs/usr/share
+</pre>
+<h4>libs</h4>
+<p>
+If we execute the <code>ldd</code> command on nano, the following dependancies 
+should be displayed:
+</p>
+<pre class="script">        libncurses.so.5 =&gt; /lib/libncurses.so.5 (0x40025000)
+        libc.so.6 =&gt; /lib/libc.so.6 (0x40064000)
+        /lib/ld-linux.so.2 =&gt; /lib/ld-linux.so.2 (0x40000000)
+</pre>
+<h4>locale</h4>
+<p>
+About the language, you can copy the .mo files created when installing nano from
+/usr/share/locale/(fr,en,de,es,etc)/LC_MESSAGES to the rootfs. Example for the French language:
+</p>
+<pre> # cp -a _pkg/usr/share/locale/fr/LC_MESSAGES $fs/usr/share/locale/fr
+</pre>
+<h4>Customize nano</h4>
+<p>
+You can customize nano via /etc/nanorc or ~/.nanorc for each user of the system. It's in 
+this file that you can define the colors used by nano through the files in /usr/share/nano. 
+You will find a broad example of this file in the archive of nano and
+<a href="http://www.slitaz.org/en/doc/cookbook/slitaz-tools.html">SliTaz tools</a>.
+</p>
+<p>
+For a system configuration file, you can copy the file in SliTaz tools to /etc in the rootfs:
+</p>
+<pre> # cd ..
+ # cp -a slitaz-tools-1.1/etc/nanorc $fs/etc
+</pre>
+<a name="retawq"></a>
+<h3><font color="#6c0023">retawq-0.2.6c - Text mode Web browser</font></h3>
+<p>
+retawq (<a href="http://retawq.sourceforge.net/">retawq.sourceforge.net</a>) 
+is a small text-only web browser. We only flag a few useful options when configuring, 
+retawq needs terminfo files, libncurses libraries and libthread:
+</p>
+<pre> # wget http://switch.dl.sourceforge.net/sourceforge/retawq/retawq-0.2.6c.tar.gz
+ # tar xzf retawq-0.2.6c.tar.gz
+ # cd retawq-0.2.6c
+ # ./configure --enable-i18n --enable-local-cgi --path-prefix=/usr \
+   --path-doc=/usr/share/doc/retawq --path-man=/usr/share/man
+ # make
+ # strip -v retawq
+</pre>
+<p>
+Copy the retawq binary in SliTaz:
+</p>
+<pre> # cp retawq $fs/usr/bin
+</pre>
+<h4>libs</h4>
+<pre class="script">        libncurses.so.5 =&gt; /lib/libncurses.so.5 (0x40025000)
+        libpthread.so.0 =&gt; /lib/libpthread.so.0 (0x40064000)
+        libc.so.6 =&gt; /lib/libc.so.6 (0x40074000)
+        /lib/ld-linux.so.2 =&gt; /lib/ld-linux.so.2 (0x40000000)
+</pre>
+<p>
+You can copy the lipthread library from your host system or use the minimum package 
+glibc-2.3.6 distributed by SliTaz:
+</p>
+<pre> # cp -a /lib/libpthread* $fs/lib
+ # strip --strip-unneeded $fs/lib/*
+</pre>
+<h4>locale</h4>
+<p>
+For language, you can copy the .mo files in /i18n of the retawq archive to 
+/usr/share/locale/(fr,en,es,etc)/LC_MESSAGES. Example for the French language, 
+renaming the file to retawq.mo:
+</p>
+<pre> # cp -v i18n/fr.mo $fs/usr/share/locale/fr/LC_MESSAGES/retawq.mo
+</pre>
+<h4>Customize retawq</h4>
+<p>
+To personalize retawq, you can use a ~/.retawq directory containing a config file. 
+You can also save bookmarks (html) in the root directory of the user. You will find an
+examples/ in the archive of retawq (or SliTaz tools) containing a bookmarks.html 
+page with a list of favorite web sites. You can also copy the docs (/documents) from retawq 
+to /usr/share/doc/retawq.
+</p>
+<a name="htop"></a>
+<h3><font color="#6c0023">htop-6.0.5 - System process viewer</font></h3>
+<p>
+
+htop (<a href="http://htop.sourceforge.net/">htop.sourceforge.net/</a>) is software 
+that displays system processes using ncurses.
+</p>
+<p>
+Returning to the /src directory, download, unpack, configure, compile and clean (with strip):
+</p>
+<pre> # cd ..
+ # wget http://switch.dl.sourceforge.net/sourceforge/htop/htop-0.6.5.tar.gz
+ # tar xzf htop-0.6.5.tar.gz
+ # cd htop-0.6.5
+ # ./configure --prefix=/usr --mandir=/usr/share/man
+ # make
+ # make DESTDIR=$PWD/_pkg install
+ # strip -v _pkg/usr/bin/htop
+</pre>
+<p>
+Copy the htop binary in SliTaz:
+</p>
+<pre> # cp _pkg/usr/bin/htop $fs/usr/bin
+</pre>
+<p>
+You can still copy the htop icon found in: _pkg/usr/share/pixmaps.
+</p>
+<h4>libs</h4>
+<pre class="script">        libm.so.6 =&gt; /lib/libm.so.6 (0xb7f97000)
+        libncurses.so.5 =&gt; /lib/libncurses.so.5 (0xb7f55000)
+        libc.so.6 =&gt; /lib/libc.so.6 (0xb7e20000)
+        /lib/ld-linux.so.2 =&gt; /lib/ld-linux.so.2 (0xb7fc9000)
+</pre>
+<a name="dialog"></a>
+<h3><font color="#6c0023">dialog-1.1.20070409 - GUI shell scripts</font></h3>
+<p>
+
+dialog (<a href="http://invisible-island.net/dialog/dialog.html">invisible-island.net/dialog/dialog.html</a>), 
+is a utility to build GUI-based consoles:
+</p>
+<pre> # cd ..
+ # wget ftp://invisible-island.net/dialog/dialog.tar.gz
+ # tar xzf dialog.tar.gz
+ # cd dialog-1.1-20070409
+ # ./configure --enable-nls --with-ncurses --prefix=/usr \
+   --sysconfdir=/etc --mandir=/usr/share/man
+ # make
+ # make DESTDIR=$PWD/_pkg install
+ # strip -v _pkg/usr/bin/dialog
+</pre>
+<p>
+Copy dialog binary in SliTaz:
+</p>
+<pre> # cp _pkg/usr/bin/dialog $fs/usr/bin
+</pre>
+<h4>libs</h4>
+<pre class="script">        libncurses.so.5 =&gt; /lib/libncurses.so.5 (0x40027000)
+        libm.so.6 =&gt; /lib/libm.so.6 (0x40066000)
+        libc.so.6 =&gt; /lib/libc.so.6 (0x40089000)
+        /lib/ld-linux.so.2 =&gt; /lib/ld-linux.so.2 (0x40000000)
+</pre>
+<h4>locale</h4>
+<p>
+You can install locale files if you wish:  
+</p>
+<pre> # cp -a _pkg/usr/share/locale/fr $fs/usr/share/locale
+</pre>
+<p>
+The dialog configuration file is /etc/dialogrc and/or ~/.dialogrc for each user.
+There are also full examples of scripts in the /sample directory in the sources of dialog.
+</p>
+<a name="ninvaders"></a>
+<h3><font color="#6c0023">Ninvaders-0.1.1 - Space Invaders clone</font></h3>
+<p>
+
+ninvaders (<a href="http://ninvaders.sourceforge.net/">http://ninvaders.sourceforge.net/</a>) 
+is a clone of the popular Space Invaders game (46 KB). We begin by placing ourselves in the 
+/src directory, then we download, untar, compile, clean using strip and copy the nInvaders binary 
+in /usr/games of SliTaz:
+</p>
+<pre> # cd ..
+ # wget http://ovh.dl.sourceforge.net/sourceforge/ninvaders/ninvaders-0.1.1.tar.gz
+ # tar xzf ninvaders-0.1.1.tar.gz
+ # cd ninvaders-0.1.1
+ # make
+ # strip -v nInvaders
+ # cp nInvaders $fs/usr/games
+</pre>
+<a name="bastet"></a>
+<h3><font color="#6c0023">bastet-0.41 -  Bastard Tetris clone</font></h3>
+<p>
+A game of Tetris (17 KB):
+</p>
+<pre> # wget http://fph.altervista.org/prog/bastet-0.41.tgz
+ # tar xzf bastet-0.41.tgz
+ # cd bastet-0.41
+ # make
+ # strip bastet
+ # cp bastet $fs/usr/games
+ # mkdir -p $fs/var/games
+ # touch $fs/var/games/bastet.scores
+ # chmod 666 $fs/var/games/bastet.scores
+</pre>
+<a name="rhapsody"></a>
+<h3><font color="#6c0023">rhapsody-0.28b - IRC chat client</font></h3>
+<p>
+Rhapsody (<a href="http://rhapsody.sourceforge.net/">http://rhapsody.sourceforge.net/</a>) 
+is a fast and lightweight chat client supporting the IRC protocol. It provides a menu for 
+managing servers, channels and configuration. It is therefore easy to use:
+</p>
+<pre> # cd ..
+ # wget http://switch.dl.sourceforge.net/sourceforge/rhapsody/rhapsody_0.28b.tgz
+ # tar xzf rhapsody_0.28b.tgz
+ # cd rhapsody-0.28b
+ # ./configure -i /usr/bin -d /usr/share/doc/rhapsody
+ # make
+ # strip -v rhapsody
+</pre>
+<p>
+Install the binary and help files in SliTaz. We must adjust permissions on 
+these files so that everyone can read:
+</p>
+<pre> # cp rhapsody $fs/usr/bin
+ # mkdir $fs/usr/share/doc/rhapsody
+ # cp -a help $fs/usr/share/doc/rhapsody/help
+ # chmod 644 $fs/usr/share/doc/rhapsody/help/*
+</pre>
+<h4>libs</h4>
+<p>
+Rhapsody uses the following libraries:
+</p>
+<pre class="script">        libncurses.so.5 =&gt; /lib/libncurses.so.5 (0x40026000)
+        libc.so.6 =&gt; /lib/libc.so.6 (0x40066000)
+        /lib/ld-linux.so.2 =&gt; /lib/ld-linux.so.2 (0x40000000))
+</pre>
+<h4>Rhapsody use the following libraries:</h4>
+<p>
+You can customize rhapsody via ~/.rhapsodyrc or use &lt;Ctrl+T&gt;  for options:
+</p>
+<a name="initramfs-iso"></a>
+<h3><font color="#6c0023">Generate the initramfs and an ISO image</font></h3>
+<p>
+To create a new ISO image, you can use 'mktaziso' in SliTaz tools.  
+Or you can create a new initramfs image, copy it to /boot in the root of the cdrom
+(rootcd) and finally generate an ISO image with genisoimage:
+</p>
+<pre> # cd $fs
+ # find . -print | cpio -o -H newc | gzip -9 &gt; ../rootfs.gz
+ # cd ..
+ # cp rootfs.gz rootcd/boot
+ # genisoimage -R -o slitaz-cooking.iso -b boot/isolinux/isolinux.bin \
+   -c boot/isolinux/boot.cat -no-emul-boot -boot-load-size 4 \
+   -V "SliTaz" -input-charset iso8859-1 -boot-info-table rootcd
+</pre>
+<h4>Following chapter</h4>
+<p>
+The next chapter describes the installation of the
+<a href="locale.html">locales</a>
+and i18n.
+</p>
+
+
+<!-- End of content -->
+</div>
+
+<!-- Footer. -->
+<div id="footer">
+	<div class="footer-right"></div>
+	<a href="#top">Top of the page</a> | 
+	<a href="index.html">Table of contents</a>
+</div>
+
+<div id="copy">
+    Copyright &copy; 2008 <a href="http://www.slitaz.org/en/">SliTaz</a> -
+    <a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>;<br />
+    Documentation is under
+    <a href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License</a>
+    and code is <a href="http://validator.w3.org/">valid xHTML 1.0</a>.
+</div>
+
+</body>
+</html>
