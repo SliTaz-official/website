@@ -37,7 +37,7 @@
 <p>
 Note SliTaz uses the Xvesa server provided by XFree86 and Xorg libraries, this page describes 
 the compilation of Xorg libraries used by SliTaz. This document is primarily aimed at 
-develpers and contributors to the project, but it may be useful to all those seeking to rebuild 
+developers and contributors to the project, but it may be useful to all those seeking to rebuild 
 Xorg and Xlib libraries from source generating a minimum of dependencies.
 </p>
 
@@ -46,7 +46,7 @@ Xorg and Xlib libraries from source generating a minimum of dependencies.
 <p>
 On SliTaz, if you have Tazwok installed, you can rebuild Xorg with a few commands. 
 The wok contains a package called <code>xorg</code> and another named <code>xorg-dev</code>, 
-they can compile/cook all the packages used by Xorg on SliTaz. To compile, you must have 
+these can compile/cook all the packages used by Xorg on SliTaz. To compile, you must have 
 most of the development packages installed; if this is not the case:
 </p>
 <pre> # tazpkg get-install slitaz-dev-pkgs
@@ -80,7 +80,7 @@ To use the script, it must be placed in the directory where you want to download
 <h3>Compile Xorg by hand</h3>
 <p>
 Compiling Xorg can take a long time, there are many packages. To commence you need to 
-compile the downloaded proto packages, you can use the command <code>make DESTDIR=$PWD/_pkg install</code> to 
+compile the downloaded proto packages. You can use the command <code>make DESTDIR=$PWD/_pkg install</code> to 
 install the package in a given directory. Example:
 </p>
 <pre> # cd proto
@@ -93,7 +93,7 @@ install the package in a given directory. Example:
   # make install
 </pre>
 <p>
-Compile libraries by taking again the options used by proto. Example using the proper package to 
+Compile libraries by taking again the options used by proto. Example using the package to 
 compile xtrans, remember to run <code>ldconfig</code> if you install the package on the development machine:
 </p>
 <pre> # cd .. &amp;&amp; cd lib
