@@ -1,0 +1,321 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+    <title>SliTaz Handbook - Système X</title>
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <meta name="description" content="configuration du serveur Xvesa JWM window manager gestionnaire de fenêtres startx" />
+    <meta name="expires" content="never" />
+    <meta name="modified" content="2007-12-03 12:30:00" />
+    <meta name="publisher" content="www.slitaz.org" />
+    <meta name="author" content="Christophe Lincoln"/>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="book.css" />
+</head>
+<body bgcolor="#ffffff">
+
+<!-- Header and quick navigation -->
+<div id="header">
+<div align="right" id="quicknav">
+    <a name="top"></a>
+    <a href="system-admin.html">Administration système</a> |
+    <a href="index.html">Table des matières</a>
+</div>
+<h1><font color="#3E1220">SliTaz Handbook</font></h1>
+</div>
+
+<!-- Content. -->
+<div id="content">
+<div class="content-right"></div>
+
+<h2><font color="#DF8F06">Système de fenêtres X</font></h2>
+
+<ul>
+    <li><a href="#about">A propos de X.</a></li>
+    <li><a href="#slim">Slim</a> - Gestionnaire de connexion.</li>
+    <li><a href="#startx">startx</a> - Session graphique depuis une console Linux.</li>
+    <li><a href="#config">Configurer votre session X</a> - Personnaliser
+    votre session via un seul fichier.</li>
+    <li><a href="#xorg">Xorg</a> - Serveur X complet</li>
+    <li><a href="#terminalX">Utiliser Xvesa comme terminal X</a> - Lancer une
+    session graphique depuis une machine distante.</li>
+    <li><a href="#fonts">Polices de caractères</a> - Installer des <em>fonts</em>.</li>
+    <li><a href="jwm.html">JWM (Joe's Window Manager)</a> - Gestionnaire de
+    fenêtres. Présentation et instructions pour créer un thème ou/et modifier
+    le menu.</li>
+    <li><a href="enlightenment.html">Enlightenment (e17)</a> - Environnement
+    de bureau complet, léger, rapide, facilement configurable et simplement
+    beau.</li>
+</ul>
+
+<a name="about"></a>
+<h3><font color="#6c0023">A propos de X</font></h3>
+<p>
+Ce petit chapitre décrit l'utilisation et la configuration d'une session 
+graphique sur votre système. En mode LiveCD, SliTaz fournit le serveur Xvesa
+(KDrive), il est léger, rapide et s'adapte à tous type de matériel. Le terminal
+graphique ar défaut est XTerm, L'émulateur de termial à onglet Mrxvt est 
+installable avec Tazpkg.
+</p>
+
+<a name="slim"></a>
+<h3><font color="#6c0023">Slim - Gestionnaire de session</font></h3>
+<p>
+Slim est un gestionnaire de connexion simple à utiliser et configurer, très 
+léger et personnalisable via un système de thèmes. Le fichier de configuration
+est <code>/etc/slim.conf</code>, il définit le serveur graphique à utiliser
+avec d'éventuelles options, les commandes à utiliser, les gestionnaires de
+fenêtres disponnibles via la touche <code>F1</code>, l'utilisateur par défaut
+ou encore le thème graphique à utiliser. Slim propose aussi quelques 
+utilisateurs spéciaux permettant de sortir du login avec <code>exit</code>, 
+obtenir un Xterm avec <code>console</code>, redémarrer ou éteindre le système
+avec <code>reboot</code> ou <code>halt</code> suivi du mot de passe root. 
+</p>
+<p>
+En mode LiveCD vous pouvez désactiver le lancement de Slim via l'option de boot
+<code>screen=text</code>, sur un système installé vous pouvez désintaller le
+paquet ou supprimer slim de la variable <code>RUN_DAEMONS</code> du fichier
+<code>/etc/rcS.conf</code>.
+</p>
+<p>
+Site Web proposant une section avec des thèmes: 
+<a href="http://slim.berlios.de/">http://slim.berlios.de/</a>
+</p>
+
+<a name="startx"></a>
+<h3><font color="#6c0023">startx - Session graphique depuis une console Linux</font></h3>
+<p>
+Pour lancer une session graphique il suffit de taper <code>startx</code>
+dans le terminal après l'authentification (login). Si c'est la première 
+fois que vous démarrez X avec l'utilisateur courant, la commande 
+<code>startx</code> exécutera <code>tazx</code> pour configurer la session. La 
+configuration est ensuite sauvegardée dans le fichier ~/.xsession, que
+vous pouvez modifier avec un éditeur de texte. Pour lancer X&nbsp;:
+</p>
+<pre>
+ $ startx
+</pre>
+
+<a name="config"></a>
+<h3><font color="#6c0023">Configuration de votre session X</font></h3>
+<p>
+Par default SliTaz lance le gestionnaire de connexion Slim, une fois le nom 
+d'utilisateur et le mot de passe entré, Slim va exécuter le fichiers
+<code>~/.xinitrc</code> que vous pouvez modifier à la main ou en utilisant
+<code>tazx</code>. Si vous voulez par exemple Openbox comme gestionnaire
+de fenêtres par défaut:
+</p>
+<pre>
+ $ tazx openbox
+</pre>
+<h4>Avec startx</h4>
+<p>
+Quand vous lancez <code>startx</code>, le script cherche le fichier
+~/.xsession contenant ligne par ligne les applications à exécuter lors d'une
+session graphique. Ce fichier commence par lancer le serveur X avec la bonne 
+résolution d'écran, suivi de diverses applications, comme un terminal xterm,
+ou Links, et pour finir on peut lancer le gestionnaire de fenêtre.
+</p>
+<h4>Exemple d'un fichier ~/.xsession</h4>
+<pre class="script">
+# ~/.xsession: Start X session on you SliTaz system.
+#
+Xvesa -ac -shadow -screen 1024x768x24 -mouse /dev/input/mice,5 &amp;
+sleep 2 &amp;
+lxpanel &amp;
+xterm -bg black -fg white -geometry 80x16+20+20 &amp;
+exec jwm
+
+</pre>
+
+<a name="xorg"></a>
+<h3><font color="#6c0023">Xorg</font></h3>
+<p>
+Par défaut SliTaz fournit le mini serveur graphique Xvesa, le serveur Xorg
+complet est disponible dans la séléction des paquets du miroir. Xorg est un
+serveur complet, mais utilise plus de resources qu'Xvesa, si votre résolution
+est bien supportée par le mini serveur et que le taux de rafraîchissement
+vous convient, il n'y a pas de raison d'utiliser Xorg.
+</p>
+<p>
+Il n'y a pas d'interface graphique de configuration, il va donc falloir passer
+par quelques commandes, l'installation et configuration du serveur est 
+relativement simple et vous pourrez toujours revenir en arrière pour réutiliser
+Xvesa. Xorg est distribué sous forme modulaire, c'est à dire que vous aurez 
+besoin d'installer que le serveur, quelques fichiers de configuration et le 
+bon driver pour votre carte graphique. Cela dit, le paquet 
+<code>xorg-serveur</code> a les bonnes dépendances pour fonctionner directement
+avec le driver générique <code>vesa</code>. Pour installer le minimum:
+</p>
+<pre>
+ # tazpkg get-install xorg-server
+</pre>
+<p>
+Une fois installé vous pouvez directemnt passer à la configuration ou encore
+installer le bon driver si vous le connaissez, exemple pour un carte Nvidia
+et pour lister tous les drivers disponibles :
+</p>
+<pre>
+ # tazpkg get-install xorg-xf86-video-nv
+ Liste:
+ # tazpkg search xf86-video -l
+</pre>
+<h4>Configuration automatique du serveur</h4>
+<p>
+Pour configurer le serveur Xorg vous avez deux possibilités, utiliser l'option
+<code>Xorg -configure</code> ou le script <code>xorgconfig</code>. Il est 
+recommendé de commencer par utiliser la configuration automatique avec
+l'option <code>-configure</code> du serveur. La configuration automatique
+d'Xorg doit se faire en mod texte sans serveur X lançé, une fois la commande
+éxécutée, vous pouvez tester la configuration ou, faire confiance et 
+directement copier le fichier générer dans <code>/etc/X11</code>. Pour finir,
+vous devrez encore modifier la configuration de Slim pour qu'il utilise Xorg
+et non Xvesa. Pour vous retrouver en mode text, sortez de votre session et
+tapez simplement exit au login de Slim. Un fois en mode texte, vous pouvez
+configurer Xorg et copier le fichier, tout cela en tant qu'administrateur root:
+</p>
+<pre>
+ # Xorg -configure
+ # cp /root/xorg.conf.new /etc/X11/xorg.conf
+</pre>
+<h4>Utiliser Xorg avec Slim</h4>
+<p>
+Dans le fichier de configuration de Slim (<code>/etc/slim.conf</code>), il
+faut commenter (<code>#</code>) les lignes lançant Xvesa et ces options et
+renseigner <code>default_xserver </code>:
+</p>
+<pre class="script">
+default_xserver     /usr/bin/Xorg
+#default_xserver     /usr/bin/Xvesa
+#xserver_arguments   -ac -shadow dpms +extension Composite -screen 1024x768x24
+</pre>
+<p>
+Slim fonctionne comme un démon, il peut être stoppé ou démarré depuis une
+console texte, exemple pour démarrer le démon à la main:
+</p>
+<pre>
+ # /etc/init.d/slim start
+</pre>
+<h4>xorg.conf - Fichier de configuration</h4>
+<p>
+Xorg utilise le fichiers de configuration <code>/etc/X11/xorg.conf</code>, ce
+fichier peut être généré automatiquement et édité avec votre éditeur de texte
+préféré. Le fichier de configuration et divisé en plusieures sections comprenant
+la configuration des chemins, des modules à charger, du clavier, de la souris
+ou encore de l'écran par défaut. Ce docuement ne fournit que quelques exemples,
+il est conseillé d'utiliser une fois <code>xorgconfig</code> pour générer un
+fichier complet et l'utiliser comme exemple.
+</p>
+<p>
+Clavier (fr_CH):
+</p>
+<pre class="script">
+Section "InputDevice"
+	Identifier  "Keyboard0"
+	Driver      "kbd"
+	Option      "XkbRules"	"xorg"
+	Option      "XkbModel"	"pc105"
+	Option      "XkbLayout"	"ch"
+	Option      "XkbVariant"	"fr"
+EndSection
+</pre>
+<p>
+Souris avec detection automatique du protocol:
+</p>
+<pre class="script">
+Section "InputDevice"
+	Identifier  "Mouse0"
+	Driver      "mouse"
+	Option	    "Protocol" "auto"
+	Option	    "Device" "/dev/input/mice"
+	Option	    "ZAxisMapping" "4 5 6 7"
+EndSection
+</pre>
+<p>
+Extension Composite pour les effets de bureau:
+</p>
+<pre class="script">
+Section "Extensions"
+	Option      "Composite" "1"
+EndSection
+</pre>
+
+<a name="terminalX"></a>
+<h3><font color="#6c0023">Utiliser Xvesa comme terminal X</font></h3>
+<p>
+Vous pouvez utiliser Xvesa comme terminal X, si vous avez une machine sur
+le réseau acceptant les connexions Xdmcp. Pour cela vous pouvez lancer 
+le serveur avec l'option <code>-query</code> suivi du nom de machine ou de
+l'adresse IP. Exemple avec la machine 192.168.0.2 du réseau locale&nbsp;:
+</p>
+<pre>
+ $ Xvesa -ac -shadow -screen 1024x768x24 -query 192.168.0.2
+</pre>
+<p>
+L'utilisation du serveur graphique à distance peut être d'une grande utilité,
+la rapidité d'exécution des applications va fortement dépendre du débit de la
+connexion internet et de la puissance de la machine distante. Cette technique
+fonctionne très bien au sein d'un réseau local et permet d'utiliser les
+applications installées sur la machine distante, directement sur l'écran de la
+machine locale depuis laquelle vous avez décidez de travailler. A noter que la
+machine distante peut disposer de plusieurs comptes utilisés simultanément à
+distance et/ou en accès direct.
+</p>
+
+<a name="fonts"></a>
+<h3><font color="#6c0023">Polices de caractères</font></h3>
+<p>
+La gestion des polices de caractères (<em>fonts</em>) est propulsée par le
+paquet Fontconfig. Ce paquet fournit divers outils pour ajouter, lister et
+manipuler les polices. Les <em>fonts</em> peuvent être installées en espace
+utilisateur ou au niveau du système, cela veut dire que chaque utilisateur
+peut disposer de ses propres polices ou que l'administrateur (<em>root</em>)
+peut installer des polices utilisables par tous les utilisateurs du système.
+Si vous utilisez un media USB associé au <a href="livecd.html">LiveCD</a>
+de SliTaz, vous pouvez facilement installer des polices et les retrouver
+à chaque utilisation du cdrom.
+</p>
+<h4>Installer des <em>fonts</em></h4>
+<p>
+Au niveau du système, les polices s'installent dans le répertoire&nbsp;:
+<code>/usr/share/fonts</code>, de base, SliTaz fournit les polices TTF Vera,
+elles prennent peu de place et ont un rendu correct. En espace utilisateur,
+les polices s'installent dans le répertoire caché&nbsp;: <code>.fonts/</code>, ce
+répertoire doit se situer à la racine de l'espace utilisateur. Pour créer un
+répertoire personnel destiné à accueillir des nouvelles polices, vous pouvez
+utiliser le gestionnaire de fenêtres graphique emelFM2, Clex ou utiliser
+la ligne de commande&nbsp;:
+</p>
+<pre>
+ $ mkdir ~/.fonts
+</pre>
+<p>
+Une fois que vous avez installé de nouvelles polices, vous devez lancer
+l'outil <code>fc-cache</code> pour générer les fichiers de configuration,
+faire en sorte que vos <em>fonts</em> soient disponibles et utilisables par
+les applications graphiques&nbsp;:
+</p>
+<pre>
+ $ fc-cache
+</pre>
+
+<!-- End of content -->
+</div>
+
+<!-- Footer. -->
+<div id="footer">
+	<div class="footer-right"></div>
+	<a href="#top">Haut de la page</a> | 
+	<a href="index.html">Table des matières</a>
+</div>
+
+<div id="copy">
+    Copyright © 2007 <a href="http://www.slitaz.org/">SliTaz</a> -
+    <a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>;<br />
+    Documentation publiées sous
+    <a href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License</a>
+    et codée en <a href="http://validator.w3.org/">xHTML 1.0 valide</a>.
+</div>
+
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+    <title>SliTaz Handbook - Template</title>
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <meta name="description" content="navigateur web links retawq client IRC téléchargement torrent" />
+    <meta name="expires" content="never" />
+    <meta name="modified" content="2007-12-04 12:30:00" />
+    <meta name="publisher" content="www.slitaz.org" />
+    <meta name="author" content="Christophe Lincoln"/>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="book.css" />
+</head>
+<body bgcolor="#ffffff">
+
+<!-- Header and quick navigation -->
+<div id="header">
+<div align="right" id="quicknav">
+    <a name="top"></a>
+    <a href="graphics.html">Graphisme</a> |
+	<a href="index.html">Table des matières</a>
+</div>
+<h1><font color="#3E1220">SliTaz Handbook</font></h1>
+</div>
+
+<!-- Content. -->
+<div id="content">
+<div class="content-right"></div>
+
+<h2><font color="#DF8F06">Internet</font></h2>
+
+<ul>
+	<li><a href="#firefox">Mozilla Firefox</a> - Le navigateur Web Firefox.</li>
+	<li><a href="#retawq">Retawq</a> - Navigateur Web en mode texte.</li>
+	<li><a href="#links">Links</a> - Le navigateur Web Links fournit
+	un mode graphique et un mode texte.</li>
+	<li><a href="#rhapsody">Rhapsody</a> - Client de chat IRC.</li>
+	<li><a href="#gitmail">Ghost In The Mail </a> - Client mail.</li>
+	<li><a href="#transmission">Transmission</a> - Client BitTorrent léger.</li>
+	<li><a href="#gftp">gFTP</a> - Client FTP simple et rapide.</li>
+	<li><a href="#pscan">pscan</a> - Scanner de ports.</li>
+	<li><a href="cmdline.html#wget">Télécharger en ligne de commandes.</a></li>
+</ul>
+
+<a name="firefox"></a>
+<h3><font color="#6c0023">Mozilla Firefox - Navigateur web</font></h3>
+<p>
+SliTaz est fier de fournir Mozilla Firefox, l'un des meilleurs navigateur Web
+au monde, sécurisé, convivial, rapide, respectant les standards, et largement
+personnalisable via un système de <em>plugins</em>. La prise en main du
+logiciel se fait rapidement et intuitivement, pour lancer Firefox sur SliTaz
+il suffit de séléctionner depuis le menu du gestionnaire de fenêtres ---&gt;
+Internet --&gt; Mozilla Firefox. Les fichiers de configuration du navigateur
+Web sont stockés dans le répertoire personnel, et cachés (commencent par un
+point) et se nomment <code>~/.mozilla/firefox</code>.
+</p>
+<p>
+Astuces : En associant le mode LiveCD à un media USB (<em>flash key</em>),
+vous garderez vos marques pages et <em>plugins</em> partout ou vous allez.
+</p>
+<a name="retawq"></a>
+<h3><font color="#6c0023">Retawq - Navigateur web</font></h3>
+<p>
+Toutes les versions de SliTaz fournissent le navigateur web Retawq en mode texte.
+Vous pouvez lancer 'retawq' depuis la console, un terminal graphique, ou sous X
+depuis le menu ---&gt; Internet --&gt; Retawq. Pour lancer Retawq depuis un
+terminal, il suffit de taper <code>retawq</code> avec ou sans l'url :
+</p>
+<pre>
+ $ retawq
+ $ retawq <a href="http://www.slitaz.org/">http://www.slitaz.org/</a>
+</pre>
+<p>
+Le fichier de configuration personnel est dans ~/.retawq. Vous
+pouvez le modifier avec un éditeur de texte. En appuyant sur
+la touche &lt;b&gt; vous afficherez le fichier des marques pages
+(bookmarks.html), et la touche &lt;h&gt; affichera la page d'accueil.
+</p>
+<a name="links"></a>
+<h3><font color="#6c0023">Links - Navigateur web graphique et texte</font></h3>
+<p>
+Links a été le premier navigateur Web graphique proposé sur le LiveCD de
+SliTaz, il a été depuis remplaçé par Firefox, mais Links est toujours
+disponible sous forme de paquet, facilement installable via la commande :
+</p>
+<pre>
+ # tazpkg get-install links
+</pre>
+<p>
+Links propose un mode graphique et un mode texte. Pour utiliser Links en
+mode graphique il faut utiliser l'option <code>-g</code>, vous pouvez ajouter
+un icône ou une entrée au menu de <a href="jwm.html">JWM</a> pour retrouver
+Links facilement. Exemples d'utilisation en ligne de commandes :
+</p>
+<pre>
+ $ links -g &amp;
+ $ links -g <a href="http://www.slitaz.org/">http://www.slitaz.org/</a> &amp;
+ $ links
+</pre>
+<p>
+Les fichiers de configuration personnels sont dans ~/.links et il n'est pas
+conseillé de les modifier avec un éditeur de texte. Links fournit une interface
+de configuration via la barre d'outils du haut, c'est là que vous pouvez
+configurer la langues pour le français, les marques pages, l'affichage, etc.
+Quand vous avez modifié des options, il faut les sauvegarder via la barre de
+menu --&gt; Configuration --&gt; Enregistrer les options.
+</p>
+<a name="rhapsody"></a>
+<h3><font color="#6c0023">Rhapsody - Client de chat IRC</font></h3>
+<p>
+Pour lancer Rhapsody, vous pouvez utiliser la console, le terminal graphique,
+ou sous X depuis le menu. Pour vous connecter au serveur de TuxFamily, vous
+pouvez utiliser la commande ci-dessous, en modifiant votre pseudo. Une fois
+connecté vous pouvez utiliser la commande IRC: /join pour joindre le canal
+nommé #tuxfamily :
+</p>
+<pre>
+ $ rhapsody
+ /connect irc.tuxfamily.org
+ /join #tuxfamily
+</pre>
+<p>
+Vous pouvez personnaliser rhapsody via le fichier ~/.rhapsodyrc, ou
+utiliser &lt;Ctrl+T&gt; pour afficher les options.
+</p>
+<a name="gitmail"></a>
+<h3><font color="#6c0023">Ghost In The Mail - Client mail</font></h3>
+<p>
+Pour envoyer rapidement des mails, sans devoir configurer de compte, vous
+pouvez utiliser Ghost In The Mail (gitmail). Ce client mail minimum, propose
+une interface GTK simple, avec le support des pièces jointes. Il vous permet
+d'envoyer des mails en utilisant le protocole SMTP avec votre compte de
+messagerie existant. Vous trouverez gitmail via le menu --&gt; Internet
+--&gt; Ghost In The Mail.
+</p>
+<a name="transmission"></a>
+<h3><font color="#6c0023">Transmission - Client BitTorrent léger</font></h3>
+<p>
+Transmission est un client BitTorrent, rapide, léger, et proposant une
+interface GTK+ simple d'utilisation. Transmission offre une option
+"Préférences" qui permet de limiter le taux d'uploads et de
+downloads, le port à utiliser, le dossier de téléchargement, et de gérer
+les copies de vos fichiers torrents. Vous trouverez le client GTK+ via le menu
+--&gt; Internet --&gt; Transmission. Site web du projet :
+<a href="http://transmission.m0k.org/">http://transmission.m0k.org/</a>
+</p>
+<a name="gftp"></a>
+<h3><font color="#6c0023">gFTP - Client FTP simple et rapide</font></h3>
+<p>
+L'application gFTP est un client de transfert FTP très simple d'utilisation,
+rapide et ergonomique. Il dispose de la reprise des transferts interrompus,
+d'une gestion complète des signets (sites favoris), ou encore de la gestion
+des proxies FTP et HTTP. De plus gFTP permet le glisser déposer entre ses
+deux fenêtres, de faire plusieurs transferts en même temps, de comparer ses
+deux fenêtres, de mémoriser les mots de passes, de définir une application
+externe pour la visualisation (ex Links) et l'édition des fichiers (ex Geany),
+ce qui permet de travailler directement sur le serveur. Sur SliTaz vous
+trouverez gFTP via le menu du gestionnaire de fenêtres --&gt; Internet --&gt;
+gFTP.
+</p>
+
+<a name="pscan"></a>
+<h3><font color="#6c0023">pscan - Scanner de ports</font></h3>
+<p>
+Pscan est un petit utiliatire du projet Busybox, permettant de scanner les
+ports d'un machine. Vous pouvez utiliser <code>pscan</code> pour scanner
+l'hôte local ou un hôte distant, en utilisant le nom ou l'adresse IP de la
+machine. Pscan va tester tous les ports de 1 à 1024 et afficher une liste
+de ceux qui sont ouvert, le protocole et le service associé (ssh, www, etc) :
+</p>
+<pre>
+ $ pscan localhost
+</pre>
+
+<!-- End of content -->
+</div>
+
+<!-- Footer. -->
+<div id="footer">
+	<div class="footer-right"></div>
+	<a href="#top">Haut de la page</a> | 
+	<a href="index.html">Table des matières</a>
+</div>
+
+<div id="copy">
+    Copyright © 2007 <a href="http://www.slitaz.org/">SliTaz</a> -
+    <a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>;<br />
+    Documentation publiées sous
+    <a href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License</a>
+    et codée en <a href="http://validator.w3.org/">xHTML 1.0 valide</a>.
+</div>
+
+</body>
+</html>

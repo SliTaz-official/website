@@ -1,0 +1,305 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+    <title>SliTaz Handbook - Administration du système</title>
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <meta name="description" content="configuration de SliTaz langue clavier fstab heure horloge" />
+    <meta name="expires" content="never" />
+    <meta name="modified" content="2008-07-14 22:13:00" />
+    <meta name="publisher" content="www.slitaz.org" />
+    <meta name="author" content="Christophe Lincoln"/>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="book.css" />
+</head>
+<body bgcolor="#ffffff">
+
+<!-- Header and quick navigation -->
+<div id="header">
+<div align="right" id="quicknav">
+    <a name="top"></a>
+    <a href="network-config.html">Configuration du réseau</a> |
+    <a href="index.html">Table des matières</a>
+</div>
+<h1><font color="#3E1220">SliTaz Handbook</font></h1>
+</div>
+
+<!-- Content. -->
+<div id="content">
+<div class="content-right"></div>
+
+<h2><font color="#DF8F06">Administration du système</font></h2>
+
+<ul>
+    <li><a href="#locale">Configurer la langue</a> - Définir une locale
+    pour le système ou une session utilisateur.</li>
+    <li><a href="#keymap">Configurer le clavier.</a></li>
+    <li><a href="#shell">Personnaliser son shell</a> - Le fichier ~/.profile,
+    ash et sh.</li>
+    <li><a href="#clock">Régler l'horloge</a> - Modifier le fuseau horaire.</li>
+    <li><a href="#users-admin">Gestion des utilisateurs et groupes.</a></li>
+    <li><a href="#local.sh">Ajouter des commandes exécutées au boot.</a></li>
+    <li><a href="#cron">Exécuter des commandes à horaire fixe</a> - 
+    Utilisation de crond et crontab.</li>
+    <li><a href="network-config.html">Configuration du réseau.</a></li>
+</ul>
+
+<a name="locale"></a>
+<h3><font color="#6c0023">Configuration de la langue</font></h3>
+<p>
+SliTaz sauvegarde la configuration de la locale par défaut dans le fichier 
+/etc/locale.conf qui est lu par /etc/profile, à chaque login. Le fichier 
+/etc/locale.conf est généré lors du premier boot grâce au script 
+/etc/init.d/i18n.sh, lancé au démarrage. Il suffit donc de modifier le
+fichier /etc/locale.conf avec un éditeur de texte, ou de relancer 
+l'utilitaire <code>tazlocale</code> pour changer la locale par défaut du
+système :
+</p>
+<pre>
+ # tazlocale
+</pre>
+<p>
+Pour utiliser la langue lors d'une session , vous pouvez aussi ajouter 2
+lignes au fichier ~/.profile, propre à chaque utilisateur, exportant la
+configuration :
+</p>
+<pre class="script">
+
+export LANG=fr_CH
+export LC_ALL=fr_CH
+
+</pre>
+<a name="keymap"></a>
+<h3><font color="#6c0023">Configuration du clavier</font></h3>
+<p>
+La configuration du clavier et sauvegardée dans /etc/kmap.conf, comme
+pour la locale, vous pouvez modifier ce fichier à la main ou en lançant
+<code>tazkmap</code>, en tant qu'administrateur (<em>root</em>) :
+</p>
+<pre>
+ # tazkmap
+</pre>
+<p>
+Le clavier et chargé au démarrage par le script /etc/init.d/i18n.sh.
+Note : i18n pour internationalisation, et kmap c'est l'extension des
+fichiers de clavier utilisé par Busybox.
+</p>
+<a name="shell"></a>
+<h3><font color="#6c0023">Personnaliser son shell</font></h3>
+<p>
+Après un login vous êtes dans votre shell. Sur SliTaz vous disposez du
+shell <code>ash</code> et <code>sh</code> et un lien sur Ash, ce shell est
+fournit par Busybox. Ash est léger, rapide, et conforme au normes. Pour 
+changer le shell par défaut d'un utilisateur, il faut passer par le 
+fichier /etc/passwd, et modifier la ligne correspondante. Lors d'un login,
+le fichier /etc/profile est lu, puis c'est le fichier personnel ~/.profife.
+Vous pouvez modifier l'un et l'autre avec un éditeur de texte, pour y
+configurer la langue, d'autres aliases, etc.
+</p>
+<h4>Exemple: ~/.profile</h4>
+<pre class="script">
+# ~/.profile: executed by Bourne-compatible login shells.
+#
+
+# Aliases.
+alias ls='ls -F'
+alias df='df -h'
+
+# Env variables.
+export EDITOR=nano
+
+</pre>
+<a name="clock"></a>
+<h3><font color="#6c0023">Régler l'horloge</font></h3>
+<p>
+Pour connaître l'heure système actuelle vous pouvez utiliser la commande
+<code>date</code>. Sur SliTaz la configuration du fuseau horaire est
+sauvegardée dans le fichier /etc/TZ. Vous pouvez modifier se fichier via
+un des <a href="utilities.html">éditeurs</a> disponibles ou simplement en
+utilisant la commande <code>echo</code>, exemple pour la zone Europe/Zurich :
+</p>
+<pre>
+ # echo "Europe/Zurich" > /etc/TZ
+</pre>
+<h4>hwclock</h4>
+<p>
+Pour faire un réglage fin de l'horloge vous pouvez utiliser 'hwclock', cet
+utilitaire permet de synchroniser l'horloge système avec l'horloge matériel,
+ou l'inverse. 
+<p>
+Synchroniser l'horloge système avec l'horloge matériel
+(--utc = universal time, --localtime = local time) :
+</p>
+<pre>
+ # hwclock --hctosys --utc
+</pre>
+<p>
+Synchroniser l'horloge matériel avec l'horloge système :
+</p>
+<pre>
+ # hwclock --systohc --utc
+</pre>
+<p>
+Vous pouvez aussi connaître et synchroniser l'horloge système avec un serveur de
+temps sur le réseau avec la commande 'rdate', l'option <code>-p</code> affiche
+l'heure du serveur :
+</p>
+<pre>
+ $ rdate -p tick.greyware.com
+</pre>
+<p>
+Pour se synchroniser avec un serveur de temps, il faut être root :
+</p>
+<pre>
+ # rdate -s tick.greyware.com
+</pre>
+<a name="users-admin"></a>
+<h3><font color="#6c0023">Gestion des utilisateurs et groupes</font></h3>
+<p>
+La gestion des utilisateurs et groupes du système peut se faire totalement
+en ligne de commandes. Vous pouvez par exemple facilement ajouter ou supprimer
+des utilisateurs, créer des groupes, ou encore modifier les mots de passe.
+Par défaut, SliTaz configure un utilisateur hacker sans mot de passe, afin de
+ne pas se connecter en tant que root, même en mode LiveCD. Pour ce connecter
+en tant que super-utilisateur (root) il faut utiliser la commande
+<code>su</code>.
+</p>
+<h4>Mot de passe</h4>
+<p>
+Pour modifier un mot de passe il faut utiliser la commande <code>passwd</code>
+valable aussi pour root :
+</p>
+<pre>
+ $ passwd
+ ou:
+ # passwd
+ ou encore:
+ # passwd hacker
+</pre>
+<h4>Ajouter un utilisateur ou un groupe</h4>
+<p>
+L'ajout d'utilisateurs se fait avec la commande <code>adduser</code>, et 
+celui d'un groupe avec <code>addgroup</code>. Vous obtiendrez de l'aide en
+tapant ces commandes suivies de l'option <code>--help</code>. La commande 
+ci-dessous ajoute l'utilisateur pomme avec comme shell par défaut Ash :
+</p>
+<pre>
+ # adduser pomme -s /bin/ash
+</pre>
+<p>
+Et pour un groupe (nom du groupe: partage et gid: 100):
+</p>
+<pre>
+ # addgroup -g 100 partage
+</pre>
+<p>
+Pour ajouter un utilisateur existant dans un groupe existant, vous devez
+éditer les fichiers /etc/group et /etc/gshadow, car l'applet adduser fournit
+avec Busybox n'offre pas toutes les options fournies par le programme
+original.
+</p>
+<h4>Supprimer un utilisateur ou un groupe</h4>
+<p>
+Vous pouvez facilement supprimer un utilisateur du système ou un groupe avec
+les commade <code>deluser</code> et <code>delgroup</code> :
+</p>
+<pre>
+ # deluser pomme
+ Et pour un groupe :
+ # delgroup partage
+</pre>
+<a name="local.sh"></a>
+<h3><font color="#6c0023">Ajouter des commandes exécutées au boot</font></h3>
+<p>
+Lors du boot divers scripts sont exécutés, afin de configurer des services ou 
+autres, tel que le démarrage du serveur web, la mise en réseau, etc. Sur 
+SliTaz il y a un script: /etc/init.d/local.sh, qui vous permet de rajouter
+facilement des commandes qui seront lancées au démarrage du système. Vous
+pouvez aussi créer de nouveaux scripts dans /etc/init.d, leurs liens dans
+/etc/rc.scripts pour les scripts shell et utiliser /etc/rc.d pour les liens
+sur les scripts de démarrage des démons système :
+</p>
+<pre>
+ # nano /etc/init.d/local.sh
+</pre>
+<a name="cron"></a>
+<h3><font color="#6c0023">Exécuter des commandes à horaire fixe</font></h3>
+<p>
+Le démon Crond permet d'exécuter automatiquement des commandes à une date et 
+une heure précise, ou selon un cycle. C'est très utile pour des tâches
+routinières d'administration système. Le répertoire utilisé par Cron est : 
+<code>/var/spool/cron/crontabs</code>.
+</p>
+<p>
+Chaque utilisateur du système peut avoir ces propres tâches, elles sont
+définies dans le fichier /var/spool/cron/crontabs/user. L'utilitaire crontab
+permet, entre autre de lister les tâches propre à un utilisateur. La syntaxe
+de ces fichiers est la suivante :
+</p>
+<pre class="script">
+mm hh jj MMM JJJ tâche &gt; log
+</pre>
+<p>
+Nous allons créer le fichier pour root, et tester le démon 'crond', avec une
+tâche exécutée toutes les minutes, qui écrit la date dans le fichier
+/tmp/crond.test. A noter que l'utilitaire <code>crontab</code> a une option
+d'édition des fichiers cron, utilisant 'vi', non fourni avec SliTaz. A la 
+place vous pouvez utiliser GNU nano (&lt;Ctrl+X&gt; pour enregistrer et
+quitter) :
+</p>
+<pre>
+ # nano /var/spool/cron/crontabs/root
+</pre>
+<pre class="script">
+* * * * * date &gt;&gt; /tmp/crond.test
+</pre>
+<p>
+Lancez <code>crond</code> en fond avec l'option <code>-b</code> (backgroud),
+configurée via le fichier <code>/etc/daemons.conf</code> et en utilisant le
+script de démarrage :
+</p>
+<pre>
+ # /etc/init.d/crond start
+</pre>
+<p>
+Vous pouvez attendre quelques minutes, et afficher le contenu du
+fichier: /tmp/crond.test... OK :
+</p>
+<pre>
+ # cat /tmp/crond.test
+</pre>
+<p>
+Pour arrêter ou redémarrer le démon crond :
+</p>
+<pre>
+ # /etc/init.d/crond stop
+ Ou :
+ # /etc/init.d/crond restart
+</pre>
+<h4>Lancer le démon crond à chaque démarrage</h4>
+<p>
+Pour lancer le démon 'crond' à chaque démarrage du système, vous pouvez
+l'ajouter à la variable <code>START_DAEMONS</code> du fichier de configuration
+<code>/etc/rcS.conf</code> à la suite ou avant le serveur Web ou le serveur SSH.
+</p>
+
+<!-- End of content -->
+</div>
+
+<!-- Footer. -->
+<div id="footer">
+	<div class="footer-right"></div>
+	<a href="#top">Haut de la page</a> | 
+	<a href="index.html">Table des matières</a>
+</div>
+
+<div id="copy">
+    Copyright © 2008 <a href="http://www.slitaz.org/">SliTaz</a> -
+    <a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>;<br />
+    Documentation publiées sous
+    <a href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License</a>
+    et codée en <a href="http://validator.w3.org/">xHTML 1.0 valide</a>.
+</div>
+
+</body>
+</html>

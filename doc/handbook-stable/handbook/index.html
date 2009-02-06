@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+    <title>SliTaz Handbook</title>
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <meta name="description" content="" />
+    <meta name="expires" content="never" />
+    <meta name="modified" content="2007-12-04 12:30:00" />
+    <meta name="publisher" content="www.slitaz.org" />
+    <meta name="author" content="Christophe Lincoln"/>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="book.css" />
+</head>
+<body bgcolor="#ffffff">
+
+<!-- Header and quick navigation -->
+<div id="header">
+<div align="right" id="quicknav">
+    <a name="top"></a>
+    <a href="http://www.slitaz.org/doc/">www.slitaz.org/doc/</a> |
+    <a href="http://www.slitaz.org/en/doc/handbook/">English Handbook</a>
+</div>
+<h1><font color="#3E1220">SliTaz Handbook</font></h1>
+</div>
+
+<!-- Content. -->
+<div id="content">
+<div class="content-right"></div>
+
+<h2><font color="#DF8F06">Livre de main de SliTaz</font></h2>
+
+<h3><font color="#6c0023">Table des matières</font></h3>
+<ul>
+    <li><a href="livecd.html">Utiliser le LiveCD</a> -  Comment démarrer ?
+    Conserver ses données en utilisant un media externe (clé USB). Login,
+    des mots de passes et session graphique (X).</li>
+    <li><a href="install.html">Instructions d'installation</a> - Déscription
+    des étapes à réaliser manuellement pour installer Slitaz sur un disque
+    dur.</li>
+    <li><a href="cmdline.html">Références en ligne de commandes</a> - Utiliser
+    SliTaz en ligne commandes via un terminal Linux ou graphique.</li>
+    <li><a href="jwm.html">JWM</a> - Présentation, utilisation et
+    configuration du gestionnaire de fenêtres <em>Joe Window Manager</em>.
+    Ce document fournit les instructions pour créer un thème ou/et modifier
+    le menu en fonction de ses goûts, envies et besoins.</li>
+    <li><a href="enlightenment.html">Enlightenment (e17)</a> - Environnement
+    de bureau complet, léger, rapide, facilement configurable et simplement
+    beau.</li>
+</ul>
+<h4>Applications</h4>
+<ul>
+    <li><a href="utilities.html">Utilitaires</a> - Navigateurs de fichiers,
+    base de données SQL, calculatrice, gravure de CD/DVD et créations ISO.</li>
+    <li><a href="office.html">Bureautique</a> - Traitement de texte, Organiseur
+    personnel, lecteur PDF, Wiki, etc.</li>
+    <li><a href="network.html">Internet</a> - Navigateurs web,
+    client de chat IRC, client mail, client BitTorrent et FTP.</li>
+    <li><a href="graphics.html">Graphisme</a> - Infographie, et gestion
+    d'images.</li>
+    <li><a href="multimedia.html">Multimedia</a> - Son, musique et video</li>
+    <li><a href="development.html">Développement</a> - Créer des interfaces
+    graphiques avec Dialog, IDE ou Environnement de Développement Intégré,
+    scripts SHell et Perl.
+    Installer la <em>toolchain</em> et compiler des sources.</li>
+    <li><a href="secure-shell.html">SHell sécurisé (SSH)</a> - Contrôle et
+    admin à distance avec Dropbear, client/serveur SSH et fournissant aussi
+    l'utilitaire de copie scp.</li>
+    <li><a href="system-tools.html">Outils système</a> - Visionneur de
+    processus système, mountage et gestion d'un disque dur.</li>
+    <li>Jeux - Clone du jeu Space in Vaders : nInvaders. Et un petit tetris :
+    Bastet.</li>
+</ul>
+<h4>Système</h4>
+<ul>
+    <li><a href="x-window.html">Système de fenêtres X</a> - Utilisation du
+    serveur Xvesa ou Xorg, polices (<em>fonts</em>) et configuration d'une 
+    session graphique.</li>
+    <li><a href="system-admin.html">Administration du système</a> -  Configurer
+    la langue, le clavier, régler l'horloge et le fuseau horaire. Utiliser
+    Crond et Crontab, gestion des utilisateurs et groupes.</li>
+    <li><a href="network-config.html">Configuration du réseau</a> -  Connexion au web,
+    réseau local, et pare-feu (firewall).</li>
+    <li><a href="web-server.html">Serveur web</a> - Utiliser et configurer le
+    serveur web LightTPD.</li>
+    <li><a href="packages.html">Gestion des paquets</a> - Liste des paquets
+    logiciels, installation, désinstallation, et infos sur les paquets de
+    SliTaz.</li>
+    <li><a href="security.html">Sécurité du système</a> - SliTaz et la sécurité
+	du système en général.</li>
+    <li><a href="chroot-env.html">Environnement chrooté</a> - Construire un
+    <em>chroot</em> pour protéger le système hôte, tester, compiler et/ou
+    développer SliTaz.</li>
+    <li><a href="hacking-livecd.html">Hacking LiveCD</a> - Manipuler et
+    s'amuser avec l'image ISO du LiveCD de SliTaz.</li>
+    <li><a href="gen-livecd.html">Générer un LiveCD à saveur</a> - Créer 
+    votre propre saveur du LiveCD en utilisant les paquets et Tazlito.</li>
+    <li><a href="liveusb.html">LiveUSB</a> - Installer et démarrer SliTaz
+    depuis un media USB.</li>
+</ul>
+
+<a name="about"></a>
+<h3><font color="#6c0023">&Agrave; propos de ce Handbook</font></h3>
+<p>
+Le Handbook de SliTaz est le livre de référence au sujet de l'utilisation du
+système au niveau utilisateur, administrateur et développeur en général. Ce
+Handbook réunit des travaux de référence, des mini manuels et une collection
+d'instructions destinées à fournir un livre complet, de haute qualité, 
+facilement consultable et fournissant des réponses rapides sur un sujet
+spécifique. Le Handbook est écrit au format xHTML 1.0 avec l'IDE Geany et
+l'éditeur de texte GNU Nano.
+</p>
+<p>
+Vous pouvez vous référer à la table des matières de cette page pour un
+accès aux divers documents à thèmes. Pour commencer en mode LiveCD, nous vous
+conseillons de jeter un coup d'oeil au chapître :
+<a href="livecd.html">Utiliser le LiveCD</a>. Vous pouvez lire le Handbook
+de manière linéaire en utilisant le liens de navigation rapide situés dans le
+coin droite en haut de chaque pages ou naviguer dans les pages en fonction de
+vos besoins.
+</p>
+<p>
+La dernière version du <a href="http://www.slitaz.org/doc/handbook/"
+>Handbook</a> de SliTaz est lisible via la partie 
+<a href="http://www.slitaz.org/doc/">documentation</a> du site web de 
+<a href="http://www.slitaz.org/">www.slitaz.org</a>. Au moment de la
+publication d'une nouvelle version de SliTaz, le Handbook est archivé et
+prend le même numéro de version que SliTaz. Il est alors inclus en standard,
+dans la distribution de base officielle.
+</p>
+<h4>Participer/collaborer/réclamer</h4>
+<p>
+La documentation du projet se veut une oeuvre collaborative. Vous pouvez
+facilement participer à l'écriture ou à la relecture de documents, nous faire
+part de vos suggestions et commentaires. Si vous avez besoin d'une description
+supplémentaire, d'un texte de référence ou autre, vous pouvez, sans hésiter,
+nous contacter et nous faire une demande spécifique. 
+</p>
+<p>
+Si vous avez remarqué des erreurs dans les textes ou si vous avez fait une
+relecture complète d'un chapître, vous pouvez envoyer/attacher vos 
+correctifs sous forme de patch ou envoyer toute la page relue ou encore
+signaler les erreurs directement dans le contenu du mail.
+</p>
+<p>
+Pour écrire un nouveau document ou un bout de texte à rajouter dans un
+chapître existant, vous pouvez utiliser la page modèle du Handbook
+(<a href="template.html">template.html</a>) associée à sa feuille de style
+CSS (<a href="book.css">handbook.css</a>) ou simplement utiliser un
+fichier texte (une personne de la liste se chargera de la mise en page). Une
+fois votre texte mis en page, vous pouvez l'envoyer sur la liste afin qu'il
+soit relu et corrigé. Votre documents sera ensuite intégré au Handbook
+officiel de SliTaz. Par la suite, vous avez le choix de rester le mainteneur
+du document ou de passer la main.
+</p>
+
+<!-- End of content -->
+</div>
+
+<!-- Footer. -->
+<div id="footer">
+	<div class="footer-right"></div>
+	<a href="#top">Haut de la page</a> | 
+	<a href="index.html">Table des matières</a>
+</div>
+
+<div id="copy">
+    Copyright © 2007 <a href="http://www.slitaz.org/">SliTaz</a> -
+    <a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>;<br />
+    Documentation publiées sous
+    <a href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License</a>
+    et codée en <a href="http://validator.w3.org/">xHTML 1.0 valide</a>.
+</div>
+
+</body>
+</html>
