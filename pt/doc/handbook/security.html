@@ -1,10 +1,10 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt">
 <head>
-    <title>SliTaz Handbook (en) - Security</title>
+    <title>Manual SliTaz (pt) - Segurança</title>
     <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
-    <meta name="description" content="slitaz English handbook" />
+    <meta name="description" content="slitaz portuguese handbook" />
     <meta name="expires" content="never" />
     <meta name="modified" content="2008-07-18 05:30:00" />
     <meta name="publisher" content="www.slitaz.org" />
@@ -18,68 +18,72 @@
 <div id="header">
 <div id="quicknav" align="right">
     <a name="top"></a>
-    <a href="index.html">Table of contents</a>
+    <a href="index.html">Conteúdo</a>
 </div>
-<h1><font color="#3e1220">SliTaz Handbook (en)</font></h1>
+<h1><font color="#3e1220">Manual SliTaz (pt)</font></h1>
 </div>
 
 <!-- Content. -->
 <div id="content">
 <div class="content-right"></div>
 
-<h2><font color="#df8f06">SliTaz and System Security</font></h2>
+<h2><font color="#df8f06">SliTaz e Segurança do Sistema</font></h2>
 
 <ul>
-	<li><a href="#policy">Security Policy.</a></li>
-	<li><a href="#root">Root</a> - The system administrator.</li>
+	<li><a href="#policy">Política de segunraça.</a></li>
+	<li><a href="#root">Root</a> - O administrador do sistema.</li>
 	<li><a href="#passwords">Passwords.</a></li>
-	<li><a href="#busybox">Busybox</a> - Configuration file /etc/busybox.conf.</li>
-	<li><a href="#web-server">LightTPD web server</a> - Disable the LightTPD web server.</li>
-	<li><a href="#ssh">SSH server</a> - Default options.</li>
-	<li><a href="#pscan">Pscan</a> - Scan for open ports.</li>
-	<li><a href="network-config.html#firewall">Firewall (Iptables)</a> - 
-	The network firewall.</li>
+	<li><a href="#busybox">Busybox</a> - Arquivo de configuração /etc/busybox.conf.</li>
+	<li><a href="#web-server">Servidor web LightTPD</a> - Desabilite o servidor.</li>
+	<li><a href="#ssh">Servidor SSH</a> - Opções padrão.</li>
+	<li><a href="#pscan">Pscan</a> - Procure portas abertas.</li>
+	<li><a href="network-config.html#firewall">Firewall (Iptables)</a> - O firewall de rede.</li>
 </ul> 
 
 <a name="policy"></a>
-<h3>Security Policy</h3>
+<h3>Política de segurança</h3>
 <p>
-SliTaz has given a lot of consideration to system security. Applications are tested for many months before being
-included in the distribution. At boot time, a minimum of services are launched by the rc scripts. For a complete
-lists of daemons enabled, you can look at the <code>RUN_DAEMONS</code> variable in the <code>/etc/rcS.conf</code> configuration
-file:
+SliTaz leva muito em conta a segurança do sistema. As aplicações são 
+testadas durante muitos meses antes de serem incluídas na distribuição. 
+Durante o boot, um mínimo de serviços são iniciados pelos scripts rc. Para uma 
+lista completa de daemons habilitadas, você pode olhar para a variável 
+<code>RUN_DAEMONS</code> no arquivo de configuração <code>/etc/rcS.conf</code>:   
 </p>
 <pre> $ cat /etc/rcS.conf | grep RUN_DAEMONS
 </pre>
 <p>
-To view the actual processes, their PID and memory usage, you can use the 'ps' command or the 'htop'
-utility:
+Para ver os processos atuais, o PID deles e uso de memória, pode usar você o 
+comando 'ps' ou o  utilitário 'htop':   
 </p>
 <pre> $ ps
  $ htop
 </pre>
 
 <a name="root"></a>
-<h3>Root - The system administrator</h3>
+<h3>Root - O administrador do sistema</h3>
 <p>
-In a GNU/Linux system, the <em>root</em> user is the system administrator. <em>root</em> has all the rights 
-to the system files and that of the users. It is advisable never to log in as <em>root</em> by using the command 
-<code>su</code> followed by the password to obtain absolute rights over the system. Never log in as <em>root</em> and surf the 
-internet for example. This allows you to create a double barrier in the case of an attack or intrusion after a 
-download and makes it harder for a <em>cracker</em> to take control of your machine - first he must crack your
-password and then crack the <em>root</em> password of the system administrator.
+Em um sistema GNU/Linux, o usuário <em>root</em> é o administrador do sistema. 
+Este usuário tem todos os direitos aos arquivos do sistemas e que dos usuários. 
+Nunca é aconselhável logar-se como <em>root</em> usando o comando <code>su</code> seguido 
+pelo password para obter direitos absolutos sobre o sistema. Nunca se logue como
+<em>root</em> e navegue na internet, por exemplo. Isto lhe permite criar uma 
+barreira dupla no caso de um ataque ou intrusão depois de um download e torna 
+mais difícil para um <em>cracker</em> tomar o controle de sua máquina - primeiro
+ele tem que crackear seu password e então tem que crackear o password root do 
+administrador de sistema.   
 </p>
 <p>
-A GNU/Linux system has secured at least two users, one to work and one to administer, configure
-or update the system (<code>root</code>). It's also advisable to entrust the administration of the
-system to a person.
+Um sistema GNU/Linux é seguro com dois usuários pelo menos, um para trabalhar 
+e um para administrar, configurar ou atualizar o sistema (<code>root</code>). 
+Também é aconselhável confiar a administração do sistema a uma pessoa.   
 </p>
 
 <a name="passwords"></a>
 <h3>Passwords</h3>
 <p>
-By default the SliTaz user <em>hacker</em> doesn't have a password and the system administrator <em>root</em>
-comes with the password (<em>root</em>). You can easily change these by using the <code>passwd</code> command:
+Por padrão no SliTaz o usuário <em>hacker</em> não tem um password e o 
+administrador <em>root</em> vem com o password (<em>root</em>). Você pode mudar 
+estes passwords facilmente usando o comando <code>passwd</code>:   
 </p>
 <pre> $ passwd
  # passwd
@@ -88,52 +92,58 @@ comes with the password (<em>root</em>). You can easily change these by using th
 <a name="busybox"></a>
 <h3>Busybox</h3>
 <p>
-The file busybox.conf configures the applets and their respective rights. On the SliTaz LiveCD the commands:
-su, passwd, loadkmap, mount, reboot and halt can be initiated by all users - the owner and group of these 
-commands is <em>root</em> (<code>* = ssx root.root</code>). The busybox.conf file is readable by root,
-using the rights 600. Note that the <code>passwd</code> command will not allow users to change their own password 
-if it is not ssx.
+O arquivo busybox.conf configura os applets e seus respectivos direitos. No 
+LiveCD do SliTaz os comandos: su, passwd, loadkmap, mount, reboot e halt podem 
+ser executados por todos os usuários - o dono e grupo destes comandos são 
+<em>root</em> (<code>* = ssx root.root</code>). O arquivo busybox.conf é legível
+pelo root, usando os direitos 600. Note que o comando <code>passwd</code> não 
+permitirá para os usuários mudarem seu próprio password se não for configurado
+para ssx.   
 </p>
 
 <a name="web-server"></a>
-<h3>LightTPD web server</h3>
+<h3>Servidor web LightTPD</h3>
 <p>
-On SliTaz the LightTPD web server is enabled by default at system startup, if you don't intend to use SliTaz in a server 
-environment, you can safely disable it by removing it from the <code>RUN_DAEMONS</code> variable in the
-<code>/etc/rcS.conf</code> configuration file or to stop it manually:
+No SliTaz o servidor de internet LightTPD é habilitado por padrão na 
+inicialização do sistema, se você não pretender usar SliTaz em um ambiente de 
+servidor, você pode desabilitar isto seguramente removendo-o da variável 
+<code>RUN_DAEMONS</code> no arquivo de configuração <code>/etc/rcS.conf</code> 
+ou cancelar o serviço manualmente:   
 </p>
 <pre> # /etc/init.d/lighttpd stop
 </pre>
 
 <a name="ssh"></a>
-<h3>SSH Server</h3>
+<h3>Servidor SSH</h3>
 <p>
-This small section is a compliment to the 
-<a href="secure-server.html">Secure SHell (SSH)</a> page. 
-On SliTaz the Dropbear SSH server is not run by default, we must add it to the variable 
-<code>RUN_DAEMONS</code> in the configuration file <code>/etc/rcS.conf</code> for it to be
-enabled at system boot. Or to start the server manually:
+Esta seção pequena é um complemento à página <a href="secure-server.html"
+>SHell Seguro (SSH)</a>. No SliTaz o servidor SSH Dropbear não é iniciado por 
+padrão, nós temos que acrescentá-lo à variável <code>RUN_DAEMONS</code> no 
+arquivo de configuração <code>/etc/rcS.conf</code> para que seja habilitado no 
+boot do sistema. Ou iniciar o servidor manualmente:   
 </p>
 <pre> # /etc/init.d/dropbear start
 </pre>
 <p>
-By default, Dropbear is launched with the following options:
+Por padrão, Dropbear é iniciado com as opções seguintes: 
 </p>
 <pre class="script"> -w   Disallow root logins.
  -g   Disallow logins for root password.
 </pre>
 <p>
-You can add new options by editing the daemons configuration file: <code>/etc/daemons.conf</code>. 
-For all options, you can type: <code>dropbear -h</code>.
+Você pode adicionar opções novas editando o arquivo de configuração de daemons: 
+<code>/etc/daemons.conf</code>. Para todas as opções, você pode digitar: 
+<code>dropbear -h</code>.   
 </p>
 
 <a name="pscan"></a>
 <h3>Pscan - Ports scanner</h3>
 <p>
-Pscan is a small utility of the Busybox project that scans the ports of your machine. You can use 
-<code>pscan</code> to scan the localhost or a remote host using the name or IP address of the machine.
-Pscan will test all the ports from 1 - 1024 by default and list those that are open, their protocol
-and associated service (ssh, www, etc):
+Pscan é um pequeno utilitário do projeto Busybox que escaneia as portas de sua 
+máquina. Você pode usar o <code>pscan</code> para escanear o localhost ou um 
+host remoto, usando o nome ou o endereço IP da máquina. O pscan testará, por 
+padrão, todas as portas de 1 a 1024 e listará aquelas que estiverem abertas, o
+protocolo e serviço associado a elas (ssh, www, etc):   
 </p>
 <pre> $ pscan localhost
 </pre>
@@ -144,12 +154,12 @@ and associated service (ssh, www, etc):
 <!-- Footer. -->
 <div id="footer">
 	<div class="footer-right"></div>
-	<a href="#top">Top of the page</a> | 
-	<a href="index.html">Table of contents</a>
+	<a href="#top">Topo da Página</a> | 
+	<a href="index.html">Conteúdo</a>
 </div>
 
 <div id="copy">
-    Copyright © 2008 <a href="http://www.slitaz.org/en/">SliTaz</a> -
+    Copyright © 2008 <a href="http://www.slitaz.org/pt/">SliTaz</a> -
     <a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>;<br />
     Documentation is under
     <a href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License</a>
