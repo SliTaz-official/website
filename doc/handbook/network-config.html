@@ -62,15 +62,30 @@ les outils fournis par <code>rp-pppoe</code> et installés par défaut sur SliTaz.
 
 <a name="netbox"></a>
 <h3><font color="#6c0023">Netbox - Configuration graphique du réseau</font></h3>
+<img
+	src="images/screenshots/netbox.png"
+	style="width: 240px; height: 160px; float: left;
+		padding: 0px 20px 10px 0px;" />
 <p>
-Netbox est un petite interface graphique permettant de facilemnt configurer
-une interface réseau en utilisant le protocole DHCP ou en demandant une adresse
-IP fixe. Les onglets <em>DHCP</em> et <em>Staic IP</em> permettent de démarrer
-ou stopper la connexion et change automatiquement les valeurs dans les fichiers
-système. Netbox fournit aussi un onglet <em>System wide</em> depuis lequel
-vous pouvez directement éditer les fichiers de configuration système. Vous
-pouvez lancer Netbox depuis le menu Outils système (<em>System tools</em>) ou
-depuis un terminal graphique :
+Netbox est un petite interface graphique permettant de facilement configurer
+une interface réseau Ethernet en utilisant le protocole DHCP ou en demandant
+une adresse IP fixe. Les onglets <em>DHCP</em> et <em>Staic IP</em> permettent
+de démarrer ou stopper la connexion et change automatiquement les valeurs 
+dans les fichiers système. Les connexions Ethernet sont des connection 
+cablées (RJ45) et ne nécessite pas d'authentification. Netbox fournit 
+aussi un onglet <em>System wide</em> depuis lequel vous pouvez directement
+éditer les fichiers de configuration système. Les connections PPPoE ou 
+PPP demandant un nom d'utilisateur et un mot de passe on leur propre onglet.
+L'outils permet encore de configurer différents serveurs: SSH, Inetd,
+ZeroConf, DHCP, PXE, DSN, Rsync, HTTP. Il aussi possible de créer un 
+réseau privé virtuel ou VPN avec les outils inclus de base dans la 
+distribution.
+</p>
+<p>
+Vous pouvez lancer Netbox depuis le menu "Outils système" (<em>System tools</em>)
+&rarr; "Netbox Configurer le réseau" ou depuis un terminal graphique. C'est un
+outil qui permet de modifier des configuration système, il faut donc être
+administrateur (<em>root</em>) pour l'utiliser :
 </p>
 <pre>
  $ subox netbox
