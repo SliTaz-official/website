@@ -151,7 +151,7 @@ dire qu'un paquet dépendant de lighttpd n'a pas à l'installer si apache est
 déjà installé.<br>
 Mais cette alternative peut avoir des conséquences sur le choix des paquets qui
 en dépendent. Le paquet php est prévu pour fonctionner uniquement avec lighttpd.
-C'est php-apache qu'il faut installer avec apache. Le ligne 
+C'est php-apache qu'il faut installer avec apache. La ligne 
 <code>PROVIDE="php:apache"</code> dans la recette de php-apache indique qu'il
 faut substituer php-apache à php si apache est installé.
 Les paquets dépendants de php installeront alors php-apache ou php selon le
@@ -160,6 +160,11 @@ Cette variable permet aussi d'avoir un paquet compilé avec différentes options.
 La ligne <code>PROVIDE="epdfview:cups"</code> du paquet epdfview-cups permet
 d'installer un package epdfview compilé avec le support de l'impression par 
 cups.
+On peut aussi définir des paquets virtuels avec cette variable. Les lignes
+<code>PROVIDE="libgl"</code> du paquet <code>mesa</code> et
+<code>PROVIDE="libgl:nvidia"</code> du paquet <code>nvidia-glx</code>
+définissent le paquet virtuel <code>libgl</code> qui sera une version
+optimisée lorsque le paquet <code>nvidia</code> est installé.
 </p>
 
 <h3>Variables générées automatiquement par tazwok</h3>
