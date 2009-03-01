@@ -12,6 +12,32 @@
 	<lastBuildDate>Wed, 31 Dec 2008 20:50:00 GMT</lastBuildDate>
 	
 	<item>
+		<title>Cooking 20090228 - Nouvelle Cooking</title>
+		<link>http://www.slitaz.org/get/#cooking</link>
+		<guid isPermaLink="true">http://www.slitaz.org/get/</guid>
+		<pubDate>Sun, 01 Mar 2009 10:50:00 GMT</pubDate>
+		<description>
+	En préparation de la prochaine version stable, le projet SliTaz est 
+	fier de publier une nouvelle version Cooking avec un grand nombre de 
+	corrections, mises à jour et nouvelles fonctionnalités. 
+	L'auto-détection des périphériques PCI/USB est maintenant gérée par 
+	Tazhw et les firmwares peuvent être installés via un simple click 
+	dans l'interface graphique dédiée. Tazndis a aussi une simple box 
+	permettant de gérer facilement des pilotes (drivers) Windows. Le 
+	gestionnaire de paquets graphique est bien plus simple à utiliser, 
+	la création de LiveUSB (ex: clé USB) peut se faire en un ou deux 
+	cliques de souris. L'interface de configuration du réseau affiche 
+	une jolie liste des connexions disponibles et la nouvelle Wifibox 
+	permet de se connecter à différents réseaux, créer des favoris et 
+	configurer les pilotes manuellement ou via Tazhw. Le bureau fourni 
+	maintenant une interface permettant de gérer les applications lançées 
+	avec la session Openbox et Ivman avec desktopbox fournissent un 
+	système de notification simple et léger. Vous pouvez télécharger 
+	cette nouvelle image ISO depuis la partie téléchargement.
+		</description>
+	</item>
+	
+	<item>
 		<title>Cooking 20081231 - Wifi and NTFS support</title>
 		<link>http://www.slitaz.org/get/#cooking</link>
 		<guid isPermaLink="true">http://www.slitaz.org/get/</guid>
