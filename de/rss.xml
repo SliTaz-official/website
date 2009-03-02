@@ -19,14 +19,13 @@
 		<description>
 	Kurz vor dem nächsten stabilen Release! - 
 	Das SliTaz Projekt stellt eine neue Cooking Version vor, mit weiteren Bugfixes, 
-	Updates, Verbesserungen und neuen Funktionen. PCI/USB - Erkennung wird nun durch
+	Updates, Verbesserungen und neuen Funktionen. PCI- und USB- Erkennung wird nun durch
 	Tazhw durchgeführt, Firmware kann über ein grafisches Tool leicht installiert werden. 
 	Tazndis hat ebenfalls eine einfache GUI bekommen. Der grafische Paketmanager ist nun 
 	im Umgang deutlich vereinfacht worden; Über Netbox können alle Netzwerkschnittstellen angezeigt und 
 	konfiguriert werden, Wifibox managet das WLAN.
 	Neu ist auch ein Notifikationssystem und die Verwaltung der Autostart-Einträge.
-	Die neue Cooking kann von einem der offiziellen Mirrors heruntergeladen werden 
-	(siehe <a href="http://slitaz.org/de/get/">Downloadsektion</a>).
+	Die neue Cooking kann von einem der offiziellen Mirrors heruntergeladen werden.
 		</description>
 	</item>
 	
