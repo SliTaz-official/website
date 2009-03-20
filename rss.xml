@@ -9,7 +9,24 @@
 		Actualités du projet de la mini distribution SliTaz GNU/Linux.
 	</description>
 	<copyright>Copyright © www.slitaz.org - GNU gpl</copyright>
-	<lastBuildDate>Sun, 01 Mar 2009 10:50:00 GMT</lastBuildDate>
+	<lastBuildDate>Sun, 20 Mar 2009 22:50:00 GMT</lastBuildDate>
+	
+	<item>
+		<title>Cooking 20090228 - Nouvelle Cooking</title>
+		<link>http://www.slitaz.org/</link>
+		<guid isPermaLink="true">http://www.solutionslinux.fr/</guid>
+		<pubDate>Sun, 20 Mar 2009 22:50:00 GMT</pubDate>
+		<description>
+		Le projet SliTaz sera présent aux Solutionslinux 2009 à Paris, le stand
+		sera tenu par 3 membres actifs de l'équipe pendant les 3 jours du salon
+		et plusieurs autres contributeurs seront présents à certain moment. Sur
+		place vous aurez la possibilité de tester SliTaz sur divers machines
+		dont le EeePC, de créer (prenez une clé avec vous) ou d'acheter des
+		clé USB bootables ansi que des des LiveCD à saveurs. Vous pourrez
+		aussi vous renseigner sur le projet et prendre contact avec les
+		membres de l'association et du team de développement.
+		</description>
+	</item>
 	
 	<item>
 		<title>Cooking 20090228 - Nouvelle Cooking</title>
@@ -17,23 +34,23 @@
 		<guid isPermaLink="true">http://www.slitaz.org/get/</guid>
 		<pubDate>Sun, 01 Mar 2009 10:50:00 GMT</pubDate>
 		<description>
-	En préparation de la prochaine version stable, le projet SliTaz est 
-	fier de publier une nouvelle version Cooking avec un grand nombre de 
-	corrections, mises à jour et nouvelles fonctionnalités. 
-	L'auto-détection des périphériques PCI/USB est maintenant gérée par 
-	Tazhw et les firmwares peuvent être installés via un simple click 
-	dans l'interface graphique dédiée. Tazndis a aussi une simple box 
-	permettant de gérer facilement des pilotes (drivers) Windows. Le 
-	gestionnaire de paquets graphique est bien plus simple à utiliser, 
-	la création de LiveUSB (ex: clé USB) peut se faire en un ou deux 
-	cliques de souris. L'interface de configuration du réseau affiche 
-	une jolie liste des connexions disponibles et la nouvelle Wifibox 
-	permet de se connecter à différents réseaux, créer des favoris et 
-	configurer les pilotes manuellement ou via Tazhw. Le bureau fourni 
-	maintenant une interface permettant de gérer les applications lançées 
-	avec la session Openbox et Ivman avec desktopbox fournissent un 
-	système de notification simple et léger. Vous pouvez télécharger 
-	cette nouvelle image ISO depuis la partie téléchargement.
+		En préparation de la prochaine version stable, le projet SliTaz est 
+		fier de publier une nouvelle version Cooking avec un grand nombre de 
+		corrections, mises à jour et nouvelles fonctionnalités. 
+		L'auto-détection des périphériques PCI/USB est maintenant gérée par 
+		Tazhw et les firmwares peuvent être installés via un simple click 
+		dans l'interface graphique dédiée. Tazndis a aussi une simple box 
+		permettant de gérer facilement des pilotes (drivers) Windows. Le 
+		gestionnaire de paquets graphique est bien plus simple à utiliser, 
+		la création de LiveUSB (ex: clé USB) peut se faire en un ou deux 
+		cliques de souris. L'interface de configuration du réseau affiche 
+		une jolie liste des connexions disponibles et la nouvelle Wifibox 
+		permet de se connecter à différents réseaux, créer des favoris et 
+		configurer les pilotes manuellement ou via Tazhw. Le bureau fourni 
+		maintenant une interface permettant de gérer les applications lançées 
+		avec la session Openbox et Ivman avec desktopbox fournissent un 
+		système de notification simple et léger. Vous pouvez télécharger 
+		cette nouvelle image ISO depuis la partie téléchargement.
 		</description>
 	</item>
 	
@@ -43,30 +60,30 @@
 		<guid isPermaLink="true">http://www.slitaz.org/get/</guid>
 		<pubDate>Wed, 31 Dec 2008 20:50:00 GMT</pubDate>
 		<description>
-	Les membres du projet SliTaz sont fiers de vous proposer une 
-	nouvelle image ISO du LiveCD de la version Cooking. Elle vous permet 
-	d'utiliser et de tester le travail réalisé ces derniers mois. Elle 
-	comprend de nombreuses nouvelles fonctionnalités, des corrections de 
-	bugs et plusieurs mises à jours. La distribution comprend maintenant 
-	un centre de contrôle, la gestion du wifi via Netbox et des outils 
-	utiles à la gestion du wifi tels tazndis, une version plus légère de 
-	ndiswrapper permettant d'utiliser les drivers Windows pour les 
-	cartes réseaux n'ayant pas de driver libre. Perl est inclus sur le 
-	cdrom et Lua a été supprimé. Le support du Wifi est aussi accompagné 
-	par la prise en charge des partitions NTFS, pour cela nous avons 
-	sorti mPlayer de la sélection des paquets inclus par défaut dans le 
-	coeur du LiveCD. Le gestionnaire de paquets Tazpkg a été grandement 
-	amélioré, il permet la sauvegarde des fichiers de configuration, la 
-	mise à jours des logiciels en fonction de leur date de construction 
-	(build) sur le serveur du projet, des fichiers de log sont conservés 
-	lors d'actions sur les paquets et plusieurs correctifsont été 
-	appliqués. Dans la foulée des améliorations: les scripts 
-	d'initialisation sont plus performants, l'outil de construction du 
-	LiveCD (Tazlito) est plus cohérent. Le dépôt de la version Cooking 
-	contient maintenant plus de 1100 paquets logiciels prêt à être 
-	installés et cela grâce à un travail acharné des développeurs 
-	SliTaz. Vous pouvez télécharger cette nouvelle mouture depuis un des 
-	miroirs officiels du projet.
+		Les membres du projet SliTaz sont fiers de vous proposer une 
+		nouvelle image ISO du LiveCD de la version Cooking. Elle vous permet 
+		d'utiliser et de tester le travail réalisé ces derniers mois. Elle 
+		comprend de nombreuses nouvelles fonctionnalités, des corrections de 
+		bugs et plusieurs mises à jours. La distribution comprend maintenant 
+		un centre de contrôle, la gestion du wifi via Netbox et des outils 
+		utiles à la gestion du wifi tels tazndis, une version plus légère de 
+		ndiswrapper permettant d'utiliser les drivers Windows pour les 
+		cartes réseaux n'ayant pas de driver libre. Perl est inclus sur le 
+		cdrom et Lua a été supprimé. Le support du Wifi est aussi accompagné 
+		par la prise en charge des partitions NTFS, pour cela nous avons 
+		sorti mPlayer de la sélection des paquets inclus par défaut dans le 
+		coeur du LiveCD. Le gestionnaire de paquets Tazpkg a été grandement 
+		amélioré, il permet la sauvegarde des fichiers de configuration, la 
+		mise à jours des logiciels en fonction de leur date de construction 
+		(build) sur le serveur du projet, des fichiers de log sont conservés 
+		lors d'actions sur les paquets et plusieurs correctifsont été 
+		appliqués. Dans la foulée des améliorations: les scripts 
+		d'initialisation sont plus performants, l'outil de construction du 
+		LiveCD (Tazlito) est plus cohérent. Le dépôt de la version Cooking 
+		contient maintenant plus de 1100 paquets logiciels prêt à être 
+		installés et cela grâce à un travail acharné des développeurs 
+		SliTaz. Vous pouvez télécharger cette nouvelle mouture depuis un des 
+		miroirs officiels du projet.
 		</description>
 	</item>
 	
