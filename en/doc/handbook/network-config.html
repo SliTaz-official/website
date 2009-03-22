@@ -6,7 +6,7 @@
     <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
     <meta name="description" content="slitaz English handbook network config pppoe ppp eth dhcp" />
     <meta name="expires" content="never" />
-    <meta name="modified" content="2008-07-17 22:30:00" />
+    <meta name="modified" content="2009-03-22 18:30:00" />
     <meta name="publisher" content="www.slitaz.org" />
     <meta name="author" content="Paul Issot, Christophe Lincoln"/>
     <link rel="shortcut icon" href="favicon.ico" />
@@ -31,17 +31,19 @@
 <h2><font color="#DF8F06">Network configuration</font></h2>
 
 <ul>
-	<li><a href="#eth">Ethernet connection</a> - DHCP or static IP.</li>
-	<li><a href="#driver">Install network card driver</a> - Find and load Kernel
-	modules.</li>
-	<li><a href="#netbox">Netbox</a> - Configure network.</li>
-	<li><a href="#pppoe">PPPoE kernel-mode</a> - Dial-up modem connection in 
-	Kernel mode.</li>
+	<li><a href="#about">About the Network.</a></li>
+	<li><a href="#netbox">Netbox</a> - Configure the network.</li>
+	<li><a href="#wifibox">Wifibox</a> - Configure wireless networks.</li>
+	<li><a href="#driver">Install network card driver</a> - Find and load 
+	Kernel modules.</li>
+	<li><a href="#hostname">/etc/hostname</a> - Hostname.</li>
+	<li><a href="#pppoe">PPPoE kernel-mode</a> - Dial-up modem connection 
+	in Kernel mode.</li>
 	<li><a href="#rp-pppoe">PPPoE with rp-pppoe</a> - Dial-up modem.</li>
 	<li><a href="#firewall">Firewall</a> - Manage the Firewall (Iptables).</li>
 </ul>
 
-<a name="eth"></a>
+<a name="about"></a>
 <h3>About the Network</h3>
 <p>
 By default SliTaz starts a DHCP client (udhcpc) on eth0 at boot time. If your
@@ -50,9 +52,10 @@ a router, your connection should already be working. DHCP is dynamically
 configured, on each boot the client asks for a new IP address from 
 the DHCP server, which is integrated into the router, or on another computer.
 If you need a static IP, you can directly edit config files or use the GUI
-<code>netbox</code> available from JWM menu --&gt; System tools. In a terminal
-or a Linux console, you can list all available network interfaces with the 
-command <code>ifconfig</code> followed by the <code>-a</code> option:
+<code>netbox</code> available from the System menu --&gt; System tools. 
+In a terminal or a Linux console, you can list all available network 
+interfaces with the command <code>ifconfig</code> followed by the 
+<code>-a</code> option:
 </p>
 <pre>
  $ ifconfig -a
@@ -70,13 +73,16 @@ the root administrator.
 </p>
 
 <a name="netbox"></a>
-<h3><font color="#6c0023">Netbox - Configure the network</font></h3>
+<h3>Netbox - Configure the network</h3>
 <p>
 Netbox is a small GTK+ application to configure a network interface using 
 DCHP or a fixed (static) IP address. The tabs can be used to start/stop the 
 connections and automatically change the values in the system files. Netbox 
-also provides a system wide tab from which you can directly edit network 
-configuration files. 
+provides a system wide tab from which you can directly edit network 
+configuration files, and tabs to configure PPP/PPPoE username/passwords.
+Servers such as SSH, DHCP, PXE, DNS, etc can also be configured and it's 
+possible to create your own virtual private network (VPN) using the tools 
+provided.
 </p>
 
 <img
@@ -85,14 +91,14 @@ configuration files.
 	style="width: 536px; height: 357px;" />
 
 <p>
-You can start netbox from the system tools menu or via a terminal: 
+You can start netbox from the System tools menu or via a terminal: 
 </p>
 <pre>
  $ subox netbox
 </pre>
 
 <a name="wifibox"></a>
-<h3><font color="#6c0023">Wifibox - Graphical configuration of the wireless network</font></h3>
+<h3>Wifibox - Graphical configuration of the wireless network</h3>
 <p>
 Wifibox is small interface to configure a network connection (Wifi, 
 WLAN, or Wireless). The 'Networks' tab displays a list of available 
@@ -115,9 +121,9 @@ you to configure a network card; there are 3 options:
 <ol>
 	<li>The card is supported directly by the kernel via a module.</li>
 	<li>The card needs a module and non-free firmware that can be installed
-    automatically via the auto-detect tool (tazhw).</li>
+	automatically via the auto-detect tool (tazhw).</li>
 	<li> The card is not supported by Linux and a Windows driver must be
-    installed via the Windows driver manager (tazndis).</li>
+	installed via the Windows driver manager (tazndis).</li>
 </ol>
 
 <a name="driver"></a>
@@ -142,7 +148,7 @@ on each boot.
 </p>
 
 <a name="hostname"></a>
-<h3><font color="#6c0023">/etc/hostname - The hostname</font></h3>
+<h3>/etc/hostname - The hostname</h3>
 <p>
 The file /etc/hostname sets the machine name. This is loaded at system 
 startup with the command 'hostname', without an argument this
@@ -161,7 +167,7 @@ and the machine name <code>kayam</code>:
 </pre>
 
 <a name="pppoe"></a>
-<h3><font color="#6c0023">PPPoE connection kernel-mode</font></h3>
+<h3>PPPoE connection kernel-mode</h3>
 <p>
 PPPoE connection in kernel-mode needs 2 files. The first file is
 <code>/etc/ppp/options</code> where you must specify your login name:
@@ -195,7 +201,7 @@ script: <code>/etc/init.d/local.sh</code>
 </p>
 
 <a name="rp-pppoe"></a>
-<h3><font color="#6c0023">Enable Dial-up Modem -  PPPoE with rp-pppoe</font></h3>
+<h3>Enable Dial-up Modem -  PPPoE with rp-pppoe</h3>
 <p>
 To set an ASDL protocol via PPPoE, SliTaz provides the utilities 
 package <code>rp-pppoe</code>. Using <code>pppoe-setup</code> is a snap and you
@@ -250,7 +256,7 @@ To stop the connection, you can type
 </p>
 
 <a name="firewall"></a>
-<h3><font color="#6c0023">Manage the Firewall (<em>firewall</em>) using Iptables</font></h3>
+<h3>Manage the Firewall (<em>firewall</em>) using Iptables</h3>
 <p>
 SliTaz provides a very basic firewall, the kernel security rules are launched 
 at boot time and iptables rules are disabled by default. You can 
