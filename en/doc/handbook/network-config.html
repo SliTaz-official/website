@@ -42,7 +42,7 @@
 </ul>
 
 <a name="eth"></a>
-<h3>Ethernet connection</h3>
+<h3>About the Network</h3>
 <p>
 By default SliTaz starts a DHCP client (udhcpc) on eth0 at boot time. If your
 network card has been identified as an <code>eth0</code> interface and you use
@@ -69,6 +69,57 @@ It can be graphically configured with <code>netbox</code> or directly edited by
 the root administrator.
 </p>
 
+<a name="netbox"></a>
+<h3><font color="#6c0023">Netbox - Configure the network</font></h3>
+<p>
+Netbox is a small GTK+ application to configure a network interface using 
+DCHP or a fixed (static) IP address. The tabs can be used to start/stop the 
+connections and automatically change the values in the system files. Netbox 
+also provides a system wide tab from which you can directly edit network 
+configuration files. 
+</p>
+
+<img
+	src="images/screenshots/netbox.png"
+	alt="Slitaz Netbox"
+	style="width: 536px; height: 357px;" />
+
+<p>
+You can start netbox from the system tools menu or via a terminal: 
+</p>
+<pre>
+ $ subox netbox
+</pre>
+
+<a name="wifibox"></a>
+<h3><font color="#6c0023">Wifibox - Graphical configuration of the wireless network</font></h3>
+<p>
+Wifibox is small interface to configure a network connection (Wifi, 
+WLAN, or Wireless). The 'Networks' tab displays a list of available 
+networks, just double click on a network name to connect. If the network
+is secure, the key will then be sought.
+</p>
+
+<img
+	src="images/screenshots/wifibox.png"
+	alt="SliTaz Wifibox"
+	style="width: 533px; height: 330px;" />
+
+<p>
+The 'Favorites' tab allows you to set your preferred networks. Once a 
+network is added, just double click on the network name to connect. The
+'Configuration' tab lets you configure a connection manually using the
+advanced settings such as the mode or channel. The 'Drivers' tab allows
+you to configure a network card; there are 3 options:
+</p>
+<ol>
+	<li>The card is supported directly by the kernel via a module.</li>
+	<li>The card needs a module and non-free firmware that can be installed
+    automatically via the auto-detect tool (tazhw).</li>
+	<li> The card is not supported by Linux and a Windows driver must be
+    installed via the Windows driver manager (tazndis).</li>
+</ol>
+
 <a name="driver"></a>
 <h3>Install network card driver</h3>
 <p>
@@ -90,17 +141,23 @@ On an installed system you just need to add the module_name to the variable
 on each boot.
 </p>
 
-<a name="netbox"></a>
-<h3>Netbox - Configure network</h3>
+<a name="hostname"></a>
+<h3><font color="#6c0023">/etc/hostname - The hostname</font></h3>
 <p>
-Netbox is a small GTK+ application to configure a network interface using <em>DCHP</em> or a 
-fixed (<em>static</em>) IP address. The tabs can be used to start/stop the connections and 
-automatically change the values in the system files. Netbox also provides a <em>system wide</em> tab 
-from which you can directly edit network configuration files. You can start netbox from the 
-system tools menu or via a terminal:
+The file /etc/hostname sets the machine name. This is loaded at system 
+startup with the command 'hostname', without an argument this
+command returns the current machine name:
 </p>
 <pre>
- # netbox 
+ $ hostame
+</pre>
+<p>
+To change the hostname, you can use the <code>echo</code> command or a text 
+editor available on SliTaz (you must be root). Example using <code>echo </code> 
+and the machine name <code>kayam</code>:
+</p>
+<pre>
+ # echo "kayam" > /etc/hostname
 </pre>
 
 <a name="pppoe"></a>
