@@ -33,6 +33,7 @@
 <ul>
 	<li><a href="#about">A propos du réseau sur SliTaz.</a></li>
 	<li><a href="#netbox">Netbox</a> - Configuration graphique du réseau.</li>
+	<li><a href="#wifibox">Wifibox</a> - Configuration graphique du réseau sans fil.</li>
 	<li><a href="#hostname">/etc/hostname</a> - Le nom de machine.</li>
  	<li><a href="#network.conf">/etc/network.conf</a> -  Fichier de
 	configuration du réseau.</li>
@@ -62,10 +63,6 @@ les outils fournis par <code>rp-pppoe</code> et installés par défaut sur SliTaz.
 
 <a name="netbox"></a>
 <h3><font color="#6c0023">Netbox - Configuration graphique du réseau</font></h3>
-<img
-	src="images/screenshots/netbox.png"
-	style="width: 240px; height: 160px; float: left;
-		padding: 0px 20px 10px 0px;" />
 <p>
 Netbox est un petite interface graphique permettant de facilement configurer
 une interface réseau Ethernet en utilisant le protocole DHCP ou en demandant
@@ -81,6 +78,11 @@ ZeroConf, DHCP, PXE, DSN, Rsync, HTTP. Il aussi possible de créer un
 réseau privé virtuel ou VPN avec les outils inclus de base dans la 
 distribution.
 </p>
+
+<img
+	src="images/screenshots/netbox.png"
+	style="width: 536px; height: 357px;" />
+
 <p>
 Vous pouvez lancer Netbox depuis le menu "Outils système" (<em>System tools</em>)
 &rarr; "Netbox Configurer le réseau" ou depuis un terminal graphique. C'est un
@@ -90,6 +92,36 @@ administrateur (<em>root</em>) pour l'utiliser :
 <pre>
  $ subox netbox
 </pre>
+
+<a name="wifibox"></a>
+<h3><font color="#6c0023">Wifibox - Configuration graphique du réseau sans fil</font></h3>
+<p>
+Wifibox est une petite interface permettant de configurer une connexion
+à un réseau sans file (Wifi, Wireless ou Wlan). L'onglet 'Netwoks' affiche
+la liste des réseaux disponibles, il suffit de double cliquer sur un nom
+de réseau pour établir la connexion, si le réseau est sécurisé, la clé
+vous sera alors demandée.
+</p>
+
+<img
+	src="images/screenshots/wifibox.png"
+	style="width: 533px; height: 330px;" />
+
+<p>
+L'onglet 'Favorites' permet de préconfigurer ses réseaux préférés, une
+fois un réseau ajouté il suffit de double cliquer sur le nom du réseau
+pour établir la connexion. L'onglet 'Configuration' permet de configurer
+une connexion manuellement avec les paramètres avançés tels que le mode
+ou le canal. L'onglet 'Drivers' permet de configurer une carte réseau,
+il y a 3 cas de figure: , 
+</p>
+<ol>
+	<li>La carte est directement supportée par le noyau via un module.</li>
+	<li>La cartre à besoin d'un module et d'un firmware non-libre pouvant
+	être installé automatiquement via l'outil de détection du matériel.</li>
+	<li>La carte n'est pas supportée par Linux et le driver Windows doit
+	être installé via le gestionnaire de pilotes Windows (tazndis).</li>
+</ol>
 
 <a name="hostname"></a>
 <h3><font color="#6c0023">/etc/hostname - Le nom de machine</font></h3>
