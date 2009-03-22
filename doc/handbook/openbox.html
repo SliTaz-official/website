@@ -1,0 +1,202 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+	<title>SliTaz Handbook - Openbox</title>
+	<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+	<meta name="description" content="openbox slitaz desktop obconf" />
+	<meta name="expires" content="never" />
+	<meta name="modified" content="2009-03-22 14:20:00" />
+	<meta name="publisher" content="www.slitaz.org" />
+	<meta name="author" content="Christophe Lincoln"/>
+	<link rel="shortcut icon" href="favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="book.css" />
+</head>
+<body bgcolor="#ffffff">
+
+<!-- Header and quick navigation -->
+<div id="header">
+<div align="right" id="quicknav">
+	<a name="top"></a>
+	<a href="utilities.html">Utilitaires</a> |
+    <a href="index.html">Table des matières</a>
+</div>
+<h1><font color="#3E1220">SliTaz Handbook</font></h1>
+</div>
+
+<!-- Content. -->
+<div id="content">
+<div class="content-right"></div>
+
+<h2><font color="#DF8F06">Openbox</font></h2>
+
+<ul>
+	<li><a href="#intro">Introduction et présentation d'Openbox.</a></li>
+	<li><a href="#config">Configuration d'Openbox.</a></li>
+	<li><a href="#themes">Thèmes graphiques.</a></li>
+	<li><a href="#menu">Menu contextuel.</a></li>
+	<li><a href="#autostart">Applications démarrées automatiquement.</a></li>
+	<li><a href="#bg-icons">Fond d'écran et icônes.</a></li>
+	<li><a href="#effects">Effets visuels.</a></li>
+</ul>
+
+<a name="intro"></a>
+<h3><font color="#6c0023">Introduction et présentation d'Openbox</font></h3>
+<p>
+Openbox est un gestionaire de fenêtre ultra rapide, simple, efficace,
+thémable à souhait et ne consommant pas toutes les ressources du système,
+c'est le gestionnaire de fenêtres par défaut sur SliTaz. Un gestionnaire
+de fenêtres est une application tournant au dessus du serveur X, 
+permetant de contrôler l'apparence des fenêtres, d'ouvrir un terminal
+X ou d'afficher des applications. Il permet ensuite de placer, de
+réduire, et de dimensionner les fenêtres à son propre gré.
+</p>
+<p>
+Openbox fournit un menu contextuel via un clique droite sur le bureau, ce
+menu est modifiable en éditant un fichier de configuration, la combinaison
+des touches <code>ALT + tabulation</code> permet de lister et naviguer parmi
+les fenêtres ouvertes. Par défaut SliTaz propose 4 bureaux virtuels avec
+Openbox et Obconf pour configurer graphiquement le gestionnaire de fenêtres
+ainsi que divers petits outils spécifiques à SliTaz afin d'avoir un bureau
+simple, élégant et cohérant.
+</p>
+<p>
+Le bureau fourni par SliTaz respect les standards de Freedesktop, le
+gestionnaire de fichiers PCmanFM du projet LXDE permet d'avoir la gestion
+des icons sur le bureau, le glissé-déposé (drag and drop) et le montage
+des périphériques en un clique. Le <em>panel</em> fournissant le menu,
+la barre des tâches, les icons, etc est propulsé par LXpanel.
+</p>
+
+<a name="config"></a>
+<h3><font color="#6c0023">Configuration d'Openbox</font></h3>
+<p>
+La plus part des options d'Openbox peuvent être configurées graphiquement
+via l'utilitaire OBconf se trouvant le menu "Préférences" &rarr; "Configuration
+d'Openbox". Le fichier de configuration peut aussi être modifié via votre
+éditeur de texte préféré, le fichier de configuration se trouve dans votre
+répertoire personnel: <code>~/.config/openbox/rc.xml</code>, c'est un fichier
+XML comme pour le menu. Les raccourssis clavier sont définis dans la section
+&lt;keyboard&gt; du fichier de configuration.
+</p>
+
+<a name="themes"></a>
+<h3><font color="#6c0023">Thèmes graphiques</font></h3>
+<p>
+Openbox est entièrement thèmable via un seul fichier ayant une syntaxe
+propre au gestionnaire de fenêtres. Par défaut plusieurs thèmes sont fournis,
+ils sont séléctionnables via OBconf et installés dans <code>/usr/share/themes</code>.
+Chaque utilisateur du système peut installer ces propres thèmes dans le
+répertoire personnel <code>~/.themes</code> manuellement ou via l'interface
+de configuration OBconf. Si vous voulez créer votre propre thème, le plus
+simple est de copier et renommer un thème existant pour ensuite éditer
+le fichier <code>themerc</code>. En option des thèmes utilisent des images
+pour les boutons inconifier, maximiser et fermer, ces images peuvent
+être recrées ou modifiées via un éditeur d'images tels que mtPaint ou Gimp.
+</p>
+<p>
+Sur internet vous trouverez beaucoup de thèmes créer par la communauté,
+plus d'informations sur 
+<a href="http://icculus.org/openbox/index.php/Openbox:Themes">le site officiel d'Openbox</a>.
+</p>
+
+<a name="menu"></a>
+<h3><font color="#6c0023">Menu contextuel</font></h3>
+<p>
+Le menu contextuel se trouve dans le fichier: <code>~/.config/openbox/menu.xml</code>,
+la syntaxe de ce fichier XMl est simple et facile à comprendre. Il est aussi
+possible de modifier ce menu graphiquement avec <code>obmenu</code> mais
+pas installé par défaut. Exemple pour ajouter une aplication dans un des
+sous menus: 
+</p>
+<pre class="script">
+&lt;item label="File Manager"&gt;
+  &lt;action name="Execute"&gt;&lt;command&gt;pcmanfm&lt;/command>&lt;/action&gt;
+&lt;/item&gt;
+</pre>
+<p>
+Les sous menus sont définis à la fin du fichier via la balise <code>menu</code>.
+La balise menu peut utiliser un <em>pipe</em> pour affichier les entrées de menu,
+c'est à dire un script qui crée les entrées à la volée. SliTaz propose par
+défaut un <em>pipe menu</em> qui permet d'ouvrir directement vos répertoires
+favoris avec le gestionnaire de fichiers PCmanFM. Le script se trouve dans
+<code>/usr/lib/openbox</code> et peut être utilisé comme example.
+</p>
+
+<a name="autostart"></a>
+<h3><font color="#6c0023">Applications démarrées automatiquement</font></h3>
+<p>
+Lors du lancement de votre session graphique, Openbox permet de démarrer
+divers applications automatiquement via le script: 
+<code>~/.config/openbox/autostart.sh</code>. Par défaut SliTaz propose
+un script démarrant le gestionnaire de fichiers PCmanFM pour la gestion
+du fond d'écran et des icons de bureau, le panel (LXpanel) avec le menu,
+Dbus et Ivman pour la gestion des périphériques ou media tel que les
+clés USB. Pour ajouter ou supprimer des application lançées au démarrage
+de la session vous pouvez éditer le script ou utiliser la petite interface
+graphique de SliTaz via le menu "Préférences" &rarr; "Auto started applications":
+</p>
+
+<img
+	src="images/screenshots/desktopbox-autostart.png"
+	style="width: 552px; height: 267px;" />
+
+<a name="bg-icons"></a>
+<h3><font color="#6c0023">Fond d'écran et icônes</font></h3>
+<p>
+Openbox ne propose pas la gestion du fond d'écran nativement, il faut
+utiliser un outils externe. Cela permet plus de libérté et de choix, par
+défaut, le bureau SliTaz utilise le gestionnaire de fichier PCmanFM pour
+afficher un image en fond d'écran et avoir des icons de bureau. 
+Alternativement il est possible d'utiliser le paquet <code>hsetroot</code>
+pour afficher un image ou <code>xsetroot</code> pour avoir une couleur
+unie. PcmanFM est démarré avec la session Openbox en mode démon, c'est à
+dire qu'il tourne en fond et ce lance plus rapidement. Pour modifier
+l'image de fond décran vous pouvez passer par les préférences du
+gestionnaire de fichier ou le menu "Préférences" &rarr; "Fond d'écran"
+</p>
+<p>
+Les icônes sont affichés via de simples fichiers texte suivant les standards
+Freedesktop, vous pouvez en créer vous-même ou les personnaliser en les
+éditant via votre éditeur de texte préféré. Pour facilement ajouter des
+icônes sur le bureau, SliTaz fourni une petite <em>box</em> graphique
+accessible via le menu "Préférences" &rarr; "Desktop icons" ou le menu
+contextuel d'Openbox "Desktop Files &amp; Icons" &rarr; "Add new icon":
+</p>
+
+<img
+	src="images/screenshots/desktopbox-add-icons.png"
+	style="width: 432px; height: 314px;" />
+
+<a name="effects"></a>
+<h3><font color="#6c0023">Effets visuel</font></h3>
+<p>
+SliTaz fournit plusieurs petits outils permettant d'avoir des effect
+graphiques sur les fenêtres d'Openbox et les divers menus. Vous pouvez
+rendre un fenêtre transparente ou avoir des ombres donnant un effet de
+profondeur au bureau. Les effets sont obtenus via <code>xcompmgr</code>
+(<em>Composite Manager</em>), la transparence via <code>transset-df</code>
+et peuvent être activés en même temps que la session Openbox et via le
+menu contectuel "Desktop Effects".
+</p>
+
+<!-- End of content -->
+</div>
+
+<!-- Footer. -->
+<div id="footer">
+	<div class="footer-right"></div>
+	<a href="#top">Haut de la page</a> | 
+	<a href="index.html">Table des matières</a>
+</div>
+
+<div id="copy">
+	Copyright &copy; 2009 <a href="http://www.slitaz.org/">SliTaz</a> -
+	<a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>;<br />
+	Documentation publiées sous
+	<a href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License</a>
+	et codée en <a href="http://validator.w3.org/">xHTML 1.0 valide</a>.
+</div>
+
+</body>
+</html>
