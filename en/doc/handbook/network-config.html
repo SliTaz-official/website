@@ -6,7 +6,7 @@
     <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
     <meta name="description" content="slitaz English handbook network config pppoe ppp eth dhcp" />
     <meta name="expires" content="never" />
-    <meta name="modified" content="2009-03-22 18:30:00" />
+    <meta name="modified" content="2009-03-23 19:30:00" />
     <meta name="publisher" content="www.slitaz.org" />
     <meta name="author" content="Paul Issot, Christophe Lincoln"/>
     <link rel="shortcut icon" href="favicon.ico" />
@@ -34,12 +34,16 @@
 	<li><a href="#about">About the Network.</a></li>
 	<li><a href="#netbox">Netbox</a> - Configure the network.</li>
 	<li><a href="#wifibox">Wifibox</a> - Configure wireless networks.</li>
-	<li><a href="#driver">Install network card driver</a> - Find and load 
-	Kernel modules.</li>
 	<li><a href="#hostname">/etc/hostname</a> - Hostname.</li>
+	<li><a href="#network.conf">/etc/network.conf</a> - Network 
+	configuration file.</li>
+	<li><a href="#dynamicIP">Dynamic IP</a> - Client DHCP udhcpc.</li>
+	<li><a href="#staticIP">Static IP</a> - Using a specific address.</li>
 	<li><a href="#pppoe">PPPoE kernel-mode</a> - Dial-up modem connection 
 	in Kernel mode.</li>
 	<li><a href="#rp-pppoe">PPPoE with rp-pppoe</a> - Dial-up modem.</li>
+	<li><a href="#driver">Install network card driver</a> - Find and load 
+	Kernel modules.</li>
 	<li><a href="#firewall">Firewall</a> - Manage the Firewall (Iptables).</li>
 </ul>
 
@@ -126,27 +130,6 @@ you to configure a network card; there are 3 options:
 	installed via the Windows driver manager (tazndis).</li>
 </ol>
 
-<a name="driver"></a>
-<h3>Install network card driver</h3>
-<p>
-In case you need a network card driver and don't know the driver name, you can
-use the command <code>lspci</code> to find your card and then <code>modprobe</code>
-to load a module. In Live mode you can use the SliTaz boot option 
-<code>modprobe=modules</code> to automatically load Kernel modules. To get a 
-list of all available network card drivers, display PCI eth cards and load a
-module:
-</p>
-<pre>
- # modprobe -l | grep drivers/net
- # lspci | grep [Ee]th
- # modprobe -v module_name
-</pre>
-<p>
-On an installed system you just need to add the module_name to the variable 
-<code>LOAD_MODULES </code> in <code>/etc/rcS.conf</code> to load your module 
-on each boot.
-</p>
-
 <a name="hostname"></a>
 <h3>/etc/hostname - The hostname</h3>
 <p>
@@ -164,6 +147,62 @@ and the machine name <code>kayam</code>:
 </p>
 <pre>
  # echo "kayam" > /etc/hostname
+</pre>
+
+<a name="network.conf"></a>
+<h3>/etc/network.conf</h3>
+<p>
+/etc/network.conf is the SliTaz system network configuration file. It's syntax
+is simple and you can edit its contents with a text editor such as Nano.
+/etc/network.conf is used by the script /etc/init.d/network.sh to configure the
+network interface at boot time.
+</p>
+
+<a name="dynamicIP"></a>
+<h3>Dynamic IP - DHCP client udhcpc</h3>
+<p>
+The DHCP client udhcpc supplied with Busybox uses the 
+/usr/share/udhcpc/default.script to get an IP address dynamically at 
+boot. It supports various options which you can view with the 
+<code>--help</code> option:
+</p>
+<pre> # udhcpc --help
+</pre>
+<p>
+To disable udhcpc on eth0 or modify the interface (eg eth1), you must
+edit the /etc/network.conf file and place the value "no" in the variable DHCP=:
+</p>
+<pre class="script">
+# Dynamic IP address.
+# Enable/disable DHCP client at boot time.
+DHCP="no"
+</pre>
+
+<a name="staticIP"></a>
+<h3>Static IP - Using a specific address</h3>
+<p>
+You can specify a fixed IP address to configure at boot time by using
+the value "yes" in the variable STATIC=:
+</p>
+<pre class="script">
+# Static IP address.
+# Enable/disable static IP at boot time.
+STATIC="yes"
+</pre>
+<p>
+For the configuration to work, you must specify an IP address, its subnet
+mask, a default gateway (gateway) and DNS server to use. Example:
+</p>
+<pre class="script">
+# Set IP address, and netmask for a static IP.
+IP="192.168.0.6"
+NETMASK="255.255.255.0"
+
+# Set route gateway for a static IP.
+GATEWAY="192.168.0.1"
+
+# Set DNS server. for a static IP.
+DNS_SERVER="192.168.0.1"
 </pre>
 
 <a name="pppoe"></a>
@@ -253,6 +292,27 @@ from the beginning. To start the connection:
 <p>
 To stop the connection, you can type
 <code>pppoe-stop</code>.
+</p>
+
+<a name="driver"></a>
+<h3>Install network card driver</h3>
+<p>
+In case you need a network card driver and don't know the driver name, you can
+use the command <code>lspci</code> to find your card and then <code>modprobe</code>
+to load a module. In Live mode you can use the SliTaz boot option 
+<code>modprobe=modules</code> to automatically load Kernel modules. To get a 
+list of all available network card drivers, display PCI eth cards and load a
+module:
+</p>
+<pre>
+ # modprobe -l | grep drivers/net
+ # lspci | grep [Ee]th
+ # modprobe -v module_name
+</pre>
+<p>
+On an installed system you just need to add the module_name to the variable 
+<code>LOAD_MODULES </code> in <code>/etc/rcS.conf</code> to load your module 
+on each boot.
 </p>
 
 <a name="firewall"></a>
@@ -352,7 +412,6 @@ iptables -A INPUT -i $INTERFACE -p tcp --dport 21 -j ACCEPT
 iptables -A OUTPUT -i $INTERFACE -p tcp --sport 21 -j ACCEPT
 
 }
-
 </pre>
 
 <!-- End of content -->
