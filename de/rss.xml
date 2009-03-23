@@ -10,7 +10,25 @@
 	</description>
 	<copyright>Copyright © www.slitaz.org - GNU gpl</copyright>
 	<lastBuildDate>Mon, 05 Jan 2009 17:30:00 GMT</lastBuildDate>
-
+	
+	<item>
+		<title>20 March 2009 - SliTaz auf der Solutionslinux 2009 (Paris)</title>
+		<link>http://www.slitaz.org/de/</link>
+		<guid isPermaLink="true">http://www.solutionslinux.fr/</guid>
+		<pubDate>Sat, 23 Mar 2009 12:35:00 GMT</pubDate>
+		<description>
+	Das SliTaz-Projekt wird auf der Solutionlinux 2009 in Paris zugegen sein.
+	Drei Mitglieder des Teams werden an dem dreitägigen Event teilnehmen, 
+	einige weitere Entwickler werden zeitweise ebenfalls anwesend sein.
+	An dem Stand wird sich die Möglichkeit bieten verschiedene Rechner mit 
+	SliTaz zu testen (EeePc zum Beispiel), sowie einen eigenen bootfähigen SliTaz-
+	USB-Stick zu erstellen. Ebenfalls werden SliTaz Live-CDs und USB-Sticks zum Verkauf 
+	angeboten werden. 
+	Natürlich ist es ebenfalls eine gute Gelegenheit die SliTaz-Mitglieder und -Entwickler 
+	kennenzulernen.
+		</description>
+	</item>
+	
 	<item>
 		<title>Cooking 20090228</title>
 		<link>http://www.slitaz.org/de/get/#cooking</link>
