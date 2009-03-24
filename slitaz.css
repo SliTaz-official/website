@@ -26,13 +26,13 @@ body {
 
 #access a {
 	background: inherit;
-	color: #222222;
+	color: white;
 	text-decoration: none;
 }
 
 #access a:hover {
 	background: inherit;
-	color: #EDEDED;
+	color: #222222;
 }
 
 /* Header and title */
