@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>SliTaz Handbook (en) - Desktop</title>
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <meta name="description" content="slitaz window manager jwm" />
+    <meta name="expires" content="never" />
+    <meta name="modified" content="2009-03-25 10:30:00" />
+    <meta name="publisher" content="www.slitaz.org" />
+    <meta name="author" content="Christophe Lincoln"/>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="book.css" />
+</head>
+<body bgcolor="#ffffff">
+
+<!-- Header and quick navigation -->
+<div id="header">
+<div align="right" id="quicknav">
+    <a name="top"></a>
+    <a href="index.html">Table of contents</a>
+</div>
+<h1><font color="#3E1220">SliTaz Handbook (en)</font></h1>
+</div>
+
+<!-- Content. -->
+<div id="content">
+<div class="content-right"></div>
+
+<h2><font color="#DF8F06">JWM</font></h2>
+
+<a name="jwm"></a>
+<h3>JWM - Joe's Window Manager</h3>
+<p>
+Joe's window manager, written in C is quick, simple, clean, stable and efficient. 
+JWM proposes a taskbar, a menu of icons and a 
+pager for the management of virtual desktops. The taskbar can also act as a dock. 
+In addition it is easily configurable with a single text file that can
+change the menu, fonts and their sizes, and different colors. To install 
+jwm on SliTaz:
+</p>
+<pre> # tazpkg get-install jwm
+</pre>
+
+<h4>Use and configure JWM</h4>
+<p>
+The application of Joe's Window Manager is very fast. To view the menu just
+click somewhere on the desktop. You can resize a window through the edges or 
+corners, minimize or pass a virtual desktop to another via a pager. You
+also have configurable keyboard shortcuts for faster access to the applications 
+that you often use. On SliTaz the system configuration file is
+<code>/etc/jwm/system.jwmrc</code>. Apart from this file, each user can use
+its own configuration file hidden in <code>~/.jwmrc</code>. This is a text file using XML
+syntax, it can edited with a simple text editor - lines beginning with: 
+<code>&lt;!--</code> are comments that let you understand what each tag does.
+</p>
+<p>
+To facilitate the customization of the desktop, SliTaz automatically copies
+at the launch of the first (graphical) session, a system configuration file to
+the root directory of the user. You can directly modify this file and test 
+without risk. To edit with your favorite text editor:
+</p>
+<pre>
+ $ geany $HOME/.jwmrc &amp;
+</pre>
+<p>
+To retrieve an original configuration file, you can copy the system configuration 
+file and rename it <code>.jwmrc</code> in your home directory:
+</p>
+<pre>
+ $ cp /etc/jwm/system.jwmrc $HOME/.jwmrc
+</pre>
+<p>
+The tag <code>RootMenu</code> corresponds to the menu displayed by clicking on one of the
+(three) buttons on the mouse. To add a category, you must use the tag: <code>Menu</code>
+ - this contains entries for various programs. Any entry in the JWM menu can
+fit on one line. Example using the GQview image management application:
+</p>
+<pre class="script">
+&lt;Program icon="gqview.png" label="GQview"&gt;gqview&lt;/Program&gt;
+</pre>
+<p>
+There are still many opportunities to configure <code>RootMenu</code> according to the 
+mouse buttons; the choice of method to move windows, create groups, etc.
+The Manual is available online at the official website of the project. To view 
+a list of command-line options, just type <code>jwm -h</code> in a terminal.
+</p>
+
+<h4>Create your own JWM style</h4>
+<p>
+Creating your own graphical style with JWM is relatively quick
+and easy, the tags are clear and the attributes possible
+are given in the comments. When preparing your work, you can
+see your amendments by restarting the window manager from the
+menu or via the <code>jwm -restart</code> command. In the configuration
+file, style tags start after the &lt;!-- Visual Styles --&gt; comment. To
+begin, here is a short list of the main style tags with a short 
+description:
+</p>
+<ul>
+	<li><code>Background</code> manages the wallpaper. This tag supports the
+	<code>solid</code>, <code>gradient</code>, <code>image</code> or <code>tile</code>
+	attributes, to respectively:- use a solid color, create a gradient, 
+	display a resized image or tile an image.</li>
+
+	<li><code>BorderStyle</code> controls the windows border.</li>
+
+	<li><code>TrayStyle</code> controls a taskbar. The taskbar may, among other 
+	things be automatically hidden or only fill a part of the
+	screen with the <code>width</code> attribute.</li>
+
+	<li><code>TrayListStyle</code> controls the style of the list of open windows
+	on the current desktop.</li>
+
+	<li><code>PagerStyle</code> controls the pager displaying different virtual
+	desktops (4 by default).</li>
+
+	<li><code>MenuStyle</code> defines the menu style.</li>
+
+	<li>The icons are defined by the <code>IconPath</code> tag, you can use your
+	own personal icons by specifing the full path to the directory
+	that contains them. Note that you can specify more than
+	one path, if you want, you can use your own icons <em>and</em> those 
+	contained in the <code>/usr/share/pixmaps</code> and <code>/usr/share/icons</code>
+	system directories. SliTaz uses the Tango theme icons: 
+	<a href="http://tango.freedesktop.org/">tango.freedesktop.org</a>
+	for the menu, they are 16x16 and are stored in
+	<code>/usr/share/icons/Tango</code>. You can add, edit, delete
+	these... If you want to install new icons in your user
+	space, we advise you to use <code>~/Picture/Icons</code> (set as default)
+	or a hidden directory <code>~/.Icons</code>.</li>
+</ul>
+<p>
+The colors can be defined by their name or RGB number, such
+as <code>#3A4956</code>. To use colors in their gradient mode, you must
+specify the two colors separated by a colon, example
+<code>#6C0023:#3E1220</code>. You can change fonts and their sizes by 
+using the <code>Font</code> tag. There are still some small things that
+you can change to customize your desktop, such as the name
+of a menu item and its icon. Before restarting JWM with your
+new configuration file, you can check its syntax by using
+the command: <code>jwm -p</code>. To explore further, the official 
+handbook describes all the tags, options and valid attributes.
+You can view it online at the JWM website.
+</p>
+
+<h4>JWM website</h4>
+<ul>
+	<li><a href="http://www.joewing.net/programs/jwm/"
+   	 >www.joewing.net/programs/jwm/</a> - The official website of 
+	Joe's Window Manager, providing news and a comprehensive manual.</li>
+	<li>#jwm on irc.freenode.net - The JWM IRC discussion channel on 
+	Freenode server.</li>
+</ul>
+
+<!-- End of content -->
+</div>
+
+<!-- Footer. -->
+<div id="footer">
+	<div class="footer-right"></div>
+	<a href="#top">Top of the page</a> | 
+	<a href="index.html">Table of contents</a>
+</div>
+
+<div id="copy">
+    Copyright &copy; 2008 <a href="http://www.slitaz.org/en/">SliTaz</a> -
+    <a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>;<br />
+    Documentation is under
+    <a href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License</a>
+    and code is <a href="http://validator.w3.org/">valid xHTML 1.0</a>.
+</div>
+
+</body>
+</html>
+
