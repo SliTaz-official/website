@@ -6,7 +6,7 @@
     <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
     <meta name="description" content="slitaz English handbook" />
     <meta name="expires" content="never" />
-    <meta name="modified" content="2008-07-18 06:30:00" />
+    <meta name="modified" content="2009-03-25 16:30:00" />
     <meta name="publisher" content="www.slitaz.org" />
     <meta name="author" content="Christophe Lincoln"/>
     <link rel="shortcut icon" href="favicon.ico" />
@@ -32,7 +32,7 @@
 
 <ul>
 	<li><a href="#clex">Clex</a> - Command line File Manager.</li>
-	<li><a href="#emelfm2">emelFM2</a> - File Manager.</li>
+	<li><a href="#pcmanfm">PCmanFM</a> - File Manager.</li>
 	<li><a href="#htop">Htop</a> - View system processes.</li>
 	<li><a href="#mountbox">Mountbox</a> - Mount devices.</li>
 	<li><a href="#gparted">Gparted</a> - Partition a hard drive.</li>
@@ -42,69 +42,79 @@
 <a name="clex"></a>
 <h3>Clex - Command line File Manager</h3>
 <p>
-To navigate through your folders and directories you can use <code>cd</code> on the command line or 
-launch the 'Clex File Manager'. Using ncurses, clex is fast and easy to use and can be configured through 
-the files ~/.clexrc and ~/.clexbm (bookmarks) or via the panel (ctrl -g). To start clex from a terminal or 
-console:
+To navigate through your folders and directories you can use <code>cd</code> 
+on the command line or launch the 'Clex File Manager'. Using ncurses, 
+clex is fast and easy to use and can be configured through the files 
+~/.clexrc and ~/.clexbm (bookmarks) or via the panel (ctrl -g). 
+To start clex from a terminal or console:
 </p>
 <pre>
  $ clex
 </pre>
 
-<a name="emelfm2"></a>
-<h3>emelFM2 - File Manager</h3>
+<a name="pcmanfm"></a>
+<h3>PCmanFM - File Manager</h3>
 <p>
-EmelFM2 is a file manager providing many useful functions for daily tasks such as managing devices, opening 
-terminals in the current directory, drag and drop, creating directories, key bindings or managing file 
-permissions. It contains bookmarks to allow you to browse faster, a text editor/viewer and much more.
-EmelFM2 can be launched with some command line options - you can specify the dustbin directory or set the 
-start directory to display. For a full list of options:
-<code>$ emelfm2 --help</code>.
+PCmanFM is a file manager providing many useful functions for daily tasks 
+such as managing devices, opening terminals in the current directory, 
+drag and drop, creating directories or managing file permissions. It 
+contains bookmarks to allow you to browse faster, search functions and 
+much more. PCmanFM can be launched with some command line options - you 
+can set the wallpaper to display or open folders in new tabs, etc. For a 
+full list of options:
+<code>$ pcmanfm --help-all</code>.
 </p>
 <p>
-The context menu (right click on file/directory) makes it easy to unpack <code>.taz .gz</code> archives, 
-compress and create archives or compare files. You can also create symbolic links via 'Create a link...'. 
-Once learned, emelFM2 will allow you to work quickly and effectively.
+The context menu (right click on file/directory) makes it easy to unpack 
+<code>.taz .gz</code> archives, compress and create archives. PCmanFM 
+allows you to work quickly and effectively.
 </p>
 
 <a name="htop"></a>
 <h3>Htop - View system processes</h3>
 <p>
-Htop is a system process viewer that displays cpu load, memory state (RAM) and swap used. It can also 
-display the number of tasks, uptime and PIDs of active processes. Htop can be used with the keyboard in 
-console mode, the mouse with a X terminal (xterm) and provides configuration options (F2). Htop can also 
-kill processes and you can select items with the up/down arrows or a mouse click. Note htop also functions 
-via SSH and can be used to monitor a remote server:
+Htop is a system process viewer that displays cpu load, memory state (RAM) 
+and swap used. It can also display the number of tasks, uptime and PIDs 
+of active processes. Htop can be used with the keyboard in console mode, 
+the mouse with a X terminal (xterm) and provides configuration options (F2). 
+Htop can also kill processes - you can select items with the up/down 
+arrows or a mouse click. Note htop also functions via SSH and can be used 
+to monitor a remote server:
 </p>
 <pre>
- $ htop
+ # tazpkg get-install htop
 </pre>
 
 <a name="mountbox"></a>
 <h3>Mountbox - Mount devices</h3>
 <p>
-Mountbox is a small GTK+ application to quickly mount media
-such as a USB drive, hard drive or cdrom. Mountbox can be launched from a terminal or via the Tools menu 
-(System Tools). Simply specify the peripheral (Device) and the mount point, ie. the directory where you want 
-to access the media in question. Typically a CD is mounted on /media/cdrom, a USB key on /media/flash and 
-disk drives on the local machine on /mnt. Note the <a href="system-admin.html#devices">handbook</a> also 
-contains more information.
+Mountbox is a small GTK+ application to quickly mount media such as a 
+USB drive, hard drive or cdrom. Mountbox can be launched from a terminal 
+or via the Tools menu (System Tools). Simply specify the peripheral 
+(Device) and the mount point, ie. the directory where you want to access 
+the media in question. Typically a CD is mounted on /media/cdrom, a USB 
+key on /media/flash and disk drives on the local machine on /mnt. Note 
+the <a href="system-admin.html#devices">Handbook</a> also contains more 
+information.
 </p>
 
 <a name="gparted"></a>
 <h3>Gparted - Partition a hard drive</h3>
 <p>
-Gparted is a graphical application making it possible to manage the partitions of a local hard drive or USB media.
-It allows you to reformat, resize or check a partition on a hard drive and is the tool of choice if you need 
-to prepare a partition to install SliTaz. Gparted supports proper GNU/Linux filesystems (ext2 and ext3) 
-via mkfs, and Parted automatically handles dependancies.
+Gparted is a graphical application making it possible to manage the 
+partitions of a local hard drive or USB media. It allows you to reformat, 
+resize or check a partition on a hard drive and is the tool of choice if 
+you need to prepare a partition to install SliTaz. Gparted supports proper 
+GNU/Linux filesystems (ext2 and ext3) via mkfs, and Parted automatically 
+handles dependancies.
 </p>
 
 <h4>Support FAT and NTFS filesystems</h4>
 <p>
-To have the support of FAT16 or Windows FAT32 filesystems, you must install the package 
-<code>dosfstools</code>. To enable read/write support for NTFS partitions: <code>fuse</code>, 
-<code>ntfs-3g</code> and <code>ntfsprogs</code>.
+To have the support of FAT16 or Windows FAT32 filesystems, you must 
+install the package <code>dosfstools</code>. To enable read/write support 
+for NTFS partitions: <code>fuse</code>, <code>ntfs-3g</code> and 
+<code>ntfsprogs</code>.
 </p>
 
 <!-- End of content -->
