@@ -63,12 +63,12 @@ your computer bios supports this method).
 </p>
 <h4>Maintaining system settings</h4>
 <p>When you finish your LiveUSB session, make sure you maintain your installed 
-packages, system settings, etc, by writing the entire current filesystem with:
+packages, system settings, etc, by backing up the entire current filesystem with:
 </p>
 <pre># tazusb writefs gzip
 </pre>
 <p>
-This effectively compresses and backs up everything to 'rootfs.gz' to be 
+This effectively compresses and writes everything to 'rootfs.gz' to be 
 loaded the next time you boot.
 </p>
 <p>
