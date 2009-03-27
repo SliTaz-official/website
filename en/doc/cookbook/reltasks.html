@@ -2,7 +2,7 @@
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-	<title>SliTaz Cookbook (en) - Template</title>
+	<title>SliTaz Cookbook (en) - Release tasks</title>
 	<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
 	<meta name="description" content="slitaz English cookbook" />
 	<meta name="expires" content="never" />
@@ -28,12 +28,43 @@
 <div id="content">
 <div class="content-right"></div>
 
-<h2><font color="#DF8F06">Template</font></h2>
+<h2><font color="#DF8F06">Release tasks</font></h2>
 
 <p>
-CONTENT
+Things to do before publishing a new version.
 </p>
 
+<h3>Check list</h3>
+<ul>
+	<li>Release version is specified by /etc/slitaz-release, this file
+	is contrôled by slitaz-base-files. Base files are tageg just before
+	a stable reale to chage the version string and let Tazpkg use the new
+	pacpages.</li>
+	<li>Check that the SliTaz version specified in /etc/issue message is 
+	the same as displayed in the isolinux.msg.</li>
+	<li>Add and check that documents and images are in the root of the CD - ie.
+	README, index.html, style.css and the directory of images. All files are
+	in the slitaz-tools archive; just copy the addfiles/ and        
+	regenerate the ISO.</li>
+	<li>Test, test, and test ...</li>
+	<li>Prepare the website announcement and RSS feeds. Mailing list is used
+	for translation and texte should be send 1 or 2 days before release.</li>
+</ul>
+
+<h3>Stable documentation</h3>
+<p>
+SliTaz stable release provide the release notes on the LiveCD trought
+the package <code>slitaz-doc</code>, the repos is tagged just before release
+and archived on the mirror. After the wok have been copied to wok-stable
+the doc are back to a cooking cycle and just provide and index with basic
+information. On the system doc are located in: /usr/share/doc/slitaz, a 
+desktop file and icon are provide in the sources package and can be used
+to have a qick access to documentation.
+</p>
+<ul>
+	<li><a href="http://hg.slitaz.org/slitaz-doc/">SliTaz Doc repo</a></li>
+	<li><a href="">SliTaz Doc on the Labs</a></li>
+</ul>
 
 <!-- End of content -->
 </div>
