@@ -1,0 +1,192 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>SliTaz Cookbook (en) - Build Host</title>
+	<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+	<meta name="description" content="slitaz English cookbook" />
+	<meta name="expires" content="never" />
+	<meta name="modified" content="2009-03-27 21:30:00" />
+	<meta name="publisher" content="www.slitaz.org" />
+	<meta name="author" content="SliTaz contributors"/>
+	<link rel="shortcut icon" href="favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="book.css" />
+</head>
+<body bgcolor="#ffffff">
+
+<!-- Header and quick navigation -->
+<div id="header">
+<div align="right" id="quicknav">
+	<a name="top"></a>
+	<a href="boot-scripts.html">Boot Scripts</a> |
+	<a href="index.html">Table of contents</a>
+</div>
+<h1><font color="#3E1220">SliTaz Cookbook (en)</font></h1>
+</div>
+
+<!-- Content. -->
+<div id="content">
+<div class="content-right"></div>
+
+<h2><font color="#DF8F06">SliTaz Build Host (tank)</font></h2>
+
+<p>
+SliTaz build host info and howto.
+</p>
+
+<ul>
+	<li><a href="#folders">Folders in: /home/slitaz</a></li>
+	<li><a href="#scripts">Using scripts: /home/slitaz/scripts</a></li>
+	<li><a href="#undigest-pkgs">Cooking undigest packages</a></li>
+	<li><a href="#cooking-pkgs">Cooking official packages</a></li>
+	<li><a href="#stable-pkgs">Stable packages</a></li>
+	<li><a href="#mirror-up">Upload by hand on mirror.slitaz.org</a></li>
+	<li><a href="#website-up">Update website by hand</a></li>
+</ul>
+
+<a name="folders"></a>
+<h3>Folders in: /home/slitaz</h3>
+<ul>
+	<li>cooking/ - Cooking chroot and flavors.</li>
+	<li>stable/ - Stable tree.</li>
+	<li>scripts/ - Small scripts to help maintaining host, project.</li>
+	<li>repos/ - All the project repos (where the commits are pushed).</li>
+	<li>www/ - Virtual hosts (website, hg, boot, people, etc).</li>
+</ul>
+
+<a name="scripts"></a>
+<h3>Using scripts: /home/slitaz/scripts</h3>
+<p>
+To help maintaining the mirror, flavors and other services some scripts
+are used, there are mostly all configured for the cooking version. To 
+add them to your default path:
+</p>
+<pre>
+ $ echo 'export PATH=/home/slitaz/scripts:$PATH' >> ~/.profile
+</pre>
+<p>
+Each script should have a small help and description, if none, just open
+it:
+</p>
+<pre>
+ $ cd /home/slitaz/script &amp;&amp; ls
+ $ ./script.sh help
+</pre>
+
+<a name="undigest-pkgs"></a>
+<h3>Cooking undigest packages</h3>
+<p>
+You can use the undigest wok in the chroot environement to cook some
+non supported packages. If you maintain official packages and they cook
+succefully on tank you can test it on your local machine and then commit
+in the official wok. Mirror maintainers will then rebuild and upload the
+packages on mirror.slitaz.org.
+</p>
+<p>
+To build packages in the undigest wok and in the chroot environement, 
+some commands are better than a long text:
+</p>
+<pre>
+ $ ln -s /home/slitaz/cooking/chroot/home/undigest .
+</pre>
+<p>
+You can copy file with gFTP-sftp-scp directly in the wok or from the 
+current directory:
+</p>
+<pre>
+ $ cp -a package undigest/wok
+ $ su -c chroot.sh
+ /# cd home/undigest
+ /# tazwok cook package
+ /# exit
+ $ ls undigest/packages
+</pre>
+
+<a name="cooking-pkgs"></a>
+<h3>Cooking official packages</h3>
+<p>
+Mirror maintainers have root access and some have write access to the
+main mirror at mirror.slitaz.org, if you want to help in this task please 
+contact one of the most active developpers (check hg repos).
+</p>
+<p>
+Everything is cook in a chroot environement, default path for the main
+wok is /home/slitaz, some changes can be done directly in this wok, the
+real Hg is out of the chroot and copied in the chroot with wok.sh:
+</p>
+<pre>
+ # wok.sh hgup
+ # chroot.sh
+</pre>
+<p>
+Cook all missing packages, one by one or with 'tazwok cmp --cook', note
+that comparaison it not requiert, if you know witch packages you must
+cook:
+</p>
+<pre>
+ /# tazwok cmp
+ /# tazwok cook package-name
+</pre>
+<p>
+Remove all old packages and then rebuild the lists:
+</p>
+<pre>
+ /# tazwok cmp --remove
+ /# tazwok gen-list --text
+ /# exit
+</pre>
+<p>
+If you have write access to the mirror you can make a dry-push to check
+and then upload, push will also remove old packages on the mirror.
+</p>
+
+<a name="stable-pkgs"></a>
+<h3>Stable packages</h3>
+<p>
+Packages for the stable release are build in a chroot environement like
+the Cooking packages.
+</p>
+<pre>
+ # chroot.sh stable
+</pre>
+
+<a name="mirror-up"></a>
+<h3>Upload by hand on mirror.slitaz.org</h3>
+<p>
+Mirror maintainers can upload by hand with the script mirror.sh:
+</p>
+<pre>
+ # mirror.sh help
+</pre>
+
+<a name="website-up"></a>
+<h3>Update website by hand</h3>
+<p>
+Wesite and packages web interface are updated nightly by cron and can
+also be update by hand (used the day of release for example):
+</p>
+<pre>
+ # website.sh up
+ # website.sh help
+</pre>
+
+<!-- End of content -->
+</div>
+
+<!-- Footer. -->
+<div id="footer">
+	<div class="footer-right"></div>
+	<a href="#top">Top of the page</a> | 
+	<a href="index.html">Table of contents</a>
+</div>
+
+<div id="copy">
+	Copyright &copy; 2009 <a href="http://www.slitaz.org/en/">SliTaz</a> -
+	<a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>;<br />
+	Documentation is under
+	<a href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License</a>
+	and code is <a href="http://validator.w3.org/">valid xHTML 1.0</a>.
+</div>
+
+</body>
+</html>
