@@ -49,7 +49,7 @@ SliTaz build host info and howto.
 <ul>
 	<li>cooking/ - Cooking chroot and flavors.</li>
 	<li>stable/ - Stable tree.</li>
-	<li>scripts/ - Small scripts to help maintaining host, project.</li>
+	<li>scripts/ - Small scripts to help maintain the host, project.</li>
 	<li>repos/ - All the project repos (where the commits are pushed).</li>
 	<li>www/ - Virtual hosts (website, hg, boot, people, etc).</li>
 </ul>
@@ -57,44 +57,39 @@ SliTaz build host info and howto.
 <a name="scripts"></a>
 <h3>Using scripts: /home/slitaz/scripts</h3>
 <p>
-To help maintaining the mirror, flavors and other services some scripts
-are used, there are mostly all configured for the cooking version. To 
+To help maintain the mirror, flavors and other services, some scripts
+are used. They are mostly all configured for the cooking version. To 
 add them to your default path:
 </p>
-<pre>
- $ echo 'export PATH=/home/slitaz/scripts:$PATH' >> ~/.profile
+<pre> $ echo 'export PATH=/home/slitaz/scripts:$PATH' &gt;&gt; ~/.profile
 </pre>
 <p>
-Each script should have a small help and description, if none, just open
-it:
+Each script should have a tiny help file and description, if not, just open:
 </p>
-<pre>
- $ cd /home/slitaz/script &amp;&amp; ls
+<pre> $ cd /home/slitaz/script &amp;&amp; ls
  $ ./script.sh help
 </pre>
 
 <a name="undigest-pkgs"></a>
 <h3>Cooking undigest packages</h3>
 <p>
-You can use the undigest wok in the chroot environement to cook some
+You can use the undigest wok in the chroot environment to cook some
 non supported packages. If you maintain official packages and they cook
-succefully on tank you can test it on your local machine and then commit
+successfully on tank, then you can test on your local machine and commit
 in the official wok. Mirror maintainers will then rebuild and upload the
 packages on mirror.slitaz.org.
 </p>
 <p>
-To build packages in the undigest wok and in the chroot environement, 
-some commands are better than a long text:
+To build packages in the undigest wok and in the chroot environment:
+commands are sometimes better than a long text:
 </p>
-<pre>
- $ ln -s /home/slitaz/cooking/chroot/home/undigest .
+<pre> $ ln -s /home/slitaz/cooking/chroot/home/undigest .
 </pre>
 <p>
-You can copy file with gFTP-sftp-scp directly in the wok or from the 
+You can copy files with gFTP-sftp-scp directly into the wok or from the 
 current directory:
 </p>
-<pre>
- $ cp -a package undigest/wok
+<pre> $ cp -a package undigest/wok
  $ su -c chroot.sh
  /# cd home/undigest
  /# tazwok cook package
@@ -105,49 +100,45 @@ current directory:
 <a name="cooking-pkgs"></a>
 <h3>Cooking official packages</h3>
 <p>
-Mirror maintainers have root access and some have write access to the
+Maintainers have root access and some have write access to the
 main mirror at mirror.slitaz.org, if you want to help in this task please 
-contact one of the most active developpers (check hg repos).
+contact one of the active developers (check hg repos).
 </p>
 <p>
-Everything is cook in a chroot environement, default path for the main
-wok is /home/slitaz, some changes can be done directly in this wok, the
+Everything is cooked in a chroot environment, the default path for the main
+wok is /home/slitaz. Some changes can be made directly in this wok: the
 real Hg is out of the chroot and copied in the chroot with wok.sh:
 </p>
-<pre>
- # wok.sh hgup
+<pre> # wok.sh hgup
  # chroot.sh
 </pre>
 <p>
 Cook all missing packages, one by one or with 'tazwok cmp --cook', note
-that comparaison it not requiert, if you know witch packages you must
+that comparison (cmp) it not required, if you know which packages to
 cook:
 </p>
-<pre>
- /# tazwok cmp
+<pre> /# tazwok cmp
  /# tazwok cook package-name
 </pre>
 <p>
-Remove all old packages and then rebuild the lists:
+Remove all the old packages and then rebuild the lists:
 </p>
-<pre>
- /# tazwok cmp --remove
+<pre> /# tazwok cmp --remove
  /# tazwok gen-list --text
  /# exit
 </pre>
 <p>
 If you have write access to the mirror you can make a dry-push to check
-and then upload, push will also remove old packages on the mirror.
+and then upload; push will also remove any old packages on the mirror.
 </p>
 
 <a name="stable-pkgs"></a>
 <h3>Stable packages</h3>
 <p>
-Packages for the stable release are build in a chroot environement like
-the Cooking packages.
+Packages for the stable release are also built in a chroot environment like
+the Cooking packages:
 </p>
-<pre>
- # chroot.sh stable
+<pre> # chroot.sh stable
 </pre>
 
 <a name="mirror-up"></a>
@@ -155,18 +146,16 @@ the Cooking packages.
 <p>
 Mirror maintainers can upload by hand with the script mirror.sh:
 </p>
-<pre>
- # mirror.sh help
+<pre> # mirror.sh help
 </pre>
 
 <a name="website-up"></a>
 <h3>Update website by hand</h3>
 <p>
-Wesite and packages web interface are updated nightly by cron and can
-also be update by hand (used the day of release for example):
+The Website and packages web interface are updated nightly by cron and can
+also be updated by hand (used on the day of release for example):
 </p>
-<pre>
- # website.sh up
+<pre> # website.sh up
  # website.sh help
 </pre>
 
