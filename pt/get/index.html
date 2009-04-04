@@ -75,6 +75,8 @@
     Imagem ISO inicializável da versão estável mais recente.</li>
     <li><a href="#cooking">Versão cooking (testes) do LiveCD</a> - 
     Imagem ISO inicializável da versão de testes mais recente.</li>
+	<li><a href="#floppy">Versão em disquete</a> - Disquete de boot que pode iniciar
+	a versão LiveCD, uma mídia USB, etc.</li>
     <li><a href="flavors.html">Variantes do LiveCD</a> - Variantes e loram.</li>
 </ul>
 
@@ -87,22 +89,31 @@ a utilização da imagem ISO do LiveCD você pode consultar a
 suporte no <a href="http://forum.slitaz.org/#idx4">Fórum</a>.
 </p>
 
-<h3>Mirrors (espelhos)</h3>
+<h3>Mirrors</h3>
 <p>
-O SliTaz atualmente possui mirrors na França por Botux,
-<a href="http://www.tuxfamily.org/">TuxFamily</a> e Erjo (Sim! Um Desenvolvedor
-do SliTaz) <a href="http://info.pimentvert.com/">Pimentvert</a>. Muitos
-agradecimentos.
+O SliTaz possui mirrors na França, por Botux, Mésobius e 
+<a href="http://www.tuxfamily.org/">TuxFamily</a>. Na Suiça por
+<a href="http://mirror.switch.ch/">SWITCHmirror</a> e na China por
+LupaWorls.
 </p>
 
 <ul>
-	<li>França - Mirror SliTaz fornecido por Botux (200 Mps)
+	<li>Suiça - Mirror hospedado por SWITCHmirror (10 Gbit/s)
+	<a href="http://mirror.switch.ch/ftp/mirror/slitaz/">HTTP</a> ou
+	<a href="ftp://mirror.switch.ch/mirror/slitaz/">FTP</a></li>
+	
+	<li>França - Mirror hospedado por Botux (200 Mps)
 	<a href="http://mirror.slitaz.org/">HTTP</a></li>
-	<li>França - Mirro mésobius (100 Mps)
-	<a href="http://slitazmirror.linuxembarque.com/slitaz/">HTTP</a></li>
-	<li>França - Mirror TuxFamily por
+	
+	<li>França - Mirror hospedado Mésobius (100 Mps)
+	<a href="http://slitazmirror.linuxembarque.com">HTTP</a></li>
+	
+	<li>França - Mirror hospedado TuxFamily via
 	<a href="http://download.tuxfamily.org/slitaz/">HTTP</a> ou
 	<a href="ftp://download.tuxfamily.org/slitaz/">FTP</a></li>
+	
+	<li>China - Mirror hospedado LupaWorld
+	<a href="http://mirror.lupaworld.com/slitaz/">HTTP</a></li>
 </ul>
 
 <a name="sources"></a>
@@ -134,14 +145,27 @@ SliTaz GNU/Linux 1.0 (24,8 Mb) -
 >slitaz-1.0.iso</a>
 [ <a href="http://mirror.switch.ch/ftp/mirror/slitaz/iso/1.0/slitaz-1.0.md5"
 >md5</a> | <a
-href="http://www.freetorrent.fr/download.php?id=ecd240f619879f9f11a29f0133ac624f8eca335d&f=slitaz-1.0.iso.torrent">
+href="http://www.freetorrent.fr/download.php?id=ecd240f619879f9f11a29f0133ac624f8eca335d&amp;f=slitaz-1.0.iso.torrent">
 Torrent</a> ]
+</p>
+
+<p>
+Uma imagem de CDROM bootável com todos os pacotes disponíveis da versão 1.0 é
+gerada todos os dias. Ela também contém uma cópia do website e possibilita a 
+instalação de pacotes sem a necessidade de conexão com a internet, por meio do
+script install.sh
+</p>
+
+<p class="get">
+Coleção dos pacotes da versão 1.0 do SliTaz GNU/Linux (260 Mb) -
+<a href="http://mirror.slitaz.org/iso/1.0/packages-1.0.iso">packages-1.0.iso</a>
+[ <a href="http://mirror.slitaz.org/iso/1.0/packages-1.0.md5">md5</a> ]
 </p>
 
 <a name="cooking"></a>
 <h2>Versão cooking (testes) do LiveCD</h2>
 <p>
-A versão de testes do SliTAz é constantemente desenvolvida, totalmente usável.
+A versão de testes do SliTaz é constantemente desenvolvida, totalmente usável.
 Permite a você testar as ultimas melhorias e pacotes, solicitar novas 
 funcionalidades ou reportar algum bug para nos ajudar na preparação de uma
 versão estável.
@@ -153,6 +177,36 @@ SliTaz GNU/Linux cooking-20090228 (28,6 Mb) -
 >slitaz-cooking.iso</a>
 [ <a href="http://mirror.slitaz.org/iso/cooking/slitaz-cooking.md5"
 >md5</a> ]
+</p>
+
+<p>
+Uma imagem de DVD bootável com todos os pacotes disponíveis da versão Cooking é
+gerada todos os dias. Ela também contém uma cópia do website e possibilita a 
+instalação de pacotes sem a necessidade de conexão com a internet, por meio do
+script install.sh. Observação: esta imagem pode ser 
+<a href="http://syslinux.zytor.com/wiki/index.php/Doc/isolinux#HYBRID_CD-ROM.2FHARD_DISK_MODE">instalada em uma mídia USB</a>, 
+porém isto irá sobrescrever qualquer dado existente na mídia.
+</p>
+
+<p class="get">
+Coleção dos pacotes da versão Cooking do SliTaz GNU/Linux (&lt; 1Gb) -
+<a href="http://mirror.slitaz.org/iso/cooking/packages-cooking.iso">packages-cooking.iso</a>
+[ <a href="http://mirror.slitaz.org/iso/cooking/packages-cooking.md5">md5</a> ]
+</p> 
+
+<a name="floppy"></a>
+<h2>Disquete de boot</h2>
+<p>
+A versão em disquete é utilizada para efetuar o boot do SliTaz em pc's antigos, 
+mesmo que não possuam unidade de CDROM. Pode-se efetuar o boot de uma instalação 
+do SliTaz feita em uma mídia USB, de um CD/DVD, do disco rígido, via lan pelo PXE
+e até mesmo pela internet com o <a href="http://boot.slitaz.org/">gPXE</a>.
+</p>
+
+<p class="get">
+Disquete (1,44 Mb) -
+<a href="http://mirror.slitaz.org/boot/floppy-grub4dos">imagem</a>
+[ <a href="http://mirror.slitaz.org/boot/floppy-grub4dos.md5">md5</a> ]
 </p>
 
 <!-- End of content with round corner -->
