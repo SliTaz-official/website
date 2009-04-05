@@ -9,7 +9,29 @@
 		Actualités du projet de la mini distribution SliTaz GNU/Linux.
 	</description>
 	<copyright>Copyright © www.slitaz.org - GNU gpl</copyright>
-	<lastBuildDate>Sun, 20 Mar 2009 22:50:00 GMT</lastBuildDate>
+	<lastBuildDate>Sun, 05 April 2009 11:30:00 GMT</lastBuildDate>
+	
+	<item>
+		<title>27 Mars - Labs et nouveaux miroirs</title>
+		<link>http://www.slitaz.org/</link>
+		<guid isPermaLink="true">http://labs.slitaz.org/</guid>
+		<pubDate>Sun, 05 April 2009 11:30:00 GMT</pubDate>
+		<description>
+		Cherchant continuellement à améliorer la distribution et les 
+		services que nous proposons, nous sommes fier d'annoncer le 
+		lancement des laboratoires SliTaz ou SliTaz Labs. Cette platforme 
+		communautaire permet aux contributeurs de collaborer plus 
+		efficacement, de rapporter plus facilement des bugs ou demander
+		de nouvelles fonctionnalités. Les labs fournissent à chaque
+		projets un wiki, un tracker, un module d'annonces, etc. Les 
+		laboratoires fournissent une vue d'ensemble sur l'activité du 
+		projet et la publication de nouvelles régulières. N'héstez à vous 
+		inscrire, participer et commenter les annonces. Le projet et 
+		aussi fier d'annonçer 2 nouveaux miroirs: En Suisse, hébérgé par 
+		SWITCHmirror (10 Gbit/s) et en Chine hébérgé par LupaWorld, 
+		thanks a lot for supporting us.
+		</description>
+	</item>
 	
 	<item>
 		<title>Cooking 20090228 - Nouvelle Cooking</title>

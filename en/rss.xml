@@ -9,7 +9,26 @@
 		SliTaz GNU/Linux News
 	</description>
 	<copyright>Copyright © www.slitaz.org - GNU gpl</copyright>
-	<lastBuildDate>Sat, 21 Mar 2009 16:50:00 GMT</lastBuildDate>
+	<lastBuildDate>Sun, 05 April 2009 11:30:00 GMT</lastBuildDate>
+	
+	<item>
+		<title>27 March 2009 - Labs and new mirrors</title>
+		<link>http://www.slitaz.org/en/</link>
+		<guid isPermaLink="true">http://labs.slitaz.org/</guid>
+		<pubDate>Sun, 05 April 2009 11:30:00 GMT</pubDate>
+		<description>
+	Continually seeking to improve the distribution and the services we 
+	offer, we are proud to announce the launch of SliTaz Labs. This 
+	platform makes it possible for contributors to collaborate more 
+	effectively, report bugs or request new features. The Labs provide 
+	each project with a wiki, a bug/issues tracker, news, etc. The 
+	laboratories provide an overview of activity on the project and track 
+	the release of regular updates. Register to participate and leave a 
+	comment. The project is also proud to announce 2 new mirrors: In 
+	Switzerland, hosted by SWITCHmirror (10 Gbits/s) and hosted in China 
+	by LupaWorld, thanks for supporting us.
+		</description>
+	</item>
 	
 	<item>
 		<title>20 March 2009 - SliTaz at Solutionslinux 2009 (Paris)</title>
