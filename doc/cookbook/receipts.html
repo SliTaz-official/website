@@ -65,6 +65,7 @@ variables qui sont utilisées par Tazpkg pour gérer les dépendances ou donner
 des informations sur le paquet.
 </p>
 <p>
+<a name="depends"></a>
 <code>$DEPENDS</code>: Specifie les dépendances, il peut y avoir plusieurs
 paquets séparés par un espace ou sur plusieurs lignes. Cette variable est
 principalement utilisée par Tazpkg lors de l'installation du paquet et Tazwok
@@ -74,6 +75,7 @@ paquet ncurses :
 <pre class="script">
  DEPENDS="ncurses"
 </pre>
+<a name="build_depends"></a>
 <code>$BUILD_DEPENDS</code>: Specifie les dépendances de compilation, séparées 
 par un espace ou sur plusieurs lignes. Cette variable est utilisée par Tazwok
 lors de la cuisson d'un paquet et Tazwok. Exemple :
@@ -82,11 +84,13 @@ lors de la cuisson d'un paquet et Tazwok. Exemple :
  BUILD_DEPENDS="ncurses-dev"
 </pre>
 <p>
+<a name="suggested"></a>
 <code>$SUGGESTED</code> : Liste les paquets pouvant être utiles sans pour
 autant être indispensables. Ils serviront à activer des fonctionnalités
 optionnelles.
 </p>
 <p>
+<a name="tarball"></a>
 <code>$TARBALL</code> : L'archive source avec sont extension (tar.gz, tgz ou
 tar.bz2). En générale, les variables $PACAKAGE et $VERSION sont utilisées et
 il suffit de modifier l'extension, cela permet de mettre à jour le paquet en
@@ -97,6 +101,7 @@ la variable $SOURCE) :
  TARBALL="$PACKAGE-$VERSION.tar.gz"
 </pre>
 <p>
+<a name="web_site"></a>
 <code>$WEB_SITE</code> : Le site web officiel du paquet. Il se peut que
 certaines bibliothèques n'aient pas de site Web, dans ce cas il n'y a pas
 besoin de spécifier d'URL. Tazwok et Tazpkg s'attendent a trouver l'URL
@@ -106,6 +111,7 @@ complet avec le http :
  WEB_SITE="http://www.clex.sk/"
 </pre>
 <p>
+<a name="wget_url"></a>
 <code>$WGET_URL</code> : L'url de téléchargement des l'archive source. En
 générale la variable $TARBALL devraient être utilisée pour faciliter la mise
 à jour du paquet en ne modifiant que $VERSION. Le fichier de configuration de
@@ -117,6 +123,7 @@ pour le mirroir du serveur graphique Xorg. Exemple pour Clex :
  WGET_URL="http://www.clex.sk/download/$TARBALL"
 </pre>
 <p>
+<a name="config_files"></a>
 <code>$CONFIG_FILES</code> : Certains paquets fournissent des fichiers de
 configuration à adapter. La variable $CONFIG_FILES donne la liste de ces
 fichiers qui pourront être sauvegardés par la commande 'tazpkg repack-config'.
@@ -128,12 +135,14 @@ ont été modifiés par la suite. Exemple pour Netatalk :
  CONFIG_FILES="/etc/netatalk/AppleVolumes.* /etc/netatalk/*.conf"
 </pre>
 <p>
+<a name="wanted"></a>
 <code>$WANTED</code> : Il y a des paquets SliTaz qui sont dépendants de la
 compilation d'un paquet source. La recette de ces paquets ne nécessite pas de
 règles de compilation, une variable $WANTED peut être utilisée pour copier des
 fichiers depuis les sources du paquet voulu en utilisant la variable $src.
 </p>
 <p>
+<a name="source"></a>
 <code>$SOURCE</code> : Il se peut que le nom du paquet Tazpkg diffère du nom
 du paquet source. C'est le cas par exemple pour les paquets d'Xorg, le nom
 Tazpkg des bibliothèque X11 est 'xorg-libX11' et le nom du paquet source est
@@ -142,6 +151,7 @@ $src et $_pkg lors la cuisson d'un paquet. A noter que dans le cas libX11,
 le nom de l'archive source devient $SOURCE-$VERSION.tar.gz.
 </p>
 <p>
+<a name="provide"></a>
 <code>$PROVIDE</code> : Certains paquets offrent la même fonctionalité. Par
 exemple, le serveur web de Slitaz fût dans un premier temps lighttpd.
 Maintenant apache est aussi disponible. Tous les paquets dépendants d'un
@@ -174,13 +184,16 @@ juste après la cuisson. Tazwok se charge de les ajouter au receipt
 automatiquement.
 </p>
 <p>
+<a name="packed_size"></a>
 <code>$PACKED_SIZE</code> : Taille du ficher tazpkg.
 </p>
 <p>
+<a name="unpacked_size"></a>
 <code>$UNPACKED_SIZE</code> : Taille utilisée par le paquet après son 
 installation.
 </p>
 <p>
+<a name="extraversion"></a>
 <code>$EXTRAVERSION</code> : Certains packages ont besion de 2 numéros de
 version distincts. C'est le cas des modules ajoutés au noyau linux comme
 squashfs car le module produit dépend aussi de la version du noyau avec 
@@ -197,14 +210,17 @@ peuvent être utilisées par la fonction compile_rules et genpkg_rules décrites
 toutes deux dans le chapitre : Fonctions.
 </p>
 <p>
+<a name="src"></a>
 <code>$src</code> : Définit le chemin vers le répertoire des sources désarchivée.
 </p>
 <p>
+<a name="pkg"></a>
 <code>$_pkg</code> : Définit le chemin vers les binaires compliés et installés
 via la commande 'make DESTDIR=$PWD/_pkg install'. Cette variable est utilisée
 pour copier les fichiers générés et créer des paquets tazpkg.
 </p>
 <p>
+<a name="fs"></a>
 <code>$fs</code> : Définit le chemin vers le pseudo système de fichier (fs)
 propre à chaque paquet. Le 'fs' d'un paquet correspond à la racine du système
 cible, un binaire tel que Clex sera par exemple dans $fs/usr/bin/clex, à noter
@@ -212,6 +228,7 @@ qu'il faut créer les répertoires nécessaires via la fonction genpkg_rules()
 avant de copier des fichiers.
 </p>
 <p>
+<a name="configure_args"></a>
 <code>$CONFIGURE_ARGS</code> : Cette variables est définie dans le fichier de
 configuration de Tazwok (tazwok.conf), elle permet de spécifier des
 arguments d'optimisation générique lors de la configuration d'un paquet.
@@ -227,6 +244,7 @@ sortes de commandes GNU/Linux standards tels que sed ou patch et les variables
 configurées automatiquements. A noter que ces deux fonctions utilisent les
 commandes du Cookbook de SliTaz : http://www.slitaz.org/doc/cookbook/
 </p>
+<a name="compile_rules"></a>
 <h4>compile_rules()</h4>
 <p>
 Pour compiler un paquet vous pouvez utiliser la variable $src pour vous
@@ -247,6 +265,7 @@ compile_rules()
 	make DESTDIR=$PWD/_pkg install
 }
 </pre>
+<a name="genpkg_rules"></a>
 <h4>genpkg_rules()</h4>
 <p>
 Pour générer un paquet Tazpkg il faut mettre les commandes à lancer dans la
@@ -263,6 +282,7 @@ genpkg_rules()
 	strip -s $fs/usr/bin/*
 }
 </pre>
+<a name="pre_install"></a>
 <h4>pre_install() et post_install()</h4>
 <p>
 Ces deux fonctions sont lancées par Tazpkg lors de l'installation du paquet.
@@ -282,6 +302,7 @@ post_install()
 	echo "Processing post-install commands..."
 }
 </pre>
+<a name="clean_wok"></a>
 <h4>clean_wok()</h4>
 <p>
 Cette fonction est lancée par Tazwok avec la commande clean.

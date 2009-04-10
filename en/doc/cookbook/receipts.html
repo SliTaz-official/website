@@ -64,6 +64,7 @@ use the name of another source package. There are also variables that are
 used by Tazpkg to manage dependencies or provide information about the package.
 </p>
 <p>
+<a name="depends"></a>
 <code>$DEPENDS</code>: Set dependencies, there may be several dependencies 
 seperated by a space or on several lines. This variable is used mainly by 
 Tazpkg when installing the package and Tazwok to build large packages such 
@@ -73,6 +74,7 @@ as Xorg. Example for Clex which depends on ncurses:
 DEPENDS="ncurses"
 </pre>
 <p>
+<a name="build_depends"></a>
 <code>$BUILD_DEPENDS</code>: Set compilation dependencies, again seperated 
 by a space or several lines. This variable is used by Tazwok during the 
 cooking of a package. Example:
@@ -81,6 +83,7 @@ cooking of a package. Example:
 BUILD_DEPENDS="ncurses-dev"
 </pre>
 <p>
+<a name="tarball"></a>
 <code>$TARBALL</code> : The archive is a source with the extension (tar.gz, 
 tgz or tar.bz2). In general, the variables $PACKAGE and $VERSION are used to 
 just change the extension, it helps to upgrade the package without changing 
@@ -90,6 +93,7 @@ the $VERSION variable. Generic example (see also $SOURCE example):
 TARBALL="$PACKAGE-$VERSION.tar.gz"
 </pre>
 <p>
+<a name="web_site"></a>
 <code>$WEB_SITE</code> : The official website of the package. It may be that 
 some libraries have no website, in this case, there is no need to specify a 
 URL. Note Tazwok and Tazpkg both expect to find a URL with the complete HTTP:
@@ -98,6 +102,7 @@ URL. Note Tazwok and Tazpkg both expect to find a URL with the complete HTTP:
 WEB_SITE="http://www.clex.sk/"
 </pre>
 <p>
+<a name="wget_url"></a>
 <code>$WGET_URL</code> : URL to download the source file. In general the 
 variable $TARBALL should be used to facilitate the updating of the package
 without changing the $VERSION. Using a configuration file, Tazwok also 
@@ -109,6 +114,7 @@ Example for Clex:
 WGET_URL="http://www.clex.sk/download/$TARBALL"
 </pre>
 <p>
+<a name="config_files"></a>
 <code>$CONFIG_FILES</code> : Some packages provide customized 
 configuration files. The $CONFIG_FILES variable provides a list of these 
 files that can be saved by the 'tazpkg repack-config' command. 
@@ -119,16 +125,19 @@ exist and the package can be successfully recreated with 'tazpkg repack',
 <pre class="script"> CONFIG_FILES="/etc/netatalk/AppleVolumes.* /etc/netatalk/*.conf"
 </pre>
 <p>
+<a name="suggested"></a>
 <code>$SUGGESTED</code> : Lists useful packages without being essential. 
 Also used to activate optional features.
 </p>
 <p>
+<a name="wanted"></a>
 <code>$WANTED</code> : SliTaz packages normally depend on the compilation of 
 a source package. Sometimes the receipt of a package requires no compilation 
 of rules, then $WANTED is used to copy files from the source of another 
 package by using the variable $ src.
 </p>
 <p>
+<a name="source"></a>
 <code>$SOURCE</code> : It may be that the Tazpkg package name differs from 
 the name of the source package. Example for Xorg packages, the name of Tazpkg 
 library X11 is 'xorg-libX11' and the name of the package source is libX11. 
@@ -137,6 +146,7 @@ a package. It should be noted that in the case of libX11, the name of the
 source archive becomes $SOURCE-$VERSION.tar.gz.
 </p>
 <p>
+<a name="provide"></a>
 <code>$PROVIDE</code> : Some packages offer the same functionality, for 
 instance the web server was at first lighttpd, now apache is available. 
 All packages dependent on a web server refer to lighttpd. 
@@ -167,13 +177,16 @@ a package or after the package has been cooked. Tazwok
 will add them to the receipt automatically.
 </p>
 <p>
+<a name="packed_size"></a>
 <code>$PACKED_SIZE</code> : Tazpkg file size.
 </p>
 <p>
+<a name="unpacked_size"></a>
 <code>$UNPACKED_SIZE</code> : Space taken up by the package after
 installation.
 </p>
 <p>
+<a name="extraversion"></a>
 <code>$EXTRAVERSION</code> : Some packages have 2 different versions. 
 This is in case of modules added to the Linux kernel, such as squashfs, 
 because the module depends on the version of the kernel with which it was 
@@ -190,20 +203,24 @@ by the functions compile_rules and genpkg_rules described in the chapter
 Functions.
 </p>
 <p>
+<a name="src"></a>
 <code>$src</code> : Defines the path to the directory of unarchived sources.
 </p>
 <p>
+<a name="pkg"></a>
 <code>$_pkg</code> : Defines the path to the compiled binaries installed via 
 'make DESTDIR=$PWD/_pkg install'. This variable is used to copy the generated 
 files and create Tazpkg packages.
 </p>
 <p>
+<a name="fs"></a>
 <code>$fs</code> : Defines the path to the pseudo filesystem (fs) in each 
 package. The 'fs' of the package corresponds to the root of the system, a bit
 like Clex will for example be in $fs/usr/bin/clex. Note the need to create the 
 necessary directories via function genpkg_rules() before copying the files.
 </p>
 <p>
+<a name="configure_args"></a>
 <code>$CONFIGURE_ARGS</code> : This variable is defined in the Tazwok 
 configuration file (tazwok.conf). It allows you to specify generic optimization
 arguments during construction of a package. Default is the i486 architecture.
@@ -217,6 +234,7 @@ package (genpkg_rules). These functions may contain all sorts of GNU/Linux
 standard commands, such as sed, awk, patch and variables automatically 
 configured.
 </p>
+<a name="compile_rules"></a>
 <h4>compile_rules()</h4>
 <p>
 To compile a package you can use the variable $src to move (cd) in the 
@@ -237,6 +255,7 @@ compile_rules()
 	make DESTDIR=$PWD/_pkg install
 }
 </pre>
+<a name="genpkg_rules"></a>
 <h4>genpkg_rules()</h4>
 <p>
 To generate a tazkg package we must specify commands in the function 
@@ -253,6 +272,7 @@ genpkg_rules()
 	strip -s $fs/usr/bin/*
 }
 </pre>
+<a name="pre_install"></a>
 <h4>pre_install() and post_install()</h4>
 <p>
 These 2 functions are initiated by Tazpkg when installing the package. They 
@@ -271,6 +291,7 @@ post_install()
 	echo "Processing post-install commands..."
 }
 </pre>
+<a name="clean_wok"></a>
 <h4>clean_wok()</h4>
 <p>
 This function helps to define additional commands to be run when cleaning the wok, 
