@@ -97,7 +97,7 @@ body {
 #nav ul{
 	list-style-type: none;
 	margin: 0px 0px 0px 6px;
-	padding: 2px;
+	padding: 3px 2px 3px 2px;
 }
 
 #nav li {
@@ -284,7 +284,7 @@ img {
 }
 
 fieldset {
-	background: #E2ECf6;
+	background: #eeeeee;
 	color: black;
 	margin-top: 25px;
 	border: 1px solid black;
@@ -308,23 +308,6 @@ pre.script {
 	color: black;
 	background: #E8E8E8;
 	border: 1px inset #606060;
-}
-
-textarea {
-	background: #E5E5E5;
-	margin-top: 12px;
-}
-
-input[type=submit] {
-	background: #E5E5E5;
-	color: black;
-	border: 1px outset #111111;
-	font-weight: bold;
-}
-
-input[type=submit]:hover {
-	background: #F3F3F3;
-	color: black;
 }
 
 /* Packages pages */
