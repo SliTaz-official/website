@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+    <title>SliTaz Handbook - Graphisme</title>
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <meta name="description" content="Graphisme sur SliTaz mtPaint GQview GIMP" />
+    <meta name="expires" content="never" />
+    <meta name="modified" content="2007-12-03 12:30:00" />
+    <meta name="publisher" content="www.slitaz.org" />
+    <meta name="author" content="Christophe Lincoln"/>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="book.css" />
+</head>
+<body bgcolor="#ffffff">
+
+<!-- Header and quick navigation -->
+<div id="header">
+<div align="right" id="quicknav">
+    <a name="top"></a>
+    <a href="multimedia.html">Multimedia</a> |
+    <a href="index.html">Table des matières</a>
+</div>
+<h1><font color="#3E1220">SliTaz Handbook</font></h1>
+</div>
+
+<!-- Content. -->
+<div id="content">
+<div class="content-right"></div>
+
+<h2><font color="#DF8F06">Graphisme et gestion d'images</font></h2>
+
+<ul>
+	<li><a href="#gcolor2">Gcolor2</a> - Selecteur et gestionnaire de colors.</li>
+	<li><a href="#gqview">GQview</a> - Gestionnaire d'images.</li>
+	<li><a href="#gimp">Gimp</a> - Manipulation et création d'images.</li>
+	<li><a href="#jpeg">jpeg</a> - Outils JPEG en ligne de commande.</li>
+	<li><a href="#bluefish">mtPaint</a> -  Création et traitement d'images.</li>
+</ul>
+
+<a name="gcolor2"></a>
+<h3><font color="#6c0023">Gcolor2 - Selecteur et gestionnaire de colors</font></h3>
+<p>
+Gcolor2 est un petit outils permettant de séléctionner et conserver des
+palettes de couleures. C'est très utile lors de la créations de thèmes pour
+SliTaz par exemple. Vous trouverez l'application dans la catégorie
+<code>Graphics</code> ou vous pouvez la lancer via la commande :
+</p>
+<pre>
+ $ gcolor2 &amp;
+</pre>
+
+<a name="gimp"></a>
+<h3><font color="#6c0023">Gimp - Manipulation et création d'images</font></h3>
+<p>
+The GIMP (GNU Image Manipulation) est un logiciel de manipulation d'images de
+très haute qualité. Il permet de faire tous ce qu'on peut attendre d'une
+application de traitement d'images, gestion avançée des calques, filtres,
+chemin, outils divers, dégradés, ou encore le support des scripts ajoutant des 
+fonctionnalités. Gimp support un très grand nombre de format d'images tel que
+PNG, JPEG, XPM, PPM, TIFF, PostScript, PSD, il propose aussi son propre format
+XCF pemettant de conserver par exemple les claques. Pour installer Gimp :
+</p>
+<pre>
+ # tazpkg get-install gimp
+</pre>
+<p>
+Gimp est extensible et peut se configurer via l'interface principale, les
+fichiers de configurations, brosses ou scripts personnels vont dans le
+répertoire caché <code>~/.gimp-2.2</code>.
+</p>
+
+<a name="gqview"></a>
+<h3><font color="#6c0023">GQview - Gestionnaire d'images</font></h3>
+<p>
+GQview est rapide et léger, il permet une navigation très rapide entre les 
+images, par sélection des dossiers se trouvant dans votre arborescence, et
+cela se fait en un seul clic de souris. Il intègre la possibilité de faire des
+diaporamas, des rotations d'images et d'afficher les données EXIF, d'ajouter 
+des mots clés ou tags, de configurer les actions, de glisser-déposer. Il 
+donne aussi la possibilité d'éditer les images dans un logiciel externe de 
+son choix (mtPaint ou Gimp par exemple), l'interface est entièrement traduite
+en français, et est très simple d'utilisation.
+</p>
+
+<a name="jpeg"></a>
+<h3><font color="#6c0023">jpeg - Outils JPEG en ligne de commande</font></h3>
+<p>
+Pour que les applications utilisant les images JPEG fonctionnent, elles
+doivent êtres liée aux bibliothèques fournies par le paquet jpeg-6b, ce paquet
+propose aussi quelques petits utilitaires à utiliser en ligne de commande.
+Pour modifier des images JPEG en ligne de commande, vous pouvez utiliser
+<code>jpegtran</code>, installé par défaut sur SliTaz. L'utilitaire
+<code>jpegtran</code> permet par exemple de faire une rotation de 
+l'image via l'option <code>-rotate</code>. Le paquet jpeg-6b fournit aussi les
+outils <code>cjpeg</code> et <code>djpeg</code>. Pour connaître les options
+disponibles avec tous ces outils, vous pouvez utiliser l'option 
+<code>--help</code> propre à chaque application. Exemple avec 
+<code>cjpeg</code> :
+</p>
+<pre>
+ $ cjpeg --help
+</pre>
+
+<a name="mtPaint"></a>
+<h3><font color="#6c0023">mtPaint -  Création et traitement d'images</font></h3>
+<p>
+mtPaint est une application de création et de retouche d'images, PNG, TIFF, 
+XPM, BMP. Il est presque entièrement traduit en français, offre beaucoup de 
+fonctions, simple, léger, et rapide. L'outil mtPaint fournit une fonction de 
+capture d'écran (screenshot), que vous pouvez utiliser via le menu 
+--&gt; Graphics --&gt; Grab screenshot, ou en tapant la commande ci-dessous
+dans un terminal:
+</p>
+<pre>
+ $ mtpaint -s
+</pre>
+
+<!-- End of content -->
+</div>
+
+<!-- Footer. -->
+<div id="footer">
+	<div class="footer-right"></div>
+	<a href="#top">Haut de la page</a> | 
+	<a href="index.html">Table des matières</a>
+</div>
+
+<div id="copy">
+    Copyright &copy; 2009 <a href="http://www.slitaz.org/">SliTaz</a> -
+    <a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>;<br />
+    Documentation publiées sous
+    <a href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License</a>
+    et codée en <a href="http://validator.w3.org/">xHTML 1.0 valide</a>.
+</div>
+
+</body>
+</html>

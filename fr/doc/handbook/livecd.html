@@ -1,0 +1,347 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+    <title>SliTaz Handbook - LiveCD</title>
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <meta name="description" content="utiliser le livecd options login utilisateur session X" />
+    <meta name="expires" content="never" />
+    <meta name="modified" content="2007-12-04 12:30:00" />
+    <meta name="publisher" content="www.slitaz.org" />
+    <meta name="author" content="Christophe Lincoln"/>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="book.css" />
+</head>
+<body bgcolor="#ffffff">
+
+<!-- Header and quick navigation -->
+<div id="header">
+<div align="right" id="quicknav">
+    <a name="top"></a>
+    <a href="install.html">Installation</a> |
+    <a href="index.html">Table des matières</a>
+</div>
+<h1><font color="#3E1220">SliTaz Handbook</font></h1>
+</div>
+
+<!-- Content. -->
+<div id="content">
+<div class="content-right"></div>
+
+<h2><font color="#DF8F06">Utiliser le LiveCD et ses options</font></h2>
+
+<ul>
+    <li><a href="#quick-intro">Rapide introduction au LiveCD.</a></li>
+    <li><a href="#boot">Démarrer sur le CD (<em>boot</em>).</a></li>
+    <li><a href="#options">Options à passer au démarrage.</a></li>
+    <li><a href="#kernel-param">Paramètres du noyau Linux</a> - Matériel
+    et modes VGA.</li>
+    <li><a href="#home">Option : home=usb</a> - Conserver ses donnés sur un
+    media USB.</li>
+    <li><a href="#i18n">Options : lang=XX et kmap=XX</a> - Spécifier la langue
+    et le clavier.</li>
+    <li><a href="#config">Option : config=&lt;device&gt;,&lt;path&gt;</a> -
+    Lancer un script au démarrage du LiveCD.</li>
+    <li><a href="#sound">Option : sound=*</a> - Supprimer le support du son ou
+    saute la configuration automatique.</li>
+    <li><a href="#modprobe">Option : modprobe=modules</a> - Charger des modules
+    à la volée.</li>
+    <li><a href="#sessions">Sessions</a> - Login, mots de passes et X.</li>
+</ul>
+
+<a name="quick-intro"></a>
+<h3><font color="#6c0023">Rapide introduction au LiveCD</font></h3>
+<p>
+Le LiveCD de SliTaz GNU/Linux est une distribution libre fonctionnant depuis
+un cdrom. La distribution vous permet d'emporter avec vous un mini système
+ultra rapide, léger et sans rien installer. L'utilisation du LiveCD de SliTaz
+est absolument sans risques pour le système d'exploitation existant sur
+l'ordinateur hôte et SliTaz ne touche pas aux disques durs. Le LiveCD est
+disponible sous forme d'image au format ISO contenant le système 
+d'exploitation complet et compressé. Cette image ISO peut être gravée sur
+un cdrom (CD-RW ou un CD-R), ensuite, il suffit de redémarrer la machine
+avec le cdrom dans le lecteur de CD ou DVD pour lancer SliTaz en mémoire vive
+(RAM). Une fois en fonctionnement, SliTaz est autonome, vous pouvez retirer le
+cdrom et utiliser le système pendant des mois sans redémarrer...
+</p>
+
+<a name="boot"></a>
+<h3><font color="#6c0023">Démarrer sur le CD (<em>boot</em>)</font></h3>
+<p>
+L'utilisation de SliTaz nécessite que votre machine démarre (<em>boot</em>)
+depuis le périphérique de CD/DVD et non pas depuis le disque dur. Dans la
+plupart des cas votre ordinateur est déjà configuré pour amorcer sur cdrom, si
+ce n'est pas le cas, il faut modifier l'ordre de démarrage via l'interface de
+configuration du BIOS accessible, en général, en pressant une touche
+(<code>F10</code>, <code>F12</code>, <code>esc</code> ou autre) dans les
+premières secondes qui suivent l'allumage de la machine. Quand vous êtes dans
+le BIOS, il faut chercher les paramètres relatifs à la séquence de démarrage
+tels que <em>Boot Order</em> ou <em>Boot Device</em> et changer l'ordre pour
+que le cdrom arrive en premier. Pour finir, n'oubliez pas d'enregistrer les
+modifications avant de quitter l'interface de configuration du BIOS.
+</p>
+<p>
+Quand la machine a réussi à démarrer sur le cdrom, vous vous retrouvez avec
+une image <em>splash</em> du logo de Slitaz et une invite de commande
+permettant de passer différentes options au noyau Linux et aux scripts de
+démarrage (<em>boot scripts</em>) utilisés par SliTaz. Il suffit alors de
+taper sur la touche <code>ENTER</code> pour lancer le système avec ou sans
+options, la touche <code>F1</code> affichera un texte d'aide et d'informations.
+</p>
+
+<a name="options"></a>
+<h3><font color="#6c0023">Options et paramètre à passer au démarrage</font></h3>
+<p>
+Le système LiveCD de SliTaz propose diverses options à passer au démarrage
+(<em>boot</em>), via l'invite de commandes propulsé par Syslinux. Il y deux
+types d'options : celles de SliTaz et celles du noyau Linux. Les options
+propres à SliTaz sont utilisées par les scripts de démarrage et les paramètres
+du noyau Linux (<em>kernel boot parameters</em>), tel que le mode VGA, sont
+gérés directement par le noyau. Pour passer des options au démarrage vous devez
+commencer par taper <code>slitaz</code> suivit des options, pour vous simplifier
+la vie vous pouvez simplement taper par exemple <code>fr</code> et ENTER pour 
+charger un fichier de clavier (en clavier qwerty <code>slitaz</code> 
+correspond à : <code>slitqw</code>). Exemple :
+</p>
+<pre>
+ slitaz vga=791 no387
+</pre>
+<p>
+A noter que le noyau Linux conserve les données passées au <em>boot</em> dans
+le fichier texte <code>/proc/cmdline</code>. Sur un système GNU/Linux en
+fonctionnement, ce fichier est facilement lisible depuis un terminal et via la
+commande :
+</p>
+<pre>
+ $ cat /proc/cmdline 
+</pre>
+
+<a name="kernel-param"></a>
+<h3><font color="#6c0023">Paramètres du noyau Linux</font></h3>
+<p>
+Sur les systèmes GNU/Linux, les paramètres spécifiques au noyau Linux varient
+en fonction de la configuration utilisée lors de la compilation de celui-ci.
+Le noyau utilisé par SliTaz est construit avec un minimum de modules et
+propose peu de paramètres modifiables au démarrage. Cela dit, vous avez
+la possibilité de désactiver l'émulation d'un coprocesseur mathématique via
+le code : <code>no387</code> et/ou d'activer <code>irqpoll</code> en cas de
+problèmes d'interruption avec le matértiel (lecteur CD/DVD par exemple). Le
+noyau Linux de SliTaz fournit aussi un mode de sortie video vga VESA pour le
+<em>framebuffer</em>. C'est lui qui affiche le petit logo Tux et gère la
+taille d'affichage du terminal Linux. A noter qu'une fois le système démarré,
+vous avez accès à six pseudo terminaux Linux via les combinaisons de touches : 
+<code>Ctrl+alt+F1</code>, <code>Ctrl+alt+F2</code>, etc.
+</p>
+
+<h4>vga=XXX - Modes VGA du noyau</h4>
+<pre class="script">
+Colors | 640x480  800x600  1024x768  1280x1024  1600x1200
+-------------------------------------------------------
+256    |  769      771       773       775        796
+32768  |  784      787       790       793        797
+65536  |  785      788       791       794        798
+16,8M  |  786      789       792       795        799
+</pre>
+
+<a name="home"></a>
+<h3><font color="#6c0023">Option : home=usb - Conserver ses donnés</font></h3>
+<p>
+L'option <code>home=usb</code> ou <code>home=*</code> active
+le montage d'une partition d'un périphérique USB externe sur le répertoire
+<code>/home</code> (maison) destiné aux utilisateurs du système.
+L'utilisation d'une clé USB, d'un disque dur externe ou d'une carte SD, 
+permet de conserver les informations utilisateur sur un support persistant.
+Associer le LiveCD de Slitaz à un support de stockage a de gros avantages,
+tels que de conserver la configuration de vos applications préférées, vos
+marques pages, vos documents, vos images, etc. Cette technique vous permet
+aussi de créer votre propre menu et votre propre thème pour le gestionnaire de
+fenêtres JWM. Vous pouvez par exemple facilement utiliser une image en fond
+d'écran et la retrouver à chaque fois que vous utiliser le cdrom de SliTaz.
+Ces informations sont stockées dans des fichiers de configurations cachés
+propre à chaque compte du système. La plupart des applications destinées aux
+utilisateurs ont un fichier/répertoire de configuration système généralement
+situé dans <code>/etc</code> et un fichier/répertoire caché (commençant par
+un point) appartenant à l'utilisateur. Pour utiliser cette option il faut une
+partition formatée en <code>ext3</code> et située sur un périphérique USB tel
+qu'une clé USB <em>flash memory</em>, le format <code>ext3</code> est un
+système de fichiers journalisé, supportant la gestion des permissions et
+offrant donc bien plus de sécurité que le format <code>FAT32</code> ou
+<code>NTFS</code> utilisé par Windows. A noter que la lecture ou l'écriture
+sur un système de fichiers <code>ext3</code> n'est pas supportée nativement
+par Windows mais que SliTaz peut lire et écrire sur un système de fichiers
+<code>FAT32</code> grâce au support natif fourni par le noyau Linux.
+</p>
+<p>
+Si vous avez déjà un media externe formaté en <code>ext3</code>, vide ou
+contenant des données mais ayant assez d'espace libre, vous pouvez directement
+l'utiliser. Aucune donnée existante ne sera détruite, il y aura juste un
+répertoire <code>hacker/</code> créé automatiquement lors de la première
+utilisation du LiveCD avec le périphérique et la partition en question.
+</p>
+<h4>Partitions et formatage d'un media</h4>
+<p>
+Dans la plupart des cas les clés USB et les cartes de type SD <em>card</em>
+n'ont qu'une seule partition, généralement reconnue comme <code>sda1</code>
+par le noyau Linux. Une fois formatée, vous pouvez utiliser cette première
+partition en passant l'option <code>home=sda1</code> ou plus simplement 
+<code>home=usb</code> à l'invite de commandes disponible au démarrage du
+système. Si vous désirez utiliser une partition d'un disque dur externe, 
+composé de multiples partitions, vous pouvez utiliser l'option 
+<code>home=sda[1-9]</code> en spécifiant la bonne partition. A noter que vous
+pouvez aussi partitionner une clé USB en différentes partitions et utiliser
+une de ces partitions comme <em>home</em>. Pour savoir si votre media a bien
+été reconnu et connaître l'emplacement depuis lequel il est accessible, vous
+pouvez utiliser l'utilitaire <code>fdisk</code> avec l'option <code>-l</code>.
+Pour utiliser cette commande vous devez avoir les droits d'administrateur
+système (<em>root</em>), que vous pouvez obtenir via la commande
+<code>su</code> suivi du mot de passe <em>root</em>. Exemple :
+</p>
+<pre>
+ $ su
+ # fdisk -l
+</pre>
+<p>
+Le formatage en <code>ext3</code> va détruire toutes les données contenues sur
+la partition en question, attention à ne pas vous tromper de disque ou de
+partition. Une fois que le media sera formaté, il sera prêt à être utilisé
+pour stocker vos données personnelles. Pour formater la première partition
+d'un périphérique <code>sda</code>, vous pouvez utiliser la commande 
+<code>mkfs.ext3</code> ou l'utilitaire Tazusb :
+</p>
+<pre>
+ # mkfs.ext3 /dev/sda1
+ ou:
+ # tazusb format /dev/sda1
+</pre>
+<h4>Utiliser un media</h4>
+<p>
+L'utilisation d'un périphérique externe commence lors du démarrage
+(<em>boot</em>) du système LiveCD, il faut spécifier l'option 
+<code>home=usb</code> ou <code>home=*</code> précédée par
+<code>slitaz</code>. La partition peut aussi être spécifiée en utilisant
+l'UUID ou le label de la partition. Exemple :
+</p>
+<pre>
+ slitaz home=usb
+ slitaz home=sdb1
+ slitaz home=UUID/LABEL
+</pre>
+<p>
+Lors de l'exécution des scripts de démarrage, SliTaz lit le fichier 
+<code>/proc/cmdline</code> pour savoir si une partition doit être montée sur
+<code>/home</code>. Si l'option existe, le script va commencer par attendre
+environ 10 secondes que le media soit bien détecté par le noyau Linux et
+tenter de monter la partition. Lors de la première utilisation le contenu
+original du répertoire <code>/home/hacker</code> est copié sur la nouvelle
+partition préalablement montée. Vous aurez alors un système fonctionnant en
+mémoire vive et des données personnelles sur votre media de type USB.
+</p>
+
+<a name="i18n"></a>
+<h3><font color="#6c0023">Options : lang=XX et kmap=XX - Langue et clavier</font></h3>
+<p>
+Le LiveCD de Slitaz vous propose de configurer la langue et le clavier
+directement au <em>boot</em> ou graphiquement pendant l'initialisation du
+système. Cela veut dire que si vous ne spécifiez pas la langue ou le clavier
+via l'invite de commandes, le système lancera automatiquement une interface
+de configuration lors de l'exécution des scripts de démarrage. SliTaz est
+en français <code>fr</code> et en anglais <code>en</code>, les claviers
+<code>be ca de en es fr_CH fr it jp us </code>. Exemple d'utilisation de
+ces options :
+</p>
+<pre>
+ slitaz lang=fr kmap=be
+</pre>
+
+<a name="config"></a>
+<h3><font color="#6c0023">Option : config=&lt;device&gt;,&lt;path&gt;</font></h3>
+<p>
+L'option <code>config=</code> vous permet de lancer un script au démarrage
+du LiveCD, ce script peur être situé sur une partition d'un disque dur local
+ou sur un media de type USB. Cette option permet par exemple, de monter une
+image ISO sur <code>/usr</code> afin de pouvoir éconnomiser le la mémoire
+vive et utilisé SliTaz sur de machines ayant 32 Mb RAM. Exemple avec un script
+nommé <code>slitaz.sh</code> et sutué sur la première partition du premier
+disque dur local :
+</p>
+<pre>
+ slitaz config=/dev/hda1,slitaz.sh
+</pre>
+
+<a name="sound"></a>
+<h3><font color="#6c0023">Option : sound=*</font></h3>
+<p>
+L'option <code>sound=no</code> ou <code>sound=noconf</code> vous permettent
+respéctivement, de supprimer tous les modules et applications en rapport au
+support du son pour gagner de la mémoire vive (RAM), ou de sauter la
+configuration automatique au démarrage si vous ne désirez pas configurer le son
+mais quand même conserver le nécessaire pour un configuration manuel par
+la suite.
+</p>
+<pre>
+ slitaz sound=no
+</pre>
+
+<a name="modprobe"></a>
+<h3><font color="#6c0023">Option : modprobe=modules</font></h3>
+<p>
+L'option <code>mdprobe=modules</code> vous permettent de charger des modules
+du noyau à la volée lors du démarrage du système. Cette options est utile par
+exemple si un driver compilé en modules est nécessaire à la configuration de
+la carte réseau ou son. A noter que sur un système en fonction, vous pouvez
+lister les modules disponibles via la commande : <code>modprobe -l</code> et
+que la commande <code>lspci</code> peut vous aider à connaître votre matériel
+et le nom du bon driver. Pour charger un ou des modules :
+</p>
+<pre>
+ slitaz modprobe=modules1,modules2
+</pre>
+
+<a name="sessions"></a>
+<h3><font color="#6c0023">Sessions - Login, mots de passes et X</font></h3>
+<p>
+Quand le système a finit son initialisation, l'écran est nettoyé et l'invite
+de <em>login</em> ou le gestionnaire de connexion Slim s'affiche. Sur un 
+système GNU/Linux il y a un administrateur système nommé <em>root</em>, il 
+a tous les droits et ne devrait pas être utilisé pour se loguer directement.
+SliTaz a donc un compte <em>root</em> et propose un utilisateur <em>hacker</em>
+sans mot de passe. Pour devenir <em>root</em> au sein d'une session utilisateur,
+vous pouvez utiliser la commande <code>su</code> suivie du mot de passe root.
+En mode LiveCD, le mot de passe <em>root</em> est <code>root</code>. 
+</p>
+<p>
+Une fois logué dans une session, vous pouvez utiliser les nombreuses commandes
+disponibles, les outils en mode texte tels que l'éditeur GNU Nano ou le
+gestionnaire de fichiers Clex. Vous pouvez aussi lancer une session graphique
+(X) via la commande <code>startx</code> ou encore vous connecter à une machine
+distante via une session SSH ou X. La commande <code>startx</code> va lancer
+le serveur graphique (Xvesa) et démarrer le gestionnaire de fenêtres JWM, vous
+aurez alors la possibilité d'utiliser des applications graphiques via le menu
+fourni par SliTaz et propulsé par JWM (Joe Window Manager). Pour lancer une 
+session X depuis une console Linux, dans le cas par exemple ou vous avez utilisé
+l'option <code>screen=text</code> et que Slim n'est pas lançé :
+</p>
+<pre>
+ $ startx
+</pre>
+
+<!-- End of content -->
+</div>
+
+<!-- Footer. -->
+<div id="footer">
+	<div class="footer-right"></div>
+	<a href="#top">Haut de la page</a> | 
+	<a href="index.html">Table des matières</a>
+</div>
+
+<div id="copy">
+    Copyright &copy; 2009 <a href="http://www.slitaz.org/">SliTaz</a> -
+    <a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>;<br />
+    Documentation publiées sous
+    <a href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License</a>
+    et codée en <a href="http://validator.w3.org/">xHTML 1.0 valide</a>.
+</div>
+
+</body>
+</html>

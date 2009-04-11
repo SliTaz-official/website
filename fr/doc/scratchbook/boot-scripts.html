@@ -1,0 +1,220 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+    <title>SliTaz Scratchbook- Boot scripts</title>
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <meta name="description" content="liTaz GNU/Linux boot scripts démarrage du système initialisation linux kernel services" />
+    <meta name="expires" content="never" />
+    <meta name="modified" content="2007-12-24 12:30:00" />
+    <meta name="publisher" content="www.slitaz.org" />
+    <meta name="author" content="Christophe Lincoln"/>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="book.css" />
+</head>
+<body bgcolor="#ffffff">
+
+<!-- Header and quick navigation -->
+<div id="header">
+<div align="right" id="quicknav">
+	<a name="top"></a>
+	<a href="locale.html">Locale &amp; i18n</a> |
+	<a href="index.html">Table des matières</a> |
+	<a href="x-window-system.html">X window system</a>
+</div>
+<h1><font color="#3E1220">SliTaz Scratchbook</font></h1>
+</div>
+
+<!-- Content. -->
+<div id="content">
+<div class="content-right"></div>
+
+
+<h2><font color="#DF8F06">Boot scripts</font></h2>
+<p>
+Les scripts de démarrage et d'arrêt avec leurs fichiers de configuration.
+</p>
+
+<ul>
+  	<li><a href="#intro">SliTaz et son démarrage.</a></li>
+	<li><a href="#init.d">/etc/init.d/*</a> - Répertoire des scripts et démons.</li>
+	<li><a href="#rcS">/etc/init.d/rcS</a> - Script d'initialisation principale.</li>
+	<li><a href="#rc-scripts">Scripts et démons spécifiques</a> - Les scripts
+	et démons ayant une tâche bien particulière.</li>
+	<li><a href="#inittab">/etc/inittab</a> - Fichier de configuration d'init.</li>
+</ul>
+
+<a name="intro"></a>
+<h3><font color="#6c0023">SliTaz et son démarrage</font></h3>
+<p>
+Dans les premières version du livre, les scripts étaient créer à la main avec
+la commande <code>cat</code>. Avec le temps, les scripts de démarrage et le
+fichier de configuration principale sont devenu trop gros et sont trop souvent
+modifiés pour être inclus dans le Cookbook. Tous les scripts et configuration
+se trouve dans l'archive des outils SliTaz ou le paquet 
+<a href="http://www.slitaz.org/get/tools.html">slitaz-tools</a>. Vous pouvez
+ouvrir avec un éditeur de texte et les étudier.
+</p>
+<p>
+SliTaz n'utilise pas de niveau d'execution, tout le système est initialisé via
+un script principale et son fichier de configuration. Ce script lance lui-même
+quelque petits scripts qui s'occupe de l'internationalisation ou des options
+passé en ligne de commande au démarrage.
+</p>
+
+<a name="init.d"></a>
+<h3><font color="#6c0023">/etc/init.d/* - Répertoire des scripts et démons</font></h3>
+<p>
+Le réperoire /etc/init.d contient tous les vrais scripts rc, les scripts
+finnissant par '.sh' sont de simples scripts shell, et les démons, tel 
+que 'dropbear' ou 'lighttpd', sont aussi de scripts mais qui lance un service.
+Les scripts des démons permettent de démarrer, arrêter, ou redémarrer un démon
+via la commande :
+</p>
+<pre>
+ # /etc/init.d/demon [start|stop|restart]
+</pre>
+<p>
+Le répertoire /etc/init.d devrait déjà exister, si vous avez suivi le cookbook
+depuis le début. Si ce n'est pas le cas: <code>mkdir -p /etc/init.d</code>.
+Sur SliTaz vous trouverez un fichier /etc/init.d/README décrivant le 
+fonctionnemnt de base des scripts rc. A noter aussi que tous les scripts de
+démarrage et démons peuvent faire appel au fichier 
+<code>/etc/init.d/rc.functions</code>. Ce fichier permet d'inclure divers
+fonctions dans les scripts rc. SliTaz utilise une fonction <code>status</code>
+vérifiant si la commande précédante a réussi (0) ou pas.
+</p>
+
+<a name="rcS"></a>
+<h3><font color="#6c0023">/etc/init.d/rcS - Script d'initialisation principale</font></h3>
+<p>
+Le script <code>/etc/init.d/rcS</code> configure tous les services de base
+et initialise le système de base. Il commence par monter les systèmes de 
+fichiers, démarrer syslogd et klogd, lancer mdev, nettoyer le système, etc.
+Il utilise le fichier de configuration <code>/etc/rcS.conf</code> pour
+connaître les démons et scripts à lancer au démarrage. Vous pouvez parcourir
+le script pour connaître en détail les commandes exécutées : 
+</p>
+<pre>
+ # nano rootfs/etc/init.d/rcS 
+</pre>
+
+
+<a name="rc-scripts"></a>
+<h3><font color="#6c0023">Scripts et démons spécifiques</font></h3>
+
+<h4>bootopts.sh - Les options du mode LiveCD</h4>
+<p>
+Ce script est utilisé pour configurer les options du mode LiveCD, passées en
+ligne de commande au boot, et lisible via le fichier /proc/cmdline. C'est 
+le script qui permet d'utiliser une clé USB ou un disque dure externe comme
+partition /home avec l'option home=usb ou home=sda[1-9], ou encore de spécifier
+directement la langue et le clavier à utiliser.
+</p>
+
+<h4>network.sh - Initialisation du réseau</h4>
+<p>
+Le script network.sh utilise le fichier de configuration /etc/netwok.conf pour
+connaître l'interface à utiliser, si l'on veut lancer le client DHCP ou pas, 
+un IP fixe ou pas. Sur SliTaz le script /etc/init.d/network.sh configure les
+interfaces réseau au boot, en ce servant des infornations contenues dans
+/etc/network.conf. Si la variable $DHCP est égale à yes, alors le script 
+/etc/init.d/network.sh lancera le client DHCP sur l'interface $INTERFACE.
+</p>
+
+<h4>i18n.sh - Internationalisation</h4>
+<p>
+SliTaz sauvegarde la configuration de la locale par défaut dans le fichier
+/etc/locale.conf qui est lu par /etc/profile, à chaque login. Le fichier 
+/etc/locale.conf est généré lors du boot grâce au script /etc/init.d/i18n.sh.
+Ce script lance l'application 'tazlocale' que vous trouverez dans 
+<a href="http://www.slitaz.org/get/tools">SliTaz tools</a>, si le fichier
+de configuration /etc/locale.conf n'existe pas. Nous utilisons le même processus
+pour la configuration du clavier en utilisant 'tazkmap' et le fichier de 
+configuration /etc/kmap.conf. Ces deux applications s'intallent dans 
+/sbin sur SliTaz, et utilise <a href="base-ncurses.html">les bibliothèques ncurses</a>,
+ainsi que <a href="base-ncurses.html#dialog">dialog</a>. Ce script vérifie
+aussi si le fichier de configuration du fuseau horaire /etc/TZ existe,
+sinon il le crée en se basant sur la configuration du clavier.
+</p>
+
+<h4>local.sh - Commande local</h4>
+<p>
+Création d'un script /etc/init.d/local.sh pour permettant à l'administrateur
+système d'ajouter facilement des commandes local exécutées au boot:
+</p>
+<pre class="script">
+#!/bin/sh
+# /etc/init.d/local.sh: Local startup commands.
+# All commands here will be executed at boot time.
+#
+. /etc/init.d/rc.functions
+
+echo "Starting local startup commands... "
+
+</pre>
+
+<h4>rc.shutdown</h4>
+<p>
+Ce script est invoqué par /etc/inittab lors de l'arrêt du système. Il stop
+aussi tous les démons via la variable RUN_DAEMONS du fichier de configuration
+pricipale <code>/etc/rcS.conf</code>.
+</p>
+
+<a name="inittab"></a>
+<h3><font color="#6c0023">/etc/inittab - Fichier de configuration d'init</font></h3>
+<p>
+Le premier fichier lu par le noyau au boot. Il définit le script d'initialisation
+(/etc/init.d/rcS), les shells, et les actions en cas d'arrêt ou de reboot. Vous
+trouverez une exemple complet et commenté dans l'archive de Busybox et un petit
+sur cette page :
+</p>
+<pre class="script">
+# /etc/inittab: init configuration for SliTaz GNU/Linux.
+# Boot-time system configuration/initialization script.
+#
+::sysinit:/etc/init.d/rcS
+
+# /sbin/getty respawn shell invocations for selected ttys.
+tty1::respawn:/sbin/getty 38400 tty1
+tty2::respawn:/sbin/getty 38400 tty2
+tty3::respawn:/sbin/getty 38400 tty3
+tty4::respawn:/sbin/getty 38400 tty4
+tty5::respawn:/sbin/getty 38400 tty5
+tty6::respawn:/sbin/getty 38400 tty6
+
+# Stuff to do when restarting the init 
+# process, or before rebooting.
+::restart:/etc/init.d/rc.shutdown
+::restart:/sbin/init
+::ctrlaltdel:/sbin/reboot
+::shutdown:/etc/init.d/rc.shutdown
+
+</pre>
+
+<h4>Suite</h4>
+<p>
+Le Cookbook continue via le chapitre : <a href="x-window-system.html">X window system</a>.
+</p>
+
+
+<!-- End of content -->
+</div>
+
+<!-- Footer. -->
+<div id="footer">
+	<div class="footer-right"></div>
+	<a href="#top">Haut de la page</a> | 
+	<a href="index.html">Table des matières</a>
+</div>
+
+<div id="copy">
+    Copyright © 2007 <a href="http://www.slitaz.org/">SliTaz</a> -
+    <a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>;<br />
+    Documentation publiées sous
+    <a href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License</a>
+    et codée en <a href="http://validator.w3.org/">xHTML 1.0 valide</a>.
+</div>
+
+</body>
+</html>

@@ -1,0 +1,338 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+    <title>SliTaz Cookbook - Receipts (Recettes des paquets)</title>
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <meta name="description" content="SliTaz packages receipt la recette de construction d'un paquet slitaz tazpkg tazwok" />
+    <meta name="expires" content="never" />
+    <meta name="modified" content="2007-12-24 17:00:00" />
+    <meta name="publisher" content="www.slitaz.org" />
+    <meta name="author" content="Christophe Lincoln"/>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="book.css" />
+</head>
+<body bgcolor="#ffffff">
+
+<!-- Header and quick navigation -->
+<div id="header">
+<div align="right" id="quicknav">
+    <a name="top"></a>
+    <a href="wok-tools.html">Wok &amp; tools</a> |
+    <a href="index.html">Table des matières</a>
+</div>
+<h1><font color="#3E1220">SliTaz Cookbook</font></h1>
+</div>
+
+<!-- Content. -->
+<div id="content">
+<div class="content-right"></div>
+
+
+<h2><font color="#DF8F06">Receipts (Recettes des paquets)</font></h2>
+<p>
+Ce document décrit les possibilités offertes par les recettes utilisées par
+Tazwok pour compiler et générer des paquets pour SliTaz et tazpkg, via
+(<a href="wok-tools.html">le wok et les outils</a>). La recette d'un paquet 
+est aussi utilisée par Tazpkg pour installer/désinstaller et donner des 
+informations au sujet d'un paquet.tazpkg (package). Chaque recette commence 
+par un commentaire en English :
+</p>
+<pre class="script">
+ # SliTaz package receipt.
+</pre>
+
+<h3>Variables de base</h3>
+<p>
+Les 5 premières variables devraient toujours être présentes et configurées.
+Elles configure respectivement le non du paquet ($PACKAGE), sa version, sa
+catégorie, une courte description et le nom du mainteneur. Exemple pour le
+paquet du gestionnaire de fichiers Clex :
+</p>
+<pre class="script">
+ PACKAGE="clex"
+ VERSION="3.16"
+ CATEGORY="base-apps"
+ SHORT_DESC="Text mode file manager."
+ MAINTAINER="pankso@slitaz.org"
+</pre>
+
+<h3>Variables optionnelles</h3>
+<p>
+Tazwok sait aussi utiliser divers variables optionnelles si elles existent, il
+peut par exemple, utiliser un autre nom pour le paquet source. Il y a aussi des
+variables qui sont utilisées par Tazpkg pour gérer les dépendances ou donner
+des informations sur le paquet.
+</p>
+<p>
+<a name="depends"></a>
+<code>$DEPENDS</code>: Specifie les dépendances, il peut y avoir plusieurs
+paquets séparés par un espace ou sur plusieurs lignes. Cette variable est
+principalement utilisée par Tazpkg lors de l'installation du paquet et Tazwok
+pour construire de gros paquets comme Xorg. Exemple pour Clex qui dépend du
+paquet ncurses :
+</p>
+<pre class="script">
+ DEPENDS="ncurses"
+</pre>
+<a name="build_depends"></a>
+<code>$BUILD_DEPENDS</code>: Specifie les dépendances de compilation, séparées 
+par un espace ou sur plusieurs lignes. Cette variable est utilisée par Tazwok
+lors de la cuisson d'un paquet et Tazwok. Exemple :
+</p>
+<pre class="script">
+ BUILD_DEPENDS="ncurses-dev"
+</pre>
+<p>
+<a name="suggested"></a>
+<code>$SUGGESTED</code> : Liste les paquets pouvant être utiles sans pour
+autant être indispensables. Ils serviront à activer des fonctionnalités
+optionnelles.
+</p>
+<p>
+<a name="tarball"></a>
+<code>$TARBALL</code> : L'archive source avec sont extension (tar.gz, tgz ou
+tar.bz2). En générale, les variables $PACAKAGE et $VERSION sont utilisées et
+il suffit de modifier l'extension, cela permet de mettre à jour le paquet en
+ne modifiant que la variable de la version. Exemple générique (voir aussi
+la variable $SOURCE) :
+</p>
+<pre class="script">
+ TARBALL="$PACKAGE-$VERSION.tar.gz"
+</pre>
+<p>
+<a name="web_site"></a>
+<code>$WEB_SITE</code> : Le site web officiel du paquet. Il se peut que
+certaines bibliothèques n'aient pas de site Web, dans ce cas il n'y a pas
+besoin de spécifier d'URL. Tazwok et Tazpkg s'attendent a trouver l'URL
+complet avec le http :
+</p>
+<pre class="script">
+ WEB_SITE="http://www.clex.sk/"
+</pre>
+<p>
+<a name="wget_url"></a>
+<code>$WGET_URL</code> : L'url de téléchargement des l'archive source. En
+générale la variable $TARBALL devraient être utilisée pour faciliter la mise
+à jour du paquet en ne modifiant que $VERSION. Le fichier de configuration de
+Tazwok configure aussi, par défaut, 3 variable de miroir souvent utilisés.
+$GNU_MIRROR pour les miroir GNU, $SF_MIRROR pour SourceForge et XORG_MIRROR
+pour le mirroir du serveur graphique Xorg. Exemple pour Clex :
+</p>
+<pre class="script">
+ WGET_URL="http://www.clex.sk/download/$TARBALL"
+</pre>
+<p>
+<a name="config_files"></a>
+<code>$CONFIG_FILES</code> : Certains paquets fournissent des fichiers de
+configuration à adapter. La variable $CONFIG_FILES donne la liste de ces
+fichiers qui pourront être sauvegardés par la commande 'tazpkg repack-config'.
+Ces fichiers ne seront pas écrasés lors de l'installation du paquet s'ils
+existent déjà et le paquet pourra être récréé avec 'tazpkg repack' même s'ils
+ont été modifiés par la suite. Exemple pour Netatalk :
+</p>
+<pre class="script">
+ CONFIG_FILES="/etc/netatalk/AppleVolumes.* /etc/netatalk/*.conf"
+</pre>
+<p>
+<a name="wanted"></a>
+<code>$WANTED</code> : Il y a des paquets SliTaz qui sont dépendants de la
+compilation d'un paquet source. La recette de ces paquets ne nécessite pas de
+règles de compilation, une variable $WANTED peut être utilisée pour copier des
+fichiers depuis les sources du paquet voulu en utilisant la variable $src.
+</p>
+<p>
+<a name="source"></a>
+<code>$SOURCE</code> : Il se peut que le nom du paquet Tazpkg diffère du nom
+du paquet source. C'est le cas par exemple pour les paquets d'Xorg, le nom
+Tazpkg des bibliothèque X11 est 'xorg-libX11' et le nom du paquet source est
+libX11. Cette astuces permet aussi de continuer à utiliser les varibables
+$src et $_pkg lors la cuisson d'un paquet. A noter que dans le cas libX11,
+le nom de l'archive source devient $SOURCE-$VERSION.tar.gz.
+</p>
+<p>
+<a name="provide"></a>
+<code>$PROVIDE</code> : Certains paquets offrent la même fonctionalité. Par
+exemple, le serveur web de Slitaz fût dans un premier temps lighttpd.
+Maintenant apache est aussi disponible. Tous les paquets dépendants d'un
+serveur web font référence à lighttpd. La ligne <code>PROVIDE="lighttpd"</code>
+de la recette d'apache signale qu'il peut se substituer à lighttpd, c'est à
+dire qu'un paquet dépendant de lighttpd n'a pas à l'installer si apache est
+déjà installé.<br>
+Mais cette alternative peut avoir des conséquences sur le choix des paquets qui
+en dépendent. Le paquet php est prévu pour fonctionner uniquement avec lighttpd.
+C'est php-apache qu'il faut installer avec apache. La ligne 
+<code>PROVIDE="php:apache"</code> dans la recette de php-apache indique qu'il
+faut substituer php-apache à php si apache est installé.
+Les paquets dépendants de php installeront alors php-apache ou php selon le
+serveur web installé.<br>
+Cette variable permet aussi d'avoir un paquet compilé avec différentes options.
+La ligne <code>PROVIDE="epdfview:cups"</code> du paquet epdfview-cups permet
+d'installer un package epdfview compilé avec le support de l'impression par 
+cups.
+On peut aussi définir des paquets virtuels avec cette variable. Les lignes
+<code>PROVIDE="libgl"</code> du paquet <code>mesa</code> et
+<code>PROVIDE="libgl:nvidia"</code> du paquet <code>nvidia-glx</code>
+définissent le paquet virtuel <code>libgl</code> qui sera une version
+optimisée lorsque le paquet <code>nvidia</code> est installé.
+</p>
+
+<h3>Variables générées automatiquement par tazwok</h3>
+<p>
+Certaines variables ne sont connues qu'au moment la cuisson du paquet ou 
+juste après la cuisson. Tazwok se charge de les ajouter au receipt 
+automatiquement.
+</p>
+<p>
+<a name="packed_size"></a>
+<code>$PACKED_SIZE</code> : Taille du ficher tazpkg.
+</p>
+<p>
+<a name="unpacked_size"></a>
+<code>$UNPACKED_SIZE</code> : Taille utilisée par le paquet après son 
+installation.
+</p>
+<p>
+<a name="extraversion"></a>
+<code>$EXTRAVERSION</code> : Certains packages ont besion de 2 numéros de
+version distincts. C'est le cas des modules ajoutés au noyau linux comme
+squashfs car le module produit dépend aussi de la version du noyau avec 
+laquelle il a été compilé. Dans ce cas EXTRAVERSION contient la version du
+noyau et tazwok le détermine à partir du contenu de /lib/modules.
+</p>
+
+<h3>Variables utilisables dans les fonctions</h3>
+<p>
+Tazwok configure plusieurs variables permettant de faciliter la compilation et
+la construction de paquets Tazpkg. Ces variables sont gérées automatiquement
+par Tazwok en utilisant les informations contenues dans les recettes, elles
+peuvent être utilisées par la fonction compile_rules et genpkg_rules décrites
+toutes deux dans le chapitre : Fonctions.
+</p>
+<p>
+<a name="src"></a>
+<code>$src</code> : Définit le chemin vers le répertoire des sources désarchivée.
+</p>
+<p>
+<a name="pkg"></a>
+<code>$_pkg</code> : Définit le chemin vers les binaires compliés et installés
+via la commande 'make DESTDIR=$PWD/_pkg install'. Cette variable est utilisée
+pour copier les fichiers générés et créer des paquets tazpkg.
+</p>
+<p>
+<a name="fs"></a>
+<code>$fs</code> : Définit le chemin vers le pseudo système de fichier (fs)
+propre à chaque paquet. Le 'fs' d'un paquet correspond à la racine du système
+cible, un binaire tel que Clex sera par exemple dans $fs/usr/bin/clex, à noter
+qu'il faut créer les répertoires nécessaires via la fonction genpkg_rules()
+avant de copier des fichiers.
+</p>
+<p>
+<a name="configure_args"></a>
+<code>$CONFIGURE_ARGS</code> : Cette variables est définie dans le fichier de
+configuration de Tazwok (tazwok.conf), elle permet de spécifier des
+arguments d'optimisation générique lors de la configuration d'un paquet.
+Par défaut l'architecture est i486.
+</p>
+
+<h3>Fonctions</h3>
+<p>
+Une recette peut contenir 4 fonctions. Tazwok sait traiter les fonctions
+contenant les règles de compliation (compile_rules) et les règles servant à
+générer un paquet Tazpkg (genpkg_rules). Ces fonctions peuvent contenir toutes
+sortes de commandes GNU/Linux standards tels que sed ou patch et les variables
+configurées automatiquements. A noter que ces deux fonctions utilisent les
+commandes du Cookbook de SliTaz : http://www.slitaz.org/doc/cookbook/
+</p>
+<a name="compile_rules"></a>
+<h4>compile_rules()</h4>
+<p>
+Pour compiler un paquet vous pouvez utiliser la variable $src pour vous
+déplacer (cd) dans le répertoire des sources et utiliser $CONFIGURE_ARGS
+pour inclure les arguments depuis le fichiers de configuration de Tazwok.
+Pour construire le paquet il suffit généralement de lancer 'make' sans
+arguments et pour installer le paquet dans un répertoire _pkg/ il faut
+utiliser la commande 'make DESTDIR=$PWD/_pkg install'. Exemple générique :
+</p>
+<pre class="script">
+# Rules to configure and make the package.
+compile_rules()
+{
+	cd $src
+	./configure --prefix=/usr --infodir=/usr/share/info \
+	--mandir=/usr/share/man $CONFIGURE_ARGS
+	make
+	make DESTDIR=$PWD/_pkg install
+}
+</pre>
+<a name="genpkg_rules"></a>
+<h4>genpkg_rules()</h4>
+<p>
+Pour générer un paquet Tazpkg il faut mettre les commandes à lancer dans la
+fonction <code>genpkg_rules</code>. Dans cet exemple on créer le répertoire
+<code>usr/</code> dans le pseudo système de fichiers du paquet, on copie tout
+le(s) binaires(s) et on finit par un strip pour nettoyer les fichiers :
+</p>
+<pre class="script">
+# Rules to gen a SliTaz package suitable for Tazpkg.
+genpkg_rules()
+{
+	mkdir -p $fs/usr
+	cp -a $_pkg/usr/bin $fs/usr
+	strip -s $fs/usr/bin/*
+}
+</pre>
+<a name="pre_install"></a>
+<h4>pre_install() et post_install()</h4>
+<p>
+Ces deux fonctions sont lancées par Tazpkg lors de l'installation du paquet.
+Il faut les définir avant de générer le paquet.tazpkg avec Tazwok. Si aucune
+commandes n'est nécessaires ces deux fonction n'ont aucune raison d'être et
+peuvent être supprimées. Exemple avec echo pour afficher un peu de texte
+(aucune fonction ne doit être vide) :
+</p>
+<pre class="script">
+# Pre and post install commands for Tazpkg.
+pre_install()
+{
+	echo "Processing pre-install commands..."
+}
+post_install()
+{
+	echo "Processing post-install commands..."
+}
+</pre>
+<a name="clean_wok"></a>
+<h4>clean_wok()</h4>
+<p>
+Cette fonction est lancée par Tazwok avec la commande clean.
+Elle permet définir des commandes supplémentaires à exécuter lors nettoyage du wok.
+Elle est très utiles pour supprimer des fichiers ou répertoires qui ne sont pas pris en charge par Tazwok.
+</p>
+<pre class="script">
+# clean commands for Tazwok.
+clean_wok()
+{
+	rm -rf $WOK/$PACKAGE/vim71
+}
+</pre>
+<!-- End of content -->
+</div>
+
+<!-- Footer. -->
+<div id="footer">
+	<div class="footer-right"></div>
+	<a href="#top">Haut de la page</a> | 
+	<a href="index.html">Table des matières</a>
+</div>
+
+<div id="copy">
+    Copyright © 2007 <a href="http://www.slitaz.org/">SliTaz</a> -
+    <a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>;<br />
+    Documentation publiées sous
+    <a href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License</a>
+    et codée en <a href="http://validator.w3.org/">xHTML 1.0 valide</a>.
+</div>
+
+</body>
+</html>

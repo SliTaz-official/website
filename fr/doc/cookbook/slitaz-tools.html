@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+    <title>SliTaz Cookbook - Template</title>
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <meta name="description" content="" />
+    <meta name="expires" content="never" />
+    <meta name="modified" content="2007-12-24 17:00:00" />
+    <meta name="publisher" content="www.slitaz.org" />
+    <meta name="author" content="Christophe Lincoln"/>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="book.css" />
+</head>
+<body bgcolor="#ffffff">
+
+<!-- Header and quick navigation -->
+<div id="header">
+<div align="right" id="quicknav">
+    <a name="top"></a>
+    <a href="http://www.slitaz.org/">www.slitaz.org</a>
+</div>
+<h1><font color="#3E1220">SliTaz Cookbook</font></h1>
+</div>
+
+<!-- Content. -->
+<div id="content">
+<div class="content-right"></div>
+
+<h2><font color="#DF8F06">SliTaz Tools</font></h2>
+<p>
+</p>
+La boîte à outils SliTaz
+<ul>
+	<li><a href="#repo">Mercurial repository.</a></li>
+	<li><a href="#boxes">*box</a> - Les interfaces dialog/GTKdiaolg</li>
+    <li>Archives source: 
+    <a href="http://download.tuxfamily.org/slitaz/sources/tools/">HTTP</a></li>
+</ul>
+
+<p>
+Les outils SliTaz ou <em>SliTaz Tools</em> contienent des scripts utiles
+à la création de sa version personnalisée de SliTaz, tel qu'un
+script de création de nouvelles initramfs et images ISO, les Makefile,
+utilisé lors des premières versions de SliTaz. Ces fichiers sont là pour
+accompager le <a href="../scratchbook/">Scratchbook</a> (le livre de création de
+SliTaz) et pour aider les développeurs SliTaz. L'archive est aussi distribuée
+car elle contient des fichiers qui peuvent être utiles à des individus de type
+<em>hacker</em>... Les outils ont beaucoup évolée et ne cesse de s'enrichir,
+le paquet suit un cicle de publication en fonctions de modifications faites
+et de la version Cooking et stable.
+</p>
+
+<a name="repo"></a>
+<h3>Mercurial repository</h3>
+<p>
+Les SliTaz Tools ont leur propore dépôt Mercurial sur le serveur de SliTaz,
+ils peuvent être cloné via la commande :
+</p>
+<pre>
+ $ hg clone http://hg.slitaz.org/slitaz-tools/
+</pre>
+
+<a name="boxes"></a>
+<h3>*box</h3>
+<p>
+Mountbox, Netbox, Bootfloppybox, Tazlocale, etc, sont des outils créer
+pour SliTaz en utilisant dialog (ncurses) ou GTKdialog. Les scripts
+sont contenus dans le répertoire <code>tinyutils/</code> des outils.
+Desktopbox a la particularité de pouvoir lancer diverses boîtes (
+<code>desktopbox usage</code>) scriptées ou créées avec Glade3.
+</p>
+
+<!-- End of content -->
+</div>
+
+<!-- Footer. -->
+<div id="footer">
+	<div class="footer-right"></div>
+	<a href="#top">Haut de la page</a> | 
+	<a href="index.html">Table des matières</a>
+</div>
+
+<div id="copy">
+    Copyright &copy; 2008 <a href="http://www.slitaz.org/">SliTaz</a> -
+    <a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>;<br />
+    Documentation publiées sous
+    <a href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License</a>
+    et codée en <a href="http://validator.w3.org/">xHTML 1.0 valide</a>.
+</div>
+
+</body>
+</html>

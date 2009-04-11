@@ -1,0 +1,444 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+    <title>SliTaz Handbook - Hacking LiveCD</title>
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <meta name="description" content="modifier generer le livecd manuellement ligne de commande" />
+    <meta name="expires" content="never" />
+    <meta name="modified" content="2007-12-03 12:30:00" />
+    <meta name="publisher" content="www.slitaz.org" />
+    <meta name="author" content="Christophe Lincoln"/>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="book.css" />
+</head>
+<body bgcolor="#ffffff">
+
+<!-- Header and quick navigation -->
+<div id="header">
+<div align="right" id="quicknav">
+    <a name="top"></a>
+    <a href="gen-livecd.html">Générer un LiveCD</a> |
+    <a href="index.html">Table des matières</a>
+</div>
+<h1><font color="#3E1220">SliTaz Handbook</font></h1>
+</div>
+
+<!-- Content. -->
+<div id="content">
+<div class="content-right"></div>
+
+<h2><font color="#DF8F06">Hacking SliTaz LiveCD</font></h2>
+
+<ul>
+    <li><a href="#intro">Introduction.</a></li>
+    <li><a href="#pre">Organisation et préparation.</a></li>
+    <li><a href="#add-files">Ajouter des fichiers dans l'ISO.</a></li>
+    <li><a href="#isolinux">Modifier la configuration d'isolinux.</a></li>
+    <li><a href="#memtest">Installer et utiliser Memtest86.</a></li>
+    <li><a href="#rootfs">Manipuler la racine du système Live.</a></li>
+    <li><a href="#gen-iso">Générer une image ISO bootable avec isolinux.</a></li>
+</ul>
+
+<a name="intro"></a>
+<h3><font color="#6c0023">Introduction</font></h3>
+<p>
+<em>Hacking SliTaz LiveCD</em> ou comment s'amuser avec l'image ISO du LiveCD,
+la modifier, la personnaliser et la reconstruire à la main. A noter que vous
+avez aussi la possibilité de 
+<a href="gen-livecd.html">créer une saveur avec Tazlito</a> et cela de. Créer 
+sa propre image ISO bootable ne demande que peut de temps, les étapes à suivre
+sont soigneusement décrites dans ce document et sont faciles à réaliser. La 
+manipulation de l'images ISO permet d'ajouter des nouveaux fichiers ou de 
+modifier les fichiers existants sur le cdrom. L'image ISO de SliTaz fait moins
+de 30 Mb et un CD-R ou CD-RW classique fournit 700 Mb, il reste donc pas mal
+de place, pour mettre par exemple, vos photos afin de les montrer en 
+<em>live</em> via SliTaz et un diaporama propulsé par le gestionnaire
+d'images GQview. Le <em>hacking</em> de l'image ISO permet de modifier les
+fichiers de configuration du chargeur de démarrage (<em>boot loader</em>) et
+son image <em>splash</em> ou d'en utiliser un autre tel que GRUB. Vous pouvez
+aussi facilement et directement ajouter des utilitaire tel que Memtest86 (outil
+servant à tester la RAM d'une machine). En utilisant les mêmes techniques, il
+est également possible de modifier le contenu du système en soit, cela demande
+quelques manipulations supplémentaires et un peu plus de temps... libre.
+</p>
+<a name="pre"></a>
+<h3><font color="#6c0023">Organisation et préparation</font></h3>
+<p>
+Pour commencer il faut définir l'endroit ou l'on va travailler, créer un
+répertoire de travail et plusieurs sous-répertoires destinés à accueillir les
+différents fichiers. Le <em>hacking</em> de l'ISO peut se faire depuis un
+système SliTaz ou tous autres système GNU/Linux tels que Debian, Fedora,
+PCLinuxOS, Slackware, etc. Si vous utilisez SliTaz en mode LiveCD (vous pouvez
+retirer le cdrom une fois SliTaz lancée en RAM et graver votre nouvelle ISO),
+nous vous conseillons d'utiliser un media USB pour conserver le travail, sinon
+il sera perdu à l'arrêt du système. Pour travailler nous vous proposons 
+d'utiliser un répertoire <code>hacked/</code> que vous pouvez créer dans
+un répertoire <code>/home/slitaz</code>, à la racine de votre espace
+utilisateur, ou ailleurs si vous le désirez. Utiliser un répertoire
+<code>/home/slitaz</code> vous permet de stocker une image ISO originale et
+de créer en options un répertoire <code>src/</code> pour télécharger
+d'éventuelles paquets sources. Toutes les étapes de <em>hacking</em> peuvent
+se faire en lignes de commandes via un termial X tel que XTerm ou en mode
+texte et un  terminal Linux. A noter que nous vous conseillons de faire les
+opérations en tant que <em>root</em> afin d'éviter tous problèmes de
+permissions. Pour devenir administrateur (<em>root</em>), créer le
+répertoire de travail dans <code>/home/slitaz/hacked</code> et se placer
+dedans&nbsp;:
+</p>
+<pre>
+ $ su
+ # mkdir -p /home/slitaz/hacked
+ (# mkdir -p /home/slitaz/src)
+ # cd /home/slitaz/hacked
+</pre>
+<h4>Récupérer les fichiers contenus sur l'ISO</h4>
+<p>
+Maintenant que vous êtes dans le répertoire de travail, il faut créer la
+racine de votre cdrom modifié et récupérer les fichiers contenu dans l'ISO
+original du LiveCD. C'est à dire le noyau Linux (<code>bzImage</code>), le
+système de fichiers compressé (<code>rootfs.gz</code>) et les fichiers du
+chargeur de démarrage Isolinux. Pour récupérer ces fichiers vous avez deux
+solutions, soit les prendre depuis un cdrom gravé, soit directement depuis
+une image ISO local. Pour créer la racine de votre CD (<code>rootcd</code>)
+et copier les fichiers depuis un périphérique cdrom reconnu comme
+<code>/dev/cdrom</code> et monté sur <code>/media/cdrom</code>&nbsp;:
+</p>
+<pre>
+ # mount -t iso9660 /dev/cdrom /media/cdrom
+ # mkdir rootcd
+ # cp -a /media/cdrom/* rootcd
+</pre>
+<p>
+Pour monter une image ISO en <em>loop</em> sur le répertoire temporaire
+nommé <code>/tmp/loop</code> (avec l'image ISO <code>slitaz-cooking.iso</code>
+préalablement téléchargée ou copiée), créer la racine du CD, copier les
+fichiers et démonter l'image ISO&nbsp;:
+</p>
+<pre>
+ # mkdir /tmp/loop
+ # mount -o loop slitaz-cooking.iso /tmp/loop
+ # mkdir rootcd
+ # cp -a /tmp/loop/* rootcd
+ # umount /tmp/loop
+</pre>
+<p>
+Voilà, tous les fichiers nécessaires devraient être présents dans le répertoire
+<code>rootcd/</code>, pour vous en assurer, vous pouvez pouver lister
+récursivement les fichiers via la commande <code>ls</code>&nbsp;:
+</p>
+<pre>
+ # ls -R rootcd
+</pre>
+<a name="add-files"></a>
+<h3><font color="#6c0023">Ajouter des fichiers dans l'ISO</font></h3>
+<p>
+L'ajout de divers fichiers et répertoires dans l'image ISO consiste
+simplement à copier des données à la racine du cdrom (<code>rootcd/</code>)
+et à générer une nouvelle image. Les données ajoutées peuvent être classées
+dans un ou des répertoires préalablement créés à la racine du CD. Une fois
+l'image ISO gravée sur un CD-R/CD-RW vous pourrez utiliser SliTaz comme
+avant, monter le cdrom sur <code>/media/cdrom</code> et naviguer dans vos
+données graphiquement avec emelFM2, dans un terminal avec Clex ou en ligne de
+commandes. Vos données seront aussi lisibles depuis tous les systèmes GNU/Linux,
+BSD, et même... Windows.
+</p>
+<h4>Créer un ou des répertoires et copier des données</h4>
+<p>
+Pour créer et copier des fichiers vous pouvez commencer par utiliser la
+ligne de commande et continuer graphiquement en tant que simple utilisateur.
+Nous allons créer un répertoires <code>images/</code> en tant que <em>root</em>
+et changer les permissions pour que tous les utilisateurs puissent écrire
+dedans&nbsp;:
+</p>
+<pre>
+ # mkdir rootcd/images
+ # chmod 777 rootcd/images
+</pre>
+<p>
+Maintenant qu'un nouveau répertoire existe en écriture pour tous, il faut le
+remplir. Une fois que vous avez fini de copier vos données, il suffit de
+<a href="#gen-iso">générer une nouvelle image ISO bootable</a>.
+</p>
+<a name="isolinux"></a>
+<h3><font color="#6c0023">Modifier la configuration d'isolinux</font></h3>
+<p>
+Modifier la configuration d'isolinux vous permet de créer des entrées
+personnalisées avec des options de <em>boot</em> prédéfinies, vous pouvez par
+exemple ajouter un <code>label</code> lançant SliTaz avec les options
+<code>lang=fr</code> et <code>kmap=fr_CH</code>. Au niveau graphisme, vous
+pouvez facilement changer l'image <em>splash</em> s'affichant au démarrage.
+L'application <code>isolinux</code> est le chargeur de démarrage 
+(<em>boot loader</em>) du LiveCD, il est fournit par le paquet Syslinux.
+L'archive source de Syslinux fournit diverses applications dont le rôle est
+de démarrer un système GNU/Linux. La version binaire <code>isolinux.bin</code>
+est déstinée aux image ISO, ce chargeur de démarrage est simple, rapide et
+facilement configurable via un fichier de configuration principale, éditable
+graphiquement ou dans un terminal avec votre éditeur de texte préféré.
+La syntaxe du fichier de configuration <code>isolinux.cfg</code> est facile
+à comprendre, pour ajouter de nouvelles entrées il suffit de copier/coller
+en utilisant le fichier original. Pour éditer graphiquement le fichier
+<code>isolinux.cfg</code> avec Leafpad&nbsp;:
+</p>
+<pre>
+ # leafpad rootcd/boot/isolinux/isolinux.cfg &amp;
+</pre>
+<h4>Fichier de configuration isolinux.cfg</h4>
+<p>
+Le fichier <code>isolinux.cfg</code>, fourni en standard sur le LiveCD de 
+SliTaz, commence par la valeur <code>display</code>, cette valeur permet
+d'afficher tel quel un fichier texte ou d'afficher un fichier 
+(<code>isolinux.msg</code>) utilisant des caractères ASCII 24 et permettant
+d'afficher du texte avec une image <em>splash</em>. La valeur 
+<code>default</code> défini le nom du <code>label</code> à démarrer par
+défaut après le temps d'attente (<code>timeout</code>). <em>Timeout</em>
+correspond au nombre de secondes à attendre avant de booter, vous pouvez le
+mettre à 0, hôter la ligne pour démarrer instantanément ou choisir un temps
+d'attente plus long tel que 80 s. Pour finir, le <code>prompt</code> peut
+être désactivé via la valeur <code>0</code>, les valeurs F1, F2, F3
+affichent des fichiers d'aides et F4 est un display au format texte&nbsp;:
+</p>
+<pre class="script">
+display isolinux.msg
+default slitaz
+label slitaz
+      kernel /boot/bzImage
+      append initrd=/boot/rootfs.gz rw root=/dev/null vga=788
+implicit 0	
+prompt 1	
+timeout 80
+F1 help.txt
+F2 options.txt
+F3 isolinux.msg
+F4 display.txt
+</pre>
+<p>
+Exemple d'un label <code>slitazfr</code> que vous pouvez ajouter à l'orginal,
+pour configurer directement la langue du système en français et avoir le
+clavier Belge&nbsp;:
+</p>
+<pre class="script">
+label slitazfr
+      kernel /boot/bzImage
+      append initrd=/boot/rootfs.gz rw root=/dev/null lang=fr kmap=be
+</pre>
+<p>
+Une fois que vous avez fini de modifier le fichier de configuration, il ne 
+faut pas oublier d'enregistrer vos changements avant de 
+<a href="#gen-iso">générer une nouvelle image ISO bootable</a> avec isolinux.
+</p>
+<a name="memtest"></a>
+<h3><font color="#6c0023">Installer et utiliser Memtest86</font></h3>
+<p>
+L'application memtest86 (92 ko) est un outil autonome de test de mémoire vive
+(RAM). Memetes86 permet de tester en profondeur l'état des barrettes de RAM et
+de déceler une quelconque défaillance. L'outil s'installe dans le répertoire
+<code>boot/</code> de la racine du cdrom et se lance directement au démarrage
+de la machine en tapant simplement <code>memtest</code> au prompt d'isolinux.
+Direction <code>/home/slitaz/src</code> (si le répertoire n'existe pas&nbsp;:
+<code>mkdir -p /home/slitaz/src</code>) pour télécharger les sources et les
+désarchiver&nbsp;:
+</p>
+<pre>
+ # cd /home/slitaz/src
+ # wget http://www.memtest86.com/memtest86-3.3.tar.gz
+ # tar xzf memtest86-3.3.tar.gz
+</pre>
+<p>
+Le paquet source de Memtest86 étant désarchivé (vous y trouverez un fichier
+<code>README</code> en anglais donnant des informations sur l'outil), vous
+allez pouvoir l'installer dans le <em>root CD</em> de votre ISO hackée. En
+partant du principe que vous utilisez un répertoire de travail 
+<code>/home/slitaz/hacked</code>, nous allons copier le binaire précompilé
+dans le répertoire <code>boot/</code> de la racine du CD&nbsp;:
+</p>
+<pre>
+ # cp memtest86-3.3/precomp.bin \
+   /home/slitaz/hacked/rootcd/boot/memtest
+</pre>
+<p>
+Maintenant que le binaire est installé dans le <em>root CD</em>, il suffit
+d'ajouter une entrée pour Memtest86 dans le fichier de configuration d'isolinux
+et de <a href="#gen-iso">générer une nouvelle image ISO bootable</a>.
+Direction <code>/home/slitaz/hacked</code> pour éditer le fichier
+<code>isolinux.cfg</code> avec LeafPad par exemple&nbsp;:
+</p>
+<pre>
+ # cd /home/slitaz/hacked
+ # leafpad rootcd/boot/isolinux/isolinux.cfg &amp;
+</pre>
+<pre class="script">
+label memtest
+      kernel /boot/memtest
+</pre>
+<p>
+Site web officiel de Memtest86&nbsp;:
+<a href="http://www.memtest86.com/">http://www.memtest86.com/</a>
+</p>
+<a name="rootfs"></a>
+<h3><font color="#6c0023">Manipuler la racine du système Live</font></h3>
+<p>
+La modification du système Live vous permet par exemple d'ajouter rapidement
+un nouvel utilisateur avec mot de passe, de personnaliser le graphisme ou
+d'ajouter des commandes exécutées automatiquement au démarrage du LiveCD. Les
+opérations nécessaires à la modification du système de fichier racine (
+<em>root file system</em>) sont&nbsp;: extraire le système du fichier compresé
+<code>rootfs.gz</code>, modfier, reconstruire l'image du système compressé
+et générer une nouvelle ISO. En partant du principe que vous avez déjà
+<a href="#pre">préparé votre répertoire de travail</a>, il faut commencer
+par créer un répertoire destiné à contenir les fichiers du système modifiable.
+Le système racine compressé étant nommé <code>rootfs.gz</code>, nous vous
+proposons d'utiliser un répertoire <code>rootfs/</code> pour l'extraire. 
+Direction le répertoire de travail <code>hacked/</code>, création du
+répertoire racine et copie du système compressé depuis le répertoire
+<code>rootcd/boot/</code> (la racine du cdrom)&nbsp;:
+</p>
+<pre>
+ # cd /home/slitaz/hacked
+ # mkdir rootfs
+ # cp rootcd/boot/rootfs.gz rootfs
+</pre>
+<p>
+Maintenant que vous avez une copie du système compressé, il suffit de le
+décompresser et de le désarchiver avec <code>cpio</code>. Techniquement : Le
+fichier <code>rootfs.gz</code> est une archive Cpio compressé avec LZMA ou
+Gzip, elle est reconnue comme une image <code>initramfs</code> par le noyau
+Linux. Lors du démarrage de la machine, le noyau se charge en mémoire et
+décompresse l'image du système en mémoire vive pour finir par exécuter les
+scripts d'initialisation. Pour extraire le système dans le répertoire 
+<code>rootfs/</code> et supprimer la copie désarchivée (Rappel : vous pouvez
+copier/coller les commandes) :
+</p>
+<pre>
+ # cd rootfs
+ # (zcat rootfs.gz 2&gt;/dev/null || lzma d rootfs.gz -so) | cpio -id
+ # rm rootfs rootfs.gz
+</pre>
+<p>
+Le système est prêt à être modifié, vous pouvez lister les fichiers contenus
+à la racine de votre système hackable en utilisant la commande <code>ls</code>.
+</p>
+<h4>Modifier un fichier</h4>
+<p>
+Pour faire simple et vous aider comprendre le principe, nous allons modifier
+un fichier script dans le but d'ajouter deux commandes exécutées
+automatiquement à chaque démarrage du LiveCD. La cible est&nbsp;:
+<code>etc/init.d/local.sh</code>, il suffit de l'ouvrir avec votre éditeur de
+texte préféré tel que Geany&nbsp;:
+</p>
+<pre>
+ # geany etc/init.d/local.sh &amp;
+</pre>
+<p>
+Nous allons ajouter une commande affichant un message et faisant dormir le
+système 4 secondes (c'est juste pour se faire la main). Example de lignes à
+ajouter au script déstiné aux commandes locales&nbsp;:
+</p>
+<pre class="script">
+echo "* Hacked SliTaz version booting..."
+sleep 4
+</pre>
+<h4>Reconstruire l'image du système compressée</h4>
+<p>
+Une fois les modifications terminées, vous pouvez reconstruire une image
+compressée de votre système modifié en utilisant <code>find</code> pour 
+trouver les fichiers, <code>cpio</code> pour archiver, <code>lzma</code> ou
+<code>gzip </code> pour compresser et des pipes <code>|</code> pour connecter
+le tout. Cette commande doit être lancée depuis le répertoire racine du
+système (<code>rootfs/</code>) et crée un fichier compressé 
+<code>rootfs.gz</code> dans le répertoire précédant :
+</p>
+<pre>
+ # find . -print | cpio -o -H newc | lzma e -si -so &gt; ../rootfs.gz
+ Ou avec gzip :
+ # find . -print | cpio -o -H newc | gzip -9 &gt; ../rootfs.gz
+</pre>
+<p>
+Pour finir il suffit de copier votre système compressé dans le répertoire
+<code>boot/</code> de la racine du CD et de <a href="#gen-iso"
+>générer une nouvelle image ISO bootable</a> avec isolinux. Pour copier le
+<em>rootfs</em> en écrasant l'actuel, direction le répertoire de travail :
+</p>
+<pre>
+ # cd ../
+ # cp -a rootfs.gz rootcd/boot
+</pre>
+<a name="gen-iso"></a>
+<h3><font color="#6c0023">Générer une image ISO bootable avec isolinux</font></h3>
+<p>
+La suite de commandes permettant de créer une image avec le 
+<em>boot loader</em> <code>isolinux</code>, utilise l'application
+<code>genisoimage</code> suivie de nombreuses options. Le nom de l'ISO est
+spécifié au début, après l'option <code>-o</code> et le répertoire racine
+(<code>rootcd/</code>) tout à la fin, après l'option
+<code>-boot-info-table</code> :
+</p>
+<pre>
+ # genisoimage -R -o slitaz-hacked.iso -b boot/isolinux/isolinux.bin \
+   -c boot/isolinux/boot.cat -no-emul-boot -boot-load-size 4 \
+   -V "SliTaz-Hacked" -input-charset iso8859-1 -boot-info-table rootcd
+</pre>
+<p>
+Si vous désirez vérifier le contenu de l'ISO avant gravage, il suffit
+de monter l'image en <code>loop</code> et de lister les fichiers. Sur SliTaz
+et la plupart des systèmes GNU/Linux, vous pouvez graver des images au
+format ISO avec l'utilitaire <code>wodim</code> fournit par <a 
+href="utilities.html#cdrkit">cdrkit</a>.
+</p>
+<h4>Générer de nouvelles ISO via un script</h4>
+<p>
+Si vous testez plusieurs possibilités et que vous êtes amené à souvent générer
+des nouvelles images ISO, vous aurez peut être envie de semi-automatiser les
+opérations via un simple petit script SHell. Ce petit script peut être créé
+en ligne de commandes ou édité graphiquement, mais il ne faut oublier de le
+rendre exécutable. Vous pouvez créer le script avec la commande 
+<code>cat</code>, à noter que <code>EOF</code> signifie <em>End Of File</em>,
+c'est la que le fichier se termine. Nous vous proposons de nommer le script
+<code>gen_hacked_iso.sh</code> et d'utiliser deux variables permettant de 
+rapidement changer le nom de l'image ISO et le chemin vers le répertoire
+racine du cdrom :
+</p>
+<pre>
+ # cat &gt; gen_hacked_iso.sh &lt;&lt; "EOF"
+</pre>
+<pre class="script">
+#!/bin/sh
+# Gen a new hacked ISO image.
+#
+ISO_NAME="slitaz-hacked.iso"
+ROOTCD="rootcd"
+
+genisoimage -R -o $ISO_NAME -b boot/isolinux/isolinux.bin \
+   -c boot/isolinux/boot.cat -no-emul-boot -boot-load-size 4 \
+   -V "SliTaz-Hacked" -input-charset iso8859-1 -boot-info-table $ROOTCD
+
+EOF
+</pre>
+<p>
+Pour utiliser le script, il suffit de le rendre exécutable et de l'exécuter :
+</p>
+<pre>
+ # chmod +x gen_hacked_iso.sh
+ # ./gen_hacked_iso.sh
+</pre>
+
+<!-- End of content -->
+</div>
+
+<!-- Footer. -->
+<div id="footer">
+	<div class="footer-right"></div>
+	<a href="#top">Haut de la page</a> | 
+	<a href="index.html">Table des matières</a>
+</div>
+
+<div id="copy">
+    Copyright &copy; 2009 <a href="http://www.slitaz.org/">SliTaz</a> -
+    <a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>;<br />
+    Documentation publiées sous
+    <a href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License</a>
+    et codée en <a href="http://validator.w3.org/">xHTML 1.0 valide</a>.
+</div>
+
+</body>
+</html>

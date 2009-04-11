@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+    <title>SliTaz Handbook - Template</title>
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <meta name="description" content="SSH dropbear scp admin distance sécurisé" />
+    <meta name="expires" content="never" />
+    <meta name="modified" content="2007-12-03 12:30:00" />
+    <meta name="publisher" content="www.slitaz.org" />
+    <meta name="author" content="Christophe Lincoln"/>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="book.css" />
+</head>
+<body bgcolor="#ffffff">
+
+<!-- Header and quick navigation -->
+<div id="header">
+<div align="right" id="quicknav">
+    <a name="top"></a>
+    <a href="system-tools.html">Outils système</a> |
+    <a href="index.html">Table des matières</a>
+</div>
+<h1><font color="#3E1220">SliTaz Handbook</font></h1>
+</div>
+
+<!-- Content. -->
+<div id="content">
+<div class="content-right"></div>
+
+<h2><font color="#DF8F06">SHell sécurisé (SSH)</font></h2>
+
+<ul>
+    <li><a href="#about">A propos de Dropbear.</a></li>
+    <li><a href="#dbclient">Connexion à un hôte distant</a> - (dbclient).</li>
+    <li><a href="#scp">Transfert de fichier à distance</a> - (scp).</li>
+    <li><a href="#dropbearkey">Générer des clés rsa et/ou dss</a> - (dropbearkey).</li>
+    <li><a href="#start-stop-restart">Démarrer, arrêter, redémarrer le serveur
+    SSH.</a></li>
+</ul>
+
+<a name="about"></a>
+<h3><font color="#6c0023">A propos de Dropbear</font></h3>
+<p>
+Contrôle et administration à distance avec Dropbear et le protocole sécurisé
+SSH. Dropbear est un petit client et serveur sécurisé, supportant le protocole
+SSH 2. Dropbear est compatible avec OpenSSH et utilise ~/.ssh/authorized_keys
+pour la gestion des clés publiques. Dropbear fournit aussi une version de
+<code>scp</code>, permettant la copie de fichiers entre des machines distantes
+manière sécurisée.
+</p>
+<p>
+Site web du projet :
+<a href="http://matt.ucc.asn.au/dropbear/dropbear.html"
+>matt.ucc.asn.au/dropbear/dropbear.html</a>
+</p>
+<a name="dbclient"></a>
+<h3><font color="#6c0023">Connexion à un hôte distant avec dbclient</font></h3>
+<p>
+Les fichiers de configuration pour le client SSH sont dans ~/.ssh de chaque
+répertoire utilisateur, il contient les fichiers authorized_keys et
+known_hosts. Le répertoire ~/.ssh et le fichier known_hosts, sont créés
+automatiquement la première fois que vous lancez le client sécurisé.
+</p>
+<p>
+Pour se connecter à un hôte distant avec son nom d'utilisateur et le nom de
+machine, vous pouvez utiliser la commande :
+</p>
+<pre>
+ $ dbclient utilisateur@machine.org
+</pre>
+<p>
+Vous pouvez aussi utiliser l'adresse IP de la machine :
+</p>
+<pre>
+ $ dbclient user@192.168.0.2
+</pre>
+<a name="scp"></a>
+<h3><font color="#6c0023">Transfert de fichier à distance avec scp</font></h3>
+<p>
+Pour copier un fichier de votre ordinateur à un autre, scp s'utilse de
+la manière suivante. Pour copier un fichier se nommant page.html vers un
+répertoire de l'utilisateur. Ne pas oublier les <code>:</code> après le
+nom de machine ou l'adresse IP :
+</p>
+<pre>
+ $ scp page.html user@machine.org:dossier/sous-dossier
+</pre>
+<p>
+Copier un fichier d'une machine distante vers la vôtre :
+</p>
+<pre>
+ $ scp user@machine.org:dossier/sous-dossier/page.html /dossier/votre/machine
+</pre>
+<a name="dropbearkey"></a>
+<h3><font color="#6c0023">Générer des clés rsa et/ou dss avec dropbearkey</font></h3>
+<p>
+Dropbear fournit <code>dropbearkey</code> pour générer des clés sécurisées rsa
+et dss. A noter que quand vous démarrez le serveur pour la première fois, des
+clés sécurisées seront générées automatiquement si elles n'existent pas. Vous
+pouvez utiliser <code>dropbearkey</code> avec les aruments ci-dessous :
+</p>
+<pre>
+ # dropbearkey -t rsa -f /etc/dropbear/dropbear_rsa_host_key
+ # dropbearkey -t dss -f /etc/dropbear/dropbear_dss_host_key
+</pre>
+<a name="start-stop-restart"></a>
+<h3><font color="#6c0023">Démarrer, arrêter, redémarrer le serveur SSH</font></h3>
+<p>
+Par défaut SliTaz ne lance pas le serveur SSH au démarrage du système, pour
+qu'il soit lancé automatiquement, il faut ajouter <code>dropbear</code> à la
+variable RUN_DAEMONS du fichier <code>/etc/rcS.conf</code>. Pour démarrer,
+arrêter, redémarrer le serveur SSH vous pouvez utiliser la commande :
+<code>/etc/init.d/dropbear [start|stop|restart]</code>. Exemple pour démarrer
+le serveur :
+</p>
+<pre>
+ # /etc/init.d/dropbear start
+</pre>
+<p>
+A noter que le serveur supporte différentes options à lui passer lors de son
+lancement. Pour modifier les valeurs par défaut il suffit de modifier le
+fichier de configuration des démons : <code>/etc/daemons.conf</code>.
+</p>
+
+<!-- End of content -->
+</div>
+
+<!-- Footer. -->
+<div id="footer">
+	<div class="footer-right"></div>
+	<a href="#top">Haut de la page</a> | 
+	<a href="index.html">Table des matières</a>
+</div>
+
+<div id="copy">
+    Copyright &copy; 2009 <a href="http://www.slitaz.org/">SliTaz</a> -
+    <a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>;<br />
+    Documentation publiées sous
+    <a href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License</a>
+    et codée en <a href="http://validator.w3.org/">xHTML 1.0 valide</a>.
+</div>
+
+</body>
+</html>

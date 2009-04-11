@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+    <title>SliTaz Scratchbook</title>
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <meta name="description" content="SliTaz BusyBox création system gnu linux fonctionnant en RAM howto Documentation du projet SliTaz GNU/Linux création system gnu linux fonctionnant en RAM wok tools" />
+    <meta name="expires" content="never" />
+    <meta name="modified" content="2007-12-24 17:00:00" />
+    <meta name="publisher" content="www.slitaz.org" />
+    <meta name="author" content="Christophe Lincoln"/>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="book.css" />
+</head>
+<body bgcolor="#ffffff">
+
+<!-- Header and quick navigation -->
+<div id="header">
+<div align="right" id="quicknav">
+    <a name="top"></a>
+	<a href="#intro">Introduction</a> |
+	<a href="http://www.slitaz.org/doc/">SliTaz doc</a>
+</div>
+<h1><font color="#3E1220">SliTaz Scratchbook</font></h1>
+</div>
+
+<!-- Content. -->
+<div id="content">
+<div class="content-right"></div>
+
+
+<h2><font color="#DF8F06">Livre de création de SliTaz</font></h2>
+<p>
+Index des documents du scratchbook de SliTaz, construction pas à pas 
+d'un mini système GNU/Linux Live et installable.
+</p>
+<h3><font color="#6c0023">Table des matières</font></h3>
+<h4>LiveCD</h4>
+<ul>
+	<li><a href="#intro">Introduction.</a></li>
+	<li><a href="#org">Organisation du répertoire de travail</a></li>
+	<li><a href="base-system.html">Construction du système de base SliTaz</a>
+	- Configuration et installation de BusyBox, du noyau Linux, des
+	bibliothèques associées, et création des fichiers de configuration
+	minimal, création d'une image initramfs et d'une image ISO bootable.</li>
+	<li><a
+	href="base-apps.html">Bibliothèques, applications de base de SliTaz</a>
+	- Install de la calculette bc, module-init-tools. Install et config de
+	Dropbear, fournissant un client, et un serveur SSH ultra légé. Et aussi:
+	LightTPD, e2fsprogs, pcre, zlib.</li>
+	<li><a href="base-ncurses.html">Bibliothèques et applications ncurses</a>
+	- Compilation et install des bibliothèques ncurses, et installation de
+	programmes tel que: l'éditeur de texte Nano, le navigateur web Retawq,
+	Dialog, et Htop.</li>
+	<li><a href="locale.html">Install et config des locales pour le
+	français</a></li>
+	<li><a href="boot-scripts.html">Les scripts de démarrage et d'arrêt</a>
+	- Déscription des fichiers de configuration rc.</li>
+	<li><a href="x-window-system.html">Installation et config du système X</a>
+	- Serveur Xvesa d'XFree86, XTerm, configuration des polices, et
+	installation du gestionnaire de fenêtres épuré Blackbox. (WM pour Window
+	Manager). Installation du navigateur web Links.</li>
+	<li><a href="gtk-libs.html">Les bibliothèques GTK+ et compagnie</a> -
+	Installation de cairo, glib, atk, pango, et GTK+.</li>
+	<li><a href="gtk-apps.html">Compilation et installation d'applications
+	GTK+.</a></li>
+	<li><a href="xorg.html">Xorg</a> - Reconstruire tous les paquets d'Xorg.</li>
+</ul>
+
+<a name="intro"></a>
+<h3><font color="#6c0023">Introduction</font></h3>
+<p>
+Le scratchbook vous permet de suivre la création de la première version public 
+du LiveCD de SliTaz et de faire un voyage au coeur d'un système GNU/linux. 
+Vous serez ensuite capable de personnaliser votre nouveau système ou de créer 
+votre propre distro autonome fonctionnant en mémoire vive (RAM), et pleinement 
+installable, sur disque dure ou clé USB. Une fois démarré, vous pouvez enlever
+le cd-rom et SliTaz fonctionne encore. SliTaz peut aussi être utilisé comme 
+environnement dans lequel on se chroot, ou comme cd-rom multitâches. Le seul
+prérequis est une distribution hôte dans laquel nous allons piquer des
+bibliothèques, utiliser le compilateur, et les outils de développement.
+Ce système hôte peut-être: un environnement de développement chrooté, un
+distro minimal, SliTaz installé sur un disque dur ,ou une distro "généraliste"
+tel que Debian, Slackware, Fedora, Mandriva, Gentoo, Arch, etc. A noter que
+nous n'installons rien dans le système hôte lors de nos commandes.
+</p>
+<p>
+SliTaz utilise <a href="http://www.busybox.net/">BusyBox</a>, comme base du
+système et le noyau Linux. BusyBox c'est le couteaux Suisse de l'embarqué,
+utilisant une faible empreinte mémoire, et fournissant beaucoup de fichiers
+d'exemples. Busybox est donc notre principale source d'informations, c'est
+un utilitaire issu du projet Debian. Nous utilisons et chérissons cette
+fabuleuse ditribution, nous ne pouvons donc, que vous conseiller d'utiliser
+<a href="http://www.debian.org/">Debian GNU/Linux</a>.
+</p>
+<p>
+SliTaz utilise le bootloader Syslinux et une archive initramfs du système,
+compresée avec <code>cpio</code>. Cette archive est ensuite
+décompréssée en mémoire vive lors du boot par le noyau, dans un système
+sans taille fixe, en gardant le contrôle sur <code>init</code>. Lors des
+copies ou compilation d'applications on utilisera <code>strip</code> pour
+nettoyer les réperoires. Les logiciels genisoimage et mkisofs peuvent être
+utilisés à choix pour la création des images iso. Pour finir vous pouvez
+tester l'image <code>.iso</code> avec Qemu ou en gravant l'image sur un
+cdrom réinscriptible.
+</p>
+<a name="org"></a>
+<h3><font color="#6c0023">Organisation du répertoire de travail</font></h3>
+<p>
+Pour créer SliTaz, nous utilisons un répertoire de travail et plusieurs
+sous-répertoires. Que vous ayez un environnement chrooté pour développer,
+ou un système hôte, nous proposons d'utiliser un répertoire nommé distro/,
+pour travailler. Le répertoire distro/ peut être un simple dossier, ou une
+partition, mais vous êtes évidemment libre, de mettre tous cela ailleur.
+</p>
+<h4>distro/</h4>
+<p>Contenu du répertoire de travail:</p>
+<ul>
+	<li>rootfs/ --&gt; Pour root file system - C'est la racine
+	du système, destiné à fonctionner en RAM, il est utilisé pour
+	générer l'initramfs du système.</li>
+	<li>rootfs.gz --&gt; l'image initramfs de notre système, qui est une
+	archive <code>cpio</code> compressée avec <code>gzip</code></li>
+	<li>rootcd/ --&gt; Pour root cd. C'est la racine des fichiers du cdrom.</li>
+	<li>src/ --&gt; Les sources, Kernel, Syslinux, Busybox, Dropbear, etc
+	(ça peut aussi être un lien symbolique).</li>
+</ul>
+<p>
+Par la suite, l'initramfs et l'image ISO bootable (slitaz-cooking.iso)
+seront crées à la racine du répertoire de travail SliTaz/.
+</p>
+<h4>Option: rootfs.ext2 - Utilisation d'un disque dure virtuel</h4>
+<p>
+Option: rootfs.ext2 (<em>root file system in ext2</em>). C'est un disque dur
+virtuel, formaté en ext2 et monté en boucle sur rootfs/. Un périphérique de
+boucle, permet d'utiliser un fichier comme s'il s'agissait d'un périphérique
+normal (disque dur, disquette, etc), pour construire un système de fichiers
+dedans. Ce fichier peut être du nombre de méga-octets que vous désirez, nous
+vous proposons 20480 kb, ce qui correspond à un 20 Mb:
+</p>
+<pre>
+ # dd if=/dev/zero of=rootfs.ext2 bs=1k count=20480
+</pre>
+<p>
+Création d'un système de fichier ext2 sur le fichier rootfs.ext2, l'option
+<code>-F</code> force le formatage du fichier. A noter que que l'utilisation
+de l'option <code>-m 0</code>, n'alloue aucune place à l'utilisateur root,
+par défaut elle occupe environ 5%, et l'option <code>-t</code> défini le type
+du système de fichier à utiliser, tel que ext2, ou ext3:
+</p>
+<pre>
+ # mkfs -t ext2 -F -m 0 rootfs.ext2
+</pre>
+<p>
+Nous pouvons maintenant monter rootfs.ext2 en boucle, grâce à l'option
+<code>-o loop</code> fournie par l'utilitaire <code>mount</code>, et cela
+dans le répertoire rootfs/. Vous pouvez vérifier si le montage c'est bien
+effectué avec la commande <code>df -h</code>:
+</p>
+<pre>
+ # mkdir rootfs
+ # mount -o loop rootfs.ext2 rootfs
+ # df -h
+</pre>
+<p>
+A la fin de la session de travail, vous pouvez démonter le volume avec umount:
+</p>
+<pre>
+ # umount rootfs
+</pre>
+<p>
+Vous serez maintenant, sûrement intéressé par
+<a href="base-system.html">la construction du système de base SliTaz.</a>
+</p>
+
+
+<!-- End of content -->
+</div>
+
+<!-- Footer. -->
+<div id="footer">
+	<div class="footer-right"></div>
+	<a href="#top">Haut de la page</a> | 
+	<a href="index.html">Table des matières</a>
+</div>
+
+<div id="copy">
+    Copyright © 2007 <a href="http://www.slitaz.org/">SliTaz</a> -
+    <a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>;<br />
+    Documentation publiées sous
+    <a href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License</a>
+    et codée en <a href="http://validator.w3.org/">xHTML 1.0 valide</a>.
+</div>
+
+</body>
+</html>
