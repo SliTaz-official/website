@@ -232,13 +232,21 @@ là pour vous aider et que <a href="../doc/cookbook/wok-tools.html"
 <h3>Gestion du site Web et des livres</h3>
 <p>
 La gestion du site et des livres (Handbook et Cookbook) est faite via un
-un dépôt Mercurial, il peut être cloné via:
+un dépôt Mercurial, ce qui nous permet de traviller à plusieurs. Il faut
+juste installer <code>mercurail</code> sur SliTaz et connaître les commandes
+de base. Une fois le dépôt cloné vous avez une copie complète du site en
+locale pour commencer à travailler. Pour cloner le site web:
 </p>
 <pre>
  $ hg clone http://hg.slitaz.org/website
  si vous avez les droits:
  $ hg clone http://repos.slitaz.org/website
 </pre>
+<p>
+Sur SliTaz vous pouvez installer le serveur web Lighttpd et mettre le
+site dans votre répertoire ~/Public, cela permet de naviguer dans votre
+copie locale via localhost/~user.
+</p>
 
 <h3>Diff et patch</h3>
 <p>
