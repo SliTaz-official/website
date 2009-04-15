@@ -82,6 +82,19 @@ Sofern Sie einen Internetzugang besitzen können Sie jedes dieser Pakete mit dem 
 Falls Sie Pakete manuell herunterladen möchten, besuchen Sie bitte einen der 
 <a href="../get/">SliTaz-Mirrors</a>.
 </p>
+
+<div style="text-align: center; padding: 20px;">
+<form method="POST" action="http://pkgs.slitaz.org/search.cgi">
+	<strong>Package :</strong>
+	<input type="text" name="query" size="32">
+	<select name="version">
+		<option>cooking</option>
+		<option>stable</option>
+	</select>
+	<input type="submit" name="search" value="Search">
+</form>
+</div>
+
 <h3>Stable</h3>
 <p>
 Pakete der stabilen Version: 
@@ -89,26 +102,24 @@ Pakete der stabilen Version:
 </p>
 <p>
 Automatisch generierte Paketlisten: <a 
-	href="ftp://download.tuxfamily.org/slitaz/packages/1.0/packages.list"
+	href="http://mirror.slitaz.org/packages/1.0/packages.list"
 	>packages.list</a> | <a 
-	href="ftp://download.tuxfamily.org/slitaz/packages/1.0/packages.txt"
+	href="http://mirror.slitaz.org/packages/1.0/packages.txt"
 	>packages.txt</a>
 </p>
 
 <h3>Cooking</h3>
 <p>
-Pakete der Cooking-Version: <a 
-	href="http://www.slitaz.org/packages/cooking/"
-	>Webinterface</a>
+Pakete der Cooking-Version:
+	<a href="http://pkgs.slitaz.org/cooking/">Webinterface</a>
 </p>
 <p>
 Automatisch generierte Paketlisten: <a 
-	href="ftp://download.tuxfamily.org/slitaz/packages/cooking/packages.list"
+	href="http://mirror.slitaz.org/packages/cooking/packages.list"
 	>packages.list</a>
-    | <a href="ftp://download.tuxfamily.org/slitaz/packages/cooking/packages.txt"
+    | <a href="http://mirror.slitaz.org/packages/cooking/packages.txt"
     >packages.txt</a>
 </p>
-
 
 <!-- End of content with round corner -->
 </div>

@@ -10,7 +10,7 @@
     <meta name="revisit-after" content="7 days" />
     <meta name="expires" content="never" />
     <meta name="modified" content="2008-07-16 23:00:00" />
-    <meta name="author" content="Christophe Lincoln, Paul Issot"/>
+    <meta name="author" content="Claudinei Pereira"/>
     <meta name="publisher" content="www.slitaz.org" />
     <link rel="shortcut icon" href="../../favicon.ico" />
     <link rel="stylesheet" type="text/css" href="../../slitaz.css" />
@@ -23,9 +23,9 @@
 <!-- Access -->
 <div id="access">
     Language:
-    <a href="../../en/packages/" title="Site em inglês">English</a> |
-    <a href="../../de/packages/" title="Site em alemão">Deutsch</a> |
-    <a href="../../fr/packages/" title="Site em francês">Français</a>
+    <a href="../../en/packages/">English</a> |
+    <a href="../../de/packages/">Deutsch</a> |
+    <a href="../../fr/packages/">Français</a>
 </div>
     <a href="http://www.slitaz.org/pt/"><img id="logo"
     src="../../pics/website/logo.png" title="www.slitaz.org/pt" alt="www.slitaz.org"
@@ -78,6 +78,18 @@ por meio de un cron job. Todos os pacotes são instaláveis via o gerenciador de
 pacotes Tazpkg usando o comando <code>tazpkg get-install pkgname</code>.
 </p>
 
+<div style="text-align: center; padding: 20px;">
+<form method="POST" action="http://pkgs.slitaz.org/search.cgi">
+	<strong>Package :</strong>
+	<input type="text" name="query" size="32">
+	<select name="version">
+		<option>cooking</option>
+		<option>stable</option>
+	</select>
+	<input type="submit" name="search" value="Search">
+</form>
+</div>
+
 <h3>Stable (estável)</h3>
 <p>
 Interface Web para os pacotes da versão estável: 
@@ -85,23 +97,23 @@ Interface Web para os pacotes da versão estável:
 </p>
 <p>
 Lista em formato texto dos Pacotes estáveis no mirror: <a 
-    href="ftp://download.tuxfamily.org/slitaz/packages/1.0/packages.list"
+    href="http://mirror.slitaz.org/packages/1.0/packages.list"
     >packages.list</a> | <a 
-    href="ftp://download.tuxfamily.org/slitaz/packages/1.0/packages.txt"
+    href="http://mirror.slitaz.org/packages/1.0/packages.txt"
     >packages.txt</a>
 </p>
 
 <h3>Cooking (testes)</h3>
 <p>
 Interface Web para os pacotes da versão de testes: <a 
-    href="http://www.slitaz.org/packages/cooking/"
+    href="http://pkgs.slitaz.org/cooking/"
     >Pacotes de teste</a>
 </p>
 <p>
 Lista em formato texto dos Pacotes de teste no mirror: <a 
-    href="ftp://download.tuxfamily.org/slitaz/packages/cooking/packages.list"
+     href="http://mirror.slitaz.org/packages/cooking/packages.list"
     >packages.list</a>
-    | <a href="ftp://download.tuxfamily.org/slitaz/packages/cooking/packages.txt"
+    | <a  href="http://mirror.slitaz.org/packages/cooking/packages.list"
     >packages.txt</a>
 </p>
 

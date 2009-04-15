@@ -23,7 +23,9 @@
 <!-- Access -->
 <div id="access">
     Language:
-    <a href="../../fr/packages/" title="Page des paquets en français">Français</a>
+    <a href="../../de/packages/">Deutsch</a> |
+    <a href="../../fr/packages/">Français</a> |
+	<a href="../../pt/packages/">Português</a>
 </div>
     <a href="http://www.slitaz.org/en/"><img id="logo"
     src="../../pics/website/logo.png" title="www.slitaz.org/en" alt="www.slitaz.org"
@@ -73,33 +75,43 @@
 This part of the site allows you to view all of the software packages 
 available on the SliTaz mirror. The pages are automatically updated daily via 
 a cron job. All packages are installable via the package manager Tazpkg using 
-the command <code>tazpkg get-install pkgname</code>.
+the GUI or the command <code>tazpkg get-install pkgname</code>.
 </p>
+
+<div style="text-align: center; padding: 20px;">
+<form method="POST" action="http://pkgs.slitaz.org/search.cgi">
+	<strong>Package :</strong>
+	<input type="text" name="query" size="32">
+	<select name="version">
+		<option>cooking</option>
+		<option>stable</option>
+	</select>
+	<input type="submit" name="search" value="Search">
+</form>
+</div>
 
 <h3>Stable</h3>
 <p>
-Stable packages Web interface: 
-<a href="http://www.slitaz.org/packages/stable/">Stable packages</a>
+Stable packages Web interface: <a href="../../packages/stable/">Stable packages</a>
 </p>
 <p>
 Raw Stable packages lists on the mirror: <a 
-	href="ftp://download.tuxfamily.org/slitaz/packages/1.0/packages.list"
-	>packages.list</a> | <a 
-	href="ftp://download.tuxfamily.org/slitaz/packages/1.0/packages.txt"
-	>packages.txt</a>
+    href="http://mirror.slitaz.org/packages/1.0/packages.list"
+    >packages.list</a> | <a 
+    href="http://mirror.slitaz.org/packages/1.0/packages.txt"
+    >packages.txt</a>
 </p>
 
 <h3>Cooking</h3>
 <p>
-Cooking packages Web interface: <a 
-	href="http://www.slitaz.org/packages/cooking/"
-	>Cooking packages</a>
+Cooking packages Web interface: 
+<a href="http://pkgs.slitaz.org/cooking/">Cooking packages</a>
 </p>
 <p>
 Raw Cooking packages lists on the mirror: <a 
-	href="ftp://download.tuxfamily.org/slitaz/packages/cooking/packages.list"
-	>packages.list</a>
-    | <a href="ftp://download.tuxfamily.org/slitaz/packages/cooking/packages.txt"
+    href="http://mirror.slitaz.org/packages/cooking/packages.list"
+    >packages.list</a>
+    | <a href="http://mirror.slitaz.org/packages/cooking/packages.txt"
     >packages.txt</a>
 </p>
 
