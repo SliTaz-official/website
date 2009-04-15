@@ -80,35 +80,46 @@
 
 <p>
 Cette partie du site permet de voir ou trouver les paquets logiciels disponibles
-sur le miroir de SliTaz. Pour l'instant, il n'y a que l'interface web de la 
-version en cuisson (<em>Cooking</em>), les pages sont mises à jour 
-automatiquement via une tâche cron. Lors de la publication de la version
-stable, l'interface web des paquets stable sera aussi accessible depuis cette
-partie du site. Tous les paquets sont installables via le gestionnaire de 
-paquets Tazpkg et la commande <code>tazpkg get-install pkgname</code>.
+sur le miroir de SliTaz. Les pages sont mises à jour automatiquement via 
+une tâche cron. Tous les paquets sont installables via le gestionnaire de 
+paquets Tazpkg, graphiquement en quelques cliques de souris ou avec la 
+commande <code>tazpkg get-install pkgname</code>.
 </p>
+
+<div style="text-align: center; padding: 20px;">
+<form method="POST" action="http://pkgs.slitaz.org/search.cgi">
+	<strong>Package :</strong>
+	<input type="text" name="query" size="32">
+	<select name="version">
+		<option>cooking</option>
+		<option>stable</option>
+	</select>
+	<input type="submit" name="search" value="Search">
+</form>
+</div>
 
 <h3>Stable</h3>
 <p>
-Stable packages Web interface: <a href="stable/">Stable packages</a>
+Stable packages Web interface: <a href="../packages/stable/">Stable packages</a>
 </p>
 <p>
 Raw Stable packages lists on the mirror: <a 
-    href="ftp://download.tuxfamily.org/slitaz/packages/1.0/packages.list"
+    href="http://mirror.slitaz.org/packages/1.0/packages.list"
     >packages.list</a> | <a 
-    href="ftp://download.tuxfamily.org/slitaz/packages/1.0/packages.txt"
+    href="http://mirror.slitaz.org/packages/1.0/packages.txt"
     >packages.txt</a>
 </p>
 
 <h3>Cooking</h3>
 <p>
-Cooking packages Web interface: <a href="cooking/">Cooking packages</a>
+Cooking packages Web interface: 
+<a href="http://pkgs.slitaz.org/cooking/">Cooking packages</a>
 </p>
 <p>
 Raw Cooking packages lists on the mirror: <a 
-    href="ftp://download.tuxfamily.org/slitaz/packages/cooking/packages.list"
+    href="http://mirror.slitaz.org/packages/cooking/packages.list"
     >packages.list</a>
-    | <a href="ftp://download.tuxfamily.org/slitaz/packages/cooking/packages.txt"
+    | <a href="http://mirror.slitaz.org/packages/cooking/packages.txt"
     >packages.txt</a>
 </p>
 
