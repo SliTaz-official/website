@@ -1,0 +1,363 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="pt" xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+	<title>SliTaz GNU/Linux 2.0 - Notas de Lançamento</title>
+	<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+	<meta name="description" content="slitaz doc system releases notes information cooking" />
+	<meta name="expires" content="never" />
+	<meta name="modified" content="2009-03-28 11:30:00" />
+	<meta name="publisher" content="www.slitaz.org" />
+	<meta name="author" content="Claudinei Pereira" />
+	<link rel="shortcut icon" href="../favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="../book.css" />
+</head>
+<body bgcolor="#ffffff">
+
+<!-- Header and quick navigation -->
+<div id="header">
+<div id="quicknav" align="right">
+    <a name="top"></a>
+	<a href="http://www.slitaz.org/pt/doc/">www.slitaz.org/pt/doc/</a>
+</div>
+<h1><font color="#3e1220">SliTaz GNU/Linux 2.0</font></h1>
+</div>
+
+<!-- Content. -->
+<div id="content">
+<div class="content-right"></div>
+
+<h2><font color="#df8f06">Notas de Lançamento</font></h2>
+
+<ul>
+	<li><a href="#overview">Introdução.</a></li>
+	<li><a href="#hardware">Hardware suportado.</a></li>
+	<li><a href="#livecd">Variantes (flavors) do LiveCD.</a></li>
+	<li><a href="#gpxe">Inicialização via rede (gPXE).</a></li>
+	<li><a href="#install">Instalação.</a></li>
+	<li><a href="#kernel">Kernel Linux.</a></li>
+	<li><a href="#packages">Pacotes.</a></li>
+	<li><a href="#desktop">Desktops Gráficos.</a></li>
+	<li><a href="#support">Suporte e documentação.</a></li>
+	<li><a href="#security">Segurança.</a></li>
+	<li><a href="#upgrade">Da versão 1.0 para a 2.0.</a></li>
+	<li><a href="#people">Participantes do projeto.</a></li>
+</ul>
+
+<a name="overview"></a>
+<h3><font color="#6c0023"></font>Introdução</h3>
+<p>
+A versão 2.0 do SliTaz GNU/Linux foi lançada em 16 de abril de 2009, depois de um ano
+de muito trabalho. Baseada na versão 1.0 (lançada em 22 de março de 2008), o 
+SliTaz consiste em cerca de 1400 pacotes facilmentes instaláveis
+por meio do gerenciador de pacotes Tazpkg. O LiveCD é totalmente configurável,
+o que permite criar facilmente uma distribuição customizada, específica para
+tarefas como multimídia, gráficos ou desenvolvimento. Algumas melhorias para esta
+versão:
+</p>
+<ul>
+    <li>Melhor suporte à hardware para redes sem fio, drivers do windows, partições
+    NTFS e sistemas com pouca memória RAM (com a utilização das variantes - flavors)</li>
+    <li>Customização facilitada para que você possa criar sua própria distro</li>
+    <li>Suporte a Boot via web</li>
+    <li>Substituição do jwm pelo Openbox como gerenciador de janelas</li>
+    <li>Mais utilitários gráficos para administração, configuração e atualização 
+    do sistema</li>
+</ul>
+<p>
+Suporte técnico é fornecido aos usuários por meio de uma lista de discussão e do 
+fórum oficial. O "Manual SliTaz" ensina a usar e configurar o sistema. O SliTaz 
+pode ser atualizado por meio do instalador gráfico ou por meio de um instalador 
+em modo texto simples e rápido. Também pode ser instalado no disco rígido, ou 
+usado em conjunto com mídias usb - o programa em modo texto TazUSB e sua versão 
+em modo gráfico TazUSBbox permitem, com poucos comandos, criar um dispositivo usb 
+formatado, configurado e pronto para o boot.
+</p>
+<p>
+O sistema agora é configurado por meio de um centro de controle gráfico e os
+pacotes podem ser gerenciados pelo Tazpkgbox, uma interface gráfica para o Tazpkg. 
+Também foram criadas outras interfaces gráficas para as ferramentas de linha de comando
+do SliTaz, de forma a facilitar o uso do sistema.
+</p>
+<p>
+A distribuição está disponível em inglês, alemão, francês e português - e todos
+os 26 mapas de teclado (keymaps) também estão disponíveis. O website do projeto
+e a documentação também estão em diferentes linguagens e os pacotes de localização 
+(locale) podem ser instalados por meio do gerenciador de pacotes.
+</p>
+<p>
+O SliTaz é distribuido como um LiveCD ou cdrom bootável, todos os pacotes de programas
+podem ser obtidos por download ou por imagens de dvd. O SliTaz 2.0 oferece um desktop
+rápido, simples e elegante, que respeita os padrões do Freedesktop.org. O sistema
+foi construído com o GNU toolchain: glibc-2.7, gcc-4.2.3, binutils-2.17.50 e conta com
+o kernel linux 2.6.25.5. O sistema básico na versão LiveCD propõe-se a substituir
+o Perl pelo PHP como linguagem de programação. As ferramentas de sistema
+Hardinfo e o LXTask oferecem informações sobre o sistema e monitoração. O suporte a 
+NTFS também está incluso no cdrom e partições windows são acessadas pelo 
+gerenciador de arquivos.
+</p>
+
+<a name="hardware"></a>
+<h3><font color="#6c0023">Hardware Suportado</font></h3>
+<p>
+O SliTaz GNU/Linux é suportado por todas as máquinas baseadas em i486 ou compatíveis
+com processadores Intel x86. Um mínimo de 256 mb de memória é recomendado para o 
+uso do LiveCD. A variante "slitaz-loram" precisa de 64 mb de memória e a "slitaz-loram-cdrom"
+pede o mínimo de 16 mb.
+</p>
+<p>
+A variante "slitaz-loram" pode não ser tão rápida mas permite instalar o SliTaz,
+em modo gráfico, em máquinas antigas. Uma vez instalado, o SliTaz funciona bem
+com um mínimo de 16 mb de memória - mas é claro que você não vai rodar o Firefox
+nesta configuração para surfar na web, sendo preferível usar o navegador em modo
+texto 'links'.
+</p>
+<p>
+O SliTaz 2.0 oferece suporte parcial a placas de rede sem fio (WiFi), algumas 
+placas funcionam diretamente com algum módulo do kernel, porém outras podem
+precisar de firmwares não livres e drivers adicionais. Estes podem ser instalados
+usando uma ferramenta gráfica criada para a distribuição.
+</p>
+<p>
+A maioria das placas de rede e som são suportadas pelo kernel. O gerenciamento
+de energia está disponível por padrão pelo ACPI e o suporte a laptops é habilitado
+com os módulos "ac" e "battery".
+</p>
+
+<a name="livecd"></a>
+<h3><font color="#6c0023">Variantes (flavors) do LiveCD</font></h3>
+<p>
+O SliTaz GNU/Linux é distribuído na forma de um LiveCD bootável que permite
+a instalação em modo gráfico no disco rígido e manter o armazenamento de 
+configurações, programas, documentos, etc.
+</p>
+<p>
+Uma imagem ISO chamada "core" (base) é distribuida pelo projeto, a qual é o corpo 
+de todo o sistema, provendo uma seleção de programas multi-uso para, por exemplo,
+navegar na web, ouvir música, editar áudio, manipular imagens, desenvolvimento 
+(inclusive PHP/SQL), edição de imagens ISO ou gravação de mídias óticas. Com apenas
+um clique no menu pode-se ter acesso a estes programas, divididos por categoria.
+</p>
+<p>
+As variantes oficiais do SliTaz podem ser baixadas de um dos mirrors do projeto.
+A variante base (~6 mb) fornece um sistema mínimo em modo texto; a JustX (~14 mb)
+traz um desktop gráfico mínimo, construído com bibliotecas GTK2 e ferramentas
+para instalação de aplicações adicionais em alguns clique de mouse.
+</p>
+<p>
+O LiveCD "core" pode ser customizado e reconstruido com ferramentas em modo gráfico
+ou texto. Você pode instalar uma seleção de pacotes personalizada ou usar uma das
+variantes disponíveis no mirror para, então, gerar sua própria distribuição com
+a ferramenta Tazlito.
+</p>
+
+<a name="gpxe"></a>
+<h3>Inicialização via rede (gPXE)</h3>
+<p>
+O SliTaz é capaz de efetuar o boot pela internet, carregando o sistema na memória RAM
+durante a inicialização do sistema. Assim, pode-se usar o SliTaz em computadores
+que não possuem disco rígido, como se fossem terminais leves (thin clients). 
+Instruções detalhadas sobre este serviço estão disponíveis em: 
+<a href="http://boot.slitaz.org">http://boot.slitaz.org</a>
+</p>
+
+<a name="install"></a>
+<h3><font color="#6c0023">Instalação</font></h3>
+<p>
+A instalação é totalmente automatizada e pode ser feita tanto em modo texto quanto
+gráfico. Os pré-requisitos para  a instalação e outras informações importantes podem
+ser encontradas no Manual SliTaz
+</p>
+<p>
+Se você quiser particionar o disco antes da instalação, pode usar o GParted em
+modo LiveCD ou usar uma variante que contenha ferramentas de particionamento. Ao
+final da instalação é possível configurar o gerenciador de boot GRUB, que é capaz
+de iniciar praticamente todos os sistemas operacionais. Isto permite que o SliTaz
+possa ser instalado em máquinas que já possuem outros sistemas operacionais, como
+o Windows, por exemplo.
+</p>
+
+<a name="kernel"></a>
+<h3><font color="#6c0023">Kernel Linux</font></h3>
+<p>
+O SliTaz GNU/Linux 2.0 é distribuido com o kernel Linux 2.6.25.5, com patches
+para suporte a compressão LZMA e para correções de display para o console virtual.
+O suporte a IDE e SCSI é integrado, assim como o suporte para os sistemas de arquivos
+ext2 e ext3. O kernel no SliTaz é dividido em diferentes pacotes, o que permite
+instalar somente os módulos específicos e necessários para a máquina na qual o sistema
+funciona. Todos os pacotes podem ser instalados pelo gerenciador de pacotes, que 
+gerencia automaticamente as possíveis dependências dos mesmos.
+</p>
+<p>
+A maioria das placas de rede são suportadas diretamente pelo kernel ou por meio
+de módulos que são carregados pelo comando "modprobe". Captura de vídeo, se necessária,
+necessita dos modulos ieee1394, raw1394 e oci1394. O gerenciamento de placas de som
+é feita por meio do "soundconf".
+</p>
+<p>
+A configuração do carregamento dos módulos é feita no arquivo /etc/rcS.conf. No
+modo LiveCD/LiveUSB pode-se usar o comando "modprobe=mod1, mod2" para carregar os 
+módulos no momento do boot.
+</p>
+<p>
+A configuração do kernel Linux do SliTaz encontra-se disponível em um arquivo 
+comprimido com gz em /proc/config.gz e também nos repositórios Mercurial.
+</p>
+
+<a name="packages"></a>
+<h3><font color="#6c0023">Pacotes (Programas)</font></h3>
+<p>
+O gerenciamento de pacotes é feito pelo Tazpkg: ele é simples, rápido, estável
+e funciona em modo interativo. Entre os 1400 pacotes disponíveis pode-se encontrar
+praticamente tudo o que se precisa para ter um sistema desktop completo (com o e17, 
+por exemplo), manipulação gráfica com o Gimp ou o Inkscape, edição de vídeo com
+o Kino. Pode-se aproveitar os recursos da internet com programas de mensagens
+instantâneas, VOIP (voz sobre ip), email e com o navegador web.
+</p>
+<p>
+O SliTaz também é desenvolvido para funcionar como um poderoso servidor de internet,
+usando os pacotes LightTPD e PHP (não são instalados por padrão), suportando
+CGI, Perl e Python. O Apache e o Squid também estão disponíveis.
+</p>
+<p>
+O Rsyng é usado para backups incrementais e o iptables fornece o firewall. O
+SliTaz pode tornar-se um completo ambiente de desenvolviemnto com o compilador
+GCC 4.2.3, o IDE Geany, repositórios Mercurial e todas as bibliotecas de
+desenvolvimento. Os pacotes podem ser encontrados pela função de busca do Tazpkg
+ou por meio do website:
+<a href="http://www.slitaz.org/pt/packages/">http://www.slitaz.org/pt/packages/</a>
+</p>
+<p>
+Os binários encontrados no mirror também podem ser compilados utilizando o "wok"
+ou com o utilitário "Tazwok". Toda a documentação de desenvolvimento está disponível
+no "Cookbook SliTaz" e está disponível online.
+</p>
+
+<a name="desktop"></a>
+<h3><font color="#6c0023">Desktops Gráficos</font></h3>
+<p>
+Por padrão, o LiveCD SliTaz usa o estável e leve gerenciador de janelas Openbox.
+Este possui vários temas e é configurado pelo utilitário ObConf. Também integra-se
+à barra de tarefas "LXpanel", que fornece dinamicamente um menu que segue os
+padrões Freedesktop. O princípio é ter um pequeno menu acessível com um clique,
+contendo os favoritos, efeitos de janelas, ferramentas LiveCD e LiveUSB, configurações
+do Openbox e ações do sistema. Os aplicativos podem ser acessados pelo menu fornecido
+pelo LXpanel. O gerenciamento do Desktop e dos ícones é feito pelo gerenciador
+de arquivos PCmanFM.
+</p>
+<p>
+A partir do LiveCD ou do sistema instalado no disco rígido pode-se instalar o
+ambiente desktop Enlightenment (e17) ou os gerenciadores de janelas JWM e DWM.
+As diferentes sessões desktop podem ser selecionadas com a tecla F1, na tela
+de login do Slim. Para modificar a sessão padrão pode-se usar o "tazx" ou editar
+o arquivo ~/.Xinitrc
+</p>
+
+<a name="support"></a>
+<h3><font color="#6c0023">Suporte e documentação</font></h3>
+<p>
+O Projeto SliTaz oferece vários meios de ajuda e suporte para os usuários do sistema,
+seja através da lista de email, do fórum ou do canal IRC. A documentação para usuários
+encontra-se no Manual SliTaz (Handbook), disponível no website, possibilitando 
+configurar o SliTaz até um certo ponto. Os manuais de várias ferramentas e de seus
+comandos possíveis são instalados no sistema, podendo ser acessadas pelo menu.
+O desenvolvimento do sistema, o uso do wok e receitas para geração de pacotes
+são descritos no Cookbook Slitaz. Os manuais, notas de lançamento e outros documentos
+podem ser acessados por meio do website:
+<a href="http://www.slitaz.org/pt/doc/">http://www.slitaz.org/pt/doc/</a>
+</p>
+
+<a name="security"></a>
+<h3><font color="#6c0023">Segurança</font></h3>
+<p>
+A versão estável possui atualizações de segurança, e para garantir um sistema seguro
+é importante recarregar, regularmente, a lista de pacotes e instalar as atualizações 
+de pacotes. O Firewall é fornecido pelo iptables, os servidores web LightTPD e Apache
+suportam autenticação por senhas encriptadas e o Dropbear fornece um cliente e servidor
+SSH seguro. As senhas dos usuários do sistema são encriptadas e somente o administrador
+root pode modificar os arquivos de sistema. Informações para configurar o firewall 
+são encontradas no Manual. Os pacotes relacionados à segurança estão classificados 
+pelo tópico: segurança.
+</p>
+
+<a name="upgrade"></a>
+<h3><font color="#6c0023">Da 1.0 para a 2.0</font></h3>
+<p>
+O instalador do SliTaz GNU/Linux oferece uma função de atualização que permite
+atualizar o sistema da versão 1.0 para a 2.0. Para isto, deve-se efetuar o boot
+com o LiveCD estável, iniciar o instalador, selecionar "upgrade" (atualizar) e então
+informar a partição que contém o sistema instalado e que deve ser atualizado.
+O sistema irá limpar o sistema e reinstalar todos os pacotes que não se encontram
+no cd a partir do mirror. Após este processo pode-se reiniciar o computador e 
+efetuar o boot com uma nova versão do SliTaz funcionando. Note que este método
+pode ser usado para reconstruir um sistema instalado, permitindo manter a coleção
+de pacotes instalados previamente.
+</p>
+<p>
+O instalador irá manter uma cópia da lista de pacotes e um backup completo do
+diretório /etc (etc.tar.gz) que poderá ser encontrado em /var/lib/slitaz-install.
+</p>
+<p>
+Para fazer o upgrade da 1.0 para a 2.0 pode-se usar, também, o gerenciador de pacotes
+tazpkg, através da função 'set-release', mas avisamos que esta função ainda não está
+totalmente desenvolvida e alguma intervenção manual poderá ser necessária se se optar
+por este método.
+</p>
+
+<a name="people"></a>
+<h3><font color="#6c0023">Participantes do projeto</font></h3>
+<p>
+O Projeto SliTaz orgulha-se de ser um projeto comunitário internacional. Os participantes
+são aqueles que desenvolvem a distribuição, corrigem o website, desenvolvem
+os repositórios HG e escrever a documentação oficial. São pessoas de vários países, como 
+a Suiça, França, Brasil, Inglaterra, China, Rússia, E.U.A. e vários outros.
+</p>
+<ul>
+	<li>Christophe Lincoln</li>
+	<li>Pascal Bellard</li>
+	<li>Eric Joseph-Alexandre</li>
+	<li>Paul Issott</li>
+	<li>Julien Rabier</li>
+	<li>Pierre-Jean Fichet</li>
+	<li>Dominique Corbex</li>
+	<li>Mallory Mollo</li>
+	<li>Mike D. Smith</li>
+	<li>Claudinei Pereira</li>
+	<li>Allan Pinto</li>
+	<li>Alice Ayanami</li>
+	<li>F. Steiner</li>
+	<li>Chen Yufei</li>
+	<li>Bill Nagel</li>
+	<li>Michael Dupont</li>
+	<li>Franco Azzano</li>
+	<li>Fabrice Thiroux</li>
+	<li>Eduardo Suarez-Santana</li>
+	<li>Tom Frankland</li>
+	<li>Sandeep Srinivasa</li>
+	<li>David Ozura</li>
+	<li>Pierre Romillon</li>
+	<li>Rohit Joshi </li>
+</ul>
+<p>
+O projeto agradece a todos os revisores, hackers, avaliadores e usuários que dedicam
+parte do seu tempo para o crescimento da distribuição.
+</p>
+
+<!-- End of content -->
+</div>
+
+<!-- Footer. -->
+<div id="footer">
+	<div class="footer-right"></div>
+	<a href="#top">Topo da página</a>
+</div>
+
+<div id="copy">
+	Copyright &copy; 2009 <a href="http://www.slitaz.org/pt/">SliTaz</a> -
+	<a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>;<br />
+	Documentation published under
+	<a href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License</a>
+	and <a href="http://validator.w3.org/">xHTML 1.0 valid</a>.
+</div>
+</body>
+</html>
