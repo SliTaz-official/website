@@ -12,30 +12,30 @@
 	<lastBuildDate>Thu, 16 April 2009 11:30:00 GMT</lastBuildDate>
 	
 	<item>
-		<title>16 April 2009 - Release SliTaz GNU/linux 2.0</title>
+		<title>16 April 2009 - SliTaz GNU/Linux 2.0 Release</title>
 		<link>http://www.slitaz.org/en/get/</link>
 		<guid isPermaLink="true">http://www.slitaz.org/</guid>
 		<pubDate>Thu, 16 April 2009 11:30:00 GMT</pubDate>
 		<description>
-		The SliTaz project are proud to announce the release of the new stable 
-	version of the distribution - SliTaz GNU/Linux 2.0. This new version is the 
-	result of one year of community work and provides an ultra lightweight, fast, 
-	scalable and stable operating system. SliTaz provides a complete graphical 
-	desktop in less than 30MB, applications required for a reliable and robust
-	server environment and 1400 easily installable software packages in a few
-	clicks of the mouse. This new version offers the automounting of partitions
-	(NTFS compliant), wifi support, an office respecting the Freedesktop.org 
-	standards (drag and drop), network booting with gPXE and 
-	boot.slitaz.org, automatic detection
-	of USB and PCI devices, a GUI package manager and control center, and various
-	graphical tools to manage the distribution. The creation of USB media and
-	bootable LiveCD flavors is also simplified and greatly improved. The core
-	LiveCD includes Firefox 3.0.8, gFTP, LostIRC, ePDFView, mtPaint, Transmission,
-	Osmo and Alsaplayer. The site documentation is updated and you can read the 
-	release notes included in
-	the distribution for more details on this stable version. SliTaz GNU/Linux
-	2.0 is now downloadable from the official mirrors of 
-	the project.
+	The SliTaz project are proud to announce the release of the new 
+	stable version of the distribution - SliTaz GNU/Linux 2.0. This new 
+	version is the result of one year of community work and provides an 
+	ultra lightweight, fast, scalable and stable operating system. SliTaz 
+	provides a complete graphical desktop in less than 30MB, applications 
+	required for a reliable and robust server environment and 1400 easily 
+	installable software packages in a few clicks of the mouse. This new 
+	version offers the automounting of partitions (NTFS compliant), wifi 
+	support, an office respecting the Freedesktop.org standards (drag 
+	and drop), network booting with gPXE and boot.slitaz.org, automatic 
+	detection of USB and PCI devices, a GUI package manager and control 
+	center, and various graphical tools to manage the distribution. 
+	The creation of USB media and bootable LiveCD flavors is also 
+	simplified and greatly improved. The core LiveCD includes Firefox 
+	3.0.8, gFTP, LostIRC, ePDFView, mtPaint, Transmission, Osmo and 
+	Alsaplayer. The website documentation has been updated and you can 
+	read the release notes included in the distribution for more details 
+	on this stable version. SliTaz GNU/Linux 2.0 is now downloadable 
+	from the official mirrors of the project.
 		</description>
 	</item>
 	
