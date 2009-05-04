@@ -32,6 +32,7 @@
 
 <ul>
     <li><a href="#about">A propos de X.</a></li>
+	<li><a href="#tazx">Tazx</a> -  Outil de configuration d'X.</li>
     <li><a href="#slim">Slim</a> - Gestionnaire de connexion.</li>
     <li><a href="#startx">startx</a> - Session graphique depuis une console Linux.</li>
     <li><a href="#config">Configurer votre session X</a> - Personnaliser
@@ -56,6 +57,24 @@ graphique sur votre système. En mode LiveCD, SliTaz fournit le serveur Xvesa
 (KDrive), il est léger, rapide et s'adapte à tous type de matériel. Le terminal
 graphique ar défaut est XTerm, L'émulateur de termial à onglet Mrxvt est 
 installable avec Tazpkg.
+</p>
+<p>
+Après la première exécution de startx, la configuration est sauvegardée dans 
+le fichier exécutable ~/.xsession et ~/.xinitrc. Ces fichiers sont respectivement
+utilisés pour lancer une session X avec 'statx' ou démarrer une session via le
+gestionnaire de session Slim. A noter aussi que ces fichiers peuvent être
+modifier avec un éditeur de texte.
+</p>
+
+<a name="tazx"></a>
+<h3><font color="#6c0023">Tazx - Outil de configuration d'X</font></h3>
+<p>
+Le petit utilitaire 'tazx' est l'outil de configuration du système de 
+fenêtres sur votre système SliTaz. Les boîtes de dialogues sont propulsées
+par dialog, il vous suffit d'utiliser les flèches pour séléctionner une 
+valeure, et ensuite de valider votre choix en pressant sur ENTER. Vous
+pouvez démarrer une session graphique en séléctionnant le mode video, qui 
+convient le mieux à votre matériel.
 </p>
 
 <a name="slim"></a>
