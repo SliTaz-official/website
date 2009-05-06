@@ -73,6 +73,7 @@
 <h2><font color="#df8f06">Espaço dos Desenvolvedores do SliTaz</font></h2>
 
 <ul>
+	<li><a href="#tank">Build host &amp; home.</a></li>
     <li><a href="#repos">Repositórios Mercurial.</a></li>
     <li><a href="#pkgs">Pacotes Tazpkg.</a></li>
     <li><a href="#website">Gerenciamento do Website.</a></li>
@@ -96,6 +97,18 @@ contribuintes tem acesso de escrita para corrigir erros, scripts, etc.
 SliTaz é uma pequena comunidade e ouve seus usuários. Há vários desenvolvedores
 ativos no <a href="http://forum.slitaz.org/">fórum</a> e na 
 <a href="../mailing-list.html">lista de discussão</a>.
+</p>
+
+<a name="tank"></a>
+<h3>Tank - Build host &amp; home</h3>
+<p>
+Cada participante do projeto pode obter uma conta no servidor do projeto
+com acesso seguro, espaço em disco, um diretório público e acesso a todas
+as ferramentas de desenvolvimento. Os desenvolvendores podem compilar
+pacotes e os mantenedores dos mirrors podem gerenciar as sincronizações.
+O Tank também hospeda o website, o boot via web e os repositórios 
+mercurial:
+<a href="http://tank.slitaz.org/">tank.slitaz.org</a>
 </p>
 
 <a name="repos"></a>
@@ -124,7 +137,7 @@ username = FirstName LastName &lt;you@example.org&gt;
 Clonar (clone) um repositório, exemplo para slitaz-doc:
 </p>
 <pre>
- $ hg clone http://repos.slitaz.org/slitaz-doc
+ $ hg clone http://repos.slitaz.org/wok
 </pre>
 <p>
 Mude de diretório para slitaz-doc, note que você deve estar no repositório
@@ -139,6 +152,7 @@ para poder utilizar os comandos "hg". Para marcar todos os logs ou somente o
 Modifique um ou mais arquivos e transfira (commit):
 </p>
 <pre>
+ $ hg add
  $ hg status
  $ hg commit -m "Log message..."
  $ hg log
@@ -155,6 +169,18 @@ o comando pull ao menos uma vez:
 <p>
 Está feito, suas mudanças, código ou correções estão agora no servidor
 </p>
+
+<h4>Comandos Úteis</h4>
+<p>
+Comandos do mercurial (hg) que podem ser usados.
+</p>
+<ul>
+	<li><code>hg help</code> : Mostra uma lista completa dos comandos.</li>
+	<li><code>hg rollback</code> : Desfaz a última ação (commit, pull, 
+    push).</li>
+	<li><code>hg log &lt;package&gt;</code> : Mostra o log de um pacote.</li>
+	<li><code>hg head</code> : Mostra o último log.</li>
+</ul>
 
 <a name="pkgs"></a>
 <h3>Pacotes Tazpkg</h3>
@@ -184,26 +210,16 @@ existe para te guiar nos primeiros passos.
 </p>
 
 <a name="website"></a>
-<h3>Gerenciamento do website e livros</h3>
+<h3>Gerenciamento do website e manuais</h3>
 <p>
-O gerenciamento do website e dos livros (Manual SliTaz &amp; Livro de Receitas)
-é feito via módulo rsync, Mercurial, utilidades diff e patch e a lista de 
-discussão. Rsync é uma ferramente de backup incremental: usando um algoritmo
-ultra-rápido, transfere ou sincroniza dados tanto localmente quanto em rede.
-A utilidade <code>diff</code> é usada para enviar somente a lista de arquivos
-modificados e a <code>patch</code> para aplicar estas modificações às páginas 
-originais.
-</p>
-<p>
-Você pode sincronizar o site e os livros graficamente usando o Grsync ou através
-da linha de comando. Para baixar o site pela primeira vez ou sincronizar as
-páginas no diretório <code>/home/hacker/Public/slitaz/website</code>, 
-use o módulo <code>rsync://slitaz.org/website</code>:
+O website e os manuais (Manual do SliTaz, Livro de Receitas) são
+gerenciados pelo repositório mercurial, podendo ser clonados da 
+seguinte maneira:
 </p>
 <pre>
- $ rsync -r -t -p -v \
-       --progress --delete \
-       rsync://slitaz.org/website /home/hacker/Public/slitaz/website
+ $ hg clone http://hg.slitaz.org/website
+  Ou, se você tiver as permissões necessárias:
+ $ hg clone http://repos.slitaz.org/website
 </pre>
 <h4>Diff e patch</h4>
 <p>
