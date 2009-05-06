@@ -84,7 +84,12 @@ the GUI or the command <code>tazpkg get-install pkgname</code>.
 
 <div style="text-align: center; padding: 20px;">
 <form method="POST" action="http://pkgs.slitaz.org/search.cgi">
-	<strong>Package :</strong>
+	<select name="object">
+		<option>Package</option>
+		<option value="Depends">Depends</option>
+		<option>File</option>
+	</select>
+	<strong>:</strong>
 	<input type="text" name="query" size="32">
 	<select name="version">
 		<option>cooking</option>

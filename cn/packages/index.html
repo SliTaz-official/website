@@ -73,11 +73,15 @@
 
 <div style="text-align: center; padding: 20px;">
 <form method="POST" action="http://pkgs.slitaz.org/search.cgi">
-	<strong>软件包：</strong>
+	<select name="object">
+		<option value="Package">软件包：</option>
+		<option value="Depends">Depends</option>
+		<option value="File">File</option>
+	</select>
 	<input type="text" name="query" size="32">
 	<select name="version">
-		<option>开发版(cooking)</option>
-		<option>稳定版(stable)</option>
+		<option value="cooking">开发版(cooking)</option>
+		<option value="stable">稳定版(stable)</option>
 	</select>
 	<input type="submit" name="search" value="Search">
 </form>
