@@ -122,6 +122,40 @@ Exemplo:
 <pre>
  # tazusb gen-liveusb /dev/sda1
 </pre>
+<h3><font color="#6c0023">gen-swap</font></h3>
+<p>
+O comando 'gen-swap' cria (ou recria) um arquivo de troca (swap) no
+diretório /home que será ativado a cada boot. Isto é útil para sistemas
+antigos que possuem pouca memória RAM.
+</p>
+<pre> # tazusb gen-swap
+</pre>
+
+<h3><font color="#6c0023">gen-iso2usb</font></h3>
+<p>
+Este comando faz praticamente o mesmo que o comando gen-liveusb, mas copia
+o kernel e o sistema de arquivos de uma imagem iso em vez de copiá-los 
+a partir do CDROM.
+</p>
+<pre> # tazusb gen-iso2usb /caminho/para/a/iso
+</pre>
+Exemplo:
+<pre> # tazusb gen-iso2usb /home/tux/slitaz.iso
+</pre>
+
+<h3><font color="#6c0023">clean</font></h3>
+<p>
+Remove os antigos sistemas de arquivos rootfs.gz.unixtimestamp (veja
+writefs) para manter baixo o uso do disco.
+</p>
+<pre> # tazusb clean
+</pre>
+
+<h2>MAINTAINER</h2>
+<p>
+Eric Joseph-Alexandre &lt;erjo at slitaz.org&gt;
+</p>
+
 <!-- End content -->
 </div>
 </body>
