@@ -113,6 +113,14 @@ caber num terminal padrão):
 <pre>
  # tazpkg desc busybox
 </pre>
+<h3><font color="#6c0023">list-config</font></h3>
+<p>
+Lista os arquivos de configuração do sistema. A opção --box mostra estas
+informações em formato de tabela
+</p>
+<pre> # tazpkg list-config
+ # tazpkg list-config --box
+</pre>
 <h3><font color="#6c0023">list-files</font></h3>
 <p>
 Lista todos os arquivos instalados pelo pacote. Este comando lê e mostra o
@@ -157,7 +165,7 @@ no qual você deseja instalar o pacote com a opção -root= opção:
  Ou :
  # tazpkg install path/to/package-1.0.tazpkg --root=/mnt/rootfs
 </pre>
-<h3><font color="#6c0023">install-list</font></h3>
+<h3><font color="#6c0023">install-list ou get-install-list</font></h3>
 <p>
 Instala uma seleção de pacotes listados em um arquivo. Este comando permite a
 você instalar vários pacotes com um único comando, e também oferece a opção 
@@ -165,7 +173,7 @@ você instalar vários pacotes com um único comando, e também oferece a opção
 </p>
 <pre>
  # tazpkg install-list my-packages.list
- # tazpkg install-list my-packages.list --forced
+ # tazpkg get-install-list my-packages.list --forced
 </pre>
 <h3><font color="#6c0023">remove</font></h3>
 <p>
@@ -203,6 +211,15 @@ instalados no sistema em que este pacote foi instalado. Para "re-empacotar"
 </p>
 <pre>
  # tazpkg repack package
+</pre>
+<h3><font color="#6c0023">repack-config</font></h3>
+<p>
+O comando 'repack-config' recria um pacote a partir dos arquivos de 
+configuração do sistema (veja list-config). É suficiente para instalar
+um pacote para encontrar a configuração atual. Para re-empacotar os 
+arquivos de configuração:
+</p>
+<pre> # tazpkg repack-config
 </pre>
 <h3><font color="#6c0023">recharge</font></h3>
 <p>
@@ -290,7 +307,34 @@ para um diretório contendo um arquivo "packages.list" e os pacotes:
 <pre>
  # tazpkg setup-mirror
 </pre>
-
+<h3><font color="#6c0023">reconfigure</font></h3>
+<p>
+Executa novamente o script de pós instalação de um pacote. Exemplo
+usando o gcc:
+</p>
+<pre> # tazpkg reconfigure gcc
+</pre>
+<h3><font color="#6c0023">depends ou rdepends</font></h3>
+<p>
+Mostra a árvore de dependências (direta ou inversamente) para um pacote.
+Exemplo utilizando o mpd:
+</p>
+<pre> # tazpkg depends mpd
+ # tazpkg rdepends mpd
+</pre>
+<h3><font color="#6c0023">set-release</font></h3>
+<p>
+Este comando muda a versão atual e faz a atualização de pacotes para
+o lançamento mais recente:
+</p>
+<pre> # tazpkg set-release cooking
+</pre>
+<h3><font color="#6c0023">bugs</font></h3>
+<p>
+Mostra uma lista de bugs conhecidos dos pacotes:
+</p>
+<pre> # tazpkg bugs
+</pre>
 <h2>MANTENEDOR</h2>
 <p>
 Christophe Lincoln &lt;pankso at slitaz.org&gt;

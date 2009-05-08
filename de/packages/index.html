@@ -85,11 +85,16 @@ Falls Sie Pakete manuell herunterladen möchten, besuchen Sie bitte einen der
 
 <div style="text-align: center; padding: 20px;">
 <form method="POST" action="http://pkgs.slitaz.org/search.cgi">
-	<strong>Package :</strong>
+	<select name="object">
+		<option value="Package">Pakete</option>
+		<option value="Depends">Depends</option>
+		<option value="File">Datei</option>
+	</select>
+	<strong>:</strong>
 	<input type="text" name="query" size="32">
 	<select name="version">
-		<option>cooking</option>
-		<option>stable</option>
+		<option value="cooking">cooking</option>
+		<option value="stable">stable</option>
 	</select>
 	<input type="submit" name="search" value="Search">
 </form>

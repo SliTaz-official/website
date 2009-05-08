@@ -2,15 +2,15 @@
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cn" lang="cn">
 <head>
-    <title>SliTaz - 软件包</title>
+    <title>SliTaz LiveCD Flavors</title>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <meta name="description" content="SliTaz GNU/Linux LiveCD" />
-    <meta name="keywords" lang="en" content="System, free, gnu, linux, software opensource, livecd LINUX in RAM, 系统, 免费, Linux, 开源, 软件, 内存系统" />
+    <meta name="keywords" lang="en" content="System, free, gnu, linux, 系统, 免费, Linux, 开源, 软件, 内存系统, Slitaz衍生版本" />
     <meta name="robots" content="index, follow, all" />
     <meta name="revisit-after" content="7 days" />
     <meta name="expires" content="never" />
-    <meta name="modified" content="2009-04-18 10:20:00" />
-    <meta name="author" content="Draplater"/>
+    <meta name="modified" content="2009-05-05 13:00:00" />
+    <meta name="author" content="Chen Yufei(Draplater)" />
     <meta name="publisher" content="www.slitaz.org" />
     <link rel="shortcut icon" href="../../favicon.ico" />
     <link rel="stylesheet" type="text/css" href="../../slitaz.css" />
@@ -23,12 +23,10 @@
 <!-- Access -->
 <div id="access">
     Language:
-    <a href="../../de/packages/">Deutsch</a> |
-    <a href="../../fr/packages/">Français</a> |
-	<a href="../../pt/packages/">Português</a>
+    <a href="../../fr/flavors.html" title="Page en français">Français</a>
 </div>
     <a href="http://www.slitaz.org/cn/"><img id="logo"
-    src="../../pics/website/logo.png" title="www.slitaz.org/cn" alt="www.slitaz.org"
+    src="../../pics/website/logo.png" title="www.slitaz.org/en" alt="www.slitaz.org"
     style="border: 0px solid ; width: 200px; height: 74px;" /></a>
     <p id="titre">#!/GNU/Linux</p>
 </div>
@@ -64,53 +62,32 @@
 <div id="content">
 <a name="content"></a>
 
-<h1><font color="#3e1220">软件包</font></h1>
-<h2><font color="#df8f06"># tazpkg get-install pkg</font></h2>
+<h1><font color="#3E1220">获取衍生版本</font></h1>
+<h2><font color="#DF8F06">新鲜玩意</font></h2>
 
 <p>
-这个页面可以显示Slitaz软件源上的所有软件包，并且会每天自动更新。你可以使用图形界面工具“软件之盒”或命令<code>tazpkg get-install pkgname</code>安装软件包。
+Slitaz衍生版本是由Slitaz衍生出的版本。这些版本包含着与Slitaz LiveCD不同的软件包，一些/社区可以利用衍生版本进行特定的工作。这些衍生版本可能是社区创建的，也可能是个人创建的。
 </p>
 
-<div style="text-align: center; padding: 20px;">
-<form method="POST" action="http://pkgs.slitaz.org/search.cgi">
-	<select name="object">
-		<option value="Package">软件包：</option>
-		<option value="Depends">Depends</option>
-		<option value="File">File</option>
-	</select>
-	<input type="text" name="query" size="32">
-	<select name="version">
-		<option value="cooking">开发版(cooking)</option>
-		<option value="stable">稳定版(stable)</option>
-	</select>
-	<input type="submit" name="search" value="Search">
-</form>
-</div>
-
-<h3>稳定版</h3>
+<h3>使用ISO镜像</h3>
 <p>
-稳定版软件包查看页面：
-<a href="http://pkgs.slitaz.org/stable/">稳定版软件包</a>
+为了方便，Slitaz工作组会向您推荐一些衍生版本，它们都基于Cooking版本，不过不一定总是和当前版本同步。<em>loram</em>版本内存需求量较小，安装到硬盘后只需64M内存就可以运行。<em>loram-cdrom</em>只需10M内存和一点点交换空间就可以启动，不过启动后不能弹出CD。
 </p>
 <p>
-稳定版软件包列表文件： <a 
-    href="http://mirror.slitaz.org/packages/2.0/packages.list"
-    >packages.list</a> | <a 
-    href="http://mirror.slitaz.org/packages/2.0/packages.txt"
-    >packages.txt</a>
+<a href="http://mirror.slitaz.org/iso/2.0/flavors/">下载来试试</a>
 </p>
 
-<h3>开发版</h3>
+<h3>获取并且创建衍生版本</h3>
 <p>
-开发版软件包查看页面：
-<a href="http://pkgs.slitaz.org/cooking/">开发版软件包</a>
+<em>flavor</em>是一个创建衍生版本需要的(.flavor)文件，利用图形界面工具Tazlitobox我们可以轻点鼠标就创建一个衍生版本。Tazlito <a href="../../en/doc/handbook/gen-livecd.html">手册</a>和<a href="../../en/doc/handbook/gen-livecd.html">文档</a>在创建衍生版本方面提供了详细的介绍。在命令行下你可以使用<code>tazlito list-flavors</code>命令得到可用衍生版本列表。
+</p>
+
+<h3>创建并分享你的衍生版本</h3>
+<p>
+stable和cooking版本在源里提供衍生版本的core，它可以成为创建衍生版本的基础。用户手册中的文档提供了<a href="../../en/doc/handbook/gen-livecd.html">创建你的衍生版本</a>所需的注释。
 </p>
 <p>
-开发版软件包列表文件： <a 
-    href="http://mirror.slitaz.org/packages/cooking/packages.list"
-    >packages.list</a>
-    | <a href="http://mirror.slitaz.org/packages/cooking/packages.txt"
-    >packages.txt</a>
+如果你已经创建了你的衍生版本，你可以把它发送到<a href="../mailing-list.html">邮件列表</a>，以便我们放入源里并测试。
 </p>
 
 <!-- End of content with round corner -->
@@ -123,11 +100,11 @@
 <!-- Start of footer and copy notice -->
 <div id="copy">
 <p>
-最后更改 : 2008-07-16 23:00:00 -
+最后更新 : 2008-03-25 10:30:00 -
 <a href="#top">页首</a>
 </p>
 <p>
-版权所有 &copy; 2008 <a href="http://www.slitaz.org/en/">SliTaz</a> -
+版权所有 &copy; 2008 <a href="http://www.slitaz.org/">SliTaz</a> -
 <a href="http://www.gnu.org/licenses/gpl.html">GNU通用公共许可证</a>
 </p>
 <!-- End of copy -->

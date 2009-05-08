@@ -32,15 +32,16 @@
 
 <ul>
 	<li><a href="#X11">X Window System.</a></li>
+	<li><a href="#tazx">Tazx</a> - SliTaz X configuration tool.</li>
 	<li><a href="#slim">Slim</a> - Simple Login Manager.</li>
 	<li><a href="#xorg">Xorg</a> - X server.</li>
-	<li><a href="#openbox">Openbox</a> - Window Manager.</li>
-	<li><a href="#enlightenment">Enlightenment (e17).</a> - Desktop
-	environment.</li>
-	<li><a href="#jwm">JWM</a> - Window Manager.</li>
 	<li><a href="#terminalX">Use Xvesa as X terminal</a> - Launch a
 	graphical session from a remote machine.</li>
 	<li><a href="#fonts">Fonts</a> - System Fonts.</li>
+	<li><a href="desktop.html">Openbox</a> - Window Manager.</li>
+	<li><a href="enlightenment.html">Enlightenment (e17).</a> - Desktop 
+	environment.</li>
+	<li><a href="jwm.html">JWM</a> - Window Manager.</li>
 </ul>
 
 <a name="X11"></a>
@@ -53,6 +54,19 @@ Xvesa can be started with the Slim login manager or directly from a Linux consol
 with the command <code>startx</code>, but for this you must first disable the 
 Login Manager. To reconfigure your X session you can use <code>tazx</code>
 as root or as the current user if you start X from the command line.
+</p>
+
+<a name="tazx"></a>
+<h3>Tazx - SliTaz X configuration tool</h3>
+<p>
+Tazx is the configuration tool to manage your X window sessions on a 
+SliTaz box. Simply select a resolution and press OK. You can also select a 
+(Xorg) session by selecting a video driver best suited to your hardware.
+After you first run 'startx', the configuration is saved in the executable 
+files ~/.xsession and ~/.xinitrc. These files are then used to start a 
+X session with 'startx' or via the Slim login manager and can be easily 
+altered with a text editor. Tazx can also be used to change your default 
+window manager. Example: <code>tazx jwm</code>.
 </p>
 
 <a name="slim"></a>
@@ -118,18 +132,21 @@ mode without an X-server running, this is achieved by closing all applications a
 the <code>alt-ctrl-del</code> buttons. You should now be in console mode. Now you need to run Xorg with the
 <code>-configure</code> option and copy the newly generated file to <code>/etc/X11</code>: 
 </p>
-<pre> # Xorg -configure
+<pre> 
+ # Xorg -configure
  # cp /root/xorg.conf.new /etc/X11/xorg.conf
 </pre>
 <p>
-Finally you then change the configuration of Slim to use Xorg instead of Xvesa and restart the window manager.
+Finally you then change the configuration of Slim to use Xorg instead of Xvesa 
+and restart the window manager.
 </p>
 <h4>Using Xorg with Slim</h4>
 <p>
 In the Slim configuration file (<code>/etc/slim.conf</code>), we need to comment out
 (<code>#</code>) the lines pertaining to Xvesa and change Xorg to the <code>default_xserver</code>:
 </p>
-<pre class="script">default_xserver     /usr/bin/Xorg
+<pre class="script">
+default_xserver     /usr/bin/Xorg
 #default_xserver     /usr/bin/Xvesa
 #xserver_arguments   -ac -shadow dpms +extension Composite -screen 1024x768x24
 </pre>
@@ -137,7 +154,8 @@ In the Slim configuration file (<code>/etc/slim.conf</code>), we need to comment
 Now we can start Slim to return us to an X server session. 
 Slim works likes a daemon, it can be stopped or started from the console:
 </p>
-<pre> # /etc/init.d/slim start
+<pre> 
+ # /etc/init.d/slim start
 </pre>
 <h4>xorg.conf - Configuration file</h4>
 <p>
@@ -151,7 +169,8 @@ mouse, keyboard, etc. This document provides only a few examples, it is advisabl
 <p>
 Keyboard (en):
 </p>
-<pre class="script">Section "InputDevice"
+<pre class="script">
+Section "InputDevice"
 	Identifier  "Keyboard0"
 	Driver      "kbd"
 	Option      "XkbRules"	"xorg"
@@ -163,7 +182,8 @@ EndSection
 <p>
 Mice with auto detection protocol:
 </p>
-<pre class="script">Section "InputDevice"
+<pre class="script">
+Section "InputDevice"
 	Identifier  "Mouse0"
 	Driver      "mouse"
 	Option	    "Protocol" "auto"
@@ -174,69 +194,11 @@ EndSection
 <p>
 Composite extensions:
 </p>
-<pre class="script">Section "Extensions"
+<pre class="script">
+Section "Extensions"
 	Option      "Composite" "1"
 EndSection
 </pre>
-
-<a name="openbox"></a>
-<h3>Openbox</h3>
-<p>
-Openbox is a lightweight window manager that can be configured using the obconf 
-utility. You can use the configuration file <code>menu.xml</code> found 
-in <code>~/.config/openbox</code> to edit menu items. Here's an example using 
-Htop:
-</p>
-<pre class="script">&lt;item label="Htop"&gt;
-  &lt;action name="Execute"&gt;&lt;command&gt;xterm -e htop&lt;/command&gt;&lt;/action&gt;
-&lt;/item&gt;
-</pre>
-<p>
-More information can be found on the 
-<a href="http://icculus.org/openbox/index.php/Help:Menus">openbox</a> site.
-</p>
-
-<a name="enlightenment"></a>
-<h3>Enlightenment (e17)</h3>
-<p>
-Enlightenment aka e17 is a lightweight and fast desktop environment that can be
-configured graphically. To install e17:
-</p>
-<pre> # tazpkg get-install enlightenment
-</pre>
-<p>
-Logout your current X session, type <code>F1</code> at Slim login and choose
-<code>e17</code> to start Enlightenment.
-</p>
-<p>
-Additional themes can be found on the <a href="http://www1.get-e.org/Themes/E17/">website</a>.
-</p>
-
-<a name="jwm"></a>
-<h3>JWM - Window manager</h3>
-<p>
-JWM (Joe's Window Manger) is a lightweight Window Manager, easy to use, fast,
-stable and insanely configurable. The menu and theme can all be changed from a 
-single configuration file found in your home directory: <code>~/.jwmrc</code>,
-the file uses XML syntax and the code is nicely colored if you use Geany to 
-edit it. To install jwm:
-</p>
-<pre> # tazpkg get-install jwm
-</pre>
-<p>
-To add an entry in the menu you can use the following example:
-</p>
-<pre class="script"> &lt;Program icon="kino.png" label="Kino (Video Editor)"&gt;kino&lt;/Program&gt;
-</pre>
-<p>
-Logout your current X session, type <code>F1</code> at Slim login and choose
-<code>jwm</code> to start JWM. To make JWM your default Window
-Manager, just type: <code>tazx jwm</code>.
-</p>
-<p>
-Information on configuring JWM can be found on the
-<a href="http://www.joewing.net/programs/jwm/config.shtml">website</a>.
-</p>
 
 <a name="terminalX"></a>
 <h3>Use Xvesa as X terminal</h3>
