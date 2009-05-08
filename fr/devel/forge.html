@@ -118,9 +118,8 @@ un compte et des droits en écriture afin de pouvoir envoyer leurs recettes,
 mises à jour ou modifications. Il est bien sûr possible de demander la création  
 d'un nouveau dépôt pour collaborer sur un nouveau sous-projet lié à SliTaz.
 A noter qu'il y a 2 domaines : <a href="http://hg.slitaz.org/">hg.slitaz.org</a>
-est public et <code>repos.slitaz.org</code> nécessite authentification, c'est 
-a dire que vous pouvez cloner hg.slitaz.org mais pas y pousser vos changements 
-ou fichiers.
+est public et <code>repos.slitaz.org</code> nécessite authentification, c'est-à-dire 
+que vous pouvez cloner hg.slitaz.org mais pas y pousser vos changements ou fichiers.
 </p>
 <h4>~/.hgrc</h4>
 <p>
@@ -154,8 +153,8 @@ savoir quels fichiers ont été modifiés :
  $ hg commit
 </pre>
 <p>
-La commande commit va ouvrir l'éditeur de texte Nano pour écrire le message
-déstiné aux logs (Ctrl + X pour enregistrer et quitter). Vous pouvez éviter
+La commande <code>commit</code> va ouvrir l'éditeur de texte Nano pour écrire le message
+destiné aux logs (Ctrl + X pour enregistrer et quitter). Vous pouvez éviter
 Nano en utilisant l'option : <code>-m "Message"</code>. And please, 
 messages in English if possible :
 </p>
@@ -187,16 +186,16 @@ tirer les changements) :
  $ hg pull
  $ hg update
 </pre>
-<h4>Commande utiles</h4>
+<h4>Commandes utiles</h4>
 <p>
 Des commandes hg qui peuvent servir.
 </p>
 <ul>
-	<li><code>hg help</code> : Affiche la liste complète des commandes.</li>
-	<li><code>hg rollback</code> : Annule la dernière action exécutée (commit,
+	<li><code>hg help</code> : affiche la liste complète des commandes.</li>
+	<li><code>hg rollback</code> : annule la dernière action exécutée (commit,
 	pull, push).</li>
-	<li><code>hg log &lt;paquet&gt;</code> : Affiche les logs pour un paquet.</li>
-	<li><code>hg head</code> : Affiche le dernier log.</li>
+	<li><code>hg log &lt;paquet&gt;</code> : affiche les logs pour un paquet.</li>
+	<li><code>hg head</code> : affiche le dernier log.</li>
 </ul>
 
 <a name="pkgs"></a>
@@ -209,37 +208,41 @@ et le format des <a href="../doc/cookbook/receipts.html">recettes</a>,
 c'est sans doute par un petit peu de lecture qu'il faut commencer.
 </p>
 <p>
-Au niveau du choix des paquets, l'idée est de proposer un paquet par tâche ou 
+Concernant le choix des paquets, l'idée est de proposer un paquet par tâche ou 
 fonctionnalité, c'est à dire pas (trop) de doublons et de trouver 
 l'application la plus légère dans son domaine. A noter que les paquets actuels
 ne sont pas figés, si vous trouvez une alternative à un paquet existant, étant
 plus légère, ayant plus de fonctionnalités ou étant plus <em>sexy</em> pour
 quelques Ko supplémentaires, vous pouvez la proposer sur la liste. Une 
-attention particulière est portée aux paquets destinés au LiveCD: strip,
+attention particulière est portée aux paquets destinés au LiveCD : strip,
 suppression de tout ce qui est inutile, dépendances et options de compilation.
 En général, les paquets candidats pour le corps du LiveCD sont discutés sur
 la liste.
 </p>
 <p>
 Avant de commencer à compiler et créer des paquets pour SliTaz, assurez-vous 
-qu'une recette n'existe pas dans le wok indigest disponible sur le miroir
+qu'une recette n'existe pas dans le wok undigest, disponible sur le miroir
 principal de SliTaz. N'oubliez pas non plus que les membres de la liste sont
-là pour vous aider et que <a href="../doc/cookbook/wok-tools.html"
-	>la documentation du wok et des outils</a> existe pour bien commencer.
+là pour vous aider et que pour bien commencer, <a href="../doc/cookbook/wok-tools.html"
+>la documentation du wok et des outils</a> existe.
 </p>
 
 <a name="site"></a>
 <h3>Gestion du site Web et des livres</h3>
 <p>
-La gestion du site et des livres (Handbook et Cookbook) est faite via un
-un dépôt Mercurial, ce qui nous permet de traviller à plusieurs. Il faut
+La gestion du site et des livres (Handbook et Cookbook) est faite via un 
+dépôt Mercurial, ce qui nous permet de traviller à plusieurs. Il faut
 juste installer <code>mercurail</code> sur SliTaz et connaître les commandes
 de base. Une fois le dépôt cloné vous avez une copie complète du site en
-locale pour commencer à travailler. Pour cloner le site web:
+local pour commencer à travailler. Pour cloner le site web :
 </p>
 <pre>
  $ hg clone http://hg.slitaz.org/website
- si vous avez les droits:
+</pre>
+<p>
+Si vous avez les droits :
+</p>
+<pre>
  $ hg clone http://repos.slitaz.org/website
 </pre>
 <p>
