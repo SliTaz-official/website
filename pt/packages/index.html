@@ -70,21 +70,21 @@
 <a name="content"></a>
 
 <h1><font color="#3e1220">Pacotes</font></h1>
-<h2><font color="#df8f06"># tazpkg get-install pkg</font></h2>
+<h2><font color="#df8f06"># tazpkg get-install pacote</font></h2>
 
 <p>
 Esta parte do site permite a você ter acesso a todos os pacotes de programas
 disponíveis no mirror do SliTaz. As páginas são automaticamente atualizadas
 por meio de un cron job. Todos os pacotes são instaláveis via o gerenciador de
-pacotes Tazpkg usando o comando <code>tazpkg get-install pkgname</code>.
+pacotes Tazpkg usando o comando <code>tazpkg get-install nome-do-pacote</code>.
 </p>
 
 <div style="text-align: center; padding: 20px;">
 <form method="POST" action="http://pkgs.slitaz.org/search.cgi">
 	<select name="object">
-		<option value="Package">Pacotes</option>
-		<option value="Depends">Depends</option>
-		<option value="File">File</option>
+		<option value="Package">Pacote</option>
+		<option value="Depends">Dependência</option>
+		<option value="File">Arquivo</option>
 	</select>
 	<strong>:</strong>
 	<input type="text" name="query" size="32">
@@ -92,7 +92,7 @@ pacotes Tazpkg usando o comando <code>tazpkg get-install pkgname</code>.
 		<option value="cooking">cooking</option>
 		<option value="stable">stable</option>
 	</select>
-	<input type="submit" name="search" value="Search">
+	<input type="submit" name="search" value="Buscar">
 </form>
 </div>
 
