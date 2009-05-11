@@ -53,9 +53,8 @@ SliTaz.
 <p>
 O SliTaz provê um instalador simples de usar que pode ser iniciado do menu 
 "System Tools" (Ferramentas de Sistema). As mensagens do instalador do SliTaz 
-1.0 só estão disponíveis em francês e podem ser consideradas como uma errata, 
-mas usuários de outras línguas deverão estar aptos a usá-lo com estas 
-instruções complementares.
+2.0 estão disponíveis em inglês, mas usuários de outras línguas deverão 
+estar aptos a usá-lo com estas instruções complementares.
 </p>
 <h4>Tipo de instalação</h4>
 <p>
@@ -72,7 +71,7 @@ Se o problema persistir você pode usar uma imagem ISO baixada da internet e
 montá-la em <code>/media/cdrom</code> onde o HD Installer espera encontrá-la:
 </p>
 <pre>
- # mount -o loop slitaz-1.0.iso /media/cdrom
+ # mount -o loop slitaz-2.0.iso /media/cdrom
 </pre>
 <h4>Partição alvo</h4>
 <p>
@@ -91,10 +90,10 @@ um sistema de arquivos robusto, estável e com suporte a journaling. Se a
 partição já estiver formatada, você pode pular este passo, se não só confirme. 
 <em>Aviso:</em> Formatar uma partição destruirá todos os dados atuais.
 </p>
-<h4>Hostname (Nome do Anfitrião)</h4>
+<h4>Hostname (Nome do host)</h4>
 <p>
 A configuração de Hostname o deixa colocar o nome da máquina. O hostname é 
-internamente usado para identificar o anfitrião na rede. Este valor pode ser 
+internamente usado para identificar a máquina na rede. Este valor pode ser 
 mudado depois do sistema ser instalado.
 </p>
 <h4>Gerenciador de Boot - GRUB</h4>
@@ -143,13 +142,13 @@ Agora você tem que montar o cdrom:
 Ou uma imagem ISO:
 </p>
 <pre>
- # mount -o loop slitaz-1.0.iso /media/cdrom
+ # mount -o loop slitaz-2.0.iso /media/cdrom
 </pre>
 <h4>Instalar e extrair</h4>
 <p>
 A meta agora é copiar os arquivos necessários da mídia na partição alvo e 
-então extrair o sistema de arquivos comprimido (<code>rootfs.gz</code>). Crie 
-um diretório de boot e instale o Kernel Linux:
+então extrair o sistema de arquivos comprimido (<code>rootfs.gz</code>). 
+Crie um diretório de boot e instale o Kernel Linux:
 </p>
 <pre>
  # mkdir /mnt/target/boot
@@ -203,7 +202,7 @@ editor de texto favorito como Nano ou Leafpad:
 </pre>
 <h4>/boot/grub/menu.lst - Exemplo</h4>
 <pre class="script">
-title    SliTaz GNU/Linux 1.0 (Kernel 2.6.25.5-slitaz)
+title    SliTaz GNU/Linux 2.0 (Kernel 2.6.25.5-slitaz)
 root     (hd0,0)
 kernel   /boot/vmlinuz-2.6.25.5-slitaz root=/dev/hda1 vga=normal
 </pre>

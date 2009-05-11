@@ -34,7 +34,9 @@
     <li><a href="#devices">Dispositivos e acesso a discos.</a></li>
     <li><a href="#users-admin">Usuários, grupos e passwords.</a></li>
     <li><a href="#locale">Linguagem e teclado.</a></li>
-    <li><a href="#bash">Instalação do shell Bash.</a></li> 
+    <li><a href="#bash">Instalação do shell Bash.</a></li>
+    <li><a href="#editors">Editores de Texto.</a></li>
+    <li><a href="#sudo">Comando Sudo.</a></li>     
     <li><a href="#time">Ajuste do relógio do sistema.</a></li>
     <li><a href="#cron">Agendar a execução de comandos.</a></li>
     <li><a href="#local.sh">Acrescentar comandos para execução durante o boot.</a></li>
@@ -151,6 +153,35 @@ e mudar o shell para :/bin/bash
 <p>
 No primeiro login posterior a estas operações o shell padrão será o bash, o que 
 pode ser confirmado teclando <code>env</code> na linha de comando. 
+</p>
+
+<a name="editors"></a>
+<h3>Editores de Texto</h3>
+<p>
+O Busybox fornece um clone do vi para a edição corriqueira de texto, mas
+esse editor possui limitações. Pode-se instalar o editor vim completo
+com o comando:
+</p>
+<pre> # tazpkg get-install vim
+</pre>
+<p>
+Ou, alternativamente, pode-se instalar uma versão mais leve do Emacs, 
+oferecida pelo SliTaz
+</p>
+<pre> # tazpkg get-install emacs
+</pre>
+
+<a name="sudo"></a>
+<h3>Sudo</h3>
+<p>
+O comando <code>sudo</code> pode ser usado no SliTaz:
+</p>
+<pre> # tazpkg get-install sudo
+</pre>
+<p>
+Note que o arquivo de configuração /etc/sudoers deve <em>sempre</em> ser
+editado pelo comando <code>visudo</code>, como root, o qual 'tranca' o
+arquivo e checa por erros.
 </p>
 
 <a name="time"></a>

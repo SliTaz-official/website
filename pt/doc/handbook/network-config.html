@@ -31,17 +31,23 @@
 <h2><font color="#DF8F06">Configuração de rede</font></h2>
 
 <ul>
-    <li><a href="#eth">Conexão Ethernet</a> - DHCP ou IP estático.</li>
-    <li><a href="#driver">Instalação de driver de uma placa de rede</a> - 
-     Encontre e carregue módulos do Kernel.</li>
+    <li><a href="#about">Sobre Redes</a></li>
     <li><a href="#netbox">Netbox</a> - Configurarão de rede.</li>
+	<li><a href="#wifibox">Wifibox</a> - Configuração de Redes sem Fio.</li>    
+	<li><a href="#hostname">/etc/hostname</a> - Nome do Host.</li>
+	<li><a href="#network.conf">/etc/network.conf</a> - Arquivo de  
+	Configuração da Rede.</li>
+	<li><a href="#dynamicIP">IP Dinâmico</a> - Cliente DHCP udhcpc.</li>
+	<li><a href="#staticIP">IP Estático</a> - Usando um endereço específico.</li>    
     <li><a href="#pppoe">PPPoE kernel-mode</a> - Conexão discada em modo-Kernel.</li>
     <li><a href="#rp-pppoe">PPPoE com o rp-pppoe</a> - Conexão ADSL.</li>
+    <li><a href="#driver">Instalação de driver de uma placa de rede</a> - 
+     Encontre e carregue módulos do Kernel.</li>
     <li><a href="#firewall">Firewall</a> - Gerenciamento do Firewall (Iptables).</li>
 </ul>
 
-<a name="eth"></a>
-<h3>Conexão Ethernet</h3>
+<a name="about"></a>
+<h3>Sobre Redes</h3>
 <p>
 Por padrão o SliTaz executa, no momento do boot, um cliente DHCP (udhcpc) no 
 eth0. Se a sua placa de rede for identificada como sendo de interface 
@@ -70,40 +76,139 @@ Ele pode ser graficamente configurado com o <code>netbox</code> ou editado
 diretamente pelo administrador root.
 </p>
 
-<a name="driver"></a>
-<h3>Instale um driver de placa de rede</h3>
-<p>
-Caso haja a necessidade de um driver de placa de rede e você não sabe o seu nome,
-pode-se utilizar o comando <code>lspci</code> para encontrar sua placa e então
-o comando <code>modprobe</code> para carregar o módulo correspondente. No modo
-Live você pode usar a opção de boot do SliTaz <code>modprobe=modules</code>
-para carregar automaticamente módulos do Kernel. Para obter uma lista de todos
-os drivers de placa de rede disponíveis, mostrar placas PCI eth e carregar
-um módulo:
-</p>
-<pre>
- # modprobe -l | grep drivers/net
- # lspci | grep [Ee]th
- # modprobe -v module_name
-</pre>
-<p>
-Em um sistema instalado você só precisa adicionar o nome do módulo à variável
-<code>LOAD_MODULES </code> em <code>/etc/rcS.conf</code> para carregar seu módulo
-a cada boot.
-</p>
-
 <a name="netbox"></a>
 <h3>Netbox - Configure a rede</h3>
 <p>
-O Netbox é um pequeno aplicativo GTK+ para configurar a interface de rede usando
-<em>DCHP</em> ou um endereço IP fixo (<em>static</em>). As abas podem ser usadas
-para iniciar/parar a conexão e automaticamente mudar os valores dos arquivos de
-sistema. O Netbox também oferece a aba <em>system wide</em> na qual você pode
-editar diretamente os arquivos de configuração de rede. Este aplicativo pode ser
-executado a partir do menu "system tools" ou pelo terminal:
+O Netbox é um pequeno aplicativo GTK+ que configura a interface de rede
+usando DHCP ou um endereço IP estático. As abas podem ser usada para
+iniciar/parar conexões e mudar automaticamente o valor dos arquivos de 
+sistema. Ele provê uma aba geral de sistema pela qual pode-se editar
+diretamente os arquivos de configuração de rede, e abas para configurar
+nomes de usuário e senhas para conexões PPP/PPPoE. Servidores como SSH,
+DHCP, PXE e DNS também podem ser configurados por este aplicativo e é
+possível criar a própria rede privada virtual (VPN) utilizando-se as
+ferramentas disponíveis.
+
+</p>
+
+<img
+	src="images/screenshots/netbox.png"
+	alt="Slitaz Netbox"
+	style="width: 536px; height: 357px;" />
+
+<p>
+Pode-se iniciar o netbox a partir do menu das ferramentas do sistema
+ou pelo terminal:
 </p>
 <pre>
- # netbox 
+ $ subox netbox
+</pre>
+
+<a name="wifibox"></a>
+<h3>Wifibox - Utilitário Gráfico para Configuração de Redes Sem Fio</h3>
+<p>
+O Wifibox é uma interface para configurar uma conexão de rede (Wifi, 
+WLAN ou Wireless). A aba "Networks" mostra uma lista de redes disponíveis,
+para conectar a uma delas basta um duplo clique sobre o nome da rede. Se
+a rede é segura, uma chave de acesso será então solicitada.
+</p>
+
+<img
+	src="images/screenshots/wifibox.png"
+	alt="SliTaz Wifibox"
+	style="width: 533px; height: 330px;" />
+
+<p>
+A aba "Favorites" permite configurar as redes preferidas. Uma vez que 
+a rede tenha sido adicionada, pode-se clicar duas vezes sobre o nome da
+rede para iniciar a conexão. A aba "Configuration" permite configurar
+a conexão manualmente usando configurações avançadas como o modo (mode)
+ou canal (channel). A aba "Drivers" permite configurar a placa de rede; 
+há 3 opções:
+</p>
+<ol>
+	<li>A placa é suportada diretamente pelo kernel por meio de um módulo.</li>
+	<li>A placa precisa de um módulo e de um firmware não livre que pode
+    ser instalado automaticamente pela ferramenta de auto-detecção (tazhw).</li>
+	<li>A placa não é suportada pelo Linux e drivers para o Windows devem
+    ser instalado pelo gerenciador de drivers para Windows (tazndis).</li>
+</ol>
+
+<a name="hostname"></a>
+<h3>/etc/hostname - Nome do Host</h3>
+<p>
+O arquivo /etc/hostname configura o nome da máquina. Ele é carregado
+durante a inicialização do sistema com o comando 'hostname', sem argumentos
+este comando retorna o nome atual da máquina:
+</p>
+<pre>
+ $ hostame
+</pre>
+<p>
+Para mudar o nome de host, pode-se usar o comando <code>echo</code> ou
+um editor de texto disponível no SliTaz (como root). Exemplo usando o
+comando <code>echo</code> e com o nome de máquina <code>kayam</code>:
+</p>
+<pre>
+ # echo "kayam" > /etc/hostname
+</pre>
+
+<a name="network.conf"></a>
+<h3>/etc/network.conf</h3>
+<p>
+O arquivo /etc/network.conf é responsável pela configuração da rede no
+SliTaz. Sua sintaxe é simples e pode-se editar seu conteúdo com um editor
+de texto como o Nano. É utilizado pelo script /etc/init.d/network.sh para
+configurar a interface de rede no momento do boot.
+</p>
+
+<a name="dynamicIP"></a>
+<h3>IP Dinâmico - Cliente DHCP udhcpc</h3>
+<p>
+O cliente DHCP udhcpc fornecido pelo Busybox usa o arquivo 
+/usr/share/udhcpc/default.script para obter um endereço IP automaticamente
+durante o boot. Suporta várias opções que podem ser listadas pela opção
+<code>--help</code>:
+</p>
+<pre> # udhcpc --help
+</pre>
+<p>
+Para desabilitar o udhcpc na eth0 ou modificar a interface (por exemplo, 
+eth1), deve-se editar o arquivo /etc/network.conf e atribuir o valor "no"
+para a variável DHCP:
+</p>
+<pre class="script">
+# Dynamic IP address.
+# Enable/disable DHCP client at boot time.
+DHCP="no"
+</pre>
+
+<a name="staticIP"></a>
+<h3>IP Estático - Usando um endereço específico</h3>
+<p>
+Pode-se especificar um endereço IP fixo a ser configurado durante o boot
+atribuindo o valor "yes" à variável STATIC:
+</p>
+<pre class="script">
+# Static IP address.
+# Enable/disable static IP at boot time.
+STATIC="yes"
+</pre>
+<p>
+Para a configuração funcionar, deve-se especificar um endereço IP, a 
+máscara de rede, gateway padrão e servidor DNS primário a ser utilizado.
+Exemplo:
+</p>
+<pre class="script">
+# Set IP address, and netmask for a static IP.
+IP="192.168.0.6"
+NETMASK="255.255.255.0"
+
+# Set route gateway for a static IP.
+GATEWAY="192.168.0.1"
+
+# Set DNS server. for a static IP.
+DNS_SERVER="192.168.0.1"
 </pre>
 
 <a name="pppoe"></a>
@@ -197,6 +302,28 @@ e repita a instalação desde o início. Para iniciar a conexão:
 <p>
 Para parar a conexão, digite:
 <code>pppoe-stop</code>.
+</p>
+
+<a name="driver"></a>
+<h3>Instale um driver de placa de rede</h3>
+<p>
+Caso haja a necessidade de um driver de placa de rede e você não sabe o seu nome,
+pode-se utilizar o comando <code>lspci</code> para encontrar sua placa e então
+o comando <code>modprobe</code> para carregar o módulo correspondente. No modo
+Live você pode usar a opção de boot do SliTaz <code>modprobe=modules</code>
+para carregar automaticamente módulos do Kernel. Para obter uma lista de todos
+os drivers de placa de rede disponíveis, mostrar placas PCI eth e carregar
+um módulo:
+</p>
+<pre>
+ # modprobe -l | grep drivers/net
+ # lspci | grep [Ee]th
+ # modprobe -v module_name
+</pre>
+<p>
+Em um sistema instalado você só precisa adicionar o nome do módulo à variável
+<code>LOAD_MODULES </code> em <code>/etc/rcS.conf</code> para carregar seu módulo
+a cada boot.
 </p>
 
 <a name="firewall"></a>

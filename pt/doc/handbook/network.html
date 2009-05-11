@@ -32,12 +32,15 @@
 
 <ul>
     <li><a href="#firefox">Mozilla Firefox</a> - Navegador web Firefox.</li>
+	<li><a href="#midori">Midori</a> - Um Leve Navegador Web.</li>    
     <li><a href="#retawq">Retawq</a> - Navegador web em modo texto.</li>
     <li><a href="#links">Links</a> - Navegador web em modo gráfico e texto.</li>
     <li><a href="#lostirc">LostIRC</a> - Cliente IRC.</li>
     <li><a href="#gitmail">Ghost In The Mail </a> - Cliente de e-mail.</li>
-    <li><a href="#transmission">Transmission</a> - Leve cliente BitTorrent.</li>
+	<li><a href="#sylpheed">Sylpheed</a> - Mail Client.</li>
+	<li><a href="#transmission">Transmission</a> - Lightweight BitTorrent client.</li>    
     <li><a href="#gftp">gFTP</a> - Simples cliente FTP.</li>
+	<li><a href="#gnutella">gtk-gnutella</a> - P2P client.</li>    
     <li><a href="security.html#pscan">pscan</a> - Scanner de portas.</li>
 </ul>
 
@@ -55,6 +58,17 @@ Dica: quando você combina a utilização do LiveCD com uma mídia USB, você pode
 manter seus bookmarks e plugins aonde quer que for.
 </p>
 
+<a name="midori"></a>
+<h3>Midori - Um Leve Navegador Web</h3>
+<p>
+O Midori é um navegador web leve que oferece rápida renderização de 
+páginas graças ao motor de renderização Webkit. É uma séria alternativa
+ao Firefox para sistemas de poucos recursos ou para aqueles que buscam
+programas rápidos e leves. Ele Suporta a maioria dos padrões web, 
+folhas de estilo CSS e imagens. É configurável por uma pequena interface
+gráfica e, quando instalado, localiza-se no menu "Internet".
+</p>
+
 <a name="retawq"></a>
 <h3>Retawq - Navegador web em modo texto</h3>
 <p>
@@ -64,7 +78,7 @@ menu ---&gt; Internet --&gt; Retawq. Para iniciar o <code>retawq</code> de um
 terminal, digite (com ou sem uma url):
 </p>
 <pre> $ retawq
- $ retawq <a href="http://www.slitaz.org/en">http://www.slitaz.org/en</a>
+ $ retawq <a href="http://www.slitaz.org/pt">http://www.slitaz.org/pt</a>
 </pre>
 <p>
 Os arquivos de configuração são armazenados em ~/.retawq - pode-se editá-los
@@ -85,7 +99,7 @@ Links é um navegador web tanto em modo gráfico quanto em modo texto. Para usar
 o modo gráfico, utilize a opção <code>-g</code>.
 </p>
 <pre> $ links -g &amp;
- $ links -g <a href="http://www.slitaz.org/en">http://www.slitaz.org/en</a> &amp;
+ $ links -g <a href="http://www.slitaz.org/pt">http://www.slitaz.org/pt</a> &amp;
  $ links
 </pre>
 <p>
@@ -120,6 +134,17 @@ enviar mensagens usando o protocolo SMTP de sua conta de e-mails existente.
 Você encontra o gitmail no menu --&gt; Internet --&gt; Ghost In The Mail.
 </p>
 
+<a name="sylpheed"></a>
+<h3>Sylpheed - Cliente de Email</h3>
+<p>
+Se a preferência for utilizar um cliente de email com vários recursos,
+pode-se instalar o Sylpheed. Ele é simples, confiável e fácil de usar, 
+oferecendo recursos poderosos de busca e filtros, assim como controle
+de emails não desejados.
+</p>
+<pre> # tazpkg get-install sylpheed
+</pre>
+
 <a name="transmission"></a>
 <h3>Transmission - Leve cliente BitTorrent</h3>
 <p>
@@ -142,6 +167,18 @@ armazena senhas e pode até mesmo definir aplicativos externos para visualização
 e edição de arquivos. No SliTaz, o gFTP é encontrado no menu --&gt; Internet
 --&gt; gFTP.
 </p>
+
+<a name="gnutella"></a>
+<h3>gtk-gnutella - Cliente P2P</h3>
+<p>
+O gtk-gnutella é um aplicativo para compartilhamento de arquivos que 
+utiliza a rede P2P Gnutella. É escrito em C e requer muito menos recursos
+do que outros clientes do mesmo tipo. Suporta o uso de buscas e filtros,
+recursos para fazer o download de arquivos grandes e controle de banda. 
+Para instalar:
+</p>
+<pre> # tazpkg get-install gtk-gnutella
+</pre>
 
 <!-- End of content -->
 </div>

@@ -32,12 +32,15 @@
 
 <ul>
 	<li><a href="#X11">X Window System.</a></li>
+	<li><a href="#tazx">Tazx</a> - SliTaz X configuration tool.</li>    
 	<li><a href="#slim">Slim</a> - Simple Login Manager (Gerenciador de Login).</li>
 	<li><a href="#xorg">Xorg</a> - X server (Servidor Gráfico).</li>
-	<li><a href="#jwm">JWM</a> - Gerenciador de Janelas.</li>
-	<li><a href="#enlightenment">Enlightenment (e17)</a> - Ambiente Desktop.</li>
-	<li><a href="#openbox">Openbox</a> - Gerenciador de Janelas.</li>
+	<li><a href="#terminalX">Use o Xvesa como um terminal gráfico</a> - 
+    Execute uma sessão gráfica a partir de uma máquina remota.</li>    
 	<li><a href="#fonts">Fonts</a> - Fontes do Sistema.</li>
+	<li><a href="desktop.html">Openbox</a> - Gerenciador de Janelas.</li>
+	<li><a href="enlightenment.html">Enlightenment (e17)</a> - Ambiente Desktop.</li>
+	<li><a href="jwm.html">JWM</a> - Gerenciador de Janelas.</li>
 </ul>
 
 <a name="X11"></a>
@@ -52,6 +55,20 @@ o comando <code>startx</code>, mas neste último caso é necessário desativar
 o gerenciador de login. Para reconfigurar a sessão gráfica você pode usar 
 o <code>tazx</code> logado como root (administrador) ou como usuário comum, 
 se tiver iniciado o X a partir da linha de comandos.
+</p>
+
+<a name="tazx"></a>
+<h3>Tazx - Ferramenta de Configuração do X</h3>
+<p>
+O Tazx é a ferramenta de configuração que gerencia as sessões X window
+num sistema SliTaz. Simplesmente selecione a resolução a ser utilizada
+e pressione OK. Pode-se também selecionar uma sessão do Xorg ao usar
+um driver de vídeo compatível com o hardware. Após executar o comando
+'startx', a configuração é salva nos arquivos executáveis ~/.xsession e
+~/.xinitrc. Estes arquivos são usados para iniciar uma sessão gráfica
+pelo comando 'startx' ou pelo gerenciador de login Slim e podem ser
+editados com algum editor de texto. O Tazx também pode ser utilizado
+para mudar o gerenciador de janelas padrão. Exemplo: <code>tazx jwm</code>.
 </p>
 
 <a name="slim"></a>
@@ -76,12 +93,12 @@ Mais detalhes, bem como outros temas, podem ser encontrados no
 <h4>Usuário Padrão</h4>
 <p>
 O Slim permite pré-carregar um usuário no processo de login; por conveniência, 
-'hacker' é o usuário predefinido. Isto pode ser alterado editando-se o 
+'tux' é o usuário predefinido. Isto pode ser alterado editando-se o 
 arquivo de configuração do Slim <code>/etc/slim.conf</code> e alterando a linha 
 <code>default_user</code>. Como alternativa, pode-se deixar a linha em branco, 
 evitando assim que seja pré-carregado um nome de usuário. Exemplo: 
 </p>
-<pre class="script">default_user        hacker
+<pre class="script">default_user        tux
 </pre>
 
 <a name="xorg"></a>
@@ -191,6 +208,61 @@ Extensões "Composite":
 EndSection
 </pre>
 
+<a name="terminalX"></a>
+<h3>Use o Xvesa como um terminal gráfico</h3>
+<p>
+Pode-se utilizar o Xvesa como um terminal gráfico se houver uma máquina
+na rede que aceite conexões Xdmcp. Para habilitar essa função, pode-se
+iniciar o servidor com a opção <code>-query</code> seguida do nome da
+máquina ou o endereço IP. Exemplo usando a máquina 192.168.0.2 na rede
+local:
+</p>
+<pre> $ Xvesa -ac -shadow -screen 1024x768x24 -query 192.168.0.2
+</pre>
+<p>
+O uso de um servidor gráfico remoto pode ser de grande utilidade, embora
+o tempo de resposta dos aplicativos dependa em muito da velocidade da
+internet e da capacidade da máquina remota. Esta técnica funciona bem
+dentro de uma rede local (LAN) e permite controlar aplicativos instalados
+em uma máquina remota diretamente à partir de uma máquina local pela
+qual se acessa. Note que a máquina remota pode ter várias contas de usuário
+em uso simultâneo e/ou em acesso direto.
+</p>
+
+<a name="fonts"></a>
+<h3>Fontes</h3>
+<p>
+O gerenciamento das fontes está a cargo do pacote Fontconfig. Este pacote 
+disponibiliza um conjunto de ferramentas para adicionar, listar e manipular
+fontes. As <em>fontes</em> podem ser instaladas no espaço do usuário ou
+ao nível do sistema, o que significa que cada usuário pode usar o seu conjunto 
+de fontes, podendo o administrador (<em>root</em>) instalar fontes que fiquem 
+disponíveis para todos os usuários do sistema. Se você usa mídias USB associadas
+ao <a href="http://www.slitaz.org/pt/doc/handbook/livecd.html">LiveCD</a> SliTaz, 
+pode facilmente instalar fontes e conservá-las para a próxima vez que utilizar o
+CD-ROM. 
+</p>
+<h4>Instalando <em>fontes</em></h4>
+<p>
+Ao nível do sistema, as fontes estão instaladas na pasta 
+<code>/usr/share/fonts</code>. O SliTaz fornece fontes TTF Vera, que ocupam pouco 
+espaço e são adequadamente exibidas no monitor. No espaço do usuário, as fontes 
+podem ser encontradas na pasta oculta <code>.fonts</code>, que deve estar 
+na pasta <em>home</em> do usuário. Para criar uma pasta para armazenar novas 
+fontes podem ser usados os gerenciadores de arquivos emelFM2 ou Clex ou, ainda,
+a linha de comandos: 
+</p>
+<pre> $ mkdir ~/.fonts
+</pre>
+<p>
+Logo que as fontes estejam instaladas, é necessário executar a ferramenta 
+<code>fc-cache</code> para gerar os arquivos de configuração, o que permite 
+assegurar que as fontes fiquem disponíveis para serem usadas em qualquer 
+aplicação: 
+</p>
+<pre> $ fc-cache
+</pre>
+
 <a name="jwm"></a>
 <h3>JWM - Gerenciador de Janelas</h3>
 <p>
@@ -254,40 +326,6 @@ o aplicativo Htop no menu:
 Mais informações podem ser encontradas no site do 
 <a href="http://icculus.org/openbox/index.php/Help:Menus">openbox</a>.
 </p>
-
-<a name="fonts"></a>
-<h3>Fontes</h3>
-<p>
-O gerenciamento das fontes está a cargo do pacote Fontconfig. Este pacote 
-disponibiliza um conjunto de ferramentas para adicionar, listar e manipular
-fontes. As <em>fontes</em> podem ser instaladas no espaço do usuário ou
-ao nível do sistema, o que significa que cada usuário pode usar o seu conjunto 
-de fontes, podendo o administrador (<em>root</em>) instalar fontes que fiquem 
-disponíveis para todos os usuários do sistema. Se você usa mídias USB associadas
-ao <a href="http://www.slitaz.org/pt/doc/handbook/livecd.html">LiveCD</a> SliTaz, 
-pode facilmente instalar fontes e conservá-las para a próxima vez que utilizar o
-CD-ROM. 
-</p>
-<h4>Instalando <em>fontes</em></h4>
-<p>
-Ao nível do sistema, as fontes estão instaladas na pasta 
-<code>/usr/share/fonts</code>. O SliTaz fornece fontes TTF Vera, que ocupam pouco 
-espaço e são adequadamente exibidas no monitor. No espaço do usuário, as fontes 
-podem ser encontradas na pasta oculta <code>.fonts</code>, que deve estar 
-na pasta <em>home</em> do usuário. Para criar uma pasta para armazenar novas 
-fontes podem ser usados os gerenciadores de arquivos emelFM2 ou Clex ou, ainda,
-a linha de comandos: 
-</p>
-<pre> $ mkdir ~/.fonts
-</pre>
-<p>
-Logo que as fontes estejam instaladas, é necessário executar a ferramenta 
-<code>fc-cache</code> para gerar os arquivos de configuração, o que permite 
-assegurar que as fontes fiquem disponíveis para serem usadas em qualquer 
-aplicação: 
-</p>
-<pre> $ fc-cache
-</pre>
 
 <!-- End of content -->
 </div>

@@ -18,7 +18,7 @@
 <div id="header">
 <div align="right" id="quicknav">
     <a name="top"></a>
-    <a href="enlightenment.html">Enlightenment</a> |
+    <a href="cmdline.html">Comandos</a> |
     <a href="index.html">Conteúdo</a>
 </div>
 <h1><font color="#3E1220">Manual SliTaz(pt)</font></h1>
@@ -31,189 +31,200 @@
 <h2><font color="#DF8F06">Desktop SliTaz</font></h2>
 
 <ul>
-    <li><a href="#intro">Introdução.</a></li>
-    <li><a href="#jwm">JWM.</a></li>
-    <li><a href="#lxpanel">LxPanel.</a></li>
-    <li><a href="x-window.html#openbox">Openbox.</a></li>
-    <li><a href="enlightenment.html">Enlightenment.</a></li>
+	<li><a href="#intro">Introdução.</a></li>
+	<li><a href="#openbox">Openbox.</a></li>
+	<li><a href="#config">Configuração do Openbox.</a></li>
+	<li><a href="#themes">Temas.</a></li>
+	<li><a href="#menu">Menu de Contexto.</a></li>
+	<li><a href="#autostart">Aplicativos Iniciados Automaticamente.</a></li>
+	<li><a href="#bg-icons">Papel de Parede e Ícones.</a></li>
+	<li><a href="#lxpanel">LXPanel.</a></li>
+	<li><a href="#effects">Efeitos Visuais.</a></li>
 </ul>
 
 <a name="intro"></a>
 <h3>Introdução</h3>
 <p>
-O desktop padrão do SliTaz é formado por muitos componentes diferentes. JWM 
-(Joe's Window Manager) e LXPanel combinam-se para prover um 
-desktop que seja simples e funcional.
+O desktop (área de trabalho) padrão do SliTaz é formado por diferentes 
+componentes do Projeto LXDE. O Openbox, o PCmanFM e o LXPanel 
+combinam-se para prover um desktop que seja simples e funcional.
 </p>
 
-<a name="jwm"></a>
-<h3>JWM - Joe's Window Manager</h3>
+<a name="openbox"></a>
+<h3><font color="#6c0023">Openbox</font></h3>
 <p>
-O Joe's Windows manager, escrito em C, é rápido, simples, limpo, estável e 
-eficiente. JWM possui uma barra de tarefas, um menu de ícones e um paginador 
-para a administração de desktops virtuais, a barra de tarefas também podem agir 
-como um dock. Além disso é facilmente configurável com um único arquivo de 
-texto que pode mudar o menu, fontes e seus tamanhos e cores diferentes.   
+O Gerenciador de Janelas padrão do SliTaz é o Openbox. Ele é simples, 
+rápido e com suporte a temas e, além disso, consome poucos recursos da 
+máquina. Um Gerenciador de Janelas é o programa que roda sobre um 
+servidor gráfico e controla a aparência das janelas, abre um terminal
+gráfico ou mostra as aplicações. Ele pode situar as janelas na tela,
+redimensioná-las, etc, conforme a vontade do usuário.
+</p>
+<p>
+O Openbox fornece um menu de contexto que é ativado com um clique do
+botão direito do mouse sobre o desktop e pode ser mudado por intermédio
+da edição de um arquivo de configuração. A combinação de teclas
+<code>ALT + TAB</code> permite listar e navegar pelas janelas abertas. O
+aplicativo Obconf pode ser usado para configurar graficamente o gerenciador
+de janelas. Vários pequenos utilitários específicos do SliTaz permitem
+obter um desktop simples, coerente e com estilo. Por padrão, a distribuição
+utiliza 4 desktops virtuais.
+</p>
+<p>
+O desktop fornecido pelo SliTaz respeita os padrões Freedesktop, o
+gerenciador de arquivos PCmanFM permite o gerenciamento dos ícones do
+desktop, operações de arrastar e soltar (drag and drop) e a montagem
+de dispositivos por meio de um simples clique de mouse. O menu do painel,
+a barra de tarefas, os ícones, etc, são fornecidos pelo aplicativo LXpanel.
 </p>
 
-<h4>Usando e configurando o JWM</h4>
+<a name="config"></a>
+<h3><font color="#6c0023">Configuração do Openbox</font></h3>
 <p>
-O aplicativo Joe's Window Manager é muito rápido. Para ver o menu apenas 
-clique com qualquer botão do mouse em algum lugar do desktop. Você pode 
-redimensionar uma janela pelas extremidades ou cantos, minimizar ou passar de 
-um desktop virtual a outro pelo paginador. Você também tem atalhos de teclado 
-configuráveis para acesso mais rápido às aplicações que você mais usa. No 
-SliTaz o arquivo de configuração do sistema é <code>/etc/jwm/system.jwmrc</code>. 
-Alem deste arquivo, cada usuário pode usar seu próprio arquivo de configuração 
-escondido dentro de <code>~/.jwmrc</code>. Este é um arquivo de texto que usa 
-sintaxe XML, e pode ser editado com um editor de texto simples - as linhas que 
-começam com: 
-<code>&lt;!--</code> são comentários que explicam o que cada tag faz.   
+A maioria das opções pode ser configurada graficamente pelo utilitário 
+Obconf, localizado no menu "Preferências". O arquivo de configuração, um
+arquivo xml encontrado em <code>~/.config/openbox/rc.xml</code>, pode 
+ser diretamente modificado com algum editor de texto. Atalhos de 
+teclado são definidos na seção &lt;keyboard&gt; do arquivo citado.
+</p>
+
+<a name="themes"></a>
+<h3><font color="#6c0023">Temas</font></h3>
+<p>
+O Openbox tem suporte a temas por meio de um único arquivo que utiliza 
+uma sintaxe específica ao gerenciador de janelas. Diversos temas padrões
+são fornecidos, podendo ser selecionados pelo Obconf e encontrados
+no diretório <code>/usr/share/themes</code>. Cada usuário do sistema
+pode instalar seus próprios temas no diretório <code>~/.themes</code>,
+tanto manualmente quanto pelo Obconf. Para criar os próprios temas para
+o SliTaz, a melhor forma é copiar e renomear um tema existente e então
+editar o arquivo <code>themerc</code>. Temas opcionais podem usar imagens
+para os botões, ícones, etc. Estas imagens podem ser criadas ou modificadas
+em algum editor como o Gimp ou o Mtpaint.
 </p>
 <p>
-Para facilitar a customização do desktop, o SliTaz automaticamente copia 
-durante a inicialização da primeira sessão (gráfica) um arquivo de configuração 
-do sistema para o diretório raiz do usuário. Você pode modificar este arquivo 
-diretamente e pode testar sem risco. Para editar com seu editor de texto 
-favorito:
+É possível encontrar na internet vários temas criados pela comunidade do
+Openbox. Maiores informações no 
+<a href="http://icculus.org/openbox/index.php/Openbox:Themes">website</a>
+do Gerenciador de Janelas.
 </p>
-<pre>
- $ geany $HOME/.jwmrc &amp;
+
+<a name="menu"></a>
+<h3><font color="#6c0023">Menu de Contexto</font></h3>
+<p>
+O arquivo de configuração do menu é o <code>~/.config/openbox/menu.xml</code>.
+A sintaxe do arquivo XML é simples e fácil de se compreender. É possível
+editar o arquivo graficamente pelo utilitário <code>obmenu</code> (que
+não é instalado por padrão). O exemplo a seguir adiciona um aplicativo
+em um submenu:
+</p>
+<pre class="script">&lt;item label="Gerenciador de Arquivos"&gt;
+  &lt;action name="Execute"&gt;&lt;command&gt;pcmanfm&lt;/command&gt;&lt;/action&gt;
+&lt;/item&gt;
 </pre>
 <p>
-Para recuperar um arquivo de configuração original, você pode copiar o 
-arquivo de configuração do sistema e pode renomeá-lo para <code>.jwmrc</code> 
-em seu diretório home:
-</p>
-<pre>
- $ cp /etc/jwm/system.jwmrc $HOME/.jwmrc
-</pre>
-<p>
-A tag <code>RootMenu</code> corresponde ao menu exibido clicando com um dos 
-(três) botões do mouse. Para adicionar uma categoria, você tem que usar a tag: 
-<code>Menu</code> - ela contém entradas para vários programas. Qualquer entrada 
-no menu do JWM pode ajustar-se em uma linha. Exemplo usando o aplicativo de 
-gerenciamento de imagem GQview:
-</p>
-<pre class="script">
-&lt;Program icon="gqview.png" label="GQview"&gt;gqview&lt;/Program&gt;
-</pre>
-<p>
-Ainda há muitas possibilidades para configurar o <code>RootMenu</code> de acordo 
-com os botões do mouse, a escolha de método para mover janelas, criar grupos, 
-etc. O Manual está disponível on-line no website oficial do projeto. Para ver 
-uma lista de opções de linha de comando, apenas digite <code>jwm -h</code> em 
-um terminal.  
+Os submenus são definidos ao fim do arquivo utilizando-se a tag 
+<code>menu</code>. Esta tag pode usar um <em>pipe</em> para mostrar as
+entradas do menu, isto é, um script que cria entradas em tempo de execução.
+O SliTaz fornece, por padrão, um <em>pipe de menu</em> que permite abrir
+os diretórios favoritos diretamente com o gerenciador de arquivos PCmanFM.
+Este script pode localiza-se no diretório <code>/usr/lib/openbox</code> e
+pode ser usado como exemplo.
 </p>
 
-<h4>Personalize seu JWM</h4>
+<a name="autostart"></a>
+<h3><font color="#6c0023">Aplicativos Iniciados Automaticamente</font></h3>
 <p>
-Criar seu próprio estilo gráfico com JWM é relativamente rápido e fácil, as 
-tags são claras e os atributos possíveis são determinados nos comentários. 
-Quando estiver preparando seu trabalho, você pode ver suas modificações 
-reiniciando o gerenciador de janela a partir do menu ou pelo comando <code>jwm 
--restart</code>. No arquivo de configuração, as tags de estilo vem depois do 
-comentário &lt;!-- Visual Styles--&gt;. Para começar, aqui está uma pequena lista das principais 
-tags de estilo com uma curta descrição:  
-</p>
-<ul>
-    <li><code>Background</code> gerencia o papel de parede. Esta tag suporta os
-     atributos <code>solid</code>, <code>gradient</code>, <code>image</code> or 
-     <code>tile</code> para, respectivamente: usar uma cor sólida, criar um 
-     gradiente, exibir uma imagem redimencionada ou ladrilhar uma imagem.</li>
-    <li><code>BorderStyle</code> controla a borda das janelas.</li>
-    <li><code>TrayStyle</code> controla a barra de tarefas. A barra de tarefas
-     pode, entre outras coisas, ser escondida automaticamente ou só ocupar uma
-     parte da tela com o atributo <code>width</code> (largura).</li>
-    <li><code>TrayListStyle</code> controla o estilo da lista de janelas abertas
-     no desktop atual.</li>
-    <li><code>PagerStyle</code> controla o paginador que exibe os diferentes
-     desktops virtuais (4 por padrão).</li>
-    <li><code>MenuStyle</code> define o estilo do menu.</li>
-    <li>Os ícones são definidos pela tag <code>IconPath</code>, você pode usar 
-    seus próprios ícones especificando o caminho completo para o diretório onde 
-    eles estão. Note que você pode especificar mais de um caminho, se quiser, 
-    pode usar seus próprios ícones <em>e</em> aqueles contidos nos diretórios 
-    <code>/usr/share/pixmaps</code> e <code>/usr/share/icons</code>. O SliTaz 
-    usa os ícones do tema Tango: 
-    <a href="http://tango.freedesktop.org/">tango.freedesktop.org</a>.
-    Para o menu, eles têm 16x16 e são armazenados em 
-    <code>/usr/share/icons/Tango</code>. Você pode adicionar, editá-los, 
-    apagá-los... Se quiser instalar ícones novos em seu espaço de usuário, 
-    nós lhe aconselhamos que use <code>~/Picture/Icons</code> (definido por 
-    padrão) ou o diretório oculto <code>~/.Icons</code>.</li>
-</ul>
-<p>
-As cores podem ser definidas pelo nome ou número RGB, como <code>#3A4956</code>. 
-Para usar cores no modo gradiente, você tem que especificar as duas cores 
-separadas por dois pontos, exemplo <code>#6C0023:#3E1220</code>. Você pode mudar 
-fontes e seus tamanhos usando a tag <code>Font</code>. Ainda há algumas coisas 
-pequenas que você pode mudar para personalizar seu desktop, como o nome de um 
-item de menu e seu ícone. Antes de reiniciar o JWM com seu novo arquivo de 
-configuração, você pode conferir sua sintaxe usando o comando: <code>jwm -p</code>. 
-Para maiores detalhes, o manual oficial descreve todas as tags, opções e 
-atributos válidos. Você pode vê-los on-line no website do JWM.   
+Ao iniciar o modo gráfico, o Openbox permite que aplicativos sejam
+iniciados automaticamente usando o script <code>~/.config/Openbox/autostart.sh</code>.
+Por padrão o SliTaz usa este script para iniciar o gerenciador de arquivos
+PCmanFM para o gerenciamento dos ícones de desktop, o painel (LXpanel)
+para o menu e o dbus em conjunto com o Ivman para o gerenciamento de
+dispositivos ou mídias como pendrives. Para adicionar ou remover 
+aplicativos a serem iniciados automaticamente durante o carregamento da
+sessão gráfica, pode-se editar diretamente o script ou utilizar um
+pequeno aplicativo gráfico do SliTaz localizado no menu "Preferências" &rarr; 
+"Aplicativos Iniciados Automaticamente":
 </p>
 
-<h4>JWM website</h4>
-<ul>
-    <li><a href="http://www.joewing.net/programs/jwm/"
-         >www.joewing.net/programs/jwm/</a> - O website oficial do Joe's
-     Window Manager, que provê notícias e um extenso manual.</li>
-    <li>#jwm em irc.freenode.net - O canal de discussão IRC no servidor Freenode 
-     sobre o JWM.</li>
-</ul>
+<img 
+	src="images/screenshots/desktopbox-autostart.png" 
+	alt="desktopbox autostart"
+	style="width: 552px; height: 267px;" />
+
+<a name="bg-icons"></a>
+<h3><font color="#6c0023">Papel de Parede e Ícones</font></h3>
+<p>
+O Openbox não gerencia a tela nativamente, então há a necessidade de uma
+ferramenta externa para isto. Por padrão, o SliTaz utiliza o gerenciador
+de arquivos PCmanFM para esta tarefa, que tem por função mostrar imagens
+na tela como papéis de parede e ícones. Alternativamente, pode-se usar o
+pacote <code>hsetroot</code> para mostrar figurar ou o <code>xsetroot</code>
+para cores sólidas. O PCmanFM é iniciado, como um daemon, junto com a 
+sessão do Openbox, ou seja, é executado em segundo plano e inicia-se
+mais rapidamente. Para mudar a imagem do papel de parede atual, pode-se 
+utilizar as preferências do gerenciador de arquivos ou o menu 
+"Preferências" &rarr; "Papel de Parede".
+</p>
+<p>
+Os ícones são simples arquivos de texto de extensão <code>.desktop</code>,
+seguindo os padrões Freedesktop. Pode-se criar os próprios ou customizar
+os existentes utilizando um editor de texto qualquer. Para adicionar
+ícones ao desktop, o SliTaz fornece um pequeno aplicativo gráfico 
+acessível pelo menu "Preferências" &rarr; "Ícones do Desktop" ou, 
+alternativamente, pode-se usar o menu de contexto do Openbox
+"Arquivos do Desktop &amp; Ícones" &rarr; "Adicionar novo ícone":
+</p>
+
+<img 
+	src="images/screenshots/desktopbox-add-icons.png" 
+	alt="desktopbox add-icons"
+	style="width: 432px; height: 314px;" />
 
 <a name="lxpanel"></a>
 <h3>LXPanel</h3>
 <p>
-LXPanel é parte do projeto LXDE e segue os padrões Freedesktop. Menus são 
-gerados dinamicamente, acrescentando arquivos <code>.desktop</code> ao diretório 
-<code>/usr/share/applications</code>.  
-</p>
-<h4>*.desktop files</h4>
-<p> 
-Um único arquivo .desktop pode conter oito linhas com, respectivamente: 
-- o nome (<code>Name</code>), nome genérico, comentário, o comando para executar 
-(<code>Exec</code>), ícone, tipo e categorias Freedesktop. Exemplo de um 
-arquivo .desktop: 
-</p>
-<pre class="script">[Desktop Entry]
-Name=XTerm
-GenericName=Terminal
-Comment=Run commands in a shell
-Exec=xterm -bg black -fg white -cr orange -sb -bd violet -rightbar
-Icon=xterm.png
-Type=Application
-Categories=Utility;Terminal;
-</pre>
-<p>
-Note que os ícones ficam situados nos diretórios <code>/usr/share/icons</code> 
-ou <code>/usr/share/pixmaps</code>. A entrada <code>Categories</code> 
-(categorias) declara onde o programa se localizará no menu.
+O LXPanel é parte do projeto LXDE e é responsável pela barra de tarefas,
+menus, ícones, etc. Os menus são gerados dinamicamente ao adicionar-se
+arquivos <code>.desktop</code> ao diretório <code>/usr/share/applications</code>.
 </p>
 <p>
-O arquivo de configuração do sistema fica situado em <code>/etc/lxpanel</code> 
-e também pode ser armazenado localmente dentro de <code>~/.config</code>, 
-entretanto é recomendado que você configure o LXPanel em modo gráfico usando a 
-entrada preferences (preferências) no menu principal.   
+Os arquivos de configuração estão localizados em <code>/etc/lxpanel</code>
+e também podem ser arquivados localmente em <code>~/.config</code>. É
+recomendado configurar o LXPanel graficamente, em vez de editar os arquivos
+de configuração diretamente, utilizando a entrada "Panel Settings" na
+barra de tarefas.
 </p>
 
-<h4>Configurador do LXPanel</h4>
+<h4>Preferências do Painel</h4>
 <p>
-O configurador do LXPanel possui 3 abas:
+O configurador do LXPanel possui três abas:
 </p>
 <ul>
-    <li><code>General</code> define a posição, tamanho - dinâmico ou fixo -, 
-     fundo e propriedades do painel.</li>
-    <li><code>Plugins</code> lhe permite adicionar, remover, editar e mover 
-     plugins pelo painel.</li>
-    <li><code>Applications</code> lhe permite definir aplicações preferidas 
-    como o gerenciador de arquivo, terminal e comando de logout.</li>
+	<li><code>General</code> configura a posição, tamanho - dinâmico ou
+    fixo, plano de fundo do painel e propriedades.</li>    
+	<li><code>Panel Applets</code> permite adicionar, remover, editar e
+    mover plugins do painel.</li>
+	<li><code>Advanced</code> permite configurar os aplicativos
+    preferidos, como o gerenciador de arquivos, terminal, comando de 
+    logout, etc.</li>
 </ul>
 <p>
-O website oficial para o projeto LXDE e LXPanel pode ser encontrado 
+O website oficial do projeto LXDE e do LXPanel pode ser acessado 
 <a href="http://lxde.org/">aqui</a>.
+</p>
+
+<a name="effects"></a>
+<h3><font color="#6c0023">Efeitos Visuais</font></h3>
+<p>
+O SliTaz fornece diversos pequenos utilitários que permitem adicionar
+efeitos ao Openbox e aos menus. Pode-se ter janelas transparentes ou
+usar sombras para dar o efeito de profundidade ao desktop. Estes efeitos
+podem ser ativados pelo <code>xcompmgr</code> 
+(<em>gerenciador de composição</em>) e o <code>transset-df</code> 
+(<em>para transparências</em>), sendo que ambos podem ser ativados ao
+mesmo tempo numa sessão usando-se o menu de contexto do Openbox &rarr;
+"Efeitos do Desktop".
 </p>
 
 <!-- End of content -->

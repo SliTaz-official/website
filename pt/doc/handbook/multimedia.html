@@ -36,8 +36,11 @@
     <li><a href="#alsamixer">Alsamixer</a> - Mixer.</li>
     <li><a href="#alsaplayer">Alsaplayer</a> - Reprodutor de áudio.</li>
     <li><a href="#asunder">Asunder</a> - Ripador de CDs de audio.</li>
-    <li><a href="#xine">Xine</a> - Reprodutor multimídia.</li>
+	<li><a href="#mpd">MPD</a> - Music Player Daemon.</li>    
     <li><a href="#mpg123">mpg123</a> - Reprodutor de áudio em linha de comando.</li>
+	<li><a href="#mplayer">Mplayer</a> - Reprodutor de Filmes.</li>    
+    <li><a href="#xine">Xine</a> - Reprodutor multimídia.</li>
+
 </ul>
 
 <a name="intro"></a>
@@ -132,20 +135,45 @@ dados CDDB, criar listas de reprodução e editar nomes de arquivos. Você encontra
 o Asunder na categoria "Multimedia" no menu.
 </p>
 
-<a name="xine"></a>
-<h3>Xine</h3>
+<a name="mpd"></a>
+<h3>MPD - Music Player Daemon</h3>
 <p>
-O Xine é um projeto de multimídia que provê vários reprodutores de vídeo e áudio.
-O SliTaz fornece bibliotecas e um reprodutor de mídia pelo pacote 
-<code>xine-ui</code>. O Xine usa a interface Xlib, um painel de controle, um
-menu acessado por clique no botão direito do mouse e vários plugins. Pode 
-reproduzir os codecs de áudio ogg, mp3 e flac e os formatos de vídeo mov, avi
-e mpg. Para instalar o Xine e suas dependências:
+O MPD é um pequeno porém poderoso reprodutor de música que se utiliza da
+arquitetura cliente/servidor, o que significa que ele pode ser executado
+remotamente e sem a necessidade de um servidor gráfico X. Para instalar
+o MPD no SliTaz: <code>tazpkg get-install mpd</code>. Não há necessidade
+de privilégios de root para iniciar o servidor mpd, então pode-se
+iniciá-lo com:
 </p>
-<pre>
- # tazpkg get-install xine-ui
+<pre> $ mpd
 </pre>
-<p><a href="http://xinehq.de/index.php/home">Website</a> oficial do Xine.
+<p>
+E pará-lo com:
+</p>
+<pre> $ mpd --kill
+</pre>
+<p>
+Simplesmente coloque seus arquivos de som na pasta ~/music (ou crie um
+link simbólico para ela) e então execute <code>mpd --create-db</code> 
+como <code>root</code> para atualizar a base de dados. Após isso, pode-se
+usar um dos vários clientes disponíveis para acessar os arquivos. O 
+comando <code>mpd --version</code> fornece uma lista com todos os formatos
+de entrada e saida disponíveis.
+</p>
+
+<h4>MPC - Music Player Client</h4>
+<p>
+O MPC é um cliente para o MPD bem popular. Para carregar todos os arquivos
+da base de dados do MPD para o MPC e executá-los, instale-o com:
+<code>tazpkg get-install mpc</code> e execute:
+</p>
+<pre> $ mpc add /
+ $ mpc play
+</pre>
+<p>
+O comando <code>mpc --help</code> fornece uma lista completa de opções
+disponíveis que permitem editar a lista de execução (playlist), habilitar
+o efeito de crossfade, ajustar volume, tocar as faixas em modo shuffle, etc.
 </p>
 
 <a name="mpg123"></a>
@@ -167,6 +195,34 @@ converter um arquivo wav em um arquivo mp3. Exemplo:
 <pre>
  $ mpg123 -w sound.mp3 sound.wav 
 </pre>
+
+<a name="mplayer"></a>
+<h3>Mplayer</h3>
+<p>
+O Mplayer é um reprodutor de filmes bem conhecido para Linux que suporta
+vários formatos de arquivos, incluindo DVD, VCD, mpeg, wmv, realvideo, etc.
+Também suporta vários codecs de áudio como aac, wma, realaudio, assim como
+ogg, flac, etc. É configurado com um menu acessado por um clique do botão
+direito e pode ser customizado por meio de várias skins e interfaces 
+gráficas, que permitem a fácil configuração de drivers de vídeo, 
+dispositos de saída e outras opções.
+</p>
+
+<a name="xine"></a>
+<h3>Xine</h3>
+<p>
+O Xine é um projeto de multimídia que provê vários reprodutores de vídeo e áudio.
+O SliTaz fornece bibliotecas e um reprodutor de mídia pelo pacote 
+<code>xine-ui</code>. O Xine usa a interface Xlib, um painel de controle, um
+menu acessado por clique no botão direito do mouse e vários plugins. Pode 
+reproduzir os codecs de áudio ogg, mp3 e flac e os formatos de vídeo mov, avi
+e mpg. Para instalar o Xine e suas dependências:
+</p>
+<pre>
+ # tazpkg get-install xine-ui
+</pre>
+<p><a href="http://xinehq.de/index.php/home">Website</a> oficial do Xine.
+</p>
 
 <!-- End of content -->
 </div>
