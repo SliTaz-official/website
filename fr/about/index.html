@@ -98,12 +98,12 @@ vive (mode LiveCD), léger, rapide, et entièrement installable sur disque dur.
 SliTaz est distribuée sous forme d'image ISO que vous pouvez graver sur un
 cdrom et amorcer (booter). Une fois le système lancé, vous disposez d'un 
 shell ash, et vous pouvez retirer le cdrom, car SliTaz utilise la mémoire 
-vive (RAM) de la machine. SliTaz fournit plus de 200 commandes Linux, un 
+vive (RAM) de la machine. SliTaz fournit plus de 300 commandes GNU/Linux usuelles, un 
 serveur web, des navigateurs web, un client/serveur SSH, un moteur de base de 
 données SQL, le support IDE, eth0, usb, ou encore le système X window. En 
 mode LiveCD, vous avez aussi la possibilité d'utiliser un media USB pour 
 stocker vos données et fichiers de configuration personnels. SliTaz
-est aussi pleinement installable sur un disque dur et largement extensible via
+est aussi entièrement installable sur un disque dur et largement extensible, via
 le gestionnaire de paquets et la compilation de nouvelles applications depuis
 les sources.
 </p>
@@ -111,7 +111,7 @@ les sources.
 Le projet SliTaz fournit un moyen de support technique gratuit aux utilisateurs
 du système via <a href="../mailing-list.html">la liste de discussion</a>. C'est
 aussi le moyen le plus courant de contacter les personnes impliquées dans le
-projet. Vous avez aussi la possibilité de discuter de SliTaz sur le canal IRC de
+projet. Vous avez aussi la possibilité de discuter de SliTaz sur le serveur IRC de
 <a href="http://www.toile-libre.org/">Toile Libre</a> : <code>irc.toile-libre.org 
 #slitaz</code>
 </p>
@@ -121,19 +121,19 @@ projet. Vous avez aussi la possibilité de discuter de SliTaz sur le canal IRC de
 <ul>
     <li>Un système racine d'environ 100 Mb et des images ISO de moins de
     30 Mb.</li>
+    <li>Les outils SliTaz de personnalisation et d'administration.</li>
     <li>Perl, auto-détection du matériel PCI/USB et support du Wifi.</li>
     <li>Navigateur web Mozilla Firefox en mode graphique, et Retawq en mode texte.</li>
     <li>Support du son avec mixeur, convertiseur et lecteur de musique.</li>
-    <li>Un client de chat IRC et un client mail (SMTP).</li>
+    <li>Un client de chat IRC et un client mail.</li>
     <li>Un client/serveur SSH, pour un contrôle à distance.</li>
     <li>Un moteur de base de données SQL avec SQLite.</li>
-    <li>Outils pour la gravure de CD/DVD et la création d'image ISO.</li>
-    <li>Plus de 300 commandes Linux pour les tâches quotidiennes et 
-    l'administration.</li>
-    <li>L'éditeur de texte avancé Nano et LeafPad.</li>
+    <li>Des outils pour la gravure de CD/DVD et la création d'image ISO.</li>
+    <li>Plus de 300 commandes GNU/Linux usuelles.</li>
+    <li>L'éditeur de texte avancé Nano, et LeafPad.</li>
     <li>Un client DHCP pour une connexion facilitée et le support PPPOE.</li>
-    <li>Système X avec serveur Xvesa et le gestionnaire de fenêtres JWM.</li>
-    <li>Application de création graphique et de gestion des images.</li>
+    <li>Système X avec serveur Xvesa, et l'environnement de bureau LXDE.</li>
+    <li>Des applications de création graphique et de gestion des images.</li>
     <li>Des outils de manipulation de fichiers et de maintenance système.</li>
     <li>De la documentation en divers formats.</li>
     <li>Environ 1400 paquets facilement installables depuis le miroir.</li>
@@ -157,8 +157,8 @@ des machines puissantes.
 SliTaz est construite depuis les sources, utilise Busybox pour toutes les
 fonctions de base, un noyau Linux récent, et des logiciels GNU. SliTaz n'est
 basée sur aucune autre distibution GNU/Linux, respecte au mieux les standards,
-tels que le "Filesystem Hierarchy Standard" ou FHS pour l'arborescence de fichiers.
-SliTaz est épurée, rapide, utilise un système de démarrage simple basé sur des
+tel que le "Filesystem Hierarchy Standard" ou FHS pour l'arborescence de fichiers.
+SliTaz est épurée, rapide, utilise un système de démarrage simple, basé sur des
 scripts shell, lançant un minimum de services. La sécurité n'est pas oubliée
 grâce au pare-feu et à un système de mots de passes cryptés. Il y a aussi
 de multiples documents à disposition, destinés aux utilisateurs,
@@ -177,7 +177,7 @@ et les images en fond d'écran.
 <p>
 Malgré la longue préparation pour fournir un système déjà fonctionnel, le
 projet a commencé sa vie timidement, une petite annonce sur Libordux.Org et
-c'est tout. Google à ensuite rapidement référencé le site et les nombreux
+c'est tout. Google a ensuite rapidement référencé le site et les nombreux
 documents, les visites ont commencé à augmenter et les statistiques de
 téléchargement aussi. Quatre mois après la première version, une nouvelle
 Cooking est publiée en juin 2007, plus d'attention a été donnée au graphisme
@@ -189,34 +189,33 @@ dont le gestionnaire de paquets. Une liste de discussion est ouverte, nous somme
 2, puis 3 pendant 1 mois et 5 le mois suivant. D'août à octobre le plus gros
 du travail a été de préparer Firefox pour son entrée sur le LiveCD, l'image
 ISO est alors passée de 18 Mb à 24 Mb environ, pour le plus grand bien du
-projet. A partir de là, la distribution était vraiment utilisable par un
+projet. À partir de là, la distribution était vraiment utilisable par un
 grand nombre de personnes. 
 </p>
 <p>
 Encore un mois de travail, la publication d'une ISO avec Firefox en français, 
-de nombreuses améliorations et, départ pour une opération séduction en passant
+de nombreuses améliorations et, départ pour une opération séduction, en passant
 par le grand  <a href="http://linuxfr.org/pub/">LinuxFR</a>. Cette opération
 séduction a permis de renforcer la communauté, de faire connaître le projet
-et de faire passer la liste de 5 à 20 membres en 2 semaines ! Le calme après la
-tempête, le projet s'est mieux organisé pour collaborer, le serveur propose
-des dépôts Mercurial, un canal IRC a été ouvert et de nombreux paquets ont fait
-leur entrée dans la sélection officielle. Décembre 2007, nouvelle ISO
-proposant le support du son et des cartes PCMCIA, plus d'options au démarrage.
-Cette version utilise la compression lzma et tient sur 22,4 Mb. Depuis cette date,
-le projet suit une feuille de route indiquant les étapes à réaliser et les
-buts à atteindre dans le temps.
+et de faire passer la liste de discussion de 5 à 20 membres en 2 semaines ! 
+Le calme après la tempête, le projet s'est mieux organisé pour collaborer,
+le serveur propose des dépôts Mercurial et un canal IRC a été ouvert, et 
+de nombreux paquets ont fait leur entrée dans la sélection officielle. 
+Décembre 2007, nouvelle ISO proposant, le support du son et des cartes PCMCIA et 
+plus d'options au démarrage. Cette version utilise la compression lzma 
+et tient sur 22,4 Mb. Depuis cette date, le projet suit une feuille de route 
+indiquant les étapes à réaliser et les buts à atteindre dans le temps.
 </p>
 
 <a name="free"></a>
 <h3>Indépendance et liberté</h3>
 <p>
-SliTaz se veut un projet indépendant et libre, au départ il y avait des 
-développeurs SliTaz qui fournissaient des services en rapport à l'open source
-(cours GNU/Linux et support) pour financer et supporter la distribution. 
-Sans cela, SliTaz n'aurait peut-être jamais vu le jour sous cette forme.
-C'est-à-dire que lancer une nouvelle distribution n'a pas été décidé sur un
-coup de tête, cela prend du temps, demande du temps à long terme et engendre
-des frais. En mars 2009 nous avons crée 
+SliTaz se veut un projet indépendant et libre, au départ des développeurs SliTaz
+fournissaient des services en rapport à l'open source (cours GNU/Linux et support) 
+pour financer et supporter la distribution. Sans cela, SliTaz n'aurait peut-être 
+jamais vu le jour sous cette forme. C'est dire que lancer une nouvelle distribution 
+n'a pas été décidé sur un coup de tête, cela prend du temps, demande un suivi à long terme 
+et engendre des frais. En mars 2009 nous avons créé 
 <a href="../asso/">l'Association SliTaz GNU/Linux</a> afin de répondre aux
 besoins financiers du projet, d'en assurer la pérénité et de proposer
 une base professionelle à nos utilisateurs, membres et sponsors.
@@ -252,7 +251,7 @@ donnant une vue d'ensemble du site web. Le site fait partie du
 <p>
 Le site web de SliTaz a été mis en ligne le 24 février 2007, avec
 48 pages, la feuille de sytle CSS, et les images. Le site utilise le format
-xHTML 1.0 conforme aux normes du W3C. Le site est hébérgé sur le serveur du
+xHTML 1.0 conforme aux normes du W3C et il est hébérgé sur le serveur du
 projet SliTaz, actuellement chez Pankso, en Suisse romande. Les DNS et services
 mail sont propulsés par <a href="http://www.gandi.net/">Gandi</a>.
 </p>
@@ -267,7 +266,7 @@ en français a migré en avril 2009 vers
 <a name="reviews"></a>
 <h3>Revues de référence</h3>
 <p>
-SliTaz GNU/Linux a été signalée dans la i-presse, par des sites et des personnes de
+SliTaz GNU/Linux a été signalée dans la I-presse, par des sites et des personnes de
 référence dans le monde GNU/Linux. En voici une liste non-exhaustive : 
 </p>
 
@@ -337,3 +336,4 @@ Copyright &copy; 2009 <a href="http://www.slitaz.org/">SliTaz</a> -
 
 </body>
 </html>
+
