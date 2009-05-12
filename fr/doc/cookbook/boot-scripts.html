@@ -46,18 +46,18 @@ Les scripts de démarrage et d'arrêt avec leurs fichiers de configuration.
 <h3><font color="#6c0023">SliTaz et son démarrage</font></h3>
 
 <p>
-SliTaz n'utilise pas de niveau d'execution, tout le système est initialisé via
-un script principale et son fichier de configuration. Ce script lance lui-même
-quelque petits scripts qui s'occupe de l'internationalisation ou des options
-passé en ligne de commande au démarrage.
+SliTaz n'utilise pas de niveau d'éxecution, tout le système est initialisé via
+un script principal et son fichier de configuration. Ce script lance lui-même
+quelques petits scripts qui s'occupent de l'internationalisation ou des options
+passées en ligne de commande au démarrage.
 </p>
 
 <a name="init.d"></a>
 <h3><font color="#6c0023">/etc/init.d/* - Répertoire des scripts et démons</font></h3>
 <p>
-Le réperoire /etc/init.d contient tous les vrais scripts rc, les scripts
-finnissant par '.sh' sont de simples scripts shell, et les démons, tel 
-que 'dropbear' ou 'lighttpd', sont aussi de scripts mais qui lance un service.
+Le répertoire /etc/init.d contient tous les vrais scripts rc, les scripts
+finissant par '.sh' sont de simples scripts shell, et les démons, tels 
+que 'dropbear' ou 'lighttpd', sont aussi des scripts mais qui lancent un service.
 Les scripts des démons permettent de démarrer, arrêter, ou redémarrer un démon
 via la commande :
 </p>
@@ -66,20 +66,20 @@ via la commande :
 </pre>
 <p>
 Le répertoire /etc/init.d devrait déjà exister, si vous avez suivi le cookbook
-depuis le début. Si ce n'est pas le cas: <code>mkdir -p /etc/init.d</code>.
+depuis le début. Si ce n'est pas le cas : <code>mkdir -p /etc/init.d</code>.
 Sur SliTaz vous trouverez un fichier /etc/init.d/README décrivant le 
-fonctionnemnt de base des scripts rc. A noter aussi que tous les scripts de
+fonctionnement de base des scripts rc. A noter aussi que tous les scripts de
 démarrage et démons peuvent faire appel au fichier 
-<code>/etc/init.d/rc.functions</code>. Ce fichier permet d'inclure divers
+<code>/etc/init.d/rc.functions</code>. Ce fichier permet d'inclure diverses
 fonctions dans les scripts rc. SliTaz utilise une fonction <code>status</code>
-vérifiant si la commande précédante a réussi (0) ou pas.
+vérifiant si la commande précédente a réussi (0) ou pas.
 </p>
 
 <a name="rcS"></a>
 <h3><font color="#6c0023">/etc/init.d/rcS - Script d'initialisation principale</font></h3>
 <p>
 Le script <code>/etc/init.d/rcS</code> configure tous les services de base
-et initialise le système de base. Il commence par monter les systèmes de 
+et initialise le système de base. Il commence par, monter les systèmes de 
 fichiers, démarrer syslogd et klogd, lancer mdev, nettoyer le système, etc.
 Il utilise le fichier de configuration <code>/etc/rcS.conf</code> pour
 connaître les démons et scripts à lancer au démarrage. Vous pouvez parcourir
@@ -96,8 +96,8 @@ le script pour connaître en détail les commandes exécutées :
 <h4>bootopts.sh - Les options du mode LiveCD</h4>
 <p>
 Ce script est utilisé pour configurer les options du mode LiveCD, passées en
-ligne de commande au boot, et lisible via le fichier /proc/cmdline. C'est 
-le script qui permet d'utiliser une clé USB ou un disque dure externe comme
+ligne de commande au boot, et lisibles via le fichier /proc/cmdline. C'est 
+le script qui permet d'utiliser une clé USB ou un disque dur externe comme
 partition /home avec l'option home=usb ou home=sda[1-9], ou encore de spécifier
 directement la langue et le clavier à utiliser.
 </p>
@@ -106,9 +106,9 @@ directement la langue et le clavier à utiliser.
 <p>
 Le script network.sh utilise le fichier de configuration /etc/netwok.conf pour
 connaître l'interface à utiliser, si l'on veut lancer le client DHCP ou pas, 
-un IP fixe ou pas. Sur SliTaz le script /etc/init.d/network.sh configure les
-interfaces réseau au boot, en ce servant des infornations contenues dans
-/etc/network.conf. Si la variable $DHCP est égale à yes, alors le script 
+une IP fixe ou pas. Sur SliTaz le script /etc/init.d/network.sh configure les
+interfaces réseau au boot, en ce servant des informations contenues dans
+/etc/network.conf. Si la variable $DHCP est égale à <em>yes</em>, alors le script 
 /etc/init.d/network.sh lancera le client DHCP sur l'interface $INTERFACE.
 </p>
 
@@ -121,16 +121,16 @@ Ce script lance l'application 'tazlocale' que vous trouverez dans
 <a href="http://www.slitaz.org/get/tools.html">SliTaz tools</a>, si le fichier
 de configuration /etc/locale.conf n'existe pas. Nous utilisons le même processus
 pour la configuration du clavier en utilisant 'tazkmap' et le fichier de 
-configuration /etc/kmap.conf. Ces deux applications s'intallent dans 
-/sbin sur SliTaz, et utilise les bibliothèques ncurses, ainsi que dialog.
-Ce script vérifie aussi si le fichier de configuration du fuseau horaire
+configuration /etc/kmap.conf. Ces deux applications s'installent dans 
+/sbin sur SliTaz, et utilisent les bibliothèques ncurses, ainsi que dialog.
+Ce script vérifie également si le fichier de configuration du fuseau horaire
 /etc/TZ existe, sinon il le crée en se basant sur la configuration du clavier.
 </p>
 
 <h4>local.sh - Commande local</h4>
 <p>
-Création d'un script /etc/init.d/local.sh pour permettant à l'administrateur
-système d'ajouter facilement des commandes local exécutées au boot:
+Création d'un script /etc/init.d/local.sh permettant à l'administrateur
+système d'ajouter facilement des commandes local exécutées au boot :
 </p>
 <pre class="script">
 #!/bin/sh
@@ -145,9 +145,9 @@ echo "Starting local startup commands... "
 
 <h4>rc.shutdown</h4>
 <p>
-Ce script est invoqué par /etc/inittab lors de l'arrêt du système. Il stop
+Ce script est invoqué par /etc/inittab lors de l'arrêt du système. Il stoppe
 aussi tous les démons via la variable RUN_DAEMONS du fichier de configuration
-pricipale <code>/etc/rcS.conf</code>.
+principale <code>/etc/rcS.conf</code>.
 </p>
 
 <a name="inittab"></a>
@@ -155,7 +155,7 @@ pricipale <code>/etc/rcS.conf</code>.
 <p>
 Le premier fichier lu par le noyau au boot. Il définit le script d'initialisation
 (/etc/init.d/rcS), les shells, et les actions en cas d'arrêt ou de reboot. Vous
-trouverez une exemple complet et commenté dans l'archive de Busybox et un petit
+trouverez un exemple, complet et commenté, dans l'archive de Busybox et un petit
 sur cette page :
 </p>
 <pre class="script">
