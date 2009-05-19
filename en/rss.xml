@@ -23,18 +23,19 @@
 		<guid isPermaLink="true">http://2009.linuxdays.ch/</guid>
 		<pubDate>Thu, 19 May 2009 22:30:00 GMT</pubDate>
 		<description>
-	During the LinuxDays show in Switzerland, the association will hold a
-	booth in the Association Village and a lecture will be given on Wednesday
-	morning. The lecture is a case study based on a corporate view using a 
-	"SliTaz Business Server" with a switchboard, integrated ERP, mail, LDAP,
-	etc... During the 3 days, the exhibition stand will be manned by members
-	of the SliTaz project. The booth will offer demonstrations including the
-	creation of bootable USB keys (LiveUSB) and cdroms. The flavor of the 
-	LinuxDays LiveCD will contain a selection of software designed for mobile 
-	use. The exhibition lounge will also have a forum and we will gladly answer 
-	any questions. So feel free to visit us! Information can be found on the
-	exhibition website and SliTaz Labs: http://labs.slitaz.org/wiki/events/2009-linuxdays"
-	LinuxDays website: http://2009.linuxdays.ch/
+	During the LinuxDays show in Switzerland, the association will have 
+	a booth in the Association Village and a lecture will be given on 
+	Wednesday morning. The lecture is a case study with a corporate view 
+	based on using a "SliTaz Business Server" with a switchboard,
+	integrated ERP, mail, LDAP, etc... During the 3 days, the exhibition 
+	stand will be manned by members of the SliTaz project. The booth will 
+	offer demonstrations, including the creation of bootable USB keys 
+	(LiveUSB) and cdroms. The LinuxDays LiveCD will contain a selection 
+	of software designed for mobile use. The exhibition lounge will also 
+	have a forum and we will gladly answer any questions. So feel free 
+	to visit us! Information can be found on SliTaz Labs: 
+	http://labs.slitaz.org/wiki/events/2009-linuxdays and the exhibition 
+	website: http://2009.linuxdays.ch/
 		</description>
 	</item>
 	
