@@ -84,8 +84,8 @@ the GUI or the command <code>tazpkg get-install pkgname</code>.
 </p>
 
 <div style="text-align: center; padding: 20px;">
-<form method="POST" action="http://pkgs.slitaz.org/search.cgi">
-	<input type="hidden" name="lang" value="en">
+<form method="post" action="http://pkgs.slitaz.org/search.cgi">
+	<input type="hidden" name="lang" value="en" />
 	<select name="object">
 		<option value="Package">Package</option>
 		<option value="Depends">Depends</option>
@@ -93,13 +93,13 @@ the GUI or the command <code>tazpkg get-install pkgname</code>.
 		<option value="File_list">File list</option>
 	</select>
 	<strong>:</strong>
-	<input type="text" name="query" size="32">
+	<input type="text" name="query" size="32" />
 	<select name="version">
 		<option value="cooking">cooking</option>
 		<option value="stable">stable</option>
 		<option value="1.0">1.0</option>
 	</select>
-	<input type="submit" name="search" value="Search">
+	<input type="submit" name="search" value="Search" />
 </form>
 </div>
 
