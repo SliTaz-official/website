@@ -9,34 +9,62 @@
 		Actualités du projet de la mini distribution SliTaz GNU/Linux.
 	</description>
 	<copyright>Copyright © www.slitaz.org - GNU gpl</copyright>
-	<lastBuildDate>Thu, 16 April 2009 11:30:00 GMT</lastBuildDate>
+	<lastBuildDate>Thu, 19 May 2009 11:30:00 GMT</lastBuildDate>
+	
+	<image>
+		<title>Slitaz GNU/Linux (fr)</title>
+		<url>http://www.slitaz.org/pics/artwork/slitaz-spider-48x48.png</url>
+		<link>http://www.slitaz.org/fr/</link>
+	</image>
+	
+	<item>
+		<title>19 may 2009 - SliTaz aux LinuxDays 2009 (Genève)</title>
+		<link>http://www.slitaz.org/fr/asso/</link>
+		<guid isPermaLink="true">http://2009.linuxdays.ch/</guid>
+		<pubDate>Thu, 19 Mai 2009 22:30:00 GMT</pubDate>
+		<description>
+	Lors du salon LinuxDays en Suisse, l'association SliTaz tiendra un stand
+	dans le village associatif et une conférence sera donnée mercredi matin.
+	Le sujet de la conférence est une étude de cas d'un cabinet d'optique
+	utilisant "SliTaz Business Server" avec standard téléphonique, ERP intégré,
+	mail, LDAP, etc. Pendant les 3 jours du salon, le stand sera tenu par des
+	membres du projet SliTaz. Le stand proposera des démonstrations, la création
+	de clés USB bootables (LiveUSB) et des cdrom.
+	La saveur du LiveCD LinuxDays contiendra une sélection de logiciels pour
+	une utilisation nomade du système. Les salons sont aussi un lieu d'échanges
+	et nous répondrons volontiers aux questions, alors n'hésitez pas à venir 
+	nous voir! Organisation de l'événement et informations sur les Labs de SliTaz:
+	http://labs.slitaz.org/wiki/events/2009-linuxdays. Site web des LinuxDays: 
+	http://2009.linuxdays.ch/
+		</description>
+	</item>
 	
 	<item>
 		<title>16 april 2009 - Publication de SliTaz GNU/linux 2.0</title>
-		<link>http://www.slitaz.org/get/</link>
+		<link>http://www.slitaz.org/fr/get/</link>
 		<guid isPermaLink="true">http://www.slitaz.org/</guid>
 		<pubDate>Thu, 16 April 2009 11:30:00 GMT</pubDate>
 		<description>
-		Le projet SliTaz est fier d'annoncer la publication de SliTaz GNU/Linux
-		2.0, la nouvelle version stable de la distribution. Cette nouvelle version
-		est le résultat d'une année de travail communautaire, elle fournit un système
-		d'exploitation ultra-léger, rapide, stable et modulable. SliTaz propose 
-		un bureau graphique complet dans moins de 30 Mb, les applications nécessaires
-		à un serveur fiable et robuste, et environ 1400 paquets logiciels facilement
-		installables en quelques cliques de souris. Cette nouvelle version propose
-		le montage automatique des partitions (dont celles en NTFS), le support Wifi,
-		un bureau respectant les standards Freedesktop, le glisser-déposer, le
-		démarrage réseau via GPXE et boot.slitaz.org,
-		la détection automatique des périphériques PCI et USB, un gestionnaire
-		de paquets et un centre de contrôle graphique, ainsi que divers outils propres
-		à la distribution. La création de média USB bootable et de LiveCD à saveur,
-		a été grandement améliorée et simplifiée. Le LiveCD core inclut entre autres :  
-		Firefox 3.0.8, gFTP, LostIRC, ePDFView, mtPaint, Transmission, Osmo et 
-		Alsaplayer. La documentation du site a été mise à jour et vous pouvez consulter 
-		les notes de publication,
-		incluses dans la distribution, pour plus de détails sur cette version.
-		SliTaz GNU/Linux 2.0 est téléchargeable dès maintenant depuis les 
-		miroirs du projet
+	Le projet SliTaz est fier d'annoncer la publication de SliTaz GNU/Linux
+	2.0, la nouvelle version stable de la distribution. Cette nouvelle version
+	est le résultat d'une année de travail communautaire, elle fournit un système
+	d'exploitation ultra-léger, rapide, stable et modulable. SliTaz propose 
+	un bureau graphique complet dans moins de 30 Mb, les applications nécessaires
+	à un serveur fiable et robuste, et environ 1400 paquets logiciels facilement
+	installables en quelques cliques de souris. Cette nouvelle version propose
+	le montage automatique des partitions (dont celles en NTFS), le support Wifi,
+	un bureau respectant les standards Freedesktop, le glisser-déposer, le
+	démarrage réseau via GPXE et boot.slitaz.org,
+	la détection automatique des périphériques PCI et USB, un gestionnaire
+	de paquets et un centre de contrôle graphique, ainsi que divers outils propres
+	à la distribution. La création de média USB bootable et de LiveCD à saveur,
+	a été grandement améliorée et simplifiée. Le LiveCD core inclut entre autres :  
+	Firefox 3.0.8, gFTP, LostIRC, ePDFView, mtPaint, Transmission, Osmo et 
+	Alsaplayer. La documentation du site a été mise à jour et vous pouvez consulter 
+	les notes de publication,
+	incluses dans la distribution, pour plus de détails sur cette version.
+	SliTaz GNU/Linux 2.0 est téléchargeable dès maintenant depuis les 
+	miroirs du projet
 		</description>
 	</item>
 	
@@ -46,62 +74,36 @@
 		<guid isPermaLink="true">http://labs.slitaz.org/</guid>
 		<pubDate>Sun, 05 April 2009 11:30:00 GMT</pubDate>
 		<description>
-		Cherchant continuellement à améliorer la distribution et les 
-		services que nous proposons, nous sommes fier d'annoncer le 
-		lancement des laboratoires SliTaz ou SliTaz Labs. Cette platforme 
-		communautaire permet aux contributeurs de collaborer plus 
-		efficacement, de rapporter plus facilement des bugs ou demander
-		de nouvelles fonctionnalités. Les labs fournissent à chaque
-		projets un wiki, un tracker, un module d'annonces, etc. Les 
-		laboratoires fournissent une vue d'ensemble sur l'activité du 
-		projet et la publication de nouvelles régulières. N'héstez à vous 
-		inscrire, participer et commenter les annonces. Le projet et 
-		aussi fier d'annonçer 2 nouveaux miroirs: En Suisse, hébérgé par 
-		SWITCHmirror (10 Gbit/s) et en Chine hébérgé par LupaWorld, 
-		thanks a lot for supporting us.
+	Cherchant continuellement à améliorer la distribution et les 
+	services que nous proposons, nous sommes fier d'annoncer le 
+	lancement des laboratoires SliTaz ou SliTaz Labs. Cette platforme 
+	communautaire permet aux contributeurs de collaborer plus 
+	efficacement, de rapporter plus facilement des bugs ou demander
+	de nouvelles fonctionnalités. Les labs fournissent à chaque
+	projets un wiki, un tracker, un module d'annonces, etc. Les 
+	laboratoires fournissent une vue d'ensemble sur l'activité du 
+	projet et la publication de nouvelles régulières. N'héstez à vous 
+	inscrire, participer et commenter les annonces. Le projet et 
+	aussi fier d'annonçer 2 nouveaux miroirs: En Suisse, hébérgé par 
+	SWITCHmirror (10 Gbit/s) et en Chine hébérgé par LupaWorld, 
+	thanks a lot for supporting us.
 		</description>
 	</item>
 	
 	<item>
-		<title>Cooking 20090228 - Nouvelle Cooking</title>
+		<title>SliTaz à Solutionslinux 2009 (Paris)</title>
 		<link>http://www.slitaz.org/</link>
 		<guid isPermaLink="true">http://www.solutionslinux.fr/</guid>
 		<pubDate>Sun, 20 Mar 2009 22:50:00 GMT</pubDate>
 		<description>
-		Le projet SliTaz sera présent aux Solutionslinux 2009 à Paris, le stand
-		sera tenu par 3 membres actifs de l'équipe pendant les 3 jours du salon
-		et plusieurs autres contributeurs seront présents à certain moment. Sur
-		place vous aurez la possibilité de tester SliTaz sur divers machines
-		dont le EeePC, de créer (prenez une clé avec vous) ou d'acheter des
-		clés USB bootables ansi que des LiveCD à saveurs. Vous pourrez
-		aussi vous renseigner sur le projet et prendre contact avec les
-		membres de l'association et du team de développement.
-		</description>
-	</item>
-	
-	<item>
-		<title>Cooking 20090228 - Nouvelle Cooking</title>
-		<link>http://www.slitaz.org/get/#cooking</link>
-		<guid isPermaLink="true">http://www.slitaz.org/get/</guid>
-		<pubDate>Sun, 01 Mar 2009 10:50:00 GMT</pubDate>
-		<description>
-		En préparation de la prochaine version stable, le projet SliTaz est 
-		fier de publier une nouvelle version Cooking avec un grand nombre de 
-		corrections, mises à jour et nouvelles fonctionnalités. 
-		L'auto-détection des périphériques PCI/USB est maintenant gérée par 
-		Tazhw et les firmwares peuvent être installés via un simple click 
-		dans l'interface graphique dédiée. Tazndis a aussi une simple box 
-		permettant de gérer facilement des pilotes (drivers) Windows. Le 
-		gestionnaire de paquets graphique est bien plus simple à utiliser, 
-		la création de LiveUSB (ex: clé USB) peut se faire en un ou deux 
-		cliques de souris. L'interface de configuration du réseau affiche 
-		une jolie liste des connexions disponibles et la nouvelle Wifibox 
-		permet de se connecter à différents réseaux, créer des favoris et 
-		configurer les pilotes manuellement ou via Tazhw. Le bureau fourni 
-		maintenant une interface permettant de gérer les applications lançées 
-		avec la session Openbox et Ivman avec desktopbox fournissent un 
-		système de notification simple et léger. Vous pouvez télécharger 
-		cette nouvelle image ISO depuis la partie téléchargement.
+	Le projet SliTaz sera présent aux Solutionslinux 2009 à Paris, le stand
+	sera tenu par 3 membres actifs de l'équipe pendant les 3 jours du salon
+	et plusieurs autres contributeurs seront présents à certain moment. Sur
+	place vous aurez la possibilité de tester SliTaz sur divers machines
+	dont le EeePC, de créer (prenez une clé avec vous) ou d'acheter des
+	clés USB bootables ansi que des LiveCD à saveurs. Vous pourrez
+	aussi vous renseigner sur le projet et prendre contact avec les
+	membres de l'association et du team de développement.
 		</description>
 	</item>
 	
