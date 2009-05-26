@@ -12,6 +12,17 @@
 	<lastBuildDate>Fri, 17 Api 2009 13:15:00 GMT+8</lastBuildDate>
 
 	<item>
+		<title>2009年5月19日 SliTaz 出席日内瓦LinuxDays 2009</title>
+		<link>http://www.slitaz.org/en/asso/</link>
+		<guid isPermaLink="true">http://2009.linuxdays.ch/</guid>
+		<pubDate>Thu, 19 May 2009 22:30:00 GMT</pubDate>
+		<description>
+LinuxDays在日内瓦进行期间，Slitaz协会会在Association Village出现，并且会在星期三发布演讲。这个演讲主要讲述"SliTaz Business Server" 在邮件服务器、嵌入式设备等方面的应用。
+在这三天里，工作组成员将会详细策划Slitaz展览。我们还会对Slitaz进行宣传，包括创建可启动U盘（LiveUSB）和CD。LinuxDays LiveCD会包括不少设计用于移动的软件。你也可以到现场给我们提问，和我们聊天。你可以在SliTaz实验室和 2009.linuxdays.ch 找到相关资料。
+		</description>
+	</item>
+
+	<item>
 		<title>2009年4月16日 SliTaz GNU/linux 2.0 发布</title>
 		<link>http://www.slitaz.org/cn/</link>
 		<guid isPermaLink="true">http://www.slitaz.org/cn/</guid>

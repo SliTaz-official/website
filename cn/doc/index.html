@@ -2,38 +2,45 @@
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cn" lang="cn">
 <head>
-    <title>SliTaz - 软件包</title>
+    <title>SliTaz - 中文文档</title>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    <meta name="description" content="SliTaz GNU/Linux LiveCD" />
-    <meta name="keywords" lang="en" content="System, free, gnu, linux, software opensource, livecd LINUX in RAM, 系统, 免费, Linux, 开源, 软件, 内存系统" />
+    <meta name="description" content="SliTaz GNU/Linux 中文文档" />
+    <meta name="keywords" lang="cn" content="System, free, gnu, linux, opensource software, livecd in RAM, Slitaz文档. Slitaz帮助" />
     <meta name="robots" content="index, follow, all" />
     <meta name="revisit-after" content="7 days" />
     <meta name="expires" content="never" />
-    <meta name="modified" content="2009-04-18 10:20:00" />
+    <meta name="modified" content="2009-05-8 21:00:00" />
     <meta name="author" content="Draplater"/>
     <meta name="publisher" content="www.slitaz.org" />
     <link rel="shortcut icon" href="../../favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="../../slitaz.css" />
+    <link rel="stylesheet"  type="text/css" href="../../slitaz.css" />
     <link rel="Content" href="#content" />
 </head>
+<!--
+    Please check your code with the W3C validator before publishing any documents.
+-->
 <body bgcolor="#ffffff">
+
 <!-- Header -->
 <div id="header">
     <a name="top"></a>
 <!-- Access -->
 <div id="access">
-    Language:
-    <a href="../../de/packages/">Deutsch</a> |
-    <a href="../../fr/packages/">Français</a> |
-	<a href="../../pt/packages/">Português</a>
+    语言:
+    <a href="../../en/doc/" title="English Documentation">English</a> |
+    <a href="../../fr/doc/" title="Documentation française">Français</a> |
+	<a href="../../pt/doc/" title="Documentação em Português">Português</a>
 </div>
     <a href="http://www.slitaz.org/cn/"><img id="logo"
-    src="../../pics/website/logo.png" title="www.slitaz.org/cn" alt="www.slitaz.org"
+    src="../../pics/website/logo.png" title="www.slitaz.org" alt="www.slitaz.org"
     style="border: 0px solid ; width: 200px; height: 74px;" /></a>
     <p id="titre">#!/GNU/Linux</p>
 </div>
+
+<!-- Navigation menu -->
 <div id="nav">
 <div id="nav_top"></div>
+<!-- General -->
 	<ul>
 		<li><a href="../about/" title="关于Slitaz的信息">关于</a></li>
 		<li><a href="../get/" title="下载 - LiveCD ISO文件">获取 SliTaz</a></li>
@@ -67,57 +74,37 @@
 <div id="content">
 <a name="content"></a>
 
-<h1><font color="#3e1220">软件包</font></h1>
-<h2><font color="#df8f06"># tazpkg get-install pkg</font></h2>
+<h1><font color="#3e1220">中文文档</font></h1>
+<h2><font color="#df8f06">使用指南 &amp; 开发指南</font></h2>
 
-<p>
-这个页面可以显示Slitaz软件源上的所有软件包，并且会每天自动更新。你可以使用图形界面工具“软件之盒”或命令<code>tazpkg get-install pkgname</code>安装软件包。
-</p>
+<ul>
+	<li><a href="http://wiki.slitaz.org/doku.php?id=lang:cn:handbook">使用指南</a> - 这本使用指南是Slitaz社区为Slitaz初级用户提供的文档。这本指南能帮助你快速在Slitaz起步，可以帮助你把Slitaz改变成你需要的系统。我们建议你首先阅读这本手册。这本手册包括关于LiveCD指南，软件包管理，网络管理，系统管理的内容和一些软件的帮助。</li>
+	<li>开发指南 - （未翻译完成）</li>
+	<li>制作指南 - （未翻译完成）</li>
+</ul>
+	
+<h2><font color="#df8f06">手册</font></h2>	
+<ul>
+	<li><a href="http://wiki.slitaz.org/doku.php?id=lang:cn:manual:tazpkg">Tazpkg手册</a> -  Slitaz软件包管理器</li>
+	<li><a href="http://wiki.slitaz.org/doku.php?id=lang:cn:manual:tazlito">Tazlito 手册</a> -  Slitaz Live CD 工具</li>
+	<li>TazUSB 手册 -  Slitaz Live USB 工具（未翻译完成）</li>
+	<li>Tazwok 手册 -  Slitaz软件烹饪锅（未翻译完成）</li>
+</ul>
 
-<div style="text-align: center; padding: 20px;">
-<form method="post" action="http://pkgs.slitaz.org/search.cgi">
-	<input type="hidden" name="lang" value="cn" />
-	<select name="object">
-		<option value="Package">软件包：</option>
-		<option value="Depends">Depends</option>
-		<option value="File">File</option>
-		<option value="File_list">File list</option>
-	</select>
-	<input type="text" name="query" size="32" />
-	<select name="version">
-		<option value="cooking">开发版(cooking)</option>
-		<option value="stable">稳定版(stable)</option>
-		<option value="1.0">1.0</option>
-	</select>
-	<input type="submit" name="search" value="Search" />
-</form>
-</div>
-
-<h3>稳定版</h3>
+<h2><font color="#df8f06">Wiki资源</font></h2>	
 <p>
-稳定版软件包查看页面：
-<a href="http://pkgs.slitaz.org/stable/">稳定版软件包</a>
-</p>
-<p>
-稳定版软件包列表文件： <a 
-    href="http://mirror.slitaz.org/packages/2.0/packages.list"
-    >packages.list</a> | <a 
-    href="http://mirror.slitaz.org/packages/2.0/packages.txt"
-    >packages.txt</a>
+The <a href="http://wiki.slitaz.org/">Wiki</a> 包括许多非官方Slitaz文档，例如常见问题、小提示、未修复BUG等。你可以自由编辑Wiki。
 </p>
 
-<h3>开发版</h3>
+<h2><font color="#df8f06">发行笔记</font></h2>
 <p>
-开发版软件包查看页面：
-<a href="http://pkgs.slitaz.org/cooking/">开发版软件包</a>
+（未翻译完成）
 </p>
-<p>
-开发版软件包列表文件： <a 
-    href="http://mirror.slitaz.org/packages/cooking/packages.list"
-    >packages.list</a>
-    | <a href="http://mirror.slitaz.org/packages/cooking/packages.txt"
-    >packages.txt</a>
-</p>
+
+<ul>
+	<li><a href="../../en/doc/releases/2.0/relnotes.en.html">SliTaz GNU/Linux 2.0 - 发行笔记</a></li>
+	<li><a href="../../en/doc/releases/1.0/relnotes.en.html">SliTaz GNU/Linux 1.0 - 发行笔记</a></li>
+</ul>
 
 <!-- End of content with round corner -->
 </div>
@@ -129,11 +116,11 @@
 <!-- Start of footer and copy notice -->
 <div id="copy">
 <p>
-最后更改 : 2008-07-16 23:00:00 -
+最后更新 : 2009-05-8 21:00:00 -
 <a href="#top">页首</a>
 </p>
 <p>
-版权所有 &copy; 2008 <a href="http://www.slitaz.org/en/">SliTaz</a> -
+版权所有 &copy; 2008 <a href="http://www.slitaz.org/">SliTaz</a> -
 <a href="http://www.gnu.org/licenses/gpl.html">GNU通用公共许可证</a>
 </p>
 <!-- End of copy -->
