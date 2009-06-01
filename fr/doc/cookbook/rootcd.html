@@ -29,7 +29,7 @@
 
 <h2><font color="#DF8F06">Rootcd</font></h2>
 <p>
-Déscriptions et améliorations des fichiers contenus sur le cdrom.
+Descriptions et améliorations des fichiers contenus sur le cdrom.
 </p>
 
 <ul>
@@ -44,11 +44,11 @@ Déscriptions et améliorations des fichiers contenus sur le cdrom.
 <a name="syslinux"></a>
 <h3><font color="#6c0023">Syslinux/isolinux</font></h3>
 <p>
-Syslinux et le bootloader principale de SliTaz, nous utilisons la version
+Syslinux et le bootloader principal de SliTaz, nous utilisons la version
 isolinux pour faire démarrer le système contenu sur le cd-rom. Il est simple,
 efficace, et largement configurable. Isolinux a été installé lors de la 
 création du système de base : <a href="base-system.html">Base system</a>.
-Le binaire est isolinux.bin, et le fichier de configuration est: isolinux.cfg.
+Le binaire est isolinux.bin, et le fichier de configuration est isolinux.cfg.
 Voici un exemple d'isolinux.cfg, utilisant isolinux.msg pour afficher l'image
 splash, et utilisant des fichiers d'aides affichables via F1, F2, F3, etc. Vous
 trouverez un fichier help.txt, options.txt, etc, dans SliTaz tools :
@@ -72,17 +72,17 @@ F4 display.txt
 <h3><font color="#6c0023">Splash image au boot d'isolinux</font></h3>
 <p>
 Nous pouvons configurer isolinux pour avoir une jolie image au boot de SliTaz,
-ou tout autres système utilisant isolinux. Cette image à un format particulier
+ou tous autres systèmes utilisant isolinux. Cette image à un format particulier
 .lss, propre à Syslinux, et elle doit être au mode indexé de 16 couleurs. Vous
-pouvez utiliser le logo officiel, ppmforge, imagemagic, Gimp, ou autre pour
+pouvez utiliser le logo officiel, ppmforge, imagemagic, Gimp, ou autres pour
 créer votre image.
 </p>
 <p>
 L'archive de Syslinux fourni un logo officiel (sample/syslogo.lss) que vous
 pouvez directement utiliser en le copiant dans la racine du cd-rom. SliTaz
-fourni un logo (rootcd/boot/isolinux/splash.lss) que vous trouverez dans
+fournit un logo (rootcd/boot/isolinux/splash.lss) que vous trouverez dans
 l'archive des SliTaz tools. Pour afficher l'image au boot, il faut que l'option
-'display' appelle le fichier isolinux.msg, qui lui charge l'image au format 
+'display' appelle le fichier isolinux.msg, qui lui, charge l'image au format 
 *.lss. A noter que le fichier isolinux.msg, utilise des caractères ASCII 24.
 Exemple de création avec 'echo', d'un fichier isolinux.msg utilisant une image
 splash.lss :
@@ -91,14 +91,14 @@ splash.lss :
  # echo -e "\24isplash.lss\n" > isolinux.msg
 </pre>
 <p>
-Vous pouvez aussi ajouter un message texte afficher sous l'image splash en
+Vous pouvez aussi ajouter un message texte, affiché sous l'image splash, en
 modifiant ce fichier avec un éditeur de texte, echo, ou cat.
 </p>
 
 <a name="isolinux-iso"></a>
 <h3><font color="#6c0023">ISO bootable avec isolinux</font></h3>
 <p>
-Pour créer un image ISO bootable, en utilisant isolinux, et genisoimage :
+Pour créer une image ISO bootable, en utilisant isolinux, et genisoimage :
 </p>
 <pre>
  # genisoimage -R -o slitaz-test.iso -b boot/isolinux/isolinux.bin \
@@ -110,11 +110,11 @@ Pour créer un image ISO bootable, en utilisant isolinux, et genisoimage :
 <h3><font color="#6c0023">GRUB</font></h3>
 <p>
 GRUB (GRand Unified Bootloader), est un bootloader distribué par le projet GNU.
-C'est lui que nous utilisons lors d'une installation sur disque dure, il peut
+C'est lui que nous utilisons lors d'une installation sur disque dur, il peut
 booter Linux, BSD, Hurd, et Window$. GRUB fournit l'image stage2_eltorito pour
 faire démarrer les images ISO. Pour trouver stage2_eltorito sur votre système,
 il faut que le paquet GRUB soit installé. Pour finir vous devez copier 
-stage2_eltorito dans le racine du cdrom. A noter que SliTaz fournit un paquet 
+stage2_eltorito dans la racine du cdrom. A noter que SliTaz fournit un paquet 
 (.tazpkg) de grub-0.97, que vous trouverez sur les miroirs et vous pouvez
 aussi recompiler grub-0.97 depuis les sources. Exemple de copie de l'image
 <code>stage2_eltorito</code> depuis un système Debian ou SliTaz :
@@ -150,7 +150,7 @@ title  SliTaz GNU/Linux 1.0 (vga 1024x768) (Kernel 2.6.20)
 <a name="grub-iso"></a>
 <h3><font color="#6c0023">ISO bootable avec GRUB</font></h3>
 <p>
-Pour créer un image ISO bootable, en utilisant GRUB, et genisiimage ou mkisofs :
+Pour créer une image ISO bootable, en utilisant GRUB, et genisoimage ou mkisofs :
 </p>
 <pre>
  # genisoimage -R -o slitaz-test.iso -b boot/grub/stage2_eltorito \
@@ -175,22 +175,22 @@ l'archive, et copie du binaire précompilé :
  # cd ../..
 </pre>
 <p>
-Une fois installé, vous pouvez ajouter un label pour memtest86 au fichier:
-isolinux.cfg en spécifiant le chemin vers l'utilitaire :
+Une fois installé, vous pouvez ajouter un label pour memtest86 au fichier
+isolinux.cfg, en spécifiant le chemin vers l'utilitaire :
 </p>
 <pre class="script">
 label memtest
 	kernel /boot/memtest
 </pre>
 <p>
-Ou si vous voulez utiliser GRUB, les lignes pour lancer memtest86 sont:
+Ou si vous voulez utiliser GRUB, les lignes pour lancer memtest86 sont :
 </p>
 <pre class="script">
 title 	Memtest86 (Test system memory)
 kernel 	/boot/memtest
 </pre>
 <p>
-Une fois les lignes ajoutées, vous pouvez créer un nouvelle ISO, et la tester. 
+Une fois les lignes ajoutées, vous pouvez créer une nouvelle ISO, et la tester. 
 </p>
 
 <!-- End of content -->
@@ -206,7 +206,7 @@ Une fois les lignes ajoutées, vous pouvez créer un nouvelle ISO, et la tester.
 <div id="copy">
     Copyright © 2007 <a href="http://www.slitaz.org/">SliTaz</a> -
     <a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>;<br />
-    Documentation publiées sous
+    Documentation publiée sous
     <a href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License</a>
     et codée en <a href="http://validator.w3.org/">xHTML 1.0 valide</a>.
 </div>
