@@ -34,7 +34,7 @@
 	<li><a href="#utils">Les utilitaires du projet.</a></li>
 	<li><a href="#wok">Woking</a> - Utiliser le wok.</li>
 	<li><a href="#cook">Compiler et générer des paquets.</a></li>
-	<li><a href="#opts">Options de compilations des paquets.</a></li>
+	<li><a href="#opts">Options de compilation des paquets.</a></li>
 	<li><a href="#files">Fichiers inclus ou exclus des paquets.</a></li>
 	<li><a href="#categories">Catégories des paquets.</a></li>
 	<li><a href="#woktree">Structure d'un paquet dans le wok.</a></li>
@@ -45,19 +45,19 @@
 <a name="utils"></a>
 <h3>Les utilitaires du projet</h3>
 <p>
-Au file du temps le projet SliTaz à créer divers petits utilitaires permettant
+Au fil du temps le projet SliTaz a créé divers petits utilitaires permettant
 de reconstruire le système depuis les sources et de façon automatique.
 <a href="http://www.slitaz.org/get/tazwok.html">Tazwok</a> est utilisé pour
 compiler et générer des paquets (<em>cook</em> pour cuire) via 
 les intructions trouvées dans <a href="receipts.html">les recettes</a>. Le 
 projet propose aussi une archive d'outils contenant divers petits utilitaires,
 des exemples et des fichiers de configuration. Le générateur de distribution
-<em>Live</em> Tazlito (SliTaz Live Tool), déstiné aux utilisateurs
+<em>Live</em> Tazlito (SliTaz Live Tool), destiné aux utilisateurs
 et développeurs. Tazlito permet d'extraire et reconstruire une image ISO 
-de LiveCD et de générer des distributions à saveure depuis une liste de
+de LiveCD et de générer des distributions à saveur depuis une liste de
 paquets, un fichier de configuration et une description. Les utilitaires sont
 tous distribués sous forme d'archive source et sont installés par défaut sur
-SliTaz. Les développeurs ou futur contributeurs peuvent se référencer à la page 
+SliTaz. Les développeurs ou futurs contributeurs peuvent se référer à la page 
 <a href="http://www.slitaz.org/devel/forge.html">forge</a> donnant des
 informations sur la gestion du projet SliTaz.
 </p>
@@ -88,7 +88,7 @@ d'installer le meta-paquet <code>slitaz-toolchain</code> :
 <h4>Récupérer le wok</h4>
 <p>
 Pour travailler il faut récupérer le wok depuis le dépôt Mercurial ou depuis
-une archive sur le miroir principale (TuxFamily) de Slitaz. En supposant que 
+une archive sur le miroir principal (TuxFamily) de Slitaz. En supposant que 
 SliTaz se construit dans <code>/home/slitaz</code> :
 </p>
 <pre>
@@ -102,7 +102,7 @@ semble. Avant de compiler son premier paquet il faut configurer Tazwok pour
 qu'il trouve le wok préalablement téléchargé. Par défaut le chemin est
 <code>/home/slitaz/wok</code>, vous pouvez le changer ou renommer le wok
 téléchargé. Pour afficher/vérifier les chemins que Tazwok va utiliser et
-le nombres de paquet disponibles dans le wok, vous pouvez utiliser la
+le nombre de paquets disponibles dans le wok, vous pouvez utiliser la
 commande <code>stats</code> de Tazwok :
 </p>
 <pre>
@@ -112,8 +112,8 @@ commande <code>stats</code> de Tazwok :
 <a name="cook"></a>
 <h3>Compiler et générer des paquets</h3>
 <p>
-Configuer, compiler, striper, générer le paquet SliTaz et le compresser peut
-se faire en une seule commandes. Pour éviter toute frustration... il est
+Configurer, compiler, striper, générer le paquet SliTaz et le compresser peut
+se faire en une seule commande. Pour éviter toute frustration... il est
 conseillé de commencer par construire un paquet, sans modifier sa recette, et
 ne demandant pas de dépendances. M4 est idéal pour se lancer et cuire (cook) :
 </p>
@@ -121,15 +121,15 @@ ne demandant pas de dépendances. M4 est idéal pour se lancer et cuire (cook) :
  # tazwok cook m4
 </pre>
 <p>
-Une fois le travail fini, le paquet SliTaz se trouvent dans le repositoire
+Une fois le travail fini, le paquet SliTaz se trouvent dans le répertoire
 spécifié dans la configuration (Par défaut <code>/home/slitaz/packages</code>).
 Si tout c'est bien passé, vous pouvez installer le paquet sur le système hôte
 ou l'utiliser pour générer votre distribution LiveCD via
 <a href="http://www.slitaz.org/doc/manuals/tazlito.html">Tazlito</a>. Pour
 créer un nouveau paquet vous pouvez utiliser la commande <code>new-tree</code>
-avec l'option <code>--interactive</code> et lire la document au sujet des
-possibilités proposée par <a href="receipts.html">les recettes</a> des paquets.
-Toutes les commandes disponibles avec Tazwok sont décrite dans :
+avec l'option <code>--interactive</code> et lire la documentation à propos des
+possibilités proposées par <a href="receipts.html">les recettes</a> des paquets.
+Toutes les commandes disponibles avec Tazwok sont décrites dans :
 <a href="http://www.slitaz.org/doc/manuals/tazwok.html">Tazwok manual</a>
 </p>
 <h4>Cooklists - Liste de cuisson</h4>
@@ -148,11 +148,11 @@ avec un paquet par ligne. Exemple avec mypkgs.cooklist :
 <p>
 Vous êtes libre d'utiliser les options de compilation que vous désirez, il faut
 juste respecter le FSH, la doc dans /usr/share/doc par exemple et suivre les
-standards de Freedesktop (.desktop en autre). Ensuite c'est une questions de 
+standards de Freedesktop (.desktop en autre). Ensuite c'est une question de 
 choix, on peut par exemple désactiver le support XML pour avoir un binaire PHP
 plus petit et se débarasser de libxml2, mais dans le cas de PHP le gain de 
 place ne vaut pas le coup par rapport aux pertes de fonctionnailtés. Si vous
-avez des doutes, regardez des recettes existantes et leure options de
+avez des doutes, regardez des recettes existantes et leurs options de
 compilation dans <code>compile_rules</code>.
 </p>
 <h4>Optimisation</h4>
@@ -160,7 +160,7 @@ compilation dans <code>compile_rules</code>.
 Les paquets SliTaz officiels sont optimisés pour i486, les options
 d'optimisation passées en arguments à configure sont spécifiées dans le 
 fichier de configuration de Tazwok (<code>/etc/tazwok.conf</code>) et peuvent 
-être appelées via la variable <code>$CONFIGURE_ARGS</code>. Si vous voulez 
+être appelées par la variable <code>$CONFIGURE_ARGS</code>. Si vous voulez 
 compiler un paquet avec des arguments différents, vous pouvez modifier le
 fichier de configuration de Tazwok :
 </p>
@@ -171,21 +171,21 @@ CONFIGURE_ARGS="--build=i486-pc-linux-gnu --host=i486-pc-linux-gnu"
 <a name="files"></a>
 <h3>Fichiers inclus ou exclus des paquets</h3>
 <p>
-Au sujet des fichiers à inclures ou exclures du paquet, l'idée et de mettre le
+Au sujet des fichiers à inclure ou exclure du paquet, l'idée est de mettre le
 minimum dans le paquet de base et de créer des paquets séparés pour les
 fichiers optionnels ou de développement. En général, les paquets de base ne
-contiennent pas de man, info, doc ou librairies statique, il faut créer un
+contiennent pas de man, info, doc ou librairies statiques, il faut créer un
 paquet-doc ou paquet-dev. A noter que SliTaz ne propose pas la commande man ou
 info, donc pas de manuel ou fichier GNU info et que la création de paquets
 contenant la doc est vraiment en option, surtout si la documentation est en
-English. Par contre, un bout de texte au sujet du paquet dans le Handbook est
+anglais. Par contre, un bout de texte au sujet du paquet dans le Handbook est
 plus qu'apprécié.
 </p>
 <p>
-Au niveau des fichiers de configuration, quand c'est possible, le but est de
-proposer des fichiers de configurations de base permettant de faire fonctionner
+À propos des fichiers de configuration, quand c'est possible, le but est de
+proposer des fichiers de configuration de base permettant de faire fonctionner
 directement le paquet. Dans le cas du serveur Web LightTPD, le paquet SliTaz
-fourni des fichiers de configuration fait maison et le script de démarrage du
+fournit des fichiers de configuration fait maison et le script de démarrage du
 démon situé dans /etc/init.d, le tout documenté dans le Handbook. Pour un
 nouveau paquet, vous êtes libre de choisir sa configuration par défaut en
 fonction de ce qui vous semble le plus simple pour l'utilisateur final. Sur
@@ -197,29 +197,29 @@ exemples de configuration ou autres types d'exemples utiles.
 <h3>Catégories des paquets</h3>
 <p>
 Les catégories des paquets existent à titre d'information et ne sont pas encore
-vraiment figée. L'idée est de classer les paquets pour une futur interface web
-dont les pages seraient générée chaque nuit depuis le wok en récupérant les
+vraiment figées. L'idée est de classer les paquets pour une future interface web
+dont les pages seraient générées chaque nuit depuis le wok en récupérant les
 données dans les recettes des paquets. Dans l'immédiat, les paquets de 
-développement dans 'devel', Xorg et compagnie dans 'x-window' et la plus part
+développement sont dans 'devel', Xorg et compagnie dans 'x-window' et la plupart
 des nouveautés dans 'extra'.
 </p>
 
 <a name="woktree"></a>
 <h3>Structure d'un paquet dans le wok</h3>
 <p>
-La structure des paquets dans le wok devraient être respectée si l'on veut que
+La structure des paquets dans le wok devrait être respectée si l'on veut que
 Tazwok trouve les bons fichiers et répertoires. Contenu possible d'un paquet
 (le répertoire taz/ est créé lors le la cuission) :
 </p>
 <ul>
-	<li><code>stuff/</code> : Le matériel utilisé pour configurer, compiler et
+	<li><code>stuff/</code> : le matériel utilisé pour configurer, compiler et
 	générer le paquet (patche(s), Makefile, pseudo fs, etc).</li>
-	<li><code>taz/</code> : Répertoire contenant l'arbre du paquet Tazpkg 
+	<li><code>taz/</code> : répertoire contenant l'arbre du paquet Tazpkg 
 	généré, le paquet compressé est stocké dans le répertoire spécifié par 
 	$PACKAGES_REPOSITORY du fichier de configuration de Tazwok.</li>
-	<li><code>receipt</code> : La recette de cuisine (voir 
+	<li><code>receipt</code> : la recette de cuisine (voir 
 	<a href="receipts.html">receipts</a>).</li>
-	<li><code>description.txt</code> : La description du paquet (en option) est copiée
+	<li><code>description.txt</code> : la description du paquet (en option) est copiée
 	à la racine du paquet Tazpkg. Une fois installé, 'tazpkg' sait
 	traiter ce fichier via la commande 'tazpkg desc pkgname'.</li>
 </ul>
@@ -231,11 +231,11 @@ Les paquets SliTaz sont des archives cpio contenant un système de fichiers
 compressé avec gzip et des fichiers :
 </p>
 <ul>
-	<li><code>fs/</code> : Pseudo système de fichiers contenant tous les
+	<li><code>fs/</code> : pseudo système de fichiers contenant tous les
 	fichiers à installer.</li>
-	<li><code>receipt</code> : La recette de cuisine (voir receipt.txt).</li>
-	<li><code>files.list</code> : Liste des fichiers contenus dans le paquet.</li>
-	<li><code>description.txt</code> : La description du paquet (en option).</li>
+	<li><code>receipt</code> : la recette de cuisine (voir receipt.txt).</li>
+	<li><code>files.list</code> : liste des fichiers contenus dans le paquet.</li>
+	<li><code>description.txt</code> : la description du paquet (en option).</li>
 </ul>
 
 <!-- End of content -->
@@ -251,7 +251,7 @@ compressé avec gzip et des fichiers :
 <div id="copy">
     Copyright © 2007 <a href="http://www.slitaz.org/">SliTaz</a> -
     <a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>;<br />
-    Documentation publiées sous
+    Documentation publiée sous
     <a href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License</a>
     et codée en <a href="http://validator.w3.org/">xHTML 1.0 valide</a>.
 </div>
