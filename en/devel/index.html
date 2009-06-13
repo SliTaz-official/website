@@ -9,7 +9,7 @@
     <meta name="robots" content="index, follow, all" />
     <meta name="revisit-after" content="7 days" />
     <meta name="expires" content="never" />
-    <meta name="modified" content="2008-07-16 21:45:00" />
+    <meta name="modified" content="2009-06-13 21:15:00" />
     <meta name="author" content="Christophe Lincoln"/>
     <meta name="publisher" content="www.slitaz.org" />
     <link rel="shortcut icon" href="../../favicon.ico" />
@@ -76,14 +76,19 @@
 <h2><font color="#df8f06">SliTaz Developers corner</font></h2>
 
 <ul>
+	<li><a href="#kiss">KISS and comply to standards.</a></li>
 	<li><a href="#tank">Build host &amp; home.</a></li>
 	<li><a href="#repos">Mercurial repositories.</a></li>
+	<li><a href="#iconv">Implementation of iconv().</a></li>
 	<li><a href="#pkgs">Tazpkg packages.</a></li>
+	<li><a href="#pkgs-naming">Naming of packages.</a></li>
 	<li><a href="#website">Website Management.</a></li>
+	<li><a href="#xhtml">xHTML coding style.</a></li>
 	<li><a href="../mailing-list.html">Mailing List.</a></li>
 	<li><a href="../doc/cookbook/wok-tools.html">Wok &amp; Tools.</a></li>
 	<li>Mercurial Repositories: <a href="http://hg.slitaz.org" >hg.slitaz.org</a></li>
-    <li>SliTaz Laboratories: <a href="http://labs.slitaz.org/">labs.slitaz.org</a></li>
+	<li>SliTaz Laboratories: <a href="http://labs.slitaz.org/">labs.slitaz.org</a></li>
+	<li><a href="http://labs.slitaz.org/wiki/distro">Developers Wiki</a></li>	
 </ul>
 
 <p>
@@ -100,6 +105,17 @@ repo if needed and contributors have write access to correct typos, scripts, etc
 SliTaz is a tiny community and listens to its users. There are several 
 developers who are active on the <a href="http://forum.slitaz.org/">forum</a>
 and the <a href="../mailing-list.html">Mailing List</a>.
+</p>
+
+<a name="kiss"></a>
+<h3>KISS and comply to standards</h3>
+<p>
+Keep it simple: follow the best standards, carefully draft and write
+high quality documentation, provide a stable and robust system and keep
+the <em>rootfs</em> on the LiveCD light enough to run on machines with at 
+least 128 MB RAM. It's also possible to use GTK+2, Dialog, SHell scripts, 
+or PHP coding tools on the distribution. The idea is not to duplicate and 
+to think small...
 </p>
 
 <a name="tank"></a>
@@ -186,6 +202,14 @@ Hg commands that can be used.
 	<li><code>hg head</code> : Display the last log.</li>
 </ul>
 
+<a name="iconv"></a>
+<h3>Implementation of iconv()</h3>
+<p>
+SliTaz uses iconv() provided by GNU glibc - some packages that offer 
+<code>libiconv</code> must use the version of glibc (<code>glibc-locale</code>). 
+There is therefore no longer a libiconv package (1.2 MB) in SliTaz.
+</p>
+
 <a name="pkgs"></a>
 <h3>Tazpkg Packages</h3>
 <p>
@@ -214,6 +238,15 @@ and that the documentation of the
 exists to help you get started.
 </p>
 
+<a name="pkgs-naming"></a>
+<h3>Naming of packages</h3>
+<p>
+In most cases the package name is the same as the source, except for
+Python modules, Perl, PHP, Ruby and Lua. For example, the package
+providing a Kid template system written in Python and XML is named:
+<code>python-kid</code>.
+</p>
+
 <a name="website"></a>
 <h3>Website Management and Books</h3>
 <p>
@@ -226,7 +259,45 @@ a mercurial repository, they can be cloned by:
  $ hg clone http://repos.slitaz.org/website
 </pre>
 
-<h4>Diff and patch</h4>
+<a name="xhtml"></a>
+<h3>xHTML coding style</h3>
+<p>
+The pages and different <em>books</em> are coded in xHTML 1.0
+transitional. The colors for the <code>body</code> and the titles
+are placed directly on the page so the links are easy to follow.
+The title of level 1 is used only once (at the top), level 2 is
+the title of the document and levels 3 and 4 are then used for
+the subtitles. If a list is used instead using smart anchors;
+then that starts at the top, just after the title of level 2.
+Paragraphs are contained in the tags <code>&lt;p&gt;&lt;/p&gt;</code>. 
+For indentation, we use tabs - the reason being semantics and to take 
+up less space in terms of octets (bytes). To put code, like the name of
+a command inside a paragraph: <code>&lt;code&gt;</code> is the preferred 
+method. To view commands or to utilize a terminal, the web pages use
+<code>&lt;pre&gt;</code> to display the formatted text. Example:
+</p>
+<pre>
+ $ command
+</pre>
+<p>
+To view text that can be copied and pasted, such as scripts,
+bits of code, sample configuration files, etc - we also use
+<code>&lt;pre&gt;</code>, but with a CSS class named "script". Example:
+</p>
+<pre class="script">
+&lt;pre class="script"&gt;
+
+code...
+
+&lt;/pre&gt;
+</pre>
+<p>
+The <em>emphasized</em> words put themselves in the tag <code>&lt;em&gt;</code> 
+and internal links are relative. Remember to check the validity
+of the code via the online <em>validator</em> of the W3C.
+</p>
+
+<h3>Diff and patch</h3>
 <p>
 The utilities <code>diff</code> and <code>patch</code> are command-line tools 
 for creating and implementing a file containing differences between two files. 
@@ -254,7 +325,7 @@ To apply a patch:
 <!-- Start of footer and copy notice -->
 <div id="copy">
 <p>
-Last modification : 2008-07-16 21:45:00 -
+Last modification : 2009-06-13 21:15:00 -
 <a href="#top">Top of the page</a>
 </p>
 <p>
