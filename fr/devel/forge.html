@@ -2,7 +2,7 @@
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
 <head>
-	<title>SliTaz - Forge</title>
+	<title>SliTaz - Forge (fr)</title>
 	<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
 	<meta name="description" content="Développement de SliTaz GNU/Linux" />
 	<meta name="keywords" lang="fr" content="developpement slitaz developer GNU Linux" />
@@ -24,7 +24,7 @@
 <!-- Access -->
 <div id="access">
 	Language:
-    <a href="../../en/" title="English Web site main page">English</a>
+    <a href="../../en/devel/">English</a>
 </div>
 	<a href="http://www.slitaz.org/fr/"><img id="logo"
 	src="../../pics/website/logo.png" title="www.slitaz.org" alt="www.slitaz.org"
@@ -78,11 +78,14 @@
 <h2><font color="#DF8F06">Gestion collaborative du développement</font></h2>
 
 <ul>
+	<li><a href="#kiss">KISS et respect des standards.</a></li>
 	<li><a href="#tank">Build host &amp; home.</a></li>
 	<li><a href="#repos">Dépôts Mercurial.</a></li>
+	<li><a href="#iconv">Implémentation d'iconv().</a></li>
 	<li><a href="#pkgs">Paquets tazpkg.</a></li>
+	<li><a href="#pkgs-naming">Nommage des paquets.</a></li>
 	<li><a href="#site">Gestion du site Web et des livres.</a></li>
-	<li><a href="guidelines.html">Guidelines.</a></li>
+	<li><a href="#xhtml">xHTML coding style.</a></li>
 </ul>
 
 <p>
@@ -92,6 +95,23 @@ développeurs et collaborer. Un système de gestion de révision avec Mercurial
 <a href="../mailing-list.html">liste de discussion</a> et un canal IRC. Tous
 les développeurs sont inscrits sur la liste, c'est le moyen de collaboration
 principal et privilégié.
+</p>
+
+<a name="kiss"></a>
+<h3>KISS et respect des standards</h3>
+<p>
+Rester simple, respecter au mieux les standards, réaliser un travail soigné,
+rédiger de la documentation de haute qualité, fournir un système stable et
+robuste et garder le <em>rootfs</em> du LiveCD standard assez léger pour que
+SliTaz tourne sur des machines ayant au minimum 128 Mb de RAM. Possibilité 
+d'utiliser GTK+2, Dialog, Gtkdialog, des scripts SHell ou encore PHP pour
+coder des outils propres à la distribution. L'idée est aussi de ne pas faire
+de doublons et de penser mini...
+</p>
+<p>
+SliTaz se veut un projet proche et à l'écoute des ses utilisateurs. Il y a
+plusieurs développeurs actifs sur le <a href="http://forum.slitaz.org/">forum</a>
+et sur la <a href="../mailing-list.html">liste de discussion</a>.
 </p>
 
 <a name="tank"></a>
@@ -198,6 +218,15 @@ Des commandes hg qui peuvent servir.
 	<li><code>hg head</code> : affiche le dernier log.</li>
 </ul>
 
+<a name="iconv"></a>
+<h3>Implémentation d'iconv()</h3>
+<p>
+SliTaz utilise iconv() fourni par la GNU glibc, même si certain paquets
+proposent d'utiliser <code>libiconv</code> il faut utiliser la version de
+la glibc (paquet <code>glibc-locale</code>). Il n'y a donc pas de paquet 
+libiconv (1,2 Mb) dans SliTaz.
+</p>
+
 <a name="pkgs"></a>
 <h3>Paquets tazpkg</h3>
 <p>
@@ -227,6 +256,15 @@ là pour vous aider et que pour bien commencer, <a href="../doc/cookbook/wok-tool
 >la documentation du wok et des outils</a> existe.
 </p>
 
+<a name="pkgs-naming"></a>
+<h3>Nommage des paquets</h3>
+<p>
+Dans la majorité des cas le nom du paquet est celui des sources exception
+faite des modules Python, Perl, PHP, Ruby, Lua. Par example le paquet Kid
+fournissant un système de template XML et écrit en Python se nomme:
+<code>python-kid</code>.
+</p>
+
 <a name="site"></a>
 <h3>Gestion du site Web et des livres</h3>
 <p>
@@ -249,6 +287,45 @@ Si vous avez les droits :
 Sur SliTaz vous pouvez installer le serveur web Lighttpd et mettre le
 site dans votre répertoire ~/Public, cela permet de naviguer dans votre
 copie locale via localhost/~user.
+</p>
+
+<a name="xhtml"></a>
+<h3>xHTML coding style</h3>
+<p>
+Les pages du site et des différents <em>books</em> sont codés en xHTML 1.0
+Transitional, les couleurs pour le <code>body</code> et les titres sont
+directement mis dans la page, cela permet d'avoir une présentation plus soignée
+pour Links. Le titre de niveau 1 est utilisé une seule fois en haut de page,
+le titre 2 correspond au titre du document et les titres de niveau 3 et 4 sont
+ensuite utilisés pour les sous-titres. Si il y a lieu d'avoir une liste à puces
+avec des ancres, elle se met en haut juste après le titre de niveau 2. Les
+paragraphes sont contenus dans les balises <code>&lt;p&gt;&lt;/p&gt;</code>.
+Pour indenter, nous utilisons des tabulations, elles ont une raison d'être
+sémantique et prennent moins de place en terme d'octets. Pour mettre
+du code tel que le nom d'une commande dans un paragraphe, la balise
+<code>&lt;code&gt;</code> est recommandée. Pour afficher une ou des commandes
+à lancer dans un terminal, les pages du site utilisent la balise
+<code>&lt;pre&gt;</code> permettant d'afficher du texte préformaté. Exemple :
+</p>
+<pre>
+ $ command
+</pre>
+<p>
+Pour afficher du texte à copier/coller tels que des scripts, des bouts de
+code, des exemples de fichiers de configuration, etc, c'est aussi la balise
+<code>&lt;pre&gt;</code> mais avec une classe CSS nommée "script". Exemple:
+</p>
+<pre class="script">
+&lt;pre class="script"&gt;
+
+code...
+
+&lt;/pre&gt;
+</pre>
+<p>
+Les mots en <em>English</em> se mettent dans la balise <code>&lt;em&gt;</code>
+et les liens internes sont relatifs. Penser à vérifier la validité du code via
+le <em>validator</em> en ligne du W3C.
 </p>
 
 <h3>Diff et patch</h3>
