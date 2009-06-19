@@ -1,0 +1,180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>SliTaz Cookbook (en) - Build Bot</title>
+	<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+	<meta name="description" content="slitaz English cookbook" />
+	<meta name="expires" content="never" />
+	<meta name="modified" content="2009-06-20 00:10:00" />
+	<meta name="publisher" content="www.slitaz.org" />
+	<meta name="author" content="SliTaz contributors"/>
+	<link rel="shortcut icon" href="favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="book.css" />
+</head>
+<body bgcolor="#ffffff">
+
+<!-- Header and quick navigation -->
+<div id="header">
+<div align="right" id="quicknav">
+	<a name="top"></a>
+	<a href="build-host.html">Build host</a> |
+	<a href="index.html">Table of contents</a>
+</div>
+<h1><font color="#3E1220">SliTaz Cookbook (en)</font></h1>
+</div>
+
+<!-- Content. -->
+<div id="content">
+<div class="content-right"></div>
+
+<h2><font color="#DF8F06">Build Bot (tazbb)</font></h2>
+
+<p>
+The goal of Tazbb is to automate, test and report packages building from a
+wok. Run <code>tazbb usage</code> for the list of available commands with
+a short description. Status of Tank Build Bot via Tazbb web interface at
+<a href="http://bb.slitaz.org/">bb.slitaz.org</a> and for collaboration:
+<a href="http://labs.slitaz.org/wiki/distro/Tazbb">Tazbb Wiki</a>.
+</p>
+
+<ul>
+	<li><a href="#about">How it works</a></li>
+	<li><a href="#cmds">Commands</a></li>
+	<li><a href="#wok">Hg and chroot Wok</a></li>
+	<li><a href="#log">Log files</a></li>
+	<li><a href="#web">Web interface</a></li>
+	<li><a href="#hg-hook">Hg hook</a></li>
+	<li><a href="#cron">Cron Job</a></li>
+	<li><a href="#db">Database Files</a></li>
+</ul>
+
+<a name="about"></a>
+<h3>How it works</h3>
+<p>
+Tazbb can be run by a cron job and check the last commit done by contributors
+and then cook modified packages. Runnning 'tazbb cook-commit' will just
+rebuild last modified packages, to rebuild all missing, modified or unbuilt
+packages you must use 'tazbb cook-all'.
+</p>
+<p>
+Generating report will source all receipt in the wok and check if the package
+file exist, if not we add the package name in the current cooklist. For
+existing packages we compare all files date in the Hg wok (receipt, stuff)
+to the package.tazpkg file date, if it differ we add the package to the cooklist.
+</p>
+<p>
+Tazbb must also look in the chroot wok to check if the package is built, there
+should be a taz/ directory, if none we log and add it also to the cooklist.
+All package are cooked with 'script', log for cooked packages are stored in
+$LOG_DIR and a link exist for the web interface so developers can easily check
+the bug.
+</p>
+<p>
+When run with the option 'cook' Tazbb will also remove oold and corrupted packages,
+and then execute 'tazwok genlist --text' to rebuild all packages lists. To work
+properly Tazwok and Tazbb configured paths must match. Tazbb system wide configuration
+file is: <code>/etc/slitaz/tazbb.conf</code>
+</p>
+
+<a name="cmds"></a>
+<h3>Commands</h3>
+<p>
+Tazbb can be installed on your machine and be run manualy from the command
+line, just type 'tazbb usage' for a list of available functions. Tazbb can be
+run in report mode and display more information with the '--verbose' option.
+</p>
+
+<a name="woks"></a>
+<h3>Hg and chroot Wok</h3>
+<p>
+Tazbb use 2 wok: a clean Hg wok and a wok to build package in a chroot.
+Each time Tazbb is called, the Hg wok is updated and copied to the build
+wok so we avoid messing with build results and we can also modify manually
+receipts or patches directly with affecting the main Hg. If configured
+correctly 'tazdev update-wok' can also update the Hg wok and copy files.
+</p>
+
+<a name="log"></a>
+<h3>Log files</h3>
+<p>
+Tazbb use existing tool such as tazwok to build package but generate it own
+log files and have it own database stored in text file. The log files are
+available throught the web interface and the default path for the files is
+naturally: <code>/var/log/tazbb</code>
+</p>
+
+<a name="web"></a>
+<h3>Web interface</h3>
+<p>
+Tazbb log's all his activity to log files and cooklist, these informations
+can be displayed throught a nice web interface so developers can have a quick
+overview of the last build results. Tazbb package provide a PHP web interface,
+CSS style and images installed by default in <code>/var/lib/tazbb/web</code>,
+a symlink is created in <code>/var/www/vhosts</code> by the package, it provide
+easy access to the generated log files through a virtual host or you can use:
+http://localhost/vhosts/bb
+</p>
+
+<a name="hg-hook"></a>
+<h3>Hg hook</h3>
+<p>
+Mercurial offers a powerful mechanism to perform automated actions in response
+to events that occur in a repository. The name Mercurial uses for one of these
+actions is a hook. So Tazbb can be run each time a commit is done in the wok
+throught a simple hook in the .hgrc file of the repository. Example :
+</p>
+<pre class="script">
+[hooks]
+commit = tazbb cook-commit
+</pre>
+
+<a name="cron"></a>
+<h3>Cron Job</h3>
+<p>
+Tazbb can be run by a cron tab, so each new commit in the wok will cook the
+correct package ech time you want, cron can also be used to refresh the report
+or run a full cook. If the last cook is not yet finished or if tazbb has been
+run by hand and is still running, it will exit due to a lock file in /var/lock.
+Example of cron job's to cook commit each 2 hour and cook all missing, modified
+or unbuilt packages each night :
+</p>
+<pre class="script">
+*/2 * * * * /usr/bin/tazbb cook-commit
+03 02 * * * /usr/bin/tazbb cook-all
+</pre>
+
+<a name="db"></a>
+<h3>Database Files</h3>
+<ul>
+	<li>blocked    : List of blocked packages</li>
+	<li>cooklist   : Current or next cooklist</li>
+	<li>corrupted  : Corrupted packages list</li>
+	<li>packaged   : All packages from the build wok</li>
+	<li>removed    : Last removed packages</li>
+	<li>report     : Last report from check_{wok,commit}</li>
+	<li>running    : Current task running</li>
+	<li>summary    : Last summary for the web interface</li>
+	<li>unbuilt    : List of unbuilt packages</li>
+</ul>
+
+<!-- End of content -->
+</div>
+
+<!-- Footer. -->
+<div id="footer">
+	<div class="footer-right"></div>
+	<a href="#top">Top of the page</a> |
+	<a href="index.html">Table of contents</a>
+</div>
+
+<div id="copy">
+	Copyright &copy; 2009 <a href="http://www.slitaz.org/en/">SliTaz</a> -
+	<a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>;<br />
+	Documentation is under
+	<a href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License</a>
+	and code is <a href="http://validator.w3.org/">valid xHTML 1.0</a>.
+</div>
+
+</body>
+</html>
