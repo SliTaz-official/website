@@ -1,4 +1,4 @@
-/* 
+/*
 	CSS style for SliTaz GNU/Linux *book.
 	Pankso 2007 - www.slitaz.org
 */
@@ -28,12 +28,12 @@ body {
 
 #quicknav a {
 	background: inherit;
-	color: #222222;
+	color: white;
 }
 
 #quicknav a:hover {
 	background: inherit;
-	color: #EDEDED;
+	color: #222222;
 }
 
 /*  content. */
