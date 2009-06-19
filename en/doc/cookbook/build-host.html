@@ -36,7 +36,7 @@ SliTaz build host info and howto.
 
 <ul>
 	<li><a href="#folders">Folders in: /home/slitaz</a></li>
-	<li><a href="#scripts">Using scripts: /home/slitaz/scripts</a></li>
+	<li><a href="#tazdev">Using tazdev</a></li>
 	<li><a href="#undigest-pkgs">Cooking undigest packages</a></li>
 	<li><a href="#cooking-pkgs">Cooking official packages</a></li>
 	<li><a href="#stable-pkgs">Stable packages</a></li>
@@ -49,25 +49,18 @@ SliTaz build host info and howto.
 <ul>
 	<li>cooking/ - Cooking chroot and flavors.</li>
 	<li>stable/ - Stable tree.</li>
-	<li>scripts/ - Small scripts to help maintain the host, project.</li>
 	<li>repos/ - All the project repos (where the commits are pushed).</li>
 	<li>www/ - Virtual hosts (website, hg, boot, people, etc).</li>
 </ul>
 
-<a name="scripts"></a>
-<h3>Using scripts: /home/slitaz/scripts</h3>
+<a name="tazdev"></a>
+<h3>Using tazdev</h3>
 <p>
-To help maintain the mirror, flavors and other services, some scripts
-are used. They are mostly all configured for the cooking version. To 
-add them to your default path:
+To help maintain the mirror, flavors and other services, some tazdev
+is used. It is mostly all configured for the cooking version. Usage :
 </p>
-<pre> $ echo 'export PATH=/home/slitaz/scripts:$PATH' &gt;&gt; ~/.profile
-</pre>
-<p>
-Each script should have a tiny help file and description, if not, just open:
-</p>
-<pre> $ cd /home/slitaz/scripts &amp;&amp; ls
- $ ./script.sh help
+<pre>
+ $ tazdev usage
 </pre>
 
 <a name="undigest-pkgs"></a>
@@ -86,11 +79,11 @@ commands are sometimes better than a long text:
 <pre> $ ln -s /home/slitaz/cooking/chroot/home/undigest .
 </pre>
 <p>
-You can copy files with gFTP-sftp-scp directly into the wok or from the 
+You can copy files with gFTP-sftp-scp directly into the wok or from the
 current directory:
 </p>
 <pre> $ cp -a package undigest/wok
- $ su -c chroot.sh
+ $ su -c "tazdev chroot"
  /# cd home/undigest
  /# tazwok cook package
  /# exit
@@ -101,29 +94,31 @@ current directory:
 <h3>Cooking official packages</h3>
 <p>
 Maintainers have root access and some have write access to the
-main mirror at mirror.slitaz.org, if you want to help in this task please 
+main mirror at mirror.slitaz.org, if you want to help in this task please
 contact one of the active developers (check hg repos).
 </p>
 <p>
-Everything is cooked in a chroot environment, the default path for the main
-wok is /home/slitaz. Some changes can be made directly in this wok: the
-real Hg is out of the chroot and copied in the chroot with wok.sh:
+Everything is cooked in a chroot environment, the default path for the build
+wok is $CHROOT/home/slitaz/wok. Some changes can be made directly in this wok: the
+real Hg is copied in the chroot by tazbb (Build Bot). To chroot in cooking :
 </p>
-<pre> # wok.sh hgup
- # chroot.sh
+<pre>
+ # tazdev chroot
 </pre>
 <p>
-Cook all missing packages, one by one or with 'tazwok cmp --cook', note
-that comparison (cmp) it not required if you know which packages to
-cook:
+Cook all last commited packages or cook everything with 'cook-all', note
+that comparison it not required if you know which packages to cook. If you
+want to force a cook of some package by tazbb you can clean then with tazwok.
+By default cook only last commit :
 </p>
-<pre> /# tazwok cmp
- /# tazwok cook package-name
+<pre>
+ /# tazbb cook-commit
 </pre>
 <p>
-Remove all the old packages and then rebuild the lists:
+Tip: Remove all the old packages and then rebuild the lists manually:
 </p>
-<pre> /# tazwok cmp --remove
+<pre>
+ /# tazwok cmp --remove
  /# tazwok gen-list --text
  /# exit
 </pre>
@@ -138,7 +133,8 @@ and then upload; push will also remove any old packages on the mirror.
 Packages for the stable release are also built in a chroot environment like
 the Cooking packages:
 </p>
-<pre> # chroot.sh stable
+<pre>
+ # tazdev chroot stable
 </pre>
 
 <a name="mirror-up"></a>
@@ -146,7 +142,8 @@ the Cooking packages:
 <p>
 Mirror maintainers can upload by hand with the script mirror.sh:
 </p>
-<pre> # mirror.sh help
+<pre>
+ # tazdev -p `echo $USER`
 </pre>
 
 <a name="website-up"></a>
@@ -155,8 +152,8 @@ Mirror maintainers can upload by hand with the script mirror.sh:
 The Website and packages web interface are updated nightly by cron and can
 also be updated by hand (used on the day of release for example):
 </p>
-<pre> # website.sh up
- # website.sh help
+<pre>
+ # tazdev update-website
 </pre>
 
 <!-- End of content -->
@@ -165,7 +162,7 @@ also be updated by hand (used on the day of release for example):
 <!-- Footer. -->
 <div id="footer">
 	<div class="footer-right"></div>
-	<a href="#top">Top of the page</a> | 
+	<a href="#top">Top of the page</a> |
 	<a href="index.html">Table of contents</a>
 </div>
 
