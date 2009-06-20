@@ -115,10 +115,11 @@ By default cook only last commit :
  /# tazbb cook-commit
 </pre>
 <p>
-Tip: Remove all the old packages and then rebuild the lists manually:
+If needed (tazbb does it automaticaly) you can remove all the old packages
+and then rebuild the lists manually:
 </p>
 <pre>
- /# tazwok cmp --remove
+ /# tazbb clean-up
  /# tazwok gen-list --text
  /# exit
 </pre>
@@ -140,10 +141,10 @@ the Cooking packages:
 <a name="mirror-up"></a>
 <h3>Upload by hand on mirror.slitaz.org</h3>
 <p>
-Mirror maintainers can upload by hand with the script mirror.sh:
+Mirror maintainers can upload by hand with tazdev (-pd for a dry push):
 </p>
 <pre>
- # tazdev -p `echo $USER`
+ # tazdev -p $USER
 </pre>
 
 <a name="website-up"></a>
@@ -153,7 +154,7 @@ The Website and packages web interface are updated nightly by cron and can
 also be updated by hand (used on the day of release for example):
 </p>
 <pre>
- # tazdev update-website
+ # tazdev update-www
 </pre>
 
 <!-- End of content -->
