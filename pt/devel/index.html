@@ -73,14 +73,19 @@
 <h2><font color="#df8f06">Espaço dos Desenvolvedores do SliTaz</font></h2>
 
 <ul>
+	<li><a href="#kiss">KISS e respeito aos padrões.</a></li>
 	<li><a href="#tank">Build host &amp; home.</a></li>
     <li><a href="#repos">Repositórios Mercurial.</a></li>
+    <li><a href="#iconv">Implementação da função iconv().</a></li>
     <li><a href="#pkgs">Pacotes Tazpkg.</a></li>
+	<li><a href="#pkgs-naming">Nomes de pacotes.</a></li>    
     <li><a href="#website">Gerenciamento do Website.</a></li>
+	<li><a href="#xhtml">Estilo para codificação de xHTML.</a></li>    
     <li><a href="../mailing-list.html">Lista de Discussão.</a></li>
     <li><a href="../doc/cookbook/wok-tools.html">Wok &amp; Ferramentas.</a></li>
     <li>Mercurial Repositories: <a href="http://hg.slitaz.org" >hg.slitaz.org</a></li>
     <li>SliTaz Laboratories: <a href="http://labs.slitaz.org/">labs.slitaz.org</a></li>
+	<li><a href="http://labs.slitaz.org/wiki/distro">Wiki dos desenvolvedores</a></li>    
 </ul>
 
 <p>
@@ -98,6 +103,26 @@ SliTaz é uma pequena comunidade e ouve seus usuários. Há vários desenvolvedores
 ativos no <a href="http://forum.slitaz.org/">fórum</a> e na 
 <a href="../mailing-list.html">lista de discussão</a>.
 </p>
+<p>
+Há um website dedicado exclusivamente à participação de artistas interessados
+em contribuir com o projeto - <a href="http://art.slitaz.org/">http://art.slitaz.org</a>. 
+Mediante a criação de uma conta de usuário, pode-se postar gráficos ou 
+figuras relacionadas ao SliTaz. O website é mantindo por uma comunidade 
+de voluntários e se houver interesse em nos ajudar a gerenciá-lo, entre 
+em contato via email ou pela lista de discussão.
+</p>
+
+<a name="kiss"></a>
+<h3>KISS e respeito aos padrões</h3>
+<p>
+"Keep it Simple", ou seja, tentamos manter as coisas simples: respeito 
+aos padrões, planejamento cuidadoso e documentação escrita de alta 
+qualidade, fornecimento de um sistema robusto e estável e um sistema de 
+arquivos (<em>rootfs</em>) no LiveCD leve o suficiente para ser executado 
+em máquinas que tenham ao menos 128 mb de memória RAM. Também usamos
+aplicativos baseados em GTK+2, Dialog, scripts SHell ou PHP. A idéia
+é não nos repetirmos e deixar o sistema básico leve e pequeno.
+</p>
 
 <a name="tank"></a>
 <h3>Tank - Build host &amp; home</h3>
@@ -109,6 +134,11 @@ pacotes e os mantenedores dos mirrors podem gerenciar as sincronizações.
 O Tank também hospeda o website, o boot via web e os repositórios 
 mercurial:
 <a href="http://tank.slitaz.org/">tank.slitaz.org</a>
+</p>
+<p>
+Instruções para a utilização deste servidor estão descritas no "Livro de
+Receitas" (cookbook): 
+<a href="../doc/cookbook/build-host.html">SliTaz Build Host (tank)</a>.
 </p>
 
 <a name="repos"></a>
@@ -182,6 +212,15 @@ Comandos do mercurial (hg) que podem ser usados.
 	<li><code>hg head</code> : Mostra o último log.</li>
 </ul>
 
+<a name="iconv"></a>
+<h3>Implementação da função iconv()</h3>
+<p>
+O SliTaz utiliza a função iconv() fornecida pela biblioteca glibc do 
+projeto GNU - alguns pacotes que necessitam da função <code>libiconv</code>
+devem usar a versão fornecida pela glibc (<code>glibc-locale</code>). Note
+que já não há mais um pacote libiconv (1.2 MB) no SliTaz.
+</p>
+
 <a name="pkgs"></a>
 <h3>Pacotes Tazpkg</h3>
 <p>
@@ -209,6 +248,15 @@ documentação do <a href="../doc/cookbook/wok-tools.html">wok e ferramentas</a>
 existe para te guiar nos primeiros passos.
 </p>
 
+<a name="pkgs-naming"></a>
+<h3>Nomes de Pacotes</h3>
+<p>
+Na maioria dos casos o nome do pacote é o mesmo do código fonte, exceto
+para os módulos das linguagens Python, Perl, PHP, Ruby e Lua. Por exemplo,
+o pacote que fornece o sistema de templates Kid, escrito em Python e XML,
+é nomeado: <code>python-kid</code>.
+</p>
+
 <a name="website"></a>
 <h3>Gerenciamento do website e manuais</h3>
 <p>
@@ -221,7 +269,49 @@ seguinte maneira:
   Ou, se você tiver as permissões necessárias:
  $ hg clone http://repos.slitaz.org/website
 </pre>
-<h4>Diff e patch</h4>
+
+<a name="xhtml"></a>
+<h3>Estilo para codificação de xHTML</h3>
+<p>
+As páginas nos diferentes <em>manuais</em> são codificadas em xHTML 1.0
+transitional. As cores para o corpo da página (<code>body</code>) e para 
+os títulos são definidas diretamente de forma a permitir que os links
+sejam facilmente identificáveis. Os títulos de primeiro nível são usados
+apenas uma vez, no topo da página, os de segundo nível são usados para
+nomear as seções e os de terceiro e quarto nível para as subseções. Se
+uma lista é usada para os tópicos, usando âncoras para as diferentes seções,
+é posta logo no início da página, após o título da mesma.
+Parágrafos são colocados dentro das tags <code>&lt;p&gt;&lt;/p&gt;</code>.
+Para indentação, usa-se tabulações (tabs), de forma a manter-se a semântica
+e para diminuir espaço em termos de octetos (bytes). Para mostrar trechos
+de código, como o nome de um comando dentro de um parágrafo, 
+<code>&lt;code&gt;</code> é o método recomendado. Para mostrar a saida
+de comandos ou comandos a serem digitados em um terminal, usa-se
+<code>&lt;pre&gt;</code>. Exemplo:
+</p>
+<pre>
+ $ comando
+</pre>
+<p>
+Para mostrar texto que pode ser copiado e colado, como scripts, peças de
+código, arquivos de configuração, etc, também se usa a tag 
+<code>&lt;pre&gt;</code>, em conjunto com a classe CSS chamada "script".
+Exemplo:
+</p>
+<pre class="script">
+&lt;pre class="script"&gt;
+
+code...
+
+&lt;/pre&gt;
+</pre>
+<p>
+Texto <em>enfatizado</em> é colocado dentro da tag <code>&lt;em&gt;</code> 
+e links internos são relativos. É recomendável checar a validade do código
+xHTML por meio do <em>validador</em> online da W3C.
+</p>
+
+<h3>Diff e patch</h3>
 <p>
 As utilidades <code>diff</code> e <code>patch</code> são ferramentas de linha
 de comando para criação e implementação de diferenças entre dois arquivos. Esta
