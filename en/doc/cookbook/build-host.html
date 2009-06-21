@@ -56,11 +56,10 @@ SliTaz build host info and howto.
 <a name="tazdev"></a>
 <h3>Using tazdev</h3>
 <p>
-To help maintain the mirror, flavors and other services, some tazdev
-is used. It is mostly all configured for the cooking version. Usage :
+To help maintain the mirror, flavors and other services, the tazdev command
+is used. It is mostly configured for the cooking version. Usage:
 </p>
-<pre>
- $ tazdev usage
+<pre> $ tazdev usage
 </pre>
 
 <a name="undigest-pkgs"></a>
@@ -100,31 +99,28 @@ contact one of the active developers (check hg repos).
 <p>
 Everything is cooked in a chroot environment, the default path for the build
 wok is $CHROOT/home/slitaz/wok. Some changes can be made directly in this wok: the
-real Hg is copied in the chroot by tazbb (Build Bot). To chroot in cooking :
+real Hg is copied in the chroot by tazbb (Build Bot). To chroot in cooking:
 </p>
-<pre>
- # tazdev chroot
+<pre> # tazdev chroot
 </pre>
 <p>
-Cook all last commited packages or cook everything with 'cook-all', note
+Cook all the last commited packages or cook everything with 'cook-all', note
 that comparison it not required if you know which packages to cook. If you
-want to force a cook of some package by tazbb you can clean then with tazwok.
-By default cook only last commit :
+want to force the cooking of some packages by tazbb, you can then clean with tazwok.
+By default tazbb cooks only last the commit:
 </p>
-<pre>
- /# tazbb cook-commit
+<pre> /# tazbb cook-commit
 </pre>
 <p>
-If needed (tazbb does it automaticaly) you can remove all the old packages
+If needed (tazbb does this automatically), you can remove all the old packages
 and then rebuild the lists manually:
 </p>
-<pre>
- /# tazbb clean-up
+<pre> /# tazbb clean-up
  /# tazwok gen-list --text
  /# exit
 </pre>
 <p>
-If you have write access to the mirror you can make a dry-push to check
+If you have write access to the mirror, you can make a dry-push to check
 and then upload; push will also remove any old packages on the mirror.
 </p>
 
@@ -134,8 +130,7 @@ and then upload; push will also remove any old packages on the mirror.
 Packages for the stable release are also built in a chroot environment like
 the Cooking packages:
 </p>
-<pre>
- # tazdev chroot stable
+<pre> # tazdev chroot stable
 </pre>
 
 <a name="mirror-up"></a>
@@ -143,8 +138,7 @@ the Cooking packages:
 <p>
 Mirror maintainers can upload by hand with tazdev (-dp for a dry push):
 </p>
-<pre>
- # tazdev -p $USER
+<pre> # tazdev -p $USER
 </pre>
 
 <a name="website-up"></a>
@@ -153,8 +147,7 @@ Mirror maintainers can upload by hand with tazdev (-dp for a dry push):
 The Website and packages web interface are updated nightly by cron and can
 also be updated by hand (used on the day of release for example):
 </p>
-<pre>
- # tazdev update-www
+<pre> # tazdev update-www
 </pre>
 
 <!-- End of content -->
