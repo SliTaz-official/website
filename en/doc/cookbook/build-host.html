@@ -18,7 +18,7 @@
 <div id="header">
 <div align="right" id="quicknav">
 	<a name="top"></a>
-	<a href="boot-scripts.html">Boot Scripts</a> |
+	<a href="build-bot.html">Build Bot</a> |
 	<a href="index.html">Table of contents</a>
 </div>
 <h1><font color="#3E1220">SliTaz Cookbook (en)</font></h1>
@@ -99,15 +99,15 @@ contact one of the active developers (check hg repos).
 <p>
 Everything is cooked in a chroot environment, the default path for the build
 wok is $CHROOT/home/slitaz/wok. Some changes can be made directly in this wok: the
-real Hg is copied in the chroot by tazbb (Build Bot). To chroot in cooking:
+real Hg is copied into the chroot by tazbb (Build Bot). To chroot in cooking:
 </p>
 <pre> # tazdev chroot
 </pre>
 <p>
 Cook all the last commited packages or cook everything with 'cook-all', note
 that comparison it not required if you know which packages to cook. If you
-want to force the cooking of some packages by tazbb, you can then clean with tazwok.
-By default tazbb cooks only last the commit:
+want to force the cooking of some of the packages by tazbb, you can then 
+clean with tazwok. By default tazbb cooks only last the commit:
 </p>
 <pre> /# tazbb cook-commit
 </pre>
