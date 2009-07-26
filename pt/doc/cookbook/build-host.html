@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt">
+<head>
+	<title>Livro de Receitas do SliTaz - Build Host</title>
+	<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+	<meta name="description" content="slitaz portuguese cookbook" />
+	<meta name="expires" content="never" />
+	<meta name="modified" content="2009-03-27 21:30:00" />
+	<meta name="publisher" content="www.slitaz.org" />
+	<meta name="author" content="SliTaz contributors"/>
+	<link rel="shortcut icon" href="favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="book.css" />
+</head>
+<body bgcolor="#ffffff">
+
+<!-- Header and quick navigation -->
+<div id="header">
+<div align="right" id="quicknav">
+	<a name="top"></a>
+	<a href="build-bot.html">Build Bot</a> |
+	<a href="index.html">Conteúdo</a>
+</div>
+<h1><font color="#3E1220">SliTaz Cookbook (pt)</font></h1>
+</div>
+
+<!-- Content. -->
+<div id="content">
+<div class="content-right"></div>
+
+<h2><font color="#DF8F06">Servidor de Compilação (tank)</font></h2>
+
+<p>
+Howto e informações sobre o Servidor de Compilação (Build Host).
+</p>
+
+<ul>
+	<li><a href="#folders">Pastas em: /home/slitaz</a></li>
+	<li><a href="#tazdev">Usando o tazdev</a></li>
+	<li><a href="#undigest-pkgs">Compilando Pacotes Não Oficiais</a></li>
+	<li><a href="#cooking-pkgs">Compilando Pacotes Oficiais</a></li>
+	<li><a href="#stable-pkgs">Pacotes Estáveis</a></li>
+	<li><a href="#mirror-up">Upload manual para mirror.slitaz.org</a></li>
+	<li><a href="#website-up">Atualização manual do website</a></li>
+</ul>
+
+<a name="folders"></a>
+<h3>Pastas em: /home/slitaz</h3>
+<ul>
+	<li>cooking/ - Ambiente chroot da versão Cooking (testes) e das variantes (flavors).</li>
+	<li>stable/ - Árvore de diretórios da versão estável (Stable).</li>
+	<li>repos/ - Repositórios do projeto (onde as modificações são gravadas).</li>
+	<li>www/ - Servidores virtuais (website, hg, boot, people, etc).</li>
+</ul>
+
+<a name="tazdev"></a>
+<h3>Usando o tazdev</h3>
+<p>
+O Comando tazdev é utilizado na manutenção do mirror, das variantes e 
+outros serviços. É basicamente configurado para atender a versão de 
+testes. Utilização:
+</p>
+<pre> $ tazdev usage
+</pre>
+
+<a name="undigest-pkgs"></a>
+<h3>Compilando Pacotes Não Oficiais (undigest)</h3>
+<p>
+Pode-se utilizar o wok não oficial (undigest) em um ambiente chroot para
+compilar (cook) alguns pacotes não suportados. Se você mantem pacotes
+oficiais e se eles compilam com sucesso no Tank, pode testá-los na sua
+máquina local e adicioná-los no wok oficial. Mantenedores do mirror
+irão então recompilar o pacote e gravar as mudanças em mirror.slitaz.org.
+</p>
+<p>
+Para compilar pacotes no wok undigest em um ambiente chroot, pode-se seguir
+os comandos:
+</p>
+<pre> $ ln -s /home/slitaz/cooking/chroot/home/undigest .
+</pre>
+<p>
+Pode-se copiar os arquivos via gFTP-sftp-scp diretamente para o wok ou
+a partir do diretório atual:
+</p>
+<pre> $ cp -a package undigest/wok
+ $ su -c "tazdev chroot"
+ /# cd home/undigest
+ /# tazwok cook package
+ /# exit
+ $ ls undigest/packages
+</pre>
+
+<a name="cooking-pkgs"></a>
+<h3>Compilando Pacotes Oficiais</h3>
+<p>
+Mantenedores possuem acesso <em>root</em> e/ou possuem permissão de escrita
+ao mirror principal localizado em mirror.slitaz.org. Se alguém manifestar
+a vontade de ajudar no projeto pode contactar um dos desenvolvedores
+(pode-se checar os repositórios hg para tanto).
+</p>
+<p>
+Todos os pacotes são compilados em um ambiente chroot. O caminho (path)
+para o wok de compilação é, por padrão, $CHROOT/home/slitaz/wok. Algumas
+mudanças podem ser feitas diretamente neste wok: o repositório hg real é
+copiado para o ambiente chroot pelo tazbb (Build Bot). Para criar o
+ambiente no cooking:
+</p>
+<pre> # tazdev chroot
+</pre>
+<p>
+Pode-se compilar todos os últimos pacotes adicionados ou todos os
+existentes no ambiente chroot com o comando 'cook-all'. Por padrão, o
+tazbb compila apenas pacotes adicionados ou modificados pelo último
+commit no repositório:
+</p>
+<pre> /# tazbb cook-commit
+</pre>
+<p>
+Pode-se remover, quando necessário, todos os pacotes antigos e então 
+gerar uma nova lista de manualmente (processo que o tazbb executa 
+automaticamente):
+</p>
+<pre> /# tazbb clean-up
+ /# tazwok gen-list --text
+ /# exit
+</pre>
+<p>
+Se se possuir permissão de escrita ao mirror, pode-se executar o comando
+'tazbb dry-push' para fazer uma verificação de quais arquivos serão
+adicionados ao mirror e então executar 'tazbb push' para gravar as 
+mudanças definitivamente no mirror. A opção 'push' também remove pacotes
+obsoletos do mirror.
+</p>
+
+<a name="stable-pkgs"></a>
+<h3>Pacotes Estáveis</h3>
+<p>
+Os pacotes que fazem parte da versão estável do SliTaz também são 
+compilados em um ambiente chroot, assim como os da versão de testes 
+(cooking):
+</p>
+<pre> # tazdev chroot stable
+</pre>
+
+<a name="mirror-up"></a>
+<h3>Upload manual para mirror.slitaz.org</h3>
+<p>
+Mantenedores do mirror podem fazer uploads manuais utilizando o tazdev
+(a opção -dp faz um dry-push, ou seja, uma checagem antes de um upload
+definitivo):
+</p>
+<pre> # tazdev -p $USER
+</pre>
+
+<a name="website-up"></a>
+<h3>Atualização manual do website</h3>
+<p>
+O website do projeto e a interface web para busca de pacotes são atualizados
+toda noite por um cron job e também podem ser atualizados manualmente 
+(isso é utilizado em dias em que há algum lançamento, por exemplo):
+</p>
+<pre> # tazdev update-www
+</pre>
+
+<!-- End of content -->
+</div>
+
+<!-- Footer. -->
+<div id="footer">
+	<div class="footer-right"></div>
+	<a href="#top">Topo da Página</a> |
+	<a href="index.html">Conteúdo</a>
+</div>
+
+<div id="copy">
+	Copyright &copy; 2009 <a href="http://www.slitaz.org/en/">SliTaz</a> -
+	<a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>;<br />
+	Documentation is under
+	<a href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License</a>
+	and code is <a href="http://validator.w3.org/">valid xHTML 1.0</a>.
+</div>
+
+</body>
+</html>

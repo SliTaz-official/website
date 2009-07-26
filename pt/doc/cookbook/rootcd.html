@@ -1,0 +1,214 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt">
+<head>
+    <title>Livro de Receitas do SliTaz - RootCD</title>
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <meta name="description" content="slitaz portuguese cookbook" />
+    <meta name="expires" content="never" />
+    <meta name="modified" content="2008-02-26 18:30:00" />
+    <meta name="publisher" content="www.slitaz.org" />
+    <meta name="author" content="Christophe Lincoln"/>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="book.css" />
+</head>
+<body bgcolor="#ffffff">
+
+<!-- Header and quick navigation -->
+<div id="header">
+<div align="right" id="quicknav">
+    <a name="top"></a>
+    <a href="index.html">Contéudo</a>
+</div>
+<h1><font color="#3E1220">SliTaz Cookbook (pt)</font></h1>
+</div>
+
+<!-- Content. -->
+<div id="content">
+<div class="content-right"></div>
+
+<h2><font color="#df8f06">Rootcd</font></h2>
+<p>
+Descrição dos arquivos contidos no cdrom.
+</p>
+
+<ul>
+  	<li><a href="#syslinux">Syslinux/isolinux.</a></li>
+	<li><a href="#splash">Imagem de boot do Isolinux.</a></li>
+	<li><a href="#isolinux-iso">Inicialização da ISO com o isolinux.</a></li>
+	<li><a href="#grub">GRUB.</a></li>
+	<li><a href="#grub-iso">Inicialização da ISO com o GRUB.</a></li>
+	<li><a href="#memtest86">Memtest86.</a></li>
+</ul>
+
+<a name="syslinux"></a>
+<h3>Syslinux/isolinux</h3>
+<p>
+O Syslinux é o gerenciador de boot da versão LiveCD do SliTaz - o projeto
+utiliza a versão para linux chamada isolinux. Este programa simples e
+configurável é instalado durante a criaçaõ do sistema básico. O binário
+é chamado isolinux.bin e seu arquivo de configuração chama-se isolinux.cfg.
+A seguir pode-se ver um exemplo de um arquivo isolinux.cfg que se utiliza
+de um arquivo chamado isolinux.msg para mostrar uma imagem de boot e
+mostrar texto de ajuda a partir do acionamento das teclas de F1 a F4. Os
+arquivos de ajuda (help.txt) e de opção (options.txt) podem ser encontrados
+nos repositórios, como descrito na página sobre as 
+<a href="slitaz-tools.html">Ferramentas do SliTaz</a>.
+</p>
+<pre class="script">display isolinux.msg
+default slitaz
+label slitaz
+	kernel /boot/bzImage
+	append initrd=/boot/rootfs.gz rw root=/dev/null vga=788
+implicit 0	
+prompt 1	
+timeout 80
+F1 help.txt
+F2 options.txt
+F3 isolinux.msg
+F4 display.txt
+</pre>
+
+<a name="splash"></a>
+<h3>Imagem de boot do Isolinux</h3>
+<p>
+Pode-se configurar o isolinux para mostrar uma imagem durante o processo
+de boot. A imagem escolhida deve estar no formado <code>.lss</code>, 
+adequado ao Syslinux e deve ser indexada em modo de 16 cores. Pode-se
+utilizar o logo oficial do projeto ou então usar os programas ppmforge,
+imagemagick, gimp ou algum outro de sua escolha para criar sua própria
+imagem.
+</p>
+<p>
+O arquivo do syslinux localizado em sample/syslogo.lss é o logo oficial
+do syslinux que pode ser usado copiando-o para a raiz do cdrom. O logo
+oficial do SliTaz está localizado em rootcd/boot/isolinux/splash.lss e 
+faz parte das <a href="slitaz-tools.html">Ferramentas do SliTaz</a>.
+Para mostrar uma imagem durante o boot é necessário que a opção 'display'
+do arquivo de configuração isolinux.cfg carregue o arquivo isolinux.msg, que
+por sua vez carrega a imagem em formato .lss. Exemplo usando o comando
+'echo' e um arquivo isolinux.msg que incorpora uma imagem de boot em 
+formato .lss:
+</p>
+<pre> # echo -e "\24isplash.lss\n" &gt; isolinux.msg
+</pre>
+<p>
+Pode-se adicionar uma mensagem de texto abaixo da imagem de boot
+modificando-se o referido arquivo de texto por intermédio de um editor
+de texto ou pela utilização dos comando <code>echo</code> ou <code>cat</code>.
+</p>
+
+<a name="isolinux-iso"></a>
+<h3>Inicialização da ISO com o isolinux</h3>
+<p>
+Para criar uma ISO inicializável usando os programas isolinux e genisoimage:
+</p>
+<pre> # genisoimage -R -o slitaz-test.iso -b boot/isolinux/isolinux.bin \
+   	-c boot/isolinux/boot.cat -no-emul-boot -boot-load-size 4 \
+   	-V "SliTaz" -input-charset iso8859-1 -boot-info-table rootcd 
+</pre>
+
+<a name="grub"></a>
+<h3>GRUB</h3>
+<p>
+O GRUB (GRand Unified Bootloader) é um gerenciador de boot distribuído
+pelo projeto GNU. Ele é utilizado quando se instala o sistema no disco
+rígido, podendo dar boot em sistemas Linux, BSD, HURD e Window$. O GRUB
+também é capaz de inicializar imagens ISO graças à uma função chamada
+<em>stage2_eltorito</em>. É necessário, então, que se instale o GRUB e que
+se copie o arquivo stage2_eltorito para a raiz do cdrom. O SliTaz possui
+em seus mirrors o pacote grub-0.97 que pode ser instalado pelo tazpkg
+ou pode-se compilar este pacote utilizando-se o tazwok. Exemplo de um
+arquivo <code>stage2_eltorito</code> encontrado em um sistema Debian ou
+SliTaz:
+</p>
+<pre> # mkdir -p rootcd/boot/grub
+ # cp /usr/lib/grub/i386-pc/stage2_eltorito \
+   	rootcd/boot/grub
+</pre>
+<p>
+O arquivo de configuração do GRUB é chamado menu.lst e pode ser editado
+em um editor de texto. Exemplo:
+</p>
+<pre class="script"># By default, boot the first entry.
+default 0
+
+# Boot automatically after 20 secs.
+timeout 20
+
+# Change the colors.
+color yellow/brown white/black
+
+title  SliTaz GNU/Linux 1.0 (vga 800x600) (Kernel 2.6.20)
+       kernel /boot/bzImage root=/dev/null vga=788
+       initrd /boot/rootfs.gz
+
+title  SliTaz GNU/Linux 1.0 (vga 1024x768) (Kernel 2.6.20)
+       kernel /boot/bzImage root=/dev/null vga=771
+       initrd /boot/rootfs.gz
+</pre>
+
+<a name="grub-iso"></a>
+<h3>Inicialização de ISO com o GRUB</h3>
+<p>
+Para criar uma imagem ISO inicializável com os programas GRUB e 
+genisoimage ou mkisofs:
+</p>
+<pre> # genisoimage -R -o slitaz-test.iso -b boot/grub/stage2_eltorito \
+   	-no-emul-boot -V "SliTaz" -boot-load-size 4 -input-charset iso8859-1 \
+   	-boot-info-table rootcd
+</pre>
+<a name="memtest86"></a>
+<h3>Memtest86</h3>
+<p>
+O programa <em>memtest86</em> é uma ferramenta que testa a memória RAM.
+Podemos fazer o download deste utilitário e copia-lo para o diretório
+src/, descompacta-lo e copiar o binário precompilado:
+</p>
+<pre> # mkdir -v -p src
+ # cd src
+ # wget http://www.memtest86.com/memtest86-3.2.tar.gz
+ # tar xzfv memtest86-3.2.tar.gz
+ # cd memtest86-3.2
+ (# more README)
+ # cp precomp.bin ../../rootcd/boot/memtest
+ # cd ../..
+</pre>
+<p>
+Uma vez instalado o memtest86, pode-se adicionar uma entrada ao arquivo
+isolinux.cfg que especifica o caminho para o utilitário:
+</p>
+<pre class="script">label memtest
+	kernel /boot/memtest
+</pre>
+<p>
+Se o GRUB for utilizado, deve-se adicionar as seguintes linhas ao arquivo
+menu.lst: 
+</p>
+<pre class="script">title 	Memtest86 (Test system memory)
+kernel 	/boot/memtest
+</pre>
+<p>
+Após estas modificações, pode-se criar a nova imagem ISO e testá-la.
+</p>
+
+<!-- End of content -->
+</div>
+
+<!-- Footer. -->
+<div id="footer">
+	<div class="footer-right"></div>
+	<a href="#top">Topo da Página</a> | 
+	<a href="index.html">Conteúdo</a>
+</div>
+
+<div id="copy">
+    Copyright &copy; 2008 <a href="http://www.slitaz.org/en/">SliTaz</a> -
+    <a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>;<br />
+    Documentation is under
+    <a href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License</a>
+    and code is <a href="http://validator.w3.org/">valid xHTML 1.0</a>.
+</div>
+
+</body>
+</html>
