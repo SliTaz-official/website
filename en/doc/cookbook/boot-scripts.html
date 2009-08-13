@@ -69,8 +69,8 @@ On SliTaz you will find a /etc/init.d/README describing the
 basic function of rc scripts. Also note that all startup
 scripts and daemons can call upon the <code>/etc/init.d/rc.functions</code>
 file. This file makes it possible to include various functions
-in rc scripts. SliTaz uses a function <code>status</code> to check whether
-the previous command has succeeded (0) or not.
+in rc scripts. For example, SliTaz uses a function <code>status</code> to 
+check whether the previous command has succeeded (0) or not.
 </p>
 
 <a name="rcS"></a>
@@ -97,7 +97,7 @@ This script is used to configure the LiveCD options passed
 at boot time and is readable via the /proc/cmdline file. 
 This is the script that allows you to use a USB key or 
 external hard disk <code>/home</code>  partition with the option home=usb
-or home=sda[1-9] or directly specify the language and 
+or home=sda[1-9]. Note, it can also directly specify the language and 
 keyboard parameters.
 </p>
 
