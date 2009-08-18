@@ -8,7 +8,7 @@ body {
 	color: black;
 	font: 13px sans-serif, vernada, arial;
 	margin: 0;
-	padding-bottom: 100%;
+	padding-bottom: auto;
 }
 
 /* Accessibility */
