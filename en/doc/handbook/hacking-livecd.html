@@ -32,13 +32,13 @@
 <h2><font color="#df8f06">Hacking SliTaz LiveCD</font></h2>
 
 <ul>
-    <li><a href="#intro">Introduction.</a></li>
-    <li><a href="#pre">Organization and preparation.</a></li>
-    <li><a href="#add-files">Add files to the ISO.</a></li>
-    <li><a href="#isolinux">Modify the isolinux configuration.</a></li>
-    <li><a href="#memtest">Install and use Memtest86.</a></li>
-    <li><a href="#rootfs">Manipulate the Live root system.</a></li>
-    <li><a href="#gen-iso">Generate a bootable ISO image with isolinux.</a></li>
+    <li><a href="index.html#intro">Introduction.</a></li>
+    <li><a href="index.html#pre">Organization and preparation.</a></li>
+    <li><a href="index.html#add-files">Add files to the ISO.</a></li>
+    <li><a href="index.html#isolinux">Modify the isolinux configuration.</a></li>
+    <li><a href="index.html#memtest">Install and use Memtest86.</a></li>
+    <li><a href="index.html#rootfs">Manipulate the Live root system.</a></li>
+    <li><a href="index.html#gen-iso">Generate a bootable ISO image with isolinux.</a></li>
 </ul>
 
 <a name="intro"></a>
@@ -126,7 +126,7 @@ users have write access:
 </pre>
 <p>
 Now that a directory exists that anybody can write to, you can start to fill it. Once you've finished
-you can then <a href="#gen-iso">generate a bootable ISO image</a>.
+you can then <a href="index.html#gen-iso">generate a bootable ISO image</a>.
 </p>
 
 <a name="isolinux"></a>
@@ -177,7 +177,7 @@ to directly configure the language of the system as English and use the UK keybo
       append initrd=/boot/rootfs.gz rw root=/dev/null lang=en kmap=en</pre>
 <p>
 Once you've finished modifying the configuration file, don't forget to save your changes and
-<a href="#gen-iso">generate a bootable ISO image</a> with isolinux.
+<a href="index.html#gen-iso">generate a bootable ISO image</a> with isolinux.
 </p>
 
 <a name="memtest"></a>
@@ -205,7 +205,7 @@ you precompiled into the <code>boot/</code> directory of the root of the CD:
 </pre>
 <p>
 Now that the binary is installed in the <em>root CD</em>, we can just add an entry for memtest86
-to the isolinux configuration file and <a href="#gen-iso">generate a bootable ISO image</a>.
+to the isolinux configuration file and <a href="index.html#gen-iso">generate a bootable ISO image</a>.
 Navigate to <code>/home/slitaz/hacked</code> and edit <code>isolinux.cfg</code> using Leafpad:
 </p>
 <pre> # cd /home/slitaz/hacked
@@ -224,7 +224,7 @@ Official website of <a href="http://www.memtest86.com/">Memtest86</a>
 Changes to the Live root system allow you for example, to add a new user and password, customize graphics or 
 execute commands automatically at boot time. The necessary operations for changing the root file system are:
 extract the compressed file system <code>rootfs.gz</code>, modify, rebuild the image and generate the ISO.
-Based on the assumption that you've <a href="#pre">prepared a working directory</a>, we begin by creating
+Based on the assumption that you've <a href="index.html#pre">prepared a working directory</a>, we begin by creating
 a directory to contain the files on the changed system. Since the compressed root file system is named 
 <code>rootfs.gz</code>, we suggest you use <code>rootfs/</code> to extract to. Navigate to the <code>hacked/</code>
 directory, create the root directory and copy the compressed file system from <code>rootcd/boot/</code> 
@@ -278,7 +278,7 @@ and creates a compressed file <code>rootfs.gz</code> in the preceding directory:
 </pre>
 <p>
 Finally copy the compressed file system into the <code>boot/</code> directory at the root of the CD and
-<a href="#gen-iso">generate a bootable ISO image</a> with isolinux. To copy the newly compressed
+<a href="index.html#gen-iso">generate a bootable ISO image</a> with isolinux. To copy the newly compressed
 <em>rootfs</em> into the working directory:
 </p>
 <pre> # cd ../
@@ -338,7 +338,7 @@ To use the script, just make it executable and execute:
 <!-- Footer. -->
 <div id="footer">
 	<div class="footer-right"></div>
-	<a href="#top">Top of the page</a> | 
+	<a href="index.html#top">Top of the page</a> | 
 	<a href="index.html">Table of contents</a>
 </div>
 
