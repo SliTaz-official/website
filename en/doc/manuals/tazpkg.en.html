@@ -184,6 +184,16 @@ and can also be forced:
 <pre> # tazpkg install-list my-packages.list
  # tazpkg get-install-list my-packages.list --forced
 </pre>
+<h3><font color="#6c0023">link</font></h3>
+<p>
+This command allows the installation of a package from another media 
+device. The set up is done through symbolic links and consumes very little 
+memory. It is generally used within the system RAM to install add-ons 
+from an USB key:
+</p>
+<pre>
+ # tazpkg link openoffice /media/usbdisk
+</pre>
 <h3><font color="#6c0023">remove</font></h3>
 <p>
 Remove a package. You will be asked for confirmation (y/N).
@@ -342,6 +352,39 @@ Examples using mpd:
 </p>
 <pre> # tazpkg depends mpd
  # tazpkg rdepends mpd
+</pre>
+<h3><font color="#6c0023">add-undigest or setup-undigest</font></h3>
+<p>
+Set the URL of an additional unofficial mirror to test packages that
+are not yet present on the official mirrors. Note, you can also
+manually edit the file in /var/lib/tazpkg/undigest/'repository'. The URL
+must point to the directory containing the packages and 'packages.list':
+</p>
+<pre>
+ # tazpkg add-undigest public-repository http://my.home.org/slitaz
+ # tazpkg setup-undigest local-repository /home/slitaz/packages
+</pre>
+<h3><font color="#6c0023">remove-undigest</font></h3>
+<p>
+Removes the URL of an undigest mirror:
+</p>
+<pre>
+ # tazpkg remove-undigest my-repository
+</pre>
+<h3><font color="#6c0023">list-undigest</font></h3>
+<p>
+Lists additional undigest mirrors:
+</p>
+<pre>
+ # tazpkg list-undigest
+</pre>
+<h3><font color="#6c0023">convert</font></h3>
+<p>
+Converts a Debian package (.deb), Redhat (.rpm), Slackware (.tgz) or 
+Archlinux (.pkg.tar.gz) package into a SliTaz package (.tazpkg):
+</p>
+<pre>
+ # tazpkg convert alien-package
 </pre>
 <h3><font color="#6c0023">set-release</font></h3>
 <p>
