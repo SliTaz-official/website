@@ -176,6 +176,14 @@ On peut aussi définir des paquets virtuels avec cette variable. Les lignes
 définissent le paquet virtuel <code>libgl</code> qui sera une version
 optimisée lorsque le paquet <code>nvidia</code> est installé.
 </p>
+<p>
+<a name="self_install"></a>
+<code>$SELF_INSTALL</code> : certains paquets utilisent des commandes 
+fournies par le paquet lui-même dans la fonction post_install.
+Pour installer ce paquet dans un répertoire autre que la racine et utiliser
+ces commandes, il faut qu'il ait déjà été installé dans / auparavent.
+La ligne <code>SELF_INSTALL=1</code> signale à tazpkg cette particularité.
+</p>
 
 <h3>Variables générées automatiquement par tazwok</h3>
 <p>
