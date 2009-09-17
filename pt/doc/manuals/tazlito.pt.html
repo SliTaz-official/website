@@ -58,6 +58,7 @@ informações adicionais sobre a criação de um LiveCD no Manual SliTaz.
 </p>
 
 <h2>COMANDOS</h2>
+<a name="usage"></a>
 <h3><font color="#6c0023">usage</font></h3>
 <p>
 O comando "usage" mostra um resumo dos comandos disponíveis com uma pequena
@@ -66,6 +67,7 @@ descrição:
 <pre>
  # tazlito usage
 </pre>
+<a name="stats"></a>
 <h3><font color="#6c0023">stats</font></h3>
 <p>
 "Stats" mostra as variáveis da configuração, os caminhos para os vários arquivos
@@ -74,6 +76,7 @@ e diretórios e informações sobre a imagem ISO:
 <pre>
  # tazlito stats
 </pre>
+<a name="gen-config"></a>
 <h3><font color="#6c0023">gen-config</font></h3>
 <p>
 O comando "gen-config" permite a geração do arquivo de configuração pronto para
@@ -84,6 +87,7 @@ ser em outro diretório informado na linha de comando:
  # tazlito gen-config
  # tazlito gen-config /path/to/distro
 </pre>
+<a name="configure"></a>
 <h3><font color="#6c0023">configure</font></h3>
 <p>
 Este comando pode configurar o arquivo de configuração do sistema ou o encontrado
@@ -92,6 +96,7 @@ no diretório atual:
 <pre>
  # tazlito configure
 </pre>
+<a name="gen-iso"></a>
 <h3><font color="#6c0023">gen-iso</font></h3>
 <p>
 O comando "gen-iso" pode gerar uma nova imagem do LiveCD a partir de modificações
@@ -103,6 +108,7 @@ ou reconstruida via:
 <pre>
  # tazlito gen-iso
 </pre>
+<a name="gen-initiso"></a>
 <h3><font color="#6c0023">gen-initiso</font></h3>
 <p>
 O comando "gen-initiso" faz o mesmo que o "gen-iso", mas antes ele reconstrói o 
@@ -112,6 +118,7 @@ deve ser reconstruído se modificado:
 <pre>
  # tazlito gen-initiso
 </pre>
+<a name="list-flavors"></a>
 <h3><font color="#6c0023">list-flavors</font></h3>
 <p>
 Este comando baixa (se necessário) e mostra a lista de diferentes variantes
@@ -121,6 +128,7 @@ disponíveis. Pode-se forçar o download com a opção --recharge:
  # tazlito list-flavors
  # tazlito list-flavors --recharge
 </pre>
+<a name="get-flavor"></a>
 <h3><font color="#6c0023">get-flavor</font></h3>
 <p>
 O comando "get-flavor" baixa (se necessário) e prepara os arquivos para que o
@@ -129,6 +137,7 @@ comando "gen-distro" gere uma variante:
 <pre>
  # tazlito get-flavor particular-flavor
 </pre>
+<a name="show-flavor"></a>
 <h3><font color="#6c0023">show-flavor</font></h3>
 <p>
 Este comando mostra a descrição da variante e seu tamanho após a regeneração.
@@ -139,6 +148,7 @@ As opções --brief e --hoheader reduzem a saida do comando:
  # tazlito show-flavor particular-flavor --brief
  # tazlito show-flavor particular-flavor --brief --noheader
 </pre>
+<a name="gen-flavor"></a>
 <h3><font color="#6c0023">gen-flavor</font></h3>
 <p>
 O comando "gen-flavor" cria um arquivo de descrição de uma nova variante a partir
@@ -148,6 +158,7 @@ ser enviado ao slitaz.org:
 <pre>
  # tazlito gen-flavor new-flavor
 </pre>
+<a name="gen-liveflavor"></a>
 <h3><font color="#6c0023">gen-liveflavor</font></h3>
 <p>
 Este comando cria um arquivo de descrição de uma nova variante a partir
@@ -157,6 +168,7 @@ dos resultados de geração da distro baseada no sistema atual. A opção
 <pre> # tazlito gen-liveflavor
  # tazlito gen-liveflavor --help
 </pre>
+<a name="extract-distro"></a>
 <h3><font color="#6c0023">extract-distro</font></h3>
 <p>
 Este comando é usado para extrair uma imagem ISO do LiveCD e reconstruir a 
@@ -167,6 +179,7 @@ adições e reconstruções da imagem ISO por meio do comando "gen-iso" ou
 <pre>
  # tazlito extract-distro slitaz-cooking.iso
 </pre>
+<a name="gen-distro"></a>
 <h3><font color="#6c0023">gen-distro</font></h3>
 <p>
 O comando para <em>Geração de Distribuição</em> pode gerar a árvore da distribuição
@@ -187,6 +200,7 @@ distribuição:
  # tazlito gen-distro --iso=slitaz.iso
  # tazlito gen-distro package-list
 </pre>
+<a name="clean-distro"></a>
 <h3><font color="#6c0023">clean-distro</font></h3>
 <p>
 Remove todos os arquivos gerados ou extraidos da estrutura do LiveCD:
@@ -194,6 +208,7 @@ Remove todos os arquivos gerados ou extraidos da estrutura do LiveCD:
 <pre>
  # tazlito clean-distro
 </pre>
+<a name="addhacker"></a>
 <h3><font color="#6c0023">addhacker</font></h3>
 <p>
 Este comando permite a adição do usuário "hacker" à distribuição - o que permite
@@ -203,6 +218,7 @@ este comando muda as permissões de todos os arquivos em <code>/home/hacker/</cod
 <pre>
  # tazlito addhacker
 </pre>
+<a name="check-distro"></a>
 <h3><font color="#6c0023">check-distro</font></h3>
 <p>
 Este comando simplesmente verifica se os arquivos instalados pelos pacotes estão
@@ -211,6 +227,7 @@ presentes no sistema:
 <pre>
  # tazlito check-distro
 </pre>
+<a name="burn-iso"></a>
 <h3><font color="#6c0023">burn-iso</font></h3>
 <p>
 O comando "burn-iso" obtém informações sobre o dispositivo de cd e as velocidades

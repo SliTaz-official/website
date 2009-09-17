@@ -60,6 +60,7 @@ about creating a LiveCD in the Handbook.
 </p>
 
 <h2>COMMANDS</h2>
+<a name="usage"></a>
 <h3><font color="#6c0023">usage</font></h3>
 <p>
 The 'usage' command displays a summary of available commands
@@ -68,6 +69,7 @@ with a short description:
 <pre>
  # tazlito usage
 </pre>
+<a name="stats"></a>
 <h3><font color="#6c0023">stats</font></h3>
 <p>
 Stats displays the configuration variables, the paths to the
@@ -76,6 +78,7 @@ various files and directories, and information on the ISO image:
 <pre>
  # tazlito stats
 </pre>
+<a name="gen-config"></a>
 <h3><font color="#6c0023">gen-config</font></h3>
 <p>
 The 'gen-config' command allows you to generate a configuration
@@ -87,6 +90,7 @@ if specified via the command line:
  # tazlito gen-config
  # tazlito gen-config /path/to/distro
 </pre>
+<a name="configure"></a>
 <h3><font color="#6c0023">configure</font></h3>
 <p>
 This command configures the system configuration
@@ -95,6 +99,7 @@ file or one found in the current directory:
 <pre>
  # tazlito configure
 </pre>
+<a name="gen-iso"></a>
 <h3><font color="#6c0023">gen-iso</font></h3>
 <p>
 The 'gen-iso' command can generate a 
@@ -107,6 +112,7 @@ modified and rebuilt via:
 <pre>
  # tazlito gen-iso
 </pre>
+<a name="gen-initiso"></a>
 <h3><font color="#6c0023">gen-initiso</font></h3>
 <p>
 The 'gen'initso' command will do the same work as 'gen-iso',
@@ -117,6 +123,7 @@ must be rebuilt if modified:
 <pre>
  # tazlito gen-initiso
 </pre>
+<a name="list-flavors"></a>
 <h3><font color="#6c0023">list-flavors</font></h3>
 <p>
 The 'list-flavors' command downloads (if necessary) and displays 
@@ -127,6 +134,7 @@ download with the --recharge option:
  # tazlito list-flavors
  # tazlito list-flavors --recharge
 </pre>
+<a name="get-flavors"></a>
 <h3><font color="#6c0023">get-flavor</font></h3>
 <p>
 The 'get-flavor' command downloads (if necessary) and prepares the
@@ -135,6 +143,7 @@ files for 'gen-distro' to generate a flavor:
 <pre>
  # tazlito get-flavor particular-flavor
 </pre>
+<a name="show-flavors"></a>
 <h3><font color="#6c0023">show-flavor</font></h3>
 <p>
 The 'show-flavor' command displays the description of the 
@@ -146,6 +155,7 @@ flavor and its size after regeneration. The options
  # tazlito show-flavor particular-flavor --brief
  # tazlito show-flavor particular-flavor --brief --noheader
 </pre>
+<a name="gen-flavor"></a>
 <h3><font color="#6c0023">gen-flavor</font></h3>
 <p>
 The 'gen-flavor' command creates a description file of a new
@@ -155,6 +165,7 @@ The .flavor file can then be sent to slitaz.org:
 <pre>
  # tazlito gen-flavor new-flavor
 </pre>
+<a name="gen-liveflavor"></a>
 <h3><font color="#6c0023">gen-liveflavor</font></h3>
 <p>
 The 'gen-liveflavor' command creates a description file of a new
@@ -164,6 +175,7 @@ current system. The --help option provides more information:
 <pre> # tazlito gen-liveflavor
  # tazlito gen-liveflavor --help
 </pre>
+<a name="extract-distro"></a>
 <h3><font color="#6c0023">extract-distro</font></h3>
 <p>
 The 'extract-distro' command is used to extract an ISO image
@@ -175,6 +187,7 @@ or additions and rebuild the ISO image via 'gen-iso' or
 <pre>
  # tazlito extract-distro slitaz-cooking.iso
 </pre>
+<a name="gen-distro"></a>
 <h3><font color="#6c0023">gen-distro</font></h3>
 <p>
 The <em>Generate Distribution</em> command can generate the
@@ -197,6 +210,7 @@ a distribution:
  # tazlito gen-distro --iso=slitaz.iso
  # tazlito gen-distro package-list
 </pre>
+<a name="clean-distro"></a>
 <h3><font color="#6c0023">clean-distro</font></h3>
 <p>
 Removes all files generated or extracts of the structure
@@ -205,6 +219,7 @@ of the LiveCD:
 <pre>
  # tazlito clean-distro
 </pre>
+<a name="addhacker"></a>
 <h3><font color="#6c0023">addhacker</font></h3>
 <p>
 The 'addhacker' command allows the addition of the user 
@@ -215,6 +230,7 @@ on all files in <code>/home/hacker</code>:
 <pre>
  # tazlito addhacker
 </pre>
+<a name="check-distro"></a>
 <h3><font color="#6c0023">check-distro</font></h3>
 <p>
 This command simply verifies if files installed
@@ -223,6 +239,7 @@ by the packages are present on the system:
 <pre>
  # tazlito check-distro
 </pre>
+<a name="burn-iso"></a>
 <h3><font color="#6c0023">burn-iso</font></h3>
 <p>
 Burn-iso will guess the cdrom device and its speed, and wodim
