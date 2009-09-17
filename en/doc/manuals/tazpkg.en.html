@@ -74,6 +74,7 @@ on a term or package name:
  # tazpkg list cat|categories
  # tazpkg list blocked
 </pre>
+<a name="xhtml-list"></a>
 <h3><font color="#6c0023">xhtml-list</font></h3>
 <p>
 The 'xhtml-list' command can create a XHTML list
@@ -87,6 +88,7 @@ generated list via the command line:
  # tazpkg xhtml-list
  # tazpkg xhtml-list list-name.html
 </pre>
+<a name="list-mirror"></a>
 <h3><font color="#6c0023">list-mirror</font></h3>
 <p>
 List packages available on the mirror. This command will
@@ -100,6 +102,7 @@ the differences between the last and current list of packages:
  # tazpkg list-mirror
  # tazpkg list-mirror --diff
 </pre>
+<a name="info"></a>
 <h3><font color="#6c0023">info</font></h3>
 <p>
 Display any information available in the receipt for the 
@@ -110,6 +113,7 @@ information on receipts):
 <pre>
  # tazpkg info busybox
 </pre>
+<a name="desc"></a>
 <h3><font color="#6c0023">desc</font></h3>
 <p>
 Description of the package (if it exists). This command
@@ -119,6 +123,7 @@ text file, justified to 80 characters to fit in a standard terminal):
 <pre>
  # tazpkg desc busybox
 </pre>
+<a name="list-config"></a>
 <h3><font color="#6c0023">list-config</font></h3>
 <p>
 Lists the system configuration files. The --box option displays
@@ -127,6 +132,7 @@ in table format:
 <pre> # tazpkg list-config
  # tazpkg list-config --box
 </pre>
+<a name="list-files"></a>
 <h3><font color="#6c0023">list-files</font></h3>
 <p>
 List all files installed with a package. This command will
@@ -138,6 +144,7 @@ To list the files installed with the package bc:
 <pre>
  # tazpkg list-files bc
 </pre>
+<a name="search"></a>
 <h3><font color="#6c0023">search</font></h3>
 <p>
 Search for packages by owner or package name. This command
@@ -149,6 +156,7 @@ run 'tazpkg recharge' before conducting a search:
 <pre>
  # tazpkg search gcc
 </pre>
+<a name="search-file"></a>
 <h3><font color="#6c0023">search-file</font></h3>
 <p>
 The 'search-file' command allows you to search for a file
@@ -159,6 +167,7 @@ a file is present on the system. Example:
 <pre>
  $ tazpkg search-file libnss
 </pre>
+<a name="install"></a>
 <h3><font color="#6c0023">install</font></h3>
 <p>
 This command allows the installation of a local package with
@@ -184,6 +193,7 @@ and can also be forced:
 <pre> # tazpkg install-list my-packages.list
  # tazpkg get-install-list my-packages.list --forced
 </pre>
+<a name="link"></a>
 <h3><font color="#6c0023">link</font></h3>
 <p>
 This command allows the installation of a package from another media 
@@ -194,6 +204,7 @@ from an USB key:
 <pre>
  # tazpkg link openoffice /media/usbdisk
 </pre>
+<a name="remove"></a>
 <h3><font color="#6c0023">remove</font></h3>
 <p>
 Remove a package. You will be asked for confirmation (y/N).
@@ -205,6 +216,7 @@ with the package bc:
 <pre>
  # tazpkg remove bc
 </pre>
+<a name="extract"></a>
 <h3><font color="#6c0023">extract</font></h3>
 <p>
 Extract a package into a directory. If you do not specify
@@ -215,6 +227,7 @@ in the current directory using the name package-version:
  # tazpkg extract package.tazpkg
  # tazpkg extract package.tazpkg target/dir
 </pre>
+<a name="pack"></a>
 <h3><font color="#6c0023">pack</font></h3>
 <p>
 The 'pack' command will create a package from a directory
@@ -225,6 +238,7 @@ for the automatic creation of packages). To pack a package:
 <pre>
  # tazpkg pack package-version
 </pre>
+<a name="repack"></a>
 <h3><font color="#6c0023">repack</font></h3>
 <p>
 The 'repack' command allows you to recreate a package from
@@ -234,6 +248,7 @@ To repack a package:
 <pre>
  # tazpkg repack package
 </pre>
+<a name="repack-config"></a>
 <h3><font color="#6c0023">repack-config</font></h3>
 <p>
 The 'repack-config' command recreates a package
@@ -243,6 +258,7 @@ the configuration files:
 </p>
 <pre> # tazpkg repack-config
 </pre>
+<a name="recharge"></a>
 <h3><font color="#6c0023">recharge</font></h3>
 <p>
 Recharge the list of available packages on the mirror. 
@@ -257,6 +273,7 @@ latest list of packages:
 <pre>
  # tazpkg recharge
 </pre>
+<a name="upgrade"></a>
 <h3><font color="#6c0023">upgrade</font></h3>
 <p>
 Upgrade allows you to update all installed packages available
@@ -272,6 +289,7 @@ system shutdown. To upgrade:
 <pre>
  # tazpkg upgrade
 </pre>
+<a name="check"></a>
 <h3><font color="#6c0023">check</font></h3>
 <p>
 The 'check' command can check dependencies on installed
@@ -281,6 +299,7 @@ repacking of packages are present:
 <pre>
  # tazpkg check package
 </pre>
+<a name="block"></a>
 <h3><font color="#6c0023">block or unblock</font></h3>
 <p>
 The 'block' and 'unblock' commands permit you to block
@@ -295,6 +314,7 @@ Grub:
  Or :
  # tazpkg unblock grub
 </pre>
+<a name="get"></a>
 <h3><font color="#6c0023">get</font></h3>
 <p>
 Get a package from the mirror (if it exists). The downloaded
@@ -304,6 +324,7 @@ you can use 'pwd'. To get the Grub package:
 <pre>
  # tazpkg get grub
 </pre>
+<a name="get-install"></a>
 <h3><font color="#6c0023">get-install</font></h3>
 <p>
 Get and install a package from a mirror on the internet.
@@ -315,6 +336,7 @@ use the 'list-mirror' command. To install the package Grub:
 <pre>
  # tazpkg get-install grub
 </pre>
+<a name="clean-cache"></a>
 <h3><font color="#6c0023">clean-cache</font></h3>
 <p>
 Remove *.tazpkg packages downloaded to the cache. During 
@@ -326,6 +348,7 @@ drive or re-download the packages:
 <pre>
  # tazpkg clean-cache
 </pre>
+<a name="setup-mirror"></a>
 <h3><font color="#6c0023">setup-mirror</font></h3>
 <p>
 Setup the URL for the mirror. The 'setup-mirror' command
@@ -338,6 +361,7 @@ packages:
 <pre>
  # tazpkg setup-mirror
 </pre>
+<a name="reconfigure"></a>
 <h3><font color="#6c0023">reconfigure</font></h3>
 <p>
 Replays the post-install script from the package.
@@ -345,6 +369,7 @@ Example using gcc:
 </p>
 <pre> # tazpkg reconfigure gcc
 </pre>
+<a name="depends"></a>
 <h3><font color="#6c0023">depends or rdepends</font></h3>
 <p>
 Displays a dependency tree or reverse dependency tree for a package.
@@ -353,6 +378,7 @@ Examples using mpd:
 <pre> # tazpkg depends mpd
  # tazpkg rdepends mpd
 </pre>
+<a name="add-undigest"></a>
 <h3><font color="#6c0023">add-undigest or setup-undigest</font></h3>
 <p>
 Set the URL of an additional unofficial mirror to test packages that
@@ -364,6 +390,7 @@ must point to the directory containing the packages and 'packages.list':
  # tazpkg add-undigest public-repository http://my.home.org/slitaz
  # tazpkg setup-undigest local-repository /home/slitaz/packages
 </pre>
+<a name="remove-undigest"></a>
 <h3><font color="#6c0023">remove-undigest</font></h3>
 <p>
 Removes the URL of an undigest mirror:
@@ -371,6 +398,7 @@ Removes the URL of an undigest mirror:
 <pre>
  # tazpkg remove-undigest my-repository
 </pre>
+<a name="list-undigest"></a>
 <h3><font color="#6c0023">list-undigest</font></h3>
 <p>
 Lists additional undigest mirrors:
@@ -378,6 +406,7 @@ Lists additional undigest mirrors:
 <pre>
  # tazpkg list-undigest
 </pre>
+<a name="convert"></a>
 <h3><font color="#6c0023">convert</font></h3>
 <p>
 Converts a Debian package (.deb), Redhat (.rpm), Slackware (.tgz) or 
@@ -386,6 +415,7 @@ Archlinux (.pkg.tar.gz) package into a SliTaz package (.tazpkg):
 <pre>
  # tazpkg convert alien-package
 </pre>
+<a name="set-release"></a>
 <h3><font color="#6c0023">set-release</font></h3>
 <p>
 The 'set-release' command changes the current version and 
@@ -393,6 +423,7 @@ upgrades the packages to the latest release:
 </p>
 <pre> # tazpkg set-release cooking
 </pre>
+<a name="bugs"></a>
 <h3><font color="#6c0023">bugs</font></h3>
 <p>
 Generates a list of known bugs in the packages:

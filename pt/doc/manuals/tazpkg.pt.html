@@ -58,6 +58,7 @@ Compatível com o Bash, roda sobre o Ash - parte do projeto Busybox. O Tazpkg
 </p>
 
 <h2>COMANDOS</h2>
+<a name="list"></a>
 <h3><font color="#6c0023">list</font></h3>
 <p>
 Lista pacotes instalados no sistema. Este comando mostra uma lista em formato
@@ -71,6 +72,7 @@ um nome de pacote:
  # tazpkg list cat|categories
  # tazpkg list blocked
 </pre>
+<a name="xhtml-list"></a>
 <h3><font color="#6c0023">xhtml-list</font></h3>
 <p>
 O comando "xhtml-list" cria uma lista em formato xHTML de todos os pacotes
@@ -83,6 +85,7 @@ lista gerada por meio da linha de comando:
  # tazpkg xhtml-list
  # tazpkg xhtml-list list-name.html
 </pre>
+<a name="list-mirror"></a>
 <h3><font color="#6c0023">list-mirror</font></h3>
 <p>
 Lista pacotes disponíveis no mirror. Este comando mostra o arquivo "packages-list"
@@ -95,6 +98,7 @@ a última e a atual lista de pacotes:
  # tazpkg list-mirror
  # tazpkg list-mirror --diff
 </pre>
+<a name="info"></a>
 <h3><font color="#6c0023">info</font></h3>
 <p>
 Mostra qualquer informação disponível na receita para o pacote em questão - sua
@@ -104,6 +108,7 @@ Tazwok para mais informações sobre receitas):
 <pre>
  # tazpkg info busybox
 </pre>
+<a name="desc"></a>
 <h3><font color="#6c0023">desc</font></h3>
 <p>
 Descrição do pacote (se existir). Este comando mostra o arquivo "description.txt"
@@ -113,6 +118,7 @@ caber num terminal padrão):
 <pre>
  # tazpkg desc busybox
 </pre>
+<a name="list-config"></a>
 <h3><font color="#6c0023">list-config</font></h3>
 <p>
 Lista os arquivos de configuração do sistema. A opção --box mostra estas
@@ -121,6 +127,7 @@ informações em formato de tabela
 <pre> # tazpkg list-config
  # tazpkg list-config --box
 </pre>
+<a name="list-files"></a>
 <h3><font color="#6c0023">list-files</font></h3>
 <p>
 Lista todos os arquivos instalados pelo pacote. Este comando lê e mostra o
@@ -131,6 +138,7 @@ desinstala um pacote. Para listar os arquivos instalados pelo pacote bc:
 <pre>
  # tazpkg list-files bc
 </pre>
+<a name="search"></a>
 <h3><font color="#6c0023">search</font></h3>
 <p>
 Busca por pacotes por proprietário ou nome do pacote. Este comando busca pelo
@@ -141,6 +149,7 @@ recharge" antes de iniciar uma busca:
 <pre>
  # tazpkg search gcc
 </pre>
+<a name="search-file"></a>
 <h3><font color="#6c0023">search-file</font></h3>
 <p>
 O comando "search-file" permite a busca por um arquivo entre os instalados pelos
@@ -150,6 +159,7 @@ arquivo e determinar se um arquivo está presente no sistema. Exemplo:
 <pre>
  $ tazpkg search-file libnss
 </pre>
+<a name="install"></a>
 <h3><font color="#6c0023">install</font></h3>
 <p>
 Este comando instala um pacote disponível localmente que possui a extensão
@@ -175,6 +185,7 @@ você instalar vários pacotes com um único comando, e também oferece a opção
  # tazpkg install-list my-packages.list
  # tazpkg get-install-list my-packages.list --forced
 </pre>
+<a name="remove"></a>
 <h3><font color="#6c0023">remove</font></h3>
 <p>
 Remove um pacote. Será pedido que você confirme a ação (y/N). Este comando
@@ -184,6 +195,7 @@ use o comando "list-files" seguido do nome do pacote. Exemplo com o pacote bc:
 <pre>
  # tazpkg remove bc
 </pre>
+<a name="extract"></a>
 <h3><font color="#6c0023">extract</font></h3>
 <p>
 Extrai um pacote em um diretório. Se você não especificar o diretório de destino,
@@ -193,6 +205,7 @@ o pacote será extraido no diretório atual usando o formato nome do pacote-versão
  # tazpkg extract package.tazpkg
  # tazpkg extract package.tazpkg target/dir
 </pre>
+<a name="pack"></a>
 <h3><font color="#6c0023">pack</font></h3>
 <p>
 O comando "pack" cria um pacote a partir de um diretório preparado previamente
@@ -203,6 +216,7 @@ pacotes). Para "empacotar" (pack) um pacote:
 <pre>
  # tazpkg pack package-version
 </pre>
+<a name="repack"></a>
 <h3><font color="#6c0023">repack</font></h3>
 <p>
 O comando "repack" permite a recriação de um pacote a partir dos arquivos
@@ -212,6 +226,7 @@ instalados no sistema em que este pacote foi instalado. Para "re-empacotar"
 <pre>
  # tazpkg repack package
 </pre>
+<a name="repack-config"></a>
 <h3><font color="#6c0023">repack-config</font></h3>
 <p>
 O comando 'repack-config' recria um pacote a partir dos arquivos de 
@@ -221,6 +236,7 @@ arquivos de configuração:
 </p>
 <pre> # tazpkg repack-config
 </pre>
+<a name="recharge"></a>
 <h3><font color="#6c0023">recharge</font></h3>
 <p>
 Recarrega a lista de pacotes disponíves no mirror. Este comando baixa o arquivo
@@ -233,6 +249,7 @@ use o comando "upgrade". Para recarregar a lista de pacotes:
 <pre>
  # tazpkg recharge
 </pre>
+<a name="upgrade"></a>
 <h3><font color="#6c0023">upgrade</font></h3>
 <p>
 Este comando permite a atualização de todos os pacotes disponíveis no mirror.
@@ -246,6 +263,7 @@ a partir do LiveCD serão perdidos no desligamento do sistema. Para atualizar:
 <pre>
  # tazpkg upgrade
 </pre>
+<a name="check"></a>
 <h3><font color="#6c0023">check</font></h3>
 <p>
 O comando "check" checa por dependências em pacotes instalados e determina
@@ -255,6 +273,7 @@ presentes:
 <pre>
  # tazpkg check package
 </pre>
+<a name="block"></a>
 <h3><font color="#6c0023">block ou unblock</font></h3>
 <p>
 Os comandos "block" e "unblock" permitem o bloqueio de pacotes instalados para
@@ -268,6 +287,7 @@ como o Grub, por exemplo:
  Ou :
  # tazpkg unblock grub
 </pre>
+<a name="get"></a>
 <h3><font color="#6c0023">get</font></h3>
 <p>
 Baixa um pacote do mirror (se existir). O arquivo baixado é arquivado no
@@ -277,6 +297,7 @@ Para baixar o pacote Grub:
 <pre>
  # tazpkg get grub
 </pre>
+<a name="get-install"></a>
 <h3><font color="#6c0023">get-install</font></h3>
 <p>
 Baixa e instala um pacote de um mirror na internet. O comando "get-install" 
@@ -287,6 +308,7 @@ baixar e instalar o pacote Grub:
 <pre>
  # tazpkg get-install grub
 </pre>
+<a name="clean-cache"></a>
 <h3><font color="#6c0023">clean-cache</font></h3>
 <p>
 Remove pacotes *.tazpkg baixados que se encontram no cache. Durante a instalação,
@@ -297,6 +319,7 @@ ter mais espaço no disco rígido ou baixar os pacotes novamente:
 <pre>
  # tazpkg clean-cache
 </pre>
+<a name="setup-mirror"></a>
 <h3><font color="#6c0023">setup-mirror</font></h3>
 <p>
 Configura a URL do mirror. O comando "setup-mirror" pedirá a URL do novo mirror.
@@ -307,6 +330,7 @@ para um diretório contendo um arquivo "packages.list" e os pacotes:
 <pre>
  # tazpkg setup-mirror
 </pre>
+<a name="reconfigure"></a>
 <h3><font color="#6c0023">reconfigure</font></h3>
 <p>
 Executa novamente o script de pós instalação de um pacote. Exemplo
@@ -314,6 +338,7 @@ usando o gcc:
 </p>
 <pre> # tazpkg reconfigure gcc
 </pre>
+<a name="depends"></a>
 <h3><font color="#6c0023">depends ou rdepends</font></h3>
 <p>
 Mostra a árvore de dependências (direta ou inversamente) para um pacote.
@@ -322,6 +347,7 @@ Exemplo utilizando o mpd:
 <pre> # tazpkg depends mpd
  # tazpkg rdepends mpd
 </pre>
+<a name="set-release"></a>
 <h3><font color="#6c0023">set-release</font></h3>
 <p>
 Este comando muda a versão atual e faz a atualização de pacotes para
@@ -329,6 +355,7 @@ o lançamento mais recente:
 </p>
 <pre> # tazpkg set-release cooking
 </pre>
+<a name="bugs"></a>
 <h3><font color="#6c0023">bugs</font></h3>
 <p>
 Mostra uma lista de bugs conhecidos dos pacotes:
