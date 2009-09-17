@@ -60,6 +60,7 @@ UUID possui o benefício de nunca mudar de máquina para máquina.
 </p>
 
 <h2>COMANDOS</h2>
+<a name="usage"></a>
 <h3><font color="#6c0023">usage</font></h3>
 <p>
 Mostra um resumo de todos os comandos disponíveis:
@@ -68,6 +69,7 @@ Mostra um resumo de todos os comandos disponíveis:
  # tazusb usage
 </pre>
 
+<a name="writefs"></a>
 <h3><font color="#6c0023">writefs</font></h3>
 <p>
 Este comando cria um arquivo "rootfs.gz" a partir do sistema de arquivos
@@ -95,6 +97,7 @@ Exemplo:
  # tazusb writefs lzma
 </pre>
 
+<a name="format"></a>
 <h3><font color="#6c0023">format</font></h3>
 <p>
 Este comando é usado para formatar o dispositivo a ser utilizado como LiveUSB.
@@ -108,6 +111,7 @@ Exemplo:
  # tazusb format /dev/sda1
 </pre>
 
+<a name="gen-liveusb"></a>
 <h3><font color="#6c0023">gen-liveusb</font></h3>
 <p>
 Instala uma nova MBR, marca sua partição como inicializável e instala 
@@ -122,6 +126,7 @@ Exemplo:
 <pre>
  # tazusb gen-liveusb /dev/sda1
 </pre>
+<a name="gen-swap"></a>
 <h3><font color="#6c0023">gen-swap</font></h3>
 <p>
 O comando 'gen-swap' cria (ou recria) um arquivo de troca (swap) no
@@ -131,6 +136,7 @@ antigos que possuem pouca memória RAM.
 <pre> # tazusb gen-swap
 </pre>
 
+<a name="gen-iso2usb"></a>
 <h3><font color="#6c0023">gen-iso2usb</font></h3>
 <p>
 Este comando faz praticamente o mesmo que o comando gen-liveusb, mas copia
@@ -143,6 +149,7 @@ Exemplo:
 <pre> # tazusb gen-iso2usb /home/tux/slitaz.iso
 </pre>
 
+<a name="clean"></a>
 <h3><font color="#6c0023">clean</font></h3>
 <p>
 Remove os antigos sistemas de arquivos rootfs.gz.unixtimestamp (veja
