@@ -46,7 +46,7 @@
 <h3>Introduction</h3>
 <p>
 The default SliTaz desktop is brought to you using different components 
-of the LXDE project. Openbox, PCmanFM and LXPanel combine to provide a 
+of the LXDE project. Openbox, PCmanFM and LXPanel combine to implement a 
 Desktop providing simplicity and functionality.
 </p>
 
@@ -54,7 +54,7 @@ Desktop providing simplicity and functionality.
 <h3><font color="#6c0023">Openbox</font></h3>
 <p>
 Openbox is a fast, simple, themeable window manager that doesn't
-consume all your system resources, it is the window manager 
+consume all of your system resources, it is the window manager 
 by default on SliTaz. A window manager is an application that runs
 on top of the X server to control the appearance of windows, open
 a X terminal or display applications. It can then place, cut and 
@@ -63,16 +63,16 @@ resize windows at will.
 <p>
 Openbox provides a context menu via a right click on the desktop,
 this menu can be changed by editing a configuration file. The key
-combinations <code>ALT + TAB</code> allow you to list and navigate 
+combinations <code>Alt + TAB</code> allow you to list and navigate 
 through open windows. Obconf can be used to graphically configure 
-the window manager and various small tools specific to SliTaz allow
+the window manager and various small tools (specific to SliTaz) allow
 you to have a simple, stylish and coherent desktop. By default, 
 SliTaz uses 4 virtual desktops.
 </p>
 <p>
 The Desktop provided by SliTaz complies with the Freedesktop standards, the
 file manager PCmanFM allows for management of desktop icons, drag and drop
-(drag and drop) and the mounting of devices with a click.
+(drag and drop) and the mounting of devices with a solitary click.
 The panel menu, taskbar, icons, etc are powered by LXpanel.
 </p>
 
@@ -111,7 +111,7 @@ More information can be found on the official Openbox
 <p>
 The menu is in the file <code>~/.config/openbox/menu.xml</code>, the syntax 
 of the XML file is simple and easy to understand. It also possible to edit
-this file with <code>obmenu</code> (not installed by default). Add an 
+this file with <code>obmenu</code> (not installed by default). An 
 example for an application in a sub menu:
 </p>
 <pre class="script">&lt;item label="File Manager"&gt;
@@ -123,7 +123,7 @@ The subumenus are defined at the end of the file using the <code>menu</code>
 tag. The tag menu can use a <em>pipe</em> to display the menu entries, 
 ie. a script that creates entries on the fly. SliTaz offers by default 
 a <em>pipe menu</em> that allows you to directly open your Favorites folder 
-with the file manager PCmanFM. The script is in <code>/usr/lib/openbox</code> 
+with the file manager PCmanFM. The script is found in <code>/usr/lib/openbox</code> 
 and can be used as an example.
 </p>
 
@@ -155,8 +155,8 @@ and have desktop icons. Alternatively, you can use the package
 <code>hsetroot</code> to display a picture or <code>xsetroot</code> for 
 a solid color. PCmanFM is started with the Openbox session as a daemon; 
 ie, it runs in the background and launches faster. To change the current 
-background image, you can go through the file manager preferences or 
-"Preferences" menu &rarr; "Wallpaper".
+background image, you can go through the file manager preferences or via
+the menu "Preferences" &rarr; "Wallpaper".
 </p>
 <p>
 The icons are displayed via a simple text file (<code>.desktop</code>), 
@@ -183,7 +183,7 @@ files to the <code>/usr/share/applications</code> directory.
 The system configuration file is located in <code>/etc/lxpanel</code>
 and can also be stored locally in <code>~/.config</code>, though it is 
 recommended that you configure LXPanel graphically by using the
-"Panel Settings" entry on the taskbar.
+"Panel Settings" (right click) entry on the taskbar.
 </p>
 
 <h4>Panel Preferences</h4>
@@ -210,7 +210,7 @@ SliTaz provides several tiny tools to give effects to the Openbox windows
 and menus. You can have transparent windows or use shadows to create
 depth on the Desktop. The effects are achieved via <code>xcompmgr</code> 
 (<em>composite manager</em>) and <code>transset-df</code> 
-(<em>transparency</em>) and can be both activated at the same time on the 
+(<em>transparency</em>) and both can be activated at the same time on the 
 session using the Openbox context menu &rarr; "Desktop Effects".
 </p>
 

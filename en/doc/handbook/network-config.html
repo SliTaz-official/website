@@ -54,7 +54,7 @@ By default SliTaz starts a DHCP client (udhcpc) on eth0 at boot time. If your
 network card has been identified as an <code>eth0</code> interface and you use
 a router, your connection should already be working. DHCP is dynamically
 configured, on each boot the client asks for a new IP address from 
-the DHCP server, which is integrated into the router, or on another computer.
+the DHCP server which is integrated into the router, or on another computer.
 If you need a static IP, you can directly edit config files or use the GUI
 <code>netbox</code> available from the System menu --&gt; System tools. 
 In a terminal or a Linux console, you can list all available network 
@@ -228,7 +228,7 @@ Now you have to configure /etc/ppp/pap-secrets or /etc/ppp/chap-secrets:
 "your_login"       *               "your_password"
 </pre>
 <p>
-The config file /etc/resolv.conf will be automatically loaded up. Finished, you can 
+The config file /etc/resolv.conf will be automatically loaded. Finished, you can 
 now connect to the internet with <code>pppd</code>:
 </p>
 <pre>
@@ -246,10 +246,10 @@ To set an ASDL protocol via PPPoE, SliTaz provides the utilities
 package <code>rp-pppoe</code>. Using <code>pppoe-setup</code> is a snap and you
 can quickly configure the network. If you use DCHP it's even easier, because 
 the server from your ISP will take care of everything. If you do not have DHCP,
-you must first disable its use via <code>DHCP="no"</code> from the 
+you must first disable its use via <code>DHCP="no"</code> in the 
 configuration file <code>/etc/network.conf</code>. It should be noted that to
 modify configuration files and system logs you must first become <code>root</code>.
-To install and change the variable DHCP with Nano (ctrl + x to save &amp; exit):
+To install and change the variable DHCP with Nano (ctrl + X to save &amp; exit):
 </p>
 <pre>
  $ su
@@ -320,7 +320,7 @@ on each boot.
 <p>
 SliTaz provides a very basic firewall, the kernel security rules are launched 
 at boot time and iptables rules are disabled by default. You can 
-activate/disable these at startup by using the configuration file: 
+activate/disable these at startup by using the configuration file 
 /etc/firewall.conf.
 </p>
 <p>
@@ -331,9 +331,9 @@ spoof filters. The script then launches the rules defined in the
 /etc/firewall.conf.
 </p>
 <p>
-The <em>firewall</em> uses Iptables, it consists of two files, the 
+The <em>firewall</em> uses Iptables, it consists of two files: 
 /etc/firewall.conf and /etc/init.d/firewall, you shouldn't need to modify 
-these. Note Iptables has lots of options, for more infomation see the official
+these. Note Iptables has lots of options. For more infomation see the official
 documentation available online:
 <a href="http://www.netfilter.org/documentation/">www.netfilter.org/documentation/</a>.
 </p>
@@ -357,7 +357,7 @@ KERNEL_SECURITY="yes"
 </pre>
 <p>
 and to activate/deactivate the iptables rules, it is necessary to modify the 
-variable IPTABLES_RULES= :
+IPTABLES_RULES= variable :
 </p>
 <pre class="script">
 # Enable/disable iptables rules.

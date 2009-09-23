@@ -47,7 +47,7 @@
 <p>
 With Linux your disks and USB media are seen as devices. To access them you must
 first mount a device on a mount point (directory). On SliTaz you can graphically
-mount devices using <code>mountbox</code> or use the command line. To mount the
+mount devices by using <code>mountbox</code> or the command line. To mount the
 first disk of a local hard disk on <code>/mnt/disk</code>:
 </p>
 <pre>
@@ -57,7 +57,7 @@ first disk of a local hard disk on <code>/mnt/disk</code>:
 <p>
 To mount a cdrom or an USB media you should use mount points located in 
 <code>/media</code>. Note that for a cdrom, you just have to specify
-the device path and for a flash key, the mount point already exists:
+the device path. For a flash key, the mount point already exists:
 </p>
 <pre>
  # mount /dev/cdrom
@@ -140,12 +140,12 @@ shell to :/bin/bash
 <pre>
  # tazpkg get-install bash
  # cp /home/hacker/.profile home/hacker/.bashrc
- # Note root user: cp /home/hacker/.profile ~/.bashrc
- # nano /etc/passwd   # :/bin/bash
+ Note root user: cp /home/hacker/.profile ~/.bashrc
+ # nano /etc/passwd   ~ :/bin/bash
 </pre>
 <p>
 The next time you login bash will be your default shell, you can confirm this 
-by typing <code>env</code> in the command line.
+by typing <code>env</code> on the command line.
 </p>
 
 <a name="editors"></a>
@@ -189,8 +189,8 @@ Here's an example using the timezone Europe/London:
 </pre>
 <h4>Rdate</h4>
 <p>
-To syncronize the system clock with a network time server, you can as
-<code>root</code> use the <code>rdate -s</code> command:
+To syncronize the system clock with a network time server, you can (as
+<code>root</code>) use the <code>rdate -s</code> command:
 </p>
 <pre>
  # rdate -s tick.greyware.com
@@ -228,7 +228,7 @@ useful for routine tasks such as system administration. The directory cron uses 
 </p>
 <p>
 Each user of the system can have his/her own tasks, they are defined in the file: <code>/var/spool/cron/crontabs/user</code>.
-The crontab utility allows you amongst other things, to list the tasks specific to the user. The syntax of the
+The crontab utility allows you (amongst other things), to list the tasks specific to the user. The syntax of the
 files is as follows:
 </p>
 <pre class="script">mm hh dd MMM DDD command &gt; log
