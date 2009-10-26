@@ -31,19 +31,19 @@
 <h2><font color="#DF8F06">LiveUSB - SliTaz sur un media USB</font></h2>
 
 <ul>
-	<li><a href="index.html#method">Methodes, type de media et notes</a> - Introduction,
+	<li><a href="liveusb.html#method">Methodes, type de media et notes</a> - Introduction,
 	système de fichiers, résumé des étapes.</li>
-	<li><a href="index.html#tazusb">LiveUSB en 2 commandes</a> - Utiliser TazUSB pour
+	<li><a href="liveusb.html#tazusb">LiveUSB en 2 commandes</a> - Utiliser TazUSB pour
 	créer un LiveUSB facilement.</li>
-	<li><a href="index.html#prepa">Préparer le media USB</a> - Formater si besoin est,
+	<li><a href="liveusb.html#prepa">Préparer le media USB</a> - Formater si besoin est,
 	copier les fichiers du LiveCD.</li>
-	<li><a href="index.html#grub">Installer et utiliser GRUB</a> - Installer le
+	<li><a href="liveusb.html#grub">Installer et utiliser GRUB</a> - Installer le
 	gestionnaire de démarrage GRUB sur le media USB.</li>
-	<li><a href="index.html#grubiso">GRUB sur cdrom</a> - Utiliser le media via un cdrom
+	<li><a href="liveusb.html#grubiso">GRUB sur cdrom</a> - Utiliser le media via un cdrom
 	bootable contenant GRUB.</li>
-	<li><a href="index.html#extlinux">Installer et utiliser EXTLINUX</a> - Installer le
+	<li><a href="liveusb.html#extlinux">Installer et utiliser EXTLINUX</a> - Installer le
 	gestionnaire de démarrage EXTLINUX sur le media USB.</li>
-	<li><a href="index.html#windows">Installer SliTaz sur USB depuis Windows</a> - Installer
+	<li><a href="liveusb.html#windows">Installer SliTaz sur USB depuis Windows</a> - Installer
 	SliTaz sur un media USB en utilisanr Syslinux depuis Windows.</li>
 </ul>
 
@@ -68,9 +68,9 @@ Un media de stockage USB peut être un disque dur externe de grande ou petite
 capacité, une carte de type SD/flash ou une clé USB. Vous pouvez par exemple,
 utiliser l'ancienne carte d'un appareil de photos numérique ayant au 
 minimum une capacité de 32 Mb. Cela dit, l'utilisation de 
-<a href="index.html#grub">GRUB</a> avec les clés USB ne réussi pas toujours et dépend
+<a href="liveusb.html#grub">GRUB</a> avec les clés USB ne réussi pas toujours et dépend
 du type de clé. Si l'utilisation de GRUB échoue, il est conseillé d'utiliser
-le gestionaire de démarrage <a href="index.html#extlinux">EXTLINUX</a> et d'installer
+le gestionaire de démarrage <a href="liveusb.html#extlinux">EXTLINUX</a> et d'installer
 un MBR fonctionnel sur la clé USB.
 </p>
 <p>
@@ -178,7 +178,7 @@ Ce qui peut donner (hd0,0), (hd1,0) ou encore (hd2,0), GRUB voit le premier
 disque <code>hda</code> comme <code>hd0</code>, il faut donc modifier les 
 valeures en fonction de votre configuration. Il se peut aussi que votre media 
 ne soit pas trouvé, dans ce cas vous pouvez utiliser le <em>bootloader</em>
-<a href="index.html#extlinux">EXTLINUX</a>. Pour installer GRUB vous pouvez
+<a href="liveusb.html#extlinux">EXTLINUX</a>. Pour installer GRUB vous pouvez
 utiliser les commandes <code>root</code> et <code>setup</code>. Pour quitter 
 le SHell GRUB c'est la commande <code>quit</code> :
 </p>
@@ -477,7 +477,7 @@ syslinux -ma -d \boot\syslinux K:
 <!-- Footer. -->
 <div id="footer">
 	<div class="footer-right"></div>
-	<a href="index.html#top">Haut de la page</a> | 
+	<a href="liveusb.html#top">Haut de la page</a> | 
 	<a href="index.html">Table des matières</a>
 </div>
 

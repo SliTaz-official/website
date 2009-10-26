@@ -31,13 +31,13 @@
 <h2><font color="#DF8F06">Hacking SliTaz LiveCD</font></h2>
 
 <ul>
-    <li><a href="index.html#intro">Introduction.</a></li>
-    <li><a href="index.html#pre">Organisation et préparation.</a></li>
-    <li><a href="index.html#add-files">Ajouter des fichiers dans l'ISO.</a></li>
-    <li><a href="index.html#isolinux">Modifier la configuration d'isolinux.</a></li>
-    <li><a href="index.html#memtest">Installer et utiliser Memtest86.</a></li>
-    <li><a href="index.html#rootfs">Manipuler la racine du système Live.</a></li>
-    <li><a href="index.html#gen-iso">Générer une image ISO bootable avec isolinux.</a></li>
+    <li><a href="hacking-livecd.html#intro">Introduction.</a></li>
+    <li><a href="hacking-livecd.html#pre">Organisation et préparation.</a></li>
+    <li><a href="hacking-livecd.html#add-files">Ajouter des fichiers dans l'ISO.</a></li>
+    <li><a href="hacking-livecd.html#isolinux">Modifier la configuration d'isolinux.</a></li>
+    <li><a href="hacking-livecd.html#memtest">Installer et utiliser Memtest86.</a></li>
+    <li><a href="hacking-livecd.html#rootfs">Manipuler la racine du système Live.</a></li>
+    <li><a href="hacking-livecd.html#gen-iso">Générer une image ISO bootable avec isolinux.</a></li>
 </ul>
 
 <a name="intro"></a>
@@ -158,7 +158,7 @@ dedans&nbsp;:
 <p>
 Maintenant qu'un nouveau répertoire existe en écriture pour tous, il faut le
 remplir. Une fois que vous avez fini de copier vos données, il suffit de
-<a href="index.html#gen-iso">générer une nouvelle image ISO bootable</a>.
+<a href="hacking-livecd.html#gen-iso">générer une nouvelle image ISO bootable</a>.
 </p>
 <a name="isolinux"></a>
 <h3><font color="#6c0023">Modifier la configuration d'isolinux</font></h3>
@@ -225,7 +225,7 @@ label slitazfr
 <p>
 Une fois que vous avez fini de modifier le fichier de configuration, il ne 
 faut pas oublier d'enregistrer vos changements avant de 
-<a href="index.html#gen-iso">générer une nouvelle image ISO bootable</a> avec isolinux.
+<a href="hacking-livecd.html#gen-iso">générer une nouvelle image ISO bootable</a> avec isolinux.
 </p>
 <a name="memtest"></a>
 <h3><font color="#6c0023">Installer et utiliser Memtest86</font></h3>
@@ -259,7 +259,7 @@ dans le répertoire <code>boot/</code> de la racine du CD&nbsp;:
 <p>
 Maintenant que le binaire est installé dans le <em>root CD</em>, il suffit
 d'ajouter une entrée pour Memtest86 dans le fichier de configuration d'isolinux
-et de <a href="index.html#gen-iso">générer une nouvelle image ISO bootable</a>.
+et de <a href="hacking-livecd.html#gen-iso">générer une nouvelle image ISO bootable</a>.
 Direction <code>/home/slitaz/hacked</code> pour éditer le fichier
 <code>isolinux.cfg</code> avec LeafPad par exemple&nbsp;:
 </p>
@@ -285,7 +285,7 @@ opérations nécessaires à la modification du système de fichier racine (
 <em>root file system</em>) sont&nbsp;: extraire le système du fichier compresé
 <code>rootfs.gz</code>, modfier, reconstruire l'image du système compressé
 et générer une nouvelle ISO. En partant du principe que vous avez déjà
-<a href="index.html#pre">préparé votre répertoire de travail</a>, il faut commencer
+<a href="hacking-livecd.html#pre">préparé votre répertoire de travail</a>, il faut commencer
 par créer un répertoire destiné à contenir les fichiers du système modifiable.
 Le système racine compressé étant nommé <code>rootfs.gz</code>, nous vous
 proposons d'utiliser un répertoire <code>rootfs/</code> pour l'extraire. 
@@ -355,7 +355,7 @@ système (<code>rootfs/</code>) et crée un fichier compressé
 </pre>
 <p>
 Pour finir il suffit de copier votre système compressé dans le répertoire
-<code>boot/</code> de la racine du CD et de <a href="index.html#gen-iso"
+<code>boot/</code> de la racine du CD et de <a href="hacking-livecd.html#gen-iso"
 >générer une nouvelle image ISO bootable</a> avec isolinux. Pour copier le
 <em>rootfs</em> en écrasant l'actuel, direction le répertoire de travail :
 </p>
@@ -428,7 +428,7 @@ Pour utiliser le script, il suffit de le rendre exécutable et de l'exécuter :
 <!-- Footer. -->
 <div id="footer">
 	<div class="footer-right"></div>
-	<a href="index.html#top">Haut de la page</a> | 
+	<a href="hacking-livecd.html#top">Haut de la page</a> | 
 	<a href="index.html">Table des matières</a>
 </div>
 
