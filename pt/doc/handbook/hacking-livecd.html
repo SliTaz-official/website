@@ -32,13 +32,13 @@
 <h2><font color="#df8f06">Hackeando o SliTaz LiveCD</font></h2>
 
 <ul>
-    <li><a href="index.html#intro">Introdução.</a></li>
-    <li><a href="index.html#pre">Organização e Preparação.</a></li>
-    <li><a href="index.html#add-files">Adicionando arquivos à ISO.</a></li>
-    <li><a href="index.html#isolinux">Modificando a configuração do isolinux.</a></li>
-    <li><a href="index.html#memtest">Instalando e usando o Memtest86.</a></li>
-    <li><a href="index.html#rootfs">Manipulando o sistema root Live.</a></li>
-    <li><a href="index.html#gen-iso">Gerando uma imagem ISO bootável com o isolinux.</a></li>
+    <li><a href="hacking-livecd.html#intro">Introdução.</a></li>
+    <li><a href="hacking-livecd.html#pre">Organização e Preparação.</a></li>
+    <li><a href="hacking-livecd.html#add-files">Adicionando arquivos à ISO.</a></li>
+    <li><a href="hacking-livecd.html#isolinux">Modificando a configuração do isolinux.</a></li>
+    <li><a href="hacking-livecd.html#memtest">Instalando e usando o Memtest86.</a></li>
+    <li><a href="hacking-livecd.html#rootfs">Manipulando o sistema root Live.</a></li>
+    <li><a href="hacking-livecd.html#gen-iso">Gerando uma imagem ISO bootável com o isolinux.</a></li>
 </ul>
 
 <a name="intro"></a>
@@ -143,7 +143,7 @@ mudar as permissões para que todos os usuários tenham acesso de escrita:
 <p>
 Agora que o diretório existe e qualquer usuário pode escrever nele, você pode 
 adicionar arquivos no diretório. Quando terminar você pode então 
-<a href="index.html#gen-iso">gerar uma imagem ISO bootável</a>.
+<a href="hacking-livecd.html#gen-iso">gerar uma imagem ISO bootável</a>.
 </p>
 
 <a name="isolinux"></a>
@@ -202,7 +202,7 @@ inglês e usar o layout de teclado UK:
 </pre>
 <p>
 Uma vez terminadas as modificações no arquivo de configuração, não se esqueça de
-salvar suas mudanças e <a href="index.html#gen-iso">gerar uma imagem ISO bootável</a> 
+salvar suas mudanças e <a href="hacking-livecd.html#gen-iso">gerar uma imagem ISO bootável</a> 
 com o isolinux.
 </p>
 
@@ -233,7 +233,7 @@ pré-compilado para o diretório <code>boot/</code> na raíz do CD:
 <p>
 Agora que o binário está instalado na <em>raíz do CD</em>, podemos adicionar uma
 entrada para o memtest86 no arquivo de configuração do isolinux e
-<a href="index.html#gen-iso">gerar uma imagem ISO bootável</a>. Vá até
+<a href="hacking-livecd.html#gen-iso">gerar uma imagem ISO bootável</a>. Vá até
 <code>/home/slitaz/hacked</code> e edite o arquivo <code>isolinux.cfg</code> 
 usando o Leafpad:
 </p>
@@ -255,7 +255,7 @@ usuários e senhas, customizar os gráficos ou executar comando automaticamente no
 momento do boot. As operações necessárias para mudar o sistema de arquivos root são:
 extrair o sistema de arquivos comprimido <code>rootfs.gz</code>, modificar, 
 reconstruir a imagem e gerar a ISO. Baseado no pressuposto de que você
-<a href="index.html#pre">preparou um diretório de trabalho</a>, iremos começar criando um
+<a href="hacking-livecd.html#pre">preparou um diretório de trabalho</a>, iremos começar criando um
 diretório para conter arquivos no sistema modificado. Como o sistema de 
 arquivos comprimido é nomeado <code>rootfs.gz</code>, sugerimos que você 
 utilize um diretório chamado <code>rootfs/</code> para extrai-lo. Vá até o diretório
@@ -318,7 +318,7 @@ comprimido <code>rootfs.gz</code> no diretório precedente:
 </pre>
 <p>
 Finalmente copie o arquivo do sistema comprimido para o diretório <code>boot/</code>
-na raíz do CD e <a href="index.html#gen-iso">gere uma imagem ISO bootável</a> com o 
+na raíz do CD e <a href="hacking-livecd.html#gen-iso">gere uma imagem ISO bootável</a> com o 
 isolinux. Para copiar o novo <em>rootfs</em> comprimido no diretório de trabalho:
 </p>
 <pre> 
@@ -382,7 +382,7 @@ Para usar o script, torne-o executável:
 <!-- Footer. -->
 <div id="footer">
 	<div class="footer-right"></div>
-	<a href="index.html#top">Topo da Página</a> | 
+	<a href="hacking-livecd.html#top">Topo da Página</a> | 
 	<a href="index.html">Conteúdo</a>
 </div>
 
