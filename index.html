@@ -9,7 +9,7 @@
     <meta name="robots" content="index, follow, all" />
     <meta name="revisit-after" content="3 days" />
     <meta name="expires" content="never" />
-    <meta name="modified" content="2009-04-12 00:12:00" />
+    <meta name="modified" content="2009-11-01 20:14:00" />
     <meta name="author" content="Christophe Lincoln"/>
     <meta name="publisher" content="www.slitaz.org" />
     <meta name="verify-v1" content="qieECDfB5l+EBkG8QMNuHOGfol0/MEe4U22/4iVupNw=" />
@@ -24,17 +24,36 @@
 <!-- Header -->
 <div id="header">
 	<a name="top"></a>
-<!-- Access -->
-<div id="access">
-	<a href="http://forum.slitaz.org/">Forum</a> |
-	<a href="http://wiki.slitaz.org/">Wiki</a> |
-	<a href="http://labs.slitaz.org/">Labs</a> |
-	<a href="http://pkgs.slitaz.org/">Packages</a>
-</div>
 	<a href="http://www.slitaz.org/"><img id="logo"
 	src="pics/website/logo.png" title="www.slitaz.org" alt="www.slitaz.org"
 	style="border: 0px solid ; width: 200px; height: 74px;" /></a>
 	<p id="titre">#!/GNU/Linux</p>
+</div>
+
+<!-- Navigation menu -->
+<div id="nav">
+
+<div class="nav_box">
+<h4>About SliTaz</h4>
+<p>
+SliTaz is an open source and free operating system providing a fully featured
+desktop or server in less than 30 Mb. SliTaz is simple to use, fast and stable.
+More information <a href="en/about/">about SliTaz...</a>
+</p>
+</div>
+
+<!-- SliTaz network -->
+<div class="nav_box">
+<h4>SliTaz Network</h4>
+<ul>
+	<li><a href="http://forum.slitaz.org/">Community Forum</a></li>
+	<li><a href="http://labs.slitaz.org/">SliTaz Laboratories</a></li>
+	<li><a href="http://pkgs.slitaz.org/">Packages Database</a></li>
+	<li><a href="http://twitter.com/slitaz">Follow us on Twitter</a></li>
+	<!-- <li><a href="http://wiki.slitaz.org/">Ressources Wiki</a></li> -->
+</ul>
+</div>
+
 </div>
 
 <!-- Content top. -->
@@ -50,10 +69,11 @@
 <h1><font color="#3E1220">Home</font></h1>
 <h2><font color="#DF8F06">Boot baby... boot!</font></h2>
 
-<p>
+<div class="infobox" style="font-weight: bold;">
 <img
-	src="pics/icons/locale.png"
-	style="vertical-align: middle; width: 20px; height: 20px;" alt="locale" />
+	src="pics/website/locale.png"
+	style="vertical-align: middle; width: 20px; height: 20px;"
+	alt="language" />
 Language:
 <a href="de/index.html">Deutsch</a> -
 <a href="en/index.html">English</a> -
@@ -62,26 +82,17 @@ Language:
 <a href="pt/index.html">Português</a> -
 <a href="cn/index.html" title="Chinese">
 <img
-	src="cn/chinese_news.jpg"
+	src="cn/chinese_i18n.jpg"
 	style="vertical-align: middle;"
 	title="Chinese" alt="cn" /></a>
-</p>
+</div>
 
-<p>
-SliTaz is an open source and free operating system providing a fully featured
-desktop or server in less than 30 Mb. SliTaz is simple to use, fast and stable.
-</p>
-
-<table width="100%">
-	<tr>
-		<td align="center">
-		<img
-			src="pics/website/screenpresentation.jpg"
-			title="SliTaz Desktops" alt="slitaz-desktop"
-			style="width: 450px; " />
-		</td>
-	</tr>
-</table>
+<div style="text-align: center;">
+<img
+	src="pics/website/screenpresentation.png"
+	title="SliTaz Desktops" alt="slitaz-desktop"
+	style="width: 380px; height: 170px; margin-top: 8px;" />
+</div>
 
 <h2><font color="#DF8F06">News</font></h2>
 
@@ -107,13 +118,13 @@ desktop or server in less than 30 Mb. SliTaz is simple to use, fast and stable.
 	</strong></li>
 </ul>
 
-<p>
+<div class="infobox">
+<img
+	src="pics/website/news.png"
+	style="vertical-align: middle; width: 20px; height: 20px;" alt="news" />
 General activity of the project is published on
-<a href="http://labs.slitaz.org/news">SliTaz laboratories</a>. The project
-also proposes a small
-<a href="http://wiki.slitaz.org/doku.php?id=here">monthly Newsletter</a>
-in English and Chinese.
-</p>
+<a href="http://labs.slitaz.org/news">SliTaz laboratories</a>.
+</div>
 
 <!-- End of news -->
 </div>
@@ -127,35 +138,6 @@ needed and you're welcome to join us if you would like to see the website
 translated into your language.
 </p>
 
-<!--<h2><font color="#DF8F06">Tag cloud</font></h2>-->
-<!-- 10 Cloud tag are available. -->
-<div id="cloud">
-<p>
-	<a href="http://forum.slitaz.org/" class="tag5">Support</a>
-	<a href="en/get/index.html" class="tag8">Download</a>
-	<a href="en/doc/handbook/livecd.html" class="tag6">LiveCD</a>
-	<a href="en/doc/index.html" class="tag5">Documentation</a>
-	<a href="en/about/index.html" class="tag4">About</a>
-	<a href="http://labs.slitaz.org/" class="tag8">Laboratories</a>
-	<a href="en/doc/handbook/index.html" class="tag6">Handbook</a>
-	<a href="en/doc/handbook/network-config.html" class="tag4">Wifi</a>
-	<a href="en/asso/index.html" class="tag6">Association</a>
-	<a href="en/doc/handbook/liveusb.html" class="tag8">LiveUSB</a>
-	<a href="en/devel/index.html" class="tag5">Development</a>
-	<a href="en/doc/handbook/enlightenment.html" class="tag3">e17</a>
-	<a href="en/packages/index.html" class="tag8">Packages</a>
-	<a href="http://wiki.slitaz.org/" class="tag5">Wiki</a>
-	<a href="en/doc/cookbook/index.html" class="tag3">Cookbook</a>
-	<a href="http://labs.slitaz.org/news" class="tag6">Labs News</a>
-	<a href="en/doc/handbook/security.html" class="tag5">Security</a>
-	<a href="en/doc/handbook/desktop.html" class="tag7">Openbox</a>
-	<a href="en/mailing-list.html" class="tag5">Mailing list</a>
-	<a href="en/artwork/index.html" class="tag4">Artwork</a>
-	<a href="en/get/flavors.html" class="tag7">LiveCD flavor</a>
-	<a href="http://boot.slitaz.org/" class="tag6">Web Boot</a>
-</p>
-</div>
-
 <!-- End of content with round corner -->
 </div>
 <div id="content_bottom">
@@ -166,7 +148,7 @@ translated into your language.
 <!-- Start of footer and copy notice -->
 <div id="copy">
 <p>
-Last modification: 2009-05-12 00:12:00 -
+Last modification: 2009-11-01 20:14:00 -
 <a href="index.html#top">Top of the page</a>
 </p>
 <p>

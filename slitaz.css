@@ -3,24 +3,27 @@
 	www.slitaz.org - (c) 2007 Pankso
 */
 
+html {
+	height:  102%;
+}
+
 body {
-	background: #222222;
+	background: #ffffff;
 	color: black;
 	font: 13px sans-serif, vernada, arial;
 	margin: 0;
-	padding-bottom: auto;
 }
 
 /* Accessibility */
 
 #access {
 	position: absolute;
-	top: 1px;
-	right: 6px;
+	top: 4px;
+	right: 4px;
 	text-align: right;
 	width: 100%;
 	margin: 0;
-	font-size: 12px;
+	font-size: 11px;
 	font-weight: bold;
 }
 
@@ -47,19 +50,18 @@ body {
 	margin-bottom: 30px;
 }
 
-#titre{
+#titre {
+	position: absolute;
 	font-size: 16px;
 	font-weight: bolder ;
-	margin-left: 232px;
-	margin-top: 4px;
-	padding-top: 25px ;
+	margin-left: 200px;
+	margin-top: 28px;
 }
 
 #logo {
 	position: absolute;
 	float: left;
-	margin-left: 32px;
-	margin-right: 20px;
+	margin-left: 16px;
 	margin-top: 0px;
 }
 
@@ -67,49 +69,51 @@ body {
 
 #nav {
 	position: absolute;
-	top: 100px;
-	right: 6px;
-	background: #eeeeee url(pics/website/nav-tr.png) no-repeat top right;
-	color: black;
+	top: 76px;
+	right: 40px;
+	color: #555555;
 	float: right;
-	width: 152px;
+	width: 250px;
 	line-height: 1.3em;
 	text-align: left;
-	font-size: 11px;
-	font-weight: bold;
+	font-size: 12px;
 }
 
-#nav_top {
-	background: transparent url(pics/website/nav-tl.png) no-repeat top left;
-	height: 12px;
-}
-
-#nav_bottom {
-	background: transparent url(pics/website/nav-bl.png) no-repeat bottom left;
-	height: 12px;
-}
-
-#nav_bottom_img {
-	background: transparent url(pics/website/nav-br.png) no-repeat bottom right;
-	height: 12px;
-}
-
-#nav ul{
+#nav ul {
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
 	list-style-type: none;
-	margin: 0px 0px 0px 6px;
-	padding: 3px 2px 3px 2px;
+	margin: 10px 0;
+	padding: 10px 24px 10px 24px;
+	background-color: #eaeaea;
+}
+
+#nav .nav_box ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 10px 24px 10px 0px;
 }
 
 #nav li {
 	display: inline;
 }
 
+#nav h4 {
+	font-size: 110%;
+	color: #666666;
+	font-weight: bold;
+	margin: 0;
+	padding: 0 0 1px 0;
+	border-bottom: 1px solid #cecece;
+}
+
 #nav a {
-	color: #3E1220;
+	color: #0F314E;
 	background: inherit;
 	display: block;
-	padding: 0.5px;
+	padding: 2px 0;
 	text-decoration: none;
+	font-weight: bold;
 }
 
 #nav a:hover {
@@ -124,6 +128,33 @@ body {
 	border-top: 1px solid #BDBDBD;
 
 }
+
+.nav_box {
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	margin: 10px 0;
+	padding: 10px 24px 10px 24px;
+	background-color: #eaeaea;
+	text-align: justify;
+}
+
+#nav .nav_box p a {
+	display: inline;
+	font-weight: normal;
+	text-decoration: underline;
+}
+
+#nav .nav_box p a:hover {
+	text-decoration: none;
+	color: blue;
+	background: inherit;
+}
+
+#nav hr {
+	height: 0px;
+	border: 0px solid #eaeaea;
+}
+
 /* Page content */
 
 #content, #content_bottom, #content_top {
@@ -132,23 +163,10 @@ body {
 	text-align: justify;
 }
 
-#content_top {
-	height: 14px;
-	margin: 0px 100px 0px 100px;
-}
-
 #content {
 	height: auto;
-	margin: -6px 100px 0px 100px;
-	padding: 0px 72px 72px 72px;
-	/*background: white;
-	color: #333333;*/
-}
-
-#content_bottom {
-	height: 14px;
-	margin: 0px 100px 0px 100px;
-	/*clear: both;*/
+	margin: 6px 280px 0px 0px;
+	padding: 0px 40px 60px 40px;
 }
 
 #content li {
@@ -173,7 +191,7 @@ body {
 
 #copy a:hover {
 	background: inherit;
-	color: #EDEDED;
+	color: #666666;
 }
 
 /* Footer */
@@ -226,49 +244,34 @@ body {
 
 /* CSS class. */
 
-.top_left, .top_right, .bottom_left, .bottom_right {
-	height: 14px;
-	width: 14px;
-	color: white;
-	background-color: #333333;
-	background-repeat: no-repeat;
-}
-
-.top_left {
-	background-image: url(pics/website/content-tl.png);
-	background-position: left top;
-	position: absolute;
-}
-
-.top_right {
-	background-image: url(pics/website/content-tr.png);
-	float: right;
-}
-
-.bottom_left {
-	background-image: url(pics/website/content-bl.png);
-	position: absolute;
-}
-
-.bottom_right {
-	background-image: url(pics/website/content-br.png);
-	float: right;
+.infobox {
+	margin: 10px;
+	padding: 12px;
+	background: #f2f2f2;
+	border: 1px solid #eaeaea;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
 }
 
 /* HTML styles */
 
 h1 {
-	color: #3E1220;
+	color: blue;
 	background: inherit;
 	text-align: left;
-	margin: 0px 0px 16px -58px;
+	margin: 0px 0px 10px 0px;
+	font-size: 140%;
+	font-weight: bold;
 }
 
 h2 {
-    color: #DF8F06;
-    border-left: 10px solid #F3F3F3;
-    padding: 4px 0px 4px 4px;
-    margin: 0;
+	color: #DF8F06;
+	/* border-top: 1px solid #f3f3f3; */
+	border-left: 8px solid #f3f3f3;
+	padding: 4px 0px 4px 4px;
+	margin: 0;
+	font-size: 140%;
+	font-weight: bold;
 }
 
 h3 {
@@ -305,7 +308,7 @@ img {
 }
 
 fieldset {
-	background: #eeeeee;
+	background: #E2ECf6;
 	color: black;
 	margin-top: 25px;
 	border: 1px solid black;
@@ -331,6 +334,23 @@ pre.script {
 	border: 1px inset #606060;
 }
 
+textarea {
+	background: #E5E5E5;
+	margin-top: 12px;
+}
+
+input[type=submit] {
+	background: #E5E5E5;
+	color: black;
+	border: 1px outset #111111;
+	font-weight: bold;
+}
+
+input[type=submit]:hover {
+	background: #F3F3F3;
+	color: black;
+}
+
 /* Packages pages */
 
 .pkg_nav {
@@ -352,4 +372,3 @@ p.get {
 	background: #F3F3F3;
 	border: 1px solid #DEDEDE;
 }
-

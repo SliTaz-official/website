@@ -24,7 +24,10 @@
     <a name="top"></a>
 <!-- Access -->
 <div id="access">
-    Language:
+	<img
+		src="../pics/website/locale.png"
+		style="vertical-align: middle; width: 20px; height: 20px;"
+		alt="language" />
     <a href="../de/index.html" title="Deutsche Slitaz Website">Deutsch</a> |
     <a href="../en/index.html" title="English Home page">English</a> |
     <a href="../es/index.html" title="Página de Inicio">Español</a> |
@@ -50,7 +53,6 @@
 	<li><a href="packages/index.html" title="Paquets logiciels disponibles">Paquets</a></li>
 	<li><a href="devel/index.html" title="Le coin du développeur">Développement</a></li>
 	<li><a href="artwork/index.html" title="Artwork, couleurs et images">Art &amp; graphisme</a></li>
-	
 </ul>
 <!-- Support -->
 <ul>
@@ -84,32 +86,22 @@
 <h2><font color="#DF8F06">Boot bébé... boot !</font></h2>
 
 <p>
-<a href="../en/index.html" title="English">Welcome</a> -
-<a href="../es/index.html" title="Español">Bienvenido</a> -
-<a href="../pt/index.html" title="Português">Bem-vindo</a> -
-<a href="../de/index.html" title="Deutsch">Willkommen</a> -
-Bienvenue sur le site de SliTaz GNU/Linux.
-</p>
-<p>
-Slitaz est un système libre fonctionnant en mémoire vive et démarrant 
+Slitaz est un système libre fonctionnant en mémoire vive et démarrant
 depuis un média amovible tel qu'un cdrom ou une clé USB. SliTaz est
 distribuée sous forme de <a href="doc/handbook/livecd.html">LiveCD</a>,
 de moins de 30 Mb. Le système est rapide et réactif, épuré et robuste.
 SliTaz se veut simple et intuitive, fournissant un bureau graphique
 léger et élégant, le meilleur support matériel possible et des outils
-de configuration graphique simples à utiliser. 
+de configuration graphique simples à utiliser.
 <a href="about/index.html">Plus d'informations...</a>
 </p>
-<table width="100%">
-    <tr>
-        <td align="center">
-        <a href="artwork/screenshots.html"><img
-    src="../pics/website/screenpresentation.jpg"
-    title="SliTaz Desktops" alt="slitaz-dektop"
-    style="width: 450px; " /></a>
-        </td>
-    </tr>
-</table>
+
+<div style="text-align: center;">
+<img
+	src="../pics/website/screenpresentation.png"
+	title="SliTaz Desktops" alt="slitaz-desktop"
+	style="width: 380px; height: 170px; margin-top: 8px;" />
+</div>
 
 <!--
     SliTaz news starting.
@@ -125,14 +117,17 @@ Le site web de SliTaz propose les principales nouvelles du projet, et
 <a href="http://labs.slitaz.org/">les laboratoires</a> des nouvelles
 sur l'activité générale des différents sous-projets. Ces nouvelles sont
 aussi disponibles sous forme de <a href="rss.xml">flux XML</a>. De même, le projet
-propose une petite lettre d'information mensuelle en anglais et 
+propose une petite lettre d'information mensuelle en anglais et
 chinois.
 </p>
-<ul>
-	<li><a href="http://labs.slitaz.org/news">Nouvelles des Labs</a>
-	(<a href="http://labs.slitaz.org/news?format=atom">flux</a>)</li>
-	<li><a href="http://wiki.slitaz.org/doku.php?id=here">Monthly Newsletter</a></li>
-</ul>
+
+<div class="infobox">
+<img
+	src="../pics/website/news.png"
+	style="vertical-align: middle; width: 20px; height: 20px;" alt="news" />
+<a href="http://labs.slitaz.org/news">Nouvelles des Labs</a>
+(<a href="http://labs.slitaz.org/news?format=atom">flux</a>)
+</div>
 
 <div id="news">
 
@@ -140,7 +135,7 @@ chinois.
 	<!-- <li><strong>Date - Title</strong>
 	<p></p>
 	</li> -->
-	
+
 	<li><strong>19 mai 2009 - SliTaz aux LinuxDays 2009 (Genève)</strong>
 	<p>
 	Lors du salon LinuxDays en Suisse (3-4-5 juin), l'association SliTaz tiendra un stand
@@ -154,19 +149,19 @@ chinois.
 	<p>
 	La saveur du LiveCD LinuxDays contiendra une sélection de logiciels pour
 	une utilisation nomade du système. Les salons sont aussi un lieu d'échanges
-	et nous répondrons volontiers aux questions, alors n'hésitez pas à venir 
-	nous voir ! Organisation de l'événement et informations sur <a 
+	et nous répondrons volontiers aux questions, alors n'hésitez pas à venir
+	nous voir ! Organisation de l'événement et informations sur <a
 	href="http://labs.slitaz.org/wiki/events/2009-linuxdays">les Labs de SliTaz</a>.
 	Site web des LinuxDays : <a href="http://2009.linuxdays.ch/">2009.linuxdays.ch</a>
 	</p>
 	</li>
-	
+
 	<li><strong>16 avril 2009 - Publication de SliTaz GNU/linux 2.0</strong>
 	<p>
 	Le projet SliTaz est fier d'annoncer la publication de SliTaz GNU/Linux
 	2.0, la nouvelle version stable de la distribution. Cette nouvelle version
 	est le résultat d'une année de travail communautaire, elle fournit un système
-	d'exploitation ultra-léger, rapide, stable et modulable. SliTaz propose 
+	d'exploitation ultra-léger, rapide, stable et modulable. SliTaz propose
 	un bureau graphique complet dans moins de 30 Mb, les applications nécessaires
 	à un serveur fiable et robuste, et environ 1400 paquets logiciels facilement
 	installables en quelques cliques de souris. Cette nouvelle version propose
@@ -176,15 +171,15 @@ chinois.
 	la détection automatique des périphériques PCI et USB, un gestionnaire
 	de paquets et un centre de contrôle graphique, ainsi que divers outils propres
 	à la distribution. La création de média USB bootable et de LiveCD à saveur,
-	a été grandement améliorée et simplifiée. Le LiveCD core inclut entre autres :  
-	Firefox 3.0.8, gFTP, LostIRC, ePDFView, mtPaint, Transmission, Osmo et 
-	Alsaplayer. La documentation du site a été mise à jour et vous pouvez consulter 
-	<a href="doc/releases/2.0/relnotes.fr.html">les notes de publication</a>, 
+	a été grandement améliorée et simplifiée. Le LiveCD core inclut entre autres :
+	Firefox 3.0.8, gFTP, LostIRC, ePDFView, mtPaint, Transmission, Osmo et
+	Alsaplayer. La documentation du site a été mise à jour et vous pouvez consulter
+	<a href="doc/releases/2.0/relnotes.fr.html">les notes de publication</a>,
 	incluses dans la distribution, pour plus de détails sur cette version.
-	SliTaz GNU/Linux 2.0 est téléchargeable dès maintenant depuis les 
+	SliTaz GNU/Linux 2.0 est téléchargeable dès maintenant depuis les
 	<a href="get/index.html">miroirs du projet</a>.
 	</p></li>
-	
+
 	<li><strong>27 Mars 2009 - Labs et nouveaux miroirs</strong><br />
 	Cherchant continuellement à améliorer la distribution et les services
 	que nous proposons, nous sommes fiers d'annoncer le lancement des
@@ -192,17 +187,17 @@ chinois.
 	Cette plate-forme communautaire permet aux contributeurs de collaborer
 	plus efficacement, de rapporter plus facilement des bugs ou demander
 	de nouvelles fonctionnalités. Les labs fournissent à chaque
-	<a href="http://labs.slitaz.org/projects">projet</a> un wiki, un 
+	<a href="http://labs.slitaz.org/projects">projet</a> un wiki, un
 	tracker, un module d'annonces, etc. Les laboratoires fournissent une
 	vue d'ensemble sur l'activité du projet et la publication
 	<a href="http://labs.slitaz.org/news">de nouvelles régulières</a>.
 	N'hésitez à vous inscrire, participer et commenter les annonces.
 	Le projet est aussi fier d'annonçer 2 nouveaux miroirs : En Suisse,
 	hébérgé par <a href="http://mirror.switch.ch/">SWITCHmirror</a>
-	(10 Gbit/s) et en Chine hébérgé par 
+	(10 Gbit/s) et en Chine hébérgé par
 	<a href="http://www.lupaworld.com">LupaWorld</a>, thanks a lot for
 	supporting us.</li>
-	
+
 	<li><strong>20 Mars 2009 - SliTaz à Solutionslinux 2009 (Paris)</strong><br />
 	Le projet SliTaz sera présent à Solutionslinux 2009 à Paris, le stand
 	sera tenu par 3 membres actifs de l'équipe pendant les 3 jours du salon
@@ -211,12 +206,12 @@ chinois.
 	dont le EeePC, de créer (prenez une clé avec vous) ou d'acheter des
 	clés USB bootables ansi que des LiveCD à saveurs. Vous pourrez
 	aussi vous renseigner sur le projet et prendre contact avec les
-	membres de l'Association et du team de développement. Site web du salon : 
+	membres de l'Association et du team de développement. Site web du salon :
 	<a href="http://www.solutionslinux.fr/">www.solutionslinux.fr</a>,
 	<a href="http://www.solutionslinux.fr/associations.php?pg=2_7">Village associatif</a>,
 	<a href="http://www.solutionslinux.fr/exposant_fiche.php?id=763&amp;pg=2_4">Stand SliTaz</a>.
 	</li>
-	
+
 	<li><strong>28 Février 2009 - Nouvelle Cooking</strong><br />
 	En préparation de la prochaine version stable, le projet SliTaz est fier
 	de publier une nouvelle version Cooking avec un grand nombre de corrections,
@@ -231,7 +226,7 @@ chinois.
 	réseaux, créer des favoris et configurer les pilotes manuellement ou via
 	Tazhw. Le bureau fournit maintenant une interface permettant de gérer
 	les applications lancées avec la session Openbox et Ivman avec desktopbox
-	fournissent un système de notification simple et léger. Vous pouvez 
+	fournissent un système de notification simple et léger. Vous pouvez
 	<a href="get/index.html#cooking">télécharger</a> cette nouvelle image ISO depuis
 	la partie téléchargement.
 	</li>
