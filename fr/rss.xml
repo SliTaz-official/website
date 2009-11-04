@@ -9,14 +9,41 @@
 		Actualités du projet de la mini distribution SliTaz GNU/Linux.
 	</description>
 	<copyright>Copyright © www.slitaz.org - GNU gpl</copyright>
-	<lastBuildDate>Thu, 19 May 2009 11:30:00 GMT</lastBuildDate>
-	
+	<lastBuildDate>Wed, 04 Nov 2009 23:10:00 GMT</lastBuildDate>
+
 	<image>
 		<title>Slitaz GNU/Linux (fr)</title>
 		<url>http://www.slitaz.org/pics/artwork/slitaz-spider-48x48.png</url>
 		<link>http://www.slitaz.org/fr/</link>
 	</image>
-	
+
+	<item>
+		<title>4 novembre 2009 - Nouvelle Cooking 20091104</title>
+		<link>http://www.slitaz.org/get/index.html</link>
+		<guid isPermaLink="true">http://community.slitaz.org//</guid>
+		<pubDate>Wed, 04 Nov 2009 23:10:00 GMT</pubDate>
+		<description>
+	Les contributeurs SliTaz sont fier d'annoncer la disponibilité d'une
+	nouvelle image ISO de la version Cooking basée sur plus de 2100 paquets
+	disponibles dans les dépôt SliTaz. Le système à été reconstruit au complet
+	avec une nouvelle chaîne d'outils composée de la Glibc 2.10.1 et GCC 4.4.1.
+	Cette nouvell Coonking utilise le noyau Linux 2.6.30.6 avec une meilleur
+	support matériel et plus de modules inclus directement dans le noyau, la
+	gestion du démarrage à été améliorée et le système démarre plus rapidement
+	que jamais. Les paquets majeurs du LiveCD tel que Firefox ont été mis à jour,
+	les outils graphique créés pour SliTaz ainsi que le gestionnaire ded paquets
+	ont été améliorés. Nouvelle version nouvelle ligne graphique avec un thème
+	pour Openbox, GTK et un set d'icon aus couleurs du projet. Nous avons aussi
+	supprimé ePDFview pour un lecteur PDF en ligne mais l'image ISO dépasse 30
+	Mb (31,5) à cause d'un plus gros noyau et de dépendances supplémentaires.
+
+	Dans l'actualité principale le projet Slitaz à un nouveau forum de support
+	et une nouvelle platforme communautaire ou tout le monde est le bienvenue
+	pour partager et participer! Cette nouvelle version Cooking est comme toujours
+	téléchargeable depuis la section téléchargement du site web
+		</description>
+	</item>
+
 	<item>
 		<title>19 may 2009 - SliTaz aux LinuxDays 2009 (Genève)</title>
 		<link>http://www.slitaz.org/fr/asso/</link>
@@ -32,13 +59,13 @@
 	de clés USB bootables (LiveUSB) et des cdrom.
 	La saveur du LiveCD LinuxDays contiendra une sélection de logiciels pour
 	une utilisation nomade du système. Les salons sont aussi un lieu d'échanges
-	et nous répondrons volontiers aux questions, alors n'hésitez pas à venir 
+	et nous répondrons volontiers aux questions, alors n'hésitez pas à venir
 	nous voir! Organisation de l'événement et informations sur les Labs de SliTaz:
-	http://labs.slitaz.org/wiki/events/2009-linuxdays. Site web des LinuxDays: 
+	http://labs.slitaz.org/wiki/events/2009-linuxdays. Site web des LinuxDays:
 	http://2009.linuxdays.ch/
 		</description>
 	</item>
-	
+
 	<item>
 		<title>16 april 2009 - Publication de SliTaz GNU/linux 2.0</title>
 		<link>http://www.slitaz.org/fr/get/</link>
@@ -48,7 +75,7 @@
 	Le projet SliTaz est fier d'annoncer la publication de SliTaz GNU/Linux
 	2.0, la nouvelle version stable de la distribution. Cette nouvelle version
 	est le résultat d'une année de travail communautaire, elle fournit un système
-	d'exploitation ultra-léger, rapide, stable et modulable. SliTaz propose 
+	d'exploitation ultra-léger, rapide, stable et modulable. SliTaz propose
 	un bureau graphique complet dans moins de 30 Mb, les applications nécessaires
 	à un serveur fiable et robuste, et environ 1400 paquets logiciels facilement
 	installables en quelques cliques de souris. Cette nouvelle version propose
@@ -58,38 +85,38 @@
 	la détection automatique des périphériques PCI et USB, un gestionnaire
 	de paquets et un centre de contrôle graphique, ainsi que divers outils propres
 	à la distribution. La création de média USB bootable et de LiveCD à saveur,
-	a été grandement améliorée et simplifiée. Le LiveCD core inclut entre autres :  
-	Firefox 3.0.8, gFTP, LostIRC, ePDFView, mtPaint, Transmission, Osmo et 
-	Alsaplayer. La documentation du site a été mise à jour et vous pouvez consulter 
+	a été grandement améliorée et simplifiée. Le LiveCD core inclut entre autres :
+	Firefox 3.0.8, gFTP, LostIRC, ePDFView, mtPaint, Transmission, Osmo et
+	Alsaplayer. La documentation du site a été mise à jour et vous pouvez consulter
 	les notes de publication,
 	incluses dans la distribution, pour plus de détails sur cette version.
-	SliTaz GNU/Linux 2.0 est téléchargeable dès maintenant depuis les 
+	SliTaz GNU/Linux 2.0 est téléchargeable dès maintenant depuis les
 	miroirs du projet
 		</description>
 	</item>
-	
+
 	<item>
 		<title>27 Mars 2009 - Labs et nouveaux miroirs</title>
 		<link>http://www.slitaz.org/</link>
 		<guid isPermaLink="true">http://labs.slitaz.org/</guid>
 		<pubDate>Sun, 05 April 2009 11:30:00 GMT</pubDate>
 		<description>
-	Cherchant continuellement à améliorer la distribution et les 
-	services que nous proposons, nous sommes fier d'annoncer le 
-	lancement des laboratoires SliTaz ou SliTaz Labs. Cette platforme 
-	communautaire permet aux contributeurs de collaborer plus 
+	Cherchant continuellement à améliorer la distribution et les
+	services que nous proposons, nous sommes fier d'annoncer le
+	lancement des laboratoires SliTaz ou SliTaz Labs. Cette platforme
+	communautaire permet aux contributeurs de collaborer plus
 	efficacement, de rapporter plus facilement des bugs ou demander
 	de nouvelles fonctionnalités. Les labs fournissent à chaque
-	projets un wiki, un tracker, un module d'annonces, etc. Les 
-	laboratoires fournissent une vue d'ensemble sur l'activité du 
-	projet et la publication de nouvelles régulières. N'héstez à vous 
-	inscrire, participer et commenter les annonces. Le projet et 
-	aussi fier d'annonçer 2 nouveaux miroirs: En Suisse, hébérgé par 
-	SWITCHmirror (10 Gbit/s) et en Chine hébérgé par LupaWorld, 
+	projets un wiki, un tracker, un module d'annonces, etc. Les
+	laboratoires fournissent une vue d'ensemble sur l'activité du
+	projet et la publication de nouvelles régulières. N'héstez à vous
+	inscrire, participer et commenter les annonces. Le projet et
+	aussi fier d'annonçer 2 nouveaux miroirs: En Suisse, hébérgé par
+	SWITCHmirror (10 Gbit/s) et en Chine hébérgé par LupaWorld,
 	thanks a lot for supporting us.
 		</description>
 	</item>
-	
+
 	<item>
 		<title>SliTaz à Solutionslinux 2009 (Paris)</title>
 		<link>http://www.slitaz.org/</link>
@@ -106,6 +133,6 @@
 	membres de l'association et du team de développement.
 		</description>
 	</item>
-	
+
 </channel>
 </rss>
