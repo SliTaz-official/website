@@ -16,6 +16,8 @@
 		<url>http://www.slitaz.org/pics/artwork/slitaz-spider-48x48.png</url>
 		<link>http://www.slitaz.org/fr/</link>
 	</image>
+	
+	<!-- justify to 80 chars or less for text-mode RSS readers also -->
 
 <item>
 		<title>4 November 2009 - New Cooking 20091104</title>
@@ -23,24 +25,26 @@
 		<guid isPermaLink="true">http://community.slitaz.org/</guid>
 		<pubDate>Wed, 04 Nov 2009 23:10:00 GMT</pubDate>
 		<description>
-	SliTaz contributors are proud to announce the availability of a new Cooking
-	ISO image based on over 2100 packages available in the SliTaz repository.
-	The full system has been rebuilt with a new toolchain using Glibc 2.10.1
-	and GCC 4.4.1. This new Cooking uses the Linux kernel 2.6.30.6 with better
-	hardware support and more built-in modules. The boot process has been further
-	improved and the boot time is now faster than ever. Major packages found on
-	the LiveCD such as Firefox have been updated to the current stable version.
-	Home-made GUI boxes have been enhanced. Tazpkg packages manager supports new
-	features including the conversion of deb/rpm/arch/slackware/ipk packages to
-	Slitaz native format. The ISO image includes a new Openbox, GTK and icons
-	theme for an elegant and more beautiful desktop. We have also removed
-	ePDFview and switched to an online PDF viewer. This ISO image, however,
-	is a bit bigger than 30 Mb (31.5) due to a bigger Kernel and many new
-	dependencies.
-	We would also like to announce that SliTaz project has a new support forum
-	and a new community platform where everyone is welcome to share and to get
-	involved! This new Cooking ISO is as always downloadable from the website
-	download section.
+	SliTaz contributors are proud to announce the availability of a new 
+	Cooking ISO image based on over 2100 packages available in the SliTaz 
+	repository. The full system has been rebuilt with a new toolchain 
+	using Glibc 2.10.1 and GCC 4.4.1. This new Cooking uses the Linux 
+	kernel 2.6.30.6 with better hardware support and more built-in 
+	modules. The boot process has been further improved and the boot time 
+	is now faster than ever. Major packages found on the LiveCD such as 
+	Firefox have been updated to the current stable version. Home-made 
+	GUI boxes have been enhanced. Tazpkg packages manager supports new 
+	features including the conversion of deb/rpm/arch/slackware/ipk 
+	packages to Slitaz native format. The ISO image includes a new 
+	Openbox, GTK and icons theme for an elegant and more beautiful 
+	desktop. We have also removed ePDFview and switched to an online PDF 
+	viewer. This ISO image, however, is a bit bigger than 30 Mb (31.5) 
+	due to a bigger Kernel and many new dependencies.
+	
+	We would also like to announce that the SliTaz project has a new 
+	support forum and a new community platform where everyone is welcome 
+	to share and to get involved! This new Cooking ISO is as always 
+	downloadable from the website download section.
 		</description>
 	</item>
 

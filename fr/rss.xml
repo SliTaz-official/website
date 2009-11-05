@@ -24,23 +24,26 @@
 		<pubDate>Wed, 04 Nov 2009 23:10:00 GMT</pubDate>
 		<description>
 	Les contributeurs SliTaz sont fier d'annoncer la disponibilité d'une
-	nouvelle image ISO de la version Cooking basée sur plus de 2100 paquets
-	disponibles dans les dépôt SliTaz. Le système à été reconstruit au complet
-	avec une nouvelle chaîne d'outils composée de la Glibc 2.10.1 et GCC 4.4.1.
-	Cette nouvell Coonking utilise le noyau Linux 2.6.30.6 avec une meilleur
-	support matériel et plus de modules inclus directement dans le noyau, la
-	gestion du démarrage à été améliorée et le système démarre plus rapidement
-	que jamais. Les paquets majeurs du LiveCD tel que Firefox ont été mis à jour,
-	les outils graphique créés pour SliTaz ainsi que le gestionnaire ded paquets
-	ont été améliorés. Nouvelle version nouvelle ligne graphique avec un thème
-	pour Openbox, GTK et un set d'icon aus couleurs du projet. Nous avons aussi
-	supprimé ePDFview pour un lecteur PDF en ligne mais l'image ISO dépasse 30
-	Mb (31,5) à cause d'un plus gros noyau et de dépendances supplémentaires.
+	nouvelle image ISO de la version Cooking basée sur plus de 2100 
+	paquets disponibles dans les dépôt SliTaz. Le système à été 
+	reconstruit au complet avec une nouvelle chaîne d'outils composée de 
+	la Glibc 2.10.1 et GCC 4.4.1. Cette nouvell Coonking utilise le noyau 
+	Linux 2.6.30.6 avec une meilleur support matériel et plus de modules 
+	inclus directement dans le noyau, la gestion du démarrage à été 
+	améliorée et le système démarre plus rapidement que jamais. Les 
+	paquets majeurs du LiveCD tel que Firefox ont été mis à jour, les 
+	outils graphique créés pour SliTaz ainsi que le gestionnaire ded 
+	paquets ont été améliorés. Nouvelle version nouvelle ligne graphique 
+	avec un thème pour Openbox, GTK et un set d'icon aus couleurs du 
+	projet. Nous avons aussi supprimé ePDFview pour un lecteur PDF en 
+	ligne mais l'image ISO dépasse 30 Mb (31,5) à cause d'un plus gros 
+	noyau et de dépendances supplémentaires.
 
-	Dans l'actualité principale le projet Slitaz à un nouveau forum de support
-	et une nouvelle platforme communautaire ou tout le monde est le bienvenue
-	pour partager et participer! Cette nouvelle version Cooking est comme toujours
-	téléchargeable depuis la section téléchargement du site web
+	Dans l'actualité principale le projet Slitaz à un nouveau forum de 
+	support et une nouvelle platforme communautaire ou tout le monde est 
+	le bienvenue pour partager et participer! Cette nouvelle version 
+	Cooking est comme toujours téléchargeable depuis la section 
+	téléchargement du site web
 		</description>
 	</item>
 
@@ -50,19 +53,20 @@
 		<guid isPermaLink="true">http://2009.linuxdays.ch/</guid>
 		<pubDate>Thu, 19 Mai 2009 22:30:00 GMT</pubDate>
 		<description>
-	Lors du salon LinuxDays en Suisse, l'association SliTaz tiendra un stand
-	dans le village associatif et une conférence sera donnée mercredi matin.
-	Le sujet de la conférence est une étude de cas d'un cabinet d'optique
-	utilisant "SliTaz Business Server" avec standard téléphonique, ERP intégré,
-	mail, LDAP, etc. Pendant les 3 jours du salon, le stand sera tenu par des
-	membres du projet SliTaz. Le stand proposera des démonstrations, la création
-	de clés USB bootables (LiveUSB) et des cdrom.
-	La saveur du LiveCD LinuxDays contiendra une sélection de logiciels pour
-	une utilisation nomade du système. Les salons sont aussi un lieu d'échanges
-	et nous répondrons volontiers aux questions, alors n'hésitez pas à venir
-	nous voir! Organisation de l'événement et informations sur les Labs de SliTaz:
-	http://labs.slitaz.org/wiki/events/2009-linuxdays. Site web des LinuxDays:
-	http://2009.linuxdays.ch/
+	Lors du salon LinuxDays en Suisse, l'association SliTaz tiendra un 
+	stand dans le village associatif et une conférence sera donnée 
+	mercredi matin. Le sujet de la conférence est une étude de cas d'un 
+	cabinet d'optique utilisant "SliTaz Business Server" avec standard 
+	téléphonique, ERP intégré, mail, LDAP, etc. Pendant les 3 jours du 
+	salon, le stand sera tenu par des membres du projet SliTaz. Le stand 
+	proposera des démonstrations, la création de clés USB bootables 
+	(LiveUSB) et des cdrom. La saveur du LiveCD LinuxDays contiendra une 
+	sélection de logiciels pour une utilisation nomade du système. Les 
+	salons sont aussi un lieu d'échanges et nous répondrons volontiers 
+	aux questions, alors n'hésitez pas à venir nous voir! Organisation de 
+	l'événement et informations sur les Labs de SliTaz: 
+	http://labs.slitaz.org/wiki/events/2009-linuxdays. Site web des 
+	LinuxDays: http://2009.linuxdays.ch/
 		</description>
 	</item>
 
@@ -72,26 +76,27 @@
 		<guid isPermaLink="true">http://www.slitaz.org/</guid>
 		<pubDate>Thu, 16 April 2009 11:30:00 GMT</pubDate>
 		<description>
-	Le projet SliTaz est fier d'annoncer la publication de SliTaz GNU/Linux
-	2.0, la nouvelle version stable de la distribution. Cette nouvelle version
-	est le résultat d'une année de travail communautaire, elle fournit un système
-	d'exploitation ultra-léger, rapide, stable et modulable. SliTaz propose
-	un bureau graphique complet dans moins de 30 Mb, les applications nécessaires
-	à un serveur fiable et robuste, et environ 1400 paquets logiciels facilement
-	installables en quelques cliques de souris. Cette nouvelle version propose
-	le montage automatique des partitions (dont celles en NTFS), le support Wifi,
-	un bureau respectant les standards Freedesktop, le glisser-déposer, le
-	démarrage réseau via GPXE et boot.slitaz.org,
-	la détection automatique des périphériques PCI et USB, un gestionnaire
-	de paquets et un centre de contrôle graphique, ainsi que divers outils propres
-	à la distribution. La création de média USB bootable et de LiveCD à saveur,
-	a été grandement améliorée et simplifiée. Le LiveCD core inclut entre autres :
-	Firefox 3.0.8, gFTP, LostIRC, ePDFView, mtPaint, Transmission, Osmo et
-	Alsaplayer. La documentation du site a été mise à jour et vous pouvez consulter
-	les notes de publication,
-	incluses dans la distribution, pour plus de détails sur cette version.
-	SliTaz GNU/Linux 2.0 est téléchargeable dès maintenant depuis les
-	miroirs du projet
+	Le projet SliTaz est fier d'annoncer la publication de SliTaz 
+	GNU/Linux 2.0, la nouvelle version stable de la distribution. Cette 
+	nouvelle version est le résultat d'une année de travail communautaire, 
+	elle fournit un système d'exploitation ultra-léger, rapide, stable et 
+	modulable. SliTaz propose un bureau graphique complet dans moins de 
+	30 Mb, les applications nécessaires à un serveur fiable et robuste, 
+	et environ 1400 paquets logiciels facilement installables en quelques 
+	cliques de souris. Cette nouvelle version propose le montage 
+	automatique des partitions (dont celles en NTFS), le support Wifi,
+	un bureau respectant les standards Freedesktop, le glisser-déposer, 
+	le démarrage réseau via GPXE et boot.slitaz.org, la détection 
+	automatique des périphériques PCI et USB, un gestionnaire de paquets 
+	et un centre de contrôle graphique, ainsi que divers outils propres
+	à la distribution. La création de média USB bootable et de LiveCD à 
+	saveur, a été grandement améliorée et simplifiée. Le LiveCD core 
+	inclut entre autres : Firefox 3.0.8, gFTP, LostIRC, ePDFView, mtPaint, 
+	Transmission, Osmo et Alsaplayer. La documentation du site a été mise 
+	à jour et vous pouvez consulter les notes de publication, incluses 
+	dans la distribution, pour plus de détails sur cette version. SliTaz 
+	GNU/Linux 2.0 est téléchargeable dès maintenant depuis les miroirs du 
+	projet
 		</description>
 	</item>
 
@@ -123,14 +128,14 @@
 		<guid isPermaLink="true">http://www.solutionslinux.fr/</guid>
 		<pubDate>Sun, 20 Mar 2009 22:50:00 GMT</pubDate>
 		<description>
-	Le projet SliTaz sera présent aux Solutionslinux 2009 à Paris, le stand
-	sera tenu par 3 membres actifs de l'équipe pendant les 3 jours du salon
-	et plusieurs autres contributeurs seront présents à certain moment. Sur
-	place vous aurez la possibilité de tester SliTaz sur divers machines
-	dont le EeePC, de créer (prenez une clé avec vous) ou d'acheter des
-	clés USB bootables ansi que des LiveCD à saveurs. Vous pourrez
-	aussi vous renseigner sur le projet et prendre contact avec les
-	membres de l'association et du team de développement.
+	Le projet SliTaz sera présent aux Solutionslinux 2009 à Paris, le 
+	stand sera tenu par 3 membres actifs de l'équipe pendant les 3 jours 
+	du salon et plusieurs autres contributeurs seront présents à certain 
+	moment. Sur place vous aurez la possibilité de tester SliTaz sur 
+	divers machines dont le EeePC, de créer (prenez une clé avec vous) ou 
+	d'acheter des clés USB bootables ansi que des LiveCD à saveurs. Vous 
+	pourrez aussi vous renseigner sur le projet et prendre contact avec 
+	les membres de l'association et du team de développement.
 		</description>
 	</item>
 
