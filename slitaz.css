@@ -70,7 +70,7 @@ body {
 #nav {
 	position: absolute;
 	top: 76px;
-	right: 40px;
+	right: 80px;
 	color: #555555;
 	float: right;
 	width: 250px;
@@ -168,8 +168,8 @@ body {
 
 #content {
 	height: auto;
-	margin: 6px 280px 0px 0px;
-	padding: 0px 40px 60px 40px;
+	margin: 6px 320px 0px 0px;
+	padding: 0px 40px 60px 80px;
 }
 
 #content li {
@@ -181,10 +181,11 @@ body {
 
 #copy {
 	font-size: 11px ;
-	text-align: center ;
+	text-align: left ;
 	background: transparent;
 	color: #a8a8a8;
 	padding-top: 10px;
+	margin: 0 0 0 80px;
 }
 
 #copy a {
@@ -206,8 +207,8 @@ body {
 	width: auto;
 	clear: both;
 	padding: 0;
-	margin: 0;
-	text-align: center;
+	margin: 0 0 0 80px;
+	text-align: left;
 	vertical-align: middle;
 }
 
@@ -340,18 +341,6 @@ pre.script {
 textarea {
 	background: #E5E5E5;
 	margin-top: 12px;
-}
-
-input[type=submit] {
-	background: #E5E5E5;
-	color: black;
-	border: 1px outset #111111;
-	font-weight: bold;
-}
-
-input[type=submit]:hover {
-	background: #F3F3F3;
-	color: black;
 }
 
 /* Packages pages */
