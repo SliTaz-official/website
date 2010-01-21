@@ -186,7 +186,7 @@ système Live et une image ISO via une liste de paquets. Pour fonctionner, cette
 commande a besoin d'une liste de paquets, d'un répertoire contenant tous les
 paquets (.tazpkg) de la liste et d'un répertoire pour générer la distribution.
 La liste de paquets peut être extraite d'une saveur par la commande get-flavor.
-Si l'on utilise le Live-CD, les options --cdrom et --iso=<image-iso> permettent
+Si l'on utilise le Live-CD, les options --cdrom et --iso=image-iso permettent
 de refabriquer les packets qui placent des fichiers dans /boot sans être obligé
 de les télécharger et récupère les fichiers additionnels du Live-CD.
 Le chemin vers les différents répertoires sont à configurer dans le fichier de
@@ -226,6 +226,17 @@ des paquets, sont bien présents dans la distro :
 </p>
 <pre>
  # tazlito check-distro
+</pre>
+<a name="emu-iso"></a>
+<h3><font color="#6c0023">emu-iso</font></h3>
+<p>
+La commande emu-iso va utiliser l'émulateur Qemu pour démarrer et lançer 
+SliTaz. Qemu est permet de tester l'image ISO fraîchement construite sans
+la graver sur cdrom ou redémarrer en mode frugal.
+</p>
+<pre>
+ # tazlito emu-iso
+ # tazlito emu-iso path/to/image.iso
 </pre>
 <a name="burn-iso"></a>
 <h3><font color="#6c0023">burn-iso</font></h3>
