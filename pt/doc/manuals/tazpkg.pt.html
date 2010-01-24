@@ -185,6 +185,20 @@ você instalar vários pacotes com um único comando, e também oferece a opção
  # tazpkg install-list my-packages.list
  # tazpkg get-install-list my-packages.list --forced
 </pre>
+
+<a name="link"></a>
+<h3><font color="#6c0023">link</font></h3>
+<p>
+Este comando permite a instalação de uma pacote a partir de outro
+dispositivo de mídia. A configuração é feita por meio de um link
+simbólico e consome pouca memória. Geralmente é usado de um sistema
+carregado na RAM para instalar programas adicionais de um dispositivo
+USB:
+</p>
+<pre>
+ # tazpkg link openoffice /media/usbdisk
+</pre>
+
 <a name="remove"></a>
 <h3><font color="#6c0023">remove</font></h3>
 <p>
@@ -347,6 +361,45 @@ Exemplo utilizando o mpd:
 <pre> # tazpkg depends mpd
  # tazpkg rdepends mpd
 </pre>
+
+<a name="add-undigest"></a>
+<h3><font color="#6c0023">add-undigest ou setup-undigest</font></h3>
+<p>
+Define a URL de um mirror não oficial para testar pacotes que ainda não
+estão disponíveis nos mirrors oficiais. Pode-se também editar manualmente
+o arquivo /var/lib/tazpkg/undigest/'repository'. A URL deve levar ao 
+diretório que contenha os pacotes e o arquivo 'packages.list':
+</p>
+<pre>
+ # tazpkg add-undigest public-repository http://my.home.org/slitaz
+ # tazpkg setup-undigest local-repository /home/slitaz/packages
+</pre>
+<a name="remove-undigest"></a>
+<h3><font color="#6c0023">remove-undigest</font></h3>
+<p>
+Remove a URL de um mirror undigest:
+</p>
+<pre>
+ # tazpkg remove-undigest my-repository
+</pre>
+<a name="list-undigest"></a>
+<h3><font color="#6c0023">list-undigest</font></h3>
+<p>
+Lista os mirrors undigest: 
+</p>
+<pre>
+ # tazpkg list-undigest
+</pre>
+<a name="convert"></a>
+<h3><font color="#6c0023">convert</font></h3>
+<p>
+Converte pacotes Debian (.deb), Redhat (.rpm), Slackware (.tgz) ou 
+Archlinux (.pkg.tar.gz) para um pacote SliTaz (.tazpkg):
+</p>
+<pre>
+ # tazpkg convert alien-package
+</pre>
+
 <a name="set-release"></a>
 <h3><font color="#6c0023">set-release</font></h3>
 <p>
