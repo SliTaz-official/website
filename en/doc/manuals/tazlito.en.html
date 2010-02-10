@@ -45,7 +45,7 @@ Tazlito is a small utility to extract a LiveCD, rebuild the
 ISO image and regenerate the root filesystem of the LiveCD. 
 Tazlito can also generate a distribution from a list of packages 
 previously downloaded. To run, Tazlito uses the configuration file 
-/etc/slitaz-tools/tazlito.conf or a tazlito.conf found in the 
+/etc/tazlito/tazlito.conf or a tazlito.conf found in the 
 current directory that can be easily generated. 
 It specifies the name of the ISO, volume, maintainer and 
 the paths of the packages to distribute and the generated ISO. 
@@ -60,6 +60,7 @@ about creating a LiveCD in the Handbook.
 </p>
 
 <h2>COMMANDS</h2>
+
 <a name="usage"></a>
 <h3><font color="#6c0023">usage</font></h3>
 <p>
@@ -69,6 +70,7 @@ with a short description:
 <pre>
  # tazlito usage
 </pre>
+
 <a name="stats"></a>
 <h3><font color="#6c0023">stats</font></h3>
 <p>
@@ -78,6 +80,7 @@ various files and directories, and information on the ISO image:
 <pre>
  # tazlito stats
 </pre>
+
 <a name="gen-config"></a>
 <h3><font color="#6c0023">gen-config</font></h3>
 <p>
@@ -90,6 +93,7 @@ if specified via the command line:
  # tazlito gen-config
  # tazlito gen-config /path/to/distro
 </pre>
+
 <a name="configure"></a>
 <h3><font color="#6c0023">configure</font></h3>
 <p>
@@ -99,6 +103,7 @@ file or one found in the current directory:
 <pre>
  # tazlito configure
 </pre>
+
 <a name="gen-iso"></a>
 <h3><font color="#6c0023">gen-iso</font></h3>
 <p>
@@ -112,6 +117,7 @@ modified and rebuilt via:
 <pre>
  # tazlito gen-iso
 </pre>
+
 <a name="gen-initiso"></a>
 <h3><font color="#6c0023">gen-initiso</font></h3>
 <p>
@@ -123,6 +129,7 @@ must be rebuilt if modified:
 <pre>
  # tazlito gen-initiso
 </pre>
+
 <a name="list-flavors"></a>
 <h3><font color="#6c0023">list-flavors</font></h3>
 <p>
@@ -134,6 +141,7 @@ download with the --recharge option:
  # tazlito list-flavors
  # tazlito list-flavors --recharge
 </pre>
+
 <a name="get-flavors"></a>
 <h3><font color="#6c0023">get-flavor</font></h3>
 <p>
@@ -143,6 +151,7 @@ files for 'gen-distro' to generate a flavor:
 <pre>
  # tazlito get-flavor particular-flavor
 </pre>
+
 <a name="show-flavors"></a>
 <h3><font color="#6c0023">show-flavor</font></h3>
 <p>
@@ -155,6 +164,7 @@ flavor and its size after regeneration. The options
  # tazlito show-flavor particular-flavor --brief
  # tazlito show-flavor particular-flavor --brief --noheader
 </pre>
+
 <a name="gen-flavor"></a>
 <h3><font color="#6c0023">gen-flavor</font></h3>
 <p>
@@ -165,6 +175,7 @@ The .flavor file can then be sent to slitaz.org:
 <pre>
  # tazlito gen-flavor new-flavor
 </pre>
+
 <a name="gen-liveflavor"></a>
 <h3><font color="#6c0023">gen-liveflavor</font></h3>
 <p>
@@ -175,6 +186,89 @@ current system. The --help option provides more information:
 <pre> # tazlito gen-liveflavor
  # tazlito gen-liveflavor --help
 </pre>
+
+<a name="upgrade-flavor"></a>
+<h3><font color="#6c0023">upgrade-flavor</font></h3>
+<p>
+The `upgrade-flavor' updates a flavor built for an old Slitaz version.
+It updates the package list with the latest version available.
+</p>
+<pre>
+ # tazlito upgrade-flavor this-flavor
+</pre>
+
+<a name="extract-flavor"></a>
+<h3><font color="#6c0023">extract-flavor</font></h3>
+<p>
+The `extract-flavor' converts a flavor to a file tree in /home/slitaz/flavors/.
+This tree may be store by Mercurial in 
+<a href="http://hg.slitaz.org/flavors">http://hg.slitaz.org/flavors</a>.
+The file tree is:
+<ul>
+<li>
+The file <b>receipt</b> discribes the flavor with the variables:
+  <ul>
+  <li>
+FLAVOR: the flavor name.
+  </li>
+  <li>
+SHORT_DESC: a one line description.
+  </li>
+  <li>
+VERSION: free format.
+  </li>
+  <li>
+MAINTAINER: email address.
+  </li>
+  <li>
+FRUGAL_RAM: minimum RAM size. Optionnal, may be guessed.
+  </li>
+  <li>
+ROOTFS_SIZE: unpacked rootfs.gz size in RAM. Optionnal, may be guessed.
+  </li>
+  <li>
+INITRAMFS_SIZE: rootfs.gz size in CD-ROM. Optionnal, may be guessed.
+  </li>
+  <li>
+ISO_SIZE: CD-ROM size. Optionnal, may be guessed.
+  </li>
+  <li>
+ROOTFS_SELECTION: Optionnal, see <i>Meta flavor</i> below.
+  </li>
+  </ul>
+</li>
+<li>
+The file <b>packages.list</b> containts the package name list without
+version (tazlito will use the last available version for each package).
+This file is missing if ROOTFS_SELECTION is set in receipt.
+<li>
+The optional file <b>mirrors</b> containts the undigest mirror list
+to be able to use personnal packages.
+</li>
+<li>
+The optional directory <b>rootfs</b> stores the file tree to add to the
+root filesystem rootfs.gz. Usually configuration files.
+</li>
+<li>
+The optional directory <b>rootcd</b> stores the file tree to add to the
+root of the CD-ROM.
+</li>
+</ul>
+</p>
+<pre>
+ # tazlito extract-flavor this-flavor
+</pre>
+
+<a name="pack-flavor"></a>
+<h3><font color="#6c0023">pack-flavor</font></h3>
+<p>
+The `pack-flavor' converts a file tree in /home/slitaz/flavors/ to a 
+flavor (.flavor):  The reverse of `extract-flavor'.
+</p>
+<pre>
+ # tazlito pack-flavor this-flavor
+</pre>
+
 <a name="extract-distro"></a>
 <h3><font color="#6c0023">extract-distro</font></h3>
 <p>
@@ -187,6 +281,7 @@ or additions and rebuild the ISO image via 'gen-iso' or
 <pre>
  # tazlito extract-distro slitaz-cooking.iso
 </pre>
+
 <a name="gen-distro"></a>
 <h3><font color="#6c0023">gen-distro</font></h3>
 <p>
@@ -210,6 +305,7 @@ a distribution:
  # tazlito gen-distro --iso=slitaz.iso
  # tazlito gen-distro package-list
 </pre>
+
 <a name="clean-distro"></a>
 <h3><font color="#6c0023">clean-distro</font></h3>
 <p>
@@ -219,17 +315,7 @@ of the LiveCD:
 <pre>
  # tazlito clean-distro
 </pre>
-<a name="addhacker"></a>
-<h3><font color="#6c0023">addhacker</font></h3>
-<p>
-The 'addhacker' command allows the addition of the user 
-hacker to the distribution - it helps to have a user account
-without a password. Note that this command changes permissions
-on all files in <code>/home/hacker</code>:
-</p>
-<pre>
- # tazlito addhacker
-</pre>
+
 <a name="check-distro"></a>
 <h3><font color="#6c0023">check-distro</font></h3>
 <p>
@@ -239,6 +325,68 @@ by the packages are present on the system:
 <pre>
  # tazlito check-distro
 </pre>
+
+<a name="writeiso"></a>
+<h3><font color="#6c0023">writeiso</font></h3>
+<p>
+This command will write the current filesystem to a cpio archive 
+(rootfs.gz) and then generate a bootable ISO image. Writeiso can 
+be used in a HD install or in live mode and will also archive your 
+current /home directory. This command lets you easily remaster and 
+build your own LiveCD image, just boot, modify any files, and then: 
+
+</p>
+<pre>
+ # tazlito writeiso [gzip|lzma|none]
+ # tazlito writeiso gzip
+ # tazlito writeiso gzip image-name
+</pre>
+
+<a name="frugal-install"></a>
+<h3><font color="#6c0023">frugal-install</font></h3>
+<p>
+Perfom a frugal installation into /boot/frugal and add a GRUB entry 
+if needed. Frugal mode will make SliTaz work completely in memory 
+(RAM) - useful to test a distro without burning an ISO or to have a 
+rescue system ready to use when the computer powers on. To install 
+all needed files from a distro tree or an ISO image: 
+</p>
+<pre>
+ # tazlito frugal-install
+ # tazlito -fi slitaz.iso
+</pre>
+
+<a name="check-list"></a>
+<h3><font color="#6c0023">check-list</font></h3>
+<p>
+Check whether distro-packages.list is up to date with latest packages
+version.
+</p>
+<pre>
+ # tazlito check-list
+</pre>
+
+<a name="repack"></a>
+<h3><font color="#6c0023">repack</font></h3>
+<p>
+Recompress the rootfs(es) with the best compression ratio.
+</p>
+<pre>
+ # tazlito repack slitaz.iso
+</pre>
+
+<a name="merge"></a>
+<h3><font color="#6c0023">merge</font></h3>
+<p>
+Add several flavors in a CD-ROM. They are nested like russian dolls.
+Each rootfs is a subset of the precedent. The first rootfs comes from the
+iso in the 2nd parameter. The booting flavor will be chosen according to
+the detected RAM size.
+</p>
+<pre>
+ # tazlito merge 160M slitaz-core.iso 96M rootfs-justx.gz 32M rootfs-base.gz
+</pre>
+
 <a name="emu-iso"></a>
 <h3><font color="#6c0023">emu-iso</font></h3>
 <p>
@@ -250,6 +398,7 @@ cdrom or booting into frugal mode.
  # tazlito emu-iso
  # tazlito emu-iso path/to/image.iso
 </pre>
+
 <a name="burn-iso"></a>
 <h3><font color="#6c0023">burn-iso</font></h3>
 <p>
@@ -263,6 +412,109 @@ command line:
  # tazlito burn-iso
  # tazlito burn-iso slitaz-hacked.iso
 </pre>
+
+<h2>FLAVORS</h2>
+<p>
+The .flavors files hold all necessary informations in few Kb to build a
+customized SliTaz live CD.
+</p>
+
+<a name="rebuild-flavor"></a>
+<h3><font color="#6c0023">Rebuild a flavor</font></h3>
+<p>
+We choose the flavor to build.
+</p>
+<pre>
+# tazlito list-flavors
+
+List of flavors
+================================================================================
+Name              ISO   Rootfs  Description
+================================================================================
+base               6.9M  13.1M  Minimal set of packages to boot
+core-3in1         31.5M 105.6M  SliTaz core system with justX and base alternatives
+core              31.5M 104.6M  SliTaz core system
+eeepc             31.2M 105.4M  SliTaz eeepc system
+justX             16.1M  51.2M  SliTaz with a minimal X environnement
+</pre>
+<p>
+We will rebuild the <i>eeepc</i> flavor. The root filesystem need 105.4M of RAM and
+then CD-ROM size is 31.2M.
+</p>
+<pre>
+# tazlito clean-distro
+# tazlito get-flavor eeepc
+# tazlito gen-distro
+</pre>
+
+<a name="create-flavor"></a>
+<h3><font color="#6c0023">Create a flavor</font></h3>
+<p>
+To create a flavor, you must :
+</p>
+<ul>
+<li>
+Either create an ISO image with <b>tazlito gen-distro</b> and create the
+flavor file with <b>tazlito gen-flavor</b>.
+</li>
+<li>
+Or create the file tree to define the flavor (see <b>tazlito extract-flavor</b>)
+and create the flavor file with <b>tazlito pack-flavor</b>.
+</li>
+</ul>
+
+<a name="publish-flavor"></a>
+<h3><font color="#6c0023">Publish a flavor</font></h3>
+<p>
+The .flavor file are generaly few kilobytes long. They can be sent on Slitaz
+mailing list.
+</p>
+<p>
+The result of <b>tazlito extract-flavor</b> can be stored in mercurial
+(<a href="http://repos.slitaz.org/flavors">http://repos.slitaz.org/flavors</a>).
+This is the recommended method because
+the file tree can be checked with mercurial web interface.
+</p>
+
+<a name="tune-flavor"></a>
+<h3><font color="#6c0023">Tune a flavor</font></h3>
+<p>
+You can modify an existing flavor rather than create one from scratch.
+For example, to tune the eeepc flavor:
+</p>
+<pre>
+# tazpkg get-install mercurial
+# cd /home/slitaz
+# hg clone http://hg.slitaz.org/flavors
+# cd flavors
+# cp -a eeepc myslitaz
+</pre>
+<p>
+The files in myslitaz can be modified, and
+</p>
+<pre>
+# tazlito pack-flavor myslitaz
+</pre>
+<p>
+Will create the new flavor.
+</p>
+
+<a name="meta-flavor"></a>
+<h3><font color="#6c0023">Meta flavor</font></h3>
+<p>
+A meta flavor hold several flavor nested like russian dolls.
+The booting flavor will be chosen according to the detected RAM size.
+The variable <i>ROOTFS_SELECTION</i> defines then couples (minimum RAM size
+and according flavor), 
+<a href="http://hg.slitaz.org/flavors/file/tip/core-3in1/receipt">example</a>:
+</p>
+<pre>
+ROOTFS_SELECTION="160M core 96M justX 32M base"
+</pre>
+<p>
+A meta flavor has no packages list <i>(packages.list)</i>.
+Slitaz kernels prior version 2.6.30 don't support meta flavors.
+</p>
 
 <h2>MAINTAINER</h2>
 <p>
