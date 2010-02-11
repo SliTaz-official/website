@@ -215,61 +215,6 @@ La commande 'extract-flavor' convertit une saveur en une arborescence
 facilement modifiable dans /home/slitaz/flavors/<saveur> qui pourra être gérée
 avec Mercurial dans http://hg.slitaz.org/flavors.
 </p>
-<p>
-Cette arborescence comprend :
-</p>
-<ul>
-<li>
-Le fichier <b>receipt</b> décrit la saveur grâce aux variables&nbsp;:
-  <ul>
-  <li>
-  <i>FLAVOR</i> : le nom de la saveur.
-  </li>
-  <li>
-  <i>SHORT_DESC</i> : la description en une ligne.
-  </li>
-  <li>
-  <i>VERSION</i> : format libre.
-  </li>
-  <li>
-  <i>MAINTAINER</i> : adresse email.
-  </li>
-  <li>
-  <i>FRUGAL_RAM</i> : optionnel (peut être estimé), RAM minimum nécessaire.
-  </li>
-  <li>
-  <i>ROOTFS_SIZE</i> : optionnel (peut être estimé). Taille de rootfs.gz décompressé en RAM.
-  </li>
-  <li>
-  <i>INITRAMFS_SIZE</i> : optionnel (peut être estimé). Taille de rootfs.gz sur le CD-ROM.
-  </li>
-  <li>
-  <i>ISO_SIZE</i> : optionnel (peut être estimé). Taille du CD-ROM.
-  </li>
-  <li>
-  <i>ROOTFS_SELECTION</i> : optionnel, voir <i>Meta saveur</i> plus bas.
-  </li>
-  </ul>
-</li>
-<li>
-Le fichier <b>packages.list</b> contenant la liste des paquets sans
-préciser leur version (tazlito utilisera la dernière disponible)
-Ce fichier est absent si ROOTFS_SELECTION est précisé dans receipt.
-</li>
-<li>
-Le fichier optionnel <b>mirrors</b> contenant la liste des miroirs non 
-officiels (undigest) à ajouter pour inclure des paquets personnels.
-</li>
-<li>
-Le répertoire optionnel <b>rootfs</b> contenant l'arborescence à ajouter dans
-le système de fichier racine rootfs.gz (des fichiers de configuration 
-habituellement).
-</li>
-<li>
-Le répertoire optionnel <b>rootcd</b> contenant l'arborescence à ajouter dans
-la racine du CD-ROM.
-</li>
-</ul>
 <pre>
  # tazlito extract-flavor une-saveur
 </pre>
@@ -389,7 +334,7 @@ Recompresse le(s) rootfs avec la meilleure compression possible.
 <p>
 Réunit plusieurs saveurs imbriquées comme des poupées russes. Chaque rootfs
 est un sous ensemble du précédent. Le premier rootfs est extrait de l'image
-ISO en 2e paramètre.
+ISO en 3e paramètre.
 La saveur à lancer sera choisie au démarrage suivant la quantité de RAM
 disponible.
 </p>
@@ -483,6 +428,61 @@ Le résultat de <b>tazlito extract-flavor</b> peut aussi être mis dans mercurial
 (http://repos.slitaz.org/flavors). Cette méthode est préférable car l'arborescence
 sera directement visible avec l'interface web de mercurial.
 </p>
+<p>
+Cette arborescence comprend :
+</p>
+<ul>
+<li>
+Le fichier <b>receipt</b> décrit la saveur grâce aux variables&nbsp;:
+  <ul>
+  <li>
+  <i>FLAVOR</i> : le nom de la saveur.
+  </li>
+  <li>
+  <i>SHORT_DESC</i> : la description en une ligne.
+  </li>
+  <li>
+  <i>VERSION</i> : format libre.
+  </li>
+  <li>
+  <i>MAINTAINER</i> : adresse email.
+  </li>
+  <li>
+  <i>FRUGAL_RAM</i> : optionnel (peut être estimé), RAM minimum nécessaire.
+  </li>
+  <li>
+  <i>ROOTFS_SIZE</i> : optionnel (peut être estimé). Taille de rootfs.gz décompressé en RAM.
+  </li>
+  <li>
+  <i>INITRAMFS_SIZE</i> : optionnel (peut être estimé). Taille de rootfs.gz sur le CD-ROM.
+  </li>
+  <li>
+  <i>ISO_SIZE</i> : optionnel (peut être estimé). Taille du CD-ROM.
+  </li>
+  <li>
+  <i>ROOTFS_SELECTION</i> : optionnel, voir <i>Meta saveur</i> plus bas.
+  </li>
+  </ul>
+</li>
+<li>
+Le fichier <b>packages.list</b> contenant la liste des paquets sans
+préciser leur version (tazlito utilisera la dernière disponible)
+Ce fichier est absent si ROOTFS_SELECTION est précisé dans receipt.
+</li>
+<li>
+Le fichier optionnel <b>mirrors</b> contenant la liste des miroirs non 
+officiels (undigest) à ajouter pour inclure des paquets personnels.
+</li>
+<li>
+Le répertoire optionnel <b>rootfs</b> contenant l'arborescence à ajouter dans
+le système de fichier racine rootfs.gz (des fichiers de configuration 
+habituellement).
+</li>
+<li>
+Le répertoire optionnel <b>rootcd</b> contenant l'arborescence à ajouter dans
+la racine du CD-ROM.
+</li>
+</ul>
 
 <a name="tune-flavor"></a>
 <h3><font color="#6c0023">Adapter une saveur</font></h3>
