@@ -215,8 +215,8 @@ Hg commands that can be used.
 <a name="iconv"></a>
 <h3>Implementation of iconv()</h3>
 <p>
-SliTaz uses iconv() provided by GNU glibc - some packages that offer 
-<code>libiconv</code> must use the version of glibc (<code>glibc-locale</code>). 
+SliTaz uses iconv() provided by GNU glibc - any packages that offer 
+<code>libiconv</code> must use the library contained in <code>glibc-locale</code>. 
 There is therefore no longer a libiconv package (1.2 MB) in SliTaz.
 </p>
 
@@ -253,7 +253,7 @@ exists to help you get started.
 <h3>Naming of packages</h3>
 <p>
 In most cases the package name is the same as the source, except for
-Python modules, Perl, PHP, Ruby and Lua. For example, the package
+Python, Perl, PHP, Ruby and Lua modules. For example, the package
 providing a Kid template system written in Python and XML is named:
 <code>python-kid</code>.
 </p>
