@@ -18,12 +18,27 @@
 	</image>
 
 	<item>
-		<title></title>
+		<title>Publication de SliTaz GNU/Linux 3.0</title>
 		<link>http://www.slitaz.org/en/get/index.html</link>
 		<guid isPermaLink="true">http://www.slitaz.org/en/</guid>
 		<pubDate>Sun, 28 Mar 2010 16:20:00 GMT</pubDate>
 		<description>
-		
+Tous les contributeurs SliTaz sont fiers d'annoncer la publication du
+système d'exploitation SliTaz GNU/Linux 3.0. SliTaz est encore plus simple
+à utiliser, plus rapide, plus facile à customizer, plus puissante et
+toujours aussi légère. La nouvelle version stable est maintenant parue
+après une année de développement.
+
+Le bureau de base fournit un bureau complet propulsé par Xorg 7.4, Openbox, 
+des composants du projet LXDE et des outils faits maison. Il vous permet de
+vous connecter facilement au réseau pour surfer avec le navigateur web Midori,
+écouter de la musique ou gérer vos images.
+
+La version "Core" du système tient sur une image ISO de 30MB et les saveurs 
+commecent à 8MB. Cette version stable à été contruite avec une nouvelle chaîne 
+d'outils incluant GCC 4.4.1 et utilise le noyau Linux 2.6.30.6. Vous pouvez
+lire les notes de plublication pour plus d'informations et télécharger une image
+du LiveCD depuis un des miroirs du projet.
 		</description>
 	</item>
 	
