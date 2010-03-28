@@ -9,64 +9,21 @@
 		SliTaz GNU/Linux News
 	</description>
 	<copyright>Copyright © www.slitaz.org - GNU gpl</copyright>
-	<lastBuildDate>Mon, 05 Jan 2009 17:30:00 GMT</lastBuildDate>
+	<lastBuildDate>Sun, 28 Mar 2010 16:20:00 GMT</lastBuildDate>
 	
-	<item>
-		<title>20 March 2009 - SliTaz auf der Solutionslinux 2009 (Paris)</title>
+	<image>
+		<title>Slitaz GNU/Linux (de)</title>
+		<url>http://www.slitaz.org/pics/artwork/slitaz-spider-48x48.png</url>
 		<link>http://www.slitaz.org/de/</link>
-		<guid isPermaLink="true">http://www.solutionslinux.fr/</guid>
-		<pubDate>Sat, 23 Mar 2009 12:35:00 GMT</pubDate>
-		<description>
-	Das SliTaz-Projekt wird auf der Solutionlinux 2009 in Paris zugegen sein.
-	Drei Mitglieder des Teams werden an dem dreitägigen Event teilnehmen, 
-	einige weitere Entwickler werden zeitweise ebenfalls anwesend sein.
-	An dem Stand wird sich die Möglichkeit bieten verschiedene Rechner mit 
-	SliTaz zu testen (EeePc zum Beispiel), sowie einen eigenen bootfähigen SliTaz-
-	USB-Stick zu erstellen. Ebenfalls werden SliTaz Live-CDs und USB-Sticks zum Verkauf 
-	angeboten werden. 
-	Natürlich ist es ebenfalls eine gute Gelegenheit die SliTaz-Mitglieder und -Entwickler 
-	kennenzulernen.
-		</description>
-	</item>
+	</image>
 	
 	<item>
-		<title>Cooking 20090228</title>
-		<link>http://www.slitaz.org/de/get/#cooking</link>
-		<guid isPermaLink="true">http://www.slitaz.org/de/get/</guid>
-		<pubDate>Sun, 1 Mar 2009 15:45:00 GMT</pubDate>
+		<title></title>
+		<link>http://www.slitaz.org/en/get/index.html</link>
+		<guid isPermaLink="true">http://www.slitaz.org/en/</guid>
+		<pubDate>Sun, 28 Mar 2010 16:20:00 GMT</pubDate>
 		<description>
-	Kurz vor dem nächsten stabilen Release! - 
-	Das SliTaz Projekt stellt eine neue Cooking Version vor, mit weiteren Bugfixes, 
-	Updates, Verbesserungen und neuen Funktionen. PCI- und USB- Erkennung wird nun durch
-	Tazhw durchgeführt, Firmware kann über ein grafisches Tool leicht installiert werden. 
-	Tazndis hat ebenfalls eine einfache GUI bekommen. Der grafische Paketmanager ist nun 
-	im Umgang deutlich vereinfacht worden; Über Netbox können alle Netzwerkschnittstellen angezeigt und 
-	konfiguriert werden, Wifibox managet das WLAN.
-	Neu ist auch ein Notifikationssystem und die Verwaltung der Autostart-Einträge.
-	Die neue Cooking kann von einem der offiziellen Mirrors heruntergeladen werden.
-		</description>
-	</item>
-	
-	<item>
-		<title>Cooking 20081231 - Wifi und NTFS support</title>
-		<link>http://www.slitaz.org/de/get/#cooking</link>
-		<guid isPermaLink="true">http://www.slitaz.org/de/get/</guid>
-		<pubDate>Mon, 05 Jan 2009 17:30:00 GMT</pubDate>
-		<description>
-	Das SliTaz Projekt veröffentlicht eine neue Cooking-Version.Alle 
-	Neuerungen, Bugfixes und Updates der letzten Monate können getestet 
-	bzw. verwendet werden. Wieder sind einige Änderungen vorgenommen 
-	worden. SliTaz beinhaltet nun ein eigenes Kontrollzentrum und WiFi 
-	Unterstützung mit Netbox und tazndis, einer verkleinerten Version 
-	von ndiswrapper für den Gebrauch von (proprietären) 
-	Windows-Treibern. Lua (Interpreter) wurde durch Perl ersetzt, 
-	MPlayer wurde aus den Standard-Paketen der Live-CD entfernt. Tazpkg 
-	ist noch mächtiger geworden, so werden nun Updates nach den 
-	Build-Zeiten des Paketes ausgeführt. Auch einige Bugs wurden 
-	behoben. Ebenfalls verbessert wurden die Boot-Skripte und Tazlito. 
-	Die Paketquelle der Cooking-Version umfasst nun (dank der Arbeit 
-	vieler Entwickler) mehr als 1100 Pakete. Zum Herunterladen gibt es 
-	die neue Version  von den offiziellen Mirrors des Projektes.
+		
 		</description>
 	</item>
 
