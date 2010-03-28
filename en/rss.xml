@@ -20,7 +20,7 @@
 	<!-- justify to 80 chars or less for text-mode RSS readers also -->
 
 	<item>
-		<title>SliTaz GNU/Linux 3.0 release</title>
+		<title>SliTaz GNU/Linux 3.0 released</title>
 		<link>http://www.slitaz.org/en/get/index.html</link>
 		<guid isPermaLink="true">http://www.slitaz.org/en/</guid>
 		<pubDate>Sun, 28 Mar 2010 16:20:00 GMT</pubDate>
