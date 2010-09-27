@@ -33,7 +33,8 @@
 	</style>
 </head>
 <body>
-<?php
+<h4>Archives 2007-<?php
+echo date('Y').'</h4>';
 $url = "http://listengine.tuxfamily.org/lists.tuxfamily.org/slitaz/";
 $script  = "-e '/<table>/,/<\/table>/!d' ";
 $script .= "-e 's|html\"|html\" target=\"_blank\"|g' ";
