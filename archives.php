@@ -63,7 +63,7 @@ function translate($word)
 		break;
 	case "fr" :
 		switch ($word) {
-		case "View by"   : return "Affich\&eacute; par";
+		case "View by"   : return "Tri\&eacute; par";
 		case "Number"    : return "Nombre";
 		case "Total size": return "Volume";
 		case "Thread"    : return "Sujet";
