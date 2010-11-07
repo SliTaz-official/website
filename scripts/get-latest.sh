@@ -28,8 +28,8 @@ echo "<ul>" >> $OUTPUT
 cd $PKGS && ls -1t *.tazpkg | head -5 | \
 while read file
 do
-	echo -n '	<li>'$(stat -c '%y' $PKGS/$file | \
-	cut -d ' ' -f 1); echo " - $file</li>"
+	echo -n '	<li><strong>'$(stat -c '%y' $PKGS/$file | \
+	cut -d ' ' -f 1); echo "</strong> - $file</li>"
 done >> $OUTPUT
 echo "</ul>" >> $OUTPUT
 echo "Done"
