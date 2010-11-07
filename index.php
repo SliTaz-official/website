@@ -34,11 +34,36 @@
 <div id="nav">
 
 <div class="nav_box">
+<h4><img
+	src="pics/website/locale.png"
+	style="vertical-align: middle; width: 20px; height: 20px;"
+	alt="language" />
+Language</h4>
+<div style="width: 50%; position: absolute; right: 0px;">
+<ul>
+<li><a href="id/index.html">Indonesian</a></li>
+	<li><a href="pt/index.html">Português</a></li>
+	<li><a href="cn/index.html" title="Chinese">
+	<img
+		src="pics/website/cn.png"
+		style="vertical-align: middle;"
+		title="Chinese" alt="cn" /></a></li>
+</ul>
+</div>
+<ul>
+	<li><a href="en/index.html">English</a></li>
+	<li><a href="de/index.html">Deutsch</a></li>
+	<li><a href="fr/index.html">Français</a></li>
+	<li><a href="es/index.html">Español</a> </li>
+</ul>
+</div>
+
+<div class="nav_box">
 <h4>About SliTaz</h4>
 <p>
 SliTaz is an open source and free operating system providing a fully featured
 desktop or server in less than 30 Mb. SliTaz is simple to use, fast and stable.
-More information <a href="en/about/">about SliTaz...</a>
+<a href="en/about/">More information...</a>
 </p>
 </div>
 
@@ -82,25 +107,6 @@ More information <a href="en/about/">about SliTaz...</a>
 <h1><font color="#3E1220">Home</font></h1>
 <h2><font color="#DF8F06">Boot baby... boot!</font></h2>
 
-<div class="infobox" style="font-weight: bold;">
-<img
-	src="pics/website/locale.png"
-	style="vertical-align: middle; width: 20px; height: 20px;"
-	alt="language" />
-Language:
-<a href="de/index.html">Deutsch</a> -
-<a href="en/index.html">English</a> -
-<a href="es/index.html">Español</a> -
-<a href="fr/index.html">Français</a> -
-<a href="id/index.html">Indonesian</a> -
-<a href="pt/index.html">Português</a> -
-<a href="cn/index.html" title="Chinese">
-<img
-	src="cn/chinese_i18n.jpg"
-	style="vertical-align: middle;"
-	title="Chinese" alt="cn" /></a>
-</div>
-
 <div style="text-align: center;">
 <img
 	src="pics/website/screenpresentation.png"
@@ -108,37 +114,51 @@ Language:
 	style="width: 380px; height: 170px; margin-top: 8px;" />
 </div>
 
-<h2><font color="#DF8F06">News</font></h2>
-
 <div id="news">
 
-<!-- We just keep the last 5 web site news -->
+<!-- We just keep the last 4 web site news -->
+
+<h2><font color="#DF8F06">Latest news</font></h2>
 
 <ul>
-	<li><strong>4 November 2010 - New Cooking 20101104</strong></li>
+	<li><strong><a href="en/#news">4 November 2010 - New Cooking 20101104</a></strong></li>
 	<li><strong>8 May 2010 - Summer of Documentation</strong></li>
 	<li><strong>28 March 2010 - SliTaz GNU/Linux 3.0 released</strong></li>
 	<li><strong>14 March 2010 - RC series and Solutionslinux 2010 (Paris)</strong></li>
 	<li><strong>21 February 2010 - New Cooking 20100221</strong></li>
-	<li><strong>Read the latest news :
-	<a href="de/index.html#news">de</a> |
-	<a href="en/index.html#news">en</a> |
-	<a href="fr/index.html#news">fr</a> |
-	<a href="pt/index.html#news">pt</a> |
-	<a href="cn/index.html#news"><img
-		src="cn/chinese_news.jpg"
-		style="vertical-align: middle;"
-		title="Chinese" alt="cn" /></a>
-	</strong></li>
 </ul>
 
 <div class="infobox">
 <img
 	src="pics/website/news.png"
 	style="vertical-align: middle; width: 20px; height: 20px;" alt="news" />
-General activity of the project is published on
-<a href="http://labs.slitaz.org/news">SliTaz laboratories</a>.
+Read the latest news in your language:
+<strong><a href="en/index.html#news">en</a></strong> |
+<strong><a href="de/index.html#news">de</a></strong> |
+<strong><a href="es/index.html#news">es</a></strong> |
+<strong><a href="fr/index.html#news">fr</a></strong> |
+<strong><a href="id/index.html#news">id</a></strong> |
+<strong><a href="pt/index.html#news">pt</a></strong> |
+<a href="cn/index.html#news"><img
+	src="pics/website/cn.png"
+	style="vertical-align: middle;"
+	title="Chinese" alt="cn" /></a>
 </div>
+
+<!-- We display the 5 last commit and build for cooking 
+
+NOTE: Using php system() may use a lot of cpu, we have a cron to generate
+      an include file each hours. Example with PHP:
+      echo "<ul>\n";
+      system("hg log --repository $repo --limit 5 --no-merges \
+	      --template '	<li><strong>{date|shortdate}</strong> \
+          - <a href=\"$url/rev/{rev}\">{desc}</a></li>\n'");
+      echo "<\ul>\n";
+-->
+
+<?php
+include("/var/cache/slitaz/website/latest.html");
+?>
 
 <!-- End of news -->
 </div>

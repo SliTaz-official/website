@@ -219,6 +219,10 @@ body {
 	padding: 4px 0px 4px 0px;
 }
 
+#news a {
+	text-decoration: none;
+}
+
 #gallery {
 	text-align: center;
 }
