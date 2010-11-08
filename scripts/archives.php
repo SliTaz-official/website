@@ -3,7 +3,7 @@
 <head>
 	<title>lists.tuxfamily.org/slitaz mailing list</title>
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-	<link rel="stylesheet" type="text/css" href="slitaz.css" />
+	<link rel="stylesheet" type="text/css" href="/slitaz.css" />
 	<style type="text/css">
 	table {
 		border: 1px solid #000000;
