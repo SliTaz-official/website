@@ -53,8 +53,8 @@ Language</h4>
 <ul>
 	<li><a href="de/index.html">Deutsch</a></li>
 	<li><a href="en/index.html">English</a></li>
+	<li><a href="es/index.html">Español</a></li>
 	<li><a href="fr/index.html">Français</a></li>
-	<li><a href="es/index.html">Español</a> </li>
 </ul>
 </div>
 
