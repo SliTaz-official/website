@@ -51,8 +51,8 @@ Language</h4>
 </ul>
 </div>
 <ul>
-	<li><a href="en/index.html">English</a></li>
 	<li><a href="de/index.html">Deutsch</a></li>
+	<li><a href="en/index.html">English</a></li>
 	<li><a href="fr/index.html">Français</a></li>
 	<li><a href="es/index.html">Español</a> </li>
 </ul>
@@ -133,8 +133,8 @@ desktop or server in less than 30 Mb. SliTaz is simple to use, fast and stable.
 	src="pics/website/news.png"
 	style="vertical-align: middle; width: 20px; height: 20px;" alt="news" />
 Read the latest news in your language:
-<strong><a href="en/index.html#news">en</a></strong> |
 <strong><a href="de/index.html#news">de</a></strong> |
+<strong><a href="en/index.html#news">en</a></strong> |
 <strong><a href="es/index.html#news">es</a></strong> |
 <strong><a href="fr/index.html#news">fr</a></strong> |
 <strong><a href="id/index.html#news">id</a></strong> |
