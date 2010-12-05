@@ -17,7 +17,7 @@
     <link rel="stylesheet" type="text/css" href="slitaz.css" />
     <link rel="alternate" type="application/rss+xml" title="SliTaz Website feed" href="en/rss.xml" />
 	<link rel="alternate" type="application/atom+xml" title="SliTaz Labs feed" href="http://labs.slitaz.org/news?format=atom" />
-    <link rel="Content" href="index.php#content" />
+    <link rel="Content" href="#content" />
 </head>
 <body bgcolor="#ffffff">
 
@@ -183,7 +183,7 @@ translated into your language.
 <div id="copy">
 <p>
 Last modification: 2010-11-04 21:10:00 -
-<a href="index.php#top">Top of the page</a>
+<a href="#top">Top of the page</a>
 </p>
 <p>
 Copyright &copy; <span class="year"></span> <a href="http://www.slitaz.org/">SliTaz</a> -
