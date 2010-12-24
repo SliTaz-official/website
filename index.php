@@ -37,11 +37,10 @@
 <h4><img
 	src="pics/website/locale.png"
 	style="vertical-align: middle; width: 20px; height: 20px;"
-	alt="language" />
-Language</h4>
+	alt="language" />Language</h4>
 <div style="width: 50%; position: absolute; right: 0px;">
 <ul>
-<li><a href="id/index.html">Indonesian</a></li>
+	<li><a href="id/index.html">Indonesian</a></li>
 	<li><a href="pt/index.html">Português</a></li>
 	<li><a href="cn/index.html" title="Chinese">
 	<img
