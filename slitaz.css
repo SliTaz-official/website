@@ -101,6 +101,7 @@ body {
 	list-style-type: none;
 	margin: 0;
 	padding: 10px 24px 10px 0px;
+	background-color: inherit;
 }
 
 #nav li {
@@ -136,7 +137,16 @@ body {
 	border-top: 1px solid #BDBDBD;
 }
 
-.nav_box, #nav ul {
+#nav ul {
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	list-style-type: none;
+	margin: 10px 0;
+	padding: 10px 24px 10px 24px;
+	background-color: #eaeaea;
+}
+
+.nav_box {
 	margin: 10px 0;
 	padding: 10px 24px 10px 24px;
 	background-color: #eaeaea;
@@ -156,7 +166,7 @@ body {
 	transition-duration: 2s;
 }
 
-.nav_box:hover, #nav ul:hover { background-color: #f8f8f8; }
+.nav_box:hover { background-color: #f8f8f8; }
 
 #nav .nav_box p {
 	line-height: 1.3em;
