@@ -103,8 +103,7 @@ desktop or server in less than 30 Mb. SliTaz is simple to use, fast and stable.
 <div id="content">
 <a name="content"></a>
 
-<h1><font color="#3E1220">Home</font></h1>
-<h2><font color="#DF8F06">Boot baby... boot!</font></h2>
+<h1><font color="#3E1220">Boot baby... boot!</font></h1>
 
 <div style="text-align: center;">
 <img
