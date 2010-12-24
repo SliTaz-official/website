@@ -36,7 +36,7 @@
 <div class="nav_box">
 <h4><img
 	src="pics/website/locale.png"
-	style="vertical-align: middle; width: 20px; height: 20px;"
+	style="vertical-align: middle; width: 20px; height: 20px; padding: 0px 2px 0px 2px;"
 	alt="language" />Language</h4>
 <div style="width: 50%; position: absolute; right: 0px;">
 <ul>
@@ -103,13 +103,10 @@ desktop or server in less than 30 Mb. SliTaz is simple to use, fast and stable.
 <div id="content">
 <a name="content"></a>
 
-<h1><font color="#3E1220">Boot baby... boot!</font></h1>
-
-<div style="text-align: center;">
-<img
-	src="pics/website/screenpresentation.png"
-	title="SliTaz Desktops" alt="slitaz-desktop"
-	style="width: 380px; height: 170px; margin-top: 8px;" />
+<h1>Boot baby... boot!</h1>
+<div class="imagebox">
+<a><img src="pics/website/desktop.png" title="Desktop" alt="desktop"
+	style="width: 288px; height: 180px;" />
 </div>
 
 <div id="news">
