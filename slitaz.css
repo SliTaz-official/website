@@ -290,7 +290,8 @@ body {
 }
 
 .imagebox {
-	margin: 0 20px;
+	min-width: 300px;
+	margin: 0 15%;
 	padding: 8px;
 	background: transparent;
 	text-align: center;
