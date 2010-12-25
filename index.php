@@ -62,8 +62,8 @@
 <p>
 SliTaz is an open source and free operating system providing a fully featured
 desktop or server in less than 30 Mb. SliTaz is simple to use, fast and stable.
-We have an active community and <a href="netmap.php">network</a> to get help and
-involved.
+We have an active community and <a href="netmap.php">network</a> to provide 
+help and get involved.
 </p>
 </div>
 

@@ -58,7 +58,7 @@
 	<li><a href="http://doc.slitaz.org/en:handbook:start">Handbook</a></li>
 	<li><a href="http://forum.slitaz.org/">Support Forum</a></li>
 	<li><a href="#">Mailing List</a></li>
-	<li>IRC: irc.toile-libre.org #slitaz</li>
+	<li>IRC: <b>irc.toile-libre.org #slitaz</b></li>
 </ul>
 <!-- Right block end -->
 </div>
@@ -97,7 +97,7 @@
 	<li><a href="http://labs.slitaz.org/issues">Bug Tracker</a></li>
 	<li><a href="http://tank.slitaz.org/">Main Server</a></li>
 	<li><a href="http://bb.slitaz.org/">Build Bot</a></li>
-	<li><a href="http://www.slitaz.org/en/devel/">Devel Corner</a> on the Website</li>
+	<li><a href="http://www.slitaz.org/en/devel/">Developers Corner</a></li>
 </ul>
 <!-- Right block end -->
 </div>
