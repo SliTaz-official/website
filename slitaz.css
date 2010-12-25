@@ -291,7 +291,7 @@ body {
 
 .imagebox {
 	min-width: 300px;
-	margin: 0 15%;
+	margin: 10px 15%;
 	padding: 8px;
 	background: transparent;
 	text-align: center;
@@ -364,7 +364,7 @@ body {
 	background: rgba(0, 0, 0, 0.2);*/
 }
 
-.block_left:hover, .block_right:hover, .imagebox:hover {
+.block_left:hover, .block_right:hover, .imagebox:hover, #slidebox:hover {
 	background-color: #f2b21d;
 }
 
@@ -374,7 +374,7 @@ h1 {
 	color: #444444;
 	background: inherit;
 	text-align: left;
-	margin: 0px 0px 2px 0px;
+	margin: 0px 0px 4px 0px;
 	font-size: 150%;
 	font-weight: bold;
 }
@@ -485,44 +485,63 @@ p.get {
 	0% {
 		left: 0px; /*1ère image*/
 	}
-	15% {
+	10% {
 		left: 0px; /*idem pour attente*/
 	}
-	35% {
-		left: -232px; /*2ème image*/
+	25% {
+		left: -240px; /*2ème image*/
 	}
-	50% {
-		left: -232px; /*idem pour attente*/
+	35% {
+		left: -240px; /*idem pour attente*/
 	}
 	70% {
-		left: -300px; /*3ème image*/
+		left: -480px; /*3ème image*/
 	}
 	75% {
-		left: -300px; /*idem pour attente*/
+		left: -480px; /*idem pour attente*/
 	}
 	80% {
-		left: -464px; /*idem pour attente*/
+		left: -720px; /*idem pour attente*/
 	}
 	90% {
-		left: -464px; /*idem pour attente*/
+		left: -720px; /*idem pour attente*/
 	}
 	100% {
 		left: 0px; /*1ère image*/
 	}
 }
 
+#slidebox {
+	margin: 10px 15%;
+	padding: 8px;
+	min-width: 300px;
+	/* CSS3 transition */
+	-webkit-transition-property: background-color;
+	-webkit-transition-duration: 3s;
+	-moz-transition-property: background-color;
+	-moz-transition-duration: 3s;
+	transition-property: background-color;
+	transition-duration: 3s;
+}
+#slidebox:hover {
+	-moz-box-shadow: 0 1px 3px #666;
+	-webkit-box-shadow: 0 1px 3px #666;
+	box-shadow: 0 1px 3px #666;
+}
+#slidebox:hover, #slidebox img {
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+}
+
 #slideshow {
 	position: relative;
-	width: 232px;
-	height: 174px;
-	margin: 8px auto;
+	width: 240px;
+	height: 150px;
+	margin:  10px auto;
 	overflow: hidden;
 }
-#slideshow img {
-	-moz-border-radius: 6px;
-	-webkit-border-radius: 6px;
-	border-radius: 6px;
-}
+
 #sContent li {
 	display: inline;
 }
@@ -530,7 +549,7 @@ p.get {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 800px;
+	width: 1000px;
 	margin: 0;
 	padding: 0;
 	/*CSS3 keyframes animation*/

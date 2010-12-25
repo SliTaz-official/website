@@ -62,7 +62,8 @@
 <p>
 SliTaz is an open source and free operating system providing a fully featured
 desktop or server in less than 30 Mb. SliTaz is simple to use, fast and stable.
-<a href="en/about/">More information...</a>
+We have an active community and <a href="netmap.php">network</a> to get help and
+involved.
 </p>
 </div>
 
@@ -81,11 +82,12 @@ desktop or server in less than 30 Mb. SliTaz is simple to use, fast and stable.
 <div class="nav_box">
 <h4>SliTaz Network</h4>
 <ul>
-	<li><a href="http://forum.slitaz.org/">Community Forum</a></li>
-	<li><a href="http://labs.slitaz.org/">SliTaz Laboratories</a></li>
-	<li><a href="http://pkgs.slitaz.org/">Packages Database</a></li>
-	<li><a href="http://pizza.slitaz.org/">Online Builder</a></li>
-	<li><a href="http://boot.slitaz.org/">SliTaz Web Boot</a></li>
+	<li><a href="netmap.php" title="SliTaz Network Map">Network Map</a></li>
+	<li><a href="http://doc.slitaz.org/">Documentation</a></li>
+	<li><a href="http://forum.slitaz.org/">Support Forum</a></li>
+	<li><a href="http://scn.slitaz.org/">Community Network</a></li>
+	<li><a href="http://labs.slitaz.org/">SliTaz Labs</a></li>
+	<li><a href="http://pkgs.slitaz.org/">Packages</a></li>
 	<li><a href="http://twitter.com/slitaz">SliTaz on Twitter</a></li>
 	<li><a href="http://distrowatch.com/slitaz">SliTaz on DistroWatch</a></li>
 </ul>
