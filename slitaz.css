@@ -147,7 +147,7 @@ body {
 	box-shadow: 0 1px 3px #666;
 	/* CSS3 transition */
 	-webkit-transition-property: background-color;
-	-webkit-transition-duration: 2s;	
+	-webkit-transition-duration: 2s;
 	-moz-transition-property: background-color;
 	-moz-transition-duration: 2s;
 	transition-property: background-color;
@@ -296,7 +296,7 @@ body {
 	text-align: center;
 	/* CSS3 transition */
 	-webkit-transition-property: background-color;
-	-webkit-transition-duration: 3s;	
+	-webkit-transition-duration: 3s;
 	-moz-transition-property: background-color;
 	-moz-transition-duration: 3s;
 	transition-property: background-color;
@@ -352,14 +352,14 @@ body {
 	box-shadow: 0 1px 3px #666;
 	/* CSS3 transition */
 	-webkit-transition-property: background-color;
-	-webkit-transition-duration: 2s;	
+	-webkit-transition-duration: 2s;
 	-moz-transition-property: background-color;
 	-moz-transition-duration: 2s;
 	transition-property: background-color;
 	transition-duration: 2s;
-	/* For browsers that don't support RGBa 
+	/* For browsers that don't support RGBa
 	background: rgb(0, 0, 0);*/
-	/* RGBa with 0.6 opacity 
+	/* RGBa with 0.6 opacity
 	background: rgba(0, 0, 0, 0.2);*/
 }
 
@@ -381,7 +381,7 @@ h1 {
 h2 {
 	color: #b64b22;
 	padding: 0;
-	margin: 0;
+	margin: 4px 0 0 0;
 	font-size: 130%;
 	font-weight: bold;
 }
@@ -476,4 +476,65 @@ p.get {
 .year:after {
 	/* content: "2007-2010"; */
 	content: "2010";
+}
+
+/* Slideshow */
+
+@-webkit-keyframes 'AutoSlide' {
+	0% {
+		left: 0px; /*1ère image*/
+	}
+	15% {
+		left: 0px; /*idem pour attente*/
+	}
+	35% {
+		left: -232px; /*2ème image*/
+	}
+	50% {
+		left: -232px; /*idem pour attente*/
+	}
+	70% {
+		left: -300px; /*3ème image*/
+	}
+	75% {
+		left: -300px; /*idem pour attente*/
+	}
+	80% {
+		left: -464px; /*idem pour attente*/
+	}
+	90% {
+		left: -464px; /*idem pour attente*/
+	}
+	100% {
+		left: 0px; /*1ère image*/
+	}
+}
+
+#slideshow {
+	position: relative;
+	width: 232px;
+	height: 174px;
+	margin: 8px auto;
+	overflow: hidden;
+}
+#slideshow img {
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+}
+#sContent li {
+	display: inline;
+}
+#sContent {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 800px;
+	margin: 0;
+	padding: 0;
+	/*CSS3 keyframes animation*/
+	-webkit-animation-name: AutoSlide;
+	-webkit-animation-duration: 10s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: ease-in-out;
 }
