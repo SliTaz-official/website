@@ -15,13 +15,13 @@
 
 <!-- Header -->
 <div id="header">
-    <a name="top"></a>
-<!-- Access -->
-<div id="access">
-</div>
+	<a name="top"></a>
+	<!-- Access -->
+	<div id="access"></div>
+	<!-- Logo -->
 	<a href="http://www.slitaz.org/"><img id="logo"
-	src="pics/website/logo.png" title="slitaz.org" alt="slitaz.org"
-	style="border: 0px solid ; width: 200px; height: 74px;" /></a>
+		src="pics/website/logo.png" 
+		title="www.slitaz.org" alt="www.slitaz.org" /></a>
 	<p id="titre">#!/GNU/Linux</p>
 </div>
 
@@ -111,7 +111,7 @@
 <!-- Start of footer and copy notice -->
 <div id="copy">
 <p>
-Copyright &copy; 2010 <a href="http://www.slitaz.org/">SliTaz</a> -
+Copyright &copy; <?php echo date('Y'); ?> <a href="http://www.slitaz.org/">SliTaz</a> -
 <a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>
 </p>
 <!-- End of copy -->

@@ -9,14 +9,13 @@
     <meta name="robots" content="index, follow, all" />
     <meta name="revisit-after" content="3 days" />
     <meta name="expires" content="never" />
-    <meta name="modified" content="2010-11-04 21:10:00" />
+    <meta name="modified" content="<?php echo (date( "Y-m-d H:i:s", getlastmod())); ?>" />
     <meta name="author" content="Christophe Lincoln"/>
     <meta name="publisher" content="www.slitaz.org" />
     <meta name="verify-v1" content="qieECDfB5l+EBkG8QMNuHOGfol0/MEe4U22/4iVupNw=" />
-    <link rel="shortcut icon" href="favicon.ico" />
+	<link rel="shortcut icon" href="favicon.ico" />
     <link rel="stylesheet" type="text/css" href="slitaz.css" />
     <link rel="alternate" type="application/rss+xml" title="SliTaz Website feed" href="en/rss.xml" />
-	<link rel="alternate" type="application/atom+xml" title="SliTaz Labs feed" href="http://labs.slitaz.org/news?format=atom" />
     <link rel="Content" href="#content" />
 </head>
 <body bgcolor="#ffffff">
@@ -24,9 +23,10 @@
 <!-- Header -->
 <div id="header">
 	<a name="top"></a>
+	<!-- Logo -->
 	<a href="http://www.slitaz.org/"><img id="logo"
-	src="pics/website/logo.png" title="www.slitaz.org" alt="www.slitaz.org"
-	style="border: 0px solid ; width: 200px; height: 74px;" /></a>
+		src="pics/website/logo.png" 
+		title="www.slitaz.org" alt="www.slitaz.org" /></a>
 	<p id="titre">#!/GNU/Linux</p>
 </div>
 
@@ -67,7 +67,6 @@ help and get involved.
 </p>
 </div>
 
-<!-- Download -->
 <div class="nav_box">
 <h4>Quick Download</h4>
 <ul>
@@ -78,7 +77,6 @@ help and get involved.
 </ul>
 </div>
 
-<!-- SliTaz network -->
 <div class="nav_box">
 <h4>SliTaz Network</h4>
 <ul>
@@ -95,27 +93,20 @@ help and get involved.
 
 </div>
 
-<!-- Content top. -->
-<div id="content_top">
-<div class="top_left"></div>
-<div class="top_right"></div>
-</div>
-
 <!-- Content -->
 <div id="content">
-<a name="content"></a>
 
 <h1>Boot baby... boot!</h1>
 <div class="imagebox">
-<a><img src="pics/website/desktop.png" title="Desktop" alt="desktop"
+<img
+	src="pics/website/desktop.png"
+	title="Desktop" alt="desktop"
 	style="width: 288px; height: 180px;" />
 </div>
 
-<div id="news">
-
 <!-- We just keep the last 4 web site news -->
-
-<h2><font color="#DF8F06">Latest news</font></h2>
+<div id="news">
+<h2>Latest news</h2>
 
 <ul>
 	<li><strong><a href="en/#news">4 November 2010 - New Cooking 20101104</a></strong></li>
@@ -126,32 +117,21 @@ help and get involved.
 </ul>
 
 <div class="infobox">
-<img
-	src="pics/website/news.png"
-	style="vertical-align: middle; width: 20px; height: 20px;" alt="news" />
-Read the latest news in your language:
-<strong><a href="de/index.html#news">de</a></strong> |
-<strong><a href="en/index.html#news">en</a></strong> |
-<strong><a href="es/index.html#news">es</a></strong> |
-<strong><a href="fr/index.html#news">fr</a></strong> |
-<strong><a href="id/index.html#news">id</a></strong> |
-<strong><a href="pt/index.html#news">pt</a></strong> |
-<a href="cn/index.html#news"><img
-	src="pics/website/cn.png"
-	style="vertical-align: middle;"
-	title="Chinese" alt="cn" /></a>
+	<img src="pics/website/news.png" alt="news" />
+	Read the latest news in your language:
+	<strong><a href="de/index.html#news">de</a></strong> |
+	<strong><a href="en/index.html#news">en</a></strong> |
+	<strong><a href="es/index.html#news">es</a></strong> |
+	<strong><a href="fr/index.html#news">fr</a></strong> |
+	<strong><a href="id/index.html#news">id</a></strong> |
+	<strong><a href="pt/index.html#news">pt</a></strong> |
+	<a href="cn/index.html#news"><img
+		src="pics/website/cn.png"
+		style="vertical-align: middle;"
+		title="Chinese" alt="cn" /></a>
 </div>
 
-<!-- We display the 5 last commit and build for cooking 
-
-NOTE: Using php system() may use a lot of cpu, we have a cron to generate
-      an include file each hours. Example with PHP:
-      echo "<ul>\n";
-      system("hg log --repository $repo --limit 5 --no-merges \
-	      --template '	<li><strong>{date|shortdate}</strong> \
-          - <a href=\"$url/rev/{rev}\">{desc}</a></li>\n'");
-      echo "<\ul>\n";
--->
+<!-- We display the 5 last commit and build for cooking -->
 
 <?php
 include("/var/cache/slitaz/website/latest.html");
@@ -160,7 +140,7 @@ include("/var/cache/slitaz/website/latest.html");
 <!-- End of news -->
 </div>
 
-<h2><font color="#DF8F06">Internationalization</font></h2>
+<h2>Internationalization</h2>
 
 <p>
 The SliTaz web site is available in several languages and maintained by the
@@ -169,21 +149,17 @@ needed and you're welcome to join us if you would like to see the website
 translated into your language.
 </p>
 
-<!-- End of content with round corner -->
-</div>
-<div id="content_bottom">
-<div class="bottom_left"></div>
-<div class="bottom_right"></div>
+<!-- End of content -->
 </div>
 
 <!-- Start of footer and copy notice -->
 <div id="copy">
 <p>
-Last modification: 2010-11-04 21:10:00 -
+Last modification: <?php echo (date( "Y-m-d H:i:s", getlastmod())); ?> -
 <a href="#top">Top of the page</a>
 </p>
 <p>
-Copyright &copy; <span class="year"></span> <a href="http://www.slitaz.org/">SliTaz</a> -
+Copyright &copy; <?php echo date('Y'); ?> <a href="http://www.slitaz.org/">SliTaz</a> -
 <a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>
 </p>
 <!-- End of copy -->
