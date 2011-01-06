@@ -210,10 +210,6 @@ body {
 	text-align: center;
 }
 
-#gallery table {
-	margin: 30px 0px 30px 0px;
-}
-
 /* Box and block. */
 
 .infobox {
@@ -223,7 +219,8 @@ body {
 }
 
 .infobox img { vertical-align: middle; }
-.infobox:hover { background-color: #f2b21d; }
+/* .infobox:hover { background-color: #f2b21d; } */
+.infobox:hover { background-color: #FBFBFB; }
 
 .block {
 	/*padding-bottom: 35%;*/
@@ -337,9 +334,32 @@ body {
 	box-shadow: 0 1px 3px #666;
 }
 
-.button a:hover { 
+.button a:hover, input[type=submit]:hover { 
 	background-color: #a3431f;
 	color: #ffffff;
+}
+
+input[type=submit] {
+	border: 1px solid #b64b22;
+	background-color: #b64b22;
+	color: white;
+	font-weight: bold;
+	cursor: pointer;
+	padding: 1px 10px;
+	font-size: 14px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	-moz-box-shadow: 0 1px 2px #666;
+	-webkit-box-shadow: 0 1px 2px #666;
+	box-shadow: 0 1px 2px #666;
+}
+
+input[type=text] {
+	border: 1px solid #333333;
+	padding: 3px;
+	width: 100%;
+	max-width: 500px;
 }
 
 /* Clouds */
@@ -509,6 +529,11 @@ p.get {
 p.get a {
 	font-weight: bold;
 	text-decoration: none;
+}
+
+.pkgs-search { 
+	text-align: center; 
+	padding: 40px 20px 80px 20px;
 }
 
 .year:after {

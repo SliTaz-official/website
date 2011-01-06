@@ -32,9 +32,9 @@
 			src="../../pics/website/cn.png" alt="cn" /></a>
 	</div>
     <!-- Logo -->
-	<a href="http://www.slitaz.org/"><img id="logo"
+	<a href="http://www.slitaz.org/en/"><img id="logo"
 		src="../../pics/website/logo.png" 
-		title="www.slitaz.org" alt="www.slitaz.org" /></a>
+		title="www.slitaz.org/en" alt="www.slitaz.org/en" /></a>
 	<p id="titre">#!/GNU/Linux</p>
 </div>
 
@@ -74,6 +74,10 @@
 		manager Tazpkg using the GUI or the command <code>tazpkg get-install
 		pkgname</code>.
 	</p>
+	<p>
+		Browse the packages web interface: <a href="http://pkgs.slitaz.org/stable/">Stable</a> |
+		<a href="http://pkgs.slitaz.org/cooking/">Cooking</a>
+	</p>
 	<!-- Top block end -->
 	</div>
 <!-- Block end -->
@@ -81,33 +85,30 @@
 
 <h2>Search packages</h2>
 
-<div style="text-align: center; padding: 60px 20px;">
-<form method="post" action="http://pkgs.slitaz.org/search.cgi">
-	<input type="hidden" name="lang" value="en" />
-	<select name="object">
-		<option value="Package">Package</option>
-		<option value="Desc">Description</option>
-		<option value="Tags">Tags</option>
-		<option value="Depends">Depends</option>
-		<option value="BuildDepends">BuildDepends</option>
-		<option value="File">File</option>
-		<option value="File_list">File list</option>
-		<option value="FileOverlap">common files</option>
-	</select>
-	<strong>:</strong>
-	<input type="text" name="query" size="32" />
-	<select name="version">
-		<option value="cooking">cooking</option>
-		<option value="stable">stable</option>
-		<option value="2.0">2.0</option>
-		<option value="1.0">1.0</option>
-	</select>
-	<input type="submit" name="search" value="Search" />
-</form>
-<p>
-	Web interface: <a href="http://pkgs.slitaz.org/stable/">Stable</a> |
-	<a href="http://pkgs.slitaz.org/cooking/">Cooking</a>
-</p>
+<div class="pkgs-search">
+	<form method="post" action="http://pkgs.slitaz.org/search.cgi">
+		<p>
+			<input type="hidden" name="lang" value="en" />
+			<input type="text" name="query" size="32" />
+			<input type="submit" name="search" value="Search" />
+		</p>
+		<select name="object">
+			<option value="Package">Package</option>
+			<option value="Desc">Description</option>
+			<option value="Tags">Tags</option>
+			<option value="Depends">Depends</option>
+			<option value="BuildDepends">BuildDepends</option>
+			<option value="File">File</option>
+			<option value="File_list">File list</option>
+			<option value="FileOverlap">common files</option>
+		</select>
+		<select name="version">
+			<option value="cooking">cooking</option>
+			<option value="stable">stable</option>
+			<option value="2.0">2.0</option>
+			<option value="1.0">1.0</option>
+		</select>
+	</form>
 </div>
 
 <div class="infobox">
