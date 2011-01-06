@@ -40,6 +40,10 @@ body {
 	color: #b64b22;
 }
 
+#access img {
+	vertical-align: middle;
+}
+
 /* Header and title */
 
 #header {
@@ -213,7 +217,7 @@ body {
 /* Box and block. */
 
 .infobox {
-	margin: 10px 60px;
+	margin: 20px 60px;
 	padding: 12px;
 	background: #f8f8f8;
 }
@@ -497,6 +501,14 @@ p.get {
 	color: black;
 	background: #F3F3F3;
 	border: 1px solid #DEDEDE;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+}
+
+p.get a {
+	font-weight: bold;
+	text-decoration: none;
 }
 
 .year:after {

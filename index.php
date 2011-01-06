@@ -42,16 +42,15 @@
 <div class="block">
 	<!-- Nav block begin -->
 	<div id="block_nav" style="min-height: 220px;">
-		<h3><img src="pics/website/locale.png" alt="png" />Language</h3>
+		<h3><a href="i18n.html"><img src="pics/website/locale.png"
+			alt="locale.png" /></a>Language</h3>
 		<div class="right_box">
 			<ul>
 				<li><a href="id/">Indonesian</a></li>
 				<li><a href="pt/">Português</a></li>
 				<li><a href="cn/" title="Chinese">
-				<img
-					src="pics/website/cn.png"
-					style="vertical-align: middle;"
-					title="Chinese" alt="cn" /></a></li>
+				<img src="pics/website/cn.png" alt="cn"
+					style="vertical-align: middle;" /></a></li>
 			</ul>
 		</div>
 		<ul>
@@ -69,7 +68,7 @@
 	</div>
 	<!-- Top block begin -->
 	<div id="block_top" style="min-height: 220px;">
-	<h1>Boot baby... boot!</h1>
+		<h1>Boot baby... boot!</h1>
 		<div id="slideshow">
 			<img src="pics/slideshow/1.png" alt="Desktop 1.png" />
 			<img src="pics/slideshow/2.png" alt="Desktop 2.png" />

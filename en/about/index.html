@@ -16,81 +16,71 @@
     <link rel="stylesheet" type="text/css" href="../../slitaz.css" />
     <link rel="Content" href="index.html#content" />
 </head>
-<body bgcolor="#ffffff">
+<body>
+
 <!-- Header -->
 <div id="header">
-    <a name="top"></a>
-<!-- Access -->
-<div id="access">
-    <img
-		src="../../pics/website/locale.png"
-		style="vertical-align: middle; width: 20px; height: 20px;"
-		alt="language" />
-    <a href="../../de/about/index.html">Deutsch</a> |
-    <a href="../../es/about/index.html">Español</a> |
-    <a href="../../fr/about/index.html">Français</a> |
-    <a href="../../pt/about/index.html">Português</a> |
-    <a href="../../cn/about/index.html" title="Chinese"><img src="../../pics/website/cn.png" title="Chinese" alt="cn"></img></a>
-</div>
-    <a href="http://www.slitaz.org/en/"><img id="logo"
-    src="../../pics/website/logo.png" title="www.slitaz.org/en" alt="www.slitaz.org"
-    style="border: 0px solid ; width: 200px; height: 74px;" /></a>
-    <p id="titre">#!/GNU/Linux</p>
-</div>
-
-<!-- Navigation menu -->
-<div id="nav">
-
-<div class="nav_box">
-<h4>Navigation</h4>
-<!-- General -->
-<ul>
-	<li><a href="../about/index.html" title="Information about the SliTaz project">About the project</a></li>
-	<li><a href="../asso/index.html" title="SliTaz non-profit association">Association</a></li>
-	<li><a href="../get/index.html" title="Download - LiveCD ISO">Download</a></li>
-	<li><a href="../doc/index.html" title="LiveCD usage and howto">Documentation</a></li>
-	<li><a href="../packages/index.html" title="Packaged software">Packages</a></li>
-	<li><a href="../devel/index.html" title="Developers corner">Development</a></li>
-	<li><a href="../mailing-list.html" title="Support, contact and collaboration">Mailing List</a></li>
-	<li><a href="../artwork/index.html" title="Artwork, colors and images">Artwork</a></li>
-	<li><a href="../search.html" title="Search engine">Search</a></li>
-	<li><a href="../sitemap.html" title="Web site overview">Sitemap</a></li>
-</ul>
-</div>
-
-<!-- SliTaz network -->
-<div class="nav_box">
-<h4>SliTaz Network</h4>
-<ul>
-	<li><a href="http://forum.slitaz.org/">Community Forum</a></li>
-	<li><a href="http://doc.slitaz.org/en:start">Wiki Documentation</a></li>
-	<li><a href="http://labs.slitaz.org/">SliTaz Laboratories</a></li>
-	<li><a href="http://labs.slitaz.org/issues">Bug Tracking</a></li>
-	<li><a href="http://boot.slitaz.org/">SliTaz Web Boot</a></li>
-	<li><a href="http://twitter.com/slitaz">SliTaz on Twitter</a></li>
-	<li><a href="http://distrowatch.com/slitaz">SliTaz on DistroWatch</a></li>
-</ul>
-</div>
-
+	<!-- Access -->
+	<div id="access">
+		<a href="../../i18n.html"><img 
+			src="../../pics/website/locale.png" alt="locale.png" /></a>
+		<a href="../../de/about/">Deutsch</a> |
+		<a href="../../es/about/">Español</a> |
+		<a href="../../fr/about/">Français</a> |
+		<a href="../../pt/about/">Português</a> |
+		<a href="../../cn/about/"><img 
+			src="../../pics/website/cn.png" alt="cn" /></a>
+	</div>
+    <!-- Logo -->
+	<a href="http://www.slitaz.org/"><img id="logo"
+		src="../../pics/website/logo.png" 
+		title="www.slitaz.org" alt="www.slitaz.org" /></a>
+	<p id="titre">#!/GNU/Linux</p>
 </div>
 
 <!-- Content -->
-<div id="content">
-<a name="content"></a>
+<div id="content-full">
 
-<h1><font color="#3e1220">About</font></h1>
-<h2><font color="#df8f06">SliTaz project</font></h2>
-
-<ul>
-	<li><a href="index.html#intro">Introduction.</a></li>
-	<li><a href="index.html#overview">Overview.</a></li>
-	<li><a href="index.html#website">Web site &amp; i18n.</a></li>
-	<li><a href="index.html#reviews">Reviews.</a></li>
-	<li><a href="../asso/index.html">Association.</a></li>
-</ul>
+<!-- Block begin -->
+<div class="block">
+	<!-- Nav block begin -->
+	<div id="block_nav">
+		<h3><img src="../../pics/website/network.png" alt="png" />Navigation</h3>
+		<div style="width: 50%; float: right;">
+			<ul>
+				<li><a href="../artwork/">Artwork</a></li>
+				<li><a href="../mailing-list.html">Mailing List</a></li>
+				<li><a href="../devel/">Development</a></li>
+				<li><a href="../search.html">Search</a></li>
+				<li><a href="../../netmap.php">Network Map</a></li>
+			</ul>
+		</div>
+		<ul>
+			<li><a href="../about/">About us</a></li>
+			<li><a href="../asso/">Association</a></li>
+			<li><a href="../get/">Download</a></li>
+			<li><a href="../doc/">Documentation</a></li>
+			<li><a href="../packages/">Packages</a></li>
+		</ul>
+	<!-- Nav block end -->
+	</div>
+	<!-- Top block begin -->
+	<div id="block_top">
+	<h1>About us</h1>
+	<ul>
+		<li><a href="#intro">Introduction</a></li>
+		<li><a href="#overview">Overview</a></li>
+		<li><a href="#website">Web site &amp; i18n</a></li>
+		<li><a href="#reviews">Reviews</a></li>
+		<li><a href="../asso/">Association</a></li>
+	</ul>
+	<!-- Top block end -->
+	</div>
+<!-- Block end -->
+</div>
 
 <a name ="intro"></a>
-<h3>Introduction</h3>
+<h2>Introduction to the project</h2>
 <p>
 SliTaz GNU/Linux is a free operating system working completely in memory from  
 removeable media such as a cdrom or USB key.  It is light, speedy and fully installable
@@ -110,7 +100,7 @@ using the list or directly by mail : &lt;devel at slitaz.org&gt;
 </p>
 
 <a name="overview"></a>
-<h3>Overview</h3>
+<h2>Overview</h2>
 <ul>
 	<li>Root filesystem taking up about 100 MB and ISO image of less than 30 MB.</li>
 	<li>Ready to use Web server powered by LightTPD with CGI and PHP support.</li>
@@ -128,32 +118,34 @@ using the list or directly by mail : &lt;devel at slitaz.org&gt;
 </ul>
 
 <a name="website"></a>
-<h3>Web site &amp; i18n</h3>
+<h2>Web site &amp; i18n</h2>
 <p>
 SliTaz's Web site is also available in several languages and is
 part of the <a href="../../i18n.html">internationalization project</a>.
-The web site allows you to <a href="../get/index.html">download</a> the SliTaz
+The web site allows you to <a href="../get/">download</a> the SliTaz
 LiveCD and help us to develop the project. You can check the 
-<a href="../doc/index.html">documentation</a> area to learn how to use the SliTaz 
+<a href="../doc/">documentation</a> area to learn how to use the SliTaz 
 LiveCD and configure the system.
 </p>
 
 <a name="reviews"></a>
-<h3>Reviews</h3>
+<h2>Reviews</h2>
 <p>
 SliTaz GNU/Linux has been reviewed on several web sites. Thanks to 
 everyone for support.
 </p>
 
-<h4>3.0 - March 2010</h4>
+<h3>3.0 - March 2010 &amp; Cooking - Jan 2010</h3>
 <ul>
 	<li><a href="http://kmandla.wordpress.com/2010/03/29/greetings-from-slitaz-3-0/"
 		>Wordpress</a> - By K.Mandla.</li>
 	<li><a href="http://www.linuxjournal.com/content/spotlight-linux-slitaz-gnulinux-30"
 		>Linux Journal</a> - By Susan Linton.</li>
+	<li><a href="http://distrowatch.com/weekly.php?issue=20100111#feature"
+		>Distrowatch</a> - By Jesse Smith (Cooking just before 3.0).</li>
 </ul>
 
-<h4>2.0 - April 2009</h4>
+<h3>2.0 - April 2009</h3>
 <ul>
 	<li><a href="http://www.gdhpress.com.br/blog/slitaz"
 		>Gdhpress</a> (pt) - By Carlos Morimoto.</li>
@@ -167,7 +159,7 @@ everyone for support.
 		>Linuxologist</a> - By Brie Gordon.</li>
 </ul>
 
-<h4>1.0 - March 2008</h4>
+<h3>1.0 - March 2008</h3>
 <ul>
 	<li><a href="http://distrowatch.com/weekly.php?issue=20080331"
 		>Distrowatch</a> - By Ladislav Bodnar.</li>
@@ -192,40 +184,35 @@ everyone for support.
 		>Dedoimedo</a> - By Dedoimedo.</li>
 </ul>
 
-<h4>Cooking - January 2010</h4>
-<ul>
-	<li><a href="http://distrowatch.com/weekly.php?issue=20100111#feature"
-		>Distrowatch</a> - By Jesse Smith.</li>
-</ul>
-
-<!-- End of content with round corner -->
-</div>
-<div id="content_bottom">
-<div class="bottom_left"></div>
-<div class="bottom_right"></div>
+<!-- End of content -->
 </div>
 
-<!-- Start of footer and copy notice -->
-<div id="copy">
-<p>
-Last modification : 2010-11-07 16:30:00 -
-<a href="index.html#top">Top of the page</a>
-</p>
-<p>
-Copyright &copy; <span class="year"></span> <a href="http://www.slitaz.org/">SliTaz</a> -
-<a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>
-</p>
-<!-- End of copy -->
-</div>
-
-<!-- Bottom and logo's -->
-<div id="bottom">
-<p>
-<a href="http://validator.w3.org/check?uri=referer"><img
-   src="../../pics/website/xhtml10.png" alt="Valid XHTML 1.0"
-   title="Code validé XHTML 1.0"
-   style="width: 80px; height: 15px;" /></a>
-</p>
+<!-- Footer -->
+<div id="footer">
+	<div class="right_box">
+	<h4>SliTaz Network</h4>
+		<ul>
+			<li><a href="http://doc.slitaz.org/">Documentation</a></li>
+			<li><a href="http://forum.slitaz.org/">Support Forum</a></li>
+			<li><a href="http://scn.slitaz.org/">Community Network</a></li>
+			<li><a href="http://labs.slitaz.org/">Laboratories</a></li>
+			<li><a href="http://twitter.com/slitaz">SliTaz on Twitter</a></li>
+			<li><a href="http://distrowatch.com/slitaz">SliTaz on DistroWatch</a></li>
+		</ul>
+	</div>
+	<h4>SliTaz Website</h4>
+	<ul>
+		<li><a href="#header">Top of the page</a></li>
+		<li>Copyright &copy; <span class="year"></span>
+			<a href="http://www.slitaz.org/">SliTaz</a></li>
+		<li><a href="../about/">About the project</a></li>
+		<li><a href="../../netmap.php">Network Map</a></li>
+		<li>Page modified the 06 Jan 2011</li>
+		<li><a href="http://validator.w3.org/check?uri=referer"><img
+		src="../../pics/website/xhtml10.png" alt="Valid XHTML 1.0"
+		title="Code validé XHTML 1.0"
+		style="width: 80px; height: 15px; vertical-align: middle;" /></a></li>
+	</ul>
 </div>
 
 </body>

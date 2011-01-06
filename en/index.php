@@ -25,15 +25,14 @@
 <div id="header">
 	<!-- Access -->
 	<div id="access">
-		<img
-			src="../pics/website/locale.png" alt="locale.png"
-			style="vertical-align: middle; width: 20px; height: 20px;" />
-	    <a href="../de/" title="Deutsche Website">Deutsch</a> |
-	    <a href="../es/" title="Página de Inicio">Español</a> |
-	    <a href="../fr/" title="Page principale en français">Français</a> |
-	    <a href="../pt/" title="Página principal">Português</a> |
-	    <a href="../cn/" title="Chinese"><img src="../pics/website/cn.png" title="Chinese" alt="cn"></img></a> |
-	    <a href="../i18n.html" title="Internationalisation">i18n</a>
+		<a href="../i18n.html"><img 
+			src="../pics/website/locale.png" alt="locale.png" /></a>
+	    <a href="../de/">Deutsch</a> |
+	    <a href="../es/">Español</a> |
+	    <a href="../fr/">Français</a> |
+	    <a href="../pt/">Português</a> |
+	    <a href="../cn/"><img 
+			src="../pics/website/cn.png" alt="cn" /></a>
 	</div>
     <!-- Logo -->
 	<a href="http://www.slitaz.org/"><img id="logo"
