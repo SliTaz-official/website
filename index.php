@@ -16,13 +16,15 @@
 	<link rel="shortcut icon" href="favicon.ico" />
     <link rel="stylesheet" type="text/css" href="slitaz.css" />
     <link rel="alternate" type="application/rss+xml" title="SliTaz Website feed" href="en/rss.xml" />
+    <link rel="alternate" type="application/atom+xml" title="SliTaz Labs feed" href="http://labs.slitaz.org/news?format=atom" />
+    <link rel="alternate" type="application/rss+xml" title="SliTaz SCN feed" href="http://scn.slitaz.org/rss.xml" />
+    <script type="text/javascript" src="scripts/slideshow.js"></script>
     <link rel="Content" href="#content" />
 </head>
-<body bgcolor="#ffffff">
+<body>
 
 <!-- Header -->
 <div id="header">
-	<a name="top"></a>
 	<!-- Logo -->
 	<a href="http://www.slitaz.org/"><img id="logo"
 		src="pics/website/logo.png" 
@@ -30,79 +32,63 @@
 	<p id="titre">#!/GNU/Linux</p>
 </div>
 
-<!-- Navigation menu -->
-<div id="nav">
+<!-- Content -->
+<div id="content-full">
 
-<div class="nav_box">
-<h4><img
-	src="pics/website/locale.png"
-	style="vertical-align: middle; width: 20px; height: 20px; padding: 0px 2px 0px 2px;"
-	alt="language" />Language</h4>
-<div style="width: 50%; position: absolute; right: 0px;">
-<ul>
-	<li><a href="id/index.html">Indonesian</a></li>
-	<li><a href="pt/index.html">Português</a></li>
-	<li><a href="cn/index.html" title="Chinese">
-	<img
-		src="pics/website/cn.png"
-		style="vertical-align: middle;"
-		title="Chinese" alt="cn" /></a></li>
-</ul>
-</div>
-<ul>
-	<li><a href="de/index.html">Deutsch</a></li>
-	<li><a href="en/index.html">English</a></li>
-	<li><a href="es/index.html">Español</a></li>
-	<li><a href="fr/index.html">Français</a></li>
-</ul>
+<!-- For the main index with slideshow we keep block_nav and block_top
+     at min-height: 220px; -->
+
+<!-- Block begin -->
+<div class="block">
+	<!-- Nav block begin -->
+	<div id="block_nav" style="min-height: 220px;">
+		<h3><img src="pics/website/locale.png" alt="png" />Language</h3>
+		<div class="right_box">
+			<ul>
+				<li><a href="id/">Indonesian</a></li>
+				<li><a href="pt/">Português</a></li>
+				<li><a href="cn/" title="Chinese">
+				<img
+					src="pics/website/cn.png"
+					style="vertical-align: middle;"
+					title="Chinese" alt="cn" /></a></li>
+			</ul>
+		</div>
+		<ul>
+			<li><a href="de/">Deutsch</a></li>
+			<li><a href="en/">English</a></li>
+			<li><a href="es/">Español</a></li>
+			<li><a href="fr/">Français</a></li>
+		</ul>
+		<h3>Quick Download</h3>
+		<div class="button">
+			<a href="http://mirror.slitaz.org/iso/3.0/slitaz-3.0.iso">SliTaz 3.0</a>
+			<a href="http://mirror.slitaz.org/iso/cooking/slitaz-cooking.iso">SliTaz Cooking</a>
+		</div>
+	<!-- Nav block end -->
+	</div>
+	<!-- Top block begin -->
+	<div id="block_top" style="min-height: 220px;">
+	<h1>Boot baby... boot!</h1>
+		<div id="slideshow">
+			<img src="pics/slideshow/1.png" alt="Desktop 1.png" />
+			<img src="pics/slideshow/2.png" alt="Desktop 2.png" />
+			<img src="pics/slideshow/3.png" alt="Desktop 3.png" />
+			<img src="pics/slideshow/4.png" alt="Desktop 4.png" />
+			<img src="pics/slideshow/5.png" alt="Desktop 5.png" />
+		</div>	
+	<!-- Top block end -->
+	</div>
+<!-- Block end -->
 </div>
 
-<div class="nav_box">
-<h4>About SliTaz</h4>
+<h2>About SliTaz</h2>
 <p>
 SliTaz is an open source and free operating system providing a fully featured
 desktop or server in less than 30 Mb. SliTaz is simple to use, fast and stable.
 We have an active community and <a href="netmap.php">network</a> to provide 
 help and get involved.
 </p>
-</div>
-
-<div class="nav_box">
-<h4>Quick Download</h4>
-<ul>
-	<li>Stable Core LiveCD: 
-	<a href="http://mirror.slitaz.org/iso/3.0/slitaz-3.0.iso">SliTaz 3.0</a></li>
-	<li>Cooking Core LiveCD: 
-	<a href="http://mirror.slitaz.org/iso/cooking/slitaz-cooking.iso">SliTaz 20101104</a></li>
-</ul>
-</div>
-
-<div class="nav_box">
-<h4>SliTaz Network</h4>
-<ul>
-	<li><a href="netmap.php" title="SliTaz Network Map">Network Map</a></li>
-	<li><a href="http://doc.slitaz.org/">Documentation</a></li>
-	<li><a href="http://forum.slitaz.org/">Support Forum</a></li>
-	<li><a href="http://scn.slitaz.org/">Community Network</a></li>
-	<li><a href="http://labs.slitaz.org/">SliTaz Labs</a></li>
-	<li><a href="http://pkgs.slitaz.org/">Packages</a></li>
-	<li><a href="http://twitter.com/slitaz">SliTaz on Twitter</a></li>
-	<li><a href="http://distrowatch.com/slitaz">SliTaz on DistroWatch</a></li>
-</ul>
-</div>
-
-</div>
-
-<!-- Content -->
-<div id="content">
-
-<h1>Boot baby... boot!</h1>
-<div class="imagebox">
-<img
-	src="pics/website/desktop.png"
-	title="Desktop" alt="desktop"
-	style="width: 288px; height: 180px;" />
-</div>
 
 <!-- We just keep the last 4 web site news -->
 <div id="news">
@@ -131,6 +117,41 @@ help and get involved.
 		title="Chinese" alt="cn" /></a>
 </div>
 
+<h2>Latest Tweet</h2>
+<div id="twitter">
+	<script src="http://widgets.twimg.com/j/2/widget.js"></script>
+	<script>
+	new TWTR.Widget({
+	  version: 2,
+	  type: 'profile',
+	  rpp: 4,
+	  interval: 6000,
+	  width: '100%',
+	  height: 200,
+	  theme: {
+	    shell: {
+	      background: '#eaeaea',
+	      color: '#000000'
+	    },
+	    tweets: {
+	      background: '#ffffff',
+	      color: '#000000',
+	      links: '#3a4885'
+	    }
+	  },
+	  features: {
+	    scrollbar: false,
+	    loop: false,
+	    live: false,
+	    hashtags: true,
+	    timestamp: true,
+	    avatars: false,
+	    behavior: 'all'
+	  }
+	}).render().setUser('slitaz').start();
+	</script>
+</div>
+
 <!-- We display the 5 last commit and build for cooking -->
 
 <?php
@@ -152,27 +173,32 @@ translated into your language.
 <!-- End of content -->
 </div>
 
-<!-- Start of footer and copy notice -->
-<div id="copy">
-<p>
-Last modification: <?php echo (date( "Y-m-d H:i:s", getlastmod())); ?> -
-<a href="#top">Top of the page</a>
-</p>
-<p>
-Copyright &copy; <?php echo date('Y'); ?> <a href="http://www.slitaz.org/">SliTaz</a> -
-<a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>
-</p>
-<!-- End of copy -->
-</div>
-
-<!-- Bottom and logo's -->
-<div id="bottom">
-<p>
-<a href="http://validator.w3.org/check?uri=referer"><img
-	src="pics/website/xhtml10.png" alt="Valid XHTML 1.0"
-	title="Code validé XHTML 1.0"
-	style="width: 80px; height: 15px;" /></a>
-</p>
+<!-- Footer -->
+<div id="footer">
+	<div class="right_box">
+	<h4>SliTaz Network</h4>
+		<ul>
+			<li><a href="http://doc.slitaz.org/">Documentation</a></li>
+			<li><a href="http://forum.slitaz.org/">Support Forum</a></li>
+			<li><a href="http://scn.slitaz.org/">Community Network</a></li>
+			<li><a href="http://labs.slitaz.org/">Laboratories</a></li>
+			<li><a href="http://twitter.com/slitaz">SliTaz on Twitter</a></li>
+			<li><a href="http://distrowatch.com/slitaz">SliTaz on DistroWatch</a></li>
+		</ul>
+	</div>
+	<h4>SliTaz Website</h4>
+	<ul>
+		<li><a href="#header">Top of the page</a></li>
+		<li>Copyright &copy; <span class="year"></span>
+			<a href="http://www.slitaz.org/">SliTaz</a></li>
+		<li><a href="about/">About the project</a></li>
+		<li><a href="netmap.php">Network Map</a></li>
+		<li>Page modified the <?php echo (date( "d M Y", getlastmod())); ?></li>
+		<li><a href="http://validator.w3.org/check?uri=referer"><img
+		src="pics/website/xhtml10.png" alt="Valid XHTML 1.0"
+		title="Code validé XHTML 1.0"
+		style="width: 80px; height: 15px; vertical-align: middle;" /></a></li>
+	</ul>
 </div>
 
 </body>
