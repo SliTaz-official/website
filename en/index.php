@@ -9,122 +9,104 @@
 	<meta name="robots" content="index, follow, all" />
 	<meta name="revisit-after" content="7 days" />
 	<meta name="expires" content="never" />
-	<meta name="modified" content="2010-12-25 03:00:00" />
+	<meta name="modified" content="<?php echo (date( "Y-m-d H:i:s", getlastmod())); ?>" />
 	<meta name="author" content="Paul Issot"/>
 	<meta name="publisher" content="www.slitaz.org" />
 	<link rel="shortcut icon" href="../favicon.ico" />
 	<link rel="stylesheet" type="text/css" href="../slitaz.css" />
 	<link rel="alternate" type="application/rss+xml" title="SliTaz Website feed" href="rss.xml" />
 	<link rel="alternate" type="application/atom+xml" title="SliTaz Labs feed" href="http://labs.slitaz.org/news?format=atom" />
+	<link rel="alternate" type="application/rss+xml" title="SliTaz SCN feed" href="http://scn.slitaz.org/rss.xml" />
 	<link rel="Content" href="index.html#content" />
 </head>
-<body bgcolor="#ffffff">
+<body>
+
 <!-- Header -->
 <div id="header">
-    <a name="top"></a>
-<!-- Access -->
-<div id="access">
-	<img
-		src="../pics/website/locale.png"
-		style="vertical-align: middle; width: 20px; height: 20px;"
-		alt="language" />
-    <a href="../de/index.html" title="Deutsche Slitaz Website">Deutsch</a> |
-    <a href="../es/index.html" title="Página de Inicio">Español</a> |
-    <a href="../fr/index.html" title="Page principale en français">Français</a> |
-    <a href="../pt/index.html" title="Página principal">Português</a> |
-    <a href="../cn/index.html" title="Chinese"><img src="../pics/website/cn.png" title="Chinese" alt="cn"></img></a> |
-    <a href="../i18n.html" title="Internationalisation">i18n</a>
-</div>
-    <a href="http://www.slitaz.org/"><img id="logo"
-    src="../pics/website/logo.png" title="www.slitaz.org" alt="www.slitaz.org"
-    style="border: 0px solid ; width: 200px; height: 74px;" /></a>
-    <p id="titre">#!/GNU/Linux</p>
-</div>
-
-<!-- Navigation menu -->
-<div id="nav">
-
-<div class="nav_box">
-<h4>Navigation</h4>
-<!-- General -->
-<ul>
-	<li><a href="about/" title="Information about the project">About us</a></li>
-	<li><a href="asso/" title="SliTaz non-profit association">Association</a></li>
-	<li><a href="get/" title="Download - LiveCD ISO">Download</a></li>
-	<li><a href="doc/" title="Guides and releses notes">Documentation</a></li>
-	<li><a href="packages/" title="Packaged software">Packages</a></li>
-	<li><a href="artwork/" title="Artwork and images">Artwork</a></li>
-	<li><a href="mailing-list.html" title="Support and collaboration">Mailing List</a></li>
-	<li><a href="devel/" title="Developers corner">Development</a></li>
-	<li><a href="search.html" title="Search engine">Search</a></li>
-</ul>
-</div>
-
-<!-- SliTaz network (Website version, since we have doc, pkgs in the navigation
-	 we dont need them here -->
-<div class="nav_box">
-<h4>SliTaz Network</h4>
-<ul>
-	<li><a href="../netmap.php" title="SliTaz Network Map">Network Map</a></li>
-	<li><a href="http://forum.slitaz.org/">Support Forum</a></li>
-	<li><a href="http://scn.slitaz.org/">Community Network</a></li>
-	<li><a href="http://labs.slitaz.org/">SliTaz Labs</a></li>
-	<li><a href="http://hg.slitaz.org/">Mercurial Repos</a></li>
-	<li><a href="http://twitter.com/slitaz">SliTaz on Twitter</a></li>
-	<li><a href="http://distrowatch.com/slitaz">SliTaz on DistroWatch</a></li>
-</ul>
-</div>
-
+	<!-- Access -->
+	<div id="access">
+		<img
+			src="../pics/website/locale.png" alt="locale.png"
+			style="vertical-align: middle; width: 20px; height: 20px;" />
+	    <a href="../de/" title="Deutsche Website">Deutsch</a> |
+	    <a href="../es/" title="Página de Inicio">Español</a> |
+	    <a href="../fr/" title="Page principale en français">Français</a> |
+	    <a href="../pt/" title="Página principal">Português</a> |
+	    <a href="../cn/" title="Chinese"><img src="../pics/website/cn.png" title="Chinese" alt="cn"></img></a> |
+	    <a href="../i18n.html" title="Internationalisation">i18n</a>
+	</div>
+    <!-- Logo -->
+	<a href="http://www.slitaz.org/"><img id="logo"
+		src="../pics/website/logo.png" 
+		title="www.slitaz.org" alt="www.slitaz.org" /></a>
+	<p id="titre">#!/GNU/Linux</p>
 </div>
 
 <!-- Content -->
-<div id="content">
-<a name="content"></a>
+<div id="content-full">
 
-<h1>Main page</h1>
-<h2>Boot baby... boot!</h2>
-
-<p>
-SliTaz is a free operating system, working completely in RAM and booting
-from removable media such as a cdrom or USB key. SliTaz is distributed as
-a LiveCD, and weighs less than 30MB. The system is quick and responsive,
-clean and robust. SliTaz is simple and intuitive, providing a lightweight,
-elegant desktop, detailed documentation and easy to use configuration
-tools. <a href="about/index.html">More information...</a>
-</p>
-
-<div style="text-align: center;">
-<img
-	src="../pics/website/screenpresentation.png"
-	title="SliTaz Desktops" alt="slitaz-desktop"
-	style="width: 380px; height: 170px; margin-top: 8px;" />
+<!-- Block begin -->
+<div class="block">
+	<!-- Nav block begin -->
+	<div id="block_nav">
+		<h3><img src="../pics/website/network.png" alt="png" />Navigation</h3>
+		<div style="width: 50%; float: right;">
+			<ul>
+				<li><a href="artwork/">Artwork</a></li>
+				<li><a href="mailing-list.html">Mailing List</a></li>
+				<li><a href="devel/">Development</a></li>
+				<li><a href="search.html">Search</a></li>
+				<li><a href="../netmap.php">Network Map</a></li>
+			</ul>
+		</div>
+		<ul>
+			<li><a href="about/">About us</a></li>
+			<li><a href="asso/">Association</a></li>
+			<li><a href="get/">Download</a></li>
+			<li><a href="doc/">Documentation</a></li>
+			<li><a href="packages/">Packages</a></li>
+		</ul>
+	<!-- Nav block end -->
+	</div>
+	<!-- Top block begin -->
+	<div id="block_top">
+	<h1>Main page</h1>
+	<p>
+		SliTaz is a free operating system, working completely in RAM and
+		booting from removable media such as a cdrom or USB key. SliTaz is
+		distributed as a LiveCD, and weighs less than 30MB. The system is
+		quick and responsive, clean and robust. SliTaz is simple and 
+		intuitive, providing a lightweight, elegant desktop, detailed 
+		documentation and easy to use configuration tools. 
+		<a href="about/">More information...</a>
+	</p>
+	<!-- Top block end -->
+	</div>
+<!-- Block end -->
 </div>
 
 <!--
     SliTaz news starting.
-    English RSS feed file is : rss.xml
 -->
 
 <h2>Headlines</h2>
 
 <p>
-The SliTaz website offers the main news of the project as well as news
-on the general activity of the subprojects on the
-<a href="http://labs.slitaz.org/">laboratories</a>. Both are
-available as a <a href="rss.xml">XML feed</a>. The project also
-publishes a small monthly Newsletter.
+	The SliTaz website offers the main news of the project as well as 
+	news on the general activity of the subprojects on the
+	<a href="http://labs.slitaz.org/">laboratories</a>. Both are
+	available as a <a href="rss.xml">XML feed</a>. The project also
+	publishes a small monthly Newsletter.
 </p>
 
 <div class="infobox">
-<img
-	src="../pics/website/news.png"
-	style="vertical-align: middle; width: 20px; height: 20px;" alt="news" />
-<a href="http://labs.slitaz.org/news">News from the Labs</a>
-(<a href="http://labs.slitaz.org/news?format=atom">Feed</a>) | 
-<img
-	src="../pics/website/news.png"
-	style="vertical-align: middle; width: 20px; height: 20px;" alt="news" />
-<a href="http://doc.slitaz.org/en:newsletter:start">Monthly Newsletter</a>
+	<img
+		src="../pics/website/news.png" alt="news.png" />
+	<a href="http://labs.slitaz.org/news">News from the Labs</a>
+	(<a href="http://labs.slitaz.org/news?format=atom">Feed</a>) | 
+	<img
+		src="../pics/website/news.png" alt="news.png" />
+	<a href="http://doc.slitaz.org/en:newsletter:start">Monthly Newsletter</a>
 </div>
 
 <div id="news">
@@ -208,7 +190,7 @@ publishes a small monthly Newsletter.
 	partition. And finally, LiveCD customization is now much easier: users
 	just have to boot, modify and use writefs via the Tazlito graphical interface
 	or from the command line to generate their own customized CD.</p>
-	<p>As usual, you can <a href="get/index.html#cooking">download</a> these new
+	<p>As usual, you can <a href="get/#cooking">download</a> these new
 	flavors from one of the official mirrors of the project and provide feedback
 	on the SliTaz forum.</p>
 	</li>
@@ -221,32 +203,35 @@ publishes a small monthly Newsletter.
 <!-- End of news -->
 </div>
 
-<!-- End of content with round corner -->
+<!-- End of content  -->
 </div>
 
-<!-- Start of footer and copy notice -->
-<div id="copy">
-<p>
-Last modification : 2010-12-25 03:00:00 -
-<a href="#top">Top of the page</a>
-</p>
-<p>
-Copyright &copy; <span class="year"></span> <a href="http://www.slitaz.org/">SliTaz</a> -
-<a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>
-</p>
-<!-- End of copy -->
+<!-- Footer -->
+<div id="footer">
+	<div class="right_box">
+	<h4>SliTaz Network</h4>
+		<ul>
+			<li><a href="http://doc.slitaz.org/">Documentation</a></li>
+			<li><a href="http://forum.slitaz.org/">Support Forum</a></li>
+			<li><a href="http://scn.slitaz.org/">Community Network</a></li>
+			<li><a href="http://labs.slitaz.org/">Laboratories</a></li>
+			<li><a href="http://twitter.com/slitaz">SliTaz on Twitter</a></li>
+			<li><a href="http://distrowatch.com/slitaz">SliTaz on DistroWatch</a></li>
+		</ul>
+	</div>
+	<h4>SliTaz Website</h4>
+	<ul>
+		<li><a href="#header">Top of the page</a></li>
+		<li>Copyright &copy; <span class="year"></span>
+			<a href="http://www.slitaz.org/">SliTaz</a></li>
+		<li><a href="about/">About the project</a></li>
+		<li><a href="../netmap.php">Network Map</a></li>
+		<li>Page modified the <?php echo (date( "d M Y", getlastmod())); ?></li>
+		<li><a href="http://validator.w3.org/check?uri=referer"><img
+		src="../pics/website/xhtml10.png" alt="Valid XHTML 1.0"
+		title="Code validé XHTML 1.0"
+		style="width: 80px; height: 15px; vertical-align: middle;" /></a></li>
+	</ul>
 </div>
-
-<!-- Bottom and logo's -->
-<div id="bottom">
-<p>
-<a href="http://validator.w3.org/check?uri=referer"><img
-   src="../pics/website/xhtml10.png" alt="Valid XHTML 1.0"
-   title="Code validé XHTML 1.0"
-   style="width: 80px; height: 15px;" /></a>
-</p>
-</div>
-
 </body>
 </html>
-
