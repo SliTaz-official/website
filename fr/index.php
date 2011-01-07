@@ -95,9 +95,9 @@
 	sur l'activité générale des différents sous-projets. Ces nouvelles sont
 	aussi disponibles sous forme de <a href="rss.xml">flux XML</a>. De 
 	même, le projet propose une petite lettre d'information mensuelle et
-	<a href="http://www.slitaz.org/">la page d'accueil</a> du site, elle,
-	propose un synthèse de l'activité du projet avec les derniers paquets
-	compilés, les commits et Tweets.
+	<a href="../">la page d'accueil</a> du site, elle, propose un synthèse
+	de l'activité du projet avec les derniers paquets cuits, les commits
+	et Tweets.
 </p>
 
 <div class="infobox">

@@ -93,7 +93,9 @@
 	news on the general activity of the subprojects on the
 	<a href="http://labs.slitaz.org/">laboratories</a>. Both are
 	available as a <a href="rss.xml">XML feed</a>. The project also
-	publishes a small monthly Newsletter.
+	publishes a small monthly Newsletter. The website <a href="../">main page</a>
+	will give you a nice overview of latest news, cooked packages, commits
+	and Tweets.
 </p>
 
 <div class="infobox">
