@@ -69,16 +69,16 @@
 	</div>
 	<!-- Top block begin -->
 	<div id="block_top">
-	<h1>Main page</h1>
-	<p>
-		SliTaz is a free operating system, working completely in RAM and
-		booting from removable media such as a cdrom or USB key. SliTaz is
-		distributed as a LiveCD, and weighs less than 30MB. The system is
-		quick and responsive, clean and robust. SliTaz is simple and 
-		intuitive, providing a lightweight, elegant desktop, detailed 
-		documentation and easy to use configuration tools. 
-		<a href="about/">More information...</a>
-	</p>
+		<h1>Main page</h1>
+		<p>
+			SliTaz is a free operating system, working completely in RAM and
+			booting from removable media such as a cdrom or USB key. SliTaz is
+			distributed as a LiveCD, and weighs less than 30MB. The system is
+			quick and responsive, clean and robust. SliTaz is simple and 
+			intuitive, providing a lightweight, elegant desktop, detailed 
+			documentation and easy to use configuration tools. 
+			<a href="about/">More information...</a>
+		</p>
 	<!-- Top block end -->
 	</div>
 <!-- Block end -->
@@ -89,7 +89,6 @@
 -->
 
 <h2>Headlines</h2>
-
 <p>
 	The SliTaz website offers the main news of the project as well as 
 	news on the general activity of the subprojects on the
@@ -99,12 +98,10 @@
 </p>
 
 <div class="infobox">
-	<img
-		src="../pics/website/news.png" alt="news.png" />
+	<img src="../pics/website/news.png" alt="news.png" />
 	<a href="http://labs.slitaz.org/news">News from the Labs</a>
 	(<a href="http://labs.slitaz.org/news?format=atom">Feed</a>) | 
-	<img
-		src="../pics/website/news.png" alt="news.png" />
+	<img src="../pics/website/news.png" alt="news.png" />
 	<a href="http://doc.slitaz.org/en:newsletter:start">Monthly Newsletter</a>
 </div>
 
@@ -223,7 +220,7 @@
 		<li><a href="#header">Top of the page</a></li>
 		<li>Copyright &copy; <span class="year"></span>
 			<a href="http://www.slitaz.org/">SliTaz</a></li>
-		<li><a href="about/">About the project</a></li>
+		<li><a href="about/">A propos du projet</a></li>
 		<li><a href="../netmap.php">Network Map</a></li>
 		<li>Page modified the <?php echo (date( "d M Y", getlastmod())); ?></li>
 		<li><a href="http://validator.w3.org/check?uri=referer"><img
