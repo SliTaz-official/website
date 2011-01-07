@@ -72,12 +72,11 @@
 		<h1>Main page</h1>
 		<p>
 			SliTaz is a free operating system, working completely in RAM and
-			booting from removable media such as a cdrom or USB key. SliTaz is
-			distributed as a LiveCD, and weighs less than 30MB. The system is
-			quick and responsive, clean and robust. SliTaz is simple and 
-			intuitive, providing a lightweight, elegant desktop, detailed 
-			documentation and easy to use configuration tools. 
-			<a href="about/">More information...</a>
+			booting from removable media such as a cdrom or USB key and can
+			also. SliTaz is distributed as a LiveCD and weighs less than 30MB.
+			The system is fast, stable and easy to use. SliTaz is intuitive,
+			providing a lightweight, elegant desktop, detailed documentation
+			and easy to use configuration tools. <a href="about/">More information...</a>
 		</p>
 	<!-- Top block end -->
 	</div>
