@@ -316,6 +316,16 @@ body {
 	float: right;
 }
 
+.floor {
+	color: #999999;
+	font-size: 20px;
+	-webkit-transform: rotate(-45deg) skew(15deg, 15deg);
+	-moz-transform: rotate(-45deg) skew(15deg, 15deg);
+	-o-transform: rotate(-45deg) skew(15deg, 15deg);
+	-ms-transform: rotate(-45deg) skew(15deg, 15deg);
+	transform: rotate(-45deg) skew(15deg, 15deg);
+}
+	
 /* Button */
 
 .button { margin-left: 20px; }
@@ -365,11 +375,11 @@ input[type=text] {
 /* Clouds */
 
 #cloud {
-	padding: 20px 0px 20px 0px;
+	padding: 10px 0px;
 	line-height: 3em;
 	text-align: center;
 }
-#cloud a { padding: 4px; color: #956411; }
+#cloud a { padding: 0 2px; color: #956411; }
 #cloud a.tag1 { font-size: 0.7em; font-weight: 100; }
 #cloud a.tag2 { font-size: 0.8em; font-weight: 200; }
 #cloud a.tag3 { font-size: 0.9em; font-weight: 300; }
@@ -549,6 +559,7 @@ p.get a {
 	background: #eaeaea;
 	color: #666666;
 	height: 180px;
+	clear: both;
 	border-radius: 8px;
 	-moz-border-radius: 8px;
 	-webkit-border-radius: 8px;
