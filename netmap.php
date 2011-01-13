@@ -58,14 +58,14 @@
 		<h1>Network Map</h1>
 		<p>
 			Since the start of the SliTaz projetc with the main website,
-			SliTaz network have grown into wide network. Documentation Wiki,
+			SliTaz network have grown into a wide network. Documentation Wiki,
 			support forum, developers services and community site are all
 			part of the SliTaz network.
 		</p>
 		<p>
 			Keeping a clean style and the same layout for each sites, we
 			hope you enjoy your web experience using our network and
-			naturally SliTaz to browse them!
+			naturally SliTaz to browse it!
 		</p>
 	<!-- Top block end -->
 	</div>
