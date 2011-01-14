@@ -325,7 +325,30 @@ body {
 	-ms-transform: rotate(-45deg) skew(15deg, 15deg);
 	transform: rotate(-45deg) skew(15deg, 15deg);
 }
-	
+
+#twitter, .feedbox {
+	margin-top: 20px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+	-moz-box-shadow: 0 1px 3px #666;
+	-webkit-box-shadow: 0 1px 3px #666;
+	box-shadow: 0 1px 3px #666;
+}
+
+.feedbox {
+	background-color: #f9f9f9;
+	padding: 10px 20px;
+	margin: 20px 100px;
+}
+
+.feedbox div {
+	height: 320px;
+	overflow: auto;
+}
+
+.feedbox ul { list-style-type: none; margin: 0; }
+
 /* Button */
 
 .button { margin-left: 20px; }
@@ -407,16 +430,6 @@ input[type=text] {
 	border: 0;
 	width: 260px;
 	height: 163px;
-}
-
-#twitter {
-	margin-top: 20px;
-	-moz-border-radius: 8px;
-	-webkit-border-radius: 8px;
-	border-radius: 8px;
-	-moz-box-shadow: 0 1px 3px #666;
-	-webkit-box-shadow: 0 1px 3px #666;
-	box-shadow: 0 1px 3px #666;
 }
 
 /* HTML styles */
