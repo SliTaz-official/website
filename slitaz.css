@@ -378,7 +378,7 @@ input[type=submit] {
 	color: white;
 	font-weight: bold;
 	cursor: pointer;
-	padding: 2px 10px;
+	padding: 3px 10px;
 	font-size: 14px;
 	-moz-border-radius: 2px;
 	-webkit-border-radius: 2px;
@@ -391,7 +391,7 @@ input[type=submit] {
 
 input[type=text] {
 	border: 1px solid #333333;
-	padding: 3px;
+	padding: 5px;
 	width: 99%;
 }
 
