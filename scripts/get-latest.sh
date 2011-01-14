@@ -13,7 +13,7 @@ mkdir -p /var/cache/slitaz/website
 
 # Latest Hg commits
 echo -n "Getting latest commits... "
-echo '<h2><img src="pics/website/development.png" alt=".png" />Latest commits</h2>' > $OUTPUT
+echo '<h2>Latest commits</h2>' > $OUTPUT
 echo "<ul>" >> $OUTPUT
 hg log --repository $REPO --limit 5 --no-merges \
 	--template "	<li><strong>{date|shortdate}</strong> \
@@ -23,7 +23,7 @@ echo "Done"
 
 # Latest cooked packages by the build bot.
 echo -n "Getting latest cooked packages... "
-echo '<h2><img src="pics/website/tazpkg.png" alt=".png" />Latest cooked packages</h2>' >> $OUTPUT
+echo '<h2>Latest cooked packages</h2>' >> $OUTPUT
 echo "<ul>" >> $OUTPUT
 cd $PKGS && ls -1t *.tazpkg | head -5 | \
 while read file

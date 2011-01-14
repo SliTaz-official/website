@@ -86,7 +86,7 @@
 <!-- Block end -->
 </div>
 
-<h2><img src="pics/website/certification.png" alt=".png" />About SliTaz</h2>
+<h2>About SliTaz</h2>
 
 <p>
 SliTaz is an open source and free operating system providing a fully featured
@@ -98,7 +98,7 @@ SliTaz better every day.
 <!-- We just keep the last 4 web site news -->
 <div id="news">
 
-<h2><img src="pics/website/news.png" alt=".png" />Latest news</h2>
+<h2>Latest news</h2>
 
 <ul>
 	<li><strong><a href="en/#news">4 November 2010 - New Cooking 20101104</a></strong></li>
@@ -109,6 +109,7 @@ SliTaz better every day.
 </ul>
 
 <div class="infobox">
+	<img src="pics/website/news.png" alt=".png" />
 	Read the latest news in your language:
 	<strong><a href="de/index.html#news">de</a></strong> |
 	<strong><a href="en/index.html#news">en</a></strong> |
@@ -122,7 +123,7 @@ SliTaz better every day.
 		title="Chinese" alt="cn" /></a>
 </div>
 
-<h2><img src="pics/website/twitter.png" alt=".png" />Latest Tweet</h2>
+<h2>Latest Tweet</h2>
 <div id="twitter">
 	<script src="http://widgets.twimg.com/j/2/widget.js"></script>
 	<script>
@@ -163,21 +164,21 @@ SliTaz better every day.
 include("/var/cache/slitaz/website/latest.html");
 ?>
 
-<h2><img src="pics/website/feed.png" alt=".png" />Community Network Feed</h2>
-
+<h2>Community Network Feed</h2>
 <div class="feedbox">
 	<div>
 		<?php get_feed("http://scn.slitaz.org/rss.xml"); ?>
 	</div>
 	<p>
-		Want to get involve ? <a href="http://scn.slitaz.org/user/register">Join us!</a>
+		Want to get involve ? 
+		<a href="http://scn.slitaz.org/user/register">Join us!</a>
 	</p>
 </div>
 
 <!-- End of news -->
 </div>
 
-<h2><img src="pics/website/users.png" alt=".png" />Spread SliTaz</h2>
+<h2>Spread SliTaz</h2>
 <p>
 	One way to help the project is to make SliTaz even more popular.
 	Blog, Tweet, share and talk around you about the project. SliTaz
@@ -193,8 +194,7 @@ include("/var/cache/slitaz/website/latest.html");
 	show_faces="true" width="400">
 </fb:like>
 		
-<h2><img src="pics/website/locale.png" alt=".png" />Internationalization</h2>
-
+<h2>Internationalization</h2>
 <p>
 The SliTaz web site is available in several languages and maintained by the
 <a href="i18n.html">internationalization</a> team (i18n). Help is often
