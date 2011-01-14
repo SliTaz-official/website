@@ -87,7 +87,8 @@
     SliTaz news starting.
 -->
 
-<h2>Headlines</h2>
+<h2><img src="../pics/website/news.png" alt=".png" />Headlines</h2>
+
 <p>
 	The SliTaz website offers the main news of the project as well as 
 	news on the general activity of the subprojects on the
@@ -98,11 +99,9 @@
 	and Tweets.
 </p>
 
-<div class="infobox">
-	<img src="../pics/website/news.png" alt="news.png" />
+<div class="infobox">	
 	<a href="http://labs.slitaz.org/news">News from the Labs</a>
 	(<a href="http://labs.slitaz.org/news?format=atom">Feed</a>) | 
-	<img src="../pics/website/news.png" alt="news.png" />
 	<a href="http://doc.slitaz.org/en:newsletter:start">Monthly Newsletter</a>
 </div>
 
