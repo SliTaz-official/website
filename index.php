@@ -23,6 +23,10 @@
 </head>
 <body>
 
+<?php
+	require_once("scripts/get_feed.php");
+?>
+
 <!-- Header -->
 <div id="header">
 	<!-- Logo -->
@@ -51,6 +55,7 @@
 				<li><a href="cn/" title="Chinese">
 				<img src="pics/website/cn.png" alt="cn"
 					style="vertical-align: middle;" /></a></li>
+				<!-- <li><a href="i18n.html">I18n info</a></li> -->
 			</ul>
 		</div>
 		<ul>
@@ -81,17 +86,19 @@
 <!-- Block end -->
 </div>
 
-<h2>About SliTaz</h2>
+<h2><img src="pics/website/certification.png" alt=".png" />About SliTaz</h2>
+
 <p>
 SliTaz is an open source and free operating system providing a fully featured
 desktop or server in less than 30 MB. SliTaz is simple to use, fast and stable.
-We have an active community and <a href="netmap.php">network</a> to provide 
-help and get involved.
+We have an active community and contributors from from all over the world making
+SliTaz better every day.
 </p>
 
 <!-- We just keep the last 4 web site news -->
 <div id="news">
-<h2>Latest news</h2>
+
+<h2><img src="pics/website/news.png" alt=".png" />Latest news</h2>
 
 <ul>
 	<li><strong><a href="en/#news">4 November 2010 - New Cooking 20101104</a></strong></li>
@@ -102,7 +109,6 @@ help and get involved.
 </ul>
 
 <div class="infobox">
-	<img src="pics/website/news.png" alt="news" />
 	Read the latest news in your language:
 	<strong><a href="de/index.html#news">de</a></strong> |
 	<strong><a href="en/index.html#news">en</a></strong> |
@@ -116,7 +122,7 @@ help and get involved.
 		title="Chinese" alt="cn" /></a>
 </div>
 
-<h2>Latest Tweet</h2>
+<h2><img src="pics/website/twitter.png" alt=".png" />Latest Tweet</h2>
 <div id="twitter">
 	<script src="http://widgets.twimg.com/j/2/widget.js"></script>
 	<script>
@@ -157,10 +163,37 @@ help and get involved.
 include("/var/cache/slitaz/website/latest.html");
 ?>
 
+<h2><img src="pics/website/feed.png" alt=".png" />Community Network Feed</h2>
+
+<div class="feedbox">
+	<div>
+		<?php get_feed("http://scn.slitaz.org/rss.xml"); ?>
+	</div>
+	<p>
+		Want to get involve ? <a href="http://scn.slitaz.org/user/register">Join us!</a>
+	</p>
+</div>
+
 <!-- End of news -->
 </div>
 
-<h2>Internationalization</h2>
+<h2><img src="pics/website/users.png" alt=".png" />Spread SliTaz</h2>
+<p>
+	One way to help the project is to make SliTaz even more popular.
+	Blog, Tweet, share and talk around you about the project. SliTaz
+	is also social, you can join us, share artwork or blog post on the 
+	<a href="http://scn.slitaz.org/">SliTaz Community Network</a>,
+	"Like" the official SliTaz Facebook page and get involved!
+</p>
+
+<!-- Like Button -->
+<script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script>
+<fb:like 
+	href="http://www.facebook.com/pages/SliTaz/125559834176383"
+	show_faces="true" width="400">
+</fb:like>
+		
+<h2><img src="pics/website/locale.png" alt=".png" />Internationalization</h2>
 
 <p>
 The SliTaz web site is available in several languages and maintained by the

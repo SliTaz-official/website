@@ -458,7 +458,7 @@ h3 {
 	background: transparent;
 }
 	
-h3 img { 
+h3 img, h2 img { 
 	vertical-align: middle;
 	width: 20px;
 	height: 20px;
