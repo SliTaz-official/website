@@ -91,8 +91,8 @@
 <p>
 SliTaz is an open source and free operating system providing a fully featured
 desktop or server in less than 30 MB. SliTaz is simple to use, fast and stable.
-We have an active community and contributors from from all over the world making
-SliTaz better every day.
+We have an active community and contributors from all over the world making
+SliTaz finer every day.
 </p>
 
 <!-- We just keep the last 4 web site news -->
@@ -182,8 +182,8 @@ include("/var/cache/slitaz/website/latest.html");
 <h2>Spread SliTaz</h2>
 <p>
 	One way to help the project is to make SliTaz even more popular.
-	Blog, Tweet, share and talk around you about the project. SliTaz
-	is also social, you can join us, share artwork or blog post on the 
+	Blog, Tweet, share and talk about the project. SliTaz
+	is also social, you can join us, share artwork or post a blog on the 
 	<a href="http://scn.slitaz.org/">SliTaz Community Network</a>,
 	"Like" the official SliTaz Facebook page and get involved!
 </p>
