@@ -169,10 +169,11 @@ include("/var/cache/slitaz/website/latest.html");
 	<div>
 		<?php get_feed("http://scn.slitaz.org/rss.xml"); ?>
 	</div>
-	<p style="margin: 4px 0 0 0; font-size: 12px;">
-		Want to get involve ? 
-		<a href="http://scn.slitaz.org/user/register">Join us!</a>
-	</p>
+	<div style="height: auto;">
+		<p style="margin: 4px 0 0; font-size: 12px; float: right;">
+			<a href="http://scn.slitaz.org/user/register">Join the community</a>
+		</p>
+	</div>
 </div>
 
 <!-- End of news -->
