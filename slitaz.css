@@ -234,42 +234,10 @@ img { border: 0pt none; }
 #block_top:hover, #block_nav:hover, #footer:hover { 
 	background-color: #f8f8f8;
 }
-.right_box {
-	width: 50%;
-	float: right;
-}
-/* Text transform at 45deg */
-.floor {
-	color: #999999;
-	font-size: 20px;
-	-webkit-transform: rotate(-45deg) skew(15deg, 15deg);
-	-moz-transform: rotate(-45deg) skew(15deg, 15deg);
-	-o-transform: rotate(-45deg) skew(15deg, 15deg);
-	-ms-transform: rotate(-45deg) skew(15deg, 15deg);
-	transform: rotate(-45deg) skew(15deg, 15deg);
-}
-#twitter, .feedbox {
-	margin-top: 20px;
-	-moz-border-radius: 8px;
-	-webkit-border-radius: 8px;
-	border-radius: 8px;
-	-moz-box-shadow: 0 1px 3px #666;
-	-webkit-box-shadow: 0 1px 3px #666;
-	box-shadow: 0 1px 3px #666;
-}
-.feedbox {
-	background-color: #f9f9f9;
-	padding: 10px 20px;
-	margin: 20px 100px;
-}
-.feedbox div {
-	height: 320px;
-	overflow: auto;
-}
-.feedbox ul { list-style-type: none; margin: 0; }
+.right_box { width: 50%; float: right; }
+.left_box { width: 50%; float: left; }
 
 /* Button */
-
 .button { margin-left: 20px; }
 .button a { 
 	background-color: #b64b22;
@@ -310,8 +278,37 @@ input[type=text] {
 	width: 100%;
 }
 
-/* Clouds */
+/* Text transform at 45deg */
+.floor {
+	color: #999999;
+	font-size: 20px;
+	-webkit-transform: rotate(-45deg) skew(15deg, 15deg);
+	-moz-transform: rotate(-45deg) skew(15deg, 15deg);
+	-o-transform: rotate(-45deg) skew(15deg, 15deg);
+	-ms-transform: rotate(-45deg) skew(15deg, 15deg);
+	transform: rotate(-45deg) skew(15deg, 15deg);
+}
+#twitter, .feedbox {
+	margin-top: 20px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+	-moz-box-shadow: 0 1px 3px #666;
+	-webkit-box-shadow: 0 1px 3px #666;
+	box-shadow: 0 1px 3px #666;
+}
+.feedbox {
+	background-color: #f9f9f9;
+	padding: 10px 20px;
+	margin: 20px 100px;
+}
+.feedbox div {
+	height: 320px;
+	overflow: auto;
+}
+.feedbox ul { list-style-type: none; margin: 0; }
 
+/* Clouds */
 #cloud {
 	padding: 10px 0px;
 	line-height: 3em;
@@ -330,7 +327,6 @@ input[type=text] {
 #cloud a.tag10 { font-size: 2.5em; font-weight: 900; }
 
 /* Slideshow and gallery */
-
 #slideshow
 {
 	overflow: hidden;
