@@ -169,7 +169,7 @@ include("/var/cache/slitaz/website/latest.html");
 	<div>
 		<?php get_feed("http://scn.slitaz.org/rss.xml"); ?>
 	</div>
-	<p>
+	<p style="margin: 4px 0 0 0; font-size: 12px;">
 		Want to get involve ? 
 		<a href="http://scn.slitaz.org/user/register">Join us!</a>
 	</p>
@@ -187,13 +187,20 @@ include("/var/cache/slitaz/website/latest.html");
 	"Like" the official SliTaz Facebook page and get involved!
 </p>
 
+<div style="margin-bottom: 10px;">
+	<!-- Twitter Button -->
+	<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+	<a href="http://twitter.com/share" class="twitter-share-button" 
+		data-text="SliTaz GNU/Linux" data-count="horizontal" data-via="slitaz">Tweet</a>
+</div>
+
 <!-- Like Button -->
 <script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script>
 <fb:like 
 	href="http://www.facebook.com/pages/SliTaz/125559834176383"
-	show_faces="true" width="400">
+	show_faces="true" width="auto">
 </fb:like>
-		
+
 <h2>Internationalization</h2>
 <p>
 The SliTaz web site is available in several languages and maintained by the
