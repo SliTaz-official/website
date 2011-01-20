@@ -7,12 +7,6 @@ function so_init()
 {
 	if(!d.getElementById || !d.createElement)return;
 
-	css = d.createElement('link');
-	css.setAttribute('href','slideshow.css');
-	css.setAttribute('rel','stylesheet');
-	css.setAttribute('type','text/css');
-	d.getElementsByTagName('head')[0].appendChild(css);
-
 	imgs = d.getElementById('slideshow').getElementsByTagName('img');
 	for(i=1;i<imgs.length;i++) imgs[i].xOpacity = 0;
 	imgs[0].style.display = 'block';
