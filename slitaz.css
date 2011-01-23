@@ -234,8 +234,8 @@ img { border: 0pt none; }
 #block_top:hover, #block_nav:hover, #footer:hover { 
 	background-color: #f8f8f8;
 }
-.right_box { width: 50%; float: right; }
-.left_box { width: 50%; float: left; }
+.right_box { width: 48%; float: right; }
+.left_box { width: 48%; float: left; }
 
 /* Button */
 .button { margin-left: 20px; }

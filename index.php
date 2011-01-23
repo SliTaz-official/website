@@ -183,12 +183,16 @@ SliTaz finer every day.
 		<?php get_atom_feed("/var/cache/slitaz/website/bugs.xml"); ?>
 	</div>
 </div>
-
-<!-- We display the 5 last commit and build for cooking -->
-
-<?php
-include("/var/cache/slitaz/website/latest.html");
-?>
+<div class="feed-grid">
+	<div class="right_box">
+		<h3><img src="pics/website/feed.png" alt=".png" />Latest cooked packages</h3>
+		<?php include("/var/cache/slitaz/website/latest.html"); ?>
+	</div>
+	<div class="left_box">
+		<h3><img src="pics/website/feed.png" alt=".png" />Latest commits</h3>
+		<?php get_atom_feed("/var/cache/slitaz/website/wok.xml"); ?>
+	</div>
+</div>
 
 <h2>Spread SliTaz</h2>
 <p>
