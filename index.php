@@ -190,7 +190,7 @@ SliTaz finer every day.
 	</div>
 	<div class="left_box">
 		<h3><img src="pics/website/feed.png" alt=".png" />Latest commits</h3>
-		<?php get_atom_feed("/var/cache/slitaz/website/wok.xml"); ?>
+		<?php get_rss_feed("/var/cache/slitaz/website/wok.xml"); ?>
 	</div>
 </div>
 
