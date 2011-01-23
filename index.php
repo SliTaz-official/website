@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
     <title>SliTaz GNU/Linux</title>
-    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="SliTaz GNU/Linux LiveCD operating system" />
     <meta name="keywords" lang="en" content="System, libre, gnu, linux, logiciels opensource, livecd" />
     <meta name="robots" content="index, follow, all" />
@@ -18,13 +18,13 @@
     <link rel="alternate" type="application/rss+xml" title="SliTaz Website feed" href="en/rss.xml" />
     <link rel="alternate" type="application/atom+xml" title="SliTaz Labs feed" href="http://labs.slitaz.org/news?format=atom" />
     <link rel="alternate" type="application/rss+xml" title="SliTaz SCN feed" href="http://scn.slitaz.org/rss.xml" />
-    <script type="text/javascript" src="scripts/slideshow.js"></script>
+    <script type="text/javascript" src="libs/js/slideshow.js"></script>
     <link rel="Content" href="#content" />
 </head>
 <body>
 
 <?php
-	require_once("scripts/get_feed.php");
+	require_once("libs/get-feed.php");
 ?>
 
 <!-- Header -->
@@ -123,6 +123,9 @@ SliTaz finer every day.
 		title="Chinese" alt="cn" /></a>
 </div>
 
+<!-- End of news -->
+</div>
+
 <h2>Latest Tweet</h2>
 <div id="twitter">
 	<script src="http://widgets.twimg.com/j/2/widget.js"></script>
@@ -158,26 +161,34 @@ SliTaz finer every day.
 	</script>
 </div>
 
+<h2>Feed Grid</h2>
+
+<div class="feed-grid">
+	<div class="right_box">
+		<h3><img src="pics/website/feed.png" alt=".png" />Community Network</h3>
+		<?php get_rss_feed("/var/cache/slitaz/website/scn.xml"); ?>
+	</div>
+	<div class="left_box">
+		<h3><img src="pics/website/feed.png" alt=".png" />Support Forum</h3>
+		<?php get_forum_rss_feed("/var/cache/slitaz/website/forum.xml"); ?>
+	</div>
+</div>
+<div class="feed-grid">
+	<div class="right_box">
+		<h3><img src="pics/website/feed.png" alt=".png" />Documentation</h3>
+		<?php get_rss_feed("/var/cache/slitaz/website/doc.xml"); ?>
+	</div>
+	<div class="left_box">
+		<h3><img src="pics/website/feed.png" alt=".png" />Bug Tracker</h3>
+		<?php get_atom_feed("/var/cache/slitaz/website/bugs.xml"); ?>
+	</div>
+</div>
+
 <!-- We display the 5 last commit and build for cooking -->
 
 <?php
 include("/var/cache/slitaz/website/latest.html");
 ?>
-
-<h2>Community Network Feed</h2>
-<div class="feedbox">
-	<div>
-		<?php get_feed("http://scn.slitaz.org/rss.xml"); ?>
-	</div>
-	<div style="height: auto;">
-		<p style="margin: 4px 0 0; font-size: 12px; float: right;">
-			<a href="http://scn.slitaz.org/user/register">Join the community</a>
-		</p>
-	</div>
-</div>
-
-<!-- End of news -->
-</div>
 
 <h2>Spread SliTaz</h2>
 <p>

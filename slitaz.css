@@ -288,7 +288,7 @@ input[type=text] {
 	-ms-transform: rotate(-45deg) skew(15deg, 15deg);
 	transform: rotate(-45deg) skew(15deg, 15deg);
 }
-#twitter, .feedbox {
+#twitter {
 	margin-top: 20px;
 	-moz-border-radius: 8px;
 	-webkit-border-radius: 8px;
@@ -297,16 +297,10 @@ input[type=text] {
 	-webkit-box-shadow: 0 1px 3px #666;
 	box-shadow: 0 1px 3px #666;
 }
-.feedbox {
-	background-color: #f9f9f9;
-	padding: 10px 20px;
-	margin: 20px 100px;
-}
-.feedbox div {
-	height: 320px;
-	overflow: auto;
-}
-.feedbox ul { list-style-type: none; margin: 0; }
+.feed-grid { height: 180px; overflow: hidden; }
+.feed-grid h3 { margin: 15px 0 0; }
+.feed-grid span { font-size: 10px; color: #888; margin-left: 24px; }
+.feed-grid ul { color: #888; }
 
 /* Clouds */
 #cloud {
