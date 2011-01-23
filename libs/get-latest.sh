@@ -30,7 +30,7 @@ wget -O wok.xml $WOK_FEED
 
 # Latest cooked packages by the build bot.
 echo -n "Getting latest cooked packages... "
-echo '<ul>' >> $OUTPUT
+echo '<ul>' > $OUTPUT
 cd $PKGS && ls -1t *.tazpkg | head -8 | \
 while read file
 do
