@@ -51,7 +51,7 @@
 		<div class="right_box">
 			<ul>
 				<li><a href="id/">Indonesian</a></li>
-				<li><a href="pt/">Português</a></li>
+				<li><a href="pt/">PortuguÃªs</a></li>
 				<li><a href="cn/" title="Chinese">
 				<img src="pics/website/cn.png" alt="cn"
 					style="vertical-align: middle;" /></a></li>
@@ -61,8 +61,8 @@
 		<ul>
 			<li><a href="de/">Deutsch</a></li>
 			<li><a href="en/">English</a></li>
-			<li><a href="es/">Español</a></li>
-			<li><a href="fr/">Français</a></li>
+			<li><a href="es/">EspaÃ±ol</a></li>
+			<li><a href="fr/">FranÃ§ais</a></li>
 		</ul>
 		<h3>Quick Download</h3>
 		<div class="button">
@@ -251,7 +251,7 @@ translated into your language.
 		<li>Page modified the <?php echo (date( "d M Y", getlastmod())); ?></li>
 		<li><a href="http://validator.w3.org/check?uri=referer"><img
 		src="pics/website/xhtml10.png" alt="Valid XHTML 1.0"
-		title="Code validé XHTML 1.0"
+		title="Code validÃ© XHTML 1.0"
 		style="width: 80px; height: 15px; vertical-align: middle;" /></a></li>
 	</ul>
 </div>
