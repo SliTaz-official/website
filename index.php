@@ -203,11 +203,13 @@ SliTaz finer every day.
 	"Like" the official SliTaz Facebook page and get involved!
 </p>
 
+<!-- Twitter Button -->
 <div style="margin-bottom: 10px;">
-	<!-- Twitter Button -->
 	<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
 	<a href="http://twitter.com/share" class="twitter-share-button" 
-		data-text="SliTaz GNU/Linux" data-count="horizontal" data-via="slitaz">Tweet</a>
+		data-text="SliTaz GNU/Linux" 
+		data-count="horizontal"
+		data-via="slitaz">Tweet</a>
 </div>
 
 <!-- Like Button -->
