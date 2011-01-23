@@ -3,8 +3,15 @@
 <head>
 	<title>lists.tuxfamily.org/slitaz mailing list</title>
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-	<link rel="stylesheet" type="text/css" href="/slitaz.css" />
+	<!-- link rel="stylesheet" type="text/css" href="/slitaz.css" / -->
 	<style type="text/css">
+body {
+	background: #ffffff;
+	color: black;
+	font: 13px sans-serif, vernada, arial;
+	margin: 0;
+	#border-top: 34px solid #f1f1f1;
+}
 	table {
 		border: 1px solid #000000;
 		width: variable;
