@@ -3,6 +3,9 @@
 // SliTaz Social applications for Facebook. Just a tiny tools to help 
 // spread and follow SliTaz activity.
 //
+// SliTaz FB page: http://facebook.com/slitaz
+// SliTaz SO URL : http://apps.facebook.com/slitaz-so/
+//
 // NOTE: Any ideas for this apps is welcome. We could have a comment box
 // to let users post to the official SliTaz Facebook wall.
 //
