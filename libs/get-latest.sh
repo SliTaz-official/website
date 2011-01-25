@@ -10,7 +10,7 @@ PKGS="/home/slitaz/cooking/packages"
 CACHE="/var/cache/slitaz/website"
 OUTPUT="$CACHE/latest.html"
 
-# Feed URL's
+# Feed URLs
 SCN_FEED='http://scn.slitaz.org/rss.xml'
 DOC_FEED='http://doc.slitaz.org/feed.php'
 FORUM_FEED='http://forum.slitaz.org/discussions/feed.rss'
@@ -21,7 +21,7 @@ WOK_FEED='http://hg.slitaz.org/wok/rss-log'
 mkdir -p $CACHE && cd $CACHE
 rm *.xml
 
-# Cache all feeds to save bandwitch (update by cron)
+# Cache all feeds to save bandwidth (updated by cron)
 wget -O scn.xml $SCN_FEED
 wget -O doc.xml $DOC_FEED
 wget -O forum.xml $FORUM_FEED 

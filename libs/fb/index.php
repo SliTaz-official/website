@@ -1,12 +1,12 @@
 <?php
 //
-// SliTaz Social applications for Facebook. Just a tiny tools to help 
+// SliTaz Social applications for Facebook. Just a tiny tool to help 
 // spread and follow SliTaz activity.
 //
 // SliTaz FB page: http://facebook.com/slitaz
 // SliTaz SO URL : http://apps.facebook.com/slitaz-so/
 //
-// NOTE: Any ideas for this apps is welcome. We could have a comment box
+// NOTE: Any ideas for this app are welcome. We could have a comment box
 // to let users post to the official SliTaz Facebook wall.
 //
 function get_feed($feed_url) {
@@ -51,9 +51,9 @@ function get_feed($feed_url) {
 
 <h2>SliTaz on Facebook</h2>
 <p>
-	To let you show you love for the SliTaz project, we have an official 
+	To let you show your appreciation for the SliTaz project, we have an official 
 	<a href="http://facebook.com/slitaz" target="_TOP">Facebook page</a>
-	where you can meet us and share about SliTaz. Like the page to help
+	where you can meet us and share stuff about SliTaz. Like the page to help
 	spread the project!
 </p>
 <fb:like 
@@ -67,8 +67,8 @@ function get_feed($feed_url) {
 	project. Twitter posts are relayed on the official Facebook page to
 	let you follow us from your favorite platform. Twitter news can also
 	be read on the <a href="http://www.slitaz.org/" target="_TOP">SliTaz website</a>
-	witch is a central place for all SliTaz activity. You can use this 
-	button to Tweet about SliTaz website:
+	which is a central place for all SliTaz activity. You can use this 
+	button to Tweet about the SliTaz website:
 </p>
 <!-- Twitter Button -->
 <a href="http://twitter.com/share" class="twitter-share-button"
@@ -81,9 +81,9 @@ function get_feed($feed_url) {
 <p>
 	The SliTaz Community Network aka 
 	<a href="http://scn.slitaz.org/" target="_TOP">SCN</a> is the place
-	where SliTaz users and contributors share about the all project. We
-	provide a full featured social platform with stuff such as Blogs, 
-	Statuses updates and Artwork. Here are the last post on SCN:
+	where SliTaz users and contributors share things about the project. We
+	provide a fully featured social platform with stuff such as Blogs, 
+	Status updates and Artwork. Here are the latest posts on SCN:
 </p>
 <div>
 	<?php
