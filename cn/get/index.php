@@ -9,7 +9,7 @@
     <meta name="robots" content="index, follow, all" />
     <meta name="revisit-after" content="7 days" />
     <meta name="expires" content="never" />
-    <meta name="modified" content="2011-01-06 16:30:00" />
+    <meta name="modified" content="<?php echo (date( "Y-m-d H:i:s", getlastmod())); ?>" />
     <meta name="author" content="Christophe Lincoln"/>
     <meta name="publisher" content="www.slitaz.org" />
     <link rel="shortcut icon" href="../../favicon.ico" />
@@ -218,7 +218,7 @@ SliTaz GNU/Linux 开发版软件包集合 (&lt; 4Gb) -
 			<a href="http://www.slitaz.org/">SliTaz</a></li>
 		<li><a href=".../about/">关于我们</a></li>
 		<li><a href="../../netmap.php">网站地图</a></li>
-		<li>Page modified the the 06 Jan 2011</li>
+		<li>Page modified the <?php echo (date( "d M Y", getlastmod())); ?></li>
 		<li><a href="http://validator.w3.org/check?uri=referer"><img
 		src="../pics/website/xhtml10.png" alt="Valid XHTML 1.0"
 		title="Code validé XHTML 1.0"
