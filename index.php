@@ -111,13 +111,13 @@ SliTaz finer every day.
 <div class="infobox">
 	<img src="pics/website/news.png" alt=".png" />
 	Read the latest news in your language:
-	<strong><a href="de/index.html#news">de</a></strong> |
-	<strong><a href="en/index.html#news">en</a></strong> |
-	<strong><a href="es/index.html#news">es</a></strong> |
-	<strong><a href="fr/index.html#news">fr</a></strong> |
-	<strong><a href="id/index.html#news">id</a></strong> |
-	<strong><a href="pt/index.html#news">pt</a></strong> |
-	<a href="cn/index.html#news"><img
+	<strong><a href="de/#news">de</a></strong> |
+	<strong><a href="en/#news">en</a></strong> |
+	<strong><a href="es/#news">es</a></strong> |
+	<strong><a href="fr/#news">fr</a></strong> |
+	<strong><a href="id/#news">id</a></strong> |
+	<strong><a href="pt/#news">pt</a></strong> |
+	<a href="cn/#news"><img
 		src="pics/website/cn.png"
 		style="vertical-align: middle;"
 		title="Chinese" alt="cn" /></a>
