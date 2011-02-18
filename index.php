@@ -166,7 +166,7 @@ SliTaz finer every day.
 <div class="feed-grid">
 	<div class="right_box">
 		<h3><img src="pics/website/feed.png" alt=".png" />Community Network</h3>
-		<?php get_rss_feed("/var/cache/slitaz/website/scn.xml"); ?>
+		<?php #get_rss_feed("/var/cache/slitaz/website/scn.xml"); ?>
 	</div>
 	<div class="left_box">
 		<h3><img src="pics/website/feed.png" alt=".png" />Support Forum</h3>
@@ -186,7 +186,7 @@ SliTaz finer every day.
 <div class="feed-grid">
 	<div class="right_box">
 		<h3><img src="pics/website/feed.png" alt=".png" />Latest cooked packages</h3>
-		<?php include("/var/cache/slitaz/website/latest.html"); ?>
+		<?php #include("/var/cache/slitaz/website/latest.html"); ?>
 	</div>
 	<div class="left_box">
 		<h3><img src="pics/website/feed.png" alt=".png" />Latest commits</h3>
