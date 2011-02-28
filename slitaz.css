@@ -373,8 +373,15 @@ code, tt {
 pre, pre.script {
 	padding: 10px;
 	color: black;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+}
+pre {
+	background: #e1e0b0;
+}
+pre.script {
 	background: #E8E8E8;
-	border: 1px inset #606060;
 }
 
 /* Packages pages */

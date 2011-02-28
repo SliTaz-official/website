@@ -19,6 +19,17 @@
     <link rel="alternate" type="application/atom+xml" title="SliTaz Labs feed" href="http://labs.slitaz.org/news?format=atom" />
     <link rel="alternate" type="application/rss+xml" title="SliTaz SCN feed" href="http://scn.slitaz.org/rss.xml" />
     <script type="text/javascript" src="libs/js/slideshow.js"></script>
+    <script type="text/javascript">
+	/* <![CDATA[ */
+	    (function() {
+	        var s = document.createElement('script'), t = document.getElementsByTagName('script')[0];
+	        s.type = 'text/javascript';
+	        s.async = true;
+	        s.src = 'http://api.flattr.com/js/0.6/load.js?mode=auto';
+	        t.parentNode.insertBefore(s, t);
+	    })();
+	/* ]]> */
+	</script>
     <link rel="Content" href="#content" />
 </head>
 <body>
@@ -218,6 +229,18 @@ SliTaz finer every day.
 	href="http://www.facebook.com/pages/SliTaz/125559834176383"
 	show_faces="true" width="auto">
 </fb:like>
+
+<h2>Monetary support</h2>
+<p>
+	SliTaz is made by voluntary people and there is no company behind
+	the project, but we need some small donation to maintain the project 
+	infrastructure and services such as the main server and build host.
+	That way we can stay frre and autonomus without any adds on our sites.
+</p>
+<div>
+	<a class="FlattrButton" style="display:none;" rev="flattr;button:compact;"
+			href="http://www.slitaz.org/"></a>
+</div>
 
 <h2>Internationalization</h2>
 <p>
