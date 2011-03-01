@@ -220,7 +220,7 @@
 		<li><a href="#header">Top of the page</a></li>
 		<li>Copyright &copy; <span class="year"></span>
 			<a href="http://www.slitaz.org/">SliTaz</a></li>
-		<li><a href="about/">A propos du projet</a></li>
+		<li><a href="about/">About the project</a></li>
 		<li><a href="../netmap.php">Network Map</a></li>
 		<li>Page modified the <?php echo (date( "d M Y", getlastmod())); ?></li>
 		<li><a href="http://validator.w3.org/check?uri=referer"><img
