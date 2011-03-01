@@ -177,7 +177,7 @@ SliTaz finer every day.
 <div class="feed-grid">
 	<div class="right_box">
 		<h3><img src="pics/website/feed.png" alt=".png" />Community Network</h3>
-		<?php #get_rss_feed("/var/cache/slitaz/website/scn.xml"); ?>
+		<?php get_rss_feed("/var/cache/slitaz/website/scn.xml"); ?>
 	</div>
 	<div class="left_box">
 		<h3><img src="pics/website/feed.png" alt=".png" />Support Forum</h3>
@@ -186,22 +186,12 @@ SliTaz finer every day.
 </div>
 <div class="feed-grid">
 	<div class="right_box">
-		<h3><img src="pics/website/feed.png" alt=".png" />Documentation</h3>
-		<?php get_rss_feed("/var/cache/slitaz/website/doc.xml"); ?>
+		<h3><img src="pics/website/feed.png" alt=".png" />Latest commits</h3>
+		<?php get_rss_feed("/var/cache/slitaz/website/wok.xml"); ?>
 	</div>
 	<div class="left_box">
 		<h3><img src="pics/website/feed.png" alt=".png" />Bug Tracker</h3>
 		<?php get_atom_feed("/var/cache/slitaz/website/bugs.xml"); ?>
-	</div>
-</div>
-<div class="feed-grid">
-	<div class="right_box">
-		<h3><img src="pics/website/feed.png" alt=".png" />Latest cooked packages</h3>
-		<?php #include("/var/cache/slitaz/website/latest.html"); ?>
-	</div>
-	<div class="left_box">
-		<h3><img src="pics/website/feed.png" alt=".png" />Latest commits</h3>
-		<?php get_rss_feed("/var/cache/slitaz/website/wok.xml"); ?>
 	</div>
 </div>
 
@@ -233,9 +223,11 @@ SliTaz finer every day.
 <h2>Monetary support</h2>
 <p>
 	SliTaz is made by voluntary people and there is no company behind
-	the project, but we need some small donation to maintain the project 
+	the project, but we need some monay to maintain the project 
 	infrastructure and services such as the main server and build host.
-	That way we can stay frre and autonomus without any adds on our sites.
+	You can help with a micropayement via Flattr or a Paypal donation to
+	the SliTaz <a href="en/asso/">association</a>, that way we can keep 
+	our freedom and autonomy without any adds on our sites.
 </p>
 <div>
 	<a class="FlattrButton" style="display:none;" rev="flattr;button:compact;"
