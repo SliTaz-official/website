@@ -222,12 +222,12 @@ SliTaz finer every day.
 
 <h2>Monetary support</h2>
 <p>
-	SliTaz is made by voluntary people and there is no company behind
-	the project, but we need some monay to maintain the project 
+	SliTaz is made fully by volunteers and there is no company behind
+	the project, but we need some money to maintain the project 
 	infrastructure and services such as the main server and build host.
-	You can help with a micropayement via Flattr or a Paypal donation to
-	the SliTaz <a href="en/asso/">association</a>, that way we can keep 
-	our freedom and autonomy without any adds on our sites.
+	You can help with a micropayment via Flattr or a Paypal donation to
+	the SliTaz <a href="en/asso/">Association</a>, that way we can keep 
+	our freedom and autonomy without having any ads on our sites.
 </p>
 <div>
 	<a class="FlattrButton" style="display:none;" rev="flattr;button:compact;"
