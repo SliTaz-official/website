@@ -40,6 +40,15 @@
 
 <!-- Header -->
 <div id="header">
+	<!-- Access -->
+	<div id="access">
+		<a href="netmap.php"><img
+			src="pics/website/network.png" alt="network.png" />
+		<a href="http://doc.slitaz.org/">Doc</a>
+		<a href="http://forum.slitaz.org/">Forum</a>
+		<a href="http://scn.slitaz.org/">Community</a>
+		<a href="http://labs.slitaz.org/issues">Bugs</a>
+	</div>
 	<!-- Logo -->
 	<a href="http://www.slitaz.org/"><img id="logo"
 		src="pics/website/logo.png" 
@@ -58,7 +67,7 @@
 	<!-- Nav block begin -->
 	<div id="block_nav" style="min-height: 220px;">
 		<h3><a href="i18n.html"><img src="pics/website/locale.png"
-			alt="locale.png" /></a>Language</h3>
+			alt="locale.png" /></a>Website Language</h3>
 		<div class="right_box">
 			<ul>
 				<li><a href="id/">Indonesian</a></li>
@@ -86,11 +95,7 @@
 	<div id="block_top" style="min-height: 220px;">
 		<h1>Boot baby... boot!</h1>
 		<div id="slideshow">
-			<img src="pics/slideshow/1.png" alt="Desktop 1.png" />
-			<img src="pics/slideshow/2.png" alt="Desktop 2.png" />
-			<img src="pics/slideshow/3.png" alt="Desktop 3.png" />
-			<img src="pics/slideshow/4.png" alt="Desktop 4.png" />
-			<img src="pics/slideshow/5.png" alt="Desktop 5.png" />
+			<?php include("libs/random-image.php"); ?>
 		</div>	
 	<!-- Top block end -->
 	</div>
