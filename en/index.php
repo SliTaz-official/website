@@ -41,23 +41,24 @@
 			<ul>
 				<li><a href="mailing-list.html">Mailing List</a></li>
 				<li><a href="devel/">Development</a></li>
+				<li><a href="packages/">Packages</a></li>
 				<li><a href="artwork/">Artwork</a></li>
 				<li><a href="search.html">Search</a></li>
 			</ul>
 		</div>
 		<div class="left_box">
 			<ul>
+				<li><a href="./">Headlines</a></li>
 				<li><a href="about/">About</a></li>
 				<li><a href="get/">Download</a></li>
 				<li><a href="asso/">Association</a></li>
 				<li><a href="doc/">Documentation</a></li>
-				<li><a href="packages/">Packages</a></li>
 			</ul>
 		</div>
 	</div>
 	<!-- Information/image -->
 	<div id="block_info">
-		<h4>Main page</h4>
+		<h4>English Website</h4>
 		<p>
 			SliTaz is a free operating system providing a fully featured
 			desktop or server in less than 30 Mb. 
