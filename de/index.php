@@ -2,130 +2,94 @@
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
 <head>
-	<title>SliTaz GNU/Linux</title>
+	<title>SliTaz GNU/Linux (de)</title>
 	<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
 	<meta name="description" content="SliTaz GNU/Linux LiveCD" />
 	<meta name="keywords" lang="en" content="System, free, gnu, linux, software opensource, livecd LINUX in RAM" />
 	<meta name="robots" content="index, follow, all" />
-	<meta name="revisit-after" content="7 days" />
-	<meta name="expires" content="never" />
-	<meta name="modified" content="2010-01-10 22:00:00" />
+	<meta name="modified" content="2011-03-26 19:00:00" />
 	<meta name="author" content="F Steiner (Sevala), François (oui)"/>
-	<meta name="publisher" content="www.slitaz.org" />
 	<link rel="shortcut icon" href="../favicon.ico" />
 	<link rel="stylesheet" type="text/css" href="../slitaz.css" />
-	<link rel="alternate" type="application/rss+xml" title="SliTaz Website feed" href="rss.xml" />
+	<link rel="alternate" type="application/rss+xml" title="SliTaz Website feed" href="../en/rss.xml" />
 	<link rel="alternate" type="application/atom+xml" title="SliTaz Labs feed" href="http://labs.slitaz.org/news?format=atom" />
-	<link rel="Content" href="index.html#content" />
 </head>
-<body bgcolor="#ffffff">
+<body>
+	
 <!-- Header -->
 <div id="header">
-    <a name="top"></a>
-<!-- Access -->
-<div id="access">
-	<img
-		src="../pics/website/locale.png"
-		style="vertical-align: middle; width: 20px; height: 20px;"
-		alt="language" />
-    <a href="../en/index.html" title="English website">English</a> |
-    <a href="../es/index.html" title="Página de Inicio">Español</a> |
-    <a href="../fr/index.html" title="Site Wen en français">Français</a> |
-    <a href="../pt/index.html" title="Português">Português</a> |
-    <a href="../cn/index.html" title="Chinese"><img src="../cn/chinese_top.jpg" title="Chinese" alt="cn"></img></a> |
-    <a href="../i18n.html" title="Internationalisation">i18n</a>
-</div>
-    <a href="http://www.slitaz.org/"><img id="logo"
-    src="../pics/website/logo.png" title="www.slitaz.org" alt="www.slitaz.org - Startseite"
-    style="border: 0px solid ; width: 200px; height: 74px;" /></a>
-    <p id="titre">#!/GNU/Linux</p>
+	<div id="logo"></div>
+	<div id="network">
+		<a href="http://www.slitaz.org/netmap.php">
+			<img src="../images/network.png" alt="network.png" /></a>
+		<a href="http://scn.slitaz.org/">Community</a>
+		<a href="http://doc.slitaz.org/">Doc</a>
+		<a href="http://forum.slitaz.org/">Forum</a>
+		<a href="http://labs.slitaz.org/issues">Bugs</a>
+		<a href="http://hg.slitaz.org/">Hg</a>
+	</div>
+	<h1><a href="http://www.slitaz.org/">SliTaz GNU/Linux</a></h1>
 </div>
 
-<!-- Navigation menu -->
-<div id="nav">
-
-<div class="nav_box">
-<h4>Navigation</h4>
-<ul>
-	<li><a href="about/" title="Informationen über das SliTaz-Projekt">Über SliTaz</a></li>
-	<li><a href="get/" title="Downloadsektion">Download SliTaz</a></li>
-	<li><a href="packages/" title="Pakete für Slitaz">Pakete</a></li>
-	<li><a href="mailing-list.html" title="Support, Kontakt und Mitarbeit">Mailing List</a></li>
-	<li><a href="devel/" title="Entwicklerseite">Entwicklung</a></li>
-	<li><a href="artwork/" title="Artwork und Screenshots">Artwork</a></li>
-	<li><a href="search.html" title="Suchmaschine">Suchen</a></li>
-	<li><a href="sitemap.html" title="Website Übersicht">Sitemap</a></li>
-</ul>
+<!-- Block -->
+<div id="block">
+	<!-- Navigation -->
+	<div id="block_nav">
+		<h4>Navigation</h4>
+		<div class="right_box">
+			<ul>
+				<li><a href="mailing-list.html">Mailing List</a></li>
+				<li><a href="devel/">Entwicklung</a></li>
+				<li><a href="packages/">Pakete</a></li>
+				<li><a href="artwork/">Artwork</a></li>
+				<li><a href="search.html">Suchen</a></li>
+			</ul>
+		</div>
+		<div class="left_box">
+			<ul>
+				<li><a href="./">Neuigkeiten</a></li>
+				<li><a href="about/">Über SliTaz</a></li>
+				<li><a href="get/">Download</a></li>
+				<li><a href="../en/asso/">Association (en)</a></li>
+				<li><a href="http://doc.slitaz.org/de:start">Dokumentation</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- Information/image -->
+	<div id="block_info">
+		<h4>Startseite</h4>
+		<p>
+			SliTaz ist eine minimale, freie GNU/Linux Distribution. Das
+			Ziel von SliTaz ist es, eine GNU/Linux Distribution zu 
+			schaffen, die vollkommen aus dem Arbeitsspeicher (RAM) 
+			läuft.
+		</p>
+		<p>
+			SliTaz's CD-Image wird nie eine Größe von 30 MB übersteigen
+			- bei einer sinnvollen Auswahl nützlicher Software.
+			<a href="about/">Mehr erfahren...</a>
+		</p>
+	</div>
 </div>
 
-<!-- SliTaz network -->
-<div class="nav_box">
-<h4>SliTaz Network</h4>
-<ul>
-	<li><a href="http://doc.slitaz.org/de:start">Dokumentation</a></li>
-	<li><a href="http://forum.slitaz.org/">Community Forum</a></li>
-	<li><a href="http://labs.slitaz.org/">SliTaz Laboratories</a></li>
-	<li><a href="http://labs.slitaz.org/issues">Bug Tracking</a></li>
-	<li><a href="http://pkgs.slitaz.org/">Packages Database</a></li>
-	<li><a href="http://pizza.slitaz.org/">Online Builder</a></li>
-	<li><a href="http://boot.slitaz.org/">Web Boot</a></li>
-	<li><a href="http://twitter.com/slitaz">SliTaz on Twitter</a></li>
-	<li><a href="http://distrowatch.com/slitaz">SliTaz on DistroWatch</a></li>
-</ul>
-</div>
-
-</div>
-
-<!-- Content top. -->
-<div id="content_top">
-<div class="top_left"></div>
-<div class="top_right"></div>
+<!-- Languages -->
+<div id="lang">
+	<a href="../i18n.php">
+		<img src="../images/locale.png" alt="locale.png" /></a>
+	<a href="../de/">Deutsch</a>
+	<a href="../en/">English</a>
+	<a href="../es/">Español</a>
+	<a href="../fr/">Français</a>
+	<a href="../id/">Indonesian</a>
+	<a href="../pt/">Português</a>
+	<a href="../cn/">Chinese</a>
 </div>
 
 <!-- Content -->
 <div id="content">
-<a name="content"></a>
 
-<h1><font color="#3e1220">Startseite</font></h1>
-<h2><font color="#df8f06">Boot Baby... boot!</font></h2>
+<h2>Neuigkeiten</h2>
 
-<p>
-SliTaz ist eine minimale, freie GNU/Linux Distribution. Das Ziel von SliTaz
-ist es, eine GNU/Linux Distribution zu schaffen, die vollkommen aus dem
-Arbeitsspeicher (RAM) läuft. Dadurch erhalten Sie ein Betriebssystem mit
-hoher Performance und Stabilität, auch und gerade für ältere Systeme.
-Natürlich wird auch die Installation auf die Festplatte unterstützt. SliTaz
-nutzt BusyBox, den Linux Kernel, GNU freie Software und bootet mit Syslinux;
-es bietet mehr als 200 Linux Befehle und eine große Anzahl grafischer Anwendungen
-über das X Window system (Openbox, gFTP, Geany IDE, Mozilla Firefox, Alsaplayer,
-Gparted, Audio-Editor, LightTPD Webserver, SQLite Datenbank, diverse
-Rettungstools, IRC Client, SSH Client/Server powered by Dropbear und noch
-viele mehr).
-</p>
-
-<div style="text-align: center;">
-<img
-	src="../pics/website/screenpresentation.png"
-	title="SliTaz Desktops" alt="slitaz-desktop"
-	style="width: 380px; height: 170px; margin-top: 8px;" />
-</div>
-
-<p>
-Zudem lässt sich das System über eine eigene Paketverwaltung leicht mit
-weiterer Software ausbauen. SliTaz's CD-Image wird nie eine Größe von 30 MB
-übersteigen - bei einer sinnvollen Auswahl nützlicher Software.
-<a href="about/index.html">Mehr erfahren...</a>
-</p>
-
-<!--
-    SliTaz news starting.
-    English RSS feed file is : rss.xml
--->
-
-<h2><a href="../de/rss.xml"><img
-    src="../pics/website/feed.png" alt="SliTaz RSS News" title="SliTaz RSS News"
-    style="width: 16px; height: 16px; float: left; padding: 4px 4px 0px 0px;" /></a>
-    <font color="#DF8F06">Neuigkeiten</font></h2>
 <p>
 Die SliTaz-Webseite bietet die wichtigsten Projektneuheiten an, und ausserdem
 neuerdings die Labors mit Nachrichten zu der allgemeinen Aktivität der
@@ -133,19 +97,23 @@ verschiedenen Unterprojekten. Diese Nachrichten sind auch als
 <a href="rss.xml">XML-Sendungen</a> erhältlich. Das Projekt bietet ausserdem
 einen kleinen monatlichen Informationsbrief in Englisch und Chinesisch an.
 </p>
-<ul>
-	<li><a href="http://labs.slitaz.org/news">Labs-Nachrichten</a>
-	(<a href="http://labs.slitaz.org/news?format=atom">Sendung</a>)</li>
-	<li><a href="http://doc.slitaz.org/en:newsletter:start">Monthly Newsletter</a></li>
-</ul>
+
+<div class="box">
+	<img src="../images/news.png" alt=".png" />	
+	<a href="http://labs.slitaz.org/news">Labs-Nachrichten</a>
+	(<a href="http://labs.slitaz.org/news?format=atom">Sendung</a>) | 
+	<a href="http://doc.slitaz.org/en:newsletter:start">Monthly Newsletter</a>
+</div>
 
 <div id="news">
 
 <ul>
-	<!-- <li><strong>Date - Title</strong><br />
+	<!-- <li><strong>Date - Title</strong>
+	<p></p>
 	</li> -->
 
-	<li><strong>16 April 2009 - Veröffentlichung von SliTaz GNU/Linux 2.0</strong><br />
+	<li><strong>16 April 2009 - Veröffentlichung von SliTaz GNU/Linux 2.0</strong>
+	<p>
 	Das SliTaz-Projekt verkündet stolz das Erscheinen der neuen stabilen
 	Version:   SliTaz GNU/Linux 2.0. Diese neue Version ist das Ergebnis
 	einjähriger Arbeit; sie bietet ein ultraschnelles, leichtes
@@ -163,9 +131,10 @@ einen kleinen monatlichen Informationsbrief in Englisch und Chinesisch an.
 	Dokumentation wurden neu geschrieben. Für genauere Informationen lesen
 	Sie bitte die <a href="doc/releases/2.0/relnotes.de.html">Release Notes</a>.
 	SliTaz GNU/Linux 2.0 steht zum <a href="get/index.html">Download auf</a> den
-	offiziellen Mirrors bereit.</li>
+	offiziellen Mirrors bereit.</p></li>
 
-	<li><strong>27 März 2009 - Labs und neue Mirors</strong><br />
+	<li><strong>27 März 2009 - Labs und neue Mirors</strong>
+	<p>
 	Auf der Suche nach stetiger Verbesserung der Distribution und der Dienste
 	sind wir stolz den Start der Slitaz-Labors oder
 	<a href="http://labs.slitaz.org/">SliTaz Labs</a> anzukündigen.
@@ -179,9 +148,10 @@ einen kleinen monatlichen Informationsbrief in Englisch und Chinesisch an.
 	Das Projekt ist auch glücklich, 2 neue Mirrors anzukündigen: In der Schweiz
 	bei <a href="http://mirror.switch.ch/">SWITCHmirror</a> (10 Gbit/s) und in
 	China bei <a href="http://www.lupaworld.com">LupaWorld</a>, thanks a
-	lot for supporting us.</li>
+	lot for supporting us.</p></li>
 
-	<li><strong>20 März 2009 - SliTaz auf der Solutionslinux 2009 (Paris)</strong><br />
+	<li><strong>20 März 2009 - SliTaz auf der Solutionslinux 2009 (Paris)</strong>
+	<p>
 	Das SliTaz-Projekt wird auf der Solutionlinux 2009 in Paris zugegen sein.
 	Drei Mitglieder des Teams werden an dem dreitägigen Event teilnehmen,
 	einige weitere Entwickler werden zeitweise ebenfalls anwesend sein.
@@ -195,9 +165,10 @@ einen kleinen monatlichen Informationsbrief in Englisch und Chinesisch an.
 	<a href="http://www.solutionslinux.fr/">www.solutionslinux.fr</a>,
 	<a href="http://www.solutionslinux.fr/associations.php?pg=2_7">Village associations</a>,
 	<a href="http://www.solutionslinux.fr/exposant_fiche.php?id=763&amp;pg=2_4">SliTaz Stand</a>.
-	</li>
+	</p></li>
 
-	<li><strong>28. Februar 2009 - Cooking 20090228</strong><br />
+	<li><strong>28. Februar 2009 - Cooking 20090228</strong>
+	<p>
 	Kurz vor dem nächsten stabilen Release! -
 	Das SliTaz Projekt stellt eine neue Cooking Version vor, mit weiteren Bugfixes,
 	Updates, Verbesserungen und neuen Funktionen. PCI/USB - Erkennung wird nun durch
@@ -208,9 +179,10 @@ einen kleinen monatlichen Informationsbrief in Englisch und Chinesisch an.
 	Neu ist auch ein Notifikationssystem und die Verwaltung der Autostart-Einträge.
 	Die neue Cooking kann von einem der offiziellen Mirrors heruntergeladen werden
 	(siehe <a href="get/index.html">Downloadsektion</a>).
-	</li>
+	</p></li>
 
-	<li><strong>31. Dezember 2008 - Cooking 20081231 - Wifi und NTFS Unterstützung</strong><br />
+	<li><strong>31. Dezember 2008 - Cooking 20081231 - Wifi und NTFS Unterstützung</strong>
+	<p>
 	Das SliTaz Projekt veröffentlicht eine neue Cooking-Version.
 	Alle Neuerungen, Bugfixes und Updates
 	der letzten Monate können getestet bzw. verwendet
@@ -226,8 +198,10 @@ einen kleinen monatlichen Informationsbrief in Englisch und Chinesisch an.
 	nun (dank der Arbeit vieler Entwickler) mehr als 1100 Pakete.
 	Zum Herunterladen gibt es die neue Version  von den offiziellen Mirrors
 	des Projektes (siehe <a href="get/index.html">Downloadsektion</a>).
-	</li>
-	<li><strong>16. Juli 2008 - Neue Cooking-Version (20080716) - Web Boot und MPlayer!</strong><br />
+	</p></li>
+	
+	<li><strong>16. Juli 2008 - Neue Cooking-Version (20080716) - Web Boot und MPlayer!</strong>
+	<p>
 	Diese Cooking-Version enthält viele neue Funktionen und Bugfixes. So existiert nun mit der Boot-Option
 	<code>web</code> die Möglichkeit SliTaz mit Hilfe von gPXE über das Internet zu starten:
 	<a href="http://boot.slitaz.org/" target="_blank">boot.slitaz.org</a>.
@@ -239,7 +213,8 @@ einen kleinen monatlichen Informationsbrief in Englisch und Chinesisch an.
 	benötigt, für ältere Rechner, die diesen Anforderungen nicht genügen existiert eine modifizierte
 	<a href="get/flavors.html">Loram Version</a>. <br />
 	<a href="get/index.html#cooking">Download SliTaz Cooking ISO</a>.
-	</li>
+	</p></li>
+	
 	<li><strong>26. Juni 2008 - Cooking 20080626 mit neuem Kernel</strong><br />
 	Der Sommer ist angekommen und mit ihm die neue Cooking-Version vom 26. Juni. Viel
 	Arbeit wurde diesmal darauf verwendet, das System benutzerfreundlicher zu machen.
@@ -255,6 +230,7 @@ einen kleinen monatlichen Informationsbrief in Englisch und Chinesisch an.
 	über das <a href="http://labs.slitaz.org/issues" target="_blank">Bug Tracking System</a>
 	zu melden.
 	</li>
+	
 	<li><strong>18. Mai 2008 - Cooking 20080518 und LinuxDays.ch</strong><br />
 	Eine neue Cooking Version steht nun zum Download!!! Grundlegende Änderungen wurden
 	vorgenommen. So nutzt SliTaz jetzt Openbox als Standard-Fenstermanager, Tazpkg kann über eine grafische
@@ -270,6 +246,7 @@ einen kleinen monatlichen Informationsbrief in Englisch und Chinesisch an.
 	Übrigens: Diese Version wird auf dem
 	<a href="http://www.linuxdays.ch/" target="_blank">LinuxDay.ch</a> in Genf (Schweiz) genutzt werden.
 	</li>
+	
 	<li><strong>22. März 2008 - SliTaz GNU/Linux 1.0 Release</strong><br />
 	Das SliTaz Entwicklerteam darf mit Stolz das stabile Release SliTaz GNU/Linux 1.0 ankündigen.
 	Nach zwei Jahren Entwicklung ist das die erste stabile Version.
@@ -291,6 +268,7 @@ einen kleinen monatlichen Informationsbrief in Englisch und Chinesisch an.
 	Übersicht über die installierten Programme</a> für detailliertere
 	Informationen zur stabilen Version SliTaz 1.0.
 	</li>
+	
 	<li><strong>26. Februar 2008 - Cooking-Version (20080225) Update!</strong><br />
 	Ein weiteres Update der Cooking-Version ist veröffentlicht. Wieder mit einigen Bugfixes, neuen
 	Bootoptionen und Softwareupdates, wie Alsa 1.0.16, PHP 5.2.5, Htop 0.7, Firefox 2.0.0.12,
@@ -315,6 +293,7 @@ einen kleinen monatlichen Informationsbrief in Englisch und Chinesisch an.
 	aus Quellcode prüfen. Um an die neue Version zu gelangen, schauen Sie bitte
 	in die <a href="get/index.html#cooking">Download Sektion</a>
 	</li>
+	
 	<li><strong>16. Dezember 2007 - Neues Forum</strong><br />
 	Nun gibt es für SliTaz ein englischsprachiges Support-Forum:
 	<a href="http://forum.slitaz.org/#idx2" target="_blank">English Forum</a>
@@ -334,6 +313,7 @@ einen kleinen monatlichen Informationsbrief in Englisch und Chinesisch an.
 	auf älteren 60 bis 80 Sekunden für den Bootvorgang benötigt.
 	<a href="get/index.html#cooking">Download</a>.
     </li>
+    
 	<li><strong>04. Dezember 2007 - Neue Cooking-Version mit Sound Unterstützung</strong><br />
 	Besserer Hardware-Support auf der Live-CD, wie Sound- und PCMCIA-Unterstützung sind der Grund
 	für eine weitere Cooking vor dem stabilen Release 1.0. Das hat eine komplette Neugestaltung der Roadmap
@@ -355,6 +335,7 @@ einen kleinen monatlichen Informationsbrief in Englisch und Chinesisch an.
     Feedback ist willkommen, nutzt dazu bitte die Mailing List oder eine normale
     E-Mail an &lt;devel at Slitaz.org&gt;.
     </li>
+    
     <li><strong>12. Oktober 2007 - Neue Cooking-Version und Erhöhung der Stabilität</strong><br />
     Das 24 MB großen ISO-Image enthält Firefox 2.0.0.7,
 	Linux Kernel 2.6.22.9, Rsync, ISO Master 1.1, LightTPD 1.4.18, SQLite 3.5.1,
@@ -369,34 +350,27 @@ einen kleinen monatlichen Informationsbrief in Englisch und Chinesisch an.
 <!-- End of news -->
 </div>
 
-<!-- End of content with round corner -->
-</div>
-<div id="content_bottom">
-<div class="bottom_left"></div>
-<div class="bottom_right"></div>
+<!-- End of content -->
 </div>
 
-<!-- Start of footer and copy notice -->
-<div id="copy">
-<p>
-Letzte Änderung : 2010-01-10 22:00:00
-<a href="index.html#top">Nach oben</a>
-</p>
-<p>
-Copyright &copy; <span class="year"></span> <a href="http://www.slitaz.org/">SliTaz</a> -
-<a href="http://www.gnu.org/licenses/gpl.html" target="_blank">GNU General Public License</a>
-</p>
-<!-- End of copy -->
-</div>
-
-<!-- Bottom and logo's -->
-<div id="bottom">
-<p>
-<a href="http://validator.w3.org/check?uri=referer" target="_blank"><img
-   src="../pics/website/xhtml10.png" alt="Valid XHTML 1.0"
-   title="Code validé XHTML 1.0"
-   style="width: 80px; height: 15px;" /></a>
-</p>
+<!-- Footer -->
+<div id="footer">
+	Copyright &copy; <span class="year"></span>
+	<a href="http://www.slitaz.org/">SliTaz</a> - Network:
+	<a href="http://scn.slitaz.org/">Community</a>
+	<a href="http://doc.slitaz.org/">Doc</a>
+	<a href="http://forum.slitaz.org/">Forum</a>
+	<a href="http://pkgs.slitaz.org/">Packages</a>
+	<a href="http://labs.slitaz.org/issues">Bugs</a>
+	<a href="http://hg.slitaz.org/">Hg</a>
+	<p>
+		SliTaz @
+		<a href="http://twitter.com/slitaz">Twitter</a>
+		<a href="http://www.facebook.com/slitaz">Facebook</a>
+		<a href="http://distrowatch.com/slitaz">Distrowatch</a>
+		<a href="http://en.wikipedia.org/wiki/SliTaz">Wikipedia</a>
+		<a href="http://flattr.com/profile/slitaz">Flattr</a>
+	</p>
 </div>
 
 </body>
