@@ -7,84 +7,100 @@
     <meta name="description" content="SliTaz GNU/Linux asso non-profit donate" />
     <meta name="keywords" lang="en" content="about slitaz, gnu, linux, mini distro, livecd" />
     <meta name="robots" content="index, follow, all" />
-    <meta name="revisit-after" content="7 days" />
-    <meta name="expires" content="never" />
-    <meta name="modified" content="2008-07-16 21:30:00" />
+    <meta name="modified" content="2011-03-25 20:30:00" />
     <meta name="author" content="Christophe Lincoln"/>
-    <meta name="publisher" content="www.slitaz.org" />
     <link rel="shortcut icon" href="../../favicon.ico" />
     <link rel="stylesheet" type="text/css" href="../../slitaz.css" />
-    <link rel="Content" href="index.html#content" />
+    <script type="text/javascript">
+	/* <![CDATA[ */
+	    (function() {
+	        var s = document.createElement('script'), t = document.getElementsByTagName('script')[0];
+	        s.type = 'text/javascript';
+	        s.async = true;
+	        s.src = 'http://api.flattr.com/js/0.6/load.js?mode=auto';
+	        t.parentNode.insertBefore(s, t);
+	    })();
+	/* ]]> */
+	</script>
 </head>
 <body>
 
 <!-- Header -->
 <div id="header">
-	<!-- Access -->
-	<div id="access">
-		<a href="../../i18n.html"><img 
-			src="../../pics/website/locale.png" alt="locale.png" /></a>
-		<a href="../../fr/asso/">Français</a> |
-		<a href="../../pt/asso/">Português</a>
+	<div id="logo"></div>
+	<div id="network">
+		<a href="http://www.slitaz.org/netmap.php">
+			<img src="../../images/network.png" alt="network.png" /></a>
+		<a href="http://scn.slitaz.org/">Community</a>
+		<a href="http://doc.slitaz.org/">Doc</a>
+		<a href="http://forum.slitaz.org/">Forum</a>
+		<a href="http://labs.slitaz.org/issues">Bugs</a>
+		<a href="http://hg.slitaz.org/">Hg</a>
 	</div>
-    <!-- Logo -->
-	<a href="http://www.slitaz.org/en"><img id="logo"
-		src="../../pics/website/logo.png" 
-		title="www.slitaz.org/en" alt="www.slitaz.org/en" /></a>
-	<p id="titre">#!/GNU/Linux</p>
+	<h1><a href="http://www.slitaz.org/">SliTaz GNU/Linux</a></h1>
+</div>
+
+<!-- Block -->
+<div id="block">
+	<!-- Navigation -->
+	<div id="block_nav">
+		<h4>Navigation</h4>
+		<div class="right_box">
+			<ul>
+				<li><a href="../mailing-list.html">Mailing List</a></li>
+				<li><a href="../devel/">Development</a></li>
+				<li><a href="../artwork/">Artwork</a></li>
+				<li><a href="../search.html">Search</a></li>
+			</ul>
+		</div>
+		<div class="left_box">
+			<ul>
+				<li><a href="../about/">About</a></li>
+				<li><a href="../get/">Download</a></li>
+				<li><a href="../asso/">Association</a></li>
+				<li><a href="../doc/">Documentation</a></li>
+				<li><a href="../packages/">Packages</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- Information/image -->
+	<div id="block_info">
+		<h4>Association</h4>
+		<p>
+			The SliTaz GNU/Linux association is a non-profit entity that 
+			maintains and manages the project. Its mission is to ensure
+			the durability of the project. It provides an infrastruture
+			and delivers professional services to users, developers and
+			business enterprises using the distribution.
+		</p>
+		<div style="padding-top: 8px;">
+			<!-- PayPal boutton -->
+			<form action="https://www.paypal.com/cgi-bin/webscr" method="post"
+				style="display: inline;">
+					<input type="hidden" name="cmd" value="_s-xclick" />
+					<input type="hidden" name="hosted_button_id" value="4885025" />
+					<input type="image" src="../../images/paypal.png" name="submit" 
+						alt="PayPal - The safer, easier way to pay online!" />
+			</form>
+			<!-- Flattr boutton -->
+			<a class="FlattrButton" style="display:none;" rev="flattr;button:compact;"
+				href="http://www.slitaz.org/"></a>
+		</div>
+	</div>
 </div>
 
 <!-- Content -->
-<div id="content-full">
-
-<!-- Block begin -->
-<div class="block">
-	<!-- Nav block begin -->
-	<div id="block_nav">
-		<h3><img src="../../pics/website/network.png" alt="png" />Navigation</h3>
-		<div style="width: 50%; float: right;">
-			<ul>
-				<li><a href="../artwork/">Artwork</a></li>
-				<li><a href="../mailing-list.html">Mailing List</a></li>
-				<li><a href="../devel/">Development</a></li>
-				<li><a href="../search.html">Search</a></li>
-				<li><a href="../../netmap.php">Network Map</a></li>
-			</ul>
-		</div>
-		<ul>
-			<li><a href="../about/">About us</a></li>
-			<li><a href="../asso/">Association</a></li>
-			<li><a href="../get/">Download</a></li>
-			<li><a href="../doc/">Documentation</a></li>
-			<li><a href="../packages/">Packages</a></li>
-		</ul>
-	<!-- Nav block end -->
-	</div>
-	<!-- Top block begin -->
-	<div id="block_top">
-	<h1>Association</h1>
-	<p>
-		The SliTaz GNU/Linux association is a non-profit entity that maintains
-		and manages the project. Its mission is to ensure the durability of
-		the project. It provides an infrastruture and delivers professional services 
-		to users, developers and business enterprises using the distribution. The
-		overall goals and operations of the association are described in the
-		statutes.
-	</p>
-	<!-- Top block end -->
-	</div>
-<!-- Block end -->
-</div>
+<div id="content">
 
 <h2>Infrastructure and services</h2>
 
 <ul>
-	<li><a href="#overview">Overview.</a></li>
-	<li><a href="#goals">Current objectives.</a></li>
-	<li><a href="#members">Members.</a></li>
-	<li><a href="#sponsors">Sponsors.</a></li>
-	<li><a href="#donation">Donations.</a></li>
-	<li><a href="#postal">Postal Address.</a></li>
+	<li><a href="#overview">Overview</a></li>
+	<li><a href="#goals">Current objectives</a></li>
+	<li><a href="#members">Members</a></li>
+	<li><a href="#sponsors">Sponsors</a></li>
+	<li><a href="#donation">Donations</a></li>
+	<li><a href="#postal">Postal Address</a></li>
 </ul>
 
 <a name="overview"></a>
@@ -173,17 +189,24 @@ via mail or email: assoc(at)slitaz.org
 <p>
 There are various ways to financially support the association, become
 a member or sponsor, or make a one-off payment via PayPal online secure 
-services or by using a bank transfer. The project also has some
-logistical needs, any donated equipment in good working order is welcomed.
+services or by using a bank transfer. For micropayement you can use Flattr,
+it is a very nice service with open-source in mind. The project also has
+some logistical needs, any donated equipment in good working order is 
+welcomed.
 </p>
-<!-- PayPal boutton -->
+
 <div>
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
-	<input type="hidden" name="cmd" value="_s-xclick" />
-	<input type="hidden" name="hosted_button_id" value="4885025" />
-	<input type="image" src="https://www.paypal.com/en_US/CH/i/btn/btn_donateCC_LG.gif" name="submit" alt="PayPal - The safer, easier way to pay online!" />
-	<img alt="" border="0" src="https://www.paypal.com/fr_FR/i/scr/pixel.gif" width="1" height="1" />
-</form>
+	<!-- PayPal boutton -->
+	<form action="https://www.paypal.com/cgi-bin/webscr" method="post"
+		style="display: inline;">
+			<input type="hidden" name="cmd" value="_s-xclick" />
+			<input type="hidden" name="hosted_button_id" value="4885025" />
+			<input type="image" src="../../images/paypal.png" name="submit" 
+				alt="PayPal - The safer, easier way to pay online!" />
+	</form>
+	<!-- Flattr boutton -->
+	<a class="FlattrButton" style="display:none;" rev="flattr;button:compact;"
+		href="http://www.slitaz.org/"></a>
 </div>
 
 <a name="postal"></a>
@@ -200,30 +223,22 @@ Switzerland
 
 <!-- Footer -->
 <div id="footer">
-	<div class="right_box">
-	<h4>SliTaz Network</h4>
-		<ul>
-			<li><a href="http://doc.slitaz.org/">Documentation</a></li>
-			<li><a href="http://forum.slitaz.org/">Support Forum</a></li>
-			<li><a href="http://scn.slitaz.org/">Community Network</a></li>
-			<li><a href="http://labs.slitaz.org/">Laboratories</a></li>
-			<li><a href="http://twitter.com/slitaz">SliTaz on Twitter</a></li>
-			<li><a href="http://distrowatch.com/slitaz">SliTaz on DistroWatch</a></li>
-		</ul>
-	</div>
-	<h4>SliTaz Website</h4>
-	<ul>
-		<li><a href="#header">Top of the page</a></li>
-		<li>Copyright &copy; <span class="year"></span>
-			<a href="http://www.slitaz.org/">SliTaz</a></li>
-		<li><a href="../about/">About the project</a></li>
-		<li><a href="../../netmap.php">Network Map</a></li>
-		<li>Page modified the 06 Jan 2011</li>
-		<li><a href="http://validator.w3.org/check?uri=referer"><img
-		src="../../pics/website/xhtml10.png" alt="Valid XHTML 1.0"
-		title="Code validé XHTML 1.0"
-		style="width: 80px; height: 15px; vertical-align: middle;" /></a></li>
-	</ul>
+	Copyright &copy; <span class="year"></span>
+	<a href="http://www.slitaz.org/">SliTaz</a> - Network:
+	<a href="http://scn.slitaz.org/">Community</a>
+	<a href="http://doc.slitaz.org/">Doc</a>
+	<a href="http://forum.slitaz.org/">Forum</a>
+	<a href="http://pkgs.slitaz.org/">Packages</a>
+	<a href="http://labs.slitaz.org/issues">Bugs</a>
+	<a href="http://hg.slitaz.org/">Hg</a>
+	<p>
+		SliTaz @
+		<a href="http://twitter.com/slitaz">Twitter</a>
+		<a href="http://www.facebook.com/slitaz">Facebook</a>
+		<a href="http://distrowatch.com/slitaz">Distrowatch</a>
+		<a href="http://en.wikipedia.org/wiki/SliTaz">Wikipedia</a>
+		<a href="http://flattr.com/profile/slitaz">Flattr</a>
+	</p>
 </div>
 
 </body>

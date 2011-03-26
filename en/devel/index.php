@@ -7,77 +7,82 @@
     <meta name="description" content="SliTaz GNU/Linux project information overview" />
     <meta name="keywords" lang="en" content="about slitaz, gnu, linux, mini distro, livecd" />
     <meta name="robots" content="index, follow, all" />
-    <meta name="revisit-after" content="7 days" />
-    <meta name="expires" content="never" />
     <meta name="modified" content="<?php echo (date( "Y-m-d H:i:s", getlastmod())); ?>" />
     <meta name="author" content="Christophe Lincoln"/>
-    <meta name="publisher" content="www.slitaz.org" />
     <link rel="shortcut icon" href="../../favicon.ico" />
     <link rel="stylesheet" type="text/css" href="../../slitaz.css" />
-    <link rel="Content" href="index.html#content" />
 </head>
 <body>
 
 <!-- Header -->
 <div id="header">
-	<!-- Access -->
-	<div id="access">
-		<a href="../../i18n.html"><img 
-				src="../../pics/website/locale.png" alt="locale.png" /></a>
-		<a href="../../de/devel/">Deutsch</a> |
-		<a href="../../fr/devel/">Français</a> |
-		<a href="../../pt/devel/">Português</a>
+	<div id="logo"></div>
+	<div id="network">
+		<a href="http://www.slitaz.org/netmap.php">
+			<img src="../../images/network.png" alt="network.png" /></a>
+		<a href="http://scn.slitaz.org/">Community</a>
+		<a href="http://doc.slitaz.org/">Doc</a>
+		<a href="http://forum.slitaz.org/">Forum</a>
+		<a href="http://labs.slitaz.org/issues">Bugs</a>
+		<a href="http://hg.slitaz.org/">Hg</a>
 	</div>
-    <!-- Logo -->
-	<a href="http://www.slitaz.org/en/"><img id="logo"
-		src="../../pics/website/logo.png" 
-		title="www.slitaz.org/en" alt="www.slitaz.org/en" /></a>
-	<p id="titre">#!/GNU/Linux</p>
+	<h1><a href="http://www.slitaz.org/">SliTaz GNU/Linux</a></h1>
+</div>
+
+<!-- Block -->
+<div id="block">
+	<!-- Navigation -->
+	<div id="block_nav">
+		<h4>Navigation</h4>
+		<div class="right_box">
+			<ul>
+				<li><a href="../mailing-list.html">Mailing List</a></li>
+				<li><a href="../devel/">Development</a></li>
+				<li><a href="../artwork/">Artwork</a></li>
+				<li><a href="../search.html">Search</a></li>
+			</ul>
+		</div>
+		<div class="left_box">
+			<ul>
+				<li><a href="../about/">About</a></li>
+				<li><a href="../get/">Download</a></li>
+				<li><a href="../asso/">Association</a></li>
+				<li><a href="../doc/">Documentation</a></li>
+				<li><a href="../packages/">Packages</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- Information/image -->
+	<div id="block_info">
+		<h4>Development</h4>
+		<p>
+			SliTaz is a community based distribution made by many
+			people all over the world and everyone is welcome to help
+			and get involve in the project.
+		</p>
+		<p>
+			<img src="../../images/users.png" alt="users.png" />
+			<a href="http://scn.slitaz.org/">Join us on SCN</a> and
+			the <a href="../mailing-list.html">mailing list</a>
+		</p>
+	</div>
 </div>
 
 <!-- Content -->
-<div id="content-full">
+<div id="content">
 
-<!-- Block begin -->
-<div class="block">
-	<!-- Nav block begin -->
-	<div id="block_nav">
-		<h3><img src="../../pics/website/network.png" alt="png" />Navigation</h3>
-		<div style="width: 50%; float: right;">
-			<ul>
-				<li><a href="../artwork/">Artwork</a></li>
-				<li><a href="../mailing-list.html">Mailing List</a></li>
-				<li><a href="../devel/">Development</a></li>
-				<li><a href="../search.html">Search</a></li>
-				<li><a href="../../netmap.php">Network Map</a></li>
-			</ul>
-		</div>
-		<ul>
-			<li><a href="../about/">About us</a></li>
-			<li><a href="../asso/">Association</a></li>
-			<li><a href="../get/">Download</a></li>
-			<li><a href="../doc/">Documentation</a></li>
-			<li><a href="../packages/">Packages</a></li>
-		</ul>
-	<!-- Nav block end -->
-	</div>
-	<!-- Top block begin -->
-	<div id="block_top">
-	<h1>Development</h1>
-	<ul>
-		<li><a href="#devel">SliTaz Developers corner.</a></li>
-		<li><a href="#kiss">KISS and comply to standards.</a></li>
-		<li><a href="#tank">Build host &amp; home.</a></li>
-		<li><a href="#repos">Mercurial repositories.</a></li>
-		<li><a href="#iconv">Implementation of iconv().</a></li>
-		<li><a href="#pkgs">Tazpkg packages.</a></li>
-		<li><a href="#website">Website Management.</a></li>
-		<!--<li><a href="#diff">Diff and patch files.</a></li>-->
-	</ul>
-	<!-- Top block end -->
-	</div>
-<!-- Block end -->
-</div>
+<h2>Devel corner</h2>
+
+<ul>
+	<li><a href="#devel">SliTaz Developers corner.</a></li>
+	<li><a href="#kiss">KISS and comply to standards.</a></li>
+	<li><a href="#tank">Build host &amp; home.</a></li>
+	<li><a href="#repos">Mercurial repositories.</a></li>
+	<li><a href="#iconv">Implementation of iconv().</a></li>
+	<li><a href="#pkgs">Tazpkg packages.</a></li>
+	<li><a href="#website">Website Management.</a></li>
+	<!--<li><a href="#diff">Diff and patch files.</a></li>-->
+</ul>
 
 <a name="devel"></a>
 <h2>SliTaz Developers corner</h2>
@@ -318,30 +323,22 @@ To apply a patch:
 
 <!-- Footer -->
 <div id="footer">
-	<div class="right_box">
-	<h4>SliTaz Network</h4>
-		<ul>
-			<li><a href="http://doc.slitaz.org/">Documentation</a></li>
-			<li><a href="http://forum.slitaz.org/">Support Forum</a></li>
-			<li><a href="http://scn.slitaz.org/">Community Network</a></li>
-			<li><a href="http://labs.slitaz.org/">Laboratories</a></li>
-			<li><a href="http://twitter.com/slitaz">SliTaz on Twitter</a></li>
-			<li><a href="http://distrowatch.com/slitaz">SliTaz on DistroWatch</a></li>
-		</ul>
-	</div>
-	<h4>SliTaz Website</h4>
-	<ul>
-		<li><a href="#header">Top of the page</a></li>
-		<li>Copyright &copy; <span class="year"></span>
-			<a href="http://www.slitaz.org/">SliTaz</a></li>
-		<li><a href="../about/">About the project</a></li>
-		<li><a href="../../netmap.php">Network Map</a></li>
-		<li>Page modified the <?php echo (date( "d M Y", getlastmod())); ?></li>
-		<li><a href="http://validator.w3.org/check?uri=referer"><img
-		src="../../pics/website/xhtml10.png" alt="Valid XHTML 1.0"
-		title="Code validé XHTML 1.0"
-		style="width: 80px; height: 15px; vertical-align: middle;" /></a></li>
-	</ul>
+	Copyright &copy; <span class="year"></span>
+	<a href="http://www.slitaz.org/">SliTaz</a> - Network:
+	<a href="http://scn.slitaz.org/">Community</a>
+	<a href="http://doc.slitaz.org/">Doc</a>
+	<a href="http://forum.slitaz.org/">Forum</a>
+	<a href="http://pkgs.slitaz.org/">Packages</a>
+	<a href="http://labs.slitaz.org/issues">Bugs</a>
+	<a href="http://hg.slitaz.org/">Hg</a>
+	<p>
+		SliTaz @
+		<a href="http://twitter.com/slitaz">Twitter</a>
+		<a href="http://www.facebook.com/slitaz">Facebook</a>
+		<a href="http://distrowatch.com/slitaz">Distrowatch</a>
+		<a href="http://en.wikipedia.org/wiki/SliTaz">Wikipedia</a>
+		<a href="http://flattr.com/profile/slitaz">Flattr</a>
+	</p>
 </div>
 
 </body>

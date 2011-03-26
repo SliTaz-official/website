@@ -20,66 +20,65 @@
 
 <!-- Header -->
 <div id="header">
-	<!-- Access -->
-	<div id="access">
-		<a href="../../i18n.html"><img 
-			src="../../pics/website/locale.png" alt="locale.png" /></a>
-		<a href="../../fr/news/2007.html" >Français</a>
+	<div id="logo"></div>
+	<div id="network">
+		<a href="http://www.slitaz.org/netmap.php">
+			<img src="../../images/network.png" alt="network.png" /></a>
+		<a href="http://scn.slitaz.org/">Community</a>
+		<a href="http://doc.slitaz.org/">Doc</a>
+		<a href="http://forum.slitaz.org/">Forum</a>
+		<a href="http://labs.slitaz.org/issues">Bugs</a>
+		<a href="http://hg.slitaz.org/">Hg</a>
 	</div>
-    <!-- Logo -->
-	<a href="http://www.slitaz.org/en/"><img id="logo"
-		src="../../pics/website/logo.png" 
-		title="www.slitaz.org/en" alt="www.slitaz.org/en" /></a>
-	<p id="titre">#!/GNU/Linux</p>
+	<h1><a href="http://www.slitaz.org/">SliTaz GNU/Linux</a></h1>
+</div>
+
+<!-- Block -->
+<div id="block">
+	<!-- Navigation -->
+	<div id="block_nav">
+		<h4>Navigation</h4>
+		<div class="right_box">
+			<ul>
+				<li><a href="../mailing-list.html">Mailing List</a></li>
+				<li><a href="../devel/">Development</a></li>
+				<li><a href="../artwork/">Artwork</a></li>
+				<li><a href="../search.html">Search</a></li>
+			</ul>
+		</div>
+		<div class="left_box">
+			<ul>
+				<li><a href="../about/">About</a></li>
+				<li><a href="../get/">Download</a></li>
+				<li><a href="../asso/">Association</a></li>
+				<li><a href="../doc/">Documentation</a></li>
+				<li><a href="../packages/">Packages</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- Information/image -->
+	<div id="block_info">
+		<h4>News archives</h4>
+		<p>
+			Website news archives by year. Note that some links may be
+			broken due to website structure changes (mainly the docs 
+			that moved to their own domain).
+		</p>
+		<p>
+			<img src="../../images/news.png" alt="png" /> 2007 | 
+			<a href="2008.html">2008</a> | <a href="2009.html">2009</a>
+		</p>
+	</div>
 </div>
 
 <!-- Content -->
-<div id="content-full">
-
-<!-- Block begin -->
-<div class="block">
-	<!-- Nav block begin -->
-	<div id="block_nav">
-		<h3><img src="../../pics/website/network.png" alt="png" />Navigation</h3>
-		<div style="width: 50%; float: right;">
-			<ul>
-				<li><a href="../artwork/">Artwork</a></li>
-				<li><a href="../mailing-list.html">Mailing List</a></li>
-				<li><a href="../devel/">Development</a></li>
-				<li><a href="../search.html">Search</a></li>
-				<li><a href="../../netmap.php">Network Map</a></li>
-			</ul>
-		</div>
-		<ul>
-			<li><a href="../about/">About us</a></li>
-			<li><a href="../asso/">Association</a></li>
-			<li><a href="../get/">Download</a></li>
-			<li><a href="../doc/">Documentation</a></li>
-			<li><a href="../packages/">Packages</a></li>
-		</ul>
-	<!-- Nav block end -->
-	</div>
-	<!-- Top block begin -->
-	<div id="block_top">
-	<h1>News archives</h1>
-	<p>
-		Website news archives by year. Note that some links may be broken
-		due to website structure changes (mainly the docs that moved to their
-		own domain).
-	</p>
-	<h3><img src="../../pics/website/news.png" alt="png" />News by year</h3>
-	<p>
-		2007 | <a href="2008.html">2008</a> | <a href="2009.html">2009</a>
-	</p>
-	<!-- Top block end -->
-	</div>
-<!-- Block end -->
-</div>
+<div id="content">
 
 <h2>2007</h2>
 
 <ul>
-	<li><strong>16 Dec 2007 - SliTaz English forum</strong><br />
+	<li><strong>16 Dec 2007 - SliTaz English forum</strong>
+	<p>
 	The project is proud the announce the availability of an
 	<a href="http://forum.slitaz.org/">English forum</a>
 	providing help and support to users speaking English. Since the project
@@ -89,8 +88,10 @@
 	interface is in French but settings can be changed when you login with your
 	account. The crew is also working on the lack of English documentation.
 	Help and assistance are greatly welcomed in the project.
-	</li>
-	<li><strong>06 Dec 2007 - 2 days for a new ISO that boots twice faster!</strong><br />
+	</p></li>
+	
+	<li><strong>06 Dec 2007 - 2 days for a new ISO that boots twice faster!</strong>
+	<p>
 	2 days for a new ISO that boots twice faster. With the new lzma compression
 	boot time has gone down, we worked hard these two days to improve boot speed
 	and finally get SliTaz to boot twice as fast. So we uploaded a new LiveCD with a
@@ -98,8 +99,10 @@
 	tests gave us the LiveCD booting between 20 to 30 seconds on recent PCs
 	and between 60 to 80 on older hardware.
 	<a href="../get/index.html#cooking">Download last Cooking</a>.
-	</li>
-	<li><strong>04 Dec 2007 - New Cooking with sound support and more options</strong><br />
+	</p></li>
+	
+	<li><strong>04 Dec 2007 - New Cooking with sound support and more options</strong>
+	<p>
 	SliTaz crew is proud to announce the availability of a new SliTaz Cooking
 	release. It's finally not the expected stable release because we decided
 	to add some more hardware support on the LiveCD, like sound and PCMCIA
@@ -112,50 +115,45 @@
 	boot time and isapnptools for very old hardware like IBM GL300 6272/6282 or
 	P133/32M. All this new stuff fits in an ISO image of 22,4 Mb. The Simple
 	Light Incredible... SliTaz (cooking) LiveCD can be obtained
-	on SliTaz mirror.  <a href="../get/index.html#cooking">Download</a>. Enjoy!</li>
-	<li><strong>06 Nov 2007 - Last Cooking before 1.0</strong><br />
+	on SliTaz mirror.  <a href="../get/index.html#cooking">Download</a>. Enjoy!</p></li>
+	
+	<li><strong>06 Nov 2007 - Last Cooking before 1.0</strong>
+	<p>
 	SliTaz project is proud to announce the last cooking version before stable
 	release. This new version provides PHP 5.2.5, Grsync, ISO Master 1.2,
 	Busybox 1.7.2 and much more in a ISO image of 24,7 MB. We also prepared a
 	new theme and wallpaper for JWM and installed a Tango icon.
 	<a href="../get/index.html#cooking">Download</a> SliTaz (cooking) LiveCD for free from
 	TuxFamily mirror. All feedback is really welcome, you can use the mailing
-	list or directly send a mail to &lt;devel at slitaz.org&gt;.</li>
-	<li><strong>12 Oct 2007 - New Cooking and stabilisation</strong><br />
+	list or directly send a mail to &lt;devel at slitaz.org&gt;.</p></li>
+	
+	<li><strong>12 Oct 2007 - New Cooking and stabilisation</strong><p>
 	SliTaz Cooking ISO image provides a LiveCD of 24 Mb with Firefox 2.0.0.7,
 	Linux kernel 2.6.22.9, Rsync, ISO Master 1.1, LightTPD 1.4.18, SQLite 3.5.1,
 	a new theme and wallpaper. The packages manager was also upgraded with
 	Tazwok and the slitaz-tools. Transmission 0.82 can now create Torrent files.
 	SliTaz (cooking) LiveCD can be obtained for free
-	from TuxFamily mirror.  <a href="../get/index.html#cooking">Download</a>.</li>
+	from TuxFamily mirror.  <a href="../get/index.html#cooking">Download</a>.</p></li>
 </ul>
 
 <!-- Footer -->
 <div id="footer">
-	<div class="right_box">
-	<h4>SliTaz Network</h4>
-		<ul>
-			<li><a href="http://doc.slitaz.org/">Documentation</a></li>
-			<li><a href="http://forum.slitaz.org/">Support Forum</a></li>
-			<li><a href="http://scn.slitaz.org/">Community Network</a></li>
-			<li><a href="http://labs.slitaz.org/">Laboratories</a></li>
-			<li><a href="http://twitter.com/slitaz">SliTaz on Twitter</a></li>
-			<li><a href="http://distrowatch.com/slitaz">SliTaz on DistroWatch</a></li>
-		</ul>
-	</div>
-	<h4>SliTaz Website</h4>
-	<ul>
-		<li><a href="#header">Top of the page</a></li>
-		<li>Copyright &copy; <span class="year"></span>
-			<a href="http://www.slitaz.org/">SliTaz</a></li>
-		<li><a href="../about/">About the project</a></li>
-		<li><a href="../../netmap.php">Network Map</a></li>
-		<li>Page modified the 06 Jan 2011</li>
-		<li><a href="http://validator.w3.org/check?uri=referer"><img
-		src="../../pics/website/xhtml10.png" alt="Valid XHTML 1.0"
-		title="Code validé XHTML 1.0"
-		style="width: 80px; height: 15px; vertical-align: middle;" /></a></li>
-	</ul>
+	Copyright &copy; <span class="year"></span>
+	<a href="http://www.slitaz.org/">SliTaz</a> - Network:
+	<a href="http://scn.slitaz.org/">Community</a>
+	<a href="http://doc.slitaz.org/">Doc</a>
+	<a href="http://forum.slitaz.org/">Forum</a>
+	<a href="http://pkgs.slitaz.org/">Packages</a>
+	<a href="http://labs.slitaz.org/issues">Bugs</a>
+	<a href="http://hg.slitaz.org/">Hg</a>
+	<p>
+		SliTaz @
+		<a href="http://twitter.com/slitaz">Twitter</a>
+		<a href="http://www.facebook.com/slitaz">Facebook</a>
+		<a href="http://distrowatch.com/slitaz">Distrowatch</a>
+		<a href="http://en.wikipedia.org/wiki/SliTaz">Wikipedia</a>
+		<a href="http://flattr.com/profile/slitaz">Flattr</a>
+	</p>
 </div>
 
 </body>
