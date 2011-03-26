@@ -4,21 +4,17 @@
 <head>
     <title>SliTaz GNU/Linux</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="SliTaz GNU/Linux LiveCD operating system" />
-    <meta name="keywords" lang="en" content="System, libre, gnu, linux, logiciels opensource, livecd" />
+	<meta name="description" content="SliTaz GNU/Linux LiveCD operating system" />
+    <meta name="keywords" lang="en" content="slitaz, gnu, linux, opensource, livecd, live usb" />
     <meta name="robots" content="index, follow, all" />
-    <meta name="revisit-after" content="3 days" />
-    <meta name="expires" content="never" />
     <meta name="modified" content="<?php echo (date( "Y-m-d H:i:s", getlastmod())); ?>" />
-    <meta name="author" content="Christophe Lincoln"/>
-    <meta name="publisher" content="www.slitaz.org" />
+    <meta name="author" content="Christophe Lincoln" />
     <meta name="verify-v1" content="qieECDfB5l+EBkG8QMNuHOGfol0/MEe4U22/4iVupNw=" />
 	<link rel="shortcut icon" href="favicon.ico" />
     <link rel="stylesheet" type="text/css" href="slitaz.css" />
     <link rel="alternate" type="application/rss+xml" title="SliTaz Website feed" href="en/rss.xml" />
     <link rel="alternate" type="application/atom+xml" title="SliTaz Labs feed" href="http://labs.slitaz.org/news?format=atom" />
     <link rel="alternate" type="application/rss+xml" title="SliTaz SCN feed" href="http://scn.slitaz.org/rss.xml" />
-    <script type="text/javascript" src="libs/js/slideshow.js"></script>
     <script type="text/javascript">
 	/* <![CDATA[ */
 	    (function() {
@@ -30,86 +26,64 @@
 	    })();
 	/* ]]> */
 	</script>
-    <link rel="Content" href="#content" />
 </head>
 <body>
 
-<?php
-	require_once("libs/get-feed.php");
-?>
-
 <!-- Header -->
 <div id="header">
-	<!-- Access -->
-	<div id="access">
-		<a href="netmap.php"><img
-			src="pics/website/network.png" alt="network.png" />
+	<div id="logo"></div>
+	<div id="network">
+		<a href="./netmap.php">
+			<img src="images/network.png" alt="network.png" /></a>
+		<a href="http://scn.slitaz.org/">Community</a>
 		<a href="http://doc.slitaz.org/">Doc</a>
 		<a href="http://forum.slitaz.org/">Forum</a>
-		<a href="http://scn.slitaz.org/">Community</a>
 		<a href="http://labs.slitaz.org/issues">Bugs</a>
+		<a href="http://hg.slitaz.org/">Hg</a>
 	</div>
-	<!-- Logo -->
-	<a href="http://www.slitaz.org/"><img id="logo"
-		src="pics/website/logo.png" 
-		title="www.slitaz.org" alt="www.slitaz.org" /></a>
-	<p id="titre">#!/GNU/Linux</p>
+	<h1><a href="http://www.slitaz.org/">SliTaz GNU/Linux</a></h1>
 </div>
 
-<!-- Content -->
-<div id="content-full">
-
-<!-- For the main index with slideshow we keep block_nav and block_top
-     at min-height: 220px; -->
-
-<!-- Block begin -->
-<div class="block">
-	<!-- Nav block begin -->
-	<div id="block_nav" style="min-height: 220px;">
-		<h3><a href="i18n.html"><img src="pics/website/locale.png"
-			alt="locale.png" /></a>Website Language</h3>
-		<div class="right_box">
-			<ul>
-				<li><a href="id/">Indonesian</a></li>
-				<li><a href="pt/">Português</a></li>
-				<li><a href="cn/" title="Chinese">
-				<img src="pics/website/cn.png" alt="cn"
-					style="vertical-align: middle;" /></a></li>
-				<!-- <li><a href="i18n.html">I18n info</a></li> -->
-			</ul>
-		</div>
-		<ul>
-			<li><a href="de/">Deutsch</a></li>
-			<li><a href="en/">English</a></li>
-			<li><a href="es/">Español</a></li>
-			<li><a href="fr/">Français</a></li>
-		</ul>
-		<h3>Quick Download</h3>
+<!-- Block -->
+<div id="block">
+	<!-- Navigation -->
+	<div id="block_nav" style="text-align: center; padding: 10px;">
+		<?php include("libs/random-image.php"); ?>
+	</div>
+	<!-- Information/image -->
+	<div id="block_info">
+		<h4>About SliTaz</h4>
+		<p>
+			SliTaz is an open source and free operating system providing
+			a fully featured desktop or server in less than 30 MB. SliTaz
+			is simple to use, fast and stable. We have an active community
+			and contributors from all over the world making SliTaz finer
+			every day. 
+		</p>
 		<div class="button">
+			Quick Download:
 			<a href="http://mirror.slitaz.org/iso/3.0/slitaz-3.0.iso">SliTaz 3.0</a>
 			<a href="http://mirror.slitaz.org/iso/cooking/slitaz-cooking.iso">SliTaz Cooking</a>
 		</div>
-	<!-- Nav block end -->
 	</div>
-	<!-- Top block begin -->
-	<div id="block_top" style="min-height: 220px;">
-		<h1>Boot baby... boot!</h1>
-		<div id="slideshow">
-			<?php include("libs/random-image.php"); ?>
-		</div>	
-	<!-- Top block end -->
-	</div>
-<!-- Block end -->
 </div>
 
-<h2>About SliTaz</h2>
+<!-- Languages -->
+<div id="lang">
+	<a href="i18n.php"><img src="images/locale.png" alt="locale.png" /></a>
+	<a href="de/">Deutsch</a>
+	<a href="en/">English</a>
+	<a href="es/">Español</a>
+	<a href="fr/">Français</a>
+	<a href="id/">Indonesian</a>
+	<a href="pt/">Português</a>
+</div>
 
-<p>
-SliTaz is an open source and free operating system providing a fully featured
-desktop or server in less than 30 MB. SliTaz is simple to use, fast and stable.
-We have an active community and contributors from all over the world making
-SliTaz finer every day.
-</p>
+<!-- Content -->
+<div id="content">
+
+<!-- For the main index with slideshow we keep block_nav and block_top
+     at min-height: 220px; -->
 
 <!-- We just keep the last 4 web site news -->
 <div id="news">
@@ -123,21 +97,6 @@ SliTaz finer every day.
 	<li><strong>14 March 2010 - RC series and Solutionslinux 2010 (Paris)</strong></li>
 	<li><strong>21 February 2010 - New Cooking 20100221</strong></li>
 </ul>
-
-<div class="infobox">
-	<img src="pics/website/news.png" alt=".png" />
-	Read the latest news in your language:
-	<strong><a href="de/#news">de</a></strong> |
-	<strong><a href="en/#news">en</a></strong> |
-	<strong><a href="es/#news">es</a></strong> |
-	<strong><a href="fr/#news">fr</a></strong> |
-	<strong><a href="id/#news">id</a></strong> |
-	<strong><a href="pt/#news">pt</a></strong> |
-	<a href="cn/#news"><img
-		src="pics/website/cn.png"
-		style="vertical-align: middle;"
-		title="Chinese" alt="cn" /></a>
-</div>
 
 <!-- End of news -->
 </div>
@@ -178,24 +137,26 @@ SliTaz finer every day.
 </div>
 
 <h2>Feed Grid</h2>
-
+<?php
+	require_once("libs/get-feed.php");
+?>
 <div class="feed-grid">
 	<div class="right_box">
-		<h3><img src="pics/website/feed.png" alt=".png" />Community Network</h3>
+		<h3>Community Network</h3>
 		<?php get_rss_feed("/var/cache/slitaz/website/scn.xml"); ?>
 	</div>
 	<div class="left_box">
-		<h3><img src="pics/website/feed.png" alt=".png" />Support Forum</h3>
+		<h3>Support Forum</h3>
 		<?php get_forum_rss_feed("/var/cache/slitaz/website/forum.xml"); ?>
 	</div>
 </div>
 <div class="feed-grid">
 	<div class="right_box">
-		<h3><img src="pics/website/feed.png" alt=".png" />Latest commits</h3>
+		<h3>Latest Commits</h3>
 		<?php get_rss_feed("/var/cache/slitaz/website/wok.xml"); ?>
 	</div>
 	<div class="left_box">
-		<h3><img src="pics/website/feed.png" alt=".png" />Bug Tracker</h3>
+		<h3>Bug Tracker</h3>
 		<?php get_atom_feed("/var/cache/slitaz/website/bugs.xml"); ?>
 	</div>
 </div>
@@ -228,21 +189,30 @@ SliTaz finer every day.
 <h2>Monetary support</h2>
 <p>
 	SliTaz is made by volunteers and there is no company behind
-	the project, but we still need some money to maintain the project 
+    the project, but we still need some money to maintain the project 
 	infrastructure and services such as the main server and build host.
 	You can help with a micropayment via Flattr or a Paypal donation to
 	the SliTaz <a href="en/asso/">Association</a>, that way we can keep 
 	our freedom and autonomy without having any ads on our sites.
 </p>
 <div>
+	<!-- PayPal boutton -->
+	<form action="https://www.paypal.com/cgi-bin/webscr" method="post"
+		style="display: inline;">
+		<input type="hidden" name="cmd" value="_s-xclick" />
+		<input type="hidden" name="hosted_button_id" value="4885025" />
+		<input type="image" src="images/paypal.png" name="submit" 
+			alt="PayPal - The safer, easier way to pay online!" />
+	</form>
+	<!-- Flattr boutton -->
 	<a class="FlattrButton" style="display:none;" rev="flattr;button:compact;"
-			href="http://www.slitaz.org/"></a>
+		href="http://www.slitaz.org/"></a>
 </div>
 
 <h2>Internationalization</h2>
 <p>
 The SliTaz web site is available in several languages and maintained by the
-<a href="i18n.html">internationalization</a> team (i18n). Help is often
+<a href="i18n.php">internationalization</a> team (i18n). Help is often
 needed and you're welcome to join us if you would like to see the website
 translated into your language.
 </p>
@@ -252,30 +222,22 @@ translated into your language.
 
 <!-- Footer -->
 <div id="footer">
-	<div class="right_box">
-	<h4>SliTaz Network</h4>
-		<ul>
-			<li><a href="http://doc.slitaz.org/">Documentation</a></li>
-			<li><a href="http://forum.slitaz.org/">Support Forum</a></li>
-			<li><a href="http://scn.slitaz.org/">Community Network</a></li>
-			<li><a href="http://labs.slitaz.org/">Laboratories</a></li>
-			<li><a href="http://twitter.com/slitaz">SliTaz on Twitter</a></li>
-			<li><a href="http://distrowatch.com/slitaz">SliTaz on DistroWatch</a></li>
-		</ul>
-	</div>
-	<h4>SliTaz Website</h4>
-	<ul>
-		<li><a href="#header">Top of the page</a></li>
-		<li>Copyright &copy; <span class="year"></span>
-			<a href="http://www.slitaz.org/">SliTaz</a></li>
-		<li><a href="about/">About the project</a></li>
-		<li><a href="netmap.php">Network Map</a></li>
-		<li>Page modified the <?php echo (date( "d M Y", getlastmod())); ?></li>
-		<li><a href="http://validator.w3.org/check?uri=referer"><img
-		src="pics/website/xhtml10.png" alt="Valid XHTML 1.0"
-		title="Code validé XHTML 1.0"
-		style="width: 80px; height: 15px; vertical-align: middle;" /></a></li>
-	</ul>
+	Copyright &copy; <span class="year"></span>
+	<a href="http://www.slitaz.org/">SliTaz</a> - Network:
+	<a href="http://scn.slitaz.org/">Community</a>
+	<a href="http://doc.slitaz.org/">Doc</a>
+	<a href="http://forum.slitaz.org/">Forum</a>
+	<a href="http://pkgs.slitaz.org/">Packages</a>
+	<a href="http://labs.slitaz.org/issues">Bugs</a>
+	<a href="http://hg.slitaz.org/">Hg</a>
+	<p>
+		SliTaz @
+		<a href="http://twitter.com/slitaz">Twitter</a>
+		<a href="http://www.facebook.com/slitaz">Facebook</a>
+		<a href="http://distrowatch.com/slitaz">Distrowatch</a>
+		<a href="http://en.wikipedia.org/wiki/SliTaz">Wikipedia</a>
+		<a href="http://flattr.com/profile/slitaz">Flattr</a>
+	</p>
 </div>
 
 </body>
