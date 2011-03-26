@@ -3,79 +3,84 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cn" lang="cn">
 <head>
 	<title>SliTaz GNU/Linux 中文网站</title>
-	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="description" content="SliTaz GNU/Linux LiveCD" />
 	<meta name="keywords" lang="cn" content="System, free, gnu, linux, software opensource, livecd LINUX in RAM" />
 	<meta name="robots" content="index, follow, all" />
-	<meta name="revisit-after" content="7 days" />
-	<meta name="expires" content="never" />
 	<meta name="modified" content="<?php echo (date( "Y-m-d H:i:s", getlastmod())); ?>" />
 	<meta name="author" content="Chen Yufei"/>
-	<meta name="publisher" content="www.slitaz.org" />
 	<link rel="shortcut icon" href="../favicon.ico" />
 	<link rel="stylesheet" type="text/css" href="../slitaz.css" />
 	<link rel="alternate" type="application/rss+xml" title="SliTaz Website feed" href="rss.xml" />
 	<link rel="alternate" type="application/atom+xml" title="SliTaz Labs feed" href="http://labs.slitaz.org/news?format=atom" />
 	<link rel="alternate" type="application/rss+xml" title="SliTaz SCN feed" href="http://scn.slitaz.org/rss.xml" />
-	<link rel="Content" href="index.html#content" />
 </head>
 <body>
 
 <!-- Header -->
 <div id="header">
-	<!-- Access -->
-	<div id="access">
-		<a href="../i18n.html"><img 
-			src="../pics/website/locale.png" alt="locale.png" /></a>
-	    <a href="../de/">Deutsch</a> |
-	    <a href="../en/">English</a> |
-	    <a href="../es/">Español</a> |
-	    <a href="../fr/">Français</a> |
-	    <a href="../pt/">Português</a>
+	<div id="logo"></div>
+	<div id="network">
+		<a href="http://www.slitaz.org/netmap.php">
+			<img src="../images/network.png" alt="network.png" /></a>
+		<a href="http://scn.slitaz.org/">Community</a>
+		<a href="http://doc.slitaz.org/">Doc</a>
+		<a href="http://forum.slitaz.org/">Forum</a>
+		<a href="http://labs.slitaz.org/issues">Bugs</a>
+		<a href="http://hg.slitaz.org/">Hg</a>
 	</div>
-    <!-- Logo -->
-	<a href="http://www.slitaz.org/"><img id="logo"
-		src="../pics/website/logo.png" 
-		title="www.slitaz.org" alt="www.slitaz.org" /></a>
-	<p id="titre">#!/GNU/Linux</p>
+	<h1><a href="http://www.slitaz.org/">SliTaz GNU/Linux</a></h1>
+</div>
+
+<!-- Block -->
+<div id="block">
+	<!-- Navigation -->
+	<div id="block_nav">
+		<h4>导航</h4>
+		<div class="right_box">
+			<ul>
+				<li><a href="../en/mailing-list.html">邮件列表 (en)</a></li>
+				<li><a href="../en/devel/">开发 (en)</a></li>
+				<li><a href="packages/">软件包</a></li>
+				<li><a href="artwork/">美工</a></li>
+				<li><a href="search.html">搜索</a></li>
+			</ul>
+		</div>
+		<div class="left_box">
+			<ul>
+				<li><a href="./">头条</a></li>
+				<li><a href="about/">关于</a></li>
+				<li><a href="get/">下载</a></li>
+				<li><a href="../en/asso/">捐赠 (en)</a></li>
+				<li><a href="doc/">文档</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- Information/image -->
+	<div id="block_info">
+		<h4>主页</h4>
+		<p>
+			Slitaz是一个免费的操作系统，它能在完全地内存中运行，也可以从CD－ROM、U盘等可移动介质中启动。Slitaz以LiveCD的形式发布，并且不超过30MB，快速、稳定而易用。Slitaz还拥有小巧、直观的桌面，以及易用的设置工具。
+			<a href="about/">更多信息...</a> 
+		</p>
+	</div>
+</div>
+
+<!-- Languages -->
+<div id="lang">
+	<a href="../i18n.php">
+		<img src="../images/locale.png" alt="locale.png" /></a>
+	<a href="../en/">English</a>
+	<a href="../de/">Deutsch</a>
+	<a href="../en/">English</a>
+	<a href="../es/">Español</a>
+	<a href="../fr/">Français</a>
+	<a href="../id/">Indonesian</a>
+	<a href="../pt/">Português</a>
 </div>
 
 <!-- Content -->
-<div id="content-full">
-
-<!-- Block begin -->
-<div class="block">
-	<!-- Nav block begin -->
-	<div id="block_nav">
-		<h3><img src="../pics/website/network.png" alt="png" />导航</h3>
-		<div style="width: 50%; float: right;">
-			<ul>
-				<li><a href="artwork/">美工</a></li>
-				<li><a href="../en/mailing-list.html">邮件列表</a></li>
-				<li><a href="../en/devel/">开发</a></li>
-				<li><a href="search.html">搜索</a></li>
-				<li><a href="../netmap.php">网站地图</a></li>
-			</ul>
-		</div>
-		<ul>
-			<li><a href="about/">关于</a></li>
-			<li><a href="../en/asso/">捐赠</a></li>
-			<li><a href="get/">下载</a></li>
-			<li><a href="doc/">文档</a></li>
-			<li><a href="packages/">软件包</a></li>
-		</ul>
-	<!-- Nav block end -->
-	</div>
-	<!-- Top block begin -->
-	<div id="block_top">
-		<h1>主页</h1>
-		<p>
-Slitaz是一个免费的操作系统，它能在完全地内存中运行，也可以从CD－ROM、U盘等可移动介质中启动。Slitaz以LiveCD的形式发布，并且不超过30MB，快速、稳定而易用。Slitaz还拥有小巧、直观的桌面，以及易用的设置工具。<a href="about/">更多信息...</a>
-		</p>
-	<!-- Top block end -->
-	</div>
-<!-- Block end -->
-</div>
+<div id="content">
 
 <!--
     SliTaz news starting.
@@ -86,8 +91,8 @@ Slitaz是一个免费的操作系统，它能在完全地内存中运行，也�
 	Slitaz网站提供Slitaz计划的主要新闻和<a href="http://labs.slitaz.org/">Slitaz实验室</a>里各种子计划的新闻. 它们都通过 <a href="rss.xml"> XML feed</a>的形式提供。我们还提供一份简单的每月时讯。网站<a href="../">首页</a>将给出消息、修改、软件包、Tweets的最新情况。
 </p>
 
-<div class="infobox">
-	<img src="../pics/website/news.png" alt=".png" />	
+<div class="box">
+	<img src="../images/news.png" alt=".png" />	
 	<a href="http://labs.slitaz.org/news">实验室新闻</a>
 	(<a href="http://labs.slitaz.org/news?format=atom">Feed</a>) | 
 	<a href="http://doc.slitaz.org/en:newsletter:start">每月时讯</a>
@@ -206,30 +211,22 @@ Slitaz工作组发布了一个新的Cooking版本，这个版本修复了很多B
 
 <!-- Footer -->
 <div id="footer">
-	<div class="right_box">
-	<h4>Slitaz网络</h4>
-		<ul>
-			<li><a href="http://doc.slitaz.org/">文档</a></li>
-			<li><a href="http://forum.slitaz.org/">支持论坛</a>/<a href="http://slitaz-cn.5d6d.com/">中文论坛</a></li>
-			<li><a href="http://scn.slitaz.org/">交流社区</a></li>
-			<li><a href="http://labs.slitaz.org/">实验室</a></li>
-			<li><a href="http://twitter.com/slitaz">Twitter</a></li>
-			<li><a href="http://distrowatch.com/slitaz">DistroWatch</a></li>
-		</ul>
-	</div>
-	<h4>SliTaz网站</h4>
-	<ul>
-		<li><a href="#header">页首</a></li>
-		<li>Copyright &copy; <span class="year"></span>
-			<a href="http://www.slitaz.org/">SliTaz</a></li>
-		<li><a href="about/">关于我们</a></li>
-		<li><a href="../netmap.php">网站地图</a></li>
-		<li>Page modified the <?php echo (date( "d M Y", getlastmod())); ?></li>
-		<li><a href="http://validator.w3.org/check?uri=referer"><img
-		src="../pics/website/xhtml10.png" alt="Valid XHTML 1.0"
-		title="Code validé XHTML 1.0"
-		style="width: 80px; height: 15px; vertical-align: middle;" /></a></li>
-	</ul>
+	Copyright &copy; <span class="year"></span>
+	<a href="http://www.slitaz.org/">SliTaz</a> - Network:
+	<a href="http://scn.slitaz.org/">Community</a>
+	<a href="http://doc.slitaz.org/">Doc</a>
+	<a href="http://forum.slitaz.org/">Forum</a>
+	<a href="http://pkgs.slitaz.org/">Packages</a>
+	<a href="http://labs.slitaz.org/issues">Bugs</a>
+	<a href="http://hg.slitaz.org/">Hg</a>
+	<p>
+		SliTaz @
+		<a href="http://twitter.com/slitaz">Twitter</a>
+		<a href="http://www.facebook.com/slitaz">Facebook</a>
+		<a href="http://distrowatch.com/slitaz">Distrowatch</a>
+		<a href="http://en.wikipedia.org/wiki/SliTaz">Wikipedia</a>
+		<a href="http://flattr.com/profile/slitaz">Flattr</a>
+	</p>
 </div>
 
 </body>

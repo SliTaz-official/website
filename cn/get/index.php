@@ -2,90 +2,87 @@
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cn" lang="cn">
 <head>
-    <title>SliTaz GNU/Linux</title>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    <meta name="description" content="SliTaz GNU/Linux LiveCD" />
-    <meta name="keywords" lang="cn" content="System, free, gnu, linux, software opensource, livecd LINUX in RAM" />
-    <meta name="robots" content="index, follow, all" />
-    <meta name="revisit-after" content="7 days" />
-    <meta name="expires" content="never" />
+	<title>SliTaz (cn) - Download</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="SliTaz GNU/Linux 关于信息" />
+    <meta name="keywords" lang="cn" content="slitaz artwork" />
+	<meta name="robots" content="index, follow, all" />
     <meta name="modified" content="<?php echo (date( "Y-m-d H:i:s", getlastmod())); ?>" />
-    <meta name="author" content="Christophe Lincoln"/>
-    <meta name="publisher" content="www.slitaz.org" />
-    <link rel="shortcut icon" href="../../favicon.ico" />
+    <meta name="author" content="Draplater" />
+	<link rel="shortcut icon" href="../../favicon.ico" />
     <link rel="stylesheet" type="text/css" href="../../slitaz.css" />
 </head>
 <body>
 
 <!-- Header -->
 <div id="header">
-	<!-- Access -->
-	<div id="access">
-		<a href="../../i18n.html"><img 
-			src="../../pics/website/locale.png" alt="locale.png" /></a>
-	    <a href="../../de/">Deutsch</a> |
-	    <a href="../../en/">English</a> |
-	    <a href="../../es/">Español</a> |
-	    <a href="../../fr/">Français</a> |
-	    <a href="../../pt/">Português</a>
+	<div id="logo"></div>
+	<div id="network">
+		<a href="http://www.slitaz.org/netmap.php">
+			<img src="../../images/network.png" alt="network.png" /></a>
+		<a href="http://scn.slitaz.org/">Community</a>
+		<a href="http://doc.slitaz.org/">Doc</a>
+		<a href="http://forum.slitaz.org/">Forum</a>
+		<a href="http://labs.slitaz.org/issues">Bugs</a>
+		<a href="http://hg.slitaz.org/">Hg</a>
 	</div>
-    <!-- Logo -->
-	<a href="http://www.slitaz.org/"><img id="logo"
-		src="../../pics/website/logo.png" 
-		title="www.slitaz.org" alt="www.slitaz.org" /></a>
-	<p id="titre">#!/GNU/Linux</p>
+	<h1><a href="http://www.slitaz.org/">SliTaz GNU/Linux</a></h1>
+</div>
+
+<!-- Block -->
+<div id="block">
+	<!-- Navigation -->
+	<div id="block_nav">
+		<h4>美术资源</h4>
+		<div class="right_box">
+			<ul>
+				<li><a href="../../en/mailing-list.html">邮件列表 (en)</a></li>
+				<li><a href="../../en/devel/">开发 (en)</a></li>
+				<li><a href="../packages/">软件包</a></li>
+				<li><a href="../artwork/">美工</a></li>
+				<li><a href="../search.html">搜索</a></li>
+			</ul>
+		</div>
+		<div class="left_box">
+			<ul>
+				<li><a href="../">头条</a></li>
+				<li><a href="../about/">关于</a></li>
+				<li><a href="../get/">下载</a></li>
+				<li><a href="../../en/asso/">捐赠 (en)</a></li>
+				<li><a href="../doc/">文档</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- Information/image -->
+	<div id="block_info">
+		<h4>下载</h4>
+		<p>
+			你可以下载最新的稳定版来得到一个稳定的桌面环境，满足日常生活需要。
+			或者使用开发版来测试心软件或者帮助我们改进Slitaz。
+		</p>
+		<div class="button">
+			Quick Download:
+			<a href="http://mirror.slitaz.org/iso/3.0/slitaz-3.0.iso">SliTaz 3.0</a>
+			<a href="http://mirror.slitaz.org/iso/cooking/slitaz-cooking.iso">SliTaz Cooking</a>
+		</div>
+	</div>
 </div>
 
 <!-- Content -->
-<div id="content-full">
+<div id="content">
 
-<!-- Block begin -->
-<div class="block">
-	<!-- Nav block begin -->
-	<div id="block_nav">
-		<h3><img src="../../pics/website/network.png" alt="png" />导航</h3>
-		<div style="width: 50%; float: right;">
-			<ul>
-				<li><a href="../artwork/">美工</a></li>
-				<li><a href="../../en/mailing-list.html">邮件列表</a></li>
-				<li><a href="../../en/devel/">开发</a></li>
-				<li><a href="../search.html">搜索</a></li>
-				<li><a href="../../netmap.php">网站地图</a></li>
-			</ul>
-		</div>
-		<ul>
-			<li><a href="../about/">关于</a></li>
-			<li><a href="../../en/asso/">捐赠</a></li>
-			<li><a href="../get/">下载</a></li>
-			<li><a href="../doc/">文档</a></li>
-			<li><a href="../packages/">软件包</a></li>
-		</ul>
-	<!-- Nav block end -->
-	</div>
-	<!-- Top block begin -->
-	<div id="block_top">
-	<h1>下载Slitaz</h1>
-	<p>
-		你可以下载最新的稳定版来得到一个稳定的桌面环境，满足日常生活需要。
-		或者使用开发版来测试心软件或者帮助我们改进Slitaz。
-	</p>
-	<ul>
-		<li><a href="index.html#stable">LiveCD稳定版</a> -
-		当前稳定版的可启动ISO镜像。</li>
-		<li><a href="index.html#cooking">LiveCD开发版</a> -
-		当前开发版的可启动ISO镜像。</li>
-		<li><a href="index.html#floppy">软盘</a> -
-		从LiveCD、USB设备启动的可启动软盘镜像。</li>
-		<li><a href="flavors.html">新鲜玩意</a> - loram版本，衍生版本。</li>
-	</ul>
-	<!-- Top block end -->
-	</div>
-<!-- Block end -->
-</div>
+<h2>下载SliTaz</h2>
 
-
-<h2>下载</h2>
-
+<ul>
+	<li><a href="index.html#stable">LiveCD稳定版</a> -
+	当前稳定版的可启动ISO镜像。</li>
+	<li><a href="index.html#cooking">LiveCD开发版</a> -
+	当前开发版的可启动ISO镜像。</li>
+	<li><a href="index.html#floppy">软盘</a> -
+	从LiveCD、USB设备启动的可启动软盘镜像。</li>
+	<li><a href="flavors.html">新鲜玩意</a> - loram版本，衍生版本。</li>
+</ul>
+	
 <h3>下载提示</h3>
 <p>
 在下载Slitaz之前，最好先浏览<a href="http://wiki.slitaz.org/doku.php?id=lang:cn:handbook">相关文档</a>，了解Slitaz的特性以及使用方式，以便将来的使用。
@@ -140,7 +137,7 @@ LiveCD。这个版本选择了许多有用的软件，是一个用途广泛、�
 当前最新的稳定版本是3.0版，在2010年3月28日发布。
 </p>
 
-<p class="get">
+<p class="box">
 SliTaz GNU/Linux 3.0 (30 MB) -
 <a href="http://mirror.slitaz.org/iso/3.0/slitaz-3.0.iso"
 >slitaz-3.0.iso</a>
@@ -152,7 +149,7 @@ SliTaz GNU/Linux 3.0 (30 MB) -
 提供给2.0版本的，包含所有软件包的可启动CD镜像每天都会创建。它也包含Slitaz官方网站的副本，在无网络的情况下可以通过install.sh使用。
 </p>
 
-<p class="get">
+<p class="box">
 SliTaz GNU/Linux 3.0 软件包集合 (&lt; 2Gb) -
 <a href="http://mirror.switch.ch/ftp/mirror/slitaz/iso/3.0/packages-3.0.iso">packages-3.0.iso</a>
 [ <a href="http://mirror.switch.ch/ftp/mirror/slitaz/iso/3.0/packages-3.0.md5">md5</a> ]
@@ -164,7 +161,7 @@ SliTaz GNU/Linux 3.0 软件包集合 (&lt; 2Gb) -
 Slitaz开发版LiveCD是一个在不断开发的版本，也是可以使用的。它包含的软件包比稳定版多，包含的新特性和新改善也很多，更新时间也较快。不过因为更新较快，不稳定因素也多了许多。建议个人用户使用这个版本。
 </p>
 
-<p class="get">
+<p class="box">
 SliTaz GNU/Linux 开发版-20101104 (32 Mb) -
 <a href="http://mirror.slitaz.org/iso/cooking/slitaz-cooking.iso"
 >slitaz-cooking.iso</a>
@@ -189,7 +186,7 @@ SliTaz GNU/Linux 开发版软件包集合 (&lt; 4Gb) -
 这个软盘镜像可以启动在旧电脑中的Slitaz，有没有CD-ROM都可以。它可以启动在USB设备、SlitazCD/DVD、硬盘中的Slitaz，还可以通过网络启动。
 </p>
 
-<p class="get">
+<p class="box">
 软盘镜像(1,44 Mb) -
 <a href="http://mirror.slitaz.org/boot/floppy-grub4dos">镜像</a>
 [ <a href="http://mirror.slitaz.org/boot/floppy-grub4dos.md5">md5</a> ]
@@ -200,30 +197,22 @@ SliTaz GNU/Linux 开发版软件包集合 (&lt; 4Gb) -
 
 <!-- Footer -->
 <div id="footer">
-	<div class="right_box">
-	<h4>Slitaz网络</h4>
-		<ul>
-			<li><a href="http://doc.slitaz.org/">文档</a></li>
-			<li><a href="http://forum.slitaz.org/">支持论坛</a>/<a href="http://slitaz-cn.5d6d.com/">中文论坛</a></li>
-			<li><a href="http://scn.slitaz.org/">交流社区</a></li>
-			<li><a href="http://labs.slitaz.org/">实验室</a></li>
-			<li><a href="http://twitter.com/slitaz">Twitter</a></li>
-			<li><a href="http://distrowatch.com/slitaz">DistroWatch</a></li>
-		</ul>
-	</div>
-	<h4>SliTaz网站</h4>
-	<ul>
-		<li><a href="#header">页首</a></li>
-		<li>Copyright &copy; <span class="year"></span>
-			<a href="http://www.slitaz.org/">SliTaz</a></li>
-		<li><a href=".../about/">关于我们</a></li>
-		<li><a href="../../netmap.php">网站地图</a></li>
-		<li>Page modified the <?php echo (date( "d M Y", getlastmod())); ?></li>
-		<li><a href="http://validator.w3.org/check?uri=referer"><img
-		src="../pics/website/xhtml10.png" alt="Valid XHTML 1.0"
-		title="Code validé XHTML 1.0"
-		style="width: 80px; height: 15px; vertical-align: middle;" /></a></li>
-	</ul>
+	Copyright &copy; <span class="year"></span>
+	<a href="http://www.slitaz.org/">SliTaz</a> - Network:
+	<a href="http://scn.slitaz.org/">Community</a>
+	<a href="http://doc.slitaz.org/">Doc</a>
+	<a href="http://forum.slitaz.org/">Forum</a>
+	<a href="http://pkgs.slitaz.org/">Packages</a>
+	<a href="http://labs.slitaz.org/issues">Bugs</a>
+	<a href="http://hg.slitaz.org/">Hg</a>
+	<p>
+		SliTaz @
+		<a href="http://twitter.com/slitaz">Twitter</a>
+		<a href="http://www.facebook.com/slitaz">Facebook</a>
+		<a href="http://distrowatch.com/slitaz">Distrowatch</a>
+		<a href="http://en.wikipedia.org/wiki/SliTaz">Wikipedia</a>
+		<a href="http://flattr.com/profile/slitaz">Flattr</a>
+	</p>
 </div>
 
 </body>
