@@ -7,7 +7,7 @@
 	<meta name="description" content="SliTaz GNU/Linux LiveCD" />
 	<meta name="keywords" lang="es" content="system linux RAM" />
 	<meta name="robots" content="index, follow, all" />
-	<meta name="modified" content="2011-03-26 21:40:00" />
+	<meta name="modified" content="<?php echo (date( "Y-m-d H:i:s", getlastmod())); ?>" />
 	<meta name="author" content="Eduardo Suarez-Santana" />
 	<link rel="shortcut icon" href="../favicon.ico" />
 	<link rel="stylesheet" type="text/css" href="../slitaz.css" />

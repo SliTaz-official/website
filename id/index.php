@@ -7,7 +7,7 @@
 	<meta name="description" content="SliTaz GNU/Linux LiveCD" />
 	<meta name="keywords" lang="en" content="System, free, gnu, linux, software opensource, livecd LINUX in RAM" />
 	<meta name="robots" content="index, follow, all" />
-	<meta name="modified" content="2011-03-26 22:00:00" />
+	<meta name="modified" content="<?php echo (date( "Y-m-d H:i:s", getlastmod())); ?>" />
 	<meta name="author" content="Budiarno"/>
 	<meta name="publisher" content="www.slitaz.org" />
 	<link rel="shortcut icon" href="../favicon.ico" />
