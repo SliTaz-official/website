@@ -82,7 +82,8 @@
 	<li><a href="#iconv">Implementation of iconv().</a></li>
 	<li><a href="#pkgs">Tazpkg packages.</a></li>
 	<li><a href="#website">Website Management.</a></li>
-	<!--<li><a href="#diff">Diff and patch files.</a></li>-->
+	<li><a href="http://hg.slitaz.org/" >Mercurial Repositories</a></li>
+    <li><a href="http://labs.slitaz.org/">SliTaz Laboratories</a></li>
 </ul>
 
 <a name="devel"></a>
@@ -105,8 +106,8 @@ and the <a href="../mailing-list.html">Mailing List</a>.
 For artists there is a dedicated website, simply create an account and 
 post your graphics or pictures. The site is managed by the community. If 
 you want to lend a hand to administer the site, please contact a 
-contributor or e-mail the discussion list. The website art.slitaz.org: 
-<a href="http://art.slitaz.org/">SliTaz Community Art</a>
+contributor or e-mail the discussion list. Join the SliTaz Community 
+<a href="http://scn.slitaz.org/groups/artwork/">Artwork group</a>
 </p>
 
 <a name="kiss"></a>

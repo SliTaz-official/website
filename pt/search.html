@@ -2,134 +2,135 @@
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt">
 <head>
-    <title>SliTaz - Google Search</title>
+    <title>SliTaz - Procurar</title>
     <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
     <meta name="description" content="SliTaz GNU/Linux custom search engine" />
     <meta name="keywords" lang="pt" content="sistema, livre, gnu, linux, software opensource, livecd LINUX na RAM" />
     <meta name="robots" content="index, follow, all" />
-    <meta name="revisit-after" content="7 days" />
-    <meta name="expires" content="never" />
-    <meta name="modified" content="2010-03-30 03:00:00" />
-    <meta name="author" content="Christophe Lincoln"/>
+    <meta name="modified" content="2011-03-26 00:30:00" />
+    <meta name="author" content="Claudinei Pereira" />
     <meta name="publisher" content="www.slitaz.org" />
     <link rel="shortcut icon" href="../favicon.ico" />
     <link rel="stylesheet" type="text/css" href="../slitaz.css" />
-    <link rel="Content" href="search.html#content" />
 </head>
-<body bgcolor="#ffffff">
+<body>
+
 <!-- Header -->
 <div id="header">
-    <a name="top"></a>
-<!-- Access -->
-<div id="access">
-	<img
-		src="../pics/website/locale.png"
-		style="vertical-align: middle; width: 20px; height: 20px;"
-		alt="language" />
-    <a href="../de/search.html" title="Site em alemão">Deutsch</a> |
-    <a href="../en/search.html" title="Site em inglês">English</a> |
-	<a href="../es/search.html" title="Site em espanhol">Español</a> |
-    <a href="../fr/search.html" title="Site em Francês">Français</a> |
-    <a href="../cn/search.html" title="Site em chinês"><img src="../cn/chinese_top.jpg" title="Site em chinês" alt="cn"></img></a>
-</div>
-    <a href="http://www.slitaz.org/pt/"><img id="logo"
-    src="../pics/website/logo.png" title="www.slitaz.org/pt" alt="www.slitaz.org"
-    style="border: 0px solid ; width: 200px; height: 74px;" /></a>
-    <p id="titre">#!/GNU/Linux</p>
+	<div id="logo"></div>
+	<div id="network">
+		<a href="http://www.slitaz.org/netmap.php">
+			<img src="../images/network.png" alt="network.png" /></a>
+		<a href="http://scn.slitaz.org/">Community</a>
+		<a href="http://doc.slitaz.org/">Doc</a>
+		<a href="http://forum.slitaz.org/">Forum</a>
+		<a href="http://labs.slitaz.org/issues">Bugs</a>
+		<a href="http://hg.slitaz.org/">Hg</a>
+	</div>
+	<h1><a href="http://www.slitaz.org/">SliTaz GNU/Linux</a></h1>
 </div>
 
-<!-- Navigation menu -->
-<div id="nav">
-    <div class="nav_box">
-        <h4>Navegação</h4>
-        <!-- General -->
-        <ul>
-            <li><a href="about/index.html" title="Informações sobre o projeto">Sobre o projeto</a></li>
-            <li><a href="asso/index.html" title="Associação sem fins lucrativos">Associação</a></li>
-            <li><a href="get/index.html" title="Obtenha a ISO do LiveCD">Download</a></li>
-            <li><a href="doc/index.html" title="Utilização do LiveCD e howto">Documentação</a></li>
-            <li><a href="packages/index.html" title="Pacotes (programas)">Pacotes</a></li>
-            <li><a href="devel/index.html" title="Desenvolvedores">Desenvolvimento</a></li>
-            <li><a href="mailing-list.html" title="Suporte, contato, colaboração">Lista de discussão</a></li>
-            <li><a href="artwork/index.html" title="Arte, cores e imagens">Artwork</a></li>
-            <li><a href="search.html" title="Buscar">Procurar</a></li>
-            <li><a href="sitemap.html" title="Mapa do Site">Mapa do site</a></li>
-        </ul>
-    </div>    
-    <!-- SliTaz network -->
-    <div class="nav_box">
-        <h4>Rede SliTaz</h4>
-        <ul>
-            <li><a href="http://forum.slitaz.org/">Fórum</a></li>
-            <li><a href="http://doc.slitaz.org/pt:start">Wiki da Documentação</a></li>
-            <li><a href="http://labs.slitaz.org/">SliTaz Labs</a></li>
-            <li><a href="http://labs.slitaz.org/issues">Bug Tracking</a></li>
-            <li><a href="http://boot.slitaz.org/">Boot via web</a></li>
-            <li><a href="http://twitter.com/slitaz">SliTaz no Twitter</a></li>
-            <li><a href="http://distrowatch.com/slitaz">SliTaz no DistroWatch</a></li>
-        </ul>
-    </div>    
+<!-- Block -->
+<div id="block">
+	<!-- Navigation -->
+	<div id="block_nav">
+		<h4>Navegação</h4>
+		<div class="right_box">
+			<ul>
+				<li><a href="mailing-list.html">Lista de discussão</a></li>
+				<li><a href="devel/">Desenvolvimento</a></li>
+				<li><a href="packages/">Pacotes</a></li>
+				<li><a href="artwork/">Artwork</a></li>
+				<li><a href="search.html">Procurar</a></li>
+			</ul>
+		</div>
+		<div class="left_box">
+			<ul>
+				<li><a href="./">Últimas notícias</a></li>
+				<li><a href="about/">Sobre o projeto</a></li>
+				<li><a href="get/">Download</a></li>
+				<li><a href="asso/">Associação</a></li>
+				<li><a href="doc/">Documentação</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- Information/image -->
+	<div id="block_info">
+		<h4>Procurar</h4>
+		<p>
+			Esta página permite a você buscar em todo o site do SliTaz 
+			GNU/Linux, nos arquivos da <a href="mailing-list.html">Lista 
+			de Discussão</a> e também no <a href="http://forum.slitaz.org">Fórum</a>.
+			Esta página foi criada para o SliTaz pelo sistema de buscas
+			personalizadas Google Co-op.
+		</p>
+	</div>
 </div>
 
 <!-- Content -->
 <div id="content">
-<a name="content"></a>
 
-<h1><font color="#3E1220">Procurar</font></h1>
-<h2><font color="#DF8F06">Site, fórum e lista</font></h2>
-
-<div style="text-align: center; padding: 30px;">
-<!-- Google CSE Search Box Begins  -->
-  <form 
-    id="searchbox_000868395082919927601:nddq7yjdcxg" 
-    action="http://www.google.com/cse">
-    <input type="hidden" name="cx" value="000868395082919927601:nddq7yjdcxg" />
-    <input type="hidden" name="cof" value="FORID:0" />
-    <input name="q" type="text" size="40" />
-    <input type="submit" name="sa" value="Buscar" />
-    <img 
-      src="http://www.google.com/coop/images/google_custom_search_smnar.gif" 
-      alt="Google Custom Search" />
-  </form>
-<!-- Google CSE Search Box Ends -->
+<div class="searchbox">
+	<div id="cse-search-form" style="width: 100%;">Loading</div>
+	<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+	<script type="text/javascript">
+	  google.load('search', '1', {language : 'en', style : google.loader.themes.MINIMALIST});
+	  google.setOnLoadCallback(function() {
+	    var customSearchControl = new google.search.CustomSearchControl('000868395082919927601:nddq7yjdcxg');
+	    customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+	    var options = new google.search.DrawOptions();
+	    options.setSearchFormRoot('cse-search-form');
+	    customSearchControl.draw('cse', options);
+	  }, true);
+	</script>
+	<style type="text/css">
+		input.gsc-search-button {
+		   border: 1px solid #b64b22;
+			background-color: #b64b22;
+			color: white;
+			font-weight: bold;
+			cursor: pointer;
+			padding: 3px 10px;
+			font-size: 14px;
+			margin-left: -2px;
+			-webkit-border-top-right-radius: 4px;
+			-webkit-border-bottom-right-radius: 4px;
+			-moz-border-radius-topright: 4px;
+			-moz-border-radius-bottomright: 4px;
+			border-top-right-radius: 4px;
+			border-bottom-right-radius: 4px;
+		}
+		.gs-webResult.gs-result a.gs-title:link,
+		.gs-webResult.gs-result a.gs-title:link b {
+			color: #103a5e;
+		}
+		#cse { margin-bottom: 120px; }
+	</style>
 </div>
 
-<p>
-Esta página permite a você buscar em todo o site do SliTaz GNU/Linux, nos 
-arquivos da <a href="mailing-list.html">Lista de Discussão</a>
-e também no <a href="http://forum.slitaz.org">Fórum</a>.
-Esta página foi criada para o SliTaz pelo sistema de buscas personalizadas 
-Google Co-op.
-</p>
+<div id="cse" style="width:100%;"></div>
 
-<!-- End of content with round corner -->
-</div>
-<div id="content_bottom">
-<div class="bottom_left"></div>
-<div class="bottom_right"></div>
+<!-- End of content -->
 </div>
 
-<!-- Start of footer and copy notice -->
-<div id="copy">
-<p>
-Última modificação : 2010-03-30 03:00:00 -
-<a href="search.html#top">Topo da página</a>
-</p>
-<p>
-Todos os direitos reservados &copy; 2010 <a href="http://www.slitaz.org/">SliTaz</a> -
-<a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>
-</p>
-<!-- End of copy -->
-</div>
-
-<!-- Bottom and logo's -->
-<div id="bottom">
-<p>
-<a href="http://validator.w3.org/check?uri=referer"><img
-    src="../pics/website/xhtml10.png" alt="XHTML 1.0 válido"
-    title="XHTML 1.0 válido"
-    style="width: 80px; height: 15px;" /></a>
-</p>
+<!-- Footer -->
+<div id="footer">
+	Copyright &copy; <span class="year"></span>
+	<a href="http://www.slitaz.org/">SliTaz</a> - Network:
+	<a href="http://scn.slitaz.org/">Community</a>
+	<a href="http://doc.slitaz.org/">Doc</a>
+	<a href="http://forum.slitaz.org/">Forum</a>
+	<a href="http://pkgs.slitaz.org/">Packages</a>
+	<a href="http://labs.slitaz.org/issues">Bugs</a>
+	<a href="http://hg.slitaz.org/">Hg</a>
+	<p>
+		SliTaz @
+		<a href="http://twitter.com/slitaz">Twitter</a>
+		<a href="http://www.facebook.com/slitaz">Facebook</a>
+		<a href="http://distrowatch.com/slitaz">Distrowatch</a>
+		<a href="http://en.wikipedia.org/wiki/SliTaz">Wikipedia</a>
+		<a href="http://flattr.com/profile/slitaz">Flattr</a>
+	</p>
 </div>
 
 </body>

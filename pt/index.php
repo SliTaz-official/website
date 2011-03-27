@@ -7,103 +7,93 @@
 	<meta name="description" content="SliTaz GNU/Linux LiveCD" />
 	<meta name="keywords" lang="pt" content="sistema, livre, gnu, linux, software opensource, livecd LINUX na RAM" />
 	<meta name="robots" content="index, follow, all" />
-	<meta name="revisit-after" content="7 days" />
-	<meta name="expires" content="never" />
-	<meta name="modified" content="2010-03-30 03:00:00" />
-	<meta name="author" content="Claudinei Pereira"/>
-	<meta name="publisher" content="www.slitaz.org" />
+	<meta name="modified" content="<?php echo (date( "Y-m-d H:i:s", getlastmod())); ?>" />
+	<meta name="author" content="Claudinei Pereira" />
 	<link rel="shortcut icon" href="../favicon.ico" />
 	<link rel="stylesheet" type="text/css" href="../slitaz.css" />
 	<link rel="alternate" type="application/rss+xml" title="SliTaz Website feed" href="../en/rss.xml" />
 	<link rel="alternate" type="application/atom+xml" title="SliTaz Labs feed" href="http://labs.slitaz.org/news?format=atom" />
-	<link rel="Content" href="index.html#content" />
+	<link rel="alternate" type="application/rss+xml" title="SliTaz SCN feed" href="http://scn.slitaz.org/activity/feed/" />
 </head>
-<body bgcolor="#ffffff">
+<body>
+
 <!-- Header -->
 <div id="header">
-    <a name="top"></a>
-<!-- Access -->
-<div id="access">
-	<img
-		src="../pics/website/locale.png"
-		style="vertical-align: middle; width: 20px; height: 20px;"
-		alt="language" />
-    <a href="../de/index.html" title="Site em alemão">Deutsch</a> |
-    <a href="../en/index.html" title="Site em inglês">English</a> |
-    <a href="../es/index.html" title="Site em Espanhol">Español</a> |
-    <a href="../fr/index.html" title="Site em francês">Français</a> |
-    <a href="../cn/index.html" title="Site em chinês"><img src="../cn/chinese_top.jpg" title="Site em chinês" alt="cn"></img></a> |
-    <a href="../i18n.html" title="Internacionalização">i18n</a>
-</div>
-    <a href="http://www.slitaz.org/"><img id="logo"
-    src="../pics/website/logo.png" title="www.slitaz.org" alt="www.slitaz.org"
-    style="border: 0px solid ; width: 200px; height: 74px;" /></a>
-    <p id="titre">#!/GNU/Linux</p>
+	<div id="logo"></div>
+	<div id="network">
+		<a href="http://www.slitaz.org/netmap.php">
+			<img src="../images/network.png" alt="network.png" /></a>
+		<a href="http://scn.slitaz.org/">Community</a>
+		<a href="http://doc.slitaz.org/">Doc</a>
+		<a href="http://forum.slitaz.org/">Forum</a>
+		<a href="http://labs.slitaz.org/issues">Bugs</a>
+		<a href="http://hg.slitaz.org/">Hg</a>
+	</div>
+	<h1><a href="http://www.slitaz.org/">SliTaz GNU/Linux</a></h1>
 </div>
 
-<!-- Navigation menu -->
-<div id="nav">
-    <div class="nav_box">
-        <h4>Navegação</h4>
-        <!-- General -->
-        <ul>
-            <li><a href="about/index.html" title="Informações sobre o projeto">Sobre o projeto</a></li>
-            <li><a href="asso/index.html" title="Associação sem fins lucrativos">Associação</a></li>
-            <li><a href="get/index.html" title="Obtenha a ISO do LiveCD">Download</a></li>
-            <li><a href="doc/index.html" title="Utilização do LiveCD e howto">Documentação</a></li>
-            <li><a href="packages/index.html" title="Pacotes (programas)">Pacotes</a></li>
-            <li><a href="devel/index.html" title="Desenvolvedores">Desenvolvimento</a></li>
-            <li><a href="mailing-list.html" title="Suporte, contato, colaboração">Lista de discussão</a></li>
-            <li><a href="artwork/index.html" title="Arte, cores e imagens">Artwork</a></li>
-            <li><a href="search.html" title="Buscar">Procurar</a></li>
-            <li><a href="sitemap.html" title="Mapa do Site">Mapa do site</a></li>
-        </ul>
-    </div>    
-    <!-- SliTaz network -->
-    <div class="nav_box">
-        <h4>Rede SliTaz</h4>
-        <ul>
-            <li><a href="http://forum.slitaz.org/">Fórum</a></li>
-            <li><a href="http://doc.slitaz.org/pt:start">Wiki da Documentação</a></li>
-            <li><a href="http://labs.slitaz.org/">SliTaz Labs</a></li>
-            <li><a href="http://labs.slitaz.org/issues">Bug Tracking</a></li>
-            <li><a href="http://boot.slitaz.org/">Boot via web</a></li>
-            <li><a href="http://twitter.com/slitaz">SliTaz no Twitter</a></li>
-            <li><a href="http://distrowatch.com/slitaz">SliTaz no DistroWatch</a></li>
-        </ul>
-    </div>    
+<!-- Block -->
+<div id="block">
+	<!-- Navigation -->
+	<div id="block_nav">
+		<h4>Navegação</h4>
+		<div class="right_box">
+			<ul>
+				<li><a href="mailing-list.html">Lista de discussão</a></li>
+				<li><a href="devel/">Desenvolvimento</a></li>
+				<li><a href="packages/">Pacotes</a></li>
+				<li><a href="artwork/">Artwork</a></li>
+				<li><a href="search.html">Procurar</a></li>
+			</ul>
+		</div>
+		<div class="left_box">
+			<ul>
+				<li><a href="./">Últimas notícias</a></li>
+				<li><a href="about/">Sobre o projeto</a></li>
+				<li><a href="get/">Download</a></li>
+				<li><a href="asso/">Associação</a></li>
+				<li><a href="doc/">Documentação</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- Information/image -->
+	<div id="block_info">
+		<h4>Página principal</h4>
+		<p>
+			O SliTaz é um sistema operacional livre. É distribuido na 
+			forma de um LiveCD, sendo que a imagem ISO possui menos de
+			30 mb.
+		</p>
+		<p>
+			O sistema é rápido e robusto, possui um desktop elegante, 
+			leve e intuitivo, documentação detalhada e ferramentas de
+			configuração fáceis de se utilizar. 
+			<a href="about/">Mais informações...</a>
+		</p>
+	</div>
+</div>
+
+<!-- Languages -->
+<div id="lang">
+	<a href="../i18n.php">
+		<img src="../images/locale.png" alt="locale.png" /></a>
+	<a href="../de/">Deutsch</a>
+	<a href="../en/">English</a>
+	<a href="../es/">Español</a>
+	<a href="../fr/">Français</a>
+	<a href="../id/">Indonesian</a>
+	<a href="../pt/">Português</a>
+	<a href="../cn/">Chinese</a>
 </div>
 
 <!-- Content -->
 <div id="content">
-<a name="content"></a>
 
-<h1><font color="#3E1220">Página principal</font></h1>
-<h2><font color="#DF8F06">Boot baby... boot!</font></h2>
-
-<p>
-O SliTaz é um sistema operacional livre, que funciona totalmente carregado na
-memória RAM e pode ser inicializado a partir de mídias removíveis como cdrom
-e pendrive. É distribuido na forma de um LiveCD, sendo que a imagem ISO possui
-menos de 30 mb. O sistema é rápido e robusto, possui um desktop elegante,
-leve e intuitivo, documentação detalhada e ferramentas de configuração fáceis
-de se utilizar. <a href="about/index.html">Mais informações...</a>
-</p>
-
-
-<div style="text-align: center;">
-<img
-	src="../pics/website/screenpresentation.png"
-	title="SliTaz Desktops" alt="slitaz-desktop"
-	style="width: 380px; height: 170px; margin-top: 8px;" />
-</div>
-
-<h2><font color="#DF8F06">Últimas notícias</font></h2>
+<h2>Últimas notícias</h2>
 
 <div id="news">
 
 <ul>
-
 	<li><strong>4 de Novembro de 2010 - Nova versão "cooking" 20101104</strong>
 	<p>Os desenvolvedores do SliTaz anunciam uma nova imagem ISO da versão
 	de testes da distribuição. Há mais de 2600 pacotes nos repositórios,
@@ -199,34 +189,27 @@ de se utilizar. <a href="about/index.html">Mais informações...</a>
 <!-- End of news -->
 </div>
 
-<!-- End of content with round corner -->
-</div>
-<div id="content_bottom">
-<div class="bottom_left"></div>
-<div class="bottom_right"></div>
+<!-- End of content -->
 </div>
 
-<!-- Start of footer and copy notice -->
-<div id="copy">
-<p>
-Última modificação : 2010-03-30 03:00:00 -
-<a href="index.html#top">Topo da página</a>
-</p>
-<p>
-Todos os direitos reservados &copy; 2010 <a href="http://www.slitaz.org/">SliTaz</a> -
-<a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>
-</p>
-<!-- End of copy -->
-</div>
-
-<!-- Bottom and logo's -->
-<div id="bottom">
-<p>
-<a href="http://validator.w3.org/check?uri=referer"><img
-    src="../pics/website/xhtml10.png" alt="XHTML 1.0 válido"
-    title="XHTML 1.0 válido"
-    style="width: 80px; height: 15px;" /></a>
-</p>
+<!-- Footer -->
+<div id="footer">
+	Copyright &copy; <span class="year"></span>
+	<a href="http://www.slitaz.org/">SliTaz</a> - Network:
+	<a href="http://scn.slitaz.org/">Community</a>
+	<a href="http://doc.slitaz.org/">Doc</a>
+	<a href="http://forum.slitaz.org/">Forum</a>
+	<a href="http://pkgs.slitaz.org/">Packages</a>
+	<a href="http://labs.slitaz.org/issues">Bugs</a>
+	<a href="http://hg.slitaz.org/">Hg</a>
+	<p>
+		SliTaz @
+		<a href="http://twitter.com/slitaz">Twitter</a>
+		<a href="http://www.facebook.com/slitaz">Facebook</a>
+		<a href="http://distrowatch.com/slitaz">Distrowatch</a>
+		<a href="http://en.wikipedia.org/wiki/SliTaz">Wikipedia</a>
+		<a href="http://flattr.com/profile/slitaz">Flattr</a>
+	</p>
 </div>
 
 </body>

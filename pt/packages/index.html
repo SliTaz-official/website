@@ -14,164 +14,138 @@
     <meta name="publisher" content="www.slitaz.org" />
     <link rel="shortcut icon" href="../../favicon.ico" />
     <link rel="stylesheet" type="text/css" href="../../slitaz.css" />
-    <link rel="Content" href="index.html#content" />
 </head>
-<body bgcolor="#ffffff">
+<body>
+
 <!-- Header -->
 <div id="header">
-    <a name="top"></a>
-<!-- Access -->
-<div id="access">
-	<img
-		src="../../pics/website/locale.png"
-		style="vertical-align: middle; width: 20px; height: 20px;"
-		alt="language" />
-    <a href="../../de/packages/index.html" title="Site em alemão">Deutsch</a> |
-	<a href="../../en/packages/index.html" title="Site em inglês">English</a> |	
-	<a href="../../es/packages/index.html" title="Site em espanhol">Español</a> |
-    <a href="../../fr/packages/index.html" title="Site em francês">Français</a> |
-    <a href="../../cn/packages/index.html" title="Site em chinês"><img src="../../cn/chinese_top.jpg" title="Site em chinês" alt="cn"></img></a>
-</div>
-    <a href="http://www.slitaz.org/pt/"><img id="logo"
-    src="../../pics/website/logo.png" title="www.slitaz.org/pt" alt="www.slitaz.org"
-    style="border: 0px solid ; width: 200px; height: 74px;" /></a>
-    <p id="titre">#!/GNU/Linux</p>
+	<div id="logo"></div>
+	<div id="network">
+		<a href="http://www.slitaz.org/netmap.php">
+			<img src="../../images/network.png" alt="network.png" /></a>
+		<a href="http://scn.slitaz.org/">Community</a>
+		<a href="http://doc.slitaz.org/">Doc</a>
+		<a href="http://forum.slitaz.org/">Forum</a>
+		<a href="http://labs.slitaz.org/issues">Bugs</a>
+		<a href="http://hg.slitaz.org/">Hg</a>
+	</div>
+	<h1><a href="http://www.slitaz.org/">SliTaz GNU/Linux</a></h1>
 </div>
 
-<!-- Navigation menu -->
-<div id="nav">
-    <div class="nav_box">
-        <h4>Navegação</h4>
-        <!-- General -->
-        <ul>
-            <li><a href="../about/index.html" title="Informações sobre o projeto">Sobre o projeto</a></li>
-            <li><a href="../asso/index.html" title="Associação sem fins lucrativos">Associação</a></li>
-            <li><a href="../get/index.html" title="Obtenha a ISO do LiveCD">Download</a></li>
-            <li><a href="../doc/index.html" title="Utilização do LiveCD e howto">Documentação</a></li>
-            <li><a href="../packages/index.html" title="Pacotes (programas)">Pacotes</a></li>
-            <li><a href="../devel/index.html" title="Desenvolvedores">Desenvolvimento</a></li>
-            <li><a href="../mailing-list.html" title="Suporte, contato, colaboração">Lista de discussão</a></li>
-            <li><a href="../artwork/index.html" title="Arte, cores e imagens">Artwork</a></li>
-            <li><a href="../search.html" title="Buscar">Procurar</a></li>
-            <li><a href="../sitemap.html" title="Mapa do Site">Mapa do site</a></li>
-        </ul>
-    </div>    
-    <!-- SliTaz network -->
-    <div class="nav_box">
-        <h4>Rede SliTaz</h4>
-        <ul>
-            <li><a href="http://forum.slitaz.org/">Fórum</a></li>
-            <li><a href="http://doc.slitaz.org/pt:start">Wiki da Documentação</a></li>
-            <li><a href="http://labs.slitaz.org/">SliTaz Labs</a></li>
-            <li><a href="http://labs.slitaz.org/issues">Bug Tracking</a></li>
-            <li><a href="http://boot.slitaz.org/">Boot via web</a></li>
-            <li><a href="http://twitter.com/slitaz">SliTaz no Twitter</a></li>
-            <li><a href="http://distrowatch.com/slitaz">SliTaz no DistroWatch</a></li>
-        </ul>
-    </div>    
+<!-- Block -->
+<div id="block">
+	<!-- Navigation -->
+	<div id="block_nav">
+		<h4>Navegação</h4>
+		<div class="right_box">
+			<ul>
+				<li><a href="../mailing-list.html">Lista de discussão</a></li>
+				<li><a href="../devel/">Desenvolvimento</a></li>
+				<li><a href="../packages/">Pacotes</a></li>
+				<li><a href="../artwork/">Artwork</a></li>
+				<li><a href="../search.html">Procurar</a></li>
+			</ul>
+		</div>
+		<div class="left_box">
+			<ul>
+				<li><a href="../">Últimas notícias</a></li>
+				<li><a href="../about/">Sobre o projeto</a></li>
+				<li><a href="../get/">Download</a></li>
+				<li><a href="../asso/">Associação</a></li>
+				<li><a href="../doc/">Documentação</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- Information/image -->
+	<div id="block_info">
+		<h4>Pacotes</h4>
+		<p>
+			Esta parte do site permite a você ter acesso a todos os 
+			pacotes de programas disponíveis no mirror do SliTaz. As 
+			páginas são automaticamente atualizadas por meio de un cron
+			job. Todos os pacotes são instaláveis via o gerenciador de
+			pacotes Tazpkg usando o comando <code>tazpkg get-install 
+			nome-do-pacote</code>.
+		</p>
+	</div>
 </div>
 
 <!-- Content -->
 <div id="content">
-<a name="content"></a>
 
-<h1><font color="#3e1220">Pacotes</font></h1>
-<h2><font color="#df8f06"># tazpkg get-install pacote</font></h2>
-
-<p>
-Esta parte do site permite a você ter acesso a todos os pacotes de programas
-disponíveis no mirror do SliTaz. As páginas são automaticamente atualizadas
-por meio de un cron job. Todos os pacotes são instaláveis via o gerenciador de
-pacotes Tazpkg usando o comando <code>tazpkg get-install nome-do-pacote</code>.
-</p>
-
-<div style="text-align: center; padding: 20px;">
-<form method="post" action="http://pkgs.slitaz.org/search.cgi">
-	<input type="hidden" name="lang" value="pt" />
-	<select name="object">
-		<option value="Package">Pacote</option>
-		<option value="Desc">Descrição</option>
-		<option value="Tags">Tags</option>
-		<option value="Depends">Dependência</option>
-		<option value="BuildDepends">BuildDepends</option>
-		<option value="File">Arquivo</option>
-		<option value="File_list">Lista de Arquivos</option>
-		<option value="FileOverlap">common files</option>
-	</select>
-	<strong>:</strong>
-	<input type="text" name="query" size="32" />
-	<select name="version">
-		<option value="cooking">cooking</option>
-		<option value="stable">stable</option>
-		<option value="2.0">2.0</option>
-		<option value="1.0">1.0</option>
-	</select>
-	<input type="submit" name="search" value="Buscar" />
-</form>
+<div style="text-align: center; margin-bottom: 40px;">
+	<form method="post" action="http://pkgs.slitaz.org/search.cgi">
+		<div class="searchbox">
+			<p>
+				<input type="hidden" name="lang" value="en" />
+				<input type="text" name="query" size="24" style="width: 80%;" />
+				<input type="submit" name="search" value="Buscar" />
+			</p>
+		</div>
+		Buscar o:
+		<select name="object">
+			<option value="Package">Pacote</option>
+			<option value="Desc">Descrição</option>
+			<option value="Tags">Tags</option>
+			<option value="Depends">Dependência</option>
+			<option value="BuildDepends">BuildDepends</option>
+			<option value="File">Arquivo</option>
+			<option value="File_list">Lista de Arquivos</option>
+			<option value="FileOverlap">common files</option>
+		</select>
+		em
+		<select name="version">
+			<option value="cooking">cooking</option>
+			<option value="stable">stable</option>
+			<option value="2.0">2.0</option>
+			<option value="1.0">1.0</option>
+		</select>
+	</form>
 </div>
 
-<h3>Stable (estável)</h3>
-<p>
-Interface Web para os pacotes da versão estável: 
-<a href="http://pkgs.slitaz.org/stable/">Pacotes Estáveis</a>
-</p>
-<p>
-Lista em formato texto dos Pacotes estáveis no mirror: <a 
-    href="http://mirror.slitaz.org/packages/3.0/packages.list"
-    >packages.list</a> | <a 
-    href="http://mirror.slitaz.org/packages/3.0/packages.txt"
-    >packages.txt</a>
-</p>
-
-<h3>Cooking (testes)</h3>
-<p>
-Interface Web para os pacotes da versão de testes: <a 
-    href="http://pkgs.slitaz.org/cooking/"
-    >Pacotes de teste</a>
-</p>
-<p>
-Lista em formato texto dos Pacotes de teste no mirror: <a 
-     href="http://mirror.slitaz.org/packages/cooking/packages.list"
-    >packages.list</a>
-    | <a  href="http://mirror.slitaz.org/packages/cooking/packages.list"
-    >packages.txt</a>
-</p>
-
-<!-- End of content with round corner -->
-</div>
-<div id="content_bottom">
-<div class="bottom_left"></div>
-<div class="bottom_right"></div>
+<div class="box">
+	<img src="../../images/text.png" alt="text.png" />
+	Raw packages.list:
+	<a href="http://mirror.slitaz.org/packages/stable/packages.list"
+		>Stable</a> |
+	<a href="http://mirror.slitaz.org/packages/cooking/packages.list"
+		>Cooking</a>
+	<img src="../../images/network.png" alt="text.png" />
+	Main mirror:
+	<a href="http://mirror.slitaz.org/packages/"
+		>http://mirror.slitaz.org/packages/</a>
 </div>
 
-<!-- End of content with round corner -->
-</div>
-<div id="content_bottom">
-<div class="bottom_left"></div>
-<div class="bottom_right"></div>
+<h2>Documentation</h2>
+<p>
+	O projeto SliTaz fornece <a href="http://doc.slitaz.org/">documentação</a>
+	detalhada para permitir que você aprenda como instalar e gerenciar 
+	pacotes no seu SliTaz distribuição GNU / Linux. Os membros do 
+	<a href="http://forum.slitaz.org/">fórum</a> de apoio irá ajudá-lo 
+	em caso de problemas e também é o lugar para pedir um novo pacote.
+</p>
+
+<!-- End of content -->
 </div>
 
-<!-- Start of footer and copy notice -->
-<div id="copy">
-<p>
-Última modificação : 2010-03-30 03:00:00 -
-<a href="index.html#top">Topo da página</a>
-</p>
-<p>
-Todos os direitos reservados &copy; 2010 <a href="http://www.slitaz.org/">SliTaz</a> -
-<a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>
-</p>
-<!-- End of copy -->
-</div>
-
-<!-- Bottom and logo's -->
-<div id="bottom">
-<p>
-<a href="http://validator.w3.org/check?uri=referer"><img
-    src="../../pics/website/xhtml10.png" alt="XHTML 1.0 válido"
-    title="XHTML 1.0 válido"
-    style="width: 80px; height: 15px;" /></a>
-</p>
+<!-- Footer -->
+<div id="footer">
+	Copyright &copy; <span class="year"></span>
+	<a href="http://www.slitaz.org/">SliTaz</a> - Network:
+	<a href="http://scn.slitaz.org/">Community</a>
+	<a href="http://doc.slitaz.org/">Doc</a>
+	<a href="http://forum.slitaz.org/">Forum</a>
+	<a href="http://pkgs.slitaz.org/">Packages</a>
+	<a href="http://labs.slitaz.org/issues">Bugs</a>
+	<a href="http://hg.slitaz.org/">Hg</a>
+	<p>
+		SliTaz @
+		<a href="http://twitter.com/slitaz">Twitter</a>
+		<a href="http://www.facebook.com/slitaz">Facebook</a>
+		<a href="http://distrowatch.com/slitaz">Distrowatch</a>
+		<a href="http://en.wikipedia.org/wiki/SliTaz">Wikipedia</a>
+		<a href="http://flattr.com/profile/slitaz">Flattr</a>
+	</p>
 </div>
 
 </body>
