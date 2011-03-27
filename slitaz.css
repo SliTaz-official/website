@@ -123,6 +123,11 @@ pre {
 	padding: 0;
 }
 
+#block_nav h4 img { 
+	margin: 0 4px 0 0; 
+	padding: 0;
+}
+
 /* Languages */
 
 #lang {
