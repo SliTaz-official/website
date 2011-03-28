@@ -162,7 +162,7 @@ Slitaz开发版LiveCD是一个在不断开发的版本，也是可以使用的�
 </p>
 
 <p class="box">
-SliTaz GNU/Linux 开发版-20101104 (32 Mb) -
+SliTaz GNU/Linux 开发版-20110329 (31 Mb) -
 <a href="http://mirror.slitaz.org/iso/cooking/slitaz-cooking.iso"
 >slitaz-cooking.iso</a>
 [ <a href="http://mirror.slitaz.org/iso/cooking/slitaz-cooking.md5"

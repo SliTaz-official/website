@@ -116,7 +116,35 @@
 	<!-- <li><strong>Date - Title</strong>
 	<p></p>
 	</li> -->
+	<strong>29 March 2011 - New Cooking 20110329</strong>
+	<li>
+		<p>
+			The SliTaz team is pleased to announce the release of a new cooking
+			ISO featuring over 2900 packages. All packages have been rebuild using
+			our new cooking tool, now included in tazwok. It contains Linux Kernel
+			2.6.37 compiled against glibc 2.13, binutils 2.21 &amp; gcc 4.5.2. The Core
+			LiveCD includes Midori 0.3.3. Tazpkg is now entirely translated to
+			french and we are open to additionnal translations. Tazwok have been
+			entirely rewritten and it's now possible to recook SliTaz from Scratch
+			using any ISO. This ISO is the first of release candidate serie which
+			lead us to stable 4.0 release.
+		</p>
+		<p>
+			A lot of work has been done since last cooking ISO released in november:
+			more than 2200 changes have been commited to the wok, and several
+			hundreds to home-build tools. We are proud to announce that SliTaz
+			community growed a lot theses last month: the last year, has many
+			changes was commited than in the four previous - it means all SliTaz
+			history. However, quantity doesn't suffise to make quality. We need you
+			to help to test this new ISO and report eventual bugs. If you want to,
+			you are welcome to help to fix known problems before 4.0 release. You
+			can join members of the crew via our IRC, mailing-list, forums or by
+			mailing packages maintainers. We hope you will enjoy, as us, this new
+			<a href="get/">release!</a>
+		</p>
+	</li>
 	
+	<a name="20101104"></a>
 	<li><strong>4 November 2010 - New Cooking 20101104</strong>
 	<p>The SliTaz team is pleased to announce the release of a new cooking ISO
 	featuring over 2600 packages. It contains Linux Kernel 2.6.34 and was
