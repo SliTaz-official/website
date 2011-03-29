@@ -148,7 +148,8 @@
 	</div>
 	<div class="left_box">
 		<h3>Support Forum</h3>
-		<?php get_forum_rss_feed("/var/cache/slitaz/website/forum.xml"); ?>
+		<?php #get_forum_rss_feed("/var/cache/slitaz/website/forum.xml"); 
+			echo '<a href="http://forum.slitaz.org/">forum.slitaz.org</a>'; ?>
 	</div>
 </div>
 <div class="feed-grid">
