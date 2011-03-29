@@ -191,7 +191,7 @@
 <h2>Monetary support</h2>
 <p>
 	SliTaz is made by volunteers and there is no company behind
-    the project, but we still need some money to maintain the project 
+    	the project, but we desperately need some money to maintain the project 
 	infrastructure and services such as the main server and build host.
 	You can help with a micropayment via Flattr or a Paypal donation to
 	the SliTaz <a href="en/asso/">Association</a>, that way we can keep 

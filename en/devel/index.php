@@ -59,7 +59,7 @@
 		<p>
 			SliTaz is a community based distribution made by many
 			people all over the world and everyone is welcome to help
-			and get involve in the project.
+			and get involved in the project.
 		</p>
 		<p>
 			<img src="../../images/users.png" alt="users.png" />
