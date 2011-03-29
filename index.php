@@ -218,6 +218,10 @@ The SliTaz web site is available in several languages and maintained by the
 needed and you're welcome to join us if you would like to see the website
 translated into your language.
 </p>
+<p>
+	<img src="images/users.png" alt="users.png" />
+	<a href="http://scn.slitaz.org/groups/i18n/">Join i18n group on SCN</a>
+</p>
 
 <!-- End of content -->
 </div>

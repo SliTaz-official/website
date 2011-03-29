@@ -46,7 +46,7 @@
 		</p>
 		<p>
 			<img src="images/users.png" alt="users.png" />
-			<a href="http://scn.slitaz.org/">Join us on SCN</a>
+			<a href="http://scn.slitaz.org/groups/i18n/">Join us on SCN</a>
 		</p>
 	</div>
 </div>
