@@ -13,7 +13,7 @@ OUTPUT="$CACHE/latest.html"
 # Feed URLs
 SCN_FEED='http://scn.slitaz.org/activity/feed/'
 DOC_FEED='http://doc.slitaz.org/feed.php'
-FORUM_FEED='http://forum.slitaz.org/index.php?p=/discussions/feed.rss'
+FORUM_FEED='http://forum.slitaz.org/rss/'
 BUGS_FEED='http://labs.slitaz.org/issues.atom?query_id='
 WOK_FEED='http://hg.slitaz.org/wok/rss-log'
 
