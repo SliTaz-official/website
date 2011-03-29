@@ -116,8 +116,9 @@
 	<!-- <li><strong>Date - Title</strong>
 	<p></p>
 	</li> -->
-	<strong>29 March 2011 - New Cooking 20110329</strong>
+	
 	<li>
+		<strong>29 March 2011 - New Cooking 20110329</strong>
 		<p>
 			The SliTaz team is pleased to announce the release of a new cooking
 			ISO featuring over 2900 packages. All packages have been rebuild using

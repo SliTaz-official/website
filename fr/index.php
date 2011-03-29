@@ -121,7 +121,8 @@
 	<p></p>
 	</li> -->
 	
-	<li><strong>29 Mars 2011 - Nouvelle Cooking 20110329</strong>
+	<li>
+		<strong>29 Mars 2011 - Nouvelle Cooking 20110329</strong>
 	<p>L'équipe SliTaz est heureusement d'annoncerl la publication d'une
 	nouvelle ISO "cooking" proposant plus de 2900 paquets. Tous les paquets
 	ont été reconstruits avec notre nouvel outil de cuisson, désormais
