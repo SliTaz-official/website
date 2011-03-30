@@ -14,6 +14,17 @@
 	<link rel="alternate" type="application/rss+xml" title="SliTaz Website feed" href="rss.xml" />
 	<link rel="alternate" type="application/atom+xml" title="SliTaz Labs feed" href="http://labs.slitaz.org/news?format=atom" />
 	<link rel="alternate" type="application/rss+xml" title="SliTaz SCN feed" href="http://scn.slitaz.org/activity/feed/" />
+	<script type="text/javascript">
+	/* <![CDATA[ */
+	    (function() {
+	        var s = document.createElement('script'), t = document.getElementsByTagName('script')[0];
+	        s.type = 'text/javascript';
+	        s.async = true;
+	        s.src = 'http://api.flattr.com/js/0.6/load.js?mode=auto';
+	        t.parentNode.insertBefore(s, t);
+	    })();
+	/* ]]> */
+	</script>
 </head>
 <body>
 
@@ -96,17 +107,16 @@
 <p>
 	The SliTaz website offers the main news of the project as well as 
 	news on the general activity of the subprojects on the
-	<a href="http://labs.slitaz.org/">laboratories</a>. Both are
+	<a href="http://scn.slitaz.org/">community site</a>. Both are
 	available as a <a href="rss.xml">XML feed</a>. The project also
-	publishes a small monthly Newsletter. The website <a href="../">main page</a>
-	will give you a nice overview of the latest news, commits, cooked packages, 
-	and Tweets.
+	publishes a small monthly Newsletter. This page and the website 
+	<a href="../">main page</a> will give you a nice overview of the
+	latest news, commits, and Tweets.
 </p>
 
 <div class="box">
 	<img src="../images/news.png" alt=".png" />	
-	<a href="http://labs.slitaz.org/news">News from the Labs</a>
-	(<a href="http://labs.slitaz.org/news?format=atom">Feed</a>) | 
+	<a href="http://scn.slitaz.org/">News from the Blog</a> | 
 	<a href="http://doc.slitaz.org/en:newsletter:start">Monthly Newsletter</a>
 </div>
 
@@ -118,30 +128,30 @@
 	</li> -->
 	
 	<li>
-		<strong>29 March 2011 - New Cooking 20110329</strong>
-		<p>
-			The SliTaz team is pleased to announce the release of a new cooking
-			ISO featuring over 2900 packages. All packages have been rebuilt using
-			our new cooking tool, now included in tazwok. It contains Linux Kernel
-			2.6.37 compiled against glibc 2.13, binutils 2.21 &amp; gcc 4.5.2. The Core
-			LiveCD includes Midori 0.3.3. Tazpkg is now entirely translated to
-			French and we are open to additional translations. Tazwok has been
-			entirely rewritten and it's now possible to recook SliTaz from Scratch
-			using any ISO. This ISO is the first of a release candidate series which
-			leads us to a stable 4.0 release.
-		</p>
-		<p>
-			A lot of work has been done since our last cooking ISO released in november:
-			more than 2200 changes have been commited to the wok, and several
-			hundreds more to home-built tools. We are proud to announce that the SliTaz
-			community grown a lot these last months: the last year, many
-			changes was commited than in the previous four. However, quantity doesn't mean 
-			quality. We need you to help to test this new ISO and report eventual bugs. If 
-			you want to, you are welcome to help fix known problems before 4.0 is released. 
-			You can join members of the crew via our IRC, mailing-list, forums or by
-			mailing the packages maintainers. We hope you will enjoy this new
-			<a href="get/">release!</a>
-		</p>
+	<strong>29 March 2011 - New Cooking 20110329</strong>
+	<p>
+	The SliTaz team is pleased to announce the release of a new cooking
+	ISO featuring over 2900 packages. All packages have been rebuilt using
+	our new cooking tool, now included in tazwok. It contains Linux Kernel
+	2.6.37 compiled against glibc 2.13, binutils 2.21 &amp; gcc 4.5.2. The Core
+	LiveCD includes Midori 0.3.3. Tazpkg is now entirely translated to
+	French and we are open to additional translations. Tazwok has been
+	entirely rewritten and it's now possible to recook SliTaz from Scratch
+	using any ISO. This ISO is the first of a release candidate series which
+	leads us to a stable 4.0 release.
+	</p>
+	<p>
+	A lot of work has been done since our last cooking ISO released in november:
+	more than 2200 changes have been commited to the wok, and several
+	hundreds more to home-built tools. We are proud to announce that the SliTaz
+	community grown a lot these last months: the last year, many
+	changes was commited than in the previous four. However, quantity doesn't mean 
+	quality. We need you to help to test this new ISO and report eventual bugs. If 
+	you want to, you are welcome to help fix known problems before 4.0 is released. 
+	You can join members of the crew via our IRC, mailing-list, forums or by
+	mailing the packages maintainers. We hope you will enjoy this new
+	<a href="get/">release!</a>
+	</p>
 	</li>
 	
 	<a name="20101104"></a>
@@ -158,78 +168,57 @@
 	All feedback is welcome and can be done through the mailing list or 
 	the forum.</p>
 	</li>
-	
-	<li><strong>08 May 2010 - Summer of Documentation</strong>
-	<p>The SliTaz team is organizing a 'Summer of Documentation' from May 10th to June 10th. 
-	The main aim is to centralize, review and update all online documentation. 
-	More details can be found at <a href="http://doc.slitaz.org/">doc.slitaz.org</a>. 
-	We hope that SliTaz users will be able to contribute by adding to or updating the 
-	documentation.
-	</p>
-	</li>
-	
-	<li><strong>28 March 2010 - SliTaz GNU/Linux 3.0 release</strong>
-	<p>All of the SliTaz team are proud to announce the release of the SliTaz 
-	GNU/Linux 3.0 operating system. It's simpler, faster, customizable, 
-	mightier and yet incredibly tiny. The new SliTaz stable version is now 
-	out after one year of development.</p>
-	<p>The core desktop provides a fully featured desktop powered by Xorg 7.4, 
-	Openbox, LXDE components and home made tools. It lets you easily connect to
-	the Internet to surf the web with the Midori web browser, listen to music
-	or manage your pictures.</p>
-	<p>The default core system fits into a 30 MB ISO image and LiveCD flavors 
-	start at 8 MB. This stable version has been built by a new toolchain including
-	GCC 4.4.1 and uses the Linux kernel 2.6.30.6. You can read the full 
-	<a href="doc/releases/3.0/relnotes.en.html">Releases Notes</a> for more
-	information and <a href="get/#stable>">download</a> a LiveCD image from the
-	SliTaz mirrors.</p>
-	</li>
-	
-	<li><strong>14 March 2010 - RC series and Solutionslinux 2010 (Paris)</strong>
-	<p>Since we're getting closer to the next stable release, we have updated the
-	core ISO image to start with a RC series. The Major change is the switch to
-	Midori as the default web browser, this will improve user experience and let
-	us keep SliTaz at 30Mb. Midori is a modern browser powered by the webkit engine -
-	it is fast, simple to use and well integrated with the SliTaz desktop.</p>
-	<p>This updated ISO comes with a bunch of bug and dependency fixes, we have 
-	also improved the home made tools and scripts. This new ISO image can be 
-	downloaded from the SliTaz mirrors (30 Mb): 
-	<a href="http://mirror.slitaz.org/iso/cooking/slitaz-cooking.iso">slitaz-cooking.iso</a></p>
-	<p>By the way, the SliTaz project will be at 
-	<a href="http://www.solutionslinux.fr/">Solutionslinux</a> 2010 next 
-	week in Paris. You will be able to learn about the project and make
-	contact with members of the association and the development team.</p>
-	</li>
-	
-	<li><strong>21 February 2010 - New Cooking 20100221</strong>
-	<p>SliTaz contributors are proud to announce a new Cooking version of the
-	LiveCD. This is the last Cooking RC before 3.0 is released. The core ISO image
-	is at 27 MB and comes with many changes and improvments. This Cooking uses
-	Xorg as X server instead of Xvesa and provides full UTF-8 support. With
-	a clean desktop environment, it also provides many applications for daily
-	usage and common tasks. Netsurf replaces firefox as the default web browser.
-	Nevertheless, a Firefox flavor at 29 Mb with sound and wifi support can 
-	also be downloaded from the official mirrors.</p>
-	<p>On the updates and improvements side: tazpkg is faster, boot-scripts are 
-	updated and home-made toolboxes are improved. Wifibox uses awk for better
-	network scanning. WPA support in the boot scripts have been improved. Boot
-	time is logged for performance measuring. The SliTaz installer will now 
-	try to use files from an USB device if no cdrom is found, allow you to 
-	create a default user account, set a root password and use a separate /home
-	partition. And finally, LiveCD customization is now much easier: users
-	just have to boot, modify and use writefs via the Tazlito graphical interface
-	or from the command line to generate their own customized CD.</p>
-	<p>As usual, you can <a href="get/#cooking">download</a> these new
-	flavors from one of the official mirrors of the project and provide feedback
-	on the SliTaz forum.</p>
-	</li>
-	<li><strong>News archives:</strong> 
+
+	<li><a href="news/">More news</a> or browse the archives:
 	<a href="news/2007.html">2007</a> |
 	<a href="news/2008.html">2008</a> |
 	<a href="news/2009.html">2009</a></li>
 </ul>
 
 <!-- End of news -->
+</div>
+
+<h2>Project Activity</h2>
+<?php
+	require_once("../libs/get-feed.php");
+?>
+
+<div class="activity">
+	<p>
+		<img src="../images/users.png" alt="users.png" />
+		Community Activity
+		<?php get_rss_feed("/var/cache/slitaz/website/scn.xml"); ?>
+	</div>
+	<p class="activity_more">
+		<a href="http://scn.slitaz.org/activity/">More activity</a>
+	</p>
+</div>
+
+<div class="activity">
+	<p>
+		<img src="../images/development.png" alt="development.png" />
+		Latest Commits
+		<?php get_rss_feed("/var/cache/slitaz/website/wok.xml"); ?>
+	</div>
+	<p class="activity_more">
+		<a href="http://hg.slitaz.org/">More commits</a>
+	</p>
+</div>
+
+<h2>Spread SliTaz</h2>
+<p>
+	Make SliTaz even more popular! Blog, Tweet, share and talk about 
+	the project. You can also join the us, connect, share or get
+	involve on the SliTaz <a href="http://scn.slitaz.org/">Community Network</a>.
+</p>
+
+<!-- Twitter Button -->
+<div style="margin-bottom: 10px;">
+	<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+	<a href="http://twitter.com/share" class="twitter-share-button" 
+		data-text="SliTaz GNU/Linux" 
+		data-count="horizontal"
+		data-via="slitaz">Tweet</a>
 </div>
 
 <!-- End of content  -->
