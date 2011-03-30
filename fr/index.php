@@ -123,13 +123,13 @@
 	
 	<li>
 		<strong>29 Mars 2011 - Nouvelle Cooking 20110329</strong>
-	<p>L'équipe SliTaz est heureusement d'annoncerl la publication d'une
+	<p>L'équipe SliTaz est heureuse d'annoncer la publication d'une
 	nouvelle ISO "cooking" proposant plus de 2900 paquets. Tous les paquets
 	ont été reconstruits avec notre nouvel outil de cuisson, désormais
-	inclus dans tazwok. Elle contient le noyau Linux 2.6.37 compilé contre
+	inclus dans tazwok. Elle contient le noyau Linux 2.6.37 compilé avec
 	glibc 2.13, binutils 2.21 &amp; gcc 4.5.2. Le liveCD "Core" inclus Midori
 	0.3.3. Tazpkg est désormais entièrement traduit en français et nous
-	sommes ouvert à de nouvelles traductions. Tazwok a été entièrement
+	sommes ouverts à de nouvelles traductions. Tazwok a été entièrement
 	ré-écrit et il est désormais possible de re-cuire SliTaz depuis les
 	sources depuis toutes les ISO. Cette ISO est la première de la série
 	précédant la publication de la version stable 4.0.
@@ -137,9 +137,9 @@
 	<p>Beaucoup de travail a été fait depuis la dernière ISO "cooking" publiée
 	en novembre: plus de 2200 changements ont été apportés au wok, et
 	plusieurs centaines aux outils faits maison. Nous sommes fiers
-	d'annoncer que la communité SliTaz a beaucoup grandit ces derniers
-	moits: cette année, il y a eu autant de changement apportés que les
-	quatres précédents - c'est à dire toute l'histoire de SliTaz.
+	d'annoncer que la communité SliTaz a beaucoup grandi ces derniers
+	mois: cette année, il y a eu autant de changements apportés que les
+	quatres précédentes - c'est à dire toute l'histoire de SliTaz.
 	Néanmoins, la quantité ne suffit pas à faire la qualité. Nous avons
 	besoin de votre aide pour tester cette nouvelle ISO et signaler les
 	bugs éventuels. Si vous le souhaitez, vous êtes bievenus pour aider à
