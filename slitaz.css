@@ -185,15 +185,31 @@ pre {
 	border: 1px solid #ddd;
 }
 
-.feed-grid { height: 180px; overflow: hidden; text-align: left; }
-.feed-grid h3 { 
-	margin: 15px 0 0; font-size: 16px; 
-	padding: 0 22px;
-	background: url(images/feed.png) no-repeat left; }
-.feed-grid span { font-size: 10px; color: #888; margin-left: 24px; }
-.feed-grid ul { color: #666; }
-.feed-grid a { color: #666; }
-.feed-grid a:hover { color: blue; }
+/* Activity Box */
+
+.activity { 
+	height: 120px;
+	overflow: hidden;
+	margin: 0 0 20px; 
+	background: #eaeaea; 
+	padding: 5px 2px 25px; 
+	border: 1px solid #ddd; 
+}
+.activity div { height: 75px; overflow: hidden;
+	padding: 0px 10px 10px; background: #fff; margin-top: 5px; }
+.activity p { margin: 0; padding: 5px 10px; font-weight: bold; }
+.activity a { text-decoration: none; }
+.activity ul { list-style-type: none; 
+	margin: 4px 0; padding: 0 4px; line-height: 150%; }
+.activity span { color: #666; font-size: 11px; font-weight: normal; }
+.activity, .activity div { 
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+.activity_more { text-align: right;  }
+.activity_more a { font-weight: normal; color: #000; padding: 0 4px; }
+.activity_more a:hover { text-decoration: underline; }
 
 /* Button */
 

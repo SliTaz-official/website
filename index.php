@@ -137,30 +137,31 @@
 	</script>
 </div>
 
-<h2>Feed Grid</h2>
+<h2>Project Activity</h2>
 <?php
 	require_once("libs/get-feed.php");
 ?>
-<div class="feed-grid">
-	<div class="right_box">
-		<h3>Community Network</h3>
+
+<div class="activity">
+	<p>
+		<img src="images/users.png" alt="users.png" />
+		Community Activity
 		<?php get_rss_feed("/var/cache/slitaz/website/scn.xml"); ?>
 	</div>
-	<div class="left_box">
-		<h3>Support Forum</h3>
-		<?php #get_forum_rss_feed("/var/cache/slitaz/website/forum.xml"); 
-			echo '<a href="http://forum.slitaz.org/">forum.slitaz.org</a>'; ?>
-	</div>
+	<p class="activity_more">
+		<a href="http://scn.slitaz.org/activity/">More activity</a>
+	</p>
 </div>
-<div class="feed-grid">
-	<div class="right_box">
-		<h3>Latest Commits</h3>
+
+<div class="activity">
+	<p>
+		<img src="images/development.png" alt="development.png" />
+		Latest Commits
 		<?php get_rss_feed("/var/cache/slitaz/website/wok.xml"); ?>
 	</div>
-	<div class="left_box">
-		<h3>Bug Tracker</h3>
-		<?php get_atom_feed("/var/cache/slitaz/website/bugs.xml"); ?>
-	</div>
+	<p class="activity_more">
+		<a href="http://hg.slitaz.org/">More commits</a>
+	</p>
 </div>
 
 <h2>Spread SliTaz</h2>
