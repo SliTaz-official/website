@@ -95,7 +95,7 @@
 
 <h2>Últimas noticias</h2>
 
-<div id="news">
+<div class="news">
 
 <ul>
 	<li><strong>4 de noviembre de 2010 - Nueva Cooking</strong>   

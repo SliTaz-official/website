@@ -105,7 +105,7 @@ einen kleinen monatlichen Informationsbrief in Englisch und Chinesisch an.
 	<a href="http://doc.slitaz.org/en:newsletter:start">Monthly Newsletter</a>
 </div>
 
-<div id="news">
+<div class="news">
 
 <ul>
 	<!-- <li><strong>Date - Title</strong>

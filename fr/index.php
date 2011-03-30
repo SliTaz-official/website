@@ -112,7 +112,7 @@
 	<a href="http://doc.slitaz.org/fr:newsletter:start">Lettre d'information</a>
 </div>
 
-<div id="news">
+<div class="news">
 
 <ul>
 	<!-- <li><strong>Date - Title</strong>

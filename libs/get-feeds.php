@@ -15,7 +15,7 @@ function get_feed($feed) {
 		$count = 0;
 		// We look for last item, channel may not have a PubDate*
 		$up = ($x->channel->item->pubDate);
-		echo "<span>Updated: " . substr("$up", 5, 17) . "</span>\n";
+		echo "<span>- Updated: " . substr("$up", 5, 17) . "</span>\n";
 		echo "</p>\n<div>\n<ul>\n";
 		foreach($x->channel->item as $entry) {
 			$count = $count + 1;
@@ -49,7 +49,7 @@ function get_feed_blog($feed) {
 			$count = $count + 1;
 			echo "	<li><strong><a href='$entry->link' title='$entry->title'>" . 
 				$entry->title . "</strong></a>\n";
-			echo "<span>" . substr("$entry->pubDate", 5, 17) . "</span>\n";
+			echo "<span>- " . substr("$entry->pubDate", 5, 17) . "</span>\n";
 			echo "<p>$entry->description</p>\n</li>";
 			if ($count == $entries) {
 				break;

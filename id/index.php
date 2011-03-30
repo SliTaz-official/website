@@ -98,7 +98,7 @@
 	<a href="http://doc.slitaz.org/en:newsletter:start">Newsletter Bulanan</a>
 </div>
 
-<div id="news">
+<div class="news">
 
 <ul>
 	<!-- <li><strong>Date - Title</strong>

@@ -90,7 +90,7 @@
 
 <h2>Últimas notícias</h2>
 
-<div id="news">
+<div class="news">
 
 <ul>
 	<li><strong>4 de Novembro de 2010 - Nova versão "cooking" 20101104</strong>

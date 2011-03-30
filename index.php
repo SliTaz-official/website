@@ -87,16 +87,21 @@
      at min-height: 220px; -->
 
 <!-- We just keep the last 4 web site news -->
-<div id="news">
+<div class="news">
 
-<h2>Latest news</h2>
+<h2>Latest News</h2>
 
 <ul>
-	<li><strong><a href="en/#news">29 March 2011 - New Cooking 20110329</a></strong></li>
-	<li><strong><a href="en/#20101104">4 November 2010 - New Cooking 20101104</a></strong></li>
-	<li><strong>8 May 2010 - Summer of Documentation</strong></li>
-	<li><strong>28 March 2010 - SliTaz GNU/Linux 3.0 released</strong></li>
-	<li><strong>14 March 2010 - RC series and Solutionslinux 2010 (Paris)</strong></li>
+	<li><strong><a href="en/#news">New Cooking 20110329</a></strong>
+		<span>- 29 March 2011</span></li>
+	<li><strong><a href="en/#20101104">New Cooking 20101104</a></strong>
+		<span>- 4 November 2010</span></li>
+	<li><strong>Summer of Documentation</strong>
+		<span>- 8 May 2010</span></li>
+	<li><strong>SliTaz GNU/Linux 3.0 released</strong>
+		<span>- 28 March 2010 </span></li>
+	<li><strong>RC series and Solutionslinux 2010 (Paris)</strong>
+		<span>- 14 March 2010</span></li>
 </ul>
 
 <!-- End of news -->
@@ -129,6 +134,12 @@
 	<p class="activity_more">
 		<a href="http://hg.slitaz.org/">More commits</a>
 	</p>
+</div>
+
+<h2>Blog Posts</h2>
+
+<div class="news">
+	<?php get_feed_blog("blog.xml"); ?>
 </div>
 
 <h2>Latest Tweet</h2>
