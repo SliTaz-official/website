@@ -169,7 +169,7 @@
 <h2>Spread SliTaz</h2>
 <p>
 	One way to help the project is to make SliTaz even more popular.
-	Blog, Tweet, share and talk about the project. SliTaz
+	Blog, Tweet this page, share and talk about the project. SliTaz
 	is also social, you can join us, share artwork or post a blog on the 
 	<a href="http://scn.slitaz.org/">SliTaz Community Network</a>,
 	"Like" the official SliTaz Facebook page and get involved!
