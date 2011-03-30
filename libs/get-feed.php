@@ -3,7 +3,7 @@
 function get_rss_feed($feed_url) {
 	if ( ! file_exists($feed_url)) {
 		echo "</p>\n<div>\n";
-		echo "No feed: $feed_url\n" . "</div>\n";
+		echo "Missing feed: $feed_url\n" . "</div>\n";
 	}
 	else {
 		$content = file_get_contents($feed_url);

@@ -102,6 +102,35 @@
 <!-- End of news -->
 </div>
 
+<h2>Project Activity</h2>
+<?php
+	require_once("libs/get-feed.php");
+?>
+
+<div class="activity">
+	<p>
+		<a href="http://scn.slitaz.org/activity/"><img 
+			src="images/users.png" alt="users.png" /></a>
+		Community Activity
+		<?php get_rss_feed("/var/cache/slitaz/website/scn.xml"); ?>
+	</div>
+	<p class="activity_more">
+		<a href="http://scn.slitaz.org/activity/">More activity</a>
+	</p>
+</div>
+
+<div class="activity">
+	<p>
+		<a href="http://hg.slitaz.org/">
+			<img src="images/development.png" alt="development.png" /></a>
+		Latest Commits
+		<?php get_rss_feed("/var/cache/slitaz/website/wok.xml"); ?>
+	</div>
+	<p class="activity_more">
+		<a href="http://hg.slitaz.org/">More commits</a>
+	</p>
+</div>
+
 <h2>Latest Tweet</h2>
 <div id="twitter">
 	<script src="http://widgets.twimg.com/j/2/widget.js"></script>
@@ -135,33 +164,6 @@
 	  }
 	}).render().setUser('slitaz').start();
 	</script>
-</div>
-
-<h2>Project Activity</h2>
-<?php
-	require_once("libs/get-feed.php");
-?>
-
-<div class="activity">
-	<p>
-		<img src="images/users.png" alt="users.png" />
-		Community Activity
-		<?php get_rss_feed("/var/cache/slitaz/website/scn.xml"); ?>
-	</div>
-	<p class="activity_more">
-		<a href="http://scn.slitaz.org/activity/">More activity</a>
-	</p>
-</div>
-
-<div class="activity">
-	<p>
-		<img src="images/development.png" alt="development.png" />
-		Latest Commits
-		<?php get_rss_feed("/var/cache/slitaz/website/wok.xml"); ?>
-	</div>
-	<p class="activity_more">
-		<a href="http://hg.slitaz.org/">More commits</a>
-	</p>
 </div>
 
 <h2>Spread SliTaz</h2>
