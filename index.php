@@ -111,7 +111,7 @@
 	<p>
 		<a href="http://scn.slitaz.org/activity/"><img 
 			src="images/users.png" alt="users.png" /></a>
-		Community activity stream
+		Community activity
 		<?php get_rss_feed("/var/cache/slitaz/website/scn.xml"); ?>
 	</div>
 	<p class="activity_more">
@@ -194,14 +194,15 @@
 <h2>Monetary support</h2>
 <p>
 	SliTaz is made by volunteers and there is no company behind
-    	the project, but we desperately need some money to maintain the project 
-	infrastructure and services such as the main server and build host.
-	You can help with a micropayment via Flattr or a Paypal donation to
-	the SliTaz <a href="en/asso/">Association</a>, that way we can keep 
-	our freedom and autonomy without having any ads on our sites.
+    the project, but we desperately need some money to maintain the
+    project infrastructure and services such as the main server and
+    build host. You can help with a micropayment via Flattr or a 
+    Paypal donation to the SliTaz <a href="en/asso/">Association</a>,
+    that way we can keep our freedom and autonomy without having any
+    ads on our sites.
 </p>
 <div>
-	<!-- PayPal boutton -->
+	<!-- PayPal Button -->
 	<form action="https://www.paypal.com/cgi-bin/webscr" method="post"
 		style="display: inline;">
 		<input type="hidden" name="cmd" value="_s-xclick" />
@@ -209,7 +210,7 @@
 		<input type="image" src="images/paypal.png" name="submit" 
 			alt="PayPal - The safer, easier way to pay online!" />
 	</form>
-	<!-- Flattr boutton -->
+	<!-- Flattr Button -->
 	<a class="FlattrButton" style="display:none;" rev="flattr;button:compact;"
 		href="http://www.slitaz.org/"></a>
 </div>

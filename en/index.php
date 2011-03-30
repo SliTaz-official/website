@@ -186,7 +186,7 @@
 <div class="activity">
 	<p>
 		<img src="../images/users.png" alt="users.png" />
-		Community Activity
+		Community activity
 		<?php get_rss_feed("/var/cache/slitaz/website/scn.xml"); ?>
 	</div>
 	<p class="activity_more">
@@ -197,7 +197,7 @@
 <div class="activity">
 	<p>
 		<img src="../images/development.png" alt="development.png" />
-		Latest Commits
+		Latest commits in wok
 		<?php get_rss_feed("/var/cache/slitaz/website/wok.xml"); ?>
 	</div>
 	<p class="activity_more">
@@ -205,15 +205,28 @@
 	</p>
 </div>
 
-<h2>Spread SliTaz</h2>
+<h2>Support us</h2>
 <p>
-	Make SliTaz even more popular! Blog, Tweet, share and talk about 
-	the project. You can also join the us, connect, share or get
-	involve on the SliTaz <a href="http://scn.slitaz.org/">Community Network</a>.
+	Make SliTaz even more popular or make a donation. You can use PayPal
+	or Flattr micropayment to monetary support us. You can Blog, Tweet,
+	share and talk about the project to help spread SliTaz. You can also
+	join the community to connect and share or get involve on the SliTaz 
+	<a href="http://scn.slitaz.org/">Community Network</a>.
 </p>
 
-<!-- Twitter Button -->
-<div style="margin-bottom: 10px;">
+<div>
+	<!-- PayPal Button -->
+	<form action="https://www.paypal.com/cgi-bin/webscr" method="post"
+		style="display: inline;">
+		<input type="hidden" name="cmd" value="_s-xclick" />
+		<input type="hidden" name="hosted_button_id" value="4885025" />
+		<input type="image" src="../images/paypal.png" name="submit" 
+			alt="PayPal - The safer, easier way to pay online!" />
+	</form>
+	<!-- Flattr Button -->
+	<a class="FlattrButton" style="display:none;" rev="flattr;button:compact;"
+		href="http://www.slitaz.org/"></a>
+	<!-- Twitter Button -->
 	<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
 	<a href="http://twitter.com/share" class="twitter-share-button" 
 		data-text="SliTaz GNU/Linux" 
