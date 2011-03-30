@@ -97,7 +97,7 @@
 <h2>Actualités du projet</h2>
 <p>
 	Le site web de SliTaz propose les principales nouvelles du projet, et
-	<a href="http://labs.slitaz.org/">les laboratoires</a> des nouvelles
+	<a href="http://scn.slitaz.org/">le blog officiel</a> des nouvelles
 	sur l'activité générale des différents sous-projets. Ces nouvelles sont
 	aussi disponibles sous forme de <a href="rss.xml">flux XML</a>. De 
 	même, le projet propose une petite lettre d'information mensuelle et
@@ -108,9 +108,7 @@
 
 <div class="box">
 	<img src="../images/news.png" alt="news.png" />
-	<a href="http://labs.slitaz.org/news">Nouvelles des Labs</a>
-	(<a href="http://labs.slitaz.org/news?format=atom">flux</a>)
-	<img src="../pics/website/news.png" alt="news.png" />
+	<a href="http://scn.slitaz.org/">Nouvelles du Blog</a> |
 	<a href="http://doc.slitaz.org/fr:newsletter:start">Lettre d'information</a>
 </div>
 
@@ -318,7 +316,7 @@
 
 <h2>Activité du projet</h2>
 <?php
-	require_once("../libs/get-feed.php");
+	require_once("../libs/get-feeds.php");
 ?>
 
 <div class="activity">
@@ -326,7 +324,7 @@
 		<a href="http://scn.slitaz.org/activity/"><img 
 			src="../images/users.png" alt="users.png" /></a>
 		Activité de la communauté
-		<?php get_rss_feed("/var/cache/slitaz/website/scn.xml"); ?>
+		<?php get_feed("scn.xml"); ?>
 	</div>
 	<p class="activity_more">
 		<a href="http://scn.slitaz.org/activity/">Plus d'activité</a>
@@ -338,7 +336,7 @@
 		<a href="http://hg.slitaz.org/">
 			<img src="../images/development.png" alt="development.png" /></a>
 		Derniers commits dans le wok
-		<?php get_rss_feed("/var/cache/slitaz/website/wok.xml"); ?>
+		<?php get_feed("wok.xml"); ?>
 	</div>
 	<p class="activity_more">
 		<a href="http://hg.slitaz.org/">Plus de commits</a>

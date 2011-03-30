@@ -119,14 +119,14 @@
 
 <h2>Activity</h2>
 
-<?php require_once("../../libs/get-feed.php"); ?>
+<?php require_once("../../libs/get-feeds.php"); ?>
 
 <div class="activity">
 	<p>
 		<a href="http://hg.slitaz.org/">
 			<img src="../../images/development.png" alt="development.png" /></a>
 		Latest commits in wok
-		<?php get_rss_feed("/var/cache/slitaz/website/wok.xml"); ?>
+		<?php get_feed("wok.xml"); ?>
 	</div>
 	<p class="activity_more">
 		<a href="http://hg.slitaz.org/">More commits</a>
