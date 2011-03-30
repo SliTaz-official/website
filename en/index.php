@@ -185,7 +185,8 @@
 
 <div class="activity">
 	<p>
-		<img src="../images/users.png" alt="users.png" />
+		<a href="http://scn.slitaz.org/activity/"><img 
+			src="../images/users.png" alt="users.png" /></a>
 		Community activity
 		<?php get_rss_feed("/var/cache/slitaz/website/scn.xml"); ?>
 	</div>
@@ -196,7 +197,8 @@
 
 <div class="activity">
 	<p>
-		<img src="../images/development.png" alt="development.png" />
+		<a href="http://hg.slitaz.org/">
+			<img src="../images/development.png" alt="development.png" /></a>
 		Latest commits in wok
 		<?php get_rss_feed("/var/cache/slitaz/website/wok.xml"); ?>
 	</div>

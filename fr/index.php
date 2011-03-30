@@ -316,6 +316,35 @@
 <!-- End of news -->
 </div>
 
+<h2>Activité du projet</h2>
+<?php
+	require_once("../libs/get-feed.php");
+?>
+
+<div class="activity">
+	<p>
+		<a href="http://scn.slitaz.org/activity/"><img 
+			src="../images/users.png" alt="users.png" /></a>
+		Activité de la communauté
+		<?php get_rss_feed("/var/cache/slitaz/website/scn.xml"); ?>
+	</div>
+	<p class="activity_more">
+		<a href="http://scn.slitaz.org/activity/">Plus d'activité</a>
+	</p>
+</div>
+
+<div class="activity">
+	<p>
+		<a href="http://hg.slitaz.org/">
+			<img src="../images/development.png" alt="development.png" /></a>
+		Derniers commits dans le wok
+		<?php get_rss_feed("/var/cache/slitaz/website/wok.xml"); ?>
+	</div>
+	<p class="activity_more">
+		<a href="http://hg.slitaz.org/">Plus de commits</a>
+	</p>
+</div>
+
 <!-- End of content  -->
 </div>
 
