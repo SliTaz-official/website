@@ -111,7 +111,7 @@
 	<p>
 		<a href="http://scn.slitaz.org/activity/"><img 
 			src="images/users.png" alt="users.png" /></a>
-		Community Activity
+		Community activity stream
 		<?php get_rss_feed("/var/cache/slitaz/website/scn.xml"); ?>
 	</div>
 	<p class="activity_more">
@@ -123,7 +123,7 @@
 	<p>
 		<a href="http://hg.slitaz.org/">
 			<img src="images/development.png" alt="development.png" /></a>
-		Latest Commits
+		Latest commits in wok
 		<?php get_rss_feed("/var/cache/slitaz/website/wok.xml"); ?>
 	</div>
 	<p class="activity_more">
