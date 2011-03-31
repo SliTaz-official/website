@@ -140,7 +140,7 @@
 	quatres précédentes - c'est à dire toute l'histoire de SliTaz.
 	Néanmoins, la quantité ne suffit pas à faire la qualité. Nous avons
 	besoin de votre aide pour tester cette nouvelle ISO et signaler les
-	bugs éventuels. Si vous le souhaitez, vous êtes bievenus pour aider à
+	bugs éventuels. Si vous le souhaitez, vous êtes bienvenus pour aider à
 	corriger les problèmes connus avant la publication de la 4.0. Vous
 	pouvez joindre les membres de notre groupe via notre IRC, mailing list,
 	forums ou les mainteneurs des paquets par courriel. Nous espérons que
@@ -160,7 +160,7 @@
 	améliorations ont été apportées. C'est le travail de ces 6 derniers
 	mois. Vous pouvez <a href="get/#cooking>">télécharger</a>
 	cette nouvelle version depuis un des
-	mirroirs du site officiel du projet. Tous les ffedback sont les
+	mirroirs du site officiel du projet. Tous les feedback sont les
 	bienvenus et peuvent se faire à travers la mailing list ou le forum.</p>
 
 	<li><strong>08 Mai 2010 - Documentation de l'été</strong>
