@@ -144,7 +144,7 @@
 	A lot of work has been done since our last cooking ISO released in november:
 	more than 2200 changes have been commited to the wok, and several
 	hundreds more to home-built tools. We are proud to announce that the SliTaz
-	community grown a lot these last months: the last year, many
+	community has grown a lot these last months: the last year, many
 	changes was commited than in the previous four. However, quantity doesn't mean 
 	quality. We need you to help to test this new ISO and report eventual bugs. If 
 	you want to, you are welcome to help fix known problems before 4.0 is released. 
@@ -210,9 +210,9 @@
 <h2>Support us</h2>
 <p>
 	Make SliTaz even more popular or make a donation. You can use PayPal
-	or Flattr micropayment to monetary support us. You can Blog, Tweet,
+	or a Flattr micropayment to monetary support us. You can Blog, Tweet,
 	share and talk about the project to help spread SliTaz. You can also
-	join the community to connect and share or get involve on the SliTaz 
+	join the project to connect and share or get involved on the SliTaz 
 	<a href="http://scn.slitaz.org/">Community Network</a>.
 </p>
 
