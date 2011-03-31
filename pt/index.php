@@ -91,8 +91,31 @@
 <h2>Últimas notícias</h2>
 
 <div class="news">
-
 <ul>
+	<li><strong>29 Mar 2011 - Novo Cooking (20110329)</strong>	
+	<p>Os desenvolvedores do SliTaz anunciam o lançamento de uma nova ISO
+	da versão Cooking (de testes), que conta com mais de 2900 pacotes
+	nos repositórios. Todos os pacotes foram recompilados utilizando
+	as ferramentas atualizadas da distribuição, disponíveis no Tazwok.
+	A ISO contem o Kernel Linux 2.6.37 compilado com a glibc 2.13, o binutils
+	2.21 e o gcc 2.5.2. O LiveCD inclui o Midori 0.3.3; o tazpkg possui tradução
+	completa para o francês, podendo ser agora traduzido em outras línguas;
+	o tazwok foi inteiramente reescrito e agora é possível recompilar o SliTaz
+	a partir dos fontes utilizando-se qualquer imagem ISO. Este lançamento
+	é o primeiro visando a próxima versão estável 4.0.</p>
+	<p>Muito trabalho foi feito desde a versão cooking anterior, lançada em novembro:
+	mais de 2200 mudanças ocorreram no wok (repositórios de pacotes) e várias
+	outras nas ferramentas próprias da distribuição. A comunidade do SliTaz
+	cresceu recentemente: neste último ano, houveram tantas mudanças
+	quanto nos 4 anos anteriores, ou seja, em toda a história da distribuição. 
+	Entretanto, quantidade não é suficiente para garantir qualidade. Por isso
+	precisamos que você teste esta nova ISO e nos informe sobre eventuais bugs
+	podendo, inclusive, ajudar a resolve-los antes do lançamento da versão 4.0. 
+	Você pode nos contatar os via IRC, lista de discussão, fórum ou mandando um email 
+	diretamente para os mantenedores de pacotes. Esperamos que você goste deste novo 
+	<a href="get/">lançamento!</a></p>
+	</li>
+
 	<li><strong>4 de Novembro de 2010 - Nova versão "cooking" 20101104</strong>
 	<p>Os desenvolvedores do SliTaz anunciam uma nova imagem ISO da versão
 	de testes da distribuição. Há mais de 2600 pacotes nos repositórios,
