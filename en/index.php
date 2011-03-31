@@ -72,7 +72,7 @@
 		<h4>English Website</h4>
 		<p>
 			SliTaz is a free operating system providing a fully featured
-			desktop or server in less than 30 Mb. 
+			desktop or server in less than 30 MB. 
 		</p>
 		<p>
 			In Live mode SliTaz can run completely in RAM and boot from
