@@ -60,8 +60,8 @@
 			and contributors from all over the world making SliTaz finer
 			every day. 
 		</p>
-		<div class="button">
-			Quick Download:
+		<div class="button" style="text-align: left;">
+			Download:
 			<a href="http://mirror.slitaz.org/iso/3.0/slitaz-3.0.iso">SliTaz 3.0</a>
 			<a href="http://mirror.slitaz.org/iso/cooking/slitaz-cooking.iso">SliTaz Cooking</a>
 		</div>
