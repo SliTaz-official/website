@@ -25,7 +25,7 @@
 		<a href="http://scn.slitaz.org/">Community</a>
 		<a href="http://doc.slitaz.org/">Doc</a>
 		<a href="http://forum.slitaz.org/">Forum</a>
-		<a href="http://labs.slitaz.org/issues">Bugs</a>
+		<a href="http://bugs.slitaz.org">Bugs</a>
 		<a href="http://hg.slitaz.org/">Hg</a>
 	</div>
 	<h1><a href="http://www.slitaz.org/">SliTaz GNU/Linux</a></h1>
@@ -227,7 +227,7 @@ einen kleinen monatlichen Informationsbrief in Englisch und Chinesisch an.
 	Firefox auf die neueste Version 3.0. Ein neuer Kernel (2.6.25.5) mit vielen integrierten Treibern und
 	Modulen verrichtet nun seine Arbeit in SliTaz. Downloaden kann man die 25,2MB große Version
 	<a href="get/index.html#cooking">vom SliTaz-Mirror</a>. Bugs sind bitte
-	über das <a href="http://labs.slitaz.org/issues" target="_blank">Bug Tracking System</a>
+	über das <a href="http://bugs.slitaz.org" target="_blank">Bug Tracking System</a>
 	zu melden.
 	</li>
 	
@@ -361,7 +361,7 @@ einen kleinen monatlichen Informationsbrief in Englisch und Chinesisch an.
 	<a href="http://doc.slitaz.org/">Doc</a>
 	<a href="http://forum.slitaz.org/">Forum</a>
 	<a href="http://pkgs.slitaz.org/">Packages</a>
-	<a href="http://labs.slitaz.org/issues">Bugs</a>
+	<a href="http://bugs.slitaz.org">Bugs</a>
 	<a href="http://hg.slitaz.org/">Hg</a>
 	<p>
 		SliTaz @

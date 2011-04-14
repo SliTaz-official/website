@@ -23,7 +23,7 @@
 		<a href="http://scn.slitaz.org/">Community</a>
 		<a href="http://doc.slitaz.org/">Doc</a>
 		<a href="http://forum.slitaz.org/">Forum</a>
-		<a href="http://labs.slitaz.org/issues">Bugs</a>
+		<a href="http://bugs.slitaz.org">Bugs</a>
 		<a href="http://hg.slitaz.org/">Hg</a>
 	</div>
 	<h1><a href="./">SliTaz GNU/Linux</a></h1>
@@ -97,7 +97,7 @@
 		<ul>
 			<li><a href="http://hg.slitaz.org/">Mercurial Repositories</a></li>
 			<li><a href="http://labs.slitaz.org/">SliTaz Laboratories</a></li>
-			<li><a href="http://labs.slitaz.org/issues">Bug Tracker</a></li>
+			<li><a href="http://bugs.slitaz.org">Bug Tracker</a></li>
 			<li><a href="http://tank.slitaz.org/">Main Server</a></li>
 			<li><a href="http://bb.slitaz.org/">Build Bot</a></li>
 			<li><a href="http://www.slitaz.org/en/devel/">Developers Corner</a></li>
@@ -120,7 +120,7 @@
 	<a href="http://doc.slitaz.org/">Doc</a>
 	<a href="http://forum.slitaz.org/">Forum</a>
 	<a href="http://pkgs.slitaz.org/">Packages</a>
-	<a href="http://labs.slitaz.org/issues">Bugs</a>
+	<a href="http://bugs.slitaz.org">Bugs</a>
 	<a href="http://hg.slitaz.org/">Hg</a>
 	<p>
 		SliTaz @
