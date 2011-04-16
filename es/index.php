@@ -13,6 +13,18 @@
 	<link rel="stylesheet" type="text/css" href="../slitaz.css" />
 	<link rel="alternate" type="application/rss+xml" title="SliTaz Website feed" href="../en/rss.xml" />
 	<link rel="alternate" type="application/atom+xml" title="SliTaz Labs feed" href="http://labs.slitaz.org/news?format=atom" />
+	<link rel="alternate" type="application/rss+xml" title="SliTaz SCN feed" href="http://scn.slitaz.org/activity/feed/" />
+	<script type="text/javascript">
+	/* <![CDATA[ */
+	    (function() {
+	        var s = document.createElement('script'), t = document.getElementsByTagName('script')[0];
+	        s.type = 'text/javascript';
+	        s.async = true;
+	        s.src = 'http://api.flattr.com/js/0.6/load.js?mode=auto';
+	        t.parentNode.insertBefore(s, t);
+	    })();
+	/* ]]> */
+	</script>
 </head>
 <body>
 
@@ -86,286 +98,113 @@
 
 <!-- Content -->
 <div id="content">
-
-<div class="box">
-	This spanish version of SliTaz Website have pages not yet migrated
-	to the new style, please check the <a href="../en/">English</a> 
-	version.
-</div>
+    
+<h2>Titulares</h2>
+<p>La página de SliTaz proporciona las principales noticias del proyecto,
+así como noticias sobre la actividad general de los subproyectos en la
+sección de la <a href="http://scn.slitaz.org/">comunidad</a>. Ambas están 
+disponibles como un feed XML. El proyecto además publica una pequeña 
+revista mensual. Por último, en la <a href="../">página principal</a> 
+podrás seguir las últimas noticias, commits y tweets.</p>
 
 <h2>Últimas noticias</h2>
 
 <div class="news">
 
 <ul>
-	<li><strong>4 de noviembre de 2010 - Nueva Cooking</strong>   
-	<p>El equipo de trabajo de SliTaz se complace en anunciar la publicación
-	de una nueva ISO de Cooking cargada con más de 2600 paquetes. Contiene
-	el núcleo Linux 2.6.34 y ha sido rehecha con una nueva cadena de
-	herramientas usando glibc 2.11.2 y gcc 4.5.1. Xorg ha sido
-	completamente actualizado a la 1.9.2. El LiveCD incluye Midori, el
-	reproductor de audio Deadbeef y muchas aplicaciones de uso diario.
-	Tazpkg y Tazctrlbox ahora soportan las traducciones de gettext y se ha
-	añadido más configuración regional. Se ha trabajado mucho en los
-	últimos seis meses para resolver muchos errores y añadir
-	actualizaciones y mejoras. Puedes 
-	<a href="get/index.html#cooking">descargarte</a> 
-	esta nueva versión Cooking de cualquiera de los mirrors oficiales 
-	del proyecto. Apreciaciones o comentarios, canalizados a través de 
-	la lista de correo o del foro oficial, son siempre bienvenidos.</p>
-	</li>
-
-	<li><strong>8 de mayo de 2010 - Verano de documentación</strong>   
-	<p>El equipo de SliTaz está organizando un 'Verano de Documentación' 
-	del 10 de mayo al 10 de junio. Su objetivo es centralizar, revisar y
-	actualizar toda la documentación en línea. Puedes encontrar más
-	información en <a href="http://doc.slitaz.org/">doc.slitaz.org</a>. 
-	Confiamos que los usuarios del proyecto puedan contribuir, bien 
-	añadiendo o bien actualizando la documentación.</p>
-	</li>
-
-    	<li><strong>28 de marzo de 2010 - Publicada SliTaz GNU/Linux 3.0</strong>   
-	<p>El equipo de SliTaz está encantado de anunciar la publicación de SliTaz
-	GNU/Linux 3.0. Más sencillo, rápido, configurable, potente, y aún así
-	increíblemente pequeño. Esta nueva versión estable ha sido publicada
-	después de un año de desarrollo.</p>
-	<p>El escritorio está basado en Xorg 7.4, Openbox, componentes de LXDE y
-	algunas herramientas de la casa. Con él puedes conectarte y navegar por
-	internet con el navegador Midori, escuchar música o gestionar tus fotos.</p>
-	<p>El sistema cabe en una imagen ISO de 30MB, y encontramos sus variaciones
-	en LiveCD desde 8MB. Esta versión estable ha sido generada con un nuevo
-	conjunto de herramientas, incluyendo GCC 4.4.1, y viene con el núcleo
-	2.6.30.6. Ya puedes leer las 
-	<a href="doc/releases/3.0/relnotes.es.html">Notas de Lanzamiento</a> para más 
-	información y <a href="get/index.html#stable">descargarte</a> una imagen 
-	LiveCD de los mirros de SliTaz.</p>
-	</li>
-
-	<li><strong>14 de marzo de 2010 - Series RC y Solutionslinux 2010 (París)</strong>
-	<p>Puesto que nos vamos acercando a la próxima versión estable, hemos
-	actualizado la imagen ISO principal para comenzar con series RC (release
-	candidate). El mayor cambio se encuentra en la sustitución del navegador
-	web por Midori, lo mejorará la experiencia de usuario y nos permitirá
-	mantener SliTaz en 30MB. Midori es un navegador moderno, creado a partir
-	del motor webkit. Es rápido, fácil de usar y se integra de maravilla con
-	el escritorio de SliTaz.</p>
-	<p>La ISO actualizada viene con un montón de incidencias y dependencias
-	resueltas. Hemos mejorado además las herramientas y scripts caseros.
-	Esta nueva ISO puede descargarse de los mirrors de SliTaz (30MB):
-	<a href="get/index.html#cooking">slitaz-cooking.iso</a></p>
-	<p>Ya de paso, el proyecto SliTaz estará en 
-	<a href="http://www.solutionslinux.fr/">Solutionslinux</a> 2010 la próxima
-	semana en París. Allí podrás enterarte más de cerca del proyecto, y
-	contactar con los miembros de la asociación y del equipo de desarrollo.</p>
-	</li>
-
-	<li><strong>21 de febrero de 2010 - Nueva Cooking 20100221</strong>	
-	<p>A los participantes del proyecto SliTaz nos complace anunciar una nueva
- 	versión Cooking del LiveCD. Esta es la última Cooking RC antes de que la
-	versión 3.0 sea publicada. La ISO principal ocupa 27 MB y viene con
-	muchos cambios y mejoras. Esta Cooking usa Xorg como servidor X en lugar
-	de Xvesa y trae soporte total para UTF-8. Con un entorno de escritorio
-	limpio, también trae muchas aplicaciones para el día a día y las tareas
-	más frecuentes. Netsurf reemplaza a firefox como el navegador por
-	defecto. Aún así, una variación para Firefox de 29 MB con sonido y wifi
-	puede también ser descargada de los mirrors oficiales.</p>
-	<p>Respecto a actualizaciones y mejoras: tazpkg es más rápido, los scripts
- 	de arranque están actualizados y las herramientas caseras han sido
-	mejoradas. Wifibox usa awk para un mejor escaneo de red. El soporte para
-	WPA en los scripts de arranque ha sido también mejorado. El tiempo en el
-	arranque es guardado en los logs, para medir el rendimiento. El
-	instalador de SliTaz trata ahora de usar ficheros de un dispositivo USB
-	si no hay cd-rom, te permite crear una cuenta de usuario por defecto,
-	establece una contraseña de root y usa una partición /home
-	independiente. Y por último, la personalización de LiveCDs es ahora
-	mucho más sencilla: usuarios sólo necesitan arrancar, modificar y usar
-	writefs mediante la interfaz gráfica de Tazlito o mediante línea de
-	comandos, para generar su propio CD personalizado.</p>
-	<p>Como es habitual, puedes <a href="get/index.html#cooking">descargarte</a> 
-	todo esto de cualquiera de los	mirrors oficiales del proyecto, y decirnos 
-	qué te parece en nuestro foro.</p>
-	</li>
-
-    <li><strong>4 Nov 2009 - Nueva Cooking 20091104</strong>
-	<p>Nos complace anunciar la publicación de la nueva versión
-    Cooking de SliTaz, basada en unos 2100 paquetes, disponibles éstos en el
-    repositorio de SliTaz. Esta nueva versión ha sido compilada con la Glibc
-    2.10.1 y el Gcc 4.4.1. Viene además con el kernel 2.6.30.6, con
-    mejor soporte hardware y más módulos precompilados. El proceso de
-    arranque ha sido mejorado sustancialmente, siendo el más rápido hasta la
-    fecha. Paquetes relevantes como el Firefox han sido actualizados a la
-    última versión estable. Se han mejorado también las ventanas de diálogo
-    de la casa, así como el administrador de paquetes, que incluye entre sus
-    nuevas características la posibilidad de convertir de los formatos deb,
-    rpm, arch, slackware e ipk al formato nativo de Slitaz. La imagen ISO
-    incluye además nuevos iconos y un nuevo estilo visual para Openbox y
-    Gtk, haciéndola aún más agradable. Se ha eliminado el ePDFview
-    cambiándolo por un visor de PDFs online. La imagen ha quedado esta
-    vez ligeramente más grande de los 30 MB habituales (31.5), debido
-    principalmente al kernel también más grande y a las nuevas dependencias.</p>
-    <p>Aprovechamos también para anunciar nuestros nuevos 
-    <a href="http://forum.slitaz.org/">foros</a> y un nuevo
-	<a href="http://scn.slitaz.org/">sitio para la comunidad</a>, 
-    donde podrás compartir tus experiencias y participar en el proyecto. 
-    Como es también habitual, podrás bajarte esta nueva imagen ISO de nuestra 
-    sección de <a href="get/index.html#cooking">descargas</a>.</p>
-	</li>
-
-    <li><strong>19 de mayo de 2009 - Slitaz en LinuxDays 2009 (Ginebra)</strong>
+    <li><strong>29 de marzo de 2011 - Nueva Cooking 20110329</strong>
+    <p>El equipo de SliTaz se complace en anunciar la publicación de una
+    nueva ISO de la versión Cooking con alrededor de 2900 paquetes. Todos
+    los paquetes han sido reconstruidos usando nuestra nueva herramienta
+    de cocción, ahora incluida en tazwok. Contiene el núcleo 2.6.37
+    compilado contra glibc 2.13, binutils 2.21 y gcc 4.5.2. El Core LiveCD
+    incluye Midori 0.3.3. Tazpkg se ha traducido por completo al francés y
+    estamos abiertos a traducciones adicionales. Tazwok ha sido totalmente
+    reescrita y es posible reconstruir SliTaz de cero usando cualquier
+    ISO. Esta ISO es la primera candidata en nuestra ruta hacia la
+    publicación de la versión 4.0 estable.</p>
     <p>
-    En la feria LinuxDays que se celebrará en Suiza, la asociación
-    tendrá un puesto en la Association Village además de una charla el
-    miércoles por la mañana. La charla será de un caso de estudio desde
-    un punto de vista corporativo, basado en el uso de un "Servidor
-    Slitaz para Empresas" con centralita, ERP integrado, correo, LDAP, etc...
+    Se ha trabajado mucho desde la última Cooking publicada en noviembre:
+    más de 2200 cambios han sido registrados al wok, y algunos centenares
+    más para las herramientas caseras. Nos complace anunciar que la
+    comunidad SliTaz ha crecido mucho estos últimos meses: el año pasado
+    se registraron más cambios que en los cuatro anteriores. Aún así,
+    cantidad no es calidad. Necesitamos tu ayuda para probar esta nueva
+    ISO e informar de posibles fallos. Si lo deseas, tu ayuda es
+    bienvenida para resolver problemas abiertos camino de la publicación
+    de la 4.0. Puedes alistarte vía nuestro IRC, listas de correo, foros o
+    directamente escribiendo un correo a los mantenedores de los paquetes.
+    Confiamos que disfrutes esta <a href="get/">nueva versión</a>.
     </p>
-    <p>
-    Durante los tres días, el stand contará con miembros del proyecto
-    SliTaz. En él se ofrecerán demos, incluyendo la creación de memorias
-    USB arrancables (LiveUSB) y cd-roms. El LiveCD de LinuxDays vendrá
-    con una selección de software pensada para soluciones móviles. El
-    salón de exhibición contará también con un foro en el que atenderemos
-    cualquier cuestión. ¡Anímate a visitarnos! Más información en
-    <a href="http://labs.slitaz.org/wiki/events/2009-linuxdays">SliTaz Labs</a>
-    y la web <a href="http://2009.linuxdays.ch/">2009.linuxdays.ch</a>
-    </p></li>
+    </li>    
 
-	<li><strong>16 de abril de 2009 - SliTaz GNU/Linux 2.0</strong><br />
-
-    El proyecto SliTaz se complace en anunciar la nueva versión estable
-    de nuestra distribución - SliTaz GNU/Linux 2.0. Esta nueva versión
-    es el resultado de un año de trabajo de nuestra comunidad, obteniendo
-    un sistema operativo estable, ligero, rápido y escalable. SliTaz
-    proporciona un escritorio gráfico completo en menos de 30MiB, las
-    aplicaciones necesarias para un entorno de servidor robusto y fiable,
-    y 1400 paquetes de software fácilmente instalables a golpe de ratón.
-    Esta nueva versión ofrece el automontaje de particiones (compatible
-    con NTFS), soporte para wifi, un escritorio compatible con los
-    estándares de Freedesktop.org (arrastrar y soltar), arranque desde
-    red con gPXE y <a href="http://boot.slitaz.org/">boot.slitaz.org</a>,
-    detección automática de dispositivos
-    USB y PCI, una interfaz gráfica para la gestión de paquetes y el
-    centro de control, además de herramientas gráficas en general para
-    manejar la distribución. La creación de memorias USB y LiveCDs
-    autoarrancables se ha simplificado y mejorado ampliamente. El LiveCD
-    primigenio incluye Firefox 3.0.8, gFTP, LostIRC, ePDFView, mtPaint,
-    Transmission, Osmo y Alsaplayer. La documentación de la web ha sido
-    actualizada de tal manera que puedes leer las release notes incluídas
-    en la distribución para más detalles de esta versión estable. SliTaz
-    GNU/Linux 2.0 está ya <a href="get/index.html">disponible</a> en los mirrors
-    oficiales del proyecto.
-	</li>
-
-	<li><strong>27 de marzo de 2009 - Labs y nuevos mirrors</strong><br />
-
-	Buscando contínuamente mejorar la distribución y los servicios que
-	proporcionamos, nos complace anunciar el lanzamiento de los laboratorios
-	Slitaz o <a href="http://labs.slitaz.org/">SliTaz Labs</a>.
-	Esta plataforma comunitaria permite a los miembros
-	que contribuyen al proyecto colaborar más eficazmente, notificar errores
-	más fácilmente o solicitar nuevas funcionalidades. Los laboratorios
-	traen para cada <a href="http://labs.slitaz.org/projects">proyecto</a>
-	un wiki, un tracker, <a href="http://labs.slitaz.org/news">un módulo de noticias</a>,
-	etc. Los laboratorios suponen un medio para la coordinación de la
-	actividad del proyecto y para la publicación regular de noticias. No
-	dudes en registrarte, participar y comentar las aportaciones. El
-	proyecto se complace también en anunciar dos nuevos mirrors: uno en
-	Suiza, alojado en <a href="http://mirror.switch.ch/">SWITCHmirror</a>
-	(10 Gb/s) y otro en China, alojado por <a href="http://www.lupaworld.com">LupaWorld</a>.
-	Gracias por vuestro apoyo.
-	</li>
-	<li><strong>20 de marzo de 2009 - SliTaz en Solutionslinux 2009 (París)</strong><br />
-
-	El proyecto SliTaz será presentado en Solutionslinux 2009 en París. En
-	el stand se encontrarán tres miembros activos del proyecto durante los
-	tres días, más otros miembros que se acercarán eventualmente. Allí
-	tendrás la posibilidad de probar SliTaz en diferentes máquinas como el
-	EeePc, de crearte tu propia memoria autoarrancable USB (no te olvides
-	traerte una) o de comprar directamente una memoria USB o LiveCD con
-	SliTaz GNU/Linux. Podrás también aprender sobre el proyecto y establecer
-	contacto con los miembros de la asociación y del equipo de desarrollo.
-	Página web:
-	<a href="http://www.solutionslinux.fr/">www.solutionslinux.fr</a>,
-	<a href="http://www.solutionslinux.fr/associations.php?pg=2_7">Asociaciones</a>,
-	<a href="http://www.solutionslinux.fr/exposant_fiche.php?id=763&amp;pg=2_4">Stand de SliTaz</a>.
-	</li>
-	<li><strong>28 de febrero de 2008 - Cooking 20090228</strong><br />
-
-	¡Preparándonos para la próxima versión estable! El proyecto Slitaz se
-	complace en anunciar la publicación de una nueva versión Cooking cargada
-	de correcciones, actualizaciones, mejoras y nuevas funcionalidades. La
-	autodetección PCI/USB es ahora gestionada por Tazhw y el firmware puede
-	ser instalado con un click mediante una interfaz gráfica. Tazndis
-	también tiene una GUI más amigable con la que administrar los
-	controladores de Windows. El gestor gráfico de paquetes es también más
-	fácil de usar y los medios LiveUSB como las memorias USB pueden ser
-	creadas de forma sencilla mediante un cuadro de diálogo. Netbox muestra
-	todas las intefaces y la nueva Wifibox puede conectarse a essids wifi,
-	administrar las redes preferidas y configurar los controladores de la
-	tarjeta bien manualmente bien mediante Tazhw. El escritorio tiene una
-	GUI para habilitar y deshabilitar las aplicaciones de inicio de Openbox
-	y lvman conjuntamente con desktopbox proporcionan un sistema de
-	notificación ligero. Puedes <a href="get/index.html#cooking">descargarte</a>
-	esta nueva ISO de cualquiera de nuestros mirrors oficiales.
-	</li>
-	<li><strong>31 de diciembre de 2008 - Cooking 20081231 - Soporte para Wifi y NTFS</strong><br />
-
-	Los miembros del proyecto SliTaz anuncian una nueva imagen ISO de la versión
-	Cooking del LiveCD. Con ella puedes disfrutar del trabajo realizado en estos
-	últimos meses, esto es, nuevas funcionalidades, nuevas actualizaciones y
-	menos errores. Se ha añadido un centro de control y la gestión del wifi mediante
-	Netbox y tazndis, una versión más ligera del ndiswrapper, que permite usar
-	los controladores de Windows para aquellas tarjetas para las que no hay
-	controlador libre. Se ha incluido Perl y se ha eliminado Lua. El soporte wifi viene
-	acompañado además por el soporte para particiones NTFS, por lo que el mplayer
-	ha tenido que ser eliminado de la lista de paquetes que vienen
-	inicialmente en el LiveCD. Se ha mejorado sustancialmente el gestor de
-	paquetes Tazpkg, corrigiendo varios errores y permitiendo preservar los ficheros de
-	configuración, actualizar el software en función de la fecha de compilación en
-	log. Sehan mejorado también los scripts de arranque, ahora más eficientes, así como
-	la utilidad de construcción de LiveCD (tazlito). El repositorio de la versión
-	Cooking dispone ahora mismo de más de 1100 paquetes listos para ser
-	instalados, y todo esto gracias a nuestro equipo de desarrolladores. Puedes
-	<a href="get/index.html#cooking">descargarte</a> esta nueva versión de cualquiera
-	de los mirrors oficiales del proyecto.
-	</li>
-    <li><strong>16 de julio de 2008 - Cooking 20080716 - Web boot y MPlayer</strong><br />
-
-    	Los miembros del proyecto SliTaz anuncian la disponibilidad de una nueva
-	imagen ISO de la versión Cooking, en la que se resuelven muchas incidencias a
-	la vez que se añaden nuevas funcionalidades. Esta versión incluye la opción
-	de arranque web, con la que es posible arrancar SliTaz directamente desde
-	internet tirando por gPXE del servidor <a href="http://boot.slitaz.org/">boot.slitaz.org</a>.
-	De esta manera es posible arrancar SliTaz en modo Live (directamente en la RAM),
-	y así almacenar tu información permanentemente y preconfigurar el sistema. Esta nueva imagen
-	ocupa 3 MiB adicionales en los que hemos añadido: el reproductor multimedia
-	MPlayer, el gestor de notas Notecase, una nueva versión de nuestro gestor de
-	paquetes Tazpkg con soporte para md5, soporte para XFS, el comando 'man' y
-	algunas actualizaciones. Para arrancar y funcionar en condiciones, esta
-	versión necesita al menos 160 MiB de RAM, si bien disponemos de modalidades
-	loram para máquinas que no alcancen este requerimiento. 
-	<a href="get/#cooking">Descarga SliTaz Cooking ISO.</a>
-    </li>
-    <li><strong>22 de marzo de 2008 - SliTaz GNU/Linux 1.0</strong><br />
-
-    	Los participantes en el proyecto SliTaz se enorgullecen en anunciar la
-	publicación de SliTaz GNU/Linux 1.0. Esta es la primera versión estable tras
-	dos años de trabajo. El sistema se distribuye como un LiveCD de 24.8 MiB que
-	trae todo un entorno de escritorio y una amplia gama de aplicaciones. Slitaz
-	GNU/Linux 1.0 usa el kernel 2.6.24.2, incluye firefox 2.0.0.12, rsync 3.0.0,
-	gparted 0.3.5 y soporte para sonido mediante alsa 1.0.16. Con esta
-	distribución puedes escuchar tu música preferida, navegar por internet, y
-	mucho más gracias a sus más de 448 paquetes disponibles que pueden ser
-	instalados con nuestro gestor de paquetes Tazpkg. El LiveCD te permite crear
-	una distro personalizada o una LiveUSB en una sola línea de comando. El
-	proyecto proporciona actualizaciones de seguridad, además de actualizaciones
-	para los paquetes tales como firefox. Puedes descargarte SliTaz GNU/Linux 1.0
-	de la <a href="get/#stable">página de descarga</a>. Lee las Release Notes
-	si quieres información más detallada de esta versión estable.
+    <li><strong>Archivo de noticias:</strong>
+    <a href="news/2008.html">2008</a> |
+    <a href="news/2009.html">2009</a> |
+    <a href="news/">2010</a>
     </li>
 </ul>
 
 <!-- End of news -->
+</div>
+
+<h2>Actividad del proyecto</h2>
+<?php
+	require_once("../libs/get-feeds.php");
+?>
+
+<div class="activity">
+	<p>
+		<a href="http://scn.slitaz.org/activity/"><img 
+			src="../images/users.png" alt="users.png" /></a>
+		Actividad de la comunidad
+		<?php get_feed("scn.xml"); ?>
+	</div>
+	<p class="activity_more">
+		<a href="http://scn.slitaz.org/activity/">Más actividad</a>
+	</p>
+</div>
+
+<div class="activity">
+	<p>
+		<a href="http://hg.slitaz.org/">
+			<img src="../images/development.png" alt="development.png" /></a>
+		Últimos commits en el wok
+		<?php get_feed("wok.xml"); ?>
+	</div>
+	<p class="activity_more">
+		<a href="http://hg.slitaz.org/">Más commits</a>
+	</p>
+</div>
+
+<h2>Echa una mano</h2>
+<p>
+    Haz SliTaz más popular o haz una donación. Puedes apoyarnos
+    monetariamente vía Paypal o mediante un micropago Flattr. Puedes
+    bloguear, tweetear, compartir o simplemente hablar de SliTaz para
+    ayudar a difundir el proyecto. Puedes también unirte al proyecto y
+    compartir o involucrarte en nuestra 
+    <a href="http://scn.slitaz.org/">Community Network</a>.
+</p>
+
+<div>
+	<!-- PayPal Button -->
+	<form action="https://www.paypal.com/cgi-bin/webscr" method="post"
+		style="display: inline;">
+		<input type="hidden" name="cmd" value="_s-xclick" />
+		<input type="hidden" name="hosted_button_id" value="4885025" />
+		<input type="image" src="../images/paypal.png" name="submit" 
+			alt="PayPal - The safer, easier way to pay online!" />
+	</form>
+	<!-- Flattr Button -->
+	<a class="FlattrButton" style="display:none;" rev="flattr;button:compact;"
+		href="http://www.slitaz.org/"></a>
+	<!-- Twitter Button -->
+	<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+	<a href="http://twitter.com/share" class="twitter-share-button" 
+		data-text="SliTaz GNU/Linux" 
+		data-count="horizontal"
+		data-via="slitaz">Tweet</a>
 </div>
 
 <!-- End of content -->
