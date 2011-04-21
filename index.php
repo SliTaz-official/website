@@ -116,7 +116,7 @@
 	<p>
 		<a href="http://scn.slitaz.org/activity/"><img 
 			src="images/users.png" alt="users.png" /></a>
-		Community activity
+		Developers wall
 		<?php get_feed("scn.xml"); ?>
 	</div>
 	<p class="activity_more">
