@@ -85,10 +85,10 @@
 
 <div class="box">
 	<img src="images/update.png" style="float: left; margin-right: 10px; " />
-	Help SliTaz funder Pankso work at least one month full time on SliTaz
-	and pay the train ticket as well as food to go to the Linux expo in
-	Paris and manage SliTaz booth. Paris also let main developers meet
-	them self -
+	Help SliTaz founder Pankso work at least one month full time on SliTaz
+	and pay for the train ticket as well as food to go to the Linux expo in
+	Paris and manage the SliTaz booth. Paris is also an opportunity for the 
+	developers to meet one another -
 	<a href="http://www.gofundme.com/pankso">Donate Online</a>
 </div>
 
