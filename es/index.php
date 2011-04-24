@@ -59,10 +59,10 @@
 		</div>
 		<div class="left_box">
 			<ul>
-				<li><a href="./">Últimas noticias</a></li>
+				<li><a href="./">Titulares</a></li>
 				<li><a href="about/">Acerca de</a></li>
 				<li><a href="get/">Descargas</a></li>
-				<li><a href="../en/asso/">Association (en)</a></li>
+				<li><a href="asso/">Asociación</a></li>
 				<li><a href="doc/">Documentación</a></li>
 			</ul>
 		</div>
@@ -106,8 +106,6 @@ sección de la <a href="http://scn.slitaz.org/">comunidad</a>. Ambas están
 disponibles como un feed XML. El proyecto además publica una pequeña 
 revista mensual. Por último, en la <a href="../">página principal</a> 
 podrás seguir las últimas noticias, commits y tweets.</p>
-
-<h2>Últimas noticias</h2>
 
 <div class="news">
 
