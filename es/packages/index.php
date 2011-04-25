@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
 <head>
     <title>SliTaz - Paquetes</title>
-    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <meta name="description" content="SliTaz GNU/Linux LiveCD packages" />
     <meta name="keywords" lang="es" content="package, tazpkg" />
     <meta name="robots" content="index, follow, all" />
@@ -56,7 +56,7 @@
 	</div>
 	<!-- Information/image -->
 	<div id="block_info">
-		<h4>Packages</h4>
+		<h4>Paquetes</h4>
 		<p>
 			Esta parte de la página te permite ver todos los paquetes de software
 			disponibles en los mirrors de SliTaz. Las páginas se actualizan
@@ -81,7 +81,7 @@
 			<p>
 				<input type="hidden" name="lang" value="es" />
 				<input type="text" name="query" size="24" style="width: 80%;" />
-				<input type="submit" name="search" value="Search" />
+				<input type="submit" name="search" value="Buscar" />
 			</p>
 		</div>
 		Search for:
@@ -118,7 +118,7 @@
 		>http://mirror.slitaz.org/packages/</a>
 </div>
 
-<h2>Activity</h2>
+<h2>Actividad</h2>
 
 <?php require_once("../../libs/get-feeds.php"); ?>
 
