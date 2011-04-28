@@ -57,7 +57,7 @@
 	<div id="block_info">
 		<h4>Forge</h4>
 		<p>
-			Tools, guideline and services used to created and build SliTaz
+			Misc tools, guidelines and services used to create and build SliTaz.
 		</p>
 		<p>
 			<img src="../../images/users.png" alt="users.png" />
