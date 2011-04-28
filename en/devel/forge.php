@@ -186,29 +186,29 @@ Hg commands that can be used.
 <h2>GUI - Pure C/GTK, Yad, Vala/Genie and CGI/web</h2>
 
 <p>
-	We have many way to create user interface in the open source world. From
-	the start of the project until 3.0 we mainly used a tool called Gtkdialo
-	who let us create nice and quiet complex interfaces in GTK but with a
-	scripting language, no compilation, just run. But gtkdialog in unmaintained
-	and lack about new GTK features, so we switched to Yad for simple GUI boxes.
-	For all the admin, packages and configuration tools we switched to TazPanel,
-	a CGI/web interface with all the gui in xHTML 5 and CSS 3.
+	There are many ways to create user interfaces in the open source world. From
+	the start of the project until 3.0 we mainly used a tool called Gtkdialog
+	which let us create quite nice and complex interfaces in GTK, but using a
+	scripting language that just run without having to be compiled. But gtkdialog is 
+	unmaintained and lacks many new GTK features, so we switched to Yad for simple GUI boxes.
+	For all the administration, packages and configuration tools we switched to TazPanel,
+	a CGI/web interface with a gui coded in xHTML 5 and CSS 3.
 </p>
 <p>
-	Now we Yad is very simple and dont allow us to create complex interface even
-	if we just need 2 or 3 entry with label and a few buttons, so an other way
-	must be used. The advantage of a scripting language is the fact we dont need
-	to compile and can code in relatime, but it produce a slower applications.
-	All in C is complex and we got less contributor since SHell script are easier
-	to understand, so the guide line now is to keep and continue improving our
-	cmdline tools and provide frontend in GTK or CGI/web.
+	Yad is very simple but doesn't allow us to create complex interfaces even if we
+	only need 2 or 3 entries with labels and a few buttons, so another way
+	must be found. The advantage of a scripting language is the fact that it doesn't need
+	to be compiled and can be coded in realtime (but it produces slower applications).
+	Writing tools in C is complex and gets less contributions since SHell scripts are easier
+	to understand, so the guidelines are now to keep and continue to improve our
+	cmdline tools and provide frontends in GTK or CGI/web.
 </p>
 <p>
-	They is many new languages who let use GTK such as Genie, Vala or GTKaml.
-	But keep in mind ther are not so popular than C and GTK and finaly not realy
-	easier to learn and use, at least for simple fronted you finally use SHell
-	scripts to perform tasks. Use can use Vala if you like but look at a pure
-	GTK single window, it only 14 lines:
+	There are many new languages that use GTK such as Genie, Vala or GTKaml.
+	But keep in mind that they are not as popular as C and GTK and not really
+	easier to learn and use (for simple frontends you can use SHell
+	scripts to perform tasks). You can use Vala but look at a pure
+	GTK single window, it uses only 14 lines:
 </p>
 <pre>
 #include &gt;gtk/gtk.h&lt;
@@ -228,19 +228,19 @@ int main(int argc, char *argv[])
 }
 </pre>
 <p>
-	If you not sure about the language to use, discuss it on the mailing list.
+	If you are not sure about which language to use, discuss it on the mailing list.
 	If you just want a small GUI function, look at tazbox in the slitaz-tools
-	repo, it have tiny desktop tools such as a logout box. By the way the first
-	SliTaz sub-project all written in pure GTK is TazWeb and you may learn
-	some way to use system() to include system commands in your frontend. For
-	example TazWeb use wget for downloads and sed to add bookmarks.
+	repo, it has tiny desktop tools such as a logout box. The first
+	SliTaz sub-project written in pure GTK is TazWeb and you can use it to learn
+	ways to use system() to include system commands in your frontend. For
+	example TazWeb uses wget for downloads and sed to add bookmarks.
 </p>
 <p>
 	Yad scripts should follow TazYad guidelines:
 	<a href="http://hg.slitaz.org/slitaz-dev-tools/raw-file/tip/tazyad/README">
 		README</a> and
 	<a href="http://hg.slitaz.org/slitaz-dev-tools/raw-file/tip/tazyad/tazyad">
-		exmaple code</a>
+		example code</a>
 </p>
 
 <a name="iconv"></a>

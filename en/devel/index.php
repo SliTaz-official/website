@@ -76,11 +76,11 @@
 
 <ul>
 	<li><a href="forge.php">Forge</a> - Collaborative management, KISS,
-	guideline, Mercurial repo, website and other services</li>
-	<li><a href="../../i18n.php">Internationalisation project</a> -
-    Translation, goals and management.</li>
+	guidelines, Mercurial repos, website and other services.</li>
+	<li><a href="../../i18n.php">Internationalization project</a> -
+	Translation, goals and management.</li>
 	<li><a href="http://hg.slitaz.org/" >Mercurial Repositories</a></li>
-    <li><a href="http://bts.slitaz.org/">SliTaz Bugs Tracker</a></li>
+	<li><a href="http://bts.slitaz.org/">SliTaz Bug Tracker</a></li>
 </ul>
 
 <a name="devel"></a>
