@@ -208,20 +208,23 @@ Hg commands that can be used.
 	But keep in mind ther are not so popular than C and GTK and finaly not realy
 	easier to learn and use, at least for simple fronted you finally use SHell
 	scripts to perform tasks. Use can use Vala if you like but look at a pure
-	GTK single window, it only 12 lines:
+	GTK single window, it only 14 lines:
 </p>
 <pre>
 #include &gt;gtk/gtk.h&lt;
 
 int main(int argc, char *argv[])
 {
-  GtkWidget *window;
-  
-  gtk_init(&amp;argc, &amp;argv);
-  window = gtk_window_new(GTK_WINDOW_TOPLEVEL);
-  gtk_widget_show(window);
-  gtk_main();
-  return 0;
+	GtkWidget *window;
+	
+	gtk_init(&amp;argc, &amp;argv);
+	window = gtk_window_new(GTK_WINDOW_TOPLEVEL);
+	g_signal_connect (G_OBJECT (window), "destroy",
+			G_CALLBACK (gtk_main_quit), NULL);
+	
+	gtk_widget_show(window);
+	gtk_main();
+	return 0;
 }
 </pre>
 <p>
