@@ -12,7 +12,6 @@
 	<link rel="shortcut icon" href="../favicon.ico" />
 	<link rel="stylesheet" type="text/css" href="../slitaz.css" />
 	<link rel="alternate" type="application/rss+xml" title="SliTaz Website feed" href="rss.xml" />
-	<link rel="alternate" type="application/atom+xml" title="SliTaz Labs feed" href="http://labs.slitaz.org/news?format=atom" />
 	<link rel="alternate" type="application/rss+xml" title="SliTaz SCN feed" href="http://scn.slitaz.org/activity/feed/" />
 	<script type="text/javascript">
 	/* <![CDATA[ */
@@ -196,7 +195,7 @@
 	<p>
 		<a href="http://scn.slitaz.org/activity/"><img 
 			src="../images/users.png" alt="users.png" /></a>
-		Developer wall
+		Community activity
 		<?php get_feed("scn.xml"); ?>
 	</div>
 	<p class="activity_more">

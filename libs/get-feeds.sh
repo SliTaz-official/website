@@ -10,7 +10,7 @@ CACHE="/var/cache/slitaz/website"
 OUTPUT="$CACHE/latest.html"
 
 # Feeds URL http://scn.slitaz.org/activity/feed/
-SCN_FEED='http://scn.slitaz.org/groups/devel/feed/'
+SCN_FEED='http://scn.slitaz.org/activity/feed/'
 BLOG_FEED='http://scn.slitaz.org/category/news/feed/'
 WOK_FEED='http://hg.slitaz.org/wok/rss-log'
 

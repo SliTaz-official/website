@@ -76,6 +76,7 @@
 	<a href="es/">Español</a>
 	<a href="fr/">Français</a>
 	<a href="id/">Indonesian</a>
+	<a href="it/">Italiano</a>
 	<a href="pt/">Português</a>
 	<a href="cn/">Chinese</a>
 </div>
@@ -125,7 +126,7 @@
 	<p>
 		<a href="http://scn.slitaz.org/activity/"><img 
 			src="images/users.png" alt="users.png" /></a>
-		Developers wall
+		Community activity
 		<?php get_feed("scn.xml"); ?>
 	</div>
 	<p class="activity_more">

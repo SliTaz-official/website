@@ -83,6 +83,7 @@
 	<a href="../es/">Español</a>
 	<a href="../fr/">Français</a>
 	<a href="../id/">Indonesian</a>
+	<a href="../it/">Italiano</a>
 	<a href="../pt/">Português</a>
 	<a href="../cn/">Chinese</a>
 </div>
