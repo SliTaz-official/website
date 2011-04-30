@@ -87,8 +87,8 @@
 	languages are English, French, German, Portuguese and Chinese. 
 	Spanish is on the stove, but more help is needed. Most of the 
 	communication is done through the
-	<a href="en/mailing-list.html">Mailing List</a> and the
-	<a href="http://labs.slitaz.org/i18n/wiki">Labs</a>.
+	<a href="en/mailing-list.html">Mailing List</a> and the i18n group on
+	<a href="http://scn.slitaz.org/groups/i18n/">SCN</a>.
 </p>
 
 <p>
@@ -97,6 +97,142 @@
 	SliTaz is a community based project, everyone can help out and is
 	more than welcome to join us.
 </p>
+
+<a name="howto"></a>
+<h2>Howto participate</h2>
+
+<p>
+	From fixing typo to translating a full xHTML page we always translation
+	and proofreading to accomplish. Website often move and get update and
+	SliTaz home made tools such TazPanel got new strings depending the new
+	functions we add to it. By the time we have now many way to let you contact
+	us and get involve in the project. 
+</p>
+<p>
+	For sending translation work or request a new language you can join the
+	SliTaz <a href="en/mailing-list.html">Mailing List</a> and/or the
+	community <a href="http://scn.slitaz.org/groups/i18n/">group on SCN</a>
+	and post to the <a href="http://scn.slitaz.org/groups/i18n/forum/">forum</a>
+	witch let you attache files.
+</p>
+
+<h3>Website translation</h3>
+
+<p>
+	Here is an howto translate SliTaz website in a new language. First you need
+	the original website page in English. You have 2 way to get a full copy
+	of the website, use Mercurial and clone the repository or download the
+	latest archive in tar.bz2 format. Using Mercurial let you after update your
+	local copy in one command and downloading directly from the repository
+	let you get just a page if you want. So it'a matter of choice, but if you
+	want to manage a language and push changes yourself, you will have to use
+	Mercurial, here is <a href="en/devel/forge.php">more info on Hg</a>.
+</p>
+<p>
+	Clone the website or get the latest archive:
+</p>
+
+<pre>
+$ hg clone http://hg.slitaz.org/website
+$ wget <a href="http://hg.slitaz.org/website/archive/tip.tar.bz2">http://hg.slitaz.org/website/archive/tip.tar.bz2</a>
+</pre>
+
+<p>
+	Now that you have a full copy of the website you can fix typo or start a new
+	translation. The reference is English, so always copy and english page to
+	your native language and naturraly keep the website structure intact. When
+	you happy with with your work you can sent it the the community like
+	explained before.
+</p>
+<p>
+	If you a bit afraid about sending a mail to more than 300 people on the list
+	or be exposed on the forum, you can send a private message to one the i18n
+	group member on SCN but he might not have time to anser. Keep in mind we are
+	a friendly community and ther is no stupid questions.
+</p>
+
+<h3>System translation</h3>
+
+<p>
+	Like said above, the goal is to provide full language support, not only
+	with the website or forum, but the system itsef. Everything can be translate
+	from menu items to SHell script and GUI boxes. For this we use a standard
+	gettext POT files. 
+</p>
+<p>
+	Each translation of a sub-project have is own file named with the language
+	prefix, example: pt.po or fr.po. This PO file can be translated with a nice
+	graphical editor like POedit on SliTaz. That means you dont need to have
+	programming or goog Linux skills to help or maintain a translation.
+</p>
+<p>
+	If a PO file for language doesn't exist yet you can create it yourself or
+	ask a contributors to do it and commit the new file to Hg. For each project
+	you will find a README file with translation instruction to use msginit
+	and other gettext tools. If you want to update or complet a translation
+	PO file, you can download it from here or from Hg and then send it to
+	the list, the forum or SCN as usual. Note that some project are in the
+	same repository such as tazpkg-notify who is part of tazpkg.
+</p>
+
+<style type="text/css">
+	table {
+			width: 100%;
+			border: 1px solid #ddd;
+			padding: 10px;
+			border-radius: 4px;
+		}
+	.thead { font-weight: bold; }
+</style>
+
+<!--
+	Here we dont link to old gtkdialog box POT file since they will be
+	removed. We ma have link to menu files or some explaination about
+	menu translation.
+-->
+
+<table>
+	<tbody> 
+		<thead class="thead">
+			<tr>
+				<td>Project</td>
+				<td>POT file</td>
+				<td>PO files</td>
+			</tr>
+		</thead>
+		<tr>
+			<td><a href="http://hg.slitaz.org/tazpkg">TazPKG</a></td>
+			<td><a href="http://hg.slitaz.org/tazpkg/raw-file/tip/po/tazpkg/tazpkg.pot">tazpkg.pot</a></td>
+			<td>
+				<a href="http://hg.slitaz.org/tazpkg/raw-file/tip/po/tazpkg/fr.po">fr</a>
+				<a href="http://hg.slitaz.org/tazpkg/raw-file/tip/po/tazpkg/pt.po">pt</a>
+			</td>
+		</tr>
+		<tr>
+			<td><a href="http://hg.slitaz.org/tazpkg">TazPKG Notify</a></td>
+			<td><a href="http://hg.slitaz.org/tazpkg/raw-file/tip/po/tazpkg-notify/tazpkg-notify.pot">tazpkg-notify.pot</a></td>
+			<td>
+				<a href="http://hg.slitaz.org/tazpkg/raw-file/tip/po/tazpkg-notify/fr.po">fr</a>
+				<a href="http://hg.slitaz.org/tazpkg/raw-file/tip/po/tazpkg-notify/pt.po">pt</a>
+			</td>
+		</tr>
+		<tr>
+			<td><a href="http://hg.slitaz.org/tazpanel">TazPanel</a></td>
+			<td><a href="http://hg.slitaz.org/tazpanel/raw-file/tip/po/tazpanel.pot">tazpanel.pot</a></td>
+			<td>
+				<a href="http://hg.slitaz.org/tazpanel/raw-file/tip/po/fr.po">fr</a>
+				<a href="http://hg.slitaz.org/tazpanel/raw-file/tip/po/pt.po">pt</a>
+			</td>
+		</tr>
+		<tr>
+			<td><a href="http://hg.slitaz.org/slitaz-tools">TazBox</a></td>
+			<td><a href="http://hg.slitaz.org/slitaz-tools/file/tip/po/tazbox/tazbox.pot">tazbox.pot</a></td>
+			<td>
+				<a href="http://hg.slitaz.org/slitaz-tools/file/tip/po/tazbox/pt.po">pt</a>
+			</td>
+		</tr>
+	</tbody>
+</table>
 
 <!-- End of content -->
 </div>
