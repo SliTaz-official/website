@@ -36,19 +36,19 @@
 		<h4>Navigazione</h4>
 		<div class="right_box">
 			<ul>
-				<li><a href="../en/mailing-list.html">Mailing List</a> (en)</li>
-				<li><a href="../en/devel/">Sviluppo</a> (en)</li>
+				<li><a href="../../en/mailing-list.html">Mailing List</a> (en)</li>
+				<li><a href="../../en/devel/">Sviluppo</a> (en)</li>
 				<li><a href="../packages/">Pacchetti</a></li>
-				<li><a href="../en/artwork/">Artwork</a> (en)</li>
-				<li><a href="../en/search.html">Cerca</a> (en)</li>
+				<li><a href="../../en/artwork/">Artwork</a> (en)</li>
+				<li><a href="../../en/search.html">Cerca</a> (en)</li>
 			</ul>
 		</div>
 		<div class="left_box">
 			<ul>
 				<li><a href="../">Ultime Novità</a></li>
-				<li><a href="../en/about/">Informazioni</a> (en)</li>
+				<li><a href="../../en/about/">Informazioni</a> (en)</li>
 				<li><a href="../get/">Scarica</a></li>
-				<li><a href="../en/asso/">Associazione</a> (en)</li>
+				<li><a href="../../en/asso/">Associazione</a> (en)</li>
 				<li><a href="../doc/">Documentazione</a></li>
 			</ul>
 		</div>
