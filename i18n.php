@@ -2,7 +2,7 @@
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-    <title>SliTaz - Internationalisation</title>
+    <title>SliTaz - Internationalization</title>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="description" content="SliTaz GNU/Linux LiveCD operating system" />
     <meta name="keywords" lang="en" content="Système, libre, gnu, linux, logiciels opensource, livecd" />
@@ -99,34 +99,34 @@
 </p>
 
 <a name="howto"></a>
-<h2>Howto participate</h2>
+<h2>How to participate</h2>
 
 <p>
-	From fixing typo to translating a full xHTML page we always translation
-	and proofreading to accomplish. Website often move and get update and
-	SliTaz home made tools such TazPanel got new strings depending the new
-	functions we add to it. By the time we have now many way to let you contact
-	us and get involve in the project. 
+	From fixing typos to translating a full xHTML page there's always editing
+	and proofreading to be done. Websites often move and get updated and
+	SliTaz home made tools such as TazPanel acquire new strings depending on the new
+	functions added to it. Over time we have developed a few ways to let you contact
+	us and get involved in the project. 
 </p>
 <p>
-	For sending translation work or request a new language you can join the
-	SliTaz <a href="en/mailing-list.html">Mailing List</a> and/or the
+	For sending translations or requesting a new language you can join the
+	SliTaz <a href="en/mailing-list.html">Mailing List</a> and/or join the
 	community <a href="http://scn.slitaz.org/groups/i18n/">group on SCN</a>
 	and post to the <a href="http://scn.slitaz.org/groups/i18n/forum/">forum</a>
-	witch let you attache files.
+	which lets you attach files.
 </p>
 
 <h3>Website translation</h3>
 
 <p>
-	Here is an howto translate SliTaz website in a new language. First you need
-	the original website page in English. You have 2 way to get a full copy
-	of the website, use Mercurial and clone the repository or download the
-	latest archive in tar.bz2 format. Using Mercurial let you after update your
+	Here is a howto for translating a SliTaz website into a new language. First 
+	you need the original website page in English. You have 2 ways to get a full 
+	copy of the website: use Mercurial and clone the repository or download the
+	latest archive in tar.bz2 format. Using Mercurial lets you update your
 	local copy in one command and downloading directly from the repository
-	let you get just a page if you want. So it'a matter of choice, but if you
+	allows you to get the page you want. So it's matter of choice, but if you
 	want to manage a language and push changes yourself, you will have to use
-	Mercurial, here is <a href="en/devel/forge.php">more info on Hg</a>.
+	Mercurial, here is some <a href="en/devel/forge.php">more info on Hg</a>.
 </p>
 <p>
 	Clone the website or get the latest archive:
@@ -138,41 +138,41 @@ $ wget <a href="http://hg.slitaz.org/website/archive/tip.tar.bz2">http://hg.slit
 </pre>
 
 <p>
-	Now that you have a full copy of the website you can fix typo or start a new
-	translation. The reference is English, so always copy and english page to
-	your native language and naturraly keep the website structure intact. When
-	you happy with with your work you can sent it the the community like
-	explained before.
+	Now that you have a full copy of the website you can fix typos or start a new
+	translation. The reference is English, so always copy an English page to
+	your native language and naturally keep the website structure intact. When
+	you're happy with your work you can send it to the community as
+	explained beforehand.
 </p>
 <p>
-	If you a bit afraid about sending a mail to more than 300 people on the list
-	or be exposed on the forum, you can send a private message to one the i18n
-	group member on SCN but he might not have time to anser. Keep in mind we are
-	a friendly community and ther is no stupid questions.
+	If you're a bit afraid about sending a mail to more than 300 people on the list
+	or becoming exposed on the forum, you can send a private message to one of the i18n
+	group members on SCN, but he/she might not have time to answer. Keep in mind we are
+	a friendly community and there aren't any stupid questions.
 </p>
 
 <h3>System translation</h3>
 
 <p>
-	Like said above, the goal is to provide full language support, not only
-	with the website or forum, but the system itsef. Everything can be translate
-	from menu items to SHell script and GUI boxes. For this we use a standard
+	Like said before, the goal is to provide full language support, not only
+	with the website or forum, but with the system itself. Everything can be translated
+	from menu items to SHell scripts and GUI boxes. For this we use standard
 	gettext POT files. 
 </p>
 <p>
-	Each translation of a sub-project have is own file named with the language
+	Each translation of a sub-project has its own file named with a language
 	prefix, example: pt.po or fr.po. This PO file can be translated with a nice
-	graphical editor like POedit on SliTaz. That means you dont need to have
-	programming or goog Linux skills to help or maintain a translation.
+	graphical editor like POedit on SliTaz. That means you don't need to have
+	programming or Linux skills to help or maintain a translation.
 </p>
 <p>
-	If a PO file for language doesn't exist yet you can create it yourself or
-	ask a contributors to do it and commit the new file to Hg. For each project
-	you will find a README file with translation instruction to use msginit
-	and other gettext tools. If you want to update or complet a translation
+	If a PO file for a language doesn't exist you can create one yourself or
+	ask a contributor to do it for you and commit the new file to Hg. For each project
+	you will find a README file with translation instructions to use msginit
+	and other gettext tools. If you want to update or complete a translation
 	PO file, you can download it from here or from Hg and then send it to
-	the list, the forum or SCN as usual. Note that some project are in the
-	same repository such as tazpkg-notify who is part of tazpkg.
+	the list, the forum or SCN as usual. Note that some projects are contained in the
+	same repository such as tazpkg-notify which is part of tazpkg.
 </p>
 
 <style type="text/css">
@@ -186,9 +186,9 @@ $ wget <a href="http://hg.slitaz.org/website/archive/tip.tar.bz2">http://hg.slit
 </style>
 
 <!--
-	Here we dont link to old gtkdialog box POT file since they will be
-	removed. We ma have link to menu files or some explaination about
-	menu translation.
+	Here we don't link to old gtkdialog box POT files since they will be
+	removed. We may have links to menu files or some explaination about
+	menu translations.
 -->
 
 <table>
