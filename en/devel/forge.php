@@ -211,7 +211,7 @@ Hg commands that can be used.
 	GTK single window, it uses only 14 lines:
 </p>
 <pre>
-#include &gt;gtk/gtk.h&lt;
+#include &lt;gtk/gtk.h&gt;
 
 int main(int argc, char *argv[])
 {
