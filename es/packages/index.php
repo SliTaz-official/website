@@ -38,7 +38,7 @@
 			<ul>
 			<ul>
 				<li><a href="../mailing-list.html">Lista de correo</a></li>
-				<li><a href="../../en/devel/">Desarrollo (en)</a></li>
+				<li><a href="../devel/">Desarrollo</a></li>
 				<li><a href="../packages/">Paquetes</a></li>
 				<li><a href="../artwork/">Artwork</a></li>
 				<li><a href="../search.html">Buscar</a></li>
