@@ -1,0 +1,215 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><title>SliTaz Handbook (en) - Template</title>
+
+
+    
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <meta name="description" content="slitaz English handbook" />
+    <meta name="expires" content="never" />
+    <meta name="modified" content="2008-02-26 18:30:00" />
+    <meta name="publisher" content="www.slitaz.org" />
+    <meta name="author" content="Christophe Lincoln" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="book.css" /></head><body bgcolor="#ffffff">
+
+<!-- Header and quick navigation -->
+<div id="header">
+<div id="quicknav" align="right">
+    <a name="top"></a>
+    <a href="index.html">Table of contents</a>
+</div>
+<h1><font color="#3e1220">SliTaz Handbook (en)</font></h1>
+</div>
+
+<!-- Content. -->
+<div id="content">
+<div class="content-right"></div>
+
+<h2><font color="#df8f06">LightTPD Web Server</font></h2>
+
+<ul>
+	<li><a href="#about">About LightTPD.</a></li>
+	<li><a href="#var-www">/var/www</a> - Root directory of documents.</li>
+	<li><a href="#Public">~/Public</a> - Public directory of users.</li>
+	<li><a href="#config">lighttpd.conf</a> - LightTPD Configuration File.</li>
+	<li><a href="#start-stop-restart">Start, stop, restart the server.</a></li>
+	<li><a href="#cgi-perl">Scripts CGI and Perl</a> - CGI scripts using Perl.</li>
+	<li><a href="#cgi-python">Scripts CGI and Python</a> - CGI scripts using Python.</li>
+	<li><a href="#auth">Authentication</a> - Protect directories using username and password.</li>
+</ul>
+
+<a name="about"></a>
+<h3>About LightTPD</h3>
+<p>
+This chapter describes the configuration and use of the LightTPD web server. It's a fast, secure, flexible HTTP 
+server, using a small memory footprint. It enables intelligent management of the cpu load and offers
+FastCGI support, CGI, Auth, Output compression and the rewriting of URLs etc. LightTPD is a cheap way to host your 
+own site on an old machine.
+</p>
+<p>
+On SliTaz the server is automatically launched at system startup and is preconfigured with PHP. The root
+of the documents served by the default server are in <code>/var/www</code> and contain a page <code>index.html</code>,
+displayed by default, images are stored in the <code>images/</code> directory.
+LightTPD website: <a href="http://www.lighttpd.net/">http://www.lighttpd.net/</a>
+</p>
+<a name="var-www"></a>
+<h3>/var/www - Root directory of documents</h3>
+<p>
+The directory /var/www is the root directory of documents by default. You can access this via the URL
+<a href="http://localhost/">http://localhost/</a>. If you want to host a site, you can save all your documents
+in here. If you want to host multiple sites, you'll need to create virtual hosts. Note you can also check the 
+<a href="http://localhost/server-status">http://localhost/server-status</a>. 
+
+</p>
+<a name="Public"></a>
+<h3>~/Public - Public directory of users</h3>
+<p>
+SliTaz offers the users of the system a public space to place documents, HTML in general. 
+This directory is named Public and must be within the root of your user space, such as /home/hacker/Public.
+To create this directory use the mkdir command:
+</p>
+<pre> $ mkdir ~/Public
+</pre>
+<p>
+You can then have access via the URL: 
+<a href="http://localhost/%7Ehacker/">http://localhost/~hacker/</a>. You can also use the machine name or IP 
+address if you connect from another computer.
+</p>
+<a name="config"></a>
+<h3>/etc/lighttpd/lighttpd.conf - LightTPD configuration file</h3>
+<p>
+The main configuration file for LightTPD (<code>lighttpd.conf</code>) is located in /etc/lighttpd/. This file provided by 
+SliTaz is self-explanatory, just browse. You can find other examples on the LightTPD website. On
+SliTaz you'll also find a <code>vhosts.conf</code> file for the configuration of any virtual hosts (hosting 
+several sites on the same server).
+</p>
+<a name="start-stop-restart"></a>
+<h3>Start, stop, restart the web server</h3>
+<p>
+By default, SliTaz starts the server automatically at boot, to prevent this you need to remove
+<code>lighttpd</code> from the variable RUN_DAEMONS located in the system file
+<code>/etc/rcS.conf</code>. To start, stop, restart the server; you can use the commands:
+<code>/etc/init.d/lighttpd [start|stop|restart]</code>. Example to restart the server after
+changing the configuration file:
+</p>
+<pre> # /etc/init.d/lighttpd restart
+</pre>
+
+<a name="cgi-perl"></a>
+<h3>CGI scripts using Perl</h3>
+<p>
+To configure the LightTPD server to locate the path of the <code>perl</code> binary and use CGI/Perl, you'll need to
+install perl and modify the server configuration file. Example using Geany:
+</p>
+<pre> # tazpkg get-install perl
+ # geany /etc/lighttpd/lighttpd.conf &amp;
+</pre>
+<pre class="script"># CGI module. You can install Perl and assign .pl and .cgi scripts
+# to /usr/bin/perl
+$HTTP["url"] =~ "/cgi-bin/" {
+  cgi.assign = (
+    ".sh" =&gt; "/bin/sh",
+    ".cgi" =&gt; "/usr/bin/perl,
+    ".pl" =&gt; "/usr/bin/perl
+  )
+}
+</pre>
+
+<a name="cgi-python"></a>
+<h3>CGI scripts using Python</h3>
+<p>
+To configure the LightTPD server to locate the path of the <code>python</code> binary and use CGI/Python, you'll need to
+to install python and modify the server configuration file. Example using Geany:
+</p>
+<pre> # tazpkg get-install python
+ # geany /etc/lighttpd/lighttpd.conf &amp;
+</pre>
+<pre class="script"># CGI module. You can install Python and assign .py and .cgi scripts
+# to /usr/bin/python
+$HTTP["url"] =~ "/cgi-bin/" {
+  cgi.assign = (
+    ".sh" =&gt; "/bin/sh",
+    ".cgi" =&gt; "/usr/bin/python,
+    ".py" =&gt; "/usr/bin/python
+  )
+}
+</pre>
+<p>
+For the changes to be taken into effect and to use your first CGI scripts on SliTaz, just
+restart the LightTPD server:
+</p>
+<pre> # /etc/init.d/lighttpd restart
+</pre>
+
+<a name="auth"></a>
+<h3>Authentication - Protection for the directories</h3>
+<p>
+LightTPD provides authentication modules that can for example, protect a directory. The server 
+offers several authentication methods, but we will begin by using the basic method without encrypting any
+passwords. In order to be able to use the module <code>mod_auth</code>, you must install the lighttpd-modules
+package (<code>tazpkg get-install lighttpd-modules</code>), once installed <code>mod_auth</code>
+must be added to the list of modules:
+</p>
+<pre class="script"># Modules to load.
+# See /usr/lib/lighttpd for all available modules.
+#
+server.modules = (
+  "mod_access",
+  "mod_auth",
+  "...",
+)
+</pre>
+<p>
+Now you can configure the modules by specifying the debug level and method (<code>plain</code>) and the
+path to the file containing a list of names using a protected password to access the directories. You must also 
+define the directories that require authorization. In this example we'll protect the <code>admin/</code> directory
+and authorise it's access to user hacker (<code>user=hacker</code>):
+</p>
+<pre class="script"># Authentification for protected directory.
+auth.debug = 2
+auth.backend = "plain"
+auth.backend.plain.userfile = "/etc/lighttpd/plain.passwd"
+auth.require = ( "/admin/" =&gt;
+(
+"method" =&gt; "basic",
+"realm" =&gt; "Password protected area",
+"require" =&gt; "user=hacker"
+)
+)
+</pre>
+<p>
+Finally, we now create the file containing the passwords, add a user and restart the server for testing.
+The basic syntax for the file is <code>user:password</code>. You can create the file and add a user with the 
+<code>echo</code> command or edit with your favorite text editor. To add <code>hacker:root</code>
+to the password file <code>/etc/lighttpd/plain.passwd</code>:
+</p>
+<pre> # echo "hacker:root" &gt; /etc/lighttpd/plain.passwd
+ Or :
+ # nano /etc/lighttpd/plain.passwd
+</pre>
+<p>
+To test the address: http://localhost/admin/, just restart the server:
+</p>
+<pre> # /etc/init.d/lighttpd restart
+</pre>
+
+<!-- End of content -->
+</div>
+
+<!-- Footer. -->
+<div id="footer">
+	<div class="footer-right"></div>
+	<a href="#top">Top of the page</a> | 
+	<a href="http://www.slitaz.org/en/doc/handbook/index.html">Table of contents</a>
+</div>
+
+<div id="copy">
+    Copyright © 2008 <a href="http://www.slitaz.org/en/">SliTaz</a> -
+    <a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>;<br />
+    Documentation is under
+    <a href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License</a>
+    and code is <a href="http://validator.w3.org/">valid xHTML 1.0</a>.
+</div>
+
+</body></html>
+
