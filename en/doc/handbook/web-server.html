@@ -48,14 +48,14 @@ own site on an old machine.
 </p>
 <p>
 On SliTaz the server is automatically launched at system startup and is preconfigured with PHP. The root
-of the documents served by the default server are in <code>/var/www</code> and contain a page <code>index.html</code>,
-displayed by default, images are stored in the <code>images/</code> directory.
+of the documents served by default are in <code>/var/www</code> and contain a default page <code>index.html</code>,
+images are stored in the <code>images/</code> directory.
 LightTPD website: <a href="http://www.lighttpd.net/">http://www.lighttpd.net/</a>
 </p>
 <a name="var-www"></a>
 <h3>/var/www - Root directory of documents</h3>
 <p>
-The directory /var/www is the root directory of documents by default. You can access this via the URL
+The directory /var/www is the root directory of documents - you can access this via the URL
 <a href="http://localhost/">http://localhost/</a>. If you want to host a site, you can save all your documents
 in here. If you want to host multiple sites, you'll need to create virtual hosts. Note you can also check the 
 <a href="http://localhost/server-status">http://localhost/server-status</a>. 
@@ -64,7 +64,7 @@ in here. If you want to host multiple sites, you'll need to create virtual hosts
 <a name="Public"></a>
 <h3>~/Public - Public directory of users</h3>
 <p>
-SliTaz offers the users of the system a public space to place documents, HTML in general. 
+SliTaz provides the users of the system a public space to place documents, HTML in general. 
 This directory is named Public and must be within the root of your user space, such as /home/hacker/Public.
 To create this directory use the mkdir command:
 </p>
