@@ -49,7 +49,7 @@
 		<h4>Navigazione</h4>
 		<div class="right_box">
 			<ul>
-				<li><a href="../en/mailing-list.html">Mailing List</a> (en)</li>
+				<li><a href="mailing-list.html">Mailing List</a></li>
 				<li><a href="../en/devel/">Sviluppo</a> (en)</li>
 				<li><a href="packages/">Pacchetti</a></li>
 				<li><a href="../en/artwork/">Artwork</a> (en)</li>
