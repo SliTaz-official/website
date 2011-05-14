@@ -256,8 +256,8 @@ There is therefore no longer a libiconv package (1.2 MB) in SliTaz.
 <p>
 The tazpkg packages in SliTaz are automatically created via Tazwok and a 
 receipt in the wok. The Cookbook describes the 
-<a href="../doc/cookbook/wok-tools.html">use of tools</a> 
-and the format of <a href="../doc/cookbook/receipts.html">receipts</a>.
+<a href="http://doc.slitaz.org/en:cookbook:wok">use of tools</a> 
+and the format of <a href="http://doc.slitaz.org/en:cookbook:receipt">receipts</a>.
 These are required reading before we begin.
 </p>
 <p>
@@ -276,7 +276,7 @@ work doesn't already exist in the
 <a href="http://download.tuxfamily.org/slitaz/packages/undigest/">undigest</a> 
 wok provided by the primary SliTaz mirror. Don't forget that the members 
 of the list are there to help you and that the documentation of the 
-<a href="../doc/cookbook/wok-tools.html">wok and tools</a> 
+<a href="http://doc.slitaz.org/en:cookbook:wok">wok and tools</a> 
 exists to help you get started.
 </p>
 
