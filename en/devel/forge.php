@@ -267,7 +267,7 @@ Note that the current packages are not immutable, if you find an alternative
 that is lighter, with more features or more <em>sexy</em> for a few extra KB, 
 you can suggest it on the Mailing List. Particular attention is given to 
 packages for the LiveCD, these should be stripped, removing unnecesary 
-dependancies and compiler options. In general candidate packages for the core 
+dependencies and compiler options. In general candidate packages for the core 
 LiveCD are discussed on the Mailing List.
 </p>
 <p>
