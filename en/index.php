@@ -101,7 +101,7 @@
 
 <div class="box">
 	<img src="../images/update.png" style="float: left; margin-right: 10px; " />
-	Help SliTaz founder Pankso work 100% on SliTaz until july -
+	Help the SliTaz founder Pankso to work 100% on SliTaz until July -
 	<a href="http://www.gofundme.com/pankso">Donate Online</a>
 </div>
 
