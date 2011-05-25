@@ -93,10 +93,8 @@
 
 <div class="box">
 	<img src="../images/update.png" style="float: left; margin-right: 10px; " />
-	Aidez Pankso le créateur de Slitaz à travailler un mois à temps plein
-	sur SliTaz et payer le train et autres frais pour aller à l'expo Linux
-	à Paris et gérer le stand SliTaz. Paris est aussi l'occasion aux développeurs
-	de se rencontrer -
+	Aidez Pankso le créateur de Slitaz à travailler à 100% sur le projet
+	jusqu'en juillet -
 	<a href="http://www.gofundme.com/pankso">Donnez en ligne</a>
 </div>
 
