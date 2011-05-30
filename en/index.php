@@ -127,6 +127,7 @@
 </div>
 
 <div class="news">
+<a name="news"></a>
 
 <ul>
 	<!-- <li><strong>Date - Title</strong>
