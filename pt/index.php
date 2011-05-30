@@ -105,6 +105,33 @@
 
 <div class="news">
 <ul>
+	<li><strong>29 Mar 2011 - Novo Cooking (20110329)</strong>
+	<p>
+		Os desenvolvedores do SliTaz anunciam o lançamento de uma nova versão
+		de testes (cooking). Os pacotes foram recompilados e otimizados para
+		a arquitetura i486 pelo Cookutils, a nova geração das ferramentas de
+		criação de pacotes da distribuição. O servidor de compilação agora
+		possui uma amigável interface web que funciona por padrão em qualquer
+		instalação do SliTaz.
+	</p>
+	<p>
+		A inicialização foi melhorada e a configuração no primeiro boot foi
+		simplificada. Este lançamento traz o TazPanel, uma interface web que
+		centraliza a configuração do sistema e gerenciamento de pacotes,
+		substituindo as antigas caixas de diálogo da distribuição e podendo,
+		inclusive, ser utilizada em conexões remotas.
+	</p>
+	<p>
+		O sistema gráfico agora suporta renderização direta (DRI), então os
+		pacotes libdrm, linux-drm e linux-agp passaram a fazer parte da ISO
+		padrão. Isto adicionou 1 MB ao sistema de arquivos comprimido, porém
+		a nova forma de compilação de pacotes economiza espaço, o que manteve
+		o tamanho da ISO em apenas 30 MB! Download:
+		<a href="http://mirror.slitaz.org/iso/cooking/slitaz-cooking.iso">
+			slitaz-cooking.iso</a>
+	</p>
+	</li>
+	
 	<li><strong>29 Mar 2011 - Novo Cooking (20110329)</strong>	
 	<p>Os desenvolvedores do SliTaz anunciam o lançamento de uma nova ISO
 	da versão Cooking (de testes), que conta com mais de 2900 pacotes

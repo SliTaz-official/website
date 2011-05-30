@@ -132,9 +132,36 @@
 	<!-- <li><strong>Date - Title</strong>
 	<p></p>
 	</li> -->
+	<li><strong>Date - New and fresh Cooking 20110531</strong>
+	<p>
+		The Slitaz team is proud to announce the release of a new Cooking version
+		built with our new and fresh packages from cookutils. Cookutils is one of
+		the new generation of tools to build SliTaz packages and provides a Build
+		Bot with a nice web interface that works out-of-the-box on any SliTaz
+		system. These new packages have been built with a new i486 optimized
+		toolchain.
+	</p>
+	<p>
+		The full boot process has been improved and the first boot configuration
+		is now done through GTK boxes in a X session and the boot time is also
+		faster. This version comes with a new GUI tool for system configuration
+		as well as our new system configuration panel aka TazPanel. TazPanel
+		lets you configure the entire system via a xHTML/CSS web interface
+		(useful for remote control) and it also handles package management and
+		replaces the old GTK box.
+	</p>
+	<p>
+		Xorg now has dri support, so libdrm, linux-drm as well as linux-agp
+		are part of the core ISO. This adds 1Mb to the compressed root
+		filesystem. But we managed to save a lot of space in the core ISO with
+		our new packages and this new Cooking is 30Mb! This new cooking also
+		provide better internationalization and Italien support! Download:
+		<a href="http://mirror.slitaz.org/iso/cooking/slitaz-cooking.iso">
+			slitaz-cooking.iso</a>
+	</p>
+	</li>
 	
-	<li>
-	<strong>29 March 2011 - New Cooking 20110329</strong>
+	<li><strong>29 March 2011 - New Cooking 20110329</strong>
 	<p>
 	The SliTaz team is pleased to announce the release of a new cooking
 	ISO featuring over 2900 packages. All packages have been rebuilt using
