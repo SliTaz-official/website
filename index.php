@@ -99,7 +99,9 @@
 <h2>Latest News</h2>
 
 <ul>
-	<li><strong><a href="en/#news">New Cooking 20110329</a></strong>
+	<li><strong><a href="en/#news">New and fresh Cooking 20110531</a></strong>
+		<span>- 31 May 2011</span></li>
+	<li><strong><a href="en/#20110329">New Cooking 20110329</a></strong>
 		<span>- 29 March 2011</span></li>
 	<li><strong><a href="en/#20101104">New Cooking 20101104</a></strong>
 		<span>- 4 November 2010</span></li>
@@ -107,8 +109,6 @@
 		<span>- 8 May 2010</span></li>
 	<li><strong>SliTaz GNU/Linux 3.0 released</strong>
 		<span>- 28 March 2010 </span></li>
-	<li><strong>RC series and Solutionslinux 2010 (Paris)</strong>
-		<span>- 14 March 2010</span></li>
 </ul>
 
 <!-- End of news -->

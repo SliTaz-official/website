@@ -105,7 +105,7 @@
 
 <div class="news">
 <ul>
-	<li><strong>29 Mar 2011 - Novo Cooking (20110329)</strong>
+	<li><strong>31 May 2011 - Novo Cooking (20110329)</strong>
 	<p>
 		Os desenvolvedores do SliTaz anunciam o lançamento de uma nova versão
 		de testes (cooking). Os pacotes foram recompilados e otimizados para

@@ -132,7 +132,7 @@
 	<!-- <li><strong>Date - Title</strong>
 	<p></p>
 	</li> -->
-	<li><strong>Date - New and fresh Cooking 20110531</strong>
+	<li><strong>31 May 2011 - New and fresh Cooking 20110531</strong>
 	<p>
 		The Slitaz team is proud to announce the release of a new Cooking version
 		built with our new and fresh packages from cookutils. Cookutils is one of
@@ -160,7 +160,8 @@
 			slitaz-cooking.iso</a>
 	</p>
 	</li>
-	
+
+	<a name="20110329"></a>
 	<li><strong>29 March 2011 - New Cooking 20110329</strong>
 	<p>
 	The SliTaz team is pleased to announce the release of a new cooking
