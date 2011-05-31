@@ -137,18 +137,18 @@
 	</p>
 	<p>
 		Le processus de démarrage a été améliorée et la configuration du
-		premier démarrage est maintenant complété par des dialogues graophiques
+		premier démarrage est maintenant complétée par des dialogues graphiques
 		simples. Une interface Web standard, TazPanel, vous permet de
 		configurer votre système. (utile pour les connexions à distance), qui
-		gère également la gestion des paquets. TazPanel remplace un certain
+		gère également les paquets. TazPanel remplace un certain
 		nombre de «boîtes» dans les versions précédentes.
 	</p>
 	<p>
 		Le système d'affichage (X.org) utilise le rendu direct (DRI), les
 		paquetages libdrm, linux-drm et linux-agp font partie de l'ISO de base.
 		Bien que cela ajoute de 1 Mo au système de fichiers compressé, nous
-		avons parailleurs gagné beaucoup d'espace avec les paquetages
-		reconstruits. Cette nouvelle ISO Cookingfait tout just 30Mo et inclu un
+		avons par ailleurs gagné beaucoup d'espace avec les paquetages
+		reconstruits. Cette nouvelle ISO Cooking fait tout juste 30Mo et inclut un
 		support complet de l'italien! Téléchargement:
 		<a href="http://mirror.slitaz.org/iso/cooking/slitaz-cooking.iso">
 			slitaz-cooking.iso</a>
