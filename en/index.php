@@ -153,10 +153,10 @@
 	</p>
 	<p>
 		Xorg now has dri support, so libdrm, linux-drm as well as linux-agp
-		are part of the core ISO. This adds 1Mb to the compressed root
+		are part of the core ISO. This adds 1MB to the compressed root
 		filesystem. But we managed to save a lot of space in the core ISO with
-		our new packages and this new Cooking is 30Mb! This new cooking also
-		provide better internationalization and Italien support! Download:
+		our new packages and this new Cooking is 30MB! This new cooking also
+		provides better internationalization and Italian support! Download:
 		<a href="http://mirror.slitaz.org/iso/cooking/slitaz-cooking.iso">
 			slitaz-cooking.iso</a>
 	</p>
