@@ -70,6 +70,7 @@
 <div id="lang">
 	<a href="../i18n.php">
 		<img src="../images/locale.png" alt="locale.png" /></a>
+	<a href="../da/">Dansk</a>
 	<a href="../de/">Deutsch</a>
 	<a href="../en/">English</a>
 	<a href="../es/">Español</a>
