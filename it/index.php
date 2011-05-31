@@ -102,11 +102,11 @@
 
 <div class="box">
 	<img src="../images/update.png" style="float: left; margin-right: 10px; " />
-	Aiuta il founder di SliTaz Pankso a lavorare almeno un mese tutto il
-	tempo su SliTaz e a pagare il biglietto del treno nonché il cibo per
-	andare all'expo di Linux a Parigi per gestire lo stand di SliTaz.
-	Parigi è anche un'opportunità per gli sviluppatori di incontrarsi -
-	<a href="http://www.gofundme.com/pankso">Donazioni Online</a>
+	<p>
+		Aiuta il founder di SliTaz Pankso a lavorare almeno un mese tutto il
+		tempo su SliTaz -
+		<a href="http://www.gofundme.com/pankso">Donazioni Online</a>
+	</p>
 </div>
 
 <!--
