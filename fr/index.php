@@ -126,7 +126,7 @@
 	<!-- <li><strong>Date - Title</strong>
 	<p></p>
 	</li> -->
-	<li><strong>*1 Mai 2011 - Nouvelle et fraîche Cooking 20110329</strong>
+	<li><strong>31 Mai 2011 - Nouvelle et fraîche Cooking 20110329</strong>
 	<p>
 		L'équipe de SliTaz est fière d'annoncer la disponibilité d'une nouvelle
 		version "cooking" de la distribution. Les paquetages ont été entièrement
