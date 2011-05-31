@@ -105,8 +105,10 @@
 
 <div class="box">
 	<img src="../images/update.png" style="float: left; margin-right: 10px; " />
-	Hjælp SliTaz stifteren Pankso med at arbejde 100% på SliTaz indtil Juli -
-	<a href="http://www.gofundme.com/pankso">Giv penge NU</a>
+	<p>
+		Hjælp SliTaz stifteren Pankso med at arbejde 100% på SliTaz indtil Juli -
+		<a href="http://www.gofundme.com/pankso">Giv penge NU</a>
+	</p>
 </div>
 
 <!--
