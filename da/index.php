@@ -212,10 +212,10 @@
 	the forum.</p>
 	</li>
 
-	<li><a href="news/">Flere nyheder</a> eller gennemse arkiverne:
-	<a href="news/2007.html">2007</a> |
-	<a href="news/2008.html">2008</a> |
-	<a href="news/2009.html">2009</a></li>
+	<li><a href="../en/news/">Flere nyheder</a> eller gennemse arkiverne (English):
+	<a href="../en/news/2007.html">2007</a> |
+	<a href="../en/news/2008.html">2008</a> |
+	<a href="../en/news/2009.html">2009</a></li></li>
 </ul>
 
 <!-- End of news -->
