@@ -107,8 +107,6 @@
 		<span>- 4 November 2010</span></li>
 	<li><strong>Summer of Documentation</strong>
 		<span>- 8 May 2010</span></li>
-	<li><strong>SliTaz GNU/Linux 3.0 released</strong>
-		<span>- 28 March 2010 </span></li>
 </ul>
 
 <!-- End of news -->
