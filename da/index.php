@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <! Danish (da) translation by Bo Vagner Højer - bohoejer@live.dk
-   Member of Labitat Hackerspace, Copenhagnen - www.labitat.dk
+   Member of Labitat Hackerspace, Copenhagen - www.labitat.dk
    visit our hackerspace every tuesday evening for free - always hot coffee >     
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="da" lang="da">
 <head>
@@ -89,7 +89,7 @@
 <div id="lang">
 	<a href="../i18n.php">
 		<img src="../images/locale.png" alt="Sprog:" /></a>
-   <strong>Dansk</strong>   
+   <strong title="Oversættelse ved Bo Vagner Højer - bohoejer@live.dk">Dansk</strong>   
    <a href="../de/">Deutsch</a>
 	<a href="../en/">English</a>
 	<a href="../es/">Español</a>
@@ -212,7 +212,7 @@
 	the forum.</p>
 	</li>
 
-	<li><a href="../en/news/">Flere nyheder</a> eller gennemse arkiverne (English):
+	<li><a href="../en/news/">Flere nyheder</a> eller gennemse arkiverne (på engelsk):
 	<a href="../en/news/2007.html">2007</a> |
 	<a href="../en/news/2008.html">2008</a> |
 	<a href="../en/news/2009.html">2009</a></li></li>
