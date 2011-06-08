@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+	<atom:link href="http://www.slitaz.org/en/rss.xml" rel="self" type="application/rss+xml" />
+	<title>Slitaz GNU/Linux nyheder</title>
+	<link>http://www.slitaz.org/en/rss.xml</link>
+	<language>da</language>
+	<description>
+		SliTaz GNU/Linux Nyheder
+	</description>
+	<copyright>Ophavsret © www.slitaz.org - GNU gpl</copyright>
+	<lastBuildDate>Sun, 28 Mar 2010 16:20:00 GMT</lastBuildDate>
+
+	<image>
+		<title>Slitaz GNU/Linux (da)</title>
+		<url>http://www.slitaz.org/pics/artwork/slitaz-spider-48x48.png</url>
+		<link>http://www.slitaz.org/da/</link>
+	</image>
+	
+	<!-- justify to 80 chars or less for text-mode RSS readers also -->
+	
+	<item>
+		<title>Ny og frisk udviklingsversion 20110531</title>
+		<link>http://www.slitaz.org/da/get/</link>
+		<guid isPermaLink="true">http://www.slitaz.org/</guid>
+		<pubDate>Man, 31 May 2011 22:20:00 GMT</pubDate>
+		<description>
+SliTaz holdet er stolt af at kunne annoncere frigivelsen af en ny 
+udviklingsversion bygget med vores nye og friske programpakker fra cookutils.		
+Cookutils er en af den nye genneration af værktøjer til at bygge SliTaz 
+programpakker og giver en byggerobot
+med en flot webgrændseflade der arbejder ud-af-boksen på ethvert SliTaz
+system. Disse nye pakker er blevet bygget med en ny i486 optimeret
+værktøjskæde.
+
+Hele opstartsprocessen er blevet forbedret og den første konfiguration sker nu 
+gennem GTK-kasser i en X session og opstartstiden er også hurtigere. 
+Denne version kommer med et nyt grafisk værktøj til systemkonfiguration
+så vel som vores nye systemkonfigurationspanel kendt som TazPanel.
+TazPanel lader dig konfigurer hele systemet via en xHTML/CSS 
+webgrændseflade (god til fjernkontrol) og det laver også pakkehåndtering 
+og afløser derved den gamle GTK-kasse.
+
+Nu har Xorg dri understøttelse, så libdrm, linux-drm såvel som linux-agp
+er del af kerne-cdén. Dette gør det komprimerede rodfilsystem 1Mb større.
+Vi har dog klaret at spare en masse plads i kerne-cdén med vores nye
+programpakker og denne nye udviklingsudgave er på 30Mb! Denne nye
+version giver også bedre internationalisering og Italiensk understøttelse!
+		</description>
+	</item>
+	
+	<item>
+		<title>SliTaz GNU/Linux 3.0 frigivelse</title>
+		<link>http://www.slitaz.org/da/get/index.html</link>
+		<guid isPermaLink="true">http://www.slitaz.org/da/</guid>
+		<pubDate>Sun, 28 Mar 2010 16:20:00 GMT</pubDate>
+		<description>
+All of the SliTaz team are proud to announce the release of the SliTaz 
+GNU/Linux 3.0 operating system. It's simpler, faster, customizable, 
+mightier and yet incredibly tiny. The new SliTaz stable version is now 
+out after one year of development.
+
+The core desktop provides a fully featured desktop powered by Xorg 7.4, 
+Openbox, LXDE components and home made tools. It lets you easily connect
+to the Internet to surf the web with the Midori web browser, listen to
+music or manage your pictures.
+
+The default core system fits into a 30 MB ISO image and LiveCD flavors 
+start at 8 MB. This stable version has been built by a new toolchain
+including GCC 4.4.1 and uses the Linux kernel 2.6.30.6. You can read
+the full Releases Notes for more information and download a LiveCD image
+from the SliTaz mirrors.
+		</description>
+	</item>
+
+</channel>
+</rss>
