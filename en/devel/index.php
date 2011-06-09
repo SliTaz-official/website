@@ -80,7 +80,7 @@
 	<li><a href="../../i18n.php">Internationalization project</a> -
 	Translation, goals and management.</li>
 	<li><a href="http://hg.slitaz.org/" >Mercurial Repositories</a></li>
-	<li><a href="http://bts.slitaz.org/">SliTaz Bug Tracker</a></li>
+	<li><a href="http://bugs.slitaz.org/">SliTaz Bug Tracker</a></li>
 </ul>
 
 <a name="devel"></a>

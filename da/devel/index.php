@@ -78,12 +78,12 @@
 <h2>Udviklernes hjørne</h2>
 
 <ul>
-	<li><a href="forge.php">Forge</a> - Samarbejdende styring, KISS,
+	<li><a href="forge.php">Smedien</a> - Samarbejdende styring, KISS,
 	retningslinier, Mercurial depoter, hjemmeside og andre tjenester.</li>
 	<li><a href="../../i18n.php">Internationaliseringsprojekt</a> -
 	Oversættelse, mål og styring.</li>
 	<li><a href="http://hg.slitaz.org/" >Mercurial depoter</a></li>
-	<li><a href="http://bts.slitaz.org/">SliTaz Fejlsporing</a></li>
+	<li><a href="http://bugs.slitaz.org/">SliTaz Fejlsporing</a></li>
 </ul>
 
 <a name="devel"></a>
