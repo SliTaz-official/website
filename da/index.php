@@ -103,13 +103,12 @@
 <!-- Content -->
 <div id="content">
 
-<div class="box">
+<!-- <div class="box">
 	<img src="../images/update.png" style="float: left; margin-right: 10px; " />
 	<p>
-		Hjælp SliTaz stifteren Pankso med at arbejde 100% på SliTaz indtil Juli -
-		<a href="http://www.gofundme.com/pankso">Giv penge NU</a>
+		Call for sponsor!
 	</p>
-</div>
+</div> -->
 
 <!--
     SliTaz news starting.

@@ -100,14 +100,12 @@
 <!-- Content -->
 <div id="content">
 
-<div class="box">
+<!-- <div class="box">
 	<img src="../images/update.png" style="float: left; margin-right: 10px; " />
 	<p>
-		Aiuta il founder di SliTaz Pankso a lavorare almeno un mese tutto il
-		tempo su SliTaz -
-		<a href="http://www.gofundme.com/pankso">Donazioni Online</a>
+		Call for sponsor!
 	</p>
-</div>
+</div> -->
 
 <!--
     SliTaz news starting.

@@ -92,14 +92,12 @@
 <!-- Content -->
 <div id="content">
 
-<div class="box">
+<!-- <div class="box">
 	<img src="../images/update.png" style="float: left; margin-right: 10px; " />
 	<p>
-		Aidez Pankso le créateur de Slitaz à travailler à 100% sur le projet
-		jusqu'en juillet -
-		<a href="http://www.gofundme.com/pankso">Donnez en ligne</a>
+		Call for sponsor!
 	</p>
-</div>
+</div> -->
 
 <!--
     SliTaz news starting.

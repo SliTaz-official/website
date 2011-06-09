@@ -85,13 +85,12 @@
 <!-- Content -->
 <div id="content">
 
-<div class="box">
+<!-- <div class="box">
 	<img src="images/update.png" style="float: left; margin-right: 10px; " />
 	<p>
-		Help the SliTaz founder Pankso to work 100% on SliTaz until July -
-		<a href="http://www.gofundme.com/pankso">Donate Online</a>
+		Call for sponsor!
 	</p>
-</div>
+</div> -->
 
 <!-- For the main index with slideshow we keep block_nav and block_top
      at min-height: 220px; -->
