@@ -134,7 +134,8 @@
 
 <pre>
 $ hg clone http://hg.slitaz.org/website
-$ wget <a href="http://hg.slitaz.org/website/archive/tip.tar.bz2">http://hg.slitaz.org/website/archive/tip.tar.bz2</a>
+$ wget <a href="http://hg.slitaz.org/website/archive/tip.tar.bz2">
+	http://hg.slitaz.org/website/archive/tip.tar.bz2</a>
 </pre>
 
 <p>
@@ -167,12 +168,13 @@ $ wget <a href="http://hg.slitaz.org/website/archive/tip.tar.bz2">http://hg.slit
 </p>
 <p>
 	If a PO file for a language doesn't exist you can create one yourself or
-	ask a contributor to do it for you and commit the new file to Hg. For each project
-	you will find a README file with translation instructions to use msginit
-	and other gettext tools. If you want to update or complete a translation
-	PO file, you can download it from here or from Hg and then send it to
-	the list, the forum or SCN as usual. Note that some projects are contained in the
-	same repository such as tazpkg-notify which is part of tazpkg.
+	ask a contributor to do it for you and commit the new file to Hg. For each
+	project you will find a README file with translation instructions to use
+	msginit and other gettext tools. If you want to update or complete a
+	translation PO file, you can download it from here or from Hg and then
+	send it to the list, the forum or SCN as usual. Note that some projects
+	are contained in the same repository such as tazpkg-notify which is part
+	of tazpkg.
 </p>
 
 <style type="text/css">
@@ -202,7 +204,8 @@ $ wget <a href="http://hg.slitaz.org/website/archive/tip.tar.bz2">http://hg.slit
 		</thead>
 		<tr>
 			<td><a href="http://hg.slitaz.org/tazpkg">TazPKG</a></td>
-			<td><a href="http://hg.slitaz.org/tazpkg/raw-file/tip/po/tazpkg/tazpkg.pot">tazpkg.pot</a></td>
+			<td><a href="http://hg.slitaz.org/tazpkg/raw-file/tip/po/tazpkg/tazpkg.pot">
+				tazpkg.pot</a></td>
 			<td>
 				<a href="http://hg.slitaz.org/tazpkg/raw-file/tip/po/tazpkg/fr.po">fr</a>
 				<a href="http://hg.slitaz.org/tazpkg/raw-file/tip/po/tazpkg/pt.po">pt</a>
@@ -210,7 +213,8 @@ $ wget <a href="http://hg.slitaz.org/website/archive/tip.tar.bz2">http://hg.slit
 		</tr>
 		<tr>
 			<td><a href="http://hg.slitaz.org/tazpkg">TazPKG Notify</a></td>
-			<td><a href="http://hg.slitaz.org/tazpkg/raw-file/tip/po/tazpkg-notify/tazpkg-notify.pot">tazpkg-notify.pot</a></td>
+			<td><a href="http://hg.slitaz.org/tazpkg/raw-file/tip/po/tazpkg-notify/tazpkg-notify.pot">
+				tazpkg-notify.pot</a></td>
 			<td>
 				<a href="http://hg.slitaz.org/tazpkg/raw-file/tip/po/tazpkg-notify/fr.po">fr</a>
 				<a href="http://hg.slitaz.org/tazpkg/raw-file/tip/po/tazpkg-notify/pt.po">pt</a>
@@ -218,17 +222,43 @@ $ wget <a href="http://hg.slitaz.org/website/archive/tip.tar.bz2">http://hg.slit
 		</tr>
 		<tr>
 			<td><a href="http://hg.slitaz.org/tazpanel">TazPanel</a></td>
-			<td><a href="http://hg.slitaz.org/tazpanel/raw-file/tip/po/tazpanel.pot">tazpanel.pot</a></td>
+			<td><a href="http://hg.slitaz.org/tazpanel/raw-file/tip/po/tazpanel.pot">
+				tazpanel.pot</a></td>
 			<td>
 				<a href="http://hg.slitaz.org/tazpanel/raw-file/tip/po/fr.po">fr</a>
 				<a href="http://hg.slitaz.org/tazpanel/raw-file/tip/po/pt.po">pt</a>
 			</td>
 		</tr>
 		<tr>
+			<td><a href="http://hg.slitaz.org/slitaz-tools">SliTaz Tools</a></td>
+			<td><a href="http://hg.slitaz.org/slitaz-tools/file/tip/po/slitaz-tools/slitaz-tools.pot">
+				slitaz-tools.pot</a></td>
+			<td>
+				-
+			</td>
+		</tr>
+		<tr>
+			<td><a href="http://hg.slitaz.org/slitaz-tools">SliTaz Boxes</a></td>
+			<td><a href="http://hg.slitaz.org/slitaz-tools/file/tip/po/slitaz-boxes/slitaz-boxes.pot">
+				slitaz-boxes.pot</a></td>
+			<td>
+				-
+			</td>
+		</tr>
+		<tr>
 			<td><a href="http://hg.slitaz.org/slitaz-tools">TazBox</a></td>
-			<td><a href="http://hg.slitaz.org/slitaz-tools/file/tip/po/tazbox/tazbox.pot">tazbox.pot</a></td>
+			<td><a href="http://hg.slitaz.org/slitaz-tools/file/tip/po/tazbox/tazbox.pot">
+				tazbox.pot</a></td>
 			<td>
 				<a href="http://hg.slitaz.org/slitaz-tools/file/tip/po/tazbox/pt.po">pt</a>
+			</td>
+		</tr>
+		<tr>
+			<td><a href="http://hg.slitaz.org/ssfs">Ssfs</a></td>
+			<td><a href="http://hg.slitaz.org/ssfs/file/tip/po/ssfs/ssfs.pot">
+				ssfs.pot</a></td>
+			<td>
+				<a href="http://hg.slitaz.org/ssfs/file/tip/po/ssfs/fr.po">fr</a>
 			</td>
 		</tr>
 	</tbody>
