@@ -29,6 +29,12 @@ body {
 	.roweven {
 		background-color: #e1ffe1; /* the tower */
 	}
+	.odd {
+		background-color: #ffffff;
+	}
+	.even {
+		background-color: #e1ffe1; /* the tower */
+	}
 	th {
 		border: 1px solid #000000;
 		width: variable;
@@ -50,9 +56,11 @@ function translate($word)
 		case "Archives"  : return "Archiv";
 		case "Archive"   : return "Archiv";
 		case "View by"   : return "Ansicht von";
+		case "Messages count":
 		case "Number"    : return "Zahl";
 		case "Total size": return "Gesamtgr\&ouml;\&szlig;e";
 		case " or "      : return " oder ";
+		case "Month/Year":
 		case "Date"      : return "datum";
 		}
 		break;
@@ -61,20 +69,24 @@ function translate($word)
 		case "Archives"  : return "Archivos";
 		case "Archive"   : return "Archivo";
 		case "View by"   : return "Vista";
+		case "Messages count":
 		case "Number"    : return "n\&uacute;mero";
 		case "Total size": return "Tama\&ntilde;o total";
 		case "Thread"    : return "hilo";
 		case " or "      : return " o ";
+		case "Month/Year":
 		case "Date"      : return "Fecha";
 		}
 		break;
 	case "fr" :
 		switch ($word) {
 		case "View by"   : return "Tri\&eacute; par";
+		case "Messages count":
 		case "Number"    : return "Nombre";
 		case "Total size": return "Volume";
 		case "Thread"    : return "Sujet";
 		case " or "      : return " ou ";
+		case "Month/Year": return "Date";
 		}
 		break;
 	case "pt" :
@@ -82,11 +94,19 @@ function translate($word)
 		case "Archives"  : return "Arquivos";
 		case "Archive"   : return "Arquivo";
 		case "View by"   : return "Exibir por";
+		case "Messages count":
 		case "Number"    : return "n\&uacute;mero";
 		case "Total size": return "O tamanho total";
 		case "Thread"    : return "T\&oacute;pico";
 		case " or "      : return " ou ";
+		case "Month/Year":
 		case "Date"      : return "Data";
+		}
+		break;
+	default:
+		switch ($word) {
+		case "Messages count": return "Number";
+		case "Month/Year": return "Date";
 		}
 		break;
 	}
@@ -97,10 +117,11 @@ echo '<h4>'.translate("Archives").' 2007-'.date('Y')."</h4>\n";
 
 $url = "http://listengine.tuxfamily.org/lists.tuxfamily.org/slitaz/";
 
-$script  = "-e '/<table>/,/<\/table>/!d' ";
+$script  = "-e '/<table/,/<\/table>/!d' ";
 $script .= "-e 's|html\"|html\" target=\"_blank\"|g' ";
 $script .= "-e 's|href=\"|href=\"$url|g' ";
 foreach (array("Archive","View by","Number","Total size",
+	       "Messages count", "Month/Year",
 	       "Thread"," or ","Date") as $word) {
 	$script .= "-e 's|".$word."|".translate($word)."|' ";
 }
