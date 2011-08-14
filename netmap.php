@@ -99,7 +99,7 @@
 			<li><a href="http://labs.slitaz.org/">SliTaz Laboratories</a></li>
 			<li><a href="http://bugs.slitaz.org">Bug Tracker</a></li>
 			<li><a href="http://tank.slitaz.org/">Main Server</a></li>
-			<li><a href="http://bb.slitaz.org/">Build Bot</a></li>
+			<li><a href="http://cook.slitaz.org/">Build Bot</a></li>
 			<li><a href="http://www.slitaz.org/en/devel/">Developers Corner</a></li>
 		</ul>
 	</div>
