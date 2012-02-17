@@ -73,7 +73,7 @@
 			<li><a href="http://doc.slitaz.org/en:handbook:start">Handbook</a></li>
 			<li><a href="http://forum.slitaz.org/">Support Forum</a></li>
 			<li><a href="http://www.slitaz.org/en/mailing-list.html">Mailing List</a></li>
-			<li>IRC: <b>irc.toile-libre.org #slitaz</b></li>
+			<li>IRC: <b>irc.freenode.net <a href="webchat.php">#slitaz</a></b></li>
 		</ul>
 	</div>
 </div>
