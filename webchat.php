@@ -39,10 +39,10 @@
 	<div id="block_info">
 		<h4>Web chat</h4>
 		<p>
-			Chat on SliTaz Freenode IRC chanel to meet users and contributors
+			Chat on SliTaz Freenode IRC channel to meet users and contributors
 			or get live support. On SliTaz you can also use a desktop application
-			to connect on IRC. LostIRC is installed in core and Xchat or Pidgin
-			in slitaz repositories. 
+			to connect to IRC. LostIRC is installed in core and Xchat or Pidgin
+			are in the slitaz repositories. 
 		</p>
 	</div>
 </div>
