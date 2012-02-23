@@ -135,6 +135,7 @@
 	<!-- <li><strong>Date - Title</strong>
 	<p></p>
 	</li> -->
+	<a name="20110531"></a>
 	<li><strong>31 May 2011 - New and fresh Cooking 20110531</strong>
 	<p>
 		The Slitaz team is proud to announce the release of a new Cooking version

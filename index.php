@@ -63,7 +63,7 @@
 		<div class="button" style="text-align: left;">
 			Download:
 			<a href="http://mirror.slitaz.org/iso/3.0/slitaz-3.0.iso">SliTaz 3.0</a>
-			<a href="http://mirror.slitaz.org/iso/cooking/slitaz-cooking.iso">SliTaz Cooking</a>
+			<a href="http://mirror.slitaz.org/iso/cooking/slitaz-4.0-RC1.iso">SliTaz 4.0-RC1</a>
 		</div>
 	</div>
 </div>
@@ -101,14 +101,12 @@
 <h2>Latest News</h2>
 
 <ul>
-	<li><strong><a href="en/#news">New and fresh Cooking 20110531</a></strong>
+	<li><strong><a href="en/#news">SliTaz 4.0 RC1 is out!</a></strong>
+		<span>- 23 Feb 2012</span></li>
+	<li><strong><a href="en/#20110531">New and fresh Cooking 20110531</a></strong>
 		<span>- 31 May 2011</span></li>
 	<li><strong><a href="en/#20110329">New Cooking 20110329</a></strong>
 		<span>- 29 March 2011</span></li>
-	<li><strong><a href="en/#20101104">New Cooking 20101104</a></strong>
-		<span>- 4 November 2010</span></li>
-	<li><strong>Summer of Documentation</strong>
-		<span>- 8 May 2010</span></li>
 </ul>
 
 <!-- End of news -->
