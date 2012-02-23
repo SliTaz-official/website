@@ -112,6 +112,33 @@ podrás seguir las últimas noticias, commits y tweets.</p>
 <div class="news">
 
 <ul>
+	<!-- <li><strong>Date - Title</strong>
+	<p></p>
+	</li> -->
+	<li><strong>23 Feb 2012 - Slitaz 4.0 RC1</strong>
+	<p>
+		El grupo contribuidor slitaz está orgulloso de anunciar la disponibilidad
+		inmediata de la primera recarga candidata para slitaz4.0.
+		Slitaz puede iniciar en 10-12 segundos ¿? nuevo hardware y con nuevo 4 en
+		1 ISO que puede instalar Slitaz completo con solo 48Mb de Maa (memoria de
+		acceso aleatorio).
+	</p>
+	<p>
+		El ISO 4 en 1 es capaz de autodetectar la memoria e iniciar slitaz en modo
+		texto, en modo mínimo entorno X o total entorno gráfico. Slitaz 4.0 tendrá
+		más de 3000 paquetes bien probados repositorio y serie RC tendrán un
+		seguimiento de los últimos errores. Desde nuestra última cocina recarga:
+		los paquetes han sido reconstruidos para asegurar la calidad.
+	</p>
+	<p>
+		Esta ISO  RC1 le pedirá nuevo menú gráfico, idiómas gráficos y una nueva
+		configuración de teclado, un nuevo diseño escriitorio y obras de arte así
+		como un instalador de línea de comandos nuevo y esto es una CGI / interfaz
+		web accesible via tazpanel. Puedes descargar esta nueva iso desde nuestro
+		espejo:
+	</p>	
+	</li>
+	
     <li><strong>31 de mayo de 2011 - Nueva y radiante Cooking 20110531</strong>
     <p>El equipo de Slitaz se enorgullece en anunciar la liberación de una
     nueva versión Cooking hecha con nuestros nuevos y frescos paquetes de
