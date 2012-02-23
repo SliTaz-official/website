@@ -101,7 +101,7 @@
 <h2>Latest News</h2>
 
 <ul>
-	<li><strong><a href="en/#news">SliTaz 4.0 RC1 is out!</a></strong>
+	<li><strong><a href="en/#news">SliTaz 4.0 RC1 is out</a></strong>
 		<span>- 23 Feb 2012</span></li>
 	<li><strong><a href="en/#20110531">New and fresh Cooking 20110531</a></strong>
 		<span>- 31 May 2011</span></li>
