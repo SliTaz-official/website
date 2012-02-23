@@ -130,21 +130,21 @@
 	<li><strong>23 Feb 2012 - SliTaz 4.0-RC1</strong>
 	<p>
 		L'équipe des contributeurs SliTaz est heureuse de pouvoir annoncer
-		la disponibilité imédiate de la première version candidate pour
-		SliTaz 4.0. Slitaz peut démarrer en 10-12 seconde sur du matériel
-		assé recent et ne nécessiste que 48 Mb de RAM pour installer un
-		bureaux graphique. La nouvelle 4en1 est capable de detecter la
-		mémoire disponible et démarrer en mode texte ou graphique celon
+		la disponibilité immédiate de la première version candidate pour
+		SliTaz 4.0. SliTaz peut démarrer en 10-12 secondes sur du matériel
+		assez récent et ne nécessite que 48 Mb de RAM pour installer un
+		bureau graphique. La nouvelle 4en1 est capable de détecter la
+		mémoire disponible et démarrer en mode texte ou graphique selon
 		la machine.
 	</p>
 	<p>
-		SliTaz 4.0 aura plus 3000 paquets bien testé dans son dépôt et la
-		série de RC va nous pemettre de chasser les dernières anomalies.
+		SliTaz 4.0 aura plus de 3000 paquets bien testés dans son dépôt et la
+		série de RC va nous permettre de chasser les dernières anomalies.
 		Depuis notre dernière version stable les paquets on été reconstruit
 		2 fois pour s'assurer de leur qualité.
 	</p>
 	<p>
-		Cette RC1 fourni maintenant un menu de démarrage graphique, la
+		Cette RC1 fournit maintenant un menu de démarrage graphique, la
 		configuration de la langue et du clavier en mode graphique, un
 		nouveau bureau plus moderne et plus abouti. Vous pouvez télécharger
 		cette nouvelle ISO depuis notre serveur:
