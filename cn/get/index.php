@@ -68,6 +68,20 @@
 	</div>
 </div>
 
+<!-- Languages -->
+<div id="lang">
+	<a href="../i18n.php">
+		<img src="../../images/locale.png" alt="locale.png" /></a>
+	<a href="../../da/get/">Dansk</a>
+	<a href="../../de/get/">Deutsch</a>
+	<a href="../../en/get/">English</a>
+	<a href="../../es/get/">Español</a>
+	<a href="../../fr/get/">Français</a>
+	<a href="../../it/get/">Italiano</a>
+	<a href="../../pt/get/">Português</a>
+	<a href="../../cn/get/">Chinese</a>
+</div>
+
 <!-- Content -->
 <div id="content">
 
