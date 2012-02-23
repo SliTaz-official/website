@@ -136,6 +136,7 @@ podrás seguir las últimas noticias, commits y tweets.</p>
 		como un instalador de línea de comandos nuevo y esto es una CGI / interfaz
 		web accesible via tazpanel. Puedes descargar esta nueva iso desde nuestro
 		espejo:
+		<a href="http://mirror.slitaz.org/iso/cooking/slitaz-4.0-RC1.iso">SliTaz 4.0-RC1</a>
 	</p>	
 	</li>
 	
