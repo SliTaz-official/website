@@ -71,7 +71,7 @@
 		<h4>English Website</h4>
 		<p>
 			SliTaz is a free operating system providing a fully featured
-			desktop or server in less than 30 MB. 
+			desktop or server in less than 35 MB. 
 		</p>
 		<p>
 			In Live mode SliTaz can run completely in RAM and boot from
@@ -252,6 +252,11 @@
 	share and talk about the project to help spread SliTaz. You can also
 	join the project to connect and share or get involved on the SliTaz 
 	<a href="http://scn.slitaz.org/">Community Network</a>.
+</p>
+<p>
+	You may also want to become an official sponsor via mouthly donation or
+	by provide us some hardware or server resources.
+	<a href="asso/sponsor.html">More information</a>
 </p>
 
 <div>
