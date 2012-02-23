@@ -111,6 +111,31 @@
 	<!-- <li><strong>Date - Title</strong>
 	<p></p>
 	</li> -->
+	<li><strong>23 Feb 2012 - SliTaz 4.0 RC1</strong>
+	<p>
+		Tim Kontributor SliTaz dengan bangga mengumumkan bahwa dalam waktu
+		dekat akan dirilis SliTaz 4.0 RC pertama. SliTaz bisa nge-boot dalam
+		waktu 10 sampai 12 detik di PC dengan hardware baru, dan dengan ISO 4
+		dalam 1 anda bisa melakukan installasi sebuah desktop SliTaz lengkap
+		hanya dengan RAM sebesar 48Mb. ISO 4 dalam 1 bisa melakukan deteksi
+		memori secara otomatis dan nge-boot SliTaz dalam Text Mode, dalam
+		lingkungan X minimal atau sebuah desktop lengkap.
+	</p>
+	<p>
+		SliTaz 4.0 akan dilengkapi dengan lebih dari 3000 paket yang telah
+		teruji di dalam reponya dan seri RC akan memungkinkan kita melacak bug
+		terakhir. Dari rilis Cooking terakhir kami paket-paket telah dibikin
+		ulang dua kali untuk memastikan kualitasnya.
+	</p>
+	<p>
+		ISO RC1 ini akan menampilkan pertamakali kepada anda sebuah menu
+		grafis terbaru, pengaturan bahasa dan keyboard dalam bentuk grafis,
+		sebuah tata letak dan artwork desktop baru dan juga sebuah Installer
+		dari Comman Line, dan Web Interface yang bisa diakses lewat TazPanel.
+		Anda bisa mendownload ISO baru ini dari mirror kami:
+		<a href="http://mirror.slitaz.org/iso/cooking/slitaz-4.0-RC1.iso">SliTaz 4.0-RC1</a>
+	</p> 
+	</li>
 	
 	<li><strong>28 Mar 2010 - SliTaz GNU/Linux 3.0 pelepasan</strong>
 	<p>Setelah satu tahun masa pengembangan, SliTaz versi 3.0 telah dirilis.
