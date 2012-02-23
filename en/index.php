@@ -141,22 +141,22 @@
 	<p>
 		The SliTaz contributor team is pleased to announce the immediate
 		availability of the first release candidate for SliTaz 4.0. SliTaz can
-		boot in 10-12 second on fairly new hardware and with the new 4in1 ISO
+		boot in 10-12 seconds on fairly new hardware and with the new 4in1 ISO
 		you can install a full SliTaz desktop with only 48MB of RAM. The 4in1
-		ISO is able to auto detect the memory and boot SliTaz in text mode, in
-		a minimal X environment or a full desktop.
+		ISO is able to auto detect the memory and can boot SliTaz in text mode,
+		a minimal X environment or a full graphical desktop.
 	</p>
 	<p>
-		SliTaz 4.0 will have more than 3000 well tested packages in it's
-		repository and the RC serie let us track last bugs. From our last Cooking
-		release the packages have all been rebuilt twice to ensure build
+		SliTaz 4.0 will have more than 3000 well tested packages in its
+		repository and the RC series lets us track the latest bugs. From our last 
+		Cooking release the packages have all been rebuilt twice to ensure build
 		quality.
 	</p>
 	<p>
-		This RC1 ISO will prompt you with a new graphical menu, a graphical
-		language and keyboard set up, a new desktop layout and artwork as well
-		as a new command line installer and a CGI/web interface, accessible
-		via TazPanel. You can download this new ISO from our mirror:
+		This RC1 ISO will prompt you with a new graphical menu and a graphical
+		language and keyboard set up. The ISO features a new desktop layout and 
+		artwork as well as a new command line installer with a CGI/web interface 
+		accessible via TazPanel. You can download this new ISO from our mirror:
 		<a href="http://mirror.slitaz.org/iso/cooking/slitaz-4.0-RC1.iso">SliTaz 4.0-RC1</a>
 	</p> 
 	</li>
