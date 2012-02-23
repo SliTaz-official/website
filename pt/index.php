@@ -113,6 +113,31 @@
 
 <div class="news">
 <ul>
+	<li><strong>23 Feb 2012 -  SliTaz 4.0 RC1</strong>
+	<p>
+		O time de desenvolvedores do SliTaz anuncia a disponibilidade do primeiro
+		"Release Candidate (RC)" para a versão 4.0. Sua inicialização é rápida,
+		entre 10 a 12 segundos em hardware mais recente. Com a nova iso 4in1 pode-se
+		instalar o sistema em computadores com apenas 48MB de memória RAM. Esta
+		ISO pode autodetectar a memória disponível e iniciar o SliTaz em modo texto,
+		em um sistema gráfico mínimo ou em um desktop completo.
+	</p>
+	<p>
+		A versão 4.0 terá mais de 3000 pacotes bem testados em seus
+		repositórios. Desde a última versão de testes (cooking) os pacotes foram compilados
+		duas vezes para assegurar a qualidade. Este Release Candidate permite
+		aos usuários e desenvolvedores descobrirem alguns possíveis bugs antes
+		da versão final.
+	</p>
+	<p>
+		As novidades deste RC são: um novo menu gráfico na inicialização,
+		configuração de linguagem e teclado com ferramentas gráficas,
+		novo desenho de desktop, nova arte e novo instalador em modo texto
+		com interface web acessível localmente pelo TazPanel. Baixe a ISO
+		a partir de nosso mirror:
+		<a href="http://mirror.slitaz.org/iso/cooking/slitaz-4.0-RC1.iso">SliTaz 4.0-RC1</a>
+	</p>
+	</li>
 	<li><strong>31 May 2011 - Novo Cooking (20110329)</strong>
 	<p>
 		Os desenvolvedores do SliTaz anunciam o lançamento de uma nova versão
