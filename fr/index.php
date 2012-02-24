@@ -140,7 +140,7 @@
 	<p>
 		SliTaz 4.0 aura plus de 3000 paquets bien testés dans son dépôt et la
 		série de RC va nous permettre de chasser les dernières anomalies.
-		Depuis notre dernière version stable les paquets on été reconstruit
+		Depuis notre dernière version stable les paquets on été reconstruits
 		2 fois pour s'assurer de leur qualité.
 	</p>
 	<p>
