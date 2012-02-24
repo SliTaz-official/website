@@ -144,7 +144,7 @@
 		boot in 10-12 seconds on fairly new hardware and with the new 4in1 ISO
 		you can install a full SliTaz desktop with only 48MB of RAM. The 4in1
 		ISO is able to auto detect the memory and can boot SliTaz in text mode,
-		a minimal X environment or a full graphical desktop.
+		to a minimal X environment or a full graphical desktop.
 	</p>
 	<p>
 		SliTaz 4.0 will have more than 3000 well tested packages in its
