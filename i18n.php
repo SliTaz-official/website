@@ -134,8 +134,7 @@
 
 <pre>
 $ hg clone http://hg.slitaz.org/website
-$ wget <a href="http://hg.slitaz.org/website/archive/tip.tar.bz2">
-	http://hg.slitaz.org/website/archive/tip.tar.bz2</a>
+$ wget <a href="http://hg.slitaz.org/website/archive/tip.tar.bz2">http://hg.slitaz.org/website/archive/tip.tar.bz2</a>
 </pre>
 
 <p>
