@@ -115,27 +115,29 @@ podrás seguir las últimas noticias, commits y tweets.</p>
 	<!-- <li><strong>Date - Title</strong>
 	<p></p>
 	</li> -->
-	<li><strong>23 Feb 2012 - Slitaz 4.0 RC1</strong>
+	<li><strong>23 de febrero de 2012 - SliTaz 4.0-RC1 disponible</strong>
 	<p>
-		El grupo contribuidor slitaz está orgulloso de anunciar la disponibilidad
-		inmediata de la primera recarga candidata para slitaz4.0.
-		Slitaz puede iniciar en 10-12 segundos ¿? nuevo hardware y con nuevo 4 en
-		1 ISO que puede instalar Slitaz completo con solo 48Mb de Maa (memoria de
-		acceso aleatorio).
+		Al equipo de Slitaz le complace anunciar la disponibilidad inmediata
+		de la primera Release Candidate de SliTaz 4.0. SliTaz puede arrancar
+		en 10-12 segundos en hardware relativamente nuevo, y con la nueva ISO
+		4 en 1 puedes instalar un ordenador de escritorio con todo SliTaz con
+		tan sólo 48 MB de RAM. La ISO 4 en 1 es capaz de autodetectar la
+		memoria y puede arrancar SliTaz en modo texto, en un entorno X mínimo,
+		o como un escritorio gráfico completo.
 	</p>
 	<p>
-		El ISO 4 en 1 es capaz de autodetectar la memoria e iniciar slitaz en modo
-		texto, en modo mínimo entorno X o total entorno gráfico. Slitaz 4.0 tendrá
-		más de 3000 paquetes bien probados repositorio y serie RC tendrán un
-		seguimiento de los últimos errores. Desde nuestra última cocina recarga:
-		los paquetes han sido reconstruidos para asegurar la calidad.
+		SliTaz 4.0 tendrá más de 3000 paquetes bien testeados en el
+		repositorio, y la serie RC nos permitirá hacer el seguimiento de las
+		últimas incidencias. Desde nuestra última versión Cooking, los
+		paquetes has sido rehechos dos veces con el fin de asegurar la
+		calidad.
 	</p>
 	<p>
-		Esta ISO  RC1 le pedirá nuevo menú gráfico, idiómas gráficos y una nueva
-		configuración de teclado, un nuevo diseño escriitorio y obras de arte así
-		como un instalador de línea de comandos nuevo y esto es una CGI / interfaz
-		web accesible via tazpanel. Puedes descargar esta nueva iso desde nuestro
-		espejo:
+		La ISO RC1 mostrará tras el arranque un nuevo menú gráfico, y una
+		configuración gráfica del teclado y el idioma. La ISO muestra una
+		nueva distribución y diseño del escritorio, así como un instalador en
+		línea de comandos con una interfaz CGI/Web accesible desde TazPanel.
+		Te puedes descargar esta nueva ISO desde nuestro mirror:
 		<a href="http://mirror.slitaz.org/iso/cooking/slitaz-4.0-RC1.iso">SliTaz 4.0-RC1</a>
 	</p>	
 	</li>
