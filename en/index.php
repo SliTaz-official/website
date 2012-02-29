@@ -280,8 +280,8 @@
 	<a href="http://scn.slitaz.org/">Community Network</a>.
 </p>
 <p>
-	You may also want to become an official sponsor via mouthly donation or
-	by provide us some hardware or server resources.
+	You may also want to become an official sponsor via a monthly donation or
+	by providing us with some hardware or server resources.
 	<a href="asso/sponsor.html">More information</a>
 </p>
 
