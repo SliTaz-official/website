@@ -299,7 +299,7 @@
 	2.0, la nouvelle version stable de la distribution. Cette nouvelle version
 	est le résultat d'une année de travail communautaire, elle fournit un système
 	d'exploitation ultra-léger, rapide, stable et modulable. SliTaz propose
-	un bureau graphique complet dans moins de 30 Mb, les applications nécessaires
+	un bureau graphique complet dans moins de 35 MB, les applications nécessaires
 	à un serveur fiable et robuste, et environ 1400 paquets logiciels facilement
 	installables en quelques cliques de souris. Cette nouvelle version propose
 	le montage automatique des partitions (dont celles en NTFS), le support Wifi,

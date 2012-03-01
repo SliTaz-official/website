@@ -74,7 +74,7 @@
 		<h4>Dansk hjemmeside</h4>
 		<p>
 			SliTaz er et frit og gratis operativsystem, som giver en fuldt udstyret
-			skrivebordsmaskine eller server i mindre end 30 MB.
+			skrivebordsmaskine eller server i mindre end 35 MB.
 		</p>
 		<p>
 		   Som live-os kan SliTaz køre fuldstændig i ram-hukommelsen og startes

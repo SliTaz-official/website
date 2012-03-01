@@ -73,7 +73,7 @@
 		<p>
 			O SliTaz é um sistema operacional livre. É distribuido na 
 			forma de um LiveCD, sendo que a imagem ISO possui menos de
-			30 mb.
+			35 MB.
 		</p>
 		<p>
 			O sistema é rápido e robusto, possui um desktop elegante, 
@@ -159,7 +159,7 @@
 		pacotes libdrm, linux-drm e linux-agp passaram a fazer parte da ISO
 		padrão. Isto adicionou 1 MB ao sistema de arquivos comprimido, porém
 		a nova forma de compilação de pacotes economiza espaço, o que manteve
-		o tamanho da ISO em apenas 30 MB! Download:
+		o tamanho da ISO em apenas 35 MB! Download:
 		<a href="http://mirror.slitaz.org/iso/cooking/slitaz-cooking.iso">
 			slitaz-cooking.iso</a>
 	</p>

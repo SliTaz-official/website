@@ -65,7 +65,7 @@
 			läuft.
 		</p>
 		<p>
-			SliTaz's CD-Image wird nie eine Größe von 30 MB übersteigen
+			SliTaz's CD-Image wird nie eine Größe von 35 MB übersteigen
 			- bei einer sinnvollen Auswahl nützlicher Software.
 			<a href="about/">Mehr erfahren...</a>
 		</p>

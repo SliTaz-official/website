@@ -71,7 +71,7 @@
 		<h4>Sito Web Italiano</h4>
 		<p>
 			SliTaz è un sistema operativo gratuito che offre un desktop o server
-			completo in meno di 30 MB.
+			completo in meno di 35 MB.
 		</p>
 		<p>
 			In modalità Live SliTaz può girare completamente nella memoria RAM

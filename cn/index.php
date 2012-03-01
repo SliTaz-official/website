@@ -128,7 +128,7 @@
 	<p>SliTaz GNU/Linux 3.0操作系统即将发布。Slitaz 3.0保留了简单、小巧
 	快速、强大、容易定制的特性，还提供了功能强大的桌面支持，
 	默认采用Xorg 7.4, Openbox, LXDE组件和自制工具。使你更容易
-	听音乐、管理照片，或者使用Midori进行网上冲浪。默认的核心系统镜像大小控制在30 Mb，
+	听音乐、管理照片，或者使用Midori进行网上冲浪。默认的核心系统镜像大小控制在35 MB，
 	而且LiveCD flavors启动只需要8 Mb。
 	新版本采用GCC 4.4.1编译开发，使用Linux kernel 2.6.30.6内核。要了解更多信息，
 	你可以阅读<a href="doc/releases/3.0/relnotes.cn.html">3.0发行笔记</a>或从官方镜像<a href="get/#stable>">下载</a>3.0
@@ -143,7 +143,7 @@
 	it is fast, simple to use and well integrated with the SliTaz desktop.</p>
 	<p>This updated ISO comes with a bunch of bug and dependency fixes, we have 
 	also improved the home made tools and scripts. This new ISO image can be 
-	downloaded from the SliTaz mirrors (30 Mb): 
+	downloaded from the SliTaz mirrors (35 MB): 
 	<a href="http://mirror.slitaz.org/iso/cooking/slitaz-cooking.iso">slitaz-cooking.iso</a></p>
 	<p>By the way, the SliTaz project will be at 
 	<a href="http://www.solutionslinux.fr/">Solutionslinux</a> 2010 next 
