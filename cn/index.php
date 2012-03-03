@@ -83,6 +83,15 @@
 
 <!-- Content -->
 <div id="content">
+	
+<div class="box">
+	<img src="../images/update.png" style="float: left; margin-right: 10px; " />
+	<p>
+		SliTaz Chinese website needs a maintainer and contributors. You
+		can contact us on the
+		<a href="http://scn.slitaz.org/groups/i18n/">i18n group</a>.
+	</p>
+</div>
 
 <!--
     SliTaz news starting.

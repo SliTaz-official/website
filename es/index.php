@@ -115,7 +115,7 @@ podrás seguir las últimas noticias, commits y tweets.</p>
 	<!-- <li><strong>Date - Title</strong>
 	<p></p>
 	</li> -->
-	<li><strong>23 de febrero de 2012 - SliTaz 4.0-RC2 disponible</strong>
+	<li><strong>23 de febrero de 2012 - SliTaz 4.0-RC1 disponible</strong>
 	<p>
 		Al equipo de Slitaz le complace anunciar la disponibilidad inmediata
 		de la primera Release Candidate de SliTaz 4.0. SliTaz puede arrancar
@@ -133,12 +133,12 @@ podrás seguir las últimas noticias, commits y tweets.</p>
 		calidad.
 	</p>
 	<p>
-		La ISO RC2 mostrará tras el arranque un nuevo menú gráfico, y una
+		La ISO RC1 mostrará tras el arranque un nuevo menú gráfico, y una
 		configuración gráfica del teclado y el idioma. La ISO muestra una
 		nueva distribución y diseño del escritorio, así como un instalador en
 		línea de comandos con una interfaz CGI/Web accesible desde TazPanel.
 		Te puedes descargar esta nueva ISO desde nuestro mirror:
-		<a href="http://mirror.slitaz.org/iso/cooking/slitaz-4.0-RC2.iso">SliTaz 4.0-RC2</a>
+		<a href="http://mirror.slitaz.org/iso/cooking/slitaz-4.0-RC1.iso">SliTaz 4.0-RC1</a>
 	</p>	
 	</li>
 	

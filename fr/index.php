@@ -127,7 +127,7 @@
 	<!-- <li><strong>Date - Title</strong>
 	<p></p>
 	</li> -->
-	<li><strong>23 Feb 2012 - SliTaz 4.0-RC2</strong>
+	<li><strong>23 Feb 2012 - SliTaz 4.0-RC1</strong>
 	<p>
 		L'équipe des contributeurs SliTaz est heureuse de pouvoir annoncer
 		la disponibilité immédiate de la première version candidate pour
@@ -148,7 +148,7 @@
 		configuration de la langue et du clavier en mode graphique, un
 		nouveau bureau plus moderne et plus abouti. Vous pouvez télécharger
 		cette nouvelle ISO depuis notre serveur:
-		<a href="http://mirror.slitaz.org/iso/cooking/slitaz-4.0-RC2.iso">SliTaz 4.0-RC2</a>
+		<a href="http://mirror.slitaz.org/iso/cooking/slitaz-4.0-RC1.iso">SliTaz 4.0-RC1</a>
 	</p>
 	</li>
 	

@@ -111,7 +111,29 @@
 	<!-- <li><strong>Date - Title</strong>
 	<p></p>
 	</li> -->
-	<li><strong>23 Feb 2012 - SliTaz 4.0 RC2</strong>
+	<li><strong>03 Mar 2012 - SliTaz 4.0-RC2</strong>
+	<p>
+		Tim Slitaz dengan bahagia mengumumkan rilis terbarunya Slitaz 4.0-RC2.
+		Kami telah melakukan perbaikan pada bugs dari RC1 dan pada beberapa
+		tools bikinan pengguna akhir seperti TazPKG, TazPanel dan TazUSB.
+		Koneksi Wifi akan lebih mudah dilakukan lewat TazPanel atau wifibox
+		yang baru. TazPKG dengan integrasi desktop yang lebih baik dan sebuah
+		sistem notifikasi baru. 
+	</p>
+	<p>
+		Versi baru ini dilengkapi dengan paket Xorg lengkap dan dukungan 
+		DRI termasuk juga driver NV, Intel, Geode dan Vesa yang bisa 
+		langsung digunakan. Kami juga telah me-rebuild ulang keseluruhan 
+		paket sekali lagi dan menghemat lebih kurang 2Mb di dalam LiveCD
+		inti, jadi kita bisa memasukkan Lxrandr, Parcellite dan klien
+		BiTorrent (transmission). Kami ingin berterima kasih kepada semua yang
+		telah mencoba RC yang pertama, dan RC2 ini udah mendekati rencana
+		rilis Slitaz 4.0 dalam 2 minggu ke depan. Download image ISO RC2 dari
+		mirror kami:
+		<a href="http://mirror.slitaz.org/iso/cooking/slitaz-4.0-RC2.iso">SliTaz 4.0-RC2</a>
+	</p>
+	</li> 
+	<li><strong>23 Feb 2012 - SliTaz 4.0 RC1</strong>
 	<p>
 		Tim Kontributor SliTaz dengan bangga mengumumkan bahwa dalam waktu
 		dekat akan dirilis SliTaz 4.0 RC pertama. SliTaz bisa nge-boot dalam
@@ -128,12 +150,12 @@
 		ulang dua kali untuk memastikan kualitasnya.
 	</p>
 	<p>
-		ISO RC2 ini akan menampilkan pertamakali kepada anda sebuah menu
+		ISO RC1 ini akan menampilkan pertamakali kepada anda sebuah menu
 		grafis terbaru, pengaturan bahasa dan keyboard dalam bentuk grafis,
 		sebuah tata letak dan artwork desktop baru dan juga sebuah Installer
 		dari Comman Line, dan Web Interface yang bisa diakses lewat TazPanel.
 		Anda bisa mendownload ISO baru ini dari mirror kami:
-		<a href="http://mirror.slitaz.org/iso/cooking/slitaz-4.0-RC2.iso">SliTaz 4.0-RC2</a>
+		<a href="http://mirror.slitaz.org/iso/cooking/slitaz-4.0-RC1.iso">SliTaz 4.0-RC1</a>
 	</p> 
 	</li>
 	

@@ -113,7 +113,36 @@
 
 <div class="news">
 <ul>
-	<li><strong>23 Feb 2012 -  SliTaz 4.0 RC2</strong>
+	<!-- <li><strong>Date - Title</strong>
+	<p></p>
+	</li> -->
+	<li><strong>03 Mar 2012 - SliTaz 4.0-RC2</strong>
+	<p>
+		A equipe do SliTaz tem o prazer de anunciar a disponibilidade do
+		segundo "Release Candidate" (RC) para a versão 4.0. Nós tivemos 
+		muito trabalho corrigindo bugs da RC anterior e nas ferramentas 
+		para usuários-finais como TazPKG, TazPanel e TazUSB. A 
+		configuração de redes wireless ficou mais fácil, podendo ser 
+		feita pelo TazPanel ou pela nova ferramente wifibox. O TazPKG 
+		ganhou uma melhor integração ao desktop e um novo sistema de 
+		notificações.
+	</p>
+	<p>
+		Este RC fornece um sistema gráfico Xorg completo, com suporte a
+		DRI e a placas de rede que utilizam os drivers nv, intel, geode
+		e vesa. Também reconstruímos todos os pacotes , retirando 
+		aproximadamente 2MB da iso desde o último RC, o que permitiu
+		a inclusão dos pacotes LXRandR, Parcellite e o cliente
+		BitTorrent Transmission. Gostariamos de agradecer a todos que
+		testaram o primei ro RC; esse RC2 é bem próximo à versão 4.0 
+		do SliTaz, planejada para duas semanas.
+	</p>
+	<p>
+		Baixe a imagem iso do RC2 de nosso mirror:
+		<a href="http://mirror.slitaz.org/iso/cooking/slitaz-4.0-RC2.iso">SliTaz 4.0-RC2</a>
+	</p>
+	</li>
+	<li><strong>23 Feb 2012 -  SliTaz 4.0 RC1</strong>
 	<p>
 		O time de desenvolvedores do SliTaz anuncia a disponibilidade do primeiro
 		"Release Candidate (RC)" para a versão 4.0. Sua inicialização é rápida,
@@ -135,7 +164,7 @@
 		novo desenho de desktop, nova arte e novo instalador em modo texto
 		com interface web acessível localmente pelo TazPanel. Baixe a ISO
 		a partir de nosso mirror:
-		<a href="http://mirror.slitaz.org/iso/cooking/slitaz-4.0-RC2.iso">SliTaz 4.0-RC2</a>
+		<a href="http://mirror.slitaz.org/iso/cooking/slitaz-4.0-RC1.iso">SliTaz 4.0-RC1</a>
 	</p>
 	</li>
 	<li><strong>31 May 2011 - Novo Cooking (20110329)</strong>
