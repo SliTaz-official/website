@@ -250,7 +250,7 @@ einen kleinen monatlichen Informationsbrief in Englisch und Chinesisch an.
 	nun vollständig benutzbar. Außerdem wurde ein lua-Interpreter, eine Suchmaschine (Searchmoneky) zum
 	Auffinden von Dateien und Ordnern, ein Taskmanager (LXTask), eine Zwischenablage
 	und eine Verwaltungssoftware für Passwörter hinzugefügt. Alle wichtigeren
-	Pakete haben ein Update bekommen, so glibc (2.7), GTK (2.12.9) und Firefox (3.0 RC1).
+	Pakete haben ein Update bekommen, so glibc (2.7), GTK (2.12.9) und Firefox (3.0 RC2).
 	Die Anzahl der Pakete auf den Mirrors hat sich auf etwa 580 erhöht, enthalten sind jetzt
 	auch Wireless-Tools (wpa-Supplicant..).
 	Die Cooking-Version steht auf dem SliTaz-Mirror zum <a href="get/index.html#cooking">Download</a>.

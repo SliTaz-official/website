@@ -137,7 +137,7 @@
 	<!-- <li><strong>Date - Title</strong>
 	<p></p>
 	</li> -->
-	<li><strong>23 Feb 2012 - SliTaz 4.0 -RC1 is out</strong>
+	<li><strong>23 Feb 2012 - SliTaz 4.0 -RC2 is out</strong>
 	<p>
 		The SliTaz contributor team is pleased to announce the immediate
 		availability of the first release candidate for SliTaz 4.0. SliTaz can
@@ -153,11 +153,11 @@
 		quality.
 	</p>
 	<p>
-		This RC1 ISO will prompt you with a new graphical menu and a graphical
+		This RC2 ISO will prompt you with a new graphical menu and a graphical
 		language and keyboard set up. The ISO features a new desktop layout and 
 		artwork as well as a new command line installer with a CGI/web interface 
 		accessible via TazPanel. You can download this new ISO from our mirror:
-		<a href="http://mirror.slitaz.org/iso/cooking/slitaz-4.0-RC1.iso">SliTaz 4.0-RC1</a>
+		<a href="http://mirror.slitaz.org/iso/cooking/slitaz-4.0-RC2.iso">SliTaz 4.0-RC2</a>
 	</p> 
 	</li>
 	

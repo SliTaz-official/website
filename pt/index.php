@@ -113,7 +113,7 @@
 
 <div class="news">
 <ul>
-	<li><strong>23 Feb 2012 -  SliTaz 4.0 RC1</strong>
+	<li><strong>23 Feb 2012 -  SliTaz 4.0 RC2</strong>
 	<p>
 		O time de desenvolvedores do SliTaz anuncia a disponibilidade do primeiro
 		"Release Candidate (RC)" para a versão 4.0. Sua inicialização é rápida,
@@ -135,7 +135,7 @@
 		novo desenho de desktop, nova arte e novo instalador em modo texto
 		com interface web acessível localmente pelo TazPanel. Baixe a ISO
 		a partir de nosso mirror:
-		<a href="http://mirror.slitaz.org/iso/cooking/slitaz-4.0-RC1.iso">SliTaz 4.0-RC1</a>
+		<a href="http://mirror.slitaz.org/iso/cooking/slitaz-4.0-RC2.iso">SliTaz 4.0-RC2</a>
 	</p>
 	</li>
 	<li><strong>31 May 2011 - Novo Cooking (20110329)</strong>

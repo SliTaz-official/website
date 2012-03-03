@@ -111,7 +111,7 @@
 	<!-- <li><strong>Date - Title</strong>
 	<p></p>
 	</li> -->
-	<li><strong>23 Feb 2012 - SliTaz 4.0 RC1</strong>
+	<li><strong>23 Feb 2012 - SliTaz 4.0 RC2</strong>
 	<p>
 		Tim Kontributor SliTaz dengan bangga mengumumkan bahwa dalam waktu
 		dekat akan dirilis SliTaz 4.0 RC pertama. SliTaz bisa nge-boot dalam
@@ -128,12 +128,12 @@
 		ulang dua kali untuk memastikan kualitasnya.
 	</p>
 	<p>
-		ISO RC1 ini akan menampilkan pertamakali kepada anda sebuah menu
+		ISO RC2 ini akan menampilkan pertamakali kepada anda sebuah menu
 		grafis terbaru, pengaturan bahasa dan keyboard dalam bentuk grafis,
 		sebuah tata letak dan artwork desktop baru dan juga sebuah Installer
 		dari Comman Line, dan Web Interface yang bisa diakses lewat TazPanel.
 		Anda bisa mendownload ISO baru ini dari mirror kami:
-		<a href="http://mirror.slitaz.org/iso/cooking/slitaz-4.0-RC1.iso">SliTaz 4.0-RC1</a>
+		<a href="http://mirror.slitaz.org/iso/cooking/slitaz-4.0-RC2.iso">SliTaz 4.0-RC2</a>
 	</p> 
 	</li>
 	
