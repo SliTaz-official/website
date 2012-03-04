@@ -137,6 +137,7 @@
 	<!-- <li><strong>Date - Title</strong>
 	<p></p>
 	</li> -->
+	<a name="20120303"></a>
 	<li><strong>03 Mar 2012 - SliTaz 4.0-RC2 is out</strong>
 	<p>
 		The Slitaz team is pleased to announce the new SliTaz 4.0-RC2 release
