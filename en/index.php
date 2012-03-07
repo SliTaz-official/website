@@ -102,12 +102,13 @@
 <!-- Content -->
 <div id="content">
 
-<!-- <div class="box">
+<div class="box">
 	<img src="../images/update.png" style="float: left; margin-right: 10px; " />
 	<p>
-		Call for sponsor!
+		Help us get a dedicated server - Check out our
+		<a href="http://www.gofundme.com/3ql70">online fundraising</a>
 	</p>
-</div> -->
+</div>
 
 <!--
     SliTaz news starting.

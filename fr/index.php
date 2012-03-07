@@ -92,12 +92,13 @@
 <!-- Content -->
 <div id="content">
 
-<!-- <div class="box">
+<div class="box">
 	<img src="../images/update.png" style="float: left; margin-right: 10px; " />
 	<p>
-		Call for sponsor!
+		Aidez nous a obtenir un serveur dedié -
+		<a href="http://www.gofundme.com/3ql70">Campagne de dons en ligne</a>
 	</p>
-</div> -->
+</div>
 
 <!--
     SliTaz news starting.
