@@ -18,7 +18,10 @@
 </head>
 <body>
 
-<?php include("lib/html/header.html"); ?>
+<?php
+include("config.php");
+include("lib/html/header.html");
+?>
 
 <!-- Block -->
 <div id="block">
@@ -31,15 +34,15 @@
 		<h4>About SliTaz</h4>
 		<p>
 			SliTaz is an open source and free operating system providing
-			a fully featured desktop or server in less than 30 MB. SliTaz
+			a fully featured desktop or server in less than 35 MB. SliTaz
 			is simple to use, fast and stable. We have an active community
 			and contributors from all over the world making SliTaz finer
 			every day. 
 		</p>
 		<div class="button" style="text-align: left;">
 			Download:
-			<a href="http://mirror.slitaz.org/iso/3.0/slitaz-3.0.iso">SliTaz 3.0</a>
-			<a href="http://mirror.slitaz.org/iso/cooking/slitaz-4.0-RC2.iso">SliTaz 4.0-RC2</a>
+			<?php echo "<a href='$mirror/$stable/slitaz-$stable.iso'>SliTaz $stable</a>
+				<a href='$mirror/cooking/slitaz-$cooking.iso'>SliTaz $cooking</a>"; ?>
 		</div>
 	</div>
 </div>
