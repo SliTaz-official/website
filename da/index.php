@@ -222,7 +222,7 @@
 
 <h2>Projekt aktivitet</h2>
 <?php
-	require_once("../libs/get-feeds.php");
+	require_once("../lib/get-feeds.php");
 ?>
 
 <div class="activity">

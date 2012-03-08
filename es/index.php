@@ -208,7 +208,7 @@ podrás seguir las últimas noticias, commits y tweets.</p>
 
 <h2>Actividad del proyecto</h2>
 <?php
-	require_once("../libs/get-feeds.php");
+	require_once("../lib/get-feeds.php");
 ?>
 
 <div class="activity">

@@ -48,7 +48,7 @@
 <div id="block">
 	<!-- Navigation -->
 	<div id="block_nav" style="text-align: center; padding: 10px;">
-		<?php include("libs/random-image.php"); ?>
+		<?php include("lib/random-image.php"); ?>
 	</div>
 	<!-- Information/image -->
 	<div id="block_info">
@@ -117,7 +117,7 @@
 
 <h2>Project Activity</h2>
 <?php
-	require_once("libs/get-feeds.php");
+	require_once("lib/get-feeds.php");
 ?>
 
 <div class="activity">
