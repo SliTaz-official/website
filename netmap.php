@@ -14,20 +14,7 @@
 </head>
 <body>
 
-<!-- Header -->
-<div id="header">
-	<div id="logo"></div>
-	<div id="network">
-		<a href="./netmap.php">
-			<img src="images/network.png" alt="network.png" /></a>
-		<a href="http://scn.slitaz.org/">Community</a>
-		<a href="http://doc.slitaz.org/">Doc</a>
-		<a href="http://forum.slitaz.org/">Forum</a>
-		<a href="http://bugs.slitaz.org">Bugs</a>
-		<a href="http://hg.slitaz.org/">Hg</a>
-	</div>
-	<h1><a href="./">SliTaz GNU/Linux</a></h1>
-</div>
+<?php include("lib/html/header.html"); ?>
 
 <!-- Block -->
 <div id="block">
@@ -88,7 +75,7 @@
 			<li><a href="http://doc.slitaz.org/en:newsletter:start">Monthly Newsletter</a></li>
 			<li><a href="http://pizza.slitaz.org/">LiveCD Online Builder</a></li>
 			<li><a href="http://people.slitaz.org/">SliTaz People</a></li>
-			<li><a href="http://www.facebook.com/pages/SliTaz/125559834176383">SliTaz on Facebook</a></li>
+			<li><a href="http://www.facebook.com/slitaz">SliTaz on Facebook</a></li>
 			<li><a href="http://en.wikipedia.org/wiki/SliTaz_GNU/Linux">SliTaz on Wikipedia</a></li>
 		</ul>
 	</div>
@@ -96,7 +83,7 @@
 		<h3><img src="images/development.png" alt=".png" />Development</h3>
 		<ul>
 			<li><a href="http://hg.slitaz.org/">Mercurial Repositories</a></li>
-			<li><a href="http://labs.slitaz.org/">SliTaz Laboratories</a></li>
+			<li><a href="http://scn.slitaz.org/groups/devel/">SCN Group</a></li>
 			<li><a href="http://bugs.slitaz.org">Bug Tracker</a></li>
 			<li><a href="http://tank.slitaz.org/">Main Server</a></li>
 			<li><a href="http://cook.slitaz.org/">Build Bot</a></li>
@@ -112,25 +99,7 @@
 
 <div style="margin-top: 100px;"></div>
 
-<!-- Footer -->
-<div id="footer">
-	Copyright &copy; <span class="year"></span>
-	<a href="http://www.slitaz.org/">SliTaz</a> - Network:
-	<a href="http://scn.slitaz.org/">Community</a>
-	<a href="http://doc.slitaz.org/">Doc</a>
-	<a href="http://forum.slitaz.org/">Forum</a>
-	<a href="http://pkgs.slitaz.org/">Packages</a>
-	<a href="http://bugs.slitaz.org">Bugs</a>
-	<a href="http://hg.slitaz.org/">Hg</a>
-	<p>
-		SliTaz @
-		<a href="http://twitter.com/slitaz">Twitter</a>
-		<a href="http://www.facebook.com/slitaz">Facebook</a>
-		<a href="http://distrowatch.com/slitaz">Distrowatch</a>
-		<a href="http://en.wikipedia.org/wiki/SliTaz">Wikipedia</a>
-		<a href="http://flattr.com/profile/slitaz">Flattr</a>
-	</p>
-</div>
+<?php include("lib/html/footer.html"); ?>
 
 </body>
 </html>
