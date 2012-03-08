@@ -9,4 +9,10 @@ only in English, we diplay these news only on the main page but website news
 are translated.
 
 
+New version
+-----------
+When a new SliTaz version is published the version string must be change in the
+configuration file config.php as well as the ISO size.
+
+
 ================================================================================
