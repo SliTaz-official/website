@@ -27,20 +27,7 @@
 </head>
 <body>
 
-<!-- Header -->
-<div id="header">
-	<div id="logo"></div>
-	<div id="network">
-		<a href="http://www.slitaz.org/netmap.php">
-			<img src="../images/network.png" alt="network.png" /></a>
-		<a href="http://scn.slitaz.org/">Community</a>
-		<a href="http://doc.slitaz.org/">Doc</a>
-		<a href="http://forum.slitaz.org/">Forum</a>
-		<a href="http://bugs.slitaz.org">Bugs</a>
-		<a href="http://hg.slitaz.org/">Hg</a>
-	</div>
-	<h1><a href="http://www.slitaz.org/">SliTaz GNU/Linux</a></h1>
-</div>
+<?php include("../lib/html/header.html"); ?>
 
 <!-- Block -->
 <div id="block">
@@ -242,21 +229,6 @@
 	<a href="get/">release!</a>
 	</p>
 	</li>
-	
-	<a name="20101104"></a>
-	<li><strong>4 November 2010 - New Cooking 20101104</strong>
-	<p>The SliTaz team is pleased to announce the release of a new cooking ISO
-	featuring over 2600 packages. It contains Linux Kernel 2.6.34 and was
-	rebuilt with a new toolchain using glibc 2.11.2 and gcc 4.5.1. Xorg has
-	been fully updated to 1.9.2. The LiveCD includes Midori, the Deadbeef audio
-	player, and many more applications. Tazpkg and Tazctrlbox now support
-	gettext translations and more UTF locales have been added. Many bugfixes,
-	updates and improvements can also be found. A lot of work has been done 
-	during these past 6 months. You can <a href="get/#cooking>">download</a> 
-	this new cooking version from one of the official mirrors of the project.
-	All feedback is welcome and can be done through the mailing list or 
-	the forum.</p>
-	</li>
 
 	<li><a href="news/">More news</a> or browse the archives:
 	<a href="news/2007.html">2007</a> |
@@ -333,25 +305,7 @@
 <!-- End of content  -->
 </div>
 
-<!-- Footer -->
-<div id="footer">
-	Copyright &copy; <span class="year"></span>
-	<a href="http://www.slitaz.org/">SliTaz</a> - Network:
-	<a href="http://scn.slitaz.org/">Community</a>
-	<a href="http://doc.slitaz.org/">Doc</a>
-	<a href="http://forum.slitaz.org/">Forum</a>
-	<a href="http://pkgs.slitaz.org/">Packages</a>
-	<a href="http://bugs.slitaz.org">Bugs</a>
-	<a href="http://hg.slitaz.org/">Hg</a>
-	<p>
-		SliTaz @
-		<a href="http://twitter.com/slitaz">Twitter</a>
-		<a href="http://www.facebook.com/slitaz">Facebook</a>
-		<a href="http://distrowatch.com/slitaz">Distrowatch</a>
-		<a href="http://en.wikipedia.org/wiki/SliTaz">Wikipedia</a>
-		<a href="http://flattr.com/profile/slitaz">Flattr</a>
-	</p>
-</div>
+<?php include("../lib/html/footer.html"); ?>
 
 </body>
 </html>

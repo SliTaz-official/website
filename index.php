@@ -13,36 +13,12 @@
 	<link rel="shortcut icon" href="favicon.ico" />
     <link rel="stylesheet" type="text/css" href="slitaz.css" />
     <link rel="alternate" type="application/rss+xml" title="SliTaz Website feed" href="en/rss.xml" />
-    <link rel="alternate" type="application/atom+xml" title="SliTaz Labs feed" href="http://labs.slitaz.org/news?format=atom" />
+    <link rel="alternate" type="application/atom+xml" title="SliTaz Forum feed" href="http://forum.slitaz.org/rss" />
     <link rel="alternate" type="application/rss+xml" title="SliTaz SCN feed" href="http://scn.slitaz.org/rss.xml" />
-    <script type="text/javascript">
-	/* <![CDATA[ */
-	    (function() {
-	        var s = document.createElement('script'), t = document.getElementsByTagName('script')[0];
-	        s.type = 'text/javascript';
-	        s.async = true;
-	        s.src = 'http://api.flattr.com/js/0.6/load.js?mode=auto';
-	        t.parentNode.insertBefore(s, t);
-	    })();
-	/* ]]> */
-	</script>
 </head>
 <body>
 
-<!-- Header -->
-<div id="header">
-	<div id="logo"></div>
-	<div id="network">
-		<a href="./netmap.php">
-			<img src="images/network.png" alt="network.png" /></a>
-		<a href="http://scn.slitaz.org/">Community</a>
-		<a href="http://doc.slitaz.org/">Doc</a>
-		<a href="http://forum.slitaz.org/">Forum</a>
-		<a href="http://bugs.slitaz.org">Bugs</a>
-		<a href="http://hg.slitaz.org/">Hg</a>
-	</div>
-	<h1><a href="http://www.slitaz.org/">SliTaz GNU/Linux</a></h1>
-</div>
+<?php include("lib/html/header.html"); ?>
 
 <!-- Block -->
 <div id="block">
@@ -93,9 +69,6 @@
 	</p>
 </div>
 
-<!-- For the main index with slideshow we keep block_nav and block_top
-     at min-height: 220px; -->
-
 <!-- We just keep the last 4 web site news -->
 <div class="news">
 
@@ -116,9 +89,7 @@
 </div>
 
 <h2>Project Activity</h2>
-<?php
-	require_once("lib/get-feeds.php");
-?>
+<?php require_once("lib/get-feeds.php"); ?>
 
 <div class="activity">
 	<p>
@@ -209,7 +180,7 @@
 <!-- Like Button -->
 <script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script>
 <fb:like 
-	href="http://www.facebook.com/pages/SliTaz/125559834176383"
+	href="http://www.facebook.com/slitaz"
 	show_faces="true" width="auto">
 </fb:like>
 
@@ -233,6 +204,17 @@
 			alt="PayPal - The safer, easier way to pay online!" />
 	</form>
 	<!-- Flattr Button -->
+	<script type="text/javascript">
+	/* <![CDATA[ */
+	    (function() {
+	        var s = document.createElement('script'), t = document.getElementsByTagName('script')[0];
+	        s.type = 'text/javascript';
+	        s.async = true;
+	        s.src = 'http://api.flattr.com/js/0.6/load.js?mode=auto';
+	        t.parentNode.insertBefore(s, t);
+	    })();
+	/* ]]> */
+	</script>
 	<a class="FlattrButton" style="display:none;" rev="flattr;button:compact;"
 		href="http://www.slitaz.org/"></a>
 </div>
@@ -252,25 +234,7 @@ translated into your language.
 <!-- End of content -->
 </div>
 
-<!-- Footer -->
-<div id="footer">
-	Copyright &copy; <span class="year"></span>
-	<a href="http://www.slitaz.org/">SliTaz</a> - Network:
-	<a href="http://scn.slitaz.org/">Community</a>
-	<a href="http://doc.slitaz.org/">Doc</a>
-	<a href="http://forum.slitaz.org/">Forum</a>
-	<a href="http://pkgs.slitaz.org/">Packages</a>
-	<a href="http://bugs.slitaz.org">Bugs</a>
-	<a href="http://hg.slitaz.org/">Hg</a>
-	<p>
-		SliTaz @
-		<a href="http://twitter.com/slitaz">Twitter</a>
-		<a href="http://www.facebook.com/slitaz">Facebook</a>
-		<a href="http://distrowatch.com/slitaz">Distrowatch</a>
-		<a href="http://en.wikipedia.org/wiki/SliTaz">Wikipedia</a>
-		<a href="http://flattr.com/profile/slitaz">Flattr</a>
-	</p>
-</div>
+<?php include("lib/html/footer.html"); ?>
 
 </body>
 </html>
