@@ -1,0 +1,12 @@
+SliTaz Website
+================================================================================
+
+
+The SliTaz website is hand made, use PHP and XHTML 1.0 Transitional. Code must
+follow standards and be validated by the W3C. We have a main index with news,
+feed parser, Tweets and link to all website languages. Since we Tweet and blog
+only in English, we diplay these news only on the main page but website news
+are translated.
+
+
+================================================================================
