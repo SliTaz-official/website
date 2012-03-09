@@ -41,8 +41,8 @@ include("lib/html/header.html");
 		</p>
 		<div class="button" style="text-align: left;">
 			Download:
-			<?php echo "<a href='$mirror/$stable/slitaz-$stable.iso'>SliTaz $stable</a>
-				<a href='$mirror/cooking/slitaz-$cooking.iso'>SliTaz $cooking</a>"; ?>
+			<?php echo "<a href='$stable_iso'>SliTaz $stable_ver</a>
+				<a href='$cooking_iso'>SliTaz $cooking</a>"; ?>
 		</div>
 	</div>
 </div>
