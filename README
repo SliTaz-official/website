@@ -2,17 +2,17 @@ SliTaz Website
 ================================================================================
 
 
-The SliTaz website is hand made, use PHP and XHTML 1.0 Transitional. Code must
-follow standards and be validated by the W3C. We have a main index with news,
-feed parser, Tweets and link to all website languages. Since we Tweet and blog
-only in English, we diplay these news only on the main page but website news
-are translated.
+The SliTaz website is hand made, using PHP and XHTML 1.0 Transitional. Code 
+must follow standards and be validated by the W3C. We have a main index with 
+news, feed parser, Tweets and links to all website languages. Since we Tweet 
+and blog only in English, we display these only on the main page but website 
+news is translated.
 
 
 New version
 -----------
-When a new SliTaz version is published the version string must be change in the
-configuration file config.php as well as the ISO size.
+When a new SliTaz version is published the version string must be changed in 
+the configuration file config.php as well as the ISO size.
 
 
 ================================================================================
