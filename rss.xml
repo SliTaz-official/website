@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+	<atom:link href="http://www.slitaz.org/rss.xml" rel="self" type="application/rss+xml" />
+	<title>Slitaz GNU/Linux RSS feed</title>
+	<link>http://www.slitaz.org/rss.xml</link>
+	<language>en</language>
+	<description>
+		SliTaz GNU/Linux News
+	</description>
+	<copyright>Copyright (C) www.slitaz.org - GNU gpl</copyright>
+	<lastBuildDate>Fri, 09 Mar 2012 00:30:00 GMT</lastBuildDate>
+
+	<image>
+		<title>Slitaz GNU/Linux</title>
+		<url>http://www.slitaz.org/images/logo.png</url>
+		<link>http://www.slitaz.org/</link>
+	</image>
+	
+	<!-- justify to 80 chars or less for text-mode RSS readers also -->
+	
+	<item>
+		<title>SliTaz 4.0-RC2</title>
+		<link>http://www.slitaz.org/en/</link>
+		<guid isPermaLink="true">http://www.slitaz.org/</guid>
+		<pubDate>Fri, 09 Mar 2012 00:30:00 GMT</pubDate>
+		<description>
+			SliTaz GNU/Linux 4.0-RC2 is out! Get it, boot it and help
+			us make SliTaz 4.0 a greate stable release!
+		</description>
+	</item>
+
+</channel>
+</rss>
