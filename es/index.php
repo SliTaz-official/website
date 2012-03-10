@@ -115,6 +115,29 @@ podrás seguir las últimas noticias, commits y tweets.</p>
 	<!-- <li><strong>Date - Title</strong>
 	<p></p>
 	</li> -->
+	<li><strong>3 de marzo de 2012 - SliTaz 4.0-RC2 disponible</strong>
+	<p>
+		El equipo de SliTaz se complace en anunciar la nueva SliTaz 4.0-RC2
+		release candidate. Hemos tenido mucho trabajo resolviendo bugs de la
+		RC1 y de las aplicaciones caseras para usuarios finales como TazPkg,
+		TazPanel y TazUsb. La conexión Wifi se hace más sencilla mediante el
+		TazPanel o el nuevo Wifibox. TazPkg tiene mejor integración en el
+		escritorio y un nuevo sistema de notificación.
+	</p>
+	<p>
+		Esta nueva versión viene con un paquete Xorg completo, soporte DRI así
+		como los controladores nv, intel, geode y vesa funcionando sin
+		necesidad de configurar. También hemos rehecho todos los paquetes una
+		vez más, ahorrando ~2MB en el LiveCD, así que también hemos añadido
+		Lxrandr, Parcellite y el cliente bittorrent Transmission.
+	</p>
+	<p>
+		Agradecemos a todos los que han probado la RC1. Esta RC2 nos acerca a
+		la SliTaz 4.0 planeada en las próximas dos semanas. Puedes descargarte
+		la ISO de la RC2 de nuestro mirror (35,1 MB):
+		<a href="http://mirror.slitaz.org/iso/cooking/slitaz-4.0-RC2.iso">SliTaz 4.0-RC2</a>
+	</p>	
+	</li>
 	<li><strong>23 de febrero de 2012 - SliTaz 4.0-RC1 disponible</strong>
 	<p>
 		Al equipo de Slitaz le complace anunciar la disponibilidad inmediata
