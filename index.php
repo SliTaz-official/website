@@ -168,23 +168,7 @@ include("lib/html/header.html");
 	"Like" the official SliTaz Facebook page and get involved!
 </p>
 
-<!-- Twitter Buttons -->
-<div style="margin-bottom: 10px;">
-	<!-- Follow -->
-	<a href="https://twitter.com/slitaz" class="twitter-follow-button" 
-		data-show-count="true" data-show-screen-name="false">Follow @slitaz</a>
-	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-	<!-- Tweet -->
-	<a href="https://twitter.com/share" class="twitter-share-button" data-via="slitaz" data-hashtags="SliTaz">Tweet</a>
-	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-</div>
-
-<!-- Like Button -->
-<script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script>
-<fb:like 
-	href="http://www.facebook.com/slitaz"
-	show_faces="true" width="auto">
-</fb:like>
+<?php include("lib/html/social.html"); ?>
 
 <h2>Monetary support</h2>
 <p>
@@ -196,30 +180,8 @@ include("lib/html/header.html");
     that way we can keep our freedom and autonomy without having any
     ads on our sites.
 </p>
-<div>
-	<!-- PayPal Button -->
-	<form action="https://www.paypal.com/cgi-bin/webscr" method="post"
-		style="display: inline;">
-		<input type="hidden" name="cmd" value="_s-xclick" />
-		<input type="hidden" name="hosted_button_id" value="4885025" />
-		<input type="image" src="images/paypal.png" name="submit" 
-			alt="PayPal - The safer, easier way to pay online!" />
-	</form>
-	<!-- Flattr Button -->
-	<script type="text/javascript">
-	/* <![CDATA[ */
-	    (function() {
-	        var s = document.createElement('script'), t = document.getElementsByTagName('script')[0];
-	        s.type = 'text/javascript';
-	        s.async = true;
-	        s.src = 'http://api.flattr.com/js/0.6/load.js?mode=auto';
-	        t.parentNode.insertBefore(s, t);
-	    })();
-	/* ]]> */
-	</script>
-	<a class="FlattrButton" style="display:none;" rev="flattr;button:compact;"
-		href="http://www.slitaz.org/"></a>
-</div>
+
+<?php include("lib/html/donate.html"); ?>
 
 <h2>Internationalization</h2>
 <p>

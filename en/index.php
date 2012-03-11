@@ -13,17 +13,6 @@
 	<link rel="stylesheet" type="text/css" href="../slitaz.css" />
 	<link rel="alternate" type="application/rss+xml" title="SliTaz Website feed" href="/rss.xml" />
 	<link rel="alternate" type="application/rss+xml" title="SliTaz SCN feed" href="http://scn.slitaz.org/activity/feed/" />
-	<script type="text/javascript">
-	/* <![CDATA[ */
-	    (function() {
-	        var s = document.createElement('script'), t = document.getElementsByTagName('script')[0];
-	        s.type = 'text/javascript';
-	        s.async = true;
-	        s.src = 'http://api.flattr.com/js/0.6/load.js?mode=auto';
-	        t.parentNode.insertBefore(s, t);
-	    })();
-	/* ]]> */
-	</script>
 </head>
 <body>
 
@@ -259,28 +248,14 @@
 <p>
 	You may also want to become an official sponsor via a monthly donation or
 	by providing us with some hardware or server resources.
-	<a href="asso/sponsor.html">More information</a>
+	<a href="asso/sponsor.php">More information</a>
 </p>
 
-<div>
-	<!-- PayPal Button -->
-	<form action="https://www.paypal.com/cgi-bin/webscr" method="post"
-		style="display: inline;">
-		<input type="hidden" name="cmd" value="_s-xclick" />
-		<input type="hidden" name="hosted_button_id" value="4885025" />
-		<input type="image" src="../images/paypal.png" name="submit" 
-			alt="PayPal - The safer, easier way to pay online!" />
-	</form>
-	<!-- Flattr Button -->
-	<a class="FlattrButton" style="display:none;" rev="flattr;button:compact;"
-		href="http://www.slitaz.org/"></a>
-	<!-- Twitter Button -->
-	<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-	<a href="http://twitter.com/share" class="twitter-share-button" 
-		data-text="SliTaz GNU/Linux" 
-		data-count="horizontal"
-		data-via="slitaz">Tweet</a>
-</div>
+<?php include("../lib/html/donate.html"); ?>
+
+<h3>Twitter &amp; Facebook</h3>
+
+<?php include("../lib/html/social.html"); ?>
 
 <!-- End of content  -->
 </div>
