@@ -37,11 +37,11 @@
 		<div class="right_box">
 			<ul>
 				<li><a href="../../webchat.php">Web Chat</a></li>
-				<li><a href="../mailing-list.html">Mailing List</a></li>
+				<li><a href="../mailing-list.php">Mailing List</a></li>
 				<li><a href="../devel/">Development</a></li>
 				<li><a href="../packages/">Packages</a></li>
 				<li><a href="../artwork/">Artwork</a></li>
-				<li><a href="../search.html">Search</a></li>
+				<li><a href="../search.php">Search</a></li>
 			</ul>
 		</div>
 		<div class="left_box">
@@ -64,7 +64,7 @@
 		<p>
 			<img src="../../images/users.png" alt="users.png" />
 			<a href="http://scn.slitaz.org/">Join us on SCN</a> and
-			the <a href="../mailing-list.html">mailing list</a>
+			the <a href="../mailing-list.php">mailing list</a>
 		</p>
 	</div>
 </div>

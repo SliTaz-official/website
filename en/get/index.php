@@ -27,11 +27,11 @@ include("../../lib/html/header.html");
 		<div class="right_box">
 			<ul>
 				<li><a href="../../webchat.php">Web Chat</a></li>
-				<li><a href="../mailing-list.html">Mailing List</a></li>
+				<li><a href="../mailing-list.php">Mailing List</a></li>
 				<li><a href="../devel/">Development</a></li>
 				<li><a href="../packages/">Packages</a></li>
 				<li><a href="../artwork/">Artwork</a></li>
-				<li><a href="../search.html">Search</a></li>
+				<li><a href="../search.php">Search</a></li>
 			</ul>
 		</div>
 		<div class="left_box">

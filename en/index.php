@@ -11,7 +11,7 @@
 	<meta name="author" content="Paul Issot"/>
 	<link rel="shortcut icon" href="../favicon.ico" />
 	<link rel="stylesheet" type="text/css" href="../slitaz.css" />
-	<link rel="alternate" type="application/rss+xml" title="SliTaz Website feed" href="rss.xml" />
+	<link rel="alternate" type="application/rss+xml" title="SliTaz Website feed" href="/rss.xml" />
 	<link rel="alternate" type="application/rss+xml" title="SliTaz SCN feed" href="http://scn.slitaz.org/activity/feed/" />
 	<script type="text/javascript">
 	/* <![CDATA[ */
@@ -31,30 +31,7 @@
 
 <!-- Block -->
 <div id="block">
-	<!-- Navigation -->
-	<div id="block_nav">
-		<h4>Navigation</h4>
-		<div class="right_box">
-			<ul>
-				<li><a href="../webchat.php">Web Chat</a></li>
-				<li><a href="mailing-list.html">Mailing List</a></li>
-				<li><a href="devel/">Development</a></li>
-				<li><a href="packages/">Packages</a></li>
-				<li><a href="artwork/">Artwork</a></li>
-				<li><a href="search.html">Search</a></li>
-			</ul>
-		</div>
-		<div class="left_box">
-			<ul>
-				<li><a href="./">Headlines</a></li>
-				<li><a href="about/">About</a></li>
-				<li><a href="get/">Download</a></li>
-				<li><a href="doc/">Documentation</a></li>
-				<li><a href="asso/">Association</a></li>
-				<li><a href="asso/sponsor.html">Sponsor</a></li>
-			</ul>
-		</div>
-	</div>
+	<?php include("../lib/html/nav.en.html"); ?>
 	<!-- Information/image -->
 	<div id="block_info">
 		<h4>English Website</h4>
