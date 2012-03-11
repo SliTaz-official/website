@@ -7,9 +7,8 @@
     <meta name="description" content="SliTaz news archives info release" />
     <meta name="keywords" lang="en" content="System, free, gnu, linux, opensource software, livecd in RAM" />
     <meta name="robots" content="index, follow, all" />
-    <meta name="revisit-after" content="7 days" />
     <meta name="expires" content="never" />
-    <meta name="modified" content="2010-03-30 21:45:00" />
+    <meta name="modified" content="2009-11-04 21:45:00" />
     <meta name="author" content="Christophe Lincoln"/>
     <meta name="publisher" content="www.slitaz.org" />
     <link rel="shortcut icon" href="../../favicon.ico" />
@@ -18,47 +17,11 @@
 </head>
 <body>
 
-<!-- Header -->
-<div id="header">
-	<div id="logo"></div>
-	<div id="network">
-		<a href="http://www.slitaz.org/netmap.php">
-			<img src="../../images/network.png" alt="network.png" /></a>
-		<a href="http://scn.slitaz.org/">Community</a>
-		<a href="http://doc.slitaz.org/">Doc</a>
-		<a href="http://forum.slitaz.org/">Forum</a>
-		<a href="http://bugs.slitaz.org">Bugs</a>
-		<a href="http://hg.slitaz.org/">Hg</a>
-	</div>
-	<h1><a href="http://www.slitaz.org/">SliTaz GNU/Linux</a></h1>
-</div>
+<?php include("../../lib/html/header.html"); ?>
 
 <!-- Block -->
 <div id="block">
-	<!-- Navigation -->
-	<div id="block_nav">
-		<h4>Navigation</h4>
-		<div class="right_box">
-			<ul>
-				<li><a href="../../webchat.php">Web Chat</a></li>
-				<li><a href="../mailing-list.php">Mailing List</a></li>
-				<li><a href="../devel/">Development</a></li>
-				<li><a href="../packages/">Packages</a></li>
-				<li><a href="../artwork/">Artwork</a></li>
-				<li><a href="../search.php">Search</a></li>
-			</ul>
-		</div>
-		<div class="left_box">
-			<ul>
-				<li><a href="../">Headlines</a></li>
-				<li><a href="../about/">About</a></li>
-				<li><a href="../get/">Download</a></li>
-				<li><a href="../doc/">Documentation</a></li>
-				<li><a href="../asso/">Association</a></li>
-				<li><a href="../asso/sponsor.html">Sponsor</a></li>
-			</ul>
-		</div>
-	</div>
+	<?php include("../../lib/html/nav.en.html"); ?>
 	<!-- Information/image -->
 	<div id="block_info">
 		<h4>News archives</h4>
@@ -68,9 +31,10 @@
 			that moved to their own domain).
 		</p>
 		<p>
-			<img src="../../images/news.png" alt="png" /> 
-			<a href="2007.html">2007</a> | <a href="2008.html">2008</a>
-			|  2009 | <a href="./">2010</a>
+			<img src="/images/news.png" alt="[ News ]" />
+			<a href="2007.php">2007</a> | <a href="2008.php">2008</a>
+			| <a href="2009.php">2009</a> | <a href="2010.php">2010</a>
+			| <a href="./">2011</a>
 		</p>
 	</div>
 </div>
@@ -197,27 +161,10 @@
 	</p></li>
 </ul>
 
+<!-- End of content -->
 </div>
 
-<!-- Footer -->
-<div id="footer">
-	Copyright &copy; <span class="year"></span>
-	<a href="http://www.slitaz.org/">SliTaz</a> - Network:
-	<a href="http://scn.slitaz.org/">Community</a>
-	<a href="http://doc.slitaz.org/">Doc</a>
-	<a href="http://forum.slitaz.org/">Forum</a>
-	<a href="http://pkgs.slitaz.org/">Packages</a>
-	<a href="http://bugs.slitaz.org">Bugs</a>
-	<a href="http://hg.slitaz.org/">Hg</a>
-	<p>
-		SliTaz @
-		<a href="http://twitter.com/slitaz">Twitter</a>
-		<a href="http://www.facebook.com/slitaz">Facebook</a>
-		<a href="http://distrowatch.com/slitaz">Distrowatch</a>
-		<a href="http://en.wikipedia.org/wiki/SliTaz">Wikipedia</a>
-		<a href="http://flattr.com/profile/slitaz">Flattr</a>
-	</p>
-</div>
+<?php include("../../lib/html/footer.html"); ?>
 
 </body>
 </html>

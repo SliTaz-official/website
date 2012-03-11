@@ -44,7 +44,7 @@
 	<li><a href="#repos">Mercurial repositories.</a></li>
 	<li><a href="#gui">GUI in GTK and CGI/web</a></li>
 	<li><a href="#iconv">Implementation of iconv().</a></li>
-	<li><a href="#pkgs">Tazpkg packages.</a></li>
+	<li><a href="#pkgs">Building SliTaz packages.</a></li>
 	<li><a href="#website">Website Management.</a></li>
 </ul>
 
@@ -212,47 +212,52 @@ int main(int argc, char *argv[])
 <a name="iconv"></a>
 <h2>Implementation of iconv()</h2>
 <p>
-SliTaz uses iconv() provided by GNU glibc - any packages that offer 
-<code>libiconv</code> must use the library contained in <code>glibc-locale</code>. 
-There is therefore no longer a libiconv package (1.2 MB) in SliTaz.
+	SliTaz uses iconv() provided by GNU glibc - any packages that offer 
+	<code>libiconv</code> must use the library contained in <code>glibc-locale</code>. 
+	There is therefore no longer a libiconv package (1.2 MB) in SliTaz.
 </p>
 
 <a name="pkgs"></a>
-<h2>Tazpkg Packages</h2>
+<h2>Building SliTaz packages</h2>
 <p>
-The tazpkg packages in SliTaz are automatically created via Tazwok and a 
-receipt in the wok. The Cookbook describes the 
-<a href="http://doc.slitaz.org/en:cookbook:wok">use of tools</a> 
-and the format of <a href="http://doc.slitaz.org/en:cookbook:receipt">receipts</a>.
-These are required reading before we begin.
+	Building official is done with the Cookutils suite. The package is installed
+	on each SliTaz system as well as the documentation about using cook and
+	<a href="http://hg.slitaz.org/cookutils/raw-file/tip/doc/cookutils.en.html">creating SliTaz Packages</a> suitable fot TazPKG packages manager.
 </p>
 <p>
-In terms of choice of package, the idea is to offer a package by task or 
-functionality, ie. the lightest application in the field and not duplicated. 
-Note that the current packages are not immutable, if you find an alternative 
-that is lighter, with more features or more <em>sexy</em> for a few extra KB, 
-you can suggest it on the Mailing List. Particular attention is given to 
-packages for the LiveCD, these should be stripped, removing unnecesary 
-dependencies and compiler options. In general candidate packages for the core 
-LiveCD are discussed on the Mailing List.
+	The tazpkg packages in SliTaz are automatically created via the
+	<a href="http://cook.slitaz.org/">Cooker</a> from Cookutils package
+	and a receipt in the wok. The Cookbook describes the format of 
+	<a href="http://doc.slitaz.org/en:cookbook:receipt">receipts</a>.
+	Cook and receipt documentation are required reading before we begin.
 </p>
 <p>
-Before you begin to compile and create packages for SliTaz, be sure that the 
-work doesn't already exist in the 
-<a href="http://download.tuxfamily.org/slitaz/packages/undigest/">undigest</a> 
-wok provided by the primary SliTaz mirror. Don't forget that the members 
-of the list are there to help you and that the documentation of the 
-<a href="http://doc.slitaz.org/en:cookbook:wok">wok and tools</a> 
-exists to help you get started.
+	In terms of choice of package, the idea is to offer a package by task or 
+	functionality, ie. the lightest application in the field and not duplicated. 
+	Note that the current packages are not immutable, if you find an alternative 
+	that is lighter, with more features or more <em>sexy</em> for a few extra KB, 
+	you can suggest it on the Mailing List. Particular attention is given to 
+	packages for the LiveCD, these should be stripped, removing unnecesary 
+	dependencies and compiler options. In general candidate packages for the core 
+	LiveCD are discussed on the Mailing List.
+</p>
+<p>
+	Before you begin to compile and create packages for SliTaz, be sure that the 
+	work doesn't already exist in the 
+	<a href="http://download.tuxfamily.org/slitaz/packages/undigest/">undigest</a> 
+	wok provided by the primary SliTaz mirror. Don't forget that the members 
+	of the list are there to help you and that the documentation of the 
+	<a href="http://doc.slitaz.org/en:cookbook:wok">wok and tools</a> 
+	exists to help you get started.
 </p>
 
 <a name="pkgs-naming"></a>
 <h3>Naming of packages</h3>
 <p>
-In most cases the package name is the same as the source, except for
-Python, Perl, PHP, Ruby and Lua modules. For example, the package
-providing a Kid template system written in Python and XML is named:
-<code>python-kid</code>.
+	In most cases the package name is the same as the source, except for
+	Python, Perl, PHP, Ruby and Lua modules. For example, the package
+	providing a Kid template system written in Python and XML is named:
+	<code>python-kid</code>.
 </p>
 
 <a name="website"></a>
@@ -268,25 +273,25 @@ providing a Kid template system written in Python and XML is named:
 
 <h3>xHTML coding style</h3>
 <p>
-The pages and different <em>books</em> are coded in xHTML 1.0
-transitional. The title of level 1 is used only once (at the top), 
-level 2 is the title of the document and levels 3 and 4 are then used for
-the subtitles. If a list is used instead using smart anchors;
-then that starts at the top, just after the title of level 2.
-Paragraphs are contained in the tags <code>&lt;p&gt;&lt;/p&gt;</code>. 
-For indentation, we use tabs - the reason being semantics and to take 
-up less space in terms of octets (bytes). To put code, like the name of
-a command inside a paragraph: <code>&lt;code&gt;</code> is the preferred 
-method. To view commands or to utilize a terminal, the web pages use
-<code>&lt;pre&gt;</code> to display the formatted text. Example:
+	The pages and different <em>books</em> are coded in xHTML 1.0
+	transitional. The title of level 1 is used only once (at the top), 
+	level 2 is the title of the document and levels 3 and 4 are then used for
+	the subtitles. If a list is used instead using smart anchors;
+	then that starts at the top, just after the title of level 2.
+	Paragraphs are contained in the tags <code>&lt;p&gt;&lt;/p&gt;</code>. 
+	For indentation, we use tabs - the reason being semantics and to take 
+	up less space in terms of octets (bytes). To put code, like the name of
+	a command inside a paragraph: <code>&lt;code&gt;</code> is the preferred 
+	method. To view commands or to utilize a terminal, the web pages use
+	<code>&lt;pre&gt;</code> to display the formatted text. Example:
 </p>
 <pre>
  $ command
 </pre>
 <p>
-To view text that can be copied and pasted, such as scripts,
-bits of code, sample configuration files, etc - we also use
-<code>&lt;pre&gt;</code>, but with a CSS class named "script". Example:
+	To view text that can be copied and pasted, such as scripts,
+	bits of code, sample configuration files, etc - we also use
+	<code>&lt;pre&gt;</code>, but with a CSS class named "script". Example:
 </p>
 <pre class="script">
 &lt;pre class="script"&gt;
@@ -296,19 +301,19 @@ code...
 &lt;/pre&gt;
 </pre>
 <p>
-The <em>emphasized</em> words put themselves in the tag <code>&lt;em&gt;</code> 
-and internal links are relative. Remember to check the validity
-of the code via the online <em>validator</em> of the W3C.
+	The <em>emphasized</em> words put themselves in the tag <code>&lt;em&gt;</code> 
+	and internal links are relative. Remember to check the validity
+	of the code via the online <em>validator</em> of the W3C.
 </p>
 
 <a name="diff"></a>
 <h2>Diff and patch</h2>
 <p>
-The utilities <code>diff</code> and <code>patch</code> are command-line tools 
-for creating and implementing a file containing differences between two files. 
-This technique is often used for collaboration and the changes made to the 
-original file can be clearly extracted. To create a <code>diff</code> file 
-readable by humans in a simple text editor, you must supply the <code>-u</code> option:
+	The utilities <code>diff</code> and <code>patch</code> are command-line tools 
+	for creating and implementing a file containing differences between two files. 
+	This technique is often used for collaboration and the changes made to the 
+	original file can be clearly extracted. To create a <code>diff</code> file 
+	readable by humans in a simple text editor, you must supply the <code>-u</code> option:
 </p>
 <pre>
  $ diff -u file.orig file.new &gt; file.diff
