@@ -21,30 +21,7 @@ include("../../lib/html/header.html");
 
 <!-- Block -->
 <div id="block">
-	<!-- Navigation -->
-	<div id="block_nav">
-		<h4>Navigation</h4>
-		<div class="right_box">
-			<ul>
-				<li><a href="../../webchat.php">Web Chat</a></li>
-				<li><a href="../mailing-list.php">Mailing List</a></li>
-				<li><a href="../devel/">Development</a></li>
-				<li><a href="../packages/">Packages</a></li>
-				<li><a href="../artwork/">Artwork</a></li>
-				<li><a href="../search.php">Search</a></li>
-			</ul>
-		</div>
-		<div class="left_box">
-			<ul>
-				<li><a href="../">Headlines</a></li>
-				<li><a href="../about/">About</a></li>
-				<li><a href="../get/">Download</a></li>
-				<li><a href="../doc/">Documentation</a></li>
-				<li><a href="../asso/">Association</a></li>
-				<li><a href="../asso/sponsor.html">Sponsor</a></li>
-			</ul>
-		</div>
-	</div>
+	<?php include("../../lib/html/nav.en.html"); ?>
 	<!-- Information/image -->
 	<div id="block_info">
 		<h4>Download</h4>
@@ -87,35 +64,16 @@ include("../../lib/html/header.html");
 	Bootable ISO image of the cooking version.</li>
 	<li><a href="index.html#floppy">Floppy disk</a> - Bootable 
 	startup disk to launch the LiveCD, a USB stick, etc.</li>
-	<li><a href="flavors.html">LiveCD to taste</a> - Flavors and loram.</li>
+	<li><a href="flavors.php">LiveCD to taste</a> - Flavors and loram.</li>
 </ul>
 
-<p>
-	Help the project via a small donation or become an official
-	<a href="../asso/sponsor.html">sponsor</a>.
-</p>
-<!-- PayPal boutton -->
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post"
-	style="display: inline;">
-		<input type="hidden" name="cmd" value="_s-xclick" />
-		<input type="hidden" name="hosted_button_id" value="4885025" />
-		<input type="image" src="../../images/paypal.png" name="submit" 
-			alt="PayPal - The safer, easier way to pay online!" />
-</form>
-<!-- Flattr boutton -->
-<script type="text/javascript">
-/* <![CDATA[ */
-    (function() {
-        var s = document.createElement('script'), t = document.getElementsByTagName('script')[0];
-        s.type = 'text/javascript';
-        s.async = true;
-        s.src = 'http://api.flattr.com/js/0.6/load.js?mode=auto';
-        t.parentNode.insertBefore(s, t);
-    })();
-/* ]]> */
-</script>
-<a class="FlattrButton" style="display:none;" rev="flattr;button:compact;"
-	href="http://www.slitaz.org/"></a>
+<div class="box">
+	<p>
+		Help the project via a small donation or become an official
+		<a href="../asso/sponsor.html">sponsor</a>.
+	</p>
+	<?php include("../../lib/html/donate.html"); ?>
+</div>
 
 <h3>General information</h3>
 <p>

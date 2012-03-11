@@ -7,7 +7,7 @@
     <meta name="description" content="SliTaz GNU/Linux project information overview" />
     <meta name="keywords" lang="en" content="about slitaz, gnu, linux, mini distro, livecd" />
     <meta name="robots" content="index, follow, all" />
-    <meta name="modified" content="2011-03-25 20:30:00" />
+    <meta name="modified" content="<?php echo (date( "Y-m-d H:i:s", getlastmod())); ?>" />
     <meta name="author" content="Christophe Lincoln"/>
     <meta name="publisher" content="www.slitaz.org" />
     <link rel="shortcut icon" href="../../favicon.ico" />
@@ -15,47 +15,11 @@
 </head>
 <body>
 
-<!-- Header -->
-<div id="header">
-	<div id="logo"></div>
-	<div id="network">
-		<a href="http://www.slitaz.org/netmap.php">
-			<img src="../../images/network.png" alt="network.png" /></a>
-		<a href="http://scn.slitaz.org/">Community</a>
-		<a href="http://doc.slitaz.org/">Doc</a>
-		<a href="http://forum.slitaz.org/">Forum</a>
-		<a href="http://bugs.slitaz.org">Bugs</a>
-		<a href="http://hg.slitaz.org/">Hg</a>
-	</div>
-	<h1><a href="http://www.slitaz.org/">SliTaz GNU/Linux</a></h1>
-</div>
+<?php include("../../lib/html/header.html"); ?>
 
 <!-- Block -->
 <div id="block">
-	<!-- Navigation -->
-	<div id="block_nav">
-		<h4>Navigation</h4>
-		<div class="right_box">
-			<ul>
-				<li><a href="../../webchat.php">Web Chat</a></li>
-				<li><a href="../mailing-list.php">Mailing List</a></li>
-				<li><a href="../devel/">Development</a></li>
-				<li><a href="../packages/">Packages</a></li>
-				<li><a href="../artwork/">Artwork</a></li>
-				<li><a href="../search.php">Search</a></li>
-			</ul>
-		</div>
-		<div class="left_box">
-			<ul>
-				<li><a href="../">Headlines</a></li>
-				<li><a href="../about/">About</a></li>
-				<li><a href="../get/">Download</a></li>
-				<li><a href="../doc/">Documentation</a></li>
-				<li><a href="../asso/">Association</a></li>
-				<li><a href="../asso/sponsor.html">Sponsor</a></li>
-			</ul>
-		</div>
-	</div>
+	<?php include("../../lib/html/nav.en.html"); ?>
 	<!-- Information/image -->
 	<div id="block_info">
 		<h4>About the project</h4>
@@ -87,7 +51,7 @@
 <!-- Content -->
 <div id="content">
 
-<a name ="intro"></a>
+<a name="intro"></a>
 <h2>Introduction to the project</h2>
 <p>
 SliTaz GNU/Linux is a free operating system working completely in memory from  
@@ -121,7 +85,7 @@ using the list or directly by mail : &lt;devel at slitaz.org&gt;
 	<li>Tools to create, edit or burn CD or DVD images.</li>
 	<li>Elegant desktop with Openbox running on the top of Xorg/Xvesa (X server).</li>
 	<li>Homemade graphical boxes to command line utilities.</li>
-	<li>2300 packages easily installable from the mirror.</li>
+	<li>3345 packages easily installable from the mirror.</li>
 	<li>Active and friendly community.</li>
 </ul>
 
@@ -195,25 +159,7 @@ everyone for support.
 <!-- End of content -->
 </div>
 
-<!-- Footer -->
-<div id="footer">
-	Copyright &copy; <span class="year"></span>
-	<a href="http://www.slitaz.org/">SliTaz</a> - Network:
-	<a href="http://scn.slitaz.org/">Community</a>
-	<a href="http://doc.slitaz.org/">Doc</a>
-	<a href="http://forum.slitaz.org/">Forum</a>
-	<a href="http://pkgs.slitaz.org/">Packages</a>
-	<a href="http://bugs.slitaz.org">Bugs</a>
-	<a href="http://hg.slitaz.org/">Hg</a>
-	<p>
-		SliTaz @
-		<a href="http://twitter.com/slitaz">Twitter</a>
-		<a href="http://www.facebook.com/slitaz">Facebook</a>
-		<a href="http://distrowatch.com/slitaz">Distrowatch</a>
-		<a href="http://en.wikipedia.org/wiki/SliTaz">Wikipedia</a>
-		<a href="http://flattr.com/profile/slitaz">Flattr</a>
-	</p>
-</div>
+<?php include("../../lib/html/footer.html"); ?>
 
 </body>
 </html>

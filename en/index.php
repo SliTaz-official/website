@@ -51,7 +51,7 @@
 <!-- Languages -->
 <div id="lang">
 	<a href="../i18n.php">
-		<img src="../images/locale.png" alt="locale.png" /></a>
+		<img src="../images/locale.png" alt="Locale:" /></a>
 	<a href="../da/">Dansk</a>
 	<a href="../de/">Deutsch</a>
 	<a href="../en/">English</a>
@@ -67,7 +67,7 @@
 <div id="content">
 
 <div class="box">
-	<img src="../images/update.png" style="float: left; margin-right: 10px; " />
+	<img src="/images/update.png" alt="Update:" style="float: left; margin-right: 10px; " />
 	<p>
 		Help us get a dedicated server - Check out our
 		<a href="http://www.gofundme.com/3ql70">online fundraising</a>
@@ -100,10 +100,12 @@
 
 <ul>
 	<!-- <li><strong>Date - Title</strong>
+	<a name="20120223"></a>
 	<p></p>
 	</li> -->
-	<a name="20120303"></a>
+	
 	<li><strong>03 Mar 2012 - SliTaz 4.0-RC2 is out</strong>
+	<a name="20120303"></a>
 	<p>
 		The Slitaz team is pleased to announce the new SliTaz 4.0-RC2 release
 		candidate. We have done a huge amount of work fixing bugs from RC1 and
@@ -125,8 +127,9 @@
 		<a href="http://mirror.slitaz.org/iso/cooking/slitaz-4.0-RC2.iso">SliTaz 4.0-RC2</a>
 	</p>
 	</li>
-	<a name="20120223"></a>
+	
 	<li><strong>23 Feb 2012 - SliTaz 4.0 -RC1 is out</strong>
+	<a name="20120223"></a>
 	<p>
 		The SliTaz contributor team is pleased to announce the immediate
 		availability of the first release candidate for SliTaz 4.0. SliTaz can
@@ -150,8 +153,8 @@
 	</p> 
 	</li>
 	
-	<a name="20110531"></a>
 	<li><strong>31 May 2011 - New and fresh Cooking 20110531</strong>
+	<a name="20110531"></a>
 	<p>
 		The Slitaz team is proud to announce the release of a new Cooking version
 		built with our new and fresh packages from cookutils. Cookutils is one of
@@ -180,8 +183,8 @@
 	</p>
 	</li>
 
-	<a name="20110329"></a>
 	<li><strong>29 March 2011 - New Cooking 20110329</strong>
+	<a name="20110329"></a>
 	<p>
 	The SliTaz team is pleased to announce the release of a new cooking
 	ISO featuring over 2900 packages. All packages have been rebuilt using
