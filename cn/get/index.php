@@ -4,55 +4,21 @@
 <head>
 	<title>SliTaz (cn) - Download</title>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="SliTaz GNU/Linux 关于信息" />
-    <meta name="keywords" lang="cn" content="slitaz artwork" />
-	<meta name="robots" content="index, follow, all" />
-    <meta name="modified" content="<?php echo (date( "Y-m-d H:i:s", getlastmod())); ?>" />
-    <meta name="author" content="Draplater" />
-	<link rel="shortcut icon" href="../../favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="../../slitaz.css" />
+	<meta name="description" content="SliTaz GNU/Linux 关于信息" />
+	<meta name="keywords" lang="cn" content="slitaz artwork" />
+	<meta name="author" content="Draplater" />
+	<?php include("../../lib/html/meta-link.html"); ?>
 </head>
 <body>
 
-<!-- Header -->
-<div id="header">
-	<div id="logo"></div>
-	<div id="network">
-		<a href="http://www.slitaz.org/netmap.php">
-			<img src="../../images/network.png" alt="network.png" /></a>
-		<a href="http://scn.slitaz.org/">Community</a>
-		<a href="http://doc.slitaz.org/">Doc</a>
-		<a href="http://forum.slitaz.org/">Forum</a>
-		<a href="http://bugs.slitaz.org">Bugs</a>
-		<a href="http://hg.slitaz.org/">Hg</a>
-	</div>
-	<h1><a href="http://www.slitaz.org/">SliTaz GNU/Linux</a></h1>
-</div>
+<?php
+include("../../config.php");
+include("../../lib/html/header.html");
+?>
 
 <!-- Block -->
 <div id="block">
-	<!-- Navigation -->
-	<div id="block_nav">
-		<h4>美术资源</h4>
-		<div class="right_box">
-			<ul>
-				<li><a href="../../en/mailing-list.html">邮件列表 (en)</a></li>
-				<li><a href="../../en/devel/">开发 (en)</a></li>
-				<li><a href="../packages/">软件包</a></li>
-				<li><a href="../artwork/">美工</a></li>
-				<li><a href="../search.html">搜索</a></li>
-			</ul>
-		</div>
-		<div class="left_box">
-			<ul>
-				<li><a href="../">头条</a></li>
-				<li><a href="../about/">关于</a></li>
-				<li><a href="../get/">下载</a></li>
-				<li><a href="../../en/asso/">捐赠 (en)</a></li>
-				<li><a href="../doc/">文档</a></li>
-			</ul>
-		</div>
-	</div>
+	<?php include("../../lib/html/nav.cn.html"); ?>
 	<!-- Information/image -->
 	<div id="block_info">
 		<h4>下载</h4>
@@ -62,8 +28,8 @@
 		</p>
 		<div class="button">
 			Quick Download:
-			<a href="http://mirror.slitaz.org/iso/3.0/slitaz-3.0.iso">SliTaz 3.0</a>
-			<a href="http://mirror.slitaz.org/iso/cooking/slitaz-4.0-RC2.iso">SliTaz 4.0-RC2</a>
+			<?php echo "<a href='$stable_iso'>SliTaz $stable_ver</a>
+				<a href='$cooking_iso'>SliTaz $cooking</a>"; ?>
 		</div>
 	</div>
 </div>
@@ -96,6 +62,13 @@
 	从LiveCD、USB设备启动的可启动软盘镜像。</li>
 	<li><a href="flavors.html">新鲜玩意</a> - loram版本，衍生版本。</li>
 </ul>
+
+<div class="box">
+	<p>
+		通过一个小的捐赠帮助的项目，或成为官方<a href="/en/asso/sponsor.php">赞助商 (en)</a>.
+	</p>
+	<?php include("../../lib/html/donate.html"); ?>
+</div>
 	
 <h3>下载提示</h3>
 <p>
@@ -111,9 +84,6 @@ Slitaz的软件源在法国、瑞士、中国均有分布。在法国由<a href=
 	<li>瑞士 - SWITCHmirror提供的软件源 (10 Gbit/s)
 	<a href="http://mirror.switch.ch/ftp/mirror/slitaz/">HTTP</a>
 	<a href="ftp://mirror.switch.ch/mirror/slitaz/">FTP</a></li>
-
-	<li>法国 - Mésobius提供的软件源 (100 Mps)
-	<a href="http://slitazmirror.linuxembarque.com">HTTP</a></li>
 
 	<li>法国 - TuxFamily提供的软件源
 	<a href="http://download.tuxfamily.org/slitaz/">HTTP</a>
@@ -145,28 +115,29 @@ Tazusb（LiveUSB工具）和一些其他的Slitaz小工具可以在Slitaz软件�
 <a name="stable"></a>
 <h2>LiveCD - 稳定版</h2>
 <p>
-Slitaz稳定版提供一个成熟的操作系统。这个操作系统已经经过严格的测试，基本上没有BUG。
-LiveCD。这个版本选择了许多有用的软件，是一个用途广泛、强大的操作系统。这个版本较为稳定，
-不过更新频率较慢。建议服务器用户或追求稳定的个人用户使用这个版本。
-当前最新的稳定版本是3.0版，在2010年3月28日发布。
+	Slitaz稳定版提供一个成熟的操作系统。这个操作系统已经经过严格的测试，基本上没有BUG。
+	LiveCD。这个版本选择了许多有用的软件，是一个用途广泛、强大的操作系统。这个版本较为稳定，
+	不过更新频率较慢。建议服务器用户或追求稳定的个人用户使用这个版本。
+	<?php echo "当前最新的稳定版本是$stable_ver版， $stable_rel 发布。"; ?>
 </p>
 
 <p class="box">
-SliTaz GNU/Linux 3.0 (30 MB) -
-<a href="http://mirror.slitaz.org/iso/3.0/slitaz-3.0.iso"
->slitaz-3.0.iso</a>
-[ <a href="http://mirror.slitaz.org/iso/3.0/slitaz-3.0.md5"
->md5</a> ]
+	<img src="/images/download.png" height="48px" width="48px" alt="[ DL ]" />
+	<?php echo "SliTaz GNU/Linux $stable_ver ($stable_size) - 
+	<a href='$stable_iso'>slitaz-$stable_ver.iso</a>
+	[ <a href='$mirror/$stable_ver/slitaz-$stable_ver.md5'>md5</a> ]"; ?>
 </p>
 
 <p>
-提供给2.0版本的，包含所有软件包的可启动CD镜像每天都会创建。它也包含Slitaz官方网站的副本，在无网络的情况下可以通过install.sh使用。
+提供给<?php echo "$stable_ver"; ?>版本的，包含所有软件包的可启动CD镜像每天都会创建。
+它也包含Slitaz官方网站的副本，在无网络的情况下可以通过install.sh使用。
 </p>
 
 <p class="box">
-SliTaz GNU/Linux 3.0 软件包集合 (&lt; 2Gb) -
-<a href="http://mirror.switch.ch/ftp/mirror/slitaz/iso/3.0/packages-3.0.iso">packages-3.0.iso</a>
-[ <a href="http://mirror.switch.ch/ftp/mirror/slitaz/iso/3.0/packages-3.0.md5">md5</a> ]
+	<img src="/images/download.png" height="48px" width="48px" alt="[ DL ]" />
+	<?php echo "SliTaz GNU/Linux $stable_ver 软件包集合 ($stable_pkgs)
+	- <a href='$pkgs_mirror/$stable_ver/packages-$stable_ver.iso'>packages-$stable_ver.iso</a>
+	[ <a href='$pkgs_mirror/$stable_ver/packages-$stable_ver.md5'>md5</a> ]"; ?>
 </p>
 
 <a name="cooking"></a>
@@ -176,22 +147,22 @@ Slitaz开发版LiveCD是一个在不断开发的版本，也是可以使用的�
 </p>
 
 <p class="box">
-SliTaz GNU/Linux 开发版-20110531 (30 MB) -
-<a href="http://mirror.slitaz.org/iso/cooking/slitaz-cooking.iso"
->slitaz-cooking.iso</a>
-[ <a href="http://mirror.slitaz.org/iso/cooking/slitaz-cooking.md5"
->md5</a> ]
+	<img src="/images/download.png" height="48px" width="48px" alt="[ DL ]" />
+	<?php echo "SliTaz GNU/Linux Cooking $cooking_ver ($cooking_size) - 
+	<a href='$cooking_iso'>slitaz-$cooking.iso</a>
+	[ <a href='$mirror/cooking/slitaz-$cooking.md5'>md5</a> ]"; ?>
 </p>
 
 <p>
-提供给开发版的，包含所有软件包的可启动DVD镜像每天都会创建。它也包含Slitaz官方网站的副本，在无网络的情况下可以通过install.sh使用。这个镜像可以安装到USB设备中，不过会格式化U盘。
-
+提供给开发版的，包含所有软件包的可启动DVD镜像每天都会创建。它也包含Slitaz官方网站的副本，
+在无网络的情况下可以通过install.sh使用。这个镜像可以安装到USB设备中，不过会格式化U盘。
 </p>
 
-<p class="get">
-SliTaz GNU/Linux 开发版软件包集合 (&lt; 4Gb) -
-<a href="http://mirror.slitaz.org/iso/cooking/packages-cooking.iso">packages-cooking.iso</a>
-[ <a href="http://mirror.slitaz.org/iso/cooking/packages-cooking.md5">md5</a> ]
+<p class="box">
+	<img src="/images/download.png" height="48px" width="48px" alt="[ DL ]" />
+	<?php echo "SliTaz GNU/Linux Cooking 开发版软件包集合 ($cooking_pkgs)
+	- <a href='$pkgs_mirror/cooking/packages-cooking.iso'>packages-cooking.iso</a>
+	[ <a href='$pkgs_mirror/cooking/packages-cooking.md5'>md5</a> ]"; ?>
 </p>
 
 <a name="floppy"></a>
@@ -201,33 +172,16 @@ SliTaz GNU/Linux 开发版软件包集合 (&lt; 4Gb) -
 </p>
 
 <p class="box">
-软盘镜像(1,44 Mb) -
-<a href="http://mirror.slitaz.org/boot/floppy-grub4dos">镜像</a>
-[ <a href="http://mirror.slitaz.org/boot/floppy-grub4dos.md5">md5</a> ]
+	<img src="/images/download.png" height="48px" width="48px" alt="[ DL ]" />
+	软盘镜像(1,44 Mb) -
+	<a href="http://mirror.slitaz.org/boot/floppy-grub4dos">镜像</a>
+	[ <a href="http://mirror.slitaz.org/boot/floppy-grub4dos.md5">md5</a> ]
 </p>
 
 <!-- End of content -->
 </div>
 
-<!-- Footer -->
-<div id="footer">
-	Copyright &copy; <span class="year"></span>
-	<a href="http://www.slitaz.org/">SliTaz</a> - Network:
-	<a href="http://scn.slitaz.org/">Community</a>
-	<a href="http://doc.slitaz.org/">Doc</a>
-	<a href="http://forum.slitaz.org/">Forum</a>
-	<a href="http://pkgs.slitaz.org/">Packages</a>
-	<a href="http://bugs.slitaz.org">Bugs</a>
-	<a href="http://hg.slitaz.org/">Hg</a>
-	<p>
-		SliTaz @
-		<a href="http://twitter.com/slitaz">Twitter</a>
-		<a href="http://www.facebook.com/slitaz">Facebook</a>
-		<a href="http://distrowatch.com/slitaz">Distrowatch</a>
-		<a href="http://en.wikipedia.org/wiki/SliTaz">Wikipedia</a>
-		<a href="http://flattr.com/profile/slitaz">Flattr</a>
-	</p>
-</div>
+<?php include("../../lib/html/footer.html"); ?>
 
 </body>
 </html>
