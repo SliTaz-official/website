@@ -6,11 +6,8 @@
 	<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
 	<meta name="description" content="slitaz network map" />
 	<meta name="keywords" lang="en" content="slitaz network, slitaz support, slitaz sites" />
-	<meta name="robots" content="index, follow, all" />
-    <meta name="modified" content="<?php echo (date( "Y-m-d H:i:s", getlastmod())); ?>" />
 	<meta name="author" content="Christophe Lincoln"/>
-	<link rel="shortcut icon" href="favicon.ico" />
-	<link rel="stylesheet" type="text/css" href="slitaz.css" />
+	<?php include("lib/html/meta-link.html"); ?>
 </head>
 <body>
 

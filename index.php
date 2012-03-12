@@ -2,19 +2,16 @@
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-    <title>SliTaz GNU/Linux</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>SliTaz GNU/Linux</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="description" content="SliTaz GNU/Linux LiveCD operating system" />
-    <meta name="keywords" lang="en" content="slitaz, gnu, linux, opensource, livecd, live usb" />
-    <meta name="robots" content="index, follow, all" />
-    <meta name="modified" content="<?php echo (date( "Y-m-d H:i:s", getlastmod())); ?>" />
-    <meta name="author" content="Christophe Lincoln" />
-    <meta name="verify-v1" content="qieECDfB5l+EBkG8QMNuHOGfol0/MEe4U22/4iVupNw=" />
-	<link rel="shortcut icon" href="favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="slitaz.css" />
-    <link rel="alternate" type="application//rss.xml" title="SliTaz Website feed" href="/rss.xml" />
-    <link rel="alternate" type="application/atom+xml" title="SliTaz Forum feed" href="http://forum.slitaz.org/rss" />
-    <link rel="alternate" type="application//rss.xml" title="SliTaz SCN feed" href="http://scn.slitaz.org//rss.xml" />
+	<meta name="keywords" lang="en" content="slitaz, gnu, linux, opensource, livecd, live usb" />
+	<meta name="author" content="Christophe Lincoln" />
+	<meta name="verify-v1" content="qieECDfB5l+EBkG8QMNuHOGfol0/MEe4U22/4iVupNw=" />
+	<?php include("lib/html/meta-link.html"); ?>
+	<!-- Link to Forum and SCN feed -->
+	<link rel="alternate" type="application/rss+xml" title="SliTaz Forum Feed" href="http://forum.slitaz.org/rss" />
+	<link rel="alternate" type="application/rss+xml" title="SliTaz SCN Feed" href="http://scn.slitaz.org/feed/" />
 </head>
 <body>
 

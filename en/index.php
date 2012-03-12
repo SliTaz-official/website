@@ -6,13 +6,8 @@
 	<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
 	<meta name="description" content="SliTaz GNU/Linux English Website" />
 	<meta name="keywords" lang="en" content="System, free, gnu, linux, software opensource, livecd LINUX in RAM" />
-	<meta name="robots" content="index, follow, all" />
-	<meta name="modified" content="<?php echo (date( "Y-m-d H:i:s", getlastmod())); ?>" />
 	<meta name="author" content="Paul Issot"/>
-	<link rel="shortcut icon" href="../favicon.ico" />
-	<link rel="stylesheet" type="text/css" href="../slitaz.css" />
-	<link rel="alternate" type="application//rss.xml" title="SliTaz Feed" href="/rss.xml" />
-	<link rel="alternate" type="application//rss.xml" title="SliTaz SCN Feed" href="http://scn.slitaz.org/activity/feed/" />
+	<?php include("../lib/html/meta-link.html"); ?>
 </head>
 <body>
 
