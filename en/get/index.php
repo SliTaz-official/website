@@ -2,15 +2,12 @@
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-    <title>SliTaz - Downloads</title>
-    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
-    <meta name="description" content="SliTaz GNU/Linux LiveCD free download" />
-    <meta name="keywords" lang="en" content="source, iso, livecd, get, free" />
-    <meta name="robots" content="index, follow, all" />
-    <meta name="modified" content="<?php echo (date( "Y-m-d H:i:s", getlastmod())); ?>" />
-    <meta name="author" content="Christophe Lincoln, Paul Issot"/>
-    <link rel="shortcut icon" href="../../favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="../../slitaz.css" />
+	<title>SliTaz - Downloads</title>
+	<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+	<meta name="description" content="SliTaz GNU/Linux LiveCD free download" />
+	<meta name="keywords" lang="en" content="source, iso, livecd, get, free" />
+	<meta name="author" content="Christophe Lincoln, Paul Issot"/>
+	<?php include("../../lib/html/meta-link.html"); ?>
 </head>
 <body>
 
@@ -137,6 +134,7 @@ include("../../lib/html/header.html");
 </p>
 
 <p class="box">
+	<img src="/images/download.png" height="48px" width="48px" alt="[ DL ]" />
 	<?php echo "SliTaz GNU/Linux $stable_ver ($stable_size) - 
 	<a href='$stable_iso'>slitaz-$stable_ver.iso</a>
 	[ <a href='$mirror/$stable_ver/slitaz-$stable_ver.md5'>md5</a> ]"; ?>
@@ -149,6 +147,7 @@ include("../../lib/html/header.html");
 </p>
 
 <p class="box">
+	<img src="/images/download.png" height="48px" width="48px" alt="[ DL ]" />
 	<?php echo "Collection of SliTaz GNU/Linux $stable_ver packages ($stable_pkgs)
 	- <a href='$pkgs_mirror/$stable_ver/packages-$stable_ver.iso'>packages-$stable_ver.iso</a>
 	[ <a href='$pkgs_mirror/$stable_ver/packages-$stable_ver.md5'>md5</a> ]"; ?>
@@ -163,6 +162,7 @@ include("../../lib/html/header.html");
 </p>
 
 <p class="box">
+	<img src="/images/download.png" height="48px" width="48px" alt="[ DL ]" />
 	<?php echo "SliTaz GNU/Linux Cooking $cooking_ver ($cooking_size) - 
 	<a href='$cooking_iso'>slitaz-$cooking.iso</a>
 	[ <a href='$mirror/cooking/slitaz-$cooking.md5'>md5</a> ]"; ?>
@@ -178,6 +178,7 @@ include("../../lib/html/header.html");
 </p>
 
 <p class="box">
+	<img src="/images/download.png" height="48px" width="48px" alt="[ DL ]" />
 	<?php echo "Collection of SliTaz GNU/Linux Cooking packages ($cooking_pkgs)
 	- <a href='$pkgs_mirror/cooking/packages-cooking.iso'>packages-cooking.iso</a>
 	[ <a href='$pkgs_mirror/cooking/packages-cooking.md5'>md5</a> ]"; ?>
@@ -193,6 +194,7 @@ include("../../lib/html/header.html");
 </p>
 
 <p class="box">
+	<img src="/images/download.png" height="48px" width="48px" alt="[ DL ]" />
 	Floppy disk (1,44 MB) -
 	<a href="http://mirror.slitaz.org/boot/floppy-grub4dos">image</a>
 	[ <a href="http://mirror.slitaz.org/boot/floppy-grub4dos.md5">md5</a> ]

@@ -6,14 +6,8 @@
 	<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
 	<meta name="description" content="SliTaz GNU/Linux LiveCD système libre autonome rapide linux cdrom vif gratuit" />
 	<meta name="keywords" lang="fr" content="Système, libre, gnu, linux, logiciels opensource, livecd, swiss made" />
-	<meta name="robots" content="index, follow, all" />
-	<meta name="modified" content="<?php echo (date( "Y-m-d H:i:s", getlastmod())); ?>" />
 	<meta name="author" content="Christophe Lincoln"/>
-	<meta name="publisher" content="www.slitaz.org" />
-	<link rel="shortcut icon" href="../favicon.ico" />
-	<link rel="stylesheet" type="text/css" href="../slitaz.css" />
-	<link rel="alternate" type="application//rss.xml" title="SliTaz Feed" href="/rss.xml" />
-	<link rel="alternate" type="application//rss.xml" title="SliTaz SCN Feed" href="http://scn.slitaz.org/activity/feed/" />
+	<?php include("../lib/html/meta-link.html"); ?>
 </head>
 <body>
 

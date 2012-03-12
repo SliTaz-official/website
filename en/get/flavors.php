@@ -2,15 +2,12 @@
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-    <title>SliTaz LiveCD Flavors</title>
-    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
-    <meta name="description" content="SliTaz GNU/Linux LiveCD" />
-    <meta name="keywords" lang="en" content="System, free, gnu, linux, software opensource, livecd LINUX in RAM" />
-    <meta name="robots" content="index, follow, all" />
-    <meta name="modified" content="<?php echo (date( "Y-m-d H:i:s", getlastmod())); ?>" />
-    <meta name="author" content="Christophe Lincoln" />
-    <link rel="shortcut icon" href="../../favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="../../slitaz.css" />
+	<title>SliTaz LiveCD Flavors</title>
+	<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+	<meta name="description" content="SliTaz GNU/Linux LiveCD" />
+	<meta name="keywords" lang="en" content="System, free, gnu, linux, software opensource, livecd LINUX in RAM" />    
+	<meta name="author" content="Christophe Lincoln" />
+	<?php include("../../lib/html/meta-link.html"); ?>
 </head>
 <body>
 
