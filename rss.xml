@@ -9,7 +9,7 @@
 		SliTaz GNU/Linux News
 	</description>
 	<copyright>Copyright (C) www.slitaz.org - GNU gpl</copyright>
-	<lastBuildDate>Mon, 12 Mar 2012 00:30:00 GMT</lastBuildDate>
+	<lastBuildDate>Mon, 12 Mar 2012 20:20:00 GMT</lastBuildDate>
 
 	<image>
 		<title>Slitaz GNU/Linux</title>
@@ -18,6 +18,17 @@
 	</image>
 	
 	<!-- justify to 80 chars or less for text-mode RSS readers also -->
+	
+	<item>
+		<title>Website Feed on Twitter and Facebook</title>
+		<link>http://www.slitaz.org/rss.xml</link>
+		<guid isPermaLink="true">http://www.slitaz.org/README</guid>
+		<pubDate>Mon, 12 Mar 2012 20:20:00 GMT</pubDate>
+		<description>
+			SliTaz Website Feed is now relayed on the official SliTaz 
+			Twitter account and on Facebook :-)
+		</description>
+	</item>
 	
 	<item>
 		<title>English Website goes PHP</title>
