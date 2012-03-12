@@ -6,55 +6,16 @@
 	<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
 	<meta name="description" content="SliTaz GNU/Linux LiveCD" />
 	<meta name="keywords" lang="en" content="System, free, gnu, linux, software opensource, livecd LINUX in RAM" />
-	<meta name="robots" content="index, follow, all" />
-	<meta name="modified" content="2011-03-26 19:00:00" />
 	<meta name="author" content="F Steiner (Sevala), François (oui)"/>
-	<link rel="shortcut icon" href="../favicon.ico" />
-	<link rel="stylesheet" type="text/css" href="../slitaz.css" />
-	<link rel="alternate" type="application//rss.xml" title="SliTaz Website feed" href="../en//rss.xml" />
-	<link rel="alternate" type="application/atom+xml" title="SliTaz Labs feed" href="http://labs.slitaz.org/news?format=atom" />
+	<?php include("../lib/html/meta-link.html"); ?>
 </head>
 <body>
-	
-<!-- Header -->
-<div id="header">
-	<div id="logo"></div>
-	<div id="network">
-		<a href="http://www.slitaz.org/netmap.php">
-			<img src="../images/network.png" alt="network.png" /></a>
-		<a href="http://scn.slitaz.org/">Community</a>
-		<a href="http://doc.slitaz.org/">Doc</a>
-		<a href="http://forum.slitaz.org/">Forum</a>
-		<a href="http://bugs.slitaz.org">Bugs</a>
-		<a href="http://hg.slitaz.org/">Hg</a>
-	</div>
-	<h1><a href="http://www.slitaz.org/">SliTaz GNU/Linux</a></h1>
-</div>
+
+<?php include("../lib/html/header.html"); ?>
 
 <!-- Block -->
 <div id="block">
-	<!-- Navigation -->
-	<div id="block_nav">
-		<h4>Navigation</h4>
-		<div class="right_box">
-			<ul>
-				<li><a href="mailing-list.html">Mailing List</a></li>
-				<li><a href="devel/">Entwicklung</a></li>
-				<li><a href="packages/">Pakete</a></li>
-				<li><a href="artwork/">Artwork</a></li>
-				<li><a href="search.html">Suchen</a></li>
-			</ul>
-		</div>
-		<div class="left_box">
-			<ul>
-				<li><a href="./">Neuigkeiten</a></li>
-				<li><a href="about/">Über SliTaz</a></li>
-				<li><a href="get/">Download</a></li>
-				<li><a href="../en/asso/">Association (en)</a></li>
-				<li><a href="http://doc.slitaz.org/de:start">Dokumentation</a></li>
-			</ul>
-		</div>
-	</div>
+	<?php include("../lib/html/nav.de.html"); ?>
 	<!-- Information/image -->
 	<div id="block_info">
 		<h4>Startseite</h4>
@@ -111,8 +72,7 @@ einen kleinen monatlichen Informationsbrief in Englisch und Chinesisch an.
 
 <div class="box">
 	<img src="../images/news.png" alt=".png" />	
-	<a href="http://labs.slitaz.org/news">Labs-Nachrichten</a>
-	(<a href="http://labs.slitaz.org/news?format=atom">Sendung</a>) | 
+	<a href="http://scn.slitaz.org/">Blog-Nachrichten</a> | 
 	<a href="http://doc.slitaz.org/en:newsletter:start">Monthly Newsletter</a>
 </div>
 
@@ -361,28 +321,18 @@ einen kleinen monatlichen Informationsbrief in Englisch und Chinesisch an.
 <!-- End of news -->
 </div>
 
-<!-- End of content -->
+<h3>Donate</h3>
+
+<?php include("../lib/html/donate.html"); ?>
+
+<h3>Twitter &amp; Facebook</h3>
+
+<?php include("../lib/html/social.html"); ?>
+
+<!-- End of content  -->
 </div>
 
-<!-- Footer -->
-<div id="footer">
-	Copyright &copy; <span class="year"></span>
-	<a href="http://www.slitaz.org/">SliTaz</a> - Network:
-	<a href="http://scn.slitaz.org/">Community</a>
-	<a href="http://doc.slitaz.org/">Doc</a>
-	<a href="http://forum.slitaz.org/">Forum</a>
-	<a href="http://pkgs.slitaz.org/">Packages</a>
-	<a href="http://bugs.slitaz.org">Bugs</a>
-	<a href="http://hg.slitaz.org/">Hg</a>
-	<p>
-		SliTaz @
-		<a href="http://twitter.com/slitaz">Twitter</a>
-		<a href="http://www.facebook.com/slitaz">Facebook</a>
-		<a href="http://distrowatch.com/slitaz">Distrowatch</a>
-		<a href="http://en.wikipedia.org/wiki/SliTaz">Wikipedia</a>
-		<a href="http://flattr.com/profile/slitaz">Flattr</a>
-	</p>
-</div>
+<?php include("../lib/html/footer.html"); ?>
 
 </body>
 </html>
