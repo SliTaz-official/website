@@ -51,7 +51,7 @@
 <div id="content">
 
 <div class="box">
-	<img src="/images/update.png" alt="Update:" style="float: left; margin-right: 10px; " />
+	<img src="/images/update.png" alt=" [Update ]" style="float: left; margin-right: 10px; " />
 	<p>
 		Help us get a dedicated server - Check out our
 		<a href="http://www.gofundme.com/3ql70">online fundraising</a>

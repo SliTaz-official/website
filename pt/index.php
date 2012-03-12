@@ -6,67 +6,16 @@
 	<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
 	<meta name="description" content="SliTaz GNU/Linux LiveCD" />
 	<meta name="keywords" lang="pt" content="sistema, livre, gnu, linux, software opensource, livecd LINUX na RAM" />
-	<meta name="robots" content="index, follow, all" />
-	<meta name="modified" content="<?php echo (date( "Y-m-d H:i:s", getlastmod())); ?>" />
 	<meta name="author" content="Claudinei Pereira" />
-	<link rel="shortcut icon" href="../favicon.ico" />
-	<link rel="stylesheet" type="text/css" href="../slitaz.css" />
-	<link rel="alternate" type="application//rss.xml" title="SliTaz Website feed" href="../en//rss.xml" />
-	<link rel="alternate" type="application/atom+xml" title="SliTaz Labs feed" href="http://labs.slitaz.org/news?format=atom" />
-	<link rel="alternate" type="application//rss.xml" title="SliTaz SCN feed" href="http://scn.slitaz.org/activity/feed/" />
-	<script type="text/javascript">
-	/* <![CDATA[ */
-	    (function() {
-	        var s = document.createElement('script'), t = document.getElementsByTagName('script')[0];
-	        s.type = 'text/javascript';
-	        s.async = true;
-	        s.src = 'http://api.flattr.com/js/0.6/load.js?mode=auto';
-	        t.parentNode.insertBefore(s, t);
-	    })();
-	/* ]]> */
-	</script>
+	<?php include("../lib/html/meta-link.html") ?>
 </head>
 <body>
 
-<!-- Header -->
-<div id="header">
-	<div id="logo"></div>
-	<div id="network">
-		<a href="http://www.slitaz.org/netmap.php">
-			<img src="../images/network.png" alt="network.png" /></a>
-		<a href="http://scn.slitaz.org/">Community</a>
-		<a href="http://doc.slitaz.org/">Doc</a>
-		<a href="http://forum.slitaz.org/">Forum</a>
-		<a href="http://bugs.slitaz.org">Bugs</a>
-		<a href="http://hg.slitaz.org/">Hg</a>
-	</div>
-	<h1><a href="http://www.slitaz.org/">SliTaz GNU/Linux</a></h1>
-</div>
+<?php include("../lib/html/header.html") ?>
 
 <!-- Block -->
 <div id="block">
-	<!-- Navigation -->
-	<div id="block_nav">
-		<h4>Navegação</h4>
-		<div class="right_box">
-			<ul>
-				<li><a href="mailing-list.html">Lista de discussão</a></li>
-				<li><a href="devel/">Desenvolvimento</a></li>
-				<li><a href="packages/">Pacotes</a></li>
-				<li><a href="artwork/">Artwork</a></li>
-				<li><a href="search.html">Procurar</a></li>
-			</ul>
-		</div>
-		<div class="left_box">
-			<ul>
-				<li><a href="./">Últimas notícias</a></li>
-				<li><a href="about/">Sobre o projeto</a></li>
-				<li><a href="get/">Download</a></li>
-				<li><a href="asso/">Associação</a></li>
-				<li><a href="doc/">Documentação</a></li>
-			</ul>
-		</div>
-	</div>
+	<?php include("../lib/html/nav.pt.html") ?>
 	<!-- Information/image -->
 	<div id="block_info">
 		<h4>Página principal</h4>
@@ -103,10 +52,12 @@
 <div id="content">
 
 <div class="box">
-	<img src="../images/update.png" style="float: left; margin-right: 10px; " />
+	<img src="../images/update.png" alt=" [Update ]" style="float: left; margin-right: 10px; " />
 	<p>
 		Help us get a dedicated server - Check out our
 		<a href="http://www.gofundme.com/3ql70">online fundraising</a>
+		or become an official
+		<a href="/en/asso/sponsor.php">sponsor</a>
 	</p>
 </div>
 
@@ -259,54 +210,23 @@
 
 <h2>Ajude-nos</h2>
 <p>
-    Ajude o SliTaz a ser mais popular ou faça uma doação. Você pode usar
-    PayPal ou Flattr para doações em dinheiro para o projeto. Pode criar 
-    um post de blog, um tweet, divulgar o projeto no facebook ou
-    também fazer parte da <a href="http://scn.slitaz.org/">comunidade</a>.
+	Ajude o SliTaz a ser mais popular ou faça uma doação. Pode criar um 
+	post de blog, um tweet, divulgar o projeto no facebook ou também 
+	fazer parte da <a href="http://scn.slitaz.org/">comunidade</a>.
 </p>
 
-<div>
-	<!-- PayPal Button -->
-	<form action="https://www.paypal.com/cgi-bin/webscr" method="post"
-		style="display: inline;">
-		<input type="hidden" name="cmd" value="_s-xclick" />
-		<input type="hidden" name="hosted_button_id" value="4885025" />
-		<input type="image" src="../images/paypal.png" name="submit" 
-			alt="PayPal - The safer, easier way to pay online!" />
-	</form>
-	<!-- Flattr Button -->
-	<a class="FlattrButton" style="display:none;" rev="flattr;button:compact;"
-		href="http://www.slitaz.org/"></a>
-	<!-- Twitter Button -->
-	<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-	<a href="http://twitter.com/share" class="twitter-share-button" 
-		data-text="SliTaz GNU/Linux" 
-		data-count="horizontal"
-		data-via="slitaz">Tweet</a>
-</div>
+<?php include("../lib/html/social.html") ?>
+
+<p>
+	Você pode usar PayPal ou Flattr para doações em dinheiro para o projeto.
+</p>
+
+<?php include("../lib/html/donate.html") ?>
 
 <!-- End of content -->
 </div>
 
-<!-- Footer -->
-<div id="footer">
-	Copyright &copy; <span class="year"></span>
-	<a href="http://www.slitaz.org/">SliTaz</a> - Network:
-	<a href="http://scn.slitaz.org/">Community</a>
-	<a href="http://doc.slitaz.org/">Doc</a>
-	<a href="http://forum.slitaz.org/">Forum</a>
-	<a href="http://pkgs.slitaz.org/">Packages</a>
-	<a href="http://bugs.slitaz.org">Bugs</a>
-	<a href="http://hg.slitaz.org/">Hg</a>
-	<p>
-		SliTaz @
-		<a href="http://twitter.com/slitaz">Twitter</a>
-		<a href="http://www.facebook.com/slitaz">Facebook</a>
-		<a href="http://distrowatch.com/slitaz">Distrowatch</a>
-		<a href="http://en.wikipedia.org/wiki/SliTaz">Wikipedia</a>
-		<a href="http://flattr.com/profile/slitaz">Flattr</a>
-	</p>
-</div>
+<?php include("../lib/html/footer.html") ?>
 
 </body>
 </html>
