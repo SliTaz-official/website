@@ -41,7 +41,7 @@ include("../../lib/html/header.html");
 <!-- Languages -->
 <div id="lang">
 	<a href="../i18n.php">
-		<img src="../../images/locale.png" alt="locale.png" /></a>
+		<img src="../../images/locale.png" alt="[ Locale ]" /></a>
 	<a href="../../da/get/">Dansk</a>
 	<a href="../../de/get/">Deutsch</a>
 	<a href="../../en/get/">English</a>
@@ -70,7 +70,7 @@ include("../../lib/html/header.html");
 <div class="box">
 	<p>
 		Help the project via a small donation or become an official
-		<a href="../asso/sponsor.html">sponsor</a>.
+		<a href="../asso/sponsor.php">sponsor</a>.
 	</p>
 	<?php include("../../lib/html/donate.html"); ?>
 </div>
