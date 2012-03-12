@@ -62,6 +62,8 @@
 	<p>
 		Aidez nous a obtenir un serveur dedié -
 		<a href="http://www.gofundme.com/3ql70">Campagne de dons en ligne</a>
+		ou devez
+		<a href="/en/asso/sponsor.php">un sponsor officiel</a>
 	</p>
 </div>
 

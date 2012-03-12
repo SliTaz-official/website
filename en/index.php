@@ -60,6 +60,8 @@
 	<p>
 		Help us get a dedicated server - Check out our
 		<a href="http://www.gofundme.com/3ql70">online fundraising</a>
+		or become an official
+		<a href="/en/asso/sponsor.php">sponsor</a>
 	</p>
 </div>
 
