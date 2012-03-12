@@ -11,8 +11,8 @@
 	<meta name="author" content="Alessandro Frisenda"/>
 	<link rel="shortcut icon" href="../favicon.ico" />
 	<link rel="stylesheet" type="text/css" href="../slitaz.css" />
-	<link rel="alternate" type="application/rss+xml" title="SliTaz Website feed" href="rss.xml" />
-	<link rel="alternate" type="application/rss+xml" title="SliTaz SCN feed" href="http://scn.slitaz.org/activity/feed/" />
+	<link rel="alternate" type="application//rss.xml" title="SliTaz Website feed" href="/rss.xml" />
+	<link rel="alternate" type="application//rss.xml" title="SliTaz SCN feed" href="http://scn.slitaz.org/activity/feed/" />
 	<script type="text/javascript">
 	/* <![CDATA[ */
 	    (function() {
@@ -116,7 +116,7 @@
 	Il sito di SliTaz offre le novità principali del progetto nonché le novità
 	sulle attività generali dei sotto-progetti sul
 	<a href="http://scn.slitaz.org/">sito della comunità</a>. Entrambi sono
-	disponibili come <a href="../en/rss.xml">feed XML</a>. Il progetto pubblica
+	disponibili come <a href="../en//rss.xml">feed XML</a>. Il progetto pubblica
 	anche una piccola Newsletter mensile. Questa pagina e il sito web
 	<a href="../">Pagina Principale</a> vi darà una buona panoramica delle
 	ultime novità, impegni e Tweets.

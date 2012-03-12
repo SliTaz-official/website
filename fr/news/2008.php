@@ -7,83 +7,41 @@
 	<meta name="description" content="Archive des news de SliTaz GNU/Linux" />
 	<meta name="keywords" lang="fr" content="slitaz old news" />
 	<meta name="robots" content="index, follow, all" />
-	<meta name="revisit-after" content="30 days" />
 	<meta name="expires" content="never" />
 	<meta name="modified" content="2009-04-11 22:30:00" />
 	<meta name="author" content="Christophe Lincoln"/>
 	<meta name="publisher" content="www.slitaz.org" />
 	<link rel="shortcut icon" href="../../favicon.ico" />
 	<link rel="stylesheet"  type="text/css" href="../../slitaz.css" />
-	<link rel="Content" href="2008.html#content" />
 </head>
-<body bgcolor="#ffffff">
+<body>
 
-<!-- Header -->
-<div id="header">
-	<a name="top"></a>
-<!-- Access -->
-<div id="access">
-	<img
-		src="../../pics/website/locale.png"
-		style="vertical-align: middle; width: 20px; height: 20px;"
-		alt="language" /> None
-</div>
-	<a href="http://www.slitaz.org/fr/"><img id="logo"
-	src="../../pics/website/logo.png" title="www.slitaz.org" alt="www.slitaz.org"
-	style="border: 0px solid ; width: 200px; height: 74px;" /></a>
-	<p id="titre">#!/GNU/Linux</p>
-</div>
+<?php include("../../lib/html/header.html"); ?>
 
-<!-- Navigation menu -->
-<div id="nav">
-<div id="nav_top"></div>
-<!-- General -->
-<ul>
-	<li><a href="../about/index.html" title="Informations au sujet du projet SliTaz">A propos du projet</a></li>
-	<li><a href="../asso/index.html" title="Infrastructure et services">Association</a></li>
-	<li><a href="../get/index.html" title="Téléchargements - LiveCD et sous projets">Obtenir SliTaz</a></li>
-	<li><a href="../doc/index.html" title="Handbook, Cookbook et manuels">Documentation</a></li>
-	<li><a href="../packages/index.html" title="Paquets logiciels disponibles">Paquets</a></li>
-	<li><a href="../devel/index.html" title="Le coin du développeur">Développement</a></li>
-	<li><a href="../artwork/index.html" title="Artwork, couleurs et images">Art &amp; graphisme</a></li>
-</ul>
-<!-- Support -->
-<ul>
-	<li><a href="../mailing-list.html" title="Support, contact et collaboration">Liste de discussion</a></li>
-	<li><a href="http://forum.slitaz.org/" title="Forum d'aide et support">Forum de support</a></li>
-	<li><a href="../search.html" title="Rechercher des infos et/ou de la doc">Recherche</a></li>
-	<li><a href="../sitemap.html" title="Vue globale du site web">Plan du site</a></li>
-</ul>
-<!-- Wiki and Labs -->
-<ul>
-	<li><a href="http://doc.slitaz.org/" title="Wiki collaboratif">Ressources Wiki</a></li>
-	<li><a href="http://labs.slitaz.org/" title="Gestion du projet">Laboratoires</a></li>
-	<li><a href="http://bugs.slitaz.org" title="Bug Tracking system">Suivi des Bugs</a></li>
-</ul>
-<div id="nav_bottom">
-<div id="nav_bottom_img"></div>
-</div>
-</div>
-
-<!-- Content top. -->
-<div id="content_top">
-<div class="top_left"></div>
-<div class="top_right"></div>
+<!-- Block -->
+<div id="block">
+	<?php include("../../lib/html/nav.fr.html"); ?>
+	<!-- Information/image -->
+	<div id="block_info">
+		<h4>Archives des news</h4>
+		<p>
+			Les archives de l'actualité du site classée par année.
+		</p>
+		<p>
+			<img src="/images/news.png" alt="[ News ]" />
+			<a href="2007.php">2007</a> | <a href="2008.php">2008</a>
+			| <a href="2009.php">2009</a> | <a href="2010.php">2010</a>
+			| <a href="./">2011</a>
+		</p>
+	</div>
 </div>
 
 <!-- Content -->
 <div id="content">
-<a name="content"></a>
 
-<h1><font color="#3E1220">Archives des news</font></h1>
+<h2>2008</h2>
 
-<h2><font color="#DF8F06">2008</font></h2>
-
-<p>
-Archives: <a href="2007.html">2007</a>
-</p>
-
-<div id="news">
+<div class="news">
 
 <ul>
 	<li><strong>31 Décembre 2008 - Cooking 20081231 - Support du Wifi et du NTFS</strong><br />
@@ -252,35 +210,10 @@ Archives: <a href="2007.html">2007</a>
 <!-- End of news -->
 </div>
 
-<!-- End of content with round corner -->
-</div>
-<div id="content_bottom">
-<div class="bottom_left"></div>
-<div class="bottom_right"></div>
+<!-- End of content  -->
 </div>
 
-<!-- Start of footer and copy notice -->
-<div id="copy">
-<p>
-Dernière modification : 2009-04-11 22:30:00 -
-<a href="2008.html#top">Haut de la page</a>
-</p>
-<p>
-Copyright &copy; <span class="year"></span> <a href="http://www.slitaz.org/">SliTaz</a> -
-<a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>
-</p>
-<!-- End of copy -->
-</div>
-
-<!-- Bottom and logo's -->
-<div id="bottom">
-<p>
-<a href="http://validator.w3.org/check?uri=referer"><img
-   src="../../pics/website/xhtml10.png" alt="Valid XHTML 1.0"
-   title="Code validé XHTML 1.0"
-   style="width: 80px; height: 15px;" /></a>
-</p>
-</div>
+<?php include("../../lib/html/footer.html"); ?>
 
 </body>
 </html>

@@ -11,7 +11,7 @@
 	<meta name="author" content="F Steiner (Sevala), François (oui)"/>
 	<link rel="shortcut icon" href="../favicon.ico" />
 	<link rel="stylesheet" type="text/css" href="../slitaz.css" />
-	<link rel="alternate" type="application/rss+xml" title="SliTaz Website feed" href="../en/rss.xml" />
+	<link rel="alternate" type="application//rss.xml" title="SliTaz Website feed" href="../en//rss.xml" />
 	<link rel="alternate" type="application/atom+xml" title="SliTaz Labs feed" href="http://labs.slitaz.org/news?format=atom" />
 </head>
 <body>
@@ -105,7 +105,7 @@
 Die SliTaz-Webseite bietet die wichtigsten Projektneuheiten an, und ausserdem
 neuerdings die Labors mit Nachrichten zu der allgemeinen Aktivität der
 verschiedenen Unterprojekten. Diese Nachrichten sind auch als
-<a href="rss.xml">XML-Sendungen</a> erhältlich. Das Projekt bietet ausserdem
+<a href="/rss.xml">XML-Sendungen</a> erhältlich. Das Projekt bietet ausserdem
 einen kleinen monatlichen Informationsbrief in Englisch und Chinesisch an.
 </p>
 

@@ -11,9 +11,9 @@
 	<meta name="author" content="Eduardo Suarez-Santana" />
 	<link rel="shortcut icon" href="../favicon.ico" />
 	<link rel="stylesheet" type="text/css" href="../slitaz.css" />
-	<link rel="alternate" type="application/rss+xml" title="SliTaz Website feed" href="../en/rss.xml" />
+	<link rel="alternate" type="application//rss.xml" title="SliTaz Website feed" href="../en//rss.xml" />
 	<link rel="alternate" type="application/atom+xml" title="SliTaz Labs feed" href="http://labs.slitaz.org/news?format=atom" />
-	<link rel="alternate" type="application/rss+xml" title="SliTaz SCN feed" href="http://scn.slitaz.org/activity/feed/" />
+	<link rel="alternate" type="application//rss.xml" title="SliTaz SCN feed" href="http://scn.slitaz.org/activity/feed/" />
 	<script type="text/javascript">
 	/* <![CDATA[ */
 	    (function() {

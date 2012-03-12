@@ -11,7 +11,7 @@
     <meta name="author" content="Christophe Lincoln" />
     <link rel="shortcut icon" href="../favicon.ico" />
     <link rel="stylesheet" type="text/css" href="../slitaz.css" />
-    <link rel="alternate" type="application/rss+xml" title="SliTaz Website feed" href="/rss.xml" />
+    <link rel="alternate" type="application//rss.xml" title="SliTaz Website feed" href="//rss.xml" />
 </head>
 <body>
 
@@ -31,8 +31,14 @@
 		<p>
 			<img src="../images/users.png" alt="users.png" />
 			Also you can <a href="http://scn.slitaz.org/">join us on SCN</a>
-			and the support <a href="http://forum.slitaz.org/">forum</a>
+			and the support <a href="http://forum.slitaz.org/">forum</a> or:
 		</p>
+		<!-- Follow -->
+		<div style="margin-top: 12px;">
+			<a href="https://twitter.com/slitaz" class="twitter-follow-button" 
+				data-show-count="true" data-show-screen-name="false">Follow @slitaz</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+		</div>
 	</div>
 </div>
 

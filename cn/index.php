@@ -11,9 +11,9 @@
 	<meta name="author" content="Chen Yufei"/>
 	<link rel="shortcut icon" href="../favicon.ico" />
 	<link rel="stylesheet" type="text/css" href="../slitaz.css" />
-	<link rel="alternate" type="application/rss+xml" title="SliTaz Website feed" href="rss.xml" />
+	<link rel="alternate" type="application//rss.xml" title="SliTaz Website feed" href="/rss.xml" />
 	<link rel="alternate" type="application/atom+xml" title="SliTaz Labs feed" href="http://labs.slitaz.org/news?format=atom" />
-	<link rel="alternate" type="application/rss+xml" title="SliTaz SCN feed" href="http://scn.slitaz.org/rss.xml" />
+	<link rel="alternate" type="application//rss.xml" title="SliTaz SCN feed" href="http://scn.slitaz.org//rss.xml" />
 </head>
 <body>
 
@@ -99,7 +99,7 @@
 
 <h2>头条</h2>
 <p>
-	Slitaz网站提供Slitaz计划的主要新闻和<a href="http://labs.slitaz.org/">Slitaz实验室</a>里各种子计划的新闻. 它们都通过 <a href="rss.xml"> XML feed</a>的形式提供。我们还提供一份简单的每月时讯。网站<a href="../">首页</a>将给出消息、修改、软件包、Tweets的最新情况。
+	Slitaz网站提供Slitaz计划的主要新闻和<a href="http://labs.slitaz.org/">Slitaz实验室</a>里各种子计划的新闻. 它们都通过 <a href="/rss.xml"> XML feed</a>的形式提供。我们还提供一份简单的每月时讯。网站<a href="../">首页</a>将给出消息、修改、软件包、Tweets的最新情况。
 </p>
 
 <div class="box">

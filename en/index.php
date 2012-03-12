@@ -4,15 +4,15 @@
 <head>
 	<title>SliTaz GNU/Linux (en)</title>
 	<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
-	<meta name="description" content="SliTaz GNU/Linux LiveCD" />
+	<meta name="description" content="SliTaz GNU/Linux English Website" />
 	<meta name="keywords" lang="en" content="System, free, gnu, linux, software opensource, livecd LINUX in RAM" />
 	<meta name="robots" content="index, follow, all" />
 	<meta name="modified" content="<?php echo (date( "Y-m-d H:i:s", getlastmod())); ?>" />
 	<meta name="author" content="Paul Issot"/>
 	<link rel="shortcut icon" href="../favicon.ico" />
 	<link rel="stylesheet" type="text/css" href="../slitaz.css" />
-	<link rel="alternate" type="application/rss+xml" title="SliTaz Website feed" href="/rss.xml" />
-	<link rel="alternate" type="application/rss+xml" title="SliTaz SCN feed" href="http://scn.slitaz.org/activity/feed/" />
+	<link rel="alternate" type="application//rss.xml" title="SliTaz Feed" href="/rss.xml" />
+	<link rel="alternate" type="application//rss.xml" title="SliTaz SCN Feed" href="http://scn.slitaz.org/activity/feed/" />
 </head>
 <body>
 
@@ -72,7 +72,7 @@
 	The SliTaz website offers the main news of the project as well as 
 	news on the general activity of the subprojects on the
 	<a href="http://scn.slitaz.org/">community site</a>. Both are
-	available as a <a href="rss.xml">XML feed</a>. The project also
+	available as a <a href="/rss.xml">XML feed</a>. The project also
 	publishes a small monthly Newsletter. This page and the website 
 	<a href="../">main page</a> will give you a nice overview of the
 	latest news, commits, and Tweets.

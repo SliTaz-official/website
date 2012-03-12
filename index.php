@@ -12,9 +12,9 @@
     <meta name="verify-v1" content="qieECDfB5l+EBkG8QMNuHOGfol0/MEe4U22/4iVupNw=" />
 	<link rel="shortcut icon" href="favicon.ico" />
     <link rel="stylesheet" type="text/css" href="slitaz.css" />
-    <link rel="alternate" type="application/rss+xml" title="SliTaz Website feed" href="rss.xml" />
+    <link rel="alternate" type="application//rss.xml" title="SliTaz Website feed" href="/rss.xml" />
     <link rel="alternate" type="application/atom+xml" title="SliTaz Forum feed" href="http://forum.slitaz.org/rss" />
-    <link rel="alternate" type="application/rss+xml" title="SliTaz SCN feed" href="http://scn.slitaz.org/rss.xml" />
+    <link rel="alternate" type="application//rss.xml" title="SliTaz SCN feed" href="http://scn.slitaz.org//rss.xml" />
 </head>
 <body>
 

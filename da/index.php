@@ -14,8 +14,8 @@
 	<meta name="author" content="Linux User"/>
 	<link rel="shortcut icon" href="../favicon.ico" />
 	<link rel="stylesheet" type="text/css" href="../slitaz.css" />
-	<link rel="alternate" type="application/rss+xml" title="SliTaz Website feed" href="rss.xml" />
-	<link rel="alternate" type="application/rss+xml" title="SliTaz SCN feed" href="http://scn.slitaz.org/activity/feed/" />
+	<link rel="alternate" type="application//rss.xml" title="SliTaz Website feed" href="/rss.xml" />
+	<link rel="alternate" type="application//rss.xml" title="SliTaz SCN feed" href="http://scn.slitaz.org/activity/feed/" />
 	<script type="text/javascript">
 	/* <![CDATA[ */
 	    (function() {
@@ -119,7 +119,7 @@
    SliTaz hjemmesiden tilbyder projektets hovednyheder så vel som
    nyheder om den generelle aktivitet i underprojekter på 
 	<a href="http://scn.slitaz.org/">SliTaz netværket</a>. Begge er 
-	tilgængelige som et  <a href="rss.xml">rssfeed</a>. 
+	tilgængelige som et  <a href="/rss.xml">rssfeed</a>. 
 	Projektet udgiver også 
 	et lille månedligt nyhedsbrev. Denne side og hjemmesidens  
 	<a href="../">hovedside</a> vil give dig et flot overblik over de 
