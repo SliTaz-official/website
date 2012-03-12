@@ -9,7 +9,7 @@
 		SliTaz GNU/Linux News
 	</description>
 	<copyright>Copyright (C) www.slitaz.org - GNU gpl</copyright>
-	<lastBuildDate>Fri, 09 Mar 2012 00:30:00 GMT</lastBuildDate>
+	<lastBuildDate>Mon, 12 Mar 2012 00:30:00 GMT</lastBuildDate>
 
 	<image>
 		<title>Slitaz GNU/Linux</title>
@@ -20,8 +20,20 @@
 	<!-- justify to 80 chars or less for text-mode RSS readers also -->
 	
 	<item>
-		<title>SliTaz 4.0-RC2</title>
+		<title>English Website goes PHP</title>
 		<link>http://www.slitaz.org/en/</link>
+		<guid isPermaLink="true">http://www.slitaz.org/en/</guid>
+		<pubDate>Mon, 12 Mar 2012 00:30:00 GMT</pubDate>
+		<description>
+			We have moved the html pages to php and improve all English
+			website pages. It will be easier for translators and to update
+			SliTaz releases infos.
+		</description>
+	</item>
+	
+	<item>
+		<title>SliTaz 4.0-RC2</title>
+		<link>http://www.slitaz.org/en/#news</link>
 		<guid isPermaLink="true">http://www.slitaz.org/</guid>
 		<pubDate>Fri, 09 Mar 2012 00:30:00 GMT</pubDate>
 		<description>
