@@ -5,54 +5,17 @@
     <title>SliTaz - Pacchetti</title>
     <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
     <meta name="description" content="SliTaz GNU/Linux LiveCD packages" />
-    <meta name="keywords" lang="en" content="package, tazpkg" />
-    <meta name="robots" content="index, follow, all" />
-    <meta name="modified" content="<?php echo (date( "Y-m-d H:i:s", getlastmod())); ?>" />
+    <meta name="keywords" lang="en" content="package, tazpkg" />    
     <meta name="author" content="Alessandro Frisenda"/>
-    <link rel="shortcut icon" href="../../favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="../../slitaz.css" />
+    <?php include("../../lib/html/meta-link.html"); ?>
 </head>
 <body>
 
-<!-- Header -->
-<div id="header">
-	<div id="logo"></div>
-	<div id="network">
-		<a href="http://www.slitaz.org/netmap.php">
-			<img src="../../images/network.png" alt="network.png" /></a>
-		<a href="http://scn.slitaz.org/">Comunità</a>
-		<a href="http://doc.slitaz.org/">Documentazione</a>
-		<a href="http://forum.slitaz.org/">Forum</a>
-		<a href="http://bugs.slitaz.org">Bugs</a>
-		<a href="http://hg.slitaz.org/">Repo</a>
-	</div>
-	<h1><a href="http://www.slitaz.org/">SliTaz GNU/Linux</a></h1>
-</div>
+<?php include("../../lib/html/header.html"); ?>
 
 <!-- Block -->
 <div id="block">
-	<!-- Navigation -->
-	<div id="block_nav">
-		<h4>Navigazione</h4>
-		<div class="right_box">
-			<ul>
-				<li><a href="../mailing-list.html">Mailing List</a></li>
-				<li><a href="../../en/devel/">Sviluppo</a> (en)</li>
-				<li><a href="../packages/">Pacchetti</a></li>
-				<li><a href="../../en/artwork/">Artwork</a> (en)</li>
-				<li><a href="../../en/search.html">Cerca</a> (en)</li>
-			</ul>
-		</div>
-		<div class="left_box">
-			<ul>
-				<li><a href="../">Ultime Novità</a></li>
-				<li><a href="../../en/about/">Informazioni</a> (en)</li>
-				<li><a href="../get/">Scarica</a></li>
-				<li><a href="../../en/asso/">Associazione</a> (en)</li>
-				<li><a href="../doc/">Documentazione</a></li>
-			</ul>
-		</div>
-	</div>
+	<?php include("../../lib/html/nav.it.html"); ?>
 	<!-- Information/image -->
 	<div id="block_info">
 		<h4>Pacchetti</h4>
@@ -120,7 +83,7 @@
 
 <h2>Attività</h2>
 
-<?php require_once("../../libs/get-feeds.php"); ?>
+<?php require_once("../../lib/get-feeds.php"); ?>
 
 <div class="activity">
 	<p>
@@ -148,25 +111,7 @@
 <!-- End of content -->
 </div>
 
-<!-- Footer -->
-<div id="footer">
-	Copyright &copy; <span class="year"></span>
-	<a href="http://www.slitaz.org/">SliTaz</a> - Rete:
-	<a href="http://scn.slitaz.org/">Comunità</a>
-	<a href="http://doc.slitaz.org/">Documentazione</a>
-	<a href="http://forum.slitaz.org/">Forum</a>
-	<a href="http://pkgs.slitaz.org/">Pacchetti</a>
-	<a href="http://bugs.slitaz.org">Bugs</a>
-	<a href="http://hg.slitaz.org/">Repo</a>
-	<p>
-		SliTaz @
-		<a href="http://twitter.com/slitaz">Twitter</a>
-		<a href="http://www.facebook.com/slitaz">Facebook</a>
-		<a href="http://distrowatch.com/slitaz">Distrowatch</a>
-		<a href="http://en.wikipedia.org/wiki/SliTaz">Wikipedia</a>
-		<a href="http://flattr.com/profile/slitaz">Flattr</a>
-	</p>
-</div>
+<?php include("../../lib/html/footer.html"); ?>
 
 </body>
 </html>

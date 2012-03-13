@@ -81,8 +81,8 @@
 		>Tazlito manual</a> -  SliTaz LiveCD utility.</li>
 	<li><a href="http://hg.slitaz.org/tazusb/raw-file/tip/doc/tazusb.en.html"
 		>TazUSB manual</a> -  SliTaz LiveUSB utility.</li>
-	<li><a href="http://hg.slitaz.org/tazwok/raw-file/tip/doc/tazwok.en.html"
-		>Tazwok manual</a> -  SliTaz Package Cooker.</li>
+	<li><a href="http://hg.slitaz.org/cookutils/raw-file/tip/doc/cookutils.en.html"
+		>Cookutils manual</a> -  SliTaz Package Cooker.</li>
 </ul>
 
 <h2>Release Notes</h2>

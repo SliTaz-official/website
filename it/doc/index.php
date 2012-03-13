@@ -1,58 +1,21 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
 <head>
     <title>SliTaz - Documentazione Italiana</title>
     <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
     <meta name="description" content="SliTaz GNU/Linux English documentationx part livecd tazpkg packages" />
     <meta name="keywords" lang="en" content="System, free, gnu, linux, opensource software, livecd in RAM" />
-    <meta name="robots" content="index, follow, all" />
-    <meta name="modified" content="2011-04-30 18:30:00" />
     <meta name="author" content="Alessandro Frisenda"/>
-    <link rel="shortcut icon" href="../../favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="../../slitaz.css" />
+<?php include("../../lib/html/meta-link.html"); ?>
 </head>
 <body>
 
-<!-- Header -->
-<div id="header">
-	<div id="logo"></div>
-	<div id="network">
-		<a href="http://www.slitaz.org/netmap.php">
-			<img src="../../images/network.png" alt="network.png" /></a>
-		<a href="http://scn.slitaz.org/">Comunità</a>
-		<a href="http://doc.slitaz.org/">Documentazione</a>
-		<a href="http://forum.slitaz.org/">Forum</a>
-		<a href="http://bugs.slitaz.org">Bugs</a>
-		<a href="http://hg.slitaz.org/">Repo</a>
-	</div>
-	<h1><a href="http://www.slitaz.org/">SliTaz GNU/Linux</a></h1>
-</div>
+<?php include("../../lib/html/header.html"); ?>
 
 <!-- Block -->
 <div id="block">
-	<!-- Navigation -->
-	<div id="block_nav">
-		<h4>Navigazione</h4>
-		<div class="right_box">
-			<ul>
-				<li><a href="../mailing-list.html">Mailing List</a></li>
-				<li><a href="../../en/devel/">Sviluppo</a> (en)</li>
-				<li><a href="../packages/">Pacchetti</a></li>
-				<li><a href="../../en/artwork/">Artwork</a> (en)</li>
-				<li><a href="../../en/search.html">Cerca</a> (en)</li>
-			</ul>
-		</div>
-		<div class="left_box">
-			<ul>
-				<li><a href="../">Ultime Novità</a></li>
-				<li><a href="../../en/about/">Informazioni</a> (en)</li>
-				<li><a href="../get/">Scarica</a></li>
-				<li><a href="../../en/asso/">Associazione</a> (en)</li>
-				<li><a href="../doc/">Documentazione</a></li>
-			</ul>
-		</div>
-	</div>
+	<?php include("../../lib/html/nav.it.html"); ?>
 	<!-- Information/image -->
 	<div id="block_info">
 		<h4>Documentazione Inglese</h4>
@@ -118,8 +81,8 @@
 		>Manuale Tazlito</a> -  Strumento LiveCD di SliTaz.</li>
 	<li><a href="http://hg.slitaz.org/tazusb/raw-file/tip/doc/tazusb.en.html"
 		>Manuale TazUSB</a> -  Strumento LiveUSB di SliTaz.</li>
-	<li><a href="http://hg.slitaz.org/tazwok/raw-file/tip/doc/tazwok.en.html"
-		>Manuale Tazwok</a> -  Creatore Pacchetti di SliTaz.</li>
+	<li><a href="http://hg.slitaz.org/cookutils/raw-file/tip/doc/cookutils.en.html"
+		>Manuale Cookutils</a> -  Creatore Pacchetti di SliTaz.</li>
 </ul>
 
 <h2>Note di Rilascio</h2>
@@ -131,36 +94,18 @@ disponibili attraverso il menù "Documentazione".
 </p>
 
 <ul>
-	<li><a href="../en/doc/releases/3.0/relnotes.en.html">SliTaz GNU/Linux 3.0 - 
+	<li><a href="/en/doc/releases/3.0/relnotes.en.html">SliTaz GNU/Linux 3.0 - 
 	Note di Rilascio</a></li>
-	<li><a href="../en/doc/releases/2.0/relnotes.en.html">SliTaz GNU/Linux 2.0 - 
+	<li><a href="/en/doc/releases/2.0/relnotes.en.html">SliTaz GNU/Linux 2.0 - 
 	Note di Rilascio</a></li>
-	<li><a href="../en/doc/releases/1.0/relnotes.en.html">SliTaz GNU/Linux 1.0 - 
+	<li><a href="/en/doc/releases/1.0/relnotes.en.html">SliTaz GNU/Linux 1.0 - 
 	Note di Rilascio</a></li>
 </ul>
 
 <!-- End of content -->
 </div>
 
-<!-- Footer -->
-<div id="footer">
-	Copyright &copy; <span class="year"></span>
-	<a href="http://www.slitaz.org/">SliTaz</a> - Rete:
-	<a href="http://scn.slitaz.org/">Comunità</a>
-	<a href="http://doc.slitaz.org/">Documentazione</a>
-	<a href="http://forum.slitaz.org/">Forum</a>
-	<a href="http://pkgs.slitaz.org/">Pacchetti</a>
-	<a href="http://bugs.slitaz.org">Bugs</a>
-	<a href="http://hg.slitaz.org/">Repo</a>
-	<p>
-		SliTaz @
-		<a href="http://twitter.com/slitaz">Twitter</a>
-		<a href="http://www.facebook.com/slitaz">Facebook</a>
-		<a href="http://distrowatch.com/slitaz">Distrowatch</a>
-		<a href="http://en.wikipedia.org/wiki/SliTaz">Wikipedia</a>
-		<a href="http://flattr.com/profile/slitaz">Flattr</a>
-	</p>
-</div>
+<?php include("../../lib/html/footer.html"); ?>
 
 </body>
 </html>

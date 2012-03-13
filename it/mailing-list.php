@@ -1,85 +1,21 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
 <head>
     <title>SliTaz - Mailing list (it)</title>
     <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
     <meta name="description" content="slitaz users developpers mailing list" />
     <meta name="keywords" content="slitaz list mail discussione" lang="it" />
-    <meta name="robots" content="index, follow, all" />
-    <meta name="modified" content="2011-03-25 19:30:00" />
     <meta name="author" content="Giovanni Santini" />
-    <link rel="shortcut icon" href="../favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="../slitaz.css" />
-    <style type="text/css">
-	table {
-		border: 1px solid #000000;
-		width: variable;
-		border-collapse: collapse;
-	}
-	td {
-		border: 1px dotted #6495ed;
-		width: variable;
-		padding: 2px;
-	}
-	.rowodd {
-		background-color: #ffffff;
-	}
-	.roweven {
-		background-color: #e1ffe1; /* the tower */
-	}
-	th {
-		border: 1px solid #000000;
-		width: variable;
-		padding: 4px;
-	}
-	.alignright {
-		text-align: right;
-	}
-	</style>
+    <?php include("../lib/html/meta-link.html"); ?>
 </head>
 <body>
 
-<!-- Header -->
-<div id="header">
-	<div id="logo"></div>
-	<div id="network">
-		<a href="http://www.slitaz.org/netmap.php">
-			<img src="../images/network.png" alt="network.png" /></a>
-		<a href="http://scn.slitaz.org/">Comunità</a>
-		<a href="http://doc.slitaz.org/">Documentazione</a>
-		<a href="http://forum.slitaz.org/">Forum</a>
-		<a href="http://bugs.slitaz.org">Bugs</a>
-		<a href="http://hg.slitaz.org/">Repo</a>
-	</div>
-	<h1><a href="http://www.slitaz.org/">SliTaz GNU/Linux</a></h1>
-</div>
-
+<?php include("../lib/html/header.html"); ?>
 
 <!-- Block -->
 <div id="block">
-	<!-- Navigation -->
-	<div id="block_nav">
-		<h4>Navigation</h4>
-		<div class="right_box">
-			<ul>
-				<li><a href="mailing-list.html">Mailing List</a></li>
-				<li><a href="../en/devel/">Sviluppo</a> (en)</li>
-				<li><a href="packages/">Pacchetti</a></li>
-				<li><a href="../en/artwork/">Artwork</a> (en)</li>
-				<li><a href="../en/search.html">Cerca</a> (en)</li>
-			</ul>
-		</div>
-		<div class="left_box">
-			<ul>
-				<li><a href="./">Ultime Novità</a></li>
-				<li><a href="../en/about/">Informazioni</a> (en)</li>
-				<li><a href="get/">Scarica</a></li>
-				<li><a href="../en/asso/">Associazione</a>(en)</li>
-				<li><a href="doc/">Documentazione</a></li>
-			</ul>
-		</div>
-	</div>
+	<?php include("../lib/html/nav.it.html"); ?>
 	<!-- Information/image -->
 	<div id="block_info">
 		<h4>Mailing list</h4>
@@ -91,9 +27,23 @@
 		<p>
 			<img src="../images/users.png" alt="users.png" />
 			Puoi anche <a href="http://scn.slitaz.org/">entrare nella rete SCN</a>
-			e nel <a href="http://forum.slitaz.org/">forum di supporto.</a>
+			e nel <a href="http://forum.slitaz.org/">forum di supporto</a> or:
+			<!-- Follow -->
+			<div style="margin-top: 12px;">
+				<a href="https://twitter.com/slitaz" class="twitter-follow-button" 
+					data-show-count="true" data-show-screen-name="false">Follow @slitaz</a>
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			</div>
 		</p>
 	</div>
+</div>
+
+<!-- Languages -->
+<div id="lang">
+	<a href="/i18n.php">
+		<img src="/images/locale.png" alt="locale.png" /></a>
+	<a href="/en/mailing-list.php">English</a>
+	<a href="/it/mailing-list.php">Italiano</a>
 </div>
 
 <!-- Content -->
@@ -187,6 +137,33 @@ della discussione.
  >Archivio della mailing list</a>
 </p>
 
+<style type="text/css">
+	table {
+		border: 1px solid #000000;
+		width: variable;
+		border-collapse: collapse;
+	}
+	td {
+		border: 1px dotted #6495ed;
+		width: variable;
+		padding: 2px;
+	}
+	.rowodd {
+		background-color: #ffffff;
+	}
+	.roweven {
+		background-color: #e1ffe1; /* the tower */
+	}
+	th {
+		border: 1px solid #000000;
+		width: variable;
+		padding: 4px;
+	}
+	.alignright {
+		text-align: right;
+	}
+</style>
+
 <div>
 <object type="text/html" width="100%" height="345" data="../lib/archives.php">
 </object>
@@ -195,25 +172,7 @@ della discussione.
 <!-- End of content -->
 </div>
 
-<!-- Footer -->
-<div id="footer">
-	Copyright &copy; <span class="year"></span>
-	<a href="http://www.slitaz.org/">SliTaz</a> - Network:
-	<a href="http://scn.slitaz.org/">Community</a>
-	<a href="http://doc.slitaz.org/">Doc</a>
-	<a href="http://forum.slitaz.org/">Forum</a>
-	<a href="http://pkgs.slitaz.org/">Packages</a>
-	<a href="http://bugs.slitaz.org">Bugs</a>
-	<a href="http://hg.slitaz.org/">Hg</a>
-	<p>
-		SliTaz @
-		<a href="http://twitter.com/slitaz">Twitter</a>
-		<a href="http://www.facebook.com/slitaz">Facebook</a>
-		<a href="http://distrowatch.com/slitaz">Distrowatch</a>
-		<a href="http://en.wikipedia.org/wiki/SliTaz">Wikipedia</a>
-		<a href="http://flattr.com/profile/slitaz">Flattr</a>
-	</p>
-</div>
+<?php include("../lib/html/footer.html"); ?>
 
 </body>
 </html>
