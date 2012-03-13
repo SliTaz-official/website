@@ -2,68 +2,20 @@
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
 <head>
-    <title>SliTaz - Association</title>
-    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
-    <meta name="description" content="Au sujet de SliTaz GNU/Linux mini système d'exploitation" />
-    <meta name="keywords" lang="fr" content="Système, libre, gnu, linux, opensource, livecd" />
-    <meta name="robots" content="index, follow, all" />
-    <meta name="modified" content="2011-03-26 23:20:00" />
-    <meta name="author" content="Christophe Lincoln"/>
-    <link rel="shortcut icon" href="../../favicon.ico" />
-    <link rel="stylesheet"  type="text/css" href="../../slitaz.css" />
-    <script type="text/javascript">
-	/* <![CDATA[ */
-	    (function() {
-	        var s = document.createElement('script'), t = document.getElementsByTagName('script')[0];
-	        s.type = 'text/javascript';
-	        s.async = true;
-	        s.src = 'http://api.flattr.com/js/0.6/load.js?mode=auto';
-	        t.parentNode.insertBefore(s, t);
-	    })();
-	/* ]]> */
-	</script>
+	<title>SliTaz - Association</title>
+	<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+	<meta name="description" content="Au sujet de SliTaz GNU/Linux mini système d'exploitation" />
+	<meta name="keywords" lang="fr" content="Système, libre, gnu, linux, opensource, livecd" />
+	<meta name="author" content="Christophe Lincoln"/>
+	<?php include("../../lib/html/meta-link.html"); ?>
 </head>
 <body>
 
-<!-- Header -->
-<div id="header">
-	<div id="logo"></div>
-	<div id="network">
-		<a href="http://www.slitaz.org/netmap.php">
-			<img src="../../images/network.png" alt="network.png" /></a>
-		<a href="http://scn.slitaz.org/">Community</a>
-		<a href="http://doc.slitaz.org/">Doc</a>
-		<a href="http://forum.slitaz.org/">Forum</a>
-		<a href="http://bugs.slitaz.org">Bugs</a>
-		<a href="http://hg.slitaz.org/">Hg</a>
-	</div>
-	<h1><a href="http://www.slitaz.org/">SliTaz GNU/Linux</a></h1>
-</div>
+<?php include("../../lib/html/header.html"); ?>
 
 <!-- Block -->
 <div id="block">
-	<!-- Navigation -->
-	<div id="block_nav">
-		<h4>Navigation</h4>
-		<div class="right_box">
-			<ul>
-				<li><a href="../mailing-list.html">Mailing List</a></li>
-				<li><a href="../devel/">Développement</a></li>
-				<li><a href="../packages/">Paquets</a></li>
-				<li><a href="../artwork/">Artwork</a></li>
-				<li><a href="../search.html">Recherche</a></li>
-			</ul>
-		</div>
-		<div class="left_box">
-			<ul>
-				<li><a href="../">Actualités</a></li>
-				<li><a href="../about/">A propos</a></li>
-				<li><a href="../get/">Téléchargement</a></li>
-				<li><a href="../asso/">Association</a></li>
-				<li><a href="../doc/">Documentation</a></li>
-			</ul>
-		</div>
-	</div>
+	<?php include("../../lib/html/nav.en.html"); ?>
 	<!-- Information/image -->
 	<div id="block_info">
 		<h4>Association</h4>
@@ -74,24 +26,30 @@
 			professionnelle aux utilisateurs, développeurs et entreprises
 			utilisant la distribution.
 		</p>
-		<div style="padding-top: 8px;">
-			<!-- PayPal boutton -->
-			<form action="https://www.paypal.com/cgi-bin/webscr" method="post"
-				style="display: inline;">
-					<input type="hidden" name="cmd" value="_s-xclick" />
-					<input type="hidden" name="hosted_button_id" value="4885025" />
-					<input type="image" src="../../images/paypal.png" name="submit" 
-						alt="PayPal - The safer, easier way to pay online!" />
-			</form>
-			<!-- Flattr boutton -->
-			<a class="FlattrButton" style="display:none;" rev="flattr;button:compact;"
-				href="http://www.slitaz.org/"></a>
-		</div>
+		<p>Aidez le projet via un petit don:</p>
+		<?php include("../../lib/html/donate.html"); ?>
 	</div>
+</div>
+
+<!-- Languages -->
+<div id="lang">
+	<a href="/i18n.php">
+		<img src="/images/locale.png" alt="[ Locale ]" /></a>
+	<a href="/en/asso/">English</a>
+	<a href="/es/asso/">Español</a>
+	<a href="/fr/asso/">Français</a>
+	<a href="/pt/asso/">Português</a>
 </div>
 
 <!-- Content -->
 <div id="content">
+
+<!-- Featured sponsor -->
+<div id="sponsor">
+	<p><strong>Featured sponsor</strong></p>
+	<?php include("../../lib/rand-sponsor.php"); ?>
+	<p><?php echo "<a href='$url'>$name</a>" ?></p>
+</div>
 
 <h2>Infrastructure et services</h2>
 
@@ -118,6 +76,9 @@ et de proposition individuelle, il peut utiliser le matériel (cdrom, T-shirt)
 de l'association, créer un groupe de travail pour organiser des
 événements, etc.
 </p>
+
+
+
 <p>
 Le projet prenant de l'ampleur et les demandes du monde professionnel se
 faisant de plus en plus fréquentes, la création de l'association SliTaz GNU/Linux
@@ -191,6 +152,10 @@ des services de support, conseils et développement par des collaborateurs
 salariés de l'association. Pour de plus amples informations vous pouvez
 contacter l'association par courrier, ou mail : asso at slitaz.org
 </p>
+<p>
+	Plus d'information sur le sponsoring en anglais:
+	<a href="/en/sponsor/">SliTaz sponsor</a>
+</p>
 
 <a name="donation"></a>
 <h3>Donation</h3>
@@ -201,51 +166,21 @@ les services de PayPal. Le projet a aussi des besoins logistiques,
 tous les dons de matériel en bon état sont bienvenus.
 </p>
 
-<div>
-	<!-- PayPal boutton -->
-	<form action="https://www.paypal.com/cgi-bin/webscr" method="post"
-		style="display: inline;">
-			<input type="hidden" name="cmd" value="_s-xclick" />
-			<input type="hidden" name="hosted_button_id" value="4885025" />
-			<input type="image" src="../../images/paypal.png" name="submit" 
-				alt="PayPal - The safer, easier way to pay online!" />
-	</form>
-	<!-- Flattr boutton -->
-	<a class="FlattrButton" style="display:none;" rev="flattr;button:compact;"
-		href="http://www.slitaz.org/"></a>
-</div>
+<?php include("../../lib/html/donate.html"); ?>
 
 <a name="postal"></a>
 <h3>Adresse postale</h3>
 <div class="box">
-Association SliTaz GNU/Linux<br />
-Rue du Village 40<br />
-1081 Montpreveyres<br />
-Switzerland<br />
+	Association SliTaz<br />
+	Rue du Village 40<br />
+	1081 Montpreveyres<br />
+	Switzerland<br />
 </div>
 
 <!-- End of content -->
 </div>
 
-<!-- Footer -->
-<div id="footer">
-	Copyright &copy; <span class="year"></span>
-	<a href="http://www.slitaz.org/">SliTaz</a> - Network:
-	<a href="http://scn.slitaz.org/">Community</a>
-	<a href="http://doc.slitaz.org/">Doc</a>
-	<a href="http://forum.slitaz.org/">Forum</a>
-	<a href="http://pkgs.slitaz.org/">Packages</a>
-	<a href="http://bugs.slitaz.org">Bugs</a>
-	<a href="http://hg.slitaz.org/">Hg</a>
-	<p>
-		SliTaz @
-		<a href="http://twitter.com/slitaz">Twitter</a>
-		<a href="http://www.facebook.com/slitaz">Facebook</a>
-		<a href="http://distrowatch.com/slitaz">Distrowatch</a>
-		<a href="http://en.wikipedia.org/wiki/SliTaz">Wikipedia</a>
-		<a href="http://flattr.com/profile/slitaz">Flattr</a>
-	</p>
-</div>
+<?php include("../../lib/html/footer.html"); ?>
 
 </body>
 </html>

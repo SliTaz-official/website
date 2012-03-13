@@ -41,8 +41,6 @@
 	<p><?php echo "<a href='$url'>$name</a>" ?></p>
 </div>
 
-<div style="margin-right: 220px;">
-
 <h2>Sponsoring SliTaz</h2>
 <p>
 	Firstly, a huge thanks to our <a href="#cur">current sponsors</a> and all 
@@ -51,8 +49,6 @@
 	have grown and become a professional grade operating system that is safe to
 	use in production environments.
 </p>
-
-</div>
 
 <h3>Monetary support a developer</h3>
 <p>

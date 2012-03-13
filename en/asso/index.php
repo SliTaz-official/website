@@ -6,11 +6,8 @@
 	<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
 	<meta name="description" content="SliTaz GNU/Linux asso non-profit donate" />
 	<meta name="keywords" lang="en" content="about slitaz, gnu, linux, mini distro, livecd" />
-	<meta name="robots" content="index, follow, all" />
-	<meta name="modified" content="<?php echo (date( "Y-m-d H:i:s", getlastmod())); ?>" />
-	<meta name="author" content="Christophe Lincoln"/>
-	<link rel="shortcut icon" href="../../favicon.ico" />
-	<link rel="stylesheet" type="text/css" href="../../slitaz.css" />
+	<meta name="author" content="Christophe Lincoln" />
+	<?php include("../../lib/html/meta-link.html"); ?>
 </head>
 <body>
 
@@ -34,8 +31,25 @@
 	</div>
 </div>
 
+<!-- Languages -->
+<div id="lang">
+	<a href="/i18n.php">
+		<img src="/images/locale.png" alt="[ Locale ]" /></a>
+	<a href="/en/asso/">English</a>
+	<a href="/es/asso/">Español</a>
+	<a href="/fr/asso/">Français</a>
+	<a href="/pt/asso/">Português</a>
+</div>
+
 <!-- Content -->
 <div id="content">
+
+<!-- Featured sponsor -->
+<div id="sponsor">
+	<p><strong>Featured sponsor</strong></p>
+	<?php include("../../lib/rand-sponsor.php"); ?>
+	<p><?php echo "<a href='$url'>$name</a>" ?></p>
+</div>
 
 <h2>Infrastructure and services</h2>
 
@@ -140,7 +154,7 @@ welcomed.
 <a name="postal"></a>
 <h3>Postal Address</h3>
 <div class="box">
-Association SliTaz GNU/Linux<br />
+Association SliTaz<br />
 Rue du Village 40<br />
 1081 Montpreveyres<br />
 Switzerland
