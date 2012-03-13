@@ -175,6 +175,18 @@
 
 <div class="activity">
 	<p>
+		<a href="http://forum.slitaz.org/"><img 
+			src="/images/support.png" alt="[ Support ]" /></a>
+		Activité du forum
+		<?php get_feed_forum("forum.xml"); ?>
+	</div>
+	<p class="activity_more">
+		<a href="http://forum.slitaz.org/">Plus de support</a>
+	</p>
+</div>
+
+<div class="activity">
+	<p>
 		<a href="http://hg.slitaz.org/">
 			<img src="../images/development.png" alt="development.png" /></a>
 		Derniers commits dans le wok

@@ -50,7 +50,6 @@
 	<li><a href="http://bugs.slitaz.org/">SliTaz Bug Tracker</a></li>
 </ul>
 
-<a name="devel"></a>
 <h2>Get involved</h2>
 <p>
 	SliTaz is an open source and community driven distribution. Everyone is
@@ -74,6 +73,22 @@
 	contributor or e-mail the discussion list. Join the SliTaz Community 
 	<a href="http://scn.slitaz.org/groups/artwork/">Artwork group</a>
 </p>
+
+<h2>Activity</h2>
+
+<?php require_once("../../lib/get-feeds.php"); ?>
+
+<div class="activity">
+	<p>
+		<a href="http://hg.slitaz.org/"><img 
+			src="/images/development.png" alt="[ Devel ]" /></a>
+		Latest commits in wok
+		<?php get_feed("wok.xml"); ?>
+	</div>
+	<p class="activity_more">
+		<a href="http://hg.slitaz.org/">More commits</a>
+	</p>
+</div>
 
 <!-- End of content -->
 </div>

@@ -21,7 +21,7 @@ echo -n "Getting latest rss feeds... "
 wget -O scn.xml $SCN_FEED 2>/dev/null
 wget -O wok.xml $WOK_FEED 2>/dev/null
 wget -O blog.xml $BLOG_FEED 2>/dev/null
-#wget -O forum.xml $FORUM_FEED 2>/dev/null
+wget -O forum.xml $FORUM_FEED 2>/dev/null
 echo "Done"
 
 exit 0

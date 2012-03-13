@@ -6,11 +6,8 @@
     <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
     <meta name="description" content="SliTaz GNU/Linux LiveCD packages" />
     <meta name="keywords" lang="en" content="package, tazpkg" />
-    <meta name="robots" content="index, follow, all" />
-    <meta name="modified" content="<?php echo (date( "Y-m-d H:i:s", getlastmod())); ?>" />
     <meta name="author" content="Christophe Lincoln, Paul Issot"/>
-    <link rel="shortcut icon" href="../../favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="../../slitaz.css" />
+    <?php include("../../lib/html/meta-link.html"); ?>
 </head>
 <body>
 
@@ -85,12 +82,12 @@
 
 <h2>Activity</h2>
 
-<?php require_once("../../libs/get-feeds.php"); ?>
+<?php require_once("../../lib/get-feeds.php"); ?>
 
 <div class="activity">
 	<p>
-		<a href="http://hg.slitaz.org/">
-			<img src="../../images/development.png" alt="development.png" /></a>
+		<a href="http://hg.slitaz.org/"><img 
+			src="/images/development.png" alt="[ Devel ]" /></a>
 		Latest commits in wok
 		<?php get_feed("wok.xml"); ?>
 	</div>
