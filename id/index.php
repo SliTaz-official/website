@@ -5,32 +5,16 @@
 	<title>SliTaz GNU/Linux (id)</title>
 	<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
 	<meta name="description" content="SliTaz GNU/Linux LiveCD" />
-	<meta name="keywords" lang="en" content="System, free, gnu, linux, software opensource, livecd LINUX in RAM" />
-	<meta name="robots" content="index, follow, all" />
-	<meta name="modified" content="<?php echo (date( "Y-m-d H:i:s", getlastmod())); ?>" />
-	<meta name="author" content="Budiarno"/>
-	<meta name="publisher" content="www.slitaz.org" />
-	<link rel="shortcut icon" href="../favicon.ico" />
-	<link rel="stylesheet" type="text/css" href="../slitaz.css" />
-	<link rel="alternate" type="application//rss.xml" title="SliTaz Website feed" href="../en//rss.xml" />
-	<link rel="alternate" type="application/atom+xml" title="SliTaz Labs feed" href="http://labs.slitaz.org/news?format=atom" />
+	<meta name="keywords" lang="en" content="SliTaz indonesian" />
+	<meta name="author" content="AjiNalo" />
+	<?php include("../lib/html/meta-link.html"); ?>
 </head>
 <body>
 
-<!-- Header -->
-<div id="header">
-	<div id="logo"></div>
-	<div id="network">
-		<a href="http://www.slitaz.org/netmap.php">
-			<img src="../images/network.png" alt="network.png" /></a>
-		<a href="http://scn.slitaz.org/">Community</a>
-		<a href="http://doc.slitaz.org/">Doc</a>
-		<a href="http://forum.slitaz.org/">Forum</a>
-		<a href="http://bugs.slitaz.org">Bugs</a>
-		<a href="http://hg.slitaz.org/">Hg</a>
-	</div>
-	<h1><a href="http://www.slitaz.org/">SliTaz GNU/Linux</a></h1>
-</div>
+<?php
+include("../config.php");
+include("../lib/html/header.html");
+?>
 
 <!-- Block -->
 <div id="block">
@@ -66,6 +50,11 @@
 			menyediakan desktop yang elegan tetapi tetap ringan, tool
 			konfigurasi yang mudah dan terdokumentasi dengan detil.
 		</p>
+		<div class="button" style="text-align: left;">
+			Download:
+			<?php echo "<a href='$stable_iso'>SliTaz $stable_ver</a>
+				<a href='$cooking_iso'>SliTaz $cooking</a>"; ?>
+		</div>
 	</div>
 </div>
 
@@ -100,8 +89,7 @@
 
 <div class="box">
 	<img src="../images/news.png" alt="news.png" />
-	<a href="http://labs.slitaz.org/news">Berita dari Labs</a>
-	(<a href="http://labs.slitaz.org/news?format=atom">Feed</a>) | 
+	<a href="http://scn.slitaz.org/">Berita dari Blog</a> | 
 	<a href="http://doc.slitaz.org/en:newsletter:start">Newsletter Bulanan</a>
 </div>
 
@@ -174,28 +162,14 @@
 <!-- End of news -->
 </div>
 
+<h3>Twitter &amp; Facebook</h3>
+
+<?php include("../lib/html/social.html"); ?>
+
 <!-- End of content -->
 </div>
 
-<!-- Footer -->
-<div id="footer">
-	Copyright &copy; <span class="year"></span>
-	<a href="http://www.slitaz.org/">SliTaz</a> - Network:
-	<a href="http://scn.slitaz.org/">Community</a>
-	<a href="http://doc.slitaz.org/">Doc</a>
-	<a href="http://forum.slitaz.org/">Forum</a>
-	<a href="http://pkgs.slitaz.org/">Packages</a>
-	<a href="http://bugs.slitaz.org">Bugs</a>
-	<a href="http://hg.slitaz.org/">Hg</a>
-	<p>
-		SliTaz @
-		<a href="http://twitter.com/slitaz">Twitter</a>
-		<a href="http://www.facebook.com/slitaz">Facebook</a>
-		<a href="http://distrowatch.com/slitaz">Distrowatch</a>
-		<a href="http://en.wikipedia.org/wiki/SliTaz">Wikipedia</a>
-		<a href="http://flattr.com/profile/slitaz">Flattr</a>
-	</p>
-</div>
+<?php include("../lib/html/footer.html"); ?>
 
 </body>
 </html>
