@@ -71,8 +71,15 @@ include("lib/html/header.html");
 	</p>
 </div>
 
+<!-- Featured sponsor -->
+<div id="sponsor">
+	<p><strong>Featured sponsor</strong></p>
+	<?php include("lib/rand-sponsor.php"); ?>
+	<p><a href="/en/sponsor/">Become a sponsor</a></p>
+</div>
+
 <!-- We just keep the last 4 web site news -->
-<div class="news">
+<div class="news" style="margin-right: 220px;">
 
 <h2>Latest News</h2>
 
@@ -136,7 +143,7 @@ include("lib/html/header.html");
 	  height: 200,
 	  theme: {
 	    shell: {
-	      background: '#eaeaea',
+	      background: '#efefef',
 	      color: '#000000'
 	    },
 	    tweets: {

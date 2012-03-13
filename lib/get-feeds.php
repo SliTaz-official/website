@@ -19,7 +19,7 @@ function get_feed($feed) {
 		echo "</p>\n<div>\n<ul>\n";
 		foreach($x->channel->item as $entry) {
 			$count = $count + 1;
-			echo "	<li><a href='$entry->link' title='$entry->title'>" . 
+			echo "	<li><a href='$entry->guid' title='$entry->title'>" . 
 				$entry->title . "</a></li>\n";
 			if ($count == $entries) {
 				break;

@@ -166,6 +166,16 @@ pre {
 #twitter { margin: 20px 0; }
 #gallery { text-align: center; }
 
+#sponsor {
+	font-size: 90%;
+	background-color: #efefef;
+	border: 1px solid #ddd;
+	width: 200px;
+	height: 140px;
+	float: right;
+	text-align: center;
+}
+
 /* Classes */
 
 .right_box { width: 48%; float: right; }
@@ -190,7 +200,7 @@ pre {
 
 .activity { 
 	margin: 0 0 20px; 
-	background: #eaeaea; 
+	background: #efefef; 
 	padding: 5px 2px 0; 
 	border: 1px solid #ddd; 
 }
@@ -228,21 +238,10 @@ pre {
 /* Round corner */
 
 #block_nav, pre, .box, .searchbox, .button a, #twitter, .activity,
-.activity div {
+.activity div, #sponsor {
 	-moz-border-radius: 4px;
 	-webkit-border-radius: 4px;
 	border-radius: 4px;
-}
-
-/* Transition */
-
-.box {	
-	-webkit-transition-property: background-color;
-	-webkit-transition-duration: 2s;
-	-moz-transition-property: background-color;
-	-moz-transition-duration: 2s;
-	transition-property: background-color;
-	transition-duration: 2s;
 }
 
 /* Form */
