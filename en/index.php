@@ -56,7 +56,7 @@
 		Help us get a dedicated server - Check out our
 		<a href="http://www.gofundme.com/3ql70">online fundraising</a>
 		or become an official
-		<a href="/en/asso/sponsor.php">sponsor</a>
+		<a href="/en/sponsor/">sponsor</a>
 	</p>
 </div>
 
@@ -191,7 +191,7 @@
 <p>
 	You may also want to become an official sponsor via a monthly donation or
 	by providing us with some hardware or server resources.
-	<a href="asso/sponsor.php">More information</a>
+	<a href="sponsor/">More information</a>
 </p>
 
 <?php include("../lib/html/donate.html"); ?>

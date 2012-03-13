@@ -65,7 +65,7 @@ include("../../lib/html/header.html");
 
 <div class="box">
 	<p>
-		通过一个小的捐赠帮助的项目，或成为官方<a href="/en/asso/sponsor.php">赞助商 (en)</a>.
+		通过一个小的捐赠帮助的项目，或成为官方<a href="/en/sponsor/">赞助商 (en)</a>.
 	</p>
 	<?php include("../../lib/html/donate.html"); ?>
 </div>

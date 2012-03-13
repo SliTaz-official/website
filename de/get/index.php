@@ -65,7 +65,7 @@ include("../../lib/html/header.html");
 <div class="box">
 	<p>
 		Helfen Sie das Projekt über eine kleine Spende oder werden, ein 
-		Offizieller <a href="../asso/sponsor.php">Sponsor</a>.
+		Offizieller <a href="../sponsor/">Sponsor</a>.
 	</p>
 	<?php include("../../lib/html/donate.html"); ?>
 </div>
