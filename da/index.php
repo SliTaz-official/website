@@ -1,74 +1,24 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<! Danish (da) translation by Bo Vagner Højer - bohoejer@live.dk
+<!-- Danish (da) translation by Bo Vagner Højer - bohoejer@live.dk
    Member of Labitat Hackerspace, Copenhagen - www.labitat.dk
-   visit our hackerspace every tuesday evening for free - always hot coffee >     
+   visit our hackerspace every tuesday evening for free - always hot coffee -->     
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="da" lang="da">
 <head>
 	<title>SliTaz GNU/Linux (en)</title>
 	<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
 	<meta name="description" content="SliTaz GNU/Linux LiveCD" />
 	<meta name="keywords" lang="en" content="System, free, gnu, linux, software opensource, livecd LINUX in RAM" />
-	<meta name="robots" content="index, follow, all" />
-	<meta name="modified" content="<?php echo (date( "Y-m-d H:i:s", getlastmod())); ?>" />
-	<meta name="author" content="Linux User"/>
-	<link rel="shortcut icon" href="../favicon.ico" />
-	<link rel="stylesheet" type="text/css" href="../slitaz.css" />
-	<link rel="alternate" type="application//rss.xml" title="SliTaz Website feed" href="/rss.xml" />
-	<link rel="alternate" type="application//rss.xml" title="SliTaz SCN feed" href="http://scn.slitaz.org/activity/feed/" />
-	<script type="text/javascript">
-	/* <![CDATA[ */
-	    (function() {
-	        var s = document.createElement('script'), t = document.getElementsByTagName('script')[0];
-	        s.type = 'text/javascript';
-	        s.async = true;
-	        s.src = 'http://api.flattr.com/js/0.6/load.js?mode=auto';
-	        t.parentNode.insertBefore(s, t);
-	    })();
-	/* ]]> */
-	</script>
+	<meta name="author" content="Bo Vagner Højer" />
+	<?php include("../lib/html/meta-link.html"); ?>
 </head>
 <body>
 
-<!-- Header -->
-<div id="header">
-	<div id="logo"></div>
-	<div id="network">
-		<a href="http://www.slitaz.org/netmap.php">
-			<img src="../images/network.png" alt="netværk:" /></a>
-		<a href="http://scn.slitaz.org/">Samfund</a>
-		<a href="http://doc.slitaz.org/">Vejledning</a>
-		<a href="http://forum.slitaz.org/">Forum</a>
-		<a href="http://bugs.slitaz.org">Fejl</a>
-		<a href="http://hg.slitaz.org/">Hg</a>
-	</div>
-	<h1><a href="http://www.slitaz.org/">SliTaz GNU/Linux</a></h1>
-</div>
+<?php include("../lib/html/header.html"); ?>
 
 <!-- Block -->
 <div id="block">
-	<!-- Navigation -->
-	<div id="block_nav">
-		<h4>Navigation</h4>
-		<div class="right_box">
-			<ul>
-				<li><a href="mailing-list.html">Postliste</a></li>
-				<li><a href="devel/">Udvikling</a></li>
-				<li><a href="packages/">Programpakker</a></li>
-				<li><a href="artwork/">Grafik</a></li>
-				<li><a href="search.html">Søgning</a></li>
-			</ul>
-		</div>
-		<div class="left_box">
-			<ul>
-				<li><a href="./">Nyheder</a></li>
-				<li><a href="about/">Om SliTaz</a></li>
-				<li><a href="get/">Hent SliTaz</a></li>
-				<li><a href="asso/">Organisation</a></li>
-				<li><a href="doc/">Vejledning</a></li>
-			</ul>
-		</div>
-	</div>
+	<?php include("../lib/html/nav.da.html"); ?>
 	<!-- Information/image -->
 	<div id="block_info">
 		<h4>Dansk hjemmeside</h4>
@@ -89,8 +39,8 @@
 <div id="lang">
 	<a href="../i18n.php">
 		<img src="../images/locale.png" alt="Sprog:" /></a>
-   <strong title="Oversættelse ved Bo Vagner Højer - bohoejer@live.dk">Dansk</strong>   
-   <a href="../de/">Deutsch</a>
+	<strong title="Oversættelse ved Bo Vagner Højer - bohoejer@live.dk">Dansk</strong>   
+	<a href="../de/">Deutsch</a>
 	<a href="../en/">English</a>
 	<a href="../es/">Español</a>
 	<a href="../fr/">Français</a>
@@ -258,48 +208,16 @@
 	indvoldveret i projektet.
 </p>
 
-<div>
-	<!-- PayPal Button -->
-	<form action="https://www.paypal.com/cgi-bin/webscr" method="post"
-		style="display: inline;">
-		<input type="hidden" name="cmd" value="_s-xclick" />
-		<input type="hidden" name="hosted_button_id" value="4885025" />
-		<input type="image" src="../images/paypal.png" name="betal" 
-			alt="PayPal - Den sikre, lettere vej til onlie betaling!" />
-	</form>
-	<!-- Flattr Button -->
-	<a class="FlattrButton" style="display:none;" rev="flattr;button:compact;"
-		href="http://www.slitaz.org/"></a>
-	<!-- Twitter Button -->
-	<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-	<a href="http://twitter.com/share" class="twitter-share-button" 
-		data-text="SliTaz GNU/Linux" 
-		data-count="horizontal"
-		data-via="slitaz">Tweet</a>
-</div>
+<?php include("../lib/html/donate.html"); ?>
+
+<h3>Twitter &amp; Facebook</h3>
+
+<?php include("../lib/html/social.html"); ?>
 
 <!-- End of content  -->
 </div>
 
-<!-- Footer -->
-<div id="footer">
-	Ophavsret &copy; <span class="year"></span>
-	<a href="http://www.slitaz.org/">SliTaz</a> - Netværk:
-	<a href="http://scn.slitaz.org/">Samfund</a>
-	<a href="http://doc.slitaz.org/">Vejledning</a>
-	<a href="http://forum.slitaz.org/">Forum</a>
-	<a href="http://pkgs.slitaz.org/">Programpakker</a>
-	<a href="http://bugs.slitaz.org">Fejl</a>
-	<a href="http://hg.slitaz.org/">Hg</a>
-	<p>
-		SliTaz @
-		<a href="http://twitter.com/slitaz">Twitter</a>
-		<a href="http://www.facebook.com/slitaz">Facebook</a>
-		<a href="http://distrowatch.com/slitaz">Distrowatch</a>
-		<a href="http://en.wikipedia.org/wiki/SliTaz">Wikipedia</a>
-		<a href="http://flattr.com/profile/slitaz">Flattr</a>
-	</p>
-</div>
+<?php include("../lib/html/footer.html"); ?>
 
 </body>
 </html>
