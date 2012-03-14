@@ -77,8 +77,6 @@ de l'association, créer un groupe de travail pour organiser des
 événements, etc.
 </p>
 
-
-
 <p>
 Le projet prenant de l'ampleur et les demandes du monde professionnel se
 faisant de plus en plus fréquentes, la création de l'association SliTaz GNU/Linux
