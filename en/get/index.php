@@ -55,11 +55,11 @@ include("../../lib/html/header.html");
 <h2>Get SliTaz</h2>
 	
 <ul>
-	<li><a href="index.html#stable">LiveCD Stable version</a> - 
+	<li><a href="index.php#stable">LiveCD Stable version</a> - 
 	Bootable ISO image of the current stable version.</li>
-	<li><a href="index.html#cooking">LiveCD Cooking version</a> - 
+	<li><a href="index.php#cooking">LiveCD Cooking version</a> - 
 	Bootable ISO image of the cooking version.</li>
-	<li><a href="index.html#floppy">Floppy disk</a> - Bootable 
+	<li><a href="index.php#floppy">Floppy disk</a> - Bootable 
 	startup disk to launch the LiveCD, a USB stick, etc.</li>
 	<li><a href="flavors.php">LiveCD to taste</a> - Flavors and loram.</li>
 </ul>
@@ -174,7 +174,7 @@ include("../../lib/html/header.html");
 	be used without an internet connection via the install.sh script.
 	Note: This image can also be
 	<a href="http://syslinux.zytor.com/wiki/index.php/Doc/isolinux#HYBRID_CD-ROM.2FHARD_DISK_MODE">
-		installed on an USB key</a>, but it will overwrite all data.
+	installed on an USB key</a>, but it will overwrite all data.
 </p>
 
 <p class="box">

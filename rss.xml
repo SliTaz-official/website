@@ -25,7 +25,7 @@
 		<pubDate>Wed, 14 Mar 2012 14:50:00 GMT</pubDate>
 		<description>
 			The upcoming SliTaz professional platform is ready to be
-			official launched. Stay turned!
+			officially launched. Stay tuned!
 		</description>
 	</item>
 	
@@ -46,9 +46,9 @@
 		<guid isPermaLink="true">http://www.slitaz.org/en/</guid>
 		<pubDate>Mon, 12 Mar 2012 00:30:00 GMT</pubDate>
 		<description>
-			We have moved the html pages to php and improve all English
-			website pages. It will be easier for translators and to update
-			SliTaz releases infos.
+			We have moved the html pages to php and improved all English
+			website pages. It will be easier for translators and to 
+			announce any SliTaz release information.
 		</description>
 	</item>
 	

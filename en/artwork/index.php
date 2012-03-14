@@ -31,7 +31,7 @@
 		<ul>
 			<li><a href="#art4taz">Art &amp; Design</a></li>
 			<li><a href="#logos">Logos &amp; Spider</a></li>
-			<li><a href="screenshots.html">Screenshots</a></li>
+			<li><a href="screenshots.php">Screenshots</a></li>
 		</ul>
 	</div>
 </div>
@@ -47,7 +47,7 @@ This section of the website is dedicated to art and graphics intended for
 the SliTaz project. Images are free, and you can use them to make your own
 wallpaper or display a logo on your site to help popularize the project.
 The SliTaz logos and icons are available for download in SVG format. You
-will also find here some <a href="screenshots.html">screenshots</a> made
+will also find here some <a href="screenshots.php">screenshots</a> made
 with mtPaint and The Gimp. The Artwork team has its own platform on
 the <a href="http://scn.slitaz.org/">SliTaz Community Network</a>.
 </p>
