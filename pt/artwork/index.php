@@ -14,46 +14,14 @@
 </head>
 <body>
 
-<!-- Header -->
-<div id="header">
-	<div id="logo"></div>
-	<div id="network">
-		<a href="http://www.slitaz.org/netmap.php">
-			<img src="../../images/network.png" alt="network.png" /></a>
-		<a href="http://scn.slitaz.org/">Community</a>
-		<a href="http://doc.slitaz.org/">Doc</a>
-		<a href="http://forum.slitaz.org/">Forum</a>
-		<a href="http://bugs.slitaz.org">Bugs</a>
-		<a href="http://hg.slitaz.org/">Hg</a>
-	</div>
-	<h1><a href="http://www.slitaz.org/">SliTaz GNU/Linux</a></h1>
-</div>
+<?php include("../../lib/html/header.pt.html"); ?>
 
 <!-- Block -->
 <div id="block">
-	<!-- Navigation -->
-	<div id="block_nav">
-		<h4>Navegação</h4>
-		<div class="right_box">
-			<ul>
-				<li><a href="../mailing-list.html">Lista de discussão</a></li>
-				<li><a href="../devel/">Desenvolvimento</a></li>
-				<li><a href="../packages/">Pacotes</a></li>
-				<li><a href="../artwork/">Artwork</a></li>
-				<li><a href="../search.html">Procurar</a></li>
-			</ul>
-		</div>
-		<div class="left_box">
-			<ul>
-				<li><a href="../">Últimas notícias</a></li>
-				<li><a href="../about/">Sobre o projeto</a></li>
-				<li><a href="../get/">Download</a></li>
-				<li><a href="../asso/">Associação</a></li>
-				<li><a href="../doc/">Documentação</a></li>
-			</ul>
-		</div>
-	</div>
-	<!-- Information/image -->
+    
+    <?php include("../../lib/html/nav.pt.html"); ?>
+
+    <!-- Information/image -->
 	<div id="block_info">
 		<h4>Artwork</h4>
 		<p>
@@ -66,7 +34,7 @@
 		<ul> 
 			<li><a href="#art4taz">Artwork para o SliTaz.</a></li>
 			<li><a href="#logos">Logos, spider &amp; ícones.</a></li>
-			<li><a href="screenshots.html">Screenshots.</a></li> 
+			<li><a href="screenshots.php">Screenshots.</a></li> 
 		</ul>
 	</div>
 </div>
@@ -93,7 +61,7 @@ As imagens são livres, e você pode utiliza-las para fazer seu próprio papel de
 parede ou mostrar o logo em seu site para ajudar na popularização do projeto.
 Os logos e ícones do SliTaz estão disponíveis em muitos tamanhos e podem ser
 baixados diretamente do diretório <a href="../../images/artwork/">artwork</a>.
-Você também vai achar aqui alguns <a href="screenshots.html">screenshots</a> 
+Você também vai achar aqui alguns <a href="screenshots.php">screenshots</a> 
 feitos com o mtPaint e o Gimp.
 </p>
 
@@ -107,7 +75,7 @@ parede ou qualquer outra coisa é uma boa forma de participar do projeto sem
 precisar "sujar" suas mãos codificando ou testando a validade do xHTML. Se você
 deseja criar alguma arte para o SliTaz, ou se pretende usar alguma de nossas imagens
 online, é recomendável que nos contate primeiro pela 
-<a href="../mailing-list.html">Lista de Discussão</a>. Tente não mandar arquivos
+<a href="../mailing-list.php">Lista de Discussão</a>. Tente não mandar arquivos
 muito grandes.
 </p>
 <h4>Artwork do LiveCD</h4>
@@ -159,25 +127,7 @@ no mirror. Note que o formato livre PNG é preferível.
 <!-- End of content -->
 </div>
 
-<!-- Footer -->
-<div id="footer">
-	Copyright &copy; <span class="year"></span>
-	<a href="http://www.slitaz.org/">SliTaz</a> - Network:
-	<a href="http://scn.slitaz.org/">Community</a>
-	<a href="http://doc.slitaz.org/">Doc</a>
-	<a href="http://forum.slitaz.org/">Forum</a>
-	<a href="http://pkgs.slitaz.org/">Packages</a>
-	<a href="http://bugs.slitaz.org">Bugs</a>
-	<a href="http://hg.slitaz.org/">Hg</a>
-	<p>
-		SliTaz @
-		<a href="http://twitter.com/slitaz">Twitter</a>
-		<a href="http://www.facebook.com/slitaz">Facebook</a>
-		<a href="http://distrowatch.com/slitaz">Distrowatch</a>
-		<a href="http://en.wikipedia.org/wiki/SliTaz">Wikipedia</a>
-		<a href="http://flattr.com/profile/slitaz">Flattr</a>
-	</p>
-</div>
+<?php include("../../lib/html/footer.pt.html"); ?>
 
 </body>
 </html>
