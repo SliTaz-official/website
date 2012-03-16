@@ -2,83 +2,20 @@
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
 <head>
-    <title>SliTaz - Lista de correo</title>
-    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
-    <meta name="description" content="slitaz users developers mailing list" />
-    <meta name="keywords" content="slitaz list mail discuss" lang="es" />
-    <meta name="robots" content="index, follow, all" />
-    <meta name="modified" content="2011-03-25 19:30:00" />
-    <meta name="author" content="Eduardo Suarez-Santana" />
-    <link rel="shortcut icon" href="../favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="../slitaz.css" />
-    <style type="text/css">
-	table {
-		border: 1px solid #000000;
-		width: variable;
-		border-collapse: collapse;
-	}
-	td {
-		border: 1px dotted #6495ed;
-		width: variable;
-		padding: 2px;
-	}
-	.rowodd {
-		background-color: #ffffff;
-	}
-	.roweven {
-		background-color: #e1ffe1; /* the tower */
-	}
-	th {
-		border: 1px solid #000000;
-		width: variable;
-		padding: 4px;
-	}
-	.alignright {
-		text-align: right;
-	}
-	</style>
+    	<title>SliTaz - Lista de correo</title>
+	<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+	<meta name="description" content="slitaz users developers mailing list" />
+	<meta name="keywords" content="slitaz list mail discuss" lang="es" />
+	<meta name="author" content="Eduardo Suarez-Santana" />
+	<?php include("../lib/html/meta-link.html"); ?>
 </head>
 <body>
 
-<!-- Header -->
-<div id="header">
-	<div id="logo"></div>
-	<div id="network">
-		<a href="http://www.slitaz.org/netmap.php">
-			<img src="../images/network.png" alt="network.png" /></a>
-		<a href="http://scn.slitaz.org/">Community</a>
-		<a href="http://doc.slitaz.org/">Doc</a>
-		<a href="http://forum.slitaz.org/">Forum</a>
-		<a href="http://bugs.slitaz.org">Bugs</a>
-		<a href="http://hg.slitaz.org/">Hg</a>
-	</div>
-	<h1><a href="http://www.slitaz.org/">SliTaz GNU/Linux</a></h1>
-</div>
+<?php include("../lib/html/header.html"); ?>
 
 <!-- Block -->
 <div id="block">
-	<!-- Navigation -->
-	<div id="block_nav">
-		<h4>Navigation</h4>
-		<div class="right_box">
-			<ul>
-				<li><a href="mailing-list.html">Lista de correo</a></li>
-				<li><a href="devel/">Desarrollo</a></li>
-				<li><a href="packages/">Paquetes</a></li>
-				<li><a href="artwork/">Artwork</a></li>
-				<li><a href="search.html">Buscar</a></li>
-			</ul>
-		</div>
-		<div class="left_box">
-			<ul>
-				<li><a href="./">Titulares</a></li>
-				<li><a href="about/">Acerca de</a></li>
-				<li><a href="get/">Descargas</a></li>
-				<li><a href="asso/">Asociación</a></li>
-				<li><a href="doc/">Documentación</a></li>
-			</ul>
-		</div>
-	</div>
+	<?php include("../lib/html/nav.es.html"); ?>
 	<!-- Information/image -->
 	<div id="block_info">
 		<h4>Lista de correo</h4>
@@ -90,21 +27,38 @@
 		<p>
 			<img src="../images/users.png" alt="users.png" />
 			Also you can <a href="http://scn.slitaz.org/">join us on SCN</a>
-			and the support <a href="http://forum.slitaz.org/">forum</a>
+			and the support <a href="http://forum.slitaz.org/">forum</a> or:
 		</p>
+		<!-- Follow -->
+		<div style="margin-top: 12px;">
+			<a href="https://twitter.com/slitaz" class="twitter-follow-button" 
+				data-show-count="true" data-show-screen-name="false">Follow @slitaz</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+		</div>
 	</div>
+</div>
+
+<!-- Languages -->
+<div id="lang">
+	<a href="../18n.php">
+		<img src="../images/locale.png" alt="locale.png" /></a>
+	<a href="../da/mailing-list.html">Dansk</a>
+	<a href="../de/mailing-list.html">Deutsch</a>
+	<a href="../en/mailing-list.php">English</a>
+	<!--<a href="../es/mailing-list.php">Español</a>-->
+	<a href="../fr/mailing-list.html">Français</a>
+	<a href="../it/mailing-list.php">Italiano</a>
+	<a href="../pt/mailing-list.php">Português</a>
 </div>
 
 <!-- Content -->
 <div id="content">
 
-
 <h2>Lista de SliTaz</h2>
 
 <ul>
 	<li><a href="mailing-list.html#about">Acerca de la lista</a> - Soporte y desarrollo.</li>
-	<li><a href="mailing-list.html#usage">Usando la lista</a> - Suscribirse/darse de baja y 
-	otros comandos.</li>
+	<li><a href="mailing-list.html#usage">Usando la lista</a> - Suscribirse/darse de baja y otros comandos.</li>
 	<li><a href="mailing-list.html#archives">Archivo de la lista</a> - Leer y buscar en los mensajes archivados.</li>
 </ul>
 
@@ -150,13 +104,13 @@ a una carpeta específica. Para no perder el hilo de las discusiones, en
 general usa "Reply" para contestar un mensaje.
 </p>
 <ul>
-    <li>Correo de administración :
-    <a href="mailto:slitaz-request@lists.tuxfamily.org">slitaz-request@lists.tuxfamily.org</a></li>
-    <li>Suscríbete escribiendo en el campo "asunto" : subscribe</li>
-    <li>Date de baja escribiendo en el asunto : unsubscribe</li>
-    <li>Ayuda escribiendo en el asunto : help</li>
-    <li>Correo para enviar un mensaje :
-    <a href="mailto:slitaz@lists.tuxfamily.org">slitaz@lists.tuxfamily.org</a></li>
+	<li>Correo de administración :
+	<a href="mailto:slitaz-request@lists.tuxfamily.org">slitaz-request@lists.tuxfamily.org</a></li>
+	<li>Suscríbete escribiendo en el campo "asunto" : subscribe</li>
+	<li>Date de baja escribiendo en el asunto : unsubscribe</li>
+	<li>Ayuda escribiendo en el asunto : help</li>
+	<li>Correo para enviar un mensaje :
+	<a href="mailto:slitaz@lists.tuxfamily.org">slitaz@lists.tuxfamily.org</a></li>
 </ul>
 <h4>Formato</h4>
 <p>
@@ -181,6 +135,32 @@ la Lista de Correo.</a>
 </p>
 
 <div>
+<style type="text/css">
+	table {
+		border: 1px solid #444444;
+		width: variable;
+		border-collapse: collapse;
+    	}
+	td {
+		border: 1px dotted #6495ed;
+		width: variable;
+		padding: 2px;
+	}
+	.rowodd {
+		background-color: #ffffff;
+	}
+	.roweven {
+		background-color: #e1ffe1; /* the tower [spanish translator comment: LOL!] */
+	}
+	th {
+		border: 1px solid #444444;
+		width: variable;
+		padding: 4px;
+	}
+	.alignright {
+		text-align: right;
+	}
+</style>
 <object type="text/html" width="100%" height="345" data="../lib/archives.php?lang=es">
 </object>
 </div>
@@ -188,25 +168,7 @@ la Lista de Correo.</a>
 <!-- End of content -->
 </div>
 
-<!-- Footer -->
-<div id="footer">
-	Copyright &copy; <span class="year"></span>
-	<a href="http://www.slitaz.org/">SliTaz</a> - Network:
-	<a href="http://scn.slitaz.org/">Community</a>
-	<a href="http://doc.slitaz.org/">Doc</a>
-	<a href="http://forum.slitaz.org/">Forum</a>
-	<a href="http://pkgs.slitaz.org/">Packages</a>
-	<a href="http://bugs.slitaz.org">Bugs</a>
-	<a href="http://hg.slitaz.org/">Hg</a>
-	<p>
-		SliTaz @
-		<a href="http://twitter.com/slitaz">Twitter</a>
-		<a href="http://www.facebook.com/slitaz">Facebook</a>
-		<a href="http://distrowatch.com/slitaz">Distrowatch</a>
-		<a href="http://en.wikipedia.org/wiki/SliTaz">Wikipedia</a>
-		<a href="http://flattr.com/profile/slitaz">Flattr</a>
-	</p>
-</div>
+<?php include("../lib/html/footer.html"); ?>
 
 </body>
 </html>

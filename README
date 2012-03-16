@@ -18,10 +18,10 @@ the configuration file config.php as well as the ISO size.
 RSS Feed: rss.xml
 -----------------
 We have one main RSS feed for the website for short news (max 140 char), the
-feed is relayed to SliTaz official Twitter account. RSS fedd is check each
-halt an gour by http://twitterfeed.com/ and let contributors use the official
-SliTaz account. The Twitter account is also sync with Facebook so any new item
-will also be on fb.
+feed is relayed to SliTaz official Twitter account. RSS feed is checked every
+half an hour by http://twitterfeed.com/ and lets contributors use the official
+SliTaz account. The Twitter account is also sync'd with Facebook so any new 
+items will also be on fb.
 
 
 ================================================================================
