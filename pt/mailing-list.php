@@ -6,80 +6,19 @@
     <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
     <meta name="description" content="slitaz users developers mailing list" />
     <meta name="keywords" content="slitaz lista mail discussão" lang="pt" />
-    <meta name="robots" content="index, follow, all" />
-    <meta name="modified" content="2011-03-26 00:30:00" />
     <meta name="author" content="Claudinei Pereira" />
-    <link rel="shortcut icon" href="../favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="../slitaz.css" />
-    <style type="text/css">
-    table {
-        border: 1px solid #000000;
-        width: variable;
-        border-collapse: collapse;
-    }
-    td {
-        border: 1px dotted #6495ed;
-        width: variable;
-        padding: 2px;
-    }
-    .rowodd {
-        background-color: #ffffff;
-    }
-    .roweven {
-        background-color: #e1ffe1; /* the tower */
-    }
-    th {
-        border: 1px solid #000000;
-        width: variable;
-        padding: 4px;
-    }
-    .alignright {
-        text-align: right;
-    }
-    </style>
+    <?php include("../lib/html/meta-link.html"); ?>
 </head>
 <body>
 
-<!-- Header -->
-<div id="header">
-	<div id="logo"></div>
-	<div id="network">
-		<a href="http://www.slitaz.org/netmap.php">
-			<img src="../images/network.png" alt="network.png" /></a>
-		<a href="http://scn.slitaz.org/">Community</a>
-		<a href="http://doc.slitaz.org/">Doc</a>
-		<a href="http://forum.slitaz.org/">Forum</a>
-		<a href="http://bugs.slitaz.org">Bugs</a>
-		<a href="http://hg.slitaz.org/">Hg</a>
-	</div>
-	<h1><a href="http://www.slitaz.org/">SliTaz GNU/Linux</a></h1>
-</div>
+<?php include("../lib/html/header.pt.html"); ?>
 
 <!-- Block -->
 <div id="block">
-	<!-- Navigation -->
-	<div id="block_nav">
-		<h4>Navegação</h4>
-		<div class="right_box">
-			<ul>
-				<li><a href="mailing-list.html">Lista de discussão</a></li>
-				<li><a href="devel/">Desenvolvimento</a></li>
-				<li><a href="packages/">Pacotes</a></li>
-				<li><a href="artwork/">Artwork</a></li>
-				<li><a href="search.html">Procurar</a></li>
-			</ul>
-		</div>
-		<div class="left_box">
-			<ul>
-				<li><a href="./">Últimas notícias</a></li>
-				<li><a href="about/">Sobre o projeto</a></li>
-				<li><a href="get/">Download</a></li>
-				<li><a href="asso/">Associação</a></li>
-				<li><a href="doc/">Documentação</a></li>
-			</ul>
-		</div>
-	</div>
-	<!-- Information/image -->
+
+    <?php include("../lib/html/nav.pt.html"); ?>
+    
+    <!-- Information/image -->
 	<div id="block_info">
 		<h4>Lista de Discussão</h4>
 		<p>
@@ -94,6 +33,12 @@
 			(SliTaz Community Network) 
 			e o <a href="http://forum.slitaz.org/">Fórum de suporte.</a>
 		</p>
+        <!-- Follow -->
+        <div style="margin-top: 12px;">
+            <a href="https://twitter.com/slitaz" class=twitter-follow-button"
+                data-show-count="true" data-show-screen-name="false">Siga @slitaz</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id))[js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        </div>
 	</div>
 </div>
 
@@ -113,10 +58,10 @@
 <h2>Lista SliTaz</h2>
 
 <ul>
-    <li><a href="mailing-list.html#about">Sobre a Lista</a> - Suporte e desenvolvimento.</li>
-    <li><a href="mailing-list.html#usage">Usando a Lista</a> - Inscrição, Cancelamento da Inscrição
+    <li><a href="#about">Sobre a Lista</a> - Suporte e desenvolvimento.</li>
+    <li><a href="#usage">Usando a Lista</a> - Inscrição, Cancelamento da Inscrição
     e utilização.</li>
-    <li><a href="mailing-list.html#archives">Arquivos da Lista</a> - Leia e/ou busque nas mensagens
+    <li><a href="#archives">Arquivos da Lista</a> - Leia e/ou busque nas mensagens
     arquivadas.</li>
 </ul>
 
@@ -198,6 +143,33 @@ organizadas por mês e data ou por fluxo de discussão (<em>Thread</em>) :
 </p>
 
 <div>
+<style type="text/css">
+    table {
+        border: 1px solid #444444;
+        width: variable;
+        border-collapse: collapse;
+    }
+    td {
+        border: 1px dotted #6495ed;
+        width: variable;
+        padding: 2px;
+    }
+    .rowodd {
+        background-color: #ffffff;
+    }
+    .roweven {
+        background-color: #e1ffe1; /* the tower [portuguese translator comment: LOL!] */
+    }
+    th {
+        border: 1px solid #444444;
+        width: variable;
+        padding: 4px;
+    }
+    .alignright {
+        text-align: right;
+    }
+</style>
+
 <object type="text/html" width="100%" height="345" data="../lib/archives.php?lang=pt">
 </object>
 </div>
@@ -206,24 +178,9 @@ organizadas por mês e data ou por fluxo de discussão (<em>Thread</em>) :
 </div>
 
 <!-- Footer -->
-<div id="footer">
-	Copyright &copy; <span class="year"></span>
-	<a href="http://www.slitaz.org/">SliTaz</a> - Network:
-	<a href="http://scn.slitaz.org/">Community</a>
-	<a href="http://doc.slitaz.org/">Doc</a>
-	<a href="http://forum.slitaz.org/">Forum</a>
-	<a href="http://pkgs.slitaz.org/">Packages</a>
-	<a href="http://bugs.slitaz.org">Bugs</a>
-	<a href="http://hg.slitaz.org/">Hg</a>
-	<p>
-		SliTaz @
-		<a href="http://twitter.com/slitaz">Twitter</a>
-		<a href="http://www.facebook.com/slitaz">Facebook</a>
-		<a href="http://distrowatch.com/slitaz">Distrowatch</a>
-		<a href="http://en.wikipedia.org/wiki/SliTaz">Wikipedia</a>
-		<a href="http://flattr.com/profile/slitaz">Flattr</a>
-	</p>
 </div>
+
+<?php include("../lib/html/footer.pt.html"); ?>
 
 </body>
 </html>
