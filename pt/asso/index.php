@@ -6,65 +6,19 @@
     <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
     <meta name="description" content="SliTaz GNU/Linux asso non-profit donate" />
     <meta name="keywords" lang="pt" content="sobre slitaz, gnu, linux, mini distro, livecd" />
-    <meta name="robots" content="index, follow, all" />
-    <meta name="modified" content="2011-03-26 00:30:00" />
     <meta name="author" content="Claudinei Pereira" />
-    <link rel="shortcut icon" href="../../favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="../../slitaz.css" />
-    <script type="text/javascript">
-	/* <![CDATA[ */
-	    (function() {
-	        var s = document.createElement('script'), t = document.getElementsByTagName('script')[0];
-	        s.type = 'text/javascript';
-	        s.async = true;
-	        s.src = 'http://api.flattr.com/js/0.6/load.js?mode=auto';
-	        t.parentNode.insertBefore(s, t);
-	    })();
-	/* ]]> */
-	</script>
+    <?php include("../../lib/html/meta-link.html"); ?>
 </head>
 <body>
 
-<!-- Header -->
-<div id="header">
-	<div id="logo"></div>
-	<div id="network">
-		<a href="http://www.slitaz.org/netmap.php">
-			<img src="../../images/network.png" alt="network.png" /></a>
-		<a href="http://scn.slitaz.org/">Community</a>
-		<a href="http://doc.slitaz.org/">Doc</a>
-		<a href="http://forum.slitaz.org/">Forum</a>
-		<a href="http://bugs.slitaz.org">Bugs</a>
-		<a href="http://hg.slitaz.org/">Hg</a>
-	</div>
-	<h1><a href="http://www.slitaz.org/">SliTaz GNU/Linux</a></h1>
-</div>
+<?php include("../../lib/html/header.pt.html"); ?>
 
 <!-- Block -->
 <div id="block">
-	<!-- Navigation -->
-	<div id="block_nav">
-		<h4>Navegação</h4>
-		<div class="right_box">
-			<ul>
-				<li><a href="../mailing-list.html">Lista de discussão</a></li>
-				<li><a href="../devel/">Desenvolvimento</a></li>
-				<li><a href="../packages/">Pacotes</a></li>
-				<li><a href="../artwork/">Artwork</a></li>
-				<li><a href="../search.html">Procurar</a></li>
-			</ul>
-		</div>
-		<div class="left_box">
-			<ul>
-				<li><a href="../">Últimas notícias</a></li>
-				<li><a href="../about/">Sobre o projeto</a></li>
-				<li><a href="../get/">Download</a></li>
-				<li><a href="../asso/">Associação</a></li>
-				<li><a href="../doc/">Documentação</a></li>
-			</ul>
-		</div>
-	</div>
-	<!-- Information/image -->
+
+    <?php include("../../lib/html/nav.pt.html"); ?>
+
+    <!-- Information/image -->
 	<div id="block_info">
 		<h4>Associação</h4>
 		<p>
@@ -74,20 +28,9 @@
 			infraestrutura e serviços profissionais aos usuários, 
 			desenvolvedores e empresas que utilizam a distribuição.
 		</p>
-		<div style="padding-top: 8px;">
-			<!-- PayPal boutton -->
-			<form action="https://www.paypal.com/cgi-bin/webscr" method="post"
-				style="display: inline;">
-					<input type="hidden" name="cmd" value="_s-xclick" />
-					<input type="hidden" name="hosted_button_id" value="4885025" />
-					<input type="image" src="../../images/paypal.png" name="submit" 
-						alt="PayPal - The safer, easier way to pay online!" />
-			</form>
-			<!-- Flattr boutton -->
-			<a class="FlattrButton" style="display:none;" rev="flattr;button:compact;"
-				href="http://www.slitaz.org/"></a>
-		</div>
-	</div>
+        <p>Ajude o projeto por meio de pequenas doações:</p>
+        <?php include("../../lib/html/donate.html"); ?>
+    </div>
 </div>
 
 <!-- Languages -->
@@ -136,7 +79,7 @@ nossos usuários e parceiros comerciais que desejam patrocinar o projeto.
 Uma cópia do estatuto é enviada a cada membro no momento de seu registro e uma
 cópia em PDF estará sempre disponível online:
 <a href="../../fr/asso/status-association-slitaz.pdf">status-association-slitaz.pdf</a> |
-<a href="statutes.html">Tradução do Estatuto em Português</a>.
+<a href="statutes.php">Tradução do Estatuto em Português</a>.
 </p>
 
 <a name="goals"></a>
@@ -176,22 +119,6 @@ informe:
 	<li>País</li>
 </ul>
 
-<a name="sponsors"></a>
-<h3>Patrocinadores</h3>
-<p>
-A Associação SliTaz também objetiva manter o sistema estável e confiável,
-fornecendo serviços de alta qualidade que permitem a organizações públicas 
-(escolas, universidades, ministérios) e empresas a utilizar a distribuição
-em um contexto profissional.
-</p>
-<p>
-Se você oferece soluções usando o SliTaz, você pode tornar-se um parceiro patrocinador
-oficial da associação, garantindo assim a durabilidade da distribuição e podendo
-obter serviços profissionais. Oferecemos serviços de suporte, consultoria e 
-desenvolvimento pelos empregados da associação. Para maiores informações você
-pode contactar-nos através correio ou email: asso(at)slitaz.org
-</p>
-
 <a name="donation"></a>
 <h3>Doações</h3>
 <p>
@@ -227,25 +154,7 @@ Switzerland
 <!-- End of content -->
 </div>
 
-<!-- Footer -->
-<div id="footer">
-	Copyright &copy; <span class="year"></span>
-	<a href="http://www.slitaz.org/">SliTaz</a> - Network:
-	<a href="http://scn.slitaz.org/">Community</a>
-	<a href="http://doc.slitaz.org/">Doc</a>
-	<a href="http://forum.slitaz.org/">Forum</a>
-	<a href="http://pkgs.slitaz.org/">Packages</a>
-	<a href="http://bugs.slitaz.org">Bugs</a>
-	<a href="http://hg.slitaz.org/">Hg</a>
-	<p>
-		SliTaz @
-		<a href="http://twitter.com/slitaz">Twitter</a>
-		<a href="http://www.facebook.com/slitaz">Facebook</a>
-		<a href="http://distrowatch.com/slitaz">Distrowatch</a>
-		<a href="http://en.wikipedia.org/wiki/SliTaz">Wikipedia</a>
-		<a href="http://flattr.com/profile/slitaz">Flattr</a>
-	</p>
-</div>
+<?php include("../../lib/html/footer.pt.html"); ?>
 
 </body>
 </html>
