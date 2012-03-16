@@ -14,46 +14,14 @@
 </head>
 <body>
 
-<!-- Header -->
-<div id="header">
-	<div id="logo"></div>
-	<div id="network">
-		<a href="http://www.slitaz.org/netmap.php">
-			<img src="../../images/network.png" alt="network.png" /></a>
-		<a href="http://scn.slitaz.org/">Community</a>
-		<a href="http://doc.slitaz.org/">Doc</a>
-		<a href="http://forum.slitaz.org/">Forum</a>
-		<a href="http://bugs.slitaz.org">Bugs</a>
-		<a href="http://hg.slitaz.org/">Hg</a>
-	</div>
-	<h1><a href="http://www.slitaz.org/">SliTaz GNU/Linux</a></h1>
-</div>
+<?php include("../lib/html/header.pt.html"); ?>
 
 <!-- Block -->
 <div id="block">
-	<!-- Navigation -->
-	<div id="block_nav">
-		<h4>Navegação</h4>
-		<div class="right_box">
-			<ul>
-				<li><a href="../mailing-list.html">Lista de discussão</a></li>
-				<li><a href="../devel/">Desenvolvimento</a></li>
-				<li><a href="../packages/">Pacotes</a></li>
-				<li><a href="../artwork/">Artwork</a></li>
-				<li><a href="../search.html">Procurar</a></li>
-			</ul>
-		</div>
-		<div class="left_box">
-			<ul>
-				<li><a href="../">Últimas notícias</a></li>
-				<li><a href="../about/">Sobre o projeto</a></li>
-				<li><a href="../get/">Download</a></li>
-				<li><a href="../asso/">Associação</a></li>
-				<li><a href="../doc/">Documentação</a></li>
-			</ul>
-		</div>
-	</div>
-	<!-- Information/image -->
+
+    <?php include("../lib/html/nav.pt.html"); ?>
+
+    <!-- Information/image -->
 	<div id="block_info">
 		<h4>Sobre</h4>
 		<p>
@@ -99,7 +67,7 @@ são fornecidas para as versões stable (estável) e cooking (testes).
 </p>
 <p>
 O projeto SliTaz oferece suporte técnico gratuito aos usuários por meio da
-<a href="../mailing-list.html">Lista de Discussão</a> (lista multilingue)
+<a href="../mailing-list.php">Lista de Discussão</a> (lista multilingue)
 e do <a href="http://forum.slitaz.org">Fórum</a>.
 Você também pode nos contatar para maiores informações, sugestões e comentários,
 usando a lista ou diretamente por e-mail :  &lt;devel at slitaz.org&gt;
@@ -119,7 +87,7 @@ usando a lista ou diretamente por e-mail :  &lt;devel at slitaz.org&gt;
     <li>Ferramentas para criar, editar ou gravar imagens de CD ou DVD.</li>
     <li>Desktop elegante com o Openbox rodando sobre o Xorg (Servidor Gráfico).</li>
     <li>Caixas de Diálogo gráficas nativas para utilitários de linha-de-comando.</li>
-    <li>Cerca de 2300 pacotes facilmente instaláveis a partir do mirror.</li>
+    <li>Cerca de 3345 pacotes facilmente instaláveis a partir do mirror.</li>
     <li>Comunidade ativa e amigável.</li>
 </ul>
 
@@ -128,9 +96,9 @@ usando a lista ou diretamente por e-mail :  &lt;devel at slitaz.org&gt;
 <p>
 O website do SliTaz está disponível em diferentes linguagens e é parte do 
 <a href="../../i18n.php">projeto de internacionalização</a>. A partir dele
-é possível <a href="../get/index.html">obter</a> o LiveCD do SliTaz e nos 
+é possível <a href="../get/">obter</a> o LiveCD do SliTaz e nos 
 ajudar no desenvolvimento do projeto. Pode-se também consultar a 
-<a href="../doc/index.html">documentação</a> para aprender a utilizar a 
+<a href="../doc/">documentação</a> para aprender a utilizar a 
 distribuição e configurar o sistema.
 </p>
 
@@ -193,25 +161,7 @@ pelo suporte.
 <!-- End of content -->
 </div>
 
-<!-- Footer -->
-<div id="footer">
-	Copyright &copy; <span class="year"></span>
-	<a href="http://www.slitaz.org/">SliTaz</a> - Network:
-	<a href="http://scn.slitaz.org/">Community</a>
-	<a href="http://doc.slitaz.org/">Doc</a>
-	<a href="http://forum.slitaz.org/">Forum</a>
-	<a href="http://pkgs.slitaz.org/">Packages</a>
-	<a href="http://bugs.slitaz.org">Bugs</a>
-	<a href="http://hg.slitaz.org/">Hg</a>
-	<p>
-		SliTaz @
-		<a href="http://twitter.com/slitaz">Twitter</a>
-		<a href="http://www.facebook.com/slitaz">Facebook</a>
-		<a href="http://distrowatch.com/slitaz">Distrowatch</a>
-		<a href="http://en.wikipedia.org/wiki/SliTaz">Wikipedia</a>
-		<a href="http://flattr.com/profile/slitaz">Flattr</a>
-	</p>
-</div>
+<?php include("../lib/html/footer.pt.html"); ?>
 
 </body>
 </html>
