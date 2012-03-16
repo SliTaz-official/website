@@ -57,9 +57,9 @@
 <h2>Lista de SliTaz</h2>
 
 <ul>
-	<li><a href="mailing-list.html#about">Acerca de la lista</a> - Soporte y desarrollo.</li>
-	<li><a href="mailing-list.html#usage">Usando la lista</a> - Suscribirse/darse de baja y otros comandos.</li>
-	<li><a href="mailing-list.html#archives">Archivo de la lista</a> - Leer y buscar en los mensajes archivados.</li>
+	<li><a href="mailing-list.php#about">Acerca de la lista</a> - Soporte y desarrollo.</li>
+	<li><a href="mailing-list.php#usage">Usando la lista</a> - Suscribirse/darse de baja y otros comandos.</li>
+	<li><a href="mailing-list.php#archives">Archivo de la lista</a> - Leer y buscar en los mensajes archivados.</li>
 </ul>
 
 <a name="about"></a>

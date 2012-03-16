@@ -64,7 +64,7 @@
 		<p>
 			<img src="../../images/users.png" alt="users.png" />
 			<a href="http://scn.slitaz.org/">Únete a nosotros en SCN</a> y
-			en la <a href="../mailing-list.html">la lista de correo</a>
+			en la <a href="../mailing-list.php">la lista de correo</a>
 		</p>
 	</div>
 </div>
@@ -100,7 +100,7 @@
 <p>
 	SliTaz es una comunidad pequeña que escucha a sus usuarios. Hay varios
 	desarrolladores activos en el <a href="http://forum.slitaz.org/">foro</a>
- 	y en la <a href="../mailing-list.html">lista de correo</a>.
+ 	y en la <a href="../mailing-list.php">lista de correo</a>.
 </p>
 <p>
 	Incluso para artistas hay una web dedicada. Simplemente crea una cuenta
