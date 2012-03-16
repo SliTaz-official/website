@@ -14,12 +14,12 @@
 </head>
 <body>
 
-<?php include("../lib/html/header.pt.html"); ?>
+<?php include("../../lib/html/header.pt.html"); ?>
 
 <!-- Block -->
 <div id="block">
 
-    <?php include("../lib/html/nav.pt.html"); ?>
+    <?php include("../../lib/html/nav.pt.html"); ?>
 
     <!-- Information/image -->
 	<div id="block_info">
@@ -161,7 +161,7 @@ pelo suporte.
 <!-- End of content -->
 </div>
 
-<?php include("../lib/html/footer.pt.html"); ?>
+<?php include("../../lib/html/footer.pt.html"); ?>
 
 </body>
 </html>
