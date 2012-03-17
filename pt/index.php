@@ -54,10 +54,10 @@
 <div class="box">
 	<img src="../images/update.png" alt=" [Update ]" style="float: left; margin-right: 10px; " />
 	<p>
-		Help us get a dedicated server - Check out our
-		<a href="http://www.gofundme.com/3ql70">online fundraising</a>
-		or become an official
-		<a href="/en/sponsor/">sponsor</a>
+		Ajude-nos a obter um servidor dedicado - Visite a página de
+		<a href="http://www.gofundme.com/3ql70">Doação Online</a>
+		ou torne-se um
+		<a href="/pt/sponsor/">patrocinador</a> oficial.
 	</p>
 </div>
 
