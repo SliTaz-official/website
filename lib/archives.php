@@ -103,6 +103,20 @@ function translate($word)
 		case "Date"      : return "Data";
 		}
 		break;
+	case "ru" :
+		switch ($word) {
+		case "Archives"      : return "Архивы";
+		case "Archive"       : return "Архив";
+		case "Month/Year"    : return "Год-месяц";
+		case "View by"       : return "Смотреть по";
+		case "Thread"        : return "теме";
+		case " or "          : return " или ";
+		case "Date"          : return "дате";
+		case "Messages count": return "Сообщений";
+		case "Total size"    : return "Размер";
+		case "Number"        : return "номер";
+		}
+		break;
 	default:
 		switch ($word) {
 		case "Messages count": return "Number";

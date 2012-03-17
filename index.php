@@ -55,6 +55,7 @@ include("lib/html/header.html");
 	<a href="id/">Indonesian</a>
 	<a href="it/">Italiano</a>
 	<a href="pt/">Português</a>
+	<a href="ru/">Русский</a>
 	<a href="cn/">Chinese</a>
 </div>
 
