@@ -47,8 +47,8 @@
 	<a href="../18n.php">
 		<img src="../images/locale.png" alt="locale.png" /></a>
 	<a href="../de/mailing-list.html">Deutsch</a>
-	<a href="../en/mailing-list.html">English</a>
-	<a href="../es/mailing-list.html">Español</a>
+	<a href="../en/mailing-list.php">English</a>
+	<a href="../es/mailing-list.php">Español</a>
 	<a href="../fr/mailing-list.html">Français</a>
 </div>
 
