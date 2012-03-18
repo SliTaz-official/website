@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
 <head>
 	<title>SliTaz - Buscar</title>
-	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
 	<meta name="description" content="SliTaz GNU/Linux custom search engine" />
 	<meta name="keywords" lang="es" content="System, free, gnu, linux, software opensource, livecd LINUX in RAM" />
 	<meta name="author" content="Eduardo Suarez-Santana"/>
