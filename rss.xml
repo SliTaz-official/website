@@ -8,7 +8,7 @@
 	<description>SliTaz GNU/Linux official news feed</description>
 	<copyright>Copyright (C) www.slitaz.org - GNU gpl</copyright>
 	
-	<lastBuildDate>Wed, 14 Mar 2012 14:50:00 GMT</lastBuildDate>
+	<lastBuildDate>Wed, 18 Mar 2012 22:40:00 GMT</lastBuildDate>
 
 	<image>
 		<title>Slitaz GNU/Linux</title>
@@ -17,6 +17,17 @@
 	</image>
 	
 	<!-- justify to 80 chars or less for text-mode RSS readers also -->
+	
+	<item>
+		<title>SliTaz Website now in Russian</title>
+		<link>http://www.slitaz.org/ru/</link>
+		<guid isPermaLink="true">http://pro.slitaz.org/ru/index.php</guid>
+		<pubDate>Wed, 18 Mar 2012 22:40:00 GMT</pubDate>
+		<description>
+			SliTaz website is now available in Russian! Hugs thanks 
+			to Aleksej Bobylev.
+		</description>
+	</item>
 	
 	<item>
 		<title>Getting ready for Slitaz Pro</title>
