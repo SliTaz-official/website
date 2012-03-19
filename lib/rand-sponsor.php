@@ -3,7 +3,7 @@
 // Display random sponsor. Only main sponsor are featured on main page.
 //
 
-$total  = "2";
+$total  = "3";
 $folder = "/images/sponsor";
 $random = mt_rand(1, $total);
 
@@ -17,6 +17,11 @@ case 2:
 	$name = "DuckDuckGo";
 	$img  = "ddg.png";
 	$url  = "https://duckduckgo.com/";
+	break;
+case 3:
+	$name = "Clarkson Open Source Institute";
+	$img  = "cosi.png";
+	$url  = "http://cosi.clarkson.edu/";
 	break;
 }
 
