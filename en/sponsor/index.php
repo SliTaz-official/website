@@ -133,17 +133,17 @@
 		</tr>
 		<tr>
 			<td style="width: 120px; height: 100px;">
-				<a href=""><img
+				<a href="http://cosi.clarkson.edu"><img
 				src="/images/sponsor/cosi.png"
 				style="float: left;" /></a>
 			</td>
 			<td>
 				The Clarkson Open Source Institute - COSI sponsors our Chub
 				server and offers us full access to a virtual machine. We are
-				proud to work with the Clarkson university wich was founded 
+				proud to work with COSI which was founded 
 				to promote open source software (OSS) and provide equipment 
-				and support for student projects. Ahuge thanks to the team
-				at COSI for the support and fast respons to any of our requests.
+				and support for student projects. A huge thanks to the team
+				at COSI for the support and fast response to any of our requests.
 			</td>
 		</tr>
 	</tbody>
