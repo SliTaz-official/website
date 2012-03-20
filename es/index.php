@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
 <head>
 	<title>SliTaz GNU/Linux (es)</title>
-	<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="description" content="SliTaz GNU/Linux LiveCD" />
 	<meta name="keywords" lang="es" content="system linux RAM" />
 	<meta name="author" content="Eduardo Suarez-Santana" />
@@ -18,15 +18,15 @@
 	<?php include("../lib/html/nav.es.html"); ?>
 	<!-- Information/image -->
 	<div id="block_info">
-		<h4>Página de Inicio</h4>
+		<h4>PÃ¡gina de Inicio</h4>
 		<p>
 			SliTaz se distribuye como una imagen ISO de LiveCD cuyo
-			tamaño no llega a los 30 MiB, proporcionando un sistema
-			rápido, robusto y elegante. 
+			tamaÃ±o no llega a los 30 MiB, proporcionando un sistema
+			rÃ¡pido, robusto y elegante. 
 		</p>
 		<p>
-			Si buscabas una distro portátil áltamente configurable y 
-			fácilmente adaptable a tus necesidades, acabas de encontrarla.
+			Si buscabas una distro portÃ¡til Ã¡ltamente configurable y 
+			fÃ¡cilmente adaptable a tus necesidades, acabas de encontrarla.
 			<a href="about/">Sigue leyendo...</a>
 		</p>
 	</div>
@@ -39,11 +39,11 @@
 	<a href="../da/">Dansk</a>
 	<a href="../de/">Deutsch</a>
 	<a href="../en/">English</a>
-	<a href="../es/">Español</a>
-	<a href="../fr/">Français</a>
+	<a href="../es/">EspaÃ±ol</a>
+	<a href="../fr/">FranÃ§ais</a>
 	<a href="../id/">Indonesian</a>
 	<a href="../it/">Italiano</a>
-	<a href="../pt/">Português</a>
+	<a href="../pt/">PortuguÃªs</a>
 	<a href="../cn/">Chinese</a>
 </div>
 
@@ -51,12 +51,12 @@
 <div id="content">
     
 <h2>Titulares</h2>
-<p>La página de SliTaz proporciona las principales noticias del proyecto,
-así como noticias sobre la actividad general de los subproyectos en la
-sección de la <a href="http://scn.slitaz.org/">comunidad</a>. Ambas están 
-disponibles como un feed XML. El proyecto además publica una pequeña 
-revista mensual. Por último, en la <a href="../">página principal</a> 
-podrás seguir las últimas noticias, commits y tweets.</p>
+<p>La pÃ¡gina de SliTaz proporciona las principales noticias del proyecto,
+asÃ­ como noticias sobre la actividad general de los subproyectos en la
+secciÃ³n de la <a href="http://scn.slitaz.org/">comunidad</a>. Ambas estÃ¡n 
+disponibles como un feed XML. El proyecto ademÃ¡s publica una pequeÃ±a 
+revista mensual. Por Ãºltimo, en la <a href="../">pÃ¡gina principal</a> 
+podrÃ¡s seguir las Ãºltimas noticias, commits y tweets.</p>
 
 <div class="news">
 
@@ -69,20 +69,20 @@ podrás seguir las últimas noticias, commits y tweets.</p>
 		El equipo de SliTaz se complace en anunciar la nueva SliTaz 4.0-RC2
 		release candidate. Hemos tenido mucho trabajo resolviendo bugs de la
 		RC1 y de las aplicaciones caseras para usuarios finales como TazPkg,
-		TazPanel y TazUsb. La conexión Wifi se hace más sencilla mediante el
-		TazPanel o el nuevo Wifibox. TazPkg tiene mejor integración en el
-		escritorio y un nuevo sistema de notificación.
+		TazPanel y TazUsb. La conexiÃ³n Wifi se hace mÃ¡s sencilla mediante el
+		TazPanel o el nuevo Wifibox. TazPkg tiene mejor integraciÃ³n en el
+		escritorio y un nuevo sistema de notificaciÃ³n.
 	</p>
 	<p>
-		Esta nueva versión viene con un paquete Xorg completo, soporte DRI así
+		Esta nueva versiÃ³n viene con un paquete Xorg completo, soporte DRI asÃ­
 		como los controladores nv, intel, geode y vesa funcionando sin
-		necesidad de configurar. También hemos rehecho todos los paquetes una
-		vez más, ahorrando ~2MB en el LiveCD, así que también hemos añadido
+		necesidad de configurar. TambiÃ©n hemos rehecho todos los paquetes una
+		vez mÃ¡s, ahorrando ~2MB en el LiveCD, asÃ­ que tambiÃ©n hemos aÃ±adido
 		Lxrandr, Parcellite y el cliente bittorrent Transmission.
 	</p>
 	<p>
 		Agradecemos a todos los que han probado la RC1. Esta RC2 nos acerca a
-		la SliTaz 4.0 planeada en las próximas dos semanas. Puedes descargarte
+		la SliTaz 4.0 planeada en las prÃ³ximas dos semanas. Puedes descargarte
 		la ISO de la RC2 de nuestro mirror (35,1 MB):
 		<a href="http://mirror.slitaz.org/iso/cooking/slitaz-4.0-RC2.iso">SliTaz 4.0-RC2</a>
 	</p>	
@@ -93,78 +93,78 @@ podrás seguir las últimas noticias, commits y tweets.</p>
 		de la primera Release Candidate de SliTaz 4.0. SliTaz puede arrancar
 		en 10-12 segundos en hardware relativamente nuevo, y con la nueva ISO
 		4 en 1 puedes instalar un ordenador de escritorio con todo SliTaz con
-		tan sólo 48 MB de RAM. La ISO 4 en 1 es capaz de autodetectar la
-		memoria y puede arrancar SliTaz en modo texto, en un entorno X mínimo,
-		o como un escritorio gráfico completo.
+		tan sÃ³lo 48 MB de RAM. La ISO 4 en 1 es capaz de autodetectar la
+		memoria y puede arrancar SliTaz en modo texto, en un entorno X mÃ­nimo,
+		o como un escritorio grÃ¡fico completo.
 	</p>
 	<p>
-		SliTaz 4.0 tendrá más de 3000 paquetes bien testeados en el
-		repositorio, y la serie RC nos permitirá hacer el seguimiento de las
-		últimas incidencias. Desde nuestra última versión Cooking, los
+		SliTaz 4.0 tendrÃ¡ mÃ¡s de 3000 paquetes bien testeados en el
+		repositorio, y la serie RC nos permitirÃ¡ hacer el seguimiento de las
+		Ãºltimas incidencias. Desde nuestra Ãºltima versiÃ³n Cooking, los
 		paquetes has sido rehechos dos veces con el fin de asegurar la
 		calidad.
 	</p>
 	<p>
-		La ISO RC1 mostrará tras el arranque un nuevo menú gráfico, y una
-		configuración gráfica del teclado y el idioma. La ISO muestra una
-		nueva distribución y diseño del escritorio, así como un instalador en
-		línea de comandos con una interfaz CGI/Web accesible desde TazPanel.
+		La ISO RC1 mostrarÃ¡ tras el arranque un nuevo menÃº grÃ¡fico, y una
+		configuraciÃ³n grÃ¡fica del teclado y el idioma. La ISO muestra una
+		nueva distribuciÃ³n y diseÃ±o del escritorio, asÃ­ como un instalador en
+		lÃ­nea de comandos con una interfaz CGI/Web accesible desde TazPanel.
 		Te puedes descargar esta nueva ISO desde nuestro mirror:
 		<a href="http://mirror.slitaz.org/iso/cooking/slitaz-4.0-RC1.iso">SliTaz 4.0-RC1</a>
 	</p>	
 	</li>
 	
     <li><strong>31 de mayo de 2011 - Nueva y radiante Cooking 20110531</strong>
-    <p>El equipo de Slitaz se enorgullece en anunciar la liberación de una
-    nueva versión Cooking hecha con nuestros nuevos y frescos paquetes de
-    cookutils. Cookutils es una de las herramientas de nueva generación para
+    <p>El equipo de Slitaz se enorgullece en anunciar la liberaciÃ³n de una
+    nueva versiÃ³n Cooking hecha con nuestros nuevos y frescos paquetes de
+    cookutils. Cookutils es una de las herramientas de nueva generaciÃ³n para
     hacer paquetes de SliTaz, proporcionando un Build Bot con una agradable
     interfaz web que funciona directamente en cualquier sistema SliTaz.
     Estos nuevos paquetes se han hecho con una nueva cadena de herramientas
     optimizada para i486.</p>
     <p>
     El proceso de arranque completo ha sido mejorado y la primera
-    configuración de arranque se hace ahora mediante diálogos GTK en una
-    sesión X, siendo el tiempo de arranque también más corto. Esta versión
-    viene con una nueva herramienta gráfica para la configuración del
-    sistema, así como nuestro nuevo panel de configuración del sistema, más
+    configuraciÃ³n de arranque se hace ahora mediante diÃ¡logos GTK en una
+    sesiÃ³n X, siendo el tiempo de arranque tambiÃ©n mÃ¡s corto. Esta versiÃ³n
+    viene con una nueva herramienta grÃ¡fica para la configuraciÃ³n del
+    sistema, asÃ­ como nuestro nuevo panel de configuraciÃ³n del sistema, mÃ¡s
     conocido como TazPanel. TazPanel te permite configurar todo el sistema
-    mediante una interfaz web xHTML/CSS (útil para el control remoto) y
-    maneja la gestión de paquetes reemplazando el anterior diálogo GTK.</p>
+    mediante una interfaz web xHTML/CSS (Ãºtil para el control remoto) y
+    maneja la gestiÃ³n de paquetes reemplazando el anterior diÃ¡logo GTK.</p>
     <p>
-    Xorg tiene ahora soporte para dri, así que libdr, linux-drm y linux-agp
-    vienen ahora con la ISO base. Esto añade 1MB al sistema de ficheros
-    comprimido. Sin embargo, nos las hemos apañado para ahorrar bastante
+    Xorg tiene ahora soporte para dri, asÃ­ que libdr, linux-drm y linux-agp
+    vienen ahora con la ISO base. Esto aÃ±ade 1MB al sistema de ficheros
+    comprimido. Sin embargo, nos las hemos apaÃ±ado para ahorrar bastante
     espacio en la ISO base con nuestros nuevos paquetes, con lo que nos ha
-    quedado ¡una Cooking de 30MB! Esta nueva Cooking también trae mejor
-    internacionalización y soporte para italiano. Descarga:
+    quedado Â¡una Cooking de 30MB! Esta nueva Cooking tambiÃ©n trae mejor
+    internacionalizaciÃ³n y soporte para italiano. Descarga:
     <a href="get/">slitaz-cooking.iso</a>.
     </p>
     </li>
 
     <li><strong>29 de marzo de 2011 - Nueva Cooking 20110329</strong>
-    <p>El equipo de SliTaz se complace en anunciar la publicación de una
-    nueva ISO de la versión Cooking con alrededor de 2900 paquetes. Todos
+    <p>El equipo de SliTaz se complace en anunciar la publicaciÃ³n de una
+    nueva ISO de la versiÃ³n Cooking con alrededor de 2900 paquetes. Todos
     los paquetes han sido reconstruidos usando nuestra nueva herramienta
-    de cocción, ahora incluida en tazwok. Contiene el núcleo 2.6.37
+    de cocciÃ³n, ahora incluida en tazwok. Contiene el nÃºcleo 2.6.37
     compilado contra glibc 2.13, binutils 2.21 y gcc 4.5.2. El Core LiveCD
-    incluye Midori 0.3.3. Tazpkg se ha traducido por completo al francés y
+    incluye Midori 0.3.3. Tazpkg se ha traducido por completo al francÃ©s y
     estamos abiertos a traducciones adicionales. Tazwok ha sido totalmente
     reescrita y es posible reconstruir SliTaz de cero usando cualquier
     ISO. Esta ISO es la primera candidata en nuestra ruta hacia la
-    publicación de la versión 4.0 estable.</p>
+    publicaciÃ³n de la versiÃ³n 4.0 estable.</p>
     <p>
-    Se ha trabajado mucho desde la última Cooking publicada en noviembre:
-    más de 2200 cambios han sido registrados al wok, y algunos centenares
-    más para las herramientas caseras. Nos complace anunciar que la
-    comunidad SliTaz ha crecido mucho estos últimos meses: el año pasado
-    se registraron más cambios que en los cuatro anteriores. Aún así,
+    Se ha trabajado mucho desde la Ãºltima Cooking publicada en noviembre:
+    mÃ¡s de 2200 cambios han sido registrados al wok, y algunos centenares
+    mÃ¡s para las herramientas caseras. Nos complace anunciar que la
+    comunidad SliTaz ha crecido mucho estos Ãºltimos meses: el aÃ±o pasado
+    se registraron mÃ¡s cambios que en los cuatro anteriores. AÃºn asÃ­,
     cantidad no es calidad. Necesitamos tu ayuda para probar esta nueva
     ISO e informar de posibles fallos. Si lo deseas, tu ayuda es
-    bienvenida para resolver problemas abiertos camino de la publicación
-    de la 4.0. Puedes alistarte vía nuestro IRC, listas de correo, foros o
+    bienvenida para resolver problemas abiertos camino de la publicaciÃ³n
+    de la 4.0. Puedes alistarte vÃ­a nuestro IRC, listas de correo, foros o
     directamente escribiendo un correo a los mantenedores de los paquetes.
-    Confiamos que disfrutes esta <a href="get/">nueva versión</a>.
+    Confiamos que disfrutes esta <a href="get/">nueva versiÃ³n</a>.
     </p>
     </li>    
 
@@ -191,7 +191,7 @@ podrás seguir las últimas noticias, commits y tweets.</p>
 		<?php get_feed("scn.xml"); ?>
 	</div>
 	<p class="activity_more">
-		<a href="http://scn.slitaz.org/activity/">Más actividad</a>
+		<a href="http://scn.slitaz.org/activity/">MÃ¡s actividad</a>
 	</p>
 </div>
 
@@ -211,20 +211,20 @@ podrás seguir las últimas noticias, commits y tweets.</p>
 	<p>
 		<a href="http://hg.slitaz.org/">
 			<img src="../images/development.png" alt="development.png" /></a>
-		Últimos commits en el wok
+		Ãšltimos commits en el wok
 		<?php get_feed("wok.xml"); ?>
 	</div>
 	<p class="activity_more">
-		<a href="http://hg.slitaz.org/">Más commits</a>
+		<a href="http://hg.slitaz.org/">MÃ¡s commits</a>
 	</p>
 </div>
 
 <h2>Echa una mano</h2>
 <p>
-    Haz SliTaz más popular o haz una donación. Puedes apoyarnos
-    monetariamente vía Paypal o mediante un micropago Flattr. Puedes
+    Haz SliTaz mÃ¡s popular o haz una donaciÃ³n. Puedes apoyarnos
+    monetariamente vÃ­a Paypal o mediante un micropago Flattr. Puedes
     bloguear, tweetear, compartir o simplemente hablar de SliTaz para
-    ayudar a difundir el proyecto. Puedes también unirte al proyecto y
+    ayudar a difundir el proyecto. Puedes tambiÃ©n unirte al proyecto y
     compartir o involucrarte en nuestra 
     <a href="http://scn.slitaz.org/">Community Network</a>.
 </p>

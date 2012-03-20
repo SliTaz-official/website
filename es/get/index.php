@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
 <head>
     <title>SliTaz - Descargas</title>
-    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="SliTaz GNU/Linux LiveCD free download" />
     <meta name="keywords" lang="es" content="source, iso, livecd, get, free" />
     <meta name="author" content="Eduardo Suarez-Santana"/>
@@ -42,10 +42,10 @@ include("../../lib/html/header.html");
 	<a href="../../da/get/">Dansk</a>
 	<a href="../../de/get/">Deutsch</a>
 	<a href="../../en/get/">English</a>
-	<a href="../../es/get/">Español</a>
-	<a href="../../fr/get/">Français</a>
+	<a href="../../es/get/">EspaÃ±ol</a>
+	<a href="../../fr/get/">FranÃ§ais</a>
 	<a href="../../it/get/">Italiano</a>
-	<a href="../../pt/get/">Português</a>
+	<a href="../../pt/get/">PortuguÃªs</a>
 	<a href="../../cn/get/">Chinese</a>
 </div>
 
@@ -55,10 +55,10 @@ include("../../lib/html/header.html");
 <h2>Descargas</h2>
 
 <ul>
-    <li><a href="#stable">LiveCD Versión Estable</a> -
-    Imagen ISO de autoarranque con la última versión estable.</li>
-    <li><a href="#cooking">LiveCD Versión Cooking</a> -
-    Imagen ISO de autoarranque con la versión Cooking.</li>
+    <li><a href="#stable">LiveCD VersiÃ³n Estable</a> -
+    Imagen ISO de autoarranque con la Ãºltima versiÃ³n estable.</li>
+    <li><a href="#cooking">LiveCD VersiÃ³n Cooking</a> -
+    Imagen ISO de autoarranque con la versiÃ³n Cooking.</li>
     <li><a href="/en/get/flavors.php">LiveCD al gusto</a> (en) -
     Varias modalides como loram.</li>
 </ul>
@@ -71,14 +71,14 @@ include("../../lib/html/header.html");
 	<?php include("../../lib/html/donate.html"); ?>
 </div>
 
-<h3>Información general</h3>
+<h3>InformaciÃ³n general</h3>
 <p>
-	Esta página te permite descargar una copia gratuita del LiveCD SliTaz
-	GNU/Linux, así como utilidades o incluso el código fuente. Para comenzar a
-	usar la imagen ISO mejor dirígete a la <a href="../doc/">documentación</a>
-	online (en inglés). Puedes también encontrar ayuda y soporte en los
-	<a href="http://forum.slitaz.org/#idx5">foros</a> de SliTaz (también en
-	inglés).
+	Esta pÃ¡gina te permite descargar una copia gratuita del LiveCD SliTaz
+	GNU/Linux, asÃ­ como utilidades o incluso el cÃ³digo fuente. Para comenzar a
+	usar la imagen ISO mejor dirÃ­gete a la <a href="../doc/">documentaciÃ³n</a>
+	online (en inglÃ©s). Puedes tambiÃ©n encontrar ayuda y soporte en los
+	<a href="http://forum.slitaz.org/#idx5">foros</a> de SliTaz (tambiÃ©n en
+	inglÃ©s).
 </p>
 
 <h3>Mirrors</h3>
@@ -88,29 +88,29 @@ include("../../lib/html/header.html");
 	<a href="http://www.tuxfamily.org/">TuxFamily</a>
 	y a Erjo <a href="http://info.pimentvert.com/">Pimentvert</a>. Los ficheros de
 	bittorrent se encuentran en el portal Freetorrent y son mantenidos por mumbly.
-	Gracias a todos ellos por su colaboración en este proyecto.
+	Gracias a todos ellos por su colaboraciÃ³n en este proyecto.
 </p>
 
 <a name="sources"></a>
 <h3>Fuente</h3>
 <p>
-	Tazpkg (el gestor de paquetes), Tazlito (la herramienta de creación del
+	Tazpkg (el gestor de paquetes), Tazlito (la herramienta de creaciÃ³n del
 	liveCD), Tazwok (el creador de paquetes), TazUSB (la herramienta para el
 	manejo de USB), y los tar.gz de las herramientas de SliTaz pueden ser
 	descargados del mirror de <a href="http://www.tuxfamily.org/">TuxFamily</a>.
 	Observa que todas estas utilidades vienen instaladas por defecto en SliTaz
-	y su fuente está comentado en inglés. Descarga los fuentes por
+	y su fuente estÃ¡ comentado en inglÃ©s. Descarga los fuentes por
 	<a href="http://mirror.slitaz.org/sources/">HTTP</a> o por
 	<a href="http://mirror.slitaz.org/sources/">FTP</a>.
 </p>
 
 <a name="stable"></a>
-<h2>LiveCD - Versión estable</h2>
+<h2>LiveCD - VersiÃ³n estable</h2>
 <p>
-	La versión estable de SliTaz proporciona un sistema operativo maduro y
-	bastante testeado por la comunidad. El núcleo del LiveCD te ofrece una amplia
-	selección de paquetes cuidadosamente integrados en la distribución, resultando
-	en un sistema coherente y, sobre todo, robusto. La versión estable actual fue
+	La versiÃ³n estable de SliTaz proporciona un sistema operativo maduro y
+	bastante testeado por la comunidad. El nÃºcleo del LiveCD te ofrece una amplia
+	selecciÃ³n de paquetes cuidadosamente integrados en la distribuciÃ³n, resultando
+	en un sistema coherente y, sobre todo, robusto. La versiÃ³n estable actual fue
 	liberada el:
 	<?php echo "$stable_rel."; ?>
 </p>
@@ -124,25 +124,25 @@ include("../../lib/html/header.html");
 
 <p>
 	Diariamente se genera una imagen de cdrom autoarrancable con todos los
-	paquetes disponibles para la versión 1.0. También contiene una copia de esta
-	página web, con lo que puede ser consultada sin conexión a internet usando el
+	paquetes disponibles para la versiÃ³n 1.0. TambiÃ©n contiene una copia de esta
+	pÃ¡gina web, con lo que puede ser consultada sin conexiÃ³n a internet usando el
 	script install.sh.
 </p>
 
 <p class="box">
 	<img src="/images/download.png" height="48px" width="48px" alt="[ DL ]" />
-	<?php echo "Colección de paquetes de SliTaz GNU/Linux $stable_ver ($stable_pkgs)
+	<?php echo "ColecciÃ³n de paquetes de SliTaz GNU/Linux $stable_ver ($stable_pkgs)
 	- <a href='$pkgs_mirror/$stable_ver/packages-$stable_ver.iso'>packages-$stable_ver.iso</a>
 	[ <a href='$pkgs_mirror/$stable_ver/packages-$stable_ver.md5'>md5</a> ]"; ?>
 </p>
 
 <a name="cooking"></a>
-<h2>LiveCD - Versión Cooking</h2>
+<h2>LiveCD - VersiÃ³n Cooking</h2>
 <p>
-	El LiveCD SliTaz "Cooking" es una versión dinámica y totalmente funcional que
-	te permite probar los últimos paquetes y mejoras, solicitar nueva
-	funcionalidad o generar incidencias que nos ayuden a preparar la próxima
-	versión estable.
+	El LiveCD SliTaz "Cooking" es una versiÃ³n dinÃ¡mica y totalmente funcional que
+	te permite probar los Ãºltimos paquetes y mejoras, solicitar nueva
+	funcionalidad o generar incidencias que nos ayuden a preparar la prÃ³xima
+	versiÃ³n estable.
 </p>
 
 <p class="box">
@@ -154,14 +154,14 @@ include("../../lib/html/header.html");
 
 <p>
 	Diariamente se genera una imagen de DVD autoarrancable con todos los paquetes
-	disponibles para la versión Cooking. También contiene una copia de esta página
-	web, con lo que puede ser consultada sin conexión a internet usando el script
+	disponibles para la versiÃ³n Cooking. TambiÃ©n contiene una copia de esta pÃ¡gina
+	web, con lo que puede ser consultada sin conexiÃ³n a internet usando el script
 	install.sh.
 </p>
 
 <p class="box">
 	<img src="/images/download.png" height="48px" width="48px" alt="[ DL ]" />
-	<?php echo "Colección de paquetes de SliTaz GNU/Linux Cooking ($cooking_pkgs)
+	<?php echo "ColecciÃ³n de paquetes de SliTaz GNU/Linux Cooking ($cooking_pkgs)
 	- <a href='$pkgs_mirror/cooking/packages-cooking.iso'>packages-cooking.iso</a>
 	[ <a href='$pkgs_mirror/cooking/packages-cooking.md5'>md5</a> ]"; ?>
 </p>

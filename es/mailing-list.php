@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
 <head>
     	<title>SliTaz - Lista de correo</title>
-	<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="description" content="slitaz users developers mailing list" />
 	<meta name="keywords" content="slitaz list mail discuss" lang="es" />
 	<meta name="author" content="Eduardo Suarez-Santana" />
@@ -45,10 +45,10 @@
 	<a href="../da/mailing-list.html">Dansk</a>
 	<a href="../de/mailing-list.html">Deutsch</a>
 	<a href="../en/mailing-list.php">English</a>
-	<!--<a href="../es/mailing-list.php">Español</a>-->
-	<a href="../fr/mailing-list.html">Français</a>
+	<!--<a href="../es/mailing-list.php">EspaÃ±ol</a>-->
+	<a href="../fr/mailing-list.html">FranÃ§ais</a>
 	<a href="../it/mailing-list.php">Italiano</a>
-	<a href="../pt/mailing-list.php">Português</a>
+	<a href="../pt/mailing-list.php">PortuguÃªs</a>
 </div>
 
 <!-- Content -->
@@ -65,16 +65,16 @@
 <a name="about"></a>
 <h3>Acerca de la lista</h3>
 <p>
-La lista de discusión/distribución es el principal medio de comunicación
-de la comunidad SliTaz. La lista está abierta a cualquiera. Eres libre
+La lista de discusiÃ³n/distribuciÃ³n es el principal medio de comunicaciÃ³n
+de la comunidad SliTaz. La lista estÃ¡ abierta a cualquiera. Eres libre
 de suscribirte y desuscribirte cuando quieras. Es un medio efectivo para
-la colaboración y para proporcionar soporte técnico a los usuarios de
+la colaboraciÃ³n y para proporcionar soporte tÃ©cnico a los usuarios de
 SliTaz. Desarrolladores, usuarios avanzados, correctores, etc usan la
 misma lista para contribuir al desarrollo del proyecto. El uso conjunto
-nos permite alcanzar una mayor audiencia con soluciones más rápidas y
+nos permite alcanzar una mayor audiencia con soluciones mÃ¡s rÃ¡pidas y
 precisas. A pesar de ello, los miembros de la lista son todos
 voluntarios y aportan lo que pueden como parte de su tiempo libre. Por
-tanto, cortesía, educación y humor son siempre bienvenidos.
+tanto, cortesÃ­a, educaciÃ³n y humor son siempre bienvenidos.
 </p>
 <p>
 La lista de correo se usa para enviar y recibir mensajes. Esto significa
@@ -86,27 +86,27 @@ que funciona basado en el excelente <a href="http://www.vhffs.org/">VHFFS</a>.
 <h4>Civismo</h4>
 <p>
 La lista de correo se usa por gente a la vez apasionada y sensible. Haz
-un esfuerzo por tratar a los demás con respeto, aunque a veces te puedas
-sentir incómodo. Evita postear críticas destructivas en cualquier caso.
+un esfuerzo por tratar a los demÃ¡s con respeto, aunque a veces te puedas
+sentir incÃ³modo. Evita postear crÃ­ticas destructivas en cualquier caso.
 En su lugar, si entiendes que alguien no se comporta correctamente
-contacta algún desarrollador.
+contacta algÃºn desarrollador.
 </p>
 
 <a name="usage"></a>
 <h3>Usando la lista</h3>
 <p>
-Para poder usar la lista debes suscribirte primero. Con la suscripción
-recibirás un mensaje con un número de confirmación que deberás devolver
+Para poder usar la lista debes suscribirte primero. Con la suscripciÃ³n
+recibirÃ¡s un mensaje con un nÃºmero de confirmaciÃ³n que deberÃ¡s devolver
 a los  administradores de la lista (para evitar spam). Una vez que se
-reciba tu confirmación, ya puedes enviar y recibir mensajes de la lista.
-Fíjate que tu programa de correo puede filtrar los mensajes y enviarlos
-a una carpeta específica. Para no perder el hilo de las discusiones, en
+reciba tu confirmaciÃ³n, ya puedes enviar y recibir mensajes de la lista.
+FÃ­jate que tu programa de correo puede filtrar los mensajes y enviarlos
+a una carpeta especÃ­fica. Para no perder el hilo de las discusiones, en
 general usa "Reply" para contestar un mensaje.
 </p>
 <ul>
-	<li>Correo de administración :
+	<li>Correo de administraciÃ³n :
 	<a href="mailto:slitaz-request@lists.tuxfamily.org">slitaz-request@lists.tuxfamily.org</a></li>
-	<li>Suscríbete escribiendo en el campo "asunto" : subscribe</li>
+	<li>SuscrÃ­bete escribiendo en el campo "asunto" : subscribe</li>
 	<li>Date de baja escribiendo en el asunto : unsubscribe</li>
 	<li>Ayuda escribiendo en el asunto : help</li>
 	<li>Correo para enviar un mensaje :
@@ -115,21 +115,21 @@ general usa "Reply" para contestar un mensaje.
 <h4>Formato</h4>
 <p>
 Los mensajes deben enviarse en texto plano y no en HTML, justificando
-las líneas a 72-80 caracteres, para que quien use un cliente de correo
+las lÃ­neas a 72-80 caracteres, para que quien use un cliente de correo
 en modo texto pueda leerlos. Este formato en general lo hacen
-automáticamente los clientes de correo. Se recomienda eliminar las citas
+automÃ¡ticamente los clientes de correo. Se recomienda eliminar las citas
 innecesarias y no adjuntar ficheros demasiado grandes.
 </p>
 
 <a name="archives"></a>
 <h3>Archivos de la lista</h3>
 <p>
-La lista de correo es un foro público, con todos los mensajes archivados
-y disponibles en línea. Esto permite a los que no están registrados
-seguir la lista, además de ser una fuente de información valiosa para
-temas concretos. La lista se archiva cada noche y puedes fácilmente
+La lista de correo es un foro pÃºblico, con todos los mensajes archivados
+y disponibles en lÃ­nea. Esto permite a los que no estÃ¡n registrados
+seguir la lista, ademÃ¡s de ser una fuente de informaciÃ³n valiosa para
+temas concretos. La lista se archiva cada noche y puedes fÃ¡cilmente
 navegar en el archivo mediante el motor de listas de TuxFamily. Los
-mensajes se ordenan por mes y día o por hilo de discusión:
+mensajes se ordenan por mes y dÃ­a o por hilo de discusiÃ³n:
 <a href="http://listengine.tuxfamily.org/lists.tuxfamily.org/slitaz/">Archivos de
 la Lista de Correo.</a>
 </p>
