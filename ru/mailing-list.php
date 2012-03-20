@@ -115,7 +115,7 @@
 		text-align: right;
 	}
 </style>
-<object type="text/html" width="100%" height="345" data="../lib/archives.php">
+<object type="text/html" width="100%" height="345" data="../lib/archives.php?lang=ru">
 </object>
 </div>
 
