@@ -75,7 +75,7 @@ function translate($word)
 		case "Thread"    : return "hilo";
 		case " or "      : return " o ";
 		case "Month/Year":
-		case "Date"      : return "Fecha";http://www.slitaz.org/ru/mailing-list.php
+		case "Date"      : return "Fecha";
 		}
 		break;
 	case "fr" :
