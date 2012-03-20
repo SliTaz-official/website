@@ -105,16 +105,16 @@ function translate($word)
 		break;
 	case "ru" :
 		switch ($word) {
-		case "Archives"      : return "Архивы";
-		case "Archive"       : return "Архив";
-		case "Month/Year"    : return "Год-месяц";
-		case "View by"       : return "Смотреть по";
-		case "Thread"        : return "теме";
-		case " or "          : return " или ";
-		case "Date"          : return "дате";
-		case "Messages count": return "Сообщений";
-		case "Total size"    : return "Размер";
-		case "Number"        : return "номер";
+		case "Archives"      : return "\&#1040;\&#1088;\&#1093;\&#1080;\&#1074;\&#1099;";
+		case "Archive"       : return "\&#1040;\&#1088;\&#1093;\&#1080;\&#1074;";
+		case "Month/Year"    : return "\&#1043;\&#1086;\&#1076;-\&#1084;\&#1077;\&#1089;\&#1103;\&#1094;";
+		case "View by"       : return "\&#1057;\&#1084;\&#1086;\&#1090;\&#1088;\&#1077;\&#1090;\&#1100; \&#1087;\&#1086;";
+		case "Thread"        : return "\&#1090;\&#1077;\&#1084;\&#1077;";
+		case " or "          : return " \&#1080;\&#1083;\&#1080; ";
+		case "Date"          : return "\&#1076;\&#1072;\&#1090;\&#1077;";
+		case "Messages count": return "\&#1057;\&#1086;\&#1086;\&#1073;\&#1097;\&#1077;\&#1085;\&#1080;\&#1081;";
+		case "Total size"    : return "\&#1056;\&#1072;\&#1079;\&#1084;\&#1077;\&#1088;";
+		case "Number"        : return "\&#1085;\&#1086;\&#1084;\&#1077;\&#1088;";
 		}
 		break;
 	default:
