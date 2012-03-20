@@ -87,7 +87,7 @@
 <div class="activity">
 	<p>
 		<a href="http://hg.slitaz.org/">
-			<img src="images/development.png" alt="[ Devel ]" /></a>
+			<img src="/images/development.png" alt="[ Devel ]" /></a>
 		Últimos commits en el wok
 		<?php get_feed("wok.xml"); ?>
 	</div>
