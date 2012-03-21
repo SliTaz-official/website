@@ -14,58 +14,25 @@
 </head>
 <body>
 
-<!-- Header -->
-<div id="header">
-	<div id="logo"></div>
-	<div id="network">
-		<a href="http://www.slitaz.org/netmap.php">
-			<img src="../../images/network.png" alt="network.png" /></a>
-		<a href="http://scn.slitaz.org/">Community</a>
-		<a href="http://doc.slitaz.org/">Doc</a>
-		<a href="http://forum.slitaz.org/">Forum</a>
-		<a href="http://bugs.slitaz.org">Bugs</a>
-		<a href="http://hg.slitaz.org/">Hg</a>
-	</div>
-	<h1><a href="http://www.slitaz.org/">SliTaz GNU/Linux</a></h1>
-</div>
+<?php include("../../lib/html/header.pt.html"); ?>
 
 <!-- Block -->
 <div id="block">
-	<!-- Navigation -->
-	<div id="block_nav">
-		<h4>Navegação</h4>
-		<div class="right_box">
-			<ul>
-				<li><a href="../mailing-list.html">Lista de discussão</a></li>
-				<li><a href="../devel/">Desenvolvimento</a></li>
-				<li><a href="../packages/">Pacotes</a></li>
-				<li><a href="../artwork/">Artwork</a></li>
-				<li><a href="../search.html">Procurar</a></li>
-			</ul>
-		</div>
-		<div class="left_box">
-			<ul>
-				<li><a href="../">Últimas notícias</a></li>
-				<li><a href="../about/">Sobre o projeto</a></li>
-				<li><a href="../get/">Download</a></li>
-				<li><a href="../asso/">Associação</a></li>
-				<li><a href="../doc/">Documentação</a></li>
-			</ul>
-		</div>
-	</div>
-	<!-- Information/image -->
+
+    <?php include("../../lib/html/nav.pt.html"); ?>
+
+    <!-- Information/image -->
 	<div id="block_info">
 		<h4>Desenvolvimento</h4>
 		<p>
-			O SliTaz é uma distribuição desenvolvida de forma
-			colaborativa muitos pessoas em todo o mundo. Todos são
-			bem vindos a ajudar e a se envolver no projeto.
-		</p>
+            Utilitários, linhas mestras e serviços utilizados para 
+            desenvolver o SliTaz.
+        </p>
 		<p>
 			<img src="../../images/users.png" alt="users.png" />
 			Utilize também o <a href="http://scn.slitaz.org/">SCN</a>
 			(SliTaz Community Network) e a 
-			<a href="../mailing-list.html">lista de discussão</a>.
+			<a href="../mailing-list.php">lista de discussão</a>.
 		</p>
 	</div>
 </div>
@@ -88,43 +55,14 @@
 	<li><a href="#kiss">KISS e respeito aos padrões.</a></li>
 	<li><a href="#tank">Build host &amp; home.</a></li>
     <li><a href="#repos">Repositórios Mercurial.</a></li>
+    <li><a href="#gui">Interface gráfica em GTK e Web/CGI</a></li>
     <li><a href="#iconv">Implementação da função iconv().</a></li>
     <li><a href="#pkgs">Pacotes Tazpkg.</a></li>
-	<li><a href="#pkgs-naming">Nomes de pacotes.</a></li>    
     <li><a href="#website">Gerenciamento do Website.</a></li>
-	<li><a href="#xhtml">Estilo para codificação de xHTML.</a></li>    
-    <li><a href="../mailing-list.html">Lista de Discussão.</a></li>
-    <li><a href="http://doc.slitaz.org/pt:cookbook:wok">Wok &amp; Ferramentas.</a></li>
-    <li><a href="http://hg.slitaz.org/" >Mercurial Repositories</a></li>
-    <li><a href="http://labs.slitaz.org/">SliTaz Laboratories</a></li>
 </ul>
 
-<p>
-SliTaz é uma distribuição de código aberto mantida pela comunidade. Todos são
-convidados a se juntar a nós e a contribuir: usuários, hackers e desenvolvedores
-sempre podem fazer algo, isto é, revisar ou escrever documentação, informar bugs
-ou enviar patches pela lista de discussão, usando o wok e criando novos pacotes
-ou simplesmente ajudando os outros na lista de discussão ou no fórum. O SliTaz
-possui seus repositórios Mercurial hospedados num sistema rodando SliTaz, 
-desenvolvedores podem requisitar um novo repositório se necessário e
-contribuintes tem acesso de escrita para corrigir erros, scripts, etc.
-</p>
-<p>
-SliTaz é uma pequena comunidade e ouve seus usuários. Há vários desenvolvedores
-ativos no <a href="http://forum.slitaz.org/">fórum</a> e na 
-<a href="../mailing-list.html">lista de discussão</a>.
-</p>
-<p>
-Há um website dedicado exclusivamente à participação de artistas interessados
-em contribuir com o projeto - <a href="http://art.slitaz.org/">http://art.slitaz.org</a>. 
-Mediante a criação de uma conta de usuário, pode-se postar gráficos ou 
-figuras relacionadas ao SliTaz. O website é mantindo por uma comunidade 
-de voluntários e se houver interesse em nos ajudar a gerenciá-lo, entre 
-em contato via email ou pela lista de discussão.
-</p>
-
 <a name="kiss"></a>
-<h3>KISS e respeito aos padrões</h3>
+<h2>KISS e respeito aos padrões</h2>
 <p>
 "Keep it Simple", ou seja, tentamos manter as coisas simples: respeito 
 aos padrões, planejamento cuidadoso e documentação escrita de alta 
@@ -136,7 +74,7 @@ aplicativos baseados em GTK+2, Dialog, scripts SHell ou PHP. A idéia
 </p>
 
 <a name="tank"></a>
-<h3>Tank - Build host &amp; home</h3>
+<h2>Tank - Build host &amp; home</h2>
 <p>
 Cada participante do projeto pode obter uma conta no servidor do projeto
 com acesso seguro, espaço em disco, um diretório público e acesso a todas
@@ -153,7 +91,7 @@ Receitas" (cookbook):
 </p>
 
 <a name="repos"></a>
-<h3>Repositórios Mercurial</h3>
+<h2>Repositórios Mercurial</h2>
 <p>
 Os repositórios Mercurial ou Hg do SliTaz podem ser listados ou clonados por 
 qualquer um na URL: <a href="http://hg.slitaz.org/">http://hg.slitaz.org/</a>. 
@@ -162,7 +100,7 @@ Pessoas com acesso de escrita podem acessar diretamente pelo endereço
 O Mercurial usa Python e é instalável com o comando: 
 <code>tazpkg get-install mercurial</code>
 </p>
-<h4>~/.hgrc</h4>
+<h3>~/.hgrc</h3>
 <p>
 Antes de sua primeira transferência no servidor, assegure-se de que possui
 o arquivo de configuração do Hg correto com seu nome e endereço de e-mail
@@ -223,8 +161,78 @@ Comandos do mercurial (hg) que podem ser usados.
 	<li><code>hg head</code> : Mostra o último log.</li>
 </ul>
 
+<a name="gui"</a>
+<h2>Interface Gráfica - C/GTK, Yad, Vala/Genie e WEB/GCI</h2>
+<p>
+    Há várias maneiras de criar interfáces gráficas para o usuário para a
+    distribuição. No início do projeto até a versão 3.0, usamos principalmente
+    o GTKDialog, o que nos permitia criar interfaces razoavelmente complexas
+    em GTK, ao mesmo tempo que pudemos usar uma linguagem de script que 
+    era executada sem a necessidade de ser compilada. Porém, o GTKDialog
+    não é mais mantido pelos desenvolvedores, e está desatualizado, então
+    tivemos que mudar para o Yad para criar algumas caixas de diálogo simples.
+    Para todos as ferramentas de administração, pacotes e configuração
+    próprias da distribuição, agora usamos o TazPanel, que é uma interface
+    WEB/CGI escrita em xHTML5 e CSS3.
+</p> 
+<p>
+    O Yad é simples, porém não nos permite criar interfaces muito complexas,
+    então outra maneira teve de ser abordada. A vantagem de uma linguagem
+    de script é o fato de não precisar ser compilada e ser codificada em
+    tempo real, porém isso significa em programas que rodam com um pouco menos
+    de performance. Escrever programas na Linguagem C é complexo e atrai
+    menos desenvolvedores, porque linguagens de script são mais atrativas
+    para aqueles que desejam contribuir, tal como o SHell Script, que é
+    fácil de compreender e manter. Deste modo, com uma linguagem de programação
+    script uma interface WEB/CGI ou em GTK, podemos manter nossas linhas
+    mestras e atrair desenvolvedores.
+</p>
+<p>
+    Há muitas linguagens que usam GTK, como Genie, Vala ou GTKaml. Mas é
+    preciso manter em mente que elas não são tão populares quanto o C ou GTK
+    e não são tão fáceis de aprender e usar (para interfaces simples, melhor é
+    utilizar scripts SHell para tarefas corriqueiras). Pode-se usar o Vala,
+    porém note o seguinte exemplo, que é o código necessário para criar uma
+    simples caixa de diálogo, e possui 14 linhas de código:
+</p>
+<pre>
+#include <gtk/gtk.h>;
+int main(int argc, char *argv[])
+{
+    GtkWidget *window;
+
+    gtk_init(&argc, &argv);
+    window = gtk_window_new(GTK_WINDOW_TOPLEVEL);
+    g_signal_connect (G_OBJETCT (window), "destroy",
+            G_CALLBACK (gtk_main_quit), NULL);
+
+    gtk_widget_show(window);
+    gtk_main();
+    return 0;'
+}
+</pre>
+<p>
+    Caso queira contribuir, e não está certo qual linguagem usar, mande uma
+    mensagem para a lista de discussão. Para pequenas interface gráficas, 
+    utilize o TazBox como exemplo, que pode ser encontrado no repositório
+    slitaz-tools, que também possui pequenas interfaces gráficas, como a
+    responsável pelo logout do usuário. O primeiro utilitário do SliTaz a 
+    ser escrito em Linguagem C pura, com GTK, é o TazWeb, e ele pode ser
+    utilizado como exemplo na utilização da função system() para incluir
+    comandos do sistema em uma interface. Esta ferramente utiliza
+    wget para downloads e sed para adicionar favoritos.
+</p>
+<p>
+    Scripts em Yad devem seguir as linhas mestras de codificação para a 
+    distribuição:
+    <a href="http://hg.slitaz.org/slitaz-dev-tools/raw-file/tip/tazyad/README">
+        README</a> e o
+    <a href="http://hg.slitaz.org/slitaz-dev-tools/raw-file/tip/tazyad/tazyad">
+        código de exemplo</a>.
+</p>
+
 <a name="iconv"></a>
-<h3>Implementação da função iconv()</h3>
+<h2>Implementação da função iconv()</h2>
 <p>
 O SliTaz utiliza a função iconv() fornecida pela biblioteca glibc do 
 projeto GNU - alguns pacotes que necessitam da função <code>libiconv</code>
@@ -233,13 +241,15 @@ que já não há mais um pacote libiconv (1.2 MB) no SliTaz.
 </p>
 
 <a name="pkgs"></a>
-<h3>Pacotes Tazpkg</h3>
+<h2>Pacotes Tazpkg</h2>
 <p>
-Os pacotes tazpkg no SliTaz são automaticamente criados via Tazwok e receitas
+Os pacotes tazpkg no SliTaz são automaticamente criados via o
+<a href="http://cook.slitaz.org/">robô de compilação</a> e receitas
 no wok. O Livro de Receitas descreve o 
 <a href="http://doc.slitaz.org/pt:cookbook:wok">uso das ferramentas</a> 
 e o formato das <a href="http://doc.slitaz.org/pt:cookbook:receipt">receitas</a>.
-É necessário que estes dois textos sejam lidos antes de prosseguirmos.
+Informações sobre o comando cook e sobre criação de arquivos receipt são
+necessários para a criação de pacotes.
 </p>
 <p>
 Em termos de escolha de pacote, a idéia é oferecer o pacote por tarefa ou 
@@ -269,7 +279,7 @@ o pacote que fornece o sistema de templates Kid, escrito em Python e XML,
 </p>
 
 <a name="website"></a>
-<h3>Gerenciamento do website e manuais</h3>
+<h2>Gerenciamento do website e manuais</h2>
 <p>
 O website e os manuais (Manual do SliTaz, Livro de Receitas) são
 gerenciados pelo repositório mercurial, podendo ser clonados da 
@@ -322,7 +332,7 @@ e links internos são relativos. É recomendável checar a validade do código
 xHTML por meio do <em>validador</em> online da W3C.
 </p>
 
-<h3>Diff e patch</h3>
+<h2>Diff e patch</h2>
 <p>
 As utilidades <code>diff</code> e <code>patch</code> são ferramentas de linha
 de comando para criação e implementação de diferenças entre dois arquivos. Esta
@@ -344,25 +354,7 @@ Para aplicar um patch:
 <!-- End of content -->
 </div>
 
-<!-- Footer -->
-<div id="footer">
-	Copyright &copy; <span class="year"></span>
-	<a href="http://www.slitaz.org/">SliTaz</a> - Network:
-	<a href="http://scn.slitaz.org/">Community</a>
-	<a href="http://doc.slitaz.org/">Doc</a>
-	<a href="http://forum.slitaz.org/">Forum</a>
-	<a href="http://pkgs.slitaz.org/">Packages</a>
-	<a href="http://bugs.slitaz.org">Bugs</a>
-	<a href="http://hg.slitaz.org/">Hg</a>
-	<p>
-		SliTaz @
-		<a href="http://twitter.com/slitaz">Twitter</a>
-		<a href="http://www.facebook.com/slitaz">Facebook</a>
-		<a href="http://distrowatch.com/slitaz">Distrowatch</a>
-		<a href="http://en.wikipedia.org/wiki/SliTaz">Wikipedia</a>
-		<a href="http://flattr.com/profile/slitaz">Flattr</a>
-	</p>
-</div>
+<?php include("../../lib/html/footer.pt.html"); ?>
 
 </body>
 </html>

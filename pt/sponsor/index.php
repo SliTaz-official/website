@@ -107,13 +107,13 @@
 <table>
 	<tbody>
 		<tr>
-			<td style="width: 120px; height: 120px;">
+			<td style="width: 120px; height: 100px;">
 				<a href="http://www.ads-lu.com/"><img
 				src="/images/sponsor/ads.png"
 				style="float: left;" /></a>
 			</td>
 			<td>
-                Allied Data Sys - Nosso patrocinador ADS fornece nosso mirror
+                Allied Data Sys - O patrocinador ADS fornece nosso mirror
                 principal, assim como uma máquina virtual com conexão de alta
                 disponibilidade, o que nos permite usá-la para todas as
                 necessidades do projeto. Agradecemos à ADS pelo serviço
@@ -121,7 +121,7 @@
 			</td>
 		</tr>
 		<tr>
-			<td style="width: 120px;">
+			<td style="width: 120px; height: 100px;">
 				<a href="https://duckduckgo.com/"><img
 				src="/images/sponsor/ddg.png"
 				style="float: left;" /></a>
@@ -136,6 +136,22 @@
                 privacidade ao usuário.
 			</td>
 		</tr>
+        <tr>
+            <td style="width: 120px; height: 100px;">
+                <a href="http://cosi.clarkson.edu"><img
+                src="/image/sponsor/cosi.png"
+                style="float: left;" /></a>
+            </td>
+            <td>
+                Clarkson Open Source Institute - O Cosi fornece nosso servidor
+                Chub, oferecendo acesso total a uma máquina virtual. Nos
+                orgulhamos pela parceria com a Universidade Clarkson, que foi
+                fundada para promover Software Open Source, fornecendo
+                equipamento e suporte para projetos de estudantes. Nossos
+                agradecimentos ao pessoal do COSI pelo suporte e por
+                responder prontamente aos nossos pedidos.
+            </td>
+        </tr> 
 	</tbody>
 </table>
 
