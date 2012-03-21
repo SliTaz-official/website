@@ -139,7 +139,7 @@
         <tr>
             <td style="width: 120px; height: 100px;">
                 <a href="http://cosi.clarkson.edu"><img
-                src="/image/sponsor/cosi.png"
+                src="/images/sponsor/cosi.png"
                 style="float: left;" /></a>
             </td>
             <td>
