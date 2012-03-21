@@ -161,7 +161,7 @@ Comandos do mercurial (hg) que podem ser usados.
 	<li><code>hg head</code> : Mostra o último log.</li>
 </ul>
 
-<a name="gui"</a>
+<a name="gui"></a>
 <h2>Interface Gráfica - C/GTK, Yad, Vala/Genie e WEB/GCI</h2>
 <p>
     Há várias maneiras de criar interfáces gráficas para o usuário para a
