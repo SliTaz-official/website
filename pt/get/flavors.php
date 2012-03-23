@@ -11,7 +11,7 @@
 </head>
 <body>
 
-<?php include("../../lib/html/header.html") ?>
+<?php include("../../lib/html/header.pt.html") ?>
 
 <!-- Block -->
 <div id="block">
@@ -62,7 +62,7 @@
 <p>
 	Uma <em>variante</em> é um arquivo (.flavor) que gera uma variante especial.
 	A ferramenta gráfica Tazlitobox pode criar uma variante em poucos cliques do
-	mouse. O <a href="http://hg.slitaz.org/tazlito/raw-file/tip/doc/tazlito.pt.html">manual do Tazlito</a> 
+	mouse. O <a href="http://hg.slitaz.org/tazlito/raw-file/tip/doc/tazlito.pt_BR.html">manual do Tazlito</a> 
 	e a <a href="http://doc.slitaz.org/pt:handbook:genlivecd">documentação</a> fornecem
 	instruções detalhadas para a geração de variantes. Na linha de comando, você 
 	pode obter uma lista de variantes disponíveis via <code>tazlito list-flavors</code>.
@@ -77,7 +77,7 @@
 </p>
 <p>
 	Se você criou sua própria variante, pode envia-la para a 
-	<a href="../mailing-list.html">lista de discussão</a> para que ela seja testada
+	<a href="../mailing-list.php">lista de discussão</a> para que ela seja testada
 	e incluida nas variantes oficiais. O sistema de variantes pode ser comparado
 	ao de pacotes - cada variante possui um mantenedor.
 </p>
@@ -85,7 +85,7 @@
 <!-- End of content -->
 </div>
 
-<?php include("../../lib/html/footer.html") ?>
+<?php include("../../lib/html/footer.pt.html") ?>
 
 </body>
 </html>

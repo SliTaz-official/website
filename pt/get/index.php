@@ -13,7 +13,7 @@
 
 <?php 
 include("../../config.php");
-include("../../lib/html/header.html")
+include("../../lib/html/header.pt.html")
 ?>
 
 <!-- Block -->
@@ -61,7 +61,7 @@ include("../../lib/html/header.html")
     Imagem ISO inicializável da versão de testes mais recente.</li>
 	<li><a href="index.html#floppy">Versão em disquete</a> - Disquete de boot que pode iniciar
 	a versão LiveCD, uma mídia USB, etc.</li>
-    <li><a href="flavors.html">Variantes do LiveCD</a> - Variantes e loram.</li>
+    <li><a href="flavors.php">Variantes do LiveCD</a> - Variantes e loram.</li>
 </ul>
 
 <h3>Informações Gerais</h3>
@@ -205,7 +205,7 @@ porém isto irá sobrescrever qualquer dado existente na mídia.
 <!-- End of content -->
 </div>
 
-<?php include("../../lib/html/footer.html") ?>
+<?php include("../../lib/html/footer.pt.html") ?>
 
 </body>
 </html>
