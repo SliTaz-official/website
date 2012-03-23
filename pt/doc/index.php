@@ -66,13 +66,13 @@
     
 <h2>Manuais</h2>    
 <ul>
-    <li><a href="http://hg.slitaz.org/tazpkg/raw-file/tip/doc/tazpkg.pt.html"
+    <li><a href="http://hg.slitaz.org/tazpkg/raw-file/tip/doc/tazpkg.pt_BR.html"
         >Manual Tazpkg</a> - Gerenciador de pacotes do SliTaz.</li>
-    <li><a href="http://hg.slitaz.org/tazlito/raw-file/tip/doc/tazlito.pt.html"
+    <li><a href="http://hg.slitaz.org/tazlito/raw-file/tip/doc/tazlito.pt_BR.html"
         >Manual Tazlito</a> -  Utilitário LiveCD do SliTaz.</li>
-    <li><a href="http://hg.slitaz.org/tazusb/raw-file/tip/doc/tazusb.pt.html"
+    <li><a href="http://hg.slitaz.org/tazusb/raw-file/tip/doc/tazusb.pt_BR.html"
         >Manual TazUSB</a> -  Utilitário LiveUSB do SliTaz.</li>
-	<li><a href="http://hg.slitaz.org/cookutils/raw-file/tip/doc/cookutils.pt.html"
+	<li><a href="http://hg.slitaz.org/cookutils/raw-file/tip/doc/cookutils.pt_BR.html"
         >Manual Cookutils</a> -  Criador de Pacotes do SliTaz.</li>
 </ul>
 
