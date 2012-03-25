@@ -136,7 +136,7 @@
 <!-- End of content -->
 </div>
 
-<?php include("../lib/html/footer.pt.html") ?>
+<?php include("../../lib/html/footer.pt.html") ?>
 
 </body>
 </html>
