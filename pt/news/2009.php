@@ -2,64 +2,25 @@
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt">
 <head>
-    <title>SliTaz - Arquivo de notícias (2009)</title>
+    <title>SliTaz - Arquivo de notícias</title>
     <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
     <meta name="description" content="SliTaz news archives info release" />
     <meta name="keywords" lang="pt" content="sistema, livre, gnu, linux, opensource software, livecd na RAM" />
     <meta name="robots" content="index, follow, all" />
-    <meta name="revisit-after" content="7 days" />
-    <meta name="expires" content="never" />
-    <meta name="modified" content="2010-03-30 03:00:00" />
+    <meta name="modified" content="<?php echo (date( "Y-m-d H:i:s", getlastmod())); ?>" />
     <meta name="author" content="Christophe Lincoln"/>
-    <meta name="publisher" content="www.slitaz.org" />
     <link rel="shortcut icon" href="../../favicon.ico" />
     <link rel="stylesheet"  type="text/css" href="../../slitaz.css" />
-    <link rel="Content" href="#content" />
 </head>
-<!--
-    This is SliTaz English documentation main page. Please check your code
-    with the W3C validator before publishing any documents.
--->
+<body>
 
-<!-- Header -->
-<div id="header">
-	<div id="logo"></div>
-	<div id="network">
-		<a href="http://www.slitaz.org/netmap.php">
-			<img src="../../images/network.png" alt="network.png" /></a>
-		<a href="http://scn.slitaz.org/">Community</a>
-		<a href="http://doc.slitaz.org/">Doc</a>
-		<a href="http://forum.slitaz.org/">Forum</a>
-		<a href="http://bugs.slitaz.org">Bugs</a>
-		<a href="http://hg.slitaz.org/">Hg</a>
-	</div>
-	<h1><a href="http://www.slitaz.org/">SliTaz GNU/Linux</a></h1>
-</div>
+<?php include("../../lib/html/header.pt.html"); ?>
 
 <!-- Block -->
 <div id="block">
-	<!-- Navigation -->
-	<div id="block_nav">
-		<h4>Navegação</h4>
-		<div class="right_box">
-			<ul>
-				<li><a href="../mailing-list.html">Lista de discussão</a></li>
-				<li><a href="../devel/">Desenvolvimento</a></li>
-				<li><a href="../packages/">Pacotes</a></li>
-				<li><a href="../artwork/">Artwork</a></li>
-				<li><a href="../search.html">Procurar</a></li>
-			</ul>
-		</div>
-		<div class="left_box">
-			<ul>
-				<li><a href="./">Últimas notícias</a></li>
-				<li><a href="../about/">Sobre o projeto</a></li>
-				<li><a href="../get/">Download</a></li>
-				<li><a href="../asso/">Associação</a></li>
-				<li><a href="../doc/">Documentação</a></li>
-			</ul>
-		</div>
-	</div>
+
+   	<?php include("../../lib/html/nav.pt.html"); ?>
+
     <div id="block_info">
 		<h4>Arquivos de notícias</h4>
 		<p>
@@ -69,10 +30,11 @@
             movida para domínio próprio)
 		</p>
 		<p>
-			<img src="../../images/news.png" alt="png" /> 
-			<a href="2008.html">2008</a> | 
-            2009 | 
-            <a href="./">2010</a>
+			<img src="../../images/news.png" alt="[ Notícias]" /> 
+			<a href="2008.php">2008</a> | 
+            <a href="./">2009</a> | 
+            <a href="2010.php">2010</a> |
+            <a href="index.php">2011</a>
 		</p>
 	</div>
 </div>
@@ -193,25 +155,7 @@
 <!-- End of content -->
 </div>
 
-<!-- Footer -->
-<div id="footer">
-	Copyright &copy; <span class="year"></span>
-	<a href="http://www.slitaz.org/">SliTaz</a> - Network:
-	<a href="http://scn.slitaz.org/">Community</a>
-	<a href="http://doc.slitaz.org/">Doc</a>
-	<a href="http://forum.slitaz.org/">Forum</a>
-	<a href="http://pkgs.slitaz.org/">Packages</a>
-	<a href="http://bugs.slitaz.org">Bugs</a>
-	<a href="http://hg.slitaz.org/">Hg</a>
-	<p>
-		SliTaz @
-		<a href="http://twitter.com/slitaz">Twitter</a>
-		<a href="http://www.facebook.com/slitaz">Facebook</a>
-		<a href="http://distrowatch.com/slitaz">Distrowatch</a>
-		<a href="http://en.wikipedia.org/wiki/SliTaz">Wikipedia</a>
-		<a href="http://flattr.com/profile/slitaz">Flattr</a>
-	</p>
-</div>
+<?php include("../lib/html/footer.pt.html") ?>
 
 </body>
 </html>
