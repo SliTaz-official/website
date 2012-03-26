@@ -102,9 +102,9 @@
 <p>По приведенным ниже ссылкам вы можете просмотреть архив рассылки, автоматически переведенный на русский язык такими переводчиками:</p>
 
 <ul class="nobullet">
-	<li><img class="icon16" src="http://www.translate.ru/favicon.ico" /><a href="http://www.translate.ru/General/au-ru/http%3a%2f%2flistengine.tuxfamily.org%2flists.tuxfamily.org%2fslitaz%2f">онлайн переводчик ПРОМТ</a></li>
-	<li><img class="icon16" src="http://translate.google.com/favicon.ico" /><a href="http://translate.google.com/translate?sl=auto&amp;tl=ru&amp;hl=ru&amp;u=http://listengine.tuxfamily.org/lists.tuxfamily.org/slitaz/">переводчик Google</a></li>
-	<li><img class="icon16" src="http://microsifttranslator.com/icon.ico" /><a href="http://www.microsofttranslator.com/bv.aspx?from=&amp;to=ru&amp;a=http://listengine.tuxfamily.org/lists.tuxfamily.org/slitaz/">переводчик Bing™</a> от Microsoft®</li>
+	<li><img class="icon16" src="http://www.translate.ru/favicon.ico" /> <a href="http://www.translate.ru/General/au-ru/http%3a%2f%2flistengine.tuxfamily.org%2flists.tuxfamily.org%2fslitaz%2f">онлайн переводчик ПРОМТ</a></li>
+	<li><img class="icon16" src="http://translate.google.com/favicon.ico" /> <a href="http://translate.google.com/translate?sl=auto&amp;tl=ru&amp;hl=ru&amp;u=http://listengine.tuxfamily.org/lists.tuxfamily.org/slitaz/">переводчик Google</a></li>
+	<li><img class="icon16" src="http://microsofttranslator.com/icon.ico" /> <a href="http://www.microsofttranslator.com/bv.aspx?from=&amp;to=ru&amp;a=http://listengine.tuxfamily.org/lists.tuxfamily.org/slitaz/">переводчик Bing™</a> от Microsoft®</li>
 </ul>
 
 <p>Проект SliTaz никак не связан с указанными сервисами перевода, каждый из них имеет свои достоинства и недостатки, по вопросам качества перевода или наличия (отсутствия) каких-либо функций, обращайтесь непоследственно к разработчикам указанных сервисов. Кроме того, вы всегда можете читать в оригинале сообщения рассылки, упорядоченные по дате или по теме обсуждения (<em>Thread</em>) по приведенной ниже ссылке или таблице:</p>
@@ -114,8 +114,6 @@
 </ul>
 
 <div>
-<style type="text/css">
-</style>
 <object type="text/html" width="100%" height="345" data="../lib/archives.php?lang=ru">
 </object>
 </div>
