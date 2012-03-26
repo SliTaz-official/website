@@ -8,6 +8,17 @@
 	<meta name="keywords" content="SliTaz рассылка дискуссии" lang="ru" />
 	<meta name="author" content="Christophe Lincoln" />
 	<?php include("../lib/html/meta-link.html"); ?>
+	<style type="text/css">
+		ul.nobullet { list-style-type: none; }
+		.icon16 { width: 16px; height: 16px; }
+
+		table { border: 1px solid #444; width: variable; border-collapse: collapse; }
+		td { border: 1px dotted #6495ed; width: variable; padding: 2px; }
+		.rowodd { background-color: #fff; }
+		.roweven { background-color: #e1ffe1; /* the tower */ }
+		th { border: 1px solid #444; width: variable; padding: 4px; }
+		.alignright { text-align: right; }
+	</style>
 </head>
 <body>
 
@@ -86,34 +97,24 @@
 
 <h3 id="archives">Архив рассылки</h3>
 
-<p>Рассылка — это общественный форум, все сообщения архивируются и доступны для поиска в Интернете. Это позволяет незарегистрированным людям следить за рассылкой. Она также является хорошим источником информации по конкретным вопросам. Рассылка архивируется каждую ночь, и вы можете легко просматривать архив с помощью движка рассылки TuxFamily. Сообщения, упорядоченные по дате или по теме обсуждения (<em>Thread</em>): <a href="http://listengine.tuxfamily.org/lists.tuxfamily.org/slitaz/">Архив рассылки</a></p>
+<p>Рассылка — это общественный форум, все сообщения архивируются и доступны для поиска в Интернете. Это позволяет незарегистрированным людям следить за рассылкой. Она также является хорошим источником информации по конкретным вопросам. Рассылка архивируется каждую ночь, и вы можете легко просматривать архив с помощью движка рассылки TuxFamily.</p>
+
+<p>По приведенным ниже ссылкам вы можете просмотреть архив рассылки, автоматически переведенный на русский язык такими переводчиками:</p>
+
+<ul class="nobullet">
+	<li><img class="icon16" src="http://www.translate.ru/favicon.ico" /><a href="http://www.translate.ru/General/au-ru/http%3a%2f%2flistengine.tuxfamily.org%2flists.tuxfamily.org%2fslitaz%2f">онлайн переводчик ПРОМТ</a></li>
+	<li><img class="icon16" src="http://translate.google.com/favicon.ico" /><a href="http://translate.google.com/translate?sl=auto&amp;tl=ru&amp;hl=ru&amp;u=http://listengine.tuxfamily.org/lists.tuxfamily.org/slitaz/">переводчик Google</a></li>
+	<li><img class="icon16" src="http://microsifttranslator.com/icon.ico" /><a href="http://www.microsofttranslator.com/bv.aspx?from=&amp;to=ru&amp;a=http://listengine.tuxfamily.org/lists.tuxfamily.org/slitaz/">переводчик Bing™</a> от Microsoft®</li>
+</ul>
+
+<p>Проект SliTaz никак не связан с указанными сервисами перевода, каждый из них имеет свои достоинства и недостатки, по вопросам качества перевода или наличия (отсутствия) каких-либо функций, обращайтесь непоследственно к разработчикам указанных сервисов. Кроме того, вы всегда можете читать в оригинале сообщения рассылки, упорядоченные по дате или по теме обсуждения (<em>Thread</em>) по приведенной ниже ссылке или таблице:</p>
+
+<ul>
+	<li><a href="http://listengine.tuxfamily.org/lists.tuxfamily.org/slitaz/">Архив рассылки</a> в оригинале</li>
+</ul>
 
 <div>
 <style type="text/css">
-	table {
-		border: 1px solid #444;
-		width: variable;
-		border-collapse: collapse;
-	}
-	td {
-		border: 1px dotted #6495ed;
-		width: variable;
-		padding: 2px;
-	}
-	.rowodd {
-		background-color: #fff;
-	}
-	.roweven {
-		background-color: #e1ffe1; /* the tower */
-	}
-	th {
-		border: 1px solid #444;
-		width: variable;
-		padding: 4px;
-	}
-	.alignright {
-		text-align: right;
-	}
 </style>
 <object type="text/html" width="100%" height="345" data="../lib/archives.php?lang=ru">
 </object>
