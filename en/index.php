@@ -55,8 +55,8 @@
 	<p>
 		Help us get a dedicated server - Check out our
 		<a href="http://www.gofundme.com/3ql70">online fundraising</a>
-		or become an official
-		<a href="/en/sponsor/">sponsor</a>
+		<a href="http://usbkey.slitaz.org/">USB Key Project</a> or 
+		become an official <a href="/en/sponsor/">sponsor</a>
 	</p>
 </div>
 
