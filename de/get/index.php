@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
 <head>
 	<title>SliTaz - Downloadsektion</title>
-	<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="description" content="SliTaz GNU/Linux LiveCD" />
 	<meta name="keywords" lang="en" content="slitaz download, get slitaz" />
 	<meta name="author" content="F Steiner (Sevala)"/>
@@ -23,7 +23,7 @@ include("../../lib/html/header.html");
 	<div id="block_info">
 		<h4>Downloadsektion</h4>
 		<p>
-			Laden Sie die neueste stabile Version für deren Produktion 
+			Laden Sie die neueste stabile Version fÃ¼r deren Produktion 
 			oder einem festen Desktop-Umgebung. Verwenden Sie das Kochen
 			Version zu testen und uns bei der Verbesserung der Distribution.
 		</p>
@@ -38,14 +38,14 @@ include("../../lib/html/header.html");
 <!-- Languages -->
 <div id="lang">
 	<a href="../i18n.php">
-		<img src="../../images/locale.png" alt="locale.png" /></a>
+		<img src="../../images/locale.png" alt="Locale:" /></a>
 	<a href="../../da/get/">Dansk</a>
-	<a href="../../de/get/">Deutsch</a>
 	<a href="../../en/get/">English</a>
-	<a href="../../es/get/">Español</a>
-	<a href="../../fr/get/">Français</a>
+	<a href="../../es/get/">EspaÃ±ol</a>
+	<a href="../../fr/get/">FranÃ§ais</a>
 	<a href="../../it/get/">Italiano</a>
-	<a href="../../pt/get/">Português</a>
+	<a href="../../pt/get/">PortuguÃªs</a>
+	<a href="../../ru/get/">Ð ÑƒÑÑÐºÐ¸Ð¹</a>
 	<a href="../../cn/get/">Chinese</a>
 </div>
 
@@ -55,16 +55,16 @@ include("../../lib/html/header.html");
 <h2>Download SliTaz</h2>
 
 <ul>
-	<li><a href="#stable">Live-CD Stabile Version</a> - Bootfähiges ISO Image der
+	<li><a href="#stable">Live-CD Stabile Version</a> - BootfÃ¤higes ISO Image der
 	aktuellen stabilen Version.</li>
-	<li><a href="#cooking">Live-CD Cooking Version</a> - Bootfähiges ISO Image der
+	<li><a href="#cooking">Live-CD Cooking Version</a> - BootfÃ¤higes ISO Image der
 	aktuellen Cooking-Version.</li>
 	<li><a href="flavors.html">Live-CD Derivate</a> - SliTaz-Derivate und Loram-Version.</li>
 </ul>
 
 <div class="box">
 	<p>
-		Helfen Sie das Projekt über eine kleine Spende oder werden, ein 
+		Helfen Sie das Projekt Ã¼ber eine kleine Spende oder werden, ein 
 		Offizieller <a href="../sponsor/">Sponsor</a>.
 	</p>
 	<?php include("../../lib/html/donate.html"); ?>
@@ -73,9 +73,9 @@ include("../../lib/html/header.html");
 <h3>Allgemeine Informationen</h3>
 <p>
 Auf dieser Seite stehen die ISO-Images der SliTaz
-GNU/Linux Live-CD-Versionen der Paket-CDs sowie einzelne Pakete (über die verschiedenen
-Mirrors) und zugehöriger Quellcode zum Download.
-Über den Umgang mit der Live-CD und SliTaz im Allgemeinen erfahren Sie mehr im
+GNU/Linux Live-CD-Versionen der Paket-CDs sowie einzelne Pakete (Ã¼ber die verschiedenen
+Mirrors) und zugehÃ¶riger Quellcode zum Download.
+Ãœber den Umgang mit der Live-CD und SliTaz im Allgemeinen erfahren Sie mehr im
 <a href="http://doc.slitaz.org/de:handbook:start">SliTaz Wiki</a>. Hilfe erhalten
 Sie auch im <a href="http://forum.slitaz.org/#idx3">deutschen Forum</a> von SliTaz.
 </p>
@@ -104,7 +104,7 @@ SliTaz wird momentan in Frankreich von <a href="http://www.ads-lu.com/">ADS</a>,
 <h3>Quellcode</h3>
 <p>
 Tazpkg (Paketmanager), Tazlito (SliTaz Live Tool), Tazwok (Source Builder),
-Tazusb (LiveUSB Tool) und die SliTaz Tools können alle vom
+Tazusb (LiveUSB Tool) und die SliTaz Tools kÃ¶nnen alle vom
 <a href="http://www.tuxfamily.org/">TuxFamily</a> Mirror heruntergeladen werden.
 All diese Anwendungen sind schon in SliTaz vorhanden. Der Quelltext ist auf Englisch kommentiert,
 er kann von einem der folgenden Mirrors heruntergeladen werden:
@@ -116,9 +116,9 @@ er kann von einem der folgenden Mirrors heruntergeladen werden:
 <h2>LiveCD - Stabile Version</h2>
 <p>
 	Die stabile Version von SliTaz ist ein kleines und schnelles Betriebssystem,
-	ausgiebig von einer aktiven Community getestet. Es enthält eine Anzahl nützlicher
-	Anwendungen, ist leicht erweiterbar und bietet eine benutzerfreundliche Oberfläche.
-	<?php echo "Das aktuelle stabile Release $stable_ver wurde am $stable_rel veröffentlicht."; ?>
+	ausgiebig von einer aktiven Community getestet. Es enthÃ¤lt eine Anzahl nÃ¼tzlicher
+	Anwendungen, ist leicht erweiterbar und bietet eine benutzerfreundliche OberflÃ¤che.
+	<?php echo "Das aktuelle stabile Release $stable_ver wurde am $stable_rel verÃ¶ffentlicht."; ?>
 </p>
 
 <p class="box">
@@ -139,12 +139,12 @@ er kann von einem der folgenden Mirrors heruntergeladen werden:
 <h2>LiveCD - Cooking version</h2>
 <p>
 SliTaz "Cooking" ist ein "Snapshot" der laufenden Entwicklung von SliTaz.
-Es ist vollständig benutzbar und erlaubt das Testen der <a href="http://slitaz.org/de">
-neuesten Veränderungen und Anwendungen</a>. Anfrage nach neuen Features oder das
-Berichten von Bugs helfen uns die nächste stabile Version zu verbessern. Die
+Es ist vollstÃ¤ndig benutzbar und erlaubt das Testen der <a href="http://slitaz.org/de">
+neuesten VerÃ¤nderungen und Anwendungen</a>. Anfrage nach neuen Features oder das
+Berichten von Bugs helfen uns die nÃ¤chste stabile Version zu verbessern. Die
 <a href="http://doc.slitaz.org/de:vocab:vocab">
-Paket-CD</a> enthält alle verfügbaren Pakete, sodass sie Software auch ohne lokale
-Internetanbindung installieren können.
+Paket-CD</a> enthÃ¤lt alle verfÃ¼gbaren Pakete, sodass sie Software auch ohne lokale
+Internetanbindung installieren kÃ¶nnen.
 </p>
 
 <p class="box">

@@ -47,7 +47,7 @@
 <div class="box">
 	<img src="/images/update.png" alt="[Update]" style="float: left; margin-right: 10px; " />
 
-	<p>Помогите нам приобрести выделенный сервер — посетите нашу страницу по <a href="http://www.gofundme.com/3ql70">сбору средств</a> либо станьте нашим официальным <a href="/ru/sponsor/">спонсором</a></p>
+	<p>Помогите нам приобрести выделенный сервер — посетите нашу <a href="http://www.gofundme.com/3ql70">страницу по сбору средств</a>, <a href="http://usbkey.slitaz.org/">проект USB Key</a>, либо станьте нашим официальным <a href="/ru/sponsor/">спонсором</a></p>
 </div>
 
 <!--

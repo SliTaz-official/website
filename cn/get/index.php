@@ -45,7 +45,7 @@ include("../../lib/html/header.html");
 	<a href="../../fr/get/">Français</a>
 	<a href="../../it/get/">Italiano</a>
 	<a href="../../pt/get/">Português</a>
-	<a href="../../cn/get/">Chinese</a>
+	<a href="../../ru/get/">Русский</a>
 </div>
 
 <!-- Content -->

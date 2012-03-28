@@ -1,15 +1,15 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!-- Danish (da) translation by Bo Vagner Højer - bohoejer@live.dk
+<!-- Danish (da) translation by Bo Vagner HÃ¸jer - bohoejer@live.dk
    Member of Labitat Hackerspace, Copenhagen - www.labitat.dk
    visit our hackerspace every tuesday evening for free - always hot coffee -->     
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="da" lang="da">
 <head>
 	<title>SliTaz GNU/Linux (en)</title>
-	<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="description" content="SliTaz GNU/Linux LiveCD" />
 	<meta name="keywords" lang="en" content="System, free, gnu, linux, software opensource, livecd LINUX in RAM" />
-	<meta name="author" content="Bo Vagner Højer" />
+	<meta name="author" content="Bo Vagner HÃ¸jer" />
 	<?php include("../lib/html/meta-link.html"); ?>
 </head>
 <body>
@@ -27,8 +27,8 @@
 			skrivebordsmaskine eller server i mindre end 35 MB.
 		</p>
 		<p>
-		   Som live-os kan SliTaz køre fuldstændig i ram-hukommelsen og startes
-		   fra flytbare medier så som en cdrom eller usb-pind.
+		   Som live-os kan SliTaz kÃ¸re fuldstÃ¦ndig i ram-hukommelsen og startes
+		   fra flytbare medier sÃ¥ som en cdrom eller usb-pind.
 		   Operativsystemmet er sikkert, stabilt og let at bruge.
 			<a href="about/">Mere information...</a>
 		</p>
@@ -39,14 +39,15 @@
 <div id="lang">
 	<a href="../i18n.php">
 		<img src="../images/locale.png" alt="Sprog:" /></a>
-	<strong title="Oversættelse ved Bo Vagner Højer - bohoejer@live.dk">Dansk</strong>   
+	<strong title="OversÃ¦ttelse ved Bo Vagner HÃ¸jer - bohoejer@live.dk">Dansk</strong>   
 	<a href="../de/">Deutsch</a>
 	<a href="../en/">English</a>
-	<a href="../es/">Español</a>
-	<a href="../fr/">Français</a>
+	<a href="../es/">EspaÃ±ol</a>
+	<a href="../fr/">FranÃ§ais</a>
 	<a href="../id/">Indonesian</a>
 	<a href="../it/">Italiano</a>
-	<a href="../pt/">Português</a>
+	<a href="../pt/">PortuguÃªs</a>
+	<a href="../ru/">Ð ÑƒÑÑÐºÐ¸Ð¹</a>
 	<a href="../cn/">Chinese</a>
 </div>
 
@@ -66,12 +67,12 @@
 
 <h2>Nyheder</h2>
 <p>
-   SliTaz hjemmesiden tilbyder projektets hovednyheder så vel som
-   nyheder om den generelle aktivitet i underprojekter på 
-	<a href="http://scn.slitaz.org/">SliTaz netværket</a>. Begge er 
-	tilgængelige som et  <a href="/rss.xml">rssfeed</a>. 
-	Projektet udgiver også 
-	et lille månedligt nyhedsbrev. Denne side og hjemmesidens  
+   SliTaz hjemmesiden tilbyder projektets hovednyheder sÃ¥ vel som
+   nyheder om den generelle aktivitet i underprojekter pÃ¥ 
+	<a href="http://scn.slitaz.org/">SliTaz netvÃ¦rket</a>. Begge er 
+	tilgÃ¦ngelige som et  <a href="/rss.xml">rssfeed</a>. 
+	Projektet udgiver ogsÃ¥ 
+	et lille mÃ¥nedligt nyhedsbrev. Denne side og hjemmesidens  
 	<a href="../">hovedside</a> vil give dig et flot overblik over de 
 	sidste nyheder, bidrag og Tweets.
 </p>
@@ -79,7 +80,7 @@
 <div class="box">
 	<img src="../images/news.png" alt="nyheder:" />	
 	<a href="http://scn.slitaz.org/">Nyheder fra bloggen</a> | 
-	<a href="http://doc.slitaz.org/en:newsletter:start">Månedligt nyhedsbrev</a>
+	<a href="http://doc.slitaz.org/en:newsletter:start">MÃ¥nedligt nyhedsbrev</a>
 </div>
 
 <div class="news">
@@ -92,27 +93,27 @@
 	<p>
       SliTaz holdet er stolt af at kunne annoncere frigivelsen af en ny 
       udviklingsversion bygget med vores nye og friske programpakker fra cookutils.		
-		Cookutils er en af den nye genneration af værktøjer til at bygge SliTaz 
+		Cookutils er en af den nye genneration af vÃ¦rktÃ¸jer til at bygge SliTaz 
 		programpakker og giver en byggerobot
-		med en flot webgrændseflade der arbejder ud-af-boksen på ethvert SliTaz
+		med en flot webgrÃ¦ndseflade der arbejder ud-af-boksen pÃ¥ ethvert SliTaz
 		system. Disse nye pakker er blevet bygget med en ny i486 optimeret
-		værktøjskæde.
+		vÃ¦rktÃ¸jskÃ¦de.
 	</p>
 	<p>
-		Hele opstartsprocessen er blevet forbedret og den første konfiguration sker nu 
-		gennem GTK-kasser i en X session og opstartstiden er også hurtigere. 
-		Denne version kommer med et nyt grafisk værktøj til systemkonfiguration
-		så vel som vores nye systemkonfigurationspanel kendt som TazPanel.
+		Hele opstartsprocessen er blevet forbedret og den fÃ¸rste konfiguration sker nu 
+		gennem GTK-kasser i en X session og opstartstiden er ogsÃ¥ hurtigere. 
+		Denne version kommer med et nyt grafisk vÃ¦rktÃ¸j til systemkonfiguration
+		sÃ¥ vel som vores nye systemkonfigurationspanel kendt som TazPanel.
 		TazPanel lader dig konfigurer hele systemet via en xHTML/CSS 
-		webgrændseflade (god til fjernkontrol) og det laver også pakkehåndtering 
-		og afløser derved den gamle GTK-kasse.
+		webgrÃ¦ndseflade (god til fjernkontrol) og det laver ogsÃ¥ pakkehÃ¥ndtering 
+		og aflÃ¸ser derved den gamle GTK-kasse.
 	</p>
 	<p>
-		Nu har Xorg dri understøttelse, så libdrm, linux-drm såvel som linux-agp
-		er del af kerne-cdén. Dette gør det komprimerede rodfilsystem 1Mb større.
-		Vi har dog klaret at spare en masse plads i kerne-cdén med vores nye
-		programpakker og denne nye udviklingsudgave er på 30Mb! Denne nye
-		version giver også bedre internationalisering og Italiensk understøttelse!
+		Nu har Xorg dri understÃ¸ttelse, sÃ¥ libdrm, linux-drm sÃ¥vel som linux-agp
+		er del af kerne-cdÃ©n. Dette gÃ¸r det komprimerede rodfilsystem 1Mb stÃ¸rre.
+		Vi har dog klaret at spare en masse plads i kerne-cdÃ©n med vores nye
+		programpakker og denne nye udviklingsudgave er pÃ¥ 30Mb! Denne nye
+		version giver ogsÃ¥ bedre internationalisering og Italiensk understÃ¸ttelse!
 	   Hent:
 		<a href="http://mirror.slitaz.org/iso/cooking/slitaz-cooking.iso">
 			slitaz-cooking.iso</a>
@@ -161,7 +162,7 @@
 	the forum.</p>
 	</li>
 
-	<li><a href="../en/news/">Flere nyheder</a> eller gennemse arkiverne (på engelsk):
+	<li><a href="../en/news/">Flere nyheder</a> eller gennemse arkiverne (pÃ¥ engelsk):
 	<a href="../en/news/2007.html">2007</a> |
 	<a href="../en/news/2008.html">2008</a> |
 	<a href="../en/news/2009.html">2009</a></li></li>
@@ -199,12 +200,12 @@
 	</p>
 </div>
 
-<h2>Støt os</h2>
+<h2>StÃ¸t os</h2>
 <p>
-	Gør SliTaz endnu mere populær eller lav en donation. Du kan benytte PayPal
-	eller en Flattr mikrobetaling til at støtte os pengemæssigt. Du kan blogge, tweette,
-	dele og tale om projektet for at hjælpe med at udbrede SliTaz. Du kan også deltage
-	på <a href="http://scn.slitaz.org/">SliTaz netværket</a> for at kontakte, dele eller blive
+	GÃ¸r SliTaz endnu mere populÃ¦r eller lav en donation. Du kan benytte PayPal
+	eller en Flattr mikrobetaling til at stÃ¸tte os pengemÃ¦ssigt. Du kan blogge, tweette,
+	dele og tale om projektet for at hjÃ¦lpe med at udbrede SliTaz. Du kan ogsÃ¥ deltage
+	pÃ¥ <a href="http://scn.slitaz.org/">SliTaz netvÃ¦rket</a> for at kontakte, dele eller blive
 	indvoldveret i projektet.
 </p>
 

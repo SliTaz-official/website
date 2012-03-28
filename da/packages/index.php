@@ -1,12 +1,12 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<! Danish (da) translation by Bo Vagner Højer - bohoejer@live.dk
+<!-- Danish (da) translation by Bo Vagner HÃ¸jer - bohoejer@live.dk
    Member of Labitat Hackerspace, Copenhagen - www.labitat.dk
-   visit our hackerspace every tuesday evening for free - always hot coffee >
+   visit our hackerspace every tuesday evening for free - always hot coffee -->
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="da" lang="da">
 <head>
     <title>SliTaz - Packages</title>
-    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="SliTaz GNU/Linux LiveCD programpakker" />
     <meta name="keywords" lang="da" content="pakker, programpakker, tazpkg" />
     <meta name="robots" content="index, follow, all" />
@@ -22,7 +22,7 @@
 	<div id="logo"></div>
 	<div id="network">
 		<a href="http://www.slitaz.org/netmap.php">
-			<img src="../../images/network.png" alt="netværk: " /></a>
+			<img src="../../images/network.png" alt="netvÃ¦rk: " /></a>
 		<a href="http://scn.slitaz.org/">Samfund</a>
 		<a href="http://doc.slitaz.org/">Vejledning</a>
 		<a href="http://forum.slitaz.org/">Forum</a>
@@ -43,7 +43,7 @@
 				<li><a href="../devel/">Udvikling</a></li>
 				<li><a href="../packages/">Programpakker</a></li>
 				<li><a href="../artwork/">Grafik</a></li>
-				<li><a href="../search.html">Søgning</a></li>
+				<li><a href="../search.html">SÃ¸gning</a></li>
 			</ul>
 		</div>
 		<div class="left_box">
@@ -61,9 +61,9 @@
 		<h4>Pakker</h4>
 		<p>
 			Denne del af hjemmesiden tillader dig at gennemse alle
-			tilgængelige programpakker på SliTaz filspejlet. Siderne
+			tilgÃ¦ngelige programpakker pÃ¥ SliTaz filspejlet. Siderne
 			er dagligt opdateret via et cronjob. Alle pakker er
-			installerbare via den grafiske pakkehåndtering Tazpkg eller ved 
+			installerbare via den grafiske pakkehÃ¥ndtering Tazpkg eller ved 
 			brug af 
 			kommandoen <code>tazpkg get-install pakkenavn</code>.
 		</p>
@@ -87,16 +87,16 @@
 				<input type="submit" name="search" value="Search" />
 			</p>
 		</div>
-		Søg efter:
+		SÃ¸g efter:
 		<select name="object">
 			<option value="Package">Pakke</option>
 			<option value="Desc">Beskrivelse</option>
-			<option value="Tags">Mærkat</option>
-			<option value="Depends">Afhængigheder</option>
-			<option value="BuildDepends">Byggeafhængigheder</option>
+			<option value="Tags">MÃ¦rkat</option>
+			<option value="Depends">AfhÃ¦ngigheder</option>
+			<option value="BuildDepends">ByggeafhÃ¦ngigheder</option>
 			<option value="File">Fil</option>
 			<option value="File_list">Filliste</option>
-			<option value="FileOverlap">fælles filer</option>
+			<option value="FileOverlap">fÃ¦lles filer</option>
 		</select>
 		i
 		<select name="version">
@@ -110,7 +110,7 @@
 
 <div class="box">
 	<img src="../../images/text.png" alt="text.png" />
-	Rå pakkeliste:
+	RÃ¥ pakkeliste:
 	<a href="http://mirror.slitaz.org/packages/stable/packages.list"
 		>Stabil version</a> |
 	<a href="http://mirror.slitaz.org/packages/cooking/packages.list"
@@ -140,11 +140,11 @@
 <h2>Vejledning</h2>
 <p>
 	SliTaz projektet tilbyder detaljeret 
-	<a href="http://doc.slitaz.org/">vejledning</a> for at lære 
-	dig at 	installere og håndtere programpakker på din SliTaz 
+	<a href="http://doc.slitaz.org/">vejledning</a> for at lÃ¦re 
+	dig at 	installere og hÃ¥ndtere programpakker pÃ¥ din SliTaz 
 	GNU/Linux distribution. 
 	Medlemmerne af  <a href="http://forum.slitaz.org/">support forumet</a> 
-	vil hjælpe dig i tilfælde af problemmer og det er også stedet at efterspørge en 
+	vil hjÃ¦lpe dig i tilfÃ¦lde af problemmer og det er ogsÃ¥ stedet at efterspÃ¸rge en 
 	ny programpakke. 
 </p>
 
@@ -154,7 +154,7 @@
 <!-- Footer -->
 <div id="footer">
 	Ophavsret &copy; <span class="year"></span>
-	<a href="http://www.slitaz.org/">SliTaz</a> - Netværk:
+	<a href="http://www.slitaz.org/">SliTaz</a> - NetvÃ¦rk:
 	<a href="http://scn.slitaz.org/">Samfund</a>
 	<a href="http://doc.slitaz.org/">Vejledning</a>
 	<a href="http://forum.slitaz.org/">Forum</a>

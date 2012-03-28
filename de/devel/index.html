@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
 <head>
 	<title>SliTaz - Entwicklung</title>
-	<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="description" content="SliTaz GNU/Linux LiveCD" />
 	<meta name="keywords" lang="en" content="slitaz download, get slitaz" />
 	<meta name="robots" content="index, follow, all" />
@@ -46,7 +46,7 @@
 		<div class="left_box">
 			<ul>
 				<li><a href="../">Neuigkeiten</a></li>
-				<li><a href="../about/">Über SliTaz</a></li>
+				<li><a href="../about/">Ãœber SliTaz</a></li>
 				<li><a href="../get/">Download</a></li>
 				<li><a href="../../en/asso/">Association (en)</a></li>
 				<li><a href="http://doc.slitaz.org/de:start">Dokumentation</a></li>
@@ -88,7 +88,7 @@
 SliTaz ist ein Opensource-Projekt, das von einer Community entwickelt wird. 
 Jeder kann und darf gerne dazu seinen Beitrag leisten, Nutzer, Grafiker oder 
 Programmierer sind gleichermassen willkommen, es gibt immer etwas zu tun. Sei 
-es das Vervollständigen des <a href="http://doc.slitaz.org/de:start">Wikis</a> und der 
+es das VervollstÃ¤ndigen des <a href="http://doc.slitaz.org/de:start">Wikis</a> und der 
 Dokumentation, Bugs im <a href="http://bugs.slitaz.org" 
 title="Bug Tracking system">Bug Tracking System</a> melden, neue Pakete zu erstellen 
 und sie auf die Mirrors hochladen oder einfach anderen SliTaz-Nutzern im 
@@ -96,7 +96,7 @@ Forum oder der Mailing-List zu helfen.
 </p>
 
 <p>
-SliTaz besitzt eine kleine Community und hört auf die Nutzer. Viele der Entwickler 
+SliTaz besitzt eine kleine Community und hÃ¶rt auf die Nutzer. Viele der Entwickler 
 sind im <a href="http://forum.slitaz.org/">Forum</a> und der 
 <a href="../mailing-list.html">Mailing Liste</a> selbst aktiv. Einfach in der 
 jeweiligen Sprache/Forum ansprechen.
@@ -105,22 +105,22 @@ jeweiligen Sprache/Forum ansprechen.
 <a name="repos"></a>
 <h2>Mercurial Repositories</h2>
 <p>
-Die Website, Konfigurationsdateien und Skripte von SliTaz werden über das 
+Die Website, Konfigurationsdateien und Skripte von SliTaz werden Ã¼ber das 
 Mercurial Repository verwaltet.
-SliTaz Mercurial oder "Hg Repositories" können von jedem unter der Addresse 
+SliTaz Mercurial oder "Hg Repositories" kÃ¶nnen von jedem unter der Addresse 
 <a href="http://hg.slitaz.org/">http://hg.slitaz.org/</a> angesehen werden. 
-Leute mit Schreibzugriff können über folgende Adresse 
+Leute mit Schreibzugriff kÃ¶nnen Ã¼ber folgende Adresse 
 direkt auf das Repositorium zugreifen: 
 <code>repos.slitaz.org</code>, Nutzername und Passwort sind dabei erforderlich.
-Mercurial arbeitet mit Python, unter SliTaz lässt es sich mit 
+Mercurial arbeitet mit Python, unter SliTaz lÃ¤sst es sich mit 
 <code>tazpkg get-install mercurial</code> installieren.
 </p>
 <h4>~/.hgrc</h4>
 <p>
 Bevor Du Deinen ersten Beitrag leistest, stelle bitte sicher, dass 
-die Konfigurationsdatei (.hgrc) für das Repository vorhanden und richtig 
+die Konfigurationsdatei (.hgrc) fÃ¼r das Repository vorhanden und richtig 
 konfiguriert ist. Es sollte Deine E-Mail-Adresse enthalten, sowie den Nutzernamen 
-(üblicherweise kein Pseudonym). Beispiel einer lokalen, persönlichen 
+(Ã¼blicherweise kein Pseudonym). Beispiel einer lokalen, persÃ¶nlichen 
 Datei ~/.hgrc :
 </p>
 <pre class="script">
@@ -129,7 +129,7 @@ username = Vorname Nachname &lt;you@example.org&gt;
 </pre>
 <h4>"Clone", "modify", "commit" und "push"</h4>
 <p>
-Die repositories werden über die Kommandozeile verwaltet. Zuerst erstellt man eine 
+Die repositories werden Ã¼ber die Kommandozeile verwaltet. Zuerst erstellt man eine 
 lokale Kopie:
 </p>
 <pre>
@@ -137,9 +137,9 @@ lokale Kopie:
 </pre>
 <p>
 Im Dateimanager in das erstellte Verzeichnis wechseln. Um alle 
-Änderungen anzuzeigen dient der Befehl <code>log</code> 
+Ã„nderungen anzuzeigen dient der Befehl <code>log</code> 
 (mit der Option <code>log -l 2</code> nur die 
-beiden letzten Änderungen). <code>head</code> zeigt den letzten Logeintrag an. 
+beiden letzten Ã„nderungen). <code>head</code> zeigt den letzten Logeintrag an. 
 Damit diese Befehle funktionieren musst Du Dich im lokalen Verzeichnis befinden! 
 </p>
 <pre>
@@ -153,29 +153,29 @@ Nach dem Editieren einer Datei, den Status abrufen:
  $ hg status
 </pre>
 <p>
-Soll eine Datei neu hinzugefügt werden, muss vorher der Befehl <code>add</code> verwendet werden. 
+Soll eine Datei neu hinzugefÃ¼gt werden, muss vorher der Befehl <code>add</code> verwendet werden. 
 Nun noch nach zwischenzeitlichen Neuerungen anfragen, und, falls welche existieren,
-mit <code>update</code> in Deine Änderungen einfügen.
+mit <code>update</code> in Deine Ã„nderungen einfÃ¼gen.
 </p>
 <pre>
  $ hg pull
 </pre> 
-Nun die Änderungen in das lokale Logbuch eintragen:
+Nun die Ã„nderungen in das lokale Logbuch eintragen:
 </p>
 <pre>
- $ hg commit -m "Logeintrag, kurze und kräftige Aussagen bitte..."
+ $ hg commit -m "Logeintrag, kurze und krÃ¤ftige Aussagen bitte..."
  $ hg log
 </pre>
 <p>
-Um nun Deine Änderungen auf dem Server zu veröffentlichen 
+Um nun Deine Ã„nderungen auf dem Server zu verÃ¶ffentlichen 
 </p>
 <pre>
  $ hg push
 </pre>
 <p>
-Das war es auch schon; nach ein bisschen Eingewöhnungszeit geht es leicht von der Hand.
-Mit dem Befehl <code>rollback</code> können die letzten Änderungen übrigens
-wieder rückgängig gemacht werden.
+Das war es auch schon; nach ein bisschen EingewÃ¶hnungszeit geht es leicht von der Hand.
+Mit dem Befehl <code>rollback</code> kÃ¶nnen die letzten Ã„nderungen Ã¼brigens
+wieder rÃ¼ckgÃ¤ngig gemacht werden.
 </p>
 
 <a name="pkgs"></a>
@@ -190,40 +190,40 @@ Kenntnisse dieser Anleitungen werden vorrausgesetzt.
 </p>
 <p>
 Zuerst zur Auswahl des Paketes. Es sollen nur Pakete angeboten werden, 
-die nützlich erscheinen und funktionabel sind. Dabei bitte das kleinste 
+die nÃ¼tzlich erscheinen und funktionabel sind. Dabei bitte das kleinste 
 Paket aus der Anwendungskategorie verwenden. Existiert schon eine Anwendung 
-aus dem Bereich, bitte nicht noch ein ähnliches Paket erstellen. 
-Wenn Du aber eine Alternative dafür findest, die leichter ist, oder mehr Funktionalität 
-für ein paar kB mehr bietet, stelle es in der Mailing-List zur Diskussion. 
+aus dem Bereich, bitte nicht noch ein Ã¤hnliches Paket erstellen. 
+Wenn Du aber eine Alternative dafÃ¼r findest, die leichter ist, oder mehr FunktionalitÃ¤t 
+fÃ¼r ein paar kB mehr bietet, stelle es in der Mailing-List zur Diskussion. 
 Besondere Anforderungen werden an Pakete gestellt, die auf der Live-CD 
-mitgeliefert werden sollen. Erleichtern des Codes, Auflösen unnötiger 
-Abhängigkeiten gehören zur Selbstverständlichkeit!
+mitgeliefert werden sollen. Erleichtern des Codes, AuflÃ¶sen unnÃ¶tiger 
+AbhÃ¤ngigkeiten gehÃ¶ren zur SelbstverstÃ¤ndlichkeit!
 Allgemein werden solche Pakete vorerst ebenfalls in der Mailing-List zur 
 Diskussion gestellt.
 </p>
 <p>
 Bevor Du beginnst zu kompilieren und aus den Dateien ein SliTaz-Paket zu erstellen, 
-pprüfe, ob ein ähnliches, oder sogar gleiches Paket nicht schon 
-Auf dem SliTaz Mirror (v.a. Sektion "indigest") zur verfügung steht.
+pprÃ¼fe, ob ein Ã¤hnliches, oder sogar gleiches Paket nicht schon 
+Auf dem SliTaz Mirror (v.a. Sektion "indigest") zur verfÃ¼gung steht.
 Nicht vergessen, die Mitglieder der Mailing-List stehen Dir gerne 
-zur Verfügung, ebenso das <a href="http://hg.slitaz.org/tazwok/raw-file/tip/doc/tazwok.en.html">Tazwok Manual</a>.
+zur VerfÃ¼gung, ebenso das <a href="http://hg.slitaz.org/tazwok/raw-file/tip/doc/tazwok.en.html">Tazwok Manual</a>.
 </p>
 
 <a name="website"></a>
 <h2>Website Management und Handbuch</h2>
 <p>
-Das Management der Website findet über das Mercurial Repository 
+Das Management der Website findet Ã¼ber das Mercurial Repository 
 statt. Dazu gibt es einige Tools:<br>
-<code>rsync</code> ist ist ein Synchronisierungstool, lokal und fürs Netzwerk. Es nutzt einen
-enorm schnellen und kleinen Algorithmus, der es zu einer nützlichen Anwendung macht. 
-<code>diff</code> wird dafür verwendet, Logs hochzualden, <code>patch</code> 
+<code>rsync</code> ist ist ein Synchronisierungstool, lokal und fÃ¼rs Netzwerk. Es nutzt einen
+enorm schnellen und kleinen Algorithmus, der es zu einer nÃ¼tzlichen Anwendung macht. 
+<code>diff</code> wird dafÃ¼r verwendet, Logs hochzualden, <code>patch</code> 
 dient des Uploads des eigentlichen Inhalte.
 <br><br>
-Das deutsche Handbuch ist vollständig ins Wiki verlegt, jeder kann sich gerne daran 
+Das deutsche Handbuch ist vollstÃ¤ndig ins Wiki verlegt, jeder kann sich gerne daran 
 konstruktiv beteiligen. Eine Anmeldung ist erforderlich.
 </p>
 <p>
-Als grafische Oberfläche kann Grsync dienen, schneller geht es aber über die 
+Als grafische OberflÃ¤che kann Grsync dienen, schneller geht es aber Ã¼ber die 
 Kommandozeile. Um die Seite zum ersten Mal in das  Vezeichnis  
 <code>/home/tux/Public/slitaz/website</code> herunterzuladen:
 </p>
@@ -237,8 +237,8 @@ Kommandozeile. Um die Seite zum ersten Mal in das  Vezeichnis
 <p>
 Die Anwendungen <code>diff</code> und <code>patch</code> sind Kommando-Zeilen 
 Tools zur Erzeugung von Unterschieden zwischen zwei Dateien. 
-Diese Methode wird häufig bei Zusammenarbeit genutzt, Veränderungen und Metadaten 
-können leicht und schnell eingesehen werden.
+Diese Methode wird hÃ¤ufig bei Zusammenarbeit genutzt, VerÃ¤nderungen und Metadaten 
+kÃ¶nnen leicht und schnell eingesehen werden.
 Um eine <code>diff</code> Datei zu erstellen, die in einem Texteditor gelesen werden kann 
 dient die Option <code>-u</code> :
 </p>
@@ -246,7 +246,7 @@ dient die Option <code>-u</code> :
  $ diff -u file.orig file.new &gt; file.diff
 </pre>
 <p>
-Um den Patch zu übernehmen:
+Um den Patch zu Ã¼bernehmen:
 </p>
 <pre>
  $ patch file.orig file.diff

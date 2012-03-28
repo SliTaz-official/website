@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
 <head>
 	<title>SliTaz GNU/Linux (de)</title>
-	<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="description" content="SliTaz GNU/Linux LiveCD" />
 	<meta name="keywords" lang="en" content="System, free, gnu, linux, software opensource, livecd LINUX in RAM" />
-	<meta name="author" content="F Steiner (Sevala), François (oui)"/>
+	<meta name="author" content="F Steiner (Sevala), FranÃ§ois (oui)"/>
 	<?php include("../lib/html/meta-link.html"); ?>
 </head>
 <body>
@@ -23,11 +23,11 @@
 			SliTaz ist eine minimale, freie GNU/Linux Distribution. Das
 			Ziel von SliTaz ist es, eine GNU/Linux Distribution zu 
 			schaffen, die vollkommen aus dem Arbeitsspeicher (RAM) 
-			läuft.
+			lÃ¤uft.
 		</p>
 		<p>
-			SliTaz's CD-Image wird nie eine Größe von 35 MB übersteigen
-			- bei einer sinnvollen Auswahl nützlicher Software.
+			SliTaz's CD-Image wird nie eine GrÃ¶ÃŸe von 35 MB Ã¼bersteigen
+			- bei einer sinnvollen Auswahl nÃ¼tzlicher Software.
 			<a href="about/">Mehr erfahren...</a>
 		</p>
 	</div>
@@ -38,13 +38,13 @@
 	<a href="../i18n.php">
 		<img src="../images/locale.png" alt="locale.png" /></a>
 	<a href="../da/">Dansk</a>
-	<a href="../de/">Deutsch</a>
 	<a href="../en/">English</a>
-	<a href="../es/">Español</a>
-	<a href="../fr/">Français</a>
+	<a href="../es/">EspaÃ±ol</a>
+	<a href="../fr/">FranÃ§ais</a>
 	<a href="../id/">Indonesian</a>
 	<a href="../it/">Italiano</a>
-	<a href="../pt/">Português</a>
+	<a href="../pt/">PortuguÃªs</a>
+	<a href="../ru/">Ð ÑƒÑÑÐºÐ¸Ð¹</a>
 	<a href="../cn/">Chinese</a>
 </div>
 
@@ -64,9 +64,9 @@
 
 <p>
 Die SliTaz-Webseite bietet die wichtigsten Projektneuheiten an, und ausserdem
-neuerdings die Labors mit Nachrichten zu der allgemeinen Aktivität der
+neuerdings die Labors mit Nachrichten zu der allgemeinen AktivitÃ¤t der
 verschiedenen Unterprojekten. Diese Nachrichten sind auch als
-<a href="/rss.xml">XML-Sendungen</a> erhältlich. Das Projekt bietet ausserdem
+<a href="/rss.xml">XML-Sendungen</a> erhÃ¤ltlich. Das Projekt bietet ausserdem
 einen kleinen monatlichen Informationsbrief in Englisch und Chinesisch an.
 </p>
 
@@ -93,7 +93,7 @@ einen kleinen monatlichen Informationsbrief in Englisch und Chinesisch an.
 <!-- End of news -->
 </div>
 
-<h2>Projekt-Aktivität</h2>
+<h2>Projekt-AktivitÃ¤t</h2>
 <?php
 	require_once("../lib/get-feeds.php");
 ?>
@@ -106,7 +106,7 @@ einen kleinen monatlichen Informationsbrief in Englisch und Chinesisch an.
 		<?php get_feed("scn.xml"); ?>
 	</div>
 	<p class="activity_more">
-		<a href="http://scn.slitaz.org/activity/">Mehr Aktivität</a>
+		<a href="http://scn.slitaz.org/activity/">Mehr AktivitÃ¤t</a>
 	</p>
 </div>
 

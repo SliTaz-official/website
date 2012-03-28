@@ -1,12 +1,12 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="da" lang="da">
-<! Danish (da) translation by Bo Vagner Højer - bohoejer@slitaz.org
+<!-- Danish (da) translation by Bo Vagner HÃ¸jer - bohoejer@slitaz.org
    Member of Labitat Hackerspace, Copenhagen - www.labitat.dk
-   visit our hackerspace every tuesday evening for free - always hot coffee >
+   visit our hackerspace every tuesday evening for free - always hot coffee -->
 <head>
-    <title>SliTaz - Udviklernes hjørne</title>
-    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <title>SliTaz - Udviklernes hjÃ¸rne</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="SliTaz GNU/Linux projekt overblik" />
     <meta name="keywords" lang="da" content="om slitaz, gnu, linux, minidistribution, livecd" />
     <meta name="robots" content="index, follow, all" />
@@ -22,7 +22,7 @@
 	<div id="logo"></div>
 	<div id="network">
 		<a href="http://www.slitaz.org/netmap.php">
-			<img src="../../images/network.png" alt="netværk:" /></a>
+			<img src="../../images/network.png" alt="netvÃ¦rk:" /></a>
 		<a href="http://scn.slitaz.org/">Samfund</a>
 		<a href="http://doc.slitaz.org/">Vejledning</a>
 		<a href="http://forum.slitaz.org/">Forum</a>
@@ -43,7 +43,7 @@
 				<li><a href="../devel/">Udvikling</a></li>
 				<li><a href="../packages/">Programpakker</a></li>
 				<li><a href="../artwork/">Grafik</a></li>
-				<li><a href="../search.html">Søgning</a></li>
+				<li><a href="../search.html">SÃ¸gning</a></li>
 			</ul>
 		</div>
 		<div class="left_box">
@@ -60,13 +60,13 @@
 	<div id="block_info">
 		<h4>Udvikling</h4>
 		<p>
-		   SliTaz er en netværksbaseret distribution lavet af mange
+		   SliTaz er en netvÃ¦rksbaseret distribution lavet af mange
 		   mennesker fra hele verdenen og alle er velkommen til at
-		   hjælpe og blive indvolveret i projektet.
+		   hjÃ¦lpe og blive indvolveret i projektet.
 		</p>
 		<p>
 			<img src="../../images/users.png" alt="users.png" />
-			<a href="http://scn.slitaz.org/">Følg os på SCN</a> og
+			<a href="http://scn.slitaz.org/">FÃ¸lg os pÃ¥ SCN</a> og
 			<a href="../mailing-list.html">postlisten</a>
 		</p>
 	</div>
@@ -75,13 +75,13 @@
 <!-- Content -->
 <div id="content">
 
-<h2>Udviklernes hjørne</h2>
+<h2>Udviklernes hjÃ¸rne</h2>
 
 <ul>
 	<li><a href="forge.php">Smedien</a> - Samarbejdende styring, KISS,
 	retningslinier, Mercurial depoter, hjemmeside og andre tjenester.</li>
 	<li><a href="../../i18n.php">Internationaliseringsprojekt</a> -
-	Oversættelse, mål og styring.</li>
+	OversÃ¦ttelse, mÃ¥l og styring.</li>
 	<li><a href="http://hg.slitaz.org/" >Mercurial depoter</a></li>
 	<li><a href="http://bugs.slitaz.org/">SliTaz Fejlsporing</a></li>
 </ul>
@@ -89,28 +89,28 @@
 <a name="devel"></a>
 <h2>Bliv aktiv</h2>
 <p>
-   SliTaz er en brugerdrevet åben kildekode distribution. Alle, fra brugere, til hackere
-   og udviklere, er velkommen til at deltage og bidrage, der er altid noget at gøre.
-    For eksempel at læse korrektur eller skrive dokumentation, sende fejl eller rettelser
-    til postlisten, få adgang til wokken og skub nogle nye programpakker op
-    eller simpelt hen at hjælpe andre på postlisten 
+   SliTaz er en brugerdrevet Ã¥ben kildekode distribution. Alle, fra brugere, til hackere
+   og udviklere, er velkommen til at deltage og bidrage, der er altid noget at gÃ¸re.
+    For eksempel at lÃ¦se korrektur eller skrive dokumentation, sende fejl eller rettelser
+    til postlisten, fÃ¥ adgang til wokken og skub nogle nye programpakker op
+    eller simpelt hen at hjÃ¦lpe andre pÃ¥ postlisten 
 	eller <a href="http://forum.slitaz.org/">forumet</a>. 
 	SliTaz har Mercurial
-	depoter lagt på et SliTaz system, udviklere kan efter behov bede om et nyt depot
-	og bidragydere har skriveadgang for at rette slå- og stavefejl , scripts, etc.
+	depoter lagt pÃ¥ et SliTaz system, udviklere kan efter behov bede om et nyt depot
+	og bidragydere har skriveadgang for at rette slÃ¥- og stavefejl , scripts, etc.
 </p>
 <p>
-	SliTaz er et lille netværkssamfund og det lytter til dets brugere.
+	SliTaz er et lille netvÃ¦rkssamfund og det lytter til dets brugere.
 	Der er mange udviklere, 
-	som er aktive på <a href="http://forum.slitaz.org/">forumet</a>
+	som er aktive pÃ¥ <a href="http://forum.slitaz.org/">forumet</a>
 	og <a href="../mailing-list.html">postlisten</a>.
 </p>
 <p>
    For grafikere og kunstnere er der en dedikeret hjemmeside, hvor du 
    kan poste grafik og billeder, efter at have oprettet en konto.
-	Hjemmesiden er drevet af netværkssamfundet. Hvis du vil give en hånd
+	Hjemmesiden er drevet af netvÃ¦rkssamfundet. Hvis du vil give en hÃ¥nd
 	med at administrere siden, kontakt da en bidragyder eller 
-	send en besked på postlisten. Deltag i SliTaz samfundets 
+	send en besked pÃ¥ postlisten. Deltag i SliTaz samfundets 
 	<a href="http://scn.slitaz.org/groups/artwork/">grafikgruppe</a>
 </p>
 
@@ -120,7 +120,7 @@
 <!-- Footer -->
 <div id="footer">
 	Ophavsret &copy; <span class="year"></span>
-	<a href="http://www.slitaz.org/">SliTaz</a> - Netværk:
+	<a href="http://www.slitaz.org/">SliTaz</a> - NetvÃ¦rk:
 	<a href="http://scn.slitaz.org/">Samfund</a>
 	<a href="http://doc.slitaz.org/">Vejledning</a>
 	<a href="http://forum.slitaz.org/">Forum</a>

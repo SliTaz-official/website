@@ -1,15 +1,15 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="da" lang="da">
-<!-- Danish (da) translation by Bo Vagner Højer - bohoejer@slitaz.org
+<!-- Danish (da) translation by Bo Vagner HÃ¸jer - bohoejer@slitaz.org
    Member of Labitat Hackerspace, Copenhagen - www.labitat.dk
-   visit our hackerspace every tuesday evening for free - always hot coffee -->     
+   visit our hackerspace every tuesday evening for free - always hot coffee -->
 <head>
     <title>SliTaz - Hent den nu</title>
-    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="Hent SliTaz GNU/Linux LiveCD gratis" />
     <meta name="keywords" lang="da" content="kildekode, iso, cdrom, livecd, hent, gratis, fri" />
-    <meta name="author" content="Bo Vagner Højer" />
+    <meta name="author" content="Bo Vagner HÃ¸jer" />
 	<?php include("../../lib/html/meta-link.html"); ?>
 </head>
 <body>
@@ -27,7 +27,7 @@ include("../../lib/html/header.html");
 		<h4>Hent SliTaz</h4>
 		<p>
 			Hent den seneste stabile version til dagligt brug. 
-			Brug udviklingsversionen til at teste og hjælpe os med at forbedre distibutionen.
+			Brug udviklingsversionen til at teste og hjÃ¦lpe os med at forbedre distibutionen.
 		</p>
 		<div class="button">
 			Hent:
@@ -40,14 +40,14 @@ include("../../lib/html/header.html");
 <!-- Languages -->
 <div id="lang">
 	<a href="../i18n.php">
-		<img src="../../images/locale.png" alt="locale.png" /></a>
-	<a href="../../da/get/">Dansk</a>
+		<img src="../../images/locale.png" alt="Locale:" /></a>
 	<a href="../../de/get/">Deutsch</a>
 	<a href="../../en/get/">English</a>
-	<a href="../../es/get/">Español</a>
-	<a href="../../fr/get/">Français</a>
+	<a href="../../es/get/">EspaÃ±ol</a>
+	<a href="../../fr/get/">FranÃ§ais</a>
 	<a href="../../it/get/">Italiano</a>
-	<a href="../../pt/get/">Português</a>
+	<a href="../../pt/get/">PortuguÃªs</a>
+	<a href="../../ru/get/">Ð ÑƒÑÑÐºÐ¸Ð¹</a>
 	<a href="../../cn/get/">Chinese</a>
 </div>
 
@@ -69,9 +69,9 @@ include("../../lib/html/header.html");
 <h3>General information</h3>
 <p>
 	Denne del af hjemmesiden giver dig mulighed for at hente en gratis kopi
-	af SliTaz GNU/Linux LiveCDen eller hente værktøjer og kilde kode.
-	For at komme igang med at benytte LiveCD afbildningen kan du læse den engelske
-	<a href="../doc/">vejledning</a>. Du kan også finde hjælp og støtte på
+	af SliTaz GNU/Linux LiveCDen eller hente vÃ¦rktÃ¸jer og kilde kode.
+	For at komme igang med at benytte LiveCD afbildningen kan du lÃ¦se den engelske
+	<a href="../doc/">vejledning</a>. Du kan ogsÃ¥ finde hjÃ¦lp og stÃ¸tte pÃ¥
 	SliTaz's <a href="http://forum.slitaz.org/forum/scandinavian">skandinaviske forum</a>.
 </p>
 
@@ -82,27 +82,27 @@ include("../../lib/html/header.html");
 	<a href="http://mirror.switch.ch/">SWITCHmirror</a>,
 	i Kina af LupaWorld, i USA af
 	<a href="http://distro.ibiblio.org/pub/linux/distributions/">Ibiblio</a>
-	og i Brasilien af <a href="http://www.c3sl.ufpr.br/en/">UFPR</a>. Kæmpe 
-	stor tak til værterne.
+	og i Brasilien af <a href="http://www.c3sl.ufpr.br/en/">UFPR</a>. KÃ¦mpe 
+	stor tak til vÃ¦rterne.
 </p>
 
 <ul>
-	<li>Schweitz - filspejl beværtet af SWITCHmirror (10 Gbit/s) via
+	<li>Schweitz - filspejl bevÃ¦rtet af SWITCHmirror (10 Gbit/s) via
 	<a href="http://mirror.switch.ch/ftp/mirror/slitaz/">HTTP</a> eller
 	<a href="ftp://mirror.switch.ch/mirror/slitaz/">FTP</a></li>
 
-	<li>Frankrig - filspejl beværtet af TuxFamily via
+	<li>Frankrig - filspejl bevÃ¦rtet af TuxFamily via
 	<a href="http://download.tuxfamily.org/slitaz/">HTTP</a> eller
 	<a href="ftp://download.tuxfamily.org/slitaz/">FTP</a></li>
 
-	<li>Kina - filspejl beværtet af LupaWorld via
+	<li>Kina - filspejl bevÃ¦rtet af LupaWorld via
 	<a href="http://mirror.lupaworld.com/slitaz/">HTTP</a></li>
 
-	<li>USA - filspejl beværtet af by Ibiblio via
+	<li>USA - filspejl bevÃ¦rtet af by Ibiblio via
 	<a href="http://distro.ibiblio.org/pub/linux/distributions/slitaz/">HTTP</a> eller
 	<a href="ftp://distro.ibiblio.org/pub/linux/distributions/slitaz/">FTP</a></li>
 
-	<li>Brasilien - filspejl beværtet af UFPR via
+	<li>Brasilien - filspejl bevÃ¦rtet af UFPR via
 	<a href="http://slitaz.c3sl.ufpr.br/">HTTP</a> eller
 	<a href="ftp://slitaz.c3sl.ufpr.br/slitaz/">FTP</a></li>
 </ul>
@@ -110,11 +110,11 @@ include("../../lib/html/header.html");
 <a name="sources"></a>
 <h3>Kildekode</h3>
 <p>
-	Tazpkg (pakkehåndtering), Tazlito (SliTaz Live værktøj), Tazwok (kildekodebygger),
-	Tazusb (LiveUSB værktøj) og SliTaz værktøjer kan alle hentes fra
-	<a href="http://www.tuxfamily.org/">TuxFamily</a> filspejlet. Bemærk at 
-	alle værktøjerne er som standard installeret på SliTaz og 
-	kildekode er kommenteret på engelsk. 
+	Tazpkg (pakkehÃ¥ndtering), Tazlito (SliTaz Live vÃ¦rktÃ¸j), Tazwok (kildekodebygger),
+	Tazusb (LiveUSB vÃ¦rktÃ¸j) og SliTaz vÃ¦rktÃ¸jer kan alle hentes fra
+	<a href="http://www.tuxfamily.org/">TuxFamily</a> filspejlet. BemÃ¦rk at 
+	alle vÃ¦rktÃ¸jerne er som standard installeret pÃ¥ SliTaz og 
+	kildekode er kommenteret pÃ¥ engelsk. 
 	Hent kildekode med
 	<a href="http://mirror.slitaz.org/sources/">HTTP</a> eller
 	<a href="http://mirror.slitaz.org/sources/">FTP</a>
@@ -126,8 +126,8 @@ include("../../lib/html/header.html");
 	SliTaz stabile version giveret modent operativsystem, testet bedt af
 	en aktiv brugerskare. Kerne LiveCDen tilbyder dig et stort udvalg 
 	universelt anvendelige programpakker omhyggeligt integreret til denne
-	distribution, således at du får et sammenhængende og robust system.
-	<?php echo "Nuværende stabile version $stable_ver blev frigivet den: $stable_rel."; ?>
+	distribution, sÃ¥ledes at du fÃ¥r et sammenhÃ¦ngende og robust system.
+	<?php echo "NuvÃ¦rende stabile version $stable_ver blev frigivet den: $stable_rel."; ?>
 </p>
 
 <p class="box">
@@ -138,8 +138,8 @@ include("../../lib/html/header.html");
 </p>
 
 <p>
-	En startbar cdrom med alle tilgængelige programpakker for version stabil
-	genereres hver dag. Den indeholder også en kopi af denne hjemmeside og
+	En startbar cdrom med alle tilgÃ¦ngelige programpakker for version stabil
+	genereres hver dag. Den indeholder ogsÃ¥ en kopi af denne hjemmeside og
 	kan benyttes uden en internetforbindelse via install.sh scriptet.
 </p>
 
@@ -155,8 +155,8 @@ include("../../lib/html/header.html");
 <p>
 	SliTaz "Cooking" LiveCD  er en fuldt brugbar, men konstant udviklet 
 	version. Den lader dig teste de seneste forbedringer og programpakker,
-	efterspørge nye funktioner eller reportere fejl for at hjælpe os med 
-	at forberede den næste stabile version.
+	efterspÃ¸rge nye funktioner eller reportere fejl for at hjÃ¦lpe os med 
+	at forberede den nÃ¦ste stabile version.
 </p>
 
 <p class="box">
@@ -167,12 +167,12 @@ include("../../lib/html/header.html");
 </p>
 
 <p>
-	En startbar dvd med alle tilgængelige programpakker for udviklingsversionen
-	genereres hver dag. Den indeholder også en kopi af denne hjemmeside og
+	En startbar dvd med alle tilgÃ¦ngelige programpakker for udviklingsversionen
+	genereres hver dag. Den indeholder ogsÃ¥ en kopi af denne hjemmeside og
 	kan benyttes uden en internetforbindelse via install.sh scriptet.
-	Bemærk: Denne dvd kan også 
+	BemÃ¦rk: Denne dvd kan ogsÃ¥ 
 	<a href="http://syslinux.zytor.com/wiki/index.php/Doc/isolinux#HYBRID_CD-ROM.2FHARD_DISK_MODE">
-	installeres på en usb-pind</a>, men vil overskrive alle data.
+	installeres pÃ¥ en usb-pind</a>, men vil overskrive alle data.
 </p>
 
 <p class="box">
@@ -185,9 +185,9 @@ include("../../lib/html/header.html");
 <a name="floppy"></a>
 <h2>Floppy startdisk</h2> 
 <p>
-	Denne floppydisk kan starte SliTaz på en gammel pc med eller uden 
+	Denne floppydisk kan starte SliTaz pÃ¥ en gammel pc med eller uden 
 	cdromdrev. Den kan starte SliTaz fra en usb-pind, en SliTaz cd/dvd, 
-	en harddisk, netværk gennem PXE og selv 
+	en harddisk, netvÃ¦rk gennem PXE og selv 
 	<a href="http://boot.slitaz.org/">internettet gennem gPXE</a>.
 </p>
 
@@ -205,8 +205,8 @@ include("../../lib/html/header.html");
 </p>
 
 <p>
-	Et <a href="http://mirror.slitaz.org/floppies/">diskettesæt</a>
-	er også tilgængelig for mennesker som ikke kan benytte en cdrom,
+	Et <a href="http://mirror.slitaz.org/floppies/">diskettesÃ¦t</a>
+	er ogsÃ¥ tilgÃ¦ngelig for mennesker som ikke kan benytte en cdrom,
 	usb-pind eller netkort.
 </p>
 
