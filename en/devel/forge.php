@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
     <title>SliTaz - Forge (en)</title>
-    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="slitaz developers forge" />
     <meta name="keywords" lang="en" content="slitaz, devel, hg, bugs" />
     <meta name="robots" content="index, follow, all" />

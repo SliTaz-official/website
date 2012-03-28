@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
     <title>SliTaz - Packages</title>
-    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="SliTaz GNU/Linux LiveCD packages" />
     <meta name="keywords" lang="en" content="package, tazpkg" />
     <meta name="author" content="Christophe Lincoln, Paul Issot"/>

@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
     <title>SliTaz - News archives 2010</title>
-    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="SliTaz news archives info release" />
     <meta name="keywords" lang="en" content="System, free, gnu, linux, opensource software, livecd in RAM" />
     <meta name="robots" content="index, follow, all" />

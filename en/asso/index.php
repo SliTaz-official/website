@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 	<title>SliTaz - Association</title>
-	<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="description" content="SliTaz GNU/Linux asso non-profit donate" />
 	<meta name="keywords" lang="en" content="about slitaz, gnu, linux, mini distro, livecd" />
 	<meta name="author" content="Christophe Lincoln" />
@@ -34,11 +34,12 @@
 <!-- Languages -->
 <div id="lang">
 	<a href="/i18n.php">
-		<img src="/images/locale.png" alt="[ Locale ]" /></a>
-	<a href="/en/asso/">English</a>
-	<a href="/es/asso/">Espa�ol</a>
-	<a href="/fr/asso/">Fran�ais</a>
-	<a href="/pt/asso/">Portugu�s</a>
+		<img src="/images/locale.png" alt="Locale:" /></a>
+	English
+	<a href="/es/asso/">Español</a>
+	<a href="/fr/asso/">Français</a>
+	<a href="/pt/asso/">Português</a>
+	<a href="/ru/asso/">Русский</a>
 </div>
 
 <!-- Content -->

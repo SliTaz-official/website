@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
     <title>SliTaz - About the project</title>
-    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="SliTaz GNU/Linux project information overview" />
     <meta name="keywords" lang="en" content="about slitaz, gnu, linux, mini distro, livecd" />
     <meta name="robots" content="index, follow, all" />
@@ -39,12 +39,13 @@
 <!-- Languages -->
 <div id="lang">
 	<a href="../i18n.php">
-		<img src="../../images/locale.png" alt="locale.png" /></a>
+		<img src="../../images/locale.png" alt="Locale:" /></a>
 	<a href="../../de/about/">Deutsch</a>
-	<a href="../../en/about/">English</a>
-	<a href="../../es/about/">Espa�ol</a>
-	<a href="../../fr/about/">Fran�ais</a>
-	<a href="../../pt/about/">Portugu�s</a>
+	English
+	<a href="../../es/about/">Español</a>
+	<a href="../../fr/about/">Français</a>
+	<a href="../../pt/about/">Português</a>
+	<a href="../../ru/about/">Русский</a>
 	<a href="../../cn/about/">Chinese</a>
 </div>
 
@@ -138,7 +139,7 @@ everyone for support.
 	<li><a href="http://www.junauza.com/2008/03/slitaz-gnulinux-smallest-desktop-distro.html"
 		>Tech Source</a> - By Jun Auza.</li>
 	<li><a href="http://beranger.org/index.php?page=diary&amp;2008/03/31/07/04/42-a-quick-look-over-slitaz-1-0"
-		>Planet B�ranger</a> - By B�ranger.</li>
+		>Planet Béranger</a> - By Béranger.</li>
 	<li><a href="http://kmandla.wordpress.com/2008/04/02/slitaz-10-on-450mhz-k6-2-256mb/"
 		>Wordpress</a> - By K.Mandla.</li>
 	<li><a href="http://reddevil62-techhead.blogspot.com/2008/04/damn-minuscule-linux-first-look-at.html"

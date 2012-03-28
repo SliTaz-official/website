@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 	<title>SliTaz GNU/Linux (en)</title>
-	<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="description" content="SliTaz GNU/Linux English Website" />
 	<meta name="keywords" lang="en" content="System, free, gnu, linux, software opensource, livecd LINUX in RAM" />
 	<meta name="author" content="Paul Issot"/>
@@ -38,12 +38,13 @@
 		<img src="../images/locale.png" alt="Locale:" /></a>
 	<a href="../da/">Dansk</a>
 	<a href="../de/">Deutsch</a>
-	<a href="../en/">English</a>
-	<a href="../es/">Espa�ol</a>
-	<a href="../fr/">Fran�ais</a>
+	English
+	<a href="../es/">Español</a>
+	<a href="../fr/">Français</a>
 	<a href="../id/">Indonesian</a>
 	<a href="../it/">Italiano</a>
-	<a href="../pt/">Portugu�s</a>
+	<a href="../pt/">Português</a>
+	<a href="../ru/">Русский</a>
 	<a href="../cn/">Chinese</a>
 </div>
 

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="iso-8859-1" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
 	<atom:link href="http://www.slitaz.org/rss.xml" rel="self" type="application/rss+xml" />
@@ -21,7 +21,7 @@
 	<item>
 		<title>SliTaz Website now in Russian</title>
 		<link>http://www.slitaz.org/ru/</link>
-		<guid isPermaLink="true">http://pro.slitaz.org/ru/index.php</guid>
+		<guid isPermaLink="true">http://www.slitaz.org/ru/index.php</guid>
 		<pubDate>Wed, 18 Mar 2012 22:40:00 GMT</pubDate>
 		<description>
 			SliTaz website is now available in Russian! Hugs thanks 

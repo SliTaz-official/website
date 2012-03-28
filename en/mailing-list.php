@@ -3,11 +3,37 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 	<title>SliTaz - Mailing list</title>
-	<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="description" content="slitaz users developpers mailing list" />
 	<meta name="keywords" content="slitaz list mail discuss" lang="fr" />
 	<meta name="author" content="Christophe Lincoln" />
 	<?php include("../lib/html/meta-link.html"); ?>
+<style type="text/css">
+	table {
+		border: 1px solid #444444;
+		width: variable;
+		border-collapse: collapse;
+	}
+	td {
+		border: 1px dotted #6495ed;
+		width: variable;
+		padding: 2px;
+	}
+	.rowodd {
+		background-color: #ffffff;
+	}
+	.roweven {
+		background-color: #e1ffe1; /* the tower */
+	}
+	th {
+		border: 1px solid #444444;
+		width: variable;
+		padding: 4px;
+	}
+	.alignright {
+		text-align: right;
+	}
+</style>
 </head>
 <body>
 
@@ -41,9 +67,10 @@
 <!-- Languages -->
 <div id="lang">
 	<a href="/i18n.php">
-		<img src="/images/locale.png" alt="locale.png" /></a>
-	<a href="/en/mailing-list.php">English</a>
+		<img src="/images/locale.png" alt="Locale:" /></a>
+	English
 	<a href="/it/mailing-list.php">Italiano</a>
+	<a href="/ru/mailing-list.php">Русский</a>
 </div>
 
 <!-- Content -->
@@ -135,32 +162,6 @@ discussion thread (<em>Thread</em>) :
 </p>
 
 <div>
-<style type="text/css">
-	table {
-		border: 1px solid #444444;
-		width: variable;
-		border-collapse: collapse;
-	}
-	td {
-		border: 1px dotted #6495ed;
-		width: variable;
-		padding: 2px;
-	}
-	.rowodd {
-		background-color: #ffffff;
-	}
-	.roweven {
-		background-color: #e1ffe1; /* the tower */
-	}
-	th {
-		border: 1px solid #444444;
-		width: variable;
-		padding: 4px;
-	}
-	.alignright {
-		text-align: right;
-	}
-</style>
 <object type="text/html" width="100%" height="345" data="../lib/archives.php">
 </object>
 </div>

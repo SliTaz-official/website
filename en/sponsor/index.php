@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
     <title>SliTaz - Sponsorship</title>
-    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="SliTaz GNU/Linux asso sponsor" />
     <meta name="keywords" lang="en" content="slitaz pro, slitaz sponsor, support" />
     <meta name="robots" content="index, follow, all" />

@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 	<title>SliTaz - Network Map</title>
-	<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="description" content="slitaz network map" />
 	<meta name="keywords" lang="en" content="slitaz network, slitaz support, slitaz sites" />
 	<meta name="author" content="Christophe Lincoln"/>

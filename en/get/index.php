@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 	<title>SliTaz - Downloads</title>
-	<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="description" content="SliTaz GNU/Linux LiveCD free download" />
 	<meta name="keywords" lang="en" content="source, iso, livecd, get, free" />
 	<meta name="author" content="Christophe Lincoln, Paul Issot"/>
@@ -38,14 +38,15 @@ include("../../lib/html/header.html");
 <!-- Languages -->
 <div id="lang">
 	<a href="../i18n.php">
-		<img src="../../images/locale.png" alt="[ Locale ]" /></a>
+		<img src="../../images/locale.png" alt="Locale:" /></a>
 	<a href="../../da/get/">Dansk</a>
 	<a href="../../de/get/">Deutsch</a>
-	<a href="../../en/get/">English</a>
-	<a href="../../es/get/">Espa�ol</a>
-	<a href="../../fr/get/">Fran�ais</a>
+	English
+	<a href="../../es/get/">Español</a>
+	<a href="../../fr/get/">Français</a>
 	<a href="../../it/get/">Italiano</a>
-	<a href="../../pt/get/">Portugu�s</a>
+	<a href="../../pt/get/">Português</a>
+	<a href="../../ru/get/">Русский</a>
 	<a href="../../cn/get/">Chinese</a>
 </div>
 
