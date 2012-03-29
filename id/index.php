@@ -1,9 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
 <head>
 	<title>SliTaz GNU/Linux (id)</title>
-	<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="description" content="SliTaz GNU/Linux LiveCD" />
 	<meta name="keywords" lang="en" content="SliTaz indonesian" />
 	<meta name="author" content="AjiNalo" />
@@ -61,15 +61,16 @@ include("../lib/html/header.html");
 <!-- Languages -->
 <div id="lang">
 	<a href="../i18n.php">
-		<img src="../images/locale.png" alt="locale.png" /></a>
+		<img src="../images/locale.png" alt="Locale:" /></a>
 	<a href="../da/">Dansk</a>
 	<a href="../de/">Deutsch</a>
 	<a href="../en/">English</a>
-	<a href="../es/">Espa�ol</a>
-	<a href="../fr/">Fran�ais</a>
-	<a href="../id/">Indonesian</a>
+	<a href="../es/">Español</a>
+	<a href="../fr/">Français</a>
+	Indonesian
 	<a href="../it/">Italiano</a>
-	<a href="../pt/">Portugu�s</a>
+	<a href="../pt/">Português</a>
+	<a href="../ru/">Русский</a>
 	<a href="../cn/">Chinese</a>
 </div>
 

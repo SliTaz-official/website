@@ -39,16 +39,17 @@ include("../../lib/html/header.html");
 
 <!-- Languages -->
 <div id="lang">
-	<a href="../i18n.php">
-		<img src="../../images/locale.png" alt="Locale:" /></a>
+	<a href="../../i18n.php"><img src="../../images/locale.png" alt="Locale:" /></a>
+	<b>Dansk</b>
 	<a href="../../de/get/">Deutsch</a>
 	<a href="../../en/get/">English</a>
 	<a href="../../es/get/">Español</a>
 	<a href="../../fr/get/">Français</a>
+	Indonesian
 	<a href="../../it/get/">Italiano</a>
 	<a href="../../pt/get/">Português</a>
 	<a href="../../ru/get/">Русский</a>
-	<a href="../../cn/get/">Chinese</a>
+	<a href="../../cn/get/">中文</a>
 </div>
 
 <!-- Content -->

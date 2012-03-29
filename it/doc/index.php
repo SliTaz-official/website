@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
 <head>
     <title>SliTaz - Documentazione Italiana</title>
-    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="SliTaz GNU/Linux English documentationx part livecd tazpkg packages" />
     <meta name="keywords" lang="en" content="System, free, gnu, linux, opensource software, livecd in RAM" />
     <meta name="author" content="Alessandro Frisenda"/>
@@ -20,14 +20,14 @@
 	<div id="block_info">
 		<h4>Documentazione Inglese</h4>
 		<p>
-			La documentazione ufficiale di SliTaz è disponibile sul Wiki
-			della comunità. I manuali ed una guida per iniziare sono forniti
-			da ogni LiveCD di SliTaz e disponibili attraverso il menù
+			La documentazione ufficiale di SliTaz Ã¨ disponibile sul Wiki
+			della comunitÃ . I manuali ed una guida per iniziare sono forniti
+			da ogni LiveCD di SliTaz e disponibili attraverso il menÃ¹
 			"Documentazione".
 		</p>
 		<ul>
-			<li><a href="http://doc.slitaz.org/it:start">Novo Wiki della Comunità</a></li>
-			<li><a href="http://doc.slitaz.org/en:start">Wiki della Comunità (EN)</a></li>
+			<li><a href="http://doc.slitaz.org/it:start">Novo Wiki della ComunitÃ </a></li>
+			<li><a href="http://doc.slitaz.org/en:start">Wiki della ComunitÃ  (EN)</a></li>
 			<li><a href="http://hg.slitaz.org/slitaz-doc/raw-file/tip/slitaz/index.en.html"
 				>Guida per Iniziare (EN)</a></li>
 		</ul>
@@ -42,11 +42,11 @@
 <p>
 	Il <a href="http://doc.slitaz.org/en:handbook:start">Manuale</a> di SliTaz - 
 	Utilizzo del LiveCD, gestore pacchetti, amministrazione della rete e
-	del sistema e istruzioni specifiche. Questo manuale è uno sforzo della
-	comunità per fornire una documentazione di alta qualità agli utilizzatori
-	di SliTaz. Esso vi aiuterà ad iniziare con SliTaz GNU/Linux e vi mostrerà
+	del sistema e istruzioni specifiche. Questo manuale Ã¨ uno sforzo della
+	comunitÃ  per fornire una documentazione di alta qualitÃ  agli utilizzatori
+	di SliTaz. Esso vi aiuterÃ  ad iniziare con SliTaz GNU/Linux e vi mostrerÃ 
 	come configurare il sistema in base alle vostre esigenze e preferenze.
-	Questa è la documentazione che ti consigliamo di leggere, imparare e
+	Questa Ã¨ la documentazione che ti consigliamo di leggere, imparare e
 	consultare per prima.
 </p>
 <p>
@@ -58,11 +58,11 @@
 
 <h2>Scratchbook</h2>
 <p>
-	Storicamente, lo Scratchbook è stato scritto quando SliTaz è stato creato
+	Storicamente, lo Scratchbook Ã¨ stato scritto quando SliTaz Ã¨ stato creato
 	e non era fatto per essere aggiornato. Ma nel tempo, alcuni contibutori
 	di SliTaz hanno migrato il libro verso il Wiki e hanno apportato alcuni
 	aggiornamenti: <a href="http://doc.slitaz.org/en:scratchbook:start">
-		Scratchbook della Comunità</a>
+		Scratchbook della ComunitÃ </a>
 </p>
 <p>
 	<a href="../en/doc/scratchbook/index.html">Scratchbook Originale</a> di SliTaz -
@@ -90,7 +90,7 @@
 Le note di rilascio di SliTaz forniscono informazioni dettagliate riguardanti
 la versione stabile e danno alcuni utili consigli per aiutarvi ad iniziare
 l'utilizzo del sistema. Sul LiveCD, le note di rilascio sono installate e
-disponibili attraverso il menù "Documentazione".
+disponibili attraverso il menÃ¹ "Documentazione".
 </p>
 
 <ul>

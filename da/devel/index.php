@@ -72,6 +72,21 @@
 	</div>
 </div>
 
+<!-- Languages -->
+<div id="lang">
+	<a href="../../i18n.php"><img src="../../images/locale.png" alt="Sprog:" /></a>
+	<b>Dansk</b>
+	<a href="../../de/devel/">Deutsch</a>
+	<a href="../../en/devel/">English</a>
+	<a href="../../es/devel/">Español</a>
+	<a href="../../fr/devel/">Français</a>
+	Indonesian
+	Italiano
+	<a href="../../pt/devel/">Português</a>
+	Русский
+	中文
+</div>
+
 <!-- Content -->
 <div id="content">
 

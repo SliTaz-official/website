@@ -45,10 +45,11 @@
 	<a href="../da/mailing-list.html">Dansk</a>
 	<a href="../de/mailing-list.html">Deutsch</a>
 	<a href="../en/mailing-list.php">English</a>
-	<!--<a href="../es/mailing-list.php">Español</a>-->
+	<b>Español</b>
 	<a href="../fr/mailing-list.html">Français</a>
 	<a href="../it/mailing-list.php">Italiano</a>
 	<a href="../pt/mailing-list.php">Português</a>
+	<a href="../ru/mailing-list.php">Русский</a>
 </div>
 
 <!-- Content -->

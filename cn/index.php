@@ -68,8 +68,7 @@
 
 <!-- Languages -->
 <div id="lang">
-	<a href="../i18n.php">
-		<img src="../images/locale.png" alt="locale.png" /></a>
+	<a href="../i18n.php"><img src="../images/locale.png" alt="Locale:" /></a>
 	<a href="../da/">Dansk</a>
 	<a href="../de/">Deutsch</a>
 	<a href="../en/">English</a>
@@ -79,6 +78,7 @@
 	<a href="../it/">Italiano</a>
 	<a href="../pt/">Português</a>
 	<a href="../ru/">Русский</a>
+	<b>中文</b>
 </div>
 
 <!-- Content -->

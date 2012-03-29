@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
     <title>SliTaz - Pacchetti</title>
-    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="SliTaz GNU/Linux LiveCD packages" />
     <meta name="keywords" lang="en" content="package, tazpkg" />    
     <meta name="author" content="Alessandro Frisenda"/>
@@ -81,7 +81,7 @@
 		>http://mirror.slitaz.org/packages/</a>
 </div>
 
-<h2>Attività</h2>
+<h2>AttivitÃ </h2>
 
 <?php require_once("../../lib/get-feeds.php"); ?>
 
@@ -93,7 +93,7 @@
 		<?php get_feed("wok.xml"); ?>
 	</div>
 	<p class="activity_more">
-		<a href="http://hg.slitaz.org/">Più impegni</a>
+		<a href="http://hg.slitaz.org/">PiÃ¹ impegni</a>
 	</p>
 </div>
 
@@ -104,7 +104,7 @@
 	dettagliata per permettervi di imparare come installare e gestire i
 	pacchetti sulla vostra distribuzione SliTaz GNU/Linux. 
 	I membri del <a href="http://forum.slitaz.org/">forum di supporto</a>
-	vi aiuteranno in caso di complicazioni, ed è inoltre il posto dove
+	vi aiuteranno in caso di complicazioni, ed Ã¨ inoltre il posto dove
 	richiedere un nuovo pacchetto.
 </p>
 

@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
 <head>
 	<title>SliTaz GNU/Linux (it)</title>
-	<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="description" content="SliTaz GNU/Linux LiveCD in italian" />
 	<meta name="keywords" lang="it" content="System, free, gnu, linux, software opensource, livecd LINUX in RAM" />
 	<meta name="author" content="Alessandro Frisenda"/>
@@ -20,14 +20,14 @@
 	<div id="block_info">
 		<h4>Sito Web Italiano</h4>
 		<p>
-			SliTaz è un sistema operativo gratuito che offre un desktop o server
+			SliTaz Ã¨ un sistema operativo gratuito che offre un desktop o server
 			completo in meno di 35 MB.
 		</p>
 		<p>
-			In modalità Live SliTaz può girare completamente nella memoria RAM
+			In modalitÃ  Live SliTaz puÃ² girare completamente nella memoria RAM
 			e partire da dispositivi portatili e rimovibili come un cdrom o una
-			chiavetta USB. Il sistema è sicuro, stabile e facile da utilizzare.
-			<a href="../en/about/">Più informazioni...(en)</a>
+			chiavetta USB. Il sistema Ã¨ sicuro, stabile e facile da utilizzare.
+			<a href="../en/about/">PiÃ¹ informazioni...(en)</a>
 		</p>
 	</div>
 </div>
@@ -35,15 +35,16 @@
 <!-- Languages -->
 <div id="lang">
 	<a href="../i18n.php">
-		<img src="../images/locale.png" alt="locale.png" /></a>
+		<img src="../images/locale.png" alt="Locale:" /></a>
 	<a href="../da/">Dansk</a>
 	<a href="../de/">Deutsch</a>
 	<a href="../en/">English</a>
-	<a href="../es/">Español</a>
-	<a href="../fr/">Français</a>
+	<a href="../es/">EspaÃ±ol</a>
+	<a href="../fr/">FranÃ§ais</a>
 	<a href="../id/">Indonesian</a>
-	<a href="../it/">Italiano</a>
-	<a href="../pt/">Português</a>
+	<b>Italiano</b>
+	<a href="../pt/">PortuguÃªs</a>
+	<a href="../ru/">Ð ÑƒÑÑÐºÐ¸Ð¹</a>
 	<a href="../cn/">Chinese</a>
 </div>
 
@@ -61,20 +62,20 @@
     SliTaz news starting.
 -->
 
-<h2>Ultime Novità</h2>
+<h2>Ultime NovitÃ </h2>
 <p>
-	Il sito di SliTaz offre le novità principali del progetto nonché le novità
-	sulle attività generali dei sotto-progetti sul
-	<a href="http://scn.slitaz.org/">sito della comunità</a>. Entrambi sono
+	Il sito di SliTaz offre le novitÃ  principali del progetto nonchÃ© le novitÃ 
+	sulle attivitÃ  generali dei sotto-progetti sul
+	<a href="http://scn.slitaz.org/">sito della comunitÃ </a>. Entrambi sono
 	disponibili come <a href="../en//rss.xml">feed XML</a>. Il progetto pubblica
 	anche una piccola Newsletter mensile. Questa pagina e il sito web
-	<a href="../">Pagina Principale</a> vi darà una buona panoramica delle
-	ultime novità, impegni e Tweets.
+	<a href="../">Pagina Principale</a> vi darÃ  una buona panoramica delle
+	ultime novitÃ , impegni e Tweets.
 </p>
 
 <div class="box">
 	<img src="../images/news.png" alt=".png" />
-	<a href="http://scn.slitaz.org/">Novità dal Blog</a> |
+	<a href="http://scn.slitaz.org/">NovitÃ  dal Blog</a> |
 	<a href="http://doc.slitaz.org/en:newsletter:start">Newsletter Mensile</a>
 </div>
 
@@ -88,24 +89,24 @@
 	<li>
 	<strong>29 Marzo 2011 - Nuova Cooking 20110329</strong>
 	<p>
-	Il team di SliTaz è felice di annunciare il rilascio di una nuova cooking
+	Il team di SliTaz Ã¨ felice di annunciare il rilascio di una nuova cooking
 	ISO caratterizzata da oltre 2900 pacchetti. Tutti i pacchetti sono stati
 	ricostruiti usando il nostro nuovo strumento di cooking , ora incluso in
 	tazwok. Esso contiene il Kernel Linux 2.6.37 compilato su glibc 2.13,
 	binutils 2.21 &amp; gcc 4.5.2. Il Core LiveCD include Midori 0.3.3. Tazpkg
-	ora è interamente tradotto in Francese e siamo disponibili per ricevere
-	ulteriori traduzioni. Tazwok è stato interamente reiscritto ed è ora
+	ora Ã¨ interamente tradotto in Francese e siamo disponibili per ricevere
+	ulteriori traduzioni. Tazwok Ã¨ stato interamente reiscritto ed Ã¨ ora
 	possibile ricucocere SliTaz da Scratch usando qualsiasi ISO. Questa ISO
-	è la prima di una serie di release candidate che ci porterà ad un rilascio
+	Ã¨ la prima di una serie di release candidate che ci porterÃ  ad un rilascio
 	stabile ovvero la 4.0.
 	</p>
 	<p>
-	Un sacco di lavoro è stato fatto dalla nostra ultima cooking ISO rilasciata
-	a novembre: più di 2200 cambiamenti sono stati apportati al lavoro, e diverse
+	Un sacco di lavoro Ã¨ stato fatto dalla nostra ultima cooking ISO rilasciata
+	a novembre: piÃ¹ di 2200 cambiamenti sono stati apportati al lavoro, e diverse
 	centinaia ancora negli strumenti fatti in casa. Siamo orgogliosi di
-	annunciare che la comunità di SliTaz è cresciuta un sacco in questi ultimi
-	mesi: lo scorso anno, molti più cambiamenti sono stati apportati che nei
-	quattro precedenti. Comunque, quantità non significa qualità. Abbiamo
+	annunciare che la comunitÃ  di SliTaz Ã¨ cresciuta un sacco in questi ultimi
+	mesi: lo scorso anno, molti piÃ¹ cambiamenti sono stati apportati che nei
+	quattro precedenti. Comunque, quantitÃ  non significa qualitÃ . Abbiamo
 	bisogno il vostro aiuto per testare questa nuova ISO per poi riportare
 	eventuali bugs. Se volete, siete i benvenuti per aiutare a sistemare i
 	problemi conosciuti prima che la 4.0 venga rilasciata. Puoi partecipare
@@ -115,7 +116,7 @@
 	</p>
 	</li>
 
-	<li><a href="../en/news/">Più novità</a> o sfoglia gli archivi (English):
+	<li><a href="../en/news/">PiÃ¹ novitÃ </a> o sfoglia gli archivi (English):
 	<a href="../en/news/2007.html">2007</a> |
 	<a href="../en/news/2008.html">2008</a> |
 	<a href="../en/news/2009.html">2009</a></li>
@@ -124,7 +125,7 @@
 <!-- End of news -->
 </div>
 
-<h2>Attività del Progetto</h2>
+<h2>AttivitÃ  del Progetto</h2>
 <?php
 	require_once("../lib/get-feeds.php");
 ?>
@@ -137,7 +138,7 @@
 		<?php get_feed("scn.xml"); ?>
 	</div>
 	<p class="activity_more">
-		<a href="http://scn.slitaz.org/activity/">Più Attività</a>
+		<a href="http://scn.slitaz.org/activity/">PiÃ¹ AttivitÃ </a>
 	</p>
 </div>
 
@@ -161,17 +162,17 @@
 		<?php get_feed("wok.xml"); ?>
 	</div>
 	<p class="activity_more">
-		<a href="http://hg.slitaz.org/">Più Impegni</a>
+		<a href="http://hg.slitaz.org/">PiÃ¹ Impegni</a>
 	</p>
 </div>
 
 <h2>Supportaci</h2>
 <p>
-	Rendi SliTaz ancora più popolare o fai una donazione. Puoi utlizzare PayPal
+	Rendi SliTaz ancora piÃ¹ popolare o fai una donazione. Puoi utlizzare PayPal
 	o un Flattr micropayment per supportarci monetariamente. Puoi parlare
 	del nostro progetto tramite Blog, Tweets, o qualsiasi altra cosa per
 	aiutarci a diffonderlo. Puoi anche prendere parte direttamente al
-	progetto sulla <a href="http://scn.slitaz.org/">Comunità di SliTaz</a>.
+	progetto sulla <a href="http://scn.slitaz.org/">ComunitÃ  di SliTaz</a>.
 </p>
 
 <?php include("../lib/html/donate.html"); ?>

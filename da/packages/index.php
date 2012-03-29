@@ -75,6 +75,21 @@
 	</div>
 </div>
 
+<!-- Languages -->
+<div id="lang">
+	<a href="../../i18n.php"><img src="../../images/locale.png" alt="Locale:" /></a>
+	<b>Dansk</b>
+	<a href="../../de/packages/">Deutsch</a>
+	<a href="../../en/packages/">English</a>
+	<a href="../../es/packages/">Español</a>
+	<a href="../../fr/packages/">Français</a>
+	Indonesian
+	<a href="../../it/packages/">Italiano</a>
+	<a href="../../pt/packages/">Português</a>
+	<a href="../../ru/packages/">Русский</a>
+	<a href="../../cn/packages/">中文</a>
+</div>
+
 <!-- Content -->
 <div id="content">
 

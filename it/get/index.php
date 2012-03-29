@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
 <head>
     <title>SliTaz - Scarica</title>
-    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="SliTaz GNU/Linux LiveCD free download" />
     <meta name="keywords" lang="en" content="source, iso, livecd, get, free" />
     <meta name="author" content="Alessandro Frisenda"/>
@@ -38,14 +38,15 @@ include("../../lib/html/header.html");
 <!-- Languages -->
 <div id="lang">
 	<a href="../i18n.php">
-		<img src="../../images/locale.png" alt="locale.png" /></a>
+		<img src="../../images/locale.png" alt="Locale:" /></a>
 	<a href="../../da/get/">Dansk</a>
 	<a href="../../de/get/">Deutsch</a>
 	<a href="../../en/get/">English</a>
-	<a href="../../es/get/">Español</a>
-	<a href="../../fr/get/">Français</a>
-	<a href="../../it/get/">Italiano</a>
-	<a href="../../pt/get/">Português</a>
+	<a href="../../es/get/">EspaÃ±ol</a>
+	<a href="../../fr/get/">FranÃ§ais</a>
+	<b>Italiano</b>
+	<a href="../../pt/get/">PortuguÃªs</a>
+	<a href="../../ru/get/">Ð ÑƒÑÑÐºÐ¸Ð¹</a>
 	<a href="../../cn/get/">Chinese</a>
 </div>
 
@@ -76,7 +77,7 @@ include("../../lib/html/header.html");
 <p>
 	Questa parte del sito vi permette di scaricare una copia gratuita del LiveCD
 	di SliTaz GNU/Linux o di ottenere strumenti o codice sorgente dello stesso.
-	Per iniziare ad utilizzare il LiveCD contenente l'immagine ISO si può fare
+	Per iniziare ad utilizzare il LiveCD contenente l'immagine ISO si puÃ² fare
 	riferimento alla <a href="../doc/">documentazione</a> online in inglese.
 	Puoi anche trovare aiuto e supporto sul
 	<a href="http://forum.slitaz.org/">Forum di Supporto Italiano</a>.
@@ -84,7 +85,7 @@ include("../../lib/html/header.html");
 
 <h3>Fonti</h3>
 <p>
-	SliTaz è attualmente offerto da fonti Francesi come
+	SliTaz Ã¨ attualmente offerto da fonti Francesi come
 	<a href="http://www.ads-lu.com/" target="_blank">ADS</a>, and
 	<a href="http://www.tuxfamily.org/">TuxFamily</a>. Da fonti Svizzere
 	come <a href="http://mirror.switch.ch/">SWITCHmirror</a>,
@@ -122,7 +123,7 @@ include("../../lib/html/header.html");
 	(Costruttore Sorgenti), Tazusb (Strumento LiveUSB) e altri strumenti
 	SliTaz possono tutti essere scaricate dalla fonte di
 	<a href="http://www.tuxfamily.org/">TuxFamily</a>. Nota che tutti
-	gli strumenti sono già installati su SliTaz e il codice sorgente è
+	gli strumenti sono giÃ  installati su SliTaz e il codice sorgente Ã¨
 	commentato in Inglese. Scarica i sorgenti da
 	<a href="http://mirror.slitaz.org/sources/">HTTP</a> o
 	<a href="http://mirror.slitaz.org/sources/">FTP</a>
@@ -132,8 +133,8 @@ include("../../lib/html/header.html");
 <h2>LiveCD - Versione Stabile</h2>
 <p>
 	La versione stabile di SliTaz fornisce un sistema operativo maturo, ampiamente
-	estato da una comunità attiva. Il LiveCD offre una larga selezione di pacchetti
-	multi-uso accuratamente integrati nella distribuzione, io risultato è un
+	estato da una comunitÃ  attiva. Il LiveCD offre una larga selezione di pacchetti
+	multi-uso accuratamente integrati nella distribuzione, io risultato Ã¨ un
 	sistema coerente e robusto.
 	<?php echo "La corrente versione stabile $stable_ver  stata rilasciat il: $stable_rel."; ?>
 </p>
@@ -147,7 +148,7 @@ include("../../lib/html/header.html");
 
 <p>
 	Un'immagine CDRoom avviabile di tutti i pacchetti per la versione 3.0 viene
-	generata ogni giorno. Essa contiene anche una copia del sito web e può essere
+	generata ogni giorno. Essa contiene anche una copia del sito web e puÃ² essere
 	utilizzata senza una connessione ad internet tramite lo script install.sh.
 </p>
 
@@ -161,9 +162,9 @@ include("../../lib/html/header.html");
 <a name="cooking"></a>
 <h2>LiveCD - Versione Cooking</h2>
 <p>
-SliTaz "Cooking" LiveCD è una versione in evoluzione costante, completamente
+SliTaz "Cooking" LiveCD Ã¨ una versione in evoluzione costante, completamente
 usabile, essa vi permette di testare gli ultimi miglioramenti e pacchetti,
-chiedere per nuove funzionalità o riportare bugs per aiutare a prepararci
+chiedere per nuove funzionalitÃ  o riportare bugs per aiutare a prepararci
 una versione stabile.
 </p>
 
@@ -176,11 +177,11 @@ una versione stabile.
 
 <p>
 	Un'immagine DVD avviabile di tutti i pacchetti per la versione Cooking viene
-	generata ogni giorno. Essa contiene anche una copia del sito web e può essere
+	generata ogni giorno. Essa contiene anche una copia del sito web e puÃ² essere
 	utilizzata senza una connessione ad internet tramite lo script install.sh.
-	Nota: Quest'immagine può anche essere
+	Nota: Quest'immagine puÃ² anche essere
 	<a href="http://syslinux.zytor.com/wiki/index.php/Doc/isolinux#HYBRID_CD-ROM.2FHARD_DISK_MODE">installata su una chiavetta USB</a>,
-	ma sovrascriverà tutti gli altri dati.
+	ma sovrascriverÃ  tutti gli altri dati.
 </p>
 
 <p class="box">
@@ -193,8 +194,8 @@ una versione stabile.
 <a name="floppy"></a>
 <h2>Disco di avvio Floppy</h2>
 <p>
-	Questo dischetto floppy può avviare SliTaz sui vecchi PC con o senza un CD-ROM.
-	Esso può avviare SliTaz da una chiavetta USB, un CD/DVD SliTaz, un disco
+	Questo dischetto floppy puÃ² avviare SliTaz sui vecchi PC con o senza un CD-ROM.
+	Esso puÃ² avviare SliTaz da una chiavetta USB, un CD/DVD SliTaz, un disco
 	rigido, il LAN da PXE e anche
 	<a href="http://boot.slitaz.org/">Internet con gPXE</a>.
 </p>
@@ -214,7 +215,7 @@ una versione stabile.
 
 <p>
 	Un <a href="http://mirror.slitaz.org/floppies/">set di immagini floppy</a>
-	è inoltre disponibile per chi non può utilizzare CD-ROM, chiavetta USB o
+	Ã¨ inoltre disponibile per chi non puÃ² utilizzare CD-ROM, chiavetta USB o
 	cavo Ethernet.
 </p>
 

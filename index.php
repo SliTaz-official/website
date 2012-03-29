@@ -46,7 +46,7 @@ include("lib/html/header.html");
 
 <!-- Languages -->
 <div id="lang">
-	<a href="i18n.php"><img src="images/locale.png" alt="locale.png" /></a>
+	<a href="i18n.php"><img src="images/locale.png" alt="Locale:" /></a>
 	<a href="da/">Dansk</a>
 	<a href="de/">Deutsch</a>
 	<a href="en/">English</a>
@@ -56,7 +56,7 @@ include("lib/html/header.html");
 	<a href="it/">Italiano</a>
 	<a href="pt/">Português</a>
 	<a href="ru/">Русский</a>
-	<a href="cn/">Chinese</a>
+	<a href="cn/">中文</a>
 </div>
 
 <!-- Content -->

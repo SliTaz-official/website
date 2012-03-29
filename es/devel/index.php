@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
 <head>
     <title>SliTaz - Desarrollo</title>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="SliTaz GNU/Linux project information overview" />
     <meta name="keywords" lang="es" content="about slitaz, gnu, linux, mini distro, livecd" />
     <meta name="robots" content="index, follow, all" />

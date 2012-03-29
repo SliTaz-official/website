@@ -35,15 +35,16 @@
 <!-- Languages -->
 <div id="lang">
 	<a href="../i18n.php">
-		<img src="../images/locale.png" alt="locale.png" /></a>
+		<img src="../images/locale.png" alt="Locale:" /></a>
 	<a href="../da/">Dansk</a>
 	<a href="../de/">Deutsch</a>
 	<a href="../en/">English</a>
-	<a href="../es/">Español</a>
+	<b>Español</b>
 	<a href="../fr/">Français</a>
 	<a href="../id/">Indonesian</a>
 	<a href="../it/">Italiano</a>
 	<a href="../pt/">Português</a>
+	<a href="../ru/">Русский</a>
 	<a href="../cn/">Chinese</a>
 </div>
 

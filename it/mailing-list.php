@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
 <head>
     <title>SliTaz - Mailing list (it)</title>
-    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="slitaz users developpers mailing list" />
     <meta name="keywords" content="slitaz list mail discussione" lang="it" />
     <meta name="author" content="Giovanni Santini" />
@@ -21,7 +21,7 @@
 		<h4>Mailing list</h4>
 		<p>
 			Annunci e discussioni dei collaboratori di Slitaz (inclusi 
-			supporto e sviluppo). Tutto ciò fa parte della mailing list
+			supporto e sviluppo). Tutto ciÃ² fa parte della mailing list
 			(sottoscrizione via email). Partecipaci ora per aiuto o per aderire al progetto.
 		</p>
 		<p>
@@ -41,9 +41,10 @@
 <!-- Languages -->
 <div id="lang">
 	<a href="/i18n.php">
-		<img src="/images/locale.png" alt="locale.png" /></a>
+		<img src="/images/locale.png" alt="Locale:" /></a>
 	<a href="/en/mailing-list.php">English</a>
-	<a href="/it/mailing-list.php">Italiano</a>
+	<b>Italiano</b>
+	<a href="/ru/mailing-list.php">Ð ÑƒÑÑÐºÐ¸Ð¹</a>
 </div>
 
 <!-- Content -->
@@ -52,7 +53,7 @@
 <h2>SliTaz list</h2>
 
 <ul>
-	<li><a href="#about">Cos'è la mailing list</a> - Supporto e sviluppo.</li>
+	<li><a href="#about">Cos'Ã¨ la mailing list</a> - Supporto e sviluppo.</li>
 	<li><a href="#usage">Usare la mailing list</a> - Sottoscrizione, annullamento di questa
 		e possibili operazioni.</li>
 	<li><a href="#archives">Archivi della mailing list</a> -  Leggi e/o 
@@ -62,20 +63,20 @@
 <a name="about"></a>
 <h3>About the list</h3>
 <p>
-La lista di sottoscrizione (mailing list) è la principale forma di comunicazione 
-nella comunità di SliTaz. La lista è aperta a chiunque e ci si può iscrivere e 
+La lista di sottoscrizione (mailing list) Ã¨ la principale forma di comunicazione 
+nella comunitÃ  di SliTaz. La lista Ã¨ aperta a chiunque e ci si puÃ² iscrivere e 
 disiscrivere a proprio piacere.  E' un mezzo veramente efficace di collaborazione, 
 e viene utilizzato per offrire supporto tecnico gratuito agli utenti di SliTaz. 
 Sviluppatori, utenti esperti, correttori di codice ed altri usano la stessa lista 
 per gestire lo sviluppo del progetto. Usare la stessa lista per il supporto e lo
 sviluppo ci permette di contattare un numero maggiore di persone, dando una risposta 
-più veloce e accurata. Purtroppo i membri della lista sono tutti volontari e fanno 
+piÃ¹ veloce e accurata. Purtroppo i membri della lista sono tutti volontari e fanno 
 il possibile nel loro tempo libero. Gentilezza e rispetto sono d'obbligo e un po'
-di comicità non fa male a nessuno.
+di comicitÃ  non fa male a nessuno.
 </p>
 <p>
 La <em>mailing list</em> viene utilizzata per inviare messaggi e ricevere mail. 
-Ciò significa che tutti gli utenti registrati possono scrivere nella mailing list
+CiÃ² significa che tutti gli utenti registrati possono scrivere nella mailing list
 e ricevere tutti i messaggi inviati dagli altri utenti. I messaggi sono inviati 
 mediante il servizio offerto da <a href="http://www.tuxfamily.org/">TuxFamily</a> 
 che utilizza la piattaforma <a href="http://www.vhffs.org/">VHFFS</a>.
@@ -83,7 +84,7 @@ che utilizza la piattaforma <a href="http://www.vhffs.org/">VHFFS</a>.
 <h4>Rispetto</h4>
 <p>
 La mailing list viene utilizzata da gente appassionata e con sentimenti.
-Fai uno sforzo in più per trattare le persone con rispetto, anche se senti 
+Fai uno sforzo in piÃ¹ per trattare le persone con rispetto, anche se senti 
 te stesso trattato male. Se vuoi scrivere una critica o un giudizio negativo, 
 ti preghiamo di non farlo. Se una persona si comporta in modo inappropriato contatta 
 uno sviluppatore SliTaz.
@@ -95,12 +96,12 @@ uno sviluppatore SliTaz.
 <p>
 Per essere in grado di scrivere nella lista, devi prima iscriverti, quindi riceverai 
 un messaggio di conferma. Questa mail contiene un numero di attivazione
-che devi inviare all'amministratore della lista (ciò previene lo spam).
+che devi inviare all'amministratore della lista (ciÃ² previene lo spam).
 Una volta ricevuti la mail e il messaggio di conferma, puoi scrivere nella lista 
 e ricevere tutti i messaggi che vengono scritti. Nota che i messaggi possono essere 
 reindirizzati dal tuo programma di posta elettronica in una cartella specifica. E' anche 
 consigliabile usare "Reply" ("Risposta" in italiano), per rispondere a un messaggio 
-affinchè la discussione possa essere seguita senza problemi.
+affinchÃ¨ la discussione possa essere seguita senza problemi.
 </p>
 <ul>
     <li>Mail amministrativa :
@@ -115,9 +116,9 @@ affinchè la discussione possa essere seguita senza problemi.
 <h4>Formato</h4>
 <p>
 I messaggi devono essere inviati come testo semplice e non HTML, giustificando le
-linee e con testo compreso tra 72-80 caratteri affinchè le persone con un client 
-di posta elettronica in modalità testo possa leggere le mail senza problemi. 
-La formattazione di questi messaggi può essere eseguita automaticamente dalla 
+linee e con testo compreso tra 72-80 caratteri affinchÃ¨ le persone con un client 
+di posta elettronica in modalitÃ  testo possa leggere le mail senza problemi. 
+La formattazione di questi messaggi puÃ² essere eseguita automaticamente dalla 
 maggior parte di client email come Sylpheed e permette inoltre una lettura degli 
 archivi veloce e immediata. E' anche consigliato rimuovere citazioni inutili e non 
 allegare file di grandi dimensioni.
@@ -126,9 +127,9 @@ allegare file di grandi dimensioni.
 <a name="archives"></a>
 <h3>Archivi della lista</h3>
 <p>
-La mailing list è un forum pubblico, tutti i file sono salvati onliane e sono da lì 
+La mailing list Ã¨ un forum pubblico, tutti i file sono salvati onliane e sono da lÃ¬ 
 rintracciabili. Questo permette ai non registrati di seguire comunque la lista, 
-è anche un ottima risorsa per informazioni su argomenti spegifici. La lista
+Ã¨ anche un ottima risorsa per informazioni su argomenti spegifici. La lista
 viene archiviata ogni notte e puoi navigare l'archivio facilmente mediante lo strumento 
 di controllo lista di TuxFamily. I messaggi sono organizzati per mese e data o per argomento 
 della discussione.
