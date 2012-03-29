@@ -127,7 +127,7 @@
 	customização do LiveCD é agora muito mais fácil, o usuário precisa apenas 
 	iniciar o boot, modificar o que achar necessário e usar a opção writefs
 	a partir da interface gráfica do Tazlito ou da linha de comando.</p>
-	<p>Como sempre, pode-se fazer o <a href="get/index.html#cooking">download</a> 
+	<p>Como sempre, pode-se fazer o <a href="get/#cooking">download</a> 
 	das novas imagens ISO a partir do mirror oficial do projeto. Por favor,
 	informe-nos sobre suas impressões no fórum do SliTaz.</p>
 	</li>

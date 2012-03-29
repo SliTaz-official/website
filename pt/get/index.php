@@ -55,11 +55,11 @@ include("../../lib/html/header.pt.html")
 <h2>Downloads</h2>
 
 <ul>
-    <li><a href="index.html#stable">Versão stable (estável) do LiveCD</a> -
+    <li><a href="#stable">Versão stable (estável) do LiveCD</a> -
     Imagem ISO inicializável da versão estável mais recente.</li>
-    <li><a href="index.html#cooking">Versão cooking (testes) do LiveCD</a> -
+    <li><a href="#cooking">Versão cooking (testes) do LiveCD</a> -
     Imagem ISO inicializável da versão de testes mais recente.</li>
-	<li><a href="index.html#floppy">Versão em disquete</a> - Disquete de boot que pode iniciar
+	<li><a href="#floppy">Versão em disquete</a> - Disquete de boot que pode iniciar
 	a versão LiveCD, uma mídia USB, etc.</li>
     <li><a href="flavors.php">Variantes do LiveCD</a> - Variantes e loram.</li>
 </ul>

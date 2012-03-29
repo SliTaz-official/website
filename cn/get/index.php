@@ -55,13 +55,13 @@ include("../../lib/html/header.html");
 <h2>下载SliTaz</h2>
 
 <ul>
-	<li><a href="index.html#stable">LiveCD稳定版</a> -
+	<li><a href="#stable">LiveCD稳定版</a> -
 	当前稳定版的可启动ISO镜像。</li>
-	<li><a href="index.html#cooking">LiveCD开发版</a> -
+	<li><a href="#cooking">LiveCD开发版</a> -
 	当前开发版的可启动ISO镜像。</li>
-	<li><a href="index.html#floppy">软盘</a> -
+	<li><a href="#floppy">软盘</a> -
 	从LiveCD、USB设备启动的可启动软盘镜像。</li>
-	<li><a href="flavors.html">新鲜玩意</a> - loram版本，衍生版本。</li>
+	<li><a href="flavors.php">新鲜玩意</a> - loram版本，衍生版本。</li>
 </ul>
 
 <div class="box">

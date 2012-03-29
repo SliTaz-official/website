@@ -42,10 +42,10 @@
 <div id="lang">
 	<a href="../../i18n.php">
 		<img src="../../images/locale.png" alt="locale.png" /></a>
-	<a href="../../de/artwork/screenshots.html">Deutsch</a>
-	<a href="../../en/artwork/screenshots.html">English</a>
-	<a href="../../fr/artwork/screenshots.html">Français</a>
-	<a href="../../cn/artwork/screenshots.html">Chinese</a>
+	<a href="../../de/artwork/screenshots.php">Deutsch</a>
+	<a href="../../en/artwork/screenshots.php">English</a>
+	<a href="../../fr/artwork/screenshots.php">Français</a>
+	<a href="../../cn/artwork/screenshots.php">Chinese</a>
 </div>
 
 <!-- Content -->

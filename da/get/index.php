@@ -64,7 +64,7 @@ include("../../lib/html/header.html");
 	Startbar cdrom med den seneste udviklingsversion.</li>
 	<li><a href="#floppy">diskette</a> - Opstartsdiskette til at
 	affyre LiveCDen, en usb-pind eller lignende</li>
-	<li><a href="flavors.html">LiveCD to taste</a> - Varianter og minimal ram.</li>
+	<li><a href="flavors.php">LiveCD to taste</a> - Varianter og minimal ram.</li>
 </ul>
 
 <h3>General information</h3>

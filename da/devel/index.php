@@ -39,11 +39,11 @@
 		<h4>Navigation</h4>
 		<div class="right_box">
 			<ul>
-				<li><a href="../mailing-list.html">Postliste</a></li>
+				<li><a href="../mailing-list.php">Postliste</a></li>
 				<li><a href="../devel/">Udvikling</a></li>
 				<li><a href="../packages/">Programpakker</a></li>
 				<li><a href="../artwork/">Grafik</a></li>
-				<li><a href="../search.html">Søgning</a></li>
+				<li><a href="../search.php">Søgning</a></li>
 			</ul>
 		</div>
 		<div class="left_box">
@@ -67,7 +67,7 @@
 		<p>
 			<img src="../../images/users.png" alt="users.png" />
 			<a href="http://scn.slitaz.org/">Følg os på SCN</a> og
-			<a href="../mailing-list.html">postlisten</a>
+			<a href="../mailing-list.php">postlisten</a>
 		</p>
 	</div>
 </div>
@@ -118,7 +118,7 @@
 	SliTaz er et lille netværkssamfund og det lytter til dets brugere.
 	Der er mange udviklere, 
 	som er aktive på <a href="http://forum.slitaz.org/">forumet</a>
-	og <a href="../mailing-list.html">postlisten</a>.
+	og <a href="../mailing-list.php">postlisten</a>.
 </p>
 <p>
    For grafikere og kunstnere er der en dedikeret hjemmeside, hvor du 

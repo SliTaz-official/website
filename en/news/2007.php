@@ -66,7 +66,7 @@
 	new Kernel patch for lzma and a bug fix for boot messages. Some
 	tests gave us the LiveCD booting between 20 to 30 seconds on recent PCs
 	and between 60 to 80 on older hardware.
-	<a href="../get/index.html#cooking">Download last Cooking</a>.
+	<a href="../get/#cooking">Download last Cooking</a>.
 	</p></li>
 	
 	<li><strong>04 Dec 2007 - New Cooking with sound support and more options</strong>
@@ -83,7 +83,7 @@
 	boot time and isapnptools for very old hardware like IBM GL300 6272/6282 or
 	P133/32M. All this new stuff fits in an ISO image of 22,4 Mb. The Simple
 	Light Incredible... SliTaz (cooking) LiveCD can be obtained
-	on SliTaz mirror.  <a href="../get/index.html#cooking">Download</a>. Enjoy!</p></li>
+	on SliTaz mirror.  <a href="../get/#cooking">Download</a>. Enjoy!</p></li>
 	
 	<li><strong>06 Nov 2007 - Last Cooking before 1.0</strong>
 	<p>
@@ -91,7 +91,7 @@
 	release. This new version provides PHP 5.2.5, Grsync, ISO Master 1.2,
 	Busybox 1.7.2 and much more in a ISO image of 24,7 MB. We also prepared a
 	new theme and wallpaper for JWM and installed a Tango icon.
-	<a href="../get/index.html#cooking">Download</a> SliTaz (cooking) LiveCD for free from
+	<a href="../get/#cooking">Download</a> SliTaz (cooking) LiveCD for free from
 	TuxFamily mirror. All feedback is really welcome, you can use the mailing
 	list or directly send a mail to &lt;devel at slitaz.org&gt;.</p></li>
 	
@@ -101,7 +101,7 @@
 	a new theme and wallpaper. The packages manager was also upgraded with
 	Tazwok and the slitaz-tools. Transmission 0.82 can now create Torrent files.
 	SliTaz (cooking) LiveCD can be obtained for free
-	from TuxFamily mirror.  <a href="../get/index.html#cooking">Download</a>.</p></li>
+	from TuxFamily mirror.  <a href="../get/#cooking">Download</a>.</p></li>
 </ul>
 
 <!-- End of content -->

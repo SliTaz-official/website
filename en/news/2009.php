@@ -107,7 +107,7 @@
 	Osmo and Alsaplayer. The website documentation has been updated and you can read the
 	<a href="../doc/releases/2.0/relnotes.en.html">release notes</a> included in
 	the distribution for more details on this stable version. SliTaz GNU/Linux
-	2.0 is now <a href="../get/index.html">downloadable</a> from the official mirrors of
+	2.0 is now <a href="../get/">downloadable</a> from the official mirrors of
 	the project.
 	</p></li>
 
@@ -156,7 +156,7 @@
 	manually or through Tazhw. The desktop has a GUI to enable or disable
 	applications started with an Openbox session and Ivman with desktopkbox
 	provides a lightweight notification system. You can
-	<a href="../get/index.html#cooking">download</a> this new ISO image from one of the
+	<a href="../get/#cooking">download</a> this new ISO image from one of the
 	official mirrors of the website.
 	</p></li>
 </ul>

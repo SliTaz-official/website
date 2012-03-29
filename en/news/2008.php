@@ -63,7 +63,7 @@
 	applied. Also improved are the boot scripts, and the LiveCD tool
 	(Tazlito) is now more coherent. The Cooking repository now contains more
 	than 1100 packages thanks to the SliTaz developers. You can
-	<a href="../get/index.html#cooking">download</a> this new version from one of the
+	<a href="../get/#cooking">download</a> this new version from one of the
 	official mirrors of the project.
 	</p></li>
 	
@@ -81,8 +81,8 @@
 	a new version of Tazpkg package manager with md5sum support, XFS
 	filesystem support built into the Kernel, a 'man' command and a few
 	updates. This version requires at least 160 Mb to boot and run properly,
-	we offer loram <a href="../get/flavors.html">flavors</a> for machines with less
-	resources. <a href="../get/index.html#cooking">Download SliTaz Cooking ISO</a>.
+	we offer loram <a href="../get/flavors.php">flavors</a> for machines with less
+	resources. <a href="../get/#cooking">Download SliTaz Cooking ISO</a>.
 	</p></li>
 	
 	<li><strong>26 Jun 2008 - Cooking 20080626 with new Kernel</strong>
@@ -98,7 +98,7 @@
 	text mode, Netbox wifi and PPPoE support are now both working well and
 	a new function called zeroconf is available. Most packages are up-to-date
 	and Firefox 3.0 is part of the 25.2 Mb ISO. Cooking version can be
-	<a href="../get/index.html#cooking">downloaded</a> from SliTaz mirror. Bugs can
+	<a href="../get/#cooking">downloaded</a> from SliTaz mirror. Bugs can
 	be reported on SliTaz Bug Tracking System:
 	<a href="http://bugs.slitaz.org">BTS</a>
 	</p></li>
@@ -119,7 +119,7 @@
 	and Firefox 3.0 RC1! You will now find 580 packages on the mirror
 	including wireless support for the kernel and the necessary tools
 	for a manual connection or one managed by SliTaz netbox. This new announced
-	Cooking version can be <a href="../get/index.html#cooking">downloaded</a> from
+	Cooking version can be <a href="../get/#cooking">downloaded</a> from
 	SliTaz mirror. Note: This version is going to be used at the
 	<a href="http://www.linuxdays.ch/">LinuxDay.ch</a> in Geneva
 	Switzerland.
@@ -138,7 +138,7 @@
 	device in one single command. Security updates are provided by the project and
 	popular packages like Firefox will also get upgraded for functionality. You
 	can get SliTaz GNU/Linux 1.0 from the Web site
-	<a href="../get/index.html#stable">download page</a>. Read the
+	<a href="../get/#stable">download page</a>. Read the
 	<a href="../doc/releases/1.0/relnotes.en.html">Release Notes</a> for more
 	detailed information on this stable version.
 	</p></li>
@@ -154,7 +154,7 @@
 	media or write the current filesystem to the media in one single command.
 	This version is ready for stable release, we are now writing Release Notes,
 	preparing final artwork and a stable packages repository. You can try this
-	updated Cooking by <a href="../get/index.html#cooking">downloading</a> the LiveCD ISO from
+	updated Cooking by <a href="../get/#cooking">downloading</a> the LiveCD ISO from
 	SliTaz Web site.</li>
 	<li><strong>10 Jan 2008 - New Cooking ISO (20080107)</strong><br />
 	Paving the road to a stable release, we published a new Cooking ISO with many
@@ -165,7 +165,7 @@
 	new features. Tazpkg can repack packages from a running system, Tazlito
 	can generate a LiveCD distribution flavor with a few commands and Tazwok can
 	check for build dependencies when building a package from source. Please
-	check <a href="../get/index.html#cooking">downloads area</a> to get a copy of SliTaz
+	check <a href="../get/#cooking">downloads area</a> to get a copy of SliTaz
 	LiveCD.</p></li>
 </ul>
 

@@ -64,7 +64,7 @@
 	inicialização foram melhorados e a ferramenta LiveCD (Tazlito) está
 	mais coerente. O repositório cooking conta com 	mais de 1,100 pacotes prontos
 	para serem instalados, graças ao trabalho pesado dos desenvolvedores. Você
-	pode fazer o <a href="../get/index.html#cooking">download</a> a partir de um dos mirrors
+	pode fazer o <a href="../get/#cooking">download</a> a partir de um dos mirrors
 	oficiais do projeto.
 	</li>
 
@@ -81,8 +81,8 @@
     de notas (Notecase), uma versão do gerenciador de pacotes Tazpkg que possui
     suporte a md5sum, suporte ao sistema de arquivos XFS diretamente no Kernel,
     o comando "man" e algumas atualizações. Esta versão requer ao menos 160 Mb
-    para iniciar e rodar normalmente, e também oferecemos a <a href="../get/flavors.html">variante</a>
-    loram para máquinas com menos recursos. <a href="../get/index.html#cooking">Baixe a ISO do SliTaz Cooking</a>.
+    para iniciar e rodar normalmente, e também oferecemos a <a href="../get/flavors.php">variante</a>
+    loram para máquinas com menos recursos. <a href="../get/#cooking">Baixe a ISO do SliTaz Cooking</a>.
     </li>
 
     <li><strong>22 Mar 2008 - SliTaz GNU/Linux 1.0 release</strong><br />
@@ -99,7 +99,7 @@
     personalizada ou um dispositivo LiveUSB em um simples comando. Atualizações
     de segurança são fornecidas pelo projeto e pacotes populares como o Firefox
     também pode ser atualizados para se obter mais funcionalidades. Você pode obter
-    o SliTaz GNU/Linux 1.0 por meio da <a href="../get/index.html#stable">página de downloads</a>
+    o SliTaz GNU/Linux 1.0 por meio da <a href="../get/#stable">página de downloads</a>
     do site. Leia as <a href="../doc/releases/1.0/relnotes.pt.html">notas de lançamento</a>
     para informações detalhadas sobre esta versão estável.
     </li>

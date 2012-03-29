@@ -33,10 +33,10 @@
 <div id="lang">
 	<a href="/i18n.php">
 		<img src="/images/locale.png" alt="locale.png" /></a>
-	<a href="../../de/get/flavors.html">Deutsch</a>
+	<a href="../../de/get/flavors.php">Deutsch</a>
 	<a href="../../en/get/flavors.php">English</a>
-	<a href="../../fr/get/flavors.html">Français</a>
-	<a href="../../cn/get/flavors.html">Chinese</a>
+	<a href="../../fr/get/flavors.php">Français</a>
+	<a href="../../cn/get/flavors.php">Chinese</a>
 </div>
 
 <!-- Content -->

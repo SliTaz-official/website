@@ -170,8 +170,8 @@ podrás seguir las últimas noticias, commits y tweets.</p>
     </li>    
 
     <li><strong>Archivo de noticias:</strong>
-    <a href="news/2008.html">2008</a> |
-    <a href="news/2009.html">2009</a> |
+    <a href="news/2008.php">2008</a> |
+    <a href="news/2009.php">2009</a> |
     <a href="news/">2010</a>
     </li>
 </ul>

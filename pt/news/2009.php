@@ -70,7 +70,7 @@
     <a href="http://forum.slitaz.org/">fórum de discussão</a> e um novo
 	<a href="http://scn.slitaz.org/">site para a comunidade</a> 
     em que todos são convidados a colaborar com conteúdo! Baixe agora a nova
-    imagem da <a href="../get/index.html#cooking">versão de testes</a></p>
+    imagem da <a href="../get/#cooking">versão de testes</a></p>
 	</li>
 
 	<li><strong>19 Mai 2009 - SliTaz na LinuxDays 2009 (Genebra)</strong>
@@ -115,7 +115,7 @@
 	Alsaplayer. A documentação do website é atualizada e pode-se ler as
 	<a href="../doc/releases/2.0/relnotes.pt.html">notas de lançamento</a> que
 	estão incluidas na distribuição para maiores detalhes sobre esta versão
-	estável. O SliTaz GNU/Linux 2.0 pode ser <a href="../get/index.html">obtido</a> a
+	estável. O SliTaz GNU/Linux 2.0 pode ser <a href="../get/">obtido</a> a
 	partir de um dos mirrors oficiais do projeto.</li>
 
 	<li><strong>27 Mar 2009 - Labs e novos mirrors</strong><br />
@@ -148,7 +148,7 @@
 	da placa tanto manualmente quanto pelo Tazhw. A área de trabalho agora possui
 	um aplicativo que habilita ou desabilita aplicações iniciadas juntamente
 	com a sessão do Openbox e que, em conjunto com o Ivman, provê um sistema de
-	notificações leve. <a href="../get/index.html#cooking">Faça o download da iso aqui.</a>
+	notificações leve. <a href="../get/#cooking">Faça o download da iso aqui.</a>
 	</li>
 </ul>
 

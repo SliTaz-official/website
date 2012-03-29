@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+    <title>SliTaz (fr) - LiveCD Flavors</title>
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <meta name="description" content="saveur LiveCD slitaz personnalisé" />
+    <meta name="keywords" lang="fr" content="linux gnu live slitaz" />
+    <meta name="robots" content="index, follow, all" />
+    <meta name="modified" content="2011-03-26 23:50:00" />
+    <meta name="author" content="Christophe Lincoln"/>
+    <link rel="shortcut icon" href="../../favicon.ico" />
+    <link rel="stylesheet"  type="text/css" href="../../slitaz.css" />
+</head>
+<body>
+
+<!-- Header -->
+<div id="header">
+	<div id="logo"></div>
+	<div id="network">
+		<a href="http://www.slitaz.org/netmap.php">
+			<img src="../../images/network.png" alt="network.png" /></a>
+		<a href="http://scn.slitaz.org/">Community</a>
+		<a href="http://doc.slitaz.org/">Doc</a>
+		<a href="http://forum.slitaz.org/">Forum</a>
+		<a href="http://bugs.slitaz.org">Bugs</a>
+		<a href="http://hg.slitaz.org/">Hg</a>
+	</div>
+	<h1><a href="http://www.slitaz.org/">SliTaz GNU/Linux</a></h1>
+</div>
+
+<!-- Block -->
+<div id="block">
+	<!-- Navigation -->
+	<div id="block_nav">
+		<h4>Navigation</h4>
+		<div class="right_box">
+			<ul>
+				<li><a href="../mailing-list.php">Mailing List</a></li>
+				<li><a href="../devel/">Développement</a></li>
+				<li><a href="../packages/">Paquets</a></li>
+				<li><a href="../artwork/">Artwork</a></li>
+				<li><a href="../search.php">Recherche</a></li>
+			</ul>
+		</div>
+		<div class="left_box">
+			<ul>
+				<li><a href="../">Actualités</a></li>
+				<li><a href="../about/">A propos</a></li>
+				<li><a href="../get/">Téléchargement</a></li>
+				<li><a href="../asso/">Association</a></li>
+				<li><a href="../doc/">Documentation</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- Information/image -->
+	<div id="block_info">
+		<h4>Obtenir des saveurs</h4>
+		<p>
+			Le système des saveurs de LiveCD est un moyen simple et 
+			communautaire permettant de générer des images ISO de 
+			LiveCD destinées à des tâches particulières en proposant
+			une sélection de paquets spécifiques. Il existe deux
+			possibilités pour créer une saveur : utiliser une saveur
+			de la communauté ou créer votre propre saveur.
+		</p>
+	</div>
+</div>
+
+<!-- Content -->
+<div id="content">
+
+<h2>Image ISO de LiveCD à saveur</h2>
+<p>
+Par commodité, l'équipe de SliTaz propose quelques images ISO de saveurs
+pour la version stable et Cooking de SliTaz. Les saveurs <em>loram</em> 
+permettent de démarrer SliTaz sur des machines ayant très peu de ressources.
+La saveur <em>loram</em> a besoin de 80 MB et libère le cdrom, la
+version <em>loram-cdrom</em> peut démarrer avec 16 Mb et un peu de
+mémoire swap, mais ne libère pas le cdrom.
+</p>
+<p>
+<a href="http://mirror.slitaz.org/iso/3.0/flavors/"
+	>Télécharger une saveur</a>
+</p>
+
+<h3>Obtenir et générer une saveur</h3>
+<p>
+Une saveur consiste en un fichier (.flavor) permettant de générer une
+saveur particulière. L'outil graphique Tazlitobox peut créer une saveur
+en quelques cliques de souris. <a href="../doc/manuals/tazlito.html">
+Le manuel de Tazlito</a> et <a href="http://doc.slitaz.org/fr:handbook:genlivecd">
+la documentation</a> du Handbook donnent les instructions détaillées sur 
+la génération de saveur. En ligne de commande, vous pouvez obtenir 
+une liste des saveurs disponibles via <code>tazlito list-flavors</code>.
+</p>
+
+<h3>Créer et partager sa propre saveur</h3>
+<p>
+Les versions, Stable et Cooking, proposent une saveur <em>core</em> sur le 
+miroir, elle peut être utilisée comme base pour créer sa propre saveur.
+La documentation du Handbook fournit toutes les instructions utiles à
+<a href="http://doc.slitaz.org/fr:handbook:genlivecd">la création de sa propre saveur de LiveCD</a>
+</p>
+<p>
+Si vous avez créé votre propre saveur, vous avez la possibilité d'envoyer 
+votre fichier de saveur sur <a href="../mailing-list.php">la liste de discussion</a> 
+afin qu'il soit testé et inclus dans les saveurs officielles. 
+Vous avez aussi la possibilité de soumettre ou lister votre travail sur 
+<a href="http://labs.slitaz.org/projects/show/flavors">les laboratoires Slitaz</a>.
+Le système des saveurs peut se comparer aux paquets, chaque saveur à son
+mainteneur.
+</p>
+
+<!-- End of content -->
+</div>
+
+<!-- Footer -->
+<div id="footer">
+	Copyright &copy; <span class="year"></span>
+	<a href="http://www.slitaz.org/">SliTaz</a> - Network:
+	<a href="http://scn.slitaz.org/">Community</a>
+	<a href="http://doc.slitaz.org/">Doc</a>
+	<a href="http://forum.slitaz.org/">Forum</a>
+	<a href="http://pkgs.slitaz.org/">Packages</a>
+	<a href="http://bugs.slitaz.org">Bugs</a>
+	<a href="http://hg.slitaz.org/">Hg</a>
+	<p>
+		SliTaz @
+		<a href="http://twitter.com/slitaz">Twitter</a>
+		<a href="http://www.facebook.com/slitaz">Facebook</a>
+		<a href="http://distrowatch.com/slitaz">Distrowatch</a>
+		<a href="http://en.wikipedia.org/wiki/SliTaz">Wikipedia</a>
+		<a href="http://flattr.com/profile/slitaz">Flattr</a>
+	</p>
+</div>
+
+</body>
+</html>

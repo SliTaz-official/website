@@ -39,11 +39,11 @@
 		<h4>导航</h4>
 		<div class="right_box">
 			<ul>
-				<li><a href="../en/mailing-list.html">邮件列表 (en)</a></li>
+				<li><a href="../en/mailing-list.php">邮件列表 (en)</a></li>
 				<li><a href="../en/devel/">开发 (en)</a></li>
 				<li><a href="packages/">软件包</a></li>
 				<li><a href="artwork/">美工</a></li>
-				<li><a href="search.html">搜索</a></li>
+				<li><a href="search.php">搜索</a></li>
 			</ul>
 		</div>
 		<div class="left_box">

@@ -59,7 +59,7 @@ include("../../lib/html/header.html");
 	aktuellen stabilen Version.</li>
 	<li><a href="#cooking">Live-CD Cooking Version</a> - Bootfähiges ISO Image der
 	aktuellen Cooking-Version.</li>
-	<li><a href="flavors.html">Live-CD Derivate</a> - SliTaz-Derivate und Loram-Version.</li>
+	<li><a href="flavors.php">Live-CD Derivate</a> - SliTaz-Derivate und Loram-Version.</li>
 </ul>
 
 <div class="box">

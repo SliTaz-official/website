@@ -23,11 +23,11 @@ include("../lib/html/header.html");
 		<h4>Navigation</h4>
 		<div class="right_box">
 			<ul>
-				<li><a href="../en/mailing-list.html">Mailing List</a></li>
+				<li><a href="../en/mailing-list.php">Mailing List</a></li>
 				<li><a href="../en/devel/">Development</a></li>
 				<li><a href="../en/packages/">Packages</a></li>
 				<li><a href="../en/artwork/">Artwork</a></li>
-				<li><a href="../en/search.html">Search</a></li>
+				<li><a href="../en/search.php">Search</a></li>
 			</ul>
 		</div>
 		<div class="left_box">

@@ -162,9 +162,9 @@
 	</li>
 
 	<li><a href="../en/news/">Flere nyheder</a> eller gennemse arkiverne (på engelsk):
-	<a href="../en/news/2007.html">2007</a> |
-	<a href="../en/news/2008.html">2008</a> |
-	<a href="../en/news/2009.html">2009</a></li></li>
+	<a href="../en/news/2007.php">2007</a> |
+	<a href="../en/news/2008.php">2008</a> |
+	<a href="../en/news/2009.php">2009</a></li></li>
 </ul>
 
 <!-- End of news -->

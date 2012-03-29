@@ -60,7 +60,7 @@ include("../../lib/html/header.html");
     LiveCD de la version stable de SliTaz.</li>
     <li><a href="#cooking">LiveCD version Cooking</a> - Image ISO du
     LiveCD de SliTaz en cuisson.</li>
-    <li><a href="flavors.html">LiveCD à saveur</a> - Saveurs, dont les 'loram'.</li>
+    <li><a href="flavors.php">LiveCD à saveur</a> - Saveurs, dont les 'loram'.</li>
     <li><a href="#floppy">Disquette de démarrage</a> - Image de disquette pour
     lancer le LiveCD, une clé USB...</li>
 </ul>
@@ -78,9 +78,9 @@ include("../../lib/html/header.html");
 	Cette partie du site vous permet de télécharger une image ISO gravable, du
 	système LiveCD installable de SliTaz. Pour utiliser le système, vous pouvez
 	vous référer au livre de main ou <a href="http://doc.slitaz.org/fr:handbook:start">Handbook</a>,
-	toujours accessible via la partie <a href="../doc/index.html">documentation</a>
+	toujours accessible via la partie <a href="../doc/">documentation</a>
 	du site. Vous trouverez un support d'aide gratuit, simple et efficace, via
-	<a href="/fr/mailing-list.html">la liste de discussion</a> du projet.
+	<a href="../mailing-list.php">la liste de discussion</a> du projet.
 </p>
 
 <h3>Miroirs et torrents</h3>

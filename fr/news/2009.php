@@ -107,7 +107,7 @@
 	<a href="/fr/doc/releases/2.0/relnotes.fr.html">les notes de publication</a>,
 	incluses dans la distribution, pour plus de détails sur cette version.
 	SliTaz GNU/Linux 2.0 est téléchargeable dès maintenant depuis les
-	<a href="/fr/get/index.html">miroirs du projet</a>.
+	<a href="../get/">miroirs du projet</a>.
 	</p></li>
 
 	<li><strong>20 Mars 2009 - SliTaz à Solutionslinux 2009 (Paris)</strong><br />
@@ -139,7 +139,7 @@
 	Tazhw. Le bureau fournit maintenant une interface permettant de gérer
 	les applications lancées avec la session Openbox et Ivman avec desktopbox
 	fournissent un système de notification simple et léger. Vous pouvez
-	<a href="/fr/get/index.html#cooking">télécharger</a> cette nouvelle image ISO depuis
+	<a href="../get/#cooking">télécharger</a> cette nouvelle image ISO depuis
 	la partie téléchargement.
 	</li>
 

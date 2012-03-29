@@ -73,7 +73,7 @@
     correction dans l'affichage des messages d'initialisation. Nos divers tests 
 	donnent des temps de démarrage allant de 20 à 30 secondes sur des PC
     récents et de 60 à 80 secondes sur les machines plus anciennes.
-    <a href="../get/index.html#cooking">Téléchargement de la dernière version</a>.
+    <a href="../get/#cooking">Téléchargement de la dernière version</a>.
     </li>
 	
     <li><strong>04 Décembre 2007 - Nouvelle Cooking avec le son et plus d'options</strong><br />
@@ -93,7 +93,7 @@
     une page Multimedia, à propos du son et de la vidéo sur SlitTaz. Pour finir 
     cette annonce, un énorme travail a été réalisé pour vous proposer un 
     LiveCD de : 22,4 Mb. Simple, Léger... incroyable. Vous pouvez obtenir cette
-    version Cooking via la partie <a href="../get/index.html">téléchargement</a> du site.
+    version Cooking via la partie <a href="../get/">téléchargement</a> du site.
     Enjoy.
     </li>
     
@@ -109,7 +109,7 @@
     un nouveau thème pour JWM, avec fond d'écran, un nouveau menu, les icônes
     Tango pour les applications GTK+, un message du jour en Français et un wiki
     personnel installé pour l'utilisateur hacker. Le LiveCD en cuisson de
-    24,7 MB, est <a href="../get/index.html">téléchargeable</a> depuis le miroir de SliTaz
+    24,7 MB, est <a href="../get/">téléchargeable</a> depuis le miroir de SliTaz
     propulsé par TuxFamily.</li>
 	
     <li><strong>04 Novembre 2007 - Takpkg 1.3, gestion des mises à jour et Tazwok 1.2</strong><br />
@@ -128,7 +128,7 @@
 	Au passage Tazpkg et Tazwok proposent des couleurs et un affichage plus clair
 	des messages. Tazwok 1.2 gère mieux les problèmes (exit et message d'aide).
 	Vous pouvez obtenir les archives des deux outils via la partie <a
-	href="../get/index.html">téléchargement</a> du site. Les deux outils ont été testés sur
+	href="../get/">téléchargement</a> du site. Les deux outils ont été testés sur
 	SliTaz et Debian, vous pouvez utiliser Tazpkg pour installer des paquets
 	SliTaz sur Debian ou utiliser Tazwok pour construire des paquets SliTaz.
 	Cela dit, la prochaine version est bientôt prête, les paquets sont gelés,
@@ -151,12 +151,12 @@
 	a été installé et des raccourcis clavier permettent d'ouvrir Firefox ou 
 	le gestionnaire de fichiers (Alt + F5 ou F6). La documentation a été adaptée 
 	et les outils SliTaz publiés en version 1.2. La nouvelle version est 
-	<a href="../get/index.html">téléchargeable</a> via le miroir de SliTaz, elle a été générée 
+	<a href="../get/">téléchargeable</a> via le miroir de SliTaz, elle a été générée 
 	avec Tazwok et les outils SliTaz, en se basant sur le livre de cuisine (Cookbook) 
-	toujours accessible depuis la partie <a href="../doc/index.html">documentation</a> du site Web. 
+	toujours accessible depuis la partie <a href="../doc/">documentation</a> du site Web. 
 	La voie vers la stabilisation est ouverte pour la publication de SliTaz GNU/Linux 1.0,
 	vous pouvez facilement participer au projet et obtenir un support technique
-	via <a href="../mailing-list.html">la liste de discussion</a> de SliTaz.
+	via <a href="../mailing-list.php">la liste de discussion</a> de SliTaz.
     </li>
     
     <li><strong>10 Octobre 2007 - Tazpkg-1.2 et Tazwok-1.0</strong><br />
@@ -175,7 +175,7 @@
     
     <li><strong>24 Août 2007 - Liste de discussion (Mailing list) et doc</strong><br />
     Le projet SliTaz a le plaisir d'annoncer l'ouverture officielle de
-    <a href="../mailing-list.html">la liste de discussion</a>. La
+    <a href="../mailing-list.php">la liste de discussion</a>. La
     <em>mailing list</em> est un moyen de support technique et de collaboration,
     la liste est ouverte à tout le monde, si vous avez une question, une
     remarque, une demande ou que vous désirez participer au projet, c'est là
@@ -201,7 +201,7 @@
 	ses propres paquets et implémente un système de gestion des dépendances. 
 	Au passage l'arbre des paquets a changé et les meta fichiers de configuration 
 	ont plus de variables et de fonctions. Vous pouvez récupérer cette nouvelle mouture
-    (15,6 Mb) et les sources de Tazpkg via la partie <a href="../get/index.html">téléchargement</a> du site. 
+    (15,6 Mb) et les sources de Tazpkg via la partie <a href="../get/">téléchargement</a> du site. 
 	Enjoy.
     </li>
     
@@ -249,7 +249,7 @@
     image ISO de la version cooking comprenant d'importantes mises à jour,
     des scripts de démarrage améliorés avec de nouvelles fonctions et la
     résolution de quelques petits problèmes. L'image ISO bootable à graver
-    ou émuler est disponible en <a href="../get/index.html">téléchargement</a> depuis le
+    ou émuler est disponible en <a href="../get/">téléchargement</a> depuis le
     le miroir de TuxFamily. Cette nouvelle version propose une mise à jour du
     client/serveur SSH Dropbear vers la version 0.49, du serveur web LightTPD
     vers la version 1.4.15, de SQLite vers la version 3.3.17, du navigateur
@@ -282,7 +282,7 @@
     SliTaz cooking d'ici la fin de cette semaine.</li>
     
     <li><strong>22 Mai 2007 - Documentation améliorée</strong><br />
-    Les pages de la <a href="../doc/index.html">documentation</a> de SliTaz ont
+    Les pages de la <a href="../doc/">documentation</a> de SliTaz ont
     été mises à jour, mais elle n'est pas encore terminée et ne demande qu'à être
     améliorée. Nous cherchons des personnes motivées pour la relecture.
     Toutes les suggestions sont aussi vraiment appréciées.

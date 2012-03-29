@@ -65,7 +65,7 @@
 	d'initialisation sont plus performants, l'outil de construction du LiveCD 
 	(Tazlito) est plus cohérent. Le dépôt de la version Cooking contient maintenant
 	plus de 1100 paquets logiciels prêt à être installés et cela grâce à un travail
-	acharné des développeurs SliTaz. Vous pouvez <a href="../get/index.html#cooking">télécharger</a>
+	acharné des développeurs SliTaz. Vous pouvez <a href="../get/#cooking">télécharger</a>
 	cette nouvelle mouture depuis un des miroirs officiels du projet.
 	</li>
 	
@@ -84,9 +84,9 @@
 	gestionnaire de paquet Tazpkg avec le support md5sum, le support du
 	système de fichier XFS nativement, la commande man et plusieurs mises
 	à jour. Attention, cette version a besoin de 160 Mb au minimum pour 
-	démarrer, <a href="../get/flavors.html">les saveurs</a> loram sont là 
+	démarrer, <a href="../get/flavors.php">les saveurs</a> loram sont là 
 	pour les machines ayant moins de ressources. 
-	<a href="../get/index.html#cooking">Téléchargement de la dernière ISO</a>.
+	<a href="../get/#cooking">Téléchargement de la dernière ISO</a>.
 	</li>
 	
 	<li><strong>26 Juin 2008 - Cooking 20080626 avec nouveau noyau</strong><br />
@@ -108,7 +108,7 @@
 	protocoles PPP/PPPOE ; une nouvelle fonction (zeroconf) vient
 	s'ajouter à toutes les possibilités déjà présentes. Pour finir,
 	Firefox est disponible dans sa dernière version stable 3.0. Cette
-	nouvelle version peut être librement <a href="../get/index.html#cooking">téléchargée</a>
+	nouvelle version peut être librement <a href="../get/#cooking">téléchargée</a>
 	via le site web du projet. Les bugs peuvent être signalés via le
 	système de suivi de bugs de SliTaz : 
 	<a href="http://bugs.slitaz.org">BTS</a>
@@ -131,7 +131,7 @@
 	composée de la dernière glibc-2.7, GTK 2.12.9 et Firefox 3.0 RC1 ! Vous
 	trouverez aussi plus de 580 paquets sur le miroir dont : le support
 	complet du wifi, Gnumeric ou encore Cups. Cette nouvelle version
-	peut-être librement <a href="../get/index.html#cooking">téléchargée</a> via le
+	peut-être librement <a href="../get/#cooking">téléchargée</a> via le
 	site web du projet. Note : Cette version sera présentée et utilisée au
 	stand SliTaz lors des <a href="http://www.linuxdays.ch/">LinuxDay.ch</a>
 	à Genève le 21-22 Mai. Le stand proposera entre autres la gravure de
@@ -151,7 +151,7 @@
 	LiveUSB. Des mises à jour de sécurité de l'ensemble des paquets sont
 	assurées par le projet et des mises à jour de fonctionnalités sont fournies
 	pour les paquets populaires tel que Firefox. Vous pouvez obtenir SliTaz
-	GNU/Linux 1.0 depuis la partie <a href="../get/index.html#stable">téléchargement</a> du
+	GNU/Linux 1.0 depuis la partie <a href="../get/#stable">téléchargement</a> du
 	site et lire <a href="../doc/releases/1.0/relnotes.fr.html"
 		>les notes de publication</a>,
 	incluses dans la distribution, pour plus de détails sur cette version.
@@ -176,7 +176,7 @@
 	corrigé et mis à jour (pas totalement). Pour finir, cette version est
 	très proche de la version stable, nous allons encore mettre à jour le noyau
 	et les outils, ajouter quelques paquets sur le miroir et écrire les notes
-	de publication. <a href="../get/index.html#cooking">Téléchargement de la dernière Cooking</a>.
+	de publication. <a href="../get/#cooking">Téléchargement de la dernière Cooking</a>.
 	</li>
 	
 	<li><strong>07 Janvier 2008 - Nouvelle Cooking (20080107)</strong><br />
@@ -196,7 +196,7 @@
 	graphiquement. A noter encore que tous les paquets (291) ont été
 	reconstruits et que cette version est proche de la version stable. Vous
 	pouvez obtenir cette nouvelle version via la partie 
-	<a href="../get/index.html#cooking">téléchargement</a> du site Web. Enjoy.
+	<a href="../get/#cooking">téléchargement</a> du site Web. Enjoy.
 	</li>
 	
 	<li><strong>06 Janvier 2008 - Populariser SliTaz : blog, forum, etc</strong><br />
