@@ -6,56 +6,16 @@
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="description" content="SliTaz GNU/Linux LiveCD" />
 	<meta name="keywords" lang="cn" content="System, free, gnu, linux, software opensource, livecd LINUX in RAM" />
-	<meta name="robots" content="index, follow, all" />
-	<meta name="modified" content="<?php echo (date( "Y-m-d H:i:s", getlastmod())); ?>" />
 	<meta name="author" content="Chen Yufei"/>
-	<link rel="shortcut icon" href="../favicon.ico" />
-	<link rel="stylesheet" type="text/css" href="../slitaz.css" />
-	<link rel="alternate" type="application//rss.xml" title="SliTaz Website feed" href="/rss.xml" />
-	<link rel="alternate" type="application/atom+xml" title="SliTaz Labs feed" href="http://labs.slitaz.org/news?format=atom" />
-	<link rel="alternate" type="application//rss.xml" title="SliTaz SCN feed" href="http://scn.slitaz.org//rss.xml" />
+	<?php include("../lib/html/meta-link.html"); ?>
 </head>
 <body>
 
-<!-- Header -->
-<div id="header">
-	<div id="logo"></div>
-	<div id="network">
-		<a href="http://www.slitaz.org/netmap.php">
-			<img src="../images/network.png" alt="network.png" /></a>
-		<a href="http://scn.slitaz.org/">Community</a>
-		<a href="http://doc.slitaz.org/">Doc</a>
-		<a href="http://forum.slitaz.org/">Forum</a>
-		<a href="http://bugs.slitaz.org">Bugs</a>
-		<a href="http://hg.slitaz.org/">Hg</a>
-	</div>
-	<h1><a href="http://www.slitaz.org/">SliTaz GNU/Linux</a></h1>
-</div>
+<?php include("../lib/html/header.html"); ?>
 
 <!-- Block -->
 <div id="block">
-	<!-- Navigation -->
-	<div id="block_nav">
-		<h4>导航</h4>
-		<div class="right_box">
-			<ul>
-				<li><a href="../en/mailing-list.php">邮件列表 (en)</a></li>
-				<li><a href="../en/devel/">开发 (en)</a></li>
-				<li><a href="packages/">软件包</a></li>
-				<li><a href="artwork/">美工</a></li>
-				<li><a href="search.php">搜索</a></li>
-			</ul>
-		</div>
-		<div class="left_box">
-			<ul>
-				<li><a href="./">头条</a></li>
-				<li><a href="about/">关于</a></li>
-				<li><a href="get/">下载</a></li>
-				<li><a href="../en/asso/">捐赠 (en)</a></li>
-				<li><a href="doc/">文档</a></li>
-			</ul>
-		</div>
-	</div>
+	<?php include("../lib/html/nav.cn.html"); ?>
 	<!-- Information/image -->
 	<div id="block_info">
 		<h4>主页</h4>

@@ -6,53 +6,16 @@
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="SliTaz GNU/Linux 关于信息" />
     <meta name="keywords" lang="cn" content="about slitaz, gnu, linux, mini distro, livecd, 关于Slitaz, Slitaz是什么, 介绍" />
-	<meta name="robots" content="index, follow, all" />
-    <meta name="modified" content="2011-03-26 13:15:00" />
     <meta name="author" content="Draplater" />
-	<link rel="shortcut icon" href="../../favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="../../slitaz.css" />
+	<?php include("../../lib/html/meta-link.html"); ?>
 </head>
 <body>
 
-<!-- Header -->
-<div id="header">
-	<div id="logo"></div>
-	<div id="network">
-		<a href="http://www.slitaz.org/netmap.php">
-			<img src="../../images/network.png" alt="network.png" /></a>
-		<a href="http://scn.slitaz.org/">Community</a>
-		<a href="http://doc.slitaz.org/">Doc</a>
-		<a href="http://forum.slitaz.org/">Forum</a>
-		<a href="http://bugs.slitaz.org">Bugs</a>
-		<a href="http://hg.slitaz.org/">Hg</a>
-	</div>
-	<h1><a href="http://www.slitaz.org/">SliTaz GNU/Linux</a></h1>
-</div>
+<?php include("../../lib/html/header.html"); ?>
 
 <!-- Block -->
 <div id="block">
-	<!-- Navigation -->
-	<div id="block_nav">
-		<h4>导航</h4>
-		<div class="right_box">
-			<ul>
-				<li><a href="../../en/mailing-list.php">邮件列表 (en)</a></li>
-				<li><a href="../../en/devel/">开发 (en)</a></li>
-				<li><a href="../packages/">软件包</a></li>
-				<li><a href="../artwork/">美工</a></li>
-				<li><a href="../search.php">搜索</a></li>
-			</ul>
-		</div>
-		<div class="left_box">
-			<ul>
-				<li><a href="../">头条</a></li>
-				<li><a href="../about/">关于</a></li>
-				<li><a href="../get/">下载</a></li>
-				<li><a href="../../en/asso/">捐赠 (en)</a></li>
-				<li><a href="../doc/">文档</a></li>
-			</ul>
-		</div>
-	</div>
+	<?php include("../../lib/html/nav.cn.html"); ?>
 	<!-- Information/image -->
 	<div id="block_info">
 		<h4>关于</h4>
@@ -118,25 +81,7 @@ Slitaz是一个国际化的操作系统，可以轻易拥有多语言支持。Sl
 <!-- End of content  -->
 </div>
 
-<!-- Footer -->
-<div id="footer">
-	Copyright &copy; <span class="year"></span>
-	<a href="http://www.slitaz.org/">SliTaz</a> - Network:
-	<a href="http://scn.slitaz.org/">Community</a>
-	<a href="http://doc.slitaz.org/">Doc</a>
-	<a href="http://forum.slitaz.org/">Forum</a>
-	<a href="http://pkgs.slitaz.org/">Packages</a>
-	<a href="http://bugs.slitaz.org">Bugs</a>
-	<a href="http://hg.slitaz.org/">Hg</a>
-	<p>
-		SliTaz @
-		<a href="http://twitter.com/slitaz">Twitter</a>
-		<a href="http://www.facebook.com/slitaz">Facebook</a>
-		<a href="http://distrowatch.com/slitaz">Distrowatch</a>
-		<a href="http://en.wikipedia.org/wiki/SliTaz">Wikipedia</a>
-		<a href="http://flattr.com/profile/slitaz">Flattr</a>
-	</p>
-</div>
+<?php include("../../lib/html/footer.html"); ?>
 
 </body>
 </html>
