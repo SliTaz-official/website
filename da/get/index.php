@@ -16,7 +16,7 @@
 
 <?php 
 include("../../config.php");
-include("../../lib/html/header.html");
+include("../../lib/html/header.da.html");
 ?>
 
 <!-- Block -->
@@ -214,7 +214,7 @@ include("../../lib/html/header.html");
 <!-- End of content -->
 </div>
 
-<?php include("../../lib/html/footer.html"); ?>
+<?php include("../../lib/html/footer.da.html"); ?>
 
 </body>
 </html>

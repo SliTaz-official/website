@@ -9,53 +9,16 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="SliTaz GNU/Linux LiveCD" />
     <meta name="keywords" lang="da" content="System, fri, gratis, gnu, linux, software opensource, livecd LINUX i RAM" />
-    <meta name="robots" content="index, follow, all" />
-    <meta name="modified" content="2011-03-25 19:20:00" />
     <meta name="author" content="Linux User"/>
-    <link rel="shortcut icon" href="../../favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="../../slitaz.css" />
+	<?php include("../../lib/html/meta-link.html"); ?>
 </head>
 <body>
 
-<!-- Header -->
-<div id="header">
-	<div id="logo"></div>
-	<div id="network">
-		<a href="http://www.slitaz.org/netmap.php">
-			<img src="../../images/network.png" alt="netværk:" /></a>
-		<a href="http://scn.slitaz.org/">Samfund</a>
-		<a href="http://doc.slitaz.org/">Vejledning</a>
-		<a href="http://forum.slitaz.org/">Forum</a>
-		<a href="http://bugs.slitaz.org">Fejl</a>
-		<a href="http://hg.slitaz.org/">Hg</a>
-	</div>
-	<h1><a href="http://www.slitaz.org/">SliTaz GNU/Linux</a></h1>
-</div>
+<?php include("../../lib/html/header.da.html"); ?>
 
 <!-- Block -->
 <div id="block">
-	<!-- Navigation -->
-	<div id="block_nav">
-		<h4>Navigation</h4>
-		<div class="right_box">
-			<ul>
-				<li><a href="../mailing-list.php">Postliste</a></li>
-				<li><a href="../devel/">Udvikling</a></li>
-				<li><a href="../packages/">Programpakker</a></li>
-				<li><a href="../artwork/">Grafik</a></li>
-				<li><a href="../search.php">Søgning</a></li>
-			</ul>
-		</div>
-		<div class="left_box">
-			<ul>
-				<li><a href="../">Nyheder</a></li>
-				<li><a href="../about/">Om SliTaz</a></li>
-				<li><a href="../get/">Hent Slitaz</a></li>
-				<li><a href="../asso/">Organisation</a></li>
-				<li><a href="../doc/">Vejledning</a></li>
-			</ul>
-		</div>
-	</div>
+	<?php include("../../lib/html/nav.da.html"); ?>
 	<!-- Information/image -->
 	<div id="block_info">
 		<h4>Hent varianter</h4>
@@ -151,33 +114,7 @@ inkluderet i de officielle varianter.
 <!-- End of content -->
 </div>
 
-<!-- Footer -->
-<div id="footer">
-	<div class="right_box">
-	<h4>SliTaz netværk</h4>
-		<ul>
-			<li><a href="http://doc.slitaz.org/">Vejledning</a></li>
-			<li><a href="http://forum.slitaz.org/">Supportforum</a></li>
-			<li><a href="http://scn.slitaz.org/">Netværkssamfund</a></li>
-			<li><a href="http://labs.slitaz.org/">Laboratorier</a></li>
-			<li><a href="http://twitter.com/slitaz">SliTaz på Twitter</a></li>
-			<li><a href="http://distrowatch.com/slitaz">SliTaz på DistroWatch</a></li>
-		</ul>
-	</div>
-	<h4>SliTaz hjemmeside	</h4>
-	<ul>
-		<li><a href="#header">Begyndelsen af siden</a></li>
-		<li>Ophavsret &copy; <span class="year"></span>
-			<a href="http://www.slitaz.org/">SliTaz</a></li>
-		<li><a href="../about/">Om projektet</a></li>
-		<li><a href="../../netmap.php">Oversigt</a></li>
-		<li>Siden redigeret den 6 Januar 2011</li>
-		<li><a href="http://validator.w3.org/check?uri=referer"><img
-		src="../../pics/website/xhtml10.png" alt="Gyldig XHTML 1.0 kode"
-		title="Gyldig XHTML 1.0 kode"
-		style="width: 80px; height: 15px; vertical-align: middle;" /></a></li>
-	</ul>
-</div>
+<?php include("../../lib/html/footer.da.html"); ?>
 
 </body>
 </html>

@@ -14,7 +14,7 @@
 </head>
 <body>
 
-<?php include("../lib/html/header.html"); ?>
+<?php include("../lib/html/header.da.html"); ?>
 
 <!-- Block -->
 <div id="block">
@@ -217,7 +217,7 @@
 <!-- End of content  -->
 </div>
 
-<?php include("../lib/html/footer.html"); ?>
+<?php include("../lib/html/footer.da.html"); ?>
 
 </body>
 </html>
