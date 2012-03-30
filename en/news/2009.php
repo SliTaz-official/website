@@ -6,14 +6,8 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="SliTaz news archives info release" />
     <meta name="keywords" lang="en" content="System, free, gnu, linux, opensource software, livecd in RAM" />
-    <meta name="robots" content="index, follow, all" />
-    <meta name="expires" content="never" />
-    <meta name="modified" content="2009-11-04 21:45:00" />
     <meta name="author" content="Christophe Lincoln"/>
-    <meta name="publisher" content="www.slitaz.org" />
-    <link rel="shortcut icon" href="../../favicon.ico" />
-    <link rel="stylesheet"  type="text/css" href="../../slitaz.css" />
-    <link rel="Content" href="#content" />
+	<?php include("../../lib/html/meta-link.html"); ?>
 </head>
 <body>
 
