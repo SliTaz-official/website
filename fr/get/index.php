@@ -217,7 +217,7 @@ include("../../lib/html/header.html");
 <!-- End of content -->
 </div>
 
-<?php include("../lib/html/footer.html"); ?>
+<?php include("../../lib/html/footer.html"); ?>
 
 </body>
 </html>

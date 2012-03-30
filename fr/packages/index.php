@@ -6,53 +6,16 @@
 	<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
 	<meta name="description" content="Recherche et information sur les paquets slitaz" />
 	<meta name="keywords" lang="fr" content="tazpkg, paquet slitaz" />
-	<meta name="robots" content="index, follow, all" />
-	<meta name="modified" content="2011-03-26 00:04:00" />
 	<meta name="author" content="Christophe Lincoln"/>
-	<link rel="shortcut icon" href="../../favicon.ico" />
-	<link rel="stylesheet"  type="text/css" href="../../slitaz.css" />
+	<?php include("../../lib/html/meta-link.html"); ?>
 </head>
 <body>
 
-<!-- Header -->
-<div id="header">
-	<div id="logo"></div>
-	<div id="network">
-		<a href="http://www.slitaz.org/netmap.php">
-			<img src="../../images/network.png" alt="network.png" /></a>
-		<a href="http://scn.slitaz.org/">Community</a>
-		<a href="http://doc.slitaz.org/">Doc</a>
-		<a href="http://forum.slitaz.org/">Forum</a>
-		<a href="http://bugs.slitaz.org">Bugs</a>
-		<a href="http://hg.slitaz.org/">Hg</a>
-	</div>
-	<h1><a href="http://www.slitaz.org/">SliTaz GNU/Linux</a></h1>
-</div>
+<?php include("../../lib/html/header.html"); ?>
 
 <!-- Block -->
 <div id="block">
-	<!-- Navigation -->
-	<div id="block_nav">
-		<h4>Navigation</h4>
-		<div class="right_box">
-			<ul>
-				<li><a href="../mailing-list.php">Mailing List</a></li>
-				<li><a href="../devel/">Développement</a></li>
-				<li><a href="../packages/">Paquets</a></li>
-				<li><a href="../artwork/">Artwork</a></li>
-				<li><a href="../search.php">Recherche</a></li>
-			</ul>
-		</div>
-		<div class="left_box">
-			<ul>
-				<li><a href="../">Actualités</a></li>
-				<li><a href="../about/">A propos</a></li>
-				<li><a href="../get/">Téléchargement</a></li>
-				<li><a href="../asso/">Association</a></li>
-				<li><a href="../doc/">Documentation</a></li>
-			</ul>
-		</div>
-	</div>
+	<?php include("../../lib/html/nav.fr.html"); ?>
 	<!-- Information/image -->
 	<div id="block_info">
 		<h4>Paquets</h4>
@@ -134,25 +97,7 @@
 <!-- End of content -->
 </div>
 
-<!-- Footer -->
-<div id="footer">
-	Copyright &copy; <span class="year"></span>
-	<a href="http://www.slitaz.org/">SliTaz</a> - Network:
-	<a href="http://scn.slitaz.org/">Community</a>
-	<a href="http://doc.slitaz.org/">Doc</a>
-	<a href="http://forum.slitaz.org/">Forum</a>
-	<a href="http://pkgs.slitaz.org/">Packages</a>
-	<a href="http://bugs.slitaz.org">Bugs</a>
-	<a href="http://hg.slitaz.org/">Hg</a>
-	<p>
-		SliTaz @
-		<a href="http://twitter.com/slitaz">Twitter</a>
-		<a href="http://www.facebook.com/slitaz">Facebook</a>
-		<a href="http://distrowatch.com/slitaz">Distrowatch</a>
-		<a href="http://en.wikipedia.org/wiki/SliTaz">Wikipedia</a>
-		<a href="http://flattr.com/profile/slitaz">Flattr</a>
-	</p>
-</div>
+<?php include("../../lib/html/footer.html"); ?>
 
 </body>
 </html>

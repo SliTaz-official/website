@@ -15,7 +15,7 @@
 
 <!-- Block -->
 <div id="block">
-	<?php include("../../lib/html/nav.en.html"); ?>
+	<?php include("../../lib/html/nav.fr.html"); ?>
 	<!-- Information/image -->
 	<div id="block_info">
 		<h4>Association</h4>
