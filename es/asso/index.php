@@ -90,16 +90,7 @@
 	</div>
 </div>
 
-<!-- Languages -->
-<div id="lang">
-	<a href="/i18n.php">
-		<img src="/images/locale.png" alt="Locale:" /></a>
-	<a href="/en/asso/">English</a>
-	<b>Español</b>
-	<a href="/fr/asso/">Français</a>
-	<a href="/pt/asso/">Português</a>
-	<a href="/ru/asso/">Русский</a>
-</div>
+<?php include("../../lib/lang.php"); ?>
 
 <!-- Content -->
 <div id="content">

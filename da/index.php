@@ -35,20 +35,7 @@
 	</div>
 </div>
 
-<!-- Languages -->
-<div id="lang">
-	<a href="../i18n.php"><img src="../images/locale.png" alt="Sprog:" /></a>
-	<strong title="Oversættelse ved Bo Vagner Højer - bohoejer@live.dk">Dansk</strong>
-	<a href="../de/">Deutsch</a>
-	<a href="../en/">English</a>
-	<a href="../es/">Español</a>
-	<a href="../fr/">Français</a>
-	<a href="../id/">Indonesian</a>
-	<a href="../it/">Italiano</a>
-	<a href="../pt/">Português</a>
-	<a href="../ru/">Русский</a>
-	<a href="../cn/">中文</a>
-</div>
+<?php include("../lib/lang.php"); ?>
 
 <!-- Content -->
 <div id="content">

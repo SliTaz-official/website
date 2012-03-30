@@ -32,6 +32,8 @@ include("../../lib/html/header.html");
 	</div>
 </div>
 
+<?php include("../../lib/lang.php"); ?>
+
 <!-- Content -->
 <div id="content">
 

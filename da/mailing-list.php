@@ -63,20 +63,7 @@
 	</div>
 </div>
 
-<!-- Languages -->
-<div id="lang">
-	<a href="../i18n.php"><img src="../images/locale.png" alt="Sprog:" /></a>
-	<b>Dansk</b>
-	<a href="../de/mailing-list.php">Deutsch</a>
-	<a href="../en/mailing-list.php">English</a>
-	<a href="../es/mailing-list.php">Español</a>
-	<a href="../fr/mailing-list.php">Français</a>
-	Indonesian
-	<a href="../it/mailing-list.php">Italiano</a>
-	<a href="../pt/mailing-list.php">Português</a>
-	<a href="../ru/mailing-list.php">Русский</a>
-	中文
-</div>
+<?php include("../lib/lang.php"); ?>
 
 <!-- Content -->
 <div id="content">

@@ -35,20 +35,7 @@ include("../../lib/html/header.html");
 	</div>
 </div>
 
-<!-- Languages -->
-<div id="lang">
-	<a href="../i18n.php">
-		<img src="../../images/locale.png" alt="Locale:" /></a>
-	<a href="../../da/get/">Dansk</a>
-	<a href="../../de/get/">Deutsch</a>
-	<a href="../../en/get/">English</a>
-	<b>Español</b>
-	<a href="../../fr/get/">Français</a>
-	<a href="../../it/get/">Italiano</a>
-	<a href="../../pt/get/">Português</a>
-	<a href="../../ru/get/">Русский</a>
-	<a href="../../cn/get/">Chinese</a>
-</div>
+<?php include("../../lib/lang.php"); ?>
 
 <!-- Content -->
 <div id="content">

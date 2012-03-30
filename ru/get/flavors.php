@@ -27,6 +27,8 @@ include("../../lib/html/header.ru.html");
 	</div>
 </div>
 
+<?php include("../../lib/lang.php"); ?>
+
 <!-- Content -->
 <div id="content">
 

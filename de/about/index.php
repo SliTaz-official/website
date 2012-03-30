@@ -69,17 +69,7 @@
 	</div>
 </div>
 
-<!-- Languages -->
-<div id="lang">
-	<a href="../i18n.php">
-		<img src="../../images/locale.png" alt="Locale:" /></a>
-	<a href="../../en/about/">English</a>
-	<a href="../../es/about/">Español</a>
-	<a href="../../fr/about/">Français</a>
-	<a href="../../pt/about/">Português</a>
-	<a href="../../ru/about/">Русский</a>
-	<a href="../../cn/about/">Chinese</a>
-</div>
+<?php include("../../lib/lang.php"); ?>
 
 <!-- Content -->
 <div id="content">

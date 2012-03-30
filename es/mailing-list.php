@@ -38,19 +38,7 @@
 	</div>
 </div>
 
-<!-- Languages -->
-<div id="lang">
-	<a href="../18n.php">
-		<img src="../images/locale.png" alt="locale.png" /></a>
-	<a href="../da/mailing-list.php">Dansk</a>
-	<a href="../de/mailing-list.php">Deutsch</a>
-	<a href="../en/mailing-list.php">English</a>
-	<b>Español</b>
-	<a href="../fr/mailing-list.php">Français</a>
-	<a href="../it/mailing-list.php">Italiano</a>
-	<a href="../pt/mailing-list.php">Português</a>
-	<a href="../ru/mailing-list.php">Русский</a>
-</div>
+<?php include("../lib/lang.php"); ?>
 
 <!-- Content -->
 <div id="content">

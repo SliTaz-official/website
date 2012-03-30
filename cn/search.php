@@ -26,20 +26,7 @@
 	</div>
 </div>
 
-<!-- Languages -->
-<div id="lang">
-	<a href="../i18n.php"><img src="../images/locale.png" alt="Locale:" /></a>
-	<a href="../da/search.php">Dansk</a>
-	<a href="../de/search.php">Deutsch</a>
-	<a href="../en/search.php">English</a>
-	<a href="../es/search.php">Español</a>
-	<a href="../fr/search.php">Français</a>
-	Indonesian
-	Italiano
-	<a href="../pt/search.php">Português</a>
-	<a href="../ru/search.php">Русский</a>
-	<b>中文</b>
-</div>
+<?php include("../lib/lang.php"); ?>
 
 <!-- Content -->
 <div id="content">

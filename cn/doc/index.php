@@ -33,20 +33,7 @@
 	</div>
 </div>
 
-<!-- Languages -->
-<div id="lang">
-	<a href="../../i18n.php"><img src="../../images/locale.png" alt="Locale:" /></a>
-	Dansk
-	Deutsch
-	<a href="../../en/doc/">English</a>
-	<a href="../../es/doc/">Español</a>
-	<a href="../../fr/doc/">Français</a>
-	Indonesian
-	<a href="../../it/doc/">Italiano</a>
-	<a href="../../pt/doc/">Português</a>
-	<a href="../../ru/doc/">Русский</a>
-	<b>中文</b>
-</div>
+<?php include("../../lib/lang.php"); ?>
 
 <!-- Content -->
 <div id="content">

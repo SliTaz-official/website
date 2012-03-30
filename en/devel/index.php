@@ -36,6 +36,8 @@
 	</div>
 </div>
 
+<?php include("../../lib/lang.php"); ?>
+
 <!-- Content -->
 <div id="content">
 

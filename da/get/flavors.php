@@ -32,20 +32,7 @@
 	</div>
 </div>
 
-<!-- Languages -->
-<div id="lang">
-	<a href="../../i18n.php"><img src="../../images/locale.png" alt="Sprog:" /></a>
-	<b>Dansk</b>
-	<a href="../../de/get/flavors.php">Deutsch</a>
-	<a href="../../en/get/flavors.php">English</a>
-	Español
-	<a href="../../fr/get/flavors.php">Français</a>
-	Indonesian
-	Italiano
-	<a href="../../pt/get/flavors.php">Português</a>
-	<a href="../../ru/get/flavors.php">Русский</a>
-	<a href="../../cn/get/flavors.php">中文</a>
-</div>
+<?php include("../../lib/lang.php"); ?>
 
 <!-- Content -->
 <div id="content">
