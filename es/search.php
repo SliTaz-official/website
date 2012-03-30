@@ -8,6 +8,29 @@
 	<meta name="keywords" lang="es" content="System, free, gnu, linux, software opensource, livecd LINUX in RAM" />
 	<meta name="author" content="Eduardo Suarez-Santana"/>
 	<?php include("../lib/html/meta-link.html"); ?>
+	<style type="text/css">
+		input.gsc-search-button {
+		   	border: 1px solid #b64b22;
+			background-color: #b64b22;
+			color: white;
+			font-weight: bold;
+			cursor: pointer;
+			padding: 2px 10px;
+			font-size: 14px;
+			margin-left: -4px;
+			-webkit-border-top-right-radius: 4px;
+			-webkit-border-bottom-right-radius: 4px;
+			-moz-border-radius-topright: 4px;
+			-moz-border-radius-bottomright: 4px;
+			border-top-right-radius: 4px;
+			border-bottom-right-radius: 4px;
+		}
+		.gs-webResult.gs-result a.gs-title:link,
+		.gs-webResult.gs-result a.gs-title:link b {
+			color: #103a5e;
+		}
+		#cse { margin-bottom: 120px; }
+	</style>
 </head>
 <body>
 
@@ -45,29 +68,6 @@
 	    customSearchControl.draw('cse', options);
 	  }, true);
 	</script>
-	<style type="text/css">
-		input.gsc-search-button {
-		   	border: 1px solid #b64b22;
-			background-color: #b64b22;
-			color: white;
-			font-weight: bold;
-			cursor: pointer;
-			padding: 2px 10px;
-			font-size: 14px;
-			margin-left: -4px;
-			-webkit-border-top-right-radius: 4px;
-			-webkit-border-bottom-right-radius: 4px;
-			-moz-border-radius-topright: 4px;
-			-moz-border-radius-bottomright: 4px;
-			border-top-right-radius: 4px;
-			border-bottom-right-radius: 4px;
-		}
-		.gs-webResult.gs-result a.gs-title:link,
-		.gs-webResult.gs-result a.gs-title:link b {
-			color: #103a5e;
-		}
-		#cse { margin-bottom: 120px; }
-	</style>
 </div>
 
 <div id="cse" style="width:100%;"></div>
