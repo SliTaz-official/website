@@ -42,8 +42,6 @@
 
 <?php include("../lib/html/header.da.html"); ?>
 
-<?php include("../lib/html/header.da.html"); ?>
-
 <!-- Block -->
 <div id="block">
 	<?php include("../lib/html/nav.da.html"); ?>

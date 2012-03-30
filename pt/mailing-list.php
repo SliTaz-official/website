@@ -42,15 +42,7 @@
 	</div>
 </div>
 
-<!-- Languages -->
-<div id="lang">
-	<a href="../18n.php">
-		<img src="../images/locale.png" alt="locale.png" /></a>
-	<a href="../de/mailing-list.php">Deutsch</a>
-	<a href="../en/mailing-list.php">English</a>
-	<a href="../es/mailing-list.php">Español</a>
-	<a href="../fr/mailing-list.php">Français</a>
-</div>
+<?php include("../lib/lang.php"); ?>
 
 <!-- Content -->
 <div id="content">
