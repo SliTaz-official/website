@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -32,9 +32,12 @@
 <div id="content">
 
 <div class="box">
-	<img src="/images/update.png" alt="[Update]" style="float: left; margin-right: 10px; " />
+	<img src="/images/update.png" alt="*" style="float: left; margin-right: 10px; " />
 
-	<p>Помогите нам приобрести выделенный сервер — посетите нашу <a href="http://www.gofundme.com/3ql70">страницу по сбору средств</a>, <a href="http://usbkey.slitaz.org/">проект USB Key</a>, либо станьте нашим официальным <a href="/ru/sponsor/">спонсором</a></p>
+	<p>Помогите нам приобрести выделенный сервер — посетите нашу
+	<a href="http://www.gofundme.com/3ql70">страницу по сбору средств</a>,
+	<a href="http://usbkey.slitaz.org/">проект USB Key</a>,
+	либо станьте нашим официальным <a href="sponsor/">спонсором</a></p>
 </div>
 
 <!--
@@ -46,8 +49,8 @@
 <p>На веб-сайте SliTaz вы найдете главные новости проекта, а также новости по общему ходу дел в подпроектах на <a href="http://scn.slitaz.org/">сайте сообщества</a>. Всё это также доступно в виде <a href="/rss.xml">RSS</a>. В рамках проекта также публикуется небольшой ежемесячный бюллетень. Эта страница, как и <a href="../">главная страница</a> сайта даст вам хорошее представление о последних новостях, коммитах и твитах.</p>
 
 <div class="box">
-	<img src="../images/news.png" alt=".png" />	
-	<a href="http://scn.slitaz.org/">Новости из блога</a> | 
+	<img src="/images/news.png" alt="[ ]" />
+	<a href="http://scn.slitaz.org/">Новости из блога</a> |
 	<a href="http://doc.slitaz.org/ru:newsletter:start">Ежемесячный информационный бюллетень</a>
 </div>
 
@@ -55,17 +58,15 @@
 <a name="news"></a>
 
 <ul>
-	<li><strong>03 марта 2012 — Вышел SliTaz 4.0-RC2</strong>
-	<a name="20120303"></a>
+	<li id="20120303"><strong>03 марта 2012 — Вышел SliTaz 4.0-RC2</strong>
 	<p>Команда SliTaz рада сообщить о выходе нового релиз-кандидата SliTaz 4.0-RC2. Мы провели огромную работу по исправлению ошибок в RC1 и доработке наших утилит, таких как TazPKG, TazPanel и TazUSB. Стало проще соединиться с Wi-Fi через TazPanel или новый мастер Wi-Fi. Теперь TazPKG лучше интегрирован с рабочим столом и имеет новую систему уведомлений.</p>
 	<p>Эта новая версия идет с полным пакетом Xorg, с поддержкой DRI и с драйверами NV, Intel, Geode и Vesa, работающими «из коробки». Мы еще раз пересобрали все пакеты и сэкономили примерно 2 МБ в базовом Live-CD, поэтому теперь он включает дополнительно Lxrandr, Parcellite и клиент BiTorrent transmission.</p>
 	<p>Мы благодарим всех, кто тестировал первый релиз-кандидат; этот RC2 близок к грядущему SliTaz 4.0, выпуск которого запланирован через 2 недели. Скачать ISO-образ RC2 с нашего зеркала (35,1 МБ):
 		<a href="http://mirror.slitaz.org/iso/cooking/slitaz-4.0-RC2.iso">SliTaz 4.0-RC2</a>
 	</p>
 	</li>
-	
-	<li><strong>23 февраля 2012 — Вышел SliTaz 4.0-RC1</strong>
-	<a name="20120223"></a>
+
+	<li id="20120223"><strong>23 февраля 2012 — Вышел SliTaz 4.0-RC1</strong>
 	<p>Команда SliTaz рада объявить о выпуске первого релиз-кандидата SliTaz 4.0. SliTaz может загружаться за 10–12 с на сравнительно новом железе, а с новым ISO «4-в-1» вы сможете установить полный рабочий стол SliTaz, имея всего 48 МБ RAM. ISO «4-в-1» способен автоматически определять размер памяти и загружать SliTaz в текстовом режиме, в минимальном окружении X, либо с полновесным графическим рабочим столом.</p>
 	<p>SliTaz 4.0 будет иметь в репозитории более 3000 хорошо протестированных пакетов, а серия релиз-кандидатов позволит нам отследить самые последние ошибки. После нашего последнего релиза Cooking, все пакеты были пересобраны дважды, чтобы обеспечить качество сборки.</p>
 	<p>В этом RC2 мы предлагаем вам новое графическое загрузочное меню и графический выбор языка и раскладки клавиатуры. Дистрибутив содержит новое оформление рабочего стола, а также новый инсталлятор командной строки с CGI/веб-интерфейсом, доступным через TazPanel. Вы можете скачать новый ISO с нашего зеркала:
@@ -86,14 +87,12 @@
 </div>
 
 <h2>Сейчас в проекте…</h2>
-<?php
-	require_once("../lib/get-feeds.php");
-?>
+<?php require_once("../lib/get-feeds.php"); ?>
 
 <div class="activity">
 	<p>
 		<a href="http://scn.slitaz.org/activity/"><img 
-			src="../images/users.png" alt="[ ]" /></a>
+			src="/images/users.png" alt="[ ]" /></a>
 		Сейчас в сообществе…
 		<?php get_feed("scn.xml"); ?>
 	</div>
@@ -117,7 +116,7 @@
 <div class="activity">
 	<p>
 		<a href="http://hg.slitaz.org/">
-			<img src="../images/development.png" alt="[ ]" /></a>
+			<img src="/images/development.png" alt="[ ]" /></a>
 		Последние коммиты в wok
 		<?php get_feed("wok.xml"); ?>
 	</div>

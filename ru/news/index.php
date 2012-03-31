@@ -1,16 +1,13 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <title>Архив новостей | SliTaz</title>
-    <meta name="description" content="Архив новостей SliTaz" />
-    <meta name="keywords" lang="ru" content="система, свободная, Gnu, Linux, открытое ПО, Livecd в RAM" />
-    <meta name="robots" content="index, follow, all" />
-    <meta name="modified" content="<?php echo (date( "Y-m-d H:i:s", getlastmod())); ?>" />
-    <meta name="author" content="Christophe Lincoln"/>
-    <link rel="shortcut icon" href="../../favicon.ico" />
-    <link rel="stylesheet"  type="text/css" href="../../slitaz.css" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Архив новостей | SliTaz</title>
+	<meta name="description" content="Архив новостей SliTaz" />
+	<meta name="keywords" lang="ru" content="система, свободная, Gnu, Linux, открытое ПО, Livecd в RAM" />
+	<meta name="author" content="Christophe Lincoln"/>
+	<?php include("../../lib/html/meta-link.html"); ?>
 </head>
 <body>
 
@@ -29,7 +26,7 @@
 			домен).</p>
 
 		<p>
-			<img src="/images/news.png" alt="[ News ]" />
+			<img src="/images/news.png" alt="[ ]" />
 			<a href="2007.php">2007</a> | <a href="2008.php">2008</a>
 			| <a href="2009.php">2009</a> | <a href="2010.php">2010</a>
 			| <a href="./">2011</a>
@@ -92,7 +89,7 @@ Cooking в ноябре: более 2200 изменений было совер�
 и сообщить о возможных ошибках. Если вы захотите, вы сможете помочь исправить
 известные проблемы до релиза 4.0. Вы можете связаться с участниками команды
 через наш IRC, рассылку, форум, или написав электронное письмо мэйнтейнерам
-пакетов. Мы надеемся, вам понравится этот новый <a href="/ru/get/">релиз</a>!</p>
+пакетов. Мы надеемся, вам понравится этот новый <a href="../get/">релиз</a>!</p>
 	</li>
 </ul>
 

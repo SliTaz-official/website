@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -11,13 +11,6 @@
 	<style type="text/css">
 		ul.nobullet { list-style-type: none; }
 		.icon16 { width: 16px; height: 16px; }
-
-		table { border: 1px solid #444; width: variable; border-collapse: collapse; }
-		td { border: 1px dotted #6495ed; width: variable; padding: 2px; }
-		.rowodd { background-color: #fff; }
-		.roweven { background-color: #e1ffe1; /* the tower */ }
-		th { border: 1px solid #444; width: variable; padding: 4px; }
-		.alignright { text-align: right; }
 	</style>
 </head>
 <body>
@@ -33,7 +26,7 @@
 
 		<p>Обсуждения и анонсы команды SliTaz (а также поддержка и разработка). Всё это — части рассылки — присоединяйтесь, чтобы получить помощь или влиться в проект.</p>
 		<p>
-			<img src="../images/users.png" alt="users.png" />
+			<img src="/images/users.png" alt="[ ]" />
 			Также вы можете присоединиться к нам на <a href="http://scn.slitaz.org/">SCN</a>, получить поддержку на <a href="http://forum.slitaz.org/">форуме</a>, или:
 		</p>
 		<!-- Follow -->
@@ -76,11 +69,13 @@
 <p>Для того, чтобы иметь возможность отправить сообщение в рассылку, сначала вы должны подписаться на неё, после чего вам придет письмо-подтверждение. Это письмо содержит число подтверждения, которое вы должны переслать администраторам рассылки (для предотвращения спама). Как только письмо с сообщением подтверждения получено, вы можете отправлять письма в рассылку и получать все сообщения, которые будут написаны другими участниками. Заметьте, что письма могут быть отфильтрованы вашей почтовой программой в определенную папку. Также, разумным решением является использовать кнопку «Ответить», чтобы ответить на письмо, для того, чтобы ваш ответ попал в соответствующую нить обсуждения.</p>
 
 <ul>
-	<li>Адрес для управления подпиской (подписаться, отписаться, справка): <a href="mailto:slitaz-request@lists.tuxfamily.org">slitaz-request@lists.tuxfamily.org</a></li>
+	<li>Адрес для управления подпиской (подписаться, отписаться, справка):
+		<a href="mailto:slitaz-request@lists.tuxfamily.org">slitaz-request@lists.tuxfamily.org</a></li>
 	<li>Чтобы подписаться, отправьте письмо с темой «subscribe»</li>
 	<li>Чтобы отписаться, отправьте письмо с темой «unsubscribe»</li>
 	<li>Чтобы получить справку, отправьте письмо с темой «help»</li>
-	<li>Адрес, по которому можно написать письмо в рассылку: <a href="mailto:slitaz@lists.tuxfamily.org">slitaz@lists.tuxfamily.org</a></li>
+	<li>Адрес, по которому можно написать письмо в рассылку:
+		<a href="mailto:slitaz@lists.tuxfamily.org">slitaz@lists.tuxfamily.org</a></li>
 </ul>
 
 
@@ -96,9 +91,9 @@
 <p>По приведенным ниже ссылкам вы можете просмотреть архив рассылки, автоматически переведенный на русский язык такими переводчиками:</p>
 
 <ul class="nobullet">
-	<li><img class="icon16" src="http://www.translate.ru/favicon.ico" /> <a href="http://www.translate.ru/General/au-ru/http%3a%2f%2flistengine.tuxfamily.org%2flists.tuxfamily.org%2fslitaz%2f">онлайн переводчик ПРОМТ</a></li>
-	<li><img class="icon16" src="http://translate.google.com/favicon.ico" /> <a href="http://translate.google.com/translate?sl=auto&amp;tl=ru&amp;hl=ru&amp;u=http://listengine.tuxfamily.org/lists.tuxfamily.org/slitaz/">переводчик Google</a></li>
-	<li><img class="icon16" src="http://microsofttranslator.com/icon.ico" /> <a href="http://www.microsofttranslator.com/bv.aspx?from=&amp;to=ru&amp;a=http://listengine.tuxfamily.org/lists.tuxfamily.org/slitaz/">переводчик Bing™</a> от Microsoft®</li>
+	<li><img class="icon16" src="http://www.translate.ru/favicon.ico" alt="*" /> <a href="http://www.translate.ru/General/au-ru/http%3a%2f%2flistengine.tuxfamily.org%2flists.tuxfamily.org%2fslitaz%2f">онлайн переводчик ПРОМТ</a></li>
+	<li><img class="icon16" src="http://translate.google.com/favicon.ico" alt="*" /> <a href="http://translate.google.com/translate?sl=auto&amp;tl=ru&amp;hl=ru&amp;u=http://listengine.tuxfamily.org/lists.tuxfamily.org/slitaz/">переводчик Google</a></li>
+	<li><img class="icon16" src="http://microsofttranslator.com/icon.ico" alt="*" /> <a href="http://www.microsofttranslator.com/bv.aspx?from=&amp;to=ru&amp;a=http://listengine.tuxfamily.org/lists.tuxfamily.org/slitaz/">переводчик Bing™</a> от Microsoft®</li>
 </ul>
 
 <p>Проект SliTaz никак не связан с указанными сервисами перевода, каждый из них имеет свои достоинства и недостатки, по вопросам качества перевода или наличия (отсутствия) каких-либо функций, обращайтесь непоследственно к разработчикам указанных сервисов. Кроме того, вы всегда можете читать в оригинале сообщения рассылки, упорядоченные по дате или по теме обсуждения (<em>Thread</em>) по приведенной ниже ссылке или таблице:</p>

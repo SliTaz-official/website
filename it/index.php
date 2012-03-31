@@ -53,14 +53,14 @@
 	Il sito di SliTaz offre le novità principali del progetto nonché le novità
 	sulle attività generali dei sotto-progetti sul
 	<a href="http://scn.slitaz.org/">sito della comunità</a>. Entrambi sono
-	disponibili come <a href="../en//rss.xml">feed XML</a>. Il progetto pubblica
+	disponibili come <a href="../rss.xml">feed XML</a>. Il progetto pubblica
 	anche una piccola Newsletter mensile. Questa pagina e il sito web
 	<a href="../">Pagina Principale</a> vi darà una buona panoramica delle
 	ultime novità, impegni e Tweets.
 </p>
 
 <div class="box">
-	<img src="../images/news.png" alt=".png" />
+	<img src="../images/news.png" alt="News" />
 	<a href="http://scn.slitaz.org/">Novità dal Blog</a> |
 	<a href="http://doc.slitaz.org/en:newsletter:start">Newsletter Mensile</a>
 </div>
@@ -119,7 +119,7 @@
 <div class="activity">
 	<p>
 		<a href="http://scn.slitaz.org/activity/"><img
-			src="../images/users.png" alt="users.png" /></a>
+			src="../images/users.png" alt="Users" /></a>
 		Bacheca degli Sviluppatori
 		<?php get_feed("scn.xml"); ?>
 	</div>
@@ -131,7 +131,7 @@
 <div class="activity">
 	<p>
 		<a href="http://forum.slitaz.org/"><img 
-			src="/images/support.png" alt="[ Support ]" /></a>
+			src="/images/support.png" alt="Support" /></a>
 		Forum activity
 		<?php get_feed_forum("forum.xml"); ?>
 	</div>
@@ -143,7 +143,7 @@
 <div class="activity">
 	<p>
 		<a href="http://hg.slitaz.org/">
-			<img src="../images/development.png" alt="development.png" /></a>
+			<img src="../images/development.png" alt="Development" /></a>
 		Ultimi impegni in progresso
 		<?php get_feed("wok.xml"); ?>
 	</div>

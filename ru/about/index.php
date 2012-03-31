@@ -1,17 +1,13 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
 <head>
-    <title>О проекте | SliTaz</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="Общие сведения о проекте SliTaz GNU/Linux" />
-    <meta name="keywords" lang="ru" content="о SliTaz, Gnu, Linux, мини дистрибутив, LiveCD" />
-    <meta name="robots" content="index, follow, all" />
-    <meta name="modified" content="<?php echo (date( "Y-m-d H:i:s", getlastmod())); ?>" />
-    <meta name="author" content="Christophe Lincoln"/>
-    <meta name="publisher" content="www.slitaz.org" />
-    <link rel="shortcut icon" href="../../favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="../../slitaz.css" />
+	<title>О проекте | SliTaz</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="Общие сведения о проекте SliTaz GNU/Linux" />
+	<meta name="keywords" lang="ru" content="о SliTaz, Gnu, Linux, мини дистрибутив, LiveCD" />
+	<meta name="author" content="Christophe Lincoln"/>
+	<?php include("../../lib/html/meta-link.html"); ?>
 </head>
 <body>
 
@@ -70,7 +66,7 @@
 
 <h2 id="website">Веб-сайт и i18n</h2>
 
-<p>Веб-сайт SliTaz доступен также на различных языках, он является частью <a href="../../i18n.php">проекта интернационализации</a>. На сайте вы можете <a href="../get/">загрузить</a> LiveCD со SliTaz, а нам сайт помогает развивать проект. Просмотрите раздел <a href="../doc/">документации</a>, чтобы узнать, как использовать LiveCD SliTaz и как настроить систему.</p>
+<p>Веб-сайт SliTaz доступен также на различных языках, он является частью <a href="/i18n.php">проекта интернационализации</a>. На сайте вы можете <a href="../get/">загрузить</a> LiveCD со SliTaz, а нам сайт помогает развивать проект. Просмотрите раздел <a href="../doc/">документации</a>, чтобы узнать, как использовать LiveCD SliTaz и как настроить систему.</p>
 
 
 <h2 id="reviews">Обзоры</h2>

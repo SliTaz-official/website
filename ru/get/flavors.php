@@ -1,9 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
 <head>
-	<title>SliTaz LiveCD Flavors</title>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>SliTaz LiveCD Flavors</title>
 	<meta name="description" content="SliTaz GNU/Linux LiveCD" />
 	<meta name="keywords" lang="ru" content="система, бесплатно, Gnu, Linux, открытое ПО, LiveCD Linux в RAM" />    
 	<meta name="author" content="Christophe Lincoln" />
@@ -37,43 +37,43 @@ include("../../lib/html/header.ru.html");
 
 <p>Для вашего удобства команда SliTaz предлагает некоторые модификации ISO как для стабильной, так и для нестабильной версий:</p>
 
-<p class="box">
+<div class="box-dl"><p>
 	<a href="http://mirror.slitaz.org/iso/3.0/flavors/slitaz-3.0-xvesa.iso">slitaz-3.0-xvesa.iso</a>
 	[29 МБ] — Полнофункциональное окружение рабочего стола с использованием крошечного графического сервера Xvesa, предоставляющая хороший набор ПО для повседневных задач
-</p>
+</p></div>
 
-<p class="box">
+<div class="box-dl"><p>
 	<a href="http://mirror.slitaz.org/iso/3.0/flavors/slitaz-3.0-firefox.iso">slitaz-3.0-firefox.iso</a>
 	[29 МБ] — Небольшое окружение рабочего стола с Mozilla Firefox «из коробки»
-</p>
+</p></div>
 
-<p class="box">
+<div class="box-dl"><p>
 	<a href="http://mirror.slitaz.org/iso/3.0/flavors/slitaz-3.0-justx.iso">slitaz-3.0-justx.iso</a>
 	[15 МБ] — Небольшое окружение рабочего стола на базе Xorg и Openbox, использующее только окружение X и утилиты для создания вашего собственного рабочего стола
-</p>
+</p></div>
 
-<p class="box">
+<div class="box-dl"><p>
 	<a href="http://mirror.slitaz.org/iso/3.0/flavors/slitaz-3.0-base.iso">slitaz-3.0-base.iso</a>
 	[8 МБ] — Базовая система в текстовом режиме, включающая полезные утилиты командной строки. Хороший выбор для установки на сервер
-</p>
+</p></div>
 
-<p class="box">
+<div class="box-dl"><p>
 	<a href="http://mirror.slitaz.org/iso/3.0/flavors/slitaz-3.0-loram.iso">slitaz-3.0-loram.iso</a>
 	[35 МБ] — Модификация Loram, которая позволяет запускать SliTaz на машинах с очень ограниченными ресурсами, нуждается только в 80 МБ и не использует CDROM во время своей работы
-</p>
+</p></div>
 
-<p class="box">
+<div class="box-dl"><p>
 	<a href="http://mirror.slitaz.org/iso/3.0/flavors/slitaz-3.0-loram-cdrom.iso">slitaz-3.0-loram-cdrom.iso</a>
 	[131 МБ] — Модификация Loram, которой нужно для запуска только 16 МБ памяти, небольшой объем подкачки и использующая загрузочный CDROM во время работы
-</p>
+</p></div>
 
-<p class="box">
+<div class="box-dl"><p>
 	<a href="http://mirror.slitaz.org/iso/3.0/flavors/slitaz-3.0-3in1.iso">slitaz-3.0-3in1.iso</a>
 	[30 МБ] — Модификация «3-в-1», включающая в себя ISO-образы base, justx и core
-</p>
+</p></div>
 
 <div class="box">
-	<img src="../../images/network.png" alt="png" />
+	<img src="/images/network.png" alt="[ ]" />
 	Просмотрите папку модификаций на зеркале:
 	<a href="http://mirror.slitaz.org/iso/stable/flavors/">Stable</a> |
 	<a href="http://mirror.slitaz.org/iso/cooking/flavors/">Cooking</a>

@@ -1,5 +1,23 @@
 <?php
 
+function updated() {
+	$addr = explode('/', $_SERVER['REQUEST_URI']);
+	$lang = $addr[1];
+	$native = array(
+	"cn"=>"- 更新于: ",
+	"da"=>"- Opdateret den: ",
+	"de"=>"- Aktualisiert am: ",
+	"en"=>"- Updated: ",
+	"es"=>"- Actualizado el: ",
+	"fr"=>"- Mis à jour le: ",
+	"id"=>"- Diperbarui pada: ",
+	"it"=>"- Aggiornato il: ",
+	"pt"=>"- Atualizado em: ",
+	"ru"=>"— Обновлено: "
+	);
+	return $native[$lang];
+}
+
 // Read RSS Feed
 function get_feed($feed) {
 	$cache = '/var/cache/slitaz/website';
@@ -7,7 +25,7 @@ function get_feed($feed) {
 	// have the page displayed even if any xml file
 	if ( ! file_exists("$cache/$feed")) {
 		echo "</p>\n<div>\n";
-		echo "Missing feed: $cache/$feed\n" . "</div>\n";
+		echo "Missing feed: $cache/$feed\n";
 	}
 	else {
 		$content = file_get_contents("$cache/$feed");
@@ -15,11 +33,11 @@ function get_feed($feed) {
 		$count = 0;
 		// We look for last item, channel may not have a PubDate*
 		$up = ($x->channel->item->pubDate);
-		echo "<span>- Updated: " . substr("$up", 5, 17) . "</span>\n";
+		echo "<span>" . updated() . substr("$up", 5, 17) . "</span>\n";
 		echo "</p>\n<div>\n<ul>\n";
 		foreach($x->channel->item as $entry) {
 			$count = $count + 1;
-			echo "	<li><a href='$entry->guid' title='$entry->title'>" . 
+			echo "	<li><a href='$entry->guid'>" . 
 				$entry->title . "</a></li>\n";
 			if ($count == $entries) {
 				break;
@@ -35,7 +53,8 @@ function get_feed_blog($feed) {
 	$entries = 4;
 	// have the page displayed even if any xml file
 	if ( ! file_exists("$cache/$feed")) {
-		echo "Missing feed: $cache/$feed\n" . "</div>\n";
+		echo "</p>\n<div>\n";
+		echo "Missing feed: $cache/$feed\n";
 	}
 	else {
 		$content = file_get_contents("$cache/$feed");
@@ -47,7 +66,7 @@ function get_feed_blog($feed) {
 		echo "<ul>\n";
 		foreach($x->channel->item as $entry) {
 			$count = $count + 1;
-			echo "	<li><strong><a href='$entry->link' title='$entry->title'>" . 
+			echo "	<li><strong><a href='$entry->link'>" . 
 				$entry->title . "</strong></a>\n";
 			echo "<span>- " . substr("$entry->pubDate", 5, 17) . "</span>\n";
 			echo "<p>$entry->description</p>\n</li>";
@@ -66,7 +85,7 @@ function get_feed_forum($feed) {
 	// have the page displayed even if any xml file
 	if ( ! file_exists("$cache/$feed")) {
 		echo "</p>\n<div>\n";
-		echo "Missing feed: $cache/$feed\n" . "</div>\n";
+		echo "Missing feed: $cache/$feed\n";
 	}
 	else {
 		$content = file_get_contents("$cache/$feed");
@@ -74,11 +93,11 @@ function get_feed_forum($feed) {
 		$count = 0;
 		// We look for last item, channel may not have a PubDate*
 		$up = ($x->channel->item->pubDate);
-		echo "<span>- Updated: " . substr("$up", 5, 17) . "</span>\n";
+		echo "<span>" . updated() . substr("$up", 5, 17) . "</span>\n";
 		echo "</p>\n<div>\n<ul>\n";
 		foreach($x->channel->item as $entry) {
 			$count = $count + 1;
-			echo "	<li><a href='$entry->link' title='$entry->title'>" . 
+			echo "	<li><a href='$entry->link'>" . 
 				$entry->title . "</a></li>\n";
 			if ($count == $entries) {
 				break;

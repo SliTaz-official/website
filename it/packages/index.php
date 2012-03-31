@@ -71,13 +71,13 @@
 </div>
 
 <div class="box">
-	<img src="../../images/text.png" alt="text.png" />
+	<img src="../../images/text.png" alt="Text" />
 	Lista pacchetti:
 	<a href="http://mirror.slitaz.org/packages/stable/packages.list"
 		>Stabile</a> |
 	<a href="http://mirror.slitaz.org/packages/cooking/packages.list"
 		>Cooking</a>
-	<img src="../../images/network.png" alt="text.png" />
+	<img src="../../images/network.png" alt="Text" />
 	Fonte principale:
 	<a href="http://mirror.slitaz.org/packages/"
 		>http://mirror.slitaz.org/packages/</a>
@@ -90,7 +90,7 @@
 <div class="activity">
 	<p>
 		<a href="http://hg.slitaz.org/">
-			<img src="../../images/development.png" alt="development.png" /></a>
+			<img src="../../images/development.png" alt="Development" /></a>
 		Ultimi impegni in progresso
 		<?php get_feed("wok.xml"); ?>
 	</div>

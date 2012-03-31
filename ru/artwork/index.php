@@ -1,16 +1,13 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
 <head>
-    <title>SliTaz - Artwork</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="Изображения и логотипы проекта SliTaz GNU/Linux" />
-    <meta name="keywords" lang="ru" content="о SliTaz, Gnu, Linux, мини дистрибутив, LiveCD" />
-    <meta name="robots" content="index, follow, all" />
-    <meta name="modified" content="<?php echo (date( "Y-m-d H:i:s", getlastmod())); ?>" />
-    <meta name="author" content="Christophe Lincoln, Paul Issot"/>
-    <link rel="shortcut icon" href="../../favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="../../slitaz.css" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>SliTaz - Artwork</title>
+	<meta name="description" content="Изображения и логотипы проекта SliTaz GNU/Linux" />
+	<meta name="keywords" lang="ru" content="о SliTaz, Gnu, Linux, мини дистрибутив, LiveCD" />
+	<meta name="author" content="Christophe Lincoln, Paul Issot"/>
+	<?php include("../../lib/html/meta-link.html"); ?>
 </head>
 <body>
 
@@ -52,36 +49,19 @@
 
 
 <h2 id="logos">Логотипы и паучок</h2>
+
 <div class="box">
-	В формате SVG: <a href="../../images/artwork/slitaz-logo.svg">slitaz-logo.svg</a> |
-	<a href="../../images/artwork/slitaz-spider.svg">slitaz-spider.svg</a>
+	В формате SVG: <a href="/images/artwork/slitaz-logo.svg">slitaz-logo.svg</a> |
+	<a href="/images/artwork/slitaz-spider.svg">slitaz-spider.svg</a>
 </div>
 
 <div>
-	<img
-	   src="../../images/artwork/slitaz-button-red.png"
-	   alt="Кнопка SliTaz"
-	   style="width: 148px; height: 148px;" />
-	<img
-	   src="../../images/artwork/slitaz-logo-whitebg-320x118.png"
-	   alt="Паучок SliTaz"
-	   style="width: 320px; height: 118px;" />
-	<img
-	   src="../../images/artwork/slitaz-tux-124x126.png"
-	   alt="SliTaz Tux"
-	   style="width: 124px; height: 126px;" />
-	<img
-	   src="../../images/artwork/slitaz-spider-48x48.png"
-	   alt="Паучок SliTaz"
-	   style="width: 48px; height: 48px;" />
-	<img
-	   src="../../images/artwork/tazpkg.png"
-	   alt="Логотип пакета Tazpkg"
-	   style="width: 32px; height: 32px;" />
-	<img
-	   src="../../images/artwork/slitaz-minilogo-80x15.png"
-	   alt="Мини-логотип SliTaz"
-	   style="width: 80px; height: 15px;" />
+	<img src="/images/artwork/slitaz-button-red.png" alt="Кнопка SliTaz" />
+	<img src="/images/artwork/slitaz-logo-whitebg-320x118.png" alt="Паучок SliTaz" />
+	<img src="/images/artwork/slitaz-tux-124x126.png" alt="SliTaz Tux" />
+	<img src="/images/artwork/slitaz-spider-48x48.png" alt="Паучок SliTaz" />
+	<img src="/images/artwork/tazpkg.png" alt="Логотип пакета Tazpkg" />
+	<img src="/images/artwork/slitaz-minilogo-80x15.png" alt="Мини-логотип SliTaz" />
 </div>
 
 <!-- End of content -->

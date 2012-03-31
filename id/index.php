@@ -18,28 +18,7 @@ include("../lib/html/header.html");
 
 <!-- Block -->
 <div id="block">
-	<!-- Navigation -->
-	<div id="block_nav">
-		<h4>Navigation</h4>
-		<div class="right_box">
-			<ul>
-				<li><a href="../en/mailing-list.php">Mailing List</a></li>
-				<li><a href="../en/devel/">Development</a></li>
-				<li><a href="../en/packages/">Packages</a></li>
-				<li><a href="../en/artwork/">Artwork</a></li>
-				<li><a href="../en/search.php">Search</a></li>
-			</ul>
-		</div>
-		<div class="left_box">
-			<ul>
-				<li><a href="./">Headlines</a></li>
-				<li><a href="../en/about/">About</a></li>
-				<li><a href="../en/get/">Download</a></li>
-				<li><a href="../en/asso/">Association</a></li>
-				<li><a href="../en/doc/">Documentation</a></li>
-			</ul>
-		</div>
-	</div>
+	<?php include("../lib/html/nav.en.html"); ?>
 	<!-- Information/image -->
 	<div id="block_info">
 		<h4>Halaman Utama</h4>
@@ -160,4 +139,3 @@ include("../lib/html/header.html");
 
 </body>
 </html>
-

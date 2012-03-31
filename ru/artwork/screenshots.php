@@ -1,17 +1,13 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
 <head>
-    <title>Скриншоты SliTaz</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="Скриншоты проекта SliTaz GNU/Linux" />
-    <meta name="keywords" lang="ru" content="о SliTaz, Gnu, Linux, мини дистрибутив, LiveCD" />
-    <meta name="robots" content="index, follow, all" />
-    <meta name="modified" content="<?php echo (date( "Y-m-d H:i:s", getlastmod())); ?>" />
-    <meta name="author" content="Christophe Lincoln, Paul Issot"/>
-    <meta name="publisher" content="www.slitaz.org" />
-    <link rel="shortcut icon" href="../../favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="../../slitaz.css" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Скриншоты SliTaz</title>
+	<meta name="description" content="Скриншоты проекта SliTaz GNU/Linux" />
+	<meta name="keywords" lang="ru" content="о SliTaz, Gnu, Linux, мини дистрибутив, LiveCD" />
+	<meta name="author" content="Christophe Lincoln, Paul Issot"/>
+	<?php include("../../lib/html/meta-link.html"); ?>
 </head>
 <body>
 
@@ -26,7 +22,7 @@
 
 		<p>Лучше один раз увидеть, чем сто раз услышать… Скриншоты последних стабильной и нестабильной версий. Вы тоже можете находить, обсуждать, загружать и делиться графикой SliTaz!</p>
 		<p>
-			<img src="../../images/users.png" alt="users.png" />
+			<img src="/images/users.png" alt="[ ]" />
 			<a href="http://scn.slitaz.org/groups/artwork/">Присоединяйтесь к нам на SCN</a>
 		</p>
 	</div>
@@ -39,71 +35,40 @@
 
 <div id="gallery">
 
-<p>
-<a href="../../images/screenshots/slitaz-3.0.png">
-<img
-    src="../../images/screenshots/slitaz-3.0.png"
-    alt="Стабильная версия 3.0"
-    title="Стабильная версия 3.0"
-    style="width: 480px;" /></a>
-</p>
+<div><a href="/images/screenshots/slitaz-3.0.png">
+<img src="/images/screenshots/slitaz-3.0.png"
+	alt="Стабильная версия 3.0" /></a><br />
+	Стабильная версия 3.0</div>
 
-<p>
-<a href="../../images/screenshots/slitaz_2.png">
-<img
-    src="../../images/screenshots/slitaz_2.png"
-    alt="Стабильная версия 2.0"
-    title="Стабильная версия 2.0"
-    style="width: 480px;" /></a>
-</p>
+<div><a href="/images/screenshots/slitaz_2.png">
+<img src="/images/screenshots/slitaz_2.png"
+	alt="Стабильная версия 2.0"/></a><br />
+	Стабильная версия 2.0</div>
 
-<p>
-<img
-    src="../../images/screenshots/index-desktop.png"
-    alt="Стабильная версия 1.0"
-    title="Стабильная версия 1.0"
-    style="width: 480px;" />
-</p>
+<div><a href="/images/screenshots/index-desktop.png">
+<img src="/images/screenshots/index-desktop.png"
+	alt="Стабильная версия 1.0" /></a><br />
+	Стабильная версия 1.0</div>
 
-<p>
-<img
-    src="../../images/screenshots/cooking-geany.png"
-    alt="Cooking — Geany и GPicview"
-    title="Cooking — Geany и GPicview"
-    style="width: 480px;" />
-</p>
+<div><img src="/images/screenshots/cooking-geany.png"
+	alt="Cooking — Geany и GPicview" /><br />
+	Cooking — Geany и GPicview</div>
 
-<p>
-<img
-    src="../../images/screenshots/cooking-conky.png"
-    alt="Cooking — Conky"
-    title="Cooking — Conky"
-    style="width: 480px;" />
-</p>
+<div><img src="/images/screenshots/cooking-conky.png"
+	alt="Cooking — Conky" /><br />
+	Cooking — Conky</div>
 
-<p>
-<img
-    src="../../images/screenshots/cooking-mplayer.png"
-    alt="Cooking — медиапроигрыватель MPlayer"
-    title="Cooking — медиапроигрыватель MPlayer"
-    style="width: 480px;" />
-</p>
+<div><img src="/images/screenshots/cooking-mplayer.png"
+	alt="Cooking — медиапроигрыватель MPlayer" /><br />
+	Cooking — медиапроигрыватель MPlayer</div>
 
-<p>
-<img
-    src="../../images/screenshots/cooking-superuserpcmanfm.png"
-    alt="Cooking — файловый менеджер PCManFM"
-    title="Cooking — файловый менеджер PCManFM"
-    style="width: 480px; height: 384px;" />
-</p>
+<div><img src="/images/screenshots/cooking-superuserpcmanfm.png"
+	alt="Cooking — файловый менеджер PCManFM" /><br />
+	Cooking — файловый менеджер PCManFM</div>
 
-<p>
-<img
-    src="../../images/screenshots/e17.png"
-    alt="Стабильная версия — E17"
-    title="Стабильная версия — E17"
-    style="width: 480px;" />
-</p>
+<div><img src="/images/screenshots/e17.png"
+	alt="Стабильная версия — E17" /><br />
+	Стабильная версия — E17</div>
 
 <!-- Gallery end -->
 </div>

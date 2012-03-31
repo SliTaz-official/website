@@ -1,9 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
 <head>
-	<title>Документация | SliTaz</title>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Документация | SliTaz</title>
 	<meta name="description" content="Документация SliTaz GNU/Linux" />
 	<meta name="keywords" lang="ru" content="Система, бесплатно, Gnu, Linux, открытое ПО, LiveCD в RAM" />
 	<meta name="author" content="Christophe Lincoln"/>
@@ -24,7 +24,7 @@
 
 		<ul>
 			<li><a href="http://doc.slitaz.org/en:start">Wiki сообщества</a></li>
-			<li><a href="http://hg.slitaz.org/slitaz-doc/raw-file/tip/slitaz/index.en.html">Руководство по началу работы <em>(англ.)</em></a></li>
+			<li><a href="http://hg.slitaz.org/slitaz-doc/raw-file/tip/slitaz/index.ru.html">Руководство по началу работы</a></li>
 		</ul>
 	</div>
 </div>
@@ -46,7 +46,7 @@
 
 <p>Исторически сложилось, что Scratchbook был написан в то время, когда был создан SliTaz и после этого книга не обновлялась. Однако, с течением времени, некоторые участники SliTaz перенесли книгу в Wiki и внесли некоторые изменения: <a href="http://doc.slitaz.org/ru:scratchbook:start">Scratchbook сообщества</a></p>
 
-<p><a href="/en/doc/scratchbook/index.html">Первоначальный Scratchbook <em>(англ.)</em></a> SliTaz описывает этапы создания самого первого дистрибутива SliTaz, а именно: компиляция ядра Linux, установка графического сервера (Xvesa), приложений GTK и т.д. Книга также содержит подробные инструкции, следуя которым и имея некоторый запас времени и желания, можно собрать систему GNU/Linux из исходников.</p>
+<p><a href="/en/doc/scratchbook/">Первоначальный Scratchbook <em>(англ.)</em></a> SliTaz описывает этапы создания самого первого дистрибутива SliTaz, а именно: компиляция ядра Linux, установка графического сервера (Xvesa), приложений GTK и т.д. Книга также содержит подробные инструкции, следуя которым и имея некоторый запас времени и желания, можно собрать систему GNU/Linux из исходников.</p>
 
 
 <h2>Руководства</h2>

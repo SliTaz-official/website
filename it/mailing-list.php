@@ -8,6 +8,32 @@
     <meta name="keywords" content="slitaz list mail discussione" lang="it" />
     <meta name="author" content="Giovanni Santini" />
     <?php include("../lib/html/meta-link.html"); ?>
+	<style type="text/css">
+	table {
+		border: 1px solid #000000;
+		width: variable;
+		border-collapse: collapse;
+	}
+	td {
+		border: 1px dotted #6495ed;
+		width: variable;
+		padding: 2px;
+	}
+	.rowodd {
+		background-color: #ffffff;
+	}
+	.roweven {
+		background-color: #e1ffe1; /* the tower */
+	}
+	th {
+		border: 1px solid #000000;
+		width: variable;
+		padding: 4px;
+	}
+	.alignright {
+		text-align: right;
+	}
+	</style>
 </head>
 <body>
 
@@ -25,7 +51,7 @@
 			(sottoscrizione via email). Partecipaci ora per aiuto o per aderire al progetto.
 		</p>
 		<p>
-			<img src="../images/users.png" alt="users.png" />
+			<img src="../images/users.png" alt="Users" />
 			Puoi anche <a href="http://scn.slitaz.org/">entrare nella rete SCN</a>
 			e nel <a href="http://forum.slitaz.org/">forum di supporto</a> or:
 			<!-- Follow -->
@@ -130,33 +156,6 @@ della discussione.
 <a href="http://listengine.tuxfamily.org/lists.tuxfamily.org/slitaz/"
  >Archivio della mailing list</a>
 </p>
-
-<style type="text/css">
-	table {
-		border: 1px solid #000000;
-		width: variable;
-		border-collapse: collapse;
-	}
-	td {
-		border: 1px dotted #6495ed;
-		width: variable;
-		padding: 2px;
-	}
-	.rowodd {
-		background-color: #ffffff;
-	}
-	.roweven {
-		background-color: #e1ffe1; /* the tower */
-	}
-	th {
-		border: 1px solid #000000;
-		width: variable;
-		padding: 4px;
-	}
-	.alignright {
-		text-align: right;
-	}
-</style>
 
 <div>
 <object type="text/html" width="100%" height="345" data="../lib/archives.php">
