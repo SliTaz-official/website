@@ -1,9 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cn" lang="cn">
 <head>
-	<title>SliTaz GNU/Linux 中文网站</title>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>SliTaz GNU/Linux 中文网站</title>
 	<meta name="description" content="SliTaz GNU/Linux LiveCD" />
 	<meta name="keywords" lang="cn" content="System, free, gnu, linux, software opensource, livecd LINUX in RAM" />
 	<meta name="author" content="Chen Yufei"/>
@@ -32,7 +32,7 @@
 <div id="content">
 	
 <div class="box">
-	<img src="../images/update.png" style="float: left; margin-right: 10px; " />
+	<img src="/images/update.png" style="float: left; margin-right: 10px; " />
 	<p>
 		SliTaz Chinese website needs a maintainer and contributors. You
 		can contact us on the
@@ -50,7 +50,7 @@
 </p>
 
 <div class="box">
-	<img src="../images/news.png" alt=".png" />	
+	<img src="/images/news.png" alt="[ ]" />	
 	<a href="http://labs.slitaz.org/news">实验室新闻</a>
 	(<a href="http://labs.slitaz.org/news?format=atom">Feed</a>) | 
 	<a href="http://doc.slitaz.org/en:newsletter:start">每月时讯</a>
@@ -102,7 +102,7 @@
 <div class="activity">
 	<p>
 		<a href="http://scn.slitaz.org/activity/"><img 
-			src="/images/users.png" alt="users.png" /></a>
+			src="/images/users.png" alt="[ ]" /></a>
 		Community activity
 		<?php get_feed("scn.xml"); ?>
 	</div>
@@ -114,7 +114,7 @@
 <div class="activity">
 	<p>
 		<a href="http://forum.slitaz.org/"><img 
-			src="/images/support.png" alt="[ Support ]" /></a>
+			src="/images/support.png" alt="[ ]" /></a>
 		Forum activity
 		<?php get_feed_forum("forum.xml"); ?>
 	</div>
@@ -126,7 +126,7 @@
 <div class="activity">
 	<p>
 		<a href="http://hg.slitaz.org/">
-			<img src="/images/development.png" alt="development.png" /></a>
+			<img src="/images/development.png" alt="[ ]" /></a>
 		Latest commits in wok
 		<?php get_feed("wok.xml"); ?>
 	</div>

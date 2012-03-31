@@ -77,10 +77,7 @@
 
 <h2>Деятельность</h2>
 
-<?php
-	$lang="ru";
-	require_once("../../lib/get-feeds.php");
-?>
+<?php require_once("../../lib/get-feeds.php"); ?>
 
 <div class="activity">
 	<p>

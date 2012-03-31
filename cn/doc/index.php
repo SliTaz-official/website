@@ -1,12 +1,12 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cn" lang="cn">
 <head>
-	<title>SliTaz - 中文文档</title>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="SliTaz GNU/Linux 关于信息" />
-    <meta name="keywords" lang="cn" content="slitaz documentation" />
-    <meta name="author" content="Draplater" />
+	<title>SliTaz - 中文文档</title>
+	<meta name="description" content="SliTaz GNU/Linux 关于信息" />
+	<meta name="keywords" lang="cn" content="slitaz documentation" />
+	<meta name="author" content="Draplater" />
 	<?php include("../../lib/html/meta-link.html"); ?>
 </head>
 <body>
@@ -45,8 +45,8 @@
 	<li>开发指南 - （未翻译完成）</li>
 	<li>制作指南 - （未翻译完成）</li>
 </ul>
-	
-<h2>手册</h2>	
+
+<h2>手册</h2>
 <ul>
 	<li><a href="http://doc.slitaz.org/cn:tazpkg:start">Tazpkg手册</a> -  Slitaz软件包管理器</li>
 	<li><a href="http://doc.slitaz.org/cn:tazlito:start">Tazlito 手册</a> -  Slitaz Live CD 工具</li>
@@ -54,7 +54,7 @@
 	<li>Tazwok 手册 -  Slitaz软件烹饪锅（未翻译完成）</li>
 </ul>
 
-<h2>Wiki资源</h2>	
+<h2>Wiki资源</h2>
 <p>
 <a href="http://doc.slitaz.org/">Wiki</a> 包括许多非官方Slitaz文档，例如常见问题、小提示、未修复BUG等。你可以自由编辑Wiki。
 </p>
@@ -66,8 +66,8 @@
 
 <ul>
 	<li><a href="releases/3.0/relnotes.cn.html">SliTaz GNU/Linux 3.0 - 发行笔记</a></li>
-	<li><a href="../../en/doc/releases/2.0/relnotes.en.html">SliTaz GNU/Linux 2.0 - 发行笔记</a></li>
-	<li><a href="../../en/doc/releases/1.0/relnotes.en.html">SliTaz GNU/Linux 1.0 - 发行笔记</a></li>
+	<li><a href="/en/doc/releases/2.0/relnotes.en.html">SliTaz GNU/Linux 2.0 - 发行笔记</a></li>
+	<li><a href="/en/doc/releases/1.0/relnotes.en.html">SliTaz GNU/Linux 1.0 - 发行笔记</a></li>
 </ul>
 
 <!-- End of content -->

@@ -1,12 +1,12 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cn" lang="cn">
 <head>
-	<title>SliTaz - 软件包</title>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="SliTaz GNU/Linux 关于信息" />
-    <meta name="keywords" lang="cn" content="slitaz artwork" />
-    <meta name="author" content="Draplater" />
+	<title>SliTaz - 软件包</title>
+	<meta name="description" content="SliTaz GNU/Linux 关于信息" />
+	<meta name="keywords" lang="cn" content="slitaz artwork" />
+	<meta name="author" content="Draplater" />
 	<?php include("../../lib/html/meta-link.html"); ?>
 </head>
 <body>
@@ -66,13 +66,13 @@
 </div>
 
 <div class="box">
-	<img src="../../images/text.png" alt="text.png" />
+	<img src="/images/text.png" alt="[ ]" />
 	Raw packages.list:
 	<a href="http://mirror.slitaz.org/packages/stable/packages.list"
 		>Stable</a> |
 	<a href="http://mirror.slitaz.org/packages/cooking/packages.list"
-		>Cooking</a>
-	<img src="../../images/network.png" alt="text.png" />
+		>Cooking</a><br />
+	<img src="/images/network.png" alt="[ ]" />
 	Main mirror:
 	<a href="http://mirror.slitaz.org/packages/"
 		>http://mirror.slitaz.org/packages/</a>

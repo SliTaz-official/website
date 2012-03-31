@@ -1,9 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cn" lang="cn">
 <head>
-	<title>SliTaz (cn) - Download</title>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>SliTaz (cn) - Download</title>
 	<meta name="description" content="SliTaz GNU/Linux 关于信息" />
 	<meta name="keywords" lang="cn" content="slitaz artwork" />
 	<meta name="author" content="Draplater" />
@@ -89,8 +89,7 @@ Slitaz的软件源在法国、瑞士、中国均有分布。在法国由<a href=
 	<a href="ftp://slitaz.c3sl.ufpr.br/slitaz/">FTP</a></li>
 </ul>
 
-<a name="sources"></a>
-<h3>源码</h3>
+<h3 id="sources">源码</h3>
 <p>
 Tazpkg（软件包管理器）、Tazlito（Slitaz Live工具）、Tazwok（软件包制作）、
 Tazusb（LiveUSB工具）和一些其他的Slitaz小工具可以在Slitaz软件源里下载。
@@ -100,8 +99,7 @@ Tazusb（LiveUSB工具）和一些其他的Slitaz小工具可以在Slitaz软件�
 <a href="http://mirror.slitaz.org/sources/">FTP</a>
 </p>
 
-<a name="stable"></a>
-<h2>LiveCD - 稳定版</h2>
+<h2 id="stable">LiveCD - 稳定版</h2>
 <p>
 	Slitaz稳定版提供一个成熟的操作系统。这个操作系统已经经过严格的测试，基本上没有BUG。
 	LiveCD。这个版本选择了许多有用的软件，是一个用途广泛、强大的操作系统。这个版本较为稳定，
@@ -109,62 +107,55 @@ Tazusb（LiveUSB工具）和一些其他的Slitaz小工具可以在Slitaz软件�
 	<?php echo "当前最新的稳定版本是$stable_ver版， $stable_rel 发布。"; ?>
 </p>
 
-<p class="box">
-	<img src="/images/download.png" height="48px" width="48px" alt="[ DL ]" />
+<div class="box-dl"><p>
 	<?php echo "SliTaz GNU/Linux $stable_ver ($stable_size) - 
 	<a href='$stable_iso'>slitaz-$stable_ver.iso</a>
 	[ <a href='$mirror/$stable_ver/slitaz-$stable_ver.md5'>md5</a> ]"; ?>
-</p>
+</p></div>
 
 <p>
 提供给<?php echo "$stable_ver"; ?>版本的，包含所有软件包的可启动CD镜像每天都会创建。
 它也包含Slitaz官方网站的副本，在无网络的情况下可以通过install.sh使用。
 </p>
 
-<p class="box">
-	<img src="/images/download.png" height="48px" width="48px" alt="[ DL ]" />
+<div class="box-dl"><p>
 	<?php echo "SliTaz GNU/Linux $stable_ver 软件包集合 ($stable_pkgs)
 	- <a href='$pkgs_mirror/$stable_ver/packages-$stable_ver.iso'>packages-$stable_ver.iso</a>
 	[ <a href='$pkgs_mirror/$stable_ver/packages-$stable_ver.md5'>md5</a> ]"; ?>
-</p>
+</p></div>
 
-<a name="cooking"></a>
-<h2>LiveCD - 开发版</h2>
+<h2 id="cooking">LiveCD - 开发版</h2>
 <p>
 Slitaz开发版LiveCD是一个在不断开发的版本，也是可以使用的。它包含的软件包比稳定版多，包含的新特性和新改善也很多，更新时间也较快。不过因为更新较快，不稳定因素也多了许多。建议个人用户使用这个版本。
 </p>
 
-<p class="box">
-	<img src="/images/download.png" height="48px" width="48px" alt="[ DL ]" />
+<div class="box-dl"><p>
 	<?php echo "SliTaz GNU/Linux Cooking $cooking_ver ($cooking_size) - 
 	<a href='$cooking_iso'>slitaz-$cooking.iso</a>
 	[ <a href='$mirror/cooking/slitaz-$cooking.md5'>md5</a> ]"; ?>
-</p>
+</p></div>
 
 <p>
 提供给开发版的，包含所有软件包的可启动DVD镜像每天都会创建。它也包含Slitaz官方网站的副本，
 在无网络的情况下可以通过install.sh使用。这个镜像可以安装到USB设备中，不过会格式化U盘。
 </p>
 
-<p class="box">
-	<img src="/images/download.png" height="48px" width="48px" alt="[ DL ]" />
+<div class="box-dl"><p>
 	<?php echo "SliTaz GNU/Linux Cooking 开发版软件包集合 ($cooking_pkgs)
 	- <a href='$pkgs_mirror/cooking/packages-cooking.iso'>packages-cooking.iso</a>
 	[ <a href='$pkgs_mirror/cooking/packages-cooking.md5'>md5</a> ]"; ?>
-</p>
+</p></div>
 
-<a name="floppy"></a>
-<h2>启动软盘</h2>
+<h2 id="floppy">启动软盘</h2>
 <p>
 这个软盘镜像可以启动在旧电脑中的Slitaz，有没有CD-ROM都可以。它可以启动在USB设备、SlitazCD/DVD、硬盘中的Slitaz，还可以通过网络启动。
 </p>
 
-<p class="box">
-	<img src="/images/download.png" height="48px" width="48px" alt="[ DL ]" />
+<div class="box-dl"><p>
 	软盘镜像(1,44 Mb) -
 	<a href="http://mirror.slitaz.org/boot/floppy-grub4dos">镜像</a>
 	[ <a href="http://mirror.slitaz.org/boot/floppy-grub4dos.md5">md5</a> ]
-</p>
+</p></div>
 
 <!-- End of content -->
 </div>
