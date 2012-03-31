@@ -1,9 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
 <head>
-	<title>SliTaz - Downloadsektion</title>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>SliTaz - Downloadsektion</title>
 	<meta name="description" content="SliTaz GNU/Linux LiveCD" />
 	<meta name="keywords" lang="en" content="slitaz download, get slitaz" />
 	<meta name="author" content="F Steiner (Sevala)"/>
@@ -43,22 +43,24 @@ include("../../lib/html/header.html");
 <h2>Download SliTaz</h2>
 
 <ul>
-	<li><a href="#stable">Live-CD Stabile Version</a> - Bootfähiges ISO Image der
-	aktuellen stabilen Version.</li>
-	<li><a href="#cooking">Live-CD Cooking Version</a> - Bootfähiges ISO Image der
-	aktuellen Cooking-Version.</li>
-	<li><a href="flavors.php">Live-CD Derivate</a> - SliTaz-Derivate und Loram-Version.</li>
+	<li><a href="#stable">Live-CD Stabile Version</a> -
+		Bootfähiges ISO Image der aktuellen stabilen Version.</li>
+	<li><a href="#cooking">Live-CD Cooking Version</a> -
+		Bootfähiges ISO Image der aktuellen Cooking-Version.</li>
+	<li><a href="flavors.php">Live-CD Derivate</a> -
+		SliTaz-Derivate und Loram-Version.</li>
 </ul>
 
 <div class="box">
 	<p>
 		Helfen Sie das Projekt über eine kleine Spende oder werden, ein 
-		Offizieller <a href="../sponsor/">Sponsor</a>.
+		Offizieller <a href="/en/sponsor/">Sponsor</a>.
 	</p>
 	<?php include("../../lib/html/donate.html"); ?>
 </div>
 
 <h3>Allgemeine Informationen</h3>
+
 <p>
 Auf dieser Seite stehen die ISO-Images der SliTaz
 GNU/Linux Live-CD-Versionen der Paket-CDs sowie einzelne Pakete (über die verschiedenen
@@ -69,6 +71,7 @@ Sie auch im <a href="http://forum.slitaz.org/#idx3">deutschen Forum</a> von SliT
 </p>
 
 <h3>Mirrors</h3>
+
 <p>
 SliTaz wird momentan in Frankreich von <a href="http://www.ads-lu.com/">ADS</a>,
 <a href="http://www.tuxfamily.org/">TuxFamily</a> und Erjo (Ja! Ein SliTaz-Entwickler!)
@@ -88,8 +91,8 @@ SliTaz wird momentan in Frankreich von <a href="http://www.ads-lu.com/">ADS</a>,
 	<a href="http://mirror.lupaworld.com/slitaz/">HTTP</a></li>
 </ul>
 
-<a name="sources"></a>
-<h3>Quellcode</h3>
+<h3 id="sources">Quellcode</h3>
+
 <p>
 Tazpkg (Paketmanager), Tazlito (SliTaz Live Tool), Tazwok (Source Builder),
 Tazusb (LiveUSB Tool) und die SliTaz Tools können alle vom
@@ -100,8 +103,8 @@ er kann von einem der folgenden Mirrors heruntergeladen werden:
 <a href="http://mirror.slitaz.org/sources/">FTP</a>
 </p>
 
-<a name="stable"></a>
-<h2>LiveCD - Stabile Version</h2>
+<h2 id="stable">LiveCD - Stabile Version</h2>
+
 <p>
 	Die stabile Version von SliTaz ist ein kleines und schnelles Betriebssystem,
 	ausgiebig von einer aktiven Community getestet. Es enthält eine Anzahl nützlicher
@@ -109,22 +112,20 @@ er kann von einem der folgenden Mirrors heruntergeladen werden:
 	<?php echo "Das aktuelle stabile Release $stable_ver wurde am $stable_rel veröffentlicht."; ?>
 </p>
 
-<p class="box">
-	<img src="/images/download.png" height="48px" width="48px" alt="[ DL ]" />
+<div class="box-dl"><p>
 	<?php echo "SliTaz GNU/Linux $stable_ver ($stable_size) - 
 	<a href='$stable_iso'>slitaz-$stable_ver.iso</a>
 	[ <a href='$mirror/$stable_ver/slitaz-$stable_ver.md5'>md5</a> ]"; ?>
-</p>
+</p></div>
 
-<p class="box">
-	<img src="/images/download.png" height="48px" width="48px" alt="[ DL ]" />
+<div class="box-dl"><p>
 	<?php echo "Paket-CD; alle Pakete der Version SliTaz GNU/Linux $stable_ver ($stable_pkgs)
 	- <a href='$pkgs_mirror/$stable_ver/packages-$stable_ver.iso'>packages-$stable_ver.iso</a>
 	[ <a href='$pkgs_mirror/$stable_ver/packages-$stable_ver.md5'>md5</a> ]"; ?>
-</p>
+</p></div>
 
-<a name="cooking"></a>
-<h2>LiveCD - Cooking version</h2>
+<h2 id="cooking">LiveCD - Cooking version</h2>
+
 <p>
 SliTaz "Cooking" ist ein "Snapshot" der laufenden Entwicklung von SliTaz.
 Es ist vollständig benutzbar und erlaubt das Testen der <a href="http://slitaz.org/de">
@@ -135,19 +136,17 @@ Paket-CD</a> enthält alle verfügbaren Pakete, sodass sie Software auch ohne lo
 Internetanbindung installieren können.
 </p>
 
-<p class="box">
-	<img src="/images/download.png" height="48px" width="48px" alt="[ DL ]" />
+<div class="box-dl"><p>
 	<?php echo "SliTaz GNU/Linux Cooking $cooking_ver ($cooking_size) - 
 	<a href='$cooking_iso'>slitaz-$cooking.iso</a>
 	[ <a href='$mirror/cooking/slitaz-$cooking.md5'>md5</a> ]"; ?>
-</p>
+</p></div>
 
-<p class="box">
-	<img src="/images/download.png" height="48px" width="48px" alt="[ DL ]" />
+<div class="box-dl"><p>
 	<?php echo "Paket-CD; alle Pakete der Version SliTaz GNU/Linux Cooking ($cooking_pkgs)
 	- <a href='$pkgs_mirror/cooking/packages-cooking.iso'>packages-cooking.iso</a>
 	[ <a href='$pkgs_mirror/cooking/packages-cooking.md5'>md5</a> ]"; ?>
-</p>
+</p></div>
 
 <!-- End of content -->
 </div>

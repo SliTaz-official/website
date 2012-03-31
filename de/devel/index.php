@@ -1,9 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
 <head>
-	<title>SliTaz - Entwicklung</title>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>SliTaz - Entwicklung</title>
 	<meta name="description" content="SliTaz GNU/Linux LiveCD" />
 	<meta name="keywords" lang="en" content="slitaz download, get slitaz" />
 	<meta name="author" content="F Steiner (Sevala)"/>
@@ -25,7 +25,7 @@
 			and get involve in the project.
 		</p>
 		<p>
-			<img src="../../images/users.png" alt="users.png" />
+			<img src="/images/users.png" alt="[ ]" />
 			<a href="http://scn.slitaz.org/">Join us on SCN</a> and
 			the <a href="../mailing-list.php">mailing list</a>
 		</p>
@@ -43,10 +43,10 @@
 	<li><a href="#repos">Mercurial Repositories.</a></li>
 	<li><a href="#pkgs">Tazpkg Pakete.</a></li>
 	<li><a href="#website">Website Management.</a></li>
-	<li><a href="../../mailing-list.php">Mailing List.</a></li>
+	<li><a href="../mailing-list.php">Mailing List.</a></li>
 	<li><a href="http://doc.slitaz.org/en:cookbook:wok">Wok &amp; Tools.</a></li>
 	<li>Mercurial Repositories: <a href="http://hg.slitaz.org" >hg.slitaz.org</a></li>
-    <li>SliTaz Laboratories: <a href="http://labs.slitaz.org/">labs.slitaz.org</a></li>
+	<li>SliTaz Laboratories: <a href="http://labs.slitaz.org/">labs.slitaz.org</a></li>
 </ul>
 
 <p>
@@ -54,8 +54,8 @@ SliTaz ist ein Opensource-Projekt, das von einer Community entwickelt wird.
 Jeder kann und darf gerne dazu seinen Beitrag leisten, Nutzer, Grafiker oder 
 Programmierer sind gleichermassen willkommen, es gibt immer etwas zu tun. Sei 
 es das Vervollständigen des <a href="http://doc.slitaz.org/de:start">Wikis</a> und der 
-Dokumentation, Bugs im <a href="http://bugs.slitaz.org" 
-title="Bug Tracking system">Bug Tracking System</a> melden, neue Pakete zu erstellen 
+Dokumentation, Bugs im <a href="http://bugs.slitaz.org">Bug Tracking System</a>
+melden, neue Pakete zu erstellen 
 und sie auf die Mirrors hochladen oder einfach anderen SliTaz-Nutzern im 
 Forum oder der Mailing-List zu helfen. 
 </p>
@@ -67,8 +67,8 @@ sind im <a href="http://forum.slitaz.org/">Forum</a> und der
 jeweiligen Sprache/Forum ansprechen.
 </p>
 
-<a name="repos"></a>
-<h2>Mercurial Repositories</h2>
+<h2 id="repos">Mercurial Repositories</h2>
+
 <p>
 Die Website, Konfigurationsdateien und Skripte von SliTaz werden über das 
 Mercurial Repository verwaltet.
@@ -80,7 +80,9 @@ direkt auf das Repositorium zugreifen:
 Mercurial arbeitet mit Python, unter SliTaz lässt es sich mit 
 <code>tazpkg get-install mercurial</code> installieren.
 </p>
+
 <h4>~/.hgrc</h4>
+
 <p>
 Bevor Du Deinen ersten Beitrag leistest, stelle bitte sicher, dass 
 die Konfigurationsdatei (.hgrc) für das Repository vorhanden und richtig 
@@ -92,7 +94,9 @@ Datei ~/.hgrc :
 [ui]
 username = Vorname Nachname &lt;you@example.org&gt;
 </pre>
+
 <h4>"Clone", "modify", "commit" und "push"</h4>
+
 <p>
 Die repositories werden über die Kommandozeile verwaltet. Zuerst erstellt man eine 
 lokale Kopie:
@@ -143,8 +147,8 @@ Mit dem Befehl <code>rollback</code> können die letzten Änderungen übrigens
 wieder rückgängig gemacht werden.
 </p>
 
-<a name="pkgs"></a>
-<h2>Tazpkg Pakete</h2>
+<h2 id="pkgs">Tazpkg Pakete</h2>
+
 <p>
 Tazpkg Pakete werden bei SliTaz automatisch via Tazwok und einem "Rezept" 
 generiert. Im Wiki entsteht gerade eine Referenz von <a href="http://hg.slitaz.org/
@@ -174,8 +178,8 @@ Nicht vergessen, die Mitglieder der Mailing-List stehen Dir gerne
 zur Verfügung, ebenso das <a href="http://hg.slitaz.org/tazwok/raw-file/tip/doc/tazwok.en.html">Tazwok Manual</a>.
 </p>
 
-<a name="website"></a>
-<h2>Website Management und Handbuch</h2>
+<h2 id="website">Website Management und Handbuch</h2>
+
 <p>
 Das Management der Website findet über das Mercurial Repository 
 statt. Dazu gibt es einige Tools:<br>
@@ -199,6 +203,7 @@ Kommandozeile. Um die Seite zum ersten Mal in das  Vezeichnis
 </pre>
 
 <h3>Diff und patch</h3>
+
 <p>
 Die Anwendungen <code>diff</code> und <code>patch</code> sind Kommando-Zeilen 
 Tools zur Erzeugung von Unterschieden zwischen zwei Dateien. 

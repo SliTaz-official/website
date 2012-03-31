@@ -1,16 +1,16 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
 <head>
-	<title>SliTaz - Über SliTaz</title>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>SliTaz - Über SliTaz</title>
 	<meta name="description" content="SliTaz GNU/Linux LiveCD" />
 	<meta name="keywords" lang="en" content="System, free, gnu, linux, software opensource, livecd LINUX in RAM" />
 	<meta name="author" content="F Steiner (Sevala)"/>
 	<?php include("../../lib/html/meta-link.html"); ?>
 </head>
 <body>
-	
+
 <?php include("../../lib/html/header.html"); ?>
 
 <!-- Block -->
@@ -27,7 +27,7 @@
 			<li><a href="#overview">Steckbrief</a></li>
 			<li><a href="#website">Web site &amp; i18n</a></li>
 			<li><a href="#reviews">Reviews</a></li>
-			<li><a href="../../en/asso/">Association (en)</a></li>
+			<li><a href="/en/asso/">Association (en)</a></li>
 		</ul>
 	</div>
 </div>
@@ -37,8 +37,8 @@
 <!-- Content -->
 <div id="content">
 
-<a name ="intro"></a>
-<h2>Introduction</h2>
+<h2 id="intro">Introduction</h2>
+
 <p>
 SliTaz GNU/Linux ist ein freies und kostenloses Betriebssystem. Es arbeitet vollständig aus 
 dem Arbeitsspeicher und wird von einem externen Speichermedium wie einer CD oder einem
@@ -67,8 +67,8 @@ Für Anregungen, Anfragen und mehr Informationen stehen wir Ihnen auch
 gerne per Mail zur Verfügung: &lt;devel at slitaz.org&gt;
 </p>
 
-<a name="overview"></a>
-<h2>Steckbrief</h2>
+<h2 id="overview">Steckbrief</h2>
+
 <ul>
 	<li>Das installierte Betriebssystem umfasst etwa 100 MB, das ISO-Image etwa 30 MB.</li>
 	<li>Geringe Hardwareanforderungen (Pentium I und mindestens 256 MB RAM, in Sonderausführung noch weniger)</li>
@@ -87,13 +87,13 @@ gerne per Mail zur Verfügung: &lt;devel at slitaz.org&gt;
 	<li>Aktive und freundliche Community.</li>
 </ul>
 
-<a name="website"></a>
-<h2>Websites &amp; i18n - Internationalisierung</h2>
+<h2 id="website">Websites &amp; i18n - Internationalisierung</h2>
+
 <p>
-SliTaz's Website gibt es ebenso auf <a href="../../fr/">Französisch</a>,
-<a href="../../en/"> 
-Englisch</a> und <a href="../../pt/">Portugiesisch</a>. SliTaz ist
-Teil des <a href="../../i18n.php">"internationalization project"</a>. 
+SliTaz's Website gibt es ebenso auf <a href="/fr/">Französisch</a>,
+<a href="/en/">
+Englisch</a> und <a href="/pt/">Portugiesisch</a>. SliTaz ist
+Teil des <a href="/i18n.php">"internationalization project"</a>. 
 Die deutsche Sprache wird noch nicht vollständig unterstützt. Jeder, 
 der ein Linux-System schon einmal bedient hat und/oder geringe 
 Englischkenntnisse besitzt, wird aber mit SliTaz problemlos klarkommen. 
@@ -103,14 +103,15 @@ vollständig in das Wiki verlegt. Weitere Hilfe auf deutsch erhalten
 Sie sonst im <a href="http://forum.slitaz.org/">Forum</a>.
 </p>
 
-<a name="reviews"></a>
-<h2>Reviews</h2>
+<h2 id="reviews">Reviews</h2>
+
 <p>
 Über SliTaz GNU/Linux wurde auf einigen Websites und in einigen 
 Magazinen berichtet (Auswahl).
 </p>
 
 <h3>2.0 - April 2009</h3>
+
 <ul>
 	<li><a href="http://www.gdhpress.com.br/blog/slitaz"
 		>Gdhpress</a> (pt) - Von Carlos Morimoto.</li>
@@ -125,6 +126,7 @@ Magazinen berichtet (Auswahl).
 </ul>
 
 <h3>1.0 - March 2008</h3>
+
 <ul>
 	<li><a href="http://distrowatch.com/weekly.php?issue=20080331" target="_blank"
 		>Distrowatch</a>- Von Ladislav Bodnar.</li>
@@ -149,6 +151,7 @@ Magazinen berichtet (Auswahl).
 </ul>
 
 <h3>Cooking - January 2010</h3>
+
 <ul>
 	<li><a href="http://distrowatch.com/weekly.php?issue=20100111#feature"
 		>Distrowatch</a> - Von Jesse Smith.</li>

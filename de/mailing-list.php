@@ -1,39 +1,13 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
 <head>
-	<title>SliTaz (de) - Mailing list</title>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>SliTaz (de) - Mailing list</title>
 	<meta name="description" content="SliTaz GNU/Linux LiveCD" />
 	<meta name="keywords" lang="en" content="slitaz download, get slitaz" />
 	<meta name="author" content="F Steiner (Sevala)"/>
 	<?php include("../lib/html/meta-link.html"); ?>
-    <style type="text/css">
-	table {
-		border: 1px solid #000000;
-		width: variable;
-		border-collapse: collapse;
-	}
-	td {
-		border: 1px dotted #6495ed;
-		width: variable;
-		padding: 2px;
-	}
-	.rowodd {
-		background-color: #ffffff;
-	}
-	.roweven {
-		background-color: #e1ffe1; /* the tower */
-	}
-	th {
-		border: 1px solid #000000;
-		width: variable;
-		padding: 4px;
-	}
-	.alignright {
-		text-align: right;
-	}
-	</style>
 </head>
 <body>
 
@@ -51,7 +25,7 @@
 			list - Join now to get help or involved in the project.
 		</p>
 		<p>
-			<img src="../images/users.png" alt="users.png" />
+			<img src="/images/users.png" alt="[ ]" />
 			Also you can <a href="http://scn.slitaz.org/">join us on SCN</a>
 			and the support <a href="http://forum.slitaz.org/">forum</a>
 		</p>
@@ -73,8 +47,8 @@
 	der Archive.</li>
 </ul>
 
-<a name="about"></a>
-<h3>Über die Liste</h3>
+<h3 id="about">Über die Liste</h3>
+
 <p>
 Die Diskussionsliste (Mailing list) ist das Hauptkommunikationsmittel
 der SliTaz Community. Jeder kann und darf sich auf ihr ein- und austragen. 
@@ -95,6 +69,7 @@ von
 </p>
 
 <h4>Höflichkeit</h4>
+
 <p>
 Diese Mailing-List wird auch von sensibleren Personen genutzt. 
 Behandelt euch bitte mit Respekt, auch wenn ihr euch schlecht behandelt fühlt.
@@ -103,9 +78,8 @@ solcherlei Kritik lasst ihr bitte woanders los.
 Wenn sich jemand unangebracht verhält, meldet es bitte einem SliTaz-Entwickler.
 </p>
 
+<h3 id="usage">Gebrauch der Liste</h3>
 
-<a name="usage"></a>
-<h3>Gebrauch der Liste</h3>
 <p>
 Um auf der Liste zu posten, müssen Sie zuerst sich auf ihr eintragen. 
 Sie werden dann eine Nachricht mit Bitte um Bestätigung erhalten. 
@@ -117,16 +91,18 @@ Um einem Post zu antworten, benutzt bitte die "Antwort"-Funktion, so
 bleibt der Verlauf des Gespräches erhalten.
 </p>
 <ul>
-    <li>Administrations Addresse :
-    <a href="mailto:slitaz-request@lists.tuxfamily.org"
-     >slitaz-request@lists.tuxfamily.org</a></li>
-    <li>Eintragen mit folgendem Betreff : subscribe</li>
-    <li>Austragen mit folgendem Betreff : unsubscribe</li>
-    <li>Hilfe mit folgendem Betreff : help</li>
-    <li>Eine Nachricht an die Mailing-Liste verschicken :
-    <a href="mailto:slitaz@lists.tuxfamily.org">slitaz@lists.tuxfamily.org</a></li>
+	<li>Administrations Addresse :
+		<a href="mailto:slitaz-request@lists.tuxfamily.org"
+		>slitaz-request@lists.tuxfamily.org</a></li>
+	<li>Eintragen mit folgendem Betreff : subscribe</li>
+	<li>Austragen mit folgendem Betreff : unsubscribe</li>
+	<li>Hilfe mit folgendem Betreff : help</li>
+	<li>Eine Nachricht an die Mailing-Liste verschicken :
+		<a href="mailto:slitaz@lists.tuxfamily.org">slitaz@lists.tuxfamily.org</a></li>
 </ul>
+
 <h4>Format</h4>
+
 <p>
 Nachrichten sollten als reiner Text versendet werden, und nicht als HTML. 
 Bitte die Zeilenlänge auf 72-80 Buchstaben beschränken, so dass alle Nutzer 
@@ -134,8 +110,8 @@ die Mail problemlos lesen können. Bitte hängt auch keine großen Dateien an, n
 jeder hat eine schnelle Internetverbindung.
 </p>
 
-<a name="archives"></a>
-<h3>Archive</h3>
+<h3 id="archives">Archive</h3>
+
 <p>
 Die Mailing-Liste ist öffentlich, jeder post wird archiviert 
 und kann online durchsucht werden. Durchsucht also die Posts nach 

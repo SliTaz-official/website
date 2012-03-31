@@ -1,11 +1,11 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
 <head>
-	<title>SliTaz - Neuigkeiten Archiv</title>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>SliTaz - Neuigkeiten Archiv</title>
 	<meta name="description" content="SliTaz GNU/Linux Deutch Neuigkeiten Archiv" />
-	<meta name="keywords" lang="en" content="slitaz Neuigkeiten" />
+	<meta name="keywords" lang="de" content="slitaz Neuigkeiten" />
 	<meta name="author" content="F Steiner (Sevala)"/>
 	<?php include("../../lib/html/meta-link.html"); ?>
 </head>
@@ -35,7 +35,8 @@
 <h2>2007-2009</h2>
 
 <ul>
-	<li><strong>16 April 2009 - Veröffentlichung von SliTaz GNU/Linux 2.0</strong>
+	<li>
+		<strong>16 April 2009 - Veröffentlichung von SliTaz GNU/Linux 2.0</strong>
 	<p>
 	Das SliTaz-Projekt verkündet stolz das Erscheinen der neuen stabilen
 	Version:   SliTaz GNU/Linux 2.0. Diese neue Version ist das Ergebnis
@@ -56,7 +57,8 @@
 	SliTaz GNU/Linux 2.0 steht zum <a href="/de/get/">Download auf</a> den
 	offiziellen Mirrors bereit.</p></li>
 
-	<li><strong>20 März 2009 - SliTaz auf der Solutionslinux 2009 (Paris)</strong>
+	<li>
+		<strong>20 März 2009 - SliTaz auf der Solutionslinux 2009 (Paris)</strong>
 	<p>
 	Das SliTaz-Projekt wird auf der Solutionlinux 2009 in Paris zugegen sein.
 	Drei Mitglieder des Teams werden an dem dreitägigen Event teilnehmen,
@@ -73,7 +75,8 @@
 	<a href="http://www.solutionslinux.fr/exposant_fiche.php?id=763&amp;pg=2_4">SliTaz Stand</a>.
 	</p></li>
 
-	<li><strong>28. Februar 2009 - Cooking 20090228</strong>
+	<li>
+		<strong>28. Februar 2009 - Cooking 20090228</strong>
 	<p>
 	Kurz vor dem nächsten stabilen Release! -
 	Das SliTaz Projekt stellt eine neue Cooking Version vor, mit weiteren Bugfixes,
@@ -87,7 +90,8 @@
 	(siehe <a href="/de/get/">Downloadsektion</a>).
 	</p></li>
 
-	<li><strong>31. Dezember 2008 - Cooking 20081231 - Wifi und NTFS Unterstützung</strong>
+	<li>
+		<strong>31. Dezember 2008 - Cooking 20081231 - Wifi und NTFS Unterstützung</strong>
 	<p>
 	Das SliTaz Projekt veröffentlicht eine neue Cooking-Version.
 	Alle Neuerungen, Bugfixes und Updates
@@ -106,7 +110,8 @@
 	des Projektes (siehe <a href="/de/get/">Downloadsektion</a>).
 	</p></li>
 	
-	<li><strong>16. Juli 2008 - Neue Cooking-Version (20080716) - Web Boot und MPlayer!</strong>
+	<li>
+		<strong>16. Juli 2008 - Neue Cooking-Version (20080716) - Web Boot und MPlayer!</strong>
 	<p>
 	Diese Cooking-Version enthält viele neue Funktionen und Bugfixes. So existiert nun mit der Boot-Option
 	<code>web</code> die Möglichkeit SliTaz mit Hilfe von gPXE über das Internet zu starten:
@@ -120,8 +125,9 @@
 	<a href="/de/get/flavors.php">Loram Version</a>. <br />
 	<a href="/de/get/#cooking">Download SliTaz Cooking ISO</a>.
 	</p></li>
-	
-	<li><strong>26. Juni 2008 - Cooking 20080626 mit neuem Kernel</strong><br />
+
+	<li>
+		<strong>26. Juni 2008 - Cooking 20080626 mit neuem Kernel</strong><br />
 	Der Sommer ist angekommen und mit ihm die neue Cooking-Version vom 26. Juni. Viel
 	Arbeit wurde diesmal darauf verwendet, das System benutzerfreundlicher zu machen.
 	Der Standard-User heißt nun <code>tux</code>, mit der Option
@@ -136,8 +142,9 @@
 	über das <a href="http://bugs.slitaz.org">Bug Tracking System</a>
 	zu melden.
 	</li>
-	
-	<li><strong>18. Mai 2008 - Cooking 20080518 und LinuxDays.ch</strong><br />
+
+	<li>
+		<strong>18. Mai 2008 - Cooking 20080518 und LinuxDays.ch</strong><br />
 	Eine neue Cooking Version steht nun zum Download!!! Grundlegende Änderungen wurden
 	vorgenommen. So nutzt SliTaz jetzt Openbox als Standard-Fenstermanager, Tazpkg kann über eine grafische
 	Oberfläche verwendet werden, Dienste mounten automatisch
@@ -152,8 +159,9 @@
 	Übrigens: Diese Version wird auf dem
 	<a href="http://www.linuxdays.ch/">LinuxDay.ch</a> in Genf (Schweiz) genutzt werden.
 	</li>
-	
-	<li><strong>22. März 2008 - SliTaz GNU/Linux 1.0 Release</strong><br />
+
+	<li>
+		<strong>22. März 2008 - SliTaz GNU/Linux 1.0 Release</strong><br />
 	Das SliTaz Entwicklerteam darf mit Stolz das stabile Release SliTaz GNU/Linux 1.0 ankündigen.
 	Nach zwei Jahren Entwicklung ist das die erste stabile Version.
 	In einem 24,8 MB großen ISO-Image stellt die Live-CD ein schnelles, voll funktionsfähiges
@@ -174,8 +182,9 @@
 	Übersicht über die installierten Programme</a> für detailliertere
 	Informationen zur stabilen Version SliTaz 1.0.
 	</li>
-	
-	<li><strong>26. Februar 2008 - Cooking-Version (20080225) Update!</strong><br />
+
+	<li>
+		<strong>26. Februar 2008 - Cooking-Version (20080225) Update!</strong><br />
 	Ein weiteres Update der Cooking-Version ist veröffentlicht. Wieder mit einigen Bugfixes, neuen
 	Bootoptionen und Softwareupdates, wie Alsa 1.0.16, PHP 5.2.5, Htop 0.7, Firefox 2.0.0.12,
 	Nano 2.0.7 und Sqlite 3.5.6. Die Option <code>home=*</code> unterstützt nun auch
@@ -187,7 +196,9 @@
 	Die Cooking-Version gibt es zum
 	<a href="/de/get/#cooking">Download</a> auf der SliTaz Website.
 	</li>
-	<li><strong>10. Januar 2008 - Neue Cooking-Version (20080107)</strong><br />
+
+	<li>
+		<strong>10. Januar 2008 - Neue Cooking-Version (20080107)</strong><br />
 	Der Roadmap zur stabilen Version folgend, wird heute (10.Januar 2008) eine
 	neue Cooking mit einer Menge Bugfixes und neuen Funktionen veröffentlicht.
 	Als neue Anwendung sind Asunder, mit dem es möglich ist Audio CDs zu rippen,
@@ -199,8 +210,9 @@
 	aus Quellcode prüfen. Um an die neue Version zu gelangen, schauen Sie bitte
 	in die <a href="/de/get/#cooking">Download Sektion</a>
 	</li>
-	
-	<li><strong>16. Dezember 2007 - Neues Forum</strong><br />
+
+	<li>
+		<strong>16. Dezember 2007 - Neues Forum</strong><br />
 	Nun gibt es für SliTaz ein englischsprachiges Support-Forum:
 	<a href="http://forum.slitaz.org/#idx2">English Forum</a>
 	Seitdem das Projekt auf der französischen Sprache basiert habe wir eine Menge
@@ -208,42 +220,48 @@
 	wir hiermit belohnen wollen. Das Forum hat eine eigene Domain:
 	<a href="http://forum.slitaz.org/">forum.slitaz.org</a>. SliTaz ist standardmäßig
 	auf französisch, die Spracheinstellung kann aber nach dem Login geändert werden.
-    Wir arbeiten momentan auch an einer englischen Dokumentation, für dieses Projekt ist Hilfe
-    natürlich herzlich willkommen.
-    </li>
-    <li><strong>06. Dezember 2007 - In zwei Tagen eine neue Version, die zweimal so schnell bootet!</strong><br />
+	Wir arbeiten momentan auch an einer englischen Dokumentation, für dieses Projekt ist Hilfe
+	natürlich herzlich willkommen.
+	</li>
+
+	<li>
+		<strong>06. Dezember 2007 - In zwei Tagen eine neue Version, die zweimal so schnell bootet!</strong><br />
 	Mit der neuen lzma Kompression verringert sich die Zeit für den Bootvorgang drastisch. Nach zwei Tagen
 	durchgehender Arbeit steht eine neue Version zur Verfügung, die nur die halbe Zeit für den
 	Bootvorgang benötigt. Außerdem sind ein lzma-Patch für den Kernel sowie einige Bugfixes	für den
 	Bootvorgang vorhanden. Tests ergaben, dass die Live-CD jetzt auf neueren PCs zwischen 20 und 30 Sekunden,
 	auf älteren 60 bis 80 Sekunden für den Bootvorgang benötigt.
 	<a href="/de/get/#cooking">Download</a>.
-    </li>
-    
-	<li><strong>04. Dezember 2007 - Neue Cooking-Version mit Sound Unterstützung</strong><br />
+	</li>
+
+	<li>
+		<strong>04. Dezember 2007 - Neue Cooking-Version mit Sound Unterstützung</strong><br />
 	Besserer Hardware-Support auf der Live-CD, wie Sound- und PCMCIA-Unterstützung sind der Grund
 	für eine weitere Cooking vor dem stabilen Release 1.0. Das hat eine komplette Neugestaltung der Roadmap
 	erforderlich gemacht. Das Releasedatum hat sich auf März 2008 verschoben, ein Jahr nach
 	der ersten Veröffentlichung von SliTaz. In dieser Zeit wird SliTaz neben den ganzen neuen Funktionen
 	auch hochstabil werden. <br />
-    Diese Cooking-Version enthält Alsa und den zugehörigen Mixer, Alsaplayer, mpg123, Gcolor2,
-    pcmciautils und einen neuen Kernel. Dazu gibt es noch eine neue Bootoption und isapnptools
-    für sehr alte Hardware wie IBM GL300 6272/6282 oder P133/32M. All das passt in
-    das ISO-Archiv mit einer Größe von 22,4 MB. Die "Simple
-    Light Incredible Temporary Autonomous Zone" eben! SliTaz (cooking) LiveCD ist vom SliTaz Mirror
-    zu beziehen.  <a href="/de/get/#cooking">Download</a>. Enjoy!
-    </li>
-    <li><strong>06. November 2007 - Letzte Cooking-Version vor 1.0 Release</strong><br />
-    Die letzte Cooking vor dem 1.0 Release ist veröffentlicht!
-    Neu sind auf dem 24,7 MB großen ISO-Image PHP 5.2.5, Grsync, ISO Master 1.2,
-    Busybox 1.7.2, ein neues GTK-Theme, Tango-Icon-Theme und ein neues Wallpaper.
-    Zum kostenlosen <a href="/de/get/#cooking">Download</a>  gibt es SliTaz wie immer vom TuxFamily Mirror.
-    Feedback ist willkommen, nutzt dazu bitte die Mailing List oder eine normale
-    E-Mail an &lt;devel at Slitaz.org&gt;.
-    </li>
-    
-    <li><strong>12. Oktober 2007 - Neue Cooking-Version und Erhöhung der Stabilität</strong><br />
-    Das 24 MB großen ISO-Image enthält Firefox 2.0.0.7,
+	Diese Cooking-Version enthält Alsa und den zugehörigen Mixer, Alsaplayer, mpg123, Gcolor2,
+	pcmciautils und einen neuen Kernel. Dazu gibt es noch eine neue Bootoption und isapnptools
+	für sehr alte Hardware wie IBM GL300 6272/6282 oder P133/32M. All das passt in
+	das ISO-Archiv mit einer Größe von 22,4 MB. Die "Simple
+	Light Incredible Temporary Autonomous Zone" eben! SliTaz (cooking) LiveCD ist vom SliTaz Mirror
+	zu beziehen.  <a href="/de/get/#cooking">Download</a>. Enjoy!
+	</li>
+
+	<li>
+		<strong>06. November 2007 - Letzte Cooking-Version vor 1.0 Release</strong><br />
+	Die letzte Cooking vor dem 1.0 Release ist veröffentlicht!
+	Neu sind auf dem 24,7 MB großen ISO-Image PHP 5.2.5, Grsync, ISO Master 1.2,
+	Busybox 1.7.2, ein neues GTK-Theme, Tango-Icon-Theme und ein neues Wallpaper.
+	Zum kostenlosen <a href="/de/get/#cooking">Download</a>  gibt es SliTaz wie immer vom TuxFamily Mirror.
+	Feedback ist willkommen, nutzt dazu bitte die Mailing List oder eine normale
+	E-Mail an &lt;devel at Slitaz.org&gt;.
+	</li>
+
+	<li>
+		<strong>12. Oktober 2007 - Neue Cooking-Version und Erhöhung der Stabilität</strong><br />
+	Das 24 MB großen ISO-Image enthält Firefox 2.0.0.7,
 	Linux Kernel 2.6.22.9, Rsync, ISO Master 1.1, LightTPD 1.4.18, SQLite 3.5.1,
 	ein neues Theme und Hintergrundbild. Ebenso wurde die Paketverwaltung mit
 	Tazwok und den SliTaz-Tools ausgebaut. Mit Transmission 0.82 ist es nun möglich Torrent-Filesharing

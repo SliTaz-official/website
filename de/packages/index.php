@@ -1,9 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
 <head>
-	<title>SliTaz - Pakete</title>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>SliTaz - Pakete</title>
 	<meta name="description" content="SliTaz GNU/Linux Pakete" />
 	<meta name="keywords" lang="de" content="slitaz download, get slitaz, tazpkg" />
 	<meta name="author" content="F Steiner (Sevala)"/>
@@ -67,16 +67,32 @@
 </div>
 
 <div class="box">
-	<img src="../../images/text.png" alt="text.png" />
+	<img src="/images/text.png" alt="[ ]" />
 	Raw packages.list:
 	<a href="http://mirror.slitaz.org/packages/stable/packages.list"
 		>Stable</a> |
 	<a href="http://mirror.slitaz.org/packages/cooking/packages.list"
-		>Cooking</a>
-	<img src="../../images/network.png" alt="text.png" />
+		>Cooking</a><br />
+	<img src="/images/network.png" alt="[ ]" />
 	Main mirror:
 	<a href="http://mirror.slitaz.org/packages/"
 		>http://mirror.slitaz.org/packages/</a>
+</div>
+
+<h2>Activity</h2>
+
+<?php require_once("../../lib/get-feeds.php"); ?>
+
+<div class="activity">
+	<p>
+		<a href="http://hg.slitaz.org/"><img 
+			src="/images/development.png" alt="[ ]" /></a>
+		Latest commits in wok
+		<?php get_feed("wok.xml"); ?>
+	</div>
+	<p class="activity_more">
+		<a href="http://hg.slitaz.org/">More commits</a>
+	</p>
 </div>
 
 <h2>Documentation</h2>

@@ -1,9 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
 <head>
-	<title>SliTaz (de) - Artwork</title>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>SliTaz (de) - Artwork</title>
 	<meta name="description" content="SliTaz GNU/Linux LiveCD" />
 	<meta name="keywords" lang="en" content="slitaz download, get slitaz, slitaz logo, spider" />
 	<meta name="author" content="F Steiner (Sevala)"/>
@@ -38,8 +38,8 @@
 <!-- Content -->
 <div id="content">
 
-<a name="art4taz"></a>
-<h2>Art &amp; Design</h2>
+<h2 id="art4taz">Art &amp; Design</h2>
+
 <p>
 	Was wäre eine Linux-Distributions-Seite ohne eine Artwork-Sektion?
 	Jeder - auch wir - will Screenshots sehen, bevor er Anwendungen 
@@ -59,8 +59,8 @@
 	oder die <a href="../mailing-list.php">Mailing List</a>.
 </p>
 
-<a name="logos"></a>
-<h2>Logos &amp; Icons</h2>
+<h2 id="logos">Logos &amp; Icons</h2>
+
 <p>
 	Sie können die Logos zum Gestalten eines neuen Hintergrundbildes, 
 	oder auf ihrer Website verwenden, um das SliTaz-Projekt populärer
@@ -68,34 +68,17 @@
 </p>
 
 <div class="box">
-	SVG Format: <a href="../../images/artwork/slitaz-logo.svg">slitaz-logo.svg</a> |
-	<a href="../../images/artwork/slitaz-spider.svg">slitaz-spider.svg</a>
+	SVG Format: <a href="/images/artwork/slitaz-logo.svg">slitaz-logo.svg</a> |
+	<a href="/images/artwork/slitaz-spider.svg">slitaz-spider.svg</a>
 </div>
+
 <div>
-	<img
-	   src="../../images/artwork/slitaz-button-red.png"
-	   alt="SliTaz button"
-	   style="width: 148px; height: 148px;" />
-	<img
-	   src="../../images/artwork/slitaz-logo-whitebg-320x118.png"
-	   alt="SliTaz spider"
-	   style="width: 320px; height: 118px;" />
-	<img
-	   src="../../images/artwork/slitaz-tux-124x126.png"
-	   alt="SliTaz Tux"
-	   style="width: 124px; height: 126px;" />
-	<img
-	   src="../../images/artwork/slitaz-spider-48x48.png"
-	   alt="SliTaz spider"
-	   style="width: 48px; height: 48px;" />
-	<img
-	   src="../../images/artwork/tazpkg.png"
-	   alt="Tazpkg package logo"
-	   style="width: 32px; height: 32px;" />
-	<img
-	   src="../../images/artwork/slitaz-minilogo-80x15.png"
-	   alt="SliTaz mini logo"
-	   style="width: 80px; height: 15px;" />
+	<img src="/images/artwork/slitaz-button-red.png" alt="SliTaz button" />
+	<img src="/images/artwork/slitaz-logo-whitebg-320x118.png" alt="SliTaz spider" />
+	<img src="/images/artwork/slitaz-tux-124x126.png" alt="SliTaz Tux" />
+	<img src="/images/artwork/slitaz-spider-48x48.png" alt="SliTaz spider" />
+	<img src="/images/artwork/tazpkg.png" alt="Tazpkg package logo" />
+	<img src="/images/artwork/slitaz-minilogo-80x15.png" alt="SliTaz mini logo" />
 </div>
 
 <!-- End of content -->
