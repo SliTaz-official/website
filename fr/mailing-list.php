@@ -3,8 +3,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
 <head>
     <title>SliTaz (fr) - Mailing list</title>
-    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
-    <meta name="description" content="SliTaz GNU/Linux support mail liste de diffusion utilisateurs deéveloppeurs" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="SliTaz GNU/Linux support mail liste de diffusion utilisateurs deÃ©veloppeurs" />
     <meta name="keywords" lang="fr" content="liste de discussion slitaz" />
     <meta name="author" content="Christophe Lincoln"/>
 	<?php include("../lib/html/meta-link.html"); ?>
@@ -47,7 +47,7 @@
 		<h4>Mailing list</h4>
 		<p>
 			Discussion des contributeurs SliTaz et annonces (inc. 
-			support et développement). Tout cela se fait partie de la
+			support et dÃ©veloppement). Tout cela se fait partie de la
 			liste de discussion - Rejoinez nous pour obtenir de l'aide
 			ou vous impliquer dans le projet.
 		</p>
@@ -67,44 +67,44 @@
 
 <ul>
 	<li><a href="#about">A propos de la liste</a>
-		- Support et développement.</li>
+		- Support et dÃ©veloppement.</li>
 	<li><a href="#usage">Utilisation de la liste</a>
-	- Inscription/désinscription et fonctionnement</li>
+	- Inscription/dÃ©sinscription et fonctionnement</li>
 	<li><a href="#archives">Archives de la liste</a> 
-	- Lire et/ou chercher dans les messages archivés.</li>
+	- Lire et/ou chercher dans les messages archivÃ©s.</li>
 </ul>
 
 <a name="about"></a>
 <h3>A propos de la liste</h3>
 <p>
 La liste de dicussion/diffusion (<em>Mailing list</em>) est le moyen
-principal de communication de la communauté SliTaz. La liste est ouverte à
-tout le monde, vous êtes libre de vous abonner, désabonner ou réabonner à
-n'importe quel moment. C'est un moyen de collaboration très efficace, utilisé
+principal de communication de la communautÃ© SliTaz. La liste est ouverte Ã 
+tout le monde, vous Ãªtes libre de vous abonner, dÃ©sabonner ou rÃ©abonner Ã 
+n'importe quel moment. C'est un moyen de collaboration trÃ¨s efficace, utilisÃ©
 pour offrir un support technique gratuit aux utilisateurs de SliTaz. Les
-développeurs et connaisseurs avancés utilisent cette même liste pour gérer le
-dévelopement du projet, les relectures, etc. Utiliser la même liste pour le
-support et le développement permet de toucher un plus large auditoire,
-résultant dans des réponses plus rapides et plus précises. Cela dit, les
+dÃ©veloppeurs et connaisseurs avancÃ©s utilisent cette mÃªme liste pour gÃ©rer le
+dÃ©velopement du projet, les relectures, etc. Utiliser la mÃªme liste pour le
+support et le dÃ©veloppement permet de toucher un plus large auditoire,
+rÃ©sultant dans des rÃ©ponses plus rapides et plus prÃ©cises. Cela dit, les
 membres de la liste sont des personnes volontaires, elles feront du mieux
 qu'elles peuvent en fonction de leur temps libre. Courtoisie et politesse sont
-de rigeur et un peu d'humour ne fait de mal à personne.
+de rigeur et un peu d'humour ne fait de mal Ã  personne.
 </p>
 <p>
 La <em>mailing list</em> permet d'envoyer des messages et de recevoir les
-mails de la liste. C'est-à-dire que tous les membres inscrits peuvent poster
-sur l'adresse de la liste et qu'ils reçoivent aussi tous les messages postés
-par les autres membres. Les messages sont envoyés par le <em>listengine</em>
-de <a href="http://www.tuxfamily.org/">TuxFamily</a> propulsé par l'excellent
+mails de la liste. C'est-Ã -dire que tous les membres inscrits peuvent poster
+sur l'adresse de la liste et qu'ils reÃ§oivent aussi tous les messages postÃ©s
+par les autres membres. Les messages sont envoyÃ©s par le <em>listengine</em>
+de <a href="http://www.tuxfamily.org/">TuxFamily</a> propulsÃ© par l'excellent
 <a href="http://www.vhffs.org/">VHFFS</a>.
 </p>
-<h4>Civilité</h4>
+<h4>CivilitÃ©</h4>
 <p>
-La liste est un moyen de collaboration intense avec des personnes passionnées
-et souvent sensibles. Faites un effort supplémentaire pour traiter les autres
-avec respect, même si vous vous sentez mal traité. Si vous avez quelques choses de
-négatif ou critique à dire à quelqu'un, faites-le hors liste. Si une personne
-vous semble inappropriée, contactez un développeur SliTaz.
+La liste est un moyen de collaboration intense avec des personnes passionnÃ©es
+et souvent sensibles. Faites un effort supplÃ©mentaire pour traiter les autres
+avec respect, mÃªme si vous vous sentez mal traitÃ©. Si vous avez quelques choses de
+nÃ©gatif ou critique Ã  dire Ã  quelqu'un, faites-le hors liste. Si une personne
+vous semble inappropriÃ©e, contactez un dÃ©veloppeur SliTaz.
 </p>
 
 
@@ -112,48 +112,48 @@ vous semble inappropriée, contactez un développeur SliTaz.
 <h3>Utilisation de la liste</h3>
 <p>
 Pour poster sur la liste, vous devez commencer par vous inscrire, vous
-recevrez alors un message de confirmation. Ce mail contient le numéro de
+recevrez alors un message de confirmation. Ce mail contient le numÃ©ro de
 confirmation que vous devez renvoyer, en sujet, sur la liste d'administration
-(cela nous évite des spam). Une fois le mail d'inscription et le message de
-confirmation envoyés, vous pourrez poster sur la liste et vous recevrez tous
-les messages postés. A noter que les mails peuvent être filtrés via
-votre logiciel de messagerie préféré, cela permet de rediriger tous les
-messages dans un répertoire spécifique. Il est aussi conseillé d'utiliser 
-"Répondre" pour répondre à un mail afin que le fil de discussion puisse être
+(cela nous Ã©vite des spam). Une fois le mail d'inscription et le message de
+confirmation envoyÃ©s, vous pourrez poster sur la liste et vous recevrez tous
+les messages postÃ©s. A noter que les mails peuvent Ãªtre filtrÃ©s via
+votre logiciel de messagerie prÃ©fÃ©rÃ©, cela permet de rediriger tous les
+messages dans un rÃ©pertoire spÃ©cifique. Il est aussi conseillÃ© d'utiliser 
+"RÃ©pondre" pour rÃ©pondre Ã  un mail afin que le fil de discussion puisse Ãªtre
 suivi normalement.
 </p>
 <ul>
     <li>Adresse d'administration :
     <a href="mailto:slitaz-request@lists.tuxfamily.org">slitaz-request@lists.tuxfamily.org</a></li>
     <li>Inscription avec le sujet : subscribe</li>
-    <li>Désinscription avec le sujet : unsubscribe</li>
+    <li>DÃ©sinscription avec le sujet : unsubscribe</li>
     <li>Aide avec le sujet : help</li>
     <li>Adresse pour poster sur la liste :
     <a href="mailto:slitaz@lists.tuxfamily.org">slitaz@lists.tuxfamily.org</a></li>
 </ul>
 <h4>Format</h4>
 <p>
-Les messages de liste devraient être envoyés au format texte pur et non pas en
-HTML, en justifiant les lignes de 72 à 80 caractères pour que les personnes
+Les messages de liste devraient Ãªtre envoyÃ©s au format texte pur et non pas en
+HTML, en justifiant les lignes de 72 Ã  80 caractÃ¨res pour que les personnes
 utilisant des clients mail en mode texte, puissent lire facilement les mails.
 La justification des messages peut se faire automatiquement via la plupart
 des bons logiciels de messagerie tel que Sylpheed et permet aussi une lecture
-plus simple des archives. Il est par ailleurs conseillé de supprimer les
+plus simple des archives. Il est par ailleurs conseillÃ© de supprimer les
 citations inutiles et de ne pas joindre de trop gros fichiers.
 </p>
 
 <a name="archives"></a>
 <h3>Archives de la liste</h3>
 <p>
-La liste de diffusion est un forum public, tous les messages sont archivés et
+La liste de diffusion est un forum public, tous les messages sont archivÃ©s et
 consultables en ligne. L'archivage permet aux personnes non inscrites de
-suivre quand même la liste, c'est aussi une ressource d'informations pour
-des sujets ponctuels ou très spécifiques. La liste est archivée toutes les
+suivre quand mÃªme la liste, c'est aussi une ressource d'informations pour
+des sujets ponctuels ou trÃ¨s spÃ©cifiques. La liste est archivÃ©e toutes les
 nuits, vous pouvez facilement naviguer, lire ou chercher dans l'archive via
-le <em>listengine</em> de TuxFamily. Les messages sont classés par mois, et par 
+le <em>listengine</em> de TuxFamily. Les messages sont classÃ©s par mois, et par 
 date ou fil de discussion (<em>Thread</em>) : <a
 href="http://listengine.tuxfamily.org/lists.tuxfamily.org/slitaz/"
->Archives complètes de la liste de discussion</a>
+>Archives complÃ¨tes de la liste de discussion</a>
 </p>
 
 <div>

@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
 <head>
     <title>SliTaz - Recherche</title>
-    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="SliTaz recherche site web google doc info book" />
     <meta name="keywords" lang="fr" content="search, google, slitaz.org, doc" />
     <meta name="author" content="Christophe Lincoln"/>
@@ -47,9 +47,9 @@
 			l'ensemble du site web de SliTaz GNU/Linux, dans l'archive
 			de <a href="mailing-list.php">la liste de discussion</a>
 			et dans <a href="http://forum.slitaz.org/">le forum</a>. Ce
-			moteur de recherche a été créé pour SliTaz, via le service
+			moteur de recherche a Ã©tÃ© crÃ©Ã© pour SliTaz, via le service
 			Google Co-op, permettant de construire son propre moteur de
-			recherche personnalisé.
+			recherche personnalisÃ©.
 		</p>
 	</div>
 </div>

@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
 <head>
 	<title>SliTaz - 2010 News archives</title>
-	<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="description" content="Archive des news de SliTaz GNU/Linux 2009" />
 	<meta name="keywords" lang="fr" content="slitaz old news" />
 	<meta name="author" content="Christophe Lincoln"/>
@@ -20,7 +20,7 @@
 	<div id="block_info">
 		<h4>Archives des news</h4>
 		<p>
-			Les archives de l'actualité du site classée par année.
+			Les archives de l'actualitÃ© du site classÃ©e par annÃ©e.
 		</p>
 		<p>
 			<img src="/images/news.png" alt="[ News ]" />
@@ -40,44 +40,44 @@
 
 <ul>
 	<li><strong>4 Novembre 2010 - Nouvelle Cooking 20101104</strong>
-	<p>L'équipe SliTaz est heureuse le vous annoncer une nouvelle cooking
+	<p>L'Ã©quipe SliTaz est heureuse le vous annoncer une nouvelle cooking
 	avec plus de 2600 paquets. Elle contient le Kernel Linux 2.6.34 et a
-	été construite avec la nouvelle toolchain composé de la glibc 2.11.2
-	et gcc 4.5.1. Xorg a été entièrement mis à jour avec la version 1.9.2.
+	Ã©tÃ© construite avec la nouvelle toolchain composÃ© de la glibc 2.11.2
+	et gcc 4.5.1. Xorg a Ã©tÃ© entiÃ¨rement mis Ã  jour avec la version 1.9.2.
 	Le liveCD inclut entre autres Midori et le lecteur Audio Deadbeef ainsi
 	que beaucoup d'autres applications. Tazpkg et Tazctrlbox supporte
-	maintenant les translations gettext et plusieurs locales UTF ont été
-	ajoutées. Beaucoup de bugs ont été corrigés, des mises à jour et des
-	améliorations ont été apportées. C'est le travail de ces 6 derniers
-	mois. Vous pouvez <a href="/fr/get/#cooking>">télécharger</a>
+	maintenant les translations gettext et plusieurs locales UTF ont Ã©tÃ©
+	ajoutÃ©es. Beaucoup de bugs ont Ã©tÃ© corrigÃ©s, des mises Ã  jour et des
+	amÃ©liorations ont Ã©tÃ© apportÃ©es. C'est le travail de ces 6 derniers
+	mois. Vous pouvez <a href="/fr/get/#cooking>">tÃ©lÃ©charger</a>
 	cette nouvelle version depuis un des
 	mirroirs du site officiel du projet. Tous les feedback sont les
-	bienvenus et peuvent se faire à travers la mailing list ou le forum.</p>
+	bienvenus et peuvent se faire Ã  travers la mailing list ou le forum.</p>
 
-	<li><strong>08 Mai 2010 - Documentation de l'été</strong>
-	<p>L'équipe de SliTaz organise une "documentation de l'été" depuis le 10
+	<li><strong>08 Mai 2010 - Documentation de l'Ã©tÃ©</strong>
+	<p>L'Ã©quipe de SliTaz organise une "documentation de l'Ã©tÃ©" depuis le 10
 	mai jusqu'au 10 juin. L'objectif principal est de centraliser, revoir
-	et mettre à jour toute la documentation en ligne.
-	De plus amples détails peuvent être trouvés sur
-	<a href="http://doc.slitaz.org/">doc.slitaz.org</a>. Nous espérons que
+	et mettre Ã  jour toute la documentation en ligne.
+	De plus amples dÃ©tails peuvent Ãªtre trouvÃ©s sur
+	<a href="http://doc.slitaz.org/">doc.slitaz.org</a>. Nous espÃ©rons que
 	les utilisateurs de SliTaz pourront contribuer en ajoutant et en
-	mettant à jour la documentation.</p>
+	mettant Ã  jour la documentation.</p>
 
 	<li><strong>28 Mar 2010 - Publication de SliTaz GNU/Linux 3.0</strong>
 	<p>Tous les contributeurs SliTaz sont fiers d'annoncer la publication du
-	système d'exploitation SliTaz GNU/Linux 3.0. SliTaz est encore plus simple
-	à utiliser, plus rapide, plus facile à customizer, plus puissante et
-	toujours aussi légère. La nouvelle version stable est maintenant parue
-	après une année de développement.</p>
-	<p>Le bureau de base fournit un bureau complet propulsé par Xorg 7.4, Openbox, 
+	systÃ¨me d'exploitation SliTaz GNU/Linux 3.0. SliTaz est encore plus simple
+	Ã  utiliser, plus rapide, plus facile Ã  customizer, plus puissante et
+	toujours aussi lÃ©gÃ¨re. La nouvelle version stable est maintenant parue
+	aprÃ¨s une annÃ©e de dÃ©veloppement.</p>
+	<p>Le bureau de base fournit un bureau complet propulsÃ© par Xorg 7.4, Openbox, 
 	des composants du projet LXDE et des outils faits maison. Il vous permet de
-	vous connecter facilement au réseau pour surfer avec le navigateur web Midori,
-	écouter de la musique ou gérer vos images.</p>
-	<p>La version "Core" du système tient sur une image ISO de 30MB et les saveurs 
-	commecent à 8MB. Cette version stable à été contruite avec une nouvelle chaîne 
+	vous connecter facilement au rÃ©seau pour surfer avec le navigateur web Midori,
+	Ã©couter de la musique ou gÃ©rer vos images.</p>
+	<p>La version "Core" du systÃ¨me tient sur une image ISO de 30MB et les saveurs 
+	commecent Ã  8MB. Cette version stable Ã  Ã©tÃ© contruite avec une nouvelle chaÃ®ne 
 	d'outils incluant GCC 4.4.1 et utilise le noyau Linux 2.6.30.6. Vous pouvez
 	lire <a href="/fr/doc/releases/3.0/relnotes.fr.html">les notes de plublication</a>
-	pour plus d'informations et <a href="/fr/get/#stable>">télécharger</a> une image
+	pour plus d'informations et <a href="/fr/get/#stable>">tÃ©lÃ©charger</a> une image
 	du LiveCD depuis un des miroirs du projet.</p>
 	</li>
 </ul>

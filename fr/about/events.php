@@ -2,10 +2,10 @@
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
 <head>
-    <title>SliTaz - &Eacute;vénements</title>
-    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
-    <meta name="description" content="Au sujet de SliTaz GNU/Linux mini système d'exploitation" />
-    <meta name="keywords" lang="fr" content="Système, libre, gnu, linux, opensource, livecd" />
+    <title>SliTaz - &Eacute;vÃ©nements</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Au sujet de SliTaz GNU/Linux mini systÃ¨me d'exploitation" />
+    <meta name="keywords" lang="fr" content="SystÃ¨me, libre, gnu, linux, opensource, livecd" />
     <meta name="author" content="Christophe Lincoln"/>
 	<?php include("../../lib/html/meta-link.html"); ?>
 </head>
@@ -18,9 +18,9 @@
 	<?php include("../../lib/html/nav.fr.html"); ?>
 	<!-- Information/image -->
 	<div id="block_info">
-		<h4>&Eacute;vénements</h4>
+		<h4>&Eacute;vÃ©nements</h4>
 		<p>
-			Le projet SliTaz participe à divers expositions en fontion
+			Le projet SliTaz participe Ã  divers expositions en fontion
 			de notre temps libre et des propositions qui nous sont
 			faites.
 		</p>
@@ -39,51 +39,51 @@
 
 <h3>2008 LinuxDays (Suisse)</h3>
 <p>
-Le projet SliTaz a participé au 
-<a href="http://www.linuxdays.ch/">LinuxDay.ch</a> 2008 à Genève, 
-un salon destiné aux solutions libres, tant au niveau professionnel que
-personnel. Il y a eu des conférences et divers stands d'entreprises dont
+Le projet SliTaz a participÃ© au 
+<a href="http://www.linuxdays.ch/">LinuxDay.ch</a> 2008 Ã  GenÃ¨ve, 
+un salon destinÃ© aux solutions libres, tant au niveau professionnel que
+personnel. Il y a eu des confÃ©rences et divers stands d'entreprises dont
 HP et Novel. Parmis les 5 stands communautaires il y avait 3 distributions :
 SliTaz, <a href="http://www.debian.org/">Debian</a> et 
 <a href="http://www.openbsd.org/">OpenBSD</a>. Pour nous soutenir il 
 y avait des membres de l'association
 <a href="http://swisslinux.org/">Swisslinux</a> ; 
-<a href="http://www.ch-open.ch/">ch/open</a> quand à eux
-nous ont cordialement invité aux OpenDays à Zürich en septembre 2008.
+<a href="http://www.ch-open.ch/">ch/open</a> quand Ã  eux
+nous ont cordialement invitÃ© aux OpenDays Ã  ZÃ¼rich en septembre 2008.
 Il y a eu environ 600 visiteurs sur deux jours, les 40 LiveCD sont tous
-partis et environ 30 installations sur clés USB ont été réalisées. 
+partis et environ 30 installations sur clÃ©s USB ont Ã©tÃ© rÃ©alisÃ©es. 
 </p>
 <p>
-Au niveau technique ce fut très enrichissant de voir et tester
-SliTaz sur EeePC, Linutop et plusieurs autres portables dotés de matériels 
-différents. Xvesa est vraiment une solution de serveur X, portable et
-fiable, la détection automatique du matériel PCI a fonctionné sans
-problèmes, par contre, nous avons eu diverses infortunes avec la génération de
-clés USB bootables. Plusieurs clés formatées d'usine en FAT16/32 n'ont 
-démarré qu'après avoir enlevé le drapeau <strong>lba</strong> et  
-reformaté en ext3 avec un drapeau <strong>boot</strong> ; 2 clés de
-plus de 4 GB n'ont pas démarré et le temps a manqué pour investir davantage.
+Au niveau technique ce fut trÃ¨s enrichissant de voir et tester
+SliTaz sur EeePC, Linutop et plusieurs autres portables dotÃ©s de matÃ©riels 
+diffÃ©rents. Xvesa est vraiment une solution de serveur X, portable et
+fiable, la dÃ©tection automatique du matÃ©riel PCI a fonctionnÃ© sans
+problÃ¨mes, par contre, nous avons eu diverses infortunes avec la gÃ©nÃ©ration de
+clÃ©s USB bootables. Plusieurs clÃ©s formatÃ©es d'usine en FAT16/32 n'ont 
+dÃ©marrÃ© qu'aprÃ¨s avoir enlevÃ© le drapeau <strong>lba</strong> et  
+reformatÃ© en ext3 avec un drapeau <strong>boot</strong> ; 2 clÃ©s de
+plus de 4 GB n'ont pas dÃ©marrÃ© et le temps a manquÃ© pour investir davantage.
 </p>
 <p>
 Nous avons eu la chance de discuter avec des personnes travaillant pour 
-le canton de Genève et qui ont oeuvré pour l'adoption de formats ouverts au sein de
-l'Administration. Les écoles genevoises utilisent GNU/Linux dans les 
-salles de cours. Slitaz serait par exemple une distribution idéale pour
-des clés USB bootables, permettant aux élèves de travailler sur leurs
-documents, indépendamment de la machine utilisée.
+le canton de GenÃ¨ve et qui ont oeuvrÃ© pour l'adoption de formats ouverts au sein de
+l'Administration. Les Ã©coles genevoises utilisent GNU/Linux dans les 
+salles de cours. Slitaz serait par exemple une distribution idÃ©ale pour
+des clÃ©s USB bootables, permettant aux Ã©lÃ¨ves de travailler sur leurs
+documents, indÃ©pendamment de la machine utilisÃ©e.
 </p>
 <p>
-En ce qui concerne les visiteurs : nous avons beaucoup parlé et tout ne pourrait
-être relaté ; notons cependant, Thomas de Lyon, venu spécialement pour
-SliTaz ! Le second jour, il est revenu avec une liste de choses à
-dire, c'était cool. Deux personnes sont aussi revenues le second jour
+En ce qui concerne les visiteurs : nous avons beaucoup parlÃ© et tout ne pourrait
+Ãªtre relatÃ© ; notons cependant, Thomas de Lyon, venu spÃ©cialement pour
+SliTaz ! Le second jour, il est revenu avec une liste de choses Ã 
+dire, c'Ã©tait cool. Deux personnes sont aussi revenues le second jour
 pour installer SliTaz sur leur PC portable, une sorte de mini install-party !
 </p>
 <p>
-Les deux jours sont passés vite, l'ambiance était très détendue, les "gars"
-de Swisslinux, Debian et OpenBSD sont tous cool. On se réjouit de vous
+Les deux jours sont passÃ©s vite, l'ambiance Ã©tait trÃ¨s dÃ©tendue, les "gars"
+de Swisslinux, Debian et OpenBSD sont tous cool. On se rÃ©jouit de vous
 revoir en 2009. Merci aux organisateurs pour l'invitation, l'infrastructure
-et l'accueil, tout était top.
+et l'accueil, tout Ã©tait top.
 </p>
 
 <!-- End of content -->

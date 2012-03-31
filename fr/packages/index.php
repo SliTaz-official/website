@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
 <head>
 	<title>SliTaz Packages</title>
-	<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="description" content="Recherche et information sur les paquets slitaz" />
 	<meta name="keywords" lang="fr" content="tazpkg, paquet slitaz" />
 	<meta name="author" content="Christophe Lincoln"/>
@@ -22,7 +22,7 @@
 		<p>
 			Cette partie du site permet de voir ou trouver les paquets
 			logiciels disponibles sur le miroir de SliTaz. Les pages 
-			sont mises à jour automatiquement via une tâche cron. Tous
+			sont mises Ã  jour automatiquement via une tÃ¢che cron. Tous
 			les paquets sont installables via le gestionnaire de 
 			paquets Tazpkg, graphiquement en quelques cliques de souris 
 			ou avec la commande <code>tazpkg get-install pkgname</code>.
@@ -84,12 +84,12 @@
 <h2>Documentation</h2>
 <p>
 	Le projet SliTaz fournit de la
-	<a href="http://doc.slitaz.org/">documentation</a> détaillé
-	pour vous permettre d'apprendre à instller et gérer vous paquets
+	<a href="http://doc.slitaz.org/">documentation</a> dÃ©taillÃ©
+	pour vous permettre d'apprendre Ã  instller et gÃ©rer vous paquets
 	sur votre distribution SliTaz.
 
 	Les membres du <a href="http://forum.slitaz.org/">forum de support</a>
-	vous aiderons probablement en cas de problèmes, le forum est aussi
+	vous aiderons probablement en cas de problÃ¨mes, le forum est aussi
 	une bonne place pour faire une demande d'un ou plusieurs nouveaux
 	paquets. members 
 </p>

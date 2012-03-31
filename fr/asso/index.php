@@ -3,9 +3,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
 <head>
 	<title>SliTaz - Association</title>
-	<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
-	<meta name="description" content="Au sujet de SliTaz GNU/Linux mini système d'exploitation" />
-	<meta name="keywords" lang="fr" content="Système, libre, gnu, linux, opensource, livecd" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="Au sujet de SliTaz GNU/Linux mini systÃ¨me d'exploitation" />
+	<meta name="keywords" lang="fr" content="SystÃ¨me, libre, gnu, linux, opensource, livecd" />
 	<meta name="author" content="Christophe Lincoln"/>
 	<?php include("../../lib/html/meta-link.html"); ?>
 </head>
@@ -20,10 +20,10 @@
 	<div id="block_info">
 		<h4>Association</h4>
 		<p>
-			L'Association SliTaz GNU/Linux est une association à but 
-			non lucratif, c'est l'entité qui soutient et gère le projet.
-			Elle fournit une infrastructure et des services de qualité
-			professionnelle aux utilisateurs, développeurs et entreprises
+			L'Association SliTaz GNU/Linux est une association Ã  but 
+			non lucratif, c'est l'entitÃ© qui soutient et gÃ¨re le projet.
+			Elle fournit une infrastructure et des services de qualitÃ©
+			professionnelle aux utilisateurs, dÃ©veloppeurs et entreprises
 			utilisant la distribution.
 		</p>
 		<p>Aidez le projet via un petit don:</p>
@@ -31,15 +31,7 @@
 	</div>
 </div>
 
-<!-- Languages -->
-<div id="lang">
-	<a href="/i18n.php">
-		<img src="/images/locale.png" alt="[ Locale ]" /></a>
-	<a href="/en/asso/">English</a>
-	<a href="/es/asso/">Español</a>
-	<a href="/fr/asso/">Français</a>
-	<a href="/pt/asso/">Português</a>
-</div>
+<?php include("../../lib/lang.php"); ?>
 
 <!-- Content -->
 <div id="content">
@@ -65,28 +57,28 @@
 <a name="overview"></a>
 <h3>Vue d'ensemble</h3>
 <p>
-L'association SliTaz GNU/Linux est internationale, son siège est en
+L'association SliTaz GNU/Linux est internationale, son siÃ¨ge est en
 Suisse et respecte donc le Code civil suisse. L'association est
-composée d'un Comité et de membres, elle peut avoir des activités
-financières et rémunérer du personnel. Les membres se réunissent une
-fois par an en Assemblée générale (audio/visio conférence), c'est 
-l'organe suprême, elle décide par exemple des activités de l'association
+composÃ©e d'un ComitÃ© et de membres, elle peut avoir des activitÃ©s
+financiÃ¨res et rÃ©munÃ©rer du personnel. Les membres se rÃ©unissent une
+fois par an en AssemblÃ©e gÃ©nÃ©rale (audio/visio confÃ©rence), c'est 
+l'organe suprÃªme, elle dÃ©cide par exemple des activitÃ©s de l'association
 ou du montant de la cotisation des membres. Chaque membre a un droit de vote
-et de proposition individuelle, il peut utiliser le matériel (cdrom, T-shirt)
-de l'association, créer un groupe de travail pour organiser des
-événements, etc.
+et de proposition individuelle, il peut utiliser le matÃ©riel (cdrom, T-shirt)
+de l'association, crÃ©er un groupe de travail pour organiser des
+Ã©vÃ©nements, etc.
 </p>
 
 <p>
 Le projet prenant de l'ampleur et les demandes du monde professionnel se
-faisant de plus en plus fréquentes, la création de l'association SliTaz GNU/Linux
-nous est apparue comme une nécessité. Nous avons choisi un modèle économique
+faisant de plus en plus frÃ©quentes, la crÃ©ation de l'association SliTaz GNU/Linux
+nous est apparue comme une nÃ©cessitÃ©. Nous avons choisi un modÃ¨le Ã©conomique
 associatif pour satisfaire les besoins du projet et proposer une base solide
-et de haute qualité à nos utilisateurs et aux entreprises partenaires qui
+et de haute qualitÃ© Ã  nos utilisateurs et aux entreprises partenaires qui
 souhaiteraient sponsoriser le projet.
 </p>
 <p>
-Une copie des statuts est envoyée à chaque membre lors de son inscription
+Une copie des statuts est envoyÃ©e Ã  chaque membre lors de son inscription
 et la version PDF est toujours disponible en ligne : 
 <a href="status-association-slitaz.pdf">statuts-association-slitaz.pdf</a>
 </p>
@@ -94,60 +86,60 @@ et la version PDF est toujours disponible en ligne :
 <a name="goals"></a>
 <h3>Objectifs actuels</h3>
 <p>
-Le projet SliTaz a un modèle de développement ouvert et la totalité du travail
-réalisée par la communauté est bénévole. Notre objectif est d'améliorer et de 
+Le projet SliTaz a un modÃ¨le de dÃ©veloppement ouvert et la totalitÃ© du travail
+rÃ©alisÃ©e par la communautÃ© est bÃ©nÃ©vole. Notre objectif est d'amÃ©liorer et de 
 proposer un meilleur suivi et une meilleure organisation des contributions.
-L'accueil, la convivialité, l'accompagnement, la mise à jour des sites, la
-maintenance des services, le support technique ou la gestion des équipes
+L'accueil, la convivialitÃ©, l'accompagnement, la mise Ã  jour des sites, la
+maintenance des services, le support technique ou la gestion des Ã©quipes
 sont autant de sujets que nous aimerions professionnaliser.
 </p>
 <p>
-Pour atteindre ces objectfs nous souhaiterions offrir à l'Association 1 voire
-2 permanents qui travailleraient, à temps partiel ou plein, pour SliTaz.
-Ces personnes auraient d'abord à charge de consolider et d'optimiser l'existant
-tout en s'occupant des nouvelles demandes. Les différents sous-projets
-seraient également plus dynamiques et verraient les nouveautés publiées
+Pour atteindre ces objectfs nous souhaiterions offrir Ã  l'Association 1 voire
+2 permanents qui travailleraient, Ã  temps partiel ou plein, pour SliTaz.
+Ces personnes auraient d'abord Ã  charge de consolider et d'optimiser l'existant
+tout en s'occupant des nouvelles demandes. Les diffÃ©rents sous-projets
+seraient Ã©galement plus dynamiques et verraient les nouveautÃ©s publiÃ©es
 bien plus rapidement. Mais c'est surtout dans l'animation et le suivi des
-équipes, des espaces de discussion et de travail, que nous pourrions agir
-car les participants trouveraient alors des points d'appui plus réactifs
-et une disponibilité accrue.
+Ã©quipes, des espaces de discussion et de travail, que nous pourrions agir
+car les participants trouveraient alors des points d'appui plus rÃ©actifs
+et une disponibilitÃ© accrue.
 </p>
 
 <a name="members"></a>
 <h3>Membres</h3>
 <p>
-L'association est ouverte à toute personne physique ou morale. Devenir
-membre vous permet de soutenir le projet et d'assurer sa pérennité via une
+L'association est ouverte Ã  toute personne physique ou morale. Devenir
+membre vous permet de soutenir le projet et d'assurer sa pÃ©rennitÃ© via une
 cotisation annuelle.
 </p>
 <p>
-Pour devenir membre, il vous suffit d'envoyer un courrier, ou un mail à 
+Pour devenir membre, il vous suffit d'envoyer un courrier, ou un mail Ã  
 l'adresse : asso (at) slitaz.org. Vous recevrez alors un mail avec toutes
 les informations utiles, les moyens de paiement de la cotisation et 
-une copie des statuts. La cotisation de base a été fixée à 40 Euro (60 CHF)
-pour l'année 2009-2010. Dans le contenu du courrier ou mail, vous êtes priés
-de spécifier :
+une copie des statuts. La cotisation de base a Ã©tÃ© fixÃ©e Ã  40 Euro (60 CHF)
+pour l'annÃ©e 2009-2010. Dans le contenu du courrier ou mail, vous Ãªtes priÃ©s
+de spÃ©cifier :
 </p>
 <ul>
-	<li>Nom et Prénom</li>
-	<li>Adresse complète</li>
+	<li>Nom et PrÃ©nom</li>
+	<li>Adresse complÃ¨te</li>
 	<li>Pays</li>
 </ul>
 
 <a name="sponsors"></a>
 <h3>Sponsors</h3>
 <p>
-L'association SliTaz a aussi pour buts de fournir et maintenir un système
-de base de haute qualité, stable et fiable, afin de permettre aux organismes
-publics (Ecoles, Universités, Ministères) et aux entreprises d'utiliser
+L'association SliTaz a aussi pour buts de fournir et maintenir un systÃ¨me
+de base de haute qualitÃ©, stable et fiable, afin de permettre aux organismes
+publics (Ecoles, UniversitÃ©s, MinistÃ¨res) et aux entreprises d'utiliser
 la distribution dans un contexte professionnel.
 </p>
 <p>
 Si vous proposez des solutions commerciales utilisant SliTaz, vous pouvez
-devenir sponsor de l'association afin de soutenir et d'assurer la pérennité
+devenir sponsor de l'association afin de soutenir et d'assurer la pÃ©rennitÃ©
 de la distribution et obtenir des services professionels. Nous proposons
-des services de support, conseils et développement par des collaborateurs
-salariés de l'association. Pour de plus amples informations vous pouvez
+des services de support, conseils et dÃ©veloppement par des collaborateurs
+salariÃ©s de l'association. Pour de plus amples informations vous pouvez
 contacter l'association par courrier, ou mail : asso at slitaz.org
 </p>
 <p>
@@ -158,10 +150,10 @@ contacter l'association par courrier, ou mail : asso at slitaz.org
 <a name="donation"></a>
 <h3>Donation</h3>
 <p>
-Il y a divers moyens pour soutenir financièrement l'association, devenir
+Il y a divers moyens pour soutenir financiÃ¨rement l'association, devenir
 membre ou sponsor, faire un don par virement bancaire ou en ligne via 
 les services de PayPal. Le projet a aussi des besoins logistiques, 
-tous les dons de matériel en bon état sont bienvenus.
+tous les dons de matÃ©riel en bon Ã©tat sont bienvenus.
 </p>
 
 <?php include("../../lib/html/donate.html"); ?>

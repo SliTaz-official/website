@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
 <head>
     <title>SliTaz Art et graphisme</title>
-    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="SliTaz artwork images logo graphisme wallpaper" />
     <meta name="keywords" lang="fr" content="opensource, image, logo, slitaz, spider" />
     <meta name="author" content="Christophe Lincoln"/>
@@ -20,14 +20,14 @@
 	<div id="block_info">
 		<h4>Artwork</h4>
 		<p>
-			Trouver, apprécier et partager des créations graphiques pour
+			Trouver, apprÃ©cier et partager des crÃ©ations graphiques pour
 			SliTaz. Rejoinez-nous sur 
 			<a href="http://scn.slitaz.org/groups/artwork/">SCN</a>
 		</p>
 		<ul>
 			<li><a href="#art4taz">Artwork pour SliTaz.</a></li>
 			<li><a href="#logos">Logos, spider &amp; icons.</a></li>
-			<li><a href="screenshots.php">Captures d'écrans.</a></li>
+			<li><a href="screenshots.php">Captures d'Ã©crans.</a></li>
 		</ul>
 	</div>
 </div>
@@ -38,39 +38,39 @@
 <h2>Art &amp; graphisme</h2>
 
 <p>
-Cette partie du site web est consacrée à l'art et au graphisme en rapport et
-s'appliquant à SliTaz. Les images sont libres, vous pouvez par exemple, les
-réutiliser afin de réaliser votre propre fond d'écran ou afficher un logo sur
-votre site pour aider à populariser le projet. Les logos et icônes SliTaz sont
-disponibles en différentes tailles et directement téléchargeables via cette
-page et <a href="../../images/artwork/">le répertoire artwork</a>. Vous
+Cette partie du site web est consacrÃ©e Ã  l'art et au graphisme en rapport et
+s'appliquant Ã  SliTaz. Les images sont libres, vous pouvez par exemple, les
+rÃ©utiliser afin de rÃ©aliser votre propre fond d'Ã©cran ou afficher un logo sur
+votre site pour aider Ã  populariser le projet. Les logos et icÃ´nes SliTaz sont
+disponibles en diffÃ©rentes tailles et directement tÃ©lÃ©chargeables via cette
+page et <a href="../../images/artwork/">le rÃ©pertoire artwork</a>. Vous
 trouverez aussi dans cette partie <em>artwork</em>, quelques
-<a href="screenshots.php">captures d'écran</a> réalisées avec mtPaint ou The
+<a href="screenshots.php">captures d'Ã©cran</a> rÃ©alisÃ©es avec mtPaint ou The
 Gimp.
 </p>
 
 <a name="art4taz"></a>
 <h2>Artwork pour SliTaz</h2>
 <p>
-Comme beaucoup de choses avec SliTaz, les graphismes, logos, thèmes ou fonds
-d'écrans, sont entièrement réalisés par la communauté et les développeurs. Le
-projet tient à proposer un graphisme élégant, sobre et de qualité. Réaliser
-un logo, un fond d'écran ou autre, est un bon moyen de participer au projet sans
+Comme beaucoup de choses avec SliTaz, les graphismes, logos, thÃ¨mes ou fonds
+d'Ã©crans, sont entiÃ¨rement rÃ©alisÃ©s par la communautÃ© et les dÃ©veloppeurs. Le
+projet tient Ã  proposer un graphisme Ã©lÃ©gant, sobre et de qualitÃ©. RÃ©aliser
+un logo, un fond d'Ã©cran ou autre, est un bon moyen de participer au projet sans
 mettre les mains dans le code ou les relectures de document xHTML. Si vous avez
-envie de créer pour SliTaz ou si vous avez mis des oeuvres en ligne, il est
-vivement conseillé de nous le signaler via le site de la communauté ou de
-<a href="../mailing-list.php">la liste de discussion</a>. Mais attention à ne
+envie de crÃ©er pour SliTaz ou si vous avez mis des oeuvres en ligne, il est
+vivement conseillÃ© de nous le signaler via le site de la communautÃ© ou de
+<a href="../mailing-list.php">la liste de discussion</a>. Mais attention Ã  ne
 pas envoyer de trop gros fichiers sur la liste.
 </p>
 <h3>Artwork du LiveCD</h3>
 <p>
-Pour le fond d'écran du LiveCD, il y a des contraintes, l'image ne doit pas
-dépasser les 200 Ko. De plus, il faut une image de 1024x768. Pour finir, 
-chaque version propose un nouveau thème/fond d'écran qui doit suivre
-la même ligne graphique et il va sans dire que les outils de la distribution
-doivent être utilisés. En mode LiveCD, vous avez mtPaint pour travailler et
-avec un système installé, Inkscape et the Gimp sont disponibles sur le miroir. 
-A noter que le format libre PNG est privilégié.
+Pour le fond d'Ã©cran du LiveCD, il y a des contraintes, l'image ne doit pas
+dÃ©passer les 200 Ko. De plus, il faut une image de 1024x768. Pour finir, 
+chaque version propose un nouveau thÃ¨me/fond d'Ã©cran qui doit suivre
+la mÃªme ligne graphique et il va sans dire que les outils de la distribution
+doivent Ãªtre utilisÃ©s. En mode LiveCD, vous avez mtPaint pour travailler et
+avec un systÃ¨me installÃ©, Inkscape et the Gimp sont disponibles sur le miroir. 
+A noter que le format libre PNG est privilÃ©giÃ©.
 </p>
 
 <a name="logos"></a>

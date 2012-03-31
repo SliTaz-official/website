@@ -3,9 +3,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
 <head>
     <title>SliTaz (fr) - Documentation</title>
-    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="Documentation du projet SliTaz GNU/Linux shell howto make live-cd" />
-    <meta name="keywords" lang="fr" content="Système, libre, gnu, linux, logiciels opensource, livecd, autonome" />
+    <meta name="keywords" lang="fr" content="SystÃ¨me, libre, gnu, linux, logiciels opensource, livecd, autonome" />
     <meta name="author" content="Christophe Lincoln"/>
     <?php include("../../lib/html/meta-link.html"); ?>
 </head>
@@ -21,14 +21,14 @@
 		<h4>Documentation</h4>
 		<p>
 			La documentation officiel de SliTaz se trouve sur le Wiki
-			communautaire. Les manuels et un guide de démarrage rapide
+			communautaire. Les manuels et un guide de dÃ©marrage rapide
 			sont fournis avec chaque LiveCD de la distribution et
 			accessibles depuis le menu "Documentation".
 		</p>
 		<ul>
 			<li><a href="http://doc.slitaz.org/fr:start">Wiki communautaire</a></li>
 			<li><a href="http://hg.slitaz.org/slitaz-doc/raw-file/tip/slitaz/index.fr.html"
-				>Guide de démarrge</a></li>
+				>Guide de dÃ©marrge</a></li>
 		</ul>
 	</div>
 </div>
@@ -40,33 +40,33 @@
 
 <p>
 	<a href="http://doc.slitaz.org/fr:handbook:start">Handbook</a> -
-	Le livre de main de SliTaz. Référence au sujet de l'utilisation du 
-	système au niveau utilisateur, administrateur et développeur en
-	général. Il réunit des travaux de référence, des mini manuels et 
-	une collection d'instructions destinées à fournir un livre complet,
-	de haute qualité, facilement consultable et fournissant des réponses
-	rapides sur un sujet spécifique. Le Handbook explique comment 
+	Le livre de main de SliTaz. RÃ©fÃ©rence au sujet de l'utilisation du 
+	systÃ¨me au niveau utilisateur, administrateur et dÃ©veloppeur en
+	gÃ©nÃ©ral. Il rÃ©unit des travaux de rÃ©fÃ©rence, des mini manuels et 
+	une collection d'instructions destinÃ©es Ã  fournir un livre complet,
+	de haute qualitÃ©, facilement consultable et fournissant des rÃ©ponses
+	rapides sur un sujet spÃ©cifique. Le Handbook explique comment 
 	utiliser le LiveCD, donne les instructions d'installation, fournit 
-	des références pour vous aidez à lancer une ligne de commandes, 
-	installer des paquets logiciels générer un LiveCD et touche à de 
-	nombreux sujets, de près ou de loin.
+	des rÃ©fÃ©rences pour vous aidez Ã  lancer une ligne de commandes, 
+	installer des paquets logiciels gÃ©nÃ©rer un LiveCD et touche Ã  de 
+	nombreux sujets, de prÃ¨s ou de loin.
 </p>
 <p>
 	<a href="http://doc.slitaz.org/fr:cookbook:start">Cookbook</a> -
 	Le livre de cuisine de Slitaz. informations au sujet de la gestion,
-	du fonctionnement et du développement de la distribution. Création
+	du fonctionnement et du dÃ©veloppement de la distribution. CrÃ©ation
 	de paquets, description des recettes, du wok, des scripts de 
-	démarrages, etc.
+	dÃ©marrages, etc.
 </p>
 
 <h2>Scratchbook</h2>
 <p>
-	<a href="scratchbook/">Scratchbook</a> - Le livre de création de
-	la version initial de SliTaz. Description des étapes de création 
-	de SliTaz, en commençant par la compilation du noyau Linux, en 
+	<a href="scratchbook/">Scratchbook</a> - Le livre de crÃ©ation de
+	la version initial de SliTaz. Description des Ã©tapes de crÃ©ation 
+	de SliTaz, en commenÃ§ant par la compilation du noyau Linux, en 
 	passant par l'installation d'un server graphique (Xvesa), de 
-	bibliothèques GTK+ et d'applications graphiques. Le Cookbook est 
-	un livre technique permettant de construire un système GNU/Linux 
+	bibliothÃ¨ques GTK+ et d'applications graphiques. Le Cookbook est 
+	un livre technique permettant de construire un systÃ¨me GNU/Linux 
 	depuis les sources, il demande du temps et de la motivation.
 </p>
 
@@ -77,7 +77,7 @@
 	<li><a href="http://hg.slitaz.org/tazlito/raw-file/tip/doc/tazlito.en.html"
 		>Tazlito manuel</a> -  Createur de LiveCD SliTaz</li>
 	<li><a href="http://hg.slitaz.org/tazusb/raw-file/tip/doc/tazusb.en.html"
-		>TazUSB manuel</a> -  Créateur de LiveUSB SliTaz</li>
+		>TazUSB manuel</a> -  CrÃ©ateur de LiveUSB SliTaz</li>
 	<li><a href="http://hg.slitaz.org/cookutils/raw-file/tip/doc/cookutils.en.html"
 		>Cookutils manuel</a> -  Constructeur de paquets SliTaz</li>
 </ul>
@@ -87,15 +87,15 @@
 	Le <a href="http://doc.slitaz.org/">wiki</a>, site collaboratif et 
 	communautaire, fournit divers ressources traitant de sujets particuliers.
 	Le <a href="http://forum.slitaz.org/">forum</a> de support est aussi une
-	source d'informations proposant des sujets très spécifiques.
+	source d'informations proposant des sujets trÃ¨s spÃ©cifiques.
 </p>
 
 <h2>Notes de publication</h2>
 <p>
-	Les notes de publication de SliTaz fournissent des informations spécifiques au
-	sujet d'une version stable du système et donnent quelques astuces utiles pour
-	commencer à utiliser SliTaz. Sur le corps du LiveCD, les notes de publication
-	sont installées et accessible depuis le menu "Documentation".
+	Les notes de publication de SliTaz fournissent des informations spÃ©cifiques au
+	sujet d'une version stable du systÃ¨me et donnent quelques astuces utiles pour
+	commencer Ã  utiliser SliTaz. Sur le corps du LiveCD, les notes de publication
+	sont installÃ©es et accessible depuis le menu "Documentation".
 </p>
 
 <ul>

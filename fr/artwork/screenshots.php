@@ -2,9 +2,9 @@
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
 <head>
-    <title>SliTaz - Captures d'écrans</title>
-    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
-    <meta name="description" content="SliTaz screenshots captures d'écrans images openbox" />
+    <title>SliTaz - Captures d'Ã©crans</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="SliTaz screenshots captures d'Ã©crans images openbox" />
     <meta name="keywords" lang="fr" content="linux slitaz gnu screenshot" />
     <meta name="author" content="Christophe Lincoln"/>
 	<?php include("../../lib/html/meta-link.html"); ?>
@@ -18,11 +18,11 @@
 	<?php include("../../lib/html/nav.fr.html"); ?>
 	<!-- Information/image -->
 	<div id="block_info">
-		<h4>Captures d'écrans</h4>
+		<h4>Captures d'Ã©crans</h4>
 		<p>
 			Les images disent parfois plus que des milliers de mots...
-			Pictures say more than a thousand words... Captures d'écran
-			de la version stable et cooking. Vous aurez peut-être aussi
+			Pictures say more than a thousand words... Captures d'Ã©cran
+			de la version stable et cooking. Vous aurez peut-Ãªtre aussi
 			envie de trouver ou partager des images pour SliTaz!
 		</p>
 		<p>

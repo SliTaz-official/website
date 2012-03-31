@@ -3,8 +3,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
 <head>
 	<title>SliTaz (fr) - Forge</title>
-	<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
-	<meta name="description" content="Développement de SliTaz GNU/Linux" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="DÃ©veloppement de SliTaz GNU/Linux" />
 	<meta name="keywords" lang="fr" content="developpement slitaz developer GNU Linux" />
 	<meta name="author" content="Christophe Lincoln"/>
 	<?php include("../../lib/html/meta-link.html"); ?>
@@ -20,7 +20,7 @@
 	<div id="block_info">
 		<h4>Forge</h4>
 		<p>
-			Les outils et services utilisés pour forger Slitaz :-)
+			Les outils et services utilisÃ©s pour forger Slitaz :-)
 		</p>
 		<p>
 			<img src="../../images/users.png" alt="users.png" />
@@ -33,13 +33,13 @@
 <!-- Content -->
 <div id="content">
 
-<h2>Gestion collaborative du développement</h2>
+<h2>Gestion collaborative du dÃ©veloppement</h2>
 
 <ul>
 	<li><a href="#kiss">KISS et respect des standards.</a></li>
 	<li><a href="#tank">Build host &amp; home.</a></li>
-	<li><a href="#repos">Dépôts Mercurial.</a></li>
-	<li><a href="#iconv">Implémentation d'iconv().</a></li>
+	<li><a href="#repos">DÃ©pÃ´ts Mercurial.</a></li>
+	<li><a href="#iconv">ImplÃ©mentation d'iconv().</a></li>
 	<li><a href="#pkgs">Paquets tazpkg.</a></li>
 	<li><a href="#pkgs-naming">Nommage des paquets.</a></li>
 	<li><a href="#site">Gestion du site Web et des livres.</a></li>
@@ -47,28 +47,28 @@
 </ul>
 
 <p>
-Le projet SliTaz dispose de divers moyens pour gérer le travail des
-développeurs et collaborer. Un système de gestion de révision avec Mercurial
+Le projet SliTaz dispose de divers moyens pour gÃ©rer le travail des
+dÃ©veloppeurs et collaborer. Un systÃ¨me de gestion de rÃ©vision avec Mercurial
 (Hg), des modules de synchronisation avec Rsync, de la documentation, une 
 <a href="../mailing-list.php">liste de discussion</a> et un canal IRC. Tous
-les développeurs sont inscrits sur la liste, c'est le moyen de collaboration
-principal et privilégié.
+les dÃ©veloppeurs sont inscrits sur la liste, c'est le moyen de collaboration
+principal et privilÃ©giÃ©.
 </p>
 
 <a name="kiss"></a>
 <h3>KISS et respect des standards</h3>
 <p>
-Rester simple, respecter au mieux les standards, réaliser un travail soigné,
-rédiger de la documentation de haute qualité, fournir un système stable et
-robuste et garder le <em>rootfs</em> du LiveCD standard assez léger pour que
-SliTaz tourne sur des machines ayant au minimum 128 Mb de RAM. Possibilité 
+Rester simple, respecter au mieux les standards, rÃ©aliser un travail soignÃ©,
+rÃ©diger de la documentation de haute qualitÃ©, fournir un systÃ¨me stable et
+robuste et garder le <em>rootfs</em> du LiveCD standard assez lÃ©ger pour que
+SliTaz tourne sur des machines ayant au minimum 128 Mb de RAM. PossibilitÃ© 
 d'utiliser GTK+2, Dialog, Gtkdialog, des scripts SHell ou encore PHP pour
-coder des outils propres à la distribution. L'idée est aussi de ne pas faire
+coder des outils propres Ã  la distribution. L'idÃ©e est aussi de ne pas faire
 de doublons et de penser mini...
 </p>
 <p>
-SliTaz se veut un projet proche et à l'écoute des ses utilisateurs. Il y a
-plusieurs développeurs actifs sur le <a href="http://forum.slitaz.org/">forum</a>
+SliTaz se veut un projet proche et Ã  l'Ã©coute des ses utilisateurs. Il y a
+plusieurs dÃ©veloppeurs actifs sur le <a href="http://forum.slitaz.org/">forum</a>
 et sur la <a href="../mailing-list.php">liste de discussion</a>.
 </p>
 
@@ -76,53 +76,53 @@ et sur la <a href="../mailing-list.php">liste de discussion</a>.
 <h3>Tank - Build host &amp; home</h3>
 <p>
 Chaque contributeur peut avoir un compte sur le serveur principal du
-projet, avec un accès sécurisé, de l'espace disque, un répertoire public
-et tous les outils de développement. Les développeurs peuvent y compiler
+projet, avec un accÃ¨s sÃ©curisÃ©, de l'espace disque, un rÃ©pertoire public
+et tous les outils de dÃ©veloppement. Les dÃ©veloppeurs peuvent y compiler
 leurs paquets et les mainteneurs du miroir s'occupent de la synchronisation.
-Tank héberge aussi le site internet, le web boot et les dépôts Mercurial: 
+Tank hÃ©berge aussi le site internet, le web boot et les dÃ©pÃ´ts Mercurial: 
 <a href="http://tank.slitaz.org/">tank.slitaz.org</a>
 </p>
 <p>
-L'utilisation du build host est décrite dans le Cookbook:
+L'utilisation du build host est dÃ©crite dans le Cookbook:
 <a href="http://doc.slitaz.org/en:cookbook:buildhost">SliTaz Build Host (tank)</a>.
 </p>
 
 <a name="repos"></a>
-<h3>Dépôts Mercurial</h3>
+<h3>DÃ©pÃ´ts Mercurial</h3>
 <p>
 Tous les sous-projets tels que Tazpkg, Tazwok ou Tazlito ont leurs propres 
-dépôts Hg sur le serveur du projet, tout comme le wok. Les développeurs ont
-un compte et des droits en écriture afin de pouvoir envoyer leurs recettes,
-mises à jour ou modifications. Il est bien sûr possible de demander la création  
-d'un nouveau dépôt pour collaborer sur un nouveau sous-projet lié à SliTaz.
+dÃ©pÃ´ts Hg sur le serveur du projet, tout comme le wok. Les dÃ©veloppeurs ont
+un compte et des droits en Ã©criture afin de pouvoir envoyer leurs recettes,
+mises Ã  jour ou modifications. Il est bien sÃ»r possible de demander la crÃ©ation  
+d'un nouveau dÃ©pÃ´t pour collaborer sur un nouveau sous-projet liÃ© Ã  SliTaz.
 A noter qu'il y a 2 domaines : <a href="http://hg.slitaz.org/">hg.slitaz.org</a>
-est public et <code>repos.slitaz.org</code> nécessite une authentification, c'est-à-dire 
+est public et <code>repos.slitaz.org</code> nÃ©cessite une authentification, c'est-Ã -dire 
 que vous pouvez cloner hg.slitaz.org mais pas y pousser vos changements ou fichiers.
 </p>
 <h4>~/.hgrc</h4>
 <p>
-Mercurial utilise un fichier caché <code>~./hgrc</code> permettant de 
-spécifier son nom d'utilisateur. Il faut mettre votre nom et adresse mail pour
-qu'on sache qui a modifié quoi. Et attention à ne pas être <em>root</em> pour
+Mercurial utilise un fichier cachÃ© <code>~./hgrc</code> permettant de 
+spÃ©cifier son nom d'utilisateur. Il faut mettre votre nom et adresse mail pour
+qu'on sache qui a modifiÃ© quoi. Et attention Ã  ne pas Ãªtre <em>root</em> pour
 pousser vos modifications. Exemple :
 </p>
 <pre class="script">
 [ui]
-username = Prénom Nom &lt;you@example.org&gt;
+username = PrÃ©nom Nom &lt;you@example.org&gt;
 </pre>
 <h4>Cloner, modifier, commiter et pousser</h4>
 <p>
 Vous avez le choix de cloner anonymement via hg.slitaz.org ou directement avec
-votre login et mot de passe. Pour cloner un dépôt tel que le wok :
+votre login et mot de passe. Pour cloner un dÃ©pÃ´t tel que le wok :
 </p>
 <pre>
  $ hg clone http://repos.slitaz.org/wok/
 </pre>
 <p>
-Copier, créer, modifier des recettes ou des fichiers dans <code>stuff</code>. 
-Avant de pouvoir pousser vos modifs, il faut les additionner à votre dépôt 
+Copier, crÃ©er, modifier des recettes ou des fichiers dans <code>stuff</code>. 
+Avant de pouvoir pousser vos modifs, il faut les additionner Ã  votre dÃ©pÃ´t 
 local et les commiter. A noter que la commande <code>status</code> permet de 
-savoir quels fichiers ont été modifiés :
+savoir quels fichiers ont Ã©tÃ© modifiÃ©s :
 </p>
 <pre>
  $ cd wok
@@ -131,8 +131,8 @@ savoir quels fichiers ont été modifiés :
  $ hg commit
 </pre>
 <p>
-La commande <code>commit</code> va ouvrir l'éditeur de texte Nano pour écrire le message
-destiné aux logs (Ctrl + X pour enregistrer et quitter). Vous pouvez éviter
+La commande <code>commit</code> va ouvrir l'Ã©diteur de texte Nano pour Ã©crire le message
+destinÃ© aux logs (Ctrl + X pour enregistrer et quitter). Vous pouvez Ã©viter
 Nano en utilisant l'option : <code>-m "Message"</code>. And please, 
 messages in English if possible :
 </p>
@@ -140,8 +140,8 @@ messages in English if possible :
  $ hg commit -m "Message for Mercurial log"
 </pre>
 <p>
-Une fois que tout est prêt, vous pouvez encore utiliser la commande
-<code>log</code> pour voir ce qui va être affiché sur l'interface web. Pour 
+Une fois que tout est prÃªt, vous pouvez encore utiliser la commande
+<code>log</code> pour voir ce qui va Ãªtre affichÃ© sur l'interface web. Pour 
 pousser vos changements c'est <code>push</code> :
 </p>
 <pre>
@@ -149,15 +149,15 @@ pousser vos changements c'est <code>push</code> :
  $ hg push
 </pre>
 <p>
-Si vous avez cloné depuis hg.slitaz.org, il faut alors pousser en spécifiant
+Si vous avez clonÃ© depuis hg.slitaz.org, il faut alors pousser en spÃ©cifiant
 le bon URL :
 </p>
 <pre>
  $ hg push http://repos.slitaz.org/wok/
 </pre>
-<h4>Mettre à jour un wok local</h4>
+<h4>Mettre Ã  jour un wok local</h4>
 <p>
-Pour mettre à jour votre wok local avec celui du serveur (<em>pull</em> pour
+Pour mettre Ã  jour votre wok local avec celui du serveur (<em>pull</em> pour
 tirer les changements) :
 </p>
 <pre>
@@ -169,17 +169,17 @@ tirer les changements) :
 Des commandes hg qui peuvent servir.
 </p>
 <ul>
-	<li><code>hg help</code> : affiche la liste complète des commandes.</li>
-	<li><code>hg rollback</code> : annule la dernière action exécutée (commit,
+	<li><code>hg help</code> : affiche la liste complÃ¨te des commandes.</li>
+	<li><code>hg rollback</code> : annule la derniÃ¨re action exÃ©cutÃ©e (commit,
 	pull, push).</li>
 	<li><code>hg log &lt;paquet&gt;</code> : affiche les logs pour un paquet.</li>
 	<li><code>hg head</code> : affiche le dernier log.</li>
 </ul>
 
 <a name="iconv"></a>
-<h3>Implémentation d'iconv()</h3>
+<h3>ImplÃ©mentation d'iconv()</h3>
 <p>
-SliTaz utilise iconv() fourni par la GNU glibc, même si certain paquets
+SliTaz utilise iconv() fourni par la GNU glibc, mÃªme si certain paquets
 proposent d'utiliser <code>libiconv</code> il faut utiliser la version de
 la glibc (paquet <code>glibc-locale</code>). Il n'y a donc pas de paquet 
 libiconv (1,2 Mb) dans SliTaz.
@@ -188,38 +188,38 @@ libiconv (1,2 Mb) dans SliTaz.
 <a name="pkgs"></a>
 <h3>Paquets tazpkg</h3>
 <p>
-Les paquets tazpkg de SliTaz sont créés automatiquement via Tazwok et les
+Les paquets tazpkg de SliTaz sont crÃ©Ã©s automatiquement via Tazwok et les
 recettes contenues dans le wok, <a href="http://doc.slitaz.org/fr:cookbook:start">le Cookbook</a>
-décrit <a href="http://doc.slitaz.org/fr:cookbook:wok">l'utilisation des outils SliTaz</a> 
+dÃ©crit <a href="http://doc.slitaz.org/fr:cookbook:wok">l'utilisation des outils SliTaz</a> 
 et le format des <a href="http://doc.slitaz.org/fr:cookbook:receipt">recettes</a>,
 c'est sans doute par un petit peu de lecture qu'il faut commencer.
 </p>
 <p>
-Concernant le choix des paquets, l'idée est de proposer un paquet par tâche ou 
-fonctionnalité, c'est à dire pas (trop) de doublons et de trouver 
-l'application la plus légère dans son domaine. A noter que les paquets actuels
-ne sont pas figés, si vous trouvez une alternative à un paquet existant, étant
-plus légère, ayant plus de fonctionnalités ou étant plus <em>sexy</em> pour
-quelques Ko supplémentaires, vous pouvez la proposer sur la liste. Une 
-attention particulière est portée aux paquets destinés au LiveCD : strip,
-suppression de tout ce qui est inutile, dépendances et options de compilation.
-En général, les paquets candidats pour le corps du LiveCD sont discutés sur
+Concernant le choix des paquets, l'idÃ©e est de proposer un paquet par tÃ¢che ou 
+fonctionnalitÃ©, c'est Ã  dire pas (trop) de doublons et de trouver 
+l'application la plus lÃ©gÃ¨re dans son domaine. A noter que les paquets actuels
+ne sont pas figÃ©s, si vous trouvez une alternative Ã  un paquet existant, Ã©tant
+plus lÃ©gÃ¨re, ayant plus de fonctionnalitÃ©s ou Ã©tant plus <em>sexy</em> pour
+quelques Ko supplÃ©mentaires, vous pouvez la proposer sur la liste. Une 
+attention particuliÃ¨re est portÃ©e aux paquets destinÃ©s au LiveCD : strip,
+suppression de tout ce qui est inutile, dÃ©pendances et options de compilation.
+En gÃ©nÃ©ral, les paquets candidats pour le corps du LiveCD sont discutÃ©s sur
 la liste.
 </p>
 <p>
-Avant de commencer à compiler et créer des paquets pour SliTaz, assurez-vous 
+Avant de commencer Ã  compiler et crÃ©er des paquets pour SliTaz, assurez-vous 
 qu'une recette n'existe pas dans le wok undigest, disponible sur le miroir
 principal de SliTaz. N'oubliez pas non plus que les membres de la liste sont
-là pour vous aider et que pour bien commencer, <a href="http://doc.slitaz.org/fr:cookbook:wok"
+lÃ  pour vous aider et que pour bien commencer, <a href="http://doc.slitaz.org/fr:cookbook:wok"
 >la documentation du wok et des outils</a> existe.
 </p>
 
 <a name="pkgs-naming"></a>
 <h3>Nommage des paquets</h3>
 <p>
-Dans la majorité des cas le nom du paquet est celui des sources exception
+Dans la majoritÃ© des cas le nom du paquet est celui des sources exception
 faite des modules Python, Perl, PHP, Ruby, Lua. Par example le paquet Kid
-fournissant un système de template XML et écrit en Python se nomme:
+fournissant un systÃ¨me de template XML et Ã©crit en Python se nomme:
 <code>python-kid</code>.
 </p>
 
@@ -227,10 +227,10 @@ fournissant un système de template XML et écrit en Python se nomme:
 <h3>Gestion du site Web et des livres</h3>
 <p>
 La gestion du site et des livres (Handbook et Cookbook) est faite via un 
-dépôt Mercurial, ce qui nous permet de traviller à plusieurs. Il faut
-juste installer <code>mercurail</code> sur SliTaz et connaître les commandes
-de base. Une fois le dépôt cloné vous avez une copie complète du site en
-local pour commencer à travailler. Pour cloner le site web :
+dÃ©pÃ´t Mercurial, ce qui nous permet de traviller Ã  plusieurs. Il faut
+juste installer <code>mercurail</code> sur SliTaz et connaÃ®tre les commandes
+de base. Une fois le dÃ©pÃ´t clonÃ© vous avez une copie complÃ¨te du site en
+local pour commencer Ã  travailler. Pour cloner le site web :
 </p>
 <pre>
  $ hg clone http://hg.slitaz.org/website
@@ -243,35 +243,35 @@ Si vous avez les droits :
 </pre>
 <p>
 Sur SliTaz vous pouvez installer le serveur web Lighttpd et mettre le
-site dans votre répertoire ~/Public, cela permet de naviguer dans votre
+site dans votre rÃ©pertoire ~/Public, cela permet de naviguer dans votre
 copie locale via localhost/~user.
 </p>
 
 <a name="xhtml"></a>
 <h3>xHTML coding style</h3>
 <p>
-Les pages du site et des différents <em>books</em> sont codés en xHTML 1.0
+Les pages du site et des diffÃ©rents <em>books</em> sont codÃ©s en xHTML 1.0
 Transitional, les couleurs pour le <code>body</code> et les titres sont
-directement mis dans la page, cela permet d'avoir une présentation plus soignée
-pour Links. Le titre de niveau 1 est utilisé une seule fois en haut de page,
+directement mis dans la page, cela permet d'avoir une prÃ©sentation plus soignÃ©e
+pour Links. Le titre de niveau 1 est utilisÃ© une seule fois en haut de page,
 le titre 2 correspond au titre du document et les titres de niveau 3 et 4 sont
-ensuite utilisés pour les sous-titres. Si il y a lieu d'avoir une liste à puces
-avec des ancres, elle se met en haut juste après le titre de niveau 2. Les
+ensuite utilisÃ©s pour les sous-titres. Si il y a lieu d'avoir une liste Ã  puces
+avec des ancres, elle se met en haut juste aprÃ¨s le titre de niveau 2. Les
 paragraphes sont contenus dans les balises <code>&lt;p&gt;&lt;/p&gt;</code>.
-Pour indenter, nous utilisons des tabulations, elles ont une raison d'être
-sémantique et prennent moins de place en terme d'octets. Pour mettre
+Pour indenter, nous utilisons des tabulations, elles ont une raison d'Ãªtre
+sÃ©mantique et prennent moins de place en terme d'octets. Pour mettre
 du code tel que le nom d'une commande dans un paragraphe, la balise
-<code>&lt;code&gt;</code> est recommandée. Pour afficher une ou des commandes
-à lancer dans un terminal, les pages du site utilisent la balise
-<code>&lt;pre&gt;</code> permettant d'afficher du texte préformaté. Exemple :
+<code>&lt;code&gt;</code> est recommandÃ©e. Pour afficher une ou des commandes
+Ã  lancer dans un terminal, les pages du site utilisent la balise
+<code>&lt;pre&gt;</code> permettant d'afficher du texte prÃ©formatÃ©. Exemple :
 </p>
 <pre>
  $ command
 </pre>
 <p>
-Pour afficher du texte à copier/coller tels que des scripts, des bouts de
+Pour afficher du texte Ã  copier/coller tels que des scripts, des bouts de
 code, des exemples de fichiers de configuration, etc, c'est aussi la balise
-<code>&lt;pre&gt;</code> mais avec une classe CSS nommée "script". Exemple:
+<code>&lt;pre&gt;</code> mais avec une classe CSS nommÃ©e "script". Exemple:
 </p>
 <pre class="script">
 &lt;pre class="script"&gt;
@@ -282,18 +282,18 @@ code...
 </pre>
 <p>
 Les mots en <em>English</em> se mettent dans la balise <code>&lt;em&gt;</code>
-et les liens internes sont relatifs. Penser à vérifier la validité du code via
+et les liens internes sont relatifs. Penser Ã  vÃ©rifier la validitÃ© du code via
 le <em>validator</em> en ligne du W3C.
 </p>
 
 <h3>Diff et patch</h3>
 <p>
 Les utilitaires <code>diff</code> et <code>patch</code> sont des outils en
-ligne de commande permettant de créer et d'appliquer un fichier contenant
-les différences entre deux fichiers. Cette technique est souvent utilisée
-pour collaborer et permet d'extraire clairement les modifications apportées
-au fichier original. Pour créer un fichier <code>diff</code> lisible par
-les humains dans un simple éditeur de texte, il faut utiliser l'option
+ligne de commande permettant de crÃ©er et d'appliquer un fichier contenant
+les diffÃ©rences entre deux fichiers. Cette technique est souvent utilisÃ©e
+pour collaborer et permet d'extraire clairement les modifications apportÃ©es
+au fichier original. Pour crÃ©er un fichier <code>diff</code> lisible par
+les humains dans un simple Ã©diteur de texte, il faut utiliser l'option
 <code>-u</code> en argument :
 </p>
 <pre>
