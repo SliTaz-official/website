@@ -1,12 +1,12 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="da" lang="da">
 <head>
-    <title>SliTaz Screenshots</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="SliTaz GNU/Linux project artwok images logos" />
-    <meta name="keywords" lang="en" content="about slitaz, gnu, linux, mini distro, livecd" />
-    <meta name="author" content="Linux User"/>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>SliTaz Screenshots</title>
+	<meta name="description" content="SliTaz GNU/Linux project artwok images logos" />
+	<meta name="keywords" lang="en" content="about slitaz, gnu, linux, mini distro, livecd" />
+	<meta name="author" content="Linux User"/>
 	<?php include("../../lib/html/meta-link.html"); ?>
 </head>
 <body>
@@ -20,9 +20,9 @@
 	<div id="block_info">
 		<h4>Skærmbilleder</h4>
 		<p>
-		   Billeder sigermere end tusinde ord... Skærmbilleder af
-		   de sidste stabile og udviklingsversioner. Måske vil du også 
-		   finde, diskutere, dele og lægge SliTaz grafik op!
+			Billeder sigermere end tusinde ord... Skærmbilleder af
+			de sidste stabile og udviklingsversioner. Måske vil du også 
+			finde, diskutere, dele og lægge SliTaz grafik op!
 		</p>
 		<p>
 			<img src="../../images/users.png" alt="users.png" />
@@ -38,71 +38,40 @@
 
 <div id="gallery">
 
-<p>
-<a href="../../images/screenshots/slitaz-3.0.png">
-<img
-    src="../../images/screenshots/slitaz-3.0.png"
-    alt="Stabil 3.0"
-    title="Stabil 3.0"
-    style="width: 480px;" /></a>
-</p>
+<div><a href="/images/screenshots/slitaz-3.0.png">
+<img src="/images/screenshots/slitaz-3.0.png"
+	alt="Stabil 3.0" /></a><br />
+	Stabil 3.0</div>
 
-<p>
-<a href="../../images/screenshots/slitaz_2.png">
-<img
-    src="../../images/screenshots/slitaz_2.png"
-    alt="Stabil 2.0"
-    title="Stabil 2.0"
-    style="width: 480px;" /></a>
-</p>
+<div><a href="/images/screenshots/slitaz_2.png">
+<img src="/images/screenshots/slitaz_2.png"
+	alt="Stabil 2.0" /></a><br />
+	Stabil 2.0</div>
 
-<p>
-<img
-    src="../../images/screenshots/index-desktop.png"
-    alt="Stabil 1.0"
-    title="Stabil 1.0"
-    style="width: 480px;" />
-</p>
+<div><a href="/images/screenshots/index-desktop.png">
+<img src="/images/screenshots/index-desktop.png"
+	alt="Stabil 1.0" /></a><br />
+	Stabil 1.0</div>
 
-<p>
-<img
-    src="../../images/screenshots/cooking-geany.png"
-    alt="Udvikling - Geany og GPicview"
-    title="Udvikling - Geany og GPicview"
-    style="width: 480px;" />
-</p>
+<div><img src="/images/screenshots/cooking-geany.png"
+	alt="Udvikling - Geany og GPicview" /><br />
+	Udvikling - Geany og GPicview</div>
 
-<p>
-<img
-    src="../../images/screenshots/cooking-conky.png"
-    alt="Udvikling - Conky"
-    title="Udvikling - Conky"
-    style="width: 480px;" />
-</p>
+<div><img src="/images/screenshots/cooking-conky.png"
+	alt="Udvikling - Conky" /><br />
+	Udvikling - Conky</div>
 
-<p>
-<img
-    src="../../images/screenshots/cooking-mplayer.png"
-    alt="Udvikling - Multimedieafspiller MPlayer"
-    title="Udvikling - Multimedieafspiller MPlayer"
-    style="width: 480px;" />
-</p>
+<div><img src="/images/screenshots/cooking-mplayer.png"
+	alt="Udvikling - Multimedieafspiller MPlayer" /><br />
+	Udvikling - Multimedieafspiller MPlayer</div>
 
-<p>
-<img
-    src="../../images/screenshots/cooking-superuserpcmanfm.png"
-    alt="Udvikling - Filhåndtering PCManFM"
-    title="Udvikling - Filhåndtering PCManFM"
-    style="width: 480px; height: 384px;" />
-</p>
+<div><img src="/images/screenshots/cooking-superuserpcmanfm.png"
+	alt="Udvikling - Filhåndtering PCManFM" /><br />
+	Udvikling - Filhåndtering PCManFM</div>
 
-<p>
-<img
-    src="../../images/screenshots/e17.png"
-    alt="Stabil - E17"
-    title="Stabil - E17"
-    style="width: 480px;" />
-</p>
+<div><img src="/images/screenshots/e17.png"
+		alt="Stabil - E17" /><br />
+		Stabil - E17</div>
 
 <!-- Gallery end -->
 </div>

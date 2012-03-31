@@ -1,44 +1,18 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!-- Danish (da) translation by Bo Vagner Højer - bohoejer@live.dk
-   Member of Labitat Hackerspace, Copenhagen - www.labitat.dk
-   visit our hackerspace every tuesday evening for free - always hot coffee -->   
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="da" lang="da">
 <head>
-    <title>SliTaz - Postliste</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="slitaz brugere udviklere postliste" />
-    <meta name="keywords" content="slitaz postliste email diskution" lang="da" />
-    <meta name="author" content="Linux User"/>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>SliTaz - Postliste</title>
+	<meta name="description" content="slitaz brugere udviklere postliste" />
+	<meta name="keywords" content="slitaz postliste email diskution" lang="da" />
+	<meta name="author" content="Linux User"/>
 	<?php include("../lib/html/meta-link.html"); ?>
-    <style type="text/css">
-	table {
-		border: 1px solid #000000;
-		width: variable;
-		border-collapse: collapse;
-	}
-	td {
-		border: 1px dotted #6495ed;
-		width: variable;
-		padding: 2px;
-	}
-	.rowodd {
-		background-color: #ffffff;
-	}
-	.roweven {
-		background-color: #e1ffe1; /* the tower */
-	}
-	th {
-		border: 1px solid #000000;
-		width: variable;
-		padding: 4px;
-	}
-	.alignright {
-		text-align: right;
-	}
-	</style>
 </head>
 <body>
+<!-- Danish (da) translation by Bo Vagner Højer - bohoejer@live.dk
+	Member of Labitat Hackerspace, Copenhagen - www.labitat.dk
+	visit our hackerspace every tuesday evening for free - always hot coffee -->
 
 <?php include("../lib/html/header.da.html"); ?>
 
@@ -75,8 +49,8 @@
 		arkiverede beskeder.</li>
 </ul>
 
-<a name="about"></a>
-<h3>Om postlisten</h3>
+<h3 id="about">Om postlisten</h3>
+
 <p>
 Diskutionslisten (postliste) er den vigtigste kommunikationsvej i SliTaz samfumdet.
 Listen er åben for alle, du kan til enhver tid frit tilmelde eller afmelde
@@ -85,10 +59,10 @@ Den er et effiktivt middel til samarbejde og bruges til at formidle gratis
 teknisk support til brugere af SliTaz.  
 Udviklere, øvede brugere, korrekturlæsere, etc. bruger den samme liste til
 at håndtere projektets udvikling.
- Brug af den samme liste til support og udvikling gør at vi når et bredere publikum,
- hvilket resulterer i et hurtigere og mere præcist svar.
- Medlemmerne af listen er alle frivillige og gør det bedste de kan i deres fritid.
- Høflighed og ordentlighed er en pligt  og en lille smule humor skader ingen.
+Brug af den samme liste til support og udvikling gør at vi når et bredere publikum,
+hvilket resulterer i et hurtigere og mere præcist svar.
+Medlemmerne af listen er alle frivillige og gør det bedste de kan i deres fritid.
+Høflighed og ordentlighed er en pligt  og en lille smule humor skader ingen.
 </p>
 <p>
 <em>Postlisten</em> bruges til at sende og modtage beskeder. Det betyder
@@ -98,7 +72,9 @@ Beskeder sendes af listemotoren  på
 <a href="http://www.tuxfamily.org/">TuxFamily</a> drevet af den glimrende
 <a href="http://www.vhffs.org/">VHFFS</a>.
 </p>
+
 <h4>Høflighed</h4>
+
 <p>
 Postlisten bruges af nogle ofte passionerede og følsomme mennesker.
 Gør en ekstra indsats for at behandle andre med respekt, selv om du 
@@ -107,9 +83,8 @@ at sige, så post venligst ikke. Hvis en person opførersig sig uhensigtsmæssig
 kontakt da en SliTaz udvikler.
 </p>
 
+<h3 id="usage">Brug postlisten</h3>
 
-<a name="usage"></a>
-<h3>Brug postlisten</h3>
 <p>
 For at poste på listen, skal du først tegne abonnement, du vil derefter
 modtage bekræftigelsesbesked. Brevet indeholder et bekræftigelsesnummer
@@ -122,16 +97,18 @@ Det anbefales at benytte "Besvar" eller "Reply" for at besvare en besked,
 således at diskutionstråden kan følges ordentligt.
 </p>
 <ul>
-    <li>Administrativ addresse :
-    <a href="mailto:slitaz-request@lists.tuxfamily.org"
-     >slitaz-request@lists.tuxfamily.org</a></li>
-    <li>Abonnement fås med emnet: subscribe</li>
-    <li>Abonnement ophæves med emnet: unsubscribe</li>
-    <li>Hjælp fås med emnet: help</li>
-    <li>Post til listen sendes til:
-    <a href="mailto:slitaz@lists.tuxfamily.org">slitaz@lists.tuxfamily.org</a></li>
+	<li>Administrativ addresse :
+		<a href="mailto:slitaz-request@lists.tuxfamily.org"
+		>slitaz-request@lists.tuxfamily.org</a></li>
+	<li>Abonnement fås med emnet: subscribe</li>
+	<li>Abonnement ophæves med emnet: unsubscribe</li>
+	<li>Hjælp fås med emnet: help</li>
+	<li>Post til listen sendes til:
+		<a href="mailto:slitaz@lists.tuxfamily.org">slitaz@lists.tuxfamily.org</a></li>
 </ul>
+
 <h4>Format</h4>
+
 <p>
 Beskeder skal sendes som rå tekst og ikke HTML og linielængden justeres til
 72-80 tegn, så menesker der benytter et tekstbaseret postprogram let kan 
@@ -142,8 +119,8 @@ Det er også anbefalelsesværdigt at fjerne unødvendige citeringer og
 lave være med at vedhæfte store filer.
 </p>
 
-<a name="archives"></a>
-<h3>Postlistens arkiv</h3>
+<h3 id="archives">Postlistens arkiv</h3>
+
 <p>
 Postlisten er et offentligt forum, alle beskeder bliver arkiveret og er
 søgbare online. Dette tillader de ikke-registerede at følge listen, det er

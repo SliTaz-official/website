@@ -1,18 +1,18 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="da" lang="da">
-<!-- Danish (da) translation by Bo Vagner Højer - bohoejer@slitaz.org
-   Member of Labitat Hackerspace, Copenhagen - www.labitat.dk
-   visit our hackerspace every tuesday evening for free - always hot coffee -->
 <head>
-    <title>SliTaz LiveCD Flavors</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="SliTaz GNU/Linux LiveCD" />
-    <meta name="keywords" lang="da" content="System, fri, gratis, gnu, linux, software opensource, livecd LINUX i RAM" />
-    <meta name="author" content="Linux User"/>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>SliTaz LiveCD Flavors</title>
+	<meta name="description" content="SliTaz GNU/Linux LiveCD" />
+	<meta name="keywords" lang="da" content="System, fri, gratis, gnu, linux, software opensource, livecd LINUX i RAM" />
+	<meta name="author" content="Linux User"/>
 	<?php include("../../lib/html/meta-link.html"); ?>
 </head>
 <body>
+<!-- Danish (da) translation by Bo Vagner Højer - bohoejer@slitaz.org
+	Member of Labitat Hackerspace, Copenhagen - www.labitat.dk
+	visit our hackerspace every tuesday evening for free - always hot coffee -->
 
 <?php include("../../lib/html/header.da.html"); ?>
 
@@ -23,12 +23,12 @@
 	<div id="block_info">
 		<h4>Hent varianter</h4>
 		<p>
-         Systemet med LiveCD varianter er et simpelt middel for brugerskaren
-         til at generere cdromer for bestemte formål ved at tilbyde et udvalg af
-         specifikke programpakker	. Der er to muligheder for at lave en variant,
+			Systemet med LiveCD varianter er et simpelt middel for brugerskaren
+			til at generere cdromer for bestemte formål ved at tilbyde et udvalg af
+			specifikke programpakker. Der er to muligheder for at lave en variant,
 			brug en variant lavet af netværkssamfundet eller lav din egen
 			via et letbetjent grafisk værktøj.
-			 </p>
+		</p>
 	</div>
 </div>
 
@@ -40,39 +40,58 @@
 <h2>LiveCD for enhver smag</h2>
 
 <p>
-   For din bekvemmelighed foreslår SliTaz holdet nogle varianter for udviklings- og den stabile version:
+	For din bekvemmelighed foreslår SliTaz holdet nogle varianter for udviklings- og den stabile version:
 </p>
- 
-<ul>
-	<li><a href="http://mirror.slitaz.org/iso/3.0/flavors/slitaz-3.0-xvesa.iso">slitaz-3.0-xvesa.iso</a>
-	[29.0M] - Fully-featured desktop environment using the tiny Xvesa graphical
-	server and providing a nice range of software for daily tasks</li>
-	<li><a href="http://mirror.slitaz.org/iso/3.0/flavors/slitaz-3.0-firefox.iso">slitaz-3.0-firefox.iso</a>
-	[29.0M] - Slankt skrivebordsmiljø med Mozilla Firefox</li>
-	<li><a href="http://mirror.slitaz.org/iso/3.0/flavors/slitaz-3.0-justx.iso">slitaz-3.0-justx.iso</a>
-	[15.0M] - Slankt skrivebordsmiljø drevet af Xorg og Openbox, kun ved brug af et X-miljø og 
-	værktøj til at bygge dit eget skrivebord med</li>
-	<li><a href="http://mirror.slitaz.org/iso/3.0/flavors/slitaz-3.0-base.iso">slitaz-3.0-base.iso</a>
-	[8.0M] - Basissystem med tekstterminal og anvendelige kommandolinieværktøjer. 
-	Et godt valg til en serverinstallation.</li>
-	<li><a href="http://mirror.slitaz.org/iso/3.0/flavors/slitaz-3.0-loram.iso">slitaz-3.0-loram.iso</a>
-	[35.0M] - Loram variant som kan starte SliTaz på maskiner med meget begrænsede resourser. Behøver kun
-	80MB hukommelse for ikke at blokere cdromdrevet.</li>
-	<li><a href="http://mirror.slitaz.org/iso/3.0/flavors/slitaz-3.0-loram-cdrom.iso">slitaz-3.0-loram-cdrom.iso</a>
-	[131.0M] - Loram variant kan starte med kun 16 MB hukommelse og en lille swappartion, men er
-	ikke i stand til at frigive cdrommen</li>
-	<li><a href="http://mirror.slitaz.org/iso/3.0/flavors/slitaz-3.0-3in1.iso">slitaz-3.0-3in1.iso</a>
-	[30.0M] - 3i1 variant indeholdende  basen, justx og core cdromen</li>
-</ul>
 
-<div class="infobox">
-	<img src="../../pics/website/network.png" alt="netværk:" />
+<div class="box-dl"><p>
+	<a href="http://mirror.slitaz.org/iso/3.0/flavors/slitaz-3.0-xvesa.iso">slitaz-3.0-xvesa.iso</a>
+	[29.0M] - Fully-featured desktop environment using the tiny Xvesa graphical
+	server and providing a nice range of software for daily tasks
+</p></div>
+
+<div class="box-dl"><p>
+	<a href="http://mirror.slitaz.org/iso/3.0/flavors/slitaz-3.0-firefox.iso">slitaz-3.0-firefox.iso</a>
+	[29.0M] - Slankt skrivebordsmiljø med Mozilla Firefox
+</p></div>
+
+<div class="box-dl"><p>
+	<a href="http://mirror.slitaz.org/iso/3.0/flavors/slitaz-3.0-justx.iso">slitaz-3.0-justx.iso</a>
+	[15.0M] - Slankt skrivebordsmiljø drevet af Xorg og Openbox, kun ved brug af et X-miljø og 
+	værktøj til at bygge dit eget skrivebord med
+</p></div>
+
+<div class="box-dl"><p>
+	<a href="http://mirror.slitaz.org/iso/3.0/flavors/slitaz-3.0-base.iso">slitaz-3.0-base.iso</a>
+	[8.0M] - Basissystem med tekstterminal og anvendelige kommandolinieværktøjer. 
+	Et godt valg til en serverinstallation.
+</p></div>
+
+<div class="box-dl"><p>
+	<a href="http://mirror.slitaz.org/iso/3.0/flavors/slitaz-3.0-loram.iso">slitaz-3.0-loram.iso</a>
+	[35.0M] - Loram variant som kan starte SliTaz på maskiner med meget begrænsede resourser. Behøver kun
+	80MB hukommelse for ikke at blokere cdromdrevet.
+</p></div>
+
+<div class="box-dl"><p>
+	<a href="http://mirror.slitaz.org/iso/3.0/flavors/slitaz-3.0-loram-cdrom.iso">slitaz-3.0-loram-cdrom.iso</a>
+	[131.0M] - Loram variant kan starte med kun 16 MB hukommelse og en lille swappartion, men er
+	ikke i stand til at frigive cdrommen
+</p></div>
+
+<div class="box-dl"><p>
+	<a href="http://mirror.slitaz.org/iso/3.0/flavors/slitaz-3.0-3in1.iso">slitaz-3.0-3in1.iso</a>
+	[30.0M] - 3i1 variant indeholdende  basen, justx og core cdromen
+</p></div>
+
+<div class="box">
+	<img src="/images/network.png" alt="[ ]" />
 	Gennemse variantmappen på filspejlet: 
 	<a href="http://mirror.slitaz.org/iso/stable/flavors/">Stabil</a> |
 	<a href="http://mirror.slitaz.org/iso/cooking/flavors/">Udvikling</a>
 </div>
 
 <h2>Hent og fremstil en variant</h2>
+
 <p>
 En <em>variant</em> er en (.flavor) fil til at fremstille en særlig variant.
 Det grafiske værktøj Tazlitobox kan oprette en variant med få musseklik.
@@ -85,6 +104,7 @@ kan du få en liste over tilgængelige varianter ved kommandoen
 </p>
 
 <h3>Skab og del din egen variant</h3>
+
 <p>
 Den sabile og udviklingsversionen giver <em>variantkernen</em> på filspejlet. 
 Det kan bruges som en basis til at lave din egen variant.

@@ -341,7 +341,10 @@ input.gsc-search-button {
 	color: #103a5e;
 }
 
-#cse { margin-bottom: 120px; }
+#cse {
+	margin-bottom: 120px;
+	width:100%;
+}
 
 
 /* --- GALLERY --- */

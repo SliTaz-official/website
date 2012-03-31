@@ -1,18 +1,18 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!-- Danish (da) translation by Bo Vagner Højer - bohoejer@live.dk
-   Member of Labitat Hackerspace, Copenhagen - www.labitat.dk
-   visit our hackerspace every tuesday evening for free - alwais hot koffee --> 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="da" lang="da">
 <head>
-    <title>SliTaz - Om projektet</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="SliTaz GNU/Linux projekt overblik" />
-    <meta name="keywords" lang="en" content="om slitaz, gnu, linux, minidistribution, livecd" />
-    <meta name="author" content="Linux User"/>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>SliTaz - Om projektet</title>
+	<meta name="description" content="SliTaz GNU/Linux projekt overblik" />
+	<meta name="keywords" lang="en" content="om slitaz, gnu, linux, minidistribution, livecd" />
+	<meta name="author" content="Linux User"/>
 	<?php include("../../lib/html/meta-link.html"); ?>
 </head>
 <body>
+<!-- Danish (da) translation by Bo Vagner Højer - bohoejer@live.dk
+	Member of Labitat Hackerspace, Copenhagen - www.labitat.dk
+	visit our hackerspace every tuesday evening for free - alwais hot koffee -->
 
 <?php include("../../lib/html/header.da.html"); ?>
 
@@ -40,8 +40,8 @@
 <!-- Content -->
 <div id="content">
 
-<a name ="intro"></a>
-<h2>Indtroduktion til projektet</h2>
+<h2 id="intro">Indtroduktion til projektet</h2>
+
 <p>
 SliTaz GNU/Linux er et frit og gratis operativsystem, som arbejder fuldstændigt i hukommelsen
 startet fra et flytbart medie som en cdrom eller en USB-pind. Det er slankt, hurtigt og kan helt 
@@ -59,8 +59,8 @@ Du kan også kontakte os for mere information, foreslag eller kommentarer ved br
 listen eller direkte med elektronisk post : &lt;devel snabel-a slitaz.org&gt;
 </p>
 
-<a name="overview"></a>
-<h2>Overblik</h2>
+<h2 id="overview">Overblik</h2>
+
 <ul>
 	<li>Rodfilsystem optagerer cirka 100 MB og ISO afbildning mindre end 30 MB.</li>
 	<li>Web server klar til brug leveret af LightTPD med CGI og PHP understøttelse.</li>
@@ -77,24 +77,25 @@ listen eller direkte med elektronisk post : &lt;devel snabel-a slitaz.org&gt;
 	<li>Aktivt og venligt samfund.</li>
 </ul>
 
-<a name="website"></a>
-<h2>International hjemmeside</h2>
+<h2 id="website">International hjemmeside</h2>
+
 <p>
 SliTaz's hjemmeside er også tilgængelig på flere sprog og er del af
-<a href="../../i18n.php">internationaliseringsprojektet</a>.
+<a href="/i18n.php">internationaliseringsprojektet</a>.
 Hjemesiden tilbyder dig at <a href="../get/">hente</a> SliTaz
 LiveCDen og hjælpe os med at udvikle projektet. Du kan undersøge 
 <a href="../doc/">vejledningsområdet</a> for at lære at bruge SliTaz 
 LiveCDen og indstille systemmet.
 </p>
 
-<a name="reviews"></a>
-<h2>Anmeldelser</h2>
+<h2 id="reviews">Anmeldelser</h2>
+
 <p>
 SliTaz GNU/Linux er blevet andmeldt på flere hjemmesider. Tak til alle for støtte.
 </p>
 
 <h3>3.0 - Marts 2010 &amp; Cooking - Januar 2010</h3>
+
 <ul>
 	<li><a href="http://kmandla.wordpress.com/2010/03/29/greetings-from-slitaz-3-0/"
 		>Wordpress</a> - af K.Mandla.</li>
@@ -105,6 +106,7 @@ SliTaz GNU/Linux er blevet andmeldt på flere hjemmesider. Tak til alle for stø
 </ul>
 
 <h3>2.0 - April 2009</h3>
+
 <ul>
 	<li><a href="http://www.gdhpress.com.br/blog/slitaz"
 		>Gdhpress</a> (pt) - af Carlos Morimoto.</li>
@@ -119,6 +121,7 @@ SliTaz GNU/Linux er blevet andmeldt på flere hjemmesider. Tak til alle for stø
 </ul>
 
 <h3>1.0 - Marts 2008</h3>
+
 <ul>
 	<li><a href="http://distrowatch.com/weekly.php?issue=20080331"
 		>Distrowatch</a> - af Ladislav Bodnar.</li>

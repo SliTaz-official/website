@@ -1,18 +1,18 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!-- Danish (da) translation by Bo Vagner Højer - bohoejer@live.dk
-   Member of Labitat Hackerspace, Copenhagen - www.labitat.dk
-   visit our hackerspace every tuesday evening for free - always hot coffee -->
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="da" lang="da">
 <head>
-    <title>SliTaz - Packages</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="SliTaz GNU/Linux LiveCD programpakker" />
-    <meta name="keywords" lang="da" content="pakker, programpakker, tazpkg" />
-    <meta name="author" content="Linux User"/>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>SliTaz - Packages</title>
+	<meta name="description" content="SliTaz GNU/Linux LiveCD programpakker" />
+	<meta name="keywords" lang="da" content="pakker, programpakker, tazpkg" />
+	<meta name="author" content="Linux User"/>
 	<?php include("../../lib/html/meta-link.html"); ?>
 </head>
 <body>
+<!-- Danish (da) translation by Bo Vagner Højer - bohoejer@live.dk
+	Member of Labitat Hackerspace, Copenhagen - www.labitat.dk
+	visit our hackerspace every tuesday evening for free - always hot coffee -->
 
 <?php include("../../lib/html/header.da.html"); ?>
 
@@ -74,13 +74,13 @@
 </div>
 
 <div class="box">
-	<img src="../../images/text.png" alt="text.png" />
+	<img src="/images/text.png" alt="[ ]" />
 	Rå pakkeliste:
 	<a href="http://mirror.slitaz.org/packages/stable/packages.list"
 		>Stabil version</a> |
 	<a href="http://mirror.slitaz.org/packages/cooking/packages.list"
-		>Udviklingsversion</a>
-	<img src="../../images/network.png" alt="text.png" />
+		>Udviklingsversion</a><br />
+	<img src="/images/network.png" alt="[ ]" />
 	Centralt filspejl:
 	<a href="http://mirror.slitaz.org/packages/"
 		>http://mirror.slitaz.org/packages/</a>
@@ -88,12 +88,12 @@
 
 <h2>Aktivitet</h2>
 
-<?php require_once("../../libs/get-feeds.php"); ?>
+<?php require_once("../../lib/get-feeds.php"); ?>
 
 <div class="activity">
 	<p>
 		<a href="http://hg.slitaz.org/">
-			<img src="../../images/development.png" alt="udvikling" /></a>
+			<img src="/images/development.png" alt="[ ]" /></a>
 		Latest commits in wok
 		<?php get_feed("wok.xml"); ?>
 	</div>
@@ -103,12 +103,13 @@
 </div>
 
 <h2>Vejledning</h2>
+
 <p>
 	SliTaz projektet tilbyder detaljeret 
 	<a href="http://doc.slitaz.org/">vejledning</a> for at lære 
-	dig at 	installere og håndtere programpakker på din SliTaz 
+	dig at installere og håndtere programpakker på din SliTaz 
 	GNU/Linux distribution. 
-	Medlemmerne af  <a href="http://forum.slitaz.org/">support forumet</a> 
+	Medlemmerne af <a href="http://forum.slitaz.org/">support forumet</a> 
 	vil hjælpe dig i tilfælde af problemmer og det er også stedet at efterspørge en 
 	ny programpakke. 
 </p>

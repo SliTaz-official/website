@@ -1,18 +1,18 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="da" lang="da">
-<!-- Danish (da) translation by Bo Vagner Højer - bohoejer@slitaz.org
-   Member of Labitat Hackerspace, Copenhagen - www.labitat.dk
-   visit our hackerspace every tuesday evening for free - always hot coffee -->
 <head>
-    <title>SliTaz - Udviklernes hjørne</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="SliTaz GNU/Linux projekt overblik" />
-    <meta name="keywords" lang="da" content="om slitaz, gnu, linux, minidistribution, livecd" />
-    <meta name="author" content="Linux User"/>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>SliTaz - Udviklernes hjørne</title>
+	<meta name="description" content="SliTaz GNU/Linux projekt overblik" />
+	<meta name="keywords" lang="da" content="om slitaz, gnu, linux, minidistribution, livecd" />
+	<meta name="author" content="Linux User"/>
 	<?php include("../../lib/html/meta-link.html"); ?>
 </head>
 <body>
+<!-- Danish (da) translation by Bo Vagner Højer - bohoejer@slitaz.org
+	Member of Labitat Hackerspace, Copenhagen - www.labitat.dk
+	visit our hackerspace every tuesday evening for free - always hot coffee -->
 
 <?php include("../../lib/html/header.da.html"); ?>
 
@@ -28,7 +28,7 @@
 		   hjælpe og blive indvolveret i projektet.
 		</p>
 		<p>
-			<img src="../../images/users.png" alt="users.png" />
+			<img src="/images/users.png" alt="[ ]" />
 			<a href="http://scn.slitaz.org/">Følg os på SCN</a> og
 			<a href="../mailing-list.php">postlisten</a>
 		</p>
@@ -45,20 +45,20 @@
 <ul>
 	<li><a href="forge.php">Smedien</a> - Samarbejdende styring, KISS,
 	retningslinier, Mercurial depoter, hjemmeside og andre tjenester.</li>
-	<li><a href="../../i18n.php">Internationaliseringsprojekt</a> -
+	<li><a href="/i18n.php">Internationaliseringsprojekt</a> -
 	Oversættelse, mål og styring.</li>
 	<li><a href="http://hg.slitaz.org/" >Mercurial depoter</a></li>
 	<li><a href="http://bugs.slitaz.org/">SliTaz Fejlsporing</a></li>
 </ul>
 
-<a name="devel"></a>
-<h2>Bliv aktiv</h2>
+<h2 id="devel">Bliv aktiv</h2>
+
 <p>
-   SliTaz er en brugerdrevet åben kildekode distribution. Alle, fra brugere, til hackere
-   og udviklere, er velkommen til at deltage og bidrage, der er altid noget at gøre.
-    For eksempel at læse korrektur eller skrive dokumentation, sende fejl eller rettelser
-    til postlisten, få adgang til wokken og skub nogle nye programpakker op
-    eller simpelt hen at hjælpe andre på postlisten 
+	SliTaz er en brugerdrevet åben kildekode distribution. Alle, fra brugere, til hackere
+	og udviklere, er velkommen til at deltage og bidrage, der er altid noget at gøre.
+	For eksempel at læse korrektur eller skrive dokumentation, sende fejl eller rettelser
+	til postlisten, få adgang til wokken og skub nogle nye programpakker op
+	eller simpelt hen at hjælpe andre på postlisten 
 	eller <a href="http://forum.slitaz.org/">forumet</a>. 
 	SliTaz har Mercurial
 	depoter lagt på et SliTaz system, udviklere kan efter behov bede om et nyt depot
@@ -71,8 +71,8 @@
 	og <a href="../mailing-list.php">postlisten</a>.
 </p>
 <p>
-   For grafikere og kunstnere er der en dedikeret hjemmeside, hvor du 
-   kan poste grafik og billeder, efter at have oprettet en konto.
+	For grafikere og kunstnere er der en dedikeret hjemmeside, hvor du 
+	kan poste grafik og billeder, efter at have oprettet en konto.
 	Hjemmesiden er drevet af netværkssamfundet. Hvis du vil give en hånd
 	med at administrere siden, kontakt da en bidragyder eller 
 	send en besked på postlisten. Deltag i SliTaz samfundets 

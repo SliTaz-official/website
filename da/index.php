@@ -1,18 +1,18 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!-- Danish (da) translation by Bo Vagner Højer - bohoejer@live.dk
-   Member of Labitat Hackerspace, Copenhagen - www.labitat.dk
-   visit our hackerspace every tuesday evening for free - always hot coffee -->     
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="da" lang="da">
 <head>
-	<title>SliTaz GNU/Linux (en)</title>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>SliTaz GNU/Linux (en)</title>
 	<meta name="description" content="SliTaz GNU/Linux LiveCD" />
 	<meta name="keywords" lang="en" content="System, free, gnu, linux, software opensource, livecd LINUX in RAM" />
 	<meta name="author" content="Bo Vagner Højer" />
 	<?php include("../lib/html/meta-link.html"); ?>
 </head>
 <body>
+<!-- Danish (da) translation by Bo Vagner Højer - bohoejer@live.dk
+	Member of Labitat Hackerspace, Copenhagen - www.labitat.dk
+	visit our hackerspace every tuesday evening for free - always hot coffee -->
 
 <?php include("../lib/html/header.da.html"); ?>
 
@@ -52,6 +52,7 @@
 -->
 
 <h2>Nyheder</h2>
+
 <p>
    SliTaz hjemmesiden tilbyder projektets hovednyheder så vel som
    nyheder om den generelle aktivitet i underprojekter på 
@@ -64,7 +65,7 @@
 </p>
 
 <div class="box">
-	<img src="../images/news.png" alt="nyheder:" />	
+	<img src="../images/news.png" alt="[ ]" />
 	<a href="http://scn.slitaz.org/">Nyheder fra bloggen</a> | 
 	<a href="http://doc.slitaz.org/en:newsletter:start">Månedligt nyhedsbrev</a>
 </div>
@@ -75,10 +76,11 @@
 	<!-- <li><strong>Date - Title</strong>
 	<p></p>
 	</li> -->
-	<li><strong>31 Maj 2011 - Ny og frisk udviklingsversion 20110531</strong>
+	<li>
+		<strong>31 Maj 2011 - Ny og frisk udviklingsversion 20110531</strong>
 	<p>
-      SliTaz holdet er stolt af at kunne annoncere frigivelsen af en ny 
-      udviklingsversion bygget med vores nye og friske programpakker fra cookutils.		
+		SliTaz holdet er stolt af at kunne annoncere frigivelsen af en ny 
+		udviklingsversion bygget med vores nye og friske programpakker fra cookutils.
 		Cookutils er en af den nye genneration af værktøjer til at bygge SliTaz 
 		programpakker og giver en byggerobot
 		med en flot webgrændseflade der arbejder ud-af-boksen på ethvert SliTaz
@@ -100,14 +102,14 @@
 		Vi har dog klaret at spare en masse plads i kerne-cdén med vores nye
 		programpakker og denne nye udviklingsudgave er på 30Mb! Denne nye
 		version giver også bedre internationalisering og Italiensk understøttelse!
-	   Hent:
+		Hent:
 		<a href="http://mirror.slitaz.org/iso/cooking/slitaz-cooking.iso">
 			slitaz-cooking.iso</a>
 	</p>
 	</li>
-	
+
 	<li>
-	<strong>29 March 2011 - New Cooking 20110329</strong>
+		<strong>29 March 2011 - New Cooking 20110329</strong>
 	<p>
 	The SliTaz team is pleased to announce the release of a new cooking
 	ISO featuring over 2900 packages. All packages have been rebuilt using
@@ -125,16 +127,16 @@
 	hundreds more to home-built tools. We are proud to announce that the SliTaz
 	community has grown a lot these last months: the last year, many
 	changes was commited than in the previous four. However, quantity doesn't mean 
-	q	uality. We need you to help to test this new ISO and report eventual bugs. If 
+	quality. We need you to help to test this new ISO and report eventual bugs. If 
 	you want to, you are welcome to help fix known problems before 4.0 is released. 
 	You can join members of the crew via our IRC, mailing-list, forums or by
 	mailing the packages maintainers. We hope you will enjoy this new
 	<a href="get/">release!</a>
 	</p>
 	</li>
-	
-	<a name="20101104"></a>
-	<li><strong>4 November 2010 - New Cooking 20101104</strong>
+
+	<li id="20101104">
+		<strong>4 November 2010 - New Cooking 20101104</strong>
 	<p>The SliTaz team is pleased to announce the release of a new cooking ISO
 	featuring over 2600 packages. It contains Linux Kernel 2.6.34 and was
 	rebuilt with a new toolchain using glibc 2.11.2 and gcc 4.5.1. Xorg has
@@ -148,24 +150,23 @@
 	the forum.</p>
 	</li>
 
-	<li><a href="../en/news/">Flere nyheder</a> eller gennemse arkiverne (på engelsk):
-	<a href="../en/news/2007.php">2007</a> |
-	<a href="../en/news/2008.php">2008</a> |
-	<a href="../en/news/2009.php">2009</a></li></li>
+	<li><a href="/en/news/">Flere nyheder</a> eller gennemse arkiverne (på engelsk):
+	<a href="/en/news/2007.php">2007</a> |
+	<a href="/en/news/2008.php">2008</a> |
+	<a href="/en/news/2009.php">2009</a></li></li>
 </ul>
 
 <!-- End of news -->
 </div>
 
 <h2>Projekt aktivitet</h2>
-<?php
-	require_once("../lib/get-feeds.php");
-?>
+
+<?php require_once("../lib/get-feeds.php"); ?>
 
 <div class="activity">
 	<p>
 		<a href="http://scn.slitaz.org/activity/"><img 
-			src="../images/users.png" alt="users.png" /></a>
+			src="/images/users.png" alt="[ ]" /></a>
 		Aktivitet i samfundet
 		<?php get_feed("scn.xml"); ?>
 	</div>
@@ -176,8 +177,20 @@
 
 <div class="activity">
 	<p>
+		<a href="http://forum.slitaz.org/"><img 
+			src="/images/support.png" alt="[ Support ]" /></a>
+		Forum activity
+		<?php get_feed_forum("forum.xml"); ?>
+	</div>
+	<p class="activity_more">
+		<a href="http://forum.slitaz.org/">More support</a>
+	</p>
+</div>
+
+<div class="activity">
+	<p>
 		<a href="http://hg.slitaz.org/">
-			<img src="../images/development.png" alt="udvikling:" /></a>
+			<img src="/images/development.png" alt="[ ]" /></a>
 		Seneste bidrag i wokken
 		<?php get_feed("wok.xml"); ?>
 	</div>
@@ -187,6 +200,7 @@
 </div>
 
 <h2>Støt os</h2>
+
 <p>
 	Gør SliTaz endnu mere populær eller lav en donation. Du kan benytte PayPal
 	eller en Flattr mikrobetaling til at støtte os pengemæssigt. Du kan blogge, tweette,
