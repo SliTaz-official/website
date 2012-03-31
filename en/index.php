@@ -1,9 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-	<title>SliTaz GNU/Linux (en)</title>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>SliTaz GNU/Linux (en)</title>
 	<meta name="description" content="SliTaz GNU/Linux English Website" />
 	<meta name="keywords" lang="en" content="System, free, gnu, linux, software opensource, livecd LINUX in RAM" />
 	<meta name="author" content="Paul Issot"/>
@@ -38,10 +38,10 @@
 <div id="content">
 
 <div class="box">
-	<img src="/images/update.png" alt=" [Update ]" style="float: left; margin-right: 10px; " />
+	<img src="/images/update.png" alt="[ ]" style="float: left; margin-right: 10px; " />
 	<p>
 		Help us get a dedicated server - Check out our
-		<a href="http://www.gofundme.com/3ql70">online fundraising</a>
+		<a href="http://www.gofundme.com/3ql70">online fundraising</a>,
 		<a href="http://usbkey.slitaz.org/">USB Key Project</a> or 
 		become an official <a href="/en/sponsor/">sponsor</a>
 	</p>
@@ -52,6 +52,7 @@
 -->
 
 <h2>Headlines</h2>
+
 <p>
 	The SliTaz website offers the main news of the project as well as 
 	news on the general activity of the subprojects on the
@@ -63,7 +64,7 @@
 </p>
 
 <div class="box">
-	<img src="../images/news.png" alt=".png" />	
+	<img src="/images/news.png" alt="[ ]" />
 	<a href="http://scn.slitaz.org/">News from the Blog</a> | 
 	<a href="http://doc.slitaz.org/en:newsletter:start">Monthly Newsletter</a>
 </div>
@@ -72,13 +73,13 @@
 <a name="news"></a>
 
 <ul>
-	<!-- <li><strong>Date - Title</strong>
-	<a name="20120223"></a>
+	<!-- <li id="20120223">
+		<strong>Date - Title</strong>
 	<p></p>
 	</li> -->
 	
-	<li><strong>03 Mar 2012 - SliTaz 4.0-RC2 is out</strong>
-	<a name="20120303"></a>
+	<li id="20120303">
+		<strong>03 Mar 2012 - SliTaz 4.0-RC2 is out</strong>
 	<p>
 		The Slitaz team is pleased to announce the new SliTaz 4.0-RC2 release
 		candidate. We have done a huge amount of work fixing bugs from RC1 and
@@ -100,9 +101,9 @@
 		<a href="http://mirror.slitaz.org/iso/cooking/slitaz-4.0-RC2.iso">SliTaz 4.0-RC2</a>
 	</p>
 	</li>
-	
-	<li><strong>23 Feb 2012 - SliTaz 4.0 -RC1 is out</strong>
-	<a name="20120223"></a>
+
+	<li id="20120223">
+		<strong>23 Feb 2012 - SliTaz 4.0 -RC1 is out</strong>
 	<p>
 		The SliTaz contributor team is pleased to announce the immediate
 		availability of the first release candidate for SliTaz 4.0. SliTaz can
@@ -139,14 +140,13 @@
 </div>
 
 <h2>Project Activity</h2>
-<?php
-	require_once("../lib/get-feeds.php");
-?>
+
+<?php require_once("../lib/get-feeds.php"); ?>
 
 <div class="activity">
 	<p>
 		<a href="http://scn.slitaz.org/activity/"><img 
-			src="../images/users.png" alt="users.png" /></a>
+			src="/images/users.png" alt="[ ]" /></a>
 		Community activity
 		<?php get_feed("scn.xml"); ?>
 	</div>
@@ -158,7 +158,7 @@
 <div class="activity">
 	<p>
 		<a href="http://forum.slitaz.org/"><img 
-			src="/images/support.png" alt="[ Support ]" /></a>
+			src="/images/support.png" alt="[ ]" /></a>
 		Forum activity
 		<?php get_feed_forum("forum.xml"); ?>
 	</div>
@@ -170,7 +170,7 @@
 <div class="activity">
 	<p>
 		<a href="http://hg.slitaz.org/">
-			<img src="../images/development.png" alt="development.png" /></a>
+			<img src="/images/development.png" alt="[ ]" /></a>
 		Latest commits in wok
 		<?php get_feed("wok.xml"); ?>
 	</div>
@@ -180,6 +180,7 @@
 </div>
 
 <h2>Support us</h2>
+
 <p>
 	Make SliTaz even more popular or make a donation. You can use PayPal
 	or a Flattr micropayment to monetary support us. You can Blog, Tweet,

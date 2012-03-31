@@ -1,12 +1,12 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-    <title>SliTaz - Developers corner</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="SliTaz GNU/Linux project information overview" />
-    <meta name="keywords" lang="en" content="about slitaz, gnu, linux, mini distro, livecd" />
-    <meta name="author" content="Christophe Lincoln"/>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>SliTaz - Developers corner</title>
+	<meta name="description" content="SliTaz GNU/Linux project information overview" />
+	<meta name="keywords" lang="en" content="about slitaz, gnu, linux, mini distro, livecd" />
+	<meta name="author" content="Christophe Lincoln"/>
 	<?php include("../../lib/html/meta-link.html"); ?>
 </head>
 <body>
@@ -25,7 +25,7 @@
 			and get involved in the project.
 		</p>
 		<p>
-			<img src="../../images/users.png" alt="users.png" />
+			<img src="/images/users.png" alt="[ ]" />
 			<a href="http://scn.slitaz.org/">Join us on SCN</a> and
 			the <a href="../mailing-list.php">mailing list</a>
 		</p>
@@ -42,13 +42,14 @@
 <ul>
 	<li><a href="forge.php">Forge</a> - Collaborative management, KISS,
 	guidelines, Mercurial repos, website and other services.</li>
-	<li><a href="../../i18n.php">Internationalization project</a> -
+	<li><a href="/i18n.php">Internationalization project</a> -
 	Translation, goals and management.</li>
 	<li><a href="http://hg.slitaz.org/" >Mercurial Repositories</a></li>
 	<li><a href="http://bugs.slitaz.org/">SliTaz Bug Tracker</a></li>
 </ul>
 
 <h2>Get involved</h2>
+
 <p>
 	SliTaz is an open source and community driven distribution. Everyone is
 	welcome to join and contribute, from  users, to hackers and developers,
@@ -79,7 +80,7 @@
 <div class="activity">
 	<p>
 		<a href="http://hg.slitaz.org/"><img 
-			src="/images/development.png" alt="[ Devel ]" /></a>
+			src="/images/development.png" alt="[ ]" /></a>
 		Latest commits in wok
 		<?php get_feed("wok.xml"); ?>
 	</div>

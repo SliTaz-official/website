@@ -1,12 +1,12 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-    <title>SliTaz - News archives 2008</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="SliTaz news archives info release" />
-    <meta name="keywords" lang="en" content="System, free, gnu, linux, opensource software, livecd in RAM" />
-    <meta name="author" content="Christophe Lincoln"/>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>SliTaz - News archives 2008</title>
+	<meta name="description" content="SliTaz news archives info release" />
+	<meta name="keywords" lang="en" content="System, free, gnu, linux, opensource software, livecd in RAM" />
+	<meta name="author" content="Christophe Lincoln"/>
 	<?php include("../../lib/html/meta-link.html"); ?>
 </head>
 <body>
@@ -25,7 +25,7 @@
 			that moved to their own domain).
 		</p>
 		<p>
-			<img src="/images/news.png" alt="[ News ]" />
+			<img src="/images/news.png" alt="[ ]" />
 			<a href="2007.php">2007</a> | <a href="2008.php">2008</a>
 			| <a href="2009.php">2009</a> | <a href="2010.php">2010</a>
 			| <a href="./">2011</a>
@@ -41,7 +41,8 @@
 <h2>2008</h2>
 
 <ul>
-<li><strong>31 Dec 2008 - Cooking 20081231 - Wifi and NTFS support</strong>
+	<li>
+		<strong>31 Dec 2008 - Cooking 20081231 - Wifi and NTFS support</strong>
 	<p>
 	The SliTaz project is proud to announce a new Cooking version of the
 	LiveCD. It allows you to utilize and test the work done in recent months,
@@ -61,8 +62,9 @@
 	<a href="../get/#cooking">download</a> this new version from one of the
 	official mirrors of the project.
 	</p></li>
-	
-	<li><strong>16 Jul 2008 - Cooking 20080716 - Web boot and MPlayer</strong>
+
+	<li>
+		<strong>16 Jul 2008 - Cooking 20080716 - Web boot and MPlayer</strong>
 	<p>
 	SliTaz project members are proud to announce the availability of a new
 	Cooking version, including many new features and bug fixes. This version
@@ -79,8 +81,9 @@
 	we offer loram <a href="../get/flavors.php">flavors</a> for machines with less
 	resources. <a href="../get/#cooking">Download SliTaz Cooking ISO</a>.
 	</p></li>
-	
-	<li><strong>26 Jun 2008 - Cooking 20080626 with new Kernel</strong>
+
+	<li>
+		<strong>26 Jun 2008 - Cooking 20080626 with new Kernel</strong>
 	<p>
 	Summer time is here and also the new Cooking from the 26 June. A lot
 	of work has been done to improve user experience. This Cooking version
@@ -97,8 +100,9 @@
 	be reported on SliTaz Bug Tracking System:
 	<a href="http://bugs.slitaz.org">BTS</a>
 	</p></li>
-	
-	<li><strong>18 May 2008 - Cooking 20080518 and LinuxDays.ch</strong>
+
+	<li>
+		<strong>18 May 2008 - Cooking 20080518 and LinuxDays.ch</strong>
 	<p>
 	SliTaz team is proud to announce the availability of a new Cooking
 	LiveCD ISO image providing huge changes from the stable release.
@@ -119,7 +123,9 @@
 	<a href="http://www.linuxdays.ch/">LinuxDay.ch</a> in Geneva
 	Switzerland.
 	</p></li>
-	<li><strong>22 Mar 2008 - SliTaz GNU/Linux 1.0 release</strong>
+
+	<li>
+		<strong>22 Mar 2008 - SliTaz GNU/Linux 1.0 release</strong>
 	<p>
 	The SliTaz contributors team are proud to announce the publication of SliTaz
 	GNU/Linux 1.0. This is the first stable release after 2 years of work. The
@@ -137,7 +143,9 @@
 	<a href="../doc/releases/1.0/relnotes.en.html">Release Notes</a> for more
 	detailed information on this stable version.
 	</p></li>
-	<li><strong>26 Feb 2008 - Updated Cooking ISO (20080225)</strong>
+
+	<li>
+		<strong>26 Feb 2008 - Updated Cooking ISO (20080225)</strong>
 	<p>
 	SliTaz project is proud to announce an updated version of the LiveCD
 	with many bug fixes, new boot options, ACPI support and some package updates
@@ -151,7 +159,9 @@
 	preparing final artwork and a stable packages repository. You can try this
 	updated Cooking by <a href="../get/#cooking">downloading</a> the LiveCD ISO from
 	SliTaz Web site.</li>
-	<li><strong>10 Jan 2008 - New Cooking ISO (20080107)</strong><br />
+
+	<li>
+		<strong>10 Jan 2008 - New Cooking ISO (20080107)</strong><br />
 	Paving the road to a stable release, we published a new Cooking ISO with many
 	bug fixes and some new features. We added Asunder for audio CD ripping,
 	Burnbox to burn ISO images, a new boot option to let you load Kernel modules

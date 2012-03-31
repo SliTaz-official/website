@@ -1,12 +1,12 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-    <title>SliTaz - News archives 2009</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="SliTaz news archives info release" />
-    <meta name="keywords" lang="en" content="System, free, gnu, linux, opensource software, livecd in RAM" />
-    <meta name="author" content="Christophe Lincoln"/>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>SliTaz - News archives 2009</title>
+	<meta name="description" content="SliTaz news archives info release" />
+	<meta name="keywords" lang="en" content="System, free, gnu, linux, opensource software, livecd in RAM" />
+	<meta name="author" content="Christophe Lincoln"/>
 	<?php include("../../lib/html/meta-link.html"); ?>
 </head>
 <body>
@@ -25,7 +25,7 @@
 			that moved to their own domain).
 		</p>
 		<p>
-			<img src="/images/news.png" alt="[ News ]" />
+			<img src="/images/news.png" alt="[ ]" />
 			<a href="2007.php">2007</a> | <a href="2008.php">2008</a>
 			| <a href="2009.php">2009</a> | <a href="2010.php">2010</a>
 			| <a href="./">2011</a>
@@ -41,7 +41,8 @@
 <h2>2009</h2>
 
 <ul>
-	<li><strong>4 November 2009 - New Cooking 20091104</strong>
+	<li>
+		<strong>4 November 2009 - New Cooking 20091104</strong>
 	<p>SliTaz contributors are proud to announce the availability of a new Cooking
 	ISO image based on over 2100 packages available in the SliTaz repository.
 	The full system has been rebuilt with a new toolchain using Glibc 2.10.1
@@ -64,7 +65,8 @@
 	<a href="../get/#cooking">Get SliTaz Cooking</a></p>
 	</li>
 
-	<li><strong>19 May 2009 - SliTaz at LinuxDays 2009 (Geneva)</strong>
+	<li>
+		<strong>19 May 2009 - SliTaz at LinuxDays 2009 (Geneva)</strong>
 	<p>
 	During the LinuxDays show in Switzerland, the association will have a
 	booth in the Association Village and a lecture will be given on Wednesday
@@ -81,10 +83,10 @@
 	any questions. So feel free to visit us! Information can be found on
 	<a href="http://labs.slitaz.org/wiki/events/2009-linuxdays">SliTaz Labs</a>
 	and the <a href="http://2009.linuxdays.ch/">2009.linuxdays.ch</a> website.
-
 	</p></li>
 
-	<li><strong>16 April 2009 - SliTaz GNU/Linux 2.0 release</strong>
+	<li>
+		<strong>16 April 2009 - SliTaz GNU/Linux 2.0 release</strong>
 	<p>
 	The SliTaz project are proud to announce the release of the new stable
 	version of the distribution - SliTaz GNU/Linux 2.0. This new version is the
@@ -107,7 +109,8 @@
 	the project.
 	</p></li>
 
-	<li><strong>27 March 2009 - Labs and new mirrors</strong>
+	<li>
+		<strong>27 March 2009 - Labs and new mirrors</strong>
 	<p>
 	Continually seeking to improve the distribution and the services we offer,
 	we are proud to announce the launch of <a href="http://labs.slitaz.org/">SliTaz Labs</a>.
@@ -123,7 +126,8 @@
 	thanks for supporting us.
 	</p></li>
 
-	<li><strong>20 March 2009 - SliTaz at Solutionslinux 2009 (Paris)</strong>
+	<li>
+		<strong>20 March 2009 - SliTaz at Solutionslinux 2009 (Paris)</strong>
 	<p>
 	The SliTaz project will be present at Solutionslinux 2009 in Paris.
 	The stand will be hosted by 3 members of the team during the 3 day
@@ -137,8 +141,9 @@
 	<a href="http://www.solutionslinux.fr/associations.php?pg=2_7">Village associations</a>,
 	<a href="http://www.solutionslinux.fr/exposant_fiche.php?id=763&amp;pg=2_4">SliTaz Stand</a>.
 	</p></li>
-	
-	<li><strong>28 Feb 2009 - New Cooking 20090228</strong>
+
+	<li>
+		<strong>28 Feb 2009 - New Cooking 20090228</strong>
 	<p>
 	Getting ready for the next stable release! - The SliTaz project is proud
 	to publish a new Cooking version with a lot of bug fixes, updates, improvements

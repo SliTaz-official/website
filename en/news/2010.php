@@ -1,12 +1,12 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-    <title>SliTaz - News archives 2010</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="SliTaz news archives info release" />
-    <meta name="keywords" lang="en" content="System, free, gnu, linux, opensource software, livecd in RAM" />
-    <meta name="author" content="Christophe Lincoln"/>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>SliTaz - News archives 2010</title>
+	<meta name="description" content="SliTaz news archives info release" />
+	<meta name="keywords" lang="en" content="System, free, gnu, linux, opensource software, livecd in RAM" />
+	<meta name="author" content="Christophe Lincoln"/>
 	<?php include("../../lib/html/meta-link.html"); ?>
 </head>
 <body>
@@ -25,7 +25,7 @@
 			that moved to their own domain).
 		</p>
 		<p>
-			<img src="/images/news.png" alt="[ News ]" />
+			<img src="/images/news.png" alt="[ ]" />
 			<a href="2007.php">2007</a> | <a href="2008.php">2008</a>
 			| <a href="2009.php">2009</a> | <a href="2010.php">2010</a>
 			| <a href="./">2011</a>
@@ -41,8 +41,8 @@
 <h2>2010</h2>
 
 <ul>
-	<a name="20101104"></a>
-	<li><strong>4 November 2010 - New Cooking 20101104</strong>
+	<li id="20101104">
+		<strong>4 November 2010 - New Cooking 20101104</strong>
 	<p>The SliTaz team is pleased to announce the release of a new cooking ISO
 	featuring over 2600 packages. It contains Linux Kernel 2.6.34 and was
 	rebuilt with a new toolchain using glibc 2.11.2 and gcc 4.5.1. Xorg has
@@ -50,13 +50,14 @@
 	player, and many more applications. Tazpkg and Tazctrlbox now support
 	gettext translations and more UTF locales have been added. Many bugfixes,
 	updates and improvements can also be found. A lot of work has been done 
-	during these past 6 months. You can <a href="get/#cooking>">download</a> 
+	during these past 6 months. You can <a href="../get/#cooking>">download</a> 
 	this new cooking version from one of the official mirrors of the project.
 	All feedback is welcome and can be done through the mailing list or 
 	the forum.</p>
 	</li>
-	
-	<li><strong>08 May 2010 - Summer of Documentation</strong>
+
+	<li>
+		<strong>08 May 2010 - Summer of Documentation</strong>
 	<p>The SliTaz team is organizing a 'Summer of Documentation' from May 10th to June 10th. 
 	The main aim is to centralize, review and update all online documentation. 
 	More details can be found at <a href="http://doc.slitaz.org/">doc.slitaz.org</a>. 
@@ -64,8 +65,9 @@
 	documentation.
 	</p>
 	</li>
-	
-	<li><strong>28 March 2010 - SliTaz GNU/Linux 3.0 release</strong>
+
+	<li>
+		<strong>28 March 2010 - SliTaz GNU/Linux 3.0 release</strong>
 	<p>All of the SliTaz team are proud to announce the release of the SliTaz 
 	GNU/Linux 3.0 operating system. It's simpler, faster, customizable, 
 	mightier and yet incredibly tiny. The new SliTaz stable version is now 
@@ -81,8 +83,9 @@
 	information and <a href="../get/#stable>">download</a> a LiveCD image from the
 	SliTaz mirrors.</p>
 	</li>
-	
-	<li><strong>14 March 2010 - RC series and Solutionslinux 2010 (Paris)</strong>
+
+	<li>
+		<strong>14 March 2010 - RC series and Solutionslinux 2010 (Paris)</strong>
 	<p>Since we're getting closer to the next stable release, we have updated the
 	core ISO image to start with a RC series. The Major change is the switch to
 	Midori as the default web browser, this will improve user experience and let
@@ -97,8 +100,9 @@
 	week in Paris. You will be able to learn about the project and make
 	contact with members of the association and the development team.</p>
 	</li>
-	
-	<li><strong>21 February 2010 - New Cooking 20100221</strong>
+
+	<li>
+		<strong>21 February 2010 - New Cooking 20100221</strong>
 	<p>SliTaz contributors are proud to announce a new Cooking version of the
 	LiveCD. This is the last Cooking RC before 3.0 is released. The core ISO image
 	is at 27 MB and comes with many changes and improvments. This Cooking uses

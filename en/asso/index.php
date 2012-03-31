@@ -1,9 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-	<title>SliTaz - Association</title>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>SliTaz - Association</title>
 	<meta name="description" content="SliTaz GNU/Linux asso non-profit donate" />
 	<meta name="keywords" lang="en" content="about slitaz, gnu, linux, mini distro, livecd" />
 	<meta name="author" content="Christophe Lincoln" />
@@ -54,8 +54,8 @@
 	<li><a href="#postal">Postal Address</a></li>
 </ul>
 
-<a name="overview"></a>
-<h3>Overview</h3>
+<h3 id="overview">Overview</h3>
+
 <p>
 The SliTaz GNU/Linux is an international association based in
 Switzerland and respects the Swiss Civil Code. The association is 
@@ -77,12 +77,12 @@ the project.
 <p>
 A copy of the statutes is sent to each member upon registration and a
 PDF version is always available online: 
-<a href="../../fr/asso/status-association-slitaz.pdf">status-association-slitaz.pdf</a> |
-<a href="../../en/asso/statutes.php">English Translation</a>.
+<a href="/fr/asso/status-association-slitaz.pdf">status-association-slitaz.pdf</a> |
+<a href="statutes.php">English Translation</a>.
 </p>
 
-<a name="goals"></a>
-<h3>Current objectives</h3>
+<h3 id="goals">Current objectives</h3>
+
 <p>
 SliTaz is a project using the open development model and all the 
 work is done by a community of volunteers. Our goal is to improve and
@@ -99,8 +99,8 @@ dealing with new demands. The various sub-projects would also be more
 dynamic and would see new features published much more frequently.
 </p>
 
-<a name="members"></a>
-<h3>Members</h3>
+<h3 id="members">Members</h3>
+
 <p>
 The association is open to any persons. Becoming a member
 allows you to support the project and ensure its sustainability through an
@@ -118,8 +118,8 @@ the year 2009-10. In the email, please specify your:
 	<li>Country</li>
 </ul>
 
-<a name="donation"></a>
-<h3>Donations</h3>
+<h3 id="donation">Donations</h3>
+
 <p>
 There are various ways to financially support the association, become
 a member or sponsor, or make a one-off payment via PayPal online secure 
@@ -135,7 +135,7 @@ welcomed.
 		style="display: inline;">
 			<input type="hidden" name="cmd" value="_s-xclick" />
 			<input type="hidden" name="hosted_button_id" value="4885025" />
-			<input type="image" src="../../images/paypal.png" name="submit" 
+			<input type="image" src="/images/paypal.png" name="submit" 
 				alt="PayPal - The safer, easier way to pay online!" />
 	</form>
 	<!-- Flattr boutton -->
@@ -143,8 +143,8 @@ welcomed.
 		href="http://www.slitaz.org/"></a>
 </div>
 
-<a name="postal"></a>
-<h3>Postal Address</h3>
+<h3 id="postal">Postal Address</h3>
+
 <div class="box">
 Association SliTaz<br />
 Rue du Village 40<br />

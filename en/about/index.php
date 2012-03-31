@@ -1,12 +1,12 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-    <title>SliTaz - About the project</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="SliTaz GNU/Linux project information overview" />
-    <meta name="keywords" lang="en" content="about slitaz, gnu, linux, mini distro, livecd" />
-    <meta name="author" content="Christophe Lincoln"/>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>SliTaz - About the project</title>
+	<meta name="description" content="SliTaz GNU/Linux project information overview" />
+	<meta name="keywords" lang="en" content="about slitaz, gnu, linux, mini distro, livecd" />
+	<meta name="author" content="Christophe Lincoln"/>
 	<?php include("../../lib/html/meta-link.html"); ?>
 </head>
 <body>
@@ -37,8 +37,8 @@
 <!-- Content -->
 <div id="content">
 
-<a name="intro"></a>
-<h2>Introduction to the project</h2>
+<h2 id="intro">Introduction to the project</h2>
+
 <p>
 SliTaz GNU/Linux is a free operating system working completely in memory from  
 removeable media such as a cdrom or USB key.  It is light, speedy and fully installable
@@ -57,8 +57,8 @@ You can also contact us for more information, suggestions, or comments,
 using the list or directly by mail : &lt;devel at slitaz.org&gt;
 </p>
 
-<a name="overview"></a>
-<h2>Overview</h2>
+<h2 id="overview">Overview</h2>
+
 <ul>
 	<li>Root filesystem taking up about 100 MB and ISO image of less than 30 MB.</li>
 	<li>Ready to use Web server powered by LightTPD with CGI and PHP support.</li>
@@ -75,25 +75,26 @@ using the list or directly by mail : &lt;devel at slitaz.org&gt;
 	<li>Active and friendly community.</li>
 </ul>
 
-<a name="website"></a>
-<h2>Website &amp; i18n</h2>
+<h2 id="website">Website &amp; i18n</h2>
+
 <p>
 SliTaz's Web site is also available in several languages and is
-part of the <a href="../../i18n.php">internationalization project</a>.
+part of the <a href="/i18n.php">internationalization project</a>.
 The web site allows you to <a href="../get/">download</a> the SliTaz
 LiveCD and help us to develop the project. You can check the 
 <a href="../doc/">documentation</a> area to learn how to use the SliTaz 
 LiveCD and configure the system.
 </p>
 
-<a name="reviews"></a>
-<h2>Reviews</h2>
+<h2 id="reviews">Reviews</h2>
+
 <p>
 SliTaz GNU/Linux has been reviewed on several web sites. Thanks to 
 everyone for support.
 </p>
 
 <h3>3.0 - March 2010 &amp; Cooking - Jan 2010</h3>
+
 <ul>
 	<li><a href="http://kmandla.wordpress.com/2010/03/29/greetings-from-slitaz-3-0/"
 		>Wordpress</a> - By K.Mandla.</li>
@@ -104,6 +105,7 @@ everyone for support.
 </ul>
 
 <h3>2.0 - April 2009</h3>
+
 <ul>
 	<li><a href="http://www.gdhpress.com.br/blog/slitaz"
 		>Gdhpress</a> (pt) - By Carlos Morimoto.</li>
@@ -118,6 +120,7 @@ everyone for support.
 </ul>
 
 <h3>1.0 - March 2008</h3>
+
 <ul>
 	<li><a href="http://distrowatch.com/weekly.php?issue=20080331"
 		>Distrowatch</a> - By Ladislav Bodnar.</li>

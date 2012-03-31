@@ -1,13 +1,13 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-    <title>SliTaz - Sponsorship</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="SliTaz GNU/Linux asso sponsor" />
-    <meta name="keywords" lang="en" content="slitaz pro, slitaz sponsor, support" />
-    <meta name="author" content="Christophe Lincoln"/>
-    <?php include("../../lib/html/meta-link.html"); ?>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>SliTaz - Sponsorship</title>
+	<meta name="description" content="SliTaz GNU/Linux asso sponsor" />
+	<meta name="keywords" lang="en" content="slitaz pro, slitaz sponsor, support" />
+	<meta name="author" content="Christophe Lincoln"/>
+	<?php include("../../lib/html/meta-link.html"); ?>
 </head>
 <body>
 
@@ -41,6 +41,7 @@
 </div>
 
 <h2>Sponsoring SliTaz</h2>
+
 <p>
 	Firstly, a huge thanks to our <a href="#cur">current sponsors</a> and all 
 	the people who support us with small but very important donations to the project.
@@ -50,6 +51,7 @@
 </p>
 
 <h3>Monetary support a developer</h3>
+
 <p>
 	Do you use SliTaz in your project and want to see the distribution getting
 	even more professional with main developers working on the project full time?
@@ -61,6 +63,7 @@
 </p>
 
 <h3>Hardware sponsor</h3>
+
 <p>
 	As a open source project we usually develop SliTaz on our own personal computers.
 	But we sometimes have to change our personal systems and need new hardware. We also 
@@ -75,6 +78,7 @@
 </p>
 
 <h3>Hardware recycling</h3>
+
 <p>
 	SliTaz is a great distribution to give an old computer a new lease of life and we
 	need some old hardware to test it on. Also, we may recycle some of your
@@ -84,6 +88,7 @@
 </p>
 
 <h2>Contact and information</h2>
+
 <p>
 	If you are interested and want more information about monetary or hardware
 	sponsorship you can contact the SliTaz Association by mail at &lt;asso at
@@ -96,8 +101,8 @@
 	more attention from Free Software and Linux users.
 </p>
 
-<a name="cur"></a>
-<h2>Our current sponsors</h2>
+<h2 id="cur">Our current sponsors</h2>
+
 <table>
 	<tbody>
 		<tr>

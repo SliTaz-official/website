@@ -1,12 +1,12 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-    <title>SliTaz - Artwork</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="SliTaz GNU/Linux project artwok images logos" />
-    <meta name="keywords" lang="en" content="about slitaz, gnu, linux, mini distro, livecd" />
-    <meta name="author" content="Christophe Lincoln, Paul Issot"/>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>SliTaz - Artwork</title>
+	<meta name="description" content="SliTaz GNU/Linux project artwok images logos" />
+	<meta name="keywords" lang="en" content="about slitaz, gnu, linux, mini distro, livecd" />
+	<meta name="author" content="Christophe Lincoln, Paul Issot"/>
 	<?php include("../../lib/html/meta-link.html"); ?>
 </head>
 <body>
@@ -38,8 +38,7 @@
 <!-- Content -->
 <div id="content">
 
-<a name="art4taz"></a>
-<h2>Artwork &amp; Design</h2>
+<h2 id="art4taz">Artwork &amp; Design</h2>
 
 <p>
 This section of the website is dedicated to art and graphics intended for
@@ -52,6 +51,7 @@ the <a href="http://scn.slitaz.org/">SliTaz Community Network</a>.
 </p>
 
 <h3>Artwork for SliTaz</h3>
+
 <p>
 As with many things SliTaz, graphics, logos, themes, and wallpapers are fully
 constructed by the community and developers. The project always likes to maintain
@@ -72,37 +72,20 @@ be used. With a LiveCD you already have mtPaint and on an installed system
 you'll find Gimp on the mirror. Note that the JPG format is prefered.
 </p>
 
-<a name="logos"></a>
-<h2>Logos &amp; Spider</h2>
+<h2 id="logos">Logos &amp; Spider</h2>
+
 <div class="box">
-	SVG Format: <a href="../../images/artwork/slitaz-logo.svg">slitaz-logo.svg</a> |
-	<a href="../../images/artwork/slitaz-spider.svg">slitaz-spider.svg</a>
+	SVG Format: <a href="/images/artwork/slitaz-logo.svg">slitaz-logo.svg</a> |
+	<a href="/images/artwork/slitaz-spider.svg">slitaz-spider.svg</a>
 </div>
+
 <div>
-	<img
-	   src="../../images/artwork/slitaz-button-red.png"
-	   alt="SliTaz button"
-	   style="width: 148px; height: 148px;" />
-	<img
-	   src="../../images/artwork/slitaz-logo-whitebg-320x118.png"
-	   alt="SliTaz spider"
-	   style="width: 320px; height: 118px;" />
-	<img
-	   src="../../images/artwork/slitaz-tux-124x126.png"
-	   alt="SliTaz Tux"
-	   style="width: 124px; height: 126px;" />
-	<img
-	   src="../../images/artwork/slitaz-spider-48x48.png"
-	   alt="SliTaz spider"
-	   style="width: 48px; height: 48px;" />
-	<img
-	   src="../../images/artwork/tazpkg.png"
-	   alt="Tazpkg package logo"
-	   style="width: 32px; height: 32px;" />
-	<img
-	   src="../../images/artwork/slitaz-minilogo-80x15.png"
-	   alt="SliTaz mini logo"
-	   style="width: 80px; height: 15px;" />
+	<img src="/images/artwork/slitaz-button-red.png" alt="SliTaz button" />
+	<img src="/images/artwork/slitaz-logo-whitebg-320x118.png" alt="SliTaz spider" />
+	<img src="/images/artwork/slitaz-tux-124x126.png" alt="SliTaz Tux" />
+	<img src="/images/artwork/slitaz-spider-48x48.png" alt="SliTaz spider" />
+	<img src="/images/artwork/tazpkg.png" alt="Tazpkg package logo" />
+	<img src="/images/artwork/slitaz-minilogo-80x15.png" alt="SliTaz mini logo" />
 </div>
 
 <!-- End of content -->

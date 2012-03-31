@@ -1,9 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-	<title>SliTaz - Downloads</title>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>SliTaz - Downloads</title>
 	<meta name="description" content="SliTaz GNU/Linux LiveCD free download" />
 	<meta name="keywords" lang="en" content="source, iso, livecd, get, free" />
 	<meta name="author" content="Christophe Lincoln, Paul Issot"/>
@@ -41,14 +41,14 @@ include("../../lib/html/header.html");
 <div id="content">
 
 <h2>Get SliTaz</h2>
-	
+
 <ul>
-	<li><a href="index.php#stable">LiveCD Stable version</a> - 
-	Bootable ISO image of the current stable version.</li>
-	<li><a href="index.php#cooking">LiveCD Cooking version</a> - 
-	Bootable ISO image of the cooking version.</li>
-	<li><a href="index.php#floppy">Floppy disk</a> - Bootable 
-	startup disk to launch the LiveCD, a USB stick, etc.</li>
+	<li><a href="#stable">LiveCD Stable version</a> - 
+		Bootable ISO image of the current stable version.</li>
+	<li><a href="#cooking">LiveCD Cooking version</a> - 
+		Bootable ISO image of the cooking version.</li>
+	<li><a href="#floppy">Floppy disk</a> - Bootable 
+		startup disk to launch the LiveCD, a USB stick, etc.</li>
 	<li><a href="flavors.php">LiveCD to taste</a> - Flavors and loram.</li>
 </ul>
 
@@ -61,6 +61,7 @@ include("../../lib/html/header.html");
 </div>
 
 <h3>General information</h3>
+
 <p>
 	This part of the site allows you to download a free copy of the SliTaz
 	GNU/Linux LiveCD or to get utilities and tools source code. To start
@@ -70,6 +71,7 @@ include("../../lib/html/header.html");
 </p>
 
 <h3>Mirrors</h3>
+
 <p>
 	SliTaz is mirrored actually in France by <a href="http://www.ads-lu.com/">ADS</a>,
 	and <a href="http://www.tuxfamily.org/">TuxFamily</a>. In Switzerland by
@@ -99,8 +101,8 @@ include("../../lib/html/header.html");
 	<a href="ftp://slitaz.c3sl.ufpr.br/slitaz/">FTP</a></li>
 </ul>
 
-<a name="sources"></a>
-<h3>Sources</h3>
+<h3 id="sources">Sources</h3>
+
 <p>
 	Tazpkg (Package manager), Tazlito (SliTaz Live Tool), Tazwok (Source
 	builder), Tazusb (LiveUSB Tool) and the SliTaz Tools tarballs can all
@@ -111,8 +113,8 @@ include("../../lib/html/header.html");
 	<a href="http://mirror.slitaz.org/sources/">FTP</a>
 </p>
 
-<a name="stable"></a>
-<h2>LiveCD - Stable version</h2>
+<h2 id="stable">LiveCD - Stable version</h2>
+
 <p>
 	SliTaz stable version provides a mature operating system, widely 
 	tested by an active community. The core LiveCD offers you a large 
@@ -121,12 +123,11 @@ include("../../lib/html/header.html");
 	<?php echo "Current $stable_ver stable version was released on $stable_rel."; ?>
 </p>
 
-<p class="box">
-	<img src="/images/download.png" height="48px" width="48px" alt="[ DL ]" />
+<div class="box-dl"><p>
 	<?php echo "SliTaz GNU/Linux $stable_ver ($stable_size) - 
 	<a href='$stable_iso'>slitaz-$stable_ver.iso</a>
 	[ <a href='$mirror/$stable_ver/slitaz-$stable_ver.md5'>md5</a> ]"; ?>
-</p>
+</p></div>
 
 <p>
 	A bootable CDROM image of all available packages for the stable version
@@ -134,27 +135,25 @@ include("../../lib/html/header.html");
 	be used without an internet connection via the install.sh script.
 </p>
 
-<p class="box">
-	<img src="/images/download.png" height="48px" width="48px" alt="[ DL ]" />
+<div class="box-dl"><p>
 	<?php echo "Collection of SliTaz GNU/Linux $stable_ver packages ($stable_pkgs)
 	- <a href='$pkgs_mirror/$stable_ver/packages-$stable_ver.iso'>packages-$stable_ver.iso</a>
 	[ <a href='$pkgs_mirror/$stable_ver/packages-$stable_ver.md5'>md5</a> ]"; ?>
-</p>
+</p></div>
 
-<a name="cooking"></a>
-<h2>LiveCD - Cooking version</h2>
+<h2 id="cooking">LiveCD - Cooking version</h2>
+
 <p>
 	SliTaz "Cooking" LiveCD is a constantly evolving version, fully usable,
 	it allows you to test the latest improvements and packages, ask for new
 	features or report bugs to help us to prepare for the stable version.
 </p>
 
-<p class="box">
-	<img src="/images/download.png" height="48px" width="48px" alt="[ DL ]" />
+<div class="box-dl"><p>
 	<?php echo "SliTaz GNU/Linux Cooking $cooking_ver ($cooking_size) - 
 	<a href='$cooking_iso'>slitaz-$cooking.iso</a>
 	[ <a href='$mirror/cooking/slitaz-$cooking.md5'>md5</a> ]"; ?>
-</p>
+</p></div>
 
 <p>
 	A bootable DVD image of all available packages for the Cooking version
@@ -165,15 +164,14 @@ include("../../lib/html/header.html");
 	installed on an USB key</a>, but it will overwrite all data.
 </p>
 
-<p class="box">
-	<img src="/images/download.png" height="48px" width="48px" alt="[ DL ]" />
+<div class="box-dl"><p>
 	<?php echo "Collection of SliTaz GNU/Linux Cooking packages ($cooking_pkgs)
 	- <a href='$pkgs_mirror/cooking/packages-cooking.iso'>packages-cooking.iso</a>
 	[ <a href='$pkgs_mirror/cooking/packages-cooking.md5'>md5</a> ]"; ?>
-</p>
+</p></div>
 
-<a name="floppy"></a>
-<h2>Floppy boot disk</h2>
+<h2 id="floppy">Floppy boot disk</h2>
+
 <p>
 	This floppy diskette can start SliTaz on old PCs with or without a 
 	CD-ROM. It can boot SliTaz from an usb flash drive, a SliTaz CD/DVD,
@@ -181,12 +179,11 @@ include("../../lib/html/header.html");
 	<a href="http://boot.slitaz.org/">Internet with gPXE</a>.
 </p>
 
-<p class="box">
-	<img src="/images/download.png" height="48px" width="48px" alt="[ DL ]" />
+<div class="box-dl"><p>
 	Floppy disk (1,44 MB) -
 	<a href="http://mirror.slitaz.org/boot/floppy-grub4dos">image</a>
 	[ <a href="http://mirror.slitaz.org/boot/floppy-grub4dos.md5">md5</a> ]
-</p>
+</p></div>
 
 <p>
 	You can write this floppy image with SliTaz bootfloppybox,

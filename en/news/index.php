@@ -1,12 +1,12 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-    <title>SliTaz - News archives</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="SliTaz news archives info release" />
-    <meta name="keywords" lang="en" content="System, free, gnu, linux, opensource software, livecd in RAM" />
-    <meta name="author" content="Christophe Lincoln"/>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>SliTaz - News archives</title>
+	<meta name="description" content="SliTaz news archives info release" />
+	<meta name="keywords" lang="en" content="System, free, gnu, linux, opensource software, livecd in RAM" />
+	<meta name="author" content="Christophe Lincoln"/>
 	<?php include("../../lib/html/meta-link.html"); ?>
 </head>
 <body>
@@ -25,7 +25,7 @@
 			that moved to their own domain).
 		</p>
 		<p>
-			<img src="/images/news.png" alt="[ News ]" />
+			<img src="/images/news.png" alt="[ ]" />
 			<a href="2007.php">2007</a> | <a href="2008.php">2008</a>
 			| <a href="2009.php">2009</a> | <a href="2010.php">2010</a>
 			| <a href="./">2011</a>
@@ -41,8 +41,8 @@
 <h2>2011</h2>
 
 <ul>
-<li><strong>31 May 2011 - New and fresh Cooking 20110531</strong>
-	<a name="20110531"></a>
+	<li id="20110531">
+		<strong>31 May 2011 - New and fresh Cooking 20110531</strong>
 	<p>
 		The Slitaz team is proud to announce the release of a new Cooking version
 		built with our new and fresh packages from cookutils. Cookutils is one of
@@ -71,8 +71,8 @@
 	</p>
 	</li>
 
-	<li><strong>29 March 2011 - New Cooking 20110329</strong>
-	<a name="20110329"></a>
+	<li id="20110329">
+		<strong>29 March 2011 - New Cooking 20110329</strong>
 	<p>
 		The SliTaz team is pleased to announce the release of a new cooking
 		ISO featuring over 2900 packages. All packages have been rebuilt using

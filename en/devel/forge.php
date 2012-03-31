@@ -1,12 +1,12 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-    <title>SliTaz - Forge (en)</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="slitaz developers forge" />
-    <meta name="keywords" lang="en" content="slitaz, devel, hg, bugs" />
-    <meta name="author" content="Christophe Lincoln"/>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>SliTaz - Forge (en)</title>
+	<meta name="description" content="slitaz developers forge" />
+	<meta name="keywords" lang="en" content="slitaz, devel, hg, bugs" />
+	<meta name="author" content="Christophe Lincoln"/>
 	<?php include("../../lib/html/meta-link.html"); ?>
 </head>
 <body>
@@ -23,7 +23,7 @@
 			Misc tools, guidelines and services used to create and build SliTaz.
 		</p>
 		<p>
-			<img src="../../images/users.png" alt="users.png" />
+			<img src="/images/users.png" alt="[ ]" />
 			<a href="http://scn.slitaz.org/">Join us on SCN</a> and
 			the <a href="../mailing-list.php">mailing list</a>
 		</p>
@@ -47,8 +47,8 @@
 	<li><a href="#website">Website Management.</a></li>
 </ul>
 
-<a name="kiss"></a>
-<h2>KISS and comply to standards</h2>
+<h2 id="kiss">KISS and comply to standards</h2>
+
 <p>
 	Keep it simple: follow the best standards, carefully draft and write
 	high quality documentation, provide a stable and robust system and keep
@@ -58,8 +58,8 @@
 	to think small...
 </p>
 
-<a name="tank"></a>
-<h2>Tank - Build host &amp; home</h2>
+<h2 id="tank">Tank - Build host &amp; home</h2>
+
 <p>
 	Each contributor may have an account on the project server with secure 
 	access, disk space, a public directory and all development tools. 
@@ -73,8 +73,8 @@
 		SliTaz Build Host (tank)</a>.
 </p>
 
-<a name="repos"></a>
-<h2>Mercurial repositories</h2>
+<h2 id="repos">Mercurial repositories</h2>
+
 <p>
 	SliTaz Mercurial or Hg repos can be browsed or cloned by anyone using
 	the URL: <a href="http://hg.slitaz.org/">http://hg.slitaz.org/</a>. People
@@ -84,6 +84,7 @@
 </p>
 
 <h3>~/.hgrc</h3>
+
 <p>
 	Before you push your first commit onto the server, be sure that you have a
 	correct Hg configuration file with your name and email address, and remember
@@ -93,7 +94,9 @@
 [ui]
 username = FirstName LastName &lt;you@example.org&gt;
 </pre>
+
 <h4>Clone, modify, commit and push</h4>
+
 <p>
 Clone a repo, example for wok:
 </p>
@@ -128,14 +131,18 @@ transaction. Before pushing changes to the server, it is safe to pull once:
 <p>
 Done, your changes, code or corrections are now on the server.
 </p>
+
 <h4>Updating a local wok</h4>
+
 <p>
 To update your wok with the local server (<em>pull</em> to pull the changes):
 </p>
 <pre>
  $ hg pull -u
 </pre>
+
 <h4>Useful commands</h4>
+
 <p>
 Hg commands that can be used.
 </p>
@@ -147,8 +154,7 @@ Hg commands that can be used.
 	<li><code>hg head</code> : Display the last log.</li>
 </ul>
 
-<a name="gui"></a>
-<h2>GUI - Pure C/GTK, Yad, Vala/Genie and CGI/web</h2>
+<h2 id="gui">GUI - Pure C/GTK, Yad, Vala/Genie and CGI/web</h2>
 
 <p>
 	There are many ways to create user interfaces in the open source world. From
@@ -208,16 +214,16 @@ int main(int argc, char *argv[])
 		example code</a>
 </p>
 
-<a name="iconv"></a>
-<h2>Implementation of iconv()</h2>
+<h2 id="iconv">Implementation of iconv()</h2>
+
 <p>
 	SliTaz uses iconv() provided by GNU glibc - any packages that offer 
 	<code>libiconv</code> must use the library contained in <code>glibc-locale</code>. 
 	There is therefore no longer a libiconv package (1.2 MB) in SliTaz.
 </p>
 
-<a name="pkgs"></a>
-<h2>Building SliTaz packages</h2>
+<h2 id="pkgs">Building SliTaz packages</h2>
+
 <p>
 	Building official is done with the Cookutils suite. The package is installed
 	on each SliTaz system as well as the documentation about using cook and
@@ -250,8 +256,8 @@ int main(int argc, char *argv[])
 	exists to help you get started.
 </p>
 
-<a name="pkgs-naming"></a>
-<h3>Naming of packages</h3>
+<h3 id="pkgs-naming">Naming of packages</h3>
+
 <p>
 	In most cases the package name is the same as the source, except for
 	Python, Perl, PHP, Ruby and Lua modules. For example, the package
@@ -259,8 +265,8 @@ int main(int argc, char *argv[])
 	<code>python-kid</code>.
 </p>
 
-<a name="website"></a>
-<h2>Website Management</h2>
+<h2 id="website">Website Management</h2>
+
 <p>
 	The website is managed via a mercurial repository, they can be cloned by:
 </p>
@@ -271,6 +277,7 @@ int main(int argc, char *argv[])
 </pre>
 
 <h3>xHTML coding style</h3>
+
 <p>
 	The pages and different <em>books</em> are coded in xHTML 1.0
 	transitional. The title of level 1 is used only once (at the top), 
@@ -305,8 +312,8 @@ code...
 	of the code via the online <em>validator</em> of the W3C.
 </p>
 
-<a name="diff"></a>
-<h2>Diff and patch</h2>
+<h2 id="diff">Diff and patch</h2>
+
 <p>
 	The utilities <code>diff</code> and <code>patch</code> are command-line tools 
 	for creating and implementing a file containing differences between two files. 

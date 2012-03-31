@@ -1,9 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-	<title>SliTaz - English documentation</title>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>SliTaz - English documentation</title>
 	<meta name="description" content="SliTaz GNU/Linux English documentationx part livecd tazpkg packages" />
 	<meta name="keywords" lang="en" content="System, free, gnu, linux, opensource software, livecd in RAM" />
 	<meta name="author" content="Christophe Lincoln"/>
@@ -57,6 +57,7 @@
 </p>
 
 <h2>Scratchbook</h2>
+
 <p>
 	Historically, the Scratchbook was written when SliTaz was created and wasn't
 	made to be updated. But over time, some SliTaz contributors migrated the book 
@@ -64,15 +65,16 @@
 	<a href="http://doc.slitaz.org/en:scratchbook:start">Community Scratchbook</a>
 </p>
 <p>
-	SliTaz <a href="scratchbook/index.html">Original Scratchbook</a> -
+	SliTaz <a href="scratchbook/">Original Scratchbook</a> -
 	Describes the stages of creating the very first SliTaz distribution 
 	commencing with instructions on compiling the Linux kernel, installing
 	the graphical server (Xvesa) and GTK applications, etc. It contains
 	techniques requiring time and motivation that enable you to build a
 	GNU/Linux system from source.
 </p>
-	
-<h2>Manuals</h2>	
+
+<h2>Manuals</h2>
+
 <ul>
 	<li><a href="http://hg.slitaz.org/tazpkg/raw-file/tip/doc/tazpkg.en.html"
 		>Tazpkg manual</a> -  SliTaz Package Manager.</li>
@@ -85,6 +87,7 @@
 </ul>
 
 <h2>Release Notes</h2>
+
 <p>
 SliTaz Release Notes provide detailed information about the stable version
 and give a few useful tips to help you start using the system. On the core
@@ -94,11 +97,11 @@ menu.
 
 <ul>
 	<li><a href="releases/3.0/relnotes.en.html">SliTaz GNU/Linux 3.0 - 
-	Release Notes</a></li>
+		Release Notes</a></li>
 	<li><a href="releases/2.0/relnotes.en.html">SliTaz GNU/Linux 2.0 - 
-	Release Notes</a></li>
+		Release Notes</a></li>
 	<li><a href="releases/1.0/relnotes.en.html">SliTaz GNU/Linux 1.0 - 
-	Release Notes</a></li>
+		Release Notes</a></li>
 </ul>
 
 <!-- End of content -->
