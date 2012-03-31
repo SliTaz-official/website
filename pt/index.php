@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt">
 <head>
 	<title>SliTaz GNU/Linux (pt)</title>
-	<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="description" content="SliTaz GNU/Linux LiveCD" />
 	<meta name="keywords" lang="pt" content="sistema, livre, gnu, linux, software opensource, livecd LINUX na RAM" />
 	<meta name="author" content="Claudinei Pereira" />
@@ -18,17 +18,17 @@
 	<?php include("../lib/html/nav.pt.html") ?>
 	<!-- Information/image -->
 	<div id="block_info">
-		<h4>Página principal</h4>
+		<h4>PÃ¡gina principal</h4>
 		<p>
-			O SliTaz é um sistema operacional livre. É distribuido na 
+			O SliTaz Ã© um sistema operacional livre. Ã‰ distribuido na 
 			forma de um LiveCD, sendo que a imagem ISO possui menos de
 			35 MB.
 		</p>
 		<p>
-			O sistema é rápido e robusto, possui um desktop elegante, 
-			leve e intuitivo, documentação detalhada e ferramentas de
-			configuração fáceis de se utilizar. 
-			<a href="about/">Mais informações...</a>
+			O sistema Ã© rÃ¡pido e robusto, possui um desktop elegante, 
+			leve e intuitivo, documentaÃ§Ã£o detalhada e ferramentas de
+			configuraÃ§Ã£o fÃ¡ceis de se utilizar. 
+			<a href="about/">Mais informaÃ§Ãµes...</a>
 		</p>
 	</div>
 </div>
@@ -41,14 +41,14 @@
 <div class="box">
 	<img src="../images/update.png" alt=" [Update ]" style="float: left; margin-right: 10px; " />
 	<p>
-		Ajude-nos a obter um servidor dedicado - Visite a página de
-		<a href="http://www.gofundme.com/3ql70">Doação Online</a>
+		Ajude-nos a obter um servidor dedicado - Visite a pÃ¡gina de
+		<a href="http://www.gofundme.com/3ql70">DoaÃ§Ã£o Online</a>
 		ou torne-se um
 		<a href="/pt/sponsor/">patrocinador</a> oficial.
 	</p>
 </div>
 
-<h2>Últimas notícias</h2>
+<h2>Ãšltimas notÃ­cias</h2>
 
 <div class="news">
 <ul>
@@ -58,22 +58,22 @@
 	<li><strong>03 Mar 2012 - SliTaz 4.0-RC2</strong>
 	<p>
 		A equipe do SliTaz tem o prazer de anunciar a disponibilidade do
-		segundo "Release Candidate" (RC) para a versão 4.0. Nós tivemos 
+		segundo "Release Candidate" (RC) para a versÃ£o 4.0. NÃ³s tivemos 
 		muito trabalho corrigindo bugs da RC anterior e nas ferramentas 
-		para usuários-finais como TazPKG, TazPanel e TazUSB. A 
-		configuração de redes wireless ficou mais fácil, podendo ser 
+		para usuÃ¡rios-finais como TazPKG, TazPanel e TazUSB. A 
+		configuraÃ§Ã£o de redes wireless ficou mais fÃ¡cil, podendo ser 
 		feita pelo TazPanel ou pela nova ferramente wifibox. O TazPKG 
-		ganhou uma melhor integração ao desktop e um novo sistema de 
-		notificações.
+		ganhou uma melhor integraÃ§Ã£o ao desktop e um novo sistema de 
+		notificaÃ§Ãµes.
 	</p>
 	<p>
-		Este RC fornece um sistema gráfico Xorg completo, com suporte a
+		Este RC fornece um sistema grÃ¡fico Xorg completo, com suporte a
 		DRI e a placas de rede que utilizam os drivers nv, intel, geode
-		e vesa. Também reconstruímos todos os pacotes , retirando 
-		aproximadamente 2MB da iso desde o último RC, o que permitiu
-		a inclusão dos pacotes LXRandR, Parcellite e o cliente
+		e vesa. TambÃ©m reconstruÃ­mos todos os pacotes , retirando 
+		aproximadamente 2MB da iso desde o Ãºltimo RC, o que permitiu
+		a inclusÃ£o dos pacotes LXRandR, Parcellite e o cliente
 		BitTorrent Transmission. Gostariamos de agradecer a todos que
-		testaram o primei ro RC; esse RC2 é bem próximo à versão 4.0 
+		testaram o primei ro RC; esse RC2 Ã© bem prÃ³ximo Ã  versÃ£o 4.0 
 		do SliTaz, planejada para duas semanas.
 	</p>
 	<p>
@@ -84,30 +84,30 @@
 	<li><strong>23 Feb 2012 -  SliTaz 4.0 RC1</strong>
 	<p>
 		O time de desenvolvedores do SliTaz anuncia a disponibilidade do primeiro
-		"Release Candidate (RC)" para a versão 4.0. Sua inicialização é rápida,
+		"Release Candidate (RC)" para a versÃ£o 4.0. Sua inicializaÃ§Ã£o Ã© rÃ¡pida,
 		entre 10 a 12 segundos em hardware mais recente. Com a nova iso 4in1 pode-se
-		instalar o sistema em computadores com apenas 48MB de memória RAM. Esta
-		ISO pode autodetectar a memória disponível e iniciar o SliTaz em modo texto,
-		em um sistema gráfico mínimo ou em um desktop completo.
+		instalar o sistema em computadores com apenas 48MB de memÃ³ria RAM. Esta
+		ISO pode autodetectar a memÃ³ria disponÃ­vel e iniciar o SliTaz em modo texto,
+		em um sistema grÃ¡fico mÃ­nimo ou em um desktop completo.
 	</p>
 	<p>
-		A versão 4.0 terá mais de 3000 pacotes bem testados em seus
-		repositórios. Desde a última versão de testes (cooking) os pacotes foram compilados
+		A versÃ£o 4.0 terÃ¡ mais de 3000 pacotes bem testados em seus
+		repositÃ³rios. Desde a Ãºltima versÃ£o de testes (cooking) os pacotes foram compilados
 		duas vezes para assegurar a qualidade. Este Release Candidate permite
-		aos usuários e desenvolvedores descobrirem alguns possíveis bugs antes
-		da versão final.
+		aos usuÃ¡rios e desenvolvedores descobrirem alguns possÃ­veis bugs antes
+		da versÃ£o final.
 	</p>
 	<p>
-		As novidades deste RC são: um novo menu gráfico na inicialização,
-		configuração de linguagem e teclado com ferramentas gráficas,
+		As novidades deste RC sÃ£o: um novo menu grÃ¡fico na inicializaÃ§Ã£o,
+		configuraÃ§Ã£o de linguagem e teclado com ferramentas grÃ¡ficas,
 		novo desenho de desktop, nova arte e novo instalador em modo texto
-		com interface web acessível localmente pelo TazPanel. Baixe a ISO
+		com interface web acessÃ­vel localmente pelo TazPanel. Baixe a ISO
 		a partir de nosso mirror:
 		<a href="http://mirror.slitaz.org/iso/cooking/slitaz-4.0-RC1.iso">SliTaz 4.0-RC1</a>
 	</p>
 	</li>
 
-	<li><strong>Arquivos de Notícias:</strong> 
+	<li><strong>Arquivos de NotÃ­cias:</strong> 
 	<a href="news/2008.php">2008</a> |
 	<a href="news/2009.php">2009</a> |
     <a href="news/2010.php">2010</a> |
@@ -150,7 +150,7 @@
 	<p>
 		<a href="http://hg.slitaz.org/">
 			<img src="../images/development.png" alt="development.png" /></a>
-		Últimos commits no wok
+		Ãšltimos commits no wok
 		<?php get_feed("wok.xml"); ?>
 	</div>
 	<p class="activity_more">
@@ -160,15 +160,15 @@
 
 <h2>Ajude-nos</h2>
 <p>
-	Ajude o SliTaz a ser mais popular ou faça uma doação. Pode criar um 
-	post de blog, um tweet, divulgar o projeto no facebook ou também 
+	Ajude o SliTaz a ser mais popular ou faÃ§a uma doaÃ§Ã£o. Pode criar um 
+	post de blog, um tweet, divulgar o projeto no facebook ou tambÃ©m 
 	fazer parte da <a href="http://scn.slitaz.org/">comunidade</a>.
 </p>
 
 <?php include("../lib/html/social.html") ?>
 
 <p>
-	Você pode usar PayPal ou Flattr para doações em dinheiro para o projeto.
+	VocÃª pode usar PayPal ou Flattr para doaÃ§Ãµes em dinheiro para o projeto.
 </p>
 
 <?php include("../lib/html/donate.html") ?>

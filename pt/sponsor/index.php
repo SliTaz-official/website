@@ -3,9 +3,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt">
 <head>
     <title>SliTaz - Sponsorship</title>
-    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="SliTaz GNU/Linux asso sponsor" />
-    <meta name="keywords" lang="pt" content="slitaz pro, slitaz patrocínio, suporte" />
+    <meta name="keywords" lang="pt" content="slitaz pro, slitaz patrocÃ­nio, suporte" />
     <meta name="robots" content="index, follow, all" />
     <meta name="modified" content="<?php echo (date( "Y-m-d H:i:s", getlastmod())); ?>" />
     <meta name="author" content="Christophe Lincoln"/>
@@ -21,12 +21,12 @@
 	<?php include("../../lib/html/nav.pt.html"); ?>
 	<!-- Information/image -->
 	<div id="block_info">
-		<h4>Patrocínio</h4>
+		<h4>PatrocÃ­nio</h4>
 		<p>
-            O SliTaz é uma organização sem fins comerciais, que procura formas
-            de patrocínio monetário para o projeto ou para aquisição de hardware. 
+            O SliTaz Ã© uma organizaÃ§Ã£o sem fins comerciais, que procura formas
+            de patrocÃ­nio monetÃ¡rio para o projeto ou para aquisiÃ§Ã£o de hardware. 
 		</p>
-		<p>Ajude o projeto por meio de pequenas doações:</p>
+		<p>Ajude o projeto por meio de pequenas doaÃ§Ãµes:</p>
 		<?php include("../../lib/html/donate.html"); ?>
 	</div>
 </div>
@@ -44,61 +44,61 @@
 <h2>Patrocinando o SliTaz</h2>
 <p>
     Primeiramente, agradecemos aos nossos <a href="#cur">atuais patrocinadores</a>
-    e todas as pessoas que nos apoiam com pequenas porém importantes doações.
-    Nosso projeto é ainda novo, porém em 5 anos de desenvolvimento ativo
+    e todas as pessoas que nos apoiam com pequenas porÃ©m importantes doaÃ§Ãµes.
+    Nosso projeto Ã© ainda novo, porÃ©m em 5 anos de desenvolvimento ativo
     crescemos e podemos oferecer um sistema operacional que pode ser utilizado
-    de forma profissional e é seguro para ambientes de produção.
+    de forma profissional e Ã© seguro para ambientes de produÃ§Ã£o.
 </p>
 
-<h3>Suporte monetário a um desenvolvedor</h3>
+<h3>Suporte monetÃ¡rio a um desenvolvedor</h3>
 <p>
-    Você usa o SliTaz em seu projeto e quer tornar a distribuição ainda mais
+    VocÃª usa o SliTaz em seu projeto e quer tornar a distribuiÃ§Ã£o ainda mais
     profissional, com os principais desenvolvedores trabalhando no projeto
-    a todo tempo. Se sim, você pode patrocinar a Associação do SliTaz que
-    paga um desenvolvedor para se dedicar totalmente à distribuição. Atualmente
-    não temos fundos suficientes para pagar um desenvolvedor por todo o ano,
-    porém a quantidade de doações permitem que um desenvolvedor trabalhe em
-    torno de 3 a 4 meses no projeto. Em um futuro próximo, gostaríamos que 
-    fosse possível ter um desenvolvedor dedicado durante todo o ano.
+    a todo tempo. Se sim, vocÃª pode patrocinar a AssociaÃ§Ã£o do SliTaz que
+    paga um desenvolvedor para se dedicar totalmente Ã  distribuiÃ§Ã£o. Atualmente
+    nÃ£o temos fundos suficientes para pagar um desenvolvedor por todo o ano,
+    porÃ©m a quantidade de doaÃ§Ãµes permitem que um desenvolvedor trabalhe em
+    torno de 3 a 4 meses no projeto. Em um futuro prÃ³ximo, gostarÃ­amos que 
+    fosse possÃ­vel ter um desenvolvedor dedicado durante todo o ano.
 </p>
 
-<h3>Patrocínio de Hardware</h3>
+<h3>PatrocÃ­nio de Hardware</h3>
 <p>
     Como todo projeto opensource, desenvolvemos o SliTaz com nossos computadores
-    pessoais. Mas de tempos em tempos precisamos atualizar nossas máquinas e
-    obter novo hardware. Não podemos testar a distribuição em hardware específico
-    que não possuímos acesso. Se você possúi ou fabrica hardware e gostaria
+    pessoais. Mas de tempos em tempos precisamos atualizar nossas mÃ¡quinas e
+    obter novo hardware. NÃ£o podemos testar a distribuiÃ§Ã£o em hardware especÃ­fico
+    que nÃ£o possuÃ­mos acesso. Se vocÃª possÃºi ou fabrica hardware e gostaria
     de ter o SliTaz funcionando com total compatibilidade com determinado
-    hardware, pode doar máquinas para que possamos adaptar a distribuição
-    de forma a que seja funcional nestas máquinas / hardware.
+    hardware, pode doar mÃ¡quinas para que possamos adaptar a distribuiÃ§Ã£o
+    de forma a que seja funcional nestas mÃ¡quinas / hardware.
 </p>
 <p>
-    O SliTaz é feito com ferramentas que permitem a compilação em mais de uma
-    plataforma, então gostaríamos de portar a distribuição para máquinas ARM.
-    Porém, precisamos de hardware ARM para podermos testar nossos compiladores
-    e adaptar a distribuição para esta arquitetura.
+    O SliTaz Ã© feito com ferramentas que permitem a compilaÃ§Ã£o em mais de uma
+    plataforma, entÃ£o gostarÃ­amos de portar a distribuiÃ§Ã£o para mÃ¡quinas ARM.
+    PorÃ©m, precisamos de hardware ARM para podermos testar nossos compiladores
+    e adaptar a distribuiÃ§Ã£o para esta arquitetura.
 </p>
 
 <h3>Reciclagem de Hardware</h3>
 <p>
-    O SliTaz é ótimo para fazer máquinas antigas funcionarem de forma
-    satisfatória, porém precisamos de máquinas antigas para testarmos. Também
-    podemos reciclar suas máquinas, instalando o SliTaz e talvez vendendo-as
-    a baixo custo. Isto permitiria às pessoas possuir computadores baratos
-    porém poderosos o suficiente para tarefas cotidianas, e ainda nos permitiria
-    obter algum retorno pelo serviço oferecido
+    O SliTaz Ã© Ã³timo para fazer mÃ¡quinas antigas funcionarem de forma
+    satisfatÃ³ria, porÃ©m precisamos de mÃ¡quinas antigas para testarmos. TambÃ©m
+    podemos reciclar suas mÃ¡quinas, instalando o SliTaz e talvez vendendo-as
+    a baixo custo. Isto permitiria Ã s pessoas possuir computadores baratos
+    porÃ©m poderosos o suficiente para tarefas cotidianas, e ainda nos permitiria
+    obter algum retorno pelo serviÃ§o oferecido
 </p>
 
-<h2>Contato e informação</h2>
+<h2>Contato e informaÃ§Ã£o</h2>
 <p>
-    Se você se interessa e quer mais informações sobre patrocínio à distribuição,
-    ou doação de hardware, pode nos contatar por email em 
+    Se vocÃª se interessa e quer mais informaÃ§Ãµes sobre patrocÃ­nio Ã  distribuiÃ§Ã£o,
+    ou doaÃ§Ã£o de hardware, pode nos contatar por email em 
 	&lt;asso at slitaz.org&gt; ou por <a href="../asso/#postal">carta</a>.
 </p>
 <p>
-    Ao patrocinar o SliTaz você terá o logo e endereço de seu website em
-    nosso site. Você também poderá divulgar sua participação em um projeto
-    de código aberto e obter mais atenção dos usuários de Software Livre e
+    Ao patrocinar o SliTaz vocÃª terÃ¡ o logo e endereÃ§o de seu website em
+    nosso site. VocÃª tambÃ©m poderÃ¡ divulgar sua participaÃ§Ã£o em um projeto
+    de cÃ³digo aberto e obter mais atenÃ§Ã£o dos usuÃ¡rios de Software Livre e
     Linux. 
 </p>
 
@@ -114,9 +114,9 @@
 			</td>
 			<td>
                 Allied Data Sys - O patrocinador ADS fornece nosso mirror
-                principal, assim como uma máquina virtual com conexão de alta
-                disponibilidade, o que nos permite usá-la para todas as
-                necessidades do projeto. Agradecemos à ADS pelo serviço
+                principal, assim como uma mÃ¡quina virtual com conexÃ£o de alta
+                disponibilidade, o que nos permite usÃ¡-la para todas as
+                necessidades do projeto. Agradecemos Ã  ADS pelo serviÃ§o
                 oferecido e por atender nossas demandas.
 			</td>
 		</tr>
@@ -127,13 +127,13 @@
 				style="float: left;" /></a>
 			</td>
 			<td>
-                Buscador DuckDuckGo - O DDG é parceiro do SliTaz e divide
+                Buscador DuckDuckGo - O DDG Ã© parceiro do SliTaz e divide
                 os fundos conseguidos por meio de <em>links patrocinados</em>
-                resultantes das buscas feitas por usuários do SliTaz. Dividimos
-                os fundos meio a meio, então a utilização deste buscador
-                ajuda a ambos os projetos. O DDG é um buscador com mais
-                respostas úteis, menos spam, várias opções e que fornece
-                privacidade ao usuário.
+                resultantes das buscas feitas por usuÃ¡rios do SliTaz. Dividimos
+                os fundos meio a meio, entÃ£o a utilizaÃ§Ã£o deste buscador
+                ajuda a ambos os projetos. O DDG Ã© um buscador com mais
+                respostas Ãºteis, menos spam, vÃ¡rias opÃ§Ãµes e que fornece
+                privacidade ao usuÃ¡rio.
 			</td>
 		</tr>
         <tr>
@@ -144,7 +144,7 @@
             </td>
             <td>
                 Clarkson Open Source Institute - O Cosi fornece nosso servidor
-                Chub, oferecendo acesso total a uma máquina virtual. Nos
+                Chub, oferecendo acesso total a uma mÃ¡quina virtual. Nos
                 orgulhamos pela parceria com a Universidade Clarkson, que foi
                 fundada para promover Software Open Source, fornecendo
                 equipamento e suporte para projetos de estudantes. Nossos

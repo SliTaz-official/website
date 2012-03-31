@@ -2,8 +2,8 @@
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt">
 <head>
-    <title>SliTaz - Arquivo de notícias</title>
-    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <title>SliTaz - Arquivo de notÃ­cias</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="SliTaz news archives info release" />
     <meta name="keywords" lang="pt" content="sistema, livre, gnu, linux, opensource software, livecd na RAM" />
     <meta name="robots" content="index, follow, all" />
@@ -22,15 +22,15 @@
    	<?php include("../../lib/html/nav.pt.html"); ?>
 
     <div id="block_info">
-		<h4>Arquivos de notícias</h4>
+		<h4>Arquivos de notÃ­cias</h4>
 		<p>
-            As notícias do site arquivadas por ano. Note que alguns
-            links podem estar quebrados devido a mudanças na estrutura
-            do site (principalmente a parte da documentação que foi 
-            movida para domínio próprio)
+            As notÃ­cias do site arquivadas por ano. Note que alguns
+            links podem estar quebrados devido a mudanÃ§as na estrutura
+            do site (principalmente a parte da documentaÃ§Ã£o que foi 
+            movida para domÃ­nio prÃ³prio)
 		</p>
 		<p>
-			<img src="../../images/news.png" alt="[ Notícias]" /> 
+			<img src="../../images/news.png" alt="[ NotÃ­cias]" /> 
 			<a href="./">2008</a> | 
             <a href="2009.php">2009</a> | 
             <a href="2010.php">2010</a> |
@@ -46,62 +46,62 @@
 
 <ul>
 	<li><strong>31 Dez 2008 - Cooking 20081231 - Wifi e suporte a NTFS </strong><br />
-	O projeto Slitaz tem o prazer de apresentar a nova imagem ISO da versão
+	O projeto Slitaz tem o prazer de apresentar a nova imagem ISO da versÃ£o
 	cooking do LiveCD. Ela permite que seja utilizado e testado todo o
-	trabalho realizado durante os últimos meses. Inclui muitas
-	características novas, correções de bugs e inúmeras atualizações. A
-	distribuição central inclui agora o controle de gerenciamento WiFi via
-	Netbox e as ferramentas wifi trazem ainda o tazdis, uma versão mais
+	trabalho realizado durante os Ãºltimos meses. Inclui muitas
+	caracterÃ­sticas novas, correÃ§Ãµes de bugs e inÃºmeras atualizaÃ§Ãµes. A
+	distribuiÃ§Ã£o central inclui agora o controle de gerenciamento WiFi via
+	Netbox e as ferramentas wifi trazem ainda o tazdis, uma versÃ£o mais
 	leve do ndiswarapper que usa os drivers do Windows para interfaces
-	de rede que não possuem uma versão aberta. A linguagem Perl foi
-	incluída no cdrom e a Lua foi removida. O suporte a WiFi está
-	acompanhado do suporte às partições NTFS, então tivemos de remover o mplayer
-	da seleção padrão de pacotes que fazem parte do LiveCD. A administração de
+	de rede que nÃ£o possuem uma versÃ£o aberta. A linguagem Perl foi
+	incluÃ­da no cdrom e a Lua foi removida. O suporte a WiFi estÃ¡
+	acompanhado do suporte Ã s partiÃ§Ãµes NTFS, entÃ£o tivemos de remover o mplayer
+	da seleÃ§Ã£o padrÃ£o de pacotes que fazem parte do LiveCD. A administraÃ§Ã£o de
 	pacotes com o Tazpkg foi melhorada ao extremo, permitindo preservar a
-	configuração dos arquivos, atualizando os programas de acordo com as respectivas
-	datas de construção (build) no log do servidor do projeto, mantendo as ações
-	e diversas correções que forem sendo aplicadas. Além disso, os scripts de
-	inicialização foram melhorados e a ferramenta LiveCD (Tazlito) está
-	mais coerente. O repositório cooking conta com 	mais de 1,100 pacotes prontos
-	para serem instalados, graças ao trabalho pesado dos desenvolvedores. Você
+	configuraÃ§Ã£o dos arquivos, atualizando os programas de acordo com as respectivas
+	datas de construÃ§Ã£o (build) no log do servidor do projeto, mantendo as aÃ§Ãµes
+	e diversas correÃ§Ãµes que forem sendo aplicadas. AlÃ©m disso, os scripts de
+	inicializaÃ§Ã£o foram melhorados e a ferramenta LiveCD (Tazlito) estÃ¡
+	mais coerente. O repositÃ³rio cooking conta com 	mais de 1,100 pacotes prontos
+	para serem instalados, graÃ§as ao trabalho pesado dos desenvolvedores. VocÃª
 	pode fazer o <a href="../get/#cooking">download</a> a partir de um dos mirrors
 	oficiais do projeto.
 	</li>
 
-    <li><strong>Versão Cooking 20080716 - Inicialização pela Web e MPlayer</strong><br />
+    <li><strong>VersÃ£o Cooking 20080716 - InicializaÃ§Ã£o pela Web e MPlayer</strong><br />
     Os membros do projeto SliTaz orgulhosamente anunciam a disponibilidade de
-    uma nova Versão Cooking (testes), que inclui muitas novas características
-    e correções de bugs. Esta versão oferece a opção de inicialização <code>web</code>
-    que permite a você iniciar o SliTaz por meio da internet usando o gPXE do
-    <a href="http://boot.slitaz.org/">boot.slitaz.org</a>. Este novo e único
-    serviço oferece a possibilidade de usar o SliTaz em modo Live (totalmente
-    carregado na memória RAM), usando a opção LIVE para guardar todos os seus
-    dados permanentemente e pré-configurar o sistema. Esta nova versão possui
-    3 Mb a mais, então pudemos incluir o player multimí­dia MPlayer, um gerenciador
-    de notas (Notecase), uma versão do gerenciador de pacotes Tazpkg que possui
+    uma nova VersÃ£o Cooking (testes), que inclui muitas novas caracterÃ­sticas
+    e correÃ§Ãµes de bugs. Esta versÃ£o oferece a opÃ§Ã£o de inicializaÃ§Ã£o <code>web</code>
+    que permite a vocÃª iniciar o SliTaz por meio da internet usando o gPXE do
+    <a href="http://boot.slitaz.org/">boot.slitaz.org</a>. Este novo e Ãºnico
+    serviÃ§o oferece a possibilidade de usar o SliTaz em modo Live (totalmente
+    carregado na memÃ³ria RAM), usando a opÃ§Ã£o LIVE para guardar todos os seus
+    dados permanentemente e prÃ©-configurar o sistema. Esta nova versÃ£o possui
+    3 Mb a mais, entÃ£o pudemos incluir o player multimÃ­Â­dia MPlayer, um gerenciador
+    de notas (Notecase), uma versÃ£o do gerenciador de pacotes Tazpkg que possui
     suporte a md5sum, suporte ao sistema de arquivos XFS diretamente no Kernel,
-    o comando "man" e algumas atualizações. Esta versão requer ao menos 160 Mb
-    para iniciar e rodar normalmente, e também oferecemos a <a href="../get/flavors.php">variante</a>
-    loram para máquinas com menos recursos. <a href="../get/#cooking">Baixe a ISO do SliTaz Cooking</a>.
+    o comando "man" e algumas atualizaÃ§Ãµes. Esta versÃ£o requer ao menos 160 Mb
+    para iniciar e rodar normalmente, e tambÃ©m oferecemos a <a href="../get/flavors.php">variante</a>
+    loram para mÃ¡quinas com menos recursos. <a href="../get/#cooking">Baixe a ISO do SliTaz Cooking</a>.
     </li>
 
     <li><strong>22 Mar 2008 - SliTaz GNU/Linux 1.0 release</strong><br />
-    O time de colaboradores do SliTaz orgulhosamente anunciam o lançamento
-    do SliTaz GNU/Linux 1.0. Este é o primeiro lançamento estável após 2 anos
-    de trabalho. O sistema é distribuido na forma de um LiveCD inicializável de
+    O time de colaboradores do SliTaz orgulhosamente anunciam o lanÃ§amento
+    do SliTaz GNU/Linux 1.0. Este Ã© o primeiro lanÃ§amento estÃ¡vel apÃ³s 2 anos
+    de trabalho. O sistema Ã© distribuido na forma de um LiveCD inicializÃ¡vel de
     24.8 Mb de tamanho, que fornece um ambiente desktop cheio de recursos e com
-    uma generosa seleção de aplicativos para os mais diversificados usos.
+    uma generosa seleÃ§Ã£o de aplicativos para os mais diversificados usos.
     O SliTaz GNU/Linux 1.0 usa o Kernel Linux 2.6.24.2, oferece o Firefox 2.0.0.12,
-    Rsync 3.0.0, Gparted 0.3.5 e suporte a som com o Alsa 1.0.16. A distribuição
-    permite a você ouvir música, navegar na web, editar ví­deos e muito mais por
-    meio dos 448 pacotes (programas) disponí­veis que podem ser instalados com o
-    gerenciador de pacotes tazpkg. O LiveCD permite a você criar uma distribuição
-    personalizada ou um dispositivo LiveUSB em um simples comando. Atualizações
-    de segurança são fornecidas pelo projeto e pacotes populares como o Firefox
-    também pode ser atualizados para se obter mais funcionalidades. Você pode obter
-    o SliTaz GNU/Linux 1.0 por meio da <a href="../get/#stable">página de downloads</a>
-    do site. Leia as <a href="../doc/releases/1.0/relnotes.pt.html">notas de lançamento</a>
-    para informações detalhadas sobre esta versão estável.
+    Rsync 3.0.0, Gparted 0.3.5 e suporte a som com o Alsa 1.0.16. A distribuiÃ§Ã£o
+    permite a vocÃª ouvir mÃºsica, navegar na web, editar vÃ­Â­deos e muito mais por
+    meio dos 448 pacotes (programas) disponÃ­Â­veis que podem ser instalados com o
+    gerenciador de pacotes tazpkg. O LiveCD permite a vocÃª criar uma distribuiÃ§Ã£o
+    personalizada ou um dispositivo LiveUSB em um simples comando. AtualizaÃ§Ãµes
+    de seguranÃ§a sÃ£o fornecidas pelo projeto e pacotes populares como o Firefox
+    tambÃ©m pode ser atualizados para se obter mais funcionalidades. VocÃª pode obter
+    o SliTaz GNU/Linux 1.0 por meio da <a href="../get/#stable">pÃ¡gina de downloads</a>
+    do site. Leia as <a href="../doc/releases/1.0/relnotes.pt.html">notas de lanÃ§amento</a>
+    para informaÃ§Ãµes detalhadas sobre esta versÃ£o estÃ¡vel.
     </li>
 </ul>
 

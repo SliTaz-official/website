@@ -2,10 +2,10 @@
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt">
 <head>
-    <title>SliTaz - Lista de Discussão</title>
-    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <title>SliTaz - Lista de DiscussÃ£o</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="slitaz users developers mailing list" />
-    <meta name="keywords" content="slitaz lista mail discussão" lang="pt" />
+    <meta name="keywords" content="slitaz lista mail discussÃ£o" lang="pt" />
     <meta name="author" content="Claudinei Pereira" />
     <?php include("../lib/html/meta-link.html"); ?>
 </head>
@@ -20,18 +20,18 @@
     
     <!-- Information/image -->
 	<div id="block_info">
-		<h4>Lista de Discussão</h4>
+		<h4>Lista de DiscussÃ£o</h4>
 		<p>
-			Lista de discussão para usuários e colaboradores,
-			anúncios, com tópicos sobre suporte e desenvolvimento.
-			Faça inscrição na lista para obter ajuda ou colaborar
+			Lista de discussÃ£o para usuÃ¡rios e colaboradores,
+			anÃºncios, com tÃ³picos sobre suporte e desenvolvimento.
+			FaÃ§a inscriÃ§Ã£o na lista para obter ajuda ou colaborar
 			com o projeto.
 		</p>
 		<p>
 			<img src="../images/users.png" alt="users.png" />
-			Você também pode usar o <a href="http://scn.slitaz.org/">SCN</a>
+			VocÃª tambÃ©m pode usar o <a href="http://scn.slitaz.org/">SCN</a>
 			(SliTaz Community Network) 
-			e o <a href="http://forum.slitaz.org/">Fórum de suporte.</a>
+			e o <a href="http://forum.slitaz.org/">FÃ³rum de suporte.</a>
 		</p>
         <!-- Follow -->
         <div style="margin-top: 12px;">
@@ -51,8 +51,8 @@
 
 <ul>
     <li><a href="#about">Sobre a Lista</a> - Suporte e desenvolvimento.</li>
-    <li><a href="#usage">Usando a Lista</a> - Inscrição, Cancelamento da Inscrição
-    e utilização.</li>
+    <li><a href="#usage">Usando a Lista</a> - InscriÃ§Ã£o, Cancelamento da InscriÃ§Ã£o
+    e utilizaÃ§Ã£o.</li>
     <li><a href="#archives">Arquivos da Lista</a> - Leia e/ou busque nas mensagens
     arquivadas.</li>
 </ul>
@@ -60,78 +60,78 @@
 <a name="about"></a>
 <h3>Sobre a Lista</h3>
 <p>
-A lista de discussão é a principal forma de comunicação na comunidade 
-SliTaz. Ela é aberta a todos e você é livre para se inscrever ou
-cancelar sua inscrição a qualquer tempo. É um meio eficaz de colaboração, 
-usada para fornecer suporte técnico gratuito aos usuários do SliTaz. 
-Desenvolvedores, usuários avançados, revisores, dentre outros, a utilizam
+A lista de discussÃ£o Ã© a principal forma de comunicaÃ§Ã£o na comunidade 
+SliTaz. Ela Ã© aberta a todos e vocÃª Ã© livre para se inscrever ou
+cancelar sua inscriÃ§Ã£o a qualquer tempo. Ã‰ um meio eficaz de colaboraÃ§Ã£o, 
+usada para fornecer suporte tÃ©cnico gratuito aos usuÃ¡rios do SliTaz. 
+Desenvolvedores, usuÃ¡rios avanÃ§ados, revisores, dentre outros, a utilizam
 para gerenciar o desenvolvimento do projeto. Usar a lista para suporte 
-e desenvolvimento nos permite alcançar uma vasta audiência, o que resulta 
-em respostas mais rápidas e corretas. Entretanto, os membros da lista são
-todos voluntários e fazem o melhor que podem em seu tempo livre. Cortesia
-e polidez são exigidos e um pouco de humor não machuca ninguém.
+e desenvolvimento nos permite alcanÃ§ar uma vasta audiÃªncia, o que resulta 
+em respostas mais rÃ¡pidas e corretas. Entretanto, os membros da lista sÃ£o
+todos voluntÃ¡rios e fazem o melhor que podem em seu tempo livre. Cortesia
+e polidez sÃ£o exigidos e um pouco de humor nÃ£o machuca ninguÃ©m.
 </p>
 <p>
-A <em>lista de discussão</em> é usada para enviar e receber mensagens. 
+A <em>lista de discussÃ£o</em> Ã© usada para enviar e receber mensagens. 
 Isto significa que todos os membros registrados podem postar na lista e 
 receber todas as outras mensagens postadas por outros membros. As mensagens 
-são enviadas pelo gerenciador de listas da <a href="http://www.tuxfamily.org/">TuxFamily</a> 
+sÃ£o enviadas pelo gerenciador de listas da <a href="http://www.tuxfamily.org/">TuxFamily</a> 
 oferecido pela excelente <a href="http://www.vhffs.org/">VHFFS</a>.
 </p>
 <h4>Civilidade</h4>
 <p>
-A lista de discussão é utilizada, às vezes, por algumas pessoas sensíveis e 
-temperamentais. Faça um esforço extra para tratar os outros com respeito, 
-mesmo se você se sentir maltrado. Se houver algo negativo a dizer ou se 
-você quiser fazer alguma crítica, por favor não poste. Se alguém agir 
+A lista de discussÃ£o Ã© utilizada, Ã s vezes, por algumas pessoas sensÃ­veis e 
+temperamentais. FaÃ§a um esforÃ§o extra para tratar os outros com respeito, 
+mesmo se vocÃª se sentir maltrado. Se houver algo negativo a dizer ou se 
+vocÃª quiser fazer alguma crÃ­tica, por favor nÃ£o poste. Se alguÃ©m agir 
 inapropriadamente entre em contato com um desenvolvedor do SliTaz.
 </p>
 
 <a name="usage"></a>
 <h3>Usando a Lista</h3>
 <p>
-Para postar na lista, será necessário fazer sua inscrição, então você receberá
-uma mensagem de confirmação via e-mail. Esta mensagem contem um número de 
-confirmação que você precisa reenviar ao administrador da lista (uma forma de 
-evitar spams). Uma vez que você tenha feito esse processo, será
-liberada sua participação na lista para que você possa postar e receber
-mensagens. Note que as mensagens podem ser filtradas para um diretório
-específico por seu programa de e-mails preferido. É recomendável que se utilize
-a função "Reply" ao responder a alguma mensagem, desta maneira o fluxo da 
-discussão pode ser corretamente seguido.
+Para postar na lista, serÃ¡ necessÃ¡rio fazer sua inscriÃ§Ã£o, entÃ£o vocÃª receberÃ¡
+uma mensagem de confirmaÃ§Ã£o via e-mail. Esta mensagem contem um nÃºmero de 
+confirmaÃ§Ã£o que vocÃª precisa reenviar ao administrador da lista (uma forma de 
+evitar spams). Uma vez que vocÃª tenha feito esse processo, serÃ¡
+liberada sua participaÃ§Ã£o na lista para que vocÃª possa postar e receber
+mensagens. Note que as mensagens podem ser filtradas para um diretÃ³rio
+especÃ­fico por seu programa de e-mails preferido. Ã‰ recomendÃ¡vel que se utilize
+a funÃ§Ã£o "Reply" ao responder a alguma mensagem, desta maneira o fluxo da 
+discussÃ£o pode ser corretamente seguido.
 </p>
 <ul>
-    <li>E-mail da administração (Mensagens em <em>inglês</em> e <em>francês</em>):
+    <li>E-mail da administraÃ§Ã£o (Mensagens em <em>inglÃªs</em> e <em>francÃªs</em>):
     <a href="mailto:slitaz-request@lists.tuxfamily.org"
      >slitaz-request@lists.tuxfamily.org</a></li>
     <li>Inscreva-se com o assunto (subject) : subscribe</li>
-    <li>Cancele a inscrição com o assunto (subject) : unsubscribe</li>
+    <li>Cancele a inscriÃ§Ã£o com o assunto (subject) : unsubscribe</li>
     <li>Obtenha ajuda com o assunto (subject) : help</li>
-    <li>Endereço para postagem na lista (Mensagens em <em>inglês</em> e <em>francês</em>):
+    <li>EndereÃ§o para postagem na lista (Mensagens em <em>inglÃªs</em> e <em>francÃªs</em>):
     <a href="mailto:slitaz@lists.tuxfamily.org">slitaz@lists.tuxfamily.org</a></li>
 </ul>
 <h4>Formato</h4>
 <p>
-As mensagens devem ser enviadas no formato texto puro e não como HTML,
+As mensagens devem ser enviadas no formato texto puro e nÃ£o como HTML,
 justificando-se as linhas com 72 a 80 caracteres para que possam ser lidas
 facilmente por pessoas que se utilizam de clientes de e-mail em modo texto.
 O formato para estas mensagems pode ser configurado automaticamente pela maioria
 dos clientes de e-mail tais como o Sylpheed. Tal formato permite uma forma mais
-clara de leitura dos arquivos da lista. Também recomendamos remover citações 
-desnecessárias e não anexar arquivos muito grandes.
+clara de leitura dos arquivos da lista. TambÃ©m recomendamos remover citaÃ§Ãµes 
+desnecessÃ¡rias e nÃ£o anexar arquivos muito grandes.
 </p>
 
 <a name="archives"></a>
 <h3>Arquivos da Lista</h3>
 <p>
-A lista de discussão é um fórum público, todas as mensagens são arquivadas e
-podem ser buscadas online. Isto permite que mesmo aqueles que não se inscreveram
-ainda possam consultar a lista, o que a torna uma boa fonte de informação sobre
-assuntos específicos. A lista é arquivada toda noite e você pode facilmente
-consulta-la através do gerenciador de listas da TuxFamily. As mensagens são 
-organizadas por mês e data ou por fluxo de discussão (<em>Thread</em>) :
+A lista de discussÃ£o Ã© um fÃ³rum pÃºblico, todas as mensagens sÃ£o arquivadas e
+podem ser buscadas online. Isto permite que mesmo aqueles que nÃ£o se inscreveram
+ainda possam consultar a lista, o que a torna uma boa fonte de informaÃ§Ã£o sobre
+assuntos especÃ­ficos. A lista Ã© arquivada toda noite e vocÃª pode facilmente
+consulta-la atravÃ©s do gerenciador de listas da TuxFamily. As mensagens sÃ£o 
+organizadas por mÃªs e data ou por fluxo de discussÃ£o (<em>Thread</em>) :
 <a href="http://listengine.tuxfamily.org/lists.tuxfamily.org/slitaz/"
- >Arquivos da Lista de Discussão</a>
+ >Arquivos da Lista de DiscussÃ£o</a>
 </p>
 
 <div>

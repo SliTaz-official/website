@@ -2,8 +2,8 @@
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt">
 <head>
-    <title>SliTaz - Arquivo de notícias</title>
-    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <title>SliTaz - Arquivo de notÃ­cias</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="SliTaz news archives info release" />
     <meta name="keywords" lang="pt" content="sistema, livre, gnu, linux, opensource software, livecd na RAM" />
     <meta name="robots" content="index, follow, all" />
@@ -22,15 +22,15 @@
    	<?php include("../../lib/html/nav.pt.html"); ?>
 
     <div id="block_info">
-		<h4>Arquivos de notícias</h4>
+		<h4>Arquivos de notÃ­cias</h4>
 		<p>
-            As notícias do site arquivadas por ano. Note que alguns
-            links podem estar quebrados devido a mudanças na estrutura
-            do site (principalmente a parte da documentação que foi 
-            movida para domínio próprio)
+            As notÃ­cias do site arquivadas por ano. Note que alguns
+            links podem estar quebrados devido a mudanÃ§as na estrutura
+            do site (principalmente a parte da documentaÃ§Ã£o que foi 
+            movida para domÃ­nio prÃ³prio)
 		</p>
 		<p>
-			<img src="../../images/news.png" alt="[ Notícias]" /> 
+			<img src="../../images/news.png" alt="[ NotÃ­cias]" /> 
 			<a href="2008.php">2008</a> | 
             <a href="./">2009</a> | 
             <a href="2010.php">2010</a> |
@@ -45,110 +45,110 @@
 <h2>2009</h2>
 
 <ul>
-    <li><strong>4 Nov 2009 - Nova Versão Cooking 20091104</strong>
-	<p>Os desenvolvedores do SliTaz GNU/Linux anunciam o lançamento de
-    uma nova imagem ISO da versão de testes (cooking) baseada nos cerca 
-    de 2100 pacotes disponíveis nos repositórios. Todo o sistema foi
-    completamente reconstruído, utilizando o novo conjunto de ferramentas
+    <li><strong>4 Nov 2009 - Nova VersÃ£o Cooking 20091104</strong>
+	<p>Os desenvolvedores do SliTaz GNU/Linux anunciam o lanÃ§amento de
+    uma nova imagem ISO da versÃ£o de testes (cooking) baseada nos cerca 
+    de 2100 pacotes disponÃ­veis nos repositÃ³rios. Todo o sistema foi
+    completamente reconstruÃ­do, utilizando o novo conjunto de ferramentas
     de desenvolvimento composto pela biblioteca Glibc 2.10.1 e pelo
-    compilador GCC 4.4.1. Esta nova versão de testes traz o kernel Linux
+    compilador GCC 4.4.1. Esta nova versÃ£o de testes traz o kernel Linux
     2.6.30.6, que possui um melhor reconhecimento de hardware e mais
-    módulos inclusos. O processo de boot foi melhorado e agora está muito
-    mais rápido. Os pacotes incluidos na imagem ISO, como o Firefox, 
-    por exemplo, são oferecidos em suas versões mais recentes e as
-    ferramentas gráficas próprias da distribuição também foram melhoradas.
-    O gerenciador de pacotes tazpkg agora possui novas características,
+    mÃ³dulos inclusos. O processo de boot foi melhorado e agora estÃ¡ muito
+    mais rÃ¡pido. Os pacotes incluidos na imagem ISO, como o Firefox, 
+    por exemplo, sÃ£o oferecidos em suas versÃµes mais recentes e as
+    ferramentas grÃ¡ficas prÃ³prias da distribuiÃ§Ã£o tambÃ©m foram melhoradas.
+    O gerenciador de pacotes tazpkg agora possui novas caracterÃ­sticas,
     incluindo a capacidade de converter pacotes deb/rpm/arch/slackware/ipk
-    para o formato de pacotes próprio do SliTaz. Esta nova imagem ISO
+    para o formato de pacotes prÃ³prio do SliTaz. Esta nova imagem ISO
     possui um desktop mais bonito e elegante, baseado no Openbox, aplicativos
-    GTK e um novo tema de ícones. O leitor de pdf ePDFview foi retirado e 
-    agora oferecemos um leitor de pdf online. Com todas estas mudanças,
+    GTK e um novo tema de Ã­cones. O leitor de pdf ePDFview foi retirado e 
+    agora oferecemos um leitor de pdf online. Com todas estas mudanÃ§as,
     a imagem ISO ficou um pouco maior, com um tamanho de 31.5 MB, 
-    principalmente por causa do novo kernel e novas dependências
+    principalmente por causa do novo kernel e novas dependÃªncias
     inclusas.</p>
-    <p>Também anunciamos que o projeto traz um novo 
-    <a href="http://forum.slitaz.org/">fórum de discussão</a> e um novo
+    <p>TambÃ©m anunciamos que o projeto traz um novo 
+    <a href="http://forum.slitaz.org/">fÃ³rum de discussÃ£o</a> e um novo
 	<a href="http://scn.slitaz.org/">site para a comunidade</a> 
-    em que todos são convidados a colaborar com conteúdo! Baixe agora a nova
-    imagem da <a href="../get/#cooking">versão de testes</a></p>
+    em que todos sÃ£o convidados a colaborar com conteÃºdo! Baixe agora a nova
+    imagem da <a href="../get/#cooking">versÃ£o de testes</a></p>
 	</li>
 
 	<li><strong>19 Mai 2009 - SliTaz na LinuxDays 2009 (Genebra)</strong>
 	<p>
-    Durante a convenção LinuxDays na Suiça a Associação SliTaz terá um
-    estande montado na seção "Association Village" e uma palestra será
-    dada na quarta de manhã. Esta palestra é um estudo de caso sob uma
-    perspectiva corporativa baseada na utilização do "Servidor Empresarial SliTaz"
+    Durante a convenÃ§Ã£o LinuxDays na SuiÃ§a a AssociaÃ§Ã£o SliTaz terÃ¡ um
+    estande montado na seÃ§Ã£o "Association Village" e uma palestra serÃ¡
+    dada na quarta de manhÃ£. Esta palestra Ã© um estudo de caso sob uma
+    perspectiva corporativa baseada na utilizaÃ§Ã£o do "Servidor Empresarial SliTaz"
     que possui painel de controle, ERP (Enterprise Resource Planning -
-    Sistemas Integrados de Gestão Empresarial), correio eletrônico,
+    Sistemas Integrados de GestÃ£o Empresarial), correio eletrÃ´nico,
     LDAP, etc...
 	</p>
 	<p>
-    Durante três dias o estande de exibição será coordenado pelos membros do
-    projeto SliTaz. Serão oferecidas demonstrações, inclusive criação de
-    mídias USB inicializáveis (LiveUSB) e cdroms (LiveCD). O LiveCD
-    personalizado para a LinuxDays conterá uma coleção de programas
-    voltados para o uso móvel. A sala de exibições também oferecerá um
-    fórum e estaremos lá para responder qualquer pergunta. Sintam-se
-    convidados a nos visitar! Maiores informações em
+    Durante trÃªs dias o estande de exibiÃ§Ã£o serÃ¡ coordenado pelos membros do
+    projeto SliTaz. SerÃ£o oferecidas demonstraÃ§Ãµes, inclusive criaÃ§Ã£o de
+    mÃ­dias USB inicializÃ¡veis (LiveUSB) e cdroms (LiveCD). O LiveCD
+    personalizado para a LinuxDays conterÃ¡ uma coleÃ§Ã£o de programas
+    voltados para o uso mÃ³vel. A sala de exibiÃ§Ãµes tambÃ©m oferecerÃ¡ um
+    fÃ³rum e estaremos lÃ¡ para responder qualquer pergunta. Sintam-se
+    convidados a nos visitar! Maiores informaÃ§Ãµes em
 	<a href="http://labs.slitaz.org/wiki/events/2009-linuxdays">SliTaz Labs</a>
-	e no site da convenção: <a href="http://2009.linuxdays.ch/">2009.linuxdays.ch</a>.
+	e no site da convenÃ§Ã£o: <a href="http://2009.linuxdays.ch/">2009.linuxdays.ch</a>.
 	</p>
     </li>
 
-	<li><strong>16 Abr 2009 - Lançamento do SliTaz GNU/Linux 2.0</strong><br />
-	O projeto SliTaz anuncia orgulhosamente o lançamento da nova versão estável da
-	distribuição - SliTaz GNU/Linux 2.0 -, resultado de um ano de trabalho em
-	comunidade. Esta nova versão fornece um sistema operacional super leve, rápido,
-	estável e escalonável. Fornece, também, um ambiente desktop completo
-	em uma imagem ISO com menos de 30 mb, aplicativos necessários para um um
-	servidor confiável e robusto e cerca de 1400 pacotes facilmentes instaláveis
-	com alguns cliques de mouse. Além disso, oferece a montagem automática de partições
-	(inclusive NTFS), suporte a wifi, interface que respeita os padrões Freedesktop.org
+	<li><strong>16 Abr 2009 - LanÃ§amento do SliTaz GNU/Linux 2.0</strong><br />
+	O projeto SliTaz anuncia orgulhosamente o lanÃ§amento da nova versÃ£o estÃ¡vel da
+	distribuiÃ§Ã£o - SliTaz GNU/Linux 2.0 -, resultado de um ano de trabalho em
+	comunidade. Esta nova versÃ£o fornece um sistema operacional super leve, rÃ¡pido,
+	estÃ¡vel e escalonÃ¡vel. Fornece, tambÃ©m, um ambiente desktop completo
+	em uma imagem ISO com menos de 30 mb, aplicativos necessÃ¡rios para um um
+	servidor confiÃ¡vel e robusto e cerca de 1400 pacotes facilmentes instalÃ¡veis
+	com alguns cliques de mouse. AlÃ©m disso, oferece a montagem automÃ¡tica de partiÃ§Ãµes
+	(inclusive NTFS), suporte a wifi, interface que respeita os padrÃµes Freedesktop.org
 	(arrastar e soltar), boot via rede com o gPXE e o
-	<a href="http://boot.slitaz.org/">boot.slitaz.org</a>, detecção automática de
-	dispositivos USB e PCI, interfaces gráficas para gerenciamento de pacotes e
-	para a central de controle, além de várias ferramentas gráficas para o
-	gerenciamento geral da distribuição. A criação de mídias USB inicializáveis
+	<a href="http://boot.slitaz.org/">boot.slitaz.org</a>, detecÃ§Ã£o automÃ¡tica de
+	dispositivos USB e PCI, interfaces grÃ¡ficas para gerenciamento de pacotes e
+	para a central de controle, alÃ©m de vÃ¡rias ferramentas grÃ¡ficas para o
+	gerenciamento geral da distribuiÃ§Ã£o. A criaÃ§Ã£o de mÃ­dias USB inicializÃ¡veis
 	e variantes do LiveCD foi simplificada e melhorada. O LiveCD base inclui
 	o Firefox 3.0.8, gFTP, LostIRC, ePDFView, mtPaint, Transmission, Osmo e
-	Alsaplayer. A documentação do website é atualizada e pode-se ler as
-	<a href="../doc/releases/2.0/relnotes.pt.html">notas de lançamento</a> que
-	estão incluidas na distribuição para maiores detalhes sobre esta versão
-	estável. O SliTaz GNU/Linux 2.0 pode ser <a href="../get/">obtido</a> a
+	Alsaplayer. A documentaÃ§Ã£o do website Ã© atualizada e pode-se ler as
+	<a href="../doc/releases/2.0/relnotes.pt.html">notas de lanÃ§amento</a> que
+	estÃ£o incluidas na distribuiÃ§Ã£o para maiores detalhes sobre esta versÃ£o
+	estÃ¡vel. O SliTaz GNU/Linux 2.0 pode ser <a href="../get/">obtido</a> a
 	partir de um dos mirrors oficiais do projeto.</li>
 
 	<li><strong>27 Mar 2009 - Labs e novos mirrors</strong><br />
-	Buscando continuadamente melhorias na distribuição e nos serviços que oferecemos,
-	anunciamos o lançamento do <a href="http://labs.slitaz.org/">SliTaz Labs</a>.
-	Esta é uma plataforma que torna possível aos participantes do projeto
+	Buscando continuadamente melhorias na distribuiÃ§Ã£o e nos serviÃ§os que oferecemos,
+	anunciamos o lanÃ§amento do <a href="http://labs.slitaz.org/">SliTaz Labs</a>.
+	Esta Ã© uma plataforma que torna possÃ­vel aos participantes do projeto
 	colaborarem de forma mais efetiva, reportando bugs ou solicitando novas
 	funcionalidades. Cada <a href="http://labs.slitaz.org/projects">projeto</a>
 	possui uma wiki, um sistema de controle de bugs,
-	<a href="http://labs.slitaz.org/news">notícias</a>, etc. O SliTaz Labs
-	fornece uma visão geral das atividades de um determinado projeto e permite
-	acompanhar as atualizações referentes a ele. Você pode se registrar para
-	participar e deixar seu comentário. Também anunciamos dois novos mirrors:
-	na suiça, hospedado por <a href="http://mirror.switch.ch/">SWITCHmirror</a>
+	<a href="http://labs.slitaz.org/news">notÃ­cias</a>, etc. O SliTaz Labs
+	fornece uma visÃ£o geral das atividades de um determinado projeto e permite
+	acompanhar as atualizaÃ§Ãµes referentes a ele. VocÃª pode se registrar para
+	participar e deixar seu comentÃ¡rio. TambÃ©m anunciamos dois novos mirrors:
+	na suiÃ§a, hospedado por <a href="http://mirror.switch.ch/">SWITCHmirror</a>
 	(10 Gbits/s), e na China, hospedado por <a href="http://www.lupaworld.com">LupaWorld</a>.
 	</li>
 
-	<li><strong>28 Fev 2009 - Nova versão cooking</strong><br />
-	Abrindo caminho para o próximo lançamento estável, o projeto SliTaz
-	publica uma nova versão cooking (de testes) que traz várias correções de
-	bugs, atualizações e diversas melhorias. A auto-detecção de dispositivos
-	PCI/USB agora é possibilitada pelo aplicativo Tazhw e firmwares podem ser
-	instalados em um clique por uma interface gráfica. O aplicativo Tazndis
-	também ganhou uma interface simples porém amigável para que você possa
-	instalar e gerenciar drivers para dispositivos que só possuem versão para
-	Windows. O gerenciador gráfico de pacotes está muito mais fácil de usar,
-	mídias LiveUSB podem ser criadas sem complicação por meio de um utilitário
-	gráfico. O Netbox agora mostra todas as interfaces de rede e o novo Wifibox
+	<li><strong>28 Fev 2009 - Nova versÃ£o cooking</strong><br />
+	Abrindo caminho para o prÃ³ximo lanÃ§amento estÃ¡vel, o projeto SliTaz
+	publica uma nova versÃ£o cooking (de testes) que traz vÃ¡rias correÃ§Ãµes de
+	bugs, atualizaÃ§Ãµes e diversas melhorias. A auto-detecÃ§Ã£o de dispositivos
+	PCI/USB agora Ã© possibilitada pelo aplicativo Tazhw e firmwares podem ser
+	instalados em um clique por uma interface grÃ¡fica. O aplicativo Tazndis
+	tambÃ©m ganhou uma interface simples porÃ©m amigÃ¡vel para que vocÃª possa
+	instalar e gerenciar drivers para dispositivos que sÃ³ possuem versÃ£o para
+	Windows. O gerenciador grÃ¡fico de pacotes estÃ¡ muito mais fÃ¡cil de usar,
+	mÃ­dias LiveUSB podem ser criadas sem complicaÃ§Ã£o por meio de um utilitÃ¡rio
+	grÃ¡fico. O Netbox agora mostra todas as interfaces de rede e o novo Wifibox
 	conecta-se a redes sem fio, gerencia as redes favoritas e configura o driver
-	da placa tanto manualmente quanto pelo Tazhw. A área de trabalho agora possui
-	um aplicativo que habilita ou desabilita aplicações iniciadas juntamente
-	com a sessão do Openbox e que, em conjunto com o Ivman, provê um sistema de
-	notificações leve. <a href="../get/#cooking">Faça o download da iso aqui.</a>
+	da placa tanto manualmente quanto pelo Tazhw. A Ã¡rea de trabalho agora possui
+	um aplicativo que habilita ou desabilita aplicaÃ§Ãµes iniciadas juntamente
+	com a sessÃ£o do Openbox e que, em conjunto com o Ivman, provÃª um sistema de
+	notificaÃ§Ãµes leve. <a href="../get/#cooking">FaÃ§a o download da iso aqui.</a>
 	</li>
 </ul>
 

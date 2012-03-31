@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt">
 <head>
     <title>SliTaz - Pacotes (programas)</title>
-    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="SliTaz GNU/Linux LiveCD" />
     <meta name="keywords" lang="pt" content="sistema, livre, gnu, linux, software opensource, livecd LINUX na RAM" />
     <meta name="robots" content="index, follow, all" />
@@ -23,25 +23,16 @@
 	<div id="block_info">
 		<h4>Pacotes</h4>
 		<p>
-			Esta parte do site permite a você ter acesso a todos os 
-			pacotes de programas disponíveis no mirror do SliTaz. 
-			Todos os pacotes são instaláveis via o gerenciador de
+			Esta parte do site permite a vocÃª ter acesso a todos os 
+			pacotes de programas disponÃ­veis no mirror do SliTaz. 
+			Todos os pacotes sÃ£o instalÃ¡veis via o gerenciador de
 			pacotes Tazpkg usando o comando <code>tazpkg get-install 
 			nome-do-pacote</code>.
 		</p>
 	</div>
 </div>
 
-<!-- Language -->
-<div id="lang">
-	<a href="../../i18n.php">
-		<img src="../../images/locale.png" alt="locale.png" /></a>
-	<a href="../../de/packages/">Deutsch</a>
-	<a href="../../en/packages/">English</a>
-	<a href="../../es/packages/">Español</a>
-	<a href="../../fr/packages/">Français</a>
-	<a href="../../cn/packages/">Chinese</a>
-</div>
+<?php include("../../lib/lang.php"); ?>
 
 <!-- Content -->
 <div id="content">
@@ -58,9 +49,9 @@
 		Buscar o:
 		<select name="object">
 			<option value="Package">Pacote</option>
-			<option value="Desc">Descrição</option>
+			<option value="Desc">DescriÃ§Ã£o</option>
 			<option value="Tags">Tags</option>
-			<option value="Depends">Dependência</option>
+			<option value="Depends">DependÃªncia</option>
 			<option value="BuildDepends">BuildDepends</option>
 			<option value="File">Arquivo</option>
 			<option value="File_list">Lista de Arquivos</option>
@@ -89,13 +80,13 @@
 		>http://mirror.slitaz.org/packages/</a>
 </div>
 
-<h2>Documentação</h2>
+<h2>DocumentaÃ§Ã£o</h2>
 <p>
-	O projeto SliTaz fornece <a href="http://doc.slitaz.org/">documentação</a>
-	detalhada para permitir que você aprenda como instalar e gerenciar 
-	pacotes no seu SliTaz distribuição GNU / Linux. Os membros do 
-	<a href="http://forum.slitaz.org/">fórum</a> de apoio irá ajudá-lo 
-	em caso de problemas e também é o lugar para pedir um novo pacote.
+	O projeto SliTaz fornece <a href="http://doc.slitaz.org/">documentaÃ§Ã£o</a>
+	detalhada para permitir que vocÃª aprenda como instalar e gerenciar 
+	pacotes no seu SliTaz distribuiÃ§Ã£o GNU / Linux. Os membros do 
+	<a href="http://forum.slitaz.org/">fÃ³rum</a> de apoio irÃ¡ ajudÃ¡-lo 
+	em caso de problemas e tambÃ©m Ã© o lugar para pedir um novo pacote.
 </p>
 
 <!-- End of content -->

@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt">
 <head>
     <title>SliTaz - Procurar</title>
-    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="SliTaz GNU/Linux custom search engine" />
     <meta name="keywords" lang="pt" content="sistema, livre, gnu, linux, software opensource, livecd LINUX na RAM" />
     <meta name="author" content="Claudinei Pereira" />
@@ -20,10 +20,10 @@
 	<div id="block_info">
 		<h4>Procurar</h4>
 		<p>
-			Esta página permite a você buscar em todo o site do SliTaz 
+			Esta pÃ¡gina permite a vocÃª buscar em todo o site do SliTaz 
 			GNU/Linux, nos arquivos da <a href="mailing-list.php">Lista 
-			de Discussão</a> e também no <a href="http://forum.slitaz.org">Fórum</a>.
-			Esta página foi criada para o SliTaz pelo sistema de buscas
+			de DiscussÃ£o</a> e tambÃ©m no <a href="http://forum.slitaz.org">FÃ³rum</a>.
+			Esta pÃ¡gina foi criada para o SliTaz pelo sistema de buscas
 			personalizadas Google Co-op.
 		</p>
 	</div>

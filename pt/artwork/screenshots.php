@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt">
 <head>
     <title>SliTaz (pt) - Screenshots</title>
-    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="SliTaz GNU/Linux project artwok images logos" />
     <meta name="keywords" lang="pt" content="sobre slitaz, gnu, linux, mini distro, livecd" />
     <meta name="robots" content="index, follow, all" />
@@ -26,9 +26,9 @@
 		<h4>Screenshots</h4>
 		<p>
 			Imagens dizem mais que palavras... Veja algumas
-			capturas de tela das versões estáveis e de testes
-			lancádas até hoje. Você pode procurar, discutir e
-			compartilhar suas próprias capturas.
+			capturas de tela das versÃµes estÃ¡veis e de testes
+			lancÃ¡das atÃ© hoje. VocÃª pode procurar, discutir e
+			compartilhar suas prÃ³prias capturas.
 		</p>
 		<p>
 			<img src="../../images/users.png" alt="users.png" />
@@ -38,15 +38,7 @@
 	</div>
 </div>
 
-<!-- Language -->
-<div id="lang">
-	<a href="../../i18n.php">
-		<img src="../../images/locale.png" alt="locale.png" /></a>
-	<a href="../../de/artwork/screenshots.php">Deutsch</a>
-	<a href="../../en/artwork/screenshots.php">English</a>
-	<a href="../../fr/artwork/screenshots.php">Français</a>
-	<a href="../../cn/artwork/screenshots.php">Chinese</a>
-</div>
+<?php include("../../lib/lang.php"); ?>
 
 <!-- Content -->
 <div id="content">

@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt">
 <head>
 	<title>SliTaz - Variantes do LiveCD</title>
-	<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="description" content="SliTaz GNU/Linux LiveCD flavors" />
 	<meta name="keywords" lang="pt" content="slitaz flavor" />
 	<meta name="author" content="Claudinei Pereira" />
@@ -20,37 +20,29 @@
 	<div id="block_info">
 		<h4>Obtenha as Variantes</h4>
 		<p>
-			O sistema de variantes do LiveCD é uma maneira simples de a
+			O sistema de variantes do LiveCD Ã© uma maneira simples de a
 			comunidade gerar imagens ISO para certas tarefas, oferecendo
-			uma seleção específica de pacotes. Há duas formas de se 
+			uma seleÃ§Ã£o especÃ­fica de pacotes. HÃ¡ duas formas de se 
 			utilizar variantes: usar uma feita pela comunidade ou criar
-			a sua própria.
+			a sua prÃ³pria.
 		</p>
 	</div>
 </div>
 
-<!-- Language -->
-<div id="lang">
-	<a href="/i18n.php">
-		<img src="/images/locale.png" alt="locale.png" /></a>
-	<a href="../../de/get/flavors.php">Deutsch</a>
-	<a href="../../en/get/flavors.php">English</a>
-	<a href="../../fr/get/flavors.php">Français</a>
-	<a href="../../cn/get/flavors.php">Chinese</a>
-</div>
+<?php include("../../lib/lang.php"); ?>
 
 <!-- Content -->
 <div id="content">
 
-<h2>LiveCD ao gosto do freguês</h2>
+<h2>LiveCD ao gosto do freguÃªs</h2>
 
 <p>
-	Por conveniência, o time do SliTaz fornece algumas variantes em formato ISO, 
-	baseadas na versão de testes mas nem sempre sincronizadas com a última versão.
-	A variante <em>loram</em> pode iniciar o SliTaz em máquinas de poucos recursos,
-	isto é, 80 MB de RAM. A <em>loram-cdrom</em> necessita de apenas 16 MB e pode
-	ser ejetável e/ou usar o drive de cdrom e a <em>loram-cdrom-sqfs</em> pode
-	inicializar com apenas 16 MB e uma pequena memória swap, mas já não pode ser 
+	Por conveniÃªncia, o time do SliTaz fornece algumas variantes em formato ISO, 
+	baseadas na versÃ£o de testes mas nem sempre sincronizadas com a Ãºltima versÃ£o.
+	A variante <em>loram</em> pode iniciar o SliTaz em mÃ¡quinas de poucos recursos,
+	isto Ã©, 80 MB de RAM. A <em>loram-cdrom</em> necessita de apenas 16 MB e pode
+	ser ejetÃ¡vel e/ou usar o drive de cdrom e a <em>loram-cdrom-sqfs</em> pode
+	inicializar com apenas 16 MB e uma pequena memÃ³ria swap, mas jÃ¡ nÃ£o pode ser 
 	ejetada.
 </p>
 
@@ -60,24 +52,24 @@
 
 <h3>Obtendo e gerando uma variante</h3>
 <p>
-	Uma <em>variante</em> é um arquivo (.flavor) que gera uma variante especial.
-	A ferramenta gráfica Tazlitobox pode criar uma variante em poucos cliques do
+	Uma <em>variante</em> Ã© um arquivo (.flavor) que gera uma variante especial.
+	A ferramenta grÃ¡fica Tazlitobox pode criar uma variante em poucos cliques do
 	mouse. O <a href="http://hg.slitaz.org/tazlito/raw-file/tip/doc/tazlito.pt_BR.html">manual do Tazlito</a> 
-	e a <a href="http://doc.slitaz.org/pt:handbook:genlivecd">documentação</a> fornecem
-	instruções detalhadas para a geração de variantes. Na linha de comando, você 
-	pode obter uma lista de variantes disponíveis via <code>tazlito list-flavors</code>.
+	e a <a href="http://doc.slitaz.org/pt:handbook:genlivecd">documentaÃ§Ã£o</a> fornecem
+	instruÃ§Ãµes detalhadas para a geraÃ§Ã£o de variantes. Na linha de comando, vocÃª 
+	pode obter uma lista de variantes disponÃ­veis via <code>tazlito list-flavors</code>.
 </p>
 
-<h3>Crie e compartilhe sua própria variante</h3>
+<h3>Crie e compartilhe sua prÃ³pria variante</h3>
 <p>
-	As versões estável e de testes oferecem a variante <em>core</em> no mirror,
-	que pode ser usada como base para criar sua própria variante. A documentação
-	no Manual SliTaz oferece todas as instruções necessárias para
-	<a href="http://doc.slitaz.org/pt:handbook:genlivecd">criar sua própria variante do LiveCD</a>.
+	As versÃµes estÃ¡vel e de testes oferecem a variante <em>core</em> no mirror,
+	que pode ser usada como base para criar sua prÃ³pria variante. A documentaÃ§Ã£o
+	no Manual SliTaz oferece todas as instruÃ§Ãµes necessÃ¡rias para
+	<a href="http://doc.slitaz.org/pt:handbook:genlivecd">criar sua prÃ³pria variante do LiveCD</a>.
 </p>
 <p>
-	Se você criou sua própria variante, pode envia-la para a 
-	<a href="../mailing-list.php">lista de discussão</a> para que ela seja testada
+	Se vocÃª criou sua prÃ³pria variante, pode envia-la para a 
+	<a href="../mailing-list.php">lista de discussÃ£o</a> para que ela seja testada
 	e incluida nas variantes oficiais. O sistema de variantes pode ser comparado
 	ao de pacotes - cada variante possui um mantenedor.
 </p>

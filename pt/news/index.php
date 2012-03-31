@@ -2,8 +2,8 @@
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt">
 <head>
-    <title>SliTaz - Arquivo de notícias</title>
-    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <title>SliTaz - Arquivo de notÃ­cias</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="SliTaz news archives info release" />
     <meta name="keywords" lang="pt" content="sistema, livre, gnu, linux, opensource software, livecd na RAM" />
     <meta name="robots" content="index, follow, all" />
@@ -21,15 +21,15 @@
    	<?php include("../../lib/html/nav.pt.html"); ?>
    	<!-- Information/image -->
     <div id="block_info">
-		<h4>Arquivos de notícias</h4>
+		<h4>Arquivos de notÃ­cias</h4>
 		<p>
-            As notícias do site arquivadas por ano. Note que alguns
-            links podem estar quebrados devido a mudanças na estrutura
-            do site (principalmente a parte da documentação que foi 
-            movida para domínio próprio)
+            As notÃ­cias do site arquivadas por ano. Note que alguns
+            links podem estar quebrados devido a mudanÃ§as na estrutura
+            do site (principalmente a parte da documentaÃ§Ã£o que foi 
+            movida para domÃ­nio prÃ³prio)
 		</p>
 		<p>
-			<img src="../../images/news.png" alt="[ Notícias]" /> 
+			<img src="../../images/news.png" alt="[ NotÃ­cias]" /> 
 			<a href="2008.php">2008</a> | 
             <a href="2009.php">2009</a> | 
             <a href="2010.php">2010</a> |
@@ -46,25 +46,25 @@
 <ul>
 	<li><strong>31 May 2011 - Novo Cooking (20110329)</strong>
 	<p>
-		Os desenvolvedores do SliTaz anunciam o lançamento de uma nova versão
+		Os desenvolvedores do SliTaz anunciam o lanÃ§amento de uma nova versÃ£o
 		de testes (cooking). Os pacotes foram recompilados e otimizados para
-		a arquitetura i486 pelo Cookutils, a nova geração das ferramentas de
-		criação de pacotes da distribuição. O servidor de compilação agora
-		possui uma amigável interface web que funciona por padrão em qualquer
-		instalação do SliTaz.
+		a arquitetura i486 pelo Cookutils, a nova geraÃ§Ã£o das ferramentas de
+		criaÃ§Ã£o de pacotes da distribuiÃ§Ã£o. O servidor de compilaÃ§Ã£o agora
+		possui uma amigÃ¡vel interface web que funciona por padrÃ£o em qualquer
+		instalaÃ§Ã£o do SliTaz.
 	</p>
 	<p>
-		A inicialização foi melhorada e a configuração no primeiro boot foi
-		simplificada. Este lançamento traz o TazPanel, uma interface web que
-		centraliza a configuração do sistema e gerenciamento de pacotes,
-		substituindo as antigas caixas de diálogo da distribuição e podendo,
-		inclusive, ser utilizada em conexões remotas.
+		A inicializaÃ§Ã£o foi melhorada e a configuraÃ§Ã£o no primeiro boot foi
+		simplificada. Este lanÃ§amento traz o TazPanel, uma interface web que
+		centraliza a configuraÃ§Ã£o do sistema e gerenciamento de pacotes,
+		substituindo as antigas caixas de diÃ¡logo da distribuiÃ§Ã£o e podendo,
+		inclusive, ser utilizada em conexÃµes remotas.
 	</p>
 	<p>
-		O sistema gráfico agora suporta renderização direta (DRI), então os
+		O sistema grÃ¡fico agora suporta renderizaÃ§Ã£o direta (DRI), entÃ£o os
 		pacotes libdrm, linux-drm e linux-agp passaram a fazer parte da ISO
-		padrão. Isto adicionou 1 MB ao sistema de arquivos comprimido, porém
-		a nova forma de compilação de pacotes economiza espaço, o que manteve
+		padrÃ£o. Isto adicionou 1 MB ao sistema de arquivos comprimido, porÃ©m
+		a nova forma de compilaÃ§Ã£o de pacotes economiza espaÃ§o, o que manteve
 		o tamanho da ISO em apenas 35 MB! Download:
 		<a href="http://mirror.slitaz.org/iso/cooking/slitaz-cooking.iso">
 			slitaz-cooking.iso</a>
@@ -72,27 +72,27 @@
 	</li>
 	
 	<li><strong>29 Mar 2011 - Novo Cooking (20110329)</strong>	
-	<p>Os desenvolvedores do SliTaz anunciam o lançamento de uma nova ISO
-	da versão Cooking (de testes), que conta com mais de 2900 pacotes
-	nos repositórios. Todos os pacotes foram recompilados utilizando
-	as ferramentas atualizadas da distribuição, disponíveis no Tazwok.
+	<p>Os desenvolvedores do SliTaz anunciam o lanÃ§amento de uma nova ISO
+	da versÃ£o Cooking (de testes), que conta com mais de 2900 pacotes
+	nos repositÃ³rios. Todos os pacotes foram recompilados utilizando
+	as ferramentas atualizadas da distribuiÃ§Ã£o, disponÃ­veis no Tazwok.
 	A ISO contem o Kernel Linux 2.6.37 compilado com a glibc 2.13, o binutils
-	2.21 e o gcc 2.5.2. O LiveCD inclui o Midori 0.3.3; o tazpkg possui tradução
-	completa para o francês, podendo ser agora traduzido em outras línguas;
-	o tazwok foi inteiramente reescrito e agora é possível recompilar o SliTaz
-	a partir dos fontes utilizando-se qualquer imagem ISO. Este lançamento
-	é o primeiro visando a próxima versão estável 4.0.</p>
-	<p>Muito trabalho foi feito desde a versão cooking anterior, lançada em novembro:
-	mais de 2200 mudanças ocorreram no wok (repositórios de pacotes) e várias
-	outras nas ferramentas próprias da distribuição. A comunidade do SliTaz
-	cresceu recentemente: neste último ano, houveram tantas mudanças
-	quanto nos 4 anos anteriores, ou seja, em toda a história da distribuição. 
-	Entretanto, quantidade não é suficiente para garantir qualidade. Por isso
-	precisamos que você teste esta nova ISO e nos informe sobre eventuais bugs
-	podendo, inclusive, ajudar a resolve-los antes do lançamento da versão 4.0. 
-	Você pode nos contatar os via IRC, lista de discussão, fórum ou mandando um email 
-	diretamente para os mantenedores de pacotes. Esperamos que você goste deste novo 
-	<a href="get/">lançamento!</a></p>
+	2.21 e o gcc 2.5.2. O LiveCD inclui o Midori 0.3.3; o tazpkg possui traduÃ§Ã£o
+	completa para o francÃªs, podendo ser agora traduzido em outras lÃ­nguas;
+	o tazwok foi inteiramente reescrito e agora Ã© possÃ­vel recompilar o SliTaz
+	a partir dos fontes utilizando-se qualquer imagem ISO. Este lanÃ§amento
+	Ã© o primeiro visando a prÃ³xima versÃ£o estÃ¡vel 4.0.</p>
+	<p>Muito trabalho foi feito desde a versÃ£o cooking anterior, lanÃ§ada em novembro:
+	mais de 2200 mudanÃ§as ocorreram no wok (repositÃ³rios de pacotes) e vÃ¡rias
+	outras nas ferramentas prÃ³prias da distribuiÃ§Ã£o. A comunidade do SliTaz
+	cresceu recentemente: neste Ãºltimo ano, houveram tantas mudanÃ§as
+	quanto nos 4 anos anteriores, ou seja, em toda a histÃ³ria da distribuiÃ§Ã£o. 
+	Entretanto, quantidade nÃ£o Ã© suficiente para garantir qualidade. Por isso
+	precisamos que vocÃª teste esta nova ISO e nos informe sobre eventuais bugs
+	podendo, inclusive, ajudar a resolve-los antes do lanÃ§amento da versÃ£o 4.0. 
+	VocÃª pode nos contatar os via IRC, lista de discussÃ£o, fÃ³rum ou mandando um email 
+	diretamente para os mantenedores de pacotes. Esperamos que vocÃª goste deste novo 
+	<a href="get/">lanÃ§amento!</a></p>
 	</li>
 </ul>
 

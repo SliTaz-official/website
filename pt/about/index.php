@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt">
 <head>
     <title>SliTaz - Sobre o Projeto</title>
-    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="SliTaz GNU/Linux project information overview" />
     <meta name="keywords" lang="pt" content="sobre slitaz, gnu, linux, mini distro, livecd" />
     <meta name="robots" content="index, follow, all" />
@@ -25,51 +25,42 @@
 	<div id="block_info">
 		<h4>Sobre</h4>
 		<p>
-			Pequeno, rápido, estável e simples de usar! 
+			Pequeno, rÃ¡pido, estÃ¡vel e simples de usar! 
 		</p>
 		<ul>
-			<li><a href="#intro">Introdução.</a></li>
+			<li><a href="#intro">IntroduÃ§Ã£o.</a></li>
 			<li><a href="#overview">Resumo.</a></li>
 			<li><a href="#website">Website &amp; i18n.</a></li>
 			<li><a href="#reviews">Resenhas.</a></li>
-			<li><a href="../asso/">Associação.</a></li>
+			<li><a href="../asso/">AssociaÃ§Ã£o.</a></li>
 		</ul>
 	</div>
 </div>
 
-<!-- Languages -->
-<div id="lang">
-	<a href="../../i18n.php">
-		<img src="../../images/locale.png" alt="locale.png" /></a>
-	<a href="../../de/about/">Deutsch</a>
-	<a href="../../en/about/">English</a>
-	<a href="../../es/about/">Español</a>
-	<a href="../../fr/about/">Français</a>
-	<a href="../../cn/about/">Chinese</a>
-</div>
+<?php include("../../lib/lang.php"); ?>
 
 <!-- Content -->
 <div id="content">
 
 <a name ="intro"></a>
-<h2>Introdução ao projeto</h2>
+<h2>IntroduÃ§Ã£o ao projeto</h2>
 <p>
-O SliTaz GNU/Linux é um sistema operacional livre, leve, rápido e estável que 
-funciona completamente carregado na memória RAM e inicia a partir de mídias 
-removíveis como um cdrom ou um Pendrive. É distribuído na forma de LiveCD, o
-que significa que se pode obter uma imagem ISO a partir do site e gravá-la em
-um cdrom do qual você pode iniciar o sistema. Quando este estiver funcionando, 
+O SliTaz GNU/Linux Ã© um sistema operacional livre, leve, rÃ¡pido e estÃ¡vel que 
+funciona completamente carregado na memÃ³ria RAM e inicia a partir de mÃ­dias 
+removÃ­veis como um cdrom ou um Pendrive. Ã‰ distribuÃ­do na forma de LiveCD, o
+que significa que se pode obter uma imagem ISO a partir do site e gravÃ¡-la em
+um cdrom do qual vocÃª pode iniciar o sistema. Quando este estiver funcionando, 
 pode-se ejetar o LiveCD e usar o drive de cd para outras tarefas. O Sistema 
-Live fornece uma distribuição gráfica completamente funcional e permite a você
-manter seus dados e configurações pessoais em mídias graváveis. O sistema pode 
-ser expandido com o gerenciador de pacotes Tazpkg e atualizações de segurança
-são fornecidas para as versões stable (estável) e cooking (testes).
+Live fornece uma distribuiÃ§Ã£o grÃ¡fica completamente funcional e permite a vocÃª
+manter seus dados e configuraÃ§Ãµes pessoais em mÃ­dias gravÃ¡veis. O sistema pode 
+ser expandido com o gerenciador de pacotes Tazpkg e atualizaÃ§Ãµes de seguranÃ§a
+sÃ£o fornecidas para as versÃµes stable (estÃ¡vel) e cooking (testes).
 </p>
 <p>
-O projeto SliTaz oferece suporte técnico gratuito aos usuários por meio da
-<a href="../mailing-list.php">Lista de Discussão</a> (lista multilingue)
-e do <a href="http://forum.slitaz.org">Fórum</a>.
-Você também pode nos contatar para maiores informações, sugestões e comentários,
+O projeto SliTaz oferece suporte tÃ©cnico gratuito aos usuÃ¡rios por meio da
+<a href="../mailing-list.php">Lista de DiscussÃ£o</a> (lista multilingue)
+e do <a href="http://forum.slitaz.org">FÃ³rum</a>.
+VocÃª tambÃ©m pode nos contatar para maiores informaÃ§Ãµes, sugestÃµes e comentÃ¡rios,
 usando a lista ou diretamente por e-mail :  &lt;devel at slitaz.org&gt;
 </p>
 
@@ -83,23 +74,23 @@ usando a lista ou diretamente por e-mail :  &lt;devel at slitaz.org&gt;
     <li>Clientes de chat, e-mail e FTP.</li>
     <li>Cliente/Servidor SSH fornecido pelo Dropbear.</li>
     <li>Banco de Dados com o SQLite.</li>
-    <li>Geração de dispositivo LiveUSB.</li>
+    <li>GeraÃ§Ã£o de dispositivo LiveUSB.</li>
     <li>Ferramentas para criar, editar ou gravar imagens de CD ou DVD.</li>
-    <li>Desktop elegante com o Openbox rodando sobre o Xorg (Servidor Gráfico).</li>
-    <li>Caixas de Diálogo gráficas nativas para utilitários de linha-de-comando.</li>
-    <li>Cerca de 3345 pacotes facilmente instaláveis a partir do mirror.</li>
-    <li>Comunidade ativa e amigável.</li>
+    <li>Desktop elegante com o Openbox rodando sobre o Xorg (Servidor GrÃ¡fico).</li>
+    <li>Caixas de DiÃ¡logo grÃ¡ficas nativas para utilitÃ¡rios de linha-de-comando.</li>
+    <li>Cerca de 3345 pacotes facilmente instalÃ¡veis a partir do mirror.</li>
+    <li>Comunidade ativa e amigÃ¡vel.</li>
 </ul>
 
 <a name="website"></a>
 <h3>Web sites &amp; i18n</h3>
 <p>
-O website do SliTaz está disponível em diferentes linguagens e é parte do 
-<a href="../../i18n.php">projeto de internacionalização</a>. A partir dele
-é possível <a href="../get/">obter</a> o LiveCD do SliTaz e nos 
-ajudar no desenvolvimento do projeto. Pode-se também consultar a 
-<a href="../doc/">documentação</a> para aprender a utilizar a 
-distribuição e configurar o sistema.
+O website do SliTaz estÃ¡ disponÃ­vel em diferentes linguagens e Ã© parte do 
+<a href="../../i18n.php">projeto de internacionalizaÃ§Ã£o</a>. A partir dele
+Ã© possÃ­vel <a href="../get/">obter</a> o LiveCD do SliTaz e nos 
+ajudar no desenvolvimento do projeto. Pode-se tambÃ©m consultar a 
+<a href="../doc/">documentaÃ§Ã£o</a> para aprender a utilizar a 
+distribuiÃ§Ã£o e configurar o sistema.
 </p>
 
 <a name="reviews"></a>
@@ -116,7 +107,7 @@ pelo suporte.
 	<li><a href="http://www.linuxjournal.com/content/spotlight-linux-slitaz-gnulinux-30"
 		>Linux Journal</a> - Por Susan Linton.</li>
 	<li><a href="http://distrowatch.com/weekly.php?issue=20100111#feature"
-		>Distrowatch</a> - Por Jesse Smith (da versão cooking anterior à versão 3.0).</li>
+		>Distrowatch</a> - Por Jesse Smith (da versÃ£o cooking anterior Ã  versÃ£o 3.0).</li>
 </ul>
 
 <h4>2.0 - Abr 2009</h4>
@@ -140,7 +131,7 @@ pelo suporte.
 	<li><a href="http://www.junauza.com/2008/03/slitaz-gnulinux-smallest-desktop-distro.html"
 		>Tech Source</a> - Por Jun Auza.</li>
 	<li><a href="http://beranger.org/index.php?page=diary&amp;2008/03/31/07/04/42-a-quick-look-over-slitaz-1-0"
-		>Planet Béranger</a> - Por Béranger.</li>
+		>Planet BÃ©ranger</a> - Por BÃ©ranger.</li>
 	<li><a href="http://kmandla.wordpress.com/2008/04/02/slitaz-10-on-450mhz-k6-2-256mb/"
 		>K.Mandla Blog</a> - Por K.Mandla.</li>
 	<li><a href="http://reddevil62-techhead.blogspot.com/2008/04/damn-minuscule-linux-first-look-at.html"

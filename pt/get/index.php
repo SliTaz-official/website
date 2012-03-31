@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt">
 <head>
     <title>SliTaz (pt) - Downloads</title>
-    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="SliTaz GNU/Linux LiveCD free download" />
     <meta name="keywords" lang="pt" content="fonte, iso, livecd, obter, livre" />
     <meta name="author" content="Claudinei Pereira" />
@@ -23,9 +23,9 @@ include("../../lib/html/header.pt.html")
 	<div id="block_info">
 		<h4>Obtenha o SliTaz</h4>
 		<p>
-			Baixe a última versão estável para fins de produção ou
-			um ambiente de trabalho sólido. Use a versão Cooking
-			para testar e nos ajudar a melhorar a distribuição.
+			Baixe a Ãºltima versÃ£o estÃ¡vel para fins de produÃ§Ã£o ou
+			um ambiente de trabalho sÃ³lido. Use a versÃ£o Cooking
+			para testar e nos ajudar a melhorar a distribuiÃ§Ã£o.
 		</p>
 		<div class="button">
 			Download:
@@ -35,19 +35,7 @@ include("../../lib/html/header.pt.html")
 	</div>
 </div>
 
-<!-- Languages -->
-<div id="lang">
-	<a href="../i18n.php">
-		<img src="../../images/locale.png" alt="locale.png" /></a>
-	<a href="../../da/get/">Dansk</a>
-	<a href="../../de/get/">Deutsch</a>
-	<a href="../../en/get/">English</a>
-	<a href="../../es/get/">Español</a>
-	<a href="../../fr/get/">Français</a>
-	<a href="../../it/get/">Italiano</a>
-	<a href="../../pt/get/">Português</a>
-	<a href="../../cn/get/">Chinese</a>
-</div>
+<?php include("../../lib/lang.php"); ?>
 
 <!-- Content -->
 <div id="content">
@@ -55,37 +43,37 @@ include("../../lib/html/header.pt.html")
 <h2>Downloads</h2>
 
 <ul>
-    <li><a href="#stable">Versão stable (estável) do LiveCD</a> -
-    Imagem ISO inicializável da versão estável mais recente.</li>
-    <li><a href="#cooking">Versão cooking (testes) do LiveCD</a> -
-    Imagem ISO inicializável da versão de testes mais recente.</li>
-	<li><a href="#floppy">Versão em disquete</a> - Disquete de boot que pode iniciar
-	a versão LiveCD, uma mídia USB, etc.</li>
+    <li><a href="#stable">VersÃ£o stable (estÃ¡vel) do LiveCD</a> -
+    Imagem ISO inicializÃ¡vel da versÃ£o estÃ¡vel mais recente.</li>
+    <li><a href="#cooking">VersÃ£o cooking (testes) do LiveCD</a> -
+    Imagem ISO inicializÃ¡vel da versÃ£o de testes mais recente.</li>
+	<li><a href="#floppy">VersÃ£o em disquete</a> - Disquete de boot que pode iniciar
+	a versÃ£o LiveCD, uma mÃ­dia USB, etc.</li>
     <li><a href="flavors.php">Variantes do LiveCD</a> - Variantes e loram.</li>
 </ul>
 
-<h3>Informações Gerais</h3>
+<h3>InformaÃ§Ãµes Gerais</h3>
 <p>
-	Esta parte do website permite a você baixar uma cópia gratuita do LiveCd do
-	SliTaz GNU/Linux ou obter os fontes das ferramentas e utilitários. Para iniciar
-	a utilização da imagem ISO do LiveCD você pode consultar a
-	<a href="../doc/">documentação</a> online. Também pode encontrar ajuda e
-	suporte no <a href="http://forum.slitaz.org/">Fórum</a>.
+	Esta parte do website permite a vocÃª baixar uma cÃ³pia gratuita do LiveCd do
+	SliTaz GNU/Linux ou obter os fontes das ferramentas e utilitÃ¡rios. Para iniciar
+	a utilizaÃ§Ã£o da imagem ISO do LiveCD vocÃª pode consultar a
+	<a href="../doc/">documentaÃ§Ã£o</a> online. TambÃ©m pode encontrar ajuda e
+	suporte no <a href="http://forum.slitaz.org/">FÃ³rum</a>.
 </p>
 
 <h3>Mirrors</h3>
 <p>
 	O SliTaz possui mirrors no Brasil oferecido pelo
-	<a href="http://www.c3sl.ufpr.br/">Centro de Computação Científica
+	<a href="http://www.c3sl.ufpr.br/">Centro de ComputaÃ§Ã£o CientÃ­fica
 	e Software Livre</a> (Agradecimentos a Carlos Carvalho, da UFPR),
-	na França, por <a href="http://www.ads-lu.com/" target="_blank">ADS</a>
-	e <a href="http://www.tuxfamily.org/">TuxFamily</a>. Na Suiça por
+	na FranÃ§a, por <a href="http://www.ads-lu.com/" target="_blank">ADS</a>
+	e <a href="http://www.tuxfamily.org/">TuxFamily</a>. Na SuiÃ§a por
 	<a href="http://mirror.switch.ch/">SWITCHmirror</a> e na China por
 	LupaWorls.
 </p>
 
 <ul>
-	<li>Suiça - Mirror hospedado por SWITCHmirror (10 Gbit/s)
+	<li>SuiÃ§a - Mirror hospedado por SWITCHmirror (10 Gbit/s)
 	<a href="http://mirror.switch.ch/ftp/mirror/slitaz/">HTTP</a> ou
 	<a href="ftp://mirror.switch.ch/mirror/slitaz/">FTP</a></li>
 
@@ -93,10 +81,10 @@ include("../../lib/html/header.pt.html")
     <a href="http://slitaz.c3sl.ufpr.br/">HTTP</a> ou
     <a href="ftp://slitaz.c3sl.ufpr.br/slitaz/">FTP</a></li>
 
-	<li>França - Mirror hospedado Mésobius (100 Mps)
+	<li>FranÃ§a - Mirror hospedado MÃ©sobius (100 Mps)
 	<a href="http://slitazmirror.linuxembarque.com">HTTP</a></li>
 
-	<li>França - Mirror hospedado TuxFamily via
+	<li>FranÃ§a - Mirror hospedado TuxFamily via
 	<a href="http://download.tuxfamily.org/slitaz/">HTTP</a> ou
 	<a href="ftp://download.tuxfamily.org/slitaz/">FTP</a></li>
 
@@ -110,21 +98,21 @@ include("../../lib/html/header.pt.html")
 	Tazpkg (gerenciador de pacotes), Tazlito (Ferramenta Live do SliTaz), Tazwok
 	(gerador de fontes), Tazusb (ferramenta LiveUSB) e os tarballs das ferramentas
 	do SliTaz podem ser baixados do mirror
-	<a href="http://www.tuxfamily.org/">TuxFamily</a>. Note que todos os utilitários
-	são instalados por padrão no SliTaz e o código fonte é comentado em inglês.
+	<a href="http://www.tuxfamily.org/">TuxFamily</a>. Note que todos os utilitÃ¡rios
+	sÃ£o instalados por padrÃ£o no SliTaz e o cÃ³digo fonte Ã© comentado em inglÃªs.
 	Baixe os fontes por
 	<a href="http://mirror.slitaz.org/sources/">HTTP</a> ou
 	<a href="http://mirror.slitaz.org/sources/">FTP</a>
 </p>
 
 <a name="stable"></a>
-<h2>Versão stable (estável) do LiveCD</h2>
+<h2>VersÃ£o stable (estÃ¡vel) do LiveCD</h2>
 <p>
-	A versão estável do SliTaz oferece um sistema operacional maduro, largamente
-	testado por uma comunidade ativa. O LiveCD base oferece uma grande seleção
-	de pacotes variados cuidadosamente integrados à distribuiçao, o que resulta
+	A versÃ£o estÃ¡vel do SliTaz oferece um sistema operacional maduro, largamente
+	testado por uma comunidade ativa. O LiveCD base oferece uma grande seleÃ§Ã£o
+	de pacotes variados cuidadosamente integrados Ã  distribuiÃ§ao, o que resulta
 	num sistema coerente e robusto.
-	<?php echo "A atual versão estável $stable_ver lançada em: $stable_rel."; ?>
+	<?php echo "A atual versÃ£o estÃ¡vel $stable_ver lanÃ§ada em: $stable_rel."; ?>
 </p>
 
 <p class="box">
@@ -135,26 +123,26 @@ include("../../lib/html/header.pt.html")
 </p>
 
 <p>
-	Uma imagem de CDROM bootável com todos os pacotes disponíveis da 
-	atual versão é gerada todos os dias. Ela também contém uma cópia do
-	website e possibilita a instalação de pacotes sem a necessidade de
-	conexão com a internet, por meio do script install.sh
+	Uma imagem de CDROM bootÃ¡vel com todos os pacotes disponÃ­veis da 
+	atual versÃ£o Ã© gerada todos os dias. Ela tambÃ©m contÃ©m uma cÃ³pia do
+	website e possibilita a instalaÃ§Ã£o de pacotes sem a necessidade de
+	conexÃ£o com a internet, por meio do script install.sh
 </p>
 
 <p class="box">
 	<img src="/images/download.png" height="48px" width="48px" alt="[ DL ]" />
-	<?php echo "Coleção dos pacotes da versão $stable_ver do SliTaz GNU/Linux ($stable_pkgs)
+	<?php echo "ColeÃ§Ã£o dos pacotes da versÃ£o $stable_ver do SliTaz GNU/Linux ($stable_pkgs)
 	- <a href='$pkgs_mirror/$stable_ver/packages-$stable_ver.iso'>packages-$stable_ver.iso</a>
 	[ <a href='$pkgs_mirror/$stable_ver/packages-$stable_ver.md5'>md5</a> ]"; ?>
 </p>
 
 <a name="cooking"></a>
-<h2>Versão cooking (testes) do LiveCD</h2>
+<h2>VersÃ£o cooking (testes) do LiveCD</h2>
 <p>
-	A versão de testes do SliTaz é constantemente desenvolvida, totalmente usável.
-	Permite a você testar as ultimas melhorias e pacotes, solicitar novas
-	funcionalidades ou reportar algum bug para nos ajudar na preparação de uma
-	versão estável.
+	A versÃ£o de testes do SliTaz Ã© constantemente desenvolvida, totalmente usÃ¡vel.
+	Permite a vocÃª testar as ultimas melhorias e pacotes, solicitar novas
+	funcionalidades ou reportar algum bug para nos ajudar na preparaÃ§Ã£o de uma
+	versÃ£o estÃ¡vel.
 </p>
 
 <p class="box">
@@ -165,17 +153,17 @@ include("../../lib/html/header.pt.html")
 </p>
 
 <p>
-Uma imagem de DVD bootável com todos os pacotes disponíveis da versão Cooking é
-gerada todos os dias. Ela também contém uma cópia do website e possibilita a
-instalação de pacotes sem a necessidade de conexão com a internet, por meio do
-script install.sh. Observação: esta imagem pode ser
-<a href="http://syslinux.zytor.com/wiki/index.php/Doc/isolinux#HYBRID_CD-ROM.2FHARD_DISK_MODE">instalada em uma mídia USB</a>,
-porém isto irá sobrescrever qualquer dado existente na mídia.
+Uma imagem de DVD bootÃ¡vel com todos os pacotes disponÃ­veis da versÃ£o Cooking Ã©
+gerada todos os dias. Ela tambÃ©m contÃ©m uma cÃ³pia do website e possibilita a
+instalaÃ§Ã£o de pacotes sem a necessidade de conexÃ£o com a internet, por meio do
+script install.sh. ObservaÃ§Ã£o: esta imagem pode ser
+<a href="http://syslinux.zytor.com/wiki/index.php/Doc/isolinux#HYBRID_CD-ROM.2FHARD_DISK_MODE">instalada em uma mÃ­dia USB</a>,
+porÃ©m isto irÃ¡ sobrescrever qualquer dado existente na mÃ­dia.
 </p>
 
 <p class="box">
 	<img src="/images/download.png" height="48px" width="48px" alt="[ DL ]" />
-	<?php echo "Coleção dos pacotes da versão Cooking do SliTaz GNU/Linux ($cooking_pkgs)
+	<?php echo "ColeÃ§Ã£o dos pacotes da versÃ£o Cooking do SliTaz GNU/Linux ($cooking_pkgs)
 	- <a href='$pkgs_mirror/cooking/packages-cooking.iso'>packages-cooking.iso</a>
 	[ <a href='$pkgs_mirror/cooking/packages-cooking.md5'>md5</a> ]"; ?>
 </p>
@@ -183,10 +171,10 @@ porém isto irá sobrescrever qualquer dado existente na mídia.
 <a name="floppy"></a>
 <h2>Disquete de boot</h2>
 <p>
-	A versão em disquete é utilizada para efetuar o boot do SliTaz em pc's antigos,
-	mesmo que não possuam unidade de CDROM. Pode-se efetuar o boot de uma instalação
-	do SliTaz feita em uma mídia USB, de um CD/DVD, do disco rígido, via lan pelo PXE
-	e até mesmo pela internet com o <a href="http://boot.slitaz.org/">gPXE</a>.
+	A versÃ£o em disquete Ã© utilizada para efetuar o boot do SliTaz em pc's antigos,
+	mesmo que nÃ£o possuam unidade de CDROM. Pode-se efetuar o boot de uma instalaÃ§Ã£o
+	do SliTaz feita em uma mÃ­dia USB, de um CD/DVD, do disco rÃ­gido, via lan pelo PXE
+	e atÃ© mesmo pela internet com o <a href="http://boot.slitaz.org/">gPXE</a>.
 </p>
 
 <p class="box">
@@ -198,8 +186,8 @@ porém isto irá sobrescrever qualquer dado existente na mídia.
 
 <p>
 	Um <a href="http://mirror.slitaz.org/floppies">
-	conjunto de imagens para disquete</a> também está disponível para pessoas
-	que não podem usar cdrom, mídias USB ou conexões ethernet
+	conjunto de imagens para disquete</a> tambÃ©m estÃ¡ disponÃ­vel para pessoas
+	que nÃ£o podem usar cdrom, mÃ­dias USB ou conexÃµes ethernet
 </p>
 
 <!-- End of content -->

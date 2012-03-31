@@ -2,8 +2,8 @@
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt">
 <head>
-    <title>SliTaz - Documentação em Português</title>
-    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <title>SliTaz - DocumentaÃ§Ã£o em PortuguÃªs</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="SliTaz GNU/Linux English documentationx part livecd tazpkg packages" />
     <meta name="keywords" lang="pt" content="sistema, livre, gnu, linux, opensource software, livecd na RAM" />
     <meta name="author" content="Claudinei Pereira" />
@@ -18,12 +18,12 @@
 	<?php include("../../lib/html/nav.pt.html"); ?>
 	<!-- Information/image -->
 	<div id="block_info">
-		<h4>Documentação em Português</h4>
+		<h4>DocumentaÃ§Ã£o em PortuguÃªs</h4>
 		<p>
-			A documentação oficial do SliTaz está disponível na
+			A documentaÃ§Ã£o oficial do SliTaz estÃ¡ disponÃ­vel na
 			wiki elaborada pela comunidade. Os manuais e um guia
-			introdutório são fornecidos por cada LiveCD do SliTaz,
-			acessíveis através da entrada "Documentação" no menu.
+			introdutÃ³rio sÃ£o fornecidos por cada LiveCD do SliTaz,
+			acessÃ­veis atravÃ©s da entrada "DocumentaÃ§Ã£o" no menu.
 		</p>
 		<ul>
 			<li><a href="http://doc.slitaz.org/pt:start">Community Wiki</a></li>
@@ -33,16 +33,7 @@
 	</div>
 </div>
 
-<!-- Language -->
-<div id="lang">
-	<a href="../../i18n.php">
-		<img src="../../images/locale.png" alt="locale.png" /></a>
-	<a href="../../de/doc/">Deutsch</a>
-	<a href="../../en/doc/">English</a>
-	<a href="../../es/doc/">Español</a>
-	<a href="../../fr/doc/">Français</a>
-	<a href="../../cn/doc/">Chinese</a>
-</div>
+<?php include("../../lib/lang.php"); ?>
 
 <!-- Content -->
 <div id="content">
@@ -51,16 +42,16 @@
 
 <p>
 	<a href="http://doc.slitaz.org/pt:handbook:start">Handbook</a> 
-	- Manual SliTaz. Utilização do LiveCD, gerenciamento de pacotes, 
-	rede ou administração do sistema e instruções específicas. Este 
-	livro é um esforço da comunidade para fornecer uma documentação de 
-	alta qualidade aos usuários do SliTaz. Ele o ajudará nos primeiros
-	passos no SliTaz GNU/Linux e mostrará como configurar o sistema
-	conforme suas necessidades e preferências.
+	- Manual SliTaz. UtilizaÃ§Ã£o do LiveCD, gerenciamento de pacotes, 
+	rede ou administraÃ§Ã£o do sistema e instruÃ§Ãµes especÃ­ficas. Este 
+	livro Ã© um esforÃ§o da comunidade para fornecer uma documentaÃ§Ã£o de 
+	alta qualidade aos usuÃ¡rios do SliTaz. Ele o ajudarÃ¡ nos primeiros
+	passos no SliTaz GNU/Linux e mostrarÃ¡ como configurar o sistema
+	conforme suas necessidades e preferÃªncias.
 </p>
 <p>
     <a href="http://doc.slitaz.org/pt:cookbook:start">Cookbook</a>
-    - Livro de Receitas. Instruções de utilização do wok e das receitas
+    - Livro de Receitas. InstruÃ§Ãµes de utilizaÃ§Ã£o do wok e das receitas
     de pacotes.
 </p>
     
@@ -69,35 +60,35 @@
     <li><a href="http://hg.slitaz.org/tazpkg/raw-file/tip/doc/tazpkg.pt_BR.html"
         >Manual Tazpkg</a> - Gerenciador de pacotes do SliTaz.</li>
     <li><a href="http://hg.slitaz.org/tazlito/raw-file/tip/doc/tazlito.pt_BR.html"
-        >Manual Tazlito</a> -  Utilitário LiveCD do SliTaz.</li>
+        >Manual Tazlito</a> -  UtilitÃ¡rio LiveCD do SliTaz.</li>
     <li><a href="http://hg.slitaz.org/tazusb/raw-file/tip/doc/tazusb.pt_BR.html"
-        >Manual TazUSB</a> -  Utilitário LiveUSB do SliTaz.</li>
+        >Manual TazUSB</a> -  UtilitÃ¡rio LiveUSB do SliTaz.</li>
 	<li><a href="http://hg.slitaz.org/cookutils/raw-file/tip/doc/cookutils.pt_BR.html"
         >Manual Cookutils</a> -  Criador de Pacotes do SliTaz.</li>
 </ul>
 
-<h2>Nova Documentação Wiki</h2>    
+<h2>Nova DocumentaÃ§Ã£o Wiki</h2>    
 <p>
-	Toda a documentação do SliTaz foi movida: os manuais, guias e 
-	outros recursos agora estão disponíveis em
+	Toda a documentaÃ§Ã£o do SliTaz foi movida: os manuais, guias e 
+	outros recursos agora estÃ£o disponÃ­veis em
 	<a href="http://doc.slitaz.org/pt:start">doc.slitaz.org</a>
 </p>
 
-<h2>Notas de Lançamento</h2>
+<h2>Notas de LanÃ§amento</h2>
 <p>
-	As notas de lançamento do SliTaz fornecem informações detalhadas 
-	sobre a versão estável e dão dicas úteis que o ajudarão a começar
-	a usar o sistema. No LiveCD base as notas de lançamentos estão 
-	disponíves no menu "Documentação"
+	As notas de lanÃ§amento do SliTaz fornecem informaÃ§Ãµes detalhadas 
+	sobre a versÃ£o estÃ¡vel e dÃ£o dicas Ãºteis que o ajudarÃ£o a comeÃ§ar
+	a usar o sistema. No LiveCD base as notas de lanÃ§amentos estÃ£o 
+	disponÃ­ves no menu "DocumentaÃ§Ã£o"
 </p>
 
 <ul>
 	<li><a href="releases/3.0/relnotes.pt.html">SliTaz GNU/Linux 3.0 - 
-		Notas de Lançamento</a></li>
+		Notas de LanÃ§amento</a></li>
 	<li><a href="releases/2.0/relnotes.pt.html">SliTaz GNU/Linux 2.0 - 
-		Notas de Lançamento</a></li>
+		Notas de LanÃ§amento</a></li>
 	<li><a href="releases/1.0/relnotes.pt.html">SliTaz GNU/Linux 1.0 - 
-		Notas de Lançamento</a></li>
+		Notas de LanÃ§amento</a></li>
 </ul>
 
 <!-- End of content -->

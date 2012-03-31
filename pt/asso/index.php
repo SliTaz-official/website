@@ -2,8 +2,8 @@
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt">
 <head>
-    <title>SliTaz - Associação</title>
-    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <title>SliTaz - AssociaÃ§Ã£o</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="SliTaz GNU/Linux asso non-profit donate" />
     <meta name="keywords" lang="pt" content="sobre slitaz, gnu, linux, mini distro, livecd" />
     <meta name="author" content="Claudinei Pereira" />
@@ -20,112 +20,104 @@
 
     <!-- Information/image -->
 	<div id="block_info">
-		<h4>Associação</h4>
+		<h4>AssociaÃ§Ã£o</h4>
 		<p>
-			A Associação SliTaz GNU/Linux é uma entidade sem fins 
+			A AssociaÃ§Ã£o SliTaz GNU/Linux Ã© uma entidade sem fins 
 			lucrativos que mantem e gerencia o projeto, sendo sua 
-			missão assegurar-se da durabilidade do mesmo. Ela provê a 
-			infraestrutura e serviços profissionais aos usuários, 
-			desenvolvedores e empresas que utilizam a distribuição.
+			missÃ£o assegurar-se da durabilidade do mesmo. Ela provÃª a 
+			infraestrutura e serviÃ§os profissionais aos usuÃ¡rios, 
+			desenvolvedores e empresas que utilizam a distribuiÃ§Ã£o.
 		</p>
-        <p>Ajude o projeto por meio de pequenas doações:</p>
+        <p>Ajude o projeto por meio de pequenas doaÃ§Ãµes:</p>
         <?php include("../../lib/html/donate.html"); ?>
     </div>
 </div>
 
-<!-- Languages -->
-<div id="lang">
-	<a href="/i18n.php">
-		<img src="/images/locale.png" alt="[ Locale ]" /></a>
-	<a href="/en/asso/">English</a>
-	<a href="/es/asso/">Español</a>
-	<a href="/fr/asso/">Français</a>
-	<a href="/pt/asso/">Português</a>
-</div>
+<?php include("../../lib/lang.php"); ?>
 
 <!-- Content -->
 <div id="content">
 
-<h2>Infraestrutura e Serviços</h2>
+<h2>Infraestrutura e ServiÃ§os</h2>
 
 <ul>
-	<li><a href="#overview">Introdução.</a></li>
+	<li><a href="#overview">IntroduÃ§Ã£o.</a></li>
 	<li><a href="#goals">Objetivos Atuais.</a></li>
 	<li><a href="#members">Membros.</a></li>
 	<li><a href="#sponsors">Patrocinadores.</a></li>
-	<li><a href="#donation">Doações.</a></li>
-	<li><a href="#postal">Endereço Postal.</a></li>
+	<li><a href="#donation">DoaÃ§Ãµes.</a></li>
+	<li><a href="#postal">EndereÃ§o Postal.</a></li>
 </ul>
 
 <a name="overview"></a>
-<h3>Introdução</h3>
+<h3>IntroduÃ§Ã£o</h3>
 <p>
-O SliTaz GNU/Linux é uma organização internacional baseada na Suiça e respeita
-o código civil suiço. É formada pelo comitê e os membros, podendo ter atividade
-financeira e remuneração de seu quadro de funcionários. Os membros reunem-se
-anualmente em uma reunião geral em que se decide, por exemplo, as atividades
-da associação ou a taxa de adesão. Cada membro tem direito à voto em propostas
-individuais, pode utilizar o material da associação (cdrom, camisetas, etc) e 
+O SliTaz GNU/Linux Ã© uma organizaÃ§Ã£o internacional baseada na SuiÃ§a e respeita
+o cÃ³digo civil suiÃ§o. Ã‰ formada pelo comitÃª e os membros, podendo ter atividade
+financeira e remuneraÃ§Ã£o de seu quadro de funcionÃ¡rios. Os membros reunem-se
+anualmente em uma reuniÃ£o geral em que se decide, por exemplo, as atividades
+da associaÃ§Ã£o ou a taxa de adesÃ£o. Cada membro tem direito Ã  voto em propostas
+individuais, pode utilizar o material da associaÃ§Ã£o (cdrom, camisetas, etc) e 
 formar grupos de trabalho para promover e organizar eventos.
 </p>
 <p>
-O projeto SliTaz tem tomado grandes proporções e as demandas do mundo profissional
-tem sido mais e mais frequentes, logo a criação da associação é vista como uma
-necessidade. Escolhemos um modelo econômico que vai de encontro às necessidades
-do projeto, para que possamos fornecer um serviço sólido e de alta qualidade para
-nossos usuários e parceiros comerciais que desejam patrocinar o projeto.
+O projeto SliTaz tem tomado grandes proporÃ§Ãµes e as demandas do mundo profissional
+tem sido mais e mais frequentes, logo a criaÃ§Ã£o da associaÃ§Ã£o Ã© vista como uma
+necessidade. Escolhemos um modelo econÃ´mico que vai de encontro Ã s necessidades
+do projeto, para que possamos fornecer um serviÃ§o sÃ³lido e de alta qualidade para
+nossos usuÃ¡rios e parceiros comerciais que desejam patrocinar o projeto.
 </p>
 <p>
-Uma cópia do estatuto é enviada a cada membro no momento de seu registro e uma
-cópia em PDF estará sempre disponível online:
+Uma cÃ³pia do estatuto Ã© enviada a cada membro no momento de seu registro e uma
+cÃ³pia em PDF estarÃ¡ sempre disponÃ­vel online:
 <a href="../../fr/asso/status-association-slitaz.pdf">status-association-slitaz.pdf</a> |
-<a href="statutes.php">Tradução do Estatuto em Português</a>.
+<a href="statutes.php">TraduÃ§Ã£o do Estatuto em PortuguÃªs</a>.
 </p>
 
 <a name="goals"></a>
 <h3>Objetivos Atuais</h3>
 <p>
-O projeto SliTaz usa o modelo de desenvolvimento aberto e todo o trabalho é feito
-por uma comunidade de voluntários. Nosso objetivo é aprimorar e fornecer uma
-melhor organização das contribuições. O suporte, atualização do site, serviços
-de manutenção, suporte técnico e gerenciamento dos grupos são tópicos que
+O projeto SliTaz usa o modelo de desenvolvimento aberto e todo o trabalho Ã© feito
+por uma comunidade de voluntÃ¡rios. Nosso objetivo Ã© aprimorar e fornecer uma
+melhor organizaÃ§Ã£o das contribuiÃ§Ãµes. O suporte, atualizaÃ§Ã£o do site, serviÃ§os
+de manutenÃ§Ã£o, suporte tÃ©cnico e gerenciamento dos grupos sÃ£o tÃ³picos que
 gostariamos de focar e profissionalizar.
 </p>
 <p>
 Para atingir estes objetivos deveriamos ter, idealmente, um ou dois desenvolvedores
 trabalhando uma boa parte do tempo ou tendo todo o seu tempo focado unicamente
 no SliTaz. Eles deveriam ter a responsabilidade de consolidar e otimizar o sistema
-já existente enquanto planejam novas funcionalidades. Os vários sub-projetos
-também deveriam ser mais dinâmicos e publicar novas funcionalidades muito mais
+jÃ¡ existente enquanto planejam novas funcionalidades. Os vÃ¡rios sub-projetos
+tambÃ©m deveriam ser mais dinÃ¢micos e publicar novas funcionalidades muito mais
 frequentemente.
 </p>
 
 <a name="members"></a>
 <h3>Membros</h3>
 <p>
-A associação é aberta a qualquer pessoa. Tornar-se membro permite à você, por
-intermédio de uma quantia paga anualmente, patrocinar o projeto e garantir sua 
+A associaÃ§Ã£o Ã© aberta a qualquer pessoa. Tornar-se membro permite Ã  vocÃª, por
+intermÃ©dio de uma quantia paga anualmente, patrocinar o projeto e garantir sua 
 sustentabilidade.
 </p>
 <p>
-Para fazer parte, envie-nos uma carta ou um email: asso(at)slitaz.org. Você irá
-receber um pacote informativo, detalhes de pagamento e uma cópia do estatuto.
-A contribuição mínima é de 40 Euros para o ano 2009-2010. No email, por favor
+Para fazer parte, envie-nos uma carta ou um email: asso(at)slitaz.org. VocÃª irÃ¡
+receber um pacote informativo, detalhes de pagamento e uma cÃ³pia do estatuto.
+A contribuiÃ§Ã£o mÃ­nima Ã© de 40 Euros para o ano 2009-2010. No email, por favor
 informe:
 </p>
 <ul>
 	<li>Nome Completo</li>
-	<li>Endereço Completo</li>
-	<li>País</li>
+	<li>EndereÃ§o Completo</li>
+	<li>PaÃ­s</li>
 </ul>
 
 <a name="donation"></a>
-<h3>Doações</h3>
+<h3>DoaÃ§Ãµes</h3>
 <p>
-Há várias maneiras de ajudar financeiramente a associação: você pode se tornar
-um membro, patrocinador ou fazer doações através do PayPal ou transferência 
-bancária. O projeto possui algumas necessidades logísticas, então todas as 
-doações serão de grande valia.
+HÃ¡ vÃ¡rias maneiras de ajudar financeiramente a associaÃ§Ã£o: vocÃª pode se tornar
+um membro, patrocinador ou fazer doaÃ§Ãµes atravÃ©s do PayPal ou transferÃªncia 
+bancÃ¡ria. O projeto possui algumas necessidades logÃ­sticas, entÃ£o todas as 
+doaÃ§Ãµes serÃ£o de grande valia.
 </p>
 
 <div>
@@ -143,7 +135,7 @@ doações serão de grande valia.
 </div>
 
 <a name="postal"></a>
-<h3>Endereço Postal</h3>
+<h3>EndereÃ§o Postal</h3>
 <div class="box">
 Association SliTaz GNU/Linux<br />
 Rue du Village 40<br />

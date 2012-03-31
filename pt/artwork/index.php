@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt">
 <head>
     <title>SliTaz (pt) - Artwork</title>
-    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="SliTaz GNU/Linux project artwok images logos" />
     <meta name="keywords" lang="pt" content="sobre slitaz, gnu, linux, mini distro, livecd" />
     <meta name="robots" content="index, follow, all" />
@@ -28,27 +28,18 @@
 			Localizar, apreciar, discutir, fazer upload e compartilhar 
 			arte para o SliTaz! Junte-se ao 
 			<a href="http://scn.slitaz.org/image/">grupo</a> 
-			de arte, seu trabalho pode ser usado em nossa próxima
-			versão Cooking!
+			de arte, seu trabalho pode ser usado em nossa prÃ³xima
+			versÃ£o Cooking!
 		</p>
 		<ul> 
 			<li><a href="#art4taz">Artwork para o SliTaz.</a></li>
-			<li><a href="#logos">Logos, spider &amp; ícones.</a></li>
+			<li><a href="#logos">Logos, spider &amp; Ã­cones.</a></li>
 			<li><a href="screenshots.php">Screenshots.</a></li> 
 		</ul>
 	</div>
 </div>
 
-<!-- Language -->
-<div id="lang">
-	<a href="../../i18n.php">
-		<img src="../../images/locale.png" alt="locale.png" /></a>
-	<a href="../../de/artwork/">Deutsch</a>
-	<a href="../../en/artwork/">English</a>
-	<a href="../../es/artwork/">Español</a>
-	<a href="../../fr/artwork/">Français</a>
-	<a href="../../cn/artwork/">Chinese</a>
-</div>
+<?php include("../../lib/lang.php"); ?>
 
 <!-- Content -->
 <div id="content">
@@ -56,38 +47,38 @@
 <h2>Arte &amp; Design</h2>
 
 <p>
-Esta seção do website é dedicada a arte e gráficos do projeto SliTaz.
-As imagens são livres, e você pode utiliza-las para fazer seu próprio papel de
-parede ou mostrar o logo em seu site para ajudar na popularização do projeto.
-Os logos e ícones do SliTaz estão disponíveis em muitos tamanhos e podem ser
-baixados diretamente do diretório <a href="../../images/artwork/">artwork</a>.
-Você também vai achar aqui alguns <a href="screenshots.php">screenshots</a> 
+Esta seÃ§Ã£o do website Ã© dedicada a arte e grÃ¡ficos do projeto SliTaz.
+As imagens sÃ£o livres, e vocÃª pode utiliza-las para fazer seu prÃ³prio papel de
+parede ou mostrar o logo em seu site para ajudar na popularizaÃ§Ã£o do projeto.
+Os logos e Ã­cones do SliTaz estÃ£o disponÃ­veis em muitos tamanhos e podem ser
+baixados diretamente do diretÃ³rio <a href="../../images/artwork/">artwork</a>.
+VocÃª tambÃ©m vai achar aqui alguns <a href="screenshots.php">screenshots</a> 
 feitos com o mtPaint e o Gimp.
 </p>
 
 <a name="art4taz"></a>
 <h3>Artwork para o SliTaz</h3>
 <p>
-Como muitas coisas no SliTaz os gráficos, logos, temas e papéis de parede são
-totalmente construídos pela comunidade e pelos desenvolvedores. O projeto
-procura manter um design de qualidade e elegância. Fazer um logo, um papel de 
-parede ou qualquer outra coisa é uma boa forma de participar do projeto sem
-precisar "sujar" suas mãos codificando ou testando a validade do xHTML. Se você
+Como muitas coisas no SliTaz os grÃ¡ficos, logos, temas e papÃ©is de parede sÃ£o
+totalmente construÃ­dos pela comunidade e pelos desenvolvedores. O projeto
+procura manter um design de qualidade e elegÃ¢ncia. Fazer um logo, um papel de 
+parede ou qualquer outra coisa Ã© uma boa forma de participar do projeto sem
+precisar "sujar" suas mÃ£os codificando ou testando a validade do xHTML. Se vocÃª
 deseja criar alguma arte para o SliTaz, ou se pretende usar alguma de nossas imagens
-online, é recomendável que nos contate primeiro pela 
-<a href="../mailing-list.php">Lista de Discussão</a>. Tente não mandar arquivos
+online, Ã© recomendÃ¡vel que nos contate primeiro pela 
+<a href="../mailing-list.php">Lista de DiscussÃ£o</a>. Tente nÃ£o mandar arquivos
 muito grandes.
 </p>
 <h4>Artwork do LiveCD</h4>
 <p>
-Para manter a coesão do LiveCd, a imagem não pode exceder 200 kb, e serão
-necessárias duas delas, diferindo em tamanho: 1024x768 e 1280x1024. Isto se deve
-ao fato de a razão 3/4 não ser suportada por telas que possuem 1280 pixels de 
+Para manter a coesÃ£o do LiveCd, a imagem nÃ£o pode exceder 200 kb, e serÃ£o
+necessÃ¡rias duas delas, diferindo em tamanho: 1024x768 e 1280x1024. Isto se deve
+ao fato de a razÃ£o 3/4 nÃ£o ser suportada por telas que possuem 1280 pixels de 
 largura (o que resultar em imagem distorcida e bordas negras). Por fim, cada 
-lançamento de versão oferece um novo tema / imagem de fundo que seguem as mesmas
-diretrizes sem se prender à utilização de qualquer ferramenta distribuida pelo
-sistema. No LiveCd já há o mtPaint e num sistema instalado o Gimp se encontra
-no mirror. Note que o formato livre PNG é preferível.
+lanÃ§amento de versÃ£o oferece um novo tema / imagem de fundo que seguem as mesmas
+diretrizes sem se prender Ã  utilizaÃ§Ã£o de qualquer ferramenta distribuida pelo
+sistema. No LiveCd jÃ¡ hÃ¡ o mtPaint e num sistema instalado o Gimp se encontra
+no mirror. Note que o formato livre PNG Ã© preferÃ­vel.
 </p>
 
 <a name="logos"></a>

@@ -2,8 +2,8 @@
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt">
 <head>
-    <title>SliTaz - Arquivo de notícias</title>
-    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <title>SliTaz - Arquivo de notÃ­cias</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="SliTaz news archives info release" />
     <meta name="keywords" lang="pt" content="sistema, livre, gnu, linux, opensource software, livecd na RAM" />
     <meta name="robots" content="index, follow, all" />
@@ -21,15 +21,15 @@
    	<?php include("../../lib/html/nav.pt.html"); ?>
    	<!-- Information/image -->
     <div id="block_info">
-		<h4>Arquivos de notícias</h4>
+		<h4>Arquivos de notÃ­cias</h4>
 		<p>
-            As notícias do site arquivadas por ano. Note que alguns
-            links podem estar quebrados devido a mudanças na estrutura
-            do site (principalmente a parte da documentação que foi 
-            movida para domínio próprio)
+            As notÃ­cias do site arquivadas por ano. Note que alguns
+            links podem estar quebrados devido a mudanÃ§as na estrutura
+            do site (principalmente a parte da documentaÃ§Ã£o que foi 
+            movida para domÃ­nio prÃ³prio)
 		</p>
 		<p>
-			<img src="../../images/news.png" alt="[ Notícias]" /> 
+			<img src="../../images/news.png" alt="[ NotÃ­cias]" /> 
 			<a href="2008.php">2008</a> | 
             <a href="2009.php">2009</a> | 
             <a href="./">2010</a> |
@@ -44,92 +44,92 @@
 <h2>2010</h2>
 
 <ul>
-	<li><strong>4 de Novembro de 2010 - Nova versão "cooking" 20101104</strong>
-	<p>Os desenvolvedores do SliTaz anunciam uma nova imagem ISO da versão
-	de testes da distribuição. Há mais de 2600 pacotes nos repositórios,
-	o kernel Linux versão 2.6.34 foi compilado com o novo "toolchain"
+	<li><strong>4 de Novembro de 2010 - Nova versÃ£o "cooking" 20101104</strong>
+	<p>Os desenvolvedores do SliTaz anunciam uma nova imagem ISO da versÃ£o
+	de testes da distribuiÃ§Ã£o. HÃ¡ mais de 2600 pacotes nos repositÃ³rios,
+	o kernel Linux versÃ£o 2.6.34 foi compilado com o novo "toolchain"
 	(ferramentas de desenvolvimento) - que inclui a glibc 2.11.2 e o gcc 4.5.1 -
-	e o servidor gráfico Xorg foi atualizado para a versão 1.9.2. O LiveCD
-	traz o Midori como navegador Web, o reprodutor de áudio Deadbeef e vários
-	outros aplicativos úteis. O gerenciador de pacotes Tazpkg e o Tazctrlbox
-	agora suportam localização por meio do gettext e mais locales UTF foram
-	adicionados. Houve várias correções de bugs, atualizações e melhorias nestes
-	últimos 6 meses de muito trabalho. Você pode fazer o 
-	<a href="get/#cooking">download</a> desta nova versão a partir de um
-	dos mirrors oficiais do projeto, podendo recorrer aos fóruns e às listas 
-	de discussão para dar seu feedback.</p>
+	e o servidor grÃ¡fico Xorg foi atualizado para a versÃ£o 1.9.2. O LiveCD
+	traz o Midori como navegador Web, o reprodutor de Ã¡udio Deadbeef e vÃ¡rios
+	outros aplicativos Ãºteis. O gerenciador de pacotes Tazpkg e o Tazctrlbox
+	agora suportam localizaÃ§Ã£o por meio do gettext e mais locales UTF foram
+	adicionados. Houve vÃ¡rias correÃ§Ãµes de bugs, atualizaÃ§Ãµes e melhorias nestes
+	Ãºltimos 6 meses de muito trabalho. VocÃª pode fazer o 
+	<a href="get/#cooking">download</a> desta nova versÃ£o a partir de um
+	dos mirrors oficiais do projeto, podendo recorrer aos fÃ³runs e Ã s listas 
+	de discussÃ£o para dar seu feedback.</p>
 	</li>
 
-	<li><strong>08 Mai 2010 - Mutirão da Documentação</strong>
-	<p>Os desenvolvedores do SliTaz estão organizando um 'Mutirão da
-	Documentação', de 10 de maio a 10 de junho do corrente ano. O objetivo
-	principal é centralizar, revisar e atualizar toda a documentação
+	<li><strong>08 Mai 2010 - MutirÃ£o da DocumentaÃ§Ã£o</strong>
+	<p>Os desenvolvedores do SliTaz estÃ£o organizando um 'MutirÃ£o da
+	DocumentaÃ§Ã£o', de 10 de maio a 10 de junho do corrente ano. O objetivo
+	principal Ã© centralizar, revisar e atualizar toda a documentaÃ§Ã£o
 	online. Maiores detalhes podem ser obtidos em
 	<a href="http://doc.slitaz.org/">doc.slitaz.org</a>. Esperamos que todos
-	os usuários da distribuição possam colaborar, atualizando a
-	documentação existente ou adicionando novos documentos.</p>
+	os usuÃ¡rios da distribuiÃ§Ã£o possam colaborar, atualizando a
+	documentaÃ§Ã£o existente ou adicionando novos documentos.</p>
 	</li>
 
-	<li><strong>28 Mar 2010 - Lançada a Versão 3.0 do SliTaz GNU/Linux</strong>
+	<li><strong>28 Mar 2010 - LanÃ§ada a VersÃ£o 3.0 do SliTaz GNU/Linux</strong>
 	<p>Os participantes do projeto SliTaz GNU/Linux anunciam orgulhosamente 
-	o lançamento da versão 3.0, que surge após um ano de desenvolvimento.
-	Esta nova versão estável está simples, rápida, customizável, poderosa e 
+	o lanÃ§amento da versÃ£o 3.0, que surge apÃ³s um ano de desenvolvimento.
+	Esta nova versÃ£o estÃ¡vel estÃ¡ simples, rÃ¡pida, customizÃ¡vel, poderosa e 
 	ainda assim permanece inacreditavelmente leve.</p>
-	<p>O desktop padrão é constituído do servidor gráfico Xorg 7.4, do Openbox,
-	componentes do ambiente desktop LXDE e ferramentas próprias da distribuição.
-	Ele permite conectar de forma simples à internet, navegar na web com o
-	Midori, ouvir música ou gerenciar e editar imagens e fotos.</p>
-	<p>O sistema básico cabe numa imagem ISO de 30 Mb e as variantes do LiveCD
-	possuem o mínimo de 8 Mb. Esta nova versão foi construída com o novo 
-	toolchain (ferramentas básicas de desenvolvimento), que inclui o GCC 4.4.1
+	<p>O desktop padrÃ£o Ã© constituÃ­do do servidor grÃ¡fico Xorg 7.4, do Openbox,
+	componentes do ambiente desktop LXDE e ferramentas prÃ³prias da distribuiÃ§Ã£o.
+	Ele permite conectar de forma simples Ã  internet, navegar na web com o
+	Midori, ouvir mÃºsica ou gerenciar e editar imagens e fotos.</p>
+	<p>O sistema bÃ¡sico cabe numa imagem ISO de 30 Mb e as variantes do LiveCD
+	possuem o mÃ­nimo de 8 Mb. Esta nova versÃ£o foi construÃ­da com o novo 
+	toolchain (ferramentas bÃ¡sicas de desenvolvimento), que inclui o GCC 4.4.1
 	e o kernel Linux 2.6.30.6. Acesse as <a href="doc/releases/3.0/relnotes.pt.html">
-	notas de lançamento</a> completas para maiores informações e 
+	notas de lanÃ§amento</a> completas para maiores informaÃ§Ãµes e 
 	<a href="get/#stable">baixe</a> uma imagem do LiveCD a partir dos mirrors.</p> 
 	</li>
 
-    <li><strong>14 Mar 2010 - Primeiro RC e convenção Solutionslinux 2010 (Paris)</strong>
-	<p>Visto que estamos mais perto de lançar uma versão estável, 
-    atualizamos a imagem ISO básica e iniciamos uma série de RC (Release
-    Candidates). A maior mudança fica por conta de utilizarmos o Midori
-    como navegador padrão, melhorando a experiência do usuário ao mesmo
+    <li><strong>14 Mar 2010 - Primeiro RC e convenÃ§Ã£o Solutionslinux 2010 (Paris)</strong>
+	<p>Visto que estamos mais perto de lanÃ§ar uma versÃ£o estÃ¡vel, 
+    atualizamos a imagem ISO bÃ¡sica e iniciamos uma sÃ©rie de RC (Release
+    Candidates). A maior mudanÃ§a fica por conta de utilizarmos o Midori
+    como navegador padrÃ£o, melhorando a experiÃªncia do usuÃ¡rio ao mesmo
     tempo que mantemos a imagem ISO em torno de 30MB. Este moderno navegador
-    utiliza o motor de renderização webkit, sendo rápido, simples e bem
+    utiliza o motor de renderizaÃ§Ã£o webkit, sendo rÃ¡pido, simples e bem
     integrado ao desktop do SliTaz.</p>
-    <p>Esta nova ISO traz várias correções de bugs e de dependências,
+    <p>Esta nova ISO traz vÃ¡rias correÃ§Ãµes de bugs e de dependÃªncias,
     assim como melhorias nas ferramentas e scripts do sistema. Ela pode
     ser baixada a partir do mirror oficial: 
 	<a href="http://mirror.slitaz.org/iso/cooking/slitaz-cooking.iso">slitaz-cooking.iso</a></p>
-    <p>Outra notícia é que o Projeto SliTaz estará presente na convenção
+    <p>Outra notÃ­cia Ã© que o Projeto SliTaz estarÃ¡ presente na convenÃ§Ã£o
 	<a href="http://www.solutionslinux.fr/">Solutionslinux</a> 2010, que
-    ocorre na próxima semana em Paris. Quem estiver presente poderá 
+    ocorre na prÃ³xima semana em Paris. Quem estiver presente poderÃ¡ 
     aprender mais sobre o projeto e entrar em contato com os membros da
-    associação e desenvolvedores.</p>
+    associaÃ§Ã£o e desenvolvedores.</p>
 	</li>
 
-	<li><strong>21 Fev 2010 - Nova Versão Cooking 20100221</strong>
-	<p>Os desenvolvedores do SliTaz anunciam orgulhosamente a nova versão de 
-	testes (cooking) do LiveCD, que será a última antes do RC (Release 
-	Candidate) e consequente versão estável 3.0. Esta nova versão traz 
-	diversas mudanças e melhorias. A imagem ISO básica possui 27 MB e fornece
-	um desktop simples para o uso diário e vários aplicativos, tais como o
-	Netsurf para navegar na web. Também iremos disponibilizar uma variante
-	(flavor) com o Firefox que terá 29 MB com suporte a som e redes sem fio.
-	Esta versão também oferece suporte total a UTF-8 e utiliza o Xorg como
-	servidor gráfico.</p>
+	<li><strong>21 Fev 2010 - Nova VersÃ£o Cooking 20100221</strong>
+	<p>Os desenvolvedores do SliTaz anunciam orgulhosamente a nova versÃ£o de 
+	testes (cooking) do LiveCD, que serÃ¡ a Ãºltima antes do RC (Release 
+	Candidate) e consequente versÃ£o estÃ¡vel 3.0. Esta nova versÃ£o traz 
+	diversas mudanÃ§as e melhorias. A imagem ISO bÃ¡sica possui 27 MB e fornece
+	um desktop simples para o uso diÃ¡rio e vÃ¡rios aplicativos, tais como o
+	Netsurf para navegar na web. TambÃ©m iremos disponibilizar uma variante
+	(flavor) com o Firefox que terÃ¡ 29 MB com suporte a som e redes sem fio.
+	Esta versÃ£o tambÃ©m oferece suporte total a UTF-8 e utiliza o Xorg como
+	servidor grÃ¡fico.</p>
 	<p>Sobre o que foi melhorado e atualizado: o gerenciador de pacotes tazpkg
-	está mais rápido, os scritps de boot foram atualizados e as ferramentas
+	estÃ¡ mais rÃ¡pido, os scritps de boot foram atualizados e as ferramentas
 	do sistema melhoradas. O gerenciador de redes sem fio utiliza o awk para
 	melhorar a procura de rede. O suporte a WPA nos scripts de boot foi 
-	melhorado e é feito um log do tempo de boot. O instalador do SliTaz
-	agora irá: tentar usar um arquivo gravado em uma mídia USB se não houver
-	um CDROM, permitir o uso de uma partição /home separada, criar uma
-	conta de usuário padrão e definir a senha do root. Finalmente, a
-	customização do LiveCD é agora muito mais fácil, o usuário precisa apenas 
-	iniciar o boot, modificar o que achar necessário e usar a opção writefs
-	a partir da interface gráfica do Tazlito ou da linha de comando.</p>
+	melhorado e Ã© feito um log do tempo de boot. O instalador do SliTaz
+	agora irÃ¡: tentar usar um arquivo gravado em uma mÃ­dia USB se nÃ£o houver
+	um CDROM, permitir o uso de uma partiÃ§Ã£o /home separada, criar uma
+	conta de usuÃ¡rio padrÃ£o e definir a senha do root. Finalmente, a
+	customizaÃ§Ã£o do LiveCD Ã© agora muito mais fÃ¡cil, o usuÃ¡rio precisa apenas 
+	iniciar o boot, modificar o que achar necessÃ¡rio e usar a opÃ§Ã£o writefs
+	a partir da interface grÃ¡fica do Tazlito ou da linha de comando.</p>
 	<p>Como sempre, pode-se fazer o <a href="get/#cooking">download</a> 
 	das novas imagens ISO a partir do mirror oficial do projeto. Por favor,
-	informe-nos sobre suas impressões no fórum do SliTaz.</p>
+	informe-nos sobre suas impressÃµes no fÃ³rum do SliTaz.</p>
 	</li>
 </ul>
 

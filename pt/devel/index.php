@@ -2,8 +2,8 @@
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt">
 <head>
-    <title>SliTaz - Espaço dos Desenvolvedores</title>
-    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <title>SliTaz - EspaÃ§o dos Desenvolvedores</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="SliTaz GNU/Linux project information overview" />
     <meta name="keywords" lang="pt" content="sobre slitaz, gnu, linux, mini distro, livecd" />
     <meta name="robots" content="index, follow, all" />
@@ -25,69 +25,62 @@
 	<div id="block_info">
 		<h4>Desenvolvimento</h4>
 		<p>
-			O SliTaz é uma distribuição desenvolvida de forma
-			colaborativa muitos pessoas em todo o mundo. Todos são
+			O SliTaz Ã© uma distribuiÃ§Ã£o desenvolvida de forma
+			colaborativa muitos pessoas em todo o mundo. Todos sÃ£o
 			bem vindos a ajudar e a se envolver no projeto.
 		</p>
 		<p>
 			<img src="../../images/users.png" alt="users.png" />
-			Utilize também o <a href="http://scn.slitaz.org/">SCN</a>
+			Utilize tambÃ©m o <a href="http://scn.slitaz.org/">SCN</a>
 			(SliTaz Community Network) e a 
-			<a href="../mailing-list.php">lista de discussão</a>.
+			<a href="../mailing-list.php">lista de discussÃ£o</a>.
 		</p>
 	</div>
 </div>
 
-<!-- Language -->
-<div id="lang">
-	<a href="../../i18n.php">
-		<img src="../../images/locale.png" alt="locale.png" /></a>
-	<a href="../../de/devel/">Deutsch</a>
-	<a href="../../en/devel/">English</a>
-	<a href="../../fr/devel/">Français</a>
-</div>
+<?php include("../../lib/lang.php"); ?>
 
 <!-- Content -->
 <div id="content">
 
-<h2>Espaço dos Desenvolvedores do SliTaz</h2>
+<h2>EspaÃ§o dos Desenvolvedores do SliTaz</h2>
 
 <ul>
     <li><a href="forge.php">Central de Desenvolvimento</a> - Desenvolvimento
-    colaborativo, princípio KISS, linhas mestras, repositórios mercurial, 
-    website e outras informações.</li>
-    <li><a href="../../i18n.php">Projeto de Internacionalização</a> - 
-    Traduções, objetivos e gerenciamento.</li>
-    <li><a href="http://hg.slitaz.org/">Repositório Mercurial</a></li>
+    colaborativo, princÃ­pio KISS, linhas mestras, repositÃ³rios mercurial, 
+    website e outras informaÃ§Ãµes.</li>
+    <li><a href="../../i18n.php">Projeto de InternacionalizaÃ§Ã£o</a> - 
+    TraduÃ§Ãµes, objetivos e gerenciamento.</li>
+    <li><a href="http://hg.slitaz.org/">RepositÃ³rio Mercurial</a></li>
     <li><a href="http://bugs.slitaz.org/">Bug Tracker do SliTaz</a></li>
 </ul>
 
 <h2>Contribua</h2>
 <p>
-    O SliTaz é uma distribuição Open Source com colaboração da comunidade. 
-    Todos são convidados a se juntar a nós e a contribuir, sejam usuários,
-    hackers e desenvolvedores, sempre há alguma coisa a fazer, como por 
-    exemplo escrever ou corrigir a documentação, enviar relatórios de bug
-    ou correções para a lista de discussão, criar pacotes ou ajudar usuários
-    na lista de discussão ou no <a href="http://forum.slitaz.org">Fórum</a>.
-    A distribuição possui repositórios mercurial hospedados num servidor
-    SliTaz, desenvolvedores podem requisitar um novo repositório ou obter
-    acesso aos já existentes para corrigir o trabalho existente ou adicionar
+    O SliTaz Ã© uma distribuiÃ§Ã£o Open Source com colaboraÃ§Ã£o da comunidade. 
+    Todos sÃ£o convidados a se juntar a nÃ³s e a contribuir, sejam usuÃ¡rios,
+    hackers e desenvolvedores, sempre hÃ¡ alguma coisa a fazer, como por 
+    exemplo escrever ou corrigir a documentaÃ§Ã£o, enviar relatÃ³rios de bug
+    ou correÃ§Ãµes para a lista de discussÃ£o, criar pacotes ou ajudar usuÃ¡rios
+    na lista de discussÃ£o ou no <a href="http://forum.slitaz.org">FÃ³rum</a>.
+    A distribuiÃ§Ã£o possui repositÃ³rios mercurial hospedados num servidor
+    SliTaz, desenvolvedores podem requisitar um novo repositÃ³rio ou obter
+    acesso aos jÃ¡ existentes para corrigir o trabalho existente ou adicionar
     algo novo.
 </p>
 <p>
-    Nós ouvimos o que nossos usuários tem a dizer. Há vários desenvolvedores
-    ativos no <a href="http://forum.slitaz.org">fórum</a> e na
-    <a href="../mailing-list.php">lista de discussão</a>, então podemos
+    NÃ³s ouvimos o que nossos usuÃ¡rios tem a dizer. HÃ¡ vÃ¡rios desenvolvedores
+    ativos no <a href="http://forum.slitaz.org">fÃ³rum</a> e na
+    <a href="../mailing-list.php">lista de discussÃ£o</a>, entÃ£o podemos
     atender a pedidos ou trabalhar juntos com quem se manifesta nestes
-    espaços.
+    espaÃ§os.
 </p>
 <p>
-   Para quem trabalha com arte, há um espaço dedicado, em que é possível criar
-    uma conta e postar trabalhos ou imagens. Este espaço é gerenciado pela
-    comunidade, então se alguém estiver disposto a ajudar com trabalhos ou 
+   Para quem trabalha com arte, hÃ¡ um espaÃ§o dedicado, em que Ã© possÃ­vel criar
+    uma conta e postar trabalhos ou imagens. Este espaÃ§o Ã© gerenciado pela
+    comunidade, entÃ£o se alguÃ©m estiver disposto a ajudar com trabalhos ou 
     com o gerenciamento, por favor contate-nos por email ou na lista de
-    discussão. Entre no grupo em 
+    discussÃ£o. Entre no grupo em 
     <a href="http://scn.slitaz.org/groups/artwork/">Grupo de Arte</a>.
 </p>
 
@@ -99,7 +92,7 @@
     <p>
         <a href="http://hg.slitaz.org/"><img
             src="/images/development.png" alt="[ Devel ]" /></a>
-            Últimos commits no wok
+            Ãšltimos commits no wok
             <?php get_feed("wok.xml"); ?>
     </p>
     <p class="activity_more">
