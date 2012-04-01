@@ -1,9 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
 <head>
-	<title>SliTaz - Coin développeurs</title>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>SliTaz - Coin développeurs</title>
 	<meta name="description" content="Développement de SliTaz GNU/Linux" />
 	<meta name="keywords" lang="fr" content="developpement slitaz developer GNU Linux" />
 	<meta name="author" content="Christophe Lincoln"/>
@@ -25,12 +25,14 @@
 			bienvenue pour aider et s'impliquer dans le projet.
 		</p>
 		<p>
-			<img src="../../images/users.png" alt="users.png" />
+			<img src="/images/users.png" alt="[ ]" />
 			<a href="http://scn.slitaz.org/">Rejoingez nous sur SCN</a>
 			et la <a href="../mailing-list.php">mailing list</a>
 		</p>
 	</div>
 </div>
+
+<?php include("../../lib/lang.php"); ?>
 
 <!-- Content -->
 <div id="content">
@@ -42,7 +44,7 @@
 	Hg, paquets et ligne de conduite (Guidelines).</li>
     <li><a href="../mailing-list.php">Liste de discussion</a> -
     La <em>mailing list</em> est le moyen de collaboration principale.</li>
-    <li><a href="../../i18n.php">Internationalisation du projet</a> -
+    <li><a href="/i18n.php">Internationalisation du projet</a> -
     Traduction, buts et fonctionnement (en).</li>
     <li><a href="http://doc.slitaz.org/fr:cookbook:wok">Wok &amp; Tools</a> -
     La doc au sujet de l'utilisation du wok et des outils SliTaz pour
@@ -52,6 +54,7 @@
 </ul>
 
 <h3>Participer et contribuer</h3>
+
 <p>
 Le développement de SliTaz est ouvert, toute personne est la bienvenue au
 sein du projet. Utilisateur, utilisateur avancé, connaisseur ou développeur.
@@ -79,6 +82,7 @@ de discussion. Le site scn.slitaz.org:
 </p>
 
 <h3>Cycle de publication</h3>
+
 <p>
 La version en cuisson (<em>Cooking</em>) est là pour préparer la future version
 stable. Elle permet de tester les nouveautés, peut être cassée et contient

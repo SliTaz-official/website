@@ -1,12 +1,12 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
 <head>
-    <title>SliTaz - A propos</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="Au sujet de SliTaz GNU/Linux mini système d'exploitation" />
-    <meta name="keywords" lang="fr" content="Système, libre, gnu, linux, opensource, livecd" />
-    <meta name="author" content="Christophe Lincoln"/>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>SliTaz - A propos</title>
+	<meta name="description" content="Au sujet de SliTaz GNU/Linux mini système d'exploitation" />
+	<meta name="keywords" lang="fr" content="Système, libre, gnu, linux, opensource, livecd" />
+	<meta name="author" content="Christophe Lincoln"/>
 	<?php include("../../lib/html/meta-link.html"); ?>
 </head>
 <body>
@@ -47,12 +47,12 @@
 	<li><a href="#license">Licence et garantie.</a></li>
 	<li><a href="#website">Site Web.</a></li>
 	<li><a href="#reviews">Revues de référence.</a></li>
-	<li><a href="events.php">&Eacute;vènements.</a></li>
+	<li><a href="events.php">Évènements.</a></li>
 	<li><a href="../asso/">L'Association SliTaz GNU/Linux.</a></li>
 </ul>
 
-<a name ="intro"></a>
-<h2>Introduction à SliTaz</h2>
+<h2 id="intro">Introduction à SliTaz</h2>
+
 <p>
 SliTaz GNU/Linux est un système d'exploitation libre fonctionnant en mémoire
 vive (mode LiveCD), léger, rapide, et entièrement installable sur disque dur.
@@ -77,31 +77,31 @@ projet. Vous avez aussi la possibilité de discuter de SliTaz sur le serveur IRC
 #slitaz</code>
 </p>
 
-<a name="overview"></a>
-<h2>Vue d'ensemble</h2>
+<h2 id="overview">Vue d'ensemble</h2>
+
 <ul>
-    <li>Un système racine d'environ 100 Mb et des images ISO de moins de
-    30 Mb.</li>
-    <li>Les outils SliTaz de personnalisation et d'administration.</li>
-    <li>Perl, auto-détection du matériel PCI/USB et support du Wifi.</li>
-    <li>Navigateur web Midori en mode graphique, et Retawq en mode texte.</li>
-    <li>Support du son avec mixeur, convertiseur et lecteur de musique.</li>
-    <li>Un client de chat IRC et un client mail.</li>
-    <li>Un client/serveur SSH, pour un contrôle à distance.</li>
-    <li>Un moteur de base de données SQL avec SQLite.</li>
-    <li>Des outils pour la gravure de CD/DVD et la création d'image ISO.</li>
-    <li>Plus de 300 commandes GNU/Linux usuelles.</li>
-    <li>L'éditeur de texte avancé Nano, et LeafPad.</li>
-    <li>Un client DHCP pour une connexion facilitée et le support PPPOE.</li>
-    <li>Système X avec serveur Xorg/Xvesa, et l'environnement de bureau LXDE.</li>
-    <li>Des applications de création graphique et de gestion des images.</li>
-    <li>Des outils de manipulation de fichiers et de maintenance système.</li>
-    <li>De la documentation en divers formats.</li>
-    <li>Environ 2300 paquets facilement installables depuis le miroir.</li>
+	<li>Un système racine d'environ 100 Mb et des images ISO de moins de
+		30 Mb.</li>
+	<li>Les outils SliTaz de personnalisation et d'administration.</li>
+	<li>Perl, auto-détection du matériel PCI/USB et support du Wifi.</li>
+	<li>Navigateur web Midori en mode graphique, et Retawq en mode texte.</li>
+	<li>Support du son avec mixeur, convertiseur et lecteur de musique.</li>
+	<li>Un client de chat IRC et un client mail.</li>
+	<li>Un client/serveur SSH, pour un contrôle à distance.</li>
+	<li>Un moteur de base de données SQL avec SQLite.</li>
+	<li>Des outils pour la gravure de CD/DVD et la création d'image ISO.</li>
+	<li>Plus de 300 commandes GNU/Linux usuelles.</li>
+	<li>L'éditeur de texte avancé Nano, et LeafPad.</li>
+	<li>Un client DHCP pour une connexion facilitée et le support PPPOE.</li>
+	<li>Système X avec serveur Xorg/Xvesa, et l'environnement de bureau LXDE.</li>
+	<li>Des applications de création graphique et de gestion des images.</li>
+	<li>Des outils de manipulation de fichiers et de maintenance système.</li>
+	<li>De la documentation en divers formats.</li>
+	<li>Environ 2300 paquets facilement installables depuis le miroir.</li>
 </ul>
 
-<a name="origin"></a>
-<h2>Origine du projet</h2>
+<h2 id="origin">Origine du projet</h2>
+
 <p>
 La première motivation fut l'envie, ensuite le besoin. Envie de créer une 
 mini distribution rapide, francisée au mieux, avec le support du clavier pour
@@ -168,8 +168,8 @@ et tient sur 22,4 Mb. Depuis cette date, le projet suit une feuille de route
 indiquant les étapes à réaliser et les buts à atteindre dans le temps.
 </p>
 
-<a name="free"></a>
-<h2>Indépendance et liberté</h2>
+<h2 id="free">Indépendance et liberté</h2>
+
 <p>
 SliTaz se veut un projet indépendant et libre, au départ des développeurs SliTaz
 fournissaient des services en rapport à l'open source (cours GNU/Linux et support) 
@@ -188,8 +188,8 @@ avec son code source et ouverte à la communauté, comme spécifié dans les
 statuts de l'association gérant le projet.
 </p>
 
-<a name="license"></a>
-<h2>Licence et garantie</h2>
+<h2 ="license">Licence et garantie</h2>
+
 <p>
 SliTaz est libre, modifiable, recopiable, téléchargeable, et cela gratuitement.
 Slitaz GNU/Linux est distribuée sans aucune garantie, publiée car potentiellement
@@ -198,14 +198,14 @@ l'informatique libre, et qui aimons la liberté. SliTaz est publiée sous
 <a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>.
 </p>
 
-<a name="website"></a>
-<h2>Site Web</h2>
+<h2 id="website">Site Web</h2>
+
 <p>
-Ce site est en ligne afin de vous permettre <a href="../../get/">d'obtenir SliTaz</a>
+Ce site est en ligne afin de vous permettre <a href="../get/">d'obtenir SliTaz</a>
 et pour aider au développement du projet. Il regroupe, entre autres, une
-partie <a href="../../doc/">documentation</a> avec un tutoriel sur la 
+partie <a href="../doc/">documentation</a> avec un tutoriel sur la 
 création de son propre système GNU/Linux libre et autonome.  Le site 
-fait partie du <a href="../../i18n.php">projet d'internationalisation</a>.
+fait partie du <a href="/i18n.php">projet d'internationalisation</a>.
 </p>
 <p>
 Le site web de SliTaz a été mis en ligne le 24 février 2007, avec
@@ -222,14 +222,15 @@ en français a migré en avril 2009 vers
 <a href="http://www.slitaz.org/fr/">http://www.slitaz.org/fr/</a>.
 </p>
 
-<a name="reviews"></a>
-<h2>Revues de référence</h2>
+<h2 id="reviews">Revues de référence</h2>
+
 <p>
 SliTaz GNU/Linux a été signalée dans la I-presse, par des sites et des personnes de
 référence dans le monde GNU/Linux. En voici une liste non-exhaustive : 
 </p>
 
 <h3>2.0 - Avril 2009</h3>
+
 <ul>
 	<li><a href="http://www.gdhpress.com.br/blog/slitaz"
 		>Gdhpress</a> (pt) - By Carlos Morimoto.</li>
@@ -244,6 +245,7 @@ référence dans le monde GNU/Linux. En voici une liste non-exhaustive :
 </ul>
 
 <h3>1.0 - Mars 2008</h3>
+
 <ul>
 	<li><a href="http://distrowatch.com/weekly.php?issue=20080331"
 		>Distrowatch</a> - By Ladislav Bodnar.</li>
@@ -269,6 +271,7 @@ référence dans le monde GNU/Linux. En voici une liste non-exhaustive :
 </ul>
 
 <h3>Cooking - Janvier 2010</h3>
+
 <ul>
 	<li><a href="http://distrowatch.com/weekly.php?issue=20100111#feature"
 		>Distrowatch</a> - By Jesse Smith.</li>

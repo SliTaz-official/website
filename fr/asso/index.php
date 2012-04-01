@@ -1,9 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
 <head>
-	<title>SliTaz - Association</title>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>SliTaz - Association</title>
 	<meta name="description" content="Au sujet de SliTaz GNU/Linux mini système d'exploitation" />
 	<meta name="keywords" lang="fr" content="Système, libre, gnu, linux, opensource, livecd" />
 	<meta name="author" content="Christophe Lincoln"/>
@@ -54,8 +54,8 @@
 	<li><a href="#postal">Adresse postale.</a></li>
 </ul>
 
-<a name="overview"></a>
-<h3>Vue d'ensemble</h3>
+<h3 id="overview">Vue d'ensemble</h3>
+
 <p>
 L'association SliTaz GNU/Linux est internationale, son siège est en
 Suisse et respecte donc le Code civil suisse. L'association est
@@ -83,8 +83,8 @@ et la version PDF est toujours disponible en ligne :
 <a href="status-association-slitaz.pdf">statuts-association-slitaz.pdf</a>
 </p>
 
-<a name="goals"></a>
-<h3>Objectifs actuels</h3>
+<h3 id="goals">Objectifs actuels</h3>
+
 <p>
 Le projet SliTaz a un modèle de développement ouvert et la totalité du travail
 réalisée par la communauté est bénévole. Notre objectif est d'améliorer et de 
@@ -105,8 +105,8 @@ car les participants trouveraient alors des points d'appui plus réactifs
 et une disponibilité accrue.
 </p>
 
-<a name="members"></a>
-<h3>Membres</h3>
+<h3 id="members">Membres</h3>
+
 <p>
 L'association est ouverte à toute personne physique ou morale. Devenir
 membre vous permet de soutenir le projet et d'assurer sa pérennité via une
@@ -126,8 +126,8 @@ de spécifier :
 	<li>Pays</li>
 </ul>
 
-<a name="sponsors"></a>
-<h3>Sponsors</h3>
+<h3 id="sponsors">Sponsors</h3>
+
 <p>
 L'association SliTaz a aussi pour buts de fournir et maintenir un système
 de base de haute qualité, stable et fiable, afin de permettre aux organismes
@@ -147,8 +147,8 @@ contacter l'association par courrier, ou mail : asso at slitaz.org
 	<a href="/en/sponsor/">SliTaz sponsor</a>
 </p>
 
-<a name="donation"></a>
-<h3>Donation</h3>
+<h3 id="donation">Donation</h3>
+
 <p>
 Il y a divers moyens pour soutenir financièrement l'association, devenir
 membre ou sponsor, faire un don par virement bancaire ou en ligne via 
@@ -158,8 +158,8 @@ tous les dons de matériel en bon état sont bienvenus.
 
 <?php include("../../lib/html/donate.html"); ?>
 
-<a name="postal"></a>
-<h3>Adresse postale</h3>
+<h3 id="postal">Adresse postale</h3>
+
 <div class="box">
 	Association SliTaz<br />
 	Rue du Village 40<br />

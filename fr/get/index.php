@@ -1,9 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
 <head>
-	<title>SliTaz - Téléchargements</title>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>SliTaz - Téléchargements</title>
 	<meta name="description" content="Télécharger librement SliTaz GNU/Linux LiveCD/LiveUSB" />
 	<meta name="keywords" lang="fr" content="Système, libre, gnu, linux, logiciels opensource, livecd, autonome" />
 	<meta name="author" content="Christophe Lincoln"/>
@@ -45,12 +45,12 @@ include("../../lib/html/header.html");
 
 <ul>
 	<li><a href="#stable">LiveCD version Stable</a> - Image ISO du
-    LiveCD de la version stable de SliTaz.</li>
-    <li><a href="#cooking">LiveCD version Cooking</a> - Image ISO du
-    LiveCD de SliTaz en cuisson.</li>
-    <li><a href="flavors.php">LiveCD à saveur</a> - Saveurs, dont les 'loram'.</li>
-    <li><a href="#floppy">Disquette de démarrage</a> - Image de disquette pour
-    lancer le LiveCD, une clé USB...</li>
+		LiveCD de la version stable de SliTaz.</li>
+	<li><a href="#cooking">LiveCD version Cooking</a> - Image ISO du
+		LiveCD de SliTaz en cuisson.</li>
+	<li><a href="flavors.php">LiveCD à saveur</a> - Saveurs, dont les 'loram'.</li>
+	<li><a href="#floppy">Disquette de démarrage</a> - Image de disquette pour
+		lancer le LiveCD, une clé USB...</li>
 </ul>
 
 <div class="box">
@@ -62,6 +62,7 @@ include("../../lib/html/header.html");
 </div>
 
 <h3>Informations générales</h3>
+
 <p>
 	Cette partie du site vous permet de télécharger une image ISO gravable, du
 	système LiveCD installable de SliTaz. Pour utiliser le système, vous pouvez
@@ -72,6 +73,7 @@ include("../../lib/html/header.html");
 </p>
 
 <h3>Miroirs et torrents</h3>
+
 <p>
 	Un grand merci à l'équipe de <a href="http://www.tuxfamily.org/">TuxFamily</a>,
 	à <a href="http://mirror.switch.ch/">SWITCHmirror</a> et à 
@@ -98,8 +100,8 @@ include("../../lib/html/header.html");
 	<a href="http://mirror.lupaworld.com/slitaz/">HTTP</a></li>
 </ul>
 
-<a name="sources"></a>
-<h3>Sources</h3>
+<h3 id="sources">Sources</h3>
+
 <p>
 	les archives sources de Tazpkg (Package manager), Tazlito (SliTaz Live Tool),
 	Tazwok (Source builder), Tazusb (LiveUSB Tool), et des outils SliTaz, peuvent
@@ -109,8 +111,8 @@ include("../../lib/html/header.html");
 	<a href="http://labs.slitaz.org/projects">les SliTaz Labs</a> (laboratoires).
 </p>
 
-<a name="stable"></a>
-<h2>LiveCD version Stable</h2>
+<h2 id="stable">LiveCD version Stable</h2>
+
 <p>
 	La version stable de SliTaz fournit un système d'exploitation mature,
 	largement testé par une communauté active, elle propose une sélection
@@ -119,12 +121,11 @@ include("../../lib/html/header.html");
 	<?php echo "$stable_ver publiée le $stable_rel."; ?>
 </p>
 
-<p class="box">
-	<img src="/images/download.png" height="48px" width="48px" alt="[ DL ]" />
+<div class="box-dl"><p>
 	<?php echo "SliTaz GNU/Linux $stable_ver ($stable_size) - 
 	<a href='$stable_iso'>slitaz-$stable_ver.iso</a>
 	[ <a href='$mirror/$stable_ver/slitaz-$stable_ver.md5'>md5</a> ]"; ?>
-</p>
+</p></div>
 
 <p>
 	Une image DVD bootable de tous les paquets disponibles pour la version
@@ -133,15 +134,14 @@ include("../../lib/html/header.html");
 	Internet.
 </p>
 
-<p class="box">
-	<img src="/images/download.png" height="48px" width="48px" alt="[ DL ]" />
+<div class="box-dl"><p>
 	<?php echo "Ensemble des paquets SliTaz GNU/Linux $stable_ver ($stable_pkgs)
 	- <a href='$pkgs_mirror/$stable_ver/packages-$stable_ver.iso'>packages-$stable_ver.iso</a>
 	[ <a href='$pkgs_mirror/$stable_ver/packages-$stable_ver.md5'>md5</a> ]"; ?>
-</p>
+</p></div>
 
-<a name="cooking"></a>
-<h2>LiveCD version Cooking</h2>
+<h2 id="cooking">LiveCD version Cooking</h2>
+
 <p>
 	La version Cooking "en cuisson" est une version en constante évolution,
 	utilisable, elle permet de tester les dernières nouveautés, de nous faire
@@ -149,12 +149,11 @@ include("../../lib/html/header.html");
 	de bugs.
 </p>
 
-<p class="box">
-	<img src="/images/download.png" height="48px" width="48px" alt="[ DL ]" />
+<div class="box-dl"><p>
 	<?php echo "SliTaz GNU/Linux Cooking $cooking_ver ($cooking_size) - 
 	<a href='$cooking_iso'>slitaz-$cooking.iso</a>
 	[ <a href='$mirror/cooking/slitaz-$cooking.md5'>md5</a> ]"; ?>
-</p>
+</p></div>
 
 <p>
 	Une image DVD bootable de tous les paquets disponibles pour la version
@@ -166,15 +165,14 @@ include("../../lib/html/header.html");
 	de la clé.
 </p>
 
-<p class="box">
-	<img src="/images/download.png" height="48px" width="48px" alt="[ DL ]" />
+<div class="box-dl"><p>
 	<?php echo "Ensemble de paquets SliTaz GNU/Linux Cooking ($cooking_pkgs)
 	- <a href='$pkgs_mirror/cooking/packages-cooking.iso'>packages-cooking.iso</a>
 	[ <a href='$pkgs_mirror/cooking/packages-cooking.md5'>md5</a> ]"; ?>
-</p>
+</p></div>
 
-<a name="floppy"></a>
-<h2>Disquette de démarrage</h2>
+<h2 id="floppy">Disquette de démarrage</h2>
+
 <p>
 	Cette disquette permet de lancer Slitaz sur des PC anciens ou dépourvus de
 	lecteur de CD-ROM. Il est possible de démarrer Slitaz depuis un CD-ROM/DVD,
@@ -182,12 +180,11 @@ include("../../lib/html/header.html");
 	<a href="http://boot.slitaz.org/">Internet avec gPXE</a>.
 </p>
 
-<p class="box">
-	<img src="/images/download.png" height="48px" width="48px" alt="[ DL ]" />
+<div class="box-dl"><p>
 	Disquette de démarrage (1,44 Mb) -
 	<a href="http://mirror.slitaz.org/boot/floppy-grub4dos">image</a>
 	[ <a href="http://mirror.slitaz.org/boot/floppy-grub4dos.md5">md5</a> ]
-</p>
+</p></div>
 
 <p>
 	Vous pouvez écrire cette image avec l'outil Slitaz bootfloppybox,
@@ -197,7 +194,7 @@ include("../../lib/html/header.html");
 
 <p>
 	Une <a href="http://mirror.slitaz.org/floppies/">
-		suite d'images de disquette</a> est aussi disponible pour les
+	suite d'images de disquette</a> est aussi disponible pour les
 	personnes qui ne peuvent utiliser CD-ROM, clé USB ou carte Ethernet.
 	Seul le lecteur de disquette est nécessaire.
 </p>

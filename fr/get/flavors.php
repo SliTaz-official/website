@@ -1,12 +1,12 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
 <head>
-    <title>SliTaz (fr) - LiveCD Flavors</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="saveur LiveCD slitaz personnalisé" />
-    <meta name="keywords" lang="fr" content="linux gnu live slitaz" />
-    <meta name="author" content="Christophe Lincoln"/>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>SliTaz (fr) - LiveCD Flavors</title>
+	<meta name="description" content="saveur LiveCD slitaz personnalisé" />
+	<meta name="keywords" lang="fr" content="linux gnu live slitaz" />
+	<meta name="author" content="Christophe Lincoln"/>
 	<?php include("../../lib/html/meta-link.html"); ?>
 </head>
 <body>
@@ -30,10 +30,13 @@
 	</div>
 </div>
 
+<?php include("../../lib/lang.php"); ?>
+
 <!-- Content -->
 <div id="content">
 
 <h2>Image ISO de LiveCD à saveur</h2>
+
 <p>
 Par commodité, l'équipe de SliTaz propose quelques images ISO de saveurs
 pour la version stable et Cooking de SliTaz. Les saveurs <em>loram</em> 
@@ -48,10 +51,11 @@ mémoire swap, mais ne libère pas le cdrom.
 </p>
 
 <h3>Obtenir et générer une saveur</h3>
+
 <p>
 Une saveur consiste en un fichier (.flavor) permettant de générer une
 saveur particulière. L'outil graphique Tazlitobox peut créer une saveur
-en quelques cliques de souris. <a href="../doc/manuals/tazlito.html">
+en quelques cliques de souris. <a href="http://hg.slitaz.org/tazlito/raw-file/tip/doc/tazlito.fr.html">
 Le manuel de Tazlito</a> et <a href="http://doc.slitaz.org/fr:handbook:genlivecd">
 la documentation</a> du Handbook donnent les instructions détaillées sur 
 la génération de saveur. En ligne de commande, vous pouvez obtenir 
@@ -59,6 +63,7 @@ une liste des saveurs disponibles via <code>tazlito list-flavors</code>.
 </p>
 
 <h3>Créer et partager sa propre saveur</h3>
+
 <p>
 Les versions, Stable et Cooking, proposent une saveur <em>core</em> sur le 
 miroir, elle peut être utilisée comme base pour créer sa propre saveur.

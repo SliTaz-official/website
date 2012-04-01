@@ -129,19 +129,7 @@ some logistical needs, any donated equipment in good working order is
 welcomed.
 </p>
 
-<div>
-	<!-- PayPal boutton -->
-	<form action="https://www.paypal.com/cgi-bin/webscr" method="post"
-		style="display: inline;">
-			<input type="hidden" name="cmd" value="_s-xclick" />
-			<input type="hidden" name="hosted_button_id" value="4885025" />
-			<input type="image" src="/images/paypal.png" name="submit" 
-				alt="PayPal - The safer, easier way to pay online!" />
-	</form>
-	<!-- Flattr boutton -->
-	<a class="FlattrButton" style="display:none;" rev="flattr;button:compact;"
-		href="http://www.slitaz.org/"></a>
-</div>
+<?php include("../../lib/html/donate.html"); ?>
 
 <h3 id="postal">Postal Address</h3>
 

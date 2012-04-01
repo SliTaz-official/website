@@ -1,13 +1,13 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
 <head>
-    <title>SliTaz (fr) - Documentation</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="Documentation du projet SliTaz GNU/Linux shell howto make live-cd" />
-    <meta name="keywords" lang="fr" content="Système, libre, gnu, linux, logiciels opensource, livecd, autonome" />
-    <meta name="author" content="Christophe Lincoln"/>
-    <?php include("../../lib/html/meta-link.html"); ?>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>SliTaz (fr) - Documentation</title>
+	<meta name="description" content="Documentation du projet SliTaz GNU/Linux shell howto make live-cd" />
+	<meta name="keywords" lang="fr" content="Système, libre, gnu, linux, logiciels opensource, livecd, autonome" />
+	<meta name="author" content="Christophe Lincoln"/>
+	<?php include("../../lib/html/meta-link.html"); ?>
 </head>
 <body>
 
@@ -32,6 +32,8 @@
 		</ul>
 	</div>
 </div>
+
+<?php include("../../lib/lang.php"); ?>
 
 <!-- Content -->
 <div id="content">
@@ -60,6 +62,7 @@
 </p>
 
 <h2>Scratchbook</h2>
+
 <p>
 	<a href="scratchbook/">Scratchbook</a> - Le livre de création de
 	la version initial de SliTaz. Description des étapes de création 
@@ -71,6 +74,7 @@
 </p>
 
 <h2>Manuels des utilitaires</h2>
+
 <ul>
 	<li><a href="http://hg.slitaz.org/tazpkg/raw-file/tip/doc/tazpkg.en.html"
 		>Tazpkg manuel</a> -  Gestionnaire de paquet SliTaz</li>
@@ -83,6 +87,7 @@
 </ul>
 
 <h2>Wiki et Forum</h2>
+
 <p>
 	Le <a href="http://doc.slitaz.org/">wiki</a>, site collaboratif et 
 	communautaire, fournit divers ressources traitant de sujets particuliers.
@@ -91,6 +96,7 @@
 </p>
 
 <h2>Notes de publication</h2>
+
 <p>
 	Les notes de publication de SliTaz fournissent des informations spécifiques au
 	sujet d'une version stable du système et donnent quelques astuces utiles pour
@@ -99,12 +105,12 @@
 </p>
 
 <ul>
-<li><a href="releases/3.0/relnotes.fr.html">SliTaz GNU/Linux 3.0 - 
-	Notes de publication</a></li>
+	<li><a href="releases/3.0/relnotes.fr.html">SliTaz GNU/Linux 3.0 - 
+		Notes de publication</a></li>
 	<li><a href="releases/2.0/relnotes.fr.html">SliTaz GNU/Linux 2.0 - 
-	Notes de publication</a></li>
+		Notes de publication</a></li>
 	<li><a href="releases/1.0/relnotes.fr.html">SliTaz GNU/Linux 1.0 -
-	Notes de publication</a></li>
+		Notes de publication</a></li>
 </ul>
 
 <!-- End of content -->

@@ -1,12 +1,12 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
 <head>
-    <title>SliTaz Art et graphisme</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="SliTaz artwork images logo graphisme wallpaper" />
-    <meta name="keywords" lang="fr" content="opensource, image, logo, slitaz, spider" />
-    <meta name="author" content="Christophe Lincoln"/>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>SliTaz Art et graphisme</title>
+	<meta name="description" content="SliTaz artwork images logo graphisme wallpaper" />
+	<meta name="keywords" lang="fr" content="opensource, image, logo, slitaz, spider" />
+	<meta name="author" content="Christophe Lincoln"/>
 	<?php include("../../lib/html/meta-link.html"); ?>
 </head>
 <body>
@@ -32,6 +32,8 @@
 	</div>
 </div>
 
+<?php include("../../lib/lang.php"); ?>
+
 <!-- Content -->
 <div id="content">
 
@@ -43,14 +45,14 @@ s'appliquant à SliTaz. Les images sont libres, vous pouvez par exemple, les
 réutiliser afin de réaliser votre propre fond d'écran ou afficher un logo sur
 votre site pour aider à populariser le projet. Les logos et icônes SliTaz sont
 disponibles en différentes tailles et directement téléchargeables via cette
-page et <a href="../../images/artwork/">le répertoire artwork</a>. Vous
+page et <a href="/images/artwork/">le répertoire artwork</a>. Vous
 trouverez aussi dans cette partie <em>artwork</em>, quelques
 <a href="screenshots.php">captures d'écran</a> réalisées avec mtPaint ou The
 Gimp.
 </p>
 
-<a name="art4taz"></a>
-<h2>Artwork pour SliTaz</h2>
+<h2 id="art4taz">Artwork pour SliTaz</h2>
+
 <p>
 Comme beaucoup de choses avec SliTaz, les graphismes, logos, thèmes ou fonds
 d'écrans, sont entièrement réalisés par la communauté et les développeurs. Le
@@ -62,7 +64,9 @@ vivement conseillé de nous le signaler via le site de la communauté ou de
 <a href="../mailing-list.php">la liste de discussion</a>. Mais attention à ne
 pas envoyer de trop gros fichiers sur la liste.
 </p>
+
 <h3>Artwork du LiveCD</h3>
+
 <p>
 Pour le fond d'écran du LiveCD, il y a des contraintes, l'image ne doit pas
 dépasser les 200 Ko. De plus, il faut une image de 1024x768. Pour finir, 
@@ -73,37 +77,20 @@ avec un système installé, Inkscape et the Gimp sont disponibles sur le miroir.
 A noter que le format libre PNG est privilégié.
 </p>
 
-<a name="logos"></a>
-<h2>Logos, spider &amp; icons</h2>
+<h2 id="logos">Logos, spider &amp; icons</h2>
+
 <div class="box">
-	SVG Format: <a href="../../images/artwork/slitaz-logo.svg">slitaz-logo.svg</a> |
-	<a href="../../images/artwork/slitaz-spider.svg">slitaz-spider.svg</a>
+	SVG Format: <a href="/images/artwork/slitaz-logo.svg">slitaz-logo.svg</a> |
+	<a href="/images/artwork/slitaz-spider.svg">slitaz-spider.svg</a>
 </div>
+
 <div>
-	<img
-	   src="../../images/artwork/slitaz-button-red.png"
-	   alt="SliTaz button"
-	   style="width: 148px; height: 148px;" />
-	<img
-	   src="../../images/artwork/slitaz-logo-whitebg-320x118.png"
-	   alt="SliTaz spider"
-	   style="width: 320px; height: 118px;" />
-	<img
-	   src="../../images/artwork/slitaz-tux-124x126.png"
-	   alt="SliTaz Tux"
-	   style="width: 124px; height: 126px;" />
-	<img
-	   src="../../images/artwork/slitaz-spider-48x48.png"
-	   alt="SliTaz spider"
-	   style="width: 48px; height: 48px;" />
-	<img
-	   src="../../images/artwork/tazpkg.png"
-	   alt="Tazpkg package logo"
-	   style="width: 32px; height: 32px;" />
-	<img
-	   src="../../images/artwork/slitaz-minilogo-80x15.png"
-	   alt="SliTaz mini logo"
-	   style="width: 80px; height: 15px;" />
+	<img src="/images/artwork/slitaz-button-red.png" alt="SliTaz button" />
+	<img src="/images/artwork/slitaz-logo-whitebg-320x118.png" alt="SliTaz spider" />
+	<img src="/images/artwork/slitaz-tux-124x126.png" alt="SliTaz Tux" />
+	<img src="/images/artwork/slitaz-spider-48x48.png" alt="SliTaz spider" />
+	<img src="/images/artwork/tazpkg.png" alt="Tazpkg package logo" />
+	<img src="/images/artwork/slitaz-minilogo-80x15.png" alt="SliTaz mini logo" />
 </div>
 
 <!-- End of content  -->

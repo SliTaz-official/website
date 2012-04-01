@@ -1,9 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
 <head>
-	<title>SliTaz - 2010 News archives</title>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>SliTaz - 2010 News archives</title>
 	<meta name="description" content="Archive des news de SliTaz GNU/Linux 2009" />
 	<meta name="keywords" lang="fr" content="slitaz old news" />
 	<meta name="author" content="Christophe Lincoln"/>
@@ -31,6 +31,8 @@
 	</div>
 </div>
 
+<?php include("../../lib/lang.php"); ?>
+
 <!-- Content -->
 <div id="content">
 
@@ -39,7 +41,8 @@
 <div class="news">
 
 <ul>
-	<li><strong>4 Novembre 2010 - Nouvelle Cooking 20101104</strong>
+	<li>
+		<strong>4 Novembre 2010 - Nouvelle Cooking 20101104</strong>
 	<p>L'équipe SliTaz est heureuse le vous annoncer une nouvelle cooking
 	avec plus de 2600 paquets. Elle contient le Kernel Linux 2.6.34 et a
 	été construite avec la nouvelle toolchain composé de la glibc 2.11.2
@@ -54,7 +57,8 @@
 	mirroirs du site officiel du projet. Tous les feedback sont les
 	bienvenus et peuvent se faire à travers la mailing list ou le forum.</p>
 
-	<li><strong>08 Mai 2010 - Documentation de l'été</strong>
+	<li>
+		<strong>08 Mai 2010 - Documentation de l'été</strong>
 	<p>L'équipe de SliTaz organise une "documentation de l'été" depuis le 10
 	mai jusqu'au 10 juin. L'objectif principal est de centraliser, revoir
 	et mettre à jour toute la documentation en ligne.
@@ -63,7 +67,8 @@
 	les utilisateurs de SliTaz pourront contribuer en ajoutant et en
 	mettant à jour la documentation.</p>
 
-	<li><strong>28 Mar 2010 - Publication de SliTaz GNU/Linux 3.0</strong>
+	<li>
+		<strong>28 Mar 2010 - Publication de SliTaz GNU/Linux 3.0</strong>
 	<p>Tous les contributeurs SliTaz sont fiers d'annoncer la publication du
 	système d'exploitation SliTaz GNU/Linux 3.0. SliTaz est encore plus simple
 	à utiliser, plus rapide, plus facile à customizer, plus puissante et
@@ -92,5 +97,3 @@
 
 </body>
 </html>
-
-

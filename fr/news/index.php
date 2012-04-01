@@ -1,9 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
 <head>
-	<title>SliTaz - News archives</title>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>SliTaz - News archives</title>
 	<meta name="description" content="Archive des news de SliTaz GNU/Linux" />
 	<meta name="keywords" lang="fr" content="slitaz old news" />
 	<meta name="author" content="Christophe Lincoln"/>
@@ -23,13 +23,15 @@
 			Les archives de l'actualité du site classée par année.
 		</p>
 		<p>
-			<img src="/images/news.png" alt="[ News ]" />
+			<img src="/images/news.png" alt="[ ]" />
 			<a href="2007.php">2007</a> | <a href="2008.php">2008</a>
 			| <a href="2009.php">2009</a> | <a href="2010.php">2010</a>
 			| <a href="./">2011</a>
 		</p>
 	</div>
 </div>
+
+<?php include("../../lib/lang.php"); ?>
 
 <!-- Content -->
 <div id="content">
@@ -38,7 +40,8 @@
 
 <div class="news">
 
-	<li><strong>31 Mai 2011 - Nouvelle et fraîche Cooking 20110329</strong>
+	<li>
+		<strong>31 Mai 2011 - Nouvelle et fraîche Cooking 20110329</strong>
 	<p>
 		L'équipe de SliTaz est fière d'annoncer la disponibilité d'une nouvelle
 		version "cooking" de la distribution. Les paquetages ont été entièrement
@@ -66,8 +69,9 @@
 			slitaz-cooking.iso</a>
 	</p>
 	</li>
-	
-	<li><strong>29 Mars 2011 - Nouvelle Cooking 20110329</strong>
+
+	<li>
+		<strong>29 Mars 2011 - Nouvelle Cooking 20110329</strong>
 	<p>
 		L'équipe SliTaz est heureuse d'annoncer la publication d'une
 		nouvelle ISO "cooking" proposant plus de 2900 paquets. Tous les paquets
@@ -107,5 +111,3 @@
 
 </body>
 </html>
-
-

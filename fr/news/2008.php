@@ -1,9 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
 <head>
-	<title>SliTaz - 2008 News archives</title>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>SliTaz - 2008 News archives</title>
 	<meta name="description" content="Archive des news de SliTaz GNU/Linux" />
 	<meta name="keywords" lang="fr" content="slitaz old news" />
 	<meta name="author" content="Christophe Lincoln"/>
@@ -23,13 +23,15 @@
 			Les archives de l'actualité du site classée par année.
 		</p>
 		<p>
-			<img src="/images/news.png" alt="[ News ]" />
+			<img src="/images/news.png" alt="[ ]" />
 			<a href="2007.php">2007</a> | <a href="2008.php">2008</a>
 			| <a href="2009.php">2009</a> | <a href="2010.php">2010</a>
 			| <a href="./">2011</a>
 		</p>
 	</div>
 </div>
+
+<?php include("../../lib/lang.php"); ?>
 
 <!-- Content -->
 <div id="content">
@@ -39,7 +41,8 @@
 <div class="news">
 
 <ul>
-	<li><strong>31 Décembre 2008 - Cooking 20081231 - Support du Wifi et du NTFS</strong><br />
+	<li>
+		<strong>31 Décembre 2008 - Cooking 20081231 - Support du Wifi et du NTFS</strong><br />
 	Les membres du projet SliTaz sont fiers de vous proposer une nouvelle 
 	image ISO du LiveCD de la version Cooking. Elle vous permet 
 	d'utiliser et de tester le travail réalisé ces derniers mois. Elle comprend
@@ -63,8 +66,9 @@
 	acharné des développeurs SliTaz. Vous pouvez <a href="../get/#cooking">télécharger</a>
 	cette nouvelle mouture depuis un des miroirs officiels du projet.
 	</li>
-	
-	<li><strong>16 Juillet 2008 - Cooking 20080716 - Web boot et MPlayer</strong><br />
+
+	<li>
+		<strong>16 Juillet 2008 - Cooking 20080716 - Web boot et MPlayer</strong><br />
 	Les membres du projet SliTaz sont fiers d'annoncer la disponibilité
 	d'une nouvelle image ISO de la version Cooking, comprenant de nombreuses
 	résolutions de bugs et beaucoup de nouvelles fonctionnalités. Cette 
@@ -83,8 +87,9 @@
 	pour les machines ayant moins de ressources. 
 	<a href="../get/#cooking">Téléchargement de la dernière ISO</a>.
 	</li>
-	
-	<li><strong>26 Juin 2008 - Cooking 20080626 avec nouveau noyau</strong><br />
+
+	<li>
+		<strong>26 Juin 2008 - Cooking 20080626 avec nouveau noyau</strong><br />
 	L'été est là et la nouvelle Cooking aussi, depuis le 26 juin.
 	Beaucoup de travail pour un rendu plus soigné et un meilleur
 	confort pour l'utilisateur. Cette nouvelle version Cooking 
@@ -108,8 +113,9 @@
 	système de suivi de bugs de SliTaz : 
 	<a href="http://bugs.slitaz.org">BTS</a>
 	</li>
-	
-	<li><strong>18 Mai 2008 - Cooking 20080518 et LinuxDays.ch</strong><br />
+
+	<li>
+		<strong>18 Mai 2008 - Cooking 20080518 et LinuxDays.ch</strong><br />
 	L'équipe de SliTaz est fière d'annoncer la disponibilité d'une nouvelle
 	image ISO de la version Cooking, fournissant un grand nombre de
 	changements par rapport à la version stable. SliTaz utilise maintenant
@@ -132,8 +138,9 @@
 	à Genève le 21-22 Mai. Le stand proposera entre autres la gravure de
 	cdrom et l'installation sur clé USB à la demande.
 	</li>
-	
-	<li><strong>22 Mars 2008 - Publication de SliTaz GNULinux 1.0</strong><br />
+
+	<li>
+		<strong>22 Mars 2008 - Publication de SliTaz GNULinux 1.0</strong><br />
 	L'équipe des contributeurs SliTaz est fière de vous annoncer la publication
 	de SliTaz GNU/Linux 1.0. C'est la première version stable après plus de
 	deux ans de travail. Le système est distribué sous la forme d'un LiveCD de
@@ -148,11 +155,12 @@
 	pour les paquets populaires tel que Firefox. Vous pouvez obtenir SliTaz
 	GNU/Linux 1.0 depuis la partie <a href="../get/#stable">téléchargement</a> du
 	site et lire <a href="../doc/releases/1.0/relnotes.fr.html"
-		>les notes de publication</a>,
+	>les notes de publication</a>,
 	incluses dans la distribution, pour plus de détails sur cette version.
 	</li>
-	
-	<li><strong>26 Février 2008 - Cooking 20080225</strong><br />
+
+	<li>
+		<strong>26 Février 2008 - Cooking 20080225</strong><br />
 	Après plus d'un mois de travail sur SliTaz, le projet a mis en ligne une
 	nouvelle image ISO du LiveCD avec quelques nouveautés, des corrections,
 	des mises à jours, toutes les nouvelles version des outils, scripts et
@@ -173,8 +181,9 @@
 	et les outils, ajouter quelques paquets sur le miroir et écrire les notes
 	de publication. <a href="../get/#cooking">Téléchargement de la dernière Cooking</a>.
 	</li>
-	
-	<li><strong>07 Janvier 2008 - Nouvelle Cooking (20080107)</strong><br />
+
+	<li>
+		<strong>07 Janvier 2008 - Nouvelle Cooking (20080107)</strong><br />
 	Le projet SliTaz est fier de vous proposer une nouvelle version du LiveCD
 	comportant de nombreuses corrections et de nouvelles fonctionnalités dans
 	une image ISO de 22,1 Mb. Cette version fourni le server Xvesa d'Xorg
@@ -193,8 +202,9 @@
 	pouvez obtenir cette nouvelle version via la partie 
 	<a href="../get/#cooking">téléchargement</a> du site Web. Enjoy.
 	</li>
-	
-	<li><strong>06 Janvier 2008 - Populariser SliTaz : blog, forum, etc</strong><br />
+
+	<li>
+		<strong>06 Janvier 2008 - Populariser SliTaz : blog, forum, etc</strong><br />
 	Une des manières d'aider le projet est de le faire connaître, d'en parler
 	autour de soi, sur le Web, en famille ou entre amis. De plus, un petit
 	article fait toujours plaisir. Si vous avez écrit ou blogué, vous pouvez
@@ -212,5 +222,3 @@
 
 </body>
 </html>
-
-

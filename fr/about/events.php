@@ -1,12 +1,12 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
 <head>
-    <title>SliTaz - &Eacute;vénements</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="Au sujet de SliTaz GNU/Linux mini système d'exploitation" />
-    <meta name="keywords" lang="fr" content="Système, libre, gnu, linux, opensource, livecd" />
-    <meta name="author" content="Christophe Lincoln"/>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>SliTaz - Événements</title>
+	<meta name="description" content="Au sujet de SliTaz GNU/Linux mini système d'exploitation" />
+	<meta name="keywords" lang="fr" content="Système, libre, gnu, linux, opensource, livecd" />
+	<meta name="author" content="Christophe Lincoln"/>
 	<?php include("../../lib/html/meta-link.html"); ?>
 </head>
 <body>
@@ -18,7 +18,7 @@
 	<?php include("../../lib/html/nav.fr.html"); ?>
 	<!-- Information/image -->
 	<div id="block_info">
-		<h4>&Eacute;vénements</h4>
+		<h4>Événements</h4>
 		<p>
 			Le projet SliTaz participe à divers expositions en fontion
 			de notre temps libre et des propositions qui nous sont
@@ -26,6 +26,8 @@
 		</p>
 	</div>
 </div>
+
+<?php include("../../lib/lang.php"); ?>
 
 <!-- Content -->
 <div id="content">
@@ -38,6 +40,7 @@
 </ul>
 
 <h3>2008 LinuxDays (Suisse)</h3>
+
 <p>
 Le projet SliTaz a participé au 
 <a href="http://www.linuxdays.ch/">LinuxDay.ch</a> 2008 à Genève, 

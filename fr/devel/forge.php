@@ -1,9 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
 <head>
-	<title>SliTaz (fr) - Forge</title>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>SliTaz (fr) - Forge</title>
 	<meta name="description" content="Développement de SliTaz GNU/Linux" />
 	<meta name="keywords" lang="fr" content="developpement slitaz developer GNU Linux" />
 	<meta name="author" content="Christophe Lincoln"/>
@@ -23,12 +23,14 @@
 			Les outils et services utilisés pour forger Slitaz :-)
 		</p>
 		<p>
-			<img src="../../images/users.png" alt="users.png" />
+			<img src="/images/users.png" alt="[ ]" />
 			<a href="http://scn.slitaz.org/">Rejoingez nous sur SCN</a>
 			et la <a href="../mailing-list.php">mailing list</a>
 		</p>
 	</div>
 </div>
+
+<?php include("../../lib/lang.php"); ?>
 
 <!-- Content -->
 <div id="content">
@@ -55,8 +57,8 @@ les développeurs sont inscrits sur la liste, c'est le moyen de collaboration
 principal et privilégié.
 </p>
 
-<a name="kiss"></a>
-<h3>KISS et respect des standards</h3>
+<h3 id="kiss">KISS et respect des standards</h3>
+
 <p>
 Rester simple, respecter au mieux les standards, réaliser un travail soigné,
 rédiger de la documentation de haute qualité, fournir un système stable et
@@ -72,8 +74,8 @@ plusieurs développeurs actifs sur le <a href="http://forum.slitaz.org/">forum</
 et sur la <a href="../mailing-list.php">liste de discussion</a>.
 </p>
 
-<a name="tank"></a>
-<h3>Tank - Build host &amp; home</h3>
+<h3 id="tank">Tank - Build host &amp; home</h3>
+
 <p>
 Chaque contributeur peut avoir un compte sur le serveur principal du
 projet, avec un accès sécurisé, de l'espace disque, un répertoire public
@@ -87,8 +89,8 @@ L'utilisation du build host est décrite dans le Cookbook:
 <a href="http://doc.slitaz.org/en:cookbook:buildhost">SliTaz Build Host (tank)</a>.
 </p>
 
-<a name="repos"></a>
-<h3>Dépôts Mercurial</h3>
+<h3 id="repos">Dépôts Mercurial</h3>
+
 <p>
 Tous les sous-projets tels que Tazpkg, Tazwok ou Tazlito ont leurs propres 
 dépôts Hg sur le serveur du projet, tout comme le wok. Les développeurs ont
@@ -99,7 +101,9 @@ A noter qu'il y a 2 domaines : <a href="http://hg.slitaz.org/">hg.slitaz.org</a>
 est public et <code>repos.slitaz.org</code> nécessite une authentification, c'est-à-dire 
 que vous pouvez cloner hg.slitaz.org mais pas y pousser vos changements ou fichiers.
 </p>
+
 <h4>~/.hgrc</h4>
+
 <p>
 Mercurial utilise un fichier caché <code>~./hgrc</code> permettant de 
 spécifier son nom d'utilisateur. Il faut mettre votre nom et adresse mail pour
@@ -110,7 +114,9 @@ pousser vos modifications. Exemple :
 [ui]
 username = Prénom Nom &lt;you@example.org&gt;
 </pre>
+
 <h4>Cloner, modifier, commiter et pousser</h4>
+
 <p>
 Vous avez le choix de cloner anonymement via hg.slitaz.org ou directement avec
 votre login et mot de passe. Pour cloner un dépôt tel que le wok :
@@ -155,7 +161,9 @@ le bon URL :
 <pre>
  $ hg push http://repos.slitaz.org/wok/
 </pre>
+
 <h4>Mettre à jour un wok local</h4>
+
 <p>
 Pour mettre à jour votre wok local avec celui du serveur (<em>pull</em> pour
 tirer les changements) :
@@ -164,7 +172,9 @@ tirer les changements) :
  $ hg pull
  $ hg update
 </pre>
+
 <h4>Commandes utiles</h4>
+
 <p>
 Des commandes hg qui peuvent servir.
 </p>
@@ -176,8 +186,8 @@ Des commandes hg qui peuvent servir.
 	<li><code>hg head</code> : affiche le dernier log.</li>
 </ul>
 
-<a name="iconv"></a>
-<h3>Implémentation d'iconv()</h3>
+<h3 id="iconv">Implémentation d'iconv()</h3>
+
 <p>
 SliTaz utilise iconv() fourni par la GNU glibc, même si certain paquets
 proposent d'utiliser <code>libiconv</code> il faut utiliser la version de
@@ -185,8 +195,8 @@ la glibc (paquet <code>glibc-locale</code>). Il n'y a donc pas de paquet
 libiconv (1,2 Mb) dans SliTaz.
 </p>
 
-<a name="pkgs"></a>
-<h3>Paquets tazpkg</h3>
+<h3 id="pkgs">Paquets tazpkg</h3>
+
 <p>
 Les paquets tazpkg de SliTaz sont créés automatiquement via Tazwok et les
 recettes contenues dans le wok, <a href="http://doc.slitaz.org/fr:cookbook:start">le Cookbook</a>
@@ -214,8 +224,8 @@ là pour vous aider et que pour bien commencer, <a href="http://doc.slitaz.org/f
 >la documentation du wok et des outils</a> existe.
 </p>
 
-<a name="pkgs-naming"></a>
-<h3>Nommage des paquets</h3>
+<h3 id="pkgs-naming">Nommage des paquets</h3>
+
 <p>
 Dans la majorité des cas le nom du paquet est celui des sources exception
 faite des modules Python, Perl, PHP, Ruby, Lua. Par example le paquet Kid
@@ -223,8 +233,8 @@ fournissant un système de template XML et écrit en Python se nomme:
 <code>python-kid</code>.
 </p>
 
-<a name="site"></a>
-<h3>Gestion du site Web et des livres</h3>
+<h3 id="site">Gestion du site Web et des livres</h3>
+
 <p>
 La gestion du site et des livres (Handbook et Cookbook) est faite via un 
 dépôt Mercurial, ce qui nous permet de traviller à plusieurs. Il faut
@@ -247,8 +257,8 @@ site dans votre répertoire ~/Public, cela permet de naviguer dans votre
 copie locale via localhost/~user.
 </p>
 
-<a name="xhtml"></a>
-<h3>xHTML coding style</h3>
+<h3 id="xhtml">xHTML coding style</h3>
+
 <p>
 Les pages du site et des différents <em>books</em> sont codés en xHTML 1.0
 Transitional, les couleurs pour le <code>body</code> et les titres sont
@@ -287,6 +297,7 @@ le <em>validator</em> en ligne du W3C.
 </p>
 
 <h3>Diff et patch</h3>
+
 <p>
 Les utilitaires <code>diff</code> et <code>patch</code> sont des outils en
 ligne de commande permettant de créer et d'appliquer un fichier contenant

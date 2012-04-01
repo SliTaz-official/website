@@ -1,9 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
 <head>
-	<title>SliTaz - 2009 News archives</title>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>SliTaz - 2009 News archives</title>
 	<meta name="description" content="Archive des news de SliTaz GNU/Linux 2009" />
 	<meta name="keywords" lang="fr" content="slitaz old news" />
 	<meta name="author" content="Christophe Lincoln"/>
@@ -23,13 +23,15 @@
 			Les archives de l'actualité du site classée par année.
 		</p>
 		<p>
-			<img src="/images/news.png" alt="[ News ]" />
+			<img src="/images/news.png" alt="[ ]" />
 			<a href="2007.php">2007</a> | <a href="2008.php">2008</a>
 			| <a href="2009.php">2009</a> | <a href="2010.php">2010</a>
 			| <a href="./">2011</a>
 		</p>
 	</div>
 </div>
+
+<?php include("../../lib/lang.php"); ?>
 
 <!-- Content -->
 <div id="content">
@@ -39,7 +41,8 @@
 <div class="news">
 
 <ul>
-	<li><strong>4 novembre 2009 - Nouvelle Cooking 20091104</strong>
+	<li>
+		<strong>4 novembre 2009 - Nouvelle Cooking 20091104</strong>
 	<p>Les contributeurs SliTaz sont fiers d'annoncer la disponibilité d'une
 	nouvelle image ISO de la version Cooking basée sur plus de 2100 paquets
 	disponibles dans les dépôts SliTaz. Le système à été reconstruit au complet
@@ -61,7 +64,8 @@
 	téléchargement du site web: <a href="/fr/get/#cooking">Obtenir SliTaz Cooking</a></p>
 	</li>
 
-	<li><strong>19 mai 2009 - SliTaz aux LinuxDays 2009 (Genève)</strong>
+	<li>
+		<strong>19 mai 2009 - SliTaz aux LinuxDays 2009 (Genève)</strong>
 	<p>
 	Lors du salon LinuxDays en Suisse (3-4-5 juin), l'association SliTaz tiendra un stand
 	dans le village associatif et une conférence sera donnée mercredi matin.
@@ -81,7 +85,8 @@
 	</p>
 	</li>
 
-	<li><strong>16 avril 2009 - Publication de SliTaz GNU/linux 2.0</strong>
+	<li>
+		<strong>16 avril 2009 - Publication de SliTaz GNU/linux 2.0</strong>
 	<p>
 	Le projet SliTaz est fier d'annoncer la publication de SliTaz GNU/Linux
 	2.0, la nouvelle version stable de la distribution. Cette nouvelle version
@@ -105,7 +110,8 @@
 	<a href="../get/">miroirs du projet</a>.
 	</p></li>
 
-	<li><strong>20 Mars 2009 - SliTaz à Solutionslinux 2009 (Paris)</strong><br />
+	<li>
+		<strong>20 Mars 2009 - SliTaz à Solutionslinux 2009 (Paris)</strong><br />
 	Le projet SliTaz sera présent à Solutionslinux 2009 à Paris, le stand
 	sera tenu par 3 membres actifs de l'équipe pendant les 3 jours du salon
 	et plusieurs autres contributeurs seront présents à certain moment. Sur
@@ -119,7 +125,8 @@
 	<a href="http://www.solutionslinux.fr/exposant_fiche.php?id=763&amp;pg=2_4">Stand SliTaz</a>.
 	</li>
 
-	<li><strong>28 Février 2009 - Nouvelle Cooking</strong><br />
+	<li>
+		<strong>28 Février 2009 - Nouvelle Cooking</strong><br />
 	En préparation de la prochaine version stable, le projet SliTaz est fier
 	de publier une nouvelle version Cooking avec un grand nombre de corrections,
 	mises à jour et nouvelles fonctionnalités. L'auto-détection des périphériques
