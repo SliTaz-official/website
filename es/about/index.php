@@ -1,12 +1,12 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
 <head>
-    <title>SliTaz - Acerca de</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="SliTaz GNU/Linux project information overview" />
-    <meta name="keywords" lang="es" content="about slitaz, gnu, linux, mini distro, livecd" />
-    <meta name="author" content="Eduardo Suarez-Santana" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>SliTaz - Acerca de</title>
+	<meta name="description" content="SliTaz GNU/Linux project information overview" />
+	<meta name="keywords" lang="es" content="about slitaz, gnu, linux, mini distro, livecd" />
+	<meta name="author" content="Eduardo Suarez-Santana" />
 	<?php include("../../lib/html/meta-link.html"); ?>
 </head>
 <body>
@@ -37,8 +37,8 @@
 <!-- Content -->
 <div id="content">
 
-<a name ="intro"></a>
-<h3>Introducción</h3>
+<h3 id="intro">Introducción</h3>
+
 <p>
 SliTaz GNU/Linux es un sistema operativo gratuito que funciona 
 directamente en la memoria del ordenador, a partir de dispositivos 
@@ -62,42 +62,43 @@ o comentarios, mediante la lista de correo o directamente por correo a
 &lt;devel at slitaz.org&gt;.
 </p>
 
-<a name="overview"></a>
-<h3>Principales características</h3>
+<h3 id="overview">Principales características</h3>
+
 <ul>
-    <li>El sistema de ficheros raíz ocupa sobre los 100 MB y la imagen ISO menos de 30 MB.</li>
-    <li>Servidor Web de Lighttpd, con soporte para CGI y PHP listo para usar.</li>
-    <li>Navega por internet con Midori o Retawq, en modo texto.</li>
-    <li>Soporte para sonido mediante el reproductor de audio y el mezclador de Alsa, así como ripper y encoder de CDs.</li>
-    <li>Correo, chat y clientes FTP.</li>
-    <li>Cliente y servidor SSH de Dropbear.</li>
-    <li>Motor de base de datos de SQLite.</li>
-    <li>Generación de dispositivo LiveUSB.</li>
-    <li>Herramientas para crear, editar o quemar imágenes de CDs o DVDs.</li>
-    <li>Escritorio elegante con Openbox ejecutándose sobre Xorg/Xvesa (servidor X).</li>
-    <li>Cuadros de diálogo caseros para utilidades de línea de comandos.</li>
-    <li>2300 paquetes fácilmente instalables desde cualquier mirror.</li>
-    <li>Comunidad activa y acogedora.</li>
+	<li>El sistema de ficheros raíz ocupa sobre los 100 MB y la imagen ISO menos de 30 MB.</li>
+	<li>Servidor Web de Lighttpd, con soporte para CGI y PHP listo para usar.</li>
+	<li>Navega por internet con Midori o Retawq, en modo texto.</li>
+	<li>Soporte para sonido mediante el reproductor de audio y el mezclador de Alsa, así como ripper y encoder de CDs.</li>
+	<li>Correo, chat y clientes FTP.</li>
+	<li>Cliente y servidor SSH de Dropbear.</li>
+	<li>Motor de base de datos de SQLite.</li>
+	<li>Generación de dispositivo LiveUSB.</li>
+	<li>Herramientas para crear, editar o quemar imágenes de CDs o DVDs.</li>
+	<li>Escritorio elegante con Openbox ejecutándose sobre Xorg/Xvesa (servidor X).</li>
+	<li>Cuadros de diálogo caseros para utilidades de línea de comandos.</li>
+	<li>2300 paquetes fácilmente instalables desde cualquier mirror.</li>
+	<li>Comunidad activa y acogedora.</li>
 </ul>
 
-<a name="website"></a>
-<h3>Página web &amp; i18n</h3>
+<h3 id="website">Página web &amp; i18n</h3>
+
 <p>
 La web de SliTaz está también disponible en otros lenguajes y es parte 
-de su <a href="../../i18n.php">proyecto de internacionalización</a>. La 
+de su <a href="/i18n.php">proyecto de internacionalización</a>. La 
 web te permite <a href="../get/">descargarte</a> el LiveCD de SliTaz y 
 nos ayuda a desarrollar el proyecto. Puedes echar un vistazo a la 
 <a href="../doc/">documentación</a> para aprender a usar el LiveCD de 
 SliTaz y configurar tu sistema.
 </p>
 
-<a name="reviews"></a>
-<h3>Opinión</h3>
+<h3 id="reviews">Opinión</h3>
+
 <p>
 SliTaz GNU/Linux ha sido revisado en varias webs. 
 </p>
 
 <h4>2.0 - Abril 2009</h4>
+
 <ul>
 	<li><a href="http://www.gdhpress.com.br/blog/slitaz"
 		>Gdhpress</a> (pt) - Por Carlos Morimoto.</li>
@@ -112,6 +113,7 @@ SliTaz GNU/Linux ha sido revisado en varias webs.
 </ul>
 
 <h4>1.0 - Marzo 2008</h4>
+
 <ul>
 	<li><a href="http://distrowatch.com/weekly.php?issue=20080331"
 		>Distrowatch</a> - Por Ladislav Bodnar.</li>
@@ -137,6 +139,7 @@ SliTaz GNU/Linux ha sido revisado en varias webs.
 </ul>
 
 <h4>Cooking - Enero 2010</h4>
+
 <ul>
 	<li><a href="http://distrowatch.com/weekly.php?issue=20100111#feature"
 		>Distrowatch</a> - Por Jesse Smith.</li>

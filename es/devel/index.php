@@ -1,12 +1,12 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
 <head>
-    <title>SliTaz - Desarrollo</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="SliTaz GNU/Linux project information overview" />
-    <meta name="keywords" lang="es" content="about slitaz, gnu, linux, mini distro, livecd" />
-    <meta name="author" content="Eduardo Suarez-Santana" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>SliTaz - Desarrollo</title>
+	<meta name="description" content="SliTaz GNU/Linux project information overview" />
+	<meta name="keywords" lang="es" content="about slitaz, gnu, linux, mini distro, livecd" />
+	<meta name="author" content="Eduardo Suarez-Santana" />
 	<?php include("../../lib/html/meta-link.html"); ?>
 </head>
 <body>
@@ -25,7 +25,7 @@
 			proyecto.
 		</p>
 		<p>
-			<img src="../../images/users.png" alt="users.png" />
+			<img src="/images/users.png" alt="[ ]" />
 			<a href="http://scn.slitaz.org/">Únete a nosotros en SCN</a> y
 			en la <a href="../mailing-list.php">la lista de correo</a>
 		</p>
@@ -40,16 +40,16 @@
 <h2>Rincón del desarrollador</h2>
 
 <ul>
-	<li><a href="../../en/devel/forge.php">Forja</a> - Gestión colaborativa, KISS, líneas directrices, 
+	<li><a href="/en/devel/forge.php">Forja</a> - Gestión colaborativa, KISS, líneas directrices, 
 	respositorios de Mercurial, página web y otros servicios.</li>
-	<li><a href="../../i18n.php">Proyecto de internacionalización</a> -
+	<li><a href="/i18n.php">Proyecto de internacionalización</a> -
 	Traducciones, metas y administración.</li>
 	<li><a href="http://hg.slitaz.org/" >Repositorios de Mercurial</a></li>
 	<li><a href="http://bugs.slitaz.org/">Gestor de Incidencias de SliTaz</a></li>
 </ul>
 
-<a name="devel"></a>
-<h2>Involúcrate</h2>
+<h2 id="devel">Involúcrate</h2>
+
 <p>
 	SliTaz es una distribución comunitaria y de código abierto. Todo el
 	mundo es bienvenido a unirse y contribuir. Para usuarios, manitas y

@@ -1,12 +1,12 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
 <head>
-    <title>SliTaz - Arquivos de noticias</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="SliTaz news archives info release" />
-    <meta name="keywords" lang="en" content="System, free, gnu, linux, opensource software, livecd in RAM" />
-    <meta name="author" content="Christophe Lincoln"/>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>SliTaz - Arquivos de noticias</title>
+	<meta name="description" content="SliTaz news archives info release" />
+	<meta name="keywords" lang="en" content="System, free, gnu, linux, opensource software, livecd in RAM" />
+	<meta name="author" content="Christophe Lincoln"/>
 	<?php include("../../lib/html/meta-link.html"); ?>
 </head>
 <body>
@@ -25,10 +25,10 @@
 			that moved to their own domain).
 		</p>
 		<p>
-			<img src="../../images/news.png" alt="png" /> 
+			<img src="/images/news.png" alt="[ ]" /> 
 			<a href="2008.php">2008</a> | 
-            <a href="2009.php">2009</a> | 
-            2010
+			<a href="2009.php">2009</a> | 
+			2010
 		</p>
 	</div>
 </div>
@@ -41,7 +41,8 @@
 <h2>2010</h2>
 
 <ul>
-    <li><strong>4 de noviembre de 2010 - Nueva Cooking</strong>   
+	<li>
+		<strong>4 de noviembre de 2010 - Nueva Cooking</strong>   
 	<p>El equipo de trabajo de SliTaz se complace en anunciar la publicación
 	de una nueva ISO de Cooking cargada con más de 2600 paquetes. Contiene
 	el núcleo Linux 2.6.34 y ha sido rehecha con una nueva cadena de
@@ -52,13 +53,14 @@
 	añadido más configuración regional. Se ha trabajado mucho en los
 	últimos seis meses para resolver muchos errores y añadir
 	actualizaciones y mejoras. Puedes 
-	<a href="get/#cooking">descargarte</a> 
+	<a href="../get/#cooking">descargarte</a> 
 	esta nueva versión Cooking de cualquiera de los mirrors oficiales 
 	del proyecto. Apreciaciones o comentarios, canalizados a través de 
 	la lista de correo o del foro oficial, son siempre bienvenidos.</p>
 	</li>
 
-	<li><strong>8 de mayo de 2010 - Verano de documentación</strong>   
+	<li>
+		<strong>8 de mayo de 2010 - Verano de documentación</strong>   
 	<p>El equipo de SliTaz está organizando un 'Verano de Documentación' 
 	del 10 de mayo al 10 de junio. Su objetivo es centralizar, revisar y
 	actualizar toda la documentación en línea. Puedes encontrar más
@@ -67,7 +69,8 @@
 	añadiendo o bien actualizando la documentación.</p>
 	</li>
 
-    	<li><strong>28 de marzo de 2010 - Publicada SliTaz GNU/Linux 3.0</strong>   
+	<li>
+		<strong>28 de marzo de 2010 - Publicada SliTaz GNU/Linux 3.0</strong>   
 	<p>El equipo de SliTaz está encantado de anunciar la publicación de SliTaz
 	GNU/Linux 3.0. Más sencillo, rápido, configurable, potente, y aún así
 	increíblemente pequeño. Esta nueva versión estable ha sido publicada
@@ -79,12 +82,13 @@
 	en LiveCD desde 8MB. Esta versión estable ha sido generada con un nuevo
 	conjunto de herramientas, incluyendo GCC 4.4.1, y viene con el núcleo
 	2.6.30.6. Ya puedes leer las 
-	<a href="doc/releases/3.0/relnotes.es.html">Notas de Lanzamiento</a> para más 
+	<a href="../doc/releases/3.0/relnotes.es.html">Notas de Lanzamiento</a> para más 
 	información y <a href="../get/#stable">descargarte</a> una imagen 
 	LiveCD de los mirros de SliTaz.</p>
 	</li>
 
-	<li><strong>14 de marzo de 2010 - Series RC y Solutionslinux 2010 (París)</strong>
+	<li>
+		<strong>14 de marzo de 2010 - Series RC y Solutionslinux 2010 (París)</strong>
 	<p>Puesto que nos vamos acercando a la próxima versión estable, hemos
 	actualizado la imagen ISO principal para comenzar con series RC (release
 	candidate). El mayor cambio se encuentra en la sustitución del navegador
@@ -102,7 +106,8 @@
 	contactar con los miembros de la asociación y del equipo de desarrollo.</p>
 	</li>
 
-	<li><strong>21 de febrero de 2010 - Nueva Cooking 20100221</strong>	
+	<li>
+		<strong>21 de febrero de 2010 - Nueva Cooking 20100221</strong>	
 	<p>A los participantes del proyecto SliTaz nos complace anunciar una nueva
  	versión Cooking del LiveCD. Esta es la última Cooking RC antes de que la
 	versión 3.0 sea publicada. La ISO principal ocupa 27 MB y viene con
@@ -129,7 +134,6 @@
 	qué te parece en nuestro foro.</p>
 	</li>
 </ul>
-
 
 <!-- End of content -->
 </div>

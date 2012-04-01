@@ -1,13 +1,13 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
 <head>
-    <title>SliTaz - Descargas</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="SliTaz GNU/Linux LiveCD free download" />
-    <meta name="keywords" lang="es" content="source, iso, livecd, get, free" />
-    <meta name="author" content="Eduardo Suarez-Santana"/>
-    <?php include("../../lib/html/meta-link.html"); ?>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>SliTaz - Descargas</title>
+	<meta name="description" content="SliTaz GNU/Linux LiveCD free download" />
+	<meta name="keywords" lang="es" content="source, iso, livecd, get, free" />
+	<meta name="author" content="Eduardo Suarez-Santana"/>
+	<?php include("../../lib/html/meta-link.html"); ?>
 </head>
 <body>
 
@@ -43,12 +43,12 @@ include("../../lib/html/header.html");
 <h2>Descargas</h2>
 
 <ul>
-    <li><a href="#stable">LiveCD Versión Estable</a> -
-    Imagen ISO de autoarranque con la última versión estable.</li>
-    <li><a href="#cooking">LiveCD Versión Cooking</a> -
-    Imagen ISO de autoarranque con la versión Cooking.</li>
-    <li><a href="/en/get/flavors.php">LiveCD al gusto</a> (en) -
-    Varias modalides como loram.</li>
+	<li><a href="#stable">LiveCD Versión Estable</a> -
+		Imagen ISO de autoarranque con la última versión estable.</li>
+	<li><a href="#cooking">LiveCD Versión Cooking</a> -
+		Imagen ISO de autoarranque con la versión Cooking.</li>
+	<li><a href="/en/get/flavors.php">LiveCD al gusto</a> (en) -
+		Varias modalides como loram.</li>
 </ul>
 
 <div class="box">
@@ -60,6 +60,7 @@ include("../../lib/html/header.html");
 </div>
 
 <h3>Información general</h3>
+
 <p>
 	Esta página te permite descargar una copia gratuita del LiveCD SliTaz
 	GNU/Linux, así como utilidades o incluso el código fuente. Para comenzar a
@@ -70,6 +71,7 @@ include("../../lib/html/header.html");
 </p>
 
 <h3>Mirrors</h3>
+
 <p>
 	SliTaz se encuentra repartido actualmente en diversos servidores situados en
 	Francia, pertenecientes a <a href="http://www.ads-lu.com/">ADS</a>, 
@@ -79,8 +81,8 @@ include("../../lib/html/header.html");
 	Gracias a todos ellos por su colaboración en este proyecto.
 </p>
 
-<a name="sources"></a>
-<h3>Fuente</h3>
+<h3 id="sources">Fuente</h3>
+
 <p>
 	Tazpkg (el gestor de paquetes), Tazlito (la herramienta de creación del
 	liveCD), Tazwok (el creador de paquetes), TazUSB (la herramienta para el
@@ -89,11 +91,11 @@ include("../../lib/html/header.html");
 	Observa que todas estas utilidades vienen instaladas por defecto en SliTaz
 	y su fuente está comentado en inglés. Descarga los fuentes por
 	<a href="http://mirror.slitaz.org/sources/">HTTP</a> o por
-	<a href="http://mirror.slitaz.org/sources/">FTP</a>.
+	<a href="ftp://mirror.slitaz.org/sources/">FTP</a>.
 </p>
 
-<a name="stable"></a>
-<h2>LiveCD - Versión estable</h2>
+<h2 id="stable">LiveCD - Versión estable</h2>
+
 <p>
 	La versión estable de SliTaz proporciona un sistema operativo maduro y
 	bastante testeado por la comunidad. El núcleo del LiveCD te ofrece una amplia
@@ -103,12 +105,11 @@ include("../../lib/html/header.html");
 	<?php echo "$stable_rel."; ?>
 </p>
 
-<p class="box">
-	<img src="/images/download.png" height="48px" width="48px" alt="[ DL ]" />
+<div class="box-dl"><p>
 	<?php echo "SliTaz GNU/Linux $stable_ver ($stable_size) - 
 	<a href='$stable_iso'>slitaz-$stable_ver.iso</a>
 	[ <a href='$mirror/$stable_ver/slitaz-$stable_ver.md5'>md5</a> ]"; ?>
-</p>
+</p></div>
 
 <p>
 	Diariamente se genera una imagen de cdrom autoarrancable con todos los
@@ -117,15 +118,14 @@ include("../../lib/html/header.html");
 	script install.sh.
 </p>
 
-<p class="box">
-	<img src="/images/download.png" height="48px" width="48px" alt="[ DL ]" />
+<div class="box-dl"><p>
 	<?php echo "Colección de paquetes de SliTaz GNU/Linux $stable_ver ($stable_pkgs)
 	- <a href='$pkgs_mirror/$stable_ver/packages-$stable_ver.iso'>packages-$stable_ver.iso</a>
 	[ <a href='$pkgs_mirror/$stable_ver/packages-$stable_ver.md5'>md5</a> ]"; ?>
-</p>
+</p></div>
 
-<a name="cooking"></a>
-<h2>LiveCD - Versión Cooking</h2>
+<h2 id="cooking">LiveCD - Versión Cooking</h2>
+
 <p>
 	El LiveCD SliTaz "Cooking" es una versión dinámica y totalmente funcional que
 	te permite probar los últimos paquetes y mejoras, solicitar nueva
@@ -133,12 +133,11 @@ include("../../lib/html/header.html");
 	versión estable.
 </p>
 
-<p class="box">
-	<img src="/images/download.png" height="48px" width="48px" alt="[ DL ]" />
+<div class="box-dl"><p>
 	<?php echo "SliTaz GNU/Linux Cooking $cooking_ver ($cooking_size) - 
 	<a href='$cooking_iso'>slitaz-$cooking.iso</a>
 	[ <a href='$mirror/cooking/slitaz-$cooking.md5'>md5</a> ]"; ?>
-</p>
+</p></div>
 
 <p>
 	Diariamente se genera una imagen de DVD autoarrancable con todos los paquetes
@@ -147,12 +146,11 @@ include("../../lib/html/header.html");
 	install.sh.
 </p>
 
-<p class="box">
-	<img src="/images/download.png" height="48px" width="48px" alt="[ DL ]" />
+<div class="box-dl"><p>
 	<?php echo "Colección de paquetes de SliTaz GNU/Linux Cooking ($cooking_pkgs)
 	- <a href='$pkgs_mirror/cooking/packages-cooking.iso'>packages-cooking.iso</a>
 	[ <a href='$pkgs_mirror/cooking/packages-cooking.md5'>md5</a> ]"; ?>
-</p>
+</p></div>
 
 <!-- End of content -->
 </div>

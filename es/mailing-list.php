@@ -2,8 +2,8 @@
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
 <head>
-    	<title>SliTaz - Lista de correo</title>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>SliTaz - Lista de correo</title>
 	<meta name="description" content="slitaz users developers mailing list" />
 	<meta name="keywords" content="slitaz list mail discuss" lang="es" />
 	<meta name="author" content="Eduardo Suarez-Santana" />
@@ -25,7 +25,7 @@
 			list - Join now to get help or involved in the project.
 		</p>
 		<p>
-			<img src="../images/users.png" alt="users.png" />
+			<img src="/images/users.png" alt="[ ]" />
 			Also you can <a href="http://scn.slitaz.org/">join us on SCN</a>
 			and the support <a href="http://forum.slitaz.org/">forum</a> or:
 		</p>
@@ -51,8 +51,8 @@
 	<li><a href="mailing-list.php#archives">Archivo de la lista</a> - Leer y buscar en los mensajes archivados.</li>
 </ul>
 
-<a name="about"></a>
-<h3>Acerca de la lista</h3>
+<h3 id="about">Acerca de la lista</h3>
+
 <p>
 La lista de discusión/distribución es el principal medio de comunicación
 de la comunidad SliTaz. La lista está abierta a cualquiera. Eres libre
@@ -72,7 +72,9 @@ todos los mensajes enviados por otros. Los mensajes son enviados por el
 motor de listas de <a href="http://www.tuxfamily.org/">TuxFamily</a>, 
 que funciona basado en el excelente <a href="http://www.vhffs.org/">VHFFS</a>.
 </p>
+
 <h4>Civismo</h4>
+
 <p>
 La lista de correo se usa por gente a la vez apasionada y sensible. Haz
 un esfuerzo por tratar a los demás con respeto, aunque a veces te puedas
@@ -81,8 +83,8 @@ En su lugar, si entiendes que alguien no se comporta correctamente
 contacta algún desarrollador.
 </p>
 
-<a name="usage"></a>
-<h3>Usando la lista</h3>
+<h3 id="usage">Usando la lista</h3>
+
 <p>
 Para poder usar la lista debes suscribirte primero. Con la suscripción
 recibirás un mensaje con un número de confirmación que deberás devolver
@@ -101,7 +103,9 @@ general usa "Reply" para contestar un mensaje.
 	<li>Correo para enviar un mensaje :
 	<a href="mailto:slitaz@lists.tuxfamily.org">slitaz@lists.tuxfamily.org</a></li>
 </ul>
+
 <h4>Formato</h4>
+
 <p>
 Los mensajes deben enviarse en texto plano y no en HTML, justificando
 las líneas a 72-80 caracteres, para que quien use un cliente de correo
@@ -110,8 +114,8 @@ automáticamente los clientes de correo. Se recomienda eliminar las citas
 innecesarias y no adjuntar ficheros demasiado grandes.
 </p>
 
-<a name="archives"></a>
-<h3>Archivos de la lista</h3>
+<h3 id="archives">Archivos de la lista</h3>
+
 <p>
 La lista de correo es un foro público, con todos los mensajes archivados
 y disponibles en línea. Esto permite a los que no están registrados
@@ -124,32 +128,6 @@ la Lista de Correo.</a>
 </p>
 
 <div>
-<style type="text/css">
-	table {
-		border: 1px solid #444444;
-		width: variable;
-		border-collapse: collapse;
-    	}
-	td {
-		border: 1px dotted #6495ed;
-		width: variable;
-		padding: 2px;
-	}
-	.rowodd {
-		background-color: #ffffff;
-	}
-	.roweven {
-		background-color: #e1ffe1; /* the tower [spanish translator comment: LOL!] */
-	}
-	th {
-		border: 1px solid #444444;
-		width: variable;
-		padding: 4px;
-	}
-	.alignright {
-		text-align: right;
-	}
-</style>
 <object type="text/html" width="100%" height="345" data="../lib/archives.php?lang=es">
 </object>
 </div>

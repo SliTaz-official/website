@@ -1,13 +1,13 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
 <head>
-    <title>SliTaz - Paquetes</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="SliTaz GNU/Linux LiveCD packages" />
-    <meta name="keywords" lang="es" content="package, tazpkg" />
-    <meta name="author" content="Eduardo Suarez-Santana" />
-    <?php include("../../lib/html/meta-link.html"); ?>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>SliTaz - Paquetes</title>
+	<meta name="description" content="SliTaz GNU/Linux LiveCD packages" />
+	<meta name="keywords" lang="es" content="package, tazpkg" />
+	<meta name="author" content="Eduardo Suarez-Santana" />
+	<?php include("../../lib/html/meta-link.html"); ?>
 </head>
 <body>
 
@@ -70,13 +70,13 @@
 </div>
 
 <div class="box">
-	<img src="../../images/text.png" alt="text.png" />
+	<img src="/images/text.png" alt="[ ]" />
 	Raw packages.list:
 	<a href="http://mirror.slitaz.org/packages/stable/packages.list"
 		>Stable</a> |
 	<a href="http://mirror.slitaz.org/packages/cooking/packages.list"
-		>Cooking</a>
-	<img src="../../images/network.png" alt="text.png" />
+		>Cooking</a><br />
+	<img src="/images/network.png" alt="[ ]" />
 	Main mirror:
 	<a href="http://mirror.slitaz.org/packages/"
 		>http://mirror.slitaz.org/packages/</a>
@@ -89,7 +89,7 @@
 <div class="activity">
 	<p>
 		<a href="http://hg.slitaz.org/">
-			<img src="/images/development.png" alt="[ Devel ]" /></a>
+			<img src="/images/development.png" alt="[ ]" /></a>
 		Últimos commits en el wok
 		<?php get_feed("wok.xml"); ?>
 	</div>
@@ -99,6 +99,7 @@
 </div>
 
 <h2>Documentation</h2>
+
 <p>
 	The SliTaz project provides detailed 
 	<a href="http://doc.slitaz.org/">documentation</a>

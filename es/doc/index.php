@@ -1,11 +1,11 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
 <head>
-    <title>SliTaz - Documentación</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="SliTaz GNU/Linux documentation in spanish" />
-    <meta name="keywords" lang="es" content="" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>SliTaz - Documentación</title>
+	<meta name="description" content="SliTaz GNU/Linux documentation in spanish" />
+	<meta name="keywords" lang="es" content="" />
 	<meta name="author" content="Eduardo Suarez-Santana" />
 	<?php include("../../lib/html/meta-link.html"); ?>
 </head>
@@ -55,14 +55,15 @@
 	scripts de arranque y los ficheros del cd, así como varias herramientas.</li>
 </p>
 <p>
-	<a href="../../en/doc/scratchbook/">Desde Cero</a> - SliTaz desde cero. 
+	<a href="/en/doc/scratchbook/">Desde Cero</a> - SliTaz desde cero. 
 	Describe las fases para la creación de la primera distribución SliTaz, comenzando con 
 	instrucciones en la compilación del kernel de Linux, instalando el servidor gráfico (Xvesa)
 	y las aplicaciones GTK, etc. Contiene técnicas que requieren tiempo y motivación, pero que te 
 	permitirán construir un sistema GNU/Linux desde cero.
 </p>
 
-<h2>Manuals</h2>	
+<h2>Manuals</h2>
+
 <ul>
 	<li><a href="http://hg.slitaz.org/tazpkg/raw-file/tip/doc/tazpkg.en.html"
 		>Manual de Tazpkg</a> -  Gestor de paquetes de SliTaz.</li>
@@ -74,13 +75,15 @@
 		>Manual de Tazwok</a> -  Cocinero de paquetes para SliTaz.</li>
 </ul>
 
-<h2>Recursos via wiki</h2>	
+<h2>Recursos via wiki</h2>
+
 <p>
 El <a href="http://doc.slitaz.org/">Wiki</a> contiene documentación de la comunidad 
 incluyendo howtos específicos, consejos, trucos, etc. Tus contribuciones son bienvenidas.
 </p>
 
 <h2>Notas de las versiones publicadas</h2>
+
 <p>
 Las Notas de las Versión (Release Notes) de SliTaz proporcionan información detallada 
 acerca de versión estable y dan algunos consejos útiles para ayudarte a empezar a usar 
@@ -89,12 +92,12 @@ el menú "Documentación".
 </p>
 
 <ul>
-	<li><a href="../../es/doc/releases/3.0/relnotes.es.html">SliTaz GNU/Linux 3.0 - 
-	Notas de la Versión</a></li>
-	<li><a href="../../en/doc/releases/2.0/relnotes.en.html">SliTaz GNU/Linux 2.0 - 
-	Notas de la Versión</a></li>
-	<li><a href="../../en/doc/releases/1.0/relnotes.en.html">SliTaz GNU/Linux 1.0 - 
-	Notas de la Versión</a></li>
+	<li><a href="releases/3.0/relnotes.es.html">SliTaz GNU/Linux 3.0 - 
+		Notas de la Versión</a></li>
+	<li><a href="/en/doc/releases/2.0/relnotes.en.html">SliTaz GNU/Linux 2.0 - 
+		Notas de la Versión</a></li>
+	<li><a href="/en/doc/releases/1.0/relnotes.en.html">SliTaz GNU/Linux 1.0 - 
+		Notas de la Versión</a></li>
 </ul>
 
 <!-- End of content  -->

@@ -1,12 +1,12 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
 <head>
-    <title>SliTaz - Asociación</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="SliTaz GNU/Linux asso non-profit donate" />
-    <meta name="keywords" lang="es" content="about slitaz, gnu, linux, mini distro, livecd" />
-    <meta name="author" content="Eduardo Suarez-Santana" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>SliTaz - Asociación</title>
+	<meta name="description" content="SliTaz GNU/Linux asso non-profit donate" />
+	<meta name="keywords" lang="es" content="about slitaz, gnu, linux, mini distro, livecd" />
+	<meta name="author" content="Eduardo Suarez-Santana" />
 	<?php include("../../lib/html/meta-link.html"); ?>
     <script type="text/javascript">
 	/* <![CDATA[ */
@@ -43,7 +43,7 @@
 				style="display: inline;">
 					<input type="hidden" name="cmd" value="_s-xclick" />
 					<input type="hidden" name="hosted_button_id" value="4885025" />
-					<input type="image" src="../../images/paypal.png" name="submit" 
+					<input type="image" src="/images/paypal.png" name="submit" 
 						alt="PayPal - The safer, easier way to pay online!" />
 			</form>
 			<!-- Flattr boutton -->
@@ -69,8 +69,8 @@
 	<li><a href="#postal">Dirección Postal</a></li>
 </ul>
 
-<a name="overview"></a>
-<h3>Introducción</h3>
+<h3 id="overview">Introducción</h3>
+
 <p>
 SliTaz GNU/Linux es una asociación internacional asentada en Suiza,
 respetando el Código Civil Suizo. La asociación consta de un comité
@@ -90,12 +90,12 @@ deseen patrocinar el proyecto.
 <p>
 Una copia de los estatutos se envía a cada miembro una vez dados de
 alta, y una versión en PDF está siempre disponible en la web: 
-<a href="../../fr/asso/status-association-slitaz.pdf">status-association-slitaz.pdf</a> |
-<a href="../../en/asso/statutes.php">versión traducida al inglés</a>.
+<a href="/fr/asso/status-association-slitaz.pdf">status-association-slitaz.pdf</a> |
+<a href="/en/asso/statutes.php">versión traducida al inglés</a>.
 </p>
 
-<a name="goals"></a>
-<h3>Objetivos actuales</h3>
+<h3 id="goals">Objetivos actuales</h3>
+
 <p>
 SliTaz es un proyecto que hace uso de un modelo de desarrollo abierto y
 todo el trabajo se hace por una comunidad de voluntarios. Nuestra meta
@@ -113,8 +113,8 @@ subproyectos serían también más dinámicos y verían nuevas
 características publicadas más frecuentemente.
 </p>
 
-<a name="members"></a>
-<h3>Miembros</h3>
+<h3 id="members">Miembros</h3>
+
 <p>
 La asociación está abierta a cualquier persona. Darse de alta como
 miembro te permite apoyar el proyecto y asegurar su sostenibilidad
@@ -133,8 +133,8 @@ favor especifica:
 	<li>País</li>
 </ul>
 
-<a name="sponsors"></a>
-<h3>Patrocinio</h3>
+<h3 id="sponsors">Patrocinio</h3>
+
 <p>
 La asociación SliTaz también busca asegurar y mantener un sistema base
 fiable y estable que provea servicios de alta calidad para permitir a
@@ -150,8 +150,8 @@ personal de la asociación. Para más información puedes contactarnos por
 correo postal o electrónico en: asso(at)slitaz.org .
 </p>
 
-<a name="donation"></a>
-<h3>Donaciones</h3>
+<h3 id="donation">Donaciones</h3>
+
 <p>
 Hay varias maneras de apoyar financieramente la asociación además de
 haciéndose miembro o patrocinador, y es haciendo un único pago mediante
@@ -168,7 +168,7 @@ bienvenido.
 		style="display: inline;">
 			<input type="hidden" name="cmd" value="_s-xclick" />
 			<input type="hidden" name="hosted_button_id" value="4885025" />
-			<input type="image" src="../../images/paypal.png" name="submit" 
+			<input type="image" src="/images/paypal.png" name="submit" 
 				alt="PayPal - The safer, easier way to pay online!" />
 	</form>
 	<!-- Flattr boutton -->
@@ -176,8 +176,8 @@ bienvenido.
 		href="http://www.slitaz.org/"></a>
 </div>
 
-<a name="postal"></a>
-<h3>Dirección Postal</h3>
+<h3 id="postal">Dirección Postal</h3>
+
 <div class="box">
 Association SliTaz GNU/Linux<br />
 Rue du Village 40<br />
