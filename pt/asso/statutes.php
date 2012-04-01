@@ -1,16 +1,13 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt">
 <head>
-    <title>SliTaz - Artigos da Associação</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="SliTaz GNU/Linux asso non-profit donate" />
-    <meta name="keywords" lang="pt" content="sobre slitaz, gnu, linux, mini distro, livecd" />
-    <meta name="robots" content="index, follow, all" />
-    <meta name="modified" content="2011-03-26 00:30:00" />
-    <meta name="author" content="Claudinei Pereira" />
-    <link rel="shortcut icon" href="../../favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="../../slitaz.css" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>SliTaz - Artigos da Associação</title>
+	<meta name="description" content="SliTaz GNU/Linux asso non-profit donate" />
+	<meta name="keywords" lang="pt" content="sobre slitaz, gnu, linux, mini distro, livecd" />
+	<meta name="author" content="Claudinei Pereira" />
+	<?php include("../../lib/html/meta-link.html") ?>
 </head>
 <body>
 
@@ -18,10 +15,8 @@
 
 <!-- Block -->
 <div id="block">
-    
-    <?php include("../../lib/html/nav.pt.html"); ?>
-
-    <!-- Information/image -->
+	<?php include("../../lib/html/nav.pt.html"); ?>
+	<!-- Information/image -->
 	<div id="block_info">
 		<h4>Artigos da Associação</h4>
 		<p>
@@ -41,8 +36,11 @@
 
 <h2>Estatuto</h2>
 
+
 <h3>Geral</h3>
+
 <h4>Artigo 1: Nome, localização e duração</h4>
+
 <p>
 A "Associação SliTaz GNU/Linux" é uma organização sem fins lucrativos, 
 política e religiosamente neutra, corporativamente organizada de acordo
@@ -51,6 +49,7 @@ Montpreveyres, Suiça. Sua duração é ilimitada.
 </p>
 
 <h4>Artigo 2: Propósito</h4>
+
 <p>
 O objetivo da associação é manter, prover suporte e promover o SliTaz
 GNU/Linux, uma distribuição focada em fornecer um sistema operacional
@@ -58,7 +57,9 @@ livre, estável, leve e portável.
 </p>
 
 <h3>Membros</h3>
+
 <h4>Artigo 3: Membros</h4>
+
 <p>
 Indivíduos ou grupos interessados nos objetivos da associação podem se 
 tornar membros. Os pedidos de associação são enviados ao comitê, que 
@@ -66,6 +67,7 @@ admite novos membros e informa a Assembléia Geral.
 </p>
 
 <h4>Artigo 4: Admissão, desistência e exclusão</h4>
+
 <p>
 Cada membro deve reconhecer o Estatuto da Associação e as decisões dos
 organizadores. Alguém torna-se membro ao pagar a taxa de associação fixada.
@@ -83,6 +85,7 @@ desistido de sua associação.
 </p>
 
 <h4>Artigo 5: Responsabilidade</h4>
+
 <p>
 Membros associados não podem ser responsabilizados por quaisquer
 comprometimentos feitos pela Associação, a não ser àqueles relacionados
@@ -90,7 +93,9 @@ exclusivamente a ela.
 </p>
 
 <h3>Órgãos</h3>
+
 <h4>Artigo 6: Órgãos</h4>
+
 <p>
 Os órgãos da Associação são:
 </p>
@@ -101,6 +106,7 @@ Os órgãos da Associação são:
 </ul>
 
 <h4>Artigo 7: A Assembléia Geral</h4>
+
 <p>
 O órgão supremo da Associação é a Assembléia Geral. Ocorre a cada ano e é
 formada por todos os membros da Associação. A data e a pauta devem ser
@@ -115,7 +121,7 @@ objetiva:
 </p>
 <ul>
 	<li>Eleger o Comitê e Conselho de Auditoria</li>
-    <li>Aprovar o relatório apresentado pelo Comitê</li>
+	<li>Aprovar o relatório apresentado pelo Comitê</li>
 	<li>Discutir a política geral da Associação</li>
 	<li>Deliberar sobre as propostas feitas a ela</li>
 	<li>Aprovar as contas e colocar o orçamento em votação</li>
@@ -138,12 +144,14 @@ Assembléia.
 </p>
 
 <h4>Artigo 8: Assembléia Extraordinária</h4>
+
 <p>
 Assembléias Extraordinárias podem ser marcadas pelo Comitê ou a pedido
 de um quinto dos membros com direito à voto.
 </p>
 
 <h4>Artigo 9: O Comitê</h4>
+
 <p>
 O Comitê é autônomo e é formado por 3 a 5 membros. É eleito pela 
 Assembléia Geral, porém o que determina sua atuação são suas próprias 
@@ -171,6 +179,7 @@ O Comitê deve:
 </ul>
 
 <h4>Artigo 10: Conselho de Auditoria</h4>
+
 <p>
 A Assembléia Geral deve eleger dois auditores pelo período de dois anos, 
 que podem ser reeleitos. São responsáveis pela auditoria da Associação e
@@ -179,7 +188,9 @@ forem solicitados pela Assembléia Geral.
 </p>
 
 <h3>Finanças</h3>
+
 <h4>Artigo 11: Recursos</h4>
+
 <p>
 Os Recursos da associação provêm de:
 </p>
@@ -190,6 +201,7 @@ Os Recursos da associação provêm de:
 </ul>
 
 <h4>Artigo 12: Contribuições</h4>
+
 <p>
 As contribuições de membros, individualmente ou em grupos, são definidas
 pela Reunião Geral. Membros do Comitê e voluntários não pagam taxas ou
@@ -197,7 +209,9 @@ contribuições.
 </p>
 
 <h3>Disposições Finais</h3>
+
 <h4>Artigo 13: Emendas ao Estatuto</h4>
+
 <p>
 Modificações no Estatuto somente serão aceitas após decisão do Comitê ou
 da Assembléia Geral, pela maioria de 2/3 dos votos de membros votantes,
@@ -205,6 +219,7 @@ desde que a emenda esteja relacionada na pauta da Assembléia.
 </p>
 
 <h4>Artigo 14: Dissolução</h4>
+
 <p>
 A dissolução da Associação pode ser decidida somente mediante o pedido
 do Comitê ou pela metade dos membros com direito a voto, em uma Assembléia
@@ -216,6 +231,7 @@ propósitos.
 </p>
 
 <h4>Artigo 15: Homologação</h4>
+
 <p>
 O Estatuto foi aprovado pela Assembléia Geral constituida em 31 de março
 de 2009, passando a ter efeito a partir desta data. Para qualquer outra
@@ -226,6 +242,7 @@ o Artigo 60 do Código Civil Suiço.
 <h4>Local e Data: Paris, 31 de março de 2009.</h4>
 
 <h4>Pela Associação:</h4>
+
 <p style="text-align: center"><i>
 Christophe Lincoln | Pascal Bellard | Eric Joseph-Alexandre
 </i></p>

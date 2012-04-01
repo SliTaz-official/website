@@ -1,9 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt">
 <head>
-	<title>SliTaz GNU/Linux (pt)</title>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>SliTaz GNU/Linux (pt)</title>
 	<meta name="description" content="SliTaz GNU/Linux LiveCD" />
 	<meta name="keywords" lang="pt" content="sistema, livre, gnu, linux, software opensource, livecd LINUX na RAM" />
 	<meta name="author" content="Claudinei Pereira" />
@@ -39,12 +39,12 @@
 <div id="content">
 
 <div class="box">
-	<img src="../images/update.png" alt=" [Update ]" style="float: left; margin-right: 10px; " />
+	<img src="/images/update.png" alt="[ ]" style="float: left; margin-right: 10px; " />
 	<p>
 		Ajude-nos a obter um servidor dedicado - Visite a página de
 		<a href="http://www.gofundme.com/3ql70">Doação Online</a>
 		ou torne-se um
-		<a href="/pt/sponsor/">patrocinador</a> oficial.
+		<a href="sponsor/">patrocinador</a> oficial.
 	</p>
 </div>
 
@@ -81,6 +81,7 @@
 		<a href="http://mirror.slitaz.org/iso/cooking/slitaz-4.0-RC2.iso">SliTaz 4.0-RC2</a>
 	</p>
 	</li>
+
 	<li><strong>23 Feb 2012 -  SliTaz 4.0 RC1</strong>
 	<p>
 		O time de desenvolvedores do SliTaz anuncia a disponibilidade do primeiro
@@ -118,14 +119,13 @@
 </div>
 
 <h2>Atividades do projeto</h2>
-<?php
-	require_once("../lib/get-feeds.php");
-?>
+
+<?php require_once("../lib/get-feeds.php"); ?>
 
 <div class="activity">
 	<p>
 		<a href="http://scn.slitaz.org/activity/"><img 
-			src="../images/users.png" alt="users.png" /></a>
+			src="/images/users.png" alt="[ ]" /></a>
 		Atividade da comunidade
 		<?php get_feed("scn.xml"); ?>
 	</div>
@@ -137,7 +137,7 @@
 <div class="activity">
 	<p>
 		<a href="http://forum.slitaz.org/"><img 
-			src="/images/support.png" alt="[ Support ]" /></a>
+			src="/images/support.png" alt="[ ]" /></a>
 		Forum activity
 		<?php get_feed_forum("forum.xml"); ?>
 	</div>
@@ -149,7 +149,7 @@
 <div class="activity">
 	<p>
 		<a href="http://hg.slitaz.org/">
-			<img src="../images/development.png" alt="development.png" /></a>
+			<img src="/images/development.png" alt="[ ]" /></a>
 		Últimos commits no wok
 		<?php get_feed("wok.xml"); ?>
 	</div>
@@ -159,6 +159,7 @@
 </div>
 
 <h2>Ajude-nos</h2>
+
 <p>
 	Ajude o SliTaz a ser mais popular ou faça uma doação. Pode criar um 
 	post de blog, um tweet, divulgar o projeto no facebook ou também 

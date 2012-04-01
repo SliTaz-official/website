@@ -1,12 +1,12 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt">
 <head>
-    <title>SliTaz - Documentação em Português</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="SliTaz GNU/Linux English documentationx part livecd tazpkg packages" />
-    <meta name="keywords" lang="pt" content="sistema, livre, gnu, linux, opensource software, livecd na RAM" />
-    <meta name="author" content="Claudinei Pereira" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>SliTaz - Documentação em Português</title>
+	<meta name="description" content="SliTaz GNU/Linux English documentationx part livecd tazpkg packages" />
+	<meta name="keywords" lang="pt" content="sistema, livre, gnu, linux, opensource software, livecd na RAM" />
+	<meta name="author" content="Claudinei Pereira" />
 	<?php include("../../lib/html/meta-link.html"); ?>
 </head>
 <body>
@@ -50,24 +50,26 @@
 	conforme suas necessidades e preferências.
 </p>
 <p>
-    <a href="http://doc.slitaz.org/pt:cookbook:start">Cookbook</a>
-    - Livro de Receitas. Instruções de utilização do wok e das receitas
-    de pacotes.
+	<a href="http://doc.slitaz.org/pt:cookbook:start">Cookbook</a>
+	- Livro de Receitas. Instruções de utilização do wok e das receitas
+	de pacotes.
 </p>
-    
+
 <h2>Manuais</h2>    
+
 <ul>
-    <li><a href="http://hg.slitaz.org/tazpkg/raw-file/tip/doc/tazpkg.pt_BR.html"
-        >Manual Tazpkg</a> - Gerenciador de pacotes do SliTaz.</li>
-    <li><a href="http://hg.slitaz.org/tazlito/raw-file/tip/doc/tazlito.pt_BR.html"
-        >Manual Tazlito</a> -  Utilitário LiveCD do SliTaz.</li>
-    <li><a href="http://hg.slitaz.org/tazusb/raw-file/tip/doc/tazusb.pt_BR.html"
-        >Manual TazUSB</a> -  Utilitário LiveUSB do SliTaz.</li>
+	<li><a href="http://hg.slitaz.org/tazpkg/raw-file/tip/doc/tazpkg.pt_BR.html"
+		>Manual Tazpkg</a> - Gerenciador de pacotes do SliTaz.</li>
+	<li><a href="http://hg.slitaz.org/tazlito/raw-file/tip/doc/tazlito.pt_BR.html"
+		>Manual Tazlito</a> -  Utilitário LiveCD do SliTaz.</li>
+	<li><a href="http://hg.slitaz.org/tazusb/raw-file/tip/doc/tazusb.pt_BR.html"
+		>Manual TazUSB</a> -  Utilitário LiveUSB do SliTaz.</li>
 	<li><a href="http://hg.slitaz.org/cookutils/raw-file/tip/doc/cookutils.pt_BR.html"
-        >Manual Cookutils</a> -  Criador de Pacotes do SliTaz.</li>
+		>Manual Cookutils</a> -  Criador de Pacotes do SliTaz.</li>
 </ul>
 
 <h2>Nova Documentação Wiki</h2>    
+
 <p>
 	Toda a documentação do SliTaz foi movida: os manuais, guias e 
 	outros recursos agora estão disponíveis em
@@ -75,6 +77,7 @@
 </p>
 
 <h2>Notas de Lançamento</h2>
+
 <p>
 	As notas de lançamento do SliTaz fornecem informações detalhadas 
 	sobre a versão estável e dão dicas úteis que o ajudarão a começar

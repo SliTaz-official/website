@@ -1,16 +1,13 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt">
 <head>
-    <title>SliTaz - Arquivo de notícias</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="SliTaz news archives info release" />
-    <meta name="keywords" lang="pt" content="sistema, livre, gnu, linux, opensource software, livecd na RAM" />
-    <meta name="robots" content="index, follow, all" />
-    <meta name="modified" content="<?php echo (date( "Y-m-d H:i:s", getlastmod())); ?>" />
-    <meta name="author" content="Christophe Lincoln"/>
-    <link rel="shortcut icon" href="../../favicon.ico" />
-    <link rel="stylesheet"  type="text/css" href="../../slitaz.css" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>SliTaz - Arquivo de notícias</title>
+	<meta name="description" content="SliTaz news archives info release" />
+	<meta name="keywords" lang="pt" content="sistema, livre, gnu, linux, opensource software, livecd na RAM" />
+	<meta name="author" content="Christophe Lincoln"/>
+	<?php include("../../lib/html/meta-link.html") ?>
 </head>
 <body>
 
@@ -18,26 +15,27 @@
 
 <!-- Block -->
 <div id="block">
-
-   	<?php include("../../lib/html/nav.pt.html"); ?>
-
-    <div id="block_info">
+	<?php include("../../lib/html/nav.pt.html"); ?>
+	<!-- Information/image -->
+	<div id="block_info">
 		<h4>Arquivos de notícias</h4>
 		<p>
-            As notícias do site arquivadas por ano. Note que alguns
-            links podem estar quebrados devido a mudanças na estrutura
-            do site (principalmente a parte da documentação que foi 
-            movida para domínio próprio)
+			As notícias do site arquivadas por ano. Note que alguns
+			links podem estar quebrados devido a mudanças na estrutura
+			do site (principalmente a parte da documentação que foi 
+			movida para domínio próprio)
 		</p>
 		<p>
-			<img src="../../images/news.png" alt="[ Notícias]" /> 
+			<img src="/images/news.png" alt="[ ]" /> 
 			<a href="2008.php">2008</a> | 
-            <a href="./">2009</a> | 
-            <a href="2010.php">2010</a> |
-            <a href="index.php">2011</a>
+			<a href="./">2009</a> | 
+			<a href="2010.php">2010</a> |
+			<a href="index.php">2011</a>
 		</p>
 	</div>
 </div>
+
+<?php include("../../lib/lang.php"); ?>
 
 <!-- Content -->
 <div id="content">
@@ -45,58 +43,61 @@
 <h2>2009</h2>
 
 <ul>
-    <li><strong>4 Nov 2009 - Nova Versão Cooking 20091104</strong>
+	<li>
+		<strong>4 Nov 2009 - Nova Versão Cooking 20091104</strong>
 	<p>Os desenvolvedores do SliTaz GNU/Linux anunciam o lançamento de
-    uma nova imagem ISO da versão de testes (cooking) baseada nos cerca 
-    de 2100 pacotes disponíveis nos repositórios. Todo o sistema foi
-    completamente reconstruído, utilizando o novo conjunto de ferramentas
-    de desenvolvimento composto pela biblioteca Glibc 2.10.1 e pelo
-    compilador GCC 4.4.1. Esta nova versão de testes traz o kernel Linux
-    2.6.30.6, que possui um melhor reconhecimento de hardware e mais
-    módulos inclusos. O processo de boot foi melhorado e agora está muito
-    mais rápido. Os pacotes incluidos na imagem ISO, como o Firefox, 
-    por exemplo, são oferecidos em suas versões mais recentes e as
-    ferramentas gráficas próprias da distribuição também foram melhoradas.
-    O gerenciador de pacotes tazpkg agora possui novas características,
-    incluindo a capacidade de converter pacotes deb/rpm/arch/slackware/ipk
-    para o formato de pacotes próprio do SliTaz. Esta nova imagem ISO
-    possui um desktop mais bonito e elegante, baseado no Openbox, aplicativos
-    GTK e um novo tema de ícones. O leitor de pdf ePDFview foi retirado e 
-    agora oferecemos um leitor de pdf online. Com todas estas mudanças,
-    a imagem ISO ficou um pouco maior, com um tamanho de 31.5 MB, 
-    principalmente por causa do novo kernel e novas dependências
-    inclusas.</p>
-    <p>Também anunciamos que o projeto traz um novo 
-    <a href="http://forum.slitaz.org/">fórum de discussão</a> e um novo
+	uma nova imagem ISO da versão de testes (cooking) baseada nos cerca 
+	de 2100 pacotes disponíveis nos repositórios. Todo o sistema foi
+	completamente reconstruído, utilizando o novo conjunto de ferramentas
+	de desenvolvimento composto pela biblioteca Glibc 2.10.1 e pelo
+	compilador GCC 4.4.1. Esta nova versão de testes traz o kernel Linux
+	2.6.30.6, que possui um melhor reconhecimento de hardware e mais
+	módulos inclusos. O processo de boot foi melhorado e agora está muito
+	mais rápido. Os pacotes incluidos na imagem ISO, como o Firefox, 
+	por exemplo, são oferecidos em suas versões mais recentes e as
+	ferramentas gráficas próprias da distribuição também foram melhoradas.
+	O gerenciador de pacotes tazpkg agora possui novas características,
+	incluindo a capacidade de converter pacotes deb/rpm/arch/slackware/ipk
+	para o formato de pacotes próprio do SliTaz. Esta nova imagem ISO
+	possui um desktop mais bonito e elegante, baseado no Openbox, aplicativos
+	GTK e um novo tema de ícones. O leitor de pdf ePDFview foi retirado e 
+	agora oferecemos um leitor de pdf online. Com todas estas mudanças,
+	a imagem ISO ficou um pouco maior, com um tamanho de 31.5 MB, 
+	principalmente por causa do novo kernel e novas dependências
+	inclusas.</p>
+	<p>Também anunciamos que o projeto traz um novo 
+	<a href="http://forum.slitaz.org/">fórum de discussão</a> e um novo
 	<a href="http://scn.slitaz.org/">site para a comunidade</a> 
-    em que todos são convidados a colaborar com conteúdo! Baixe agora a nova
-    imagem da <a href="../get/#cooking">versão de testes</a></p>
+	em que todos são convidados a colaborar com conteúdo! Baixe agora a nova
+	imagem da <a href="../get/#cooking">versão de testes</a></p>
 	</li>
 
-	<li><strong>19 Mai 2009 - SliTaz na LinuxDays 2009 (Genebra)</strong>
+	<li>
+		<strong>19 Mai 2009 - SliTaz na LinuxDays 2009 (Genebra)</strong>
 	<p>
-    Durante a convenção LinuxDays na Suiça a Associação SliTaz terá um
-    estande montado na seção "Association Village" e uma palestra será
-    dada na quarta de manhã. Esta palestra é um estudo de caso sob uma
-    perspectiva corporativa baseada na utilização do "Servidor Empresarial SliTaz"
-    que possui painel de controle, ERP (Enterprise Resource Planning -
-    Sistemas Integrados de Gestão Empresarial), correio eletrônico,
-    LDAP, etc...
+	Durante a convenção LinuxDays na Suiça a Associação SliTaz terá um
+	estande montado na seção "Association Village" e uma palestra será
+	dada na quarta de manhã. Esta palestra é um estudo de caso sob uma
+	perspectiva corporativa baseada na utilização do "Servidor Empresarial SliTaz"
+	que possui painel de controle, ERP (Enterprise Resource Planning -
+	Sistemas Integrados de Gestão Empresarial), correio eletrônico,
+	LDAP, etc...
 	</p>
 	<p>
-    Durante três dias o estande de exibição será coordenado pelos membros do
-    projeto SliTaz. Serão oferecidas demonstrações, inclusive criação de
-    mídias USB inicializáveis (LiveUSB) e cdroms (LiveCD). O LiveCD
-    personalizado para a LinuxDays conterá uma coleção de programas
-    voltados para o uso móvel. A sala de exibições também oferecerá um
-    fórum e estaremos lá para responder qualquer pergunta. Sintam-se
-    convidados a nos visitar! Maiores informações em
+	Durante três dias o estande de exibição será coordenado pelos membros do
+	projeto SliTaz. Serão oferecidas demonstrações, inclusive criação de
+	mídias USB inicializáveis (LiveUSB) e cdroms (LiveCD). O LiveCD
+	personalizado para a LinuxDays conterá uma coleção de programas
+	voltados para o uso móvel. A sala de exibições também oferecerá um
+	fórum e estaremos lá para responder qualquer pergunta. Sintam-se
+	convidados a nos visitar! Maiores informações em
 	<a href="http://labs.slitaz.org/wiki/events/2009-linuxdays">SliTaz Labs</a>
 	e no site da convenção: <a href="http://2009.linuxdays.ch/">2009.linuxdays.ch</a>.
 	</p>
-    </li>
+	</li>
 
-	<li><strong>16 Abr 2009 - Lançamento do SliTaz GNU/Linux 2.0</strong><br />
+	<li>
+		<strong>16 Abr 2009 - Lançamento do SliTaz GNU/Linux 2.0</strong><br />
 	O projeto SliTaz anuncia orgulhosamente o lançamento da nova versão estável da
 	distribuição - SliTaz GNU/Linux 2.0 -, resultado de um ano de trabalho em
 	comunidade. Esta nova versão fornece um sistema operacional super leve, rápido,
@@ -116,9 +117,11 @@
 	<a href="../doc/releases/2.0/relnotes.pt.html">notas de lançamento</a> que
 	estão incluidas na distribuição para maiores detalhes sobre esta versão
 	estável. O SliTaz GNU/Linux 2.0 pode ser <a href="../get/">obtido</a> a
-	partir de um dos mirrors oficiais do projeto.</li>
+	partir de um dos mirrors oficiais do projeto.
+	</li>
 
-	<li><strong>27 Mar 2009 - Labs e novos mirrors</strong><br />
+	<li>
+		<strong>27 Mar 2009 - Labs e novos mirrors</strong><br />
 	Buscando continuadamente melhorias na distribuição e nos serviços que oferecemos,
 	anunciamos o lançamento do <a href="http://labs.slitaz.org/">SliTaz Labs</a>.
 	Esta é uma plataforma que torna possível aos participantes do projeto
@@ -133,7 +136,8 @@
 	(10 Gbits/s), e na China, hospedado por <a href="http://www.lupaworld.com">LupaWorld</a>.
 	</li>
 
-	<li><strong>28 Fev 2009 - Nova versão cooking</strong><br />
+	<li>
+		<strong>28 Fev 2009 - Nova versão cooking</strong><br />
 	Abrindo caminho para o próximo lançamento estável, o projeto SliTaz
 	publica uma nova versão cooking (de testes) que traz várias correções de
 	bugs, atualizações e diversas melhorias. A auto-detecção de dispositivos

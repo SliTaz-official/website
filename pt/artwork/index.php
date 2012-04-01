@@ -1,16 +1,13 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt">
 <head>
-    <title>SliTaz (pt) - Artwork</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="SliTaz GNU/Linux project artwok images logos" />
-    <meta name="keywords" lang="pt" content="sobre slitaz, gnu, linux, mini distro, livecd" />
-    <meta name="robots" content="index, follow, all" />
-    <meta name="modified" content="2011-03-26 00:30:00" />
-    <meta name="author" content="Claudinei Pereira" />
-    <link rel="shortcut icon" href="../../favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="../../slitaz.css" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>SliTaz (pt) - Artwork</title>
+	<meta name="description" content="SliTaz GNU/Linux project artwok images logos" />
+	<meta name="keywords" lang="pt" content="sobre slitaz, gnu, linux, mini distro, livecd" />
+	<meta name="author" content="Claudinei Pereira" />
+	<?php include("../../lib/html/meta-link.html") ?>
 </head>
 <body>
 
@@ -18,10 +15,8 @@
 
 <!-- Block -->
 <div id="block">
-    
-    <?php include("../../lib/html/nav.pt.html"); ?>
-
-    <!-- Information/image -->
+	<?php include("../../lib/html/nav.pt.html"); ?>
+	<!-- Information/image -->
 	<div id="block_info">
 		<h4>Artwork</h4>
 		<p>
@@ -56,8 +51,8 @@ Você também vai achar aqui alguns <a href="screenshots.php">screenshots</a>
 feitos com o mtPaint e o Gimp.
 </p>
 
-<a name="art4taz"></a>
-<h3>Artwork para o SliTaz</h3>
+<h3 id="art4taz">Artwork para o SliTaz</h3>
+
 <p>
 Como muitas coisas no SliTaz os gráficos, logos, temas e papéis de parede são
 totalmente construídos pela comunidade e pelos desenvolvedores. O projeto
@@ -69,7 +64,9 @@ online, é recomendável que nos contate primeiro pela
 <a href="../mailing-list.php">Lista de Discussão</a>. Tente não mandar arquivos
 muito grandes.
 </p>
+
 <h4>Artwork do LiveCD</h4>
+
 <p>
 Para manter a coesão do LiveCd, a imagem não pode exceder 200 kb, e serão
 necessárias duas delas, diferindo em tamanho: 1024x768 e 1280x1024. Isto se deve
@@ -81,38 +78,20 @@ sistema. No LiveCd já há o mtPaint e num sistema instalado o Gimp se encontra
 no mirror. Note que o formato livre PNG é preferível.
 </p>
 
-<a name="logos"></a>
-<h2>Logos &amp; spider</h2>
+<h2 id="logos">Logos &amp; spider</h2>
 
 <div class="box">
-	SVG Format: <a href="../../images/artwork/slitaz-logo.svg">slitaz-logo.svg</a> |
-	<a href="../../images/artwork/slitaz-spider.svg">slitaz-spider.svg</a>
+	SVG Format: <a href="/images/artwork/slitaz-logo.svg">slitaz-logo.svg</a> |
+	<a href="/images/artwork/slitaz-spider.svg">slitaz-spider.svg</a>
 </div>
+
 <div>
-	<img
-	   src="../../images/artwork/slitaz-button-red.png"
-	   alt="SliTaz button"
-	   style="width: 148px; height: 148px;" />
-	<img
-	   src="../../images/artwork/slitaz-logo-whitebg-320x118.png"
-	   alt="SliTaz spider"
-	   style="width: 320px; height: 118px;" />
-	<img
-	   src="../../images/artwork/slitaz-tux-124x126.png"
-	   alt="SliTaz Tux"
-	   style="width: 124px; height: 126px;" />
-	<img
-	   src="../../images/artwork/slitaz-spider-48x48.png"
-	   alt="SliTaz spider"
-	   style="width: 48px; height: 48px;" />
-	<img
-	   src="../../images/artwork/tazpkg.png"
-	   alt="Tazpkg package logo"
-	   style="width: 32px; height: 32px;" />
-	<img
-	   src="../../images/artwork/slitaz-minilogo-80x15.png"
-	   alt="SliTaz mini logo"
-	   style="width: 80px; height: 15px;" />
+	<img src="/images/artwork/slitaz-button-red.png" alt="SliTaz button" />
+	<img src="/images/artwork/slitaz-logo-whitebg-320x118.png" alt="SliTaz spider" />
+	<img src="/images/artwork/slitaz-tux-124x126.png" alt="SliTaz Tux" />
+	<img src="/images/artwork/slitaz-spider-48x48.png" alt="SliTaz spider" />
+	<img src="/images/artwork/tazpkg.png" alt="Tazpkg package logo" />
+	<img src="/images/artwork/slitaz-minilogo-80x15.png" alt="SliTaz mini logo" />
 </div>
 
 <!-- End of content -->

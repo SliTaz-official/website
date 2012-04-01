@@ -1,16 +1,13 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt">
 <head>
-    <title>SliTaz - Arquivo de notícias</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="SliTaz news archives info release" />
-    <meta name="keywords" lang="pt" content="sistema, livre, gnu, linux, opensource software, livecd na RAM" />
-    <meta name="robots" content="index, follow, all" />
-    <meta name="modified" content="<?php echo (date( "Y-m-d H:i:s", getlastmod())); ?>" />
-    <meta name="author" content="Christophe Lincoln"/>
-    <link rel="shortcut icon" href="../../favicon.ico" />
-    <link rel="stylesheet"  type="text/css" href="../../slitaz.css" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>SliTaz - Arquivo de notícias</title>
+	<meta name="description" content="SliTaz news archives info release" />
+	<meta name="keywords" lang="pt" content="sistema, livre, gnu, linux, opensource software, livecd na RAM" />
+	<meta name="author" content="Christophe Lincoln"/>
+	<?php include("../../lib/html/meta-link.html") ?>
 </head>
 <body>
 
@@ -18,25 +15,27 @@
 
 <!-- Block -->
 <div id="block">
-   	<?php include("../../lib/html/nav.pt.html"); ?>
-   	<!-- Information/image -->
-    <div id="block_info">
+	<?php include("../../lib/html/nav.pt.html"); ?>
+	<!-- Information/image -->
+	<div id="block_info">
 		<h4>Arquivos de notícias</h4>
 		<p>
-            As notícias do site arquivadas por ano. Note que alguns
-            links podem estar quebrados devido a mudanças na estrutura
-            do site (principalmente a parte da documentação que foi 
-            movida para domínio próprio)
+			As notícias do site arquivadas por ano. Note que alguns
+			links podem estar quebrados devido a mudanças na estrutura
+			do site (principalmente a parte da documentação que foi 
+			movida para domínio próprio)
 		</p>
 		<p>
-			<img src="../../images/news.png" alt="[ Notícias]" /> 
+			<img src="/images/news.png" alt="[ ]" /> 
 			<a href="2008.php">2008</a> | 
-            <a href="2009.php">2009</a> | 
-            <a href="2010.php">2010</a> |
-            <a href="./">2011</a>
+			<a href="2009.php">2009</a> | 
+			<a href="2010.php">2010</a> |
+			<a href="./">2011</a>
 		</p>
 	</div>
 </div>
+
+<?php include("../../lib/lang.php"); ?>
 
 <!-- Content -->
 <div id="content">
@@ -44,7 +43,8 @@
 <h2>2011</h2>
 
 <ul>
-	<li><strong>31 May 2011 - Novo Cooking (20110329)</strong>
+	<li>
+		<strong>31 May 2011 - Novo Cooking (20110329)</strong>
 	<p>
 		Os desenvolvedores do SliTaz anunciam o lançamento de uma nova versão
 		de testes (cooking). Os pacotes foram recompilados e otimizados para
@@ -67,11 +67,12 @@
 		a nova forma de compilação de pacotes economiza espaço, o que manteve
 		o tamanho da ISO em apenas 35 MB! Download:
 		<a href="http://mirror.slitaz.org/iso/cooking/slitaz-cooking.iso">
-			slitaz-cooking.iso</a>
+		slitaz-cooking.iso</a>
 	</p>
 	</li>
-	
-	<li><strong>29 Mar 2011 - Novo Cooking (20110329)</strong>	
+
+	<li>
+		<strong>29 Mar 2011 - Novo Cooking (20110329)</strong>	
 	<p>Os desenvolvedores do SliTaz anunciam o lançamento de uma nova ISO
 	da versão Cooking (de testes), que conta com mais de 2900 pacotes
 	nos repositórios. Todos os pacotes foram recompilados utilizando
@@ -92,7 +93,7 @@
 	podendo, inclusive, ajudar a resolve-los antes do lançamento da versão 4.0. 
 	Você pode nos contatar os via IRC, lista de discussão, fórum ou mandando um email 
 	diretamente para os mantenedores de pacotes. Esperamos que você goste deste novo 
-	<a href="get/">lançamento!</a></p>
+	<a href="../get/">lançamento!</a></p>
 	</li>
 </ul>
 

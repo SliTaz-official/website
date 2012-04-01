@@ -1,16 +1,13 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt">
 <head>
-    <title>SliTaz - Sobre o Projeto</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="SliTaz GNU/Linux project information overview" />
-    <meta name="keywords" lang="pt" content="sobre slitaz, gnu, linux, mini distro, livecd" />
-    <meta name="robots" content="index, follow, all" />
-    <meta name="modified" content="2011-03-26 00:30:00" />
-    <meta name="author" content="Claudinei Pereira" />
-    <link rel="shortcut icon" href="../../favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="../../slitaz.css" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>SliTaz - Sobre o Projeto</title>
+	<meta name="description" content="SliTaz GNU/Linux project information overview" />
+	<meta name="keywords" lang="pt" content="sobre slitaz, gnu, linux, mini distro, livecd" />
+	<meta name="author" content="Claudinei Pereira" />
+	<?php include("../../lib/html/meta-link.html") ?>
 </head>
 <body>
 
@@ -18,10 +15,8 @@
 
 <!-- Block -->
 <div id="block">
-
-    <?php include("../../lib/html/nav.pt.html"); ?>
-
-    <!-- Information/image -->
+	<?php include("../../lib/html/nav.pt.html"); ?>
+	<!-- Information/image -->
 	<div id="block_info">
 		<h4>Sobre</h4>
 		<p>
@@ -42,8 +37,8 @@
 <!-- Content -->
 <div id="content">
 
-<a name ="intro"></a>
-<h2>Introdução ao projeto</h2>
+<h2 id="intro">Introdução ao projeto</h2>
+
 <p>
 O SliTaz GNU/Linux é um sistema operacional livre, leve, rápido e estável que 
 funciona completamente carregado na memória RAM e inicia a partir de mídias 
@@ -64,43 +59,44 @@ Você também pode nos contatar para maiores informações, sugestões e coment�
 usando a lista ou diretamente por e-mail :  &lt;devel at slitaz.org&gt;
 </p>
 
-<a name="overview"></a>
-<h3>Resumo</h3>
+<h3 id="overview">Resumo</h3>
+
 <ul>
-    <li>Sistema de Arquivos Root com cerca de 100 MB e a imagem ISO menor que 30 MB.</li>
-    <li>Servidor Web pronto para uso fornecido pelo LightTPD com suporte a CGI e PHP.</li>
-    <li>Navegue na Web com o Midori ou o Retawq em modo texto.</li>
-    <li>Suporte a som fornecido pelo mixer Alsa, tocador de audio e extrator/codificador de CD.</li>
-    <li>Clientes de chat, e-mail e FTP.</li>
-    <li>Cliente/Servidor SSH fornecido pelo Dropbear.</li>
-    <li>Banco de Dados com o SQLite.</li>
-    <li>Geração de dispositivo LiveUSB.</li>
-    <li>Ferramentas para criar, editar ou gravar imagens de CD ou DVD.</li>
-    <li>Desktop elegante com o Openbox rodando sobre o Xorg (Servidor Gráfico).</li>
-    <li>Caixas de Diálogo gráficas nativas para utilitários de linha-de-comando.</li>
-    <li>Cerca de 3345 pacotes facilmente instaláveis a partir do mirror.</li>
-    <li>Comunidade ativa e amigável.</li>
+	<li>Sistema de Arquivos Root com cerca de 100 MB e a imagem ISO menor que 30 MB.</li>
+	<li>Servidor Web pronto para uso fornecido pelo LightTPD com suporte a CGI e PHP.</li>
+	<li>Navegue na Web com o Midori ou o Retawq em modo texto.</li>
+	<li>Suporte a som fornecido pelo mixer Alsa, tocador de audio e extrator/codificador de CD.</li>
+	<li>Clientes de chat, e-mail e FTP.</li>
+	<li>Cliente/Servidor SSH fornecido pelo Dropbear.</li>
+	<li>Banco de Dados com o SQLite.</li>
+	<li>Geração de dispositivo LiveUSB.</li>
+	<li>Ferramentas para criar, editar ou gravar imagens de CD ou DVD.</li>
+	<li>Desktop elegante com o Openbox rodando sobre o Xorg (Servidor Gráfico).</li>
+	<li>Caixas de Diálogo gráficas nativas para utilitários de linha-de-comando.</li>
+	<li>Cerca de 3345 pacotes facilmente instaláveis a partir do mirror.</li>
+	<li>Comunidade ativa e amigável.</li>
 </ul>
 
-<a name="website"></a>
-<h3>Web sites &amp; i18n</h3>
+<h3 id="website">Web sites &amp; i18n</h3>
+
 <p>
 O website do SliTaz está disponível em diferentes linguagens e é parte do 
-<a href="../../i18n.php">projeto de internacionalização</a>. A partir dele
+<a href="/i18n.php">projeto de internacionalização</a>. A partir dele
 é possível <a href="../get/">obter</a> o LiveCD do SliTaz e nos 
 ajudar no desenvolvimento do projeto. Pode-se também consultar a 
 <a href="../doc/">documentação</a> para aprender a utilizar a 
 distribuição e configurar o sistema.
 </p>
 
-<a name="reviews"></a>
-<h3>Resenhas</h3>
+<h3 id="reviews">Resenhas</h3>
+
 <p>
 O SliTaz GNU/Linux foi resenhado por diversos websites. Agradecemos a todos
 pelo suporte.
 </p>
 
-<h4>3.0 - Mar 2010 & Cooking - Jan 2011</h4>
+<h4>3.0 - Mar 2010 &amp; Cooking - Jan 2011</h4>
+
 <ul>
 	<li><a href="http://kmandla.wordpress.com/2010/03/29/greetings-from-slitaz-3-0/"
 		>Wordpress</a> - Por K.Mandla.</li>
@@ -111,6 +107,7 @@ pelo suporte.
 </ul>
 
 <h4>2.0 - Abr 2009</h4>
+
 <ul>
 	<li><a href="http://www.gdhpress.com.br/blog/slitaz"
 		>Gdhpress</a> (pt) - Por Carlos Morimoto.</li>
@@ -125,6 +122,7 @@ pelo suporte.
 </ul>
 
 <h4>1.0 - Mar 2008</h4>
+
 <ul>
 	<li><a href="http://distrowatch.com/weekly.php?issue=20080331"
 		>Distrowatch</a> - Por Ladislav Bodnar.</li>

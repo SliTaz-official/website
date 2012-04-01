@@ -1,13 +1,13 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt">
 <head>
-    <title>SliTaz - Associação</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="SliTaz GNU/Linux asso non-profit donate" />
-    <meta name="keywords" lang="pt" content="sobre slitaz, gnu, linux, mini distro, livecd" />
-    <meta name="author" content="Claudinei Pereira" />
-    <?php include("../../lib/html/meta-link.html"); ?>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>SliTaz - Associação</title>
+	<meta name="description" content="SliTaz GNU/Linux asso non-profit donate" />
+	<meta name="keywords" lang="pt" content="sobre slitaz, gnu, linux, mini distro, livecd" />
+	<meta name="author" content="Claudinei Pereira" />
+	<?php include("../../lib/html/meta-link.html"); ?>
 </head>
 <body>
 
@@ -15,10 +15,8 @@
 
 <!-- Block -->
 <div id="block">
-
-    <?php include("../../lib/html/nav.pt.html"); ?>
-
-    <!-- Information/image -->
+	<?php include("../../lib/html/nav.pt.html"); ?>
+	<!-- Information/image -->
 	<div id="block_info">
 		<h4>Associação</h4>
 		<p>
@@ -49,8 +47,8 @@
 	<li><a href="#postal">Endereço Postal.</a></li>
 </ul>
 
-<a name="overview"></a>
-<h3>Introdução</h3>
+<h3 id="overview">Introdução</h3>
+
 <p>
 O SliTaz GNU/Linux é uma organização internacional baseada na Suiça e respeita
 o código civil suiço. É formada pelo comitê e os membros, podendo ter atividade
@@ -70,12 +68,12 @@ nossos usuários e parceiros comerciais que desejam patrocinar o projeto.
 <p>
 Uma cópia do estatuto é enviada a cada membro no momento de seu registro e uma
 cópia em PDF estará sempre disponível online:
-<a href="../../fr/asso/status-association-slitaz.pdf">status-association-slitaz.pdf</a> |
+<a href="/fr/asso/status-association-slitaz.pdf">status-association-slitaz.pdf</a> |
 <a href="statutes.php">Tradução do Estatuto em Português</a>.
 </p>
 
-<a name="goals"></a>
-<h3>Objetivos Atuais</h3>
+<h3 id="goals">Objetivos Atuais</h3>
+
 <p>
 O projeto SliTaz usa o modelo de desenvolvimento aberto e todo o trabalho é feito
 por uma comunidade de voluntários. Nosso objetivo é aprimorar e fornecer uma
@@ -92,8 +90,8 @@ também deveriam ser mais dinâmicos e publicar novas funcionalidades muito mais
 frequentemente.
 </p>
 
-<a name="members"></a>
-<h3>Membros</h3>
+<h3 id="members">Membros</h3>
+
 <p>
 A associação é aberta a qualquer pessoa. Tornar-se membro permite à você, por
 intermédio de uma quantia paga anualmente, patrocinar o projeto e garantir sua 
@@ -111,8 +109,8 @@ informe:
 	<li>País</li>
 </ul>
 
-<a name="donation"></a>
-<h3>Doações</h3>
+<h3 id="donation">Doações</h3>
+
 <p>
 Há várias maneiras de ajudar financeiramente a associação: você pode se tornar
 um membro, patrocinador ou fazer doações através do PayPal ou transferência 
@@ -120,22 +118,10 @@ bancária. O projeto possui algumas necessidades logísticas, então todas as
 doações serão de grande valia.
 </p>
 
-<div>
-	<!-- PayPal boutton -->
-	<form action="https://www.paypal.com/cgi-bin/webscr" method="post"
-		style="display: inline;">
-			<input type="hidden" name="cmd" value="_s-xclick" />
-			<input type="hidden" name="hosted_button_id" value="4885025" />
-			<input type="image" src="../../images/paypal.png" name="submit" 
-				alt="PayPal - The safer, easier way to pay online!" />
-	</form>
-	<!-- Flattr boutton -->
-	<a class="FlattrButton" style="display:none;" rev="flattr;button:compact;"
-		href="http://www.slitaz.org/"></a>
-</div>
+<?php include("../../lib/html/donate.html"); ?>
 
-<a name="postal"></a>
-<h3>Endereço Postal</h3>
+<h3 id="postal">Endereço Postal</h3>
+
 <div class="box">
 Association SliTaz GNU/Linux<br />
 Rue du Village 40<br />

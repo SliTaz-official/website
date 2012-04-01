@@ -1,9 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt">
 <head>
-	<title>SliTaz - Variantes do LiveCD</title>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>SliTaz - Variantes do LiveCD</title>
 	<meta name="description" content="SliTaz GNU/Linux LiveCD flavors" />
 	<meta name="keywords" lang="pt" content="slitaz flavor" />
 	<meta name="author" content="Claudinei Pereira" />
@@ -51,6 +51,7 @@
 </p>
 
 <h3>Obtendo e gerando uma variante</h3>
+
 <p>
 	Uma <em>variante</em> é um arquivo (.flavor) que gera uma variante especial.
 	A ferramenta gráfica Tazlitobox pode criar uma variante em poucos cliques do
@@ -61,6 +62,7 @@
 </p>
 
 <h3>Crie e compartilhe sua própria variante</h3>
+
 <p>
 	As versões estável e de testes oferecem a variante <em>core</em> no mirror,
 	que pode ser usada como base para criar sua própria variante. A documentação

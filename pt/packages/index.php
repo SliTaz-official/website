@@ -1,16 +1,13 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt">
 <head>
-    <title>SliTaz - Pacotes (programas)</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="SliTaz GNU/Linux LiveCD" />
-    <meta name="keywords" lang="pt" content="sistema, livre, gnu, linux, software opensource, livecd LINUX na RAM" />
-    <meta name="robots" content="index, follow, all" />
-    <meta name="modified" content="<?php echo (date( "Y-m-d H:i:s", getlastmod())); ?>" />
-    <meta name="author" content="Claudinei Pereira"/>
-    <link rel="shortcut icon" href="../../favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="../../slitaz.css" />
+	<title>SliTaz - Pacotes (programas)</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="SliTaz GNU/Linux LiveCD" />
+	<meta name="keywords" lang="pt" content="sistema, livre, gnu, linux, software opensource, livecd LINUX na RAM" />
+	<meta name="author" content="Claudinei Pereira"/>
+	<?php include("../../lib/html/meta-link.html") ?>
 </head>
 <body>
 
@@ -18,7 +15,7 @@
 
 <!-- Block -->
 <div id="block">
-   	<?php include("../../lib/html/nav.pt.html"); ?>
+	<?php include("../../lib/html/nav.pt.html"); ?>
 	<!-- Information/image -->
 	<div id="block_info">
 		<h4>Pacotes</h4>
@@ -68,19 +65,20 @@
 </div>
 
 <div class="box">
-	<img src="../../images/text.png" alt="text.png" />
+	<img src="/images/text.png" alt="[ ]" />
 	Raw packages.list:
 	<a href="http://mirror.slitaz.org/packages/stable/packages.list"
 		>Stable</a> |
 	<a href="http://mirror.slitaz.org/packages/cooking/packages.list"
-		>Cooking</a>
-	<img src="../../images/network.png" alt="text.png" />
+		>Cooking</a><br />
+	<img src="/images/network.png" alt="[ ]" />
 	Main mirror:
 	<a href="http://mirror.slitaz.org/packages/"
 		>http://mirror.slitaz.org/packages/</a>
 </div>
 
 <h2>Documentação</h2>
+
 <p>
 	O projeto SliTaz fornece <a href="http://doc.slitaz.org/">documentação</a>
 	detalhada para permitir que você aprenda como instalar e gerenciar 

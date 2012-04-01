@@ -1,16 +1,13 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt">
 <head>
-    <title>SliTaz - Arquivo de notícias</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="SliTaz news archives info release" />
-    <meta name="keywords" lang="pt" content="sistema, livre, gnu, linux, opensource software, livecd na RAM" />
-    <meta name="robots" content="index, follow, all" />
-    <meta name="modified" content="<?php echo (date( "Y-m-d H:i:s", getlastmod())); ?>" />
-    <meta name="author" content="Christophe Lincoln"/>
-    <link rel="shortcut icon" href="../../favicon.ico" />
-    <link rel="stylesheet"  type="text/css" href="../../slitaz.css" />
+	<title>SliTaz - Arquivo de notícias</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="SliTaz news archives info release" />
+	<meta name="keywords" lang="pt" content="sistema, livre, gnu, linux, opensource software, livecd na RAM" />
+	<meta name="author" content="Christophe Lincoln"/>
+	<?php include("../../lib/html/meta-link.html") ?>
 </head>
 <body>
 
@@ -18,25 +15,27 @@
 
 <!-- Block -->
 <div id="block">
-   	<?php include("../../lib/html/nav.pt.html"); ?>
-   	<!-- Information/image -->
-    <div id="block_info">
+	<?php include("../../lib/html/nav.pt.html"); ?>
+	<!-- Information/image -->
+	<div id="block_info">
 		<h4>Arquivos de notícias</h4>
 		<p>
-            As notícias do site arquivadas por ano. Note que alguns
-            links podem estar quebrados devido a mudanças na estrutura
-            do site (principalmente a parte da documentação que foi 
-            movida para domínio próprio)
+			As notícias do site arquivadas por ano. Note que alguns
+			links podem estar quebrados devido a mudanças na estrutura
+			do site (principalmente a parte da documentação que foi 
+			movida para domínio próprio)
 		</p>
 		<p>
-			<img src="../../images/news.png" alt="[ Notícias]" /> 
+			<img src="/images/news.png" alt="[ ]" /> 
 			<a href="2008.php">2008</a> | 
-            <a href="2009.php">2009</a> | 
-            <a href="./">2010</a> |
-            <a href="index.php">2011</a>
+			<a href="2009.php">2009</a> | 
+			<a href="./">2010</a> |
+			<a href="index.php">2011</a>
 		</p>
 	</div>
 </div>
+
+<?php include("../../lib/lang.php"); ?>
 
 <!-- Content -->
 <div id="content">
@@ -44,7 +43,8 @@
 <h2>2010</h2>
 
 <ul>
-	<li><strong>4 de Novembro de 2010 - Nova versão "cooking" 20101104</strong>
+	<li>
+		<strong>4 de Novembro de 2010 - Nova versão "cooking" 20101104</strong>
 	<p>Os desenvolvedores do SliTaz anunciam uma nova imagem ISO da versão
 	de testes da distribuição. Há mais de 2600 pacotes nos repositórios,
 	o kernel Linux versão 2.6.34 foi compilado com o novo "toolchain"
@@ -55,12 +55,13 @@
 	agora suportam localização por meio do gettext e mais locales UTF foram
 	adicionados. Houve várias correções de bugs, atualizações e melhorias nestes
 	últimos 6 meses de muito trabalho. Você pode fazer o 
-	<a href="get/#cooking">download</a> desta nova versão a partir de um
+	<a href="../get/#cooking">download</a> desta nova versão a partir de um
 	dos mirrors oficiais do projeto, podendo recorrer aos fóruns e às listas 
 	de discussão para dar seu feedback.</p>
 	</li>
 
-	<li><strong>08 Mai 2010 - Mutirão da Documentação</strong>
+	<li>
+		<strong>08 Mai 2010 - Mutirão da Documentação</strong>
 	<p>Os desenvolvedores do SliTaz estão organizando um 'Mutirão da
 	Documentação', de 10 de maio a 10 de junho do corrente ano. O objetivo
 	principal é centralizar, revisar e atualizar toda a documentação
@@ -70,7 +71,8 @@
 	documentação existente ou adicionando novos documentos.</p>
 	</li>
 
-	<li><strong>28 Mar 2010 - Lançada a Versão 3.0 do SliTaz GNU/Linux</strong>
+	<li>
+		<strong>28 Mar 2010 - Lançada a Versão 3.0 do SliTaz GNU/Linux</strong>
 	<p>Os participantes do projeto SliTaz GNU/Linux anunciam orgulhosamente 
 	o lançamento da versão 3.0, que surge após um ano de desenvolvimento.
 	Esta nova versão estável está simples, rápida, customizável, poderosa e 
@@ -82,31 +84,33 @@
 	<p>O sistema básico cabe numa imagem ISO de 30 Mb e as variantes do LiveCD
 	possuem o mínimo de 8 Mb. Esta nova versão foi construída com o novo 
 	toolchain (ferramentas básicas de desenvolvimento), que inclui o GCC 4.4.1
-	e o kernel Linux 2.6.30.6. Acesse as <a href="doc/releases/3.0/relnotes.pt.html">
+	e o kernel Linux 2.6.30.6. Acesse as <a href="../doc/releases/3.0/relnotes.pt.html">
 	notas de lançamento</a> completas para maiores informações e 
-	<a href="get/#stable">baixe</a> uma imagem do LiveCD a partir dos mirrors.</p> 
+	<a href="../get/#stable">baixe</a> uma imagem do LiveCD a partir dos mirrors.</p> 
 	</li>
 
-    <li><strong>14 Mar 2010 - Primeiro RC e convenção Solutionslinux 2010 (Paris)</strong>
+	<li>
+		<strong>14 Mar 2010 - Primeiro RC e convenção Solutionslinux 2010 (Paris)</strong>
 	<p>Visto que estamos mais perto de lançar uma versão estável, 
-    atualizamos a imagem ISO básica e iniciamos uma série de RC (Release
-    Candidates). A maior mudança fica por conta de utilizarmos o Midori
-    como navegador padrão, melhorando a experiência do usuário ao mesmo
-    tempo que mantemos a imagem ISO em torno de 30MB. Este moderno navegador
-    utiliza o motor de renderização webkit, sendo rápido, simples e bem
-    integrado ao desktop do SliTaz.</p>
-    <p>Esta nova ISO traz várias correções de bugs e de dependências,
-    assim como melhorias nas ferramentas e scripts do sistema. Ela pode
-    ser baixada a partir do mirror oficial: 
+	atualizamos a imagem ISO básica e iniciamos uma série de RC (Release
+	Candidates). A maior mudança fica por conta de utilizarmos o Midori
+	como navegador padrão, melhorando a experiência do usuário ao mesmo
+	tempo que mantemos a imagem ISO em torno de 30MB. Este moderno navegador
+	utiliza o motor de renderização webkit, sendo rápido, simples e bem
+	integrado ao desktop do SliTaz.</p>
+	<p>Esta nova ISO traz várias correções de bugs e de dependências,
+	assim como melhorias nas ferramentas e scripts do sistema. Ela pode
+	ser baixada a partir do mirror oficial: 
 	<a href="http://mirror.slitaz.org/iso/cooking/slitaz-cooking.iso">slitaz-cooking.iso</a></p>
-    <p>Outra notícia é que o Projeto SliTaz estará presente na convenção
+	<p>Outra notícia é que o Projeto SliTaz estará presente na convenção
 	<a href="http://www.solutionslinux.fr/">Solutionslinux</a> 2010, que
-    ocorre na próxima semana em Paris. Quem estiver presente poderá 
-    aprender mais sobre o projeto e entrar em contato com os membros da
-    associação e desenvolvedores.</p>
+	ocorre na próxima semana em Paris. Quem estiver presente poderá 
+	aprender mais sobre o projeto e entrar em contato com os membros da
+	associação e desenvolvedores.</p>
 	</li>
 
-	<li><strong>21 Fev 2010 - Nova Versão Cooking 20100221</strong>
+	<li>
+		<strong>21 Fev 2010 - Nova Versão Cooking 20100221</strong>
 	<p>Os desenvolvedores do SliTaz anunciam orgulhosamente a nova versão de 
 	testes (cooking) do LiveCD, que será a última antes do RC (Release 
 	Candidate) e consequente versão estável 3.0. Esta nova versão traz 
@@ -127,7 +131,7 @@
 	customização do LiveCD é agora muito mais fácil, o usuário precisa apenas 
 	iniciar o boot, modificar o que achar necessário e usar a opção writefs
 	a partir da interface gráfica do Tazlito ou da linha de comando.</p>
-	<p>Como sempre, pode-se fazer o <a href="get/#cooking">download</a> 
+	<p>Como sempre, pode-se fazer o <a href="../get/#cooking">download</a> 
 	das novas imagens ISO a partir do mirror oficial do projeto. Por favor,
 	informe-nos sobre suas impressões no fórum do SliTaz.</p>
 	</li>
