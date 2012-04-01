@@ -1,13 +1,13 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-    <title>SliTaz - Pacchetti</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="SliTaz GNU/Linux LiveCD packages" />
-    <meta name="keywords" lang="en" content="package, tazpkg" />    
-    <meta name="author" content="Alessandro Frisenda"/>
-    <?php include("../../lib/html/meta-link.html"); ?>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>SliTaz - Pacchetti</title>
+	<meta name="description" content="SliTaz GNU/Linux LiveCD packages" />
+	<meta name="keywords" lang="en" content="package, tazpkg" />    
+	<meta name="author" content="Alessandro Frisenda"/>
+	<?php include("../../lib/html/meta-link.html"); ?>
 </head>
 <body>
 
@@ -71,13 +71,13 @@
 </div>
 
 <div class="box">
-	<img src="../../images/text.png" alt="Text" />
+	<img src="/images/text.png" alt="[ ]" />
 	Lista pacchetti:
 	<a href="http://mirror.slitaz.org/packages/stable/packages.list"
 		>Stabile</a> |
 	<a href="http://mirror.slitaz.org/packages/cooking/packages.list"
-		>Cooking</a>
-	<img src="../../images/network.png" alt="Text" />
+		>Cooking</a><br />
+	<img src="/images/network.png" alt="[ ]" />
 	Fonte principale:
 	<a href="http://mirror.slitaz.org/packages/"
 		>http://mirror.slitaz.org/packages/</a>
@@ -90,7 +90,7 @@
 <div class="activity">
 	<p>
 		<a href="http://hg.slitaz.org/">
-			<img src="../../images/development.png" alt="Development" /></a>
+			<img src="/images/development.png" alt="[ ]" /></a>
 		Ultimi impegni in progresso
 		<?php get_feed("wok.xml"); ?>
 	</div>
@@ -100,6 +100,7 @@
 </div>
 
 <h2>Documentazione</h2>
+
 <p>
 	Il progetto SliTaz fornisce una
 	<a href="http://doc.slitaz.org/">documentazione</a>

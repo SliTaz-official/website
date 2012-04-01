@@ -1,9 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
 <head>
-	<title>SliTaz GNU/Linux (id)</title>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>SliTaz GNU/Linux (id)</title>
 	<meta name="description" content="SliTaz GNU/Linux LiveCD" />
 	<meta name="keywords" lang="en" content="SliTaz indonesian" />
 	<meta name="author" content="AjiNalo" />
@@ -43,7 +43,7 @@ include("../lib/html/header.html");
 <div id="content">
 
 <div class="box">
-	<img src="../images/update.png" style="float: left; margin-right: 10px; " />
+	<img src="/images/update.png" style="float: left; margin-right: 10px; " />
 	<p>
 		SliTaz Indonesian website needs a maintainer and contributors. You
 		can contact us on the
@@ -54,7 +54,7 @@ include("../lib/html/header.html");
 <h2>Headlines</h2>
 
 <div class="box">
-	<img src="../images/news.png" alt="news.png" />
+	<img src="/images/news.png" alt="[ ]" />
 	<a href="http://scn.slitaz.org/">Berita dari Blog</a> | 
 	<a href="http://doc.slitaz.org/en:newsletter:start">Newsletter Bulanan</a>
 </div>
@@ -65,7 +65,8 @@ include("../lib/html/header.html");
 	<!-- <li><strong>Date - Title</strong>
 	<p></p>
 	</li> -->
-	<li><strong>03 Mar 2012 - SliTaz 4.0-RC2</strong>
+	<li>
+		<strong>03 Mar 2012 - SliTaz 4.0-RC2</strong>
 	<p>
 		Tim Slitaz dengan bahagia mengumumkan rilis terbarunya Slitaz 4.0-RC2.
 		Kami telah melakukan perbaikan pada bugs dari RC1 dan pada beberapa
@@ -87,7 +88,9 @@ include("../lib/html/header.html");
 		<a href="http://mirror.slitaz.org/iso/cooking/slitaz-4.0-RC2.iso">SliTaz 4.0-RC2</a>
 	</p>
 	</li> 
-	<li><strong>23 Feb 2012 - SliTaz 4.0 RC1</strong>
+
+	<li>
+		<strong>23 Feb 2012 - SliTaz 4.0 RC1</strong>
 	<p>
 		Tim Kontributor SliTaz dengan bangga mengumumkan bahwa dalam waktu
 		dekat akan dirilis SliTaz 4.0 RC pertama. SliTaz bisa nge-boot dalam
@@ -112,8 +115,9 @@ include("../lib/html/header.html");
 		<a href="http://mirror.slitaz.org/iso/cooking/slitaz-4.0-RC1.iso">SliTaz 4.0-RC1</a>
 	</p> 
 	</li>
-	
-	<li><strong>28 Mar 2010 - SliTaz GNU/Linux 3.0 pelepasan</strong>
+
+	<li>
+		<strong>28 Mar 2010 - SliTaz GNU/Linux 3.0 pelepasan</strong>
 	<p>Setelah satu tahun masa pengembangan, SliTaz versi 3.0 telah dirilis.
 	Sekarang lebih simple, lebih cepat dan lebih kecil (ukuran filenya),
 	diperkuat dengan sekira 2300 file paket. Desktopnya menggunakan

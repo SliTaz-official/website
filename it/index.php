@@ -1,9 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
 <head>
-	<title>SliTaz GNU/Linux (it)</title>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>SliTaz GNU/Linux (it)</title>
 	<meta name="description" content="SliTaz GNU/Linux LiveCD in italian" />
 	<meta name="keywords" lang="it" content="System, free, gnu, linux, software opensource, livecd LINUX in RAM" />
 	<meta name="author" content="Alessandro Frisenda"/>
@@ -38,7 +38,7 @@
 <div id="content">
 
 <!-- <div class="box">
-	<img src="../images/update.png" style="float: left; margin-right: 10px; " />
+	<img src="/images/update.png" style="float: left; margin-right: 10px; " />
 	<p>
 		Call for sponsor!
 	</p>
@@ -49,18 +49,19 @@
 -->
 
 <h2>Ultime Novità</h2>
+
 <p>
 	Il sito di SliTaz offre le novità principali del progetto nonché le novità
 	sulle attività generali dei sotto-progetti sul
 	<a href="http://scn.slitaz.org/">sito della comunità</a>. Entrambi sono
-	disponibili come <a href="../rss.xml">feed XML</a>. Il progetto pubblica
+	disponibili come <a href="/rss.xml">feed XML</a>. Il progetto pubblica
 	anche una piccola Newsletter mensile. Questa pagina e il sito web
 	<a href="../">Pagina Principale</a> vi darà una buona panoramica delle
 	ultime novità, impegni e Tweets.
 </p>
 
 <div class="box">
-	<img src="../images/news.png" alt="News" />
+	<img src="/images/news.png" alt="[ ]" />
 	<a href="http://scn.slitaz.org/">Novità dal Blog</a> |
 	<a href="http://doc.slitaz.org/en:newsletter:start">Newsletter Mensile</a>
 </div>
@@ -73,7 +74,7 @@
 	</li> -->
 
 	<li>
-	<strong>29 Marzo 2011 - Nuova Cooking 20110329</strong>
+		<strong>29 Marzo 2011 - Nuova Cooking 20110329</strong>
 	<p>
 	Il team di SliTaz è felice di annunciare il rilascio di una nuova cooking
 	ISO caratterizzata da oltre 2900 pacchetti. Tutti i pacchetti sono stati
@@ -102,24 +103,23 @@
 	</p>
 	</li>
 
-	<li><a href="../en/news/">Più novità</a> o sfoglia gli archivi (English):
-	<a href="../en/news/2007.php">2007</a> |
-	<a href="../en/news/2008.php">2008</a> |
-	<a href="../en/news/2009.php">2009</a></li>
+	<li><a href="/en/news/">Più novità</a> o sfoglia gli archivi (English):
+	<a href="/en/news/2007.php">2007</a> |
+	<a href="/en/news/2008.php">2008</a> |
+	<a href="/en/news/2009.php">2009</a></li>
 </ul>
 
 <!-- End of news -->
 </div>
 
 <h2>Attività del Progetto</h2>
-<?php
-	require_once("../lib/get-feeds.php");
-?>
+
+<?php require_once("../lib/get-feeds.php"); ?>
 
 <div class="activity">
 	<p>
 		<a href="http://scn.slitaz.org/activity/"><img
-			src="../images/users.png" alt="Users" /></a>
+			src="/images/users.png" alt="[ ]" /></a>
 		Bacheca degli Sviluppatori
 		<?php get_feed("scn.xml"); ?>
 	</div>
@@ -131,7 +131,7 @@
 <div class="activity">
 	<p>
 		<a href="http://forum.slitaz.org/"><img 
-			src="/images/support.png" alt="Support" /></a>
+			src="/images/support.png" alt="[ ]" /></a>
 		Forum activity
 		<?php get_feed_forum("forum.xml"); ?>
 	</div>
@@ -143,7 +143,7 @@
 <div class="activity">
 	<p>
 		<a href="http://hg.slitaz.org/">
-			<img src="../images/development.png" alt="Development" /></a>
+			<img src="/images/development.png" alt="[ ]" /></a>
 		Ultimi impegni in progresso
 		<?php get_feed("wok.xml"); ?>
 	</div>
@@ -153,6 +153,7 @@
 </div>
 
 <h2>Supportaci</h2>
+
 <p>
 	Rendi SliTaz ancora più popolare o fai una donazione. Puoi utlizzare PayPal
 	o un Flattr micropayment per supportarci monetariamente. Puoi parlare

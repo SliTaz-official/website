@@ -2,38 +2,12 @@
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
 <head>
-    <title>SliTaz - Mailing list (it)</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="slitaz users developpers mailing list" />
-    <meta name="keywords" content="slitaz list mail discussione" lang="it" />
-    <meta name="author" content="Giovanni Santini" />
-    <?php include("../lib/html/meta-link.html"); ?>
-	<style type="text/css">
-	table {
-		border: 1px solid #000000;
-		width: variable;
-		border-collapse: collapse;
-	}
-	td {
-		border: 1px dotted #6495ed;
-		width: variable;
-		padding: 2px;
-	}
-	.rowodd {
-		background-color: #ffffff;
-	}
-	.roweven {
-		background-color: #e1ffe1; /* the tower */
-	}
-	th {
-		border: 1px solid #000000;
-		width: variable;
-		padding: 4px;
-	}
-	.alignright {
-		text-align: right;
-	}
-	</style>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>SliTaz - Mailing list (it)</title>
+	<meta name="description" content="slitaz users developpers mailing list" />
+	<meta name="keywords" content="slitaz list mail discussione" lang="it" />
+	<meta name="author" content="Giovanni Santini" />
+	<?php include("../lib/html/meta-link.html"); ?>
 </head>
 <body>
 
@@ -51,7 +25,7 @@
 			(sottoscrizione via email). Partecipaci ora per aiuto o per aderire al progetto.
 		</p>
 		<p>
-			<img src="../images/users.png" alt="Users" />
+			<img src="/images/users.png" alt="[ ]" />
 			Puoi anche <a href="http://scn.slitaz.org/">entrare nella rete SCN</a>
 			e nel <a href="http://forum.slitaz.org/">forum di supporto</a> or:
 			<!-- Follow -->
@@ -79,8 +53,8 @@
 		cerca nei messaggi archiviati.</li>
 </ul>
 
-<a name="about"></a>
-<h3>About the list</h3>
+<h3 id="about">About the list</h3>
+
 <p>
 La lista di sottoscrizione (mailing list) è la principale forma di comunicazione 
 nella comunità di SliTaz. La lista è aperta a chiunque e ci si può iscrivere e 
@@ -100,7 +74,9 @@ e ricevere tutti i messaggi inviati dagli altri utenti. I messaggi sono inviati
 mediante il servizio offerto da <a href="http://www.tuxfamily.org/">TuxFamily</a> 
 che utilizza la piattaforma <a href="http://www.vhffs.org/">VHFFS</a>.
 </p>
+
 <h4>Rispetto</h4>
+
 <p>
 La mailing list viene utilizzata da gente appassionata e con sentimenti.
 Fai uno sforzo in più per trattare le persone con rispetto, anche se senti 
@@ -109,9 +85,8 @@ ti preghiamo di non farlo. Se una persona si comporta in modo inappropriato cont
 uno sviluppatore SliTaz.
 </p>
 
+<h3 id="usage">Usare la lista</h3>
 
-<a name="usage"></a>
-<h3>Usare la lista</h3>
 <p>
 Per essere in grado di scrivere nella lista, devi prima iscriverti, quindi riceverai 
 un messaggio di conferma. Questa mail contiene un numero di attivazione
@@ -123,16 +98,18 @@ consigliabile usare "Reply" ("Risposta" in italiano), per rispondere a un messag
 affinchè la discussione possa essere seguita senza problemi.
 </p>
 <ul>
-    <li>Mail amministrativa :
-    <a href="mailto:slitaz-request@lists.tuxfamily.org"
-     >slitaz-request@lists.tuxfamily.org</a></li>
-    <li>Inscriviti inserendo in oggetto : subscribe</li>
-    <li>Disiscriviti inserendo in oggetto : unsubscribe</li>
-    <li>Ricevi aiuto inserendo in oggetto : help</li>
-    <li>Indirizzo per scrivere nella lista :
-    <a href="mailto:slitaz@lists.tuxfamily.org">slitaz@lists.tuxfamily.org</a></li>
+	<li>Mail amministrativa :
+		<a href="mailto:slitaz-request@lists.tuxfamily.org"
+		>slitaz-request@lists.tuxfamily.org</a></li>
+	<li>Inscriviti inserendo in oggetto : subscribe</li>
+	<li>Disiscriviti inserendo in oggetto : unsubscribe</li>
+	<li>Ricevi aiuto inserendo in oggetto : help</li>
+	<li>Indirizzo per scrivere nella lista :
+		<a href="mailto:slitaz@lists.tuxfamily.org">slitaz@lists.tuxfamily.org</a></li>
 </ul>
+
 <h4>Formato</h4>
+
 <p>
 I messaggi devono essere inviati come testo semplice e non HTML, giustificando le
 linee e con testo compreso tra 72-80 caratteri affinchè le persone con un client 
@@ -143,8 +120,8 @@ archivi veloce e immediata. E' anche consigliato rimuovere citazioni inutili e n
 allegare file di grandi dimensioni.
 </p>
 
-<a name="archives"></a>
-<h3>Archivi della lista</h3>
+<h3 id="archives">Archivi della lista</h3>
+
 <p>
 La mailing list è un forum pubblico, tutti i file sono salvati onliane e sono da lì 
 rintracciabili. Questo permette ai non registrati di seguire comunque la lista, 

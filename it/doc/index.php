@@ -1,12 +1,12 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
 <head>
-    <title>SliTaz - Documentazione Italiana</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="SliTaz GNU/Linux English documentationx part livecd tazpkg packages" />
-    <meta name="keywords" lang="en" content="System, free, gnu, linux, opensource software, livecd in RAM" />
-    <meta name="author" content="Alessandro Frisenda"/>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>SliTaz - Documentazione Italiana</title>
+	<meta name="description" content="SliTaz GNU/Linux English documentationx part livecd tazpkg packages" />
+	<meta name="keywords" lang="en" content="System, free, gnu, linux, opensource software, livecd in RAM" />
+	<meta name="author" content="Alessandro Frisenda"/>
 <?php include("../../lib/html/meta-link.html"); ?>
 </head>
 <body>
@@ -59,23 +59,24 @@
 </p>
 
 <h2>Scratchbook</h2>
+
 <p>
 	Storicamente, lo Scratchbook è stato scritto quando SliTaz è stato creato
 	e non era fatto per essere aggiornato. Ma nel tempo, alcuni contibutori
 	di SliTaz hanno migrato il libro verso il Wiki e hanno apportato alcuni
 	aggiornamenti: <a href="http://doc.slitaz.org/en:scratchbook:start">
-		Scratchbook della Comunità</a>
+	Scratchbook della Comunità</a>
 </p>
 <p>
-	<a href="../en/doc/scratchbook/index.html">Scratchbook Originale</a> di SliTaz -
+	<a href="/en/doc/scratchbook/">Scratchbook Originale</a> di SliTaz -
 	Descrive le fasi della creazione della prima distribuzione SliTaz a partire
 	con le istruzioni su come compilare il Kernel Linux, installare il server
 	grafico (Xvesa), le applicazioni GTK ecc. Esso contiene tecniche
 	richiedenti tempo e motivazione per abilitarvi a costruire un sistema
 	GNU/Linux dali sorgenti.
 </p>
-	
-<h2>Manuali</h2>	
+
+<h2>Manuali</h2>
 <ul>
 	<li><a href="http://hg.slitaz.org/tazpkg/raw-file/tip/doc/tazpkg.en.html"
 		>Manuale Tazpkg</a> -  Gestore pacchetti di SliTaz.</li>
@@ -88,6 +89,7 @@
 </ul>
 
 <h2>Note di Rilascio</h2>
+
 <p>
 Le note di rilascio di SliTaz forniscono informazioni dettagliate riguardanti
 la versione stabile e danno alcuni utili consigli per aiutarvi ad iniziare
