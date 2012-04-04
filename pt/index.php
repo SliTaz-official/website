@@ -38,8 +38,7 @@
 <!-- Content -->
 <div id="content">
 
-<div class="box">
-	<img src="/images/update.png" alt="[ ]" style="float: left; margin-right: 10px; " />
+<div class="box-up">
 	<p>
 		Ajude-nos a obter um servidor dedicado - Visite a página de
 		<a href="http://www.gofundme.com/3ql70">Doação Online</a>

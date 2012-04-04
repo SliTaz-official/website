@@ -31,9 +31,7 @@
 <!-- Content -->
 <div id="content">
 
-<div class="box">
-	<img src="/images/update.png" alt="*" style="float: left; margin-right: 10px; " />
-
+<div class="box-up">
 	<p>Помогите нам приобрести выделенный сервер — посетите нашу
 	<a href="http://www.gofundme.com/3ql70">страницу по сбору средств</a>,
 	<a href="http://usbkey.slitaz.org/">проект USB Key</a>,

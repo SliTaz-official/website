@@ -37,8 +37,7 @@
 <!-- Content -->
 <div id="content">
 
-<div class="box">
-	<img src="/images/update.png" alt="[ ]" style="float: left; margin-right: 10px; " />
+<div class="box-up">
 	<p>
 		Help us get a dedicated server - Check out our
 		<a href="http://www.gofundme.com/3ql70">online fundraising</a>,

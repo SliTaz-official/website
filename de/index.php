@@ -38,8 +38,7 @@
 <!-- Content -->
 <div id="content">
 
-<div class="box">
-	<img src="/images/update.png" style="float: left; margin-right: 10px; " />
+<div class="box-up">
 	<p>
 		SliTaz German website needs a new maintainer and contributors. You
 		can contact us on the

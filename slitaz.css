@@ -190,14 +190,18 @@ pre {
 	border: 1px solid #ddd;
 }
 
-.box-dl {
+.box-dl, .box-up {
 	margin: 20px 60px;
 	padding: 12px 12px 12px 66px;
-	background: url("/images/download.png") no-repeat 12px 12px #efefef;
-	/* height: 48px; */
 	min-height: 48px;
 	border: 1px solid #ddd;
 	vertical-align: middle;
+}
+.box-dl {
+	background: url("/images/download.png") no-repeat 12px 12px #efefef;
+}
+.box-up {
+	background: url("/images/update.png") no-repeat 12px 12px #efefef;
 }
 .box-dl p { color: #456; }
 
@@ -250,7 +254,7 @@ pre {
 
 /* Round corner */
 
-#block_nav, pre, .box, .box-dl, .searchbox, .button a, #twitter, .activity,
+#block_nav, pre, .box, .box-dl, .box-up, .searchbox, .button a, #twitter, .activity,
 .activity div, #sponsor {
 	-moz-border-radius: 4px;
 	-webkit-border-radius: 4px;

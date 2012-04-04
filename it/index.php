@@ -37,8 +37,7 @@
 <!-- Content -->
 <div id="content">
 
-<!-- <div class="box">
-	<img src="/images/update.png" style="float: left; margin-right: 10px; " />
+<!-- <div class="box-up">
 	<p>
 		Call for sponsor!
 	</p>

@@ -31,8 +31,7 @@
 <!-- Content -->
 <div id="content">
 	
-<div class="box">
-	<img src="/images/update.png" style="float: left; margin-right: 10px; " />
+<div class="box-up">
 	<p>
 		SliTaz Chinese website needs a maintainer and contributors. You
 		can contact us on the

@@ -38,8 +38,7 @@
 <!-- Content -->
 <div id="content">
 
-<div class="box">
-	<img src="/images/update.png" style="float: left; margin-right: 10px; " />
+<div class="box-up">
 	<p>
 		Aidez nous a obtenir un serveur dedié -
 		<a href="http://www.gofundme.com/3ql70">Campagne de dons en ligne</a>
