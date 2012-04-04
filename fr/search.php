@@ -37,7 +37,8 @@
 <div id="content">
 
 <div class="searchbox">
-	<div id="cse-search-form" style="width: 100%;">Loading</div>
+	<div id="cse-search-form" style="width: 100%;"><img
+		src="/images/loader.gif" alt="*" /> Loading</div>
 	<script src="http://www.google.com/jsapi" type="text/javascript"></script>
 	<script type="text/javascript">
 		google.load('search', '1', {language : 'fr', style : google.loader.themes.MINIMALIST});
