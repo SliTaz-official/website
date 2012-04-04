@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<title>Скриншоты SliTaz</title>
+	<title>Скриншоты | SliTaz</title>
 	<meta name="description" content="Скриншоты проекта SliTaz GNU/Linux" />
 	<meta name="keywords" lang="ru" content="о SliTaz, Gnu, Linux, мини дистрибутив, LiveCD" />
 	<meta name="author" content="Christophe Lincoln, Paul Issot"/>
@@ -19,12 +19,12 @@
 	<!-- Information/image -->
 	<div id="block_info">
 		<h4>Скриншоты</h4>
-
-		<p>Лучше один раз увидеть, чем сто раз услышать… Скриншоты последних стабильной и нестабильной версий. Вы тоже можете находить, обсуждать, загружать и делиться графикой SliTaz!</p>
-		<p>
-			<img src="/images/users.png" alt="[ ]" />
-			<a href="http://scn.slitaz.org/groups/artwork/">Присоединяйтесь к нам на SCN</a>
-		</p>
+		<p>Лучше один раз увидеть, чем сто раз услышать… Скриншоты последних
+			стабильной и нестабильной версий. Вы тоже можете находить,
+			обсуждать, загружать и делиться графикой SliTaz!</p>
+		<p><img src="/images/users.png" alt="*" />
+			<a href="http://scn.slitaz.org/groups/artwork/">Присоединяйтесь
+			к нам на SCN</a></p>
 	</div>
 </div>
 

@@ -50,7 +50,7 @@ switch($page)
 		break;
 	case "forge":
 		$url  = "/LANG/devel/forge.php";
-		$lang = "en fr pt";
+		$lang = "en fr pt ru";
 		break;
 	case "doc":
 		$url  = "/LANG/doc/";
@@ -108,7 +108,7 @@ foreach($native as $short=>$long)
 	elseif (strpos($lang, $short) === false)
 		echo "	$long\n";
 	else
-		echo '	<a href="'.str_replace('LANG', $short, $url).'">'.$long."</a>\n";	
+		echo '	<a href="'.str_replace('LANG', $short, $url).'">'.$long."</a>\n";
 }
 echo "</div>\n";
 

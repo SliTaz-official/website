@@ -23,7 +23,7 @@
 			这个页面可以显示Slitaz软件源上的所有软件包，并且会每天自动更新。你可以使用图形界面工具“软件之盒”或命令<code>tazpkg get-install pkgname</code>安装软件包。
 		</p>
 		<p>
-			Browse the packages web interface: 
+			Browse the packages web interface:
 			<a href="http://pkgs.slitaz.org/stable/">稳定版软件包</a>
 			| <a href="http://pkgs.slitaz.org/cooking/">开发版软件包</a>
 		</p>
@@ -78,14 +78,30 @@
 		>http://mirror.slitaz.org/packages/</a>
 </div>
 
+<h2>Activity</h2>
+
+<?php require_once("../../lib/get-feeds.php"); ?>
+
+<div class="activity">
+	<p>
+		<a href="http://hg.slitaz.org/"><img
+			src="/images/development.png" alt="*" /></a>
+		Latest commits in wok
+		<?php get_feed("wok.xml"); ?>
+	</div>
+	<p class="activity_more">
+		<a href="http://hg.slitaz.org/">More commits</a>
+	</p>
+</div>
+
 <h2>文档</h2>
 <p>
-	The SliTaz project provides detailed 
+	The SliTaz project provides detailed
 	<a href="http://doc.slitaz.org/">documentation</a>
-	to let you learn how to install and manage packages on your SliTaz 
-	GNU/Linux distribution. 
-	The <a href="http://forum.slitaz.org/">support forum</a> members 
-	will help you in case of trouble and is also the place to request 
+	to let you learn how to install and manage packages on your SliTaz
+	GNU/Linux distribution.
+	The <a href="http://forum.slitaz.org/">support forum</a> members
+	will help you in case of trouble and is also the place to request
 	a new package.
 </p>
 

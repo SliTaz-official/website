@@ -21,14 +21,14 @@
 		<h4>Paquets</h4>
 		<p>
 			Cette partie du site permet de voir ou trouver les paquets
-			logiciels disponibles sur le miroir de SliTaz. Les pages 
+			logiciels disponibles sur le miroir de SliTaz. Les pages
 			sont mises à jour automatiquement via une tâche cron. Tous
-			les paquets sont installables via le gestionnaire de 
-			paquets Tazpkg, graphiquement en quelques cliques de souris 
+			les paquets sont installables via le gestionnaire de
+			paquets Tazpkg, graphiquement en quelques cliques de souris
 			ou avec la commande <code>tazpkg get-install pkgname</code>.
 		</p>
 		<p>
-			Naviguer dans l'interface web des paquets: 
+			Naviguer dans l'interface web des paquets:
 			<a href="http://pkgs.slitaz.org/stable/">Stable</a>
 			| <a href="http://pkgs.slitaz.org/cooking/">Cooking</a>
 		</p>
@@ -83,6 +83,22 @@
 		>http://mirror.slitaz.org/packages/</a>
 </div>
 
+<h2>Activity</h2>
+
+<?php require_once("../../lib/get-feeds.php"); ?>
+
+<div class="activity">
+	<p>
+		<a href="http://hg.slitaz.org/"><img
+			src="/images/development.png" alt="*" /></a>
+		Derniers commits dans le wok
+		<?php get_feed("wok.xml"); ?>
+	</div>
+	<p class="activity_more">
+		<a href="http://hg.slitaz.org/">Plus de commits</a>
+	</p>
+</div>
+
 <h2>Documentation</h2>
 
 <p>
@@ -94,7 +110,7 @@
 	Les membres du <a href="http://forum.slitaz.org/">forum de support</a>
 	vous aiderons probablement en cas de problèmes, le forum est aussi
 	une bonne place pour faire une demande d'un ou plusieurs nouveaux
-	paquets. members 
+	paquets. members
 </p>
 
 <!-- End of content -->

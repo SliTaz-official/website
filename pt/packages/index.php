@@ -20,10 +20,10 @@
 	<div id="block_info">
 		<h4>Pacotes</h4>
 		<p>
-			Esta parte do site permite a você ter acesso a todos os 
-			pacotes de programas disponíveis no mirror do SliTaz. 
+			Esta parte do site permite a você ter acesso a todos os
+			pacotes de programas disponíveis no mirror do SliTaz.
 			Todos os pacotes são instaláveis via o gerenciador de
-			pacotes Tazpkg usando o comando <code>tazpkg get-install 
+			pacotes Tazpkg usando o comando <code>tazpkg get-install
 			nome-do-pacote</code>.
 		</p>
 	</div>
@@ -77,13 +77,29 @@
 		>http://mirror.slitaz.org/packages/</a>
 </div>
 
+<h2>Atividades do projeto</h2>
+
+<?php require_once("../../lib/get-feeds.php"); ?>
+
+<div class="activity">
+	<p>
+		<a href="http://hg.slitaz.org/"><img
+			src="/images/development.png" alt="*" /></a>
+		Últimos commits no wok
+		<?php get_feed("wok.xml"); ?>
+	</div>
+	<p class="activity_more">
+		<a href="http://hg.slitaz.org/">Mais commits</a>
+	</p>
+</div>
+
 <h2>Documentação</h2>
 
 <p>
 	O projeto SliTaz fornece <a href="http://doc.slitaz.org/">documentação</a>
-	detalhada para permitir que você aprenda como instalar e gerenciar 
-	pacotes no seu SliTaz distribuição GNU / Linux. Os membros do 
-	<a href="http://forum.slitaz.org/">fórum</a> de apoio irá ajudá-lo 
+	detalhada para permitir que você aprenda como instalar e gerenciar
+	pacotes no seu SliTaz distribuição GNU / Linux. Os membros do
+	<a href="http://forum.slitaz.org/">fórum</a> de apoio irá ajudá-lo
 	em caso de problemas e também é o lugar para pedir um novo pacote.
 </p>
 

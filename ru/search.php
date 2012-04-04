@@ -19,8 +19,12 @@
 	<!-- Information/image -->
 	<div id="block_info">
 		<h4>Поиск</h4>
-
-		<p>Эта страница позволяет выполнить поиск по всему сайту SliTaz GNU/Linux, в <a href="http://doc.slitaz.org/">документации</a> вики, в архиве <a href="mailing-list.php">рассылки</a>, а также на <a href="http://forum.slitaz.org/">форуме</a>. Эта поисковая система была создана специально для SliTaz с помощью пользовательского поиска Google™.</p>
+		<p>Эта страница позволяет выполнить поиск по всему сайту SliTaz
+			GNU/Linux, в <a href="http://doc.slitaz.org/">документации</a> вики,
+			в архиве <a href="mailing-list.php">рассылки</a>, а также на <a
+			href="http://forum.slitaz.org/">форуме</a>. Эта поисковая система
+			была создана специально для SliTaz на основе пользовательского
+			поиска Google™.</p>
 	</div>
 </div>
 
@@ -34,18 +38,18 @@
 		src="/images/loader.gif" alt="*" /> Загрузка…</div>
 	<script src="http://www.google.com/jsapi" type="text/javascript"></script>
 	<script type="text/javascript">
-	  google.load('search', '1', {language : 'ru', style : google.loader.themes.MINIMALIST});
-	  google.setOnLoadCallback(function() {
-	    var customSearchControl = new google.search.CustomSearchControl('000868395082919927601:nddq7yjdcxg');
-	    customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
-	    var options = new google.search.DrawOptions();
-	    options.setSearchFormRoot('cse-search-form');
-	    customSearchControl.draw('cse', options);
-	  }, true);
+		google.load('search', '1', {language : 'ru', style : google.loader.themes.MINIMALIST});
+		google.setOnLoadCallback(function() {
+		var customSearchControl = new google.search.CustomSearchControl('000868395082919927601:nddq7yjdcxg');
+		customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+		var options = new google.search.DrawOptions();
+		options.setSearchFormRoot('cse-search-form');
+		customSearchControl.draw('cse', options);
+		}, true);
 	</script>
 </div>
 
-<div id="cse" style="width:100%;"></div>
+<div id="cse"></div>
  
 <!-- End of content -->
 </div>

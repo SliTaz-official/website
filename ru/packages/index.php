@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<title>Пакеты SliTaz</title>
+	<title>Пакеты | SliTaz</title>
 	<meta name="description" content="Пакеты LiveCD SliTaz GNU/Linux" />
 	<meta name="keywords" lang="ru" content="пакет, tazpkg" />
 	<meta name="author" content="Christophe Lincoln, Paul Issot"/>
@@ -19,12 +19,14 @@
 	<!-- Information/image -->
 	<div id="block_info">
 		<h4>Пакеты</h4>
-
-		<p>В этой части сайта вы можете просматривать все пакеты ПО, доступные на зеркале SliTaz. Страницы обновляются автоматически ежедневно через cron. Любой из пакетов можно установить при помощи менеджера пакетов Tazpkg (с графическим интерфейсом) или командой <code>tazpkg get-install имя_пакета</code>.</p>
-
+		<p>В этой части сайта вы можете просматривать все пакеты ПО, доступные
+			на зеркале SliTaz. Страницы обновляются автоматически ежедневно
+			через cron. Любой из пакетов можно установить при помощи менеджера
+			пакетов Tazpkg (с графическим интерфейсом) или командой
+			<code>tazpkg get-install имя_пакета</code>.</p>
 		<p>Просмотр пакетов через веб-интерфейс:
-			<a href="http://pkgs.slitaz.org/stable/">Stable</a>
-			| <a href="http://pkgs.slitaz.org/cooking/">Cooking</a>
+			<a href="http://pkgs.slitaz.org/stable/">Stable</a> |
+			<a href="http://pkgs.slitaz.org/cooking/">Cooking</a>
 		</p>
 	</div>
 </div>
@@ -65,11 +67,11 @@
 </div>
 
 <div class="box">
-	<img src="/images/text.png" alt="[ ]" />
+	<img src="/images/text.png" alt="*" />
 	Полный список пакетов:
 	<a href="http://mirror.slitaz.org/packages/stable/packages.list">Stable</a> |
 	<a href="http://mirror.slitaz.org/packages/cooking/packages.list">Cooking</a><br />
-	<img src="/images/network.png" alt="[ ]" />
+	<img src="/images/network.png" alt="*" />
 	Основное зеркало:
 	<a href="http://mirror.slitaz.org/packages/">http://mirror.slitaz.org/packages/</a>
 </div>
@@ -81,18 +83,23 @@
 
 <div class="activity">
 	<p>
-		<a href="http://hg.slitaz.org/"><img src="/images/development.png" alt="[ ]" /></a>
+		<img src="/images/development.png" alt="*" />
 		Последние коммиты в wok
 		<?php get_feed("wok.xml"); ?>
+	</div>
 	<p class="activity_more">
-		<a href="http://hg.slitaz.org/">Ещё…</a>
+		<a href="http://hg.slitaz.org/?sort=lastchange">Ещё…</a>
 	</p>
 </div>
 
 
 <h2>Документация</h2>
 
-<p>Проект SliTaz содержит подробную <a href="http://doc.slitaz.org/">документацию</a>, из которой вы узнаете, как устанавливать и управлять пакетами в дистрибутиве SliTaz GNU/Linux. На <a href="http://forum.slitaz.org/">форуме поддержки</a> вам помогут в случае проблем, там же вы можете оставить просьбу на создание нового пакета.</p>
+<p>Проект SliTaz содержит подробную <a href="http://doc.slitaz.org/"
+	>документацию</a>, из которой вы узнаете, как устанавливать и управлять
+	пакетами в дистрибутиве SliTaz GNU/Linux. На <a
+	href="http://forum.slitaz.org/">форуме поддержки</a> вам помогут в случае
+	проблем, там же вы можете оставить просьбу на создание нового пакета.</p>
 
 <!-- End of content -->
 </div>
