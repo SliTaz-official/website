@@ -1,9 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-	<title>SliTaz - Network Map</title>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Network Map | SliTaz</title>
 	<meta name="description" content="slitaz network map" />
 	<meta name="keywords" lang="en" content="slitaz network, slitaz support, slitaz sites" />
 	<meta name="author" content="Christophe Lincoln"/>
@@ -36,27 +36,29 @@
 	</div>
 </div>
 
+<?php include "lib/lang.php" ?>
+
 <!-- Content -->
 <div id="content">
 
 <div>
 	<div class="left_box">
-		<h3><img src="images/network.png" alt=".png" />Website</h3>
+		<h3><img src="images/network.png" alt="*" />Website</h3>
 		<ul>
-			<li><a href="http://www.slitaz.org/">Main Page &amp; News</a></li>
-			<li><a href="http://www.slitaz.org/i18n.php">Internationalization</a></li>
-			<li><a href="http://www.slitaz.org/en/about/">About SliTaz</a></li>
-			<li><a href="http://www.slitaz.org/en/get/">Download</a></li>
-			<li><a href="http://www.slitaz.org/en/packages/">Packages</a></li>
+			<li><a href="/">Main Page &amp; News</a></li>
+			<li><a href="/i18n.php">Internationalization</a></li>
+			<li><a href="/en/about/">About SliTaz</a></li>
+			<li><a href="/en/get/">Download</a></li>
+			<li><a href="/en/packages/">Packages</a></li>
 		</ul>
 	</div>
 	<div class="right_box">
-		<h3><img src="images/support.png" alt=".png" />Help &amp; Support</h3>
+		<h3><img src="images/support.png" alt="*" />Help &amp; Support</h3>
 		<ul>
 			<li><a href="http://doc.slitaz.org/">Documentation</a></li>
 			<li><a href="http://doc.slitaz.org/en:handbook:start">Handbook</a></li>
 			<li><a href="http://forum.slitaz.org/">Support Forum</a></li>
-			<li><a href="http://www.slitaz.org/en/mailing-list.html">Mailing List</a></li>
+			<li><a href="/en/mailing-list.html">Mailing List</a></li>
 			<li>IRC: <b>irc.freenode.net <a href="webchat.php">#slitaz</a></b></li>
 		</ul>
 	</div>
@@ -66,7 +68,7 @@
 
 <div>
 	<div class="left_box" >
-		<h3><img src="images/users.png" alt=".png" />Community</h3>
+		<h3><img src="images/users.png" alt="*" />Community</h3>
 		<ul>
 			<li><a href="http://scn.slitaz.org/">Community Network</a></li>
 			<li><a href="http://doc.slitaz.org/en:newsletter:start">Monthly Newsletter</a></li>
@@ -77,14 +79,14 @@
 		</ul>
 	</div>
 	<div class="right_box">
-		<h3><img src="images/development.png" alt=".png" />Development</h3>
+		<h3><img src="images/development.png" alt="*" />Development</h3>
 		<ul>
 			<li><a href="http://hg.slitaz.org/">Mercurial Repositories</a></li>
 			<li><a href="http://scn.slitaz.org/groups/devel/">SCN Group</a></li>
 			<li><a href="http://bugs.slitaz.org">Bug Tracker</a></li>
 			<li><a href="http://tank.slitaz.org/">Main Server</a></li>
 			<li><a href="http://cook.slitaz.org/">Build Bot</a></li>
-			<li><a href="http://www.slitaz.org/en/devel/">Developers Corner</a></li>
+			<li><a href="/en/devel/">Developers Corner</a></li>
 		</ul>
 	</div>
 </div>

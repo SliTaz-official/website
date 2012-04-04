@@ -1,10 +1,10 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-	<title>SliTaz - Web chat</title>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<meta name="description" content="SliTaz Webchat - Connect to #slitaz on Freenode IRC" />
+	<title>Web chat | SliTaz</title>
+	<meta name="description" content="SliTaz Webchat — Connect to #slitaz on Freenode IRC" />
 	<meta name="keywords" lang="en" content="slitaz irc, slitaz chat, slitaz support" />
 	<meta name="author" content="Christophe Lincoln"/>
 	<?php include("lib/html/meta-link.html"); ?>

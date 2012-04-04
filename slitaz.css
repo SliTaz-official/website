@@ -132,8 +132,6 @@ pre {
 /* Languages */
 
 #lang {
-	position: absolute;
-	right: 0;
 	padding: 6px;
 	font-size: 11px;
 }
@@ -146,6 +144,9 @@ pre {
 #lang a:hover {
 	text-decoration: underline;
 }
+
+body > #lang { float: right; }		/* for regular pages */
+.box #lang { text-align: center; }	/* for /i18n page */
 
 /* Content */
 

@@ -2,8 +2,8 @@
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-	<title>SliTaz GNU/Linux</title>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>SliTaz GNU/Linux</title>
 	<meta name="description" content="SliTaz GNU/Linux LiveCD operating system" />
 	<meta name="keywords" lang="en" content="slitaz, gnu, linux, opensource, livecd, live usb" />
 	<meta name="author" content="Christophe Lincoln" />
@@ -44,28 +44,15 @@ include("lib/html/header.html");
 	</div>
 </div>
 
-<!-- Languages -->
-<div id="lang">
-	<a href="i18n.php"><img src="images/locale.png" alt="Locale:" /></a>
-	<a href="da/">Dansk</a>
-	<a href="de/">Deutsch</a>
-	<a href="en/">English</a>
-	<a href="es/">Español</a>
-	<a href="fr/">Français</a>
-	<a href="id/">Indonesian</a>
-	<a href="it/">Italiano</a>
-	<a href="pt/">Português</a>
-	<a href="ru/">Русский</a>
-	<a href="cn/">中文</a>
-</div>
+<?php include "lib/lang.php" ?>
 
 <!-- Content -->
 <div id="content">
 
 <div class="box-up">
 	<p>
-		Help us get a dedicated server - Check out our
-		<a href="http://www.gofundme.com/3ql70">online fundraising</a>
+		Help us get a dedicated server — Check out our
+		<a href="http://www.gofundme.com/3ql70">online fundraising</a>,
 		<a href="http://usbkey.slitaz.org/">USB Key Project</a> or 
 		become an official <a href="/en/sponsor/">sponsor</a>
 	</p>
@@ -85,25 +72,26 @@ include("lib/html/header.html");
 
 <ul>
 	<li><strong><a href="en/#news">SliTaz 4.0 RC2 is out</a></strong>
-		<span>- 03 Mar 2012</span></li>
+		<span>— 03 Mar 2012</span></li>
 	<li><strong><a href="en/#20120223">SliTaz 4.0 RC1 is out</a></strong>
-		<span>- 23 Feb 2012</span></li>
+		<span>— 23 Feb 2012</span></li>
 	<li><strong><a href="en/#20110531">New and fresh Cooking 20110531</a></strong>
-		<span>- 31 May 2011</span></li>
+		<span>— 31 May 2011</span></li>
 	<li><strong><a href="en/#20110329">New Cooking 20110329</a></strong>
-		<span>- 29 March 2011</span></li>
+		<span>— 29 March 2011</span></li>
 </ul>
 
 <!-- End of news -->
 </div>
 
 <h2>Project Activity</h2>
+
 <?php require_once("lib/get-feeds.php"); ?>
 
 <div class="activity">
 	<p>
 		<a href="http://scn.slitaz.org/activity/"><img 
-			src="images/users.png" alt="users.png" /></a>
+			src="images/users.png" alt="*" /></a>
 		Community activity
 		<?php get_feed("scn.xml"); ?>
 	</div>
@@ -115,7 +103,7 @@ include("lib/html/header.html");
 <div class="activity">
 	<p>
 		<a href="http://forum.slitaz.org/"><img 
-			src="/images/support.png" alt="[ Support ]" /></a>
+			src="/images/support.png" alt="*" /></a>
 		Forum activity
 		<?php get_feed_forum("forum.xml"); ?>
 	</div>
@@ -127,7 +115,7 @@ include("lib/html/header.html");
 <div class="activity">
 	<p>
 		<a href="http://hg.slitaz.org/">
-			<img src="images/development.png" alt="development.png" /></a>
+			<img src="images/development.png" alt="*" /></a>
 		Latest commits in wok
 		<?php get_feed("wok.xml"); ?>
 	</div>
@@ -143,6 +131,7 @@ include("lib/html/header.html");
 </div>
 
 <h2>Latest Tweet</h2>
+
 <div id="twitter">
 	<script src="http://widgets.twimg.com/j/2/widget.js"></script>
 	<script>
@@ -178,6 +167,7 @@ include("lib/html/header.html");
 </div>
 
 <h2>Spread SliTaz</h2>
+
 <p>
 	One way to help the project is to make SliTaz even more popular.
 	Blog, Tweet this page, share and talk about the project. SliTaz
@@ -189,19 +179,21 @@ include("lib/html/header.html");
 <?php include("lib/html/social.html"); ?>
 
 <h2>Monetary support</h2>
+
 <p>
 	SliTaz is made by volunteers and there is no company behind
-    the project, but we desperately need some money to maintain the
-    project infrastructure and services such as the main server and
-    build host. You can help with a micropayment via Flattr or a 
-    Paypal donation to the SliTaz <a href="en/asso/">Association</a>,
-    that way we can keep our freedom and autonomy without having any
-    ads on our sites.
+	the project, but we desperately need some money to maintain the
+	project infrastructure and services such as the main server and
+	build host. You can help with a micropayment via Flattr or a 
+	Paypal donation to the SliTaz <a href="en/asso/">Association</a>,
+	that way we can keep our freedom and autonomy without having any
+	ads on our sites.
 </p>
 
 <?php include("lib/html/donate.html"); ?>
 
 <h2>Internationalization</h2>
+
 <p>
 The SliTaz web site is available in several languages and maintained by the
 <a href="i18n.php">internationalization</a> team (i18n). Help is often
@@ -209,7 +201,7 @@ needed and you're welcome to join us if you would like to see the website
 translated into your language.
 </p>
 <p>
-	<img src="images/users.png" alt="users.png" />
+	<img src="images/users.png" alt="*" />
 	<a href="http://scn.slitaz.org/groups/i18n/">Join i18n group on SCN</a>
 </p>
 

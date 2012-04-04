@@ -1,13 +1,13 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-    <title>SliTaz - Internationalization</title>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Internationalization | SliTaz</title>
 	<meta name="description" content="SliTaz GNU/Linux languages" />
-    <meta name="keywords" lang="en" content="SliTaz POT, gettext, translation" />
-    <meta name="author" content="Christophe Lincoln"/>
-    <?php include("lib/html/meta-link.html"); ?>
+	<meta name="keywords" lang="en" content="SliTaz POT, gettext, translation" />
+	<meta name="author" content="Christophe Lincoln"/>
+	<?php include("lib/html/meta-link.html"); ?>
 </head>
 <body>
 
@@ -29,7 +29,7 @@
 			LiveCD GUI builder.
 		</p>
 		<p>
-			<img src="images/users.png" alt="users.png" />
+			<img src="images/users.png" alt="*" />
 			<a href="http://scn.slitaz.org/groups/i18n/">Join us on SCN</a>
 		</p>
 	</div>
@@ -39,6 +39,7 @@
 <div id="content">
 
 <h2>Internationalization</h2>
+
 <p>
 	Translation is a community effort and everyone can help. You're
 	welcome to join the team! You can find more pot files on 
@@ -52,17 +53,7 @@
 </p>
 
 <div class="box">
-	<img src="images/locale.png" alt="locale.png" />
-	<a href="da/">Dansk</a> -
-	<a href="de/">Deutsch</a> -
-	<a href="en/">English</a> -
-	<a href="es/">Español</a> -
-	<a href="fr/">Français</a> -
-	<a href="id/">Indonesian</a> -
-	<a href="it/">Italiano</a> -
-	<a href="pt/">Português</a> -
-	<a href="ru/">Русский</a> -
-	<a href="cn/">Chinese</a>
+	<?php include "lib/lang.php" ?>
 </div>
 
 <h2>Information</h2>
@@ -73,8 +64,8 @@
 	languages are English, French, German, Portuguese and Chinese. 
 	Spanish is on the stove, but more help is needed. Most of the 
 	communication is done through the
-	<a href="en/mailing-list.html">Mailing List</a> and the i18n group on
-	<a href="http://scn.slitaz.org/groups/i18n/">SCN</a>.
+	<a href="en/mailing-list.html">Mailing List</a> and the
+	<a href="http://scn.slitaz.org/groups/i18n/">i18n group</a> on SCN.
 </p>
 
 <p>
@@ -84,8 +75,7 @@
 	more than welcome to join us.
 </p>
 
-<a name="howto"></a>
-<h2>How to participate</h2>
+<h2 id="howto">How to participate</h2>
 
 <p>
 	From fixing typos to translating a full xHTML page there's always editing
@@ -170,6 +160,7 @@ $ wget <a href="http://hg.slitaz.org/website/archive/tip.tar.bz2">http://hg.slit
 			border-radius: 4px;
 		}
 	.thead { font-weight: bold; }
+	td { border-bottom: 1pt dashed #ddd }
 </style>
 
 <!--
@@ -179,20 +170,21 @@ $ wget <a href="http://hg.slitaz.org/website/archive/tip.tar.bz2">http://hg.slit
 -->
 
 <table>
-	<tbody> 
-		<thead class="thead">
-			<tr>
-				<td>Project</td>
-				<td>POT file</td>
-				<td>PO files</td>
-			</tr>
-		</thead>
+	<thead class="thead">
+		<tr>
+			<td>Project</td>
+			<td>POT file</td>
+			<td>PO files</td>
+		</tr>
+	</thead>
+	<tbody>
 		<tr>
 			<td><a href="http://hg.slitaz.org/tazpkg">TazPKG</a></td>
 			<td><a href="http://hg.slitaz.org/tazpkg/raw-file/tip/po/tazpkg/tazpkg.pot">
 				tazpkg.pot</a></td>
 			<td>
-				<a href="http://hg.slitaz.org/tazpkg/raw-file/tip/po/tazpkg/fr.po">fr</a>
+				<a href="http://hg.slitaz.org/tazpkg/raw-file/tip/po/tazpkg/es.po">es</a>,
+				<a href="http://hg.slitaz.org/tazpkg/raw-file/tip/po/tazpkg/fr.po">fr</a>,
 				<a href="http://hg.slitaz.org/tazpkg/raw-file/tip/po/tazpkg/pt_BR.po">pt_BR</a>
 			</td>
 		</tr>
@@ -201,7 +193,7 @@ $ wget <a href="http://hg.slitaz.org/website/archive/tip.tar.bz2">http://hg.slit
 			<td><a href="http://hg.slitaz.org/tazpkg/raw-file/tip/po/tazpkg-notify/tazpkg-notify.pot">
 				tazpkg-notify.pot</a></td>
 			<td>
-				<a href="http://hg.slitaz.org/tazpkg/raw-file/tip/po/tazpkg-notify/fr.po">fr</a>
+				<a href="http://hg.slitaz.org/tazpkg/raw-file/tip/po/tazpkg-notify/fr.po">fr</a>,
 				<a href="http://hg.slitaz.org/tazpkg/raw-file/tip/po/tazpkg-notify/pt_BR.po">pt_BR</a>
 			</td>
 		</tr>
@@ -210,7 +202,8 @@ $ wget <a href="http://hg.slitaz.org/website/archive/tip.tar.bz2">http://hg.slit
 			<td><a href="http://hg.slitaz.org/tazpanel/raw-file/tip/po/tazpanel.pot">
 				tazpanel.pot</a></td>
 			<td>
-				<a href="http://hg.slitaz.org/tazpanel/raw-file/tip/po/fr.po">fr</a>
+				<a href="http://hg.slitaz.org/tazpanel/raw-file/tip/po/es.po">es</a>,
+				<a href="http://hg.slitaz.org/tazpanel/raw-file/tip/po/fr.po">fr</a>,
 				<a href="http://hg.slitaz.org/tazpanel/raw-file/tip/po/pt_BR.po">pt_BR</a>
 			</td>
 		</tr>
@@ -219,8 +212,8 @@ $ wget <a href="http://hg.slitaz.org/website/archive/tip.tar.bz2">http://hg.slit
 			<td><a href="http://hg.slitaz.org/slitaz-tools/raw-file/tip/po/slitaz-tools/slitaz-tools.pot">
 				slitaz-tools.pot</a></td>
 			<td>
-				<a href="http://hg.slitaz.org/slitaz-tools/raw-file/tip/po/slitaz-tools/es_AR.po">es_AR</a>
-				<a href="http://hg.slitaz.org/slitaz-tools/raw-file/tip/po/slitaz-tools/fr.po">fr</a>
+				<a href="http://hg.slitaz.org/slitaz-tools/raw-file/tip/po/slitaz-tools/es_AR.po">es_AR</a>,
+				<a href="http://hg.slitaz.org/slitaz-tools/raw-file/tip/po/slitaz-tools/fr.po">fr</a>,
 				<a href="http://hg.slitaz.org/slitaz-tools/raw-file/tip/po/slitaz-tools/pt_BR.po">pt_BR</a>
 			</td>
 		</tr>
@@ -229,8 +222,8 @@ $ wget <a href="http://hg.slitaz.org/website/archive/tip.tar.bz2">http://hg.slit
 			<td><a href="http://hg.slitaz.org/slitaz-tools/raw-file/tip/po/slitaz-boxes/slitaz-boxes.pot">
 				slitaz-boxes.pot</a></td>
 			<td>
-				<a href="http://hg.slitaz.org/slitaz-tools/raw-file/tip/po/slitaz-boxes/es_AR.po">es_AR</a>
-				<a href="http://hg.slitaz.org/slitaz-tools/raw-file/tip/po/slitaz-boxes/fr.po">fr</a>
+				<a href="http://hg.slitaz.org/slitaz-tools/raw-file/tip/po/slitaz-boxes/es_AR.po">es_AR</a>,
+				<a href="http://hg.slitaz.org/slitaz-tools/raw-file/tip/po/slitaz-boxes/fr.po">fr</a>,
 				<a href="http://hg.slitaz.org/slitaz-tools/raw-file/tip/po/slitaz-boxes/pt_BR.po">pt_BR</a>
 			</td>
 		</tr>
@@ -239,8 +232,8 @@ $ wget <a href="http://hg.slitaz.org/website/archive/tip.tar.bz2">http://hg.slit
 			<td><a href="http://hg.slitaz.org/slitaz-tools/raw-file/tip/po/tazbox/tazbox.pot">
 				tazbox.pot</a></td>
 			<td>
-				<a href="http://hg.slitaz.org/slitaz-tools/raw-file/tip/po/tazbox/es_AR.po">es_AR</a>
-				<a href="http://hg.slitaz.org/slitaz-tools/raw-file/tip/po/tazbox/fr.po">fr</a>
+				<a href="http://hg.slitaz.org/slitaz-tools/raw-file/tip/po/tazbox/es_AR.po">es_AR</a>,
+				<a href="http://hg.slitaz.org/slitaz-tools/raw-file/tip/po/tazbox/fr.po">fr</a>,
 				<a href="http://hg.slitaz.org/slitaz-tools/raw-file/tip/po/tazbox/pt_BR.po">pt_BR</a>
 			</td>
 		</tr>
@@ -257,7 +250,8 @@ $ wget <a href="http://hg.slitaz.org/website/archive/tip.tar.bz2">http://hg.slit
 			<td><a href="http://hg.slitaz.org/tazusb/raw-file/tip/po/tazusb/tazusb.pot">
 				tazusb.pot</a></td>
 			<td>
-				<a href="http://hg.slitaz.org/tazusb/raw-file/tip/po/tazusb/fr.po">fr</a>
+				<a href="http://hg.slitaz.org/tazusb/raw-file/tip/po/tazusb/fr.po">fr</a>,
+				<a href="http://hg.slitaz.org/tazusb/raw-file/tip/po/tazusb/pt_BR.po">pt_BR</a>
 			</td>
 		</tr>
 		<tr>
@@ -265,7 +259,8 @@ $ wget <a href="http://hg.slitaz.org/website/archive/tip.tar.bz2">http://hg.slit
 			<td><a href="http://hg.slitaz.org/tazusb/raw-file/tip/po/tazusb-box/tazusb-box.pot">
 				tazusb-box.pot</a></td>
 			<td>
-				<a href="http://hg.slitaz.org/tazusb/raw-file/tip/po/tazusb-box/fr.po">fr</a>
+				<a href="http://hg.slitaz.org/tazusb/raw-file/tip/po/tazusb-box/fr.po">fr</a>,
+				<a href="http://hg.slitaz.org/tazusb/raw-file/tip/po/tazusb-box/pt_BR.po">pt_BR</a>
 			</td>
 		</tr>
 	</tbody>
