@@ -46,7 +46,7 @@ switch($page)
 		break;
 	case "devel":
 		$url  = "/LANG/devel/";
-		$lang = "da de en es fr pt";
+		$lang = "da de en es fr pt ru";
 		break;
 	case "forge":
 		$url  = "/LANG/devel/forge.php";
@@ -98,9 +98,8 @@ switch($page)
 		break;
 }
 
-echo "<!-- Languages -->\n" .
-	"<div id='lang'>\n" .
-	"	<a href='/i18n.php'><img src='/images/locale.png' alt='Locale:' /></a>\n";
+echo "<!-- Languages -->\n<div id='lang'>\n" .
+	"	<a href='/i18n.php'><img src='/images/locale.png' alt='i18n' /></a>\n";
 
 foreach($native as $short=>$long)
 {
@@ -112,7 +111,5 @@ foreach($native as $short=>$long)
 		echo '	<a href="'.str_replace('LANG', $short, $url).'">'.$long."</a>\n";	
 }
 echo "</div>\n";
-//}
 
 ?>
-
