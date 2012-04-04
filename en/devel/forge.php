@@ -64,9 +64,14 @@
 	Each contributor may have an account on the project server with secure 
 	access, disk space, a public directory and all development tools. 
 	Developers can compile packages and maintainers of the mirror can handle 
-	sychronization. Tank also hosts the website, web boot and mercurial 
-	repositories: <a href="http://tank.slitaz.org/">tank.slitaz.org</a>
+	synchronization. Tank also hosts the Web boot, Build Bot and SliTaz Pro:
+	<a href="http://tank.slitaz.org/" target="_blank">tank.slitaz.org</a>
 </p>
+<!-- p>
+	SliTaz also have servers for their needs:
+	<a href="http://chub.slitaz.org/" target="_blank">Chub</a> and
+	<a href="http://pangolin.slitaz.org/" target="_blank">Pangolin</a>.
+</p -->
 <p>
 	Instructions on using the build host are described in the Cookbook:
 	<a href="http://doc.slitaz.org/en:cookbook:buildhost">
