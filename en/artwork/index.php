@@ -69,7 +69,7 @@ kilobytes and should be 1024x768 in size. Finally each release
 version offers a new theme / background which follow the same guidelines
 and it goes without saying that tools distributed with the system should
 be used. With a LiveCD you already have mtPaint and on an installed system
-you'll find Gimp on the mirror. Note that the JPG format is prefered.
+you can find Gimp on the mirror. Note that the JPG format is preferred.
 </p>
 
 <h2 id="logos">Logos &amp; Spider</h2>

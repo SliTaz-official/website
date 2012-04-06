@@ -64,11 +64,11 @@
 	Each contributor may have an account on the project server with secure
 	access, disk space, a public directory and all development tools.
 	Developers can compile packages and maintainers of the mirror can handle
-	synchronization. Tank also hosts the Web boot, Build Bot and SliTaz Pro:
+	synchronization. Tank also hosts the Build Bot, Web boot and SliTaz Pro:
 	<a href="http://tank.slitaz.org/" target="_blank">tank.slitaz.org</a>
 </p>
 <!-- p>
-	SliTaz also have servers for their needs:
+	SliTaz hosts some other project servers:
 	<a href="http://chub.slitaz.org/" target="_blank">Chub</a> and
 	<a href="http://pangolin.slitaz.org/" target="_blank">Pangolin</a>.
 </p -->
@@ -165,7 +165,7 @@ Hg commands that can be used.
 	There are many ways to create user interfaces in the open source world. From
 	the start of the project until 3.0 we mainly used a tool called Gtkdialog
 	which let us create quite nice and complex interfaces in GTK, but using a
-	scripting language that just run without having to be compiled. But gtkdialog is
+	scripting language that just ran without having to be compiled. But gtkdialog is
 	unmaintained and lacks many new GTK features, so we switched to Yad for simple GUI boxes.
 	For all the administration, packages and configuration tools we switched to TazPanel,
 	a CGI/web interface with a gui coded in xHTML 5 and CSS 3.
@@ -230,16 +230,17 @@ int main(int argc, char *argv[])
 <h2 id="pkgs">Building SliTaz packages</h2>
 
 <p>
-	Building official is done with the Cookutils suite. The package is installed
-	on each SliTaz system as well as the documentation about using cook and
-	<a href="http://hg.slitaz.org/cookutils/raw-file/tip/doc/cookutils.en.html">creating SliTaz Packages</a> suitable for TazPKG packages manager.
+	Officially building is done with the Cookutils suite. This package is installed
+	on each SliTaz system as well as documentation about using cook and
+	<a href="http://hg.slitaz.org/cookutils/raw-file/tip/doc/cookutils.en.html">creating SliTaz packages</a> 
+	suitable for the TazPKG packages manager.
 </p>
 <p>
 	The tazpkg packages in SliTaz are automatically created via the
-	<a href="http://cook.slitaz.org/">Cooker</a> from Cookutils package
+	<a href="http://cook.slitaz.org/">Cooker</a> from the Cookutils package
 	and a receipt in the wok. The Cookbook describes the format of
 	<a href="http://doc.slitaz.org/en:cookbook:receipt">receipts</a>.
-	Cook and receipt documentation are required reading before we begin.
+	Cookutils and receipt documentation are required reading before we begin.
 </p>
 <p>
 	In terms of choice of package, the idea is to offer a package by task or
@@ -256,9 +257,9 @@ int main(int argc, char *argv[])
 	work doesn't already exist in the
 	<a href="http://download.tuxfamily.org/slitaz/packages/undigest/">undigest</a>
 	wok provided by the primary SliTaz mirror. Don't forget that the members
-	of the list are there to help you and that the documentation of the
-	<a href="http://doc.slitaz.org/en:cookbook:wok">wok and tools</a>
-	exists to help you get started.
+	of the list are there to help you and that the 
+	<a href="http://hg.slitaz.org/cookutils/raw-file/tip/doc/cookutils.en.html">Cookutils</a>
+	documentation exists to help you get started.
 </p>
 
 <h3 id="pkgs-naming">Naming of packages</h3>
@@ -273,7 +274,7 @@ int main(int argc, char *argv[])
 <h2 id="website">Website Management</h2>
 
 <p>
-	The website is managed via a mercurial repository, they can be cloned by:
+	The website is managed via a mercurial repository, this can be cloned by:
 </p>
 <pre>
  $ hg clone http://hg.slitaz.org/website
