@@ -20,7 +20,7 @@
 	<div id="block_info">
 		<h4>Mailing list</h4>
 		<p>
-			SliTaz contributors discussions and announcements (inc. 
+			SliTaz contributors discussions and announcements (inc.
 			support and development). All this is part of the mailing
 			list - Join now to get help or involved in the project.
 		</p>
@@ -31,9 +31,10 @@
 		</p>
 		<!-- Follow -->
 		<div style="margin-top: 12px;">
-			<a href="https://twitter.com/slitaz" class="twitter-follow-button" 
-				data-show-count="true" data-show-screen-name="false">Follow @slitaz</a>
-			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			<script type="text/javascript">
+				document.write('<a href="https://twitter.com/slitaz" class="twitter-follow-button" data-show-count="true" data-show-screen-name="false">Follow @slitaz</a>');
+				!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+			</script>
 		</div>
 	</div>
 </div>
@@ -49,7 +50,7 @@
 	<li><a href="#about">About the list</a> - Support and development.</li>
 	<li><a href="#usage">Using the list</a> - Subscribe/Unsubscribe and
 		operation.</li>
-	<li><a href="#archives">Archives of the list</a> -  Read and/or 
+	<li><a href="#archives">Archives of the list</a> -  Read and/or
 		search through archived messages.</li>
 </ul>
 

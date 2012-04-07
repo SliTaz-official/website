@@ -40,6 +40,7 @@
 
 <div class="news">
 
+<ul>
 	<li>
 		<strong>31 Mai 2011 - Nouvelle et fraîche Cooking 20110329</strong>
 	<p>
@@ -97,11 +98,11 @@
 		corriger les problèmes connus avant la publication de la 4.0. Vous
 		pouvez joindre les membres de notre groupe via notre IRC, mailing list,
 		forums ou les mainteneurs des paquets par courriel. Nous espérons que
-		vous vous réjouirez, comme nous, de cette nouvelle 
+		vous vous réjouirez, comme nous, de cette nouvelle
 		<a href="/fr/get/">publication!</a>
 	</p>
 	</li>
-
+</ul>
 </div>
 
 <!-- End of content  -->

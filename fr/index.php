@@ -57,7 +57,7 @@
 	Le site web de SliTaz propose les principales nouvelles du projet, et
 	<a href="http://scn.slitaz.org/">le blog officiel</a> des nouvelles
 	sur l'activité générale des différents sous-projets. Ces nouvelles sont
-	aussi disponibles sous forme de <a href="/rss.xml">flux XML</a>. De 
+	aussi disponibles sous forme de <a href="/rss.xml">flux XML</a>. De
 	même, le projet propose une petite lettre d'information mensuelle et
 	<a href="../">la page d'accueil</a> du site, elle, propose un synthèse
 	de l'activité du projet avec les derniers paquets cuits, les commits
@@ -77,7 +77,7 @@
 	<p></p>
 	</li> -->
 
-	<li id="20120303">
+	<li id="d20120303">
 		<strong>03 Mar 2012 - SliTaz 4.0-RC2</strong>
 	<p>
 		L'équipe de SliTaz est fière de vous annoncer la sortie de SliTaz
@@ -91,14 +91,14 @@
 	<p>
 		Cette nouvelle version vient avec un paquet Xorg complet et le
 		support DRI.
-		Les pilotes Intel, Geode et vesa fonctionnent out-of-the-box. 
+		Les pilotes Intel, Geode et vesa fonctionnent out-of-the-box.
 		Nous avons également reconstruit tous les paquets une fois de plus
 		et réduit d'environ 2Mo le LiveCD de base. Celui-ci comprend
 		maintenant Lxrandr, Parcellite et le client bitorrent Transmission.
 	</p>
 	<p>
 		Nous tenons à remercier tous les contributeurs qui ont testé la
-		première version candidate. 
+		première version candidate.
 		La RC2 est proche de ce que sera la version 4.0 de SliTaz prévue dans
 		2 semaines.
 		Télécharger l'image ISO à partir de RC2 notre miroir (35,1 Mo):
@@ -106,7 +106,7 @@
 	</p>
 	</li>
 
-	<li id="20120223">
+	<li id="d20120223">
 		<strong>23 Feb 2012 - SliTaz 4.0-RC1</strong>
 	<p>
 		L'équipe des contributeurs SliTaz est heureuse de pouvoir annoncer
@@ -151,7 +151,7 @@
 
 <div class="activity">
 	<p>
-		<a href="http://scn.slitaz.org/activity/"><img 
+		<a href="http://scn.slitaz.org/activity/"><img
 			src="/images/users.png" alt="[ ]" /></a>
 		Activité de la communauté
 		<?php get_feed("scn.xml"); ?>
@@ -163,7 +163,7 @@
 
 <div class="activity">
 	<p>
-		<a href="http://forum.slitaz.org/"><img 
+		<a href="http://forum.slitaz.org/"><img
 			src="/images/support.png" alt="[ ]" /></a>
 		Activité du forum
 		<?php get_feed_forum("forum.xml"); ?>

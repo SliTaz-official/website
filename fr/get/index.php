@@ -76,7 +76,7 @@ include("../../lib/html/header.html");
 
 <p>
 	Un grand merci à l'équipe de <a href="http://www.tuxfamily.org/">TuxFamily</a>,
-	à <a href="http://mirror.switch.ch/">SWITCHmirror</a> et à 
+	à <a href="http://mirror.switch.ch/">SWITCHmirror</a> et à
 	<a href="http://www.ads-lu.com/" target="_blank">ADS</a>
 	qui hébergent les miroirs principaux de SliTaz, en Suisse et en France, et
 	en Chine à <a href="http://mirror.lupaworld.com/">LupaWorld</a> :
@@ -122,7 +122,7 @@ include("../../lib/html/header.html");
 </p>
 
 <div class="box-dl"><p>
-	<?php echo "SliTaz GNU/Linux $stable_ver ($stable_size) - 
+	<?php echo "SliTaz GNU/Linux $stable_ver ($stable_size) -
 	<a href='$stable_iso'>slitaz-$stable_ver.iso</a>
 	[ <a href='$mirror/$stable_ver/slitaz-$stable_ver.md5'>md5</a> ]"; ?>
 </p></div>
@@ -150,7 +150,7 @@ include("../../lib/html/header.html");
 </p>
 
 <div class="box-dl"><p>
-	<?php echo "SliTaz GNU/Linux Cooking $cooking_ver ($cooking_size) - 
+	<?php echo "SliTaz GNU/Linux Cooking $cooking_ver ($cooking_size) -
 	<a href='$cooking_iso'>slitaz-$cooking.iso</a>
 	[ <a href='$mirror/cooking/slitaz-$cooking.md5'>md5</a> ]"; ?>
 </p></div>
@@ -158,7 +158,7 @@ include("../../lib/html/header.html");
 <p>
 	Une image DVD bootable de tous les paquets disponibles pour la version
 	Cooking est générée chaque jour. Elle contient aussi une copie du site Web
-	et permet grâce au script install.sh, une utilisation sans connexion Internet.<br>
+	et permet grâce au script install.sh, une utilisation sans connexion Internet.<br />
 	Cette image peut aussi être
 	<a href="http://syslinux.zytor.com/wiki/index.php/Doc/isolinux#HYBRID_CD-ROM.2FHARD_DISK_MODE">
 		installée sur une clé USB</a>, mais elle écrasera toutes les données

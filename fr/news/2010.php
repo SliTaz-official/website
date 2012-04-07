@@ -56,6 +56,7 @@
 	cette nouvelle version depuis un des
 	mirroirs du site officiel du projet. Tous les feedback sont les
 	bienvenus et peuvent se faire à travers la mailing list ou le forum.</p>
+	</li>
 
 	<li>
 		<strong>08 Mai 2010 - Documentation de l'été</strong>
@@ -66,6 +67,7 @@
 	<a href="http://doc.slitaz.org/">doc.slitaz.org</a>. Nous espérons que
 	les utilisateurs de SliTaz pourront contribuer en ajoutant et en
 	mettant à jour la documentation.</p>
+	</li>
 
 	<li>
 		<strong>28 Mar 2010 - Publication de SliTaz GNU/Linux 3.0</strong>
@@ -74,12 +76,12 @@
 	à utiliser, plus rapide, plus facile à customizer, plus puissante et
 	toujours aussi légère. La nouvelle version stable est maintenant parue
 	après une année de développement.</p>
-	<p>Le bureau de base fournit un bureau complet propulsé par Xorg 7.4, Openbox, 
+	<p>Le bureau de base fournit un bureau complet propulsé par Xorg 7.4, Openbox,
 	des composants du projet LXDE et des outils faits maison. Il vous permet de
 	vous connecter facilement au réseau pour surfer avec le navigateur web Midori,
 	écouter de la musique ou gérer vos images.</p>
-	<p>La version "Core" du système tient sur une image ISO de 30MB et les saveurs 
-	commecent à 8MB. Cette version stable à été contruite avec une nouvelle chaîne 
+	<p>La version "Core" du système tient sur une image ISO de 30MB et les saveurs
+	commecent à 8MB. Cette version stable à été contruite avec une nouvelle chaîne
 	d'outils incluant GCC 4.4.1 et utilise le noyau Linux 2.6.30.6. Vous pouvez
 	lire <a href="/fr/doc/releases/3.0/relnotes.fr.html">les notes de plublication</a>
 	pour plus d'informations et <a href="/fr/get/#stable>">télécharger</a> une image

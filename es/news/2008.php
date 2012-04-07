@@ -21,7 +21,7 @@
 		<h4>Arquivos de noticias</h4>
 		<p>
 			Website news archives by year. Note that some links may be
-			broken due to website structure changes (mainly the docs 
+			broken due to website structure changes (mainly the docs
 			that moved to their own domain).
 		</p>
 		<p>
@@ -95,7 +95,7 @@
 	paquetes Tazpkg con soporte para md5, soporte para XFS, el comando 'man' y
 	algunas actualizaciones. Para arrancar y funcionar en condiciones, esta
 	versión necesita al menos 160 MiB de RAM, si bien disponemos de modalidades
-	loram para máquinas que no alcancen este requerimiento. 
+	loram para máquinas que no alcancen este requerimiento.
 	<a href="../get/#cooking">Descarga SliTaz Cooking ISO.</a>
 	</li>
 
@@ -117,6 +117,8 @@
 	si quieres información más detallada de esta versión estable.
     </li>
 </ul>
+
+</div>
 
 <?php include("../../lib/html/footer.html"); ?>
 

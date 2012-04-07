@@ -43,7 +43,7 @@
 <h2>Sponsoring SliTaz</h2>
 
 <p>
-	Firstly, a huge thanks to our <a href="#cur">current sponsors</a> and all 
+	Firstly, a huge thanks to our <a href="#cur">current sponsors</a> and all
 	the people who support us with small but very important donations to the project.
 	The project is still quite young but in 5 years of active development we
 	have grown and become a professional grade operating system that is safe to
@@ -66,9 +66,9 @@
 
 <p>
 	As a open source project we usually develop SliTaz on our own personal computers.
-	But we sometimes have to change our personal systems and need new hardware. We also 
-	can't test the distribution on some specific machines as we dont have access to them. 
-	If you are a hardware manufacturer and want to see Slitaz working out-of-the-box on 
+	But we sometimes have to change our personal systems and need new hardware. We also
+	can't test the distribution on some specific machines as we dont have access to them.
+	If you are a hardware manufacturer and want to see Slitaz working out-of-the-box on
 	your computers you can send us a machine so that we can work on it for you.
 </p>
 <p>
@@ -108,14 +108,14 @@
 		<tr>
 			<td style="width: 120px; height: 100px;">
 				<a href="http://www.ads-lu.com/"><img
-				src="/images/sponsor/ads.png"
+				src="/images/sponsor/ads.png" alt="Allied Data Sys"
 				style="float: left;" /></a>
 			</td>
 			<td>
 				Allied Data Sys - ADS sponsors the main SliTaz mirror and
-				offers us full access to a virtual machine with a high 
+				offers us full access to a virtual machine with a high
 				speed connection. This allows us to use the machine as we
-				wish without any limitations. A huge thanks to ADS for 
+				wish without any limitations. A huge thanks to ADS for
 				the service and fast response to any questions and requests
 				we might have.
 			</td>
@@ -123,7 +123,7 @@
 		<tr>
 			<td style="width: 120px; height: 100px;">
 				<a href="https://duckduckgo.com/"><img
-				src="/images/sponsor/ddg.png"
+				src="/images/sponsor/ddg.png" alt="DuckDuckGo"
 				style="float: left;" /></a>
 			</td>
 			<td>
@@ -138,14 +138,14 @@
 		<tr>
 			<td style="width: 120px; height: 100px;">
 				<a href="http://cosi.clarkson.edu"><img
-				src="/images/sponsor/cosi.png"
+				src="/images/sponsor/cosi.png" alt="Clarkson Open Source Institute"
 				style="float: left;" /></a>
 			</td>
 			<td>
 				The Clarkson Open Source Institute - COSI sponsors our Chub
 				server and offers us full access to a virtual machine. We are
-				proud to work with COSI which was founded 
-				to promote open source software (OSS) and provide equipment 
+				proud to work with COSI which was founded
+				to promote open source software (OSS) and provide equipment
 				and support for student projects. A huge thanks to the team
 				at COSI for the support and fast response to any of our requests.
 			</td>

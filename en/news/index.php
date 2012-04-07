@@ -21,7 +21,7 @@
 		<h4>News archives</h4>
 		<p>
 			Website news archives by year. Note that some links may be
-			broken due to website structure changes (mainly the docs 
+			broken due to website structure changes (mainly the docs
 			that moved to their own domain).
 		</p>
 		<p>
@@ -41,7 +41,7 @@
 <h2>2011</h2>
 
 <ul>
-	<li id="20110531">
+	<li id="d20110531">
 		<strong>31 May 2011 - New and fresh Cooking 20110531</strong>
 	<p>
 		The Slitaz team is proud to announce the release of a new Cooking version
@@ -71,7 +71,7 @@
 	</p>
 	</li>
 
-	<li id="20110329">
+	<li id="d20110329">
 		<strong>29 March 2011 - New Cooking 20110329</strong>
 	<p>
 		The SliTaz team is pleased to announce the release of a new cooking
@@ -89,9 +89,9 @@
 		more than 2200 changes have been commited to the wok, and several
 		hundreds more to home-built tools. We are proud to announce that the SliTaz
 		community has grown a lot these last months: the last year, many
-		changes was commited than in the previous four. However, quantity doesn't mean 
-		quality. We need you to help to test this new ISO and report eventual bugs. If 
-		you want to, you are welcome to help fix known problems before 4.0 is released. 
+		changes was commited than in the previous four. However, quantity doesn't mean
+		quality. We need you to help to test this new ISO and report eventual bugs. If
+		you want to, you are welcome to help fix known problems before 4.0 is released.
 		You can join members of the crew via our IRC, mailing-list, forums or by
 		mailing the packages maintainers. We hope you will enjoy this new
 		<a href="/en/get/">release!</a>

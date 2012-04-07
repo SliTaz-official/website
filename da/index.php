@@ -53,19 +53,19 @@
 <h2>Nyheder</h2>
 
 <p>
-   SliTaz hjemmesiden tilbyder projektets hovednyheder så vel som
-   nyheder om den generelle aktivitet i underprojekter på 
-	<a href="http://scn.slitaz.org/">SliTaz netværket</a>. Begge er 
-	tilgængelige som et  <a href="/rss.xml">rssfeed</a>. 
-	Projektet udgiver også 
-	et lille månedligt nyhedsbrev. Denne side og hjemmesidens  
-	<a href="../">hovedside</a> vil give dig et flot overblik over de 
+	SliTaz hjemmesiden tilbyder projektets hovednyheder så vel som
+	nyheder om den generelle aktivitet i underprojekter på
+	<a href="http://scn.slitaz.org/">SliTaz netværket</a>. Begge er
+	tilgængelige som et  <a href="/rss.xml">rssfeed</a>.
+	Projektet udgiver også
+	et lille månedligt nyhedsbrev. Denne side og hjemmesidens
+	<a href="../">hovedside</a> vil give dig et flot overblik over de
 	sidste nyheder, bidrag og Tweets.
 </p>
 
 <div class="box">
 	<img src="../images/news.png" alt="[ ]" />
-	<a href="http://scn.slitaz.org/">Nyheder fra bloggen</a> | 
+	<a href="http://scn.slitaz.org/">Nyheder fra bloggen</a> |
 	<a href="http://doc.slitaz.org/en:newsletter:start">Månedligt nyhedsbrev</a>
 </div>
 
@@ -78,21 +78,21 @@
 	<li>
 		<strong>31 Maj 2011 - Ny og frisk udviklingsversion 20110531</strong>
 	<p>
-		SliTaz holdet er stolt af at kunne annoncere frigivelsen af en ny 
+		SliTaz holdet er stolt af at kunne annoncere frigivelsen af en ny
 		udviklingsversion bygget med vores nye og friske programpakker fra cookutils.
-		Cookutils er en af den nye genneration af værktøjer til at bygge SliTaz 
+		Cookutils er en af den nye genneration af værktøjer til at bygge SliTaz
 		programpakker og giver en byggerobot
 		med en flot webgrændseflade der arbejder ud-af-boksen på ethvert SliTaz
 		system. Disse nye pakker er blevet bygget med en ny i486 optimeret
 		værktøjskæde.
 	</p>
 	<p>
-		Hele opstartsprocessen er blevet forbedret og den første konfiguration sker nu 
-		gennem GTK-kasser i en X session og opstartstiden er også hurtigere. 
+		Hele opstartsprocessen er blevet forbedret og den første konfiguration sker nu
+		gennem GTK-kasser i en X session og opstartstiden er også hurtigere.
 		Denne version kommer med et nyt grafisk værktøj til systemkonfiguration
 		så vel som vores nye systemkonfigurationspanel kendt som TazPanel.
-		TazPanel lader dig konfigurer hele systemet via en xHTML/CSS 
-		webgrændseflade (god til fjernkontrol) og det laver også pakkehåndtering 
+		TazPanel lader dig konfigurer hele systemet via en xHTML/CSS
+		webgrændseflade (god til fjernkontrol) og det laver også pakkehåndtering
 		og afløser derved den gamle GTK-kasse.
 	</p>
 	<p>
@@ -125,16 +125,16 @@
 	more than 2200 changes have been commited to the wok, and several
 	hundreds more to home-built tools. We are proud to announce that the SliTaz
 	community has grown a lot these last months: the last year, many
-	changes was commited than in the previous four. However, quantity doesn't mean 
-	quality. We need you to help to test this new ISO and report eventual bugs. If 
-	you want to, you are welcome to help fix known problems before 4.0 is released. 
+	changes was commited than in the previous four. However, quantity doesn't mean
+	quality. We need you to help to test this new ISO and report eventual bugs. If
+	you want to, you are welcome to help fix known problems before 4.0 is released.
 	You can join members of the crew via our IRC, mailing-list, forums or by
 	mailing the packages maintainers. We hope you will enjoy this new
 	<a href="get/">release!</a>
 	</p>
 	</li>
 
-	<li id="20101104">
+	<li id="d20101104">
 		<strong>4 November 2010 - New Cooking 20101104</strong>
 	<p>The SliTaz team is pleased to announce the release of a new cooking ISO
 	featuring over 2600 packages. It contains Linux Kernel 2.6.34 and was
@@ -142,17 +142,17 @@
 	been fully updated to 1.9.2. The LiveCD includes Midori, the Deadbeef audio
 	player, and many more applications. Tazpkg and Tazctrlbox now support
 	gettext translations and more UTF locales have been added. Many bugfixes,
-	updates and improvements can also be found. A lot of work has been done 
-	during these past 6 months. You can <a href="get/#cooking>">download</a> 
+	updates and improvements can also be found. A lot of work has been done
+	during these past 6 months. You can <a href="get/#cooking>">download</a>
 	this new cooking version from one of the official mirrors of the project.
-	All feedback is welcome and can be done through the mailing list or 
+	All feedback is welcome and can be done through the mailing list or
 	the forum.</p>
 	</li>
 
 	<li><a href="/en/news/">Flere nyheder</a> eller gennemse arkiverne (på engelsk):
 	<a href="/en/news/2007.php">2007</a> |
 	<a href="/en/news/2008.php">2008</a> |
-	<a href="/en/news/2009.php">2009</a></li></li>
+	<a href="/en/news/2009.php">2009</a></li>
 </ul>
 
 <!-- End of news -->
@@ -164,7 +164,7 @@
 
 <div class="activity">
 	<p>
-		<a href="http://scn.slitaz.org/activity/"><img 
+		<a href="http://scn.slitaz.org/activity/"><img
 			src="/images/users.png" alt="[ ]" /></a>
 		Aktivitet i samfundet
 		<?php get_feed("scn.xml"); ?>
@@ -176,7 +176,7 @@
 
 <div class="activity">
 	<p>
-		<a href="http://forum.slitaz.org/"><img 
+		<a href="http://forum.slitaz.org/"><img
 			src="/images/support.png" alt="[ Support ]" /></a>
 		Forum activity
 		<?php get_feed_forum("forum.xml"); ?>

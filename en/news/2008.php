@@ -21,7 +21,7 @@
 		<h4>News archives</h4>
 		<p>
 			Website news archives by year. Note that some links may be
-			broken due to website structure changes (mainly the docs 
+			broken due to website structure changes (mainly the docs
 			that moved to their own domain).
 		</p>
 		<p>
@@ -161,8 +161,8 @@
 	SliTaz Web site.</li>
 
 	<li>
-		<strong>10 Jan 2008 - New Cooking ISO (20080107)</strong><br />
-	Paving the road to a stable release, we published a new Cooking ISO with many
+		<strong>10 Jan 2008 - New Cooking ISO (20080107)</strong>
+	<p>Paving the road to a stable release, we published a new Cooking ISO with many
 	bug fixes and some new features. We added Asunder for audio CD ripping,
 	Burnbox to burn ISO images, a new boot option to let you load Kernel modules
 	at boot time (<code>modprobe=modules</code>) and the LiveCD now uses Xvesa

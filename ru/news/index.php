@@ -39,7 +39,7 @@
 <h2>2011</h2>
 
 <ul>
-	<li id="20110531">
+	<li id="d20110531">
 		<strong>31 мая 2011 — Новый и свежий Cooking 20110531</strong>
 		<p>Команда SliTaz с гордостью объявляет о выпуске новой версии Cooking,
 			собранной из наших новых и свежих пакетов от CookUtils. CookUtils —
@@ -65,7 +65,7 @@
 			<a href="http://mirror.slitaz.org/iso/cooking/slitaz-cooking.iso"
 			>slitaz-cooking.iso</a></p></li>
 
-	<li id="20110329">
+	<li id="d20110329">
 		<strong>29 марта 2011 — Новый Cooking 20110329</strong>
 		<p>Команда SliTaz рада объявить о выпуске нового ISO Cooking с более чем
 			2900 пакетами. Все пакеты были пересобраны с помощью нашей новой

@@ -8,6 +8,16 @@
 	<meta name="keywords" lang="en" content="SliTaz POT, gettext, translation" />
 	<meta name="author" content="Christophe Lincoln"/>
 	<?php include("lib/html/meta-link.html"); ?>
+	<style type="text/css">
+		table {
+			width: 100%;
+			border: 1px solid #ddd;
+			padding: 10px;
+			border-radius: 4px;
+		}
+		.thead { font-weight: bold; }
+		td { border-bottom: 1pt dashed #ddd }
+	</style>
 </head>
 <body>
 
@@ -42,7 +52,7 @@
 
 <p>
 	Translation is a community effort and everyone can help. You're
-	welcome to join the team! You can find more pot files on 
+	welcome to join the team! You can find more pot files on
 	<a href="http://hg.slitaz.org/">Hg</a>, just pick one up,
 	translate it and send it to the mailing list or upload it onto the
 	SliTaz Community Network aka <a href="http://scn.slitaz.org/">SCN</a>.
@@ -59,17 +69,17 @@
 <h2>Information</h2>
 
 <p>
-	The website and documentation has been translated and is kept 
+	The website and documentation has been translated and is kept
 	up-to-date by several contributors. For now, the actively maintained
-	languages are English, French, German, Portuguese and Chinese. 
-	Spanish is on the stove, but more help is needed. Most of the 
+	languages are English, French, German, Portuguese and Chinese.
+	Spanish is on the stove, but more help is needed. Most of the
 	communication is done through the
 	<a href="en/mailing-list.html">Mailing List</a> and the
 	<a href="http://scn.slitaz.org/groups/i18n/">i18n group</a> on SCN.
 </p>
 
 <p>
-	Some additional languages can be installed through the Package 
+	Some additional languages can be installed through the Package
 	Manager, but we are not able to provide support and documentation.
 	SliTaz is a community based project, everyone can help out and is
 	more than welcome to join us.
@@ -82,7 +92,7 @@
 	and proofreading to be done. Websites often move and get updated and
 	SliTaz home made tools such as TazPanel acquire new strings depending on the new
 	functions added to it. Over time we have developed a few ways to let you contact
-	us and get involved in the project. 
+	us and get involved in the project.
 </p>
 <p>
 	For sending translations or requesting a new language you can join the
@@ -95,8 +105,8 @@
 <h3>Website translation</h3>
 
 <p>
-	Here is a howto for translating a SliTaz website into a new language. First 
-	you need the original website page in English. You have 2 ways to get a full 
+	Here is a howto for translating a SliTaz website into a new language. First
+	you need the original website page in English. You have 2 ways to get a full
 	copy of the website: use Mercurial and clone the repository or download the
 	latest archive in tar.bz2 format. Using Mercurial lets you update your
 	local copy in one command and downloading directly from the repository
@@ -133,7 +143,7 @@ $ wget <a href="http://hg.slitaz.org/website/archive/tip.tar.bz2">http://hg.slit
 	Like said before, the goal is to provide full language support, not only
 	with the website or forum, but with the system itself. Everything can be translated
 	from menu items to SHell scripts and GUI boxes. For this we use standard
-	gettext POT files. 
+	gettext POT files.
 </p>
 <p>
 	Each translation of a sub-project has its own file named with a language
@@ -151,17 +161,6 @@ $ wget <a href="http://hg.slitaz.org/website/archive/tip.tar.bz2">http://hg.slit
 	are contained in the same repository such as tazpkg-notify which is part
 	of tazpkg.
 </p>
-
-<style type="text/css">
-	table {
-			width: 100%;
-			border: 1px solid #ddd;
-			padding: 10px;
-			border-radius: 4px;
-		}
-	.thead { font-weight: bold; }
-	td { border-bottom: 1pt dashed #ddd }
-</style>
 
 <!--
 	Here we don't link to old gtkdialog box POT files since they will be

@@ -26,7 +26,7 @@
 			Chat on SliTaz Freenode IRC channel to meet users and contributors
 			or get live support. On SliTaz you can also use a desktop application
 			to connect to IRC. LostIRC is installed in core and Xchat or Pidgin
-			are in the slitaz repositories. 
+			are in the slitaz repositories.
 		</p>
 	</div>
 </div>
@@ -38,7 +38,7 @@
 
 <iframe
 	style="border: solid 1px #ddd;"
-	src="http://webchat.freenode.net?channels=slitaz&uio=OT10cnVlJjEyPXRydWU62"
+	src="http://webchat.freenode.net?channels=slitaz&amp;uio=OT10cnVlJjEyPXRydWU62"
 	width="100%" height="400">
 </iframe>
 

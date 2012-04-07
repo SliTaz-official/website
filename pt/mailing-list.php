@@ -28,14 +28,15 @@
 		<p>
 			<img src="/images/users.png" alt="[ ]" />
 			Você também pode usar o <a href="http://scn.slitaz.org/">SCN</a>
-			(SliTaz Community Network) 
+			(SliTaz Community Network)
 			e o <a href="http://forum.slitaz.org/">Fórum de suporte.</a>
 		</p>
 		<!-- Follow -->
 		<div style="margin-top: 12px;">
-			<a href="https://twitter.com/slitaz" class=twitter-follow-button"
-				data-show-count="true" data-show-screen-name="false">Siga @slitaz</a>
-			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id))[js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			<script type="text/javascript">
+				document.write('<a href="https://twitter.com/slitaz" class="twitter-follow-button" data-show-count="true" data-show-screen-name="false">Siga @slitaz</a>');
+				!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id))[js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+			</script>
 		</div>
 	</div>
 </div>
@@ -58,32 +59,32 @@
 <h3 id="about">Sobre a Lista</h3>
 
 <p>
-A lista de discussão é a principal forma de comunicação na comunidade 
+A lista de discussão é a principal forma de comunicação na comunidade
 SliTaz. Ela é aberta a todos e você é livre para se inscrever ou
-cancelar sua inscrição a qualquer tempo. É um meio eficaz de colaboração, 
-usada para fornecer suporte técnico gratuito aos usuários do SliTaz. 
+cancelar sua inscrição a qualquer tempo. É um meio eficaz de colaboração,
+usada para fornecer suporte técnico gratuito aos usuários do SliTaz.
 Desenvolvedores, usuários avançados, revisores, dentre outros, a utilizam
-para gerenciar o desenvolvimento do projeto. Usar a lista para suporte 
-e desenvolvimento nos permite alcançar uma vasta audiência, o que resulta 
+para gerenciar o desenvolvimento do projeto. Usar a lista para suporte
+e desenvolvimento nos permite alcançar uma vasta audiência, o que resulta
 em respostas mais rápidas e corretas. Entretanto, os membros da lista são
 todos voluntários e fazem o melhor que podem em seu tempo livre. Cortesia
 e polidez são exigidos e um pouco de humor não machuca ninguém.
 </p>
 <p>
-A <em>lista de discussão</em> é usada para enviar e receber mensagens. 
-Isto significa que todos os membros registrados podem postar na lista e 
-receber todas as outras mensagens postadas por outros membros. As mensagens 
-são enviadas pelo gerenciador de listas da <a href="http://www.tuxfamily.org/">TuxFamily</a> 
+A <em>lista de discussão</em> é usada para enviar e receber mensagens.
+Isto significa que todos os membros registrados podem postar na lista e
+receber todas as outras mensagens postadas por outros membros. As mensagens
+são enviadas pelo gerenciador de listas da <a href="http://www.tuxfamily.org/">TuxFamily</a>
 oferecido pela excelente <a href="http://www.vhffs.org/">VHFFS</a>.
 </p>
 
 <h4>Civilidade</h4>
 
 <p>
-A lista de discussão é utilizada, às vezes, por algumas pessoas sensíveis e 
-temperamentais. Faça um esforço extra para tratar os outros com respeito, 
-mesmo se você se sentir maltrado. Se houver algo negativo a dizer ou se 
-você quiser fazer alguma crítica, por favor não poste. Se alguém agir 
+A lista de discussão é utilizada, às vezes, por algumas pessoas sensíveis e
+temperamentais. Faça um esforço extra para tratar os outros com respeito,
+mesmo se você se sentir maltrado. Se houver algo negativo a dizer ou se
+você quiser fazer alguma crítica, por favor não poste. Se alguém agir
 inapropriadamente entre em contato com um desenvolvedor do SliTaz.
 </p>
 
@@ -91,13 +92,13 @@ inapropriadamente entre em contato com um desenvolvedor do SliTaz.
 
 <p>
 Para postar na lista, será necessário fazer sua inscrição, então você receberá
-uma mensagem de confirmação via e-mail. Esta mensagem contem um número de 
-confirmação que você precisa reenviar ao administrador da lista (uma forma de 
+uma mensagem de confirmação via e-mail. Esta mensagem contem um número de
+confirmação que você precisa reenviar ao administrador da lista (uma forma de
 evitar spams). Uma vez que você tenha feito esse processo, será
 liberada sua participação na lista para que você possa postar e receber
 mensagens. Note que as mensagens podem ser filtradas para um diretório
 específico por seu programa de e-mails preferido. É recomendável que se utilize
-a função "Reply" ao responder a alguma mensagem, desta maneira o fluxo da 
+a função "Reply" ao responder a alguma mensagem, desta maneira o fluxo da
 discussão pode ser corretamente seguido.
 </p>
 <ul>
@@ -119,7 +120,7 @@ justificando-se as linhas com 72 a 80 caracteres para que possam ser lidas
 facilmente por pessoas que se utilizam de clientes de e-mail em modo texto.
 O formato para estas mensagems pode ser configurado automaticamente pela maioria
 dos clientes de e-mail tais como o Sylpheed. Tal formato permite uma forma mais
-clara de leitura dos arquivos da lista. Também recomendamos remover citações 
+clara de leitura dos arquivos da lista. Também recomendamos remover citações
 desnecessárias e não anexar arquivos muito grandes.
 </p>
 
@@ -130,7 +131,7 @@ A lista de discussão é um fórum público, todas as mensagens são arquivadas 
 podem ser buscadas online. Isto permite que mesmo aqueles que não se inscreveram
 ainda possam consultar a lista, o que a torna uma boa fonte de informação sobre
 assuntos específicos. A lista é arquivada toda noite e você pode facilmente
-consulta-la através do gerenciador de listas da TuxFamily. As mensagens são 
+consulta-la através do gerenciador de listas da TuxFamily. As mensagens são
 organizadas por mês e data ou por fluxo de discussão (<em>Thread</em>) :
 <a href="http://listengine.tuxfamily.org/lists.tuxfamily.org/slitaz/"
  >Arquivos da Lista de Discussão</a>
@@ -142,9 +143,6 @@ organizadas por mês e data ou por fluxo de discussão (<em>Thread</em>) :
 </div>
 
 <!-- End of content -->
-</div>
-
-<!-- Footer -->
 </div>
 
 <?php include("../lib/html/footer.pt.html"); ?>

@@ -1,23 +1,19 @@
 <div>
-	<!-- PayPal boutton -->
+	<!-- PayPal button -->
 	<form action="https://www.paypal.com/cgi-bin/webscr" method="post"
 		style="display: inline;">
 			<input type="hidden" name="cmd" value="_s-xclick" />
 			<input type="hidden" name="hosted_button_id" value="4885025" />
-			<input type="image" src="/images/paypal.png" name="submit" 
+			<input type="image" src="/images/paypal.png" name="submit"
 				alt="PayPal - The safer, easier way to pay online!" />
 	</form>
-	<!-- Flattr boutton -->
+	<!-- Flattr button -->
 	<script type="text/javascript">
-		/* <![CDATA[ */
-		    (function() {
-		        var s = document.createElement('script'), t = document.getElementsByTagName('script')[0];
-		        s.type = 'text/javascript';
-		        s.async = true;
-		        s.src = 'http://api.flattr.com/js/0.6/load.js?mode=auto';
-		        t.parentNode.insertBefore(s, t);
-		    })();
-		/* ]]> */
+		var s = document.createElement('script'), t = document.getElementsByTagName('script')[0];
+		s.type = 'text/javascript';
+		s.async = true;
+		s.src = 'http://api.flattr.com/js/0.6/load.js?mode=auto';
+		t.parentNode.insertBefore(s, t);
 	</script>
 	<a class="FlattrButton" style="display:none;" rev="flattr;button:compact;"
 		href="http://www.slitaz.org/"></a>
