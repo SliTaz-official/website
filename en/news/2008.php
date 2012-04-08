@@ -158,7 +158,7 @@
 	This version is ready for stable release, we are now writing Release Notes,
 	preparing final artwork and a stable packages repository. You can try this
 	updated Cooking by <a href="../get/#cooking">downloading</a> the LiveCD ISO from
-	SliTaz Web site.</li>
+	SliTaz Web site.</p></li>
 
 	<li>
 		<strong>10 Jan 2008 - New Cooking ISO (20080107)</strong>

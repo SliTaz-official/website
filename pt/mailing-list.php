@@ -31,13 +31,7 @@
 			(SliTaz Community Network)
 			e o <a href="http://forum.slitaz.org/">Fórum de suporte.</a>
 		</p>
-		<!-- Follow -->
-		<div style="margin-top: 12px;">
-			<script type="text/javascript">
-				document.write('<a href="https://twitter.com/slitaz" class="twitter-follow-button" data-show-count="true" data-show-screen-name="false">Siga @slitaz</a>');
-				!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id))[js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-			</script>
-		</div>
+		<?php include("../lib/html/follow.html"); ?>
 	</div>
 </div>
 

@@ -159,7 +159,7 @@ include("../../lib/html/header.ru.html");
 <div class="box-dl"><p>
 	<?php echo "Коллекция пакетов SliTaz GNU/Linux версии «Cooking» ($cooking_pkgs) —
 	<a href='$pkgs_mirror/cooking/packages-cooking.iso'>packages-cooking.iso</a>
-	[ <a href='$pkgs_mirror/cooking/packages-cooking.md5'>md5</a> ]"; ?></p>
+	[ <a href='$pkgs_mirror/cooking/packages-cooking.md5'>md5</a> ]"; ?>
 </p></div>
 
 

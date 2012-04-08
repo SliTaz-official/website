@@ -20,7 +20,7 @@
 	<div id="block_info">
 		<h4>Lista de correo</h4>
 		<p>
-			SliTaz contributors discussions and announcements (inc. 
+			SliTaz contributors discussions and announcements (inc.
 			support and development). All this is part of the mailing
 			list - Join now to get help or involved in the project.
 		</p>
@@ -29,12 +29,7 @@
 			Also you can <a href="http://scn.slitaz.org/">join us on SCN</a>
 			and the support <a href="http://forum.slitaz.org/">forum</a> or:
 		</p>
-		<!-- Follow -->
-		<div style="margin-top: 12px;">
-			<a href="https://twitter.com/slitaz" class="twitter-follow-button" 
-				data-show-count="true" data-show-screen-name="false">Follow @slitaz</a>
-			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-		</div>
+		<?php include("../lib/html/follow.html"); ?>
 	</div>
 </div>
 
@@ -69,7 +64,7 @@ tanto, cortesía, educación y humor son siempre bienvenidos.
 La lista de correo se usa para enviar y recibir mensajes. Esto significa
 que todos los miembros registrados pueden enviar a la lista y recibir
 todos los mensajes enviados por otros. Los mensajes son enviados por el
-motor de listas de <a href="http://www.tuxfamily.org/">TuxFamily</a>, 
+motor de listas de <a href="http://www.tuxfamily.org/">TuxFamily</a>,
 que funciona basado en el excelente <a href="http://www.vhffs.org/">VHFFS</a>.
 </p>
 

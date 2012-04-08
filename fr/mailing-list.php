@@ -20,17 +20,18 @@
 	<div id="block_info">
 		<h4>Mailing list</h4>
 		<p>
-			Discussion des contributeurs SliTaz et annonces (inc. 
+			Discussion des contributeurs SliTaz et annonces (inc.
 			support et développement). Tout cela se fait partie de la
 			liste de discussion - Rejoinez nous pour obtenir de l'aide
 			ou vous impliquer dans le projet.
 		</p>
 		<p>
 			<img src="/images/users.png" alt="[ ]" />
-			Vous pouvez aussi nous 
+			Vous pouvez aussi nous
 			<a href="http://scn.slitaz.org/">rejoindre sur SCN</a>
 			et le <a href="http://forum.slitaz.org/">forum</a> de support.
 		</p>
+		<?php include("../lib/html/follow.html"); ?>
 	</div>
 </div>
 
@@ -46,7 +47,7 @@
 		- Support et développement.</li>
 	<li><a href="#usage">Utilisation de la liste</a>
 	- Inscription/désinscription et fonctionnement</li>
-	<li><a href="#archives">Archives de la liste</a> 
+	<li><a href="#archives">Archives de la liste</a>
 	- Lire et/ou chercher dans les messages archivés.</li>
 </ul>
 
@@ -95,7 +96,7 @@ confirmation que vous devez renvoyer, en sujet, sur la liste d'administration
 confirmation envoyés, vous pourrez poster sur la liste et vous recevrez tous
 les messages postés. A noter que les mails peuvent être filtrés via
 votre logiciel de messagerie préféré, cela permet de rediriger tous les
-messages dans un répertoire spécifique. Il est aussi conseillé d'utiliser 
+messages dans un répertoire spécifique. Il est aussi conseillé d'utiliser
 "Répondre" pour répondre à un mail afin que le fil de discussion puisse être
 suivi normalement.
 </p>
@@ -129,7 +130,7 @@ consultables en ligne. L'archivage permet aux personnes non inscrites de
 suivre quand même la liste, c'est aussi une ressource d'informations pour
 des sujets ponctuels ou très spécifiques. La liste est archivée toutes les
 nuits, vous pouvez facilement naviguer, lire ou chercher dans l'archive via
-le <em>listengine</em> de TuxFamily. Les messages sont classés par mois, et par 
+le <em>listengine</em> de TuxFamily. Les messages sont classés par mois, et par
 date ou fil de discussion (<em>Thread</em>) : <a
 href="http://listengine.tuxfamily.org/lists.tuxfamily.org/slitaz/"
 >Archives complètes de la liste de discussion</a>

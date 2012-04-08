@@ -29,13 +29,7 @@
 			Also you can <a href="http://scn.slitaz.org/">join us on SCN</a>
 			and the support <a href="http://forum.slitaz.org/">forum</a> or:
 		</p>
-		<!-- Follow -->
-		<div style="margin-top: 12px;">
-			<script type="text/javascript">
-				document.write('<a href="https://twitter.com/slitaz" class="twitter-follow-button" data-show-count="true" data-show-screen-name="false">Follow @slitaz</a>');
-				!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-			</script>
-		</div>
+		<?php include("../lib/html/follow.html"); ?>
 	</div>
 </div>
 
