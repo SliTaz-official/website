@@ -34,7 +34,7 @@ include("lib/html/header.html");
 			a fully featured desktop or server in less than 35 MB. SliTaz
 			is simple to use, fast and stable. We have an active community
 			and contributors from all over the world making SliTaz finer
-			every day. 
+			every day.
 		</p>
 		<div class="button" style="text-align: left;">
 			Download:
@@ -53,7 +53,7 @@ include("lib/html/header.html");
 	<p>
 		Help us get a dedicated server — Check out our
 		<a href="http://www.gofundme.com/3ql70">online fundraising</a>,
-		<a href="http://usbkey.slitaz.org/">USB Key Project</a> or 
+		<a href="http://usbkey.slitaz.org/">USB Key Project</a> or
 		become an official <a href="/en/sponsor/">sponsor</a>
 	</p>
 </div>
@@ -90,7 +90,7 @@ include("lib/html/header.html");
 
 <div class="activity">
 	<p>
-		<a href="http://scn.slitaz.org/activity/"><img 
+		<a href="http://scn.slitaz.org/activity/"><img
 			src="images/users.png" alt="*" /></a>
 		Community activity
 		<?php get_feed("scn.xml"); ?>
@@ -102,7 +102,7 @@ include("lib/html/header.html");
 
 <div class="activity">
 	<p>
-		<a href="http://forum.slitaz.org/"><img 
+		<a href="http://forum.slitaz.org/"><img
 			src="/images/support.png" alt="*" /></a>
 		Forum activity
 		<?php get_feed_forum("forum.xml"); ?>
@@ -133,8 +133,9 @@ include("lib/html/header.html");
 <h2>Latest Tweet</h2>
 
 <div id="twitter">
-	<script src="http://widgets.twimg.com/j/2/widget.js"></script>
-	<script>
+	<script type="text/javascript"
+		src="http://widgets.twimg.com/j/2/widget.js"></script>
+	<script type="text/javascript">
 	new TWTR.Widget({
 	  version: 2,
 	  type: 'profile',
@@ -171,7 +172,7 @@ include("lib/html/header.html");
 <p>
 	One way to help the project is to make SliTaz even more popular.
 	Blog, Tweet this page, share and talk about the project. SliTaz
-	is also social, you can join us, share artwork or post a blog on the 
+	is also social, you can join us, share artwork or post a blog on the
 	<a href="http://scn.slitaz.org/">SliTaz Community Network</a>,
 	"Like" the official SliTaz Facebook page and get involved!
 </p>
@@ -184,7 +185,7 @@ include("lib/html/header.html");
 	SliTaz is made by volunteers and there is no company behind
 	the project, but we desperately need some money to maintain the
 	project infrastructure and services such as the main server and
-	build host. You can help with a micropayment via Flattr or a 
+	build host. You can help with a micropayment via Flattr or a
 	Paypal donation to the SliTaz <a href="en/asso/">Association</a>,
 	that way we can keep our freedom and autonomy without having any
 	ads on our sites.
