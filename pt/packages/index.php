@@ -35,7 +35,7 @@
 <div id="content">
 
 <div style="text-align: center; margin-bottom: 40px;">
-	<form method="post" action="http://pkgs.slitaz.org/search.cgi">
+	<form method="post" action="http://pkgs.slitaz.org/">
 		<div class="searchbox">
 			<p>
 				<input type="hidden" name="lang" value="pt" />
