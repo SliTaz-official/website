@@ -63,21 +63,21 @@ include("lib/html/header.html");
 	<p><a href="/en/sponsor/">Become a sponsor</a></p>
 </div>
 
-<!-- We just keep the last 4 web site news -->
+<!-- We just keep the last 5 web site news -->
 <div class="news" style="margin-right: 220px;">
 
 <h2>Latest News</h2>
 
 <ul>
-	<li><strong><a href="en/#news">SliTaz 4.0 Release</a></strong>
+	<li><strong><a href="en/#d20120410">SliTaz 4.0 Release</a></strong>
 		<span>— 10 Apr 2012</span></li>
-	<li><strong><a href="en/#20120303">SliTaz 4.0 RC2 is out</a></strong>
+	<li><strong><a href="en/#d20120303">SliTaz 4.0 RC2 is out</a></strong>
 		<span>— 03 Mar 2012</span></li>
-	<li><strong><a href="en/#20120223">SliTaz 4.0 RC1 is out</a></strong>
+	<li><strong><a href="en/#d20120223">SliTaz 4.0 RC1 is out</a></strong>
 		<span>— 23 Feb 2012</span></li>
-	<li><strong><a href="en/#20110531">New and fresh Cooking 20110531</a></strong>
+	<li><strong><a href="en/news/#d20110531">New and fresh Cooking 20110531</a></strong>
 		<span>— 31 May 2011</span></li>
-	<li><strong><a href="en/#20110329">New Cooking 20110329</a></strong>
+	<li><strong><a href="en/news/#d20110329">New Cooking 20110329</a></strong>
 		<span>— 29 March 2011</span></li>
 </ul>
 
