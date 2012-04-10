@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8" />
 	<title>SliTaz 4.0 Release Notes</title>
-	<link rel="shortcut icon" href="../favicon.ico" />
-	<link rel="stylesheet" type="text/css" href="../style.css" />
+	<link rel="shortcut icon" href="/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="/relnotes.css" />
 </head>
 <body>
 
@@ -15,11 +15,11 @@
 
 <!-- Languages -->
 <div id="lang">
-	<a href="http://www.slitaz.org/i18n.php">
+	<a href="/i18n.php">
 		<img src="/images/locale.png" alt="Locale:" /></a>
-	<a href="relnotes.en.html">en</a>
-	<a href="/fr/doc/releases/4.0/relnotes.fr.html">fr</a>
-    <a href="/pt/doc/releases/4.0/relnotes.pt_BR.html">pt</a>
+	<strong>en</strong>
+	<a href="/fr/doc/releases/4.0/">fr</a>
+	<a href="/pt/doc/releases/4.0/relnotes.pt_BR.html">pt</a>
 	<a href="/ru/doc/releases/4.0/relnotes.ru.html">ru</a>
 </div>
 
@@ -30,7 +30,7 @@
 
 <p>
 	Welcome to SliTaz 4.0! Modern, secure, stable, fast and flexible the
-	new SliTaz stable version is now out for Desktops and servers in 
+	new SliTaz stable version is now out for Desktops and servers in
 	production use.
 </p>
 
@@ -52,9 +52,9 @@
 <h3>Toolchain and build tools</h3>
 <p>
 	Slitaz 4.0 has been built with our new build tools aka cookutils. We
-	have created new tools which handle the ~3300 packages dependencies 
-	in a simple and consistent way. The cookutils let you also create new 
-	Slitaz packages faster than ever. The tools are installed on each 
+	have created new tools which handle the ~3300 packages dependencies
+	in a simple and consistent way. The cookutils let you also create new
+	Slitaz packages faster than ever. The tools are installed on each
 	SliTaz system as well as any supporting documentation.
 </p>
 
@@ -63,19 +63,19 @@
 	SliTaz GNU/Linux 4.0 supports most machines based on i486 or x86 Intel
 	compatible processors. A minimum of 192MB of memory is recommended to
 	use the core LiveCD and our new russian dolls system will automatically
-	detect your memory to boot a low memory resource flavor if needed. The 
+	detect your memory to boot a low memory resource flavor if needed. The
 	default LiveCD provides the Core system which is a fully featured desktop,
-	a GTK only desktop, a flavor with just X windows and a text mode 
-	system which will run with only 48 MB RAM (but can still let you 
+	a GTK only desktop, a flavor with just X windows and a text mode
+	system which will run with only 48 MB RAM (but can still let you
 	install a full desktop).
 </p>
 
 
 <h3>Live systems</h3>
 <p>
-	SliTaz 4.0 core LiveCD provides in fact 4 versions and will use the one 
+	SliTaz 4.0 core LiveCD provides in fact 4 versions and will use the one
 	your hardware can support. The live CD holds several SliTaz nested subsets.
-	The boot loader selects the most features that your computer memory can 
+	The boot loader selects the most features that your computer memory can
 	access. You can also select an image from the menu and hit [tab] to edit
 	any options. A command line, the ability to webboot, help options and
 	languages are also available from the menu. Now people with very little
@@ -100,7 +100,7 @@
 	tool. At the end of the installation it is possible to setup the "GRUB"
 	bootloader which is capable of starting almost any operating system.
 	This allows SliTaz to co-exist with a previously installed operating
-	system, such as Windows. 
+	system, such as Windows.
 </p>
 
 
@@ -111,7 +111,7 @@
 	graphics studio with The Gimp or Inkscape, or to a video editor with Kino.
 	You can experience the world wide web with instant messaging, VOIP, email
 	and of course through a web browser. Packages can be found through the
-	search function of Tazpkg, Tazpanel or via the website: 
+	search function of Tazpkg, Tazpanel or via the website:
 	<a href="http://pkgs.slitaz.org/" target="_blank">http://pkgs.slitaz.org/</a>
 </p>
 <p>
@@ -122,11 +122,11 @@
 </p>
 <p>
 	SliTaz can of course also provide a complete development environment with
-	the GCC compiler, Geany IDE, Mercurial Repositories and all development 
-	libraries. 
+	the GCC compiler, Geany IDE, Mercurial Repositories and all development
+	libraries.
 </p>
 <p>
-	Packages are now built automatically by the SliTaz Build Bot: 
+	Packages are now built automatically by the SliTaz Build Bot:
 	<a href="http://cook.slitaz.org/" target="_blank">http://cook.slitaz.org/</a> and are checked
 	by Cookutils to ensure that FHS standards are followed.
 </p>
@@ -154,7 +154,7 @@
 	ObConf utility. The integration of the taskbar “LXpanel” makes it
 	possible to dynamically provide a menu based on the Freedesktop
 	standards. The principle is to have a small menu accessible via a
-	screen click with the favorites, windows effects, LiveCD and LiveUSB 
+	screen click with the favorites, windows effects, LiveCD and LiveUSB
 	tools, Openbox configuration and system actions made available. Applications
 	can also be accessed through the menu supplied by LXpanel. The managment
 	of the Desktop and icons are entrusted to the file manager PCmanFM.
@@ -165,42 +165,42 @@
 	managers XFCE, Pekwm, JWM and DWM. The different sessions can be
 	selected via the F1 key when using the “Slim” login window. To change
 	the default session you can use tazx; or manually edit the
-	~/.Xinitrc file. 
+	~/.Xinitrc file.
 </p>
 
 <h3>SliTaz network</h3>
 <p>
 	All services have been changed and improved since 3.0 and a SliTaz
-	community network has been created to help users, contributors and 
+	community network has been created to help users, contributors and
 	developers come together to share ideas about the project.
-	This includes a community board, wiki based documentation, a forum 
-	and a bug tracker. Now developers, artists, documentation writers, 
-	bug reporters and anybody with a good suggestion can help others, 
-	get involved and work together to improve the project. The SliTaz 
-	community network (SCN), website and repos all combine the same 
+	This includes a community board, wiki based documentation, a forum
+	and a bug tracker. Now developers, artists, documentation writers,
+	bug reporters and anybody with a good suggestion can help others,
+	get involved and work together to improve the project. The SliTaz
+	community network (SCN), website and repos all combine the same
 	graphical layout for easy navigation.
 </p>
 
 <h3>From 3.0 to 4.0</h3>
 <p>
-	A SliTaz GNU/Linux installer offers an update function allowing you 
-	to upgrade from a 3.0 to 4.0 version. To upgrade the system you 
-	first need to boot the Stable LiveCD, launch the installer from the 
-	command line or Tazpanel, select upgrade and then specify the 
-	partition or configuration file containing the system that you want 
+	A SliTaz GNU/Linux installer offers an update function allowing you
+	to upgrade from a 3.0 to 4.0 version. To upgrade the system you
+	first need to boot the Stable LiveCD, launch the installer from the
+	command line or Tazpanel, select upgrade and then specify the
+	partition or configuration file containing the system that you want
 	to update. The installer will then clean out the system and reinstall
-	all the packages not present on the CD from the mirror. When this has 
+	all the packages not present on the CD from the mirror. When this has
 	finished you can reboot with your new version of SliTaz.
 </p>
 <p>
 	To upgrade a 3.0 to 4.0 it is also possible to use the package manager Tazpkg
-	via the set-release function, but beware this is not yet proven and may 
+	via the set-release function, but beware this is not yet proven and may
 	require some manual intervention.
 </p>
 
 <h3>People of the Project</h3>
 <p>
-	SliTaz is proud to be an international community project. The people of 
+	SliTaz is proud to be an international community project. The people of
 	the project are the ones who develop the distribution, correct the website,
 	develop the HG repositories and write the official documentation. Passing
 	through Switzerland, France, Brazil, Quebec, China, India, Russia, Ukraine,

@@ -1,22 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
+	<meta charset="utf-8" />
 	<title>SliTaz 3.0 Release Notes</title>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="description" content="slitaz doc system releases notes information cooking" />
 	<meta name="expires" content="never" />
 	<meta name="modified" content="2010-03-22 22:10:00" />
 	<meta name="publisher" content="www.slitaz.org" />
 	<meta name="author" content="Christophe Lincoln"/>
-	<link rel="shortcut icon" href="../favicon.ico" />
-	<link rel="stylesheet" type="text/css" href="../style.css" />
+	<link rel="shortcut icon" href="/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="/relnotes.css" />
 </head>
 <body>
 
-<!-- Header and quick navigation -->
+<!-- Header -->
 <div id="header">
-	<a name="top"></a>
 	<h1>SliTaz 3.0 Release Notes</h1>
 </div>
 
@@ -27,10 +25,10 @@
 	<a href="/en/doc/releases/3.0/relnotes.en.html">en</a>
 	<a href="/es/doc/releases/3.0/relnotes.es.html">es</a>
 	<a href="/fr/doc/releases/3.0/relnotes.fr.html">fr</a>
-	<a href="/pt/doc/releases/3.0/relnotes.pt.html">pt</a> 
+	<a href="/pt/doc/releases/3.0/relnotes.pt.html">pt</a>
 </div>
 
-<!-- Content. -->
+<!-- Content -->
 <div id="content">
 
 <h2>Releases notes</h2>
@@ -50,76 +48,76 @@
 	<li><a href="#people">People of the Project.</a></li>
 </ul>
 
-<a name="overview"></a>
-<h3><font color="#6c0023"></font>Overview</h3>
+<h3 id="overview">Overview</h3>
+
 <p>
 Welcome to SliTaz 3.0! Small, fast, easy to use and customize, the new
-SliTaz stable version is now out after one year of development. 
+SliTaz stable version is now out after one year of development.
 </p>
 <ul>
-    <li>Boot scripts rewritten and faster (super-fast booting)</li>
-    <li>All home-made boxes improved (tazctrlbox, tazhw, wifibox, burnbox, mountbox, netbox, serverbox, installer)</li>
-    <li>Switch to Xorg from Xvesa</li>
-    <li>Switch to Midori as the default web browser</li>
-    <li>Better hardware support - wifi cards, webcams, 3G-modems, printers, scanners</li>
-    <li>Better themes and desktop integration</li>
-    <li>Faster virtualization with lguest</li>
-    <li>SliTaz pro: OpenERP, LAMP, GLPI and more</li>
-    <li>Easier to customize LiveCD and LiveUSB (tazlitobox and tazusbbox)</li>
-    <li>Tazpkg supports new features including the conversion of deb/rpm/arch/slackware/ipk packages to Slitaz native format</li>
-    <li>Packages are now automatically built by a build bot (Tazbb)</li>
-    <li>More contributors and stronger community</li>
-    <li>900 packages added to the database and many updates</li>
-    <li>More than 2800 commits by contributors</li>
+	<li>Boot scripts rewritten and faster (super-fast booting)</li>
+	<li>All home-made boxes improved (tazctrlbox, tazhw, wifibox, burnbox, mountbox, netbox, serverbox, installer)</li>
+	<li>Switch to Xorg from Xvesa</li>
+	<li>Switch to Midori as the default web browser</li>
+	<li>Better hardware support - wifi cards, webcams, 3G-modems, printers, scanners</li>
+	<li>Better themes and desktop integration</li>
+	<li>Faster virtualization with lguest</li>
+	<li>SliTaz pro: OpenERP, LAMP, GLPI and more</li>
+	<li>Easier to customize LiveCD and LiveUSB (tazlitobox and tazusbbox)</li>
+	<li>Tazpkg supports new features including the conversion of deb/rpm/arch/slackware/ipk packages to Slitaz native format</li>
+	<li>Packages are now automatically built by a build bot (Tazbb)</li>
+	<li>More contributors and stronger community</li>
+	<li>900 packages added to the database and many updates</li>
+	<li>More than 2800 commits by contributors</li>
 </ul>
 <p>
 Technical support is provided to users via the mailing list and the official
 forum: <a href="http://forum.slitaz.org/">forum.slitaz.org</a>
 </p>
 
-<a name="hardware"></a>
-<h3><font color="#6c0023">Supported Hardware</font></h3>
+<h3 id="hardware">Supported Hardware</h3>
+
 <p>
 SliTaz GNU/Linux supports all machines based on the i486 or x86 Intel compatible
-processors. A minimum 192MB of memory is recommended to use the core LiveCD. 
-80MB is needed for the "slitaz-loram" flavor and 16MB for the 
+processors. A minimum 192MB of memory is recommended to use the core LiveCD.
+80MB is needed for the "slitaz-loram" flavor and 16MB for the
 "slitaz-loram-cdrom" flavor.
 </p>
 <p>
 With the slitaz-loram flavor, the system is less responsive, but allows you to
 graphically install SliTaz on very old machines with limited resources. Once installed, SliTaz works
 well with a minimum of 16MB memory, but forget about using Firefox to surf the
-web - you'll have to use the text based 'links' for example. 
+web - you'll have to use the text based 'links' for example.
 </p>
 <p>
 SliTaz 3.0 provides all needed drivers and tools such as 915resolution to
 have support for a wide range of netbooks (Eeepc, HP mini, Aspire One, etc).
 </p>
 
-<a name="livecd"></a>
-<h3><font color="#6c0023">LiveCD Flavors</font></h3>
+<h3 id="livecd">LiveCD Flavors</h3>
+
 <p>
-SliTaz GNU/Linux is distributed as a bootable LiveCD. You can use the LiveCD 
-as a normal system or you can graphically install Slitaz to the hard drive. 
+SliTaz GNU/Linux is distributed as a bootable LiveCD. You can use the LiveCD
+as a normal system or you can graphically install Slitaz to the hard drive.
 Installing/upgrading Slitaz retains your previous system's settings, applications
-and documents. 
+and documents.
 </p>
 <p>
 The LiveCD can also be customised and easily rebuilt both graphically or from
 the command line. Install your own custom set of packages, or simply use one
-of the preset flavors on the mirror. Then simply generate your distribution 
+of the preset flavors on the mirror. Then simply generate your distribution
 with the "Tazlito" tool.
 </p>
 <p>
-The ISO image now uses a 'hybrid' system: it can also be copied onto an USB stick 
+The ISO image now uses a 'hybrid' system: it can also be copied onto an USB stick
 without formating it (using <code>dd</code>).
 </p>
 
-<a name="toolchain"></a>
-<h3><font color="#6c0023">Kernel and toolchain</font></h3>
+<h3 id="toolchain">Kernel and toolchain</h3>
+
 <p>
 SliTaz 3.0 comes with a new but very well tested 2.6.30.6 Linux kernel and a complete new
-build toolchain from which the whole system has been built. The 2.6.30.6 Linux kernel is 
+build toolchain from which the whole system has been built. The 2.6.30.6 Linux kernel is
 separated into several linux-packages for supporting additional drivers and features. This time
 we have also built-in some more drivers to have a faster kernel boot.
 </p>
@@ -127,33 +125,35 @@ we have also built-in some more drivers to have a faster kernel boot.
 The new toolchain comprises of: Binutils 2.19.1, GCC 4.4.1, Glibc 2.10.1
 </p>
 
-<a name="utf-8"></a>
-<h3><font color="#6c0023">UTF-8 support</font></h3>
+<h3 id="utf-8">UTF-8 support</h3>
+
+<p>
 With this release, the Slitaz community can enjoy full UTF-8 support.
 SliTaz uses standard PO files for the translation of all SliTaz related tools, boxes and utilities.
-With better internationalization support (russian, portuguese, chinese, and many more), 
-contributors can now use graphical tools such as poedit to make translations using GNU gettext standards. 
-The labs also have an i18n project to easily upload files to be included in the distribution. 
-The locale packs have more translated application messages for the core system and 
+With better internationalization support (russian, portuguese, chinese, and many more),
+contributors can now use graphical tools such as poedit to make translations using GNU gettext standards.
+The labs also have an i18n project to easily upload files to be included in the distribution.
+The locale packs have more translated application messages for the core system and
 some extra packages for applications such as Gimp, Abiword, Gnumeric, etc.
+</p>
 
-<a name="xorg"></a>
-<h3><font color="#6c0023">Xorg server</font></h3>
+<h3 id="xorg">Xorg server</h3>
+
 <p>
-SliTaz now uses the Xorg X window system (although we will always try to 
-provide a Xvesa flavor). With the tazx utility you can reconfigure Xorg and 
-select the correct driver for your card. The xorg server comes with the vesa 
-driver by default which powers most cards; although you may still need to 
+SliTaz now uses the Xorg X window system (although we will always try to
+provide a Xvesa flavor). With the tazx utility you can reconfigure Xorg and
+select the correct driver for your card. The xorg server comes with the vesa
+driver by default which powers most cards; although you may still need to
 manually configure your xorg.conf to some degree if you install some of the
 other drivers.
 </p>
 
-<a name="install"></a>
-<h3><font color="#6c0023">HD install and LiveUSB</font></h3>
+<h3 id="install">HD install and LiveUSB</h3>
+
 <p>
 The installation is fully automated and can be done graphically or in text
 mode. The slitaz installer now lets you use a separate partition for
-/home, configure the root password and chose the default user login. 
+/home, configure the root password and chose the default user login.
 The installer also now supports installation from a LiveUSB session.
 </p>
 <p>
@@ -162,8 +162,8 @@ as a kernel argument (in GRUB menu.lst). The root delay ensures the Kernel
 has detected the device before mounting it on / (root).
 </p>
 
-<a name="packages"></a>
-<h3><font color="#6c0023">Software Packages</font></h3>
+<h3 id="packages">Software Packages</h3>
+
 <p>
 SliTaz 3.0 has around 2300 packages in the database. A wide variety of packages
 have been commited and the Tazpkg package manager can now convert
@@ -174,14 +174,14 @@ such as OpenERP, MySQL, GLPI.
 <p>
 On the update side, mostly all the packages have been updated, including
 the kernel, toolchain, Xorg (7.4), GTK and QT. The package format has
-also changed to support lzma for better compression and faster 
+also changed to support lzma for better compression and faster
 downloads. Packages are also checked by Tazwok to ensure the FHS is followed
-and packages are now built automatically by the SliTaz Build Bot: 
+and packages are now built automatically by the SliTaz Build Bot:
 <a href="http://bb.slitaz.org/">bb.slitaz.org</a>
 </p>
 
-<a name="desktop"></a>
-<h3><font color="#6c0023">Core Desktop</font></h3>
+<h3 id="desktop">Core Desktop</h3>
+
 <p>
 A lot of attention has been paid the the core desktop. All applications
 are well integrated and a special SliTaz theme (icons, Openbox, GTK) has
@@ -189,13 +189,13 @@ been created.
 </p>
 <p>
 The core desktop provides a selection of multi-use packages for surfing the
-web, listening to music, audio editing, image manipulation and developing or 
-burning to optical media. It's just one click in the application menu to find 
+web, listening to music, audio editing, image manipulation and developing or
+burning to optical media. It's just one click in the application menu to find
 installed software by category.
 </p>
 
-<a name="security"></a>
-<h3><font color="#6c0023">Security</font></h3>
+<h3 id="security">Security</h3>
+
 <p>
 Slitaz is more secure and robust now and the firewall rules have been updated. A
 firewall can be installed using the graphical tazhw box, and serverbox can help
@@ -203,8 +203,8 @@ to maintain the installed firewall. Mountbox can manage crypto devices with
 devmapper and the crypt setup tools allow encryption of block devices.
 </p>
 
-<a name="upgrade"></a>
-<h3><font color="#6c0023">From 2.0 to 3.0</font></h3>
+<h3 id="upgrade">From 2.0 to 3.0</h3>
+
 <p>
 The SliTaz GNU/linux installer offers an update function allowing you to
 upgrade from a '2.0' to '3.0' version. To upgrade the system you first
@@ -219,19 +219,19 @@ Note that the installer will keep a copy of the list of packages and a complete
 archive of the /etc directory (etc.tar.gz) in /var/lib/slitaz-install.
 </p>
 <p>
-To upgrade a 2.0 to 3.0 it is also possible to use the package manager "Tazpkg" 
-via the 'set-release' function, but beware this is not yet proven and may 
+To upgrade a 2.0 to 3.0 it is also possible to use the package manager "Tazpkg"
+via the 'set-release' function, but beware this is not yet proven and may
 require some manual intervention. If you choose this method you must first
 install 'tazpkg' from 3.0, because the package format has changed.
 </p>
 
-<a name="people"></a>
-<h3><font color="#6c0023">People of the Project</font></h3>
+<h3 id="people">People of the Project</h3>
+
 <p>
 SliTaz is proud to be an international community project. The people of the
 project are the ones who develop the distribution, correct the website,
 develop the HG repositories and write the official documentation. Passing
-through Switzerland, France, Brazil, Quebec, China, India, Russia, England, 
+through Switzerland, France, Brazil, Quebec, China, India, Russia, England,
 and the U.S.
 </p>
 <ul>
@@ -271,9 +271,9 @@ who have taken the time to help advance the distribution.
 <!-- End of content -->
 </div>
 
-<!-- Footer. -->
+<!-- Footer -->
 <div id="footer">
-	Copyright &copy; <span class="year"></span> <a href="http://www.slitaz.org/">SliTaz</a> -
+	Copyright © <span class="year"></span> <a href="http://www.slitaz.org/">SliTaz</a> -
 	<a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>;<br />
 	Documentation under
 	<a href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License</a>
@@ -282,4 +282,3 @@ who have taken the time to help advance the distribution.
 
 </body>
 </html>
-

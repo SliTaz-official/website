@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+	<meta charset="utf-8" />
+	<title>SliTaz 4.0 - Notas de Lançamento</title>
+	<link rel="shortcut icon" href="favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+
+<!-- Header -->
+<div id="header">
+	<h1>SliTaz 4.0 - Notas de Lançamento</h1>
+</div>
+
+<!-- Languages -->
+<div id="lang">
+	<a href="http://www.slitaz.org/i18n.php">
+		<img src="images/locale.png" alt="Locale:" /></a>
+	<a href="relnotes.en.html">en</a> |
+	<a href="">fr</a> |
+    <a href="relnotes.pt_BR.html">pt_BR</a> |
+	<a href="relnotes.ru.html">ru</a>
+</div>
+
+<!-- Content -->
+<div id="content">
+
+<h2>Notas de Lançamento</h2>
+
+<p>
+    Bem vindo ao SliTaz 4.0! A nova versão estável da distribuição, que
+    está segura, moderna e flexível, pronta para uso em computadores
+    pessoais e em servidores em ambiente de produção.
+</p>
+
+<ul>
+	<li>Mais de 6500 commits no wok</li>
+	<li>Mais de 1000 novos pacotes adicionados</li>
+	<li>Boot em 10 segundos ou menos, em máquinas mais recentes</li>
+	<li>Novo painel de controle que centraliza as configurações</li>
+	<li>Nova ferramenta de compilação que permite criar pacotes facilmente</li>
+	<li>Novo sistema de "Rolling Release", com imagens ISO atualizadas a cada pacote modificado</li>
+	<li>Novo sistema de "Boneca Russa", com 4 distribuições em uma no LiveCD</li>
+	<li>Novo instalador e atualizador gráfico</li>
+	<li>Novas ferramentas gráficas para criação de um sistema Live</li>
+	<li>Boot via web melhorado: <a href="http://boot.slitaz.org/" target="_blank">boot.slitaz.org</a></li>
+	<li><a href="http://doc.slitaz.org/pt:releases:4.0:errata" target="_blank">Errata para 4.0</a>
+		na wiki</li>
+</ul>
+
+<h3>Toolchain e ferramentas de compilação</h3>
+<p>
+    O SliTaz 4.0 foi compilado inteiramente com as novas ferramentas chamadas
+    "cookutils". Elas podem coordenar a compilação de mais ou menos 3300
+    pacotes e suas dependências de forma simples e consistente, permitindo
+    também a criação de pacotes para a distribuição de forma rápida. Elas
+    encontram-se instaladas, assim como sua documentação, em qualquer
+    sistema SliTaz.
+</p>
+
+<h3>Hardware suportado</h3>
+<p>
+    O SliTaz GNU/Linux 4.0 suporta a maioria das máquinas baseadas em
+    processadores compatíveis com a família i486 ou arquitetura x86 da
+    Intel. Um mínimo de 192 MB de memória RAM é recomendado para usar
+    o LiveCD e o sistema de "Boneca Russa", que detecta a memória física
+    disponível e escolhe a melhor versão da distribuição a ser executada.
+    O LiveCD padrão traz um ambiente de trabalho completo, um ambiente de
+    trabalho simples, um ambiente com somente o servidor gráfico rodando
+    e um sistema em linha de comando, que serão escolhidos conforme a
+    memória disponível.
+</p>
+
+
+<h3>Sistema Live</h3>
+<p>
+    O LiveCD do SliTaz 4.0 na verdade possui 4 versões diferentes da
+    distribuição, de forma acoplada, e utilizará aquela que seu hardware
+    pode suportar. O gerenciador de boot selecionará aquela versão que
+    obtiver o melhor desempenho com a memória RAM disponível. Pode-se
+    selecionar manualmente uma dessas versões durante a tela inicial do
+    boot e pressionar a tecla [tab] para editar as opções de boot.
+    O ambiente de linha de comando, o boot via web, opções de ajuda e
+    de linguagem também estão disponíveis na tela inicial de boot. Mesmo
+    com pouca memória diponível, ainda será possível iniciar ao menos um
+    sistema de linha de comando. Uma instalação do ambiente de trabalho
+    completo pode ser instalado, com o boot de linha de comando com pelo
+    menos 48 MB de memória disponível.
+</p>
+
+
+<h3>Instalação</h3>
+<p>
+    A instalação é totalmente automatizada e pode ser feita em ambiente
+    gráfico ou em modo texto. O tazinst instala a distribuição no
+    disco rígido a partir de um LiveCD, de um LiveUSB, de uma imagem ISO
+    ou a partir da web, utilizando-se das versões estável, cooking ou
+    rolling. Maiores detalhes podem ser obtidos na documentação do
+    instalador ou no Manual do SliTaz.
+</p>
+<p>
+    Caso seja necessário particionar o disco antes da instalação, pode-se
+    utilizar o Gparted que vem instalado no LiveCD ou qualquer outra
+    variante que possua uma ferramenta de particionamento. Ao final da
+    instalação é possível configurar o gerenciador de boot GRUB, que é
+    capaz de gerenciar o boot de quase todo sistema operacional disponível.
+    Isto permite ao SliTaz coexistir com outros sistemas operacionais
+    previamente instalados na máquina, como o Windows.
+</p>
+
+
+<h3>Pacotes</h3>
+<p>
+    Cerca de 3350 pacotes estão disponívels no SliTaz 4.0 o que, dentre
+    outras coisas, permite instalar um ambiente desktop completo, como o
+    e17, programas de edição gráfica como o Gimp ou Inkscape, ou um editor
+    de vídeo, como o Kino. Há pacotes para navegar na web, mensageiros
+    instantâneos, VOIP e emails. Os pacotes podem ser encontrados com a
+    função de busca do tazpkg, via Tazpanel ou pelo website:
+	<a href="http://pkgs.slitaz.org/" target="_blank">http://pkgs.slitaz.org/</a>
+</p>
+<p>
+    O SliTaz foi desenvolvido para funcionar como um poderoso servidor
+    web, utilizando os pacotes LightTPD e PHP (não instalados por padrão),
+    suportando CGI, Perl e Python. O Apache e Squid também podem ser
+    instalados. O pacote Tor está disponível para instalação, permitindo
+    navegar na web de forma segura.
+</p>
+<p>
+    Um ambiente de desenvolvimento completo também está disponível, com
+    o compilador GCC, a IDE Geany, repositórios mercurial e todas as
+    bibliotecas de desenvolvimento necessárias.
+</p>
+<p>
+    Os pacotes são compilados automaticamente no robô de compilação do SliTaz
+	(<a href="http://cook.slitaz.org/" target="_blank">http://cook.slitaz.org/</a>)
+    e são checados pelo cookutils para garantir que os padrões FHS sejam
+    seguidos.
+</p>
+
+<h3>Administração</h3>
+<p>
+    O novo painel de controle do SliTaz 4.0 é o Tazpanel. É uma interface
+    Web/CGI com suporte a temas em que se pode controlar todo o sistema,
+    como gerencimento de pacotes, de usuários, criação de LiveCD, e mais.
+    Cada página da interface possui uma pequena descrição para ajudá-lo
+    a administrar o sistema. Para acessar o Tazpanel, pode-se usar a
+    entrada de menu em "Ferramentas do Sistema" ou no endereço:
+    <a href="http://tazpanel:82" target="_blank">http://tazpanel:82</a>
+</p>
+
+<h3>Ambiente Desktop</h3>
+<p>
+    Muita atenção foi dada ao ambiente de trabalho. Todos os aplicativos
+    estão bem integrados e um novo tema foi criado (incluindo ícones,
+    tema openbox e GTK).
+</p>
+<p>
+    Por padrão, o SliTaz utilizar o gerenciador de janelas Openbox, que é
+    totalmente customizável e configurável pelo utilitário ObConf. A
+    integração com a barra de tarefas LXpanel permite a inclusão de um
+    menu baseado nos padrões Freedesktop. O princípio é ter um pequeno
+    menu acessível com um clique na tela, trazendo favoritos, efeitos
+    de janelas, utilitários de LiveCD e LiveUSB, configuração do Openbox
+    e outras ações do sistema. Outros aplicativos podem ser acessados
+    pelo menu na Barra de Tarefas do LXpanel. O gerenciamento do desktop
+    e dos ícones é feito pelo gerenciador de arquivos PCmanFM.
+</p>
+<p>
+    Por meio de alguma variante ou em um sistema instalado pode-se obter
+    o ambiente desktop Enlightenment (e17) ou os gerenciadores de janelas
+    XFCE, Pekwm, JWM e DWM. Diferentes sessões podem ser selecionadas
+    pela tecla F1 durante a tela de login do "Slim". Para mudar a sessão
+    padrão pode-se utilizar o tazx, ou manualmente, editando o arquivo
+	~/.Xinitrc.
+</p>
+
+<h3>A Rede do SliTaz</h3>
+<p>
+    Todos os serviços da rede do SliTaz foram modificados e melhorados
+    desde a versão 3.0 e a rede para a comunidade foi criada para reunir
+    usuários, contribuidores e desenvolvedores, permitindo a troca de
+    ideias em ambiente colaborativo. Estão incluídos o fórum da comunidade,
+    documentação em plataforma wiki e o bug tracker. Desenvolvedores,
+    artistas, documentadores e qualquer pessoa que esteja disposta a testar
+    a distribuição e contribuir de alguma forma pode fazer isso facilmente,
+    ajudando os demais e melhorando o projeto. A rede para a comunidade
+    (SCN), o website e os repositórios todos possuem o mesmo layout para
+    facilitar a navegação.
+</p>
+
+<h3>Da versão 3.0 para a 4.0</h3>
+<p>
+    O instalador do SliTaz fornece a função de atualizar da versão 3.0
+    para a 4.0. Para utilizar esta função é necessário fazer o boot
+    pelo LiveCD da 4.0, iniciar o instalador pela linha de comando ou
+    pelo Tazpanel, selecionar a opção "upgrade" e então indicar a partição
+    ou arquivo de configuração que possui as informações sobre o sistema
+    3.0 a ser atualizado. O instalador então irá instalar o novo sistema
+    4.0 e todos os pacotes que estavam presentes na instalação da versão
+    3.0.
+</p>
+<p>
+    Também é possível atualizar da versão 3.0 para a 4.0 com o gerenciador
+    de pacotes Tazpkg, utilizando a função set-release, mas avisamos que
+    esta função ainda não está madura e pode requerer alguma intervenção
+    manual.
+</p>
+
+<h3>Pessoas do Projeto</h3>
+<p>
+    O SliTaz orgulha-se de ser um projeto de comunidade internacional.
+    As pessoas do projetos são aquelas que desenvolvem a distribuição,
+    corrigem o website, mantém os repositórios mercurial e escrevem
+    a documentação oficial. São pessoas da Suiça, França, Brazil, Canadá,
+    China, Índia, Russia, Ucrânia, Inglaterra e Estados Unidos da América.
+</p>
+
+<ul>
+	<li>Christophe Lincoln</li>
+	<li>Pascal Bellard</li>
+	<li>Eric Joseph-Alexandre</li>
+	<li>Paul Issott</li>
+	<li>Claudinei Pereira</li>
+	<li>Dominique Corbex</li>
+	<li>Brenton Edgar Scott</li>
+	<li>Christopher Rogers</li>
+	<li>Aleksej Bobylev</li>
+	<li>Samuel Trassare</li>
+	<li>Christian Mesh</li>
+	<li>Alexander Medvedev</li>
+	<li>...</li>
+</ul>
+
+<!-- End of content -->
+</div>
+
+<div id="footer">
+	Copyright © 2012 <a href="http://www.slitaz.org/" target="_blank">SliTaz GNU/Linux</a>
+</div>
+
+</body>
+</html>

@@ -1,38 +1,27 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
 <head>
+	<meta charset="utf-8" />
 	<title>SliTaz 3.0 Notas de Lanzamiento </title>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="description" content="slitaz doc system releases notes information cooking" />
 	<meta name="expires" content="never" />
 	<meta name="modified" content="2010-03-22 22:10:00" />
 	<meta name="publisher" content="www.slitaz.org" />
 	<meta name="author" content="Christophe Lincoln"/>
-	<link rel="shortcut icon" href="favicon.ico" />
-	<link rel="stylesheet" type="text/css" href="book.css" />
+	<link rel="shortcut icon" href="/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="/relnotes.css" />
 </head>
-<body bgcolor="#ffffff">
+<body>
 
-<!-- Header and quick navigation -->
+<!-- Header -->
 <div id="header">
-	<a name="top"></a>
-	<h1><font color="#3E1220">SliTaz - Documentación del Sistema</font></h1>
+	<h1>SliTaz - Documentación del Sistema</h1>
 </div>
 
-<div id="quicknav">
-	SliTaz:
-	<a href="http://www.slitaz.org/">Sitio web</a>
-	<a href="http://forum.slitaz.org/">Foros</a>
-	<a href="http://doc.slitaz.org/">Documentación</a>
-	<a href="http://pkgs.slitaz.org/">Paquetes</a>
-	<a href="http://labs.slitaz.org/">Laboratorios</a>
-</div>
-
-<!-- Content. -->
+<!-- Content -->
 <div id="content">
 
-<h2><font color="#df8f06">Notas de Lanzamiento</font></h2>
+<h2>Notas de Lanzamiento</h2>
 
 <ul>
 	<li><a href="#overview">Introducción.</a></li>
@@ -44,35 +33,35 @@
 	<li><a href="#install">Instalación a disco duro y LiveUSB.</a></li>
 	<li><a href="#packages">Paquetes software.</a></li>
 	<li><a href="#desktop">Escritorio.</a></li>
-    	<li><a href="#security">Seguridad.</a></li>
+	<li><a href="#security">Seguridad.</a></li>
 	<li><a href="#upgrade">De la 2.0 a la 3.0.</a></li>
 	<li><a href="#people">Gente del proyecto.</a></li>
 </ul>
 
-<a name="overview"></a>
-<h3><font color="#6c0023"></font>Introducción</h3>
+<h3 id="overview">Introducción</h3>
+
 <p>
 ¡Bienvenido a SliTaz 3.0! Pequeña, rápida, fácil de usar y
 personalizable. Así es la nueva versión estable de SliTaz, publicada
 despué de un año de desarrollo.
 </p>
 <ul>
-    <li>Los scripts de arranque han sido reescritos y son ahora más rápidos (arranque super-rápido)</li>
-    <li>Todas las herramientas de la casa han sido mejoradas (tazctrlbox, tazhw, wifibox, burnbox, 
+	<li>Los scripts de arranque han sido reescritos y son ahora más rápidos (arranque super-rápido)</li>
+	<li>Todas las herramientas de la casa han sido mejoradas (tazctrlbox, tazhw, wifibox, burnbox,
 	mountbox, netbox, serverbox, instalador)</li>
-    <li>Sustitución de Xvesa por Xorg</li>
-    <li>Cambio a Midori como navegador web por defecto</li>
-    <li>Mejor soporte de hardware - wifi, webcams, modems 3G, impresoras, escáners</li>
-    <li>Mejor aspecto visual e integración del escritorio</li>
-    <li>Virtualización más rápida con lguest</li>
-    <li>SliTaz pro: OpenERP, LAMP, GLPI entre otros</li>
-    <li>LiveCD y LiveUSB más fácilmente personalizables (tazlitobox y tazusbbox)</li>
-    <li>Tazpkg incluye nuevas características como la conversión de paquetes 
+	<li>Sustitución de Xvesa por Xorg</li>
+	<li>Cambio a Midori como navegador web por defecto</li>
+	<li>Mejor soporte de hardware - wifi, webcams, modems 3G, impresoras, escáners</li>
+	<li>Mejor aspecto visual e integración del escritorio</li>
+	<li>Virtualización más rápida con lguest</li>
+	<li>SliTaz pro: OpenERP, LAMP, GLPI entre otros</li>
+	<li>LiveCD y LiveUSB más fácilmente personalizables (tazlitobox y tazusbbox)</li>
+	<li>Tazpkg incluye nuevas características como la conversión de paquetes
 	deb/rpm/arch/slackware/ipk al formato nativo de SliTaz</li>
-    <li>Ahora los paquetes los hace automáticamente un bot (tazbb)</li>
-    <li>Más participantes y una comunidad mayor</li>
-    <li>900 paquetes añadidos a la base de datos y muchas actualizaciones</li>
-    <li>Más de 2800 commits de los participantes</li>
+	<li>Ahora los paquetes los hace automáticamente un bot (tazbb)</li>
+	<li>Más participantes y una comunidad mayor</li>
+	<li>900 paquetes añadidos a la base de datos y muchas actualizaciones</li>
+	<li>Más de 2800 commits de los participantes</li>
 </ul>
 <p>
 Se ofrece soporte técnico a los usuarios mediante la lista de correos y
@@ -80,8 +69,8 @@ el foro oficial:
 <a href="http://forum.slitaz.org/">forum.slitaz.org</a>
 </p>
 
-<a name="hardware"></a>
-<h3><font color="#6c0023">Hardware soportado</font></h3>
+<h3 id="hardware">Hardware soportado</h3>
+
 <p>
 SliTaz GNU/Linux soporta todas las máquinas basadas en arquitectura
 compatible con los procesadores intel i486 o x86. Se recomienda un
@@ -102,8 +91,8 @@ SliTaz 3.0 trae todos los drivers necesarios y herramientas como
 mini, Aspire one, etc).
 </p>
 
-<a name="livecd"></a>
-<h3><font color="#6c0023">LiveCDs de sabores</font></h3>
+<h3 id="livecd">LiveCDs de sabores</h3>
+
 <p>
 SliTaz GNU/Linux se distribuye como un LiveCD autoarrancable. Puedes
 usar el LiveCD como tal, o instalar gráficamente SliTaz en el disco
@@ -122,8 +111,8 @@ La imagen ISO usa ahora un sistema híbrido: puede también ser copiada en
 un pen drive sin necesidad de formatearlo (mediante <code>dd</code>).
 </p>
 
-<a name="toolchain"></a>
-<h3><font color="#6c0023">Núcleo y herramientas de generación</font></h3>
+<h3 id="toolchain">Núcleo y herramientas de generación</h3>
+
 <p>
 SliTaz 3.0 viene con un nuevo y sin embargo testeado núcleo de linux
 2.6.30.6, y una nueva serie de herramientas de generación a partir de
@@ -137,8 +126,8 @@ Las nuevas herramientas de generación consisten en: Binutils 2.19.1, GCC
 4.1.1 y Glibc 2.10.1
 </p>
 
-<a name="utf-8"></a>
-<h3><font color="#6c0023">Soporte para UTF-8</font></h3>
+<h3 id="utf-8">Soporte para UTF-8</h3>
+
 <p>
 En esta versión, la comunidad de SliTaz puede disfrutar de soporte total
 para UTF-8. SliTaz usa los ficheros PO estándar para la traduccióno de
@@ -153,8 +142,8 @@ sistema principal y algunos paquetes extra para aplicaciones como el
 Gimp, Abiword, Gnumeric, etc.
 </p>
 
-<a name="xorg"></a>
-<h3><font color="#6c0023">Servidor Xorg</font></h3>
+<h3 id="xorg">Servidor Xorg</h3>
+
 <p>
 Ahora SliTaz usa el servidor de ventanas X Xorg (aunque trataremos de
 tener un sabor a Xvesa). Con la utilidad tazx puedes reconfigurar Xorg y
@@ -164,8 +153,8 @@ con la mayoría de las tarjetas, aunque puedes aún necesitar configurar
 manualmente tu fichero xorg.conf si instalas otros controladores.
 </p>
 
-<a name="install"></a>
-<h3><font color="#6c0023">Instalación a disco duro y LiveUSB</font></h3>
+<h3 id="install">Instalación a disco duro y LiveUSB</h3>
+
 <p>
 La instalación es totalmente automática y puede hacerse gráficamente o
 en modo texto. El instalador de SliTaz te deja establecer particiones
@@ -180,8 +169,8 @@ El retraso en adquirir la raíz asegura que el núcleo ha detectado el
 dispositivo antes de montarlo en / (raíz).
 </p>
 
-<a name="packages"></a>
-<h3><font color="#6c0023">Paquetes software</font></h3>
+<h3 id="packages">Paquetes software</h3>
+
 <p>
 SliTaz 3.0 tiene entorno a 2300 paquetes in la base de datos. Una ampla
 gama de paquetes han sido añadidos y el gestor de paquetes Tazpkg puede
@@ -199,8 +188,8 @@ el FHS, y los paquetes se generan automáticamente con el SliTaz Build
 Bot: (<a href="http://bb.slitaz.org/">bb.slitaz.org</a>)
 </p>
 
-<a name="desktop"></a>
-<h3><font color="#6c0023">Escritorio</font></h3>
+<h3 id="desktop">Escritorio</h3>
+
 <p>
 Se ha prestado mucha atención al escritorio. Todas las aplicaciones
 están bien integradas y se ha creado un aspecto visual particular
@@ -213,8 +202,8 @@ medios ópticos. A un sólo click en el menú de aplicaciones puedes
 encontrar el software instalado separado por categorías.
 </p>
 
-<a name="security"></a>
-<h3><font color="#6c0023">Seguridad</font></h3>
+<h3 id="security">Seguridad</h3>
+
 <p>
 SliTaz es ahora más seguro y robusto y las reglas de firewall han sido
 actualizadas. Un firewall puede ser instalado usando la interfaz gráfica
@@ -224,8 +213,8 @@ herramientas de configuración de encriptados te permiten el encriptado
 de dispositivos de bloques.
 </p>
 
-<a name="upgrade"></a>
-<h3><font color="#6c0023">De la 2.0 a la 3.0</font></h3>
+<h3 id="upgrade">De la 2.0 a la 3.0</h3>
+
 <p>
 El instalador de SliTaz GNU/Linux ofrece una función de actualización
 que te permite subir de la 2.0 a la 3.0. Para ello, necesitas en primer
@@ -248,8 +237,8 @@ Si decides seguir este método debes en primer lugar instalar 'tazpkg' de
 la 3.0, porque el formato de las paquetes ha cambiado.
 </p>
 
-<a name="people"></a>
-<h3><font color="#6c0023">Gente del proyecto</font></h3>
+<h3 id="people">Gente del proyecto</h3>
+
 <p>
 SliTaz se complace de consistir en un proyecto basado en una comunidad
 internacional. La gente del proyecto son los que desarrollan la
@@ -295,18 +284,9 @@ sacar la distribución. A todos ellos, gracias.
 <!-- End of content -->
 </div>
 
-<!-- Footer. -->
+<!-- Footer -->
 <div id="footer">
-	<a href="#top">Volver arriba</a> - En otros idiomas:
-	<a href="../../../../cn/doc/releases/3.0/relnotes.cn.html">cn</a> |
-	<a href="../../../../en/doc/releases/3.0/relnotes.en.html">en</a> |
-	<a href="../../../../es/doc/releases/3.0/relnotes.es.html">es</a> |
-	<a href="../../../../fr/doc/releases/3.0/relnotes.fr.html">fr</a> |
-	<a href="../../../../pt/doc/releases/3.0/relnotes.pt.html">pt</a> 
-</div>
-
-<div id="copy">
-	Copyright &copy; <span class="year"></span> <a href="http://www.slitaz.org/">SliTaz</a> -
+	Copyright © <span class="year"></span> <a href="http://www.slitaz.org/">SliTaz</a> -
 	<a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>;<br />
 	Documentation under
 	<a href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License</a>
@@ -315,4 +295,3 @@ sacar la distribución. A todos ellos, gracias.
 
 </body>
 </html>
-
