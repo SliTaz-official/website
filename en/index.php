@@ -78,23 +78,24 @@
 	<li id="d20120410">
 		<strong>10 Apr 2012 - SliTaz GNU/Linux 4.0 Release</strong>
 	<p>
-		SliTaz's Contributors are pleased to announce the release of GNU/Linux
-		SliTaz 4.0, the new stable version of their distribution. Two years of
-		work from the community have provided a stable system of production with
-		a faster startup time and more than 1000 new packages installable.
+		The SliTaz contributors are pleased to announce the release of 
+		the new stable distribution SliTaz GNU/Linux 4.0. Two years of 
+		community work have created a reliable system capable of even 
+		shorter boot times with more than 1000 new installable packages.
 	</p>
 	<p>
-		SliTaz proposes a complete graphic desktop in 35MB, based on OpenBox
-		and LXDE wich work fully in RAM using only 192MB. This new organization
-		4in1 allows to install it on the hard disk with only 48MB selecting
-		automatically the right Software's configuration.
+		SliTaz provides a complete graphical desktop in 35 MB based
+		on LXDE and Openbox that works entirely in 192MB RAM. Its 
+		new 4in1 ISO can be installed on a hard drive with only 48MB
+		by automatically selecting a configuration most fully suited to
+		your hardware.
 	</p>
 	<p>
-		The utilities are better. TazPkg apports a new notification system; it's
-		more faster although the growing number of packages and TazPanel allows
-		to centralize the menagement of the system. You read the full
-		<a href="doc/releases/4.0/relnotes.en.html">Releases Notes</a> and
-		download SliTaz 4.0 from our mirror:
+		The home-made tools have grown. Tazpkg brings a new notification
+		system and is much faster despite the increase in the number of 
+		packages and Tazpanel enables a new centralized management system. 
+		You read the full <a href="doc/releases/4.0/relnotes.en.html">Releases Notes</a> 
+		and download SliTaz 4.0 from our mirror:
 		<a href="http://mirror.slitaz.org/iso/4.0/slitaz-4.0.iso">slitaz-4.0.iso</a>
 	</p>
 	</li>
