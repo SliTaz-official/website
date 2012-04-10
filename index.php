@@ -71,7 +71,7 @@ include("lib/html/header.html");
 <ul>
 	<li><strong><a href="en/#news">SliTaz 4.0 Release</a></strong>
 		<span>— 10 Apr 2012</span></li>
-	<li><strong><a href="en/#news">SliTaz 4.0 RC2 is out</a></strong>
+	<li><strong><a href="en/#20120303">SliTaz 4.0 RC2 is out</a></strong>
 		<span>— 03 Mar 2012</span></li>
 	<li><strong><a href="en/#20120223">SliTaz 4.0 RC1 is out</a></strong>
 		<span>— 23 Feb 2012</span></li>
