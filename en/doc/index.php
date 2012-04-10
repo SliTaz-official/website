@@ -96,6 +96,8 @@ menu.
 </p>
 
 <ul>
+	<li><a href="releases/4.0/relnotes.en.html">SliTaz GNU/Linux 4.0 - 
+		Release Notes</a></li>
 	<li><a href="releases/3.0/relnotes.en.html">SliTaz GNU/Linux 3.0 - 
 		Release Notes</a></li>
 	<li><a href="releases/2.0/relnotes.en.html">SliTaz GNU/Linux 2.0 - 
