@@ -32,7 +32,7 @@
 
 <!-- Content -->
 <div id="content">
-
+	
 <!-- Featured sponsor -->
 <div id="sponsor">
 	<p><strong>Featured sponsor</strong></p>
@@ -49,6 +49,8 @@
 	have grown and become a professional grade operating system that is safe to
 	use in production environments.
 </p>
+
+
 
 <h3>Monetary support a developer</h3>
 

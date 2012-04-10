@@ -47,7 +47,7 @@ pre {
 	font-style: italic;
 }
 
-#header h1 a:hover, #network a:hover { 
+#header h1 a:hover { 
 	color: #d66018;
 }
 
@@ -71,7 +71,8 @@ pre {
 	font-size: 12px;
 }
 
-#network a { padding: 0 6px; }
+#network a { padding: 0 4px; }
+#network a:hover { color: #cfcfcf; }
 
 /* Block */
 
@@ -80,7 +81,7 @@ pre {
 	background: #d66018; 
 	padding: 26px 10% 0px;
 	text-align: center;
-	color: #333;
+	color: #222;
 	border-bottom: 1px solid #f5f5f5;
 }
 
@@ -134,6 +135,8 @@ pre {
 #lang {
 	padding: 6px;
 	font-size: 11px;
+	position: absolute;
+	right: 0px;
 }
 
 #lang a {
@@ -145,8 +148,8 @@ pre {
 	text-decoration: underline;
 }
 
-body > #lang { float: right; }		/* for regular pages */
-.box #lang { text-align: center; }	/* for /i18n page */
+.box #lang { text-align: center; position: relative; 
+	font-size: 13px; }	 /* for /i18n page */
 
 /* Content */
 

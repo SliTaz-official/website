@@ -39,10 +39,8 @@
 
 <div class="box-up">
 	<p>
-		Help us get a dedicated server - Check out our
-		<a href="http://www.gofundme.com/3ql70">online fundraising</a>,
-		<a href="http://usbkey.slitaz.org/">USB Key Project</a> or
-		become an official <a href="/en/sponsor/">sponsor</a>
+		Help us get a <a href="http://www.gofundme.com/3ql70">dedicated server</a>,
+		and check out our <a href="http://usbkey.slitaz.org/">USB Key Project</a>!
 	</p>
 </div>
 
