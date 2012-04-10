@@ -8,7 +8,7 @@
 	<description>SliTaz GNU/Linux official news feed</description>
 	<copyright>Copyright (C) www.slitaz.org - GNU gpl</copyright>
 	
-	<lastBuildDate>Wed, 18 Mar 2012 22:40:00 GMT</lastBuildDate>
+	<lastBuildDate>Thu, 10 Apr 2012 18:00:00 GMT</lastBuildDate>
 
 	<image>
 		<title>Slitaz GNU/Linux</title>
@@ -16,7 +16,17 @@
 		<link>http://www.slitaz.org/</link>
 	</image>
 	
-	<!-- justify to 80 chars or less for text-mode RSS readers also -->
+	<!-- Dont justify to 80 chars -->
+	
+	<item>
+		<title>SliTaz 4.0 Release</title>
+		<link>http://www.slitaz.org/</link>
+		<guid isPermaLink="true">http://www.slitaz.org/en/get/</guid>
+		<pubDate>Thu, 10 Apr 2012 18:00:00 GMT</pubDate>
+		<description>
+			SliTaz GNU/Linux 4.0 is out and ready for production! http://is.gd/Taz40
+		</description>
+	</item>
 	
 	<item>
 		<title>SliTaz Website now in Russian</title>
