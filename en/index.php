@@ -94,7 +94,7 @@
 		The home-made tools have grown. Tazpkg brings a new notification
 		system and is much faster despite the increase in the number of 
 		packages and Tazpanel enables a new centralized management system. 
-		You read the full <a href="doc/releases/4.0/relnotes.en.html">Releases Notes</a> 
+		You can read the full <a href="doc/releases/4.0/relnotes.en.html">Releases Notes</a> 
 		and download SliTaz 4.0 from our mirror:
 		<a href="http://mirror.slitaz.org/iso/4.0/slitaz-4.0.iso">slitaz-4.0.iso</a>
 	</p>
