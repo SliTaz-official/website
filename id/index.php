@@ -64,6 +64,30 @@ include("../lib/html/header.html");
 	<!-- <li><strong>Date - Title</strong>
 	<p></p>
 	</li> -->
+	<li id="d20120410">
+		<strong>10 Apr 2012 - SliTaz GNU/Linux 4.0 Release</strong>
+	<p>
+		Para kontributor Slitaz dengan bangga mengumumkan tentang rilis
+		GNU/Linux Slitaz 4.0, versi stabil terbaru dari distribusi yang ada.
+		Usaha komunitas selama dua tahun telah menghasilkan sistem produksi
+		yang stabil dengan kemampuan startup yang lebih cepat dan lebih dari
+		1000 paket baru yang bisa diinstal.
+	</p>
+	<p>
+		Slitaz menawarkan sebuah desktop grafis yang lengkap dalam kapasitas
+		35MB, didukung dengan OpenBox dan LXDE yang bisa bekerja sepenuhnya di
+		RAM dengan hanya 192MB. Pengaturan baru 4 in 1 memungkinkan untuk
+		menginstalnya di harddisk yang hanya memiliki kapasitas 48MB dengan
+		memilih secara otomatis konfigurasi software yang sesuai.
+	</p>
+	<p>
+		Utilitasnya lebih baik. TazPkg dilengkapi dengan sistem notifikasi
+		baru; ia lebih cepat walaudemikian bertambahnya jumlah paket dan
+		TazPanel memungkinkan untuk memusatkan pengaturan sistem.
+		Download image ISO SliTaz 4.0 dari mirror kami:
+		<a href="http://mirror.slitaz.org/iso/4.0/slitaz-4.0.iso">slitaz-4.0.iso</a>
+	</p>
+	</li>
 	<li>
 		<strong>03 Mar 2012 - SliTaz 4.0-RC2</strong>
 	<p>
