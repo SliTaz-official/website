@@ -85,8 +85,8 @@
 	</p>
 	<p>
 		SliTaz provides a complete graphical desktop in 35 MB based
-		on LXDE and Openbox that works entirely in 192MB RAM. Its 
-		new 4in1 ISO can be installed on a hard drive with only 48MB
+		on LXDE and Openbox that works entirely in 192MB of RAM. Its 
+		new 4in1 CD image can be installed on a hard drive with only 48MB
 		by automatically selecting a configuration most fully suited to
 		your hardware.
 	</p>
@@ -94,7 +94,7 @@
 		The home-made tools have grown. Tazpkg brings a new notification
 		system and is much faster despite the increase in the number of 
 		packages and Tazpanel enables a new centralized management system. 
-		You can read the full <a href="doc/releases/4.0/relnotes.en.html">Releases Notes</a> 
+		You can read the full <a href="doc/releases/4.0/relnotes.en.html">Release Notes</a> 
 		and download SliTaz 4.0 from our mirror:
 		<a href="http://mirror.slitaz.org/iso/4.0/slitaz-4.0.iso">slitaz-4.0.iso</a>
 	</p>
