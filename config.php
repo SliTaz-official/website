@@ -5,7 +5,7 @@ $mirror       = "http://mirror.slitaz.org/iso";
 $pkgs_mirror  = "http://mirror.switch.ch/ftp/mirror/slitaz/iso";
 
 // Stable release
-$stable_rel   = "10 April 2010";
+$stable_rel   = "10 April 2012";
 $stable_ver   = "4.0";
 $stable_size  = "35 Mb";
 $stable_pkgs  = "2 Gb";
