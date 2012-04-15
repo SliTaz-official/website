@@ -152,6 +152,18 @@
 				at COSI for the support and fast response to any of our requests.
 			</td>
 		</tr>
+		<tr>
+			<td style="width: 120px; height: 100px;">
+				<a href="http://webconverger.com"><img
+				src="/images/sponsor/webconverger.png" alt="Webconverger Project"
+				style="float: left;" /></a>
+			</td>
+			<td>
+				The Webconverger project monetary sponsors the SliTaz project
+				via a mouthly donation. Hugs the the the Webconverger team for
+				the support.
+			</td>
+		</tr>
 	</tbody>
 </table>
 

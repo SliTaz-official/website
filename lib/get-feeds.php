@@ -54,8 +54,9 @@ function get_feed_blog($feed) {
 	$entries = 4;
 	// have the page displayed even if any xml file
 	if ( ! file_exists("$cache/$feed")) {
-		echo "</p>\n<div>\n";
+		echo "<div>\n";
 		echo "Missing feed: $cache/$feed\n";
+		echo "</div>\n";
 	}
 	else {
 		$content = file_get_contents("$cache/$feed");
