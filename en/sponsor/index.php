@@ -155,7 +155,7 @@
 		<tr>
 			<td style="width: 120px; height: 100px;">
 				<a href="http://webconverger.com"><img
-				src="/images/sponsor/webconverger.png" alt="Webconverger Project"
+				src="/images/sponsor/webc.png" alt="Webconverger Project"
 				style="float: left;" /></a>
 			</td>
 			<td>
