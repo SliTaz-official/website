@@ -159,9 +159,9 @@
 				style="float: left;" /></a>
 			</td>
 			<td>
-				The Webconverger project monetary sponsors the SliTaz project
-				via a mouthly donation. Hugs the the the Webconverger team for
-				the support.
+				The Webconverger project monetarily sponsors the SliTaz project
+				via a monthly donation. Hugs to the the Webconverger team for
+				the support!
 			</td>
 		</tr>
 	</tbody>
