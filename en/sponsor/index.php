@@ -160,8 +160,8 @@
 			</td>
 			<td>
 				The Webconverger project monetarily sponsors the SliTaz project
-				via a monthly donation. Hugs to the the Webconverger team for
-				the support!
+				via a monthly donation. Hugs to the Webconverger team for
+				their support!
 			</td>
 		</tr>
 	</tbody>
