@@ -51,10 +51,42 @@
 
 <div class="news">
 <ul>
-	<!-- <li><strong>Date - Title</strong>
+	<!-- <li id="d20120223">
+		<strong>Date - Title</strong>
 	<p></p>
 	</li> -->
-	<li><strong>03 Mar 2012 - SliTaz 4.0-RC2</strong>
+    
+	<li id="d20120410">
+		<strong>10 Abr 2012 - Lançamento do SliTaz GNU/Linux 4.0</strong>
+	<p>
+        Os desenvolvedores do SliTaz anunciam o lançamento da nova versão
+        estável da distribuição, SliTaz GNU/Linux 4.0. Dois anos de
+        trabalho em conjunto resultaram em um sistema confiável, com tempo
+        de boot rápido e com mais de 1000 novos pacotes disponíveis para
+        instalação.
+	</p>
+	<p>
+        O SliTaz fornece um ambiente de trabalho gráfico completo,
+        baseado no LXDE e no Openbox, em uma imagem ISO de apenas 35 MB, 
+        com seu modo "Live" carregado em 192 MB de memória RAM. A imagem 
+        "4 em 1" pode ser instalada em disco rígido com o mínimo de 48 MB 
+        de memória RAM disponível, possuindo seleção automática que 
+        detecta as configurações da máquina utilizada e executa a melhor
+        versão da distribuição disponível.
+	</p>
+	<p>
+        As ferramentas próprias da distribuição foram melhoradas: o Tazpkg
+        possui um novo sistema de notificação e está muito mais rápido, 
+        mesmo com vários novos pacotes adicionados ao repositório e o
+        novo Tazpanel centraliza todo o gerenciamento do sistema. Maiores
+        detalhes podem ser encontrados nas <a 
+        href="doc/releases/4.0/relnotes.pt_BR.html">notas de lançamento.</a> 
+		Baixe a imagem ISO a partir de nosso mirror: 
+		<a href="http://mirror.slitaz.org/iso/4.0/slitaz-4.0.iso">slitaz-4.0.iso</a>
+	</p>
+	</li>
+    
+	<li id="d20120410"><strong>03 Mar 2012 - SliTaz 4.0-RC2</strong>
 	<p>
 		A equipe do SliTaz tem o prazer de anunciar a disponibilidade do
 		segundo "Release Candidate" (RC) para a versão 4.0. Nós tivemos 
@@ -81,7 +113,7 @@
 	</p>
 	</li>
 
-	<li><strong>23 Feb 2012 -  SliTaz 4.0 RC1</strong>
+	<li id="d20120410"><strong>23 Feb 2012 -  SliTaz 4.0 RC1</strong>
 	<p>
 		O time de desenvolvedores do SliTaz anuncia a disponibilidade do primeiro
 		"Release Candidate (RC)" para a versão 4.0. Sua inicialização é rápida,
@@ -107,7 +139,7 @@
 	</p>
 	</li>
 
-	<li><strong>Arquivos de Notícias:</strong> 
+	<li id="d20120410"><strong>Arquivos de Notícias:</strong> 
 	<a href="news/2008.php">2008</a> |
 	<a href="news/2009.php">2009</a> |
     <a href="news/2010.php">2010</a> |
