@@ -77,6 +77,36 @@
 	<p></p>
 	</li> -->
 
+	<li id="d20120410">
+		<strong>10 Avr 2012 - SLiTaz 4.0</strong>
+	<p>
+		Les contributeurs de SliTaz sont heureux d'annoncer la publication
+		de SliTaz GNU/Linux 4.0, la nouvelle version stable de la distribution.
+		Deux années de travail communautaire nous ont apporté un procédé de
+		fabrication fiable, un temps de démarrage encore plus court et plus de
+		1000 nouveaux paquets installables.
+	</p>
+	<p>
+		SliTaz propose un bureau graphique complet dans 35 MB s'appuyant sur
+		OpenBox et LXDE et qui fonctionne entrièrement en RAM avec 192Mo.
+		Sa nouvelle image CD 4-en-1 peut être installée sur disque dur
+		avec 48Mo seulement en sélectionnant automatiquement la configuration
+		logicielle adaptée.
+	</p>
+	<p>
+		Les outils maisons ont progressé. Tazpkg introduit un nouveau système de
+		notification, il est beaucoup plus véloce malgré l'augmentation du
+		nombre des paquets ; TazPanel permet de centraliser la gestion du
+		système.
+	</p>
+	<p>
+		Vous pouvez lire les 
+		<a href="http://www.slitaz.org/fr/doc/releases/4.0/relnotes.fr.html"> 
+		notes de publication</a> : et télécharger SliTaz 4.0 depuis notre mirroir : 
+		<a href="http://mirror.slitaz.org/iso/4.0/slitaz-4.0.iso">slitaz-4.0.iso</a> 
+	</p>
+	</li>
+
 	<li id="d20120303">
 		<strong>03 Mar 2012 - SliTaz 4.0-RC2</strong>
 	<p>
