@@ -78,11 +78,11 @@
 	</li> -->
 
 	<li id="d20120410">
-		<strong>10 Avr 2012 - SLiTaz 4.0</strong>
+		<strong>10 Avr 2012 - SliTaz 4.0</strong>
 	<p>
 		Les contributeurs de SliTaz sont heureux d'annoncer la publication
 		de SliTaz GNU/Linux 4.0, la nouvelle version stable de la distribution.
-		Deux années de travail communautaire nous ont apporté un procédé de
+		Deux années de travail communautaire ont apporté un procédé de
 		fabrication fiable, un temps de démarrage encore plus court et plus de
 		1000 nouveaux paquets installables.
 	</p>
@@ -102,7 +102,7 @@
 	<p>
 		Vous pouvez lire les 
 		<a href="http://www.slitaz.org/fr/doc/releases/4.0/relnotes.fr.html"> 
-		notes de publication</a> : et télécharger SliTaz 4.0 depuis notre mirroir : 
+		notes de publication</a> : et télécharger SliTaz 4.0 depuis notre miroir : 
 		<a href="http://mirror.slitaz.org/iso/4.0/slitaz-4.0.iso">slitaz-4.0.iso</a> 
 	</p>
 	</li>
