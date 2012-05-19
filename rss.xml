@@ -7,17 +7,27 @@
 	<language>en</language>
 	<description>SliTaz GNU/Linux official news feed</description>
 	<copyright>Copyright (C) www.slitaz.org - GNU gpl</copyright>
-	
-	<lastBuildDate>Thu, 10 Apr 2012 18:00:00 GMT</lastBuildDate>
+
+	<lastBuildDate>Sat, 19 May 2012 19:00:00 GMT</lastBuildDate>
 
 	<image>
 		<title>Slitaz GNU/Linux</title>
 		<url>http://www.slitaz.org/images/logo.png</url>
 		<link>http://www.slitaz.org/</link>
 	</image>
-	
+
 	<!-- Dont justify to 80 chars -->
-	
+
+	<item>
+		<title>New SliTaz Pizza</title>
+		<link>http://pizza.slitaz.me/</link>
+		<guid isPermaLink="true">http://pizza.slitaz.me/?help</guid>
+		<pubDate>Sat, 19 May 2012 19:00:00 GMT</pubDate>
+		<description>
+			Help us test Pizza :-) Our new online SliTaz ISO builder: http://pizza.slitaz.me/
+		</description>
+	</item>
+
 	<item>
 		<title>SliTaz 4.0 Release</title>
 		<link>http://www.slitaz.org/</link>
@@ -27,18 +37,18 @@
 			SliTaz GNU/Linux 4.0 is out and ready for production! http://is.gd/Taz40
 		</description>
 	</item>
-	
+
 	<item>
 		<title>SliTaz Website now in Russian</title>
 		<link>http://www.slitaz.org/ru/</link>
 		<guid isPermaLink="true">http://www.slitaz.org/ru/index.php</guid>
 		<pubDate>Wed, 18 Mar 2012 22:40:00 GMT</pubDate>
 		<description>
-			SliTaz website is now available in Russian! Hugs thanks 
+			SliTaz website is now available in Russian! Hugs thanks
 			to Aleksej Bobylev.
 		</description>
 	</item>
-	
+
 	<item>
 		<title>Getting ready for Slitaz Pro</title>
 		<link>http://pro.slitaz.org/</link>
@@ -49,18 +59,18 @@
 			officially launched. Stay tuned!
 		</description>
 	</item>
-	
+
 	<item>
 		<title>Website Feed on Twitter and Facebook</title>
 		<link>http://www.slitaz.org/rss.xml</link>
 		<guid isPermaLink="true">http://www.slitaz.org/README</guid>
 		<pubDate>Mon, 12 Mar 2012 20:20:00 GMT</pubDate>
 		<description>
-			SliTaz Website Feed is now relayed on the official SliTaz 
+			SliTaz Website Feed is now relayed on the official SliTaz
 			Twitter account and on Facebook :-)
 		</description>
 	</item>
-	
+
 	<item>
 		<title>English Website goes PHP</title>
 		<link>http://www.slitaz.org/en/</link>
@@ -68,11 +78,11 @@
 		<pubDate>Mon, 12 Mar 2012 00:30:00 GMT</pubDate>
 		<description>
 			We have moved the html pages to php and improved all English
-			website pages. It will be easier for translators and to 
+			website pages. It will be easier for translators and to
 			announce any SliTaz release information.
 		</description>
 	</item>
-	
+
 	<item>
 		<title>SliTaz 4.0-RC2</title>
 		<link>http://www.slitaz.org/en/#news</link>
