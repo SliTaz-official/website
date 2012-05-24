@@ -77,7 +77,8 @@ instalado, Gimp puede ser instalado desde cualquier mirror.
 
 <div class="box">
 	SVG Format: <a href="/images/artwork/slitaz-logo.svg">slitaz-logo.svg</a> |
-	<a href="/images/artwork/slitaz-spider.svg">slitaz-spider.svg</a>
+	<a href="/images/artwork/slitaz-spider.svg">slitaz-spider.svg</a> |
+	<a href="/images/artwork/slitaz_qrcode.svg">slitaz_qrcode.svg</a>
 </div>
 <div>
 	<img src="/images/artwork/slitaz-button-red.png" alt="SliTaz button" />
@@ -86,6 +87,12 @@ instalado, Gimp puede ser instalado desde cualquier mirror.
 	<img src="/images/artwork/slitaz-spider-48x48.png" alt="SliTaz spider" />
 	<img src="/images/artwork/tazpkg.png" alt="Tazpkg package logo" />
 	<img src="/images/artwork/slitaz-minilogo-80x15.png" alt="SliTaz mini logo" />
+</div>
+
+<div align="center">
+	<a href="/images/artwork/slitaz-qrcode.png">
+	<img src="/images/artwork/slitaz-qrcode.png" alt="SliTaz QR code" width="30%" />
+	</a>
 </div>
 
 <!-- End of content -->

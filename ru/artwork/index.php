@@ -72,7 +72,8 @@
 
 <div class="box">
 	В формате SVG: <a href="/images/artwork/slitaz-logo.svg">slitaz-logo.svg</a> |
-	<a href="/images/artwork/slitaz-spider.svg">slitaz-spider.svg</a>
+	<a href="/images/artwork/slitaz-spider.svg">slitaz-spider.svg</a> |
+	<a href="/images/artwork/slitaz_qrcode.svg">slitaz_qrcode.svg</a>
 </div>
 
 <div>
@@ -82,6 +83,12 @@
 	<img src="/images/artwork/slitaz-spider-48x48.png" alt="Паучок SliTaz" />
 	<img src="/images/artwork/tazpkg.png" alt="Логотип пакета Tazpkg" />
 	<img src="/images/artwork/slitaz-minilogo-80x15.png" alt="Мини-логотип SliTaz" />
+</div>
+
+<div align="center">
+	<a href="/images/artwork/slitaz-qrcode.png">
+	<img src="/images/artwork/slitaz-qrcode.png" alt="SliTaz QR code" width="30%" />
+	</a>
 </div>
 
 <!-- End of content -->

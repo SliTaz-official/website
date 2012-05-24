@@ -79,7 +79,8 @@ kan du hente Gimp på filspejlet. Bemærk at JPG formatet fortrækkes.
 
 <div class="box">
 	SVG Format: <a href="/images/artwork/slitaz-logo.svg">slitaz-logo.svg</a> |
-	<a href="/images/artwork/slitaz-spider.svg">slitaz-spider.svg</a>
+	<a href="/images/artwork/slitaz-spider.svg">slitaz-spider.svg</a> |
+	<a href="/images/artwork/slitaz_qrcode.svg">slitaz_qrcode.svg</a>
 </div>
 <div>
 	<img src="/images/artwork/slitaz-button-red.png" alt="SliTaz knap" />
@@ -88,6 +89,12 @@ kan du hente Gimp på filspejlet. Bemærk at JPG formatet fortrækkes.
 	<img src="/images/artwork/slitaz-spider-48x48.png" alt="SliTaz edderkop" />
 	<img src="/images/artwork/tazpkg.png" alt="Tazpkg pakkelogo" />
 	<img src="/images/artwork/slitaz-minilogo-80x15.png" alt="SliTaz minilogo" />
+</div>
+
+<div align="center">
+	<a href="/images/artwork/slitaz-qrcode.png">
+	<img src="/images/artwork/slitaz-qrcode.png" alt="SliTaz QR code" width="30%" />
+	</a>
 </div>
 
 <!-- End of content -->
