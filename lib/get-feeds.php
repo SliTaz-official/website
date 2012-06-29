@@ -24,10 +24,10 @@ function get_feed($feed) {
 	$cache = '/var/cache/slitaz/website';
 	$entries = 4;
 	// no follow all links, but hg commits
-	if ($feed !== "wok.xml") {
-		$nofollow = " rel='nofollow'"
-	else
+	if ($feed == "wok.xml") {
 		$nofollow = ""
+	} else {
+		$nofollow = " rel='nofollow'"
 	}
 	// have the page displayed even if any xml file
 	if ( ! file_exists("$cache/$feed")) {
