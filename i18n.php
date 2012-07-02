@@ -1,8 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta charset="utf-8" />
 	<title>Internationalization | SliTaz</title>
 	<meta name="description" content="SliTaz GNU/Linux languages" />
 	<meta name="keywords" lang="en" content="SliTaz POT, gettext, translation" />
@@ -14,9 +13,24 @@
 			border: 1px solid #ddd;
 			padding: 10px;
 			border-radius: 4px;
+			border-spacing: 0 2px;
 		}
-		.thead { font-weight: bold; }
-		td { border-bottom: 1pt dashed #ddd }
+		.thead { font-weight: bold; text-align: center; }
+		.thead td { border-bottom: 1pt dotted #ccc; }
+		td.proj a, td.pot a, td.po a, td.docs a, td.desk a { text-decoration: none; }
+		td.po, td.docs, td.desk { padding: 0; border-bottom: 1pt dotted #ccc; }
+		td.po a, td.docs a, td.desk a { padding: 0.4em; border-radius: 0.5em; }
+		td.proj, td.pot, td.po a, td.docs a, td.desk a {
+			display: table-cell;
+			border: 1pt solid #aaa;
+			text-align: center;
+			}
+		td.proj { background-color: #FFDCC7; border-radius: 1em 0 0 1em; }
+		td.pot { background-color: #C7FFE4;  border-radius: 0 1em 1em 0; border-left: none; }
+		td.po a { background-color: #FFF5C7; }
+		td.docs a { background-color: #FFC7FD; }
+		td.desk a { background-color: #FEFFC7; }
+		hr { border-top: none; border-bottom: 1pt solid #aaa; color: #aaa; margin: 0; height: 1pt}
 	</style>
 </head>
 <body>
@@ -170,96 +184,255 @@ $ wget <a href="http://hg.slitaz.org/website/archive/tip.tar.bz2">http://hg.slit
 
 <table>
 	<thead class="thead">
-		<tr>
-			<td>Project</td>
+		<tr><td>Project</td>
 			<td>POT file</td>
 			<td>PO files</td>
+			<td>Docs</td>
+			<td>Menu</td>
 		</tr>
 	</thead>
 	<tbody>
-		<tr>
-			<td><a href="http://hg.slitaz.org/tazpkg">TazPKG</a></td>
-			<td><a href="http://hg.slitaz.org/tazpkg/raw-file/tip/po/tazpkg/tazpkg.pot">
-				tazpkg.pot</a></td>
-			<td>
-				<a href="http://hg.slitaz.org/tazpkg/raw-file/tip/po/tazpkg/es.po">es</a>,
-				<a href="http://hg.slitaz.org/tazpkg/raw-file/tip/po/tazpkg/fr.po">fr</a>,
-				<a href="http://hg.slitaz.org/tazpkg/raw-file/tip/po/tazpkg/pt_BR.po">pt_BR</a>
+		<tr><td class="proj">
+				<a href="http://hg.slitaz.org/slitaz-base-files">SliTaz Base Files</a></td>
+			<td class="pot">
+				<a href="http://hg.slitaz.org/slitaz-base-files/raw-file/tip/po/slitaz-base.pot">
+				slitaz-base.pot</a></td>
+			<td class="po">
+				<a href="http://hg.slitaz.org/slitaz-base-files/raw-file/tip/po/el.po">el<hr/>100%</a>
+				<a href="http://hg.slitaz.org/slitaz-base-files/raw-file/tip/po/fr.po">fr<hr/>34%</a>
+				<a href="http://hg.slitaz.org/slitaz-base-files/raw-file/tip/po/ru.po">ru<hr/>100%</a>
 			</td>
+			<td class="docs"> </td>
+			<td class="desk"><a href="http://hg.slitaz.org/slitaz-base-files/file/tip/rootfs/usr/share/applications">1<br/>item</a></td>
 		</tr>
-		<tr>
-			<td><a href="http://hg.slitaz.org/tazpkg">TazPKG Notify</a></td>
-			<td><a href="http://hg.slitaz.org/tazpkg/raw-file/tip/po/tazpkg-notify/tazpkg-notify.pot">
-				tazpkg-notify.pot</a></td>
-			<td>
-				<a href="http://hg.slitaz.org/tazpkg/raw-file/tip/po/tazpkg-notify/fr.po">fr</a>,
-				<a href="http://hg.slitaz.org/tazpkg/raw-file/tip/po/tazpkg-notify/pt_BR.po">pt_BR</a>
+
+		<tr><td class="proj">
+				<a href="http://hg.slitaz.org/slitaz-forge/file/tip/pkgs">pkgs.slitaz.org</a></td>
+			<td class="pot">
+				<a href="http://hg.slitaz.org/slitaz-forge/raw-file/tip/pkgs/po/tazpkg-web.pot">
+				tazpkg-web.pot</a></td>
+			<td class="po">
+				<a href="http://hg.slitaz.org/slitaz-forge/raw-file/tip/pkgs/po/de.po">de<hr/>35%</a>
+				<a href="http://hg.slitaz.org/slitaz-forge/raw-file/tip/pkgs/po/fr.po">fr<hr/>71%</a>
+				<a href="http://hg.slitaz.org/slitaz-forge/raw-file/tip/pkgs/po/pt_BR.po">pt_BR<hr/>43%</a>
+				<a href="http://hg.slitaz.org/slitaz-forge/raw-file/tip/pkgs/po/ru.po">ru<hr/>100%</a>
+				<a href="http://hg.slitaz.org/slitaz-forge/raw-file/tip/pkgs/po/zh.po">zh<hr/>20%</a>
 			</td>
+			<td class="docs"> </td>
+			<td class="desk"> </td>
 		</tr>
-		<tr>
-			<td><a href="http://hg.slitaz.org/tazpanel">TazPanel</a></td>
-			<td><a href="http://hg.slitaz.org/tazpanel/raw-file/tip/po/tazpanel.pot">
-				tazpanel.pot</a></td>
-			<td>
-				<a href="http://hg.slitaz.org/tazpanel/raw-file/tip/po/es.po">es</a>,
-				<a href="http://hg.slitaz.org/tazpanel/raw-file/tip/po/fr.po">fr</a>,
-				<a href="http://hg.slitaz.org/tazpanel/raw-file/tip/po/pt_BR.po">pt_BR</a>
+
+		<tr><td class="proj">
+				<a href="http://hg.slitaz.org/slitaz-pizza">SliTaz Pizza</a></td>
+			<td class="pot">
+				<a href="http://hg.slitaz.org/slitaz-pizza/raw-file/tip/po/pizza.pot">
+				pizza.pot</a></td>
+			<td class="po">
+				<a href="http://hg.slitaz.org/slitaz-pizza/raw-file/tip/po/fr.po">fr<hr/>89%</a>
 			</td>
-		</tr>
-		<tr>
-			<td><a href="http://hg.slitaz.org/slitaz-tools">SliTaz Tools</a></td>
-			<td><a href="http://hg.slitaz.org/slitaz-tools/raw-file/tip/po/slitaz-tools/slitaz-tools.pot">
-				slitaz-tools.pot</a></td>
-			<td>
-				<a href="http://hg.slitaz.org/slitaz-tools/raw-file/tip/po/slitaz-tools/es_AR.po">es_AR</a>,
-				<a href="http://hg.slitaz.org/slitaz-tools/raw-file/tip/po/slitaz-tools/fr.po">fr</a>,
-				<a href="http://hg.slitaz.org/slitaz-tools/raw-file/tip/po/slitaz-tools/pt_BR.po">pt_BR</a>
+			<td class="docs">
+				<a href="http://hg.slitaz.org/slitaz-pizza/raw-file/tip/doc/faq.en.html">faq<br/>en</a>
+				<a href="http://hg.slitaz.org/slitaz-pizza/raw-file/tip/doc/help.en.html">help<br/>en</a>
 			</td>
+			<td class="desk"> </td>
 		</tr>
-		<tr>
-			<td><a href="http://hg.slitaz.org/slitaz-tools">SliTaz Boxes</a></td>
-			<td><a href="http://hg.slitaz.org/slitaz-tools/raw-file/tip/po/slitaz-boxes/slitaz-boxes.pot">
+
+		<tr><td rowspan="5" class="proj">
+				<a href="hg.slitaz.org/slitaz-tools">SliTaz Tools</a></td>
+			<td class="pot">
+				<a href="http://hg.slitaz.org/slitaz-tools/raw-file/tip/po/slitaz-boxes/slitaz-boxes.pot">
 				slitaz-boxes.pot</a></td>
-			<td>
-				<a href="http://hg.slitaz.org/slitaz-tools/raw-file/tip/po/slitaz-boxes/es_AR.po">es_AR</a>,
-				<a href="http://hg.slitaz.org/slitaz-tools/raw-file/tip/po/slitaz-boxes/fr.po">fr</a>,
-				<a href="http://hg.slitaz.org/slitaz-tools/raw-file/tip/po/slitaz-boxes/pt_BR.po">pt_BR</a>
+			<td class="po">
+				<a href="http://hg.slitaz.org/slitaz-tools/raw-file/tip/po/slitaz-boxes/es_AR.po">es_AR<hr/>5%</a>
+				<a href="http://hg.slitaz.org/slitaz-tools/raw-file/tip/po/slitaz-boxes/fr.po">fr<hr/>92%</a>
+				<a href="http://hg.slitaz.org/slitaz-tools/raw-file/tip/po/slitaz-boxes/pt_BR.po">pt_BR<hr/>5%</a>
+				<a href="http://hg.slitaz.org/slitaz-tools/raw-file/tip/po/slitaz-boxes/ru.po">ru<hr/>26%</a>
 			</td>
+			<td class="docs"> </td>
+			<td class="desk" rowspan="5"><a href="http://hg.slitaz.org/slitaz-tools/file/tip/applications">11<br/>items</a></td>
 		</tr>
-		<tr>
-			<td><a href="http://hg.slitaz.org/slitaz-tools">TazBox</a></td>
-			<td><a href="http://hg.slitaz.org/slitaz-tools/raw-file/tip/po/tazbox/tazbox.pot">
+
+		<tr><!-- td></td -->
+			<td class="pot">
+				<a href="http://hg.slitaz.org/slitaz-tools/raw-file/tip/po/slitaz-tools/slitaz-tools.pot">
+				slitaz-tools.pot</a></td>
+			<td class="po">
+				<a href="http://hg.slitaz.org/slitaz-tools/raw-file/tip/po/slitaz-tools/es_AR.po">es_AR<hr/>51%</a>
+				<a href="http://hg.slitaz.org/slitaz-tools/raw-file/tip/po/slitaz-tools/fr.po">fr<hr/>100%</a>
+				<a href="http://hg.slitaz.org/slitaz-tools/raw-file/tip/po/slitaz-tools/pt_BR.po">pt_BR<hr/>51%</a>
+				<a href="http://hg.slitaz.org/slitaz-tools/raw-file/tip/po/slitaz-tools/ru.po">ru<hr/>55%</a>
+			</td>
+			<td class="docs"> </td>
+		</tr>
+
+		<tr><!-- td></td -->
+			<td class="pot">
+				<a href="http://hg.slitaz.org/slitaz-tools/raw-file/tip/po/tazbox/tazbox.pot">
 				tazbox.pot</a></td>
-			<td>
-				<a href="http://hg.slitaz.org/slitaz-tools/raw-file/tip/po/tazbox/es_AR.po">es_AR</a>,
-				<a href="http://hg.slitaz.org/slitaz-tools/raw-file/tip/po/tazbox/fr.po">fr</a>,
-				<a href="http://hg.slitaz.org/slitaz-tools/raw-file/tip/po/tazbox/pt_BR.po">pt_BR</a>
+			<td class="po">
+				<a href="http://hg.slitaz.org/slitaz-tools/raw-file/tip/po/tazbox/es_AR.po">es_AR<hr/>87%</a>
+				<a href="http://hg.slitaz.org/slitaz-tools/raw-file/tip/po/tazbox/fr.po">fr<hr/>100%</a>
+				<a href="http://hg.slitaz.org/slitaz-tools/raw-file/tip/po/tazbox/pt_BR.po">pt_BR<hr/>79%</a>
+				<a href="http://hg.slitaz.org/slitaz-tools/raw-file/tip/po/tazbox/ru.po">ru<hr/>100%</a>
+			</td>
+			<td class="docs"> </td>
+		</tr>
+
+		<tr><!-- td></td -->
+			<td class="pot">
+				<a href="http://hg.slitaz.org/slitaz-tools/raw-file/tip/po/tazdrop/tazdrop.pot">
+				tazdrop.pot</a></td>
+			<td class="po">
+				<a href="http://hg.slitaz.org/slitaz-tools/raw-file/tip/po/tazdrop/es_AR.po">es_AR<hr/>71%</a>
+				<a href="http://hg.slitaz.org/slitaz-tools/raw-file/tip/po/tazdrop/pt_BR.po">pt_BR<hr/>85%</a>
+			</td>
+			<td class="docs"> </td>
+		</tr>
+
+		<tr><!-- td></td -->
+			<td class="pot">
+				<a href="http://hg.slitaz.org/slitaz-tools/raw-file/tip/po/tazinst/tazinst.pot">
+				tazinst.pot</a></td>
+			<td class="po">
+				<a href="http://hg.slitaz.org/slitaz-tools/raw-file/tip/po/tazinst/es_AR.po">es_AR<hr/>44%</a>
+				<a href="http://hg.slitaz.org/slitaz-tools/raw-file/tip/po/tazinst/fr.po">fr<hr/>100%</a>
+				<a href="http://hg.slitaz.org/slitaz-tools/raw-file/tip/po/tazinst/pt_BR.po">pt_BR<hr/>97%</a>
+			</td>
+			<td class="docs">
+				<a href="http://hg.slitaz.org/slitaz-tools/raw-file/tip/doc/tazinst.en.html">doc<br/>en</a>
+				<a href="http://hg.slitaz.org/slitaz-tools/raw-file/tip/doc/tazinst.fr.html">doc<br/>fr</a>
+				<a href="http://hg.slitaz.org/slitaz-tools/raw-file/tip/doc/tazinst.pt_BR.html">doc<br/>pt_BR</a>
 			</td>
 		</tr>
-		<tr>
-			<td><a href="http://hg.slitaz.org/ssfs">Ssfs</a></td>
-			<td><a href="http://hg.slitaz.org/ssfs/raw-file/tip/po/ssfs/ssfs.pot">
+
+		<tr><td rowspan="2" class="proj"><a href="http://hg.slitaz.org/ssfs">SSFS</a></td>
+			<td class="pot">
+				<a href="http://hg.slitaz.org/ssfs/raw-file/tip/po/server/ssfs-server.pot">
+				ssfs-server.pot</a></td>
+			<td class="po">
+				&nbsp;
+			</td>
+			<td class="docs"> </td>
+			<td class="desk" rowspan="2"><a href="http://hg.slitaz.org/ssfs/file/tip/data">1<br/>item</a></td>
+		</tr>
+
+		<tr><!-- td></td -->
+			<td class="pot">
+				<a href="http://hg.slitaz.org/ssfs/raw-file/tip/po/ssfs/ssfs.pot">
 				ssfs.pot</a></td>
-			<td>
-				<a href="http://hg.slitaz.org/ssfs/raw-file/tip/po/ssfs/fr.po">fr</a>
+			<td class="po">
+				<a href="http://hg.slitaz.org/ssfs/raw-file/tip/po/ssfs/fr.po">fr<hr/>96%</a>
+				<a href="http://hg.slitaz.org/ssfs/raw-file/tip/po/ssfs/ru.po">ru<hr/>13%</a>
+			</td>
+			<td class="docs"> </td>
+		</tr>
+
+		<tr><td class="proj">
+				<a href="http://hg.slitaz.org/tazbug">TazBug</a></td>
+			<td class="pot">
+				<a href="http://hg.slitaz.org/tazbug/raw-file/tip/po/tazbug.pot">
+				tazbug.pot</a></td>
+			<td class="po">
+				<a href="http://hg.slitaz.org/tazbug/raw-file/tip/po/ru.po">ru<hr/>100%</a>
+			</td>
+			<td class="docs"> </td>
+			<td class="desk"><a href="http://hg.slitaz.org/tazbug/file/tip/data">1<br/>item</a></td>
+		</tr>
+
+		<tr><td class="proj">
+				<a href="http://hg.slitaz.org/tazlito">TazLito</a></td>
+			<td class="pot">
+				<a href="http://hg.slitaz.org/tazlito/raw-file/tip/po/tazlito-wiz/tazlito-wiz.pot">
+				tazlito-wiz.pot</a></td>
+			<td class="po">
+				<a href="http://hg.slitaz.org/tazlito/raw-file/tip/po/tazlito-wiz/fr.po">fr<hr/>82%</a>
+				<a href="http://hg.slitaz.org/tazlito/raw-file/tip/po/tazlito-wiz/pt_BR.po">pt_BR<hr/>82%</a>
+			</td>
+			<td class="docs">
+				<a href="http://hg.slitaz.org/tazlito/raw-file/tip/doc/tazlito.en.html">doc<br/>en</a>
+				<a href="http://hg.slitaz.org/tazlito/raw-file/tip/doc/tazlito.fr.html">doc<br/>fr</a>
+				<a href="http://hg.slitaz.org/tazlito/raw-file/tip/doc/tazlito.pt_BR.html">doc<br/>pt_BR</a>
+			</td>
+			<td class="desk"><a href="http://hg.slitaz.org/tazlito/file/tip/applications">2<br/>items</a></td>
+		</tr>
+
+		<tr><td class="proj">
+				<a href="http://hg.slitaz.org/tazpanel">TazPanel</a></td>
+			<td class="pot">
+				<a href="http://hg.slitaz.org/tazpanel/raw-file/tip/po/tazpanel.pot">
+				tazpanel.pot</a></td>
+			<td class="po">
+				<a href="http://hg.slitaz.org/tazpanel/raw-file/tip/po/el.po">el<hr/>97%</a>
+				<a href="http://hg.slitaz.org/tazpanel/raw-file/tip/po/es.po">es<hr/>98%</a>
+				<a href="http://hg.slitaz.org/tazpanel/raw-file/tip/po/fr.po">fr<hr/>65%</a>
+				<a href="http://hg.slitaz.org/tazpanel/raw-file/tip/po/pt_BR.po">pt_BR<hr/>46%</a>
+				<a href="http://hg.slitaz.org/tazpanel/raw-file/tip/po/ru.po">ru<hr/>100%</a>
+			</td>
+			<td class="docs">
+				<a href="http://hg.slitaz.org/tazpanel/raw-file/tip/doc/tazpanel.en.html">doc<br/>en</a>
+				<a href="http://hg.slitaz.org/tazpanel/raw-file/tip/doc/tazpanel.fr.html">doc<br/>fr</a>
+				<a href="http://hg.slitaz.org/tazpanel/raw-file/tip/doc/tazpanel.pt_BR.html">doc<br/>pt_BR</a>
+				<a href="http://hg.slitaz.org/tazpanel/raw-file/tip/doc/tazpanel.ru.html">doc<br/>ru</a>
+			</td>
+			<td class="desk"><a href="http://hg.slitaz.org/tazpanel/file/tip/data">2<br/>items</a></td>
+		</tr>
+
+		<tr><td rowspan="2" class="proj">
+				<a href="http://hg.slitaz.org/tazpkg">TazPkg</a></td>
+			<td class="pot">
+				<a href="http://hg.slitaz.org/tazpkg/raw-file/tip/po/tazpkg/tazpkg.pot">
+				tazpkg.pot</a></td>
+			<td class="po">
+				<a href="http://hg.slitaz.org/tazpkg/raw-file/tip/po/tazpkg/es.po">es<hr/>75%</a>
+				<a href="http://hg.slitaz.org/tazpkg/raw-file/tip/po/tazpkg/fr.po">fr<hr/>76%</a>
+				<a href="http://hg.slitaz.org/tazpkg/raw-file/tip/po/tazpkg/pt_BR.po">pt_BR<hr/>57%</a>
+				<a href="http://hg.slitaz.org/tazpkg/raw-file/tip/po/tazpkg/ru.po">ru<hr/>100%</a>
+			</td>
+			<td class="docs" rowspan="2">
+				<a href="http://hg.slitaz.org/tazpkg/raw-file/tip/doc/tazpkg.en.html">doc<br/>en</a>
+				<a href="http://hg.slitaz.org/tazpkg/raw-file/tip/doc/tazpkg.fr.html">doc<br/>fr</a>
+				<a href="http://hg.slitaz.org/tazpkg/raw-file/tip/doc/tazpkg.pt_BR.html">doc<br/>pt_BR</a>
+				<a href="http://hg.slitaz.org/tazpkg/raw-file/tip/doc/tazpkg.ru.html">doc<br/>ru</a>
+			</td>
+			<td class="desk" rowspan="2"><a href="http://hg.slitaz.org/tazpkg/file/tip/applications">3<br/>items</a></td>
+		</tr>
+
+		<tr><!-- td></td -->
+			<td class="pot">
+				<a href="http://hg.slitaz.org/tazpkg/raw-file/tip/po/tazpkg-notify/tazpkg-notify.pot">
+				tazpkg-notify.pot</a></td>
+			<td class="po">
+				<a href="http://hg.slitaz.org/tazpkg/raw-file/tip/po/tazpkg-notify/es.po">es<hr/>76%</a>
+				<a href="http://hg.slitaz.org/tazpkg/raw-file/tip/po/tazpkg-notify/fr.po">fr<hr/>76%</a>
+				<a href="http://hg.slitaz.org/tazpkg/raw-file/tip/po/tazpkg-notify/pt_BR.po">pt_BR<hr/>76%</a>
+				<a href="http://hg.slitaz.org/tazpkg/raw-file/tip/po/tazpkg-notify/ru.po">ru<hr/>100%</a>
 			</td>
 		</tr>
-		<tr>
-			<td><a href="http://hg.slitaz.org/tazusb">TazUSB</a></td>
-			<td><a href="http://hg.slitaz.org/tazusb/raw-file/tip/po/tazusb/tazusb.pot">
+
+		<tr><td rowspan="2" class="proj">
+				<a href="http://hg.slitaz.org/tazusb">TazUsb</a></td>
+			<td class="pot">
+				<a href="http://hg.slitaz.org/tazusb/raw-file/tip/po/tazusb/tazusb.pot">
 				tazusb.pot</a></td>
-			<td>
-				<a href="http://hg.slitaz.org/tazusb/raw-file/tip/po/tazusb/fr.po">fr</a>,
-				<a href="http://hg.slitaz.org/tazusb/raw-file/tip/po/tazusb/pt_BR.po">pt_BR</a>
+			<td class="po">
+				<a href="http://hg.slitaz.org/tazusb/raw-file/tip/po/tazusb/fr.po">fr<hr/>100%</a>
+				<a href="http://hg.slitaz.org/tazusb/raw-file/tip/po/tazusb/pt_BR.po">pt_BR<hr/>97%</a>
 			</td>
+			<td class="docs" rowspan="2">
+				<a href="http://hg.slitaz.org/tazusb/raw-file/tip/doc/tazusb.en.html">doc<br/>en</a>
+				<a href="http://hg.slitaz.org/tazusb/raw-file/tip/doc/tazusb.fr.html">doc<br/>fr</a>
+				<a href="http://hg.slitaz.org/tazusb/raw-file/tip/doc/tazusb.pt_BR.html">doc<br/>pt_BR</a>
+			</td>
+			<td class="desk" rowspan="2"><a href="http://hg.slitaz.org/tazusb/file/tip/applications">1<br/>item</a></td>
 		</tr>
-		<tr>
-			<td><a href="http://hg.slitaz.org/tazusb">TazUSB Box</a></td>
-			<td><a href="http://hg.slitaz.org/tazusb/raw-file/tip/po/tazusb-box/tazusb-box.pot">
+
+		<tr><!-- td></td -->
+			<td class="pot">
+				<a href="http://hg.slitaz.org/tazusb/raw-file/tip/po/tazusb-box/tazusb-box.pot">
 				tazusb-box.pot</a></td>
-			<td>
-				<a href="http://hg.slitaz.org/tazusb/raw-file/tip/po/tazusb-box/fr.po">fr</a>,
-				<a href="http://hg.slitaz.org/tazusb/raw-file/tip/po/tazusb-box/pt_BR.po">pt_BR</a>
+			<td class="po">
+				<a href="http://hg.slitaz.org/tazusb/raw-file/tip/po/tazusb-box/fr.po">fr<hr/>100%</a>
+				<a href="http://hg.slitaz.org/tazusb/raw-file/tip/po/tazusb-box/pt_BR.po">pt_BR<hr/>100%</a>
 			</td>
 		</tr>
 	</tbody>
