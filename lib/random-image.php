@@ -1,6 +1,6 @@
 <?php
 
-$total  = "8";
+$total  = "15";
 $folder = "/images/slideshow";
 $start  = "1";
 $random = mt_rand($start, $total);
