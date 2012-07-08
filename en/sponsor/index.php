@@ -86,7 +86,7 @@
 	need some old hardware to test it on. Also, we may recycle some of your
 	old hardware to preinstall SliTaz on it and then sell it on at low cost. This
 	lets people have a cheap but powerful machine and lets us make a bit of money
-	and provide a service.
+	and also provide a service.
 </p>
 
 <h2>Contact and information</h2>
