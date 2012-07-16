@@ -104,7 +104,7 @@ Tazusb（LiveUSB工具）和一些其他的Slitaz小工具可以在Slitaz软件�
 	Slitaz稳定版提供一个成熟的操作系统。这个操作系统已经经过严格的测试，基本上没有BUG。
 	LiveCD。这个版本选择了许多有用的软件，是一个用途广泛、强大的操作系统。这个版本较为稳定，
 	不过更新频率较慢。建议服务器用户或追求稳定的个人用户使用这个版本。
-	<?php echo "当前最新的稳定版本是$stable_ver版， $stable_rel 发布。"; ?>
+	<?php echo "当前最新的稳定版本是".$stable_ver."版， ".$stable_rel." 发布。"; ?>
 </p>
 
 <div class="box-dl"><p>
