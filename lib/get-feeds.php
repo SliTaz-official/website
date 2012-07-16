@@ -3,7 +3,6 @@
 function updated() {
 	$addr = explode('/', $_SERVER['REQUEST_URI']);
 	$lang = $addr[1];
-	if ($lang == '') $lang = "en";
 	$native = array(
 	"cn"=>"- 更新于: ",
 	"da"=>"- Opdateret den: ",
@@ -16,6 +15,8 @@ function updated() {
 	"pt"=>"- Atualizado em: ",
 	"ru"=>"— Обновлено: "
 	);
+	if (!isset($native[$lang]))
+		$lang = "en";
 	return $native[$lang];
 }
 

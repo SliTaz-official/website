@@ -5,7 +5,9 @@ $addr = str_replace('index', '', $addr);
 
 $addr = explode('/', $addr);
 $cur  = $addr[1];
-$page = ($addr[3] == '') ? $addr[2] : $addr[3];
+$page = $addr[2];
+if (isset($addr[3]))
+	$page = $addr[3];
 
 
 $native  = array ("da"=>"Dansk", "de"=>"Deutsch", "en"=>"English", "es"=>"Español", "fr"=>"Français", "id"=>"Indonesian", "it"=>"Italiano", "pt"=>"Português", "ru"=>"Русский", "cn"=>"中文");
