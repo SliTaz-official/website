@@ -5,7 +5,9 @@ $addr = str_replace('index', '', $addr);
 
 $addr = explode('/', $addr);
 $cur  = $addr[1];
-$page = $addr[2];
+$page = '';
+if (isset($addr[2]))
+	$page = $addr[2];
 if (isset($addr[3]))
 	$page = $addr[3];
 
