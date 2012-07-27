@@ -65,10 +65,22 @@
 </p>
 
 <ul>
-	<li><a href="/en/doc/releases/4.0/relnotes.en.html">SliTaz GNU/Linux 4.0 - 发行笔记</a></li>
-	<li><a href="releases/3.0/relnotes.cn.html">SliTaz GNU/Linux 3.0 - 发行笔记</a></li>
-	<li><a href="/en/doc/releases/2.0/relnotes.en.html">SliTaz GNU/Linux 2.0 - 发行笔记</a></li>
-	<li><a href="/en/doc/releases/1.0/relnotes.en.html">SliTaz GNU/Linux 1.0 - 发行笔记</a></li>
+<?php
+	$relnotes = array();
+	for ($release = 1;; $release++) {
+		$file = "releases/".$release.".0/relnotes.cn.html";
+		if (!file_exists($file)) {
+			$file = "../../en/doc/releases/".$release.".0/relnotes.en.html";
+			if (!file_exists($file))
+				break;
+		}
+		array_unshift($relnotes, array("release" => $release.".0", "file" => $file));
+	}
+	foreach ($relnotes as $release) {
+		print "	<li><a href=\"".$release["file"]."\">SliTaz GNU/Linux ".$release["release"]." -\n";
+		print "         发行笔记</a></li>\n";
+	}
+?>
 </ul>
 
 <!-- End of content -->

@@ -86,14 +86,25 @@
 </p>
 
 <ul>
-	<li><a href="releases/4.0/relnotes.pt_BR.html">SliTaz GNU/Linux 4.0 - 
-		Notas de Lançamento</a></li>
-	<li><a href="releases/3.0/relnotes.pt.html">SliTaz GNU/Linux 3.0 - 
-		Notas de Lançamento</a></li>
-	<li><a href="releases/2.0/relnotes.pt.html">SliTaz GNU/Linux 2.0 - 
-		Notas de Lançamento</a></li>
-	<li><a href="releases/1.0/relnotes.pt.html">SliTaz GNU/Linux 1.0 - 
-		Notas de Lançamento</a></li>
+<?php
+	$relnotes = array();
+	for ($release = 1;; $release++) {
+		$file = "releases/".$release.".0/relnotes.pt.html";
+		if (!file_exists($file)) {
+			$file = "releases/".$release.".0/relnotes.pt_BR.html";
+			if (!file_exists($file)) {
+				$file = "../../en/doc/releases/".$release.".0/relnotes.en.html";
+				if (!file_exists($file))
+					break;
+			}
+		}
+		array_unshift($relnotes, array("release" => $release.".0", "file" => $file));
+	}
+	foreach ($relnotes as $release) {
+		print "	<li><a href=\"".$release["file"]."\">SliTaz GNU/Linux ".$release["release"]." -\n";
+		print "		Notas de Lançamento</a></li>\n";
+	}
+?>
 </ul>
 
 <!-- End of content -->
