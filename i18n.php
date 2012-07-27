@@ -182,6 +182,9 @@ $ wget <a href="http://hg.slitaz.org/website/archive/tip.tar.bz2">http://hg.slit
 	menu translations.
 -->
 
+<?php require_once("lib/i18n-info.php"); ?>
+<!-- ?php get_info(); ? -->
+
 <table>
 	<thead class="thead">
 		<tr><td>Project</td>
