@@ -92,6 +92,8 @@ el menú "Documentación".
 </p>
 
 <ul>
+	<li><a href="/en/doc/releases/4.0/relnotes.en.html">SliTaz GNU/Linux 4.0 -
+		Notas de la Versión</a></li>
 	<li><a href="releases/3.0/relnotes.es.html">SliTaz GNU/Linux 3.0 -
 		Notas de la Versión</a></li>
 	<li><a href="/en/doc/releases/2.0/relnotes.en.html">SliTaz GNU/Linux 2.0 -

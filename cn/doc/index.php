@@ -65,6 +65,7 @@
 </p>
 
 <ul>
+	<li><a href="/en/doc/releases/4.0/relnotes.en.html">SliTaz GNU/Linux 4.0 - 发行笔记</a></li>
 	<li><a href="releases/3.0/relnotes.cn.html">SliTaz GNU/Linux 3.0 - 发行笔记</a></li>
 	<li><a href="/en/doc/releases/2.0/relnotes.en.html">SliTaz GNU/Linux 2.0 - 发行笔记</a></li>
 	<li><a href="/en/doc/releases/1.0/relnotes.en.html">SliTaz GNU/Linux 1.0 - 发行笔记</a></li>

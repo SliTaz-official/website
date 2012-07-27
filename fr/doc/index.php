@@ -105,6 +105,8 @@
 </p>
 
 <ul>
+	<li><a href="releases/4.0/relnotes.fr.html">SliTaz GNU/Linux 4.0 - 
+		Notes de publication</a></li>
 	<li><a href="releases/3.0/relnotes.fr.html">SliTaz GNU/Linux 3.0 - 
 		Notes de publication</a></li>
 	<li><a href="releases/2.0/relnotes.fr.html">SliTaz GNU/Linux 2.0 - 
