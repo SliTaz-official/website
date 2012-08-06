@@ -110,6 +110,26 @@ Sie sonst im <a href="http://forum.slitaz.org/">Forum</a>.
 Magazinen berichtet (Auswahl).
 </p>
 
+<h3>4.0 - April 2012</h3>
+
+<ul>
+	<li><a href="http://badalhocando.blogspot.co.uk/2012/04/slitaz-40-review-small-but-fierce.html"
+		>Blogspot</a> - Von Klaus Zimmermann.</li>
+	<li><a href="http://linuxblog.darkduck.com/2012/04/slitaz-40-light-and-stable.html"
+		>DarkDuck</a> - Von Dmitry.</li>
+</ul>
+
+<h3>3.0 - March 2010 &amp; Cooking - Jan 2010</h3>
+
+<ul>
+	<li><a href="http://kmandla.wordpress.com/2010/03/29/greetings-from-slitaz-3-0/"
+		>Wordpress</a> - Von K.Mandla.</li>
+	<li><a href="http://www.linuxjournal.com/content/spotlight-linux-slitaz-gnulinux-30"
+		>Linux Journal</a> - Von Susan Linton.</li>
+	<li><a href="http://distrowatch.com/weekly.php?issue=20100111#feature"
+		>Distrowatch</a> - Von Jesse Smith (Cooking just before 3.0).</li>
+</ul>
+
 <h3>2.0 - April 2009</h3>
 
 <ul>

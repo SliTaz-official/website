@@ -229,6 +229,26 @@ SliTaz GNU/Linux a été signalée dans la I-presse, par des sites et des person
 référence dans le monde GNU/Linux. En voici une liste non-exhaustive :
 </p>
 
+<h3>4.0 - Avril 2012</h3>
+
+<ul>
+	<li><a href="http://badalhocando.blogspot.co.uk/2012/04/slitaz-40-review-small-but-fierce.html"
+		>Blogspot</a> - By Klaus Zimmermann.</li>
+	<li><a href="http://linuxblog.darkduck.com/2012/04/slitaz-40-light-and-stable.html"
+		>DarkDuck</a> - By Dmitry.</li>
+</ul>
+
+<h3>3.0 - Mars 2010 &amp; Cooking - Janvier 2010</h3>
+
+<ul>
+	<li><a href="http://kmandla.wordpress.com/2010/03/29/greetings-from-slitaz-3-0/"
+		>Wordpress</a> - By K.Mandla.</li>
+	<li><a href="http://www.linuxjournal.com/content/spotlight-linux-slitaz-gnulinux-30"
+		>Linux Journal</a> - By Susan Linton.</li>
+	<li><a href="http://distrowatch.com/weekly.php?issue=20100111#feature"
+		>Distrowatch</a> - By Jesse Smith (Cooking just before 3.0).</li>
+</ul>
+
 <h3>2.0 - Avril 2009</h3>
 
 <ul>

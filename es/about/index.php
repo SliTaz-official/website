@@ -97,6 +97,26 @@ SliTaz y configurar tu sistema.
 SliTaz GNU/Linux ha sido revisado en varias webs. 
 </p>
 
+<h4>4.0 - Abril 2012</h4>
+
+<ul>
+	<li><a href="http://badalhocando.blogspot.co.uk/2012/04/slitaz-40-review-small-but-fierce.html"
+		>Blogspot</a> - Por Klaus Zimmermann.</li>
+	<li><a href="http://linuxblog.darkduck.com/2012/04/slitaz-40-light-and-stable.html"
+		>DarkDuck</a> - Por Dmitry.</li>
+</ul>
+
+<h4>3.0 - Marzo 2010 &amp; Cooking - Enero 2010</h4>
+
+<ul>
+	<li><a href="http://kmandla.wordpress.com/2010/03/29/greetings-from-slitaz-3-0/"
+		>Wordpress</a> - Por K.Mandla.</li>
+	<li><a href="http://www.linuxjournal.com/content/spotlight-linux-slitaz-gnulinux-30"
+		>Linux Journal</a> - Por Susan Linton.</li>
+	<li><a href="http://distrowatch.com/weekly.php?issue=20100111#feature"
+		>Distrowatch</a> - Por Jesse Smith (Cooking just before 3.0).</li>
+</ul>
+
 <h4>2.0 - Abril 2009</h4>
 
 <ul>

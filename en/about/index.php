@@ -93,6 +93,15 @@ SliTaz GNU/Linux has been reviewed on several web sites. Thanks to
 everyone for support.
 </p>
 
+<h3>4.0 - April 2012</h3>
+
+<ul>
+	<li><a href="http://badalhocando.blogspot.co.uk/2012/04/slitaz-40-review-small-but-fierce.html"
+		>Blogspot</a> - By Klaus Zimmermann.</li>
+	<li><a href="http://linuxblog.darkduck.com/2012/04/slitaz-40-light-and-stable.html"
+		>DarkDuck</a> - By Dmitry.</li>
+</ul>
+
 <h3>3.0 - March 2010 &amp; Cooking - Jan 2010</h3>
 
 <ul>

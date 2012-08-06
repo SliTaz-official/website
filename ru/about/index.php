@@ -95,6 +95,13 @@
 <p>SliTaz GNU/Linux рассматривался на нескольких сайтах. Спасибо всем
 	за поддержку.</p>
 
+<h3>4.0 - апрель 2012</h3>
+
+<ul>
+	<li><a href="http://badalhocando.blogspot.co.uk/2012/04/slitaz-40-review-small-but-fierce.html">Blogspot</a> - Klaus Zimmermann.</li>
+	<li><a href="http://linuxblog.darkduck.com/2012/04/slitaz-40-light-and-stable.html">DarkDuck</a> - Dmitry.</li>
+</ul>
+
 
 <h3>3.0 — март 2010; Cooking — январь 2010</h3>
 

@@ -94,6 +94,15 @@ LiveCDen og indstille systemmet.
 SliTaz GNU/Linux er blevet andmeldt på flere hjemmesider. Tak til alle for støtte.
 </p>
 
+<h3>4.0 - April 2012</h3>
+
+<ul>
+	<li><a href="http://badalhocando.blogspot.co.uk/2012/04/slitaz-40-review-small-but-fierce.html"
+		>Blogspot</a> - af Klaus Zimmermann.</li>
+	<li><a href="http://linuxblog.darkduck.com/2012/04/slitaz-40-light-and-stable.html"
+		>DarkDuck</a> - af Dmitry.</li>
+</ul>
+
 <h3>3.0 - Marts 2010 &amp; Cooking - Januar 2010</h3>
 
 <ul>
