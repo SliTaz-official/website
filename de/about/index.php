@@ -169,13 +169,6 @@ Magazinen berichtet (Auswahl).
 	<li><a href="http://www.linux-magazine.com/issues/2008/97/slitaz" target="_blank"
 		>Linux Pro Magazine</a> - Von Dimitri Popov.</li>
 </ul>
-
-<h3>Cooking - January 2010</h3>
-
-<ul>
-	<li><a href="http://distrowatch.com/weekly.php?issue=20100111#feature"
-		>Distrowatch</a> - Von Jesse Smith.</li>
-</ul>
 <p>
 Dankeschön an alle für ihre Unterstützung.
 </p>

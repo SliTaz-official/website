@@ -289,13 +289,6 @@ référence dans le monde GNU/Linux. En voici une liste non-exhaustive :
 	<li><a href="http://www.dedoimedo.com/computers/slitaz.html"
 		>Dedoimedo</a> - By Dedoimedo.</li>
 </ul>
-
-<h3>Cooking - Janvier 2010</h3>
-
-<ul>
-	<li><a href="http://distrowatch.com/weekly.php?issue=20100111#feature"
-		>Distrowatch</a> - By Jesse Smith.</li>
-</ul>
 <p>
 Merci à tous de nous supporter.
 </p>

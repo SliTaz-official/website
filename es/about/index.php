@@ -158,13 +158,6 @@ SliTaz GNU/Linux ha sido revisado en varias webs.
 		>Dedoimedo</a> - Por Dedoimedo.</li>
 </ul>
 
-<h4>Cooking - Enero 2010</h4>
-
-<ul>
-	<li><a href="http://distrowatch.com/weekly.php?issue=20100111#feature"
-		>Distrowatch</a> - Por Jesse Smith.</li>
-</ul>
-
 <!-- End of content -->
 </div>
 
