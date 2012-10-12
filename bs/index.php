@@ -20,14 +20,11 @@
 	<div id="block_info">
 		<h4>Prevod na Bosanski</h4>
 		<p>
-			SliTaz is a free operating system providing a fully featured
-			desktop or server in less than 35 MB.
+			SliTaz je slobodan operativni sustav koji pruža potpuno opremljen desktop ili poslužitelj u manje od 35 MB.
 		</p>
 		<p>
-			In Live mode SliTaz can run completely in RAM and boot from
-			removable media such as a cdrom or USB key. The system is
-			secure, stable and easy to use.
-			<a href="about/">More information...</a>
+			U Živom modu, SliTaz može izvoditi u potpunosti RAM-a i dignuti iz prijenosnih medija kao što su CD ili USB ključa.Sustav je siguran, stabilan i jednostavan za korištenje.
+			<a href="about/">Više informacija...</a>
 		</p>
 	</div>
 </div>
