@@ -164,7 +164,7 @@
 <!-- End of news -->
 </div>
 
-<h2>Projekt Aktivnost</h2>
+<h2>Projekt aktivnosti</h2>
 
 <?php require_once("../lib/get-feeds.php"); ?>
 
@@ -172,11 +172,11 @@
 	<p>
 		<a href="http://scn.slitaz.org/activity/"><img
 			src="/images/users.png" alt="[ ]" /></a>
-		Zajednička Aktivnost
+		Zajednička aktivnost
 		<?php get_feed("scn.xml"); ?>
 	</div>
 	<p class="activity_more">
-		<a href="http://scn.slitaz.org/activity/">Više Akcije</a>
+		<a href="http://scn.slitaz.org/activity/">Više akcije</a>
 	</p>
 </div>
 
@@ -184,11 +184,11 @@
 	<p>
 		<a href="http://forum.slitaz.org/"><img
 			src="/images/support.png" alt="[ ]" /></a>
-		Forum Aktivnost
+		Forum aktivnost
 		<?php get_feed_forum("forum.xml"); ?>
 	</div>
 	<p class="activity_more">
-		<a href="http://forum.slitaz.org/">Više Podrške</a>
+		<a href="http://forum.slitaz.org/">Više podrška</a>
 	</p>
 </div>
 
@@ -200,7 +200,7 @@
 		<?php get_feed("wok.xml"); ?>
 	</div>
 	<p class="activity_more">
-		<a href="http://hg.slitaz.org/">Još Počini</a>
+		<a href="http://hg.slitaz.org/">Još počina</a>
 	</p>
 </div>
 
