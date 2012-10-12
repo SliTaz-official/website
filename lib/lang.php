@@ -98,7 +98,7 @@ switch($page)
 		break;
 	default:
 		$url  = "/LANG/";
-		$lang = "cn da de en es fr id it pt ru";
+		$lang = "cn bs da de en es fr id it pt ru";
 		break;
 }
 
