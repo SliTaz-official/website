@@ -18,7 +18,7 @@
 	<?php include("../lib/html/nav.en.html"); ?>
 	<!-- Information/image -->
 	<div id="block_info">
-		<h4>Bosanska Stranica</h4>
+		<h4>Prevod na Bosanski</h4>
 		<p>
 			SliTaz is a free operating system providing a fully featured
 			desktop or server in less than 35 MB.
