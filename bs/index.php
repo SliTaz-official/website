@@ -51,13 +51,13 @@
 <h2>Naslovi</h2>
 
 <p>
-	SliTaz web stranica nudi glavnu vijest o projektu, kao i vijesti o 
-	aktivnošću projekta na
-	<a href="http://scn.slitaz.org/">zajedničkoj stranici</a>. Oboje su
-    dostupni kao <a href="/rss.xml">XML feed</a>. Projekt također 
+	SliTaz web stranica pruža glavnu vijesti o projektu, vijesti 
+	generalne aktivnost o potprojektima možete naći na
+	<a href="http://scn.slitaz.org/">zajedničkoj stranici</a>. Oba su
+    dostupni na <a href="/rss.xml">XML feed</a>. Ovaj projekt također 
     objavljuje male mjesečne oglase. Ova stranica i
-	<a href="../">glavna stranica</a> će vam dati lijep pregled najnovije 
-	vijesti, komentare, i tweetove.
+	<a href="../">glavna stranica</a> će vam dati lijep pregled najnovijih 
+	vijesti, počine, i tweetove.
 </p>
 
 <div class="box">
