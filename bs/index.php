@@ -15,7 +15,7 @@
 
 <!-- Block -->
 <div id="block">
-	<?php include("../lib/html/nav.html"); ?>
+	<?php include("../lib/html/nav.en.html"); ?>
 	<!-- Information/image -->
 	<div id="block_info">
 		<h4>Prevod na Bosanski</h4>
