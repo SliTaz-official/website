@@ -41,7 +41,7 @@
 
 <p>
 SliTaz GNU/Linux is a free operating system working completely in memory from  
-removeable media such as a cdrom or USB key.  It is light, speedy and fully installable
+removable media such as a cdrom or USB key.  It is light, speedy and fully installable
 on a hard drive. SliTaz is distributed in the form of a LiveCD that you can easily
 burn to a cdrom and boot from. When the system is running you can eject the LiveCD
 and use your CD drive for other tasks. The Live system provides a fully-featured, 

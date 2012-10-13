@@ -11,23 +11,23 @@
 </head>
 <body>
 
-<?php include("../../lib/html/header.html"); ?>
+<?php include("../../lib/html/header.bs.html"); ?>
 
 <!-- Block -->
 <div id="block">
-	<?php include("../../lib/html/nav.en.html"); ?>
+	<?php include("../../lib/html/nav.bs.html"); ?>
 	<!-- Information/image -->
 	<div id="block_info">
-		<h4>About the project</h4>
+		<h4>O Projektu</h4>
 		<p>
-			Small, fast, stable and easy to use!
+			Malan, brz, stabilan i jednostavan za korištenje!
 		</p>
 		<ul>
-			<li><a href="#intro">Introduction</a></li>
-			<li><a href="#overview">Overview</a></li>
-			<li><a href="#website">Web site &amp; i18n</a></li>
-			<li><a href="#reviews">Reviews</a></li>
-			<li><a href="../asso/">Association</a></li>
+			<li><a href="#intro">Uvod</a></li>
+			<li><a href="#overview">Pregled</a></li>
+			<li><a href="#website">Web stranica &amp; i18n</a></li>
+			<li><a href="#reviews">Recenzije</a></li>
+			<li><a href="../asso/">Asocijacija</a></li>
 		</ul>
 	</div>
 </div>
@@ -37,7 +37,7 @@
 <!-- Content -->
 <div id="content">
 
-<h2 id="intro">Introduction to the project</h2>
+<h2 id="intro">Uvod u projekt</h2>
 
 <p>
 SliTaz GNU/Linux is a free operating system working completely in memory from  
