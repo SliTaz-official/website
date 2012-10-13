@@ -40,57 +40,57 @@
 <h2 id="intro">Uvod u projekt</h2>
 
 <p>
-SliTaz GNU/Linux is a free operating system working completely in memory from  
-removeable media such as a cdrom or USB key.  It is light, speedy and fully installable
-on a hard drive. SliTaz is distributed in the form of a LiveCD that you can easily
-burn to a cdrom and boot from. When the system is running you can eject the LiveCD
-and use your CD drive for other tasks. The Live system provides a fully-featured, 
-working graphical distro and lets you keep your data and personal settings on 
-persistent media. The system can be extended with the Tazpkg package manager and 
-security updates are provided for the cooking and stable versions. 
+SliTaz GNU / Linux je besplatan operativni sustav, radi potpuno u sjećanju iz
+prijenosni medij kao što je CD ili USB ključa. Lahak, brz i potpuno moze
+da se instalira na tvrdom disku bez muke. SliTaz se distribuira u
+obliku LiveCD da možete lako snimiti na CDROM i bootati. 
+Kada sustav radi, možete izbaciti LiveCD i koristiti svoj CD za druge poslove.
+Živ sustav pruža potpuno opremljenog, radni grafička distribucija i
+vam omogućuje da zadržite svoje podatke i osobne postavke na postojanim medijima. 
+Sustav se može proširiti sa Tazpkg komandom (tazpkg instalira pakete) i 
+sigurnosnih ažuriranja su predviđena za kuhanje i stabilnim verzijama. 
 </p>
 <p>
-SliTaz project provides free technical support to users through the
-<a href="../mailing-list.php">Mailing list</a> (i18n list)
-and the <a href="http://forum.slitaz.org/">English Forum</a>.
-You can also contact us for more information, suggestions, or comments,
-using the list or directly by mail : &lt;devel at slitaz.org&gt;
+SliTaz projekt osigurava besplatnu tehničku podršku korisnicima putem
+<a href="../mailing-list.php">Spisak Adresa</a> (i18n lista)
+i <a href="http://forum.slitaz.org/">English Forum</a>.
+Također nas možete kontaktirati za više informacija, sugestija ili 
+komentara, pomoću popisa ili elektronske pošte: &lt;devel at slitaz.org&gt;
 </p>
 
-<h2 id="overview">Overview</h2>
+<h2 id="overview">Pregled</h2>
 
 <ul>
-	<li>Root filesystem taking up about 100 MB and ISO image of less than 30 MB.</li>
-	<li>Ready to use Web server powered by LightTPD with CGI and PHP support.</li>
-	<li>Browse the Web with Midori or Retawq in text mode.</li>
-	<li>Sound support provided by Alsa mixer, audio player and CD ripper/encoder.</li>
-	<li>Chat, mail and FTP clients.</li>
-	<li>SSH client and server powered by Dropbear.</li>
-	<li>Database engine with SQLite.</li>
-	<li>Generate a LiveUSB device.</li>
-	<li>Tools to create, edit or burn CD or DVD images.</li>
-	<li>Elegant desktop with Openbox running on the top of Xorg/Xvesa (X server).</li>
-	<li>Homemade graphical boxes to command line utilities.</li>
-	<li>3345 packages easily installable from the mirror.</li>
-	<li>Active and friendly community.</li>
+	<li>Korijen datotečni sustav zauzima oko 100MB i ISO slike manje od 30MB.</li>
+	<li>Spreman za korištenje web server što LightTPD pogoni s CGI i PHP podršcima.</li>
+	<li>Pregledavanje web s Midori ili Retawq u tekstualnomj modi.</li>
+	<li>Zvuk podršku pruža Alsa mikser, audio player i CD riper / davača.</li>
+	<li>Chat, pošte i FTP klijente.</li>
+	<li>SSH klijent i poslužitelj sto Dropbear pogoni.</li>
+	<li>Baza motor sa SQLite.</li>
+	<li>Generirajte LiveUSB uređaj.</li>
+	<li>Alat za stvaranje, uređivanje ili snimati CD i DVD slike.</li>
+	<li>Elegantan desktop s OPENBOX sto radi na vrhu Xorg / Xvesa (X server).</li>
+	<li>Domaće grafičke kutije do naredbenog retka komunalije.</li>
+	<li>3345 paketa jednostavno instalirati sa mreže.</li>
+	<li>Aktivna i prijateljska zajednica.</li>
 </ul>
 
-<h2 id="website">Website &amp; i18n</h2>
+<h2 id="website">Web Stranica &amp; i18n</h2>
 
 <p>
-SliTaz's Web site is also available in several languages and is
-part of the <a href="/i18n.php">internationalization project</a>.
-The web site allows you to <a href="../get/">download</a> the SliTaz
-LiveCD and help us to develop the project. You can check the 
-<a href="../doc/">documentation</a> area to learn how to use the SliTaz 
-LiveCD and configure the system.
+SliTaz web stranica je također dostupna na nekoliko jezika, a dio je
+ <a href="/i18n.php">internacionalizacija projekt</a>.
+Web stranica vama omogućuje da <a href="../get/">preuzmete</a> SliTaz 
+LiveCD i pomoći nama da razvijamo projekt.Možete provjeriti 
+<a href="../doc/">dokumentaciju</a> područje kako bi naučili kako 
+koristiti SliTaz LiveCD i konfiguriranje sustava.
 </p>
 
-<h2 id="reviews">Reviews</h2>
+<h2 id="reviews">Recenzije</h2>
 
 <p>
-SliTaz GNU/Linux has been reviewed on several web sites. Thanks to 
-everyone for support.
+SliTaz GNU / Linux je pregledao na nekoliko web stranica. Hvala svima na podršci.
 </p>
 
 <h3>4.0 - April 2012</h3>
@@ -102,7 +102,7 @@ everyone for support.
 		>DarkDuck</a> - By Dmitry.</li>
 </ul>
 
-<h3>3.0 - March 2010 &amp; Cooking - Jan 2010</h3>
+<h3>3.0 - Mart 2010 &amp; Cooking - Januar 2010</h3>
 
 <ul>
 	<li><a href="http://kmandla.wordpress.com/2010/03/29/greetings-from-slitaz-3-0/"
@@ -128,7 +128,7 @@ everyone for support.
 		>Linuxologist</a> - By Brie Gordon.</li>
 </ul>
 
-<h3>1.0 - March 2008</h3>
+<h3>1.0 - Mart 2008</h3>
 
 <ul>
 	<li><a href="http://distrowatch.com/weekly.php?issue=20080331"
@@ -157,7 +157,7 @@ everyone for support.
 <!-- End of content -->
 </div>
 
-<?php include("../../lib/html/footer.html"); ?>
+<?php include("../../lib/html/footer.bs.html"); ?>
 
 </body>
 </html>
