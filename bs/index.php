@@ -11,7 +11,7 @@
 </head>
 <body>
 
-<?php include("../lib/html/header.html"); ?>
+<?php include("../lib/html/header.bs.html"); ?>
 
 <!-- Block -->
 <div id="block">
