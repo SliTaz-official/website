@@ -24,8 +24,8 @@
 			opremljen desktop ili poslužitelj manje od 35MB.
 		</p>
 		<p>
-			U Živom modu, SliTaz može izvoditi u potpunosti RAM-a i 
-			dignuti iz prijenosnih medija kao što su CD ili USB ključa.
+			U živoj modi, SliTaz može izvoditi u potpunosti RAM-a i 
+			dignuti se iz prijenosnih medija kao što su CD ili USB ključa.
 			Sustav je siguran, stabilan i jednostavan za korištenje.
 			<a href="about/">Više informacija...</a>
 		</p>
@@ -39,8 +39,8 @@
 
 <div class="box-up">
 	<p>
-		Pomozite nam dobiti <a href="http://www.gofundme.com/3ql70">namjenski poslužitelj</a>,
-		i pogledaj te naš <a href="http://usbkey.slitaz.org/">USB Projekt</a>!
+		Pomozite nam uzeti <a href="http://www.gofundme.com/3ql70">namjenski poslužitelj</a>,
+		i pogledaj te naš <a href="http://usbkey.slitaz.org/">USB Projekt!</a>!
 	</p>
 </div>
 
@@ -56,13 +56,13 @@
 	<a href="http://scn.slitaz.org/">zajedničkoj stranici</a>. Oba su
     dostupni na <a href="/rss.xml">XML feed</a>. Ovaj projekt također 
     objavljuje male mjesečne oglase. Ova stranica i
-	<a href="../">glavna stranica</a> će vam dati lijep pregled najnovijih 
+	<a href="../">početna stranica</a> će vam dati lijep pregled najnovijih 
 	vijesti, počine, i tweetove.
 </p>
 
 <div class="box">
 	<img src="/images/news.png" alt="[ ]" />
-	<a href="http://scn.slitaz.org/">Vijesti iz Blog-a</a> |
+	<a href="http://scn.slitaz.org/">Vijesti iz Blog</a> |
 	<a href="http://doc.slitaz.org/en:newsletter:start">Mjesečni Oglasi</a>
 </div>
 
@@ -76,22 +76,22 @@
 	</li> -->
 
 	<li id="d20120410">
-		<strong>10 Apr 2012 - SliTaz GNU/Linux 4.0 Distribucija</strong>
+		<strong>10 Apr 2012 - SliTaz GNU/Linux 4.0</strong>
 	<p>
 		SliTaz suradnici su sa zadovoljstvom najavili izlazak nove 
 		stabilne distribucije SliTaz GNU / Linux 4.0. Dvije godine rada, 
 		zajednici su stvorili pouzdan sustav, čak i kraće 
-		vrijeme podizanja s više od 1000 novih instalirani paketa.
+		vrijeme dizanja s više od 1000 novih instalirani paketa.
 	</p>
 	<p>
-        SliTaz pruža potpuni grafički desktop u 35MB na temelju LXDE i OPENBOX 
-        koji radi u potpunosti 192MB RAM-a. Njegov novi 4in1 CD slika može 
-        biti instaliran na hard disk sa samo 48MB, automatski birajući konfiguracije 
+        SliTaz pruža potpun grafički desktop u 35MB na temelju LXDE i OPENBOX 
+        koji radi u potpunosti 192MB RAM-a. Njegov novi 4in1 CD image može 
+        biti instalirana na hard disk sa samo 48MB, automatski birajući konfiguraciju 
         koja najbolje odgovara vašem hardveru.
 	</p>
 	<p>
 		Domaći alati su narasli. Tazpkg donosi novi sustav obavijesti i 
-		puno je brži. Mada povećanju broja paketa i Tazpanel omogućuje 
+		puno je brži čak sa povećanja broja paketa i Tazpanel omogućuje 
 		novi centralizirani sustav upravljanja. 
         Možete pročitati <a href="doc/releases/4.0/relnotes.en.html">Obavijesti o Izdanju</a> 
 		i preuzimanje SliTaz 4.0 sa našeg poslužavnika:
@@ -100,7 +100,7 @@
 	</li>
 
 	<li id="d20120303">
-		<strong>03 Mar 2012 - SliTaz 4.0-RC2 je izašao</strong>
+		<strong>03 Mar 2012 - SliTaz 4.0-RC2</strong>
 	<p>
 		Slitaz tim sa zadovoljstvom najavljuje novi SliTaz 4.0-RC2 
 		kandidat. Mi smo učinili veliku količinu posla popravljajući grešaka 
@@ -110,31 +110,30 @@
 		sustav.
 	</p>
 	<p>
-		Ova nova verzija dolazi s punim xorg paketom i ROMA podršku kao i 
-		NV, Intel, Geode i vesa drivere radi iz kutije. Također smo 
-		obnovili sve pakete opet i sačuvali ~ 2Mb u jezgro LiveCD-a, pa 
-		sada uključujemo Lxrandr, Parcellite i
-        transmission BiTorrent klijent.
+		Ova nova verzija dolazi s potpunim Xorg paketom i DRI podršku kao i 
+		NV, Intel, Geode i vesa driveri rade iz kutije. Također smo 
+		obnovili sve pakete opet i sačuvali ~ 2Mb u jezgru LiveCD, pa 
+		sada uključujemo Lxrandr, Parcellite i transmission BiTorrent klijent.
 	</p>
 	<p>
 		Želimo se zahvaliti svima koji su testirali prvi pustani kandidat, 
-		ovaj RC2 je u blizini nadolazeći 
-		SliTaz 4.0 verzije koja je planirana za dvije sedmice. Preuzmite RC2 
-		ISO image iz našeg poslužavnika (35.1 Mb):
+		ovaj RC2 je u blizini nadolazeći SliTaz 4.0 verzije koja je 
+		planirana za dvije sedmice. Preuzmite RC2 ISO image sa našeg 
+		poslužavnika (35.1Mb):
 		<a href="http://mirror.slitaz.org/iso/cooking/slitaz-4.0-RC2.iso">SliTaz 4.0-RC2</a>
 	</p>
 	</li>
 
 	<li id="d20120223">
-		<strong>23 Feb 2012 - SliTaz 4.0 -RC1 je izašao</strong>
+		<strong>23 Feb 2012 - SliTaz 4.0 -RC1</strong>
 	<p>
 		Tim SliTaz sa zadovoljstvom najavljuje trenutnu 
 		dostupnost prvog izlaska kandidata za SliTaz 4.0. SliTaz se može 
 		dignuti u roku 10-12 sekundi, prilično novog hardvera i sa novom 
-		4in1 ISO image možete instalirati puni SliTaz desktop sa samo 48MB 
+		4in1 ISO image možete instalirati SliTaz desktop samo sa 48MB 
 		RAM-a. 4in1 ISO je u stanju automatski detektirati memorije i 
-		može dignuti SliTaz u tekstualnoj modi, za minimalnu X okolišce 
-		ili potpuni grafički desktop.
+		može dignuti SliTaz u tekstualnoj modi, za minimalano X okolišce 
+		ili potpun grafički desktop.
 	</p>
 	<p>
 		SliTaz 4.0 će imati više od 3.000 paketa u 
@@ -143,10 +142,10 @@
 		puta, tako da bi se osiguralo izgradnje kvaliteta.
 	</p>
 	<p>
-		Ovoj RC2 ISO image će vas pitati s novim grafičkim izborniku
-		konfiguracije jezika i tastature. ISO image ima novi desktop izgled i 
-		umjetnička djela, kao i novi terminal instaler sa 
-		CGI/web sučelja dostupni putem TazPanel. Možete preuzeti ovu 
+		RC2 ISO image će vas pitati s novim grafičkim izborniku
+		konfiguracije jezika i tastature. ISO image ima novi desktop 
+		izgled i umjetnička djela, kao i novi command line instaler sa 
+		CGI/Web sučelja dostupni putem TazPanel. Možete preuzeti ovu 
 		novu ISO image iz našeg poslužavnika:
 		<a href="http://mirror.slitaz.org/iso/cooking/slitaz-4.0-RC1.iso">SliTaz 4.0-RC1</a>
 	</p>
@@ -200,23 +199,23 @@
 		<?php get_feed("wok.xml"); ?>
 	</div>
 	<p class="activity_more">
-		<a href="http://hg.slitaz.org/">Još počina</a>
+		<a href="http://hg.slitaz.org/">Više počina</a>
 	</p>
 </div>
 
 <h2>Podrži nas</h2>
 
 <p>
-	Napravite SliTaz čak i više popularan ili napraviti donaciju. 
+	Napravite SliTaz čak i više popularniji ili učinite donaciju. 
 	Možete koristiti PayPal ili Flattr Micropayment monetarne potpore 
-	nama. Možete Blog, Tweet, dijeljenje i razgovarati o projektu pomoći 
+	nama. Možete Blog, Tweet, i razgovarati o projektu pomoći 
 	u širenju SliTaz. Također se možete pridružiti projektu da se povežete i 
 	uključiti na SliTaz
 	<a href="http://scn.slitaz.org/">Zajedničkoj Mreži</a>.
 </p>
 <p>
 	Vi također možete postati službeni sponzor putem mjesečne 
-	donacije ili nam pružiti hardverska ili poslužiteljska sredstva.
+	donacije ili pružiti hardverska poslužiteljska sredstva.
 	<a href="sponsor/">Više informacija</a>
 </p>
 
