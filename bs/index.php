@@ -11,11 +11,11 @@
 </head>
 <body>
 
-<?php include("../lib/html/header.bs.html"); ?>
+<?php include("../lib/html/header.html"); ?>
 
 <!-- Block -->
 <div id="block">
-	<?php include("../lib/html/nav.bs.html"); ?>
+	<?php include("../lib/html/nav.html"); ?>
 	<!-- Information/image -->
 	<div id="block_info">
 		<h4>Prevod na Bosanski</h4>
@@ -228,7 +228,7 @@
 <!-- End of content  -->
 </div>
 
-<?php include("../lib/html/footer.bs.html"); ?>
+<?php include("../lib/html/footer.html"); ?>
 
 </body>
 </html>
