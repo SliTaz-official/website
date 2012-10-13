@@ -90,7 +90,7 @@ koristiti SliTaz LiveCD i konfiguriranje sustava.
 <h2 id="reviews">Recenzije</h2>
 
 <p>
-SliTaz GNU / Linux je pregledao na nekoliko web stranica. Hvala svima na podršci.
+SliTaz GNU / Linux je pregledan od nekoliko web stranica. Hvala svima na podršci.
 </p>
 
 <h3>4.0 - April 2012</h3>
