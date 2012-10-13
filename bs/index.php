@@ -21,7 +21,7 @@
 		<h4>Prevod na Bosanski</h4>
 		<p>
 			SliTaz je slobodan operativni sustav koji pruža potpuno 
-			opremljen desktop ili poslužitelj u manje od 35 MB.
+			opremljen desktop ili poslužitelj manje od 35MB.
 		</p>
 		<p>
 			U Živom modu, SliTaz može izvoditi u potpunosti RAM-a i 
