@@ -228,7 +228,7 @@
 <!-- End of content  -->
 </div>
 
-<?php include("../lib/html/footer.html"); ?>
+<?php include("../lib/html/footer.bs.html"); ?>
 
 </body>
 </html>
