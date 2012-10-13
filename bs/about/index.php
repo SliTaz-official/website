@@ -41,19 +41,19 @@
 
 <p>
 SliTaz GNU / Linux je besplatan operativni sustav, radi potpuno u sjećanju iz
-prijenosni medij kao što je CD ili USB ključa. Lahak, brz i potpuno moze
+prijenosni medija kao CD ili USB ključa. Lahak, brz i potpuno moze
 da se instalira na tvrdom disku bez muke. SliTaz se distribuira u
-obliku LiveCD da možete lako snimiti na CDROM i bootati. 
-Kada sustav radi, možete izbaciti LiveCD i koristiti svoj CD za druge poslove.
-Živ sustav pruža potpuno opremljenog, radni grafička distribucija i
-vam omogućuje da zadržite svoje podatke i osobne postavke na postojanim medijima. 
-Sustav se može proširiti sa Tazpkg komandom (tazpkg instalira pakete) i 
+obliku LiveCD da možete lagano snimiti na CD i bootati. 
+Kada sustav radi, možete izbaciti LiveCD i koristiti drugi CD za druge poslove.
+Živ sustav pruža potpuno opremljen, radna grafička distribucija i
+omogućuje da zadržite svoje podatke i osobne postavke na postojanim medijima. 
+Sustav se može proširiti sa Tazpkg komandom ('tazpkg' instalira pakete) i 
 sigurnosnih ažuriranja su predviđena za kuhanje i stabilnim verzijama. 
 </p>
 <p>
 SliTaz projekt osigurava besplatnu tehničku podršku korisnicima putem
 <a href="../mailing-list.php">Spisak Adresa</a> (i18n lista)
-i <a href="http://forum.slitaz.org/">English Forum</a>.
+i <a href="http://forum.slitaz.org/">Forum na Engleskom</a>.
 Također nas možete kontaktirati za više informacija, sugestija ili 
 komentara, pomoću popisa ili elektronske pošte: &lt;devel at slitaz.org&gt;
 </p>
@@ -61,36 +61,36 @@ komentara, pomoću popisa ili elektronske pošte: &lt;devel at slitaz.org&gt;
 <h2 id="overview">Pregled</h2>
 
 <ul>
-	<li>Korijen datotečni sustav zauzima oko 100MB i ISO slike manje od 30MB.</li>
-	<li>Spreman za korištenje web server što LightTPD pogoni s CGI i PHP podršcima.</li>
-	<li>Pregledavanje web s Midori ili Retawq u tekstualnomj modi.</li>
+	<li>Korijen datotečni sustav zauzima oko 100MB i ISO slika je manja od 30MB.</li>
+	<li>Spreman za korištenje web servera što LightTPD pogoni sa CGI i PHP podršcima.</li>
+	<li>Pregledavanje web sa Midori ili Retawq u tekstualnoj modi.</li>
 	<li>Zvuk podršku pruža Alsa mikser, audio player i CD riper / davača.</li>
 	<li>Chat, pošte i FTP klijente.</li>
 	<li>SSH klijent i poslužitelj sto Dropbear pogoni.</li>
-	<li>Baza motor sa SQLite.</li>
+	<li>Databaza sa SQLite.</li>
 	<li>Generirajte LiveUSB uređaj.</li>
-	<li>Alat za stvaranje, uređivanje ili snimati CD i DVD slike.</li>
-	<li>Elegantan desktop s OPENBOX sto radi na vrhu Xorg / Xvesa (X server).</li>
+	<li>Alat za stvaranje, uređivanje ili snimanje CD i DVD slike.</li>
+	<li>Elegantan desktop sa OPENBOX sto radi na vrhu Xorg / Xvesa (X server).</li>
 	<li>Domaće grafičke kutije do naredbenog retka komunalije.</li>
-	<li>3345 paketa jednostavno instalirati sa mreže.</li>
-	<li>Aktivna i prijateljska zajednica.</li>
+	<li>3345 paketa jednostavno instalirati sa naše mreže.</li>
+	<li>Veoma aktivna i prijateljska zajednica.</li>
 </ul>
 
 <h2 id="website">Web Stranica &amp; i18n</h2>
 
 <p>
-SliTaz web stranica je također dostupna na nekoliko jezika, a dio je
- <a href="/i18n.php">internacionalizacija projekt</a>.
+SliTaz web stranica je također dostupna na nekoliko jezika, i dio
+ <a href="/i18n.php">internacionalizacije projekta</a>.
 Web stranica vama omogućuje da <a href="../get/">preuzmete</a> SliTaz 
-LiveCD i pomoći nama da razvijamo projekt.Možete provjeriti 
-<a href="../doc/">dokumentaciju</a> područje kako bi naučili kako 
-koristiti SliTaz LiveCD i konfiguriranje sustava.
+LiveCD i pomoći nama da razvijamo projekat. Možete provjeriti 
+<a href="../doc/">dokumentaciju</a> kako koristiti SliTaz LiveCD i 
+konfiguriranje sustava.
 </p>
 
 <h2 id="reviews">Recenzije</h2>
 
 <p>
-SliTaz GNU / Linux je pregledan od nekoliko web stranica. Hvala svima na podršci.
+SliTaz GNU / Linux je pregledan od nekoliko web stranica. Hvala svima na podršci!
 </p>
 
 <h3>4.0 - April 2012</h3>
