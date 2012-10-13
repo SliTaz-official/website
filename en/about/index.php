@@ -157,7 +157,7 @@ everyone for support.
 <!-- End of content -->
 </div>
 
-<?php include("../../lib/html/footer.bs.html"); ?>
+<?php include("../../lib/html/footer.html"); ?>
 
 </body>
 </html>
