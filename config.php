@@ -24,6 +24,8 @@ $cooking_iso  = "$mirror/cooking/slitaz-cooking.iso";
 
 // ANY variable above MUST exist !
 $cooking_pkgs = '';
-
-
+$cooking_ver = '';
+$cooking_size = '';
+$cooking_pkgs = '';
+$cooking_iso = '';
 ?>
