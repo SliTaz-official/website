@@ -65,17 +65,17 @@ include("../../lib/html/header.bs.html");
 <p>
 	Ovaj dio stranice omogućava preuzimanje besplatni primjerak 
 	SliTaz GNU / Linux LiveCD ili steći alate i alate izvornog koda. 
-	Za početak korištenja slike LiveCD ISO, možete se uputiti na engleskoj
-	<a href="../doc/">dokumentaciji</a>. Također možete naći pomoć i 
-	podršku na <a href="http://forum.slitaz.org/">Engleskim Forum-u</a>.
+	Za početak korištenja slike LiveCD ISO, možete se uputiti na
+	<a href="../doc/">dokumentaciju</a>. Također možete naći pomoć i 
+	podršku na <a href="http://forum.slitaz.org/">Engleskim Forum</a>.
 </p>
 
-<h3>Mirrors</h3>
+<h3>Mirori</h3>
 
 <p>
-	SliTaz je mirrored upravo u Francuskoj <a href="http://www.ads-lu.com/">ADS</a>,
-	i <a href="http://www.tuxfamily.org/">TuxFamily</a>. U Švicarskoj prema
-	<a href="http://mirror.switch.ch/">SWITCHmirror</a>, u Kini od LupaWorld,
+	SliTaz je miroran upravo u Francuskoj <a href="http://www.ads-lu.com/">ADS</a>,
+	i <a href="http://www.tuxfamily.org/">TuxFamily</a>. U Švicarskoj od
+	<a href="http://mirror.switch.ch/">SWITCHmirror</a>, U Kini od LupaWorld,
 	u USA od <a href="http://distro.ibiblio.org/pub/linux/distributions/">Ibiblio</a>
 	i u Brazilu od <a href="http://www.c3sl.ufpr.br/en/index.html">UFPR</a>. Ogromno hvala!
 </p>
@@ -105,9 +105,9 @@ include("../../lib/html/header.bs.html");
 
 <p>
 	Tazpkg (Paket menadžer), Tazlito (SliTaz Live Tool), Tazwok (Izvor
-graditelj), Tazusb (LiveUSB Tool) i SliTaz Alati tarballs se može skinuti sa 
+graditelja), Tazusb (LiveUSB Tool) i SliTaz Alati tarballs se može skinuti sa 
 	<a href="http://www.tuxfamily.org/">TuxFamily</a>
-	mirror. Imajte na umu da su svi programi instalirani po defaultu na 
+	mirora. Imajte na umi da su svi programi instalirani po defaultu na 
 	SliTaz i izvorni kod je komentirao na engleskom jeziku. Preuzmite 
 	izvore sa
 	<a href="http://mirror.slitaz.org/sources/">HTTP</a> ili
@@ -119,7 +119,7 @@ graditelj), Tazusb (LiveUSB Tool) i SliTaz Alati tarballs se može skinuti sa
 <p>
 	SliTaz stabilna verzija pruža zrel operacijski sustav, široko 
 	testiran od aktivne zajednice. Jezgra LiveCD vam nudi veliki
-    Izbor višenamjenski paketa pažljivo integrirati u distribuciji, što je 
+    izbor višenamjenski paketa pažljivo integrirani u distribuciji, što je 
     rezultiralo u koherentan i robustan sustav.
 	<?php echo "Current $stable_ver stable version was released on $stable_rel."; ?>
 </p>
@@ -131,7 +131,7 @@ graditelj), Tazusb (LiveUSB Tool) i SliTaz Alati tarballs se može skinuti sa
 </p></div>
 
 <p>
-	Bootable CDROM slika svim dostupnim paketima za stabilnu verziju 
+	Bootable CDROM slika sa svim dostupnim paketima za stabilnu verziju 
 	generira svaki dan. Ona također sadrži kopiju web stranice i može 
 	se koristiti bez internetske veze putem install.sh skripte.
 </p>
@@ -194,7 +194,7 @@ graditelj), Tazusb (LiveUSB Tool) i SliTaz Alati tarballs se može skinuti sa
 </p>
 
 <p>
-	Floppy<a href="http://mirror.slitaz.org/floppies/">skup slika</a>
+	Floppy <a href="http://mirror.slitaz.org/floppies/">skup slika</a>
 	također je za ljude koji ne mogu koristiti CD-ROM, 
 	USB ključ ili Ethernet kartice.
 </p>
