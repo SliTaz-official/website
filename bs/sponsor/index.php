@@ -22,9 +22,9 @@
 		<p>
 			SliTaz je neprofitni temelj projekat i mi smo uvijek u 
 			potrazi za novim načinima za monetarne potpore projektima i 
-			dodati novi hardver.
+			dodavanje novog hardver.
 		</p>
-		<p>Help the project via a small donation:</p>
+		<p>Pomozi te projektu sa malom donacijom:</p>
 		<?php include("../../lib/html/donate.html"); ?>
 	</div>
 </div>
@@ -36,75 +36,81 @@
 	
 <!-- Featured sponsor -->
 <div id="sponsor">
-	<p><strong>Featured sponsor</strong></p>
+	<p><strong>Prikazan sponzor</strong></p>
 	<?php include("../../lib/rand-sponsor.php"); ?>
 	<p><?php echo "<a href='$url'>$name</a>" ?></p>
 </div>
 
-<h2>Sponsoring SliTaz</h2>
+<h2>Sponzorstvo SliTaz-a</h2>
 
 <p>
-	Firstly, a huge thanks to our <a href="#cur">current sponsors</a> and all
-	the people who support us with small but very important donations to the project.
-	The project is still quite young but in 5 years of active development we
-	have grown and become a professional grade operating system that is safe to
-	use in production environments.
+	Prvo, velika zahvala našim <a href="#cur">trenutnim sponzorima</a> i 
+	svima koji nas podržavaju sa malim, ali vrlo važnim donacijama za 
+	projekat. Projekt je još uvijek vrlo mlad, ali za pet godina aktivnog 
+	razvoja smo odrasli i postali profesionalni sustav razreda operativni
+	koji je siguran za korištenje u proizvodnim okruženjima.
 </p>
 
 
 
-<h3>Monetary support a developer</h3>
+<h3>Monetarna podrška programera</h3>
 
 <p>
-	Do you use SliTaz in your project and want to see the distribution getting
-	even more professional with main developers working on the project full time?
-	If so, you can sponsor the SliTaz Association which will pay a developer to
-	work fully 100% on SliTaz. We actually don't have enough money the pay a developer
-	for the whole year, but the amount of donations and monetary support lets us have
-	a professional working 3-4 months per year on the project. In time we hope to
-	have developers working on a full time basis on SliTaz.
+	Koristite li SliTaz u svoj ​​projekt i želite vidjeti distribuciju 
+	dobivanje još više profesionalno sa glavnim programerima koji rade na 
+	projektu sa punim radnim vremenom? Ako je tako, možete sponzorirati 
+	SliTaz udruge koja će platiti programera za rad u potpunosti 100% na 
+	SliTaz. Mi zapravo nemamo dovoljno novaca platiti developere za cijelu 
+	godinu, ali iznos donacija i monetarne potpore omogućuje nam 
+	stručne radne tri do četiri mjeseca godišnje na projektu. Uz vrijeme 
+	nadamo se da ćemo imati programere na puno radno vrijeme na SliTaz.
 </p>
 
-<h3>Hardware sponsor</h3>
+<h3>Hardver sponzor</h3>
 
 <p>
-	As a open source project we usually develop SliTaz on our own personal computers.
-	But we sometimes have to change our personal systems and need new hardware. We also
-	can't test the distribution on some specific machines as we dont have access to them.
-	If you are a hardware manufacturer and want to see Slitaz working out-of-the-box on
-	your computers you can send us a machine so that we can work on it for you.
+	Kao open source projekt mi obično razvijamo SliTaz na našim osobnim 
+	računalima. Ali mi ponekad moramo promijeniti naše osobne sustave i 
+	treba novi hardver. Mi također ne možemo testirati distribuciju na 
+	nekim specifičnim računalima zato što ih nemamo. 
+	Ako ste proizvođač hardvera i želite vidjeti Slitaz da radi iz-kutije 
+	na svojim računalima, možete nam poslati računalo, tako da možemo raditi 
+	na njemu za vas.
 </p>
 <p>
-	SliTaz is built with tools ready for cross compilation and we would like to
-	port SliTaz to the ARM platform. For this we need some ARM hardware to be
-	able to test our cross compiled binaries and adapt SliTaz to ARM architecture.
+	SliTaz je izgrađen sa alatima za cross kompilacije i željeli 
+	bismo SliTaz na ARM platformi. Za to nam je potreban ARM 
+	hardver da bo mogli testirati naš križ sastaviti binaries i prilagoditi 
+	SliTaz na ARM arhitekturi.
 </p>
 
-<h3>Hardware recycling</h3>
+<h3>Hardver recikliranje</h3>
 
 <p>
-	SliTaz is a great distribution to give an old computer a new lease of life and we
-	need some old hardware to test it on. Also, we may recycle some of your
-	old hardware to preinstall SliTaz on it and then sell it on at low cost. This
-	lets people have a cheap but powerful machine and lets us make a bit of money
-	and also provide a service.
+	SliTaz je dobra distribucija za staro računalo, trebaju nam neki stari 
+	hardveri da ga testiramo. Također, 
+	možemo reciklirati neke svoje stare hardvere da unaprijed instalira 
+	SliTaz na njega, a zatim ga prodati na niskim troškovima. To 
+	omogućuje jeftini, ali moćan kompijuter i omogućuje nam 
+	malo novca, a također pružaju uslugu.
 </p>
 
-<h2>Contact and information</h2>
+<h2>Kontakt i informacije</h2>
 
 <p>
-	If you are interested and want more information about monetary or hardware
-	sponsorship you can contact the SliTaz Association by mail at &lt;asso at
-	slitaz.org&gt; or via <a href="../asso/#postal">post</a>.
+	Ako ste zainteresovani i želite više informacija o monetarnim ili hardvera
+    sponzorstvo, možete kontaktirati SliTaz Udrugu putem pošte na &lt;asso at
+	slitaz.org&gt; ili preko <a href="../asso/#postal">post</a>.
 </p>
 <p>
-	By sponsoring SliTaz you will get your logo and website url on this page
-	which is linked to all the other pages of the website. You will also be able
-	to publicly claim your participation in a pure Open Source project and get
-	more attention from Free Software and Linux users.
+	Sponzoriranje SliTaz-a ćete dobiti svoj ​​logotip i web stranice URL 
+	na ovoj stranici koja je povezana sa svim drugim stranicama na web 
+	stranici. Također ćete biti u mogućnosti da se javno tvrde svoje 
+	sudjelovanje u čistom Open Source projektu i dobiti više pozornosti 
+	od slobodnog softvera i Linux korisnike.
 </p>
 
-<h2 id="cur">Our current sponsors</h2>
+<h2 id="cur">Naši trenutni sponzori</h2>
 
 <table>
 	<tbody>
@@ -115,12 +121,11 @@
 				style="float: left;" /></a>
 			</td>
 			<td>
-				Allied Data Sys - ADS sponsors the main SliTaz mirror and
-				offers us full access to a virtual machine with a high
-				speed connection. This allows us to use the machine as we
-				wish without any limitations. A huge thanks to ADS for
-				the service and fast response to any questions and requests
-				we might have.
+				Allied Data Sys - ADS sponzor je glavni SliTaz miror i 
+				nudi nam puni pristup virtualnom kompijuteru sa brzom vezom. 
+				To nam omogućuje korištenje uređaja kao što želite, bez 
+				ikakvih ograničenja. Zahvaljujemo se ADS za
+                usluga i brz odgovor na sva pitanja i zahtjeve sto smo imali.
 			</td>
 		</tr>
 		<tr>
@@ -130,12 +135,13 @@
 				style="float: left;" /></a>
 			</td>
 			<td>
-				DuckDuckGo search engine - DDG signed a partnership with SliTaz
-				to share the revenue generated by the <em>sponsored links</em>
-				within the search results seen by SliTaz users. We share 50% of
-				revenue so using DDG in SliTaz helps both projects. DuckDuckGo
-				is a search engine with way more instant answers, less spam
-				and clutter, lots of goodies and real privacy.
+				DuckDuckGo tražilac - DDG je potpisao partnerstvo sa SliTaz
+				da dijeli prihode generira <em>sponzorirani linkovi</em>
+				unutar rezultata pretraživanja vidzen pod SliTaz korisnicima. 
+				Dijelimo 50% prihoda tako da pomoću DDG u SliTaz pomaže 
+				i projekte. DuckDuckGo je tražilac sa načinom više 
+				izravnih odgovora, manje spama, puno dobar 
+				i pravi korisnicima privatnost.
 			</td>
 		</tr>
 		<tr>
@@ -145,12 +151,12 @@
 				style="float: left;" /></a>
 			</td>
 			<td>
-				The Clarkson Open Source Institute - COSI sponsors our Chub
-				server and offers us full access to a virtual machine. We are
-				proud to work with COSI which was founded
-				to promote open source software (OSS) and provide equipment
-				and support for student projects. A huge thanks to the team
-				at COSI for the support and fast response to any of our requests.
+				The Clarkson Open Source Institute - COSI sponzorira naš 
+				klen server i nudi nam puni pristup virtualnom kompijuteru. 
+				Mi smo Ponosni raditi sa COSI koja je osnovana za promicanje 
+				open source software (OSS) i osiguraje opremu i podršku za 
+				studentske projekte. Zahvaljujući tim COSI za podršku 
+				i brzu reakciju na bilo koji naših zahtjeva.
 			</td>
 		</tr>
 		<tr>
@@ -160,9 +166,9 @@
 				style="float: left;" /></a>
 			</td>
 			<td>
-				The Webconverger project monetarily sponsors the SliTaz project
-				via a monthly donation. Hugs to the Webconverger team for
-				their support!
+				Webconverger projekt novčani sponzori SliTaz projekt 
+				putem mjesečne donacije. Hvala puno tim Webconverger 
+				za njihovu podršku!
 			</td>
 		</tr>
 	</tbody>
@@ -171,7 +177,7 @@
 <!-- End of content -->
 </div>
 
-<?php include("../../lib/html/footer.html"); ?>
+<?php include("../../lib/html/footer.bs.html"); ?>
 
 </body>
 </html>
