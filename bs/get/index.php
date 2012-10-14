@@ -67,7 +67,7 @@ include("../../lib/html/header.bs.html");
 	SliTaz GNU / Linux LiveCD ili steći alate i alate izvornog koda. 
 	Za početak korištenja slike LiveCD ISO, možete se uputiti na engleskoj
 	<a href="../doc/">dokumentaciji</a>. Također možete naći pomoć i 
-	podršku na<a href="http://forum.slitaz.org/">Engleskim Forum-u</a>.
+	podršku na <a href="http://forum.slitaz.org/">Engleskim Forum-u</a>.
 </p>
 
 <h3>Mirrors</h3>
