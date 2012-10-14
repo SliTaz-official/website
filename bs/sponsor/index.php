@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<title>SliTaz - Sponzor</title>
+	<title>SliTaz - Sponsorship</title>
 	<meta name="description" content="SliTaz GNU/Linux asso sponsor" />
 	<meta name="keywords" lang="en" content="slitaz pro, slitaz sponsor, support" />
 	<meta name="author" content="Christophe Lincoln"/>
@@ -11,17 +11,18 @@
 </head>
 <body>
 
-<?php include("../../lib/html/header.html"); ?>
+<?php include("../../lib/html/header.bs.html"); ?>
 
 <!-- Block -->
 <div id="block">
-	<?php include("../../lib/html/nav.en.html"); ?>
+	<?php include("../../lib/html/nav.bs.html"); ?>
 	<!-- Information/image -->
 	<div id="block_info">
 		<h4>Sponsorship</h4>
 		<p>
-			SliTaz is a non-profit based project and we are always looking for
-			new ways to monetary support the project and provide new hardware.
+			SliTaz je neprofitni temelj projekat i mi smo uvijek u 
+			potrazi za novim načinima za monetarne potpore projektima i 
+			dodati novi hardver.
 		</p>
 		<p>Help the project via a small donation:</p>
 		<?php include("../../lib/html/donate.html"); ?>
