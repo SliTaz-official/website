@@ -132,7 +132,7 @@ Slitaz开发版LiveCD是一个在不断开发的版本，也是可以使用的�
 <div class="box-dl"><p>
 	<?php echo "SliTaz GNU/Linux Cooking $cooking_ver ($cooking_size) - 
 	<a href='$cooking_iso'>slitaz-$cooking.iso</a>
-	[ <a href='$mirror/cooking/slitaz-$cooking.md5'>md5</a> ]"; ?>
+	[ <a href='$mirror/$cooking/slitaz-$cooking.md5'>md5</a> ]"; ?>
 </p></div>
 
 <p>
