@@ -16,7 +16,7 @@ case 1:
 case 2:
 	$name = "DuckDuckGo";
 	$img  = "ddg.png";
-	$url  = "https://duckduckgo.com/";
+	$url  = "https://duckduckgo.com/?t=slitaz";
 	break;
 case 3:
 	$name = "Clarkson Open Source Institute";

@@ -124,7 +124,7 @@
 		</tr>
 		<tr>
 			<td style="width: 120px; height: 100px;">
-				<a href="https://duckduckgo.com/"><img
+				<a href="https://duckduckgo.com/?t=slitaz"><img
 				src="/images/sponsor/ddg.png" alt="DuckDuckGo"
 				style="float: left;" /></a>
 			</td>
