@@ -85,8 +85,8 @@
 <p>
 	The website and documentation has been translated and is kept
 	up-to-date by several contributors. For now, the actively maintained
-	languages are English, French, German, Portuguese and Chinese.
-	Spanish is on the stove, but more help is needed. Most of the
+	languages are Bosnian, English, French, Italian, Portuguese, Russian, Spanish and Chinese.
+	German is on the stove, but more help is needed. Most of the
 	communication is done through the
 	<a href="en/mailing-list.html">Mailing List</a> and the
 	<a href="http://scn.slitaz.org/groups/i18n/">i18n group</a> on SCN.
@@ -125,8 +125,8 @@
 	latest archive in tar.bz2 format. Using Mercurial lets you update your
 	local copy in one command and downloading directly from the repository
 	allows you to get the page you want. So it's matter of choice, but if you
-	want to manage a language and push changes yourself, you will have to use
-	Mercurial, here is some <a href="en/devel/forge.php">more info on Hg</a>.
+	want to manage a language and push changes yourself you will have to use
+	Mercurial; here is some <a href="en/devel/forge.php">more info on Hg</a>.
 </p>
 <p>
 	Clone the website or get the latest archive:
@@ -146,15 +146,15 @@ $ wget <a href="http://hg.slitaz.org/website/archive/tip.tar.bz2">http://hg.slit
 </p>
 <p>
 	If you're a bit afraid about sending a mail to more than 300 people on the list
-	or becoming exposed on the forum, you can send a private message to one of the i18n
-	group members on SCN, but he/she might not have time to answer. Keep in mind we are
+	or becoming exposed on the forum you can send a private message to one of the i18n
+	group members on SCN (but they might not have time to answer). Keep in mind we are
 	a friendly community and there aren't any stupid questions.
 </p>
 
 <h3>System translation</h3>
 
 <p>
-	Like said before, the goal is to provide full language support, not only
+	Like said before, the goal is to provide full language support; not only
 	with the website or forum, but with the system itself. Everything can be translated
 	from menu items to SHell scripts and GUI boxes. For this we use standard
 	gettext POT files.
@@ -170,7 +170,7 @@ $ wget <a href="http://hg.slitaz.org/website/archive/tip.tar.bz2">http://hg.slit
 	ask a contributor to do it for you and commit the new file to Hg. For each
 	project you will find a README file with translation instructions to use
 	msginit and other gettext tools. If you want to update or complete a
-	translation PO file, you can download it from here or from Hg and then
+	translation PO file you can download it from here or from Hg and then
 	send it to the list, the forum or SCN as usual. Note that some projects
 	are contained in the same repository such as tazpkg-notify which is part
 	of tazpkg.
