@@ -53,7 +53,7 @@ security updates are provided for the cooking and stable versions.
 SliTaz project provides free technical support to users through the
 <a href="../mailing-list.php">Mailing list</a> (i18n list)
 and the <a href="http://forum.slitaz.org/">English Forum</a>.
-You can also contact us for more information, suggestions, or comments,
+You can also contact us for more information, suggestions, or comments
 using the list or directly by mail: &lt;devel at slitaz.org&gt;
 </p>
 

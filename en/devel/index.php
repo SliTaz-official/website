@@ -57,7 +57,7 @@
 	sending bugs or patches to the Mailing list, gaining access to the wok and
 	pushing some new packages or simply to help others on the Mailing list or
 	<a href="http://forum.slitaz.org/">forum</a>. SliTaz has got Mercurial
-	repositories hosted on a SliTaz system, developers can ask for a new repo
+	repositories hosted on a SliTaz system. Developers can ask for a new repo
 	if needed and contributors have write access to correct typos, scripts, etc.
 </p>
 <p>

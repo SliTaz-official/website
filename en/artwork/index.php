@@ -59,16 +59,16 @@ elegant, sober, quality design. Making a logo, wallpaper or otherwise is a
 good way to participate in the project without getting your hands dirty coding
 or document proofing xHTML. If you want to create artwork for SliTaz, or if want 
 to create an account on the SCN platform to upload your work, or you want to
-use some artwork online, it is highly recommended that you contact us first via 
+use some artwork online it is highly recommended that you contact us first via 
 the <a href="../mailing-list.php">Mailing List</a>. Please, try not to send 
 files that are too large. 
 </p>
 <p>
 To maintain the constraints of the LiveCD, the image must not exceed 200
 kilobytes and should be 1024x768 in size. Finally each release 
-version offers a new theme / background which follow the same guidelines
+version offers a new theme/background which follow the same guidelines
 and it goes without saying that tools distributed with the system should
-be used. With a LiveCD you already have mtPaint and on an installed system
+be used. With a LiveCD you already have mtPaint and with an installed system
 you can find Gimp on the mirror. Note that the JPG format is preferred.
 </p>
 
