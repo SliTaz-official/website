@@ -38,6 +38,11 @@
 
 <div id="gallery">
 
+<div><a href="/images/screenshots/slitaz-4.0.png">
+<img src="/images/screenshots/slitaz-4.0.png"
+	alt="Stabil 4.0" /></a><br />
+	Stabil 4.0</div>
+
 <div><a href="/images/screenshots/slitaz-3.0.png">
 <img src="/images/screenshots/slitaz-3.0.png"
 	alt="Stabil 3.0" /></a><br />

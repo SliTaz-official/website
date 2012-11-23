@@ -35,6 +35,11 @@
 
 <div id="gallery">
 
+<div><a href="/images/screenshots/slitaz-4.0.png">
+<img src="/images/screenshots/slitaz-4.0.png"
+	alt="Стабильная версия 4.0" /></a><br />
+	Стабильная версия 4.0</div>
+
 <div><a href="/images/screenshots/slitaz-3.0.png">
 <img src="/images/screenshots/slitaz-3.0.png"
 	alt="Стабильная версия 3.0" /></a><br />
