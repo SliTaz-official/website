@@ -88,7 +88,7 @@
 	languages are Bosnian, English, French, Italian, Portuguese, Russian, Spanish and Chinese.
 	German is on the stove, but more help is needed. Most of the
 	communication is done through the
-	<a href="en/mailing-list.html">Mailing List</a> and the
+	<a href="en/mailing-list.php">Mailing List</a> and the
 	<a href="http://scn.slitaz.org/groups/i18n/">i18n group</a> on SCN.
 </p>
 
@@ -110,7 +110,7 @@
 </p>
 <p>
 	For sending translations or requesting a new language you can join the
-	SliTaz <a href="en/mailing-list.html">Mailing List</a> and/or join the
+	SliTaz <a href="en/mailing-list.php">Mailing List</a> and/or join the
 	community <a href="http://scn.slitaz.org/groups/i18n/">group on SCN</a>
 	and post to the <a href="http://scn.slitaz.org/groups/i18n/forum/">forum</a>
 	which lets you attach files.
