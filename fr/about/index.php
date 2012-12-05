@@ -236,6 +236,8 @@ référence dans le monde GNU/Linux. En voici une liste non-exhaustive :
 		>Blogspot</a> - By Klaus Zimmermann.</li>
 	<li><a href="http://linuxblog.darkduck.com/2012/04/slitaz-40-light-and-stable.html"
 		>DarkDuck</a> - By Dmitry.</li>
+	<li><a href="http://frederic.bezies.free.fr/blog/?p=8760"
+		>Weblog</a> - By Frederic Bezies.</li>
 </ul>
 
 <h3>3.0 - Mars 2010 &amp; Cooking - Janvier 2010</h3>
