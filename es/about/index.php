@@ -104,6 +104,8 @@ SliTaz GNU/Linux ha sido revisado en varias webs.
 		>Blogspot</a> - Por Klaus Zimmermann.</li>
 	<li><a href="http://linuxblog.darkduck.com/2012/04/slitaz-40-light-and-stable.html"
 		>DarkDuck</a> - Por Dmitry.</li>
+	<li><a href="http://frederic.bezies.free.fr/blog/?p=8760"
+		>Weblog</a> (fr) - Por Frederic Bezies.</li>
 </ul>
 
 <h4>3.0 - Marzo 2010 &amp; Cooking - Enero 2010</h4>

@@ -101,6 +101,8 @@ SliTaz GNU/Linux er blevet andmeldt på flere hjemmesider. Tak til alle for stø
 		>Blogspot</a> - af Klaus Zimmermann.</li>
 	<li><a href="http://linuxblog.darkduck.com/2012/04/slitaz-40-light-and-stable.html"
 		>DarkDuck</a> - af Dmitry.</li>
+	<li><a href="http://frederic.bezies.free.fr/blog/?p=8760"
+		>Weblog</a> (fr) - af Frederic Bezies.</li>
 </ul>
 
 <h3>3.0 - Marts 2010 &amp; Cooking - Januar 2010</h3>

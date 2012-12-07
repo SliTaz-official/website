@@ -102,6 +102,8 @@ pelo suporte.
 		>Blogspot</a> - Por Klaus Zimmermann.</li>
 	<li><a href="http://linuxblog.darkduck.com/2012/04/slitaz-40-light-and-stable.html"
 		>DarkDuck</a> - Por Dmitry.</li>
+	<li><a href="http://frederic.bezies.free.fr/blog/?p=8760"
+		>Weblog</a> (fr) - Por Frederic Bezies.</li>
 </ul>
 
 <h4>3.0 - Mar 2010 &amp; Cooking - Jan 2011</h4>

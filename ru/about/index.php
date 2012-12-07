@@ -100,6 +100,7 @@
 <ul>
 	<li><a href="http://badalhocando.blogspot.co.uk/2012/04/slitaz-40-review-small-but-fierce.html">Blogspot</a> - Klaus Zimmermann.</li>
 	<li><a href="http://linuxblog.darkduck.com/2012/04/slitaz-40-light-and-stable.html">DarkDuck</a> - Dmitry.</li>
+	<li><a href="http://frederic.bezies.free.fr/blog/?p=8760">Weblog</a> <em>(fr)</em> - Frederic Bezies.</li>
 </ul>
 
 
