@@ -81,8 +81,7 @@ out_doc()
 		# second part of filename, faq.en -> en
 		NAME_DOC2=$(echo $NAME_DOC | cut -d"." -f2)
 		# if filename have only [lang] then rename it to doc.[lang]
-		if [ "x$NAME_DOC2" == "x" ]; then
-			NAME_DOC2=$NAME_DOC1
+		if [ "$NAME_DOC1" == "$NAME_DOC2" ]; then
 			NAME_DOC1="doc"
 		fi
 		# not print 'linked' common documents, only localized ones
@@ -210,7 +209,7 @@ done
 
 echof "	</tbody>
 </table>
-<p>Updated: $(date '+%x %X')</p>"
+<p>Updated: $(date '+%B %d, %Y @ %H:%M')</p>"
 
 mv "${INFO_FILE}.new" "$INFO_FILE"
 # the end
