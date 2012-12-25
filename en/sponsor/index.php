@@ -69,8 +69,8 @@
 <p>
 	As a open source project we usually develop SliTaz on our own personal computers.
 	But we sometimes have to change our personal systems and need new hardware. We also
-	can't test the distribution on some specific machines as we dont have access to them.
-	If you are a hardware manufacturer and want to see Slitaz working out-of-the-box on
+	can't test the distribution on some specific machines as we don't have access to them.
+	If you are a hardware manufacturer and want to see SliTaz working out-of-the-box on
 	your computers you can send us a machine so that we can work on it for you.
 </p>
 <p>
