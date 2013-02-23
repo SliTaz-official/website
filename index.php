@@ -114,13 +114,13 @@ include("lib/html/header.html");
 
 <div class="activity">
 	<p>
-		<a href="http://hg.slitaz.org/">
-			<img src="images/development.png" alt="*" /></a>
+		<a href="http://hg.slitaz.org/?sort=lastchange"><img
+			src="images/development.png" alt="*" /></a>
 		Latest commits in wok
 		<?php get_feed("wok.xml"); ?>
 	</div>
 	<p class="activity_more">
-		<a href="http://hg.slitaz.org/">More commits</a>
+		<a href="http://hg.slitaz.org/?sort=lastchange">More commits</a>
 	</p>
 </div>
 
