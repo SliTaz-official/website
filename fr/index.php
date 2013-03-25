@@ -38,14 +38,14 @@
 <!-- Content -->
 <div id="content">
 
-<div class="box-up">
+<!--<div class="box-up">
 	<p>
 		Aidez nous a obtenir un serveur dedié -
 		<a href="http://www.gofundme.com/3ql70">Campagne de dons en ligne</a>
 		ou devez
 		<a href="/en/sponsor/">un sponsor officiel</a>
 	</p>
-</div>
+</div>-->
 
 <!--
     SliTaz news starting.

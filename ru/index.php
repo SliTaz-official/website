@@ -34,11 +34,11 @@
 <!-- Content -->
 <div id="content">
 
-<div class="box-up">
+<!--<div class="box-up">
 	<p>Помогите нам приобрести <a href="http://www.gofundme.com/3ql70">выделенный
 	сервер</a> и посетите наш <a href="http://usbkey.slitaz.org/">проект USB
 	Key</a>!</p>
-</div>
+</div>-->
 
 <!--
 	SliTaz news starting.

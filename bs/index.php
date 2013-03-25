@@ -37,12 +37,12 @@
 <!-- Content -->
 <div id="content">
 
-<div class="box-up">
+<!--<div class="box-up">
 	<p>
 		Pomozite nam uzeti <a href="http://www.gofundme.com/3ql70">namjenski poslužitelj</a>,
 		i pogledaj te naš <a href="http://usbkey.slitaz.org/">USB Projekt!</a>!
 	</p>
-</div>
+</div>-->
 
 <!--
     SliTaz news starting.
