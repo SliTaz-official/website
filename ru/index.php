@@ -34,11 +34,9 @@
 <!-- Content -->
 <div id="content">
 
-<!--<div class="box-up">
-	<p>Помогите нам приобрести <a href="http://www.gofundme.com/3ql70">выделенный
-	сервер</a> и посетите наш <a href="http://usbkey.slitaz.org/">проект USB
-	Key</a>!</p>
-</div>-->
+<div class="box-up">
+	<p>Посетите наш <a href="http://usbkey.slitaz.org/">проект USB Key</a>!</p>
+</div>
 
 <!--
 	SliTaz news starting.
@@ -79,7 +77,8 @@
 			системой уведомлений и стал гораздо быстрее, несмотря на увеличение
 			количества пакетов, а TazPanel предоставляет новую централизованную
 			систему управления. Вы можете прочитать полные <a
-			href="doc/releases/4.0/relnotes.ru.html">примечания к релизу SliTaz 4.0</a> и загрузить SliTaz 4.0 с нашего зеркала: <a
+			href="doc/releases/4.0/relnotes.ru.html">примечания к релизу
+			SliTaz 4.0</a> и загрузить SliTaz 4.0 с нашего зеркала: <a
 			href="http://mirror.slitaz.org/iso/4.0/slitaz-4.0.iso"
 			>slitaz-4.0.iso</a></p>
 	</li>
