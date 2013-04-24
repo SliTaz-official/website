@@ -8,14 +8,14 @@ $pkgs_mirror  = "http://mirror.switch.ch/ftp/mirror/slitaz/iso";
 $stable_rel   = "10 April 2012";
 $stable_ver   = "4.0";
 $stable_size  = "35 Mb";
-$stable_pkgs  = "2 Gb";
+$stable_pkgs  = "6.4 Gb";
 $stable_iso   = "$mirror/$stable_ver/slitaz-$stable_ver.iso";
 
 // Cooking and RC release 
 $cooking      = "rolling";
-$cooking_ver  = "20121221";
-$cooking_size = "43 Mb";
-$cooking_pkgs = '3.3Gb';
+$cooking_ver  = "20130415";
+$cooking_size = "41 Mb";
+$cooking_pkgs = "3.5 Gb";
 $cooking_iso  = "$mirror/rolling/slitaz-rolling.iso";
 
 ?>
