@@ -129,41 +129,9 @@ include("lib/html/header.html");
 	<?php get_feed_blog("blog.xml"); ?>
 </div>
 
-<h2>Latest Tweet</h2>
-
 <div id="twitter">
-	<script type="text/javascript"
-		src="http://widgets.twimg.com/j/2/widget.js"></script>
-	<script type="text/javascript">
-	new TWTR.Widget({
-	  version: 2,
-	  type: 'profile',
-	  rpp: 4,
-	  interval: 6000,
-	  width: '100%',
-	  height: 200,
-	  theme: {
-	    shell: {
-	      background: '#efefef',
-	      color: '#000000'
-	    },
-	    tweets: {
-	      background: '#ffffff',
-	      color: '#000000',
-	      links: '#3a4885'
-	    }
-	  },
-	  features: {
-	    scrollbar: false,
-	    loop: false,
-	    live: false,
-	    hashtags: true,
-	    timestamp: true,
-	    avatars: false,
-	    behavior: 'all'
-	  }
-	}).render().setUser('slitaz').start();
-	</script>
+<a class="twitter-timeline"  href="https://twitter.com/slitaz"  data-widget-id="420830244551938048">Tweets by @slitaz</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 </div>
 
 <h2>Spread SliTaz</h2>

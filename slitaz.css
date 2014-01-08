@@ -168,7 +168,7 @@ pre {
 .news a, .feed-grid a { text-decoration: none; }
 .news p a { text-decoration: underline; }
 .news p a:hover { text-decoration: none; }
-#twitter { margin: 20px 0; }
+#twitter { margin: 20px 0; text-align: center; }
 #gallery { text-align: center; }
 
 #sponsor {
