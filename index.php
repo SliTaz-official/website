@@ -49,11 +49,11 @@ include("lib/html/header.html");
 <!-- Content -->
 <div id="content">
 
-<div class="box-up">
+<!--<div class="box-up">
 	<p>
 		Check out our <a href="http://usbkey.slitaz.org/">USB Key Project</a>!
 	</p>
-</div>
+</div>-->
 
 <!-- Featured sponsor -->
 <div id="sponsor">
@@ -65,7 +65,7 @@ include("lib/html/header.html");
 <!-- We just keep the last 5 web site news -->
 <div class="news" style="margin-right: 220px;">
 
-<h2>Latest News</h2>
+<h2>Latest Release</h2>
 
 <ul>
 	<li><strong><a href="en/#d20120410">SliTaz 4.0 Release</a></strong>

@@ -59,7 +59,8 @@
 			<li><a href="http://doc.slitaz.org/en:handbook:start">Handbook</a></li>
 			<li><a href="http://forum.slitaz.org/">Support Forum</a></li>
 			<li><a href="/en/mailing-list.php">Mailing List</a></li>
-			<li>IRC: <b>irc.freenode.net <a href="webchat.php">#slitaz</a></b></li>
+			<li>IRC: <b>irc.freenode.net 
+				<a href="http://irc.slitaz.org/">#slitaz</a></b></li>
 		</ul>
 	</div>
 </div>
@@ -72,7 +73,7 @@
 		<ul>
 			<li><a href="http://scn.slitaz.org/">Community Network</a></li>
 			<li><a href="http://doc.slitaz.org/en:newsletter:start">Monthly Newsletter</a></li>
-			<li><a href="http://pizza.slitaz.org/">LiveCD Online Builder</a></li>
+			<li><a href="http://pizza.slitaz.me/">LiveCD Online Builder</a></li>
 			<li><a href="http://people.slitaz.org/">SliTaz People</a></li>
 			<li><a href="http://www.facebook.com/slitaz">SliTaz on Facebook</a></li>
 			<li><a href="http://en.wikipedia.org/wiki/SliTaz_GNU/Linux">SliTaz on Wikipedia</a></li>
