@@ -22,8 +22,7 @@
 		<p>
 			The SliTaz GNU/Linux association is a non-profit entity that 
 			maintains and manages the project. Its mission is to ensure
-			the durability of the project and to maintain the all
-			infrastructure.
+			the durability of the project and provide the infrastructure.	
 		</p>
 		<p>Help the project via a small donation:</p>
 		<?php include("../../lib/html/donate.html"); ?>
