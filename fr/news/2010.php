@@ -26,7 +26,8 @@
 			<img src="/images/news.png" alt="[ News ]" />
 			<a href="2007.php">2007</a> | <a href="2008.php">2008</a>
 			| <a href="2009.php">2009</a> | <a href="2010.php">2010</a>
-			| <a href="./">2011</a>
+			| <a href="2011.php">2011</a> | <a href="2012.php">2012</a>
+			| <a href="./">2014</a>
 		</p>
 	</div>
 </div>

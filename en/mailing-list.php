@@ -27,9 +27,9 @@
 		<p>
 			<img src="/images/users.png" alt="[ ]" />
 			Also you can <a href="http://scn.slitaz.org/">join us on SCN</a>
-			and the support <a href="http://forum.slitaz.org/">forum</a> or:
+			and the <a href="http://forum.slitaz.org/">forum</a>.
 		</p>
-		<?php include("../lib/html/follow.html"); ?>
+		
 	</div>
 </div>
 

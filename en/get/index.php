@@ -28,7 +28,7 @@ include("../../lib/html/header.html");
 			test and help us improve the distribution.
 		</p>
 		<div class="button">
-			Quick Download:
+			<img src="/images/download-30.png" />
 			<?php echo "<a href='$stable_iso'>SliTaz $stable_ver</a>
 				<a href='$cooking_iso'>SliTaz $cooking</a>"; ?>
 		</div>

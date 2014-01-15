@@ -25,13 +25,12 @@ include("../lib/html/header.html");
 		<h4>English Website</h4>
 		<p>
 			SliTaz is an open source and free operating system providing
-			a fully featured desktop or server in less than 35 MB. SliTaz
-			is simple to use, fast and stable. We have an active community
-			and contributors from all over the world making SliTaz finer
-			every day. <a href="about/">More information...</a>
+			a fully featured desktop or server in less than 40 MB. SliTaz
+			is simple to use, fast, secure, and stable. 
+			<a href="about/">More information...</a>
 		</p>
 		<div class="button" style="text-align: left; margin-top: 15px;">
-			Download:
+			<img src="/images/download-30.png" />
 			<?php echo "<a href='$stable_iso'>SliTaz $stable_ver</a>
 				<a href='$cooking_iso'>SliTaz $cooking</a>"; ?>
 		</div>
@@ -60,18 +59,18 @@ include("../lib/html/header.html");
 	<p><a href="/en/sponsor/">Become a sponsor</a></p>
 </div>
 
-<!-- We just keep the last 5 web site news -->
+<!-- We just keep the last 3 web site news -->
 <div class="news" style="margin-right: 220px;">
 
 <h2>Latest Release</h2>
 
 <ul>
-	<li><strong><a href="en/#d20120410">SliTaz 4.0 Release</a></strong>
-		<span>— 10 Apr 2012</span></li>
-	<li><strong><a href="en/#d20120303">SliTaz 4.0 RC2 is out</a></strong>
-		<span>— 03 Mar 2012</span></li>
+	<li><strong><a href="news/2012.php#d20120410">SliTaz 4.0 Release</a></strong>
+		<span>- 10 Apr 2012</span></li>
+	<li><strong><a href="news/2012.php#d20120303">SliTaz 4.0 RC2 is out</a></strong>
+		<span>- 03 Mar 2012</span></li>
 	<li><strong><a href="news/">Release news archives</a></strong>
-		<span>— 2007-2013</span></li>
+		<span>- 2007-2013</span></li>
 </ul>
 
 <!-- End of news -->

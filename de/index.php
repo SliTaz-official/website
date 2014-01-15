@@ -11,7 +11,10 @@
 </head>
 <body>
 
-<?php include("../lib/html/header.html"); ?>
+<?php
+include("../config.php");
+include("../lib/html/header.html");
+?>
 
 <!-- Block -->
 <div id="block">
@@ -20,16 +23,16 @@
 	<div id="block_info">
 		<h4>Startseite</h4>
 		<p>
-			SliTaz ist eine minimale, freie GNU/Linux Distribution. Das
-			Ziel von SliTaz ist es, eine GNU/Linux Distribution zu 
-			schaffen, die vollkommen aus dem Arbeitsspeicher (RAM) 
-			läuft.
-		</p>
-		<p>
+			SliTaz ist eine minimale, freie GNU/Linux Distribution.
 			SliTaz's CD-Image wird nie eine Größe von 35 MB übersteigen
 			- bei einer sinnvollen Auswahl nützlicher Software.
 			<a href="about/">Mehr erfahren...</a>
 		</p>
+		<div class="button" style="text-align: left; margin-top: 15px;">
+			<img src="/images/download-30.png" />
+			<?php echo "<a href='$stable_iso'>SliTaz $stable_ver</a>
+				<a href='$cooking_iso'>SliTaz $cooking</a>"; ?>
+		</div>
 	</div>
 </div>
 
@@ -46,23 +49,10 @@
 	</p>
 </div>
 
-<h2>Neuigkeiten</h2>
-
-<p>
-Die SliTaz-Webseite bietet die wichtigsten Projektneuheiten an, und ausserdem
-neuerdings die Labors mit Nachrichten zu der allgemeinen Aktivität der
-verschiedenen Unterprojekten. Diese Nachrichten sind auch als
-<a href="/rss.xml">XML-Sendungen</a> erhältlich. Das Projekt bietet ausserdem
-einen kleinen monatlichen Informationsbrief in Englisch und Chinesisch an.
-</p>
-
-<div class="box">
-	<img src="/images/news.png" alt="[ ]" />
-	<a href="http://scn.slitaz.org/">Blog-Nachrichten</a> | 
-	<a href="http://doc.slitaz.org/en:newsletter:start">Monthly Newsletter</a>
-</div>
-
 <div class="news">
+	
+
+<h2>Neuigkeiten</h2>
 
 <ul>
 	<!-- <li><strong>Date - Title</strong>
@@ -117,6 +107,19 @@ einen kleinen monatlichen Informationsbrief in Englisch und Chinesisch an.
 	<p class="activity_more">
 		<a href="http://hg.slitaz.org/">Mehr Commits</a>
 	</p>
+</div>
+
+<!-- SCN blog posts  -->
+<h2>Blog Posts</h2>
+
+<div class="news">
+	<?php get_feed_blog("blog.xml"); ?>
+</div>
+
+<!-- Twitter  -->
+<div id="twitter">
+<a class="twitter-timeline"  href="https://twitter.com/slitaz"  data-widget-id="420830244551938048">Tweets by @slitaz</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 </div>
 
 <h3>Donate</h3>

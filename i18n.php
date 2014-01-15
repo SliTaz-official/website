@@ -41,7 +41,7 @@
 <!-- Block -->
 <div id="block">
 	<!-- Navigation -->
-	<div id="block_nav" style="text-align: center; padding: 10px;">
+	<div id="block_nav" style="text-align: center; padding: 4px;">
 		<?php include("lib/random-image.php"); ?>
 	</div>
 	<!-- Information/image -->
