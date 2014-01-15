@@ -42,11 +42,12 @@ include("../lib/html/header.html");
 <!-- Content -->
 <div id="content">
 
-<!--<div class="box-up">
-	<p>
-		Check out our <a href="http://usbkey.slitaz.org/">USB Key Project</a>!
-	</p>
-</div>-->
+<div class="box-up">
+	<a href="http://www.gofundme.com/slitaz2014?utm_medium=wdgt"
+		title="Visit this page now."><img src="../images/gofundme.png"></a>
+	<a href="http://www.gofundme.com/slitaz2014?utm_medium=wdgt">
+		Check out the new SliTaz 2014 fundraising!</a>
+</div>
 
 <!--
     SliTaz news starting.

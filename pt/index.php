@@ -38,14 +38,12 @@
 <!-- Content -->
 <div id="content">
 
-<!--<div class="box-up">
-	<p>
-		Ajude-nos a obter um servidor dedicado - Visite a página de
-		<a href="http://www.gofundme.com/3ql70">Doação Online</a>
-		ou torne-se um
-		<a href="sponsor/">patrocinador</a> oficial.
-	</p>
-</div>-->
+<div class="box-up">
+	<a href="http://www.gofundme.com/slitaz2014?utm_medium=wdgt"
+		title="Visit this page now."><img src="../images/gofundme.png"></a>
+	<a href="http://www.gofundme.com/slitaz2014?utm_medium=wdgt">
+		Check out the new SliTaz 2014 fundraising!</a>
+</div>
 
 <h2>Últimas notícias</h2>
 

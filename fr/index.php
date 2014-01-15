@@ -41,13 +41,12 @@ include("../lib/html/header.html");
 <!-- Content -->
 <div id="content">
 
-<!--<div class="box-up">
-	<p>
-		Aidez nous a obtenir un serveur dedié -
-		<a href="http://www.gofundme.com/3ql70">Campagne de dons en ligne</a>
-		ou devez <a href="/en/sponsor/">un sponsor officiel</a>
-	</p>
-</div>-->
+<div class="box-up">
+	<a href="http://www.gofundme.com/slitaz2014?utm_medium=wdgt"
+		title="Visit this page now."><img src="../images/gofundme.png"></a>
+	<a href="http://www.gofundme.com/slitaz2014?utm_medium=wdgt">
+		Jetez un oeil à la campagne de dons 2014 de SliTaz!</a>
+</div>
 
 <!--
     SliTaz news starting.

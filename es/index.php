@@ -36,6 +36,13 @@
 
 <!-- Content -->
 <div id="content">
+
+<div class="box-up">
+	<a href="http://www.gofundme.com/slitaz2014?utm_medium=wdgt"
+		title="Visit this page now."><img src="../images/gofundme.png"></a>
+	<a href="http://www.gofundme.com/slitaz2014?utm_medium=wdgt">
+		Check out the new SliTaz 2014 fundraising!</a>
+</div>
     
 <h2>Titulares</h2>
 <p>La página de SliTaz proporciona las principales noticias del proyecto,

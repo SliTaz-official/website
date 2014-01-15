@@ -206,7 +206,7 @@ pre {
 	background: url("/images/download.png") no-repeat 12px 12px #efefef;
 }
 .box-up {
-	background: url("/images/update.png") no-repeat 12px 12px #efefef;
+	background: url("/images/update.png") no-repeat  center left #efefef;
 }
 .box-dl p { color: #456; }
 

@@ -42,11 +42,18 @@ include("../lib/html/header.html");
 <div id="content">
 
 <div class="box-up">
+	
+	<a href="http://www.gofundme.com/slitaz2014?utm_medium=wdgt"
+		title="Visit this page now."><img src="../images/gofundme.png"></a>
+	<a href="http://www.gofundme.com/slitaz2014?utm_medium=wdgt">
+		Check out the new SliTaz 2014 fundraising!</a>
+	
 	<p>
 		SliTaz German website needs a new maintainer and contributors. You
 		can contact us on the
 		<a href="http://scn.slitaz.org/groups/i18n/">i18n group</a>.
 	</p>
+
 </div>
 
 <div class="news">
