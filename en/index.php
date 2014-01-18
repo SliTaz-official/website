@@ -46,7 +46,7 @@ include("../lib/html/header.html");
 	<a href="http://www.gofundme.com/slitaz2014?utm_medium=wdgt"
 		title="Visit this page now."><img src="../images/gofundme.png"></a>
 	<a href="http://www.gofundme.com/slitaz2014?utm_medium=wdgt">
-		Check out the new SliTaz 2014 fundraising!</a>
+		Check out our new SliTaz 2014 fundraising!</a>
 </div>
 
 <!--
