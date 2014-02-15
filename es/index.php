@@ -7,6 +7,7 @@
 	<meta name="description" content="SliTaz GNU/Linux LiveCD" />
 	<meta name="keywords" lang="es" content="system linux RAM" />
 	<meta name="author" content="Eduardo Suarez-Santana" />
+	<meta name="google-site-verification" content="Fls4e5hWEiUAy1fSbF-01IByDMzZdxlVh26jQP1rwis" />
 	<?php include("../lib/html/meta-link.html"); ?>
 </head>
 <body>
