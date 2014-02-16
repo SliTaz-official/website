@@ -12,10 +12,10 @@ $stable_pkgs  = "3.0 Gb";
 $stable_iso   = "$mirror/$stable_ver/slitaz-$stable_ver.iso";
 
 // Cooking and RC release 
-$cooking      = "rolling";
-$cooking_ver  = "20140102";
-$cooking_size = "42 Mb";
+$cooking      = "cooking";
+$cooking_ver  = "20140216";
+$cooking_size = "40 Mb";
 $cooking_pkgs = "3.7 Gb";
-$cooking_iso  = "$mirror/rolling/slitaz-rolling.iso";
+$cooking_iso  = "$mirror/$cooking/slitaz-$cooking.iso";
 
 ?>

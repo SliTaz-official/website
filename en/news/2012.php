@@ -41,6 +41,8 @@
 
 <h2>2012</h2>
 
+<div class="news">
+
 <ul>
 	<li id="d20120410">
 		<strong>10 Apr 2012 - SliTaz GNU/Linux 4.0 Release</strong>
@@ -116,6 +118,8 @@
 	</p>
 	</li>
 </ul>
+
+</div>
 
 <!-- End of content -->
 </div>
