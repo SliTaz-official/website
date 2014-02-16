@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<title>SliTaz - News archives</title>
+	<title>SliTaz - News</title>
 	<meta name="description" content="SliTaz news archives info release" />
 	<meta name="keywords" lang="en" content="System, free, gnu, linux, opensource software, livecd in RAM" />
 	<meta name="author" content="Christophe Lincoln"/>
@@ -39,12 +39,12 @@
 <!-- Content -->
 <div id="content">
 
-<h2>2014</h2>
+<h2>SliTaz News</h2>
 
 <div class="news">
 
 <ul>
-	<li id="d20120410">
+	<li id="d20140216">
 		<strong>16 Feb 2014 - New SliTaz Cooking Release</strong>
 	<p>
 		The Slitaz team is proud to announce the release of a new Cooking
