@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-. /usr/lib/slitaz/httphelper
+. /usr/lib/slitaz/httphelper.sh
 header
 
 cat << EOT
