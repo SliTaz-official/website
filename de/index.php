@@ -68,12 +68,12 @@ include("../lib/html/header.html");
 	<li id="d20140216">
 		<strong>16. Februar 2014 - Neue Cooking-Version (20140216)</strong>
 	<p>
- 	Das  Slitaz-Team ist stolz, die Veröffentlichung einer neuen Cooking
+ 	Das Slitaz-Team ist stolz, die Veröffentlichung einer neuen Cooking
 	Release bekannt geben zu können, die den Weg zu SliTaz 5.0 ebnen wird.
 	Diese neue Cooking Release enthält fast zwei Jahre Arbeit und hat ein
 	unglaubliches Änderungsprotokoll. Alle unsere hausgemachten Werkzeuge
 	wurden verbessert und neue großartige Tools wie "frugal" oder
-	"decode" hinzufügt . Wir konzentrierten unsere Arbeit auf die 
+	"decode" hinzufügt. Wir konzentrierten unsere Arbeit auf die 
 	Desktop-Integration um die Anwenderfreundlichkeit zu und verbesserten 
 	die Konfiguration des Linux-Kernels (3.2.53).
 	</p>
