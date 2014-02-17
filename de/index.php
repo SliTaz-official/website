@@ -65,11 +65,38 @@ include("../lib/html/header.html");
 	<!-- <li><strong>Date - Title</strong>
 	<p></p>
 	</li> -->
-	<li><strong>See the English news</strong>
+	<li id="d20140216">
+		<strong>16. Februar 2014 - Neue Cooking-Version (20140216)</strong>
 	<p>
-		SliTaz German website needs a new maintainer and contributors.
+ 	Das  Slitaz-Team ist stolz, die Veröffentlichung einer neuen Cooking
+	Release bekannt geben zu können, die den Weg zu SliTaz 5.0 ebnen wird.
+	Diese neue Cooking Release enthält fast zwei Jahre Arbeit und hat ein
+	unglaubliches Änderungsprotokoll. Alle unsere hausgemachten Werkzeuge
+	wurden verbessert und neue großartige Tools wie "frugal" oder
+	"decode" hinzufügt . Wir konzentrierten unsere Arbeit auf die 
+	Desktop-Integration um die Anwenderfreundlichkeit zu und verbesserten 
+	die Konfiguration des Linux-Kernels (3.2.53).
+	</p>
+	<p>
+	Wir haben die Paketlisten erneuert, alle vorhandenen Pakete
+	aktualisiert und wir eine Reihe von neuen hinzugefügt um mehr als
+ 	4200 Pakete in der Cooking-Relase Datenbank zu erreichen.
+	Viele Arbeit wurde auch an dem SliTaz Installationsassistent getan
+	der nun ein neues Ncurses/Text-Frontend bereitstellt.
+	</p>
+	<p>
+	Die LiveCD wird jetzt vor dem Booten nach den Spracheinstellungen
+	fragen, so dass Sie als Benutzer wird direkt auf den Desktop bekommen, 
+	nachdem alle Boot-Skripte ausgeführt wurden. Die Größe des ISO-Image 
+	ist etwas für eine bessere hadware Unterstützung und neue Funktionen 
+	gewachsen. Sie können das ISO-Image von folgendem SliTaz Mirror herunterladen:
+	<a href="http://mirror.slitaz.org/iso/cooking/slitaz-cooking.iso"
+		>slitaz-cooking.iso</a>
+	[ <a href="http://mirror.slitaz.org/iso/cooking/slitaz-cooking.md5"
+		>md5</a> ]
 	</p>
 	</li>
+
 	<li>Neuigkeiten Archiv: <a href="news/">2007-2009</a></li>
 </ul>
 
