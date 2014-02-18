@@ -44,7 +44,8 @@
 
 <ul>
 	<li>
-		<strong>31 Dez 2008 - Cooking 20081231 - Wifi e suporte a NTFS </strong><br />
+		<strong>31 Dez 2008 - Cooking 20081231 - Wifi e suporte a NTFS </strong>
+	<p>
 	O projeto Slitaz tem o prazer de apresentar a nova imagem ISO da versão
 	cooking do LiveCD. Ela permite que seja utilizado e testado todo o
 	trabalho realizado durante os últimos meses. Inclui muitas
@@ -65,10 +66,11 @@
 	para serem instalados, graças ao trabalho pesado dos desenvolvedores. Você
 	pode fazer o <a href="../get/#cooking">download</a> a partir de um dos mirrors
 	oficiais do projeto.
-	</li>
+	</p></li>
 
 	<li>
-		<strong>Versão Cooking 20080716 - Inicialização pela Web e MPlayer</strong><br />
+		<strong>Versão Cooking 20080716 - Inicialização pela Web e MPlayer</strong>
+	<p>
 	Os membros do projeto SliTaz orgulhosamente anunciam a disponibilidade de
 	uma nova Versão Cooking (testes), que inclui muitas novas características
 	e correções de bugs. Esta versão oferece a opção de inicialização <code>web</code>
@@ -83,10 +85,11 @@
 	o comando "man" e algumas atualizações. Esta versão requer ao menos 160 Mb
 	para iniciar e rodar normalmente, e também oferecemos a <a href="../get/flavors.php">variante</a>
 	loram para máquinas com menos recursos. <a href="../get/#cooking">Baixe a ISO do SliTaz Cooking</a>.
-	</li>
+	</p></li>
 
 	<li>
-		<strong>22 Mar 2008 - SliTaz GNU/Linux 1.0 release</strong><br />
+		<strong>22 Mar 2008 - SliTaz GNU/Linux 1.0 release</strong>
+	<p>
 	O time de colaboradores do SliTaz orgulhosamente anunciam o lançamento
 	do SliTaz GNU/Linux 1.0. Este é o primeiro lançamento estável após 2 anos
 	de trabalho. O sistema é distribuido na forma de um LiveCD inicializável de
@@ -103,7 +106,7 @@
 	o SliTaz GNU/Linux 1.0 por meio da <a href="../get/#stable">página de downloads</a>
 	do site. Leia as <a href="../doc/releases/1.0/relnotes.pt.html">notas de lançamento</a>
 	para informações detalhadas sobre esta versão estável.
-	</li>
+	</p></li>
 </ul>
 
 <!-- End of content -->
