@@ -11,7 +11,7 @@ if (isset($addr[2]))
 if (isset($addr[3]))
 	$page = $addr[3];
 
-echo "<!-- Debug: request = $_SERVER['REQUEST_URI']; addr = $addr; cur = $cur; page = $page -->"
+echo "<!-- Debug: request = $_SERVER['REQUEST_URI']; addr = $addr; cur = $cur; page = $page -->";
 
 $native  = array ("bs"=>"Bosanski", "da"=>"Dansk", "de"=>"Deutsch", "en"=>"English", "es"=>"Español", "fr"=>"Français", "id"=>"Indonesian", "it"=>"Italiano", "pt"=>"Português", "ru"=>"Русский", "cn"=>"中文");
 
