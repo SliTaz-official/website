@@ -11,7 +11,7 @@ if (isset($addr[2]))
 if (isset($addr[3]))
 	$page = $addr[3];
 
-echo "<!-- Debug: request = $_SERVER['REQUEST_URI']; addr = $addr; cur = $cur; page = $page -->";
+echo "<!-- " . $_SERVER['REQUEST_URI'] . " : " . $addr . " : " . $cur . " : " . $page . " -->\n";
 
 $native  = array ("bs"=>"Bosanski", "da"=>"Dansk", "de"=>"Deutsch", "en"=>"English", "es"=>"Español", "fr"=>"Français", "id"=>"Indonesian", "it"=>"Italiano", "pt"=>"Português", "ru"=>"Русский", "cn"=>"中文");
 
@@ -99,7 +99,7 @@ switch($page)
 		break;
 	case "2013":
 		$url  = "/LANG/news/2013.php";
-		$lang = "";
+		$lang = "en";
 		break;
 	case "packages":
 		$url  = "/LANG/packages/";
