@@ -6,12 +6,12 @@ $addr = str_replace('index', '', $addr);
 $addr = explode('/', $addr);
 $cur  = $addr[1];
 $page = '';
-if (isset($addr[2]))
+if (!empty($addr[2]))
 	$page = $addr[2];
-if (isset($addr[3]))
+if (!empty($addr[3]))
 	$page = $addr[3];
 
-echo "<!-- " . $_SERVER['REQUEST_URI'] . " : " . $addr . " : " . $cur . " : " . $page . " -->\n";
+echo "<!-- " . $_SERVER['REQUEST_URI'] . " : " . $cur . " : " . $page . " -->\n";
 
 $native  = array ("bs"=>"Bosanski", "da"=>"Dansk", "de"=>"Deutsch", "en"=>"English", "es"=>"Español", "fr"=>"Français", "id"=>"Indonesian", "it"=>"Italiano", "pt"=>"Português", "ru"=>"Русский", "cn"=>"中文");
 
