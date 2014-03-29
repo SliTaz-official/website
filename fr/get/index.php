@@ -51,6 +51,7 @@ include("../../lib/html/header.html");
 	<li><a href="flavors.php">LiveCD à saveur</a> - Saveurs, dont les 'loram'.</li>
 	<li><a href="#floppy">Disquette de démarrage</a> - Image de disquette pour
 		lancer le LiveCD, une clé USB...</li>
+	<li><a href="http://arm.slitaz.org/rpi/">SliTaz Raspberry Pi</a></li>
 </ul>
 
 <div class="box">

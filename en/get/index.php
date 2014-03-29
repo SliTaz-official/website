@@ -50,6 +50,7 @@ include("../../lib/html/header.html");
 	<li><a href="#floppy">Floppy disk</a> - Bootable 
 		startup disk to launch the LiveCD, a USB stick, etc.</li>
 	<li><a href="flavors.php">LiveCD to taste</a> - Flavors and loram.</li>
+	<li><a href="http://arm.slitaz.org/rpi/">SliTaz Raspberry Pi</a></li>
 </ul>
 
 <div class="box">
