@@ -40,7 +40,8 @@
 
 <ul>
 	<li>
-		<strong>28 de febrero de 2008 - Cooking 20090228</strong><br />
+		<strong>28 de febrero de 2008 - Cooking 20090228</strong>
+	<p>
 	¡Preparándonos para la próxima versión estable! El proyecto Slitaz se
 	complace en anunciar la publicación de una nueva versión Cooking cargada
 	de correcciones, actualizaciones, mejoras y nuevas funcionalidades. La
@@ -57,10 +58,11 @@
 	y lvman conjuntamente con desktopbox proporcionan un sistema de
 	notificación ligero. Puedes <a href="../get/#cooking">descargarte</a>
 	esta nueva ISO de cualquiera de nuestros mirrors oficiales.
-	</li>
+	</p></li>
 
 	<li>
-		<strong>31 de diciembre de 2008 - Cooking 20081231 - Soporte para Wifi y NTFS</strong><br />
+		<strong>31 de diciembre de 2008 - Cooking 20081231 - Soporte para Wifi y NTFS</strong>
+	<p>
 	Los miembros del proyecto SliTaz anuncian una nueva imagen ISO de la versión
 	Cooking del LiveCD. Con ella puedes disfrutar del trabajo realizado en estos
 	últimos meses, esto es, nuevas funcionalidades, nuevas actualizaciones y
@@ -79,10 +81,11 @@
 	instalados, y todo esto gracias a nuestro equipo de desarrolladores. Puedes
 	<a href="../get/#cooking">descargarte</a> esta nueva versión de cualquiera
 	de los mirrors oficiales del proyecto.
-	</li>
+	</p></li>
 
 	<li>
-		<strong>16 de julio de 2008 - Cooking 20080716 - Web boot y MPlayer</strong><br />
+		<strong>16 de julio de 2008 - Cooking 20080716 - Web boot y MPlayer</strong>
+	<p>
 	Los miembros del proyecto SliTaz anuncian la disponibilidad de una nueva
 	imagen ISO de la versión Cooking, en la que se resuelven muchas incidencias a
 	la vez que se añaden nuevas funcionalidades. Esta versión incluye la opción
@@ -97,10 +100,11 @@
 	versión necesita al menos 160 MiB de RAM, si bien disponemos de modalidades
 	loram para máquinas que no alcancen este requerimiento.
 	<a href="../get/#cooking">Descarga SliTaz Cooking ISO.</a>
-	</li>
+	</p></li>
 
 	<li>
-		<strong>22 de marzo de 2008 - SliTaz GNU/Linux 1.0</strong><br />
+		<strong>22 de marzo de 2008 - SliTaz GNU/Linux 1.0</strong>
+	<p>
 	Los participantes en el proyecto SliTaz se enorgullecen en anunciar la
 	publicación de SliTaz GNU/Linux 1.0. Esta es la primera versión estable tras
 	dos años de trabajo. El sistema se distribuye como un LiveCD de 24.8 MiB que
@@ -115,7 +119,7 @@
 	para los paquetes tales como firefox. Puedes descargarte SliTaz GNU/Linux 1.0
 	de la <a href="../get/#stable">página de descarga</a>. Lee las Release Notes
 	si quieres información más detallada de esta versión estable.
-    </li>
+	</p></li>
 </ul>
 
 </div>

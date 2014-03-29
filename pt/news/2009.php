@@ -97,7 +97,8 @@
 	</li>
 
 	<li>
-		<strong>16 Abr 2009 - Lançamento do SliTaz GNU/Linux 2.0</strong><br />
+		<strong>16 Abr 2009 - Lançamento do SliTaz GNU/Linux 2.0</strong>
+	<p>
 	O projeto SliTaz anuncia orgulhosamente o lançamento da nova versão estável da
 	distribuição - SliTaz GNU/Linux 2.0 -, resultado de um ano de trabalho em
 	comunidade. Esta nova versão fornece um sistema operacional super leve, rápido,
@@ -118,10 +119,11 @@
 	estão incluidas na distribuição para maiores detalhes sobre esta versão
 	estável. O SliTaz GNU/Linux 2.0 pode ser <a href="../get/">obtido</a> a
 	partir de um dos mirrors oficiais do projeto.
-	</li>
+	</p></li>
 
 	<li>
-		<strong>27 Mar 2009 - Labs e novos mirrors</strong><br />
+		<strong>27 Mar 2009 - Labs e novos mirrors</strong>
+	<p>
 	Buscando continuadamente melhorias na distribuição e nos serviços que oferecemos,
 	anunciamos o lançamento do <a href="http://labs.slitaz.org/">SliTaz Labs</a>.
 	Esta é uma plataforma que torna possível aos participantes do projeto
@@ -134,10 +136,11 @@
 	participar e deixar seu comentário. Também anunciamos dois novos mirrors:
 	na suiça, hospedado por <a href="http://mirror.switch.ch/">SWITCHmirror</a>
 	(10 Gbits/s), e na China, hospedado por <a href="http://www.lupaworld.com">LupaWorld</a>.
-	</li>
+	</p></li>
 
 	<li>
-		<strong>28 Fev 2009 - Nova versão cooking</strong><br />
+		<strong>28 Fev 2009 - Nova versão cooking</strong>
+	<p>
 	Abrindo caminho para o próximo lançamento estável, o projeto SliTaz
 	publica uma nova versão cooking (de testes) que traz várias correções de
 	bugs, atualizações e diversas melhorias. A auto-detecção de dispositivos
@@ -153,7 +156,7 @@
 	um aplicativo que habilita ou desabilita aplicações iniciadas juntamente
 	com a sessão do Openbox e que, em conjunto com o Ivman, provê um sistema de
 	notificações leve. <a href="../get/#cooking">Faça o download da iso aqui.</a>
-	</li>
+	</p></li>
 </ul>
 
 <!-- End of content -->

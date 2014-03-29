@@ -53,6 +53,36 @@
 		<strong>Date - Title</strong>
 	<p></p>
 	</li> -->
+	<li id="d20140216">
+		<strong>16 Feb 2014 - Novo Cooking (20140216)</strong>
+	<p>
+  	Os desenvolvedores do SliTaz anunciam o lançamento danova versão Cooking
+	(de testes), que é a base para a próxima versão estável 5.0. Ela traz quase
+	2 anos de trabalho e grandes mudanças. Todas as ferramentas do sistema foram
+	melhoradas com novas funções como "frugal" (gerencia instalações frugais 
+	da distribuição) e "decode" (decodifica diversos arquivos de áudio).
+	A versão cooking foca na integração do Desktop para fornecer uma melhor
+	experiência ao usuário, assim como traz uma configuração de Kernel (3.2.53)
+	mais abrangente. 
+	</p>
+	<p>
+	Todos os pacotes existentes foram atualizados e novos foram adicionados, 
+	totalizando em torno de 4200 pacotes disponibilizados para instalação. O
+	instalador da distribuição também foi modificado, trazendo uma nova
+	interface de usuário em modo texto.
+	</p>
+	<p>
+	O LiveCD agora requisita a configuração de linguagem antes do boot, assim
+	o usuário obtém seu desktop diretamente configurado e pronto para ser utilizado.
+	O tamanho da imagem ISO ficou um pouco maior para que haja melhor suporte a
+	hardware e abrigar novas funções. A ISO pode ser obtida a partir de um mirror
+	do SliTaz:
+	<a href="http://mirror.slitaz.org/iso/cooking/slitaz-cooking.iso"
+		>slitaz-cooking.iso</a>
+	[ <a href="http://mirror.slitaz.org/iso/cooking/slitaz-cooking.md5"
+		>md5</a> ]
+	</p>
+	</li>
     
 	<li id="d20120410">
 		<strong>10 Abr 2012 - Lançamento do SliTaz GNU/Linux 4.0</strong>

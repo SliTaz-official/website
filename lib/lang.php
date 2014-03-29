@@ -6,11 +6,12 @@ $addr = str_replace('index', '', $addr);
 $addr = explode('/', $addr);
 $cur  = $addr[1];
 $page = '';
-if (isset($addr[2]))
+if (!empty($addr[2]))
 	$page = $addr[2];
-if (isset($addr[3]))
+if (!empty($addr[3]))
 	$page = $addr[3];
 
+echo "<!-- " . $_SERVER['REQUEST_URI'] . " : " . $cur . " : " . $page . " -->\n";
 
 $native  = array ("bs"=>"Bosanski", "da"=>"Dansk", "de"=>"Deutsch", "en"=>"English", "es"=>"Español", "fr"=>"Français", "id"=>"Indonesian", "it"=>"Italiano", "pt"=>"Português", "ru"=>"Русский", "cn"=>"中文");
 
@@ -18,7 +19,7 @@ switch($page)
 {
 	case "mailing-list":
 		$url  = "/LANG/mailing-list.php";
-		$lang = "da de en es fr it pt ru";
+		$lang = "cn da de en es fr id it pt ru";
 		break;
 	case "search":
 		$url  = "/LANG/search.php";
@@ -26,7 +27,7 @@ switch($page)
 		break;
 	case "about":
 		$url  = "/LANG/about/";
-		$lang = "cn da de en es fr pt ru";
+		$lang = "bs cn da de en es fr pt ru";
 		break;
 	case "artwork":
 		$url  = "/LANG/artwork/";
@@ -42,7 +43,7 @@ switch($page)
 		break;
 	case "asso":
 		$url  = "/LANG/asso/";
-		$lang = "en es fr pt";
+		$lang = "en es fr pt ru";
 		break;
 	case "statutes":
 		$url  = "/LANG/asso/statutes.php";
@@ -50,19 +51,19 @@ switch($page)
 		break;
 	case "devel":
 		$url  = "/LANG/devel/";
-		$lang = "da de en es fr pt ru";
+		$lang = "da de en es fr id it pt ru";
 		break;
 	case "forge":
 		$url  = "/LANG/devel/forge.php";
-		$lang = "en fr pt ru";
+		$lang = "da de en es fr pt ru";
 		break;
 	case "doc":
 		$url  = "/LANG/doc/";
-		$lang = "cn en es fr it pt ru";
+		$lang = "cn de en es fr it pt ru";
 		break;
 	case "get":
 		$url  = "/LANG/get/";
-		$lang = "cn da de en es fr it pt ru";
+		$lang = "bs cn da de en es fr it pt ru";
 		break;
 	case "flavors":
 		$url  = "/LANG/get/flavors.php";
@@ -74,19 +75,31 @@ switch($page)
 		break;
 	case "2007":
 		$url  = "/LANG/news/2007.php";
-		$lang = "en fr";
+		$lang = "en fr ru";
 		break;
 	case "2008":
 		$url  = "/LANG/news/2008.php";
-		$lang = "en es fr pt";
+		$lang = "en es fr pt ru";
 		break;
 	case "2009":
 		$url  = "/LANG/news/2009.php";
-		$lang = "en es fr pt";
+		$lang = "en es fr pt ru";
 		break;
 	case "2010":
 		$url  = "/LANG/news/2010.php";
-		$lang = "en fr pt";
+		$lang = "en fr pt ru";
+		break;
+	case "2011":
+		$url  = "/LANG/news/2011.php";
+		$lang = "en fr ru";
+		break;
+	case "2012":
+		$url  = "/LANG/news/2012.php";
+		$lang = "en fr ru";
+		break;
+	case "2013":
+		$url  = "/LANG/news/2013.php";
+		$lang = "en";
 		break;
 	case "packages":
 		$url  = "/LANG/packages/";
@@ -94,11 +107,11 @@ switch($page)
 		break;
 	case "sponsor":
 		$url  = "/LANG/sponsor/";
-		$lang = "en pt";
+		$lang = "bs en pt ru";
 		break;
 	default:
 		$url  = "/LANG/";
-		$lang = "cn bs da de en es fr id it pt ru";
+		$lang = "bs cn da de en es fr id it pt ru";
 		break;
 }
 

@@ -69,7 +69,7 @@ include("../lib/html/header.html");
 	<li><strong><a href="news/#d20140329">SliTaz Raspberry Pi release</a></strong>
 		<span>- 29 Mar 2014</span></li>
 	<li><strong><a href="news/#d20140216">New SliTaz Cooking</a></strong>
-		<span>- 16 Fev 2014</span></li>
+		<span>- 16 Feb 2014</span></li>
 	<li><strong><a href="news/2012.php#d20120410">SliTaz 4.0 Release</a></strong>
 		<span>- 10 Apr 2012</span></li>
 	<li><strong><a href="news/2012.php#d20120303">SliTaz 4.0 RC2 is out</a></strong>

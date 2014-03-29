@@ -4,136 +4,72 @@
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<title>SliTaz GNU/Linux</title>
-	<meta name="description" content="Русский сайт SliTaz GNU/Linux" />
-	<meta name="keywords" lang="ru" content="система, свободная, gnu, linux, открытое ПО, Live-CD LINUX in RAM" />
-	<meta name="author" content="Paul Issot"/>
+	<meta name="description" content="Главная страница проекта SliTaz GNU/Linux" />
 	<?php include("../lib/html/meta-link.html"); ?>
 </head>
 <body>
 
-<?php include("../lib/html/header.ru.html"); ?>
+<?php include("../config.php"); include("../lib/html/header.ru.html"); ?>
+
 
 <!-- Block -->
 <div id="block">
 	<?php include("../lib/html/nav.ru.html"); ?>
 	<!-- Information/image -->
 	<div id="block_info">
-		<h4>Русский сайт</h4>
-		<p>SliTaz — это свободная операционная система, предлагающая
-			полнофункциональный рабочий стол или сервер размером менее чем
-			35 МБ.</p>
-		<p>SliTaz в режиме Live полностью находится в RAM и может загружаться
-			со сменых носителей, таких как CD-ROM и USB-flash. Система
-			безопасная, стабильная и простая в использовании.
-			<a href="about/">Ещё…</a></p>
+		<h4>SliTaz по-русски</h4>
+		<p>SliTaz — свободная операционная система с открытыми исходниками.
+			Это полнофункциональный рабочий стол или сервер размером менее чем
+			40 МБ. Система проста в использовании, быстрая, безопасная и
+			стабильная. <a href="about/">Узнать больше…</a></p>
+		<div class="button" style="text-align: left; margin-top: 15px;">
+			<img src="/images/download-30.png" />
+			<?php echo "<a href='$stable_iso'>SliTaz $stable_ver</a>
+				<a href='$cooking_iso'>SliTaz $cooking</a>"; ?>
+		</div>
 	</div>
 </div>
 
 <?php include("../lib/lang.php"); ?>
 
+
 <!-- Content -->
 <div id="content">
 
-<div class="box-up">
-	<p>Посетите наш <a href="http://usbkey.slitaz.org/">проект USB Key</a>!</p>
+<div class="box">
+	<a href="http://www.gofundme.com/slitaz2014?utm_medium=wdgt"
+		title="Посетить кампанию"><img src="../images/gofundme.png"></a>
+	Ознакомьтесь с кампанией по сбору средств
+	<a href="http://www.gofundme.com/slitaz2014?utm_medium=wdgt">
+		SliTaz 2014!</a>
 </div>
 
 <!--
 	SliTaz news starting.
 -->
 
-<h2>Последние новости</h2>
-
-<p>На веб-сайте SliTaz вы найдете главные новости проекта, а также новости
-	по общему ходу дел в подпроектах на <a href="http://scn.slitaz.org/">сайте
-	сообщества</a>. Всё это также доступно в виде <a href="/rss.xml">RSS</a>.
-	В рамках проекта также публикуется небольшой ежемесячный бюллетень.
-	Эта страница, как и <a href="../">главная страница</a> сайта даст вам
-	хорошее представление о последних новостях, коммитах и твитах.</p>
-
-<div class="box">
-	<img src="/images/news.png" alt="*" />
-	<a href="http://scn.slitaz.org/">Новости из блога</a> |
-	<a href="http://doc.slitaz.org/ru:newsletter:start">Ежемесячный
-		информационный бюллетень</a>
+<!-- Featured sponsor -->
+<div id="sponsor">
+	<p><strong>Наш спонсор</strong></p>
+	<?php include("../lib/rand-sponsor.php"); ?>
+	<p><a href="/ru/sponsor/">Стать спонсором</a></p>
 </div>
 
-<div class="news">
-<a name="news"></a>
+<!-- We just keep the last 3 web site news -->
+<div class="news" style="margin-right: 220px;">
 
-<ul>
-	<li id="d20120410">
-		<strong>10 апреля 2012 — Выпущен SliTaz GNU/Linux 4.0</strong>
-		<p>Разработчики SliTaz рады сообщить о выпуске нового стабильного
-			дистрибутива SliTaz GNU/Linux 4.0. За два года работы сообщество
-			создало надежную систему, способную загружаться за еще более
-			короткое время, и были добавлены более чем 1000 новых пакетов.</p>
-		<p>В 35 МБ SliTaz вместился полный графический рабочий стол на основе
-			LXDE и Openbox, который работает полностью в 192 МБ оперативной
-			памяти. Новому ISO «4-в-1» для установки ​​на жесткий диск требуется
-			только 48 МБ; он автоматически выбирает конфигурацию, которая
-			наиболее полно подходит для вашего компьютера.</p>
-		<p>Наши собственные утилиты тоже «подросли». TazPkg обзавелся новой
-			системой уведомлений и стал гораздо быстрее, несмотря на увеличение
-			количества пакетов, а TazPanel предоставляет новую централизованную
-			систему управления. Вы можете прочитать полные <a
-			href="doc/releases/4.0/relnotes.ru.html">примечания к релизу
-			SliTaz 4.0</a> и загрузить SliTaz 4.0 с нашего зеркала: <a
-			href="http://mirror.slitaz.org/iso/4.0/slitaz-4.0.iso"
-			>slitaz-4.0.iso</a></p>
-	</li>
+	<h2>Последние релизы</h2>
 
-	<li id="d20120303">
-		<strong>03 марта 2012 — Вышел SliTaz 4.0-RC2</strong>
-		<p>Команда SliTaz рада сообщить о выходе нового релиз-кандидата SliTaz
-			4.0-RC2. Мы провели огромную работу по исправлению ошибок в RC1 и
-			доработке наших утилит, таких как TazPKG, TazPanel и TazUSB. Стало
-			проще соединиться с Wi-Fi через TazPanel или новый мастер Wi-Fi.
-			Теперь TazPKG лучше интегрирован с рабочим столом и имеет новую
-			систему уведомлений.</p>
-		<p>Эта новая версия идет с полным пакетом Xorg, с поддержкой DRI и
-			с драйверами NV, Intel, Geode и Vesa, работающими «из коробки».
-			Мы еще раз пересобрали все пакеты и сэкономили примерно 2 МБ
-			в базовом Live-CD, поэтому теперь он включает дополнительно
-			Lxrandr, Parcellite и клиент BiTorrent transmission.</p>
-		<p>Мы благодарим всех, кто тестировал первый релиз-кандидат; этот RC2
-			близок к грядущему SliTaz 4.0, выпуск которого запланирован через
-			2 недели. Скачать ISO-образ RC2 с нашего зеркала (35,1 МБ): <a
-			href="http://mirror.slitaz.org/iso/cooking/slitaz-4.0-RC2.iso">SliTaz
-			4.0-RC2</a></p>
-	</li>
-
-	<li id="d20120223">
-		<strong>23 февраля 2012 — Вышел SliTaz 4.0-RC1</strong>
-		<p>Команда SliTaz рада объявить о выпуске первого релиз-кандидата
-			SliTaz 4.0. SliTaz может загружаться за 10–12 с на сравнительно
-			новом железе, а с новым ISO «4-в-1» вы сможете установить полный
-			рабочий стол SliTaz, имея всего 48 МБ RAM. ISO «4-в-1» способен
-			автоматически определять размер памяти и загружать SliTaz
-			в текстовом режиме, в минимальном окружении X, либо с полновесным
-			графическим рабочим столом.</p>
-		<p>SliTaz 4.0 будет иметь в репозитории более 3000 хорошо
-			протестированных пакетов, а серия релиз-кандидатов позволит нам
-			отследить самые последние ошибки. После нашего последнего релиза
-			Cooking, все пакеты были пересобраны дважды, чтобы обеспечить
-			качество сборки.</p>
-		<p>В этом RC2 мы предлагаем вам новое графическое загрузочное меню
-			и графический выбор языка и раскладки клавиатуры. Дистрибутив
-			содержит новое оформление рабочего стола, а также новый инсталлятор
-			командной строки с CGI/веб-интерфейсом, доступным через TazPanel.
-			Вы можете скачать новый ISO с нашего зеркала: <a
-			href="http://mirror.slitaz.org/iso/cooking/slitaz-4.0-RC1.iso">SliTaz
-			4.0-RC1</a></p>
-	</li>
-
-	<li><a href="news/">Еще новости</a>. Архивы новостей:
-		<a href="news/2007.php">2007</a> |
-		<a href="news/2008.php">2008</a> |
-		<a href="news/2009.php">2009</a> |
-		<a href="news/2010.php">2010</a> |
-		<a href="news/">2011</a>
-	</li>
-</ul>
+	<ul>
+		<li><strong><a href="news/#d20140216">Новый SliTaz Cooking</a></strong>
+			<span>— 16 февраля 2014</span></li>
+		<li><strong><a href="news/2012.php#d20120410">Выпуск SliTaz 4.0</a></strong>
+			<span>— 10 апреля 2012</span></li>
+		<li><strong><a href="news/2012.php#d20120303">Вышел SliTaz 4.0 RC2</a></strong>
+			<span>— 03 марта 2012</span></li>
+		<li><strong><a href="news/">Архив новостей</a></strong>
+			<span>— 2007–2013</span></li>
+	</ul>
 
 <!-- End of news -->
 </div>
@@ -174,12 +110,28 @@
 </div>
 
 
+<!-- SCN blog posts -->
+<h2>Последние записи в блоге</h2>
+
+<div class="news">
+	<?php get_feed_blog("blog.xml"); ?>
+</div>
+
+
+<!-- Twitter -->
+<div id="twitter">
+<a class="twitter-timeline"  href="https://twitter.com/slitaz"
+	data-widget-id="420830244551938048">Tweets by @slitaz</a>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</div>
+
+
 <h2>Поддержите нас</h2>
 
 <p>Сделайте SliTaz еще более популярным или просто внесите пожертвование.
 	Вы можете использовать PayPal или микроплатежи Flattr для того, чтобы
 	поддержать нас финансово. Вы можете написать в своём блоге, твитнуть,
-	поделиться с другими, говорить о проекте, чтобы помочь распространить
+	поделиться с другими, рассказать о проекте, чтобы помочь распространить
 	SliTaz. Вы также можете присоединиться к проекту, чтобы включиться
 	в разработку или общаться в <a href="http://scn.slitaz.org/">сети
 	сообщества</a> SliTaz.</p>
@@ -189,9 +141,28 @@
 
 <?php include("../lib/html/donate.html"); ?>
 
-<h3>Twitter и Facebook</h3>
+
+<h2>Распространение SliTaz</h2>
+
+<p>Один из способов помочь проекту — это сделать SliTaz еще более популярным.
+	Напишите в своём блоге, твитните, поделитесь с другими, расскажите о
+	проекте. SliTaz социален, вы можете присоединиться к нам, поделиться своей
+	графикой или сообщением в блоге на <a href="http://scn.slitaz.org/">SliTaz
+	Community Network</a>, нажать «Нравится» на официальной странице SliTaz
+	в Facebook и принять участие в разработке!</p>
 
 <?php include("../lib/html/social.html"); ?>
+
+
+<h2>Интернационализация</h2>
+
+<p>Сайт SliTaz доступен на различных языках, поддерживаемых командой
+	<a href="/i18n.php">интернационализации</a> (i18n). Часто требуется помощь,
+	и вы можете присоединиться к нам, если вы хотели бы видеть сайт переведенным
+	на ваш язык.</p>
+<p><img src="../images/users.png" alt="*" />
+	<a href="http://scn.slitaz.org/groups/i18n/">Присоединиться к группе i18n
+	на SCN</a></p>
 
 <!-- End of content  -->
 </div>

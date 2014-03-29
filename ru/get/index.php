@@ -26,7 +26,7 @@ include("../../lib/html/header.ru.html");
 			или, когда вам нужно надежное рабочее место. Тестируйте
 			«готовящуюся» версию, чтобы помочь нам улучшить дистрибутив.</p>
 		<div class="button">
-			Быстрая загрузка:
+			<img src="/images/download-30.png" />
 			<?php echo "<a href='$stable_iso'>SliTaz $stable_ver</a>
 				<a href='$cooking_iso'>SliTaz $cooking</a>"; ?>
 		</div>
@@ -39,7 +39,7 @@ include("../../lib/html/header.ru.html");
 <div id="content">
 
 
-<h2>Загрузить SliTaz</h2>
+<h2>Загрузка SliTaz</h2>
 
 <ul>
 	<li><a href="#stable">LiveCD стабильная версия</a> — загрузочный образ ISO
@@ -60,7 +60,7 @@ include("../../lib/html/header.ru.html");
 
 <h3>Основная информация</h3>
 
-<p>В этом разделе сайта вы можете загрузить бесплатную копию LiveCD SliTaz
+<p>В этом разделе сайта вы можете бесплатно загрузить копию LiveCD SliTaz
 	GNU/Linux и получить исходники утилит. Чтобы начать использовать ISO-образ
 	LiveCD, вы можете обратиться к онлайн-<a href="../doc/">документации</a>.
 	Вы можете также найти помощь и поддержку на <a
@@ -99,8 +99,8 @@ include("../../lib/html/header.ru.html");
 
 <h3 id="sources">Исходники</h3>
 
-<p>Tazpkg (менеджер пакетов), Tazlito (Live-утилита), Tazwok (Source builder),
-	Tazusb (LiveUSB-утилита) и архивы всех утилит SliTaz можно загрузить
+<p>TazPkg (менеджер пакетов), TazLiTo (Live-утилита), TazWok (среда сборки и компиляции),
+	TazUsb (LiveUSB-утилита) и архивы всех утилит SliTaz можно загрузить
 	с зеркала <a href="http://www.tuxfamily.org/">TuxFamily</a>. Обратите
 	внимание, что все эти утилиты по умолчанию установлены в SliTaz,
 	а исходники прокомментированы на английском. Загрузите исходники: [ <a

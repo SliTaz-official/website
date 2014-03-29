@@ -87,7 +87,8 @@
 	</p></li>
 
 	<li>
-		<strong>16 de abril de 2009 - SliTaz GNU/Linux 2.0</strong><br />
+		<strong>16 de abril de 2009 - SliTaz GNU/Linux 2.0</strong>
+	<p>
 	El proyecto SliTaz se complace en anunciar la nueva versión estable
 	de nuestra distribución - SliTaz GNU/Linux 2.0. Esta nueva versión
 	es el resultado de un año de trabajo de nuestra comunidad, obteniendo
@@ -110,10 +111,11 @@
 	en la distribución para más detalles de esta versión estable. SliTaz
 	GNU/Linux 2.0 está ya <a href="../get/">disponible</a> en los mirrors
 	oficiales del proyecto.
-	</li>
+	</p></li>
 
 	<li>
-		<strong>27 de marzo de 2009 - Labs y nuevos mirrors</strong><br />
+		<strong>27 de marzo de 2009 - Labs y nuevos mirrors</strong>
+	<p>
 	Buscando contínuamente mejorar la distribución y los servicios que
 	proporcionamos, nos complace anunciar el lanzamiento de los laboratorios
 	Slitaz o <a href="http://labs.slitaz.org/">SliTaz Labs</a>.
@@ -129,10 +131,11 @@
 	Suiza, alojado en <a href="http://mirror.switch.ch/">SWITCHmirror</a>
 	(10 Gb/s) y otro en China, alojado por <a href="http://www.lupaworld.com">LupaWorld</a>.
 	Gracias por vuestro apoyo.
-	</li>
+	</p></li>
 
 	<li>
-		<strong>20 de marzo de 2009 - SliTaz en Solutionslinux 2009 (París)</strong><br />
+		<strong>20 de marzo de 2009 - SliTaz en Solutionslinux 2009 (París)</strong>
+	<p>
 	El proyecto SliTaz será presentado en Solutionslinux 2009 en París. En
 	el stand se encontrarán tres miembros activos del proyecto durante los
 	tres días, más otros miembros que se acercarán eventualmente. Allí
@@ -145,7 +148,7 @@
 	<a href="http://www.solutionslinux.fr/">www.solutionslinux.fr</a>,
 	<a href="http://www.solutionslinux.fr/associations.php?pg=2_7">Asociaciones</a>,
 	<a href="http://www.solutionslinux.fr/exposant_fiche.php?id=763&amp;pg=2_4">Stand de SliTaz</a>.
-	</li>
+	</p></li>
 </ul>
 
 </div>
