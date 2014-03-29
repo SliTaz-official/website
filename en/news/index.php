@@ -48,18 +48,18 @@
 		<strong>29 Mar 2014 - SliTaz Raspberry Pi release</strong>
 	<p>
 		The SliTaz team is pleased to announce the SliTaz Raspberry Pi 
-		20140329 release after 2 years a of stabilzation and work porting
-		SliTaz to the ARM platform. The released provide the latest packages
+		20140329 release after 2 years of stabilization and work porting
+		SliTaz to the ARM platform. The release provides the latest packages
 		cross compiled by the official SliTaz Cooker with more than 420
-		mirrored packages. The base flavor size is 22Mb and JWM/FOX desktop
-		flavor size reach only 34 Mb. The desktop flavor provide Adie text
+		mirrored packages. The base flavor size is 22Mb and the JWM/FOX desktop
+		flavor reaches only 34 Mb. The desktop flavor provides Adie text
 		editor, PathFinder file manager, Links2 web browser, TazIRC,
 		a web server, Dropbear SSH client and many common GNU/Linux command
 		line tools.
 	</p>
 	<p>
-		SliTaz Raspberry Pi also inclue the TazBerry Ncurses utility to 
-		configure the system and SliTaz ARM CGI remote control interface
+		SliTaz Raspberry Pi also includes the TazBerry Ncurses utility to 
+		configure the system and the SliTaz ARM CGI remote control interface
 		with a custom RPi boot plugin. To use SliTaz RPi: download a flavor
 		tarball, extract it, run the install.sh script and boot your 
 		Raspberry Pi.
