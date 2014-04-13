@@ -1,8 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta charset="utf-8" />
 	<title>SliTaz - Association statutes</title>
 	<meta name="description" content="SliTaz GNU/Linux asso non-profit donate" />
 	<meta name="keywords" lang="en" content="about slitaz, gnu, linux, mini distro, livecd" />
@@ -11,33 +10,25 @@
 </head>
 <body>
 
-<?php include("../../lib/html/header.html"); ?>
-
-<!-- Block -->
-<div id="block">
-	<?php include("../../lib/html/nav.en.html"); ?>
-	<!-- Information/image -->
-	<div id="block_info">
-		<h4>Association statutes</h4>
-		<p>
-			The SliTaz GNU/Linux association is a non-profit entity that 
-			maintains and manages the project. Its mission is to ensure
-			the durability of the project. It provides an infrastruture
-			and delivers professional services to users, developers and
-			business enterprises using the distribution.
-		</p>
-		<p>Help the project via a small donation:</p>
-		<?php include("../../lib/html/donate.html"); ?>
-	</div>
-</div>
-
-<?php include("../../lib/lang.php"); ?>
+<?php 
+include("../../lib/html/header.html");
+include("../../lib/html/nav.html"); 
+include("../../lib/lang.php"); 
+?>
 
 <!-- Content -->
-<div id="content">
+<section id="content">
 
 <h2>Statutes</h2>
 
+<p>
+	The SliTaz GNU/Linux association is a non-profit entity that 
+	maintains and manages the project. Its mission is to ensure
+	the durability of the project. It provides an infrastruture
+	and delivers professional services to users, developers and
+	business enterprises using the distribution.
+</p>
+		
 <h3>General</h3>
 
 <h4>Article 1: Name, location and duration</h4>
@@ -249,7 +240,7 @@ Christophe Lincoln     Pascal Bellard     Eric Joseph-Alexandre
 </i></p>
 
 <!-- End of content -->
-</div>
+</section>
 
 <?php include("../../lib/html/footer.html"); ?>
 

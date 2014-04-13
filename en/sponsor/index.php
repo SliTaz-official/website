@@ -1,8 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta charset="utf-8" />
 	<title>SliTaz - Sponsorship</title>
 	<meta name="description" content="SliTaz GNU/Linux asso sponsor" />
 	<meta name="keywords" lang="en" content="slitaz pro, slitaz sponsor, support" />
@@ -11,27 +10,14 @@
 </head>
 <body>
 
-<?php include("../../lib/html/header.html"); ?>
-
-<!-- Block -->
-<div id="block">
-	<?php include("../../lib/html/nav.en.html"); ?>
-	<!-- Information/image -->
-	<div id="block_info">
-		<h4>Sponsorship</h4>
-		<p>
-			SliTaz is a non-profit based project and we are always looking for
-			new ways to monetary support the project and provide new hardware.
-		</p>
-		<p>Help the project via a small donation:</p>
-		<?php include("../../lib/html/donate.html"); ?>
-	</div>
-</div>
-
-<?php include("../../lib/lang.php"); ?>
+<?php 
+include("../../lib/html/header.html");
+include("../../lib/html/nav.html"); 
+include("../../lib/lang.php"); 
+?>
 
 <!-- Content -->
-<div id="content">
+<section id="content">
 	
 <!-- Featured sponsor -->
 <div id="sponsor">
@@ -43,14 +29,17 @@
 <h2>Sponsoring SliTaz</h2>
 
 <p>
+	SliTaz is a non-profit based project and we are always looking for
+	new ways to monetary support the project and provide new hardware.
+</p>
+
+<p>
 	Firstly, a huge thanks to our <a href="#cur">current sponsors</a> and all
 	the people who support us with small but very important donations to the project.
 	The project is still quite young but in 5 years of active development we
 	have grown and become a professional grade operating system that is safe to
 	use in production environments.
 </p>
-
-
 
 <h3>Monetary support a developer</h3>
 
@@ -63,6 +52,9 @@
 	a professional working 3-4 months per year on the project. In time we hope to
 	have developers working on a full time basis on SliTaz.
 </p>
+
+<p>Help the project via a small donation:</p>
+<?php include("../../lib/html/donate.html"); ?>
 
 <h3>Hardware sponsor</h3>
 
@@ -110,8 +102,8 @@
 		<tr>
 			<td style="width: 120px; height: 100px;">
 				<a href="http://www.ads-lu.com/"><img
-				src="/images/sponsor/ads.png" alt="Allied Data Sys"
-				style="float: left;" /></a>
+				src="/images/sponsor/ads.jpg" alt="Allied Data Sys"
+				style="float: left; " /></a>
 			</td>
 			<td>
 				Allied Data Sys - ADS sponsors the main SliTaz mirror and
@@ -168,7 +160,7 @@
 </table>
 
 <!-- End of content -->
-</div>
+</section>
 
 <?php include("../../lib/html/footer.html"); ?>
 

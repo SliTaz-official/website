@@ -1,8 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta charset="utf-8" />
 	<title>SliTaz - English documentation</title>
 	<meta name="description" content="SliTaz GNU/Linux English documentationx part livecd tazpkg packages" />
 	<meta name="keywords" lang="en" content="System, free, gnu, linux, opensource software, livecd in RAM" />
@@ -11,32 +10,28 @@
 </head>
 <body>
 
-<?php include("../../lib/html/header.html"); ?>
-
-<!-- Block -->
-<div id="block">
-	<?php include("../../lib/html/nav.en.html"); ?>
-	<!-- Information/image -->
-	<div id="block_info">
-		<h4>English documentation</h4>
-		<p>
-			SliTaz official documentation is available on the community
-			Wiki site. Manuals and a getting started guide is provided
-			by each SliTaz LiveCD and available through the 
-			"Documentation" menu.
-		</p>
-		<ul>
-			<li><a href="http://doc.slitaz.org/en:start">Community Wiki</a></li>
-			<li><a href="http://hg.slitaz.org/slitaz-doc/raw-file/tip/slitaz/index.en.html"
-				>Getting started guide</a></li>
-		</ul>
-	</div>
-</div>
-
-<?php include("../../lib/lang.php"); ?>
+<?php 
+include("../../lib/html/header.html");
+include("../../lib/html/nav.html"); 
+include("../../lib/lang.php"); 
+?>
 
 <!-- Content -->
-<div id="content">
+<section id="content">
+
+<h2>English documentation</h2>
+
+<p>
+	SliTaz official documentation is available on the community
+	Wiki site. Manuals and a getting started guide is provided
+	by each SliTaz LiveCD and available through the 
+	"Documentation" menu.
+</p>
+<ul>
+	<li><a href="http://doc.slitaz.org/en:start">Community Wiki</a></li>
+	<li><a href="http://hg.slitaz.org/slitaz-doc/raw-file/tip/slitaz/index.en.html"
+		>Getting started guide</a></li>
+</ul>
 
 <h2>Handbook &amp; Cookbook</h2>
 
@@ -112,7 +107,7 @@ menu.
 </ul>
 
 <!-- End of content -->
-</div>
+</section>
 
 <?php include("../../lib/html/footer.html"); ?>
 

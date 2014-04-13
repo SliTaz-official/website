@@ -116,14 +116,14 @@ switch($page)
 }
 
 echo "<!-- Languages -->\n<div id='lang'>\n" .
-	"	<a href='/i18n.php'><img src='/images/locale.png' alt='i18n' /></a>\n";
+	"	<a class='flag' href='/i18n.php'>&#9873;</a>\n";
 
 foreach($native as $short=>$long)
 {
 	if ($cur==$short)
 		echo "	<strong>$long</strong>\n";
 	elseif (strpos($lang, $short) === false)
-		echo "	$long\n";
+		echo "	<span>$long</span>\n";
 	else
 		echo '	<a href="'.str_replace('LANG', $short, $url).'">'.$long."</a>\n";
 }

@@ -1,8 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta charset="utf-8" />
 	<title>SliTaz GNU/Linux (en)</title>
 	<meta name="description" content="SliTaz GNU/Linux English Website" />
 	<meta name="keywords" lang="en" content="System, free, gnu, linux, software opensource, livecd LINUX in RAM" />
@@ -14,33 +13,12 @@
 <?php
 include("../config.php");
 include("../lib/html/header.html");
+include("../lib/html/nav.html"); 
+include("../lib/lang.php");
 ?>
 
-<!-- Block -->
-<div id="block">
-	<?php include("../lib/html/nav.en.html"); ?>
-	<?php //include("lib/random-image.php"); ?>
-	<!-- Information/image -->
-	<div id="block_info">
-		<h4>English Website</h4>
-		<p>
-			SliTaz is an open source and free operating system providing
-			a fully featured desktop or server in less than 40 MB. SliTaz
-			is simple to use, fast, secure, and stable. 
-			<a href="about/">More information...</a>
-		</p>
-		<div class="button" style="text-align: left; margin-top: 15px;">
-			<img src="/images/download-30.png" />
-			<?php echo "<a href='$stable_iso'>SliTaz $stable_ver</a>
-				<a href='$cooking_iso'>SliTaz $cooking</a>"; ?>
-		</div>
-	</div>
-</div>
-
-<?php include("../lib/lang.php"); ?>
-
 <!-- Content -->
-<div id="content">
+<section id="content">
 
 <div class="box-up">
 	<a href="http://www.gofundme.com/slitaz2014?utm_medium=wdgt"
@@ -49,16 +27,16 @@ include("../lib/html/header.html");
 		Check out our new SliTaz 2014 fundraising!</a>
 </div>
 
-<!--
-    SliTaz news starting.
--->
-
 <!-- Featured sponsor -->
 <div id="sponsor">
 	<p><strong>Featured sponsor</strong></p>
 	<?php include("../lib/rand-sponsor.php"); ?>
 	<p><a href="/en/sponsor/">Become a sponsor</a></p>
 </div>
+
+<!--
+    SliTaz news starting.
+-->
 
 <!-- We just keep the last 3 web site news -->
 <div class="news" style="margin-right: 220px;">
@@ -72,8 +50,6 @@ include("../lib/html/header.html");
 		<span>- 16 Feb 2014</span></li>
 	<li><strong><a href="news/2012.php#d20120410">SliTaz 4.0 Release</a></strong>
 		<span>- 10 Apr 2012</span></li>
-	<li><strong><a href="news/2012.php#d20120303">SliTaz 4.0 RC2 is out</a></strong>
-		<span>- 03 Mar 2012</span></li>
 	<li><strong><a href="news/">Release news archives</a></strong>
 		<span>- 2007-2013</span></li>
 </ul>
@@ -81,21 +57,17 @@ include("../lib/html/header.html");
 <!-- End of news -->
 </div>
 
+<h2>Quick Download</h2>
+
+<div class="dldiv">
+	<p><?php echo "<a class='dlbutton nav1' href='$stable_iso'>SliTaz $stable_ver</a>
+	<a class='dlbutton nav2' href='$cooking_iso'>SliTaz $cooking</a>"; ?>
+	<a class='dlbutton navpi' href='http://arm.slitaz.org/rpi'>SliTaz Raspberry Pi</a></p>
+</div>
+
 <h2>Project Activity</h2>
 
 <?php require_once("../lib/get-feeds.php"); ?>
-
-<div class="activity">
-	<p>
-		<a href="http://scn.slitaz.org/activity/"><img
-			src="/images/users.png" alt="[ ]" /></a>
-		Community activity
-		<?php get_feed("scn.xml"); ?>
-	</div>
-	<p class="activity_more">
-		<a href="http://scn.slitaz.org/activity/">More activity</a>
-	</p>
-</div>
 
 <div class="activity">
 	<p>
@@ -121,16 +93,20 @@ include("../lib/html/header.html");
 	</p>
 </div>
 
-<!-- SCN blog posts  -->
+<!-- SCN blog posts  
 <h2>Blog Posts</h2>
 
 <div class="news">
-	<?php get_feed_blog("blog.xml"); ?>
-</div>
+	<?php //get_feed_blog("blog.xml"); ?>
+</div>-->
 
 <!-- Twitter  -->
 <div id="twitter">
-<a class="twitter-timeline"  href="https://twitter.com/slitaz"  data-widget-id="420830244551938048">Tweets by @slitaz</a>
+<a class="twitter-timeline"  href="https://twitter.com/slitaz"  
+	data-widget-id="420830244551938048">Tweets by @slitaz</a>
+	<style type="text/css">
+		.twitter-timeline { width: 100%; }
+	</style>
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 </div>
 
@@ -177,7 +153,7 @@ translated into your language.
 </p>
 
 <!-- End of content  -->
-</div>
+</section>
 
 <?php include("../lib/html/footer.html"); ?>
 

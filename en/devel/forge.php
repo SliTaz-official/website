@@ -1,8 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta charset="utf-8" />
 	<title>SliTaz - Forge (en)</title>
 	<meta name="description" content="slitaz developers forge" />
 	<meta name="keywords" lang="en" content="slitaz, devel, hg, bugs" />
@@ -11,29 +10,14 @@
 </head>
 <body>
 
-<?php include("../../lib/html/header.html"); ?>
-
-<!-- Block -->
-<div id="block">
-	<?php include("../../lib/html/nav.en.html"); ?>
-	<!-- Information/image -->
-	<div id="block_info">
-		<h4>Forge</h4>
-		<p>
-			Misc tools, guidelines and services used to create and build SliTaz.
-		</p>
-		<p>
-			<img src="/images/users.png" alt="[ ]" />
-			<a href="http://scn.slitaz.org/">Join us on SCN</a> and
-			the <a href="../mailing-list.php">mailing list</a>
-		</p>
-	</div>
-</div>
-
-<?php include("../../lib/lang.php"); ?>
+<?php 
+include("../../lib/html/header.html");
+include("../../lib/html/nav.html"); 
+include("../../lib/lang.php"); 
+?>
 
 <!-- Content -->
-<div id="content">
+<section id="content">
 
 <h2>Collaborative management</h2>
 
@@ -65,13 +49,9 @@
 	access, disk space, a public directory and all development tools.
 	Developers can compile packages and maintainers of the mirror can handle
 	synchronization. Tank also hosts the Build Bot, Web boot and SliTaz Pro:
-	<a href="http://tank.slitaz.org/" target="_blank">tank.slitaz.org</a>
+	<a href="http://tank.slitaz.org/">tank.slitaz.org</a>
 </p>
-<!-- p>
-	SliTaz hosts some other project servers:
-	<a href="http://chub.slitaz.org/" target="_blank">Chub</a> and
-	<a href="http://pangolin.slitaz.org/" target="_blank">Pangolin</a>.
-</p -->
+
 <p>
 	Instructions on using the build host are described in the Cookbook:
 	<a href="http://doc.slitaz.org/en:cookbook:buildhost">
@@ -338,7 +318,7 @@ To apply a patch:
 </pre>
 
 <!-- End of content -->
-</div>
+</section>
 
 <?php include("../../lib/html/footer.html"); ?>
 

@@ -1,8 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta charset="utf-8" />
 	<title>SliTaz - Downloads</title>
 	<meta name="description" content="SliTaz GNU/Linux LiveCD free download" />
 	<meta name="keywords" lang="en" content="source, iso, livecd, get, free" />
@@ -14,46 +13,34 @@
 <?php
 include("../../config.php");
 include("../../lib/html/header.html");
+include("../../lib/html/nav.html"); 
+include("../../lib/lang.php"); 
 ?>
 
-<!-- Block -->
-<div id="block">
-	<?php include("../../lib/html/nav.en.html"); ?>
-	<!-- Information/image -->
-	<div id="block_info">
-		<h4>Download</h4>
-		<p>
-			Download the latest stable version for production purposes
-			or a solid desktop environment. Use the Cooking version to
-			test and help us improve the distribution.
-		</p>
-		<div class="button">
-			<img src="/images/download-30.png" />
-			<?php echo "<a href='$stable_iso'>SliTaz $stable_ver</a>
-				<a href='$cooking_iso'>SliTaz $cooking</a>"; ?>
-		</div>
-	</div>
-</div>
-
-<?php include("../../lib/lang.php"); ?>
-
 <!-- Content -->
-<div id="content">
+<section id="content">
 
 <h2>Get SliTaz</h2>
 
+<p>
+	Download the latest stable version for production purposes
+	or a solid desktop environment. Use the Cooking version to
+	test and help us improve the distribution.
+</p>
+
 <ul>
 	<li><a href="#stable">LiveCD Stable version</a> - 
-		Bootable ISO image of the current stable version.</li>
+		Bootable ISO image of the current stable version</li>
 	<li><a href="#cooking">LiveCD Cooking version</a> - 
-		Bootable ISO image of the cooking version.</li>
+		Bootable ISO image of the cooking version</li>
 	<li><a href="#floppy">Floppy disk</a> - Bootable 
-		startup disk to launch the LiveCD, a USB stick, etc.</li>
-	<li><a href="flavors.php">LiveCD to taste</a> - Flavors and loram.</li>
-	<li><a href="http://arm.slitaz.org/rpi/">SliTaz Raspberry Pi</a></li>
+		startup disk to launch the LiveCD, a USB stick, etc</li>
+	<li><a href="flavors.php">LiveCD to taste</a> - Custom flavors and loram</li>
+	<li><a href="http://arm.slitaz.org/rpi/">SliTaz Raspberry Pi</a>
+	- Custom distro from the SliTaz ARM project</li>
 </ul>
 
-<div class="box">
+<div class="box-up">
 	<p>
 		Help the project via a small donation or become an official
 		<a href="../sponsor/">sponsor</a>.
@@ -199,7 +186,7 @@ include("../../lib/html/header.html");
 </p>
 
 <!-- End of content -->
-</div>
+</section>
 
 <?php include("../../lib/html/footer.html"); ?>
 

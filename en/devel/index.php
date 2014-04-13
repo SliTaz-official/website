@@ -1,8 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta charset="utf-8" />
 	<title>SliTaz - Developers corner</title>
 	<meta name="description" content="SliTaz GNU/Linux project information overview" />
 	<meta name="keywords" lang="en" content="about slitaz, gnu, linux, mini distro, livecd" />
@@ -11,41 +10,32 @@
 </head>
 <body>
 
-<?php include("../../lib/html/header.html"); ?>
-
-<!-- Block -->
-<div id="block">
-	<?php include("../../lib/html/nav.en.html"); ?>
-	<!-- Information/image -->
-	<div id="block_info">
-		<h4>Development</h4>
-		<p>
-			SliTaz is a community based distribution made by many
-			people all over the world and everyone is welcome to help
-			and get involved in the project.
-		</p>
-		<p>
-			<img src="/images/users.png" alt="[ ]" />
-			<a href="http://scn.slitaz.org/">Join us on SCN</a> and
-			the <a href="../mailing-list.php">mailing list</a>
-		</p>
-	</div>
-</div>
-
-<?php include("../../lib/lang.php"); ?>
+<?php 
+include("../../lib/html/header.html");
+include("../../lib/html/nav.html"); 
+include("../../lib/lang.php"); 
+?>
 
 <!-- Content -->
-<div id="content">
+<section id="content">
 
 <h2>Devel corner</h2>
 
+<p>
+	SliTaz is a community based distribution made by many
+	people all over the world and everyone is welcome to help
+	and get involved in the project.
+</p>
+
 <ul>
 	<li><a href="forge.php">Forge</a> - Collaborative management, KISS,
-	guidelines, Mercurial repos, website and other services.</li>
+	guidelines, Mercurial and other services.</li>
 	<li><a href="/i18n.php">Internationalization project</a> -
 	Translation, goals and management.</li>
-	<li><a href="http://hg.slitaz.org/" >Mercurial Repositories</a></li>
-	<li><a href="http://bugs.slitaz.org/">SliTaz Bug Tracker</a></li>
+	<li><a href="http://hg.slitaz.org/" >Mercurial Repositories</a>
+	- Source code reposotories</li>
+	<li><a href="http://bugs.slitaz.org/">SliTaz Bug Tracker</a> -
+	Our custom CGI/SHell bug tracker</li>
 </ul>
 
 <h2>Get involved</h2>
@@ -90,7 +80,7 @@
 </div>
 
 <!-- End of content -->
-</div>
+</section>
 
 <?php include("../../lib/html/footer.html"); ?>
 

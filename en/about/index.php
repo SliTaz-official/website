@@ -1,8 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta charset="utf-8" />
 	<title>SliTaz - About the project</title>
 	<meta name="description" content="SliTaz GNU/Linux project information overview" />
 	<meta name="keywords" lang="en" content="about slitaz, gnu, linux, mini distro, livecd" />
@@ -11,31 +10,26 @@
 </head>
 <body>
 
-<?php include("../../lib/html/header.html"); ?>
-
-<!-- Block -->
-<div id="block">
-	<?php include("../../lib/html/nav.en.html"); ?>
-	<!-- Information/image -->
-	<div id="block_info">
-		<h4>About the project</h4>
-		<p>
-			Small, fast, stable and easy to use!
-		</p>
-		<ul>
-			<li><a href="#intro">Introduction</a></li>
-			<li><a href="#overview">Overview</a></li>
-			<li><a href="#website">Web site &amp; i18n</a></li>
-			<li><a href="#reviews">Reviews</a></li>
-			<li><a href="../asso/">Association</a></li>
-		</ul>
-	</div>
-</div>
-
-<?php include("../../lib/lang.php"); ?>
+<?php 
+include("../../lib/html/header.html");
+include("../../lib/html/nav.html"); 
+include("../../lib/lang.php"); 
+?>
 
 <!-- Content -->
-<div id="content">
+<section id="content">
+	
+<h2>About SliTaz</h2>
+<p>
+	Small, fast, stable and easy to use!
+</p>
+<ul>
+	<li><a href="#intro">Introduction</a></li>
+	<li><a href="#overview">Overview</a></li>
+	<li><a href="#website">Web site &amp; i18n</a></li>
+	<li><a href="#reviews">Reviews</a></li>
+	<li><a href="../asso/">Association</a></li>
+</ul>
 
 <h2 id="intro">Introduction to the project</h2>
 
@@ -60,9 +54,9 @@ using the list or directly by mail: &lt;devel at slitaz.org&gt;
 <h2 id="overview">Overview</h2>
 
 <ul>
-	<li>Root filesystem taking up about 100 MB and ISO image of less than 30 MB.</li>
-	<li>Ready to use Web server powered by LightTPD with CGI and PHP support.</li>
-	<li>Browse the Web with Midori or Retawq in text mode.</li>
+	<li>Root filesystem taking up about 100 MB and ISO image of less than 40 MB.</li>
+	<li>Ready to use Web/FTP server powered by Busybox with CGI support.</li>
+	<li>Browse the Web with Midori, Firefox, or Lynx in text mode.</li>
 	<li>Sound support provided by Alsa mixer, audio player and CD ripper/encoder.</li>
 	<li>Chat, mail and FTP clients.</li>
 	<li>SSH client and server powered by Dropbear.</li>
@@ -157,7 +151,7 @@ everyone for support.
 </ul>
 
 <!-- End of content -->
-</div>
+</section>
 
 <?php include("../../lib/html/footer.html"); ?>
 

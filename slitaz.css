@@ -16,11 +16,12 @@ body {
 }
 
 a { text-decoration: underline; color: #215090; }
-a:hover { text-decoration: none; color: blue; }
+a:hover { text-decoration: none; }
 img { border: 0pt none; vertical-align: middle; }
 h2 { color: #444; }
 h3 { color: #666; font-size: 140%; }
 h4 { color: #888; font-size: 120%; }
+h2, h3 { border-bottom: 1px dashed #afafaf; padding-bottom: 5px; }
 pre { 
 	background-color: #f8f8f8; 
 	border: 1px solid #ddd; 
@@ -31,24 +32,30 @@ pre {
 
 #header { 
 	height: 40px; 
-	background: #222;
+	background: #111 url(images/logo.png) no-repeat left;
 }
 
 #header h1 {
 	margin: 0;
-	padding: 8px 0 0 42px;
-	width: 250px;
+	padding: 8px 0 8px 42px;
+	width: 280px;
+	font-size: 20px;
+	font-style: italic;
 }
 
 #header h1 a { 
 	color: white; 
 	text-decoration: none;
-	font-size: 20px;
-	font-style: italic;
 }
 
 #header h1 a:hover, #network a:hover, #network span { 
 	color: #afafaf;
+}
+
+#searchbtn {
+	position: absolute;
+	right: 8px;
+	top: 48px;
 }
 
 /* Logo */
@@ -131,16 +138,70 @@ pre {
 	padding: 0;
 }
 
+.dlbutton { 
+	background: #333 url("/images/download-30.png") no-repeat 4px center;
+	padding-left: 38px;
+	-webkit-transition: background-color 0.6s;
+	transition: background-color 0.5s;
+}
+.dldiv { margin: 30px 0; }
+
+/* 
+ * 
+ * 
+ * Navigation NG 
+ * 
+ * 
+ * */
+
+nav {
+	font-size: 120%;
+	min-height: 100px;
+	background: #ddd; 
+	padding: 56px 6% 0;
+	text-align: center;
+	color: #222;
+	border-bottom: 1px solid #afafaf;
+	top: 40px;
+}
+
+nav ul {
+    margin: 0; padding: 0;
+    list-style: none;
+}
+nav li { display: inline; }
+
+nav a, .dlbutton { 
+	text-decoration: none;
+	padding: 12px;
+	color: #fff; 
+	font-weight: bold;
+	vertical-align: middle;
+	-webkit-transition: background-color 0.6s;
+	transition: background-color 0.5s;
+}
+nav p { padding: 8px; color: #333; font-size: 92%; }
+
+.nav1 { background-color: #333; }
+.nav1:hover { background-color: #128da9; }
+.nav2 { background-color: #ab3c00; }
+.nav2:hover { background-color: #ff9b00; }
+.navpi { background-color: #444; }
+.navpi:hover { background-color: #bc1142; }
+
 /* Languages */
 
 #lang {
-	padding: 6px;
-	font-size: 11px;
+	padding: 8px;
+	font-size: 12px;
 	position: absolute;
 	right: 0px;
+	color: #666;
 }
+#lang .flag { font-size: 14px; }
+#lang .flag:hover { text-decoration: none; }
 
-#lang a {
+#lang a, #lang strong,  #lang span {
 	text-decoration: none;
 	padding: 0 2px;
 }
@@ -158,9 +219,9 @@ pre {
 	padding: 30px 80px;
 	text-align: justify;
 }
+#content li { line-height: 1.6em; list-style-type: square; }
 
 .news li {
-	list-style-type: square;
 	border-bottom: 1px dotted #BEBEBE;
 	margin-left: -25px;
 	padding: 4px 0px 4px 0px;
@@ -185,6 +246,8 @@ pre {
 
 /* Classes */
 
+.mobile { display: none !important; }
+
 .right_box { width: 48%; float: right; }
 .left_box { width: 48%; float: left; }
 
@@ -196,19 +259,25 @@ pre {
 }
 
 .box-dl, .box-up {
-	margin: 20px 60px;
-	padding: 12px 12px 12px 66px;
+	margin: 20px 0;
 	min-height: 48px;
 	border: 1px solid #ddd;
 	vertical-align: middle;
 }
 .box-dl {
-	background: url("/images/download.png") no-repeat 12px 12px #efefef;
+	background: url("/images/download.png") no-repeat 12px center;
+	padding: 16px 16px 16px 72px;
 }
 .box-up {
-	background: url("/images/update.png") no-repeat  center left #efefef;
+	background: url("/images/update.png") no-repeat 12px center;
+	padding: 16px 16px 16px 62px;
 }
-.box-dl p { color: #456; }
+.box-dl a { font-weight: bold; text-decoration: none; }
+.dlbutton { padding-left: 38px; }
+pre, .box, .box-dl, .box-up, .box-share, .box-rpi {
+	background-color: #efefef;
+	border: 1px solid #ddd;
+}
 
 .searchbox { 
 	margin: 20px 80px; 
@@ -259,8 +328,8 @@ pre {
 
 /* Round corner */
 
-#block_nav, pre, .box, .box-dl, .box-up, .searchbox, .button a, #twitter, .activity,
-.activity div, #sponsor {
+#block_nav, pre, .box, .box-dl, .box-up, .searchbox, .button a, 
+#twitter, .activity, .activity div, #sponsor, nav a, .dlbutton {
 	-moz-border-radius: 4px;
 	-webkit-border-radius: 4px;
 	border-radius: 4px;

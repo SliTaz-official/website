@@ -65,10 +65,12 @@ include("../lib/html/header.html");
 <h2>Dernière publications</h2>
 
 <ul>
+	<li><strong><a href="http://arm.slitaz.org/rpi/">Publication de SliTaz Raspberry Pi</a></strong>
+		<span>- - 29 Mar 2014</span></li>
+	<li><strong><a href="../en/news/">Nouvelle SliTaz Cooking</a></strong>
+		<span>- - 16 Feb 2014</span></li>
 	<li><strong><a href="news/2012.php#d20120410">Publication de SliTaz 4.0</a></strong>
 		<span>- 10 Apr 2012</span></li>
-	<li><strong><a href="news/2012.php#d20120303">SliTaz 4.0 RC2 est disponible</a></strong>
-		<span>- 03 Mar 2012</span></li>
 	<li><strong><a href="news/">Archives des nouvelles publications</a></strong>
 		<span>- 2007-2013</span></li>
 </ul>
