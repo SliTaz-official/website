@@ -116,7 +116,7 @@
 	updated and home-made toolboxes are improved. Wifibox uses awk for better
 	network scanning. WPA support in the boot scripts have been improved. Boot
 	time is logged for performance measuring. The SliTaz installer will now
-	try to use files from an USB device if no cdrom is found, allow you to
+	try to use files from a USB device if no cdrom is found, allow you to
 	create a default user account, set a root password and use a separate /home
 	partition. And finally, LiveCD customization is now much easier: users
 	just have to boot, modify and use writefs via the Tazlito graphical interface

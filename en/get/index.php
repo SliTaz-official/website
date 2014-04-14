@@ -149,7 +149,7 @@ include("../../lib/lang.php");
 	be used without an internet connection via the install.sh script.
 	Note: This image can also be
 	<a href="http://syslinux.zytor.com/wiki/index.php/Doc/isolinux#HYBRID_CD-ROM.2FHARD_DISK_MODE">
-	installed on an USB key</a>, but it will overwrite all data.
+	installed on a USB key</a>, but it will overwrite all data.
 </p>
 
 <div class="box-dl"><p>
@@ -162,7 +162,7 @@ include("../../lib/lang.php");
 
 <p>
 	This floppy diskette can start SliTaz on old PCs with or without a 
-	CD-ROM. It can boot SliTaz from an usb flash drive, a SliTaz CD/DVD,
+	CD-ROM. It can boot SliTaz from a usb flash drive, a SliTaz CD/DVD,
 	a hard drive, the LAN by PXE and even the 
 	<a href="http://boot.slitaz.org/">Internet with gPXE</a>.
 </p>
