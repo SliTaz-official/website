@@ -31,9 +31,9 @@ include("../../lib/lang.php");
 	<li><a href="forge.php">Forge</a> - Collaborative management, KISS,
 	guidelines, Mercurial and other services.</li>
 	<li><a href="/i18n.php">Internationalization project</a> -
-	Translation, goals and management.</li>
+	Translations, goals and management.</li>
 	<li><a href="http://hg.slitaz.org/" >Mercurial Repositories</a>
-	- Source code reposotories</li>
+	- Source code repositories</li>
 	<li><a href="http://bugs.slitaz.org/">SliTaz Bug Tracker</a> -
 	Our custom CGI/SHell bug tracker</li>
 </ul>

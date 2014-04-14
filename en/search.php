@@ -23,7 +23,7 @@ include("../lib/lang.php");
 
 <p>
 	Search for <a href="http://pkgs.slitaz.org/">packages</a>,
-	files, build log, receipt, etc. All packages are installabl
+	files, build logs, receipts, etc. All packages are installable
 	via the package manager Tazpkg using the GUI or the command 
 	<code>tazpkg get-install pkgname</code>.
 </p>
@@ -61,7 +61,7 @@ include("../lib/lang.php");
 <h2>Google Search</h2>
 
 <p>
-	This page let you also search the entire website Slitaz GNU/Linux,
+	This page lets you also search the entire website Slitaz GNU/Linux,
 	the <a href="http://doc.slitaz.org/">documentation</a> wiki and in
 	the archives of the <a href="mailing-list.php">Mailing List</a>
 	and also in the <a href="http://forum.slitaz.org/">Forum</a>.

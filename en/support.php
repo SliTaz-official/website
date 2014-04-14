@@ -22,7 +22,7 @@ include("../lib/lang.php");
 <h2>SliTaz Support</h2>
 
 <p>
-	The SliTaz Project provide several way to get hel and support. We have
+	The SliTaz Project provides several ways to get help and support. We have
 	an active forum and a wide range of documentation.
 </p>
 

@@ -56,7 +56,7 @@ using the list or directly by mail: &lt;devel at slitaz.org&gt;
 <ul>
 	<li>Root filesystem taking up about 100 MB and ISO image of less than 40 MB.</li>
 	<li>Ready to use Web/FTP server powered by Busybox with CGI support.</li>
-	<li>Browse the Web with Midori, Firefox, or Lynx in text mode.</li>
+	<li>Browse the Web with Midori, Firefox or Lynx in text mode.</li>
 	<li>Sound support provided by Alsa mixer, audio player and CD ripper/encoder.</li>
 	<li>Chat, mail and FTP clients.</li>
 	<li>SSH client and server powered by Dropbear.</li>
