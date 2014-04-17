@@ -20,6 +20,8 @@ include("../lib/lang.php");
 <!-- Content -->
 <section id="content">
 
+<h2>Welcome to SliTaz</h2>
+
 <div class="box-up">
 	<a href="http://www.gofundme.com/slitaz2014?utm_medium=wdgt"
 		title="Visit this page now."><img src="../images/gofundme.png"></a>
