@@ -49,8 +49,8 @@ include("../../lib/lang.php");
 <h2 id="project">Project release</h2>
 
 <p>
-	SliTaz sub projects are individually release using the SliTaz developpers
-	tool aka 'tazdev'. Here is a the handy cmdline guide to release a project.
+	SliTaz sub projects are individually released using the SliTaz developers
+	tool aka 'tazdev'. Here is a handy cmdline guide to release a project.
 	In this guide we are going to release 'spk' 1.0:
 </p>
 
@@ -63,10 +63,10 @@ $ tazdev -rp spk
 </pre>
 
 <p>
-	Some package dont need to be archived on the mirror since ther are
-	mirrorer in the full packages tree. So now that you have release the
-	package and said yes to update the wok (or do it manually), you can
-	push to hg.slitaz.org and wait the package build on SliTaz packages
+	Some packages don't need to be archived on the mirror since they are
+	mirrored in the full packages tree. Once that you have released the
+	package and said yes to updating the wok (or done it manually), you can
+	push it to hg.slitaz.org and wait for the package to build on the SliTaz packages
 	<a href="http://cook.slitaz.org/">Cooker</a>. Push to Hg:
 </p>
 

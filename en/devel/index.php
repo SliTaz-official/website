@@ -30,7 +30,7 @@ include("../../lib/lang.php");
 <ul>
 	<li><a href="forge.php">Forge</a> - Collaborative management, KISS,
 	guidelines, Mercurial and other services</li>
-	<li><a href="release.php">Release guides</a> - How do we release
+	<li><a href="release.php">Release guides</a> - Instruction guides for
 	Cooking, Stable or sub projects</li>
 	<li><a href="/i18n.php">Internationalization project</a> -
 	Translations, goals and management</li>
