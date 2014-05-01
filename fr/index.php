@@ -1,11 +1,10 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<!DOCTYPE html>
+<html lang="fr">
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta charset="utf-8" />
 	<title>SliTaz GNU/Linux (fr)</title>
-	<meta name="description" content="SliTaz GNU/Linux LiveCD système libre autonome rapide linux cdrom vif gratuit" />
-	<meta name="keywords" lang="fr" content="Système, libre, gnu, linux, logiciels opensource, livecd, swiss made" />
+	<meta name="description" content="SliTaz GNU/Linux français système linux libre gratuit" />
+	<meta name="keywords" lang="fr" content="Système, libre, gnu, linux, logiciels opensource, livecd, suisse, france, quebec, belgique" />
 	<meta name="author" content="Christophe Lincoln"/>
 	<?php include("../lib/html/meta-link.html"); ?>
 </head>
@@ -14,29 +13,9 @@
 <?php
 include("../config.php");
 include("../lib/html/header.html");
+include("../lib/html/nav-ng.fr.html"); 
+include("../lib/lang.php");
 ?>
-
-<!-- Block -->
-<div id="block">
-	<?php include("../lib/html/nav.fr.html"); ?>
-	<!-- Information/image -->
-	<div id="block_info">
-		<h4>Page principale</h4>
-		<p>
-			SliTaz est un système GNU/Linux fournissant un bureau ou un
-			serveur complet dans moins de 40Mb. SliTaz est facile $
-			utiliser, rapide, sécurisée et stable.
-			<a href="about/">Plus d'informations...</a>
-		</p>
-		<div class="button" style="text-align: left; margin-top: 15px;">
-			<img src="/images/download-30.png" />
-			<?php echo "<a href='$stable_iso'>SliTaz $stable_ver</a>
-				<a href='$cooking_iso'>SliTaz $cooking</a>"; ?>
-		</div>
-	</div>
-</div>
-
-<?php include("../lib/lang.php"); ?>
 
 <!-- Content -->
 <div id="content">
