@@ -1,8 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta charset="utf-8" />
 	<title>SliTaz - News archives 2010</title>
 	<meta name="description" content="SliTaz news archives info release" />
 	<meta name="keywords" lang="en" content="System, free, gnu, linux, opensource software, livecd in RAM" />
@@ -11,30 +10,12 @@
 </head>
 <body>
 
-<?php include("../../lib/html/header.html"); ?>
-
-<!-- Block -->
-<div id="block">
-	<?php include("../../lib/html/nav.en.html"); ?>
-	<!-- Information/image -->
-	<div id="block_info">
-		<h4>News archives</h4>
-		<p>
-			Website news archives by year. Note that some links may be
-			broken due to website structure changes (mainly the docs
-			that moved to their own domain).
-		</p>
-		<p>
-			<img src="/images/news.png" alt="[ ]" />
-			<a href="2007.php">2007</a> | <a href="2008.php">2008</a>
-			| <a href="2009.php">2009</a> | <a href="2010.php">2010</a>
-			| <a href="2011.php">2011</a> | <a href="2012.php">2012</a>
-			| <a href="./">2014</a>
-		</p>
-	</div>
-</div>
-
-<?php include("../../lib/lang.php"); ?>
+<?php
+include("../../config.php");
+include("../../lib/html/header.html");
+include("../../lib/html/nav.html"); 
+include("../../lib/lang.php"); 
+?>
 
 <!-- Content -->
 <div id="content">
@@ -126,6 +107,15 @@
 	on the SliTaz forum.</p>
 	</li>
 </ul>
+
+<h2>News archives</h2>
+<p>
+	please note that some links may be broken due to website structure 
+	changes (mainly the docs that moved to their own domain).
+</p>
+<p>
+	<a href="index.php#archives">Archives by year</a>
+</p>
 
 <!-- End of content -->
 </div>
