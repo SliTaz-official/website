@@ -30,7 +30,7 @@ include("../../lib/lang.php");
 
 <ul>
 	<li id="d20140502">
-		<strong>02 May 2014 - SliTaz 5.0 Rc-1 release</strong>
+		<strong>02 May 2014 - SliTaz 5.0 RC-1 release</strong>
 	<p>
 		The Slitaz team is pleased to announce the availability of the SliTaz
 		GNU/Linux 5.0 Release Candidate 1 (RC-1)! It's very mature, but still
