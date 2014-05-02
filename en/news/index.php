@@ -21,6 +21,10 @@ include("../../lib/lang.php");
 <div id="content">
 
 <h2>SliTaz News</h2>
+<p>
+	Check out <a href="http://scn.slitaz.org/">Slitaz Community blog</a>
+	for specific and small news about the project.
+</p>
 
 <div class="news">
 

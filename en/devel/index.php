@@ -19,7 +19,7 @@ include("../../lib/lang.php");
 <!-- Content -->
 <section id="content">
 
-<h2>Devel corner</h2>
+<h2>Development</h2>
 
 <p>
 	SliTaz is a community based distribution made by many
