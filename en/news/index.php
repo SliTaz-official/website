@@ -41,7 +41,7 @@ include("../../lib/lang.php");
 		SliTaz 5.0 RC-1 includes many small bug fixes like the improved dialogs
 		for the slitaz-config utility that gives new users the ability to easily
 		setup their systems from a graphical or text interface, Tazpanel boasts
-		a look and feel and the distribution now has better language support
+		a new look and feel and the distribution now has better language support
 		than ever before. We've even fixed support for old ATA hard drives to
 		keep with our tradition of being able to run even on ancient systems. 
 	</p>
