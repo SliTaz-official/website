@@ -71,7 +71,7 @@
 	<p>
 		Download the new <a href="http://mirror.slitaz.org/iso/5.0/slitaz-5.0-rc1.iso"
 			>slitaz-5.0-rc1.iso</a>
-		[ <a href="http://mirror.slitaz.org/iso/cooking/slitaz-5.0-rc1.md5"
+		[ <a href="http://mirror.slitaz.org/iso/5.0/slitaz-5.0-rc1.md5"
 			>md5</a> ]
 	</p>
 	</li>
