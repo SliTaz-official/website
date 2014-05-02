@@ -46,6 +46,8 @@ include("../lib/lang.php");
 <h2>Latest Release</h2>
 
 <ul>
+	<li><strong><a href="news/#d20140502">SliTaz 5.0 RC-1 release</a></strong>
+		<span>- 2 May 2014</span></li>
 	<li><strong><a href="news/#d20140329">SliTaz Raspberry Pi release</a></strong>
 		<span>- 29 Mar 2014</span></li>
 	<li><strong><a href="news/#d20140216">New SliTaz Cooking</a></strong>

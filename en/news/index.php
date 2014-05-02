@@ -44,6 +44,40 @@
 <div class="news">
 
 <ul>
+	<li id="d20140502">
+		<strong>02 May 2014 - SliTaz 5.0 Rc-1 release</strong>
+	<p>
+		The Slitaz team is pleased to announce the availability of the SliTaz
+		GNU/Linux 5.0 Release Candidate 1 (RC-1)! It's very mature, but still
+		requires intensive testing before we'll be able to release a fully
+		stable version.
+	</p>
+	<p>
+		SliTaz 5.0 RC-1 includes many small bug fixes like the improved dialogs
+		for the slitaz-config utility that gives new users the ability to easily
+		setup their systems from a graphical or text interface, Tazpanel boasts
+		a look and feel and the distribution now has better language support
+		than ever before. We've even fixed support for old ATA hard drives to
+		keep with our tradition of being able to run even on ancient systems. 
+	</p>
+	<p>
+		The desktop is again powered by PCmanFM, but with the addition of
+		the trash can and gvfs/udisks support. The packages database has
+		received over 200 package updates and we've added about 50 new
+		packages to the repository. In preparation for the upcoming stable
+		release, we've updated the main website with a new style while making
+		the interface much easier to use.
+	</p>
+	<p>
+		Download the new <a href="http://mirror.slitaz.org/iso/5.0/slitaz-5.0-rc1.iso"
+			>slitaz-5.0-rc1.iso</a>
+		[ <a href="http://mirror.slitaz.org/iso/cooking/slitaz-5.0-rc1.md5"
+			>md5</a> ]
+	</p>
+	</li>
+</ul>
+
+<ul>
 	<li id="d20140329">
 		<strong>29 Mar 2014 - SliTaz Raspberry Pi release</strong>
 	<p>
