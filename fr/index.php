@@ -44,12 +44,14 @@ include("../lib/lang.php");
 <h2>Dernière publications</h2>
 
 <ul>
+	<li><strong><a href="../en/news/#d20140502">Publication de SliTaz 5.0 RC-1</a></strong>
+		<span>- 2 Mai 2014</span></li>
 	<li><strong><a href="http://arm.slitaz.org/rpi/">Publication de SliTaz Raspberry Pi</a></strong>
-		<span>- - 29 Mar 2014</span></li>
-	<li><strong><a href="../en/news/">Nouvelle SliTaz Cooking</a></strong>
-		<span>- - 16 Feb 2014</span></li>
+		<span>- 29 Mar 2014</span></li>
+	<li><strong><a href="../en/news/#d20140216">Nouvelle SliTaz Cooking</a></strong>
+		<span>- 16 Fév 2012</span></li>
 	<li><strong><a href="news/2012.php#d20120410">Publication de SliTaz 4.0</a></strong>
-		<span>- 10 Apr 2012</span></li>
+		<span>- 10 Avr 2012</span></li>
 	<li><strong><a href="news/">Archives des nouvelles publications</a></strong>
 		<span>- 2007-2013</span></li>
 </ul>
