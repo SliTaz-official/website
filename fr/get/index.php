@@ -1,7 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<!DOCTYPE html>
+<html lang="fr">
 <head>
+	<meta charset="utf-8" />
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<title>SliTaz - Téléchargements</title>
 	<meta name="description" content="Télécharger librement SliTaz GNU/Linux LiveCD/LiveUSB" />
@@ -14,34 +14,21 @@
 <?php
 include("../../config.php");
 include("../../lib/html/header.html");
+include("../../lib/html/nav-ng.fr.html"); 
+include("../../lib/lang.php");
 ?>
-
-<!-- Block -->
-<div id="block">
-	<?php include("../../lib/html/nav.fr.html"); ?>
-	<!-- Information/image -->
-	<div id="block_info">
-		<h4>Obtenir SliTaz</h4>
-		<p>
-			Téléchargez la dernière version stable pour la production ou
-			un solide environnement de bureau. Utilisez notre version
-			Cooking pour tester les nouveautés et nous aider à améliorer
-			la distribution.
-		</p>
-		<div class="button">
-			Chargement rapide:
-			<?php echo "<a href='$stable_iso'>SliTaz $stable_ver</a>
-				<a href='$cooking_iso'>SliTaz $cooking</a>"; ?>
-		</div>
-	</div>
-</div>
-
-<?php include("../../lib/lang.php"); ?>
 
 <!-- Content -->
 <div id="content">
 
 <h2>Téléchargements</h2>
+
+<p>
+	Téléchargez la dernière version stable pour la production ou
+	un solide environnement de bureau. Utilisez notre version
+	Cooking pour tester les nouveautés et nous aider à améliorer
+	la distribution.
+</p>
 
 <ul>
 	<li><a href="#stable">LiveCD version Stable</a> - Image ISO du
@@ -56,7 +43,7 @@ include("../../lib/html/header.html");
 
 <div class="box">
 	<p>
-		Vous pouvez aider le projet via un petite donation ou en devenant
+		Vous pouvez aider le projet via un petit donou en devenant
 		(en) <a href="/en/sponsor/">sponsor</a> officiel.
 	</p>
 	<?php include("../../lib/html/donate.html"); ?>

@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
 	<meta charset="utf-8" />
-	<title>SliTaz - Actuaité</title>
+	<title>SliTaz - Actualité</title>
 	<meta name="description" content="Archive des news de SliTaz GNU/Linux" />
 	<meta name="keywords" lang="fr" content="slitaz old news" />
 	<meta name="author" content="Christophe Lincoln"/>
@@ -55,6 +55,10 @@ include("../../lib/lang.php");
 			paquets ont été ajoutés. Finalement, le site principale adopte
 			un nouveau style afin de vous fournir un moyen toujours plus 
 			facile pour naviguer et trouver l'information qu'il vous faut. 
+		</p>
+		<p>
+			Télécharger: 
+			<a href="http://mirror.slitaz.org/iso/5.0/slitaz-5.0-rc1.iso">slitaz-5-0-rc1.iso</a>
 		</p>
 	</li>
 	
