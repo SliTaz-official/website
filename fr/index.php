@@ -44,7 +44,7 @@ include("../lib/lang.php");
 <h2>Dernière publications</h2>
 
 <ul>
-	<li><strong><a href="../en/news/#d20140502">Publication de SliTaz 5.0 RC-1</a></strong>
+	<li><strong><a href="news/#d20140502">Publication de SliTaz 5.0 RC-1</a></strong>
 		<span>- 2 Mai 2014</span></li>
 	<li><strong><a href="http://arm.slitaz.org/rpi/">Publication de SliTaz Raspberry Pi</a></strong>
 		<span>- 29 Mar 2014</span></li>
