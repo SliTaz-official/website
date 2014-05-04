@@ -1,8 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt">
+<!DOCTYPE html>
+<html lang="pt">
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta charset=utf-8" />
 	<title>SliTaz - Lista de Discussão</title>
 	<meta name="description" content="slitaz users developers mailing list" />
 	<meta name="keywords" content="slitaz lista mail discussão" lang="pt" />
@@ -11,36 +10,23 @@
 </head>
 <body>
 
-<?php include("../lib/html/header.pt.html"); ?>
-
-<!-- Block -->
-<div id="block">
-	<?php include("../lib/html/nav.pt.html"); ?>
-	<!-- Information/image -->
-	<div id="block_info">
-		<h4>Lista de Discussão</h4>
-		<p>
-			Lista de discussão para usuários e colaboradores,
-			anúncios, com tópicos sobre suporte e desenvolvimento.
-			Faça inscrição na lista para obter ajuda ou colaborar
-			com o projeto.
-		</p>
-		<p>
-			<img src="/images/users.png" alt="[ ]" />
-			Você também pode usar o <a href="http://scn.slitaz.org/">SCN</a>
-			(SliTaz Community Network)
-			e o <a href="http://forum.slitaz.org/">Fórum de suporte.</a>
-		</p>
-		<?php include("../lib/html/follow.html"); ?>
-	</div>
-</div>
-
-<?php include("../lib/lang.php"); ?>
+<?php 
+include("../lib/html/header.pt.html");
+include("../lib/html/nav.pt.html"); 
+include("../lib/lang.php");
+?>
 
 <!-- Content -->
-<div id="content">
+<section id="content">
 
-<h2>Lista SliTaz</h2>
+<h2>Lista de discussão do SliTaz</h2>
+<p>
+    Lista de discussão para usuários e colaboradores,
+    anúncios, com tópicos sobre suporte e desenvolvimento.
+    Faça inscrição na lista para obter ajuda ou colaborar
+    com o projeto.
+</p>
+
 
 <ul>
 	<li><a href="#about">Sobre a Lista</a> - Suporte e desenvolvimento.</li>
@@ -137,7 +123,7 @@ organizadas por mês e data ou por fluxo de discussão (<em>Thread</em>) :
 </div>
 
 <!-- End of content -->
-</div>
+</section>
 
 <?php include("../lib/html/footer.pt.html"); ?>
 

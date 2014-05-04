@@ -1,104 +1,144 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt">
+<!DOCTYPE html>
+<html lang="pt">
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<title>SliTaz - Arquivo de notícias</title>
+	<meta charset=utf-8" />
+	<title>SliTaz - Notícias do SliTaz</title>
 	<meta name="description" content="SliTaz news archives info release" />
 	<meta name="keywords" lang="pt" content="sistema, livre, gnu, linux, opensource software, livecd na RAM" />
-	<meta name="author" content="Christophe Lincoln"/>
+	<meta name="author" content="Claudinei Pereira"/>
 	<?php include("../../lib/html/meta-link.html") ?>
 </head>
 <body>
 
-<?php include("../../lib/html/header.pt.html"); ?>
-
-<!-- Block -->
-<div id="block">
-	<?php include("../../lib/html/nav.pt.html"); ?>
-	<!-- Information/image -->
-	<div id="block_info">
-		<h4>Arquivos de notícias</h4>
-		<p>
-			As notícias do site arquivadas por ano. Note que alguns
-			links podem estar quebrados devido a mudanças na estrutura
-			do site (principalmente a parte da documentação que foi 
-			movida para domínio próprio)
-		</p>
-		<p>
-			<img src="/images/news.png" alt="[ ]" /> 
-			<a href="2008.php">2008</a> | 
-			<a href="2009.php">2009</a> | 
-			<a href="2010.php">2010</a> |
-			<a href="./">2011</a>
-		</p>
-	</div>
-</div>
-
-<?php include("../../lib/lang.php"); ?>
+<?php
+include("../../lib/html/header.pt.html");
+include("../../lib/html/nav.pt.html");
+include("../../lib/lang.php");
+?>
 
 <!-- Content -->
-<div id="content">
+<section id="content">
 
-<h2>2011</h2>
+<h2>Notícias do SliTaz</h2>
+<p>
+    As notícias do site arquivadas por ano. Note que alguns
+    links podem estar quebrados devido a mudanças na estrutura
+    do site (principalmente a parte da documentação que foi 
+    movida para domínio próprio).
+</p>
+<p>
+    Para outras notícias e informações você também pode consultar o
+    <a href="http://scn.slitaz.org/">Blog da comunidade do SliTaz</a>.
+</p>
+
+<div class="news">
 
 <ul>
-	<li>
-		<strong>31 May 2011 - Novo Cooking (20110329)</strong>
+	<li id="d20140502">
+		<strong>02 de maio de 2014 - lançamento do SliTaz 5.0 RC-1</strong>
 	<p>
-		Os desenvolvedores do SliTaz anunciam o lançamento de uma nova versão
-		de testes (cooking). Os pacotes foram recompilados e otimizados para
-		a arquitetura i486 pelo Cookutils, a nova geração das ferramentas de
-		criação de pacotes da distribuição. O servidor de compilação agora
-		possui uma amigável interface web que funciona por padrão em qualquer
-		instalação do SliTaz.
+        Os desenvolvedores do SliTaz tem o prazer de anunciar a disponibilidade 
+        do SliTaz 5.0 Release Candidate (RC-1)! É um lançamento maduro, mas
+        ainda requer testes intensos antes que possamos lançar uma versão
+        totalmente estável.
 	</p>
 	<p>
-		A inicialização foi melhorada e a configuração no primeiro boot foi
-		simplificada. Este lançamento traz o TazPanel, uma interface web que
-		centraliza a configuração do sistema e gerenciamento de pacotes,
-		substituindo as antigas caixas de diálogo da distribuição e podendo,
-		inclusive, ser utilizada em conexões remotas.
+        Este RC-1 inclui várias correções de bugs e caixas de diálogo melhoradas
+        para o utilitário <em>slitaz-config</em>, que permite ao usuário configurar
+        o sistema tanto pela interface gráfica quanto pela linha de comando. O tazpanel
+        traz mudanças na interface e a o suporte à linguagem está melhorado. O suporte
+        a discos rígidos do tipo ATA foi corrigido, assim continuamos a prover
+        uma distribuição que pode ser executada em hardwares mais antigos.
 	</p>
 	<p>
-		O sistema gráfico agora suporta renderização direta (DRI), então os
-		pacotes libdrm, linux-drm e linux-agp passaram a fazer parte da ISO
-		padrão. Isto adicionou 1 MB ao sistema de arquivos comprimido, porém
-		a nova forma de compilação de pacotes economiza espaço, o que manteve
-		o tamanho da ISO em apenas 35 MB! Download:
-		<a href="http://mirror.slitaz.org/iso/cooking/slitaz-cooking.iso">
-		slitaz-cooking.iso</a>
+        O ambiente desktop volta a ser gerenciado pelo PCmanFM, com a adição de suporte
+        à lixeira e montagem de dispositivos via gvfs/udisks. O banco de dados de pacotes
+        recebeu mais de 200 atualizações e cerca de 50 novos pacotes foram adicionados.
+        Em preparação ao novo lançamento estável, o website foi atualizado com uma nova
+        interface mais simples de usar.
+	</p>
+	<p>
+		Baixe agora o <a href="http://mirror.slitaz.org/iso/5.0/slitaz-5.0-rc1.iso"
+			>slitaz-5.0-rc1.iso</a>
+		[ <a href="http://mirror.slitaz.org/iso/5.0/slitaz-5.0-rc1.md5"
+			>md5</a> ]
 	</p>
 	</li>
 
-	<li>
-		<strong>29 Mar 2011 - Novo Cooking (20110329)</strong>	
-	<p>Os desenvolvedores do SliTaz anunciam o lançamento de uma nova ISO
-	da versão Cooking (de testes), que conta com mais de 2900 pacotes
-	nos repositórios. Todos os pacotes foram recompilados utilizando
-	as ferramentas atualizadas da distribuição, disponíveis no Tazwok.
-	A ISO contem o Kernel Linux 2.6.37 compilado com a glibc 2.13, o binutils
-	2.21 e o gcc 2.5.2. O LiveCD inclui o Midori 0.3.3; o tazpkg possui tradução
-	completa para o francês, podendo ser agora traduzido em outras línguas;
-	o tazwok foi inteiramente reescrito e agora é possível recompilar o SliTaz
-	a partir dos fontes utilizando-se qualquer imagem ISO. Este lançamento
-	é o primeiro visando a próxima versão estável 4.0.</p>
-	<p>Muito trabalho foi feito desde a versão cooking anterior, lançada em novembro:
-	mais de 2200 mudanças ocorreram no wok (repositórios de pacotes) e várias
-	outras nas ferramentas próprias da distribuição. A comunidade do SliTaz
-	cresceu recentemente: neste último ano, houveram tantas mudanças
-	quanto nos 4 anos anteriores, ou seja, em toda a história da distribuição. 
-	Entretanto, quantidade não é suficiente para garantir qualidade. Por isso
-	precisamos que você teste esta nova ISO e nos informe sobre eventuais bugs
-	podendo, inclusive, ajudar a resolve-los antes do lançamento da versão 4.0. 
-	Você pode nos contatar os via IRC, lista de discussão, fórum ou mandando um email 
-	diretamente para os mantenedores de pacotes. Esperamos que você goste deste novo 
-	<a href="../get/">lançamento!</a></p>
+	<li id="d20140329">
+		<strong>29 de março de 2014 - lançamento do SliTaz Raspberry Pi</strong>
+	<p>
+        Os desenvolvedores do SliTaz tem o prazer de anunciar a disponibilidade
+        do SliTaz Raspberry Pi 20140329, após 2 anos de porte e estabilização
+        da distribuição para a plataforma ARM. Este lançamento fornece cerca de 420
+        pacotes compilados de forma cruzada em nosso servidor de compilação. A variante
+        base possui 22MB e a variante JWM/FOX traz um ambiente de desktop em apenas
+        34MB, com aplicativos tais como o editor de texto Adie, o gerenciador de arquivos
+        PathFinder, o navegador web Links2, o cliente de IRC TazIRC, um servidor web,
+        o cliente de SSH Dropbear e vários outros aplicativos de linha de comando
+        GNU/Linux.
+	</p>
+	<p>
+        O SliTaz Raspberry Pi também inclui o utilitário em modo texto
+        TazBerry que configura o sistema e a interface de controle remoto
+        SliTaz ARM CGI, que possui um plugin de boot RPi customizado. Para
+        utilizar o SliTaz RPi: baixe o tarball de alguma variante, extraia,
+        execute o script install.sh e inicialize seu Raspberry Pi.
+	</p>
+	<p>
+		<a href="http://mirror.slitaz.org/arm/rpi/slitaz-rpi-desktop-20140329.tar.bz2"
+			>slitaz-rpi-desktop-20140329</a> (34 Mb) -
+		<a href="http://mirror.slitaz.org/arm/rpi/slitaz-rpi-base-20140329.tar.bz2"
+			>slitaz-rpi-base-20140329</a> (22 Mb) -
+		<a href="http://arm.slitaz.org/rpi/">Página do SliTaz Raspberry Pi</a>
+	</p>
+    </li>
+
+	<li id="d20140216">
+		<strong>16 de fevereiro de 2014 - novo cooking (20140216)</strong>
+	<p>
+  	Os desenvolvedores do SliTaz anunciam o lançamento da nova versão Cooking
+	(de testes), que é a base para a próxima versão estável 5.0. Ela traz quase
+	2 anos de trabalho e grandes mudanças. Todas as ferramentas do sistema foram
+	melhoradas com novas funções como "frugal" (gerencia instalações frugais 
+	da distribuição) e "decode" (decodifica diversos arquivos de áudio).
+	A versão cooking foca na integração do Desktop para fornecer uma melhor
+	experiência ao usuário, assim como traz uma configuração de Kernel (3.2.53)
+	mais abrangente. 
+	</p>
+	<p>
+	Todos os pacotes existentes foram atualizados e novos foram adicionados, 
+	totalizando em torno de 4200 pacotes disponibilizados para instalação. O
+	instalador da distribuição também foi modificado, trazendo uma nova
+	interface de usuário em modo texto.
+	</p>
+	<p>
+	O LiveCD agora requisita a configuração de linguagem antes do boot, assim
+	o usuário obtém seu desktop diretamente configurado e pronto para ser utilizado.
+	O tamanho da imagem ISO ficou um pouco maior para que haja melhor suporte a
+	hardware e abrigar novas funções. A ISO pode ser obtida a partir de um mirror
+	do SliTaz:
+	<a href="http://mirror.slitaz.org/iso/cooking/slitaz-cooking.iso"
+		>slitaz-cooking.iso</a>
+	[ <a href="http://mirror.slitaz.org/iso/cooking/slitaz-cooking.md5"
+		>md5</a> ]
+	</p>
 	</li>
 </ul>
 
-<!-- End of content -->
 </div>
+    
+<h2 id="archives">Arquivos de notícias</h2>
+
+<p>
+	<img src="/images/news.png" alt="[ ]" />
+	<a href="2008.php">2008</a> | <a href="2009.php">2009</a>
+	| <a href="2010.php">2010</a> | <a href="2011.php">2011</a>
+	| <a href="2012.php">2012</a> | <a href="index.php">2014</a>
+</p>
+
+<!-- End of content -->
+</section>
 
 <?php include("../../lib/html/footer.pt.html") ?>
 

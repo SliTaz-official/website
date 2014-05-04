@@ -1,50 +1,40 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt">
+<!DOCTYPE html>
+<html lang="pt">
 <head>
-	<title>SliTaz - Arquivo de notícias</title>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>SliTaz - Arquivo de notícias (2010)</title>
+	<meta charset=utf-8" />
 	<meta name="description" content="SliTaz news archives info release" />
 	<meta name="keywords" lang="pt" content="sistema, livre, gnu, linux, opensource software, livecd na RAM" />
-	<meta name="author" content="Christophe Lincoln"/>
+	<meta name="author" content="Claudinei Pereira"/>
 	<?php include("../../lib/html/meta-link.html") ?>
 </head>
 <body>
 
-<?php include("../../lib/html/header.pt.html"); ?>
-
-<!-- Block -->
-<div id="block">
-	<?php include("../../lib/html/nav.pt.html"); ?>
-	<!-- Information/image -->
-	<div id="block_info">
-		<h4>Arquivos de notícias</h4>
-		<p>
-			As notícias do site arquivadas por ano. Note que alguns
-			links podem estar quebrados devido a mudanças na estrutura
-			do site (principalmente a parte da documentação que foi 
-			movida para domínio próprio)
-		</p>
-		<p>
-			<img src="/images/news.png" alt="[ ]" /> 
-			<a href="2008.php">2008</a> | 
-			<a href="2009.php">2009</a> | 
-			<a href="./">2010</a> |
-			<a href="index.php">2011</a>
-		</p>
-	</div>
-</div>
-
-<?php include("../../lib/lang.php"); ?>
+<?php
+include("../../lib/html/header.pt.html");
+include("../../lib/html/nav.pt.html");
+include("../../lib/lang.php");
+?>
 
 <!-- Content -->
-<div id="content">
+<section id="content">
 
-<h2>2010</h2>
+<h2>Notícias do SliTaz (2010)</h2>
+<p>
+    As notícias do site arquivadas por ano. Note que alguns
+    links podem estar quebrados devido a mudanças na estrutura
+    do site (principalmente a parte da documentação que foi 
+    movida para domínio próprio).
+</p>
+<p>
+    Para outras notícias e informações você também pode consultar o
+    <a href="http://scn.slitaz.org/">Blog da comunidade do SliTaz</a>.
+</p>
+
+<div class="news">
 
 <ul>
-	<li>
-		<strong>4 de Novembro de 2010 - Nova versão "cooking" 20101104</strong>
+	<li id="d20101104"><strong>4 de Novembro de 2010 - Nova versão "cooking" 20101104</strong>
 	<p>Os desenvolvedores do SliTaz anunciam uma nova imagem ISO da versão
 	de testes da distribuição. Há mais de 2600 pacotes nos repositórios,
 	o kernel Linux versão 2.6.34 foi compilado com o novo "toolchain"
@@ -60,8 +50,7 @@
 	de discussão para dar seu feedback.</p>
 	</li>
 
-	<li>
-		<strong>08 Mai 2010 - Mutirão da Documentação</strong>
+	<li id="d20100508"><strong>08 Mai 2010 - Mutirão da Documentação</strong>
 	<p>Os desenvolvedores do SliTaz estão organizando um 'Mutirão da
 	Documentação', de 10 de maio a 10 de junho do corrente ano. O objetivo
 	principal é centralizar, revisar e atualizar toda a documentação
@@ -71,8 +60,7 @@
 	documentação existente ou adicionando novos documentos.</p>
 	</li>
 
-	<li>
-		<strong>28 Mar 2010 - Lançada a Versão 3.0 do SliTaz GNU/Linux</strong>
+	<li id="d20120328"><strong>28 Mar 2010 - Lançada a Versão 3.0 do SliTaz GNU/Linux</strong>
 	<p>Os participantes do projeto SliTaz GNU/Linux anunciam orgulhosamente 
 	o lançamento da versão 3.0, que surge após um ano de desenvolvimento.
 	Esta nova versão estável está simples, rápida, customizável, poderosa e 
@@ -89,8 +77,7 @@
 	<a href="../get/#stable">baixe</a> uma imagem do LiveCD a partir dos mirrors.</p> 
 	</li>
 
-	<li>
-		<strong>14 Mar 2010 - Primeiro RC e convenção Solutionslinux 2010 (Paris)</strong>
+	<li id="d20100314"><strong>14 Mar 2010 - Primeiro RC e convenção Solutionslinux 2010 (Paris)</strong>
 	<p>Visto que estamos mais perto de lançar uma versão estável, 
 	atualizamos a imagem ISO básica e iniciamos uma série de RC (Release
 	Candidates). A maior mudança fica por conta de utilizarmos o Midori
@@ -109,8 +96,7 @@
 	associação e desenvolvedores.</p>
 	</li>
 
-	<li>
-		<strong>21 Fev 2010 - Nova Versão Cooking 20100221</strong>
+	<li id="d20100221"><strong>21 Fev 2010 - Nova Versão Cooking 20100221</strong>
 	<p>Os desenvolvedores do SliTaz anunciam orgulhosamente a nova versão de 
 	testes (cooking) do LiveCD, que será a última antes do RC (Release 
 	Candidate) e consequente versão estável 3.0. Esta nova versão traz 
@@ -137,8 +123,19 @@
 	</li>
 </ul>
 
-<!-- End of content -->
 </div>
+
+<h2 id="archives">Arquivos de notícias</h2>
+
+<p>
+	<img src="/images/news.png" alt="[ ]" />
+	<a href="2008.php">2008</a> | <a href="2009.php">2009</a>
+	| <a href="2010.php">2010</a> | <a href="2011.php">2011</a>
+	| <a href="2012.php">2012</a> | <a href="index.php">2014</a>
+</p>
+
+<!-- End of content -->
+</section>
 
 <?php include("../../lib/html/footer.pt.html") ?>
 

@@ -1,8 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt">
+<!DOCTYPE html>
+<html lang="pt">
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta charset=utf-8" />
 	<title>SliTaz - Variantes do LiveCD</title>
 	<meta name="description" content="SliTaz GNU/Linux LiveCD flavors" />
 	<meta name="keywords" lang="pt" content="slitaz flavor" />
@@ -11,28 +10,23 @@
 </head>
 <body>
 
-<?php include("../../lib/html/header.pt.html") ?>
-
-<!-- Block -->
-<div id="block">
-	<?php include("../../lib/html/nav.pt.html") ?>
-	<!-- Information/image -->
-	<div id="block_info">
-		<h4>Obtenha as Variantes</h4>
-		<p>
-			O sistema de variantes do LiveCD é uma maneira simples de a
-			comunidade gerar imagens ISO para certas tarefas, oferecendo
-			uma seleção específica de pacotes. Há duas formas de se 
-			utilizar variantes: usar uma feita pela comunidade ou criar
-			a sua própria.
-		</p>
-	</div>
-</div>
-
-<?php include("../../lib/lang.php"); ?>
+<?php
+include("../../lib/html/header.pt.html");
+include("../../lib/html/nav.pt.html");
+include("../../lib/lang.php");
+?>
 
 <!-- Content -->
-<div id="content">
+<section id="content">
+
+<h2>Obtenha as Variantes</h2>
+<p>
+    O sistema de variantes do LiveCD é uma maneira simples de a
+    comunidade gerar imagens ISO para certas tarefas, oferecendo
+    uma seleção específica de pacotes. Há duas formas de se 
+    utilizar variantes: usar uma feita pela comunidade ou criar
+    a sua própria.
+</p>
 
 <h2>LiveCD ao gosto do freguês</h2>
 
@@ -77,7 +71,7 @@
 </p>
 
 <!-- End of content -->
-</div>
+</section>
 
 <?php include("../../lib/html/footer.pt.html") ?>
 

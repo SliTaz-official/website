@@ -1,9 +1,8 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt">
+<!DOCTYPE html>
+<html lang="pt">
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<title>SliTaz - Artigos da Associação</title>
+	<meta charset=utf-8" />
+	<title>SliTaz - Estatuto da Associação</title>
 	<meta name="description" content="SliTaz GNU/Linux asso non-profit donate" />
 	<meta name="keywords" lang="pt" content="sobre slitaz, gnu, linux, mini distro, livecd" />
 	<meta name="author" content="Claudinei Pereira" />
@@ -11,31 +10,23 @@
 </head>
 <body>
 
-<?php include("../../lib/html/header.pt.html"); ?>
-
-<!-- Block -->
-<div id="block">
-	<?php include("../../lib/html/nav.pt.html"); ?>
-	<!-- Information/image -->
-	<div id="block_info">
-		<h4>Artigos da Associação</h4>
-		<p>
-			A Associação SliTaz GNU/Linux é uma entidade sem fins 
-			lucrativos que mantem e gerencia o projeto, sendo sua 
-			missão assegurar-se da durabilidade do mesmo. Ela provê a 
-			infraestrutura e serviços profissionais aos usuários, 
-			desenvolvedores e empresas que utilizam a distribuição.
-		</p>
-        <p>Ajude o projeto por meio de pequenas doações:</p>
-        <?php include("../../lib/html/donate.html"); ?>
-    </div>
-</div>  
+<?php 
+include("../../lib/html/header.pt.html");
+include("../../lib/html/nav.pt.html"); 
+include("../../lib/lang.php");
+?>
 
 <!-- Content -->
-<div id="content">
+<section id="content">
 
 <h2>Estatuto</h2>
-
+<p>
+    A Associação SliTaz GNU/Linux é uma entidade sem fins 
+    lucrativos que mantem e gerencia o projeto, sendo sua 
+    missão assegurar-se da durabilidade do mesmo. Ela provê a 
+    infraestrutura e serviços profissionais aos usuários, 
+    desenvolvedores e empresas que utilizam a distribuição.
+</p>
 
 <h3>Geral</h3>
 
@@ -248,7 +239,7 @@ Christophe Lincoln | Pascal Bellard | Eric Joseph-Alexandre
 </i></p>
 
 <!-- End of content -->
-</div>
+</section>
 
 <?php include("../../lib/html/footer.pt.html"); ?>
 

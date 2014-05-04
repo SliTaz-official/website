@@ -1,37 +1,23 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt">
+<!DOCTYPE html>
+<html lang="pt">
 <head>
-	<title>SliTaz - Sponsorship</title>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>SliTaz - Patrocínio</title>
+	<meta charset=utf-8" />
 	<meta name="description" content="SliTaz GNU/Linux asso sponsor" />
 	<meta name="keywords" lang="pt" content="slitaz pro, slitaz patrocínio, suporte" />
-	<meta name="author" content="Christophe Lincoln"/>
+	<meta name="author" content="Claudinei Pereira"/>
 	<?php include("../../lib/html/meta-link.html") ?>
 </head>
 <body>
 
-<?php include("../../lib/html/header.pt.html"); ?>
-
-<!-- Block -->
-<div id="block">
-	<?php include("../../lib/html/nav.pt.html"); ?>
-	<!-- Information/image -->
-	<div id="block_info">
-		<h4>Patrocínio</h4>
-		<p>
-			O SliTaz é uma organização sem fins comerciais, que procura formas
-			de patrocínio monetário para o projeto ou para aquisição de hardware. 
-		</p>
-		<p>Ajude o projeto por meio de pequenas doações:</p>
-		<?php include("../../lib/html/donate.html"); ?>
-	</div>
-</div>
-
-<?php include("../../lib/lang.php"); ?>
+<?php
+include("../../lib/html/header.pt.html");
+include("../../lib/html/nav.pt.html");
+include("../../lib/lang.php");
+?>
 
 <!-- Content -->
-<div id="content">
+<section id="content">
 
 <!-- Featured sponsor -->
 <div id="sponsor">
@@ -41,6 +27,11 @@
 </div>
 
 <h2>Patrocinando o SliTaz</h2>
+
+<p>
+    O SliTaz é uma organização sem fins comerciais, que procura formas
+    de patrocínio monetário para o projeto ou para aquisição de hardware. 
+</p>
 
 <p>
 	Primeiramente, agradecemos aos nossos <a href="#cur">atuais patrocinadores</a>
@@ -156,11 +147,22 @@
 				responder prontamente aos nossos pedidos.
 			</td>
 		</tr> 
+        <tr>
+			<td style="width: 120px; height: 100px;">
+				<a href="http://webconverger.com"><img
+				src="/images/sponsor/webc.png" alt="Webconverger Project"
+				style="float: left;" /></a>
+			</td>
+			<td>
+                O Projeto Webconverger patrocina o SliTaz com uma doação mensal.
+                Agradecemos o pessoal do Webconverger pelo suporte!
+			</td>
+		</tr>
 	</tbody>
 </table>
 
 <!-- End of content -->
-</div>
+</section>
 
 <?php include("../../lib/html/footer.pt.html"); ?>
 

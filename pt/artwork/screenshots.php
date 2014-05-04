@@ -1,9 +1,8 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt">
+<!DOCTYPE html>
+<html lang="pt">
 <head>
 	<title>SliTaz (pt) - Screenshots</title>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta charset=utf-8" />
 	<meta name="description" content="SliTaz GNU/Linux project artwok images logos" />
 	<meta name="keywords" lang="pt" content="sobre slitaz, gnu, linux, mini distro, livecd" />
 	<meta name="author" content="Claudinei Pereira" />
@@ -11,32 +10,27 @@
 </head>
 <body>
 
-<?php include("../../lib/html/header.pt.html"); ?>
-
-<!-- Block -->
-<div id="block">
-	<?php include("../../lib/html/nav.pt.html"); ?>
-	<!-- Information/image -->
-	<div id="block_info">
-		<h4>Screenshots</h4>
-		<p>
-			Imagens dizem mais que palavras... Veja algumas
-			capturas de tela das versões estáveis e de testes
-			lancádas até hoje. Você pode procurar, discutir e
-			compartilhar suas próprias capturas.
-		</p>
-		<p>
-			<img src="/images/users.png" alt="[ ]" />
-			<a href="http://scn.slitaz.org/image/">Entre no SCN</a>
-			(SliTaz Community Network).
-		</p>
-	</div>
-</div>
-
-<?php include("../../lib/lang.php"); ?>
+<?php 
+include("../../lib/html/header.pt.html");
+include("../../lib/html/nav.pt.html"); 
+include("../../lib/lang.php");
+?>
 
 <!-- Content -->
-<div id="content">
+<section id="content">
+
+<h2>Screenshots</h2>
+<p>
+    Imagens dizem mais que palavras... Veja algumas
+    capturas de tela das versões estáveis e de testes
+    lançadas até hoje. Você pode procurar, discutir e
+    compartilhar suas próprias capturas.
+</p>
+<p>
+    <img src="/images/users.png" alt="[ ]" />
+    <a href="http://scn.slitaz.org/image/">Entre no SCN</a>
+    (SliTaz Community Network).
+</p>
 
 <div id="gallery">
 
@@ -84,7 +78,7 @@
 </div>
 
 <!-- End of content -->
-</div>
+</section>
 
 <?php include("../../lib/html/footer.pt.html"); ?>
 

@@ -1,50 +1,40 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt">
+<!DOCTYPE html>
+<html lang="pt">
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<title>SliTaz - Arquivo de notícias</title>
+	<title>SliTaz - Arquivo de notícias (2009)</title>
+	<meta charset=utf-8" />
 	<meta name="description" content="SliTaz news archives info release" />
 	<meta name="keywords" lang="pt" content="sistema, livre, gnu, linux, opensource software, livecd na RAM" />
-	<meta name="author" content="Christophe Lincoln"/>
+	<meta name="author" content="Claudinei Pereira"/>
 	<?php include("../../lib/html/meta-link.html") ?>
 </head>
 <body>
 
-<?php include("../../lib/html/header.pt.html"); ?>
-
-<!-- Block -->
-<div id="block">
-	<?php include("../../lib/html/nav.pt.html"); ?>
-	<!-- Information/image -->
-	<div id="block_info">
-		<h4>Arquivos de notícias</h4>
-		<p>
-			As notícias do site arquivadas por ano. Note que alguns
-			links podem estar quebrados devido a mudanças na estrutura
-			do site (principalmente a parte da documentação que foi 
-			movida para domínio próprio)
-		</p>
-		<p>
-			<img src="/images/news.png" alt="[ ]" /> 
-			<a href="2008.php">2008</a> | 
-			<a href="./">2009</a> | 
-			<a href="2010.php">2010</a> |
-			<a href="index.php">2011</a>
-		</p>
-	</div>
-</div>
-
-<?php include("../../lib/lang.php"); ?>
+<?php
+include("../../lib/html/header.pt.html");
+include("../../lib/html/nav.pt.html");
+include("../../lib/lang.php");
+?>
 
 <!-- Content -->
-<div id="content">
+<section id="content">
 
-<h2>2009</h2>
+<h2>Notícias do SliTaz (2009)</h2>
+<p>
+    As notícias do site arquivadas por ano. Note que alguns
+    links podem estar quebrados devido a mudanças na estrutura
+    do site (principalmente a parte da documentação que foi 
+    movida para domínio próprio).
+</p>
+<p>
+    Para outras notícias e informações você também pode consultar o
+    <a href="http://scn.slitaz.org/">Blog da comunidade do SliTaz</a>.
+</p>
+
+<div class="news">
 
 <ul>
-	<li>
-		<strong>4 Nov 2009 - Nova Versão Cooking 20091104</strong>
+	<li id="d20091104"><strong>4 Nov 2009 - Nova Versão Cooking 20091104</strong>
 	<p>Os desenvolvedores do SliTaz GNU/Linux anunciam o lançamento de
 	uma nova imagem ISO da versão de testes (cooking) baseada nos cerca 
 	de 2100 pacotes disponíveis nos repositórios. Todo o sistema foi
@@ -72,8 +62,7 @@
 	imagem da <a href="../get/#cooking">versão de testes</a></p>
 	</li>
 
-	<li>
-		<strong>19 Mai 2009 - SliTaz na LinuxDays 2009 (Genebra)</strong>
+	<li id="d20090519"><strong>19 Mai 2009 - SliTaz na LinuxDays 2009 (Genebra)</strong>
 	<p>
 	Durante a convenção LinuxDays na Suiça a Associação SliTaz terá um
 	estande montado na seção "Association Village" e uma palestra será
@@ -96,8 +85,7 @@
 	</p>
 	</li>
 
-	<li>
-		<strong>16 Abr 2009 - Lançamento do SliTaz GNU/Linux 2.0</strong>
+	<li id="d20090416"><strong>16 Abr 2009 - Lançamento do SliTaz GNU/Linux 2.0</strong>
 	<p>
 	O projeto SliTaz anuncia orgulhosamente o lançamento da nova versão estável da
 	distribuição - SliTaz GNU/Linux 2.0 -, resultado de um ano de trabalho em
@@ -121,8 +109,7 @@
 	partir de um dos mirrors oficiais do projeto.
 	</p></li>
 
-	<li>
-		<strong>27 Mar 2009 - Labs e novos mirrors</strong>
+	<li id="d20090327"><strong>27 Mar 2009 - Labs e novos mirrors</strong>
 	<p>
 	Buscando continuadamente melhorias na distribuição e nos serviços que oferecemos,
 	anunciamos o lançamento do <a href="http://labs.slitaz.org/">SliTaz Labs</a>.
@@ -138,8 +125,7 @@
 	(10 Gbits/s), e na China, hospedado por <a href="http://www.lupaworld.com">LupaWorld</a>.
 	</p></li>
 
-	<li>
-		<strong>28 Fev 2009 - Nova versão cooking</strong>
+	<li id="d20090228"><strong>28 Fev 2009 - Nova versão cooking</strong>
 	<p>
 	Abrindo caminho para o próximo lançamento estável, o projeto SliTaz
 	publica uma nova versão cooking (de testes) que traz várias correções de
@@ -159,8 +145,19 @@
 	</p></li>
 </ul>
 
-<!-- End of content -->
 </div>
+
+<h2 id="archives">Arquivos de notícias</h2>
+
+<p>
+	<img src="/images/news.png" alt="[ ]" />
+	<a href="2008.php">2008</a> | <a href="2009.php">2009</a>
+	| <a href="2010.php">2010</a> | <a href="2011.php">2011</a>
+	| <a href="2012.php">2012</a> | <a href="index.php">2014</a>
+</p>
+
+<!-- End of content -->
+</section>
 
 <?php include("../../lib/html/footer.pt.html") ?>
 

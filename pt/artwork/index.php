@@ -1,8 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt">
+<!DOCTYPE html>
+<html lang="pt">
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta charset=utf-8" />
 	<title>SliTaz (pt) - Artwork</title>
 	<meta name="description" content="SliTaz GNU/Linux project artwok images logos" />
 	<meta name="keywords" lang="pt" content="sobre slitaz, gnu, linux, mini distro, livecd" />
@@ -11,33 +10,28 @@
 </head>
 <body>
 
-<?php include("../../lib/html/header.pt.html"); ?>
-
-<!-- Block -->
-<div id="block">
-	<?php include("../../lib/html/nav.pt.html"); ?>
-	<!-- Information/image -->
-	<div id="block_info">
-		<h4>Artwork</h4>
-		<p>
-			Localizar, apreciar, discutir, fazer upload e compartilhar 
-			arte para o SliTaz! Junte-se ao 
-			<a href="http://scn.slitaz.org/image/">grupo</a> 
-			de arte, seu trabalho pode ser usado em nossa próxima
-			versão Cooking!
-		</p>
-		<ul> 
-			<li><a href="#art4taz">Artwork para o SliTaz.</a></li>
-			<li><a href="#logos">Logos, spider &amp; ícones.</a></li>
-			<li><a href="screenshots.php">Screenshots.</a></li> 
-		</ul>
-	</div>
-</div>
-
-<?php include("../../lib/lang.php"); ?>
+<?php 
+include("../../lib/html/header.pt.html");
+include("../../lib/html/nav.pt.html"); 
+include("../../lib/lang.php");
+?>
 
 <!-- Content -->
-<div id="content">
+<section id="content">
+
+<h2>Artwork</h2>
+<p>
+    Localizar, apreciar, discutir, fazer upload e compartilhar 
+    arte para o SliTaz! Junte-se ao 
+    <a href="http://scn.slitaz.org/image/">grupo</a> 
+    de arte, seu trabalho pode ser usado em nossa próxima
+    versão Cooking!
+</p>
+<ul> 
+    <li><a href="#art4taz">Artwork para o SliTaz.</a></li>
+    <li><a href="#logos">Logos, spider &amp; ícones.</a></li>
+    <li><a href="screenshots.php">Screenshots.</a></li> 
+</ul>
 
 <h2>Arte &amp; Design</h2>
 
@@ -102,7 +96,7 @@ no mirror. Note que o formato livre PNG é preferível.
 </div>
 
 <!-- End of content -->
-</div>
+</section>
 
 <?php include("../../lib/html/footer.pt.html"); ?>
 

@@ -1,41 +1,35 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt">
+<!DOCTYPE html>
+<html lang="pt">
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta charset=utf-8" />
 	<title>SliTaz - Sobre o Projeto</title>
-	<meta name="description" content="SliTaz GNU/Linux project information overview" />
+	<meta name="description" content="Informações gerais sobre o SliTaz GNU/Linux" />
 	<meta name="keywords" lang="pt" content="sobre slitaz, gnu, linux, mini distro, livecd" />
 	<meta name="author" content="Claudinei Pereira" />
 	<?php include("../../lib/html/meta-link.html") ?>
 </head>
 <body>
 
-<?php include("../../lib/html/header.pt.html"); ?>
-
-<!-- Block -->
-<div id="block">
-	<?php include("../../lib/html/nav.pt.html"); ?>
-	<!-- Information/image -->
-	<div id="block_info">
-		<h4>Sobre</h4>
-		<p>
-			Pequeno, rápido, estável e simples de usar! 
-		</p>
-		<ul>
-			<li><a href="#intro">Introdução.</a></li>
-			<li><a href="#overview">Resumo.</a></li>
-			<li><a href="#website">Website &amp; i18n.</a></li>
-			<li><a href="#reviews">Resenhas.</a></li>
-			<li><a href="../asso/">Associação.</a></li>
-		</ul>
-	</div>
-</div>
-
-<?php include("../../lib/lang.php"); ?>
+<?php 
+include("../../lib/html/header.pt.html");
+include("../../lib/html/nav.pt.html"); 
+include("../../lib/lang.php");
+?>
 
 <!-- Content -->
-<div id="content">
+<section id="content">
+
+<h2>Sobre o SliTaz</h2>
+<p>
+	Pequeno, rápido, estável e fácil de utilizar!
+</p>
+<ul>
+	<li><a href="#intro">Introdução</a></li>
+	<li><a href="#overview">Resumo</a></li>
+	<li><a href="#website">Website &amp; i18n</a></li>
+	<li><a href="#reviews">Resenhas</a></li>
+	<li><a href="../asso/">Associação</a></li>
+</ul>
 
 <h2 id="intro">Introdução ao projeto</h2>
 
@@ -159,7 +153,7 @@ pelo suporte.
 </ul>
 
 <!-- End of content -->
-</div>
+</section>
 
 <?php include("../../lib/html/footer.pt.html"); ?>
 

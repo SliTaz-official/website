@@ -1,50 +1,40 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt">
+<!DOCTYPE html>
+<html lang="pt">
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<title>SliTaz - Arquivo de notícias</title>
+	<title>SliTaz - Arquivo de notícias (2008)</title>
+	<meta charset=utf-8" />
 	<meta name="description" content="SliTaz news archives info release" />
 	<meta name="keywords" lang="pt" content="sistema, livre, gnu, linux, opensource software, livecd na RAM" />
-	<meta name="author" content="Christophe Lincoln"/>
+	<meta name="author" content="Claudinei Pereira"/>
 	<?php include("../../lib/html/meta-link.html") ?>
 </head>
 <body>
 
-<?php include("../../lib/html/header.pt.html"); ?>
-
-<!-- Block -->
-<div id="block">
-	<?php include("../../lib/html/nav.pt.html"); ?>
-	<!-- Information/image -->
-	<div id="block_info">
-		<h4>Arquivos de notícias</h4>
-		<p>
-			As notícias do site arquivadas por ano. Note que alguns
-			links podem estar quebrados devido a mudanças na estrutura
-			do site (principalmente a parte da documentação que foi 
-			movida para domínio próprio)
-		</p>
-		<p>
-			<img src="/images/news.png" alt="[ ]" /> 
-			<a href="./">2008</a> | 
-			<a href="2009.php">2009</a> | 
-			<a href="2010.php">2010</a> |
-			<a href="index.php">2011</a>
-		</p>
-	</div>
-</div>
-
-<?php include("../../lib/lang.php"); ?>
+<?php
+include("../../lib/html/header.pt.html");
+include("../../lib/html/nav.pt.html");
+include("../../lib/lang.php");
+?>
 
 <!-- Content -->
-<div id="content">
+<section id="content">
 
-<h2>2008</h2>
+<h2>Notícias do SliTaz (2008)</h2>
+<p>
+    As notícias do site arquivadas por ano. Note que alguns
+    links podem estar quebrados devido a mudanças na estrutura
+    do site (principalmente a parte da documentação que foi 
+    movida para domínio próprio).
+</p>
+<p>
+    Para outras notícias e informações você também pode consultar o
+    <a href="http://scn.slitaz.org/">Blog da comunidade do SliTaz</a>.
+</p>
+
+<div class="news">
 
 <ul>
-	<li>
-		<strong>31 Dez 2008 - Cooking 20081231 - Wifi e suporte a NTFS </strong>
+	<li id="d20081231"><strong>31 Dez 2008 - Cooking 20081231 - Wifi e suporte a NTFS </strong>
 	<p>
 	O projeto Slitaz tem o prazer de apresentar a nova imagem ISO da versão
 	cooking do LiveCD. Ela permite que seja utilizado e testado todo o
@@ -68,8 +58,7 @@
 	oficiais do projeto.
 	</p></li>
 
-	<li>
-		<strong>Versão Cooking 20080716 - Inicialização pela Web e MPlayer</strong>
+	<li id="d20080716"><strong>Versão Cooking 20080716 - Inicialização pela Web e MPlayer</strong>
 	<p>
 	Os membros do projeto SliTaz orgulhosamente anunciam a disponibilidade de
 	uma nova Versão Cooking (testes), que inclui muitas novas características
@@ -87,8 +76,7 @@
 	loram para máquinas com menos recursos. <a href="../get/#cooking">Baixe a ISO do SliTaz Cooking</a>.
 	</p></li>
 
-	<li>
-		<strong>22 Mar 2008 - SliTaz GNU/Linux 1.0 release</strong>
+	<li id="d20080322"><strong>22 Mar 2008 - SliTaz GNU/Linux 1.0 release</strong>
 	<p>
 	O time de colaboradores do SliTaz orgulhosamente anunciam o lançamento
 	do SliTaz GNU/Linux 1.0. Este é o primeiro lançamento estável após 2 anos
@@ -109,8 +97,19 @@
 	</p></li>
 </ul>
 
-<!-- End of content -->
 </div>
+
+<h2 id="archives">Arquivos de notícias</h2>
+
+<p>
+	<img src="/images/news.png" alt="[ ]" />
+	<a href="2008.php">2008</a> | <a href="2009.php">2009</a>
+	| <a href="2010.php">2010</a> | <a href="2011.php">2011</a>
+	| <a href="2012.php">2012</a> | <a href="index.php">2014</a>
+</p>
+
+<!-- End of content -->
+</section>
 
 <?php include("../../lib/html/footer.pt.html") ?>
 

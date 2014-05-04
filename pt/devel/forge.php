@@ -1,8 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt">
+<!DOCTYPE html>
+<html lang="pt">
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta charset=utf-8" />
 	<title>SliTaz - Espaço dos Desenvolvedores</title>
 	<meta name="description" content="SliTaz GNU/Linux project information overview" />
 	<meta name="keywords" lang="pt" content="sobre slitaz, gnu, linux, mini distro, livecd" />
@@ -11,31 +10,14 @@
 </head>
 <body>
 
-<?php include("../../lib/html/header.pt.html"); ?>
-
-<!-- Block -->
-<div id="block">
-	<?php include("../../lib/html/nav.pt.html"); ?>
-	<!-- Information/image -->
-	<div id="block_info">
-		<h4>Desenvolvimento</h4>
-		<p>
-			Utilitários, linhas mestras e serviços utilizados para 
-			desenvolver o SliTaz.
-		</p>
-		<p>
-			<img src="/images/users.png" alt="[ ]" />
-			Utilize também o <a href="http://scn.slitaz.org/">SCN</a>
-			(SliTaz Community Network) e a 
-			<a href="../mailing-list.php">lista de discussão</a>.
-		</p>
-	</div>
-</div>
-
-<?php include("../../lib/lang.php"); ?>
+<?php 
+include("../../lib/html/header.pt.html");
+include("../../lib/html/nav.pt.html"); 
+include("../../lib/lang.php");
+?>
 
 <!-- Content -->
-<div id="content">
+<section id="content">
 
 <h2>Espaço dos Desenvolvedores do SliTaz</h2>
 
@@ -346,7 +328,7 @@ Para aplicar um patch:
 </pre>
 
 <!-- End of content -->
-</div>
+</section>
 
 <?php include("../../lib/html/footer.pt.html"); ?>
 

@@ -1,8 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt">
+<!DOCTYPE html>
+<html lang="pt">
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta charset=utf-8" />
 	<title>SliTaz (pt) - Downloads</title>
 	<meta name="description" content="SliTaz GNU/Linux LiveCD free download" />
 	<meta name="keywords" lang="pt" content="fonte, iso, livecd, obter, livre" />
@@ -13,32 +12,20 @@
 
 <?php 
 include("../../config.php");
-include("../../lib/html/header.pt.html")
+include("../../lib/html/header.pt.html");
+include("../../lib/html/nav.pt.html"); 
+include("../../lib/lang.php");
 ?>
 
-<!-- Block -->
-<div id="block">
-	<?php include("../../lib/html/nav.pt.html") ?>
-	<!-- Information/image -->
-	<div id="block_info">
-		<h4>Obtenha o SliTaz</h4>
-		<p>
-			Baixe a última versão estável para fins de produção ou
-			um ambiente de trabalho sólido. Use a versão Cooking
-			para testar e nos ajudar a melhorar a distribuição.
-		</p>
-		<div class="button">
-			Download:
-			<?php echo "<a href='$stable_iso'>SliTaz $stable_ver</a>
-				<a href='$cooking_iso'>SliTaz $cooking</a>"; ?>
-		</div>
-	</div>
-</div>
-
-<?php include("../../lib/lang.php"); ?>
-
 <!-- Content -->
-<div id="content">
+<section id="content">
+
+<h2>Obtenha o SliTaz</h2>
+<p>
+    Baixe a última versão estável para fins de produção ou
+    um ambiente de trabalho sólido. Use a versão Cooking
+    para testar e nos ajudar a melhorar a distribuição.
+</p>
 
 <h2>Downloads</h2>
 
@@ -50,7 +37,17 @@ include("../../lib/html/header.pt.html")
 	<li><a href="#floppy">Versão em disquete</a> - Disquete de boot que pode iniciar
 		a versão LiveCD, uma mídia USB, etc.</li>
 	<li><a href="flavors.php">Variantes do LiveCD</a> - Variantes e loram.</li>
+    <li><a href="http://arm.slitaz.org/rpi/">SliTaz Raspberry Pi</a>
+	- Distribuição customizada do Projeto SliTaz ARM</li>
 </ul>
+
+<div class="box-up">
+	<p>
+        Ajude o projeto com pequenas doações ou torne-se um 
+		<a href="../sponsor/">patrocinador oficial</a>.
+	</p>
+	<?php include("../../lib/html/donate.html"); ?>
+</div>
 
 <h3>Informações Gerais</h3>
 
@@ -188,7 +185,7 @@ porém isto irá sobrescrever qualquer dado existente na mídia.
 </p>
 
 <!-- End of content -->
-</div>
+</section>
 
 <?php include("../../lib/html/footer.pt.html") ?>
 

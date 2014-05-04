@@ -1,42 +1,36 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt">
+<!DOCTYPE html>
+<html lang="pt">
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta charset=utf-8" />
 	<title>SliTaz - Documentação em Português</title>
-	<meta name="description" content="SliTaz GNU/Linux English documentationx part livecd tazpkg packages" />
+	<meta name="description" content="Documentação em português do SliTaz GNU/Linux" />
 	<meta name="keywords" lang="pt" content="sistema, livre, gnu, linux, opensource software, livecd na RAM" />
 	<meta name="author" content="Claudinei Pereira" />
 	<?php include("../../lib/html/meta-link.html"); ?>
 </head>
 <body>
 
-<?php include("../../lib/html/header.pt.html"); ?>
-
-<!-- Block -->
-<div id="block">
-	<?php include("../../lib/html/nav.pt.html"); ?>
-	<!-- Information/image -->
-	<div id="block_info">
-		<h4>Documentação em Português</h4>
-		<p>
-			A documentação oficial do SliTaz está disponível na
-			wiki elaborada pela comunidade. Os manuais e um guia
-			introdutório são fornecidos por cada LiveCD do SliTaz,
-			acessíveis através da entrada "Documentação" no menu.
-		</p>
-		<ul>
-			<li><a href="http://doc.slitaz.org/pt:start">Community Wiki</a></li>
-			<li><a href="http://hg.slitaz.org/slitaz-doc/raw-file/tip/slitaz/index.pt.html"
-				>Primeiros Passos</a></li>
-		</ul>
-	</div>
-</div>
-
-<?php include("../../lib/lang.php"); ?>
+<?php 
+include("../../lib/html/header.pt.html");
+include("../../lib/html/nav.pt.html"); 
+include("../../lib/lang.php");
+?>
 
 <!-- Content -->
-<div id="content">
+<section id="content">
+
+<h2>Documentação em Português</h2>
+<p>
+    A documentação oficial do SliTaz está disponível na
+    wiki elaborada pela comunidade. Os manuais e um guia
+    introdutório são fornecidos por cada LiveCD do SliTaz,
+    acessíveis através da entrada "Documentação" no menu.
+</p>
+<ul>
+    <li><a href="http://doc.slitaz.org/pt:start">Community Wiki</a></li>
+    <li><a href="http://hg.slitaz.org/slitaz-doc/raw-file/tip/slitaz/index.pt.html"
+        >Primeiros Passos</a></li>
+</ul>
 
 <h2>Handbook &amp; Cookbook</h2>
 
@@ -108,7 +102,7 @@
 </ul>
 
 <!-- End of content -->
-</div>
+</section>
 
 <?php include("../../lib/html/footer.pt.html"); ?>
 
