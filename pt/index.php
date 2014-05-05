@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt">
 <head>
 	<meta charset=utf-8" />
@@ -142,7 +142,7 @@ include("../lib/lang.php");
     possuimos uma página no Facebook, curta e participe!
 </p>
 
-<?php include("../lib/html/social.html"); ?>
+<?php include("../lib/html/social.pt.html"); ?>
 
 <h2>Internacionalização</h2>
 

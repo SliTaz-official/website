@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt">
 <head>
 	<title>SliTaz - Arquivo de notícias (2009)</title>
