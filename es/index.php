@@ -60,6 +60,32 @@ podrás seguir las últimas noticias, commits y tweets.</p>
 	<p></p>
 	</li> -->
 	<li>
+		<strong>02 de mayo de 2014 - SliTaz 5.0-RC1 disponible</strong>
+	<p>
+	El equipo de SliTaz se complace en anunciar la publicación de SliTaz GNU/Linux 5.0 
+	candidato para el lanzamiento 1 (RC-1). Este lanzamiento es muy maduro, pero requiere 
+	una prueba intensiva para que podamos lanzar la versión estable 5.0 lo antes posible.
+	</p>
+	<p>
+	SliTaz RC-1 incluye varias pequeña correcciónes de errores, con los diálogos de utilidad 
+	mejorados de SliTaz-config para que los nuevos usuarios puedan configurar fácilmente el 
+	sistema, incluso en el modo de texto, nueva apariencia del Tazpanel y mejor soporte de idiomas. 
+	También soporte fijo para los viejos discos duros ATA. 
+	</p>
+	<p>
+	El manejo de escritorio por PCManFM con bote de basura y gvfs/udisks de apoyo. La base de 
+	datos de paquetes tiene más de 200 paquetes actualizados y alrededor de 50 nuevos paquetes. 
+	Para preparar SliTaz 5.0 el sitio web principal se actualizo proporcionando una manera mucho 
+	más fácil de navegar. 
+	</p>
+	<p>
+	Descargar el nuevo <a href="http://mirror.slitaz.org/iso/5.0/slitaz-5.0-rc1.iso"
+		>slitaz-5.0-rc1.iso</a>
+	[ <a href="http://mirror.slitaz.org/iso/5.0/slitaz-5.0-rc1.md5"
+		>md5</a> ]
+	</p>
+	</li>
+	<li>
 		<strong>16 de febrero de 2014 - Nueva Cooking 20140216</strong>
 	<p>
 	El equipo de Slitaz se complace en anunciar la publicación de una nueva versión 
