@@ -51,7 +51,7 @@ include("../../lib/lang.php");
 			PCmanFM peut également gérer les disques amovibles.
 		</p>
 		<p>
-			Plus de 200 000 paquets ont été mis à jour, et 50 nouveaux 
+			Plus de 200 paquets ont été mis à jour, et 50 nouveaux 
 			paquets ont été ajoutés. Finalement, le site principale adopte
 			un nouveau style afin de vous fournir un moyen toujours plus 
 			facile pour naviguer et trouver l'information qu'il vous faut. 
