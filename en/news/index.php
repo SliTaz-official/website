@@ -29,6 +29,33 @@ include("../../lib/lang.php");
 <div class="news">
 
 <ul>
+	<li id="d20140519">
+		<strong>19 May 2014 - SliTaz 5.0 RC-2 release</strong>
+	<p>
+		The Slitaz team is pleased to announce the new SliTaz 5.0-RC2 release 
+		candidate. We have done a huge amount of work fixing bugs from RC1 with
+		about 500 commits in our Mercurial repositories. All the 4300 packages
+		have been rebuilt to found and fix bugs and to ensure everything can
+		be rebuilt from source by advanced users.
+	</p>
+	<p>
+		We took a lot of time to improve users experience with our default and
+		custom LXDE desktop. Polkit and udisks configuration have been fixed
+		to handle correctly external devices and internal hard disk partitions.
+	</p>
+	<p>
+		The RC2 support a new installation method. SliTaz can be installed into 
+		a single directory without partitionning any hard disk. This method work
+		with all file systems including NTFS and FAT32.
+	</p>
+	<p>
+		Download: <a href="http://mirror.slitaz.org/iso/5.0/slitaz-5.0-rc2.iso"
+			>slitaz-5.0-rc2.iso</a>
+		[ <a href="http://mirror.slitaz.org/iso/5.0/slitaz-5.0-rc2.md5"
+			>md5</a> ]
+	</p>
+	</li>
+	
 	<li id="d20140502">
 		<strong>02 May 2014 - SliTaz 5.0 RC-1 release</strong>
 	<p>
@@ -60,9 +87,7 @@ include("../../lib/lang.php");
 			>md5</a> ]
 	</p>
 	</li>
-</ul>
 
-<ul>
 	<li id="d20140329">
 		<strong>29 Mar 2014 - SliTaz Raspberry Pi release</strong>
 	<p>
@@ -89,9 +114,6 @@ include("../../lib/lang.php");
 		<a href="http://mirror.slitaz.org/arm/rpi/slitaz-rpi-base-20140329.tar.bz2"
 			>slitaz-rpi-base-20140329</a> (22 Mb) -
 		<a href="http://arm.slitaz.org/rpi/">SliTaz Raspberry Pi Home</a>
-	</p>
-	<p>
-		
 	</p>
 	</li>
 	
