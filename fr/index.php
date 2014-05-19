@@ -44,14 +44,12 @@ include("../lib/lang.php");
 <h2>Dernière publications</h2>
 
 <ul>
+	<li><strong><a href="/en/news/#d20140519">Publication de SliTaz 5.0 RC-2</a></strong>
+		<span>- 19 Mai 2014</span></li>
 	<li><strong><a href="news/#d20140502">Publication de SliTaz 5.0 RC-1</a></strong>
 		<span>- 2 Mai 2014</span></li>
 	<li><strong><a href="http://arm.slitaz.org/rpi/">Publication de SliTaz Raspberry Pi</a></strong>
 		<span>- 29 Mar 2014</span></li>
-	<li><strong><a href="../en/news/#d20140216">Nouvelle SliTaz Cooking</a></strong>
-		<span>- 16 Fév 2012</span></li>
-	<li><strong><a href="news/2012.php#d20120410">Publication de SliTaz 4.0</a></strong>
-		<span>- 10 Avr 2012</span></li>
 	<li><strong><a href="news/">Archives des nouvelles publications</a></strong>
 		<span>- 2007-2013</span></li>
 </ul>
@@ -62,18 +60,6 @@ include("../lib/lang.php");
 <h2>Activité du projet</h2>
 
 <?php require_once("../lib/get-feeds.php"); ?>
-
-<div class="activity">
-	<p>
-		<a href="http://scn.slitaz.org/activity/"><img
-			src="/images/users.png" alt="[ ]" /></a>
-		Activité de la communauté
-		<?php get_feed("scn.xml"); ?>
-	</div>
-	<p class="activity_more">
-		<a href="http://scn.slitaz.org/activity/">Plus d'activité</a>
-	</p>
-</div>
 
 <div class="activity">
 	<p>
@@ -97,13 +83,6 @@ include("../lib/lang.php");
 	<p class="activity_more">
 		<a href="http://hg.slitaz.org/">Plus de commits</a>
 	</p>
-</div>
-
-<!-- SCN blog posts  -->
-<h2>Articles du Blog</h2>
-
-<div class="news">
-	<?php get_feed_blog("blog.xml"); ?>
 </div>
 
 <h2>Aider le projet</h2>
