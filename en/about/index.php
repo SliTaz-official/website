@@ -25,6 +25,7 @@ include("../../lib/lang.php");
 </p>
 <ul>
 	<li><a href="#intro">Introduction</a></li>
+	<li><a href="#spec">SliTaz Specifications</a></li>
 	<li><a href="#overview">Overview</a></li>
 	<li><a href="#website">Web site &amp; i18n</a></li>
 	<li><a href="#reviews">Reviews</a></li>
@@ -49,6 +50,49 @@ SliTaz project provides free technical support to users through the
 and the <a href="http://forum.slitaz.org/">English Forum</a>.
 You can also contact us for more information, suggestions, or comments
 using the list or directly by mail: &lt;devel at slitaz.org&gt;
+</p>
+
+<h2 id="spec">SliTaz Spec</h2>
+
+<p>
+The default ISO image provides 4 flavors: base, just-x, gtk-only and the
+full desktop. SliTaz can also be booted from the web, customized to match
+any needs and installed on a wide range of devices from old computers, to
+powerful servers and small ARM devices such as the Raspberry Pi.
+</p>
+<p>
+SliTaz is easy to use for Linux beginners: we provide a full featured 
+and modern desktop following the Freedektop standards with home made 
+tools that let users configure graphicaly the entire system. The full 
+system can even be controled remotly with our web based configuration 
+panel.
+</p>
+
+<p>
+We provides a base system and a stripped down X system from which you can 
+build your own custimozed distro. The custom system can them be used 
+from a cdrom, usb stick, sdcard, installed to HD or booted from the web.
+</p>
+<p>
+Follow UNIX philosophy: everything is text file. Our packages manager
+and all system settings are stored in simple text files for easy 
+customization and human readable configurations. Use SHell scripting
+for most tools, again for easy customization and developement.
+</p>
+<p>
+Radicaly simple way to boot using 4 scripts to configure the entire
+system, handle boot options, manage networking and run local commands.
+SliTaz loads the minimal and let users control everything else.
+</p>
+<p>
+Be able to run completly in RAM memory from a LiveCD, an usb stick or
+frugal HD install. This mod allows  you to save documents on a mounted
+partition while the system stays super fast and response.
+</p>
+<p>
+Structured network with deep SliTaz integration for easy navigations
+between all sites. Structured developement: with Mercurial and cuctom
+tools such as the bug tracker and the cookutils.
 </p>
 
 <h2 id="overview">Overview</h2>
