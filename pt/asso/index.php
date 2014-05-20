@@ -21,7 +21,7 @@ include("../../lib/lang.php");
 
 <div class="box-up">
     <a href="http://www.gofundme.com/slitaz2014?utm_medium=wdgt"
-        title="Visite esta página"><img src=../../images/gofundme.png"></a>
+        title="Visite esta página"><img src="../../images/gofundme.png"></a>
     <a href="http://www.gofundme.com/slitaz2014?utm_medium=wdgt"
         title="Participe das doações para o SliTaz em 2014!"</a>
 </div>

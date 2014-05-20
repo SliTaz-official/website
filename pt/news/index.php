@@ -34,6 +34,38 @@ include("../../lib/lang.php");
 <div class="news">
 
 <ul>
+	<li id="d20140519">
+		<strong>19 de maio de 2014 - Lançamento do SliTaz 5.0 RC-2</strong>
+	<p>
+        Os desenvolvedores do SliTaz anunciam a disponibilidade da segunda
+        versão de testes em preparamento à próxima versão estável. Ela traz
+        as mudanças feitas desde a primeira versão de testes, que corrigiram
+        diversos bugs detectados, num total de 500 alterações em nossos 
+        repositório de desenvolvimento. Todos os 4300 pacotes foram recompilados
+        de forma a buscar por bugs e garantir que usuários avançados possam 
+        compilar seus programas à partir dos fontes.
+	</p>
+	<p>
+        Buscamos também melhorar a experiência do usuário com a área de
+        trabalho padrão oferecida pelo LXDE. Os utilitários Polkit e udisks
+        tiveram sua configuração corrigida de forma a gerenciarem adequadamente
+        dispositivos de armazenamento externos e partições dos discos
+        internos.
+	</p>
+	<p>
+        Esta versão suporta um novo método de instalação: o SliTaz agora pode
+        ser instalado diretamente num diretório qualquer, sem a necessidade de
+        particionar o disco rígido, funcionando inclusive em partições NTFS e
+        FAT32.
+	</p>
+	<p>
+		Download: <a href="http://mirror.slitaz.org/iso/5.0/slitaz-5.0-rc2.iso"
+			>slitaz-5.0-rc2.iso</a>
+		[ <a href="http://mirror.slitaz.org/iso/5.0/slitaz-5.0-rc2.md5"
+			>md5</a> ]
+	</p>
+	</li>
+    
 	<li id="d20140502">
 		<strong>02 de maio de 2014 - lançamento do SliTaz 5.0 RC-1</strong>
 	<p>

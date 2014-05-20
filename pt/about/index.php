@@ -25,6 +25,7 @@ include("../../lib/lang.php");
 </p>
 <ul>
 	<li><a href="#intro">Introdução</a></li>
+    <li><a href="#spec">Especificações</a></li>
 	<li><a href="#overview">Resumo</a></li>
 	<li><a href="#website">Website &amp; i18n</a></li>
 	<li><a href="#reviews">Resenhas</a></li>
@@ -53,7 +54,58 @@ Você também pode nos contatar para maiores informações, sugestões e coment�
 usando a lista ou diretamente por e-mail :  &lt;devel at slitaz.org&gt;
 </p>
 
-<h3 id="overview">Resumo</h3>
+<h2 id="spec">Especifições</h2>
+
+<p>
+A imagem ISO padrão da distribuição fornece 4 variantes: base, just-x,
+gkt-only e desktop completo e também oferece a opção de boot
+via web. Assim, cobre várias necessidades específicas, suportando vários
+dispositivos, desde computadores antigos, servidores de alta disponibilidade
+e plataforma ARM com o Raspberry Pi.
+</p>
+<p>
+O SliTaz é simples de ser utilizado por usuários iniciantes em GNU/Linux:
+fornece uma área de trabalho moderna, que segue os padrões Freedesktop 
+com ferramentas personalizadas que permitem ao usuário configurar todo
+o sistema por meio de caixas de diálogo gráficas. O sistema também permite
+seu gerenciamento remoto por meio de um painel de configuração via web.
+</p>
+
+<p>
+O sistema base traz um servidor X simples, sem outros programas, que permite
+a personalização do sistema somente com os elementos que o usuário deseja.
+Esse sistema pode, depois, ser utilizado a partir de um CDROM, pendrive,
+sdcard, instalado no disco rígido ou inicializado via web.
+</p>
+<p>
+A distribuição segue a filosofia UNIX: todos os elementos do sistema se
+encontram em arquivos texto. O gerenciador de pacotes e todas as configurações
+do sistema são arquivados em arquivos de texto simples, que podem ser
+lidos e modificados por qualquer pessoa. A maioria das ferramentas do
+sistema são feitas em SHell Script, o que permite sua customização por
+desenvolvedores que conheçam essa linguagem.
+</p>
+<p>
+O boot do sistema é feito por meio de 4 scripts, que configuram todo
+o processo, lidam com as opções de boot, gerenciam a rede e outros comandos
+locais. Somente o necessário para a distribuição funcionar é executado,
+dando espaço para o usuário controlar todo o resto conforme suas necessidades.
+</p>
+<p>
+O sistema é capaz de rodar completamente na memória RAM, à partir
+de um LiveCD, de um pendrive ou de uma instalação frugal no disco rígido.
+Isto permite salvar configurações e documentos em uma partição montada
+localmente enquanto o sistema é executado de forma rápida e responsiva.
+</p>
+<p>
+A rede em volta da distribuição é estruturada e integrada, o que permite
+uma fácil navegação por todos os sites. O desenvolvimento é centralizado
+em repositórios Mercurial e ferramentas customizadas tais como o sistema
+de informação de bugs e o cookutils.
+</p>
+
+
+<h2 id="overview">Resumo</h2>
 
 <ul>
 	<li>Sistema de Arquivos Root com cerca de 100 MB e a imagem ISO menor que 30 MB.</li>
@@ -71,7 +123,7 @@ usando a lista ou diretamente por e-mail :  &lt;devel at slitaz.org&gt;
 	<li>Comunidade ativa e amigável.</li>
 </ul>
 
-<h3 id="website">Web sites &amp; i18n</h3>
+<h2 id="website">Web sites &amp; i18n</h2>
 
 <p>
 O website do SliTaz está disponível em diferentes linguagens e é parte do 
@@ -82,14 +134,14 @@ ajudar no desenvolvimento do projeto. Pode-se também consultar a
 distribuição e configurar o sistema.
 </p>
 
-<h3 id="reviews">Resenhas</h3>
+<h2 id="reviews">Resenhas</h2>
 
 <p>
 O SliTaz GNU/Linux foi resenhado por diversos websites. Agradecemos a todos
 pelo suporte.
 </p>
 
-<h4>4.0 - Abr 2012</h4>
+<h3>4.0 - Abr 2012</h3>
 
 <ul>
 	<li><a href="http://badalhocando.blogspot.co.uk/2012/04/slitaz-40-review-small-but-fierce.html"
@@ -100,7 +152,7 @@ pelo suporte.
 		>Weblog</a> (fr) - Por Frederic Bezies.</li>
 </ul>
 
-<h4>3.0 - Mar 2010 &amp; Cooking - Jan 2011</h4>
+<h3>3.0 - Mar 2010 &amp; Cooking - Jan 2011</h3>
 
 <ul>
 	<li><a href="http://kmandla.wordpress.com/2010/03/29/greetings-from-slitaz-3-0/"
@@ -111,7 +163,7 @@ pelo suporte.
 		>Distrowatch</a> - Por Jesse Smith (da versão cooking anterior à versão 3.0).</li>
 </ul>
 
-<h4>2.0 - Abr 2009</h4>
+<h3>2.0 - Abr 2009</h3>
 
 <ul>
 	<li><a href="http://www.gdhpress.com.br/blog/slitaz"
@@ -126,7 +178,7 @@ pelo suporte.
 		>Linuxologist</a> - Por Brie Gordon.</li>
 </ul>
 
-<h4>1.0 - Mar 2008</h4>
+<h3>1.0 - Mar 2008</h3>
 
 <ul>
 	<li><a href="http://distrowatch.com/weekly.php?issue=20080331"
