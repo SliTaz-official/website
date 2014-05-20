@@ -35,17 +35,17 @@ include("../../lib/lang.php");
 		The Slitaz team is pleased to announce the new SliTaz 5.0-RC2 release 
 		candidate. We have done a huge amount of work fixing bugs from RC1 with
 		about 500 commits in our Mercurial repositories. All the 4300 packages
-		have been rebuilt to found and fix bugs and to ensure everything can
+		have been rebuilt to find and fix bugs and to ensure everything can
 		be rebuilt from source by advanced users.
 	</p>
 	<p>
 		We took a lot of time to improve users experience with our default and
-		custom LXDE desktop. Polkit and udisks configuration have been fixed
-		to handle correctly external devices and internal hard disk partitions.
+		custom LXDE desktop. Polkit and udisks configuration has been fixed
+		to correctly handle external devices and internal hard disk partitions.
 	</p>
 	<p>
-		The RC2 support a new installation method. SliTaz can be installed into 
-		a single directory without partitionning any hard disk. This method work
+		The RC2 supports a new installation method. SliTaz can be installed into 
+		a single directory without partitioning any hard disk and this method works
 		with all file systems including NTFS and FAT32.
 	</p>
 	<p>
