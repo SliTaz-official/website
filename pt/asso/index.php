@@ -22,14 +22,14 @@ include("../../lib/lang.php");
 <div class="box-up">
     <a href="http://www.gofundme.com/slitaz2014?utm_medium=wdgt"
         title="Visite esta página"><img src="../../images/gofundme.png"></a>
-    <a href="http://www.gofundme.com/slitaz2014?utm_medium=wdgt"
-        title="Participe das doações para o SliTaz em 2014!"</a>
+    <a href="http://www.gofundme.com/slitaz2014?utm_medium=wdgt">
+        	Participe das doações para o SliTaz em 2014!</a>
 </div>
 
 <!-- Featured Sponsor -->
 <div id="sponsor">
     <p><strong>Patrocinador em destaque</strong></p>
-    <?php include("../lib/rand-sponsor.php"); ?>
+    <?php include("../../lib/rand-sponsor.php"); ?>
     <p><a href="/pt/sponsor/">Torne-se um patrocinador!</a></p>
 </div>
 
