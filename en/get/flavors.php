@@ -52,43 +52,43 @@ include("../../lib/html/header.html");
 </p></div>
 
 <div class="box-dl"><p>
-	<a href="http://mirror.slitaz.org/iso/3.0/flavors/slitaz-3.0-firefox.iso">
-		slitaz-3.0-firefox.iso</a>
-	[29.0M] - Small desktop environment featuring Mozilla Firefox
+	<a href="http://mirror.slitaz.org/iso/4.0/flavors/slitaz-4.0-firefox.iso">
+		slitaz-4.0-firefox.iso</a>
+	[43.0M] - Small desktop environment featuring Mozilla Firefox
 </p></div>
 
 <div class="box-dl"><p>
-	<a href="http://mirror.slitaz.org/iso/3.0/flavors/slitaz-3.0-justx.iso">
-		slitaz-3.0-justx.iso</a>
-	[15.0M] - Small desktop environment powered by Xorg and Openbox, using just
+	<a href="http://mirror.slitaz.org/iso/4.0/flavors/slitaz-4.0-justx.iso">
+		slitaz-4.0-justx.iso</a>
+	[16.0M] - Small desktop environment powered by Xorg and Openbox, using just
 	an X environment and tools to build your own desktop
 </p></div>
 
 <div class="box-dl"><p>
-	<a href="http://mirror.slitaz.org/iso/3.0/flavors/slitaz-3.0-base.iso">
-		slitaz-3.0-base.iso</a>
+	<a href="http://mirror.slitaz.org/iso/4.0/flavors/slitaz-4.0-base.iso">
+		slitaz-4.0-base.iso</a>
 	[8.0M] - Base system in text mode and including useful commandline tools.
 	A good choice for a server installation
 </p></div>
 
 <div class="box-dl"><p>
-	<a href="http://mirror.slitaz.org/iso/3.0/flavors/slitaz-3.0-loram.iso">
-		slitaz-3.0-loram.iso</a>
-	[35.0M] - Loram flavor that can start SliTaz on machines with very limited
-	resources and needs only 80MB without disabling the cdrom
+	<a href="http://mirror.slitaz.org/iso/4.0/flavors/slitaz-4.0-loram.iso">
+		slitaz-4.0-loram.iso</a>
+	[41.0M] - Loram flavor that can start SliTaz on machines with very limited
+	resources and needs only 128MB without disabling the cdrom
 </p></div>
 
 <div class="box-dl"><p>
-	<a href="http://mirror.slitaz.org/iso/3.0/flavors/slitaz-3.0-loram-cdrom.iso">
-		slitaz-3.0-loram-cdrom.iso</a>
-	[131.0M] - Loram flavor that can boot with only 16 MB and a little swap
+	<a href="http://mirror.slitaz.org/iso/4.0/flavors/slitaz-4.0-loram-cdrom.iso">
+		slitaz-4.0-loram-cdrom.iso</a>
+	[163.0M] - Loram flavor that can boot with only 24 MB and a little swap
 	memory, but is unable to release the cdrom
 </p></div>
 
 <div class="box-dl"><p>
-	<a href="http://mirror.slitaz.org/iso/3.0/flavors/slitaz-3.0-3in1.iso">
-		slitaz-3.0-3in1.iso</a>
-	[30.0M] - 3in1 flavor containing the base, justx and core ISOs
+	<a href="http://mirror.slitaz.org/iso/4.0/slitaz-4.0.iso">
+		slitaz-4.0.iso</a>
+	[35.0M] - 4in1 flavor containing the base, justx, gtkonly and core ISOs
 </p></div>
 
 

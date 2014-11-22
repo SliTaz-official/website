@@ -35,11 +35,11 @@
 <p>
 为了方便，Slitaz工作组会向您推荐一些衍生版本，它们都基于Cooking版本，
 不过不一定总是和当前版本同步。<em>loram</em>版本内存需求量较小，
-安装到硬盘后只需80M内存就可以运行。
-<em>loram-cdrom</em>只需16M内存和一点点交换空间就可以启动，不过启动后不能弹出CD。
+安装到硬盘后只需128M内存就可以运行。
+<em>loram-cdrom</em>只需24M内存和一点点交换空间就可以启动，不过启动后不能弹出CD。
 </p>
 <p>
-<a href="http://mirror.slitaz.org/iso/3.0/flavors/">下载来试试</a>
+<a href="http://mirror.slitaz.org/iso/4.0/flavors/">下载来试试</a>
 </p>
 
 <h2>获取并且创建衍生版本</h2>

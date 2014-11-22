@@ -48,13 +48,13 @@ Diese Flavors werden vom SliTaz-Team veröffentlicht. Sie basieren auf der
 Cooking-Version. 
 </p>
 <p>Das <em>Loram</em> Flavor startet SliTaz auf Rechnern mit älterer Hardware,
-benötigt werden blos 80 MB RAM.  Das
-<em>Loram-cdrom</em> Flavor benötigt nur  16 MB Arbeitsspeicher und eine 
+benötigt werden blos 128 MB RAM.  Das
+<em>Loram-cdrom</em> Flavor benötigt nur  24 MB Arbeitsspeicher und eine 
 kleine Swap -Partition, 
 allerdings kann die CD nicht mehr dem Laufwerk entnommen werden.
 </p>
 <p>
-<a href="http://mirror.slitaz.org/iso/3.0/flavors/">Ein fertiges Flavor-Image downloaden</a>
+<a href="http://mirror.slitaz.org/iso/4.0/flavors/">Ein fertiges Flavor-Image downloaden</a>
 </p>
 
 <h3>Eine .flavor Datei generieren</h3>

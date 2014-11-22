@@ -34,14 +34,14 @@ include("../../lib/lang.php");
 	Por conveniência, o time do SliTaz fornece algumas variantes em formato ISO, 
 	baseadas na versão de testes mas nem sempre sincronizadas com a última versão.
 	A variante <em>loram</em> pode iniciar o SliTaz em máquinas de poucos recursos,
-	isto é, 80 MB de RAM. A <em>loram-cdrom</em> necessita de apenas 16 MB e pode
+	isto é, 128 MB de RAM. A <em>loram-cdrom</em> necessita de apenas 24 MB e pode
 	ser ejetável e/ou usar o drive de cdrom e a <em>loram-cdrom-sqfs</em> pode
 	inicializar com apenas 16 MB e uma pequena memória swap, mas já não pode ser 
 	ejetada.
 </p>
 
 <p class="box">
-	<a href="http://mirror.slitaz.org/iso/3.0/flavors/">Baixe uma variante</a>
+	<a href="http://mirror.slitaz.org/iso/4.0/flavors/">Baixe uma variante</a>
 </p>
 
 <h3>Obtendo e gerando uma variante</h3>

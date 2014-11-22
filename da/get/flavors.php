@@ -50,37 +50,37 @@
 </p></div>
 
 <div class="box-dl"><p>
-	<a href="http://mirror.slitaz.org/iso/3.0/flavors/slitaz-3.0-firefox.iso">slitaz-3.0-firefox.iso</a>
-	[29.0M] - Slankt skrivebordsmiljø med Mozilla Firefox
+	<a href="http://mirror.slitaz.org/iso/4.0/flavors/slitaz-4.0-firefox.iso">slitaz-4.0-firefox.iso</a>
+	[43.0M] - Slankt skrivebordsmiljø med Mozilla Firefox
 </p></div>
 
 <div class="box-dl"><p>
-	<a href="http://mirror.slitaz.org/iso/3.0/flavors/slitaz-3.0-justx.iso">slitaz-3.0-justx.iso</a>
-	[15.0M] - Slankt skrivebordsmiljø drevet af Xorg og Openbox, kun ved brug af et X-miljø og 
+	<a href="http://mirror.slitaz.org/iso/4.0/flavors/slitaz-4.0-justx.iso">slitaz-4.0-justx.iso</a>
+	[16.0M] - Slankt skrivebordsmiljø drevet af Xorg og Openbox, kun ved brug af et X-miljø og 
 	værktøj til at bygge dit eget skrivebord med
 </p></div>
 
 <div class="box-dl"><p>
-	<a href="http://mirror.slitaz.org/iso/3.0/flavors/slitaz-3.0-base.iso">slitaz-3.0-base.iso</a>
+	<a href="http://mirror.slitaz.org/iso/4.0/flavors/slitaz-4.0-base.iso">slitaz-4.0-base.iso</a>
 	[8.0M] - Basissystem med tekstterminal og anvendelige kommandolinieværktøjer. 
 	Et godt valg til en serverinstallation.
 </p></div>
 
 <div class="box-dl"><p>
-	<a href="http://mirror.slitaz.org/iso/3.0/flavors/slitaz-3.0-loram.iso">slitaz-3.0-loram.iso</a>
-	[35.0M] - Loram variant som kan starte SliTaz på maskiner med meget begrænsede resourser. Behøver kun
-	80MB hukommelse for ikke at blokere cdromdrevet.
+	<a href="http://mirror.slitaz.org/iso/4.0/flavors/slitaz-4.0-loram.iso">slitaz-4.0-loram.iso</a>
+	[41.0M] - Loram variant som kan starte SliTaz på maskiner med meget begrænsede resourser. Behøver kun
+	128MB hukommelse for ikke at blokere cdromdrevet.
 </p></div>
 
 <div class="box-dl"><p>
-	<a href="http://mirror.slitaz.org/iso/3.0/flavors/slitaz-3.0-loram-cdrom.iso">slitaz-3.0-loram-cdrom.iso</a>
-	[131.0M] - Loram variant kan starte med kun 16 MB hukommelse og en lille swappartion, men er
+	<a href="http://mirror.slitaz.org/iso/4.0/flavors/slitaz-4.0-loram-cdrom.iso">slitaz-4.0-loram-cdrom.iso</a>
+	[163.0M] - Loram variant kan starte med kun 24 MB hukommelse og en lille swappartion, men er
 	ikke i stand til at frigive cdrommen
 </p></div>
 
 <div class="box-dl"><p>
-	<a href="http://mirror.slitaz.org/iso/3.0/flavors/slitaz-3.0-3in1.iso">slitaz-3.0-3in1.iso</a>
-	[30.0M] - 3i1 variant indeholdende  basen, justx og core cdromen
+	<a href="http://mirror.slitaz.org/iso/4.0/slitaz-4.0.iso">slitaz-4.0.iso</a>
+	[35.0M] - 4i1 variant indeholdende  basen, justx, gtkonly og core cdromen
 </p></div>
 
 <div class="box">

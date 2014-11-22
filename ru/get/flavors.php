@@ -42,33 +42,33 @@ include("../../lib/html/header.ru.html");
 </p></div>
 
 <div class="box-dl"><p>
-	<a href="http://mirror.slitaz.org/iso/3.0/flavors/slitaz-3.0-firefox.iso">slitaz-3.0-firefox.iso</a>
-	[29 МБ] — Небольшое окружение рабочего стола с Mozilla Firefox «из коробки»
+	<a href="http://mirror.slitaz.org/iso/4.0/flavors/slitaz-4.0-firefox.iso">slitaz-4.0-firefox.iso</a>
+	[43 МБ] — Небольшое окружение рабочего стола с Mozilla Firefox «из коробки»
 </p></div>
 
 <div class="box-dl"><p>
-	<a href="http://mirror.slitaz.org/iso/3.0/flavors/slitaz-3.0-justx.iso">slitaz-3.0-justx.iso</a>
-	[15 МБ] — Небольшое окружение рабочего стола на базе Xorg и Openbox, использующее только окружение X и утилиты для создания вашего собственного рабочего стола
+	<a href="http://mirror.slitaz.org/iso/4.0/flavors/slitaz-4.0-justx.iso">slitaz-4.0-justx.iso</a>
+	[16 МБ] — Небольшое окружение рабочего стола на базе Xorg и Openbox, использующее только окружение X и утилиты для создания вашего собственного рабочего стола
 </p></div>
 
 <div class="box-dl"><p>
-	<a href="http://mirror.slitaz.org/iso/3.0/flavors/slitaz-3.0-base.iso">slitaz-3.0-base.iso</a>
+	<a href="http://mirror.slitaz.org/iso/4.0/flavors/slitaz-4.0-base.iso">slitaz-4.0-base.iso</a>
 	[8 МБ] — Базовая система в текстовом режиме, включающая полезные утилиты командной строки. Хороший выбор для установки на сервер
 </p></div>
 
 <div class="box-dl"><p>
-	<a href="http://mirror.slitaz.org/iso/3.0/flavors/slitaz-3.0-loram.iso">slitaz-3.0-loram.iso</a>
-	[35 МБ] — Редакция Loram, которая позволяет запускать SliTaz на машинах с очень ограниченными ресурсами, нуждается только в 80 МБ и не использует CDROM во время своей работы
+	<a href="http://mirror.slitaz.org/iso/4.0/flavors/slitaz-4.0-loram.iso">slitaz-4.0-loram.iso</a>
+	[41 МБ] — Редакция Loram, которая позволяет запускать SliTaz на машинах с очень ограниченными ресурсами, нуждается только в 128 МБ и не использует CDROM во время своей работы
 </p></div>
 
 <div class="box-dl"><p>
-	<a href="http://mirror.slitaz.org/iso/3.0/flavors/slitaz-3.0-loram-cdrom.iso">slitaz-3.0-loram-cdrom.iso</a>
-	[131 МБ] — Редакция Loram, которой нужно для запуска только 16 МБ памяти, небольшой объем подкачки и использующая загрузочный CDROM во время работы
+	<a href="http://mirror.slitaz.org/iso/4.0/flavors/slitaz-4.0-loram-cdrom.iso">slitaz-4.0-loram-cdrom.iso</a>
+	[165 МБ] — Редакция Loram, которой нужно для запуска только 24 МБ памяти, небольшой объем подкачки и использующая загрузочный CDROM во время работы
 </p></div>
 
 <div class="box-dl"><p>
-	<a href="http://mirror.slitaz.org/iso/3.0/flavors/slitaz-3.0-3in1.iso">slitaz-3.0-3in1.iso</a>
-	[30 МБ] — Редакция «3-в-1», включающая в себя ISO-образы base, justx и core
+	<a href="http://mirror.slitaz.org/iso/4.0/slitaz-4.0.iso">slitaz-4.0.iso</a>
+	[35 МБ] — Редакция «3-в-1», включающая в себя ISO-образы base, justx, gtkonly и core
 </p></div>
 
 <div class="box">

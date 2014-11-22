@@ -41,12 +41,12 @@
 Par commodité, l'équipe de SliTaz propose quelques images ISO de saveurs
 pour la version stable et Cooking de SliTaz. Les saveurs <em>loram</em> 
 permettent de démarrer SliTaz sur des machines ayant très peu de ressources.
-La saveur <em>loram</em> a besoin de 80 MB et libère le cdrom, la
-version <em>loram-cdrom</em> peut démarrer avec 16 Mb et un peu de
+La saveur <em>loram</em> a besoin de 128 MB et libère le cdrom, la
+version <em>loram-cdrom</em> peut démarrer avec 24 Mb et un peu de
 mémoire swap, mais ne libère pas le cdrom.
 </p>
 <p>
-<a href="http://mirror.slitaz.org/iso/3.0/flavors/"
+<a href="http://mirror.slitaz.org/iso/4.0/flavors/"
 	>Télécharger une saveur</a>
 </p>
 
