@@ -22,8 +22,8 @@ include("../lib/lang.php");
 <h2>Recherche de paquets</h2>
 
 <p>
-	Recherche des <a href="http://pkgs.slitaz.org/">paquets</a>,
-	fichiers, build logs, receipts, etc. Tous les paquets peuvent
+	Recherche de <a href="http://pkgs.slitaz.org/">paquets</a>,
+	fichiers, recettes, etc. Tous les paquets peuvent
 	être installés avec le gestionnaire de paquets Tazpkg par
 	l'interface graphique ou la commande 
 	<code>tazpkg get-install pkgname</code>.
@@ -33,12 +33,12 @@ include("../lib/lang.php");
 	<form method="post" action="http://pkgs.slitaz.org/">
 		<div class="searchbox">
 			<p>
-				<input type="hidden" name="lang" value="en" />
+				<input type="hidden" name="lang" value="fr" />
 				<input type="text" name="query" size="24" style="width: 80%;" />
-				<input type="submit" name="search" value="Search" />
+				<input type="submit" name="search" value="Rechercher" />
 			</p>
 		</div>
-		Search for:
+		Recherche de :
 		<select name="object">
 			<option value="Package">Paquet</option>
 			<option value="Desc">Description</option>
@@ -50,11 +50,11 @@ include("../lib/lang.php");
 			<option value="File">Fichier</option>
 			<option value="File_list">Liste des fichiers</option>
 			<option value="FileOverlap">Fichiers commun</option>
-			<option value="Category">Categorie</option>
+			<option value="Category">Catégorie</option>
 			<option value="Maintainer">Mainteneur</option>
 			<option value="License">License</option>
 		</select>
-		in
+		dans la version
 		<select name="version">
 			<option value="cooking">cooking</option>
 			<option value="stable">stable</option>
