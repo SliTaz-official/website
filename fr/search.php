@@ -12,7 +12,7 @@
 
 <?php 
 include("../lib/html/header.html");
-include("../lib/html/nav.fr.html"); 
+include("../lib/html/nav-ng.fr.html"); 
 include("../lib/lang.php");
 ?>
 
