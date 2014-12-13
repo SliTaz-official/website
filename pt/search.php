@@ -43,18 +43,27 @@ include("../lib/lang.php");
 			<option value="Package">Pacote</option>
 			<option value="Desc">Descrição</option>
 			<option value="Tags">Tags</option>
+			<option value="Arch">Arch</option>
+			<option value="Bugs">Bugs</option>
 			<option value="Depends">Dependências</option>
 			<option value="BuildDepends">Dependências de compilação</option>
 			<option value="File">Arquivo</option>
 			<option value="File_list">Lista de arquivo</option>
 			<option value="FileOverlap">arquivos comuns</option>
+			<option value="Category">Category</option>
+			<option value="Maintainer">Maintainer</option>
+			<option value="License">License</option>
 		</select>
 		na versão
 		<select name="version">
 			<option value="cooking">cooking</option>
 			<option value="stable">estável</option>
+			<option value="backports">backports</option>
+			<option value="3.0">3.0</option>
 			<option value="2.0">2.0</option>
 			<option value="1.0">1.0</option>
+			<option value="tiny">tiny</option>
+			<option value="undigest">undigest</option>
 		</select>
 	</form>
 </div>

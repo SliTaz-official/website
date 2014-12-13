@@ -42,18 +42,27 @@ include("../lib/lang.php");
 			<option value="Package">Package</option>
 			<option value="Desc">Description</option>
 			<option value="Tags">Tags</option>
+			<option value="Arch">Arch</option>
+			<option value="Bugs">Bugs</option>
 			<option value="Depends">Depends</option>
 			<option value="BuildDepends">BuildDepends</option>
 			<option value="File">File</option>
 			<option value="File_list">File list</option>
 			<option value="FileOverlap">common files</option>
+			<option value="Category">Category</option>
+			<option value="Maintainer">Maintainer</option>
+			<option value="License">License</option>
 		</select>
 		in
 		<select name="version">
 			<option value="cooking">cooking</option>
 			<option value="stable">stable</option>
+			<option value="backports">backports</option>
+			<option value="3.0">3.0</option>
 			<option value="2.0">2.0</option>
 			<option value="1.0">1.0</option>
+			<option value="tiny">tiny</option>
+			<option value="undigest">undigest</option>
 		</select>
 	</form>
 </div>
