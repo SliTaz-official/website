@@ -2,7 +2,7 @@
 <html lang="pt">
 <head>
 	<title>SliTaz - Patrocínio</title>
-	<meta charset=utf-8" />
+	<meta charset="utf-8" />
 	<meta name="description" content="SliTaz GNU/Linux asso sponsor" />
 	<meta name="keywords" lang="pt" content="slitaz pro, slitaz patrocínio, suporte" />
 	<meta name="author" content="Claudinei Pereira"/>

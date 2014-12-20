@@ -2,7 +2,7 @@
 <html lang="pt">
 <head>
 	<title>SliTaz (pt) - Screenshots</title>
-	<meta charset=utf-8" />
+	<meta charset="utf-8" />
 	<meta name="description" content="SliTaz GNU/Linux project artwok images logos" />
 	<meta name="keywords" lang="pt" content="sobre slitaz, gnu, linux, mini distro, livecd" />
 	<meta name="author" content="Claudinei Pereira" />

@@ -98,10 +98,7 @@ include("lib/html/nav.html");
 </p>
 <p>
 	For sending translations or requesting a new language you can join the
-	SliTaz <a href="en/mailing-list.php">Mailing List</a> and/or join the
-	community <a href="http://scn.slitaz.org/groups/i18n/">group on SCN</a>
-	and post to the <a href="http://scn.slitaz.org/groups/i18n/forum/">forum</a>
-	which lets you attach files.
+	SliTaz <a href="en/mailing-list.php">Mailing List</a>.
 </p>
 
 <h3>Website translation</h3>

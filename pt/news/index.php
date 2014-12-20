@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html lang="pt">
 <head>
-	<meta charset=utf-8" />
+	<meta charset="utf-8" />
 	<title>SliTaz - Notícias do SliTaz</title>
 	<meta name="description" content="SliTaz news archives info release" />
 	<meta name="keywords" lang="pt" content="sistema, livre, gnu, linux, opensource software, livecd na RAM" />

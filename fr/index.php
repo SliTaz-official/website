@@ -20,12 +20,12 @@ include("../lib/lang.php");
 <!-- Content -->
 <div id="content">
 
-<div class="box-up">
+<!-- <div class="box-up">
 	<a href="http://www.gofundme.com/slitaz2014?utm_medium=wdgt"
 		title="Visit this page now."><img src="../images/gofundme.png"></a>
 	<a href="http://www.gofundme.com/slitaz2014?utm_medium=wdgt">
 		Jetez un oeil à la campagne de dons 2014 de SliTaz!</a>
-</div>
+</div>-->
 
 <!--
     SliTaz news starting.
@@ -113,10 +113,6 @@ The SliTaz web site is available in several languages and maintained by the
 <a href="../i18n.php">internationalization</a> team (i18n). Help is often
 needed and you're welcome to join us if you would like to see the website
 translated into your language.
-</p>
-<p>
-	<img src="../images/users.png" alt="*" />
-	<a href="http://scn.slitaz.org/groups/i18n/">Join i18n group on SCN</a>
 </p>
 
 <!-- End of content  -->

@@ -2,7 +2,7 @@
 <html lang="pt">
 <head>
 	<title>SliTaz - Arquivo de notícias (2008)</title>
-	<meta charset=utf-8" />
+	<meta charset="utf-8" />
 	<meta name="description" content="SliTaz news archives info release" />
 	<meta name="keywords" lang="pt" content="sistema, livre, gnu, linux, opensource software, livecd na RAM" />
 	<meta name="author" content="Claudinei Pereira"/>
