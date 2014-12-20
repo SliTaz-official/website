@@ -1,9 +1,8 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<title>Internationalization | SliTaz</title>
+	<meta charset="utf-8" />
+	<title>SliTaz - Internationalization</title>
 	<meta name="description" content="SliTaz GNU/Linux languages" />
 	<meta name="keywords" lang="en" content="SliTaz POT, gettext, translation" />
 	<meta name="author" content="Christophe Lincoln"/>
@@ -36,34 +35,22 @@
 </head>
 <body>
 
-<?php include("lib/html/header.html"); ?>
-
-<!-- Block -->
-<div id="block">
-	<!-- Navigation -->
-	<div id="block_nav" style="text-align: center; padding: 4px;">
-		<?php include("lib/random-image.php"); ?>
-	</div>
-	<!-- Information/image -->
-	<div id="block_info">
-		<h4>About i18n</h4>
-		<p>
-			The main goal of SliTaz is to provide full support for a given
-			language, including the website, official Wiki documentation,
-			a dedicated forum and all SliTaz related projects such as the
-			LiveCD GUI builder.
-		</p>
-		<p>
-			<img src="images/users.png" alt="*" />
-			<a href="http://scn.slitaz.org/groups/i18n/">Join us on SCN</a>
-		</p>
-	</div>
-</div>
+<?php 
+include("lib/html/header.html"); 
+include("lib/html/nav.html"); 
+?>
 
 <!-- Content -->
 <div id="content">
 
 <h2>Internationalization</h2>
+
+<p>
+	The main goal of SliTaz is to provide full support for a given
+	language, including the website, official Wiki documentation,
+	a dedicated forum and all SliTaz related projects such as the
+	LiveCD GUI builder.
+</p>
 
 <p>
 	Translation is a community effort and everyone can help. You're

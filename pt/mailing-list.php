@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html lang="pt">
 <head>
-	<meta charset=utf-8" />
+	<meta charset="utf-8" />
 	<title>SliTaz - Lista de Discussão</title>
 	<meta name="description" content="slitaz users developers mailing list" />
 	<meta name="keywords" content="slitaz lista mail discussão" lang="pt" />
