@@ -1,8 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<!DOCTYPE html>
+<html lang="fr">
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta charset="utf-8" />
 	<title>SliTaz - Événements</title>
 	<meta name="description" content="Au sujet de SliTaz GNU/Linux mini système d'exploitation" />
 	<meta name="keywords" lang="fr" content="Système, libre, gnu, linux, opensource, livecd" />
@@ -11,30 +10,28 @@
 </head>
 <body>
 
-<?php include("../../lib/html/header.html"); ?>
-
-<!-- Block -->
-<div id="block">
-	<?php include("../../lib/html/nav.fr.html"); ?>
-	<!-- Information/image -->
-	<div id="block_info">
-		<h4>Événements</h4>
-		<p>
-			Le projet SliTaz participe à divers expositions en fontion
-			de notre temps libre et des propositions qui nous sont
-			faites.
-		</p>
-	</div>
-</div>
-
-<?php include("../../lib/lang.php"); ?>
+<?php 
+include("../../lib/html/header.fr.html"); 
+include("../../lib/html/nav.fr.html"); 
+include("../../lib/lang.php");
+?>
 
 <!-- Content -->
 <div id="content">
 
 <h2>Salons Informatique</h2>
 
+<p>
+	Le projet SliTaz participe à divers expositions en fontion
+	de notre temps libre et des propositions qui nous sont
+	faites.
+</p>
+
 <ul>
+	<li>2014 - Solutionslinux Paris</li>
+	<li>2013 - Solutionslinux Paris</li>
+	<li>2012 - Solutionslinux Paris</li>
+	<li>2011 - Solutionslinux Paris</li>
 	<li>2010 - Solutionslinux Paris</li>
 	<li>2009 - Solutionslinux Paris</li>
 </ul>

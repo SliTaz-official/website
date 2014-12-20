@@ -1,8 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<!DOCTYPE html>
+<html lang="fr">
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta charset="utf-8" />
 	<title>SliTaz (fr) - Documentation</title>
 	<meta name="description" content="Documentation du projet SliTaz GNU/Linux shell howto make live-cd" />
 	<meta name="keywords" lang="fr" content="Système, libre, gnu, linux, logiciels opensource, livecd, autonome" />
@@ -11,32 +10,23 @@
 </head>
 <body>
 
-<?php include("../../lib/html/header.html"); ?>
-
-<!-- Block -->
-<div id="block">
-	<?php include("../../lib/html/nav.fr.html"); ?>
-	<!-- Information/image -->
-	<div id="block_info">
-		<h4>Documentation</h4>
-		<p>
-			La documentation officiel de SliTaz se trouve sur le Wiki
-			communautaire. Les manuels et un guide de démarrage rapide
-			sont fournis avec chaque LiveCD de la distribution et
-			accessibles depuis le menu "Documentation".
-		</p>
-		<ul>
-			<li><a href="http://doc.slitaz.org/fr:start">Wiki communautaire</a></li>
-			<li><a href="http://hg.slitaz.org/slitaz-doc/raw-file/tip/slitaz/index.fr.html"
-				>Guide de démarrge</a></li>
-		</ul>
-	</div>
-</div>
-
-<?php include("../../lib/lang.php"); ?>
+<?php 
+include("../../lib/html/header.fr.html"); 
+include("../../lib/html/nav.fr.html"); 
+include("../../lib/lang.php");
+?>
 
 <!-- Content -->
 <div id="content">
+
+<h2>Documentation</h2>
+
+<p>
+	La documentation officiel de SliTaz se trouve sur le Wiki
+	communautaire. Les manuels et un guide de démarrage rapide
+	sont fournis avec chaque LiveCD de la distribution et
+	accessibles depuis le menu "Documentation".
+</p>
 
 <h2>Handbook &amp; Cookbook</h2>
 

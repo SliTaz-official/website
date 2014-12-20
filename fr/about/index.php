@@ -1,8 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<!DOCTYPE html>
+<html lang="fr">
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta charset="utf-8" />
 	<title>SliTaz - A propos</title>
 	<meta name="description" content="Au sujet de SliTaz GNU/Linux mini système d'exploitation" />
 	<meta name="keywords" lang="fr" content="Système, libre, gnu, linux, opensource, livecd" />
@@ -11,33 +10,25 @@
 </head>
 <body>
 
-<?php include("../../lib/html/header.html"); ?>
-
-<!-- Block -->
-<div id="block">
-	<?php include("../../lib/html/nav.fr.html"); ?>
-	<!-- Information/image -->
-	<div id="block_info">
-		<h4>A propos</h4>
-		<p>
-			SliTaz est un système GNU/Linux fournissant un bureau ou un
-			serveur complet dans moins de 30Mb.
-		</p>
-		<p>
-			SliTaz est distribuée sous forme de LiveCD, le système est
-			léger, rapide et simple à utiliser. SliTaz fournit un bureau
-			graphique intuitif et élégant, le meilleur support matériel
-			possible et dispose d'une active communauté.
-		</p>
-	</div>
-</div>
-
-<?php include("../../lib/lang.php"); ?>
+<?php 
+include("../../lib/html/header.fr.html"); 
+include("../../lib/html/nav.fr.html"); 
+include("../../lib/lang.php");
+?>
 
 <!-- Content -->
 <div id="content">
 
 <h2>Le projet SliTaz</h2>
+
+<p>
+	SliTaz est un système GNU/Linux fournissant un bureau ou un
+	serveur complet dans moins de 30Mb.
+	SliTaz est distribuée sous forme de LiveCD, le système est
+	léger, rapide et simple à utiliser. SliTaz fournit un bureau
+	graphique intuitif et élégant, le meilleur support matériel
+	possible et dispose d'une active communauté.
+</p>
 
 <ul>
 	<li><a href="#intro">Introduction à SliTaz.</a></li>

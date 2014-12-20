@@ -11,27 +11,11 @@
 </head>
 <body>
 
-<?php include("../../lib/html/header.html"); ?>
-
-<!-- Block -->
-<div id="block">
-	<?php include("../../lib/html/nav.fr.html"); ?>
-	<!-- Information/image -->
-	<div id="block_info">
-		<h4>Association</h4>
-		<p>
-			L'Association SliTaz GNU/Linux est une association à but 
-			non lucratif, c'est l'entité qui soutient et gère le projet.
-			Elle fournit une infrastructure et des services de qualité
-			professionnelle aux utilisateurs, développeurs et entreprises
-			utilisant la distribution.
-		</p>
-		<p>Aidez le projet via un petit don:</p>
-		<?php include("../../lib/html/donate.html"); ?>
-	</div>
-</div>
-
-<?php include("../../lib/lang.php"); ?>
+<?php 
+include("../../lib/html/header.fr.html"); 
+include("../../lib/html/nav.fr.html"); 
+include("../../lib/lang.php");
+?>
 
 <!-- Content -->
 <div id="content">
@@ -45,6 +29,14 @@
 
 <h2>Infrastructure et services</h2>
 
+<p>
+	L'Association SliTaz GNU/Linux est une association à but 
+	non lucratif, c'est l'entité qui soutient et gère le projet.
+	Elle fournit une infrastructure et des services de qualité
+	professionnelle aux utilisateurs, développeurs et entreprises
+	utilisant la distribution.
+</p>
+
 <ul>
 	<li><a href="#overview">Vue d'ensemble.</a></li>
 	<li><a href="#goals">Objectifs actuels.</a></li>
@@ -53,6 +45,9 @@
 	<li><a href="#donation">Donation.</a></li>
 	<li><a href="#postal">Adresse postale.</a></li>
 </ul>
+
+<p>Aidez le projet via un petit don:
+	<?php include("../../lib/html/donate.html"); ?></p>
 
 <h3 id="overview">Vue d'ensemble</h3>
 

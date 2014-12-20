@@ -1,8 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<!DOCTYPE html>
+<html lang="fr">
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta charset="utf-8" />
 	<title>SliTaz Art et graphisme</title>
 	<meta name="description" content="SliTaz artwork images logo graphisme wallpaper" />
 	<meta name="keywords" lang="fr" content="opensource, image, logo, slitaz, spider" />
@@ -11,28 +10,11 @@
 </head>
 <body>
 
-<?php include("../../lib/html/header.html"); ?>
-
-<!-- Block -->
-<div id="block">
-	<?php include("../../lib/html/nav.fr.html"); ?>
-	<!-- Information/image -->
-	<div id="block_info">
-		<h4>Artwork</h4>
-		<p>
-			Trouver, apprécier et partager des créations graphiques pour
-			SliTaz. Rejoinez-nous sur 
-			<a href="http://scn.slitaz.org/groups/artwork/">SCN</a>
-		</p>
-		<ul>
-			<li><a href="#art4taz">Artwork pour SliTaz.</a></li>
-			<li><a href="#logos">Logos, spider &amp; icons.</a></li>
-			<li><a href="screenshots.php">Captures d'écrans.</a></li>
-		</ul>
-	</div>
-</div>
-
-<?php include("../../lib/lang.php"); ?>
+<?php 
+include("../../lib/html/header.fr.html"); 
+include("../../lib/html/nav.fr.html"); 
+include("../../lib/lang.php");
+?>
 
 <!-- Content -->
 <div id="content">

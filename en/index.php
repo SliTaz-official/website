@@ -22,12 +22,17 @@ include("../lib/lang.php");
 
 <h2>Welcome to SliTaz</h2>
 
-<div class="box-up">
+<p>
+	SliTaz is a secure and hight performance operating system using the
+	Linux Kernel and GNU software.
+</p>
+
+<!--<div class="box-up">
 	<a href="http://www.gofundme.com/slitaz2014?utm_medium=wdgt"
 		title="Visit this page now."><img src="../images/gofundme.png"></a>
 	<a href="http://www.gofundme.com/slitaz2014?utm_medium=wdgt">
 		Check out our new SliTaz 2014 fundraising!</a>
-</div>
+</div>-->
 
 <!-- Featured sponsor -->
 <div id="sponsor">
@@ -106,9 +111,6 @@ include("../lib/lang.php");
 <div id="twitter">
 <a class="twitter-timeline"  href="https://twitter.com/slitaz"  
 	data-widget-id="420830244551938048">Tweets by @slitaz</a>
-	<style type="text/css">
-		.twitter-timeline { width: 100%; }
-	</style>
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 </div>
 
