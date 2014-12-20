@@ -79,7 +79,7 @@ include("../../lib/lang.php");
 <h2>Wiki et Forum</h2>
 
 <p>
-	Le <a href="http://doc.slitaz.org/">wiki</a>, site collaboratif et 
+	Le <a href="http://doc.slitaz.org/fr:start">wiki</a>, site collaboratif et 
 	communautaire, fournit divers ressources traitant de sujets particuliers.
 	Le <a href="http://forum.slitaz.org/">forum</a> de support est aussi une
 	source d'informations proposant des sujets très spécifiques.

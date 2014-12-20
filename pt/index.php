@@ -154,10 +154,6 @@ time de <a href="../i18n.php">internacionalização</a> (i18n). Ajuda é sempre
 bem vinda e você pode entrar em contato conosco a qualquer tempo para contribuir
 e ajudar o projeto a ter as páginas traduzidas em sua língua.
 </p>
-<p>
-	<img src="../images/users.png" alt="*" />
-	<a href="http://scn.slitaz.org/groups/i18n/">Entre no grupo i18n no SCN</a>
-</p>
 
 <!-- End of content  -->
 </section>

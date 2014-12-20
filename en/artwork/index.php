@@ -1,8 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta charset="utf-8" />
 	<title>SliTaz - Artwork</title>
 	<meta name="description" content="SliTaz GNU/Linux project artwok images logos" />
 	<meta name="keywords" lang="en" content="about slitaz, gnu, linux, mini distro, livecd" />
@@ -11,29 +10,11 @@
 </head>
 <body>
 
-<?php include("../../lib/html/header.html"); ?>
-
-<!-- Block -->
-<div id="block">
-	<?php include("../../lib/html/nav.en.html"); ?>
-	<!-- Information/image -->
-	<div id="block_info">
-		<h4>Artwork</h4>
-		<p>
-			Find, enjoy, discuss, upload and share SliTaz Artwork! Join 
-			the Artwork group on 
-			<a href="http://scn.slitaz.org/groups/artwork/">SCN</a>.
-			Your work may be used on a Cooking release.
-		</p>
-		<ul>
-			<li><a href="#art4taz">Art &amp; Design</a></li>
-			<li><a href="#logos">Logos &amp; Spider</a></li>
-			<li><a href="screenshots.php">Screenshots</a></li>
-		</ul>
-	</div>
-</div>
-
-<?php include("../../lib/lang.php"); ?>
+<?php 
+include("../../lib/html/header.html");
+include("../../lib/html/nav.html"); 
+include("../../lib/lang.php"); 
+?>
 
 <!-- Content -->
 <div id="content">
@@ -41,35 +22,35 @@
 <h2 id="art4taz">Artwork &amp; Design</h2>
 
 <p>
-This section of the website is dedicated to art and graphics intended for
-the SliTaz project. Images are free, and you can use them to make your own
-wallpaper or display a logo on your site to help popularize the project.
-The SliTaz logos and icons are available for download in SVG format. You
-will also find here some <a href="screenshots.php">screenshots</a> made
-with mtPaint and The Gimp. The Artwork team has its own platform on
-the <a href="http://scn.slitaz.org/">SliTaz Community Network</a>.
+	This section of the website is dedicated to art and graphics intended for
+	the SliTaz project. Images are free, and you can use them to make your own
+	wallpaper or display a logo on your site to help popularize the project.
+	The SliTaz logos and icons are available for download in SVG format. You
+	will also find here some <a href="screenshots.php">screenshots</a> made
+	with mtPaint and The Gimp. The Artwork team has its own platform on
+	the <a href="http://scn.slitaz.org/">SliTaz Community Network</a>.
 </p>
 
 <h3>Artwork for SliTaz</h3>
 
 <p>
-As with many things SliTaz, graphics, logos, themes, and wallpapers are fully
-constructed by the community and developers. The project always likes to maintain
-elegant, sober, quality design. Making a logo, wallpaper or otherwise is a
-good way to participate in the project without getting your hands dirty coding
-or document proofing xHTML. If you want to create artwork for SliTaz, or if want 
-to create an account on the SCN platform to upload your work, or you want to
-use some artwork online it is highly recommended that you contact us first via 
-the <a href="../mailing-list.php">Mailing List</a>. Please, try not to send 
-files that are too large. 
+	As with many things SliTaz, graphics, logos, themes, and wallpapers are fully
+	constructed by the community and developers. The project always likes to maintain
+	elegant, sober, quality design. Making a logo, wallpaper or otherwise is a
+	good way to participate in the project without getting your hands dirty coding
+	or document proofing xHTML. If you want to create artwork for SliTaz, or if want 
+	to create an account on the SCN platform to upload your work, or you want to
+	use some artwork online it is highly recommended that you contact us first via 
+	the <a href="../mailing-list.php">Mailing List</a>. Please, try not to send 
+	files that are too large. 
 </p>
 <p>
-To maintain the constraints of the LiveCD, the image must not exceed 200
-kilobytes and should be 1024x768 in size. Finally each release 
-version offers a new theme/background which follow the same guidelines
-and it goes without saying that tools distributed with the system should
-be used. With a LiveCD you already have mtPaint and with an installed system
-you can find Gimp on the mirror. Note that the JPG format is preferred.
+	To maintain the constraints of the LiveCD, the image must not exceed 200
+	kilobytes and should be 1024x768 in size. Finally each release 
+	version offers a new theme/background which follow the same guidelines
+	and it goes without saying that tools distributed with the system should
+	be used. With a LiveCD you already have mtPaint and with an installed system
+	you can find Gimp on the mirror. Note that the JPG format is preferred.
 </p>
 
 <h2 id="logos">Logos &amp; Spider</h2>

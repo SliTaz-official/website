@@ -20,13 +20,12 @@ include("../../lib/lang.php");
 <section id="content">
 
 <h2>Desenvolvimento</h2>
+
 <p>
     O SliTaz é uma distribuição desenvolvida de forma
     colaborativa muitos pessoas em todo o mundo. Todos são
     bem vindos a ajudar e a se envolver no projeto.
 </p>
-
-<h2>Espaço dos Desenvolvedores do SliTaz</h2>
 
 <ul>
 	<li><a href="forge.php">Central de Desenvolvimento</a> - Desenvolvimento

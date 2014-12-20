@@ -27,7 +27,7 @@ include("../../lib/lang.php");
 	<p><?php echo "<a href='$url'>$name</a>" ?></p>
 </div>
 
-<h2>Infrastructure et services</h2>
+<h2 style="margin-right: 220px;">Infrastructure et services</h2>
 
 <p>
 	L'Association SliTaz GNU/Linux est une association à but 
@@ -38,12 +38,12 @@ include("../../lib/lang.php");
 </p>
 
 <ul>
-	<li><a href="#overview">Vue d'ensemble.</a></li>
-	<li><a href="#goals">Objectifs actuels.</a></li>
-	<li><a href="#members">Membres.</a></li>
-	<li><a href="#sponsors">Sponsors.</a></li>
-	<li><a href="#donation">Donation.</a></li>
-	<li><a href="#postal">Adresse postale.</a></li>
+	<li><a href="#overview">Vue d'ensemble</a></li>
+	<li><a href="#goals">Objectifs actuels</a></li>
+	<li><a href="#members">Membres</a></li>
+	<li><a href="#sponsors">Sponsors</a></li>
+	<li><a href="#donation">Donation</a></li>
+	<li><a href="#postal">Adresse postale</a></li>
 </ul>
 
 <p>Aidez le projet via un petit don:

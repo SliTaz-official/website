@@ -43,7 +43,7 @@ include("../../lib/lang.php");
 
 <div class="box">
 	<p>
-		Vous pouvez aider le projet via un petit donou en devenant
+		Vous pouvez aider le projet via un petit don ou en devenant
 		(en) <a href="/en/sponsor/">sponsor</a> officiel.
 	</p>
 	<?php include("../../lib/html/donate.html"); ?>

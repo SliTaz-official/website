@@ -34,6 +34,8 @@ include("../../lib/lang.php");
 	Cooking, Stable or sub projects</li>
 	<li><a href="/i18n.php">Internationalization project</a> -
 	Translations, goals and management</li>
+	<li><a href="../artwork/">Artwork</a> - SliTaz logo, spider and art
+	information and download</li>
 	<li><a href="http://hg.slitaz.org/" >Mercurial Repositories</a>
 	- Source code repositories</li>
 	<li><a href="http://bugs.slitaz.org/">SliTaz Bug Tracker</a> -

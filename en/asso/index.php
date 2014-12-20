@@ -18,13 +18,6 @@ include("../../lib/lang.php");
 
 <!-- Content -->
 <section id="content">
-	
-<div class="box-up">
-	<a href="http://www.gofundme.com/slitaz2014?utm_medium=wdgt"
-		title="Visit this page now."><img src="../../images/gofundme.png"></a>
-	<a href="http://www.gofundme.com/slitaz2014?utm_medium=wdgt">
-		Check out our new SliTaz 2014 fundraising!</a>
-</div>
 
 <!-- Featured sponsor -->
 <div id="sponsor">
@@ -33,7 +26,7 @@ include("../../lib/lang.php");
 	<p><?php echo "<a href='$url'>$name</a>" ?></p>
 </div>
 
-<h2>SliTaz Association</h2>
+<h2 style="margin-right: 220px;">SliTaz Association</h2>
 <p>
 	The SliTaz GNU/Linux association is a non-profit entity that 
 	maintains and manages the project. Its mission is to ensure

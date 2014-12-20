@@ -18,10 +18,11 @@ body {
 a { text-decoration: underline; color: #215090; }
 a:hover { text-decoration: none; }
 img { border: 0pt none; vertical-align: middle; }
-h2 { color: #444; }
+h2 { color: #444; font-size: 180%; }
 h3 { color: #666; font-size: 140%; }
 h4 { color: #888; font-size: 120%; }
 h2, h3 { border-bottom: 1px dashed #afafaf; padding-bottom: 5px; }
+li { list-style-type: square; }
 pre { 
 	background-color: #f8f8f8; 
 	border: 1px solid #ddd; 
@@ -219,7 +220,7 @@ nav p { padding: 8px; color: #333; font-size: 92%; }
 	padding: 30px 80px;
 	text-align: justify;
 }
-#content li { line-height: 1.6em; list-style-type: square; }
+#content li { line-height: 1.6em; }
 
 .news li {
 	border-bottom: 1px dotted #BEBEBE;
@@ -241,7 +242,7 @@ nav p { padding: 8px; color: #333; font-size: 92%; }
 	height: 160px;
 	float: right;
 	text-align: center;
-	margin: 10px 0px 20px 20px;
+	margin: 20px 0px 20px 20px;
 }
 
 /* Classes */
@@ -298,8 +299,8 @@ pre, .box, .box-dl, .box-up, .box-share, .box-rpi {
 .activity div { padding: 5px 10px; background: #fff; margin-top: 5px; }
 .activity p { margin: 0; padding: 5px 10px; font-weight: bold; }
 .activity a { text-decoration: none; }
-.activity ul { list-style-type: none; 
-	margin: 4px 0; padding: 0 4px; line-height: 150%; }
+.activity ul { margin: 4px 0; padding: 0 4px; line-height: 150%; }
+.activity li { list-style-type: none; }
 .activity_more { text-align: right;  }
 .activity_more a { font-weight: normal; color: #000; padding: 0 4px; }
 .activity_more a:hover { text-decoration: underline; }
