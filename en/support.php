@@ -27,22 +27,26 @@ include("../lib/lang.php");
 </p>
 
 <div class="box">
+	<img src="../images/text.png" alt="text" />
 	Documentation: <a href="doc/">Release notes &amp; Manuals</a> -
 	<a href="http://doc.slitaz.org">Wiki &amp; Books</a> -
 	<a href="http://arm.slitaz.org/codex">SliTaz ARM Codex</a>
 </div>
 
 <div class="box">
+	<img src="../images/users.png" alt="users" />
 	Forum: <a href="http://forum.slitaz.org">forum.slitaz.org</a>
 </div>
 
 <div class="box">
+	<img src="../images/irc.png" alt="irc" />
 	IRC Channel: <a href="http://irc.slitaz.org">irc.slitaz.org</a>
 	#slitaz on irc.freenode.net
 </div>
 
 <div class="box">
-	Commercial: Please get in contact by mail &lt;assoATslitaz.org&gt;
+	<img src="../images/support.png" alt="support" />
+	Commercial: Please get in contact by mail &lt;asso AT slitaz.org&gt;
 </div>
 
 <!-- End of content -->
