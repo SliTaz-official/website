@@ -20,10 +20,10 @@ include("../../lib/lang.php");
 <div id="content">
 	
 <p>
-	Les images disent parfois plus que des milliers de mots...
-	Pictures say more than a thousand words... Captures d'écran
-	de la version stable et cooking. Vous aurez peut-être aussi
-	envie de trouver ou partager des images pour SliTaz!
+	Une image dit parfois plus que mille mots...
+	Captures d'écran de la version stable et cooking.
+	Vous aurez peut-être aussi envie de trouver ou partager
+	des images pour SliTaz!
 </p>
 
 <div id="gallery">

@@ -244,7 +244,7 @@ username = Prénom Nom &lt;you@example.org&gt;
 <p>
 	La gestion du site et des livres (Handbook et Cookbook) est faite via un 
 	dépôt Mercurial, ce qui nous permet de traviller à plusieurs. Il faut
-	juste installer <code>mercurail</code> sur SliTaz et connaître les commandes
+	juste installer <code>mercurial</code> sur SliTaz et connaître les commandes
 	de base. Une fois le dépôt cloné vous avez une copie complète du site en
 	local pour commencer à travailler. Pour cloner le site web :
 </p>

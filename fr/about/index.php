@@ -27,7 +27,7 @@ include("../../lib/lang.php");
 	SliTaz est distribuée sous forme de LiveCD, le système est
 	léger, rapide et simple à utiliser. SliTaz fournit un bureau
 	graphique intuitif et élégant, le meilleur support matériel
-	possible et dispose d'une active communauté.
+	possible et dispose d'une communauté active.
 </p>
 
 <ul>

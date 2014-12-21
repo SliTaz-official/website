@@ -23,7 +23,7 @@ include("../lib/lang.php");
 <h2>Welcome to SliTaz</h2>
 
 <p>
-	SliTaz is a secure and hight performance operating system using the
+	SliTaz is a secure and high performance operating system using the
 	Linux Kernel and GNU software.
 </p>
 

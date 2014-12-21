@@ -22,8 +22,8 @@ include("../../lib/lang.php");
 <h2>Salons Informatique</h2>
 
 <p>
-	Le projet SliTaz participe à divers expositions en fontion
-	de notre temps libre et des propositions qui nous sont
+	Le projet SliTaz participe à diverses expositions en fonction
+	de notre temps disponible et des propositions qui nous sont
 	faites.
 </p>
 

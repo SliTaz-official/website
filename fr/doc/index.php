@@ -22,7 +22,7 @@ include("../../lib/lang.php");
 <h2>Documentation</h2>
 
 <p>
-	La documentation officiel de SliTaz se trouve sur le Wiki
+	La documentation officielle de SliTaz se trouve sur le Wiki
 	communautaire. Les manuels et un guide de démarrage rapide
 	sont fournis avec chaque LiveCD de la distribution et
 	accessibles depuis le menu "Documentation".

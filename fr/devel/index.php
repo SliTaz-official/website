@@ -23,8 +23,8 @@ include("../../lib/lang.php");
 
 <p>
 	SliTaz est une distribution communautaire faite par beaucoup
-	de personnes au travers le monde et tout le monde est le
-	bienvenue pour aider et s'impliquer dans le projet.
+	de personnes à travers le monde et chacun est le
+	bienvenu pour aider et s'impliquer dans le projet.
 </p>
 
 <ul>
