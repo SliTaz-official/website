@@ -25,7 +25,7 @@
 		<div class="button" style="text-align: left; margin-top: 15px;">
 			<img src="/images/download-30.png" />
 			<?php echo "<a href='$stable_iso'>SliTaz $stable_ver</a>
-				<a href='$cooking_iso'>SliTaz $cooking</a>"; ?>
+				<a href='http://mirror.slitaz.org/iso/rolling/slitaz-rolling.iso'>SliTaz rolling</a>"; ?>
 		</div>
 	</div>
 </div>
