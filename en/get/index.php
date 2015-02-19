@@ -130,9 +130,9 @@ include("../../lib/lang.php");
 </p></div>
 
 <p>
-	Windows users and DOS user can install SliTaz without partitioning.
-	The following ZIP archive have to be extracted in C:\ and the boot
-	instructions will be in C:\slitaz\boot\install.txt
+	Windows users and DOS users can install SliTaz without partitioning.
+	The following ZIP archive has to be extracted in C:\ and the boot
+	instructions will be found in C:\slitaz\boot\install.txt
 </p>
 
 <div class="box-dl"><p>
