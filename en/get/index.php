@@ -129,6 +129,18 @@ include("../../lib/lang.php");
 	[ <a href='$pkgs_mirror/$stable_ver/packages-$stable_ver.md5'>md5</a> ]"; ?>
 </p></div>
 
+<p>
+	Windows users and DOS user can install SliTaz without partitioning.
+	The following ZIP archive have to be extracted in C:\ and the boot
+	instructions will be in C:\slitaz\boot\install.txt
+</p>
+
+<div class="box-dl"><p>
+	<?php echo "SliTaz GNU/Linux $stable_ver archive (51 Mb) - 
+	<a href='http://mirror.slitaz.org/iso/$stable_ver/slitaz-$stable_ver.zip'>
+	slitaz-$stable_ver.zip</a>"; ?>
+</p></div>
+
 <h2 id="cooking">LiveCD - Cooking version</h2>
 
 <p>
