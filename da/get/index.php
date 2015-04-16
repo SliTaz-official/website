@@ -151,7 +151,7 @@ include("../../lib/html/header.da.html");
 <div class="box-dl"><p>
 	<?php echo "SliTaz GNU/Linux Cooking $cooking_ver ($cooking_size) - 
 	<a href='$cooking_iso'>slitaz-$cooking.iso</a>
-	[ <a href='$mirror/$cooking/slitaz-$cooking.md5'>md5</a> ]"; ?>
+	[ <a href='$cooking_md5'>md5</a> ]"; ?>
 </p></div>
 
 <p>

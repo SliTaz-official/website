@@ -17,5 +17,6 @@ $cooking_ver  = "20140519";
 $cooking_size = "42 Mb";
 $cooking_pkgs = "3.7 Gb";
 $cooking_iso  = "$mirror/5.0/slitaz-5.0-rc2.iso";
+$cooking_md5  = "$mirror/5.0/slitaz-5.0-rc2.md5";
 
 ?>
