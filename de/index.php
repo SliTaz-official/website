@@ -109,13 +109,13 @@ include("../lib/html/header.html");
 
 <div class="activity">
 	<p>
-		<a href="http://scn.slitaz.org/activity/"><img 
+		<a href="http://scn.slitaz.org/?log"><img 
 			src="/images/users.png" alt="[ ]" /></a>
 		Community activity
 		<?php get_feed("scn.xml"); ?>
 	</div>
 	<p class="activity_more">
-		<a href="http://scn.slitaz.org/activity/">Mehr Aktivität</a>
+		<a href="http://scn.slitaz.org/?log">Mehr Aktivität</a>
 	</p>
 </div>
 

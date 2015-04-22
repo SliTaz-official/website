@@ -270,13 +270,13 @@ podrás seguir las últimas noticias, commits y tweets.</p>
 
 <div class="activity">
 	<p>
-		<a href="http://scn.slitaz.org/activity/"><img 
+		<a href="http://scn.slitaz.org/?log"><img 
 			src="/images/users.png" alt="[ ]" /></a>
 		Actividad de la comunidad
 		<?php get_feed("scn.xml"); ?>
 	</div>
 	<p class="activity_more">
-		<a href="http://scn.slitaz.org/activity/">Más actividad</a>
+		<a href="http://scn.slitaz.org/?log">Más actividad</a>
 	</p>
 </div>
 

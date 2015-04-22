@@ -36,7 +36,7 @@ include("../../lib/lang.php");
 <p>
 	Firstly, a huge thanks to our <a href="#cur">current sponsors</a> and all
 	the people who support us with small but very important donations to the project.
-	The project is still quite young but in 5 years of active development we
+	The project is still quite young but in <?php echo date('Y')-2007 ?> years of active development we
 	have grown and become a professional grade operating system that is safe to
 	use in production environments.
 </p>

@@ -71,7 +71,7 @@ function get_feed($feed_url) {
 	button to Tweet about the SliTaz website:
 </p>
 <!-- Twitter Button -->
-<a href="http://twitter.com/share" class="twitter-share-button"
+<a href="https://twitter.com/share" class="twitter-share-button"
 	data-url="http://www.slitaz.org/"
 	data-text="SliTaz GNU/Linux" 
 	data-count="horizontal"

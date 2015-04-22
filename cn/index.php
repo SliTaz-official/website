@@ -86,7 +86,7 @@
 	听音乐、管理照片，或者使用Midori进行网上冲浪。默认的核心系统镜像大小控制在35 MB，
 	而且LiveCD flavors启动只需要8 Mb。
 	新版本采用GCC 4.4.1编译开发，使用Linux kernel 2.6.30.6内核。要了解更多信息，
-	你可以阅读<a href="doc/releases/3.0/relnotes.cn.html">3.0发行笔记</a>或从官方镜像<a href="get/#stable>">下载</a>3.0
+	你可以阅读<a href="doc/releases/3.0/relnotes.cn.html">3.0发行笔记</a>或从官方镜像<a href="get/#stable">下载</a>3.0
 	LiveCD镜像.</p>
 	</li>
 	
@@ -100,13 +100,13 @@
 
 <div class="activity">
 	<p>
-		<a href="http://scn.slitaz.org/activity/"><img 
+		<a href="http://scn.slitaz.org/?log"><img 
 			src="/images/users.png" alt="[ ]" /></a>
 		Community activity
 		<?php get_feed("scn.xml"); ?>
 	</div>
 	<p class="activity_more">
-		<a href="http://scn.slitaz.org/activity/">More activity</a>
+		<a href="http://scn.slitaz.org/?log">More activity</a>
 	</p>
 </div>
 

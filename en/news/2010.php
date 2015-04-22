@@ -32,7 +32,7 @@ include("../../lib/lang.php");
 	player, and many more applications. Tazpkg and Tazctrlbox now support
 	gettext translations and more UTF locales have been added. Many bugfixes,
 	updates and improvements can also be found. A lot of work has been done
-	during these past 6 months. You can <a href="../get/#cooking>">download</a>
+	during these past 6 months. You can <a href="../get/#cooking">download</a>
 	this new cooking version from one of the official mirrors of the project.
 	All feedback is welcome and can be done through the mailing list or
 	the forum.</p>
@@ -62,7 +62,7 @@ include("../../lib/lang.php");
 	start at 8 MB. This stable version has been built by a new toolchain including
 	GCC 4.4.1 and uses the Linux kernel 2.6.30.6. You can read the full
 	<a href="../doc/releases/3.0/relnotes.en.html">Releases Notes</a> for more
-	information and <a href="../get/#stable>">download</a> a LiveCD image from the
+	information and <a href="../get/#stable">download</a> a LiveCD image from the
 	SliTaz mirrors.</p>
 	</li>
 

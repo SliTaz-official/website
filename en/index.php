@@ -69,7 +69,7 @@ include("../lib/lang.php");
 <div class="dldiv">
 	<p><?php echo "<a class='dlbutton nav1' href='$stable_iso'>SliTaz $stable_ver</a>
 	<a class='dlbutton nav2' href='$cooking_iso'>SliTaz $cooking</a>"; ?>
-	<a class='dlbutton navpi' href='http://arm.slitaz.org/rpi'>SliTaz Raspberry Pi</a>
+	<a class='dlbutton navpi' href='http://arm.slitaz.org/rpi/'>SliTaz Raspberry Pi</a>
 	<a class='dlbutton nav2' href='http://mirror.slitaz.org/iso/rolling/slitaz-rolling.iso'>SliTaz weekly 32bits</a>
 	<a class='dlbutton nav1' href='http://mirror.slitaz.org/iso/rolling/slitaz-rolling-core64.iso'>SliTaz weekly 64bits</a></p>
 </div>

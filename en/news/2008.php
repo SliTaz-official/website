@@ -122,7 +122,7 @@ include("../../lib/lang.php");
 	popular packages like Firefox will also get upgraded for functionality. You
 	can get SliTaz GNU/Linux 1.0 from the Web site
 	<a href="../get/#stable">download page</a>. Read the
-	<a href="../doc/releases/1.0/relnotes.en.html">Release Notes</a> for more
+	<a href="../doc/releases/1.0/relnotes.en.txt">Release Notes</a> for more
 	detailed information on this stable version.
 	</p></li>
 

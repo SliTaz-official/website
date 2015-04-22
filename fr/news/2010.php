@@ -53,7 +53,7 @@
 	maintenant les translations gettext et plusieurs locales UTF ont été
 	ajoutées. Beaucoup de bugs ont été corrigés, des mises à jour et des
 	améliorations ont été apportées. C'est le travail de ces 6 derniers
-	mois. Vous pouvez <a href="/fr/get/#cooking>">télécharger</a>
+	mois. Vous pouvez <a href="/fr/get/#cooking">télécharger</a>
 	cette nouvelle version depuis un des
 	mirroirs du site officiel du projet. Tous les feedback sont les
 	bienvenus et peuvent se faire à travers la mailing list ou le forum.</p>
@@ -85,7 +85,7 @@
 	commecent à 8MB. Cette version stable à été contruite avec une nouvelle chaîne
 	d'outils incluant GCC 4.4.1 et utilise le noyau Linux 2.6.30.6. Vous pouvez
 	lire <a href="/fr/doc/releases/3.0/relnotes.fr.html">les notes de plublication</a>
-	pour plus d'informations et <a href="/fr/get/#stable>">télécharger</a> une image
+	pour plus d'informations et <a href="/fr/get/#stable">télécharger</a> une image
 	du LiveCD depuis un des miroirs du projet.</p>
 	</li>
 </ul>

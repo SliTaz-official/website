@@ -143,7 +143,7 @@
 	player, and many more applications. Tazpkg and Tazctrlbox now support
 	gettext translations and more UTF locales have been added. Many bugfixes,
 	updates and improvements can also be found. A lot of work has been done
-	during these past 6 months. You can <a href="get/#cooking>">download</a>
+	during these past 6 months. You can <a href="get/#cooking">download</a>
 	this new cooking version from one of the official mirrors of the project.
 	All feedback is welcome and can be done through the mailing list or
 	the forum.</p>
@@ -164,13 +164,13 @@
 
 <div class="activity">
 	<p>
-		<a href="http://scn.slitaz.org/activity/"><img
+		<a href="http://scn.slitaz.org/?log"><img
 			src="/images/users.png" alt="[ ]" /></a>
 		Aktivitet i samfundet
 		<?php get_feed("scn.xml"); ?>
 	</div>
 	<p class="activity_more">
-		<a href="http://scn.slitaz.org/activity/">Mere aktivitet</a>
+		<a href="http://scn.slitaz.org/?log">Mere aktivitet</a>
 	</p>
 </div>
 

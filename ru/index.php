@@ -85,7 +85,7 @@
 		<?php get_feed("scn.xml"); ?>
 	</div>
 	<p class="activity_more">
-		<a href="http://scn.slitaz.org/activity/">Ещё…</a>
+		<a href="http://scn.slitaz.org/?log">Ещё…</a>
 	</p>
 </div>
 

@@ -65,7 +65,7 @@ function get_feed($feed_url) {
 <p>У нас есть официальный аккаунт Twitter для распространения небольших новостей о проекте. Сообщения Twitter транслируются на официальную страницу Facebook, чтобы вы могли следить за нами с вашей любимой платформы. Новости Twitter также можно прочитать на <a href="http://www.slitaz.org/" target="_TOP">сайте SliTaz</a>, который является центральным местом всей деятельности SliTaz. Используйте эту кнопку, чтобы твитнуть о сайте SliTaz:</p>
 
 <!-- Twitter Button -->
-<a href="http://twitter.com/share" class="twitter-share-button"
+<a href="https://twitter.com/share" class="twitter-share-button"
 	data-url="http://www.slitaz.org/"
 	data-text="SliTaz GNU/Linux" 
 	data-count="horizontal"

@@ -41,7 +41,7 @@
 <ul>
 	<li id="d20101104">
 		<strong>4 November 2010 - New Cooking 20101104</strong>
-		<p>The SliTaz team is pleased to announce the release of a new cooking ISO featuring over 2600 packages. It contains Linux Kernel 2.6.34 and was rebuilt with a new toolchain using glibc 2.11.2 and gcc 4.5.1. Xorg has been fully updated to 1.9.2. The LiveCD includes Midori, the Deadbeef audio player, and many more applications. Tazpkg and Tazctrlbox now support gettext translations and more UTF locales have been added. Many bugfixes, updates and improvements can also be found. A lot of work has been done during these past 6 months. You can <a href="../get/#cooking>">download</a> this new cooking version from one of the official mirrors of the project. All feedback is welcome and can be done through the mailing list or the forum.</p>
+		<p>The SliTaz team is pleased to announce the release of a new cooking ISO featuring over 2600 packages. It contains Linux Kernel 2.6.34 and was rebuilt with a new toolchain using glibc 2.11.2 and gcc 4.5.1. Xorg has been fully updated to 1.9.2. The LiveCD includes Midori, the Deadbeef audio player, and many more applications. Tazpkg and Tazctrlbox now support gettext translations and more UTF locales have been added. Many bugfixes, updates and improvements can also be found. A lot of work has been done during these past 6 months. You can <a href="../get/#cooking">download</a> this new cooking version from one of the official mirrors of the project. All feedback is welcome and can be done through the mailing list or the forum.</p>
 	</li>
 
 	<li>
@@ -53,7 +53,7 @@
 		<strong>28 March 2010 - SliTaz GNU/Linux 3.0 release</strong>
 		<p>All of the SliTaz team are proud to announce the release of the SliTaz GNU/Linux 3.0 operating system. It's simpler, faster, customizable, mightier and yet incredibly tiny. The new SliTaz stable version is now out after one year of development.</p>
 		<p>The core desktop provides a fully featured desktop powered by Xorg 7.4, Openbox, LXDE components and home made tools. It lets you easily connect to the Internet to surf the web with the Midori web browser, listen to music or manage your pictures.</p>
-		<p>The default core system fits into a 30 MB ISO image and LiveCD flavors start at 8 MB. This stable version has been built by a new toolchain including GCC 4.4.1 and uses the Linux kernel 2.6.30.6. You can read the full <a href="../doc/releases/3.0/relnotes.en.html">Releases Notes</a> for more information and <a href="../get/#stable>">download</a> a LiveCD image from the SliTaz mirrors.</p>
+		<p>The default core system fits into a 30 MB ISO image and LiveCD flavors start at 8 MB. This stable version has been built by a new toolchain including GCC 4.4.1 and uses the Linux kernel 2.6.30.6. You can read the full <a href="../doc/releases/3.0/relnotes.en.html">Releases Notes</a> for more information and <a href="../get/#stable">download</a> a LiveCD image from the SliTaz mirrors.</p>
 	</li>
 
 	<li>

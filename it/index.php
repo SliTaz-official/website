@@ -117,13 +117,13 @@
 
 <div class="activity">
 	<p>
-		<a href="http://scn.slitaz.org/activity/"><img
+		<a href="http://scn.slitaz.org/?log"><img
 			src="/images/users.png" alt="[ ]" /></a>
 		Bacheca degli Sviluppatori
 		<?php get_feed("scn.xml"); ?>
 	</div>
 	<p class="activity_more">
-		<a href="http://scn.slitaz.org/activity/">Più Attività</a>
+		<a href="http://scn.slitaz.org/?log">Più Attività</a>
 	</p>
 </div>
 
