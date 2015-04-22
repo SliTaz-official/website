@@ -39,23 +39,23 @@ include("../../lib/lang.php");
 	et tous les gens qui nous supportent avec de petites mais très importantes
 	donations au projet.
 	Le projet est assez jeune mais en <?php echo date('Y')-2007 ?> ans de dévelopement
-	nous avons grandi et somme devenu un système d'exploitation de niveau
+	nous avons grandi et sommes devenu un système d'exploitation de niveau
 	professionnel qui est fiable dans des environnements de production.
 </p>
 
 <h3>Aider financièrement un développeur</h3>
 
 <p>
-	Vous utiliser SliTaz dans votre projet et vous voulez voir la distribution
-	devenir encore plus professionnelle avec les principaux développeurs 
+	Vous utilisez SliTaz dans votre projet et vous voulez voir la distribution
+	devenir encore plus professionnelle avec les principaux développeurs qui
 	travaillant à plein temps ?
 	Alors vous pouvez sponsoriser l'Association SliTaz qui va payer un 
 	développeur pour travailler à 100% sur SliTaz.
 	Nous n'avons pas assez d'argent actuellement pour financer un développeur
-	à l'année, mais les dont et le support financier nous permet un travail
-	professionnel 3 ou 4 mois par an sur le projet. A terme nous espérons d'avoir
+	à l'année, mais les dons et le support financier nous permettent un travail
+	professionnel 3 ou 4 mois par an sur le projet. A terme nous espérons avoir
 	des développeurs travaillant à plein temps sur SliTaz.
-<�p>
+</p>
 
 <p>Aidez le projet avec une petite donation :</p>
 <?php include("../../lib/html/donate.html"); ?>
@@ -63,7 +63,7 @@ include("../../lib/lang.php");
 <h3>Sponsor matériel</h3>
 
 <p>
-	Comme beaucoup de projet open source nous développons SliTaz avec nos
+	Comme beaucoup de projets open source nous développons SliTaz avec nos
 	ordinateurs personnels. Nous ne pouvons tester la distribution sur des
 	machines spécifiques car nous ne n'y avons pas accés.
 	Si vous êtes fabriquant de matériels informatiques et que vous voulez
@@ -84,8 +84,8 @@ include("../../lib/lang.php");
 	à un ancien ordinateur et nous avons besion de matériel ancien pour la
 	tester. Nous pouvons recycler votre ancien matériel pour y préinstaller
 	SliTaz et le revendre à bas coût. Celà permet de fournir des machines
-	puissante et bon marché et nous permet de faire un peu d'argent et de
-	fournir en service concret.
+	puissantes et bon marché et nous permet de faire un peu d'argent en
+	fournissant un service concret.
 </p>
 
 <h2>Contact et information</h2>
@@ -97,8 +97,8 @@ include("../../lib/lang.php");
 	<a href="../asso/#postal">poste</a>.
 </p>
 <p>
-	En sponsorisant SliTaz votre logo et votre url apparaitra sur cette page
-	qui est reliée à toutes les autre pages du site. Vous pourez aussi
+	En sponsorisant SliTaz votre logo et votre url apparaîtra sur cette page
+	qui est reliée à toutes les autres pages du site. Vous pourrez aussi
 	déclarer publiquement votre participation à un projet 100% Open Source
 	afin d'attirer l'attention des utilisateurs de logiciel libre et de Linux.
 </p>
@@ -116,11 +116,11 @@ include("../../lib/lang.php");
 			<td>
 				Allied Data Sys - ADS sponsorise le miroir principal de
 				SliTaz et nous offre un accés complet à une machine
-				virtuelle avec une connxion à haut débit.
+				virtuelle avec une connexion à haut débit.
 				Celà nous permet d'utiliser la machine comme nous voulons
 				sans limitation. Un énorme merci à ADS pour le service
 				et les réponses rapides à toutes les questions et les
-				souhaits que nous avons.
+				souhaits que nous leur soumettons.
 			</td>
 		</tr>
 		<tr>
@@ -149,7 +149,7 @@ include("../../lib/lang.php");
 			<td>
 				Le Clarkson Open Source Institute - COSI sponsorise notre
 				serveur Chub et offre un accés complet à la machine virtuelle.
-				Nous somme fier de travailler avec COSI qui à été fondé
+				Nous sommes fiers de travailler avec COSI qui à été fondé
 				pour promouvoir le logiciel open source (OSS) et fournit
 				équipement et support aux projets étudiant. Un énorme
 				merci à l'équipe de COSI pour le support et les réponses
@@ -163,7 +163,7 @@ include("../../lib/lang.php");
 				style="float: left;" /></a>
 			</td>
 			<td>
-				Le projet Webconverger support financièrement le projet
+				Le projet Webconverger supporte financièrement le projet
 				SliTaz avec une donation mensuelle. Bises à l'équipe
 				Webconverger pour leur support !
 			</td>
