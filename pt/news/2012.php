@@ -58,7 +58,7 @@ include("../../lib/lang.php");
         mesmo com vários novos pacotes adicionados ao repositório e o
         novo Tazpanel centraliza todo o gerenciamento do sistema. Maiores
         detalhes podem ser encontrados nas <a 
-        href="doc/releases/4.0/relnotes.pt_BR.html">notas de lançamento.</a> 
+        href="/pt/doc/releases/4.0/relnotes.pt_BR.html">notas de lançamento.</a> 
 		Baixe a imagem ISO a partir de nosso mirror: 
 		<a href="http://mirror.slitaz.org/iso/4.0/slitaz-4.0.iso">slitaz-4.0.iso</a>
 	</p>

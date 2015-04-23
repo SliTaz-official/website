@@ -49,7 +49,7 @@ include("../../lib/lang.php");
 <p>
 	Uma <em>variante</em> é um arquivo (.flavor) que gera uma variante especial.
 	A ferramenta gráfica Tazlitobox pode criar uma variante em poucos cliques do
-	mouse. O <a href="http://hg.slitaz.org/tazlito/raw-file/tip/doc/tazlito.pt_BR.html">manual do Tazlito</a> 
+	mouse. O <a href="http://hg.slitaz.org/tazlito/raw-file/tip/doc/tazlito.pt.html">manual do Tazlito</a> 
 	e a <a href="http://doc.slitaz.org/pt:handbook:genlivecd">documentação</a> fornecem
 	instruções detalhadas para a geração de variantes. Na linha de comando, você 
 	pode obter uma lista de variantes disponíveis via <code>tazlito list-flavors</code>.

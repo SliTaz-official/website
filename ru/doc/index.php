@@ -74,7 +74,7 @@
 <ul>
 	<li><a href="http://hg.slitaz.org/tazpkg/raw-file/tip/doc/tazpkg.ru.html"
 		>Руководство Tazpkg</a> — Менеджер пакетов SliTaz.</li>
-	<li><a href="http://hg.slitaz.org/tazlito/raw-file/tip/doc/tazlito.en.html"
+	<li><a href="http://hg.slitaz.org/tazlito/raw-file/tip/doc/tazlito.ru.html"
 		>Руководство Tazlito <em>(англ.)</em></a> — Утилита LiveCD SliTaz.</li>
 	<li><a href="http://hg.slitaz.org/tazusb/raw-file/tip/doc/tazusb.en.html"
 		>Руководство TazUSB <em>(англ.)</em></a> — Утилита LiveUSB SliTaz.</li>

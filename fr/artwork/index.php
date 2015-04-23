@@ -27,7 +27,7 @@ s'appliquant à SliTaz. Les images sont libres, vous pouvez par exemple, les
 réutiliser afin de réaliser votre propre fond d'écran ou afficher un logo sur
 votre site pour aider à populariser le projet. Les logos et icônes SliTaz sont
 disponibles en différentes tailles et directement téléchargeables via cette
-page et <a href="/images/artwork/">le répertoire artwork</a>. Vous
+page et <a href="#logos">le répertoire artwork</a>. Vous
 trouverez aussi dans cette partie <em>artwork</em>, quelques
 <a href="screenshots.php">captures d'écran</a> réalisées avec mtPaint ou The
 Gimp.

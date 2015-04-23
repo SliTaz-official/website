@@ -65,9 +65,9 @@
 <h2>Manuals</h2>
 
 <ul>
-	<li><a href="http://hg.slitaz.org/tazpkg/raw-file/tip/doc/tazpkg.en.html"
+	<li><a href="http://hg.slitaz.org/tazpkg/raw-file/tip/doc/tazpkg.es.html"
 		>Manual de Tazpkg</a> -  Gestor de paquetes de SliTaz.</li>
-	<li><a href="http://hg.slitaz.org/tazlito/raw-file/tip/doc/tazlito.en.html"
+	<li><a href="http://hg.slitaz.org/tazlito/raw-file/tip/doc/tazlito.es.html"
 		>Manual de Tazlito</a> -  Utilidad para el LiveCD SliTaz.</li>
 	<li><a href="http://hg.slitaz.org/tazusb/raw-file/tip/doc/tazusb.en.html"
 		>Manual de TazUSB</a> -  Utilidad para el LiveUSB SliTaz.</li>

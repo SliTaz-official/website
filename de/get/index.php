@@ -67,7 +67,7 @@ GNU/Linux Live-CD-Versionen der Paket-CDs sowie einzelne Pakete (über die versc
 Mirrors) und zugehöriger Quellcode zum Download.
 Über den Umgang mit der Live-CD und SliTaz im Allgemeinen erfahren Sie mehr im
 <a href="http://doc.slitaz.org/de:handbook:start">SliTaz Wiki</a>. Hilfe erhalten
-Sie auch im <a href="http://forum.slitaz.org/#idx3">deutschen Forum</a> von SliTaz.
+Sie auch im <a href="http://forum.slitaz.org/forum/de">deutschen Forum</a> von SliTaz.
 </p>
 
 <h3>Mirrors</h3>

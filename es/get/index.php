@@ -66,7 +66,7 @@ include("../../lib/html/header.html");
 	GNU/Linux, así como utilidades o incluso el código fuente. Para comenzar a
 	usar la imagen ISO mejor dirígete a la <a href="../doc/">documentación</a>
 	online (en inglés). Puedes también encontrar ayuda y soporte en los
-	<a href="http://forum.slitaz.org/#idx5">foros</a> de SliTaz (también en
+	<a href="http://forum.slitaz.org/forum/es">foros</a> de SliTaz (también en
 	inglés).
 </p>
 

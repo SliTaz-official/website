@@ -220,7 +220,7 @@
 		<strong>16. Dezember 2007 - Neues Forum</strong>
 	<p>
 	Nun gibt es für SliTaz ein englischsprachiges Support-Forum:
-	<a href="http://forum.slitaz.org/#idx2">English Forum</a>
+	<a href="http://forum.slitaz.org/forum/de">English Forum</a>
 	Seitdem das Projekt auf der französischen Sprache basiert habe wir eine Menge
 	Zusprüche und Anfragen von der englisch sprechenden Gemeinde bekommen, die
 	wir hiermit belohnen wollen. Das Forum hat eine eigene Domain:

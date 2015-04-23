@@ -66,11 +66,11 @@ include("../../lib/lang.php");
 <h2>Manuels des utilitaires</h2>
 
 <ul>
-	<li><a href="http://hg.slitaz.org/tazpkg/raw-file/tip/doc/tazpkg.en.html"
+	<li><a href="http://hg.slitaz.org/tazpkg/raw-file/tip/doc/tazpkg.fr.html"
 		>Tazpkg manuel</a> -  Gestionnaire de paquet SliTaz</li>
-	<li><a href="http://hg.slitaz.org/tazlito/raw-file/tip/doc/tazlito.en.html"
+	<li><a href="http://hg.slitaz.org/tazlito/raw-file/tip/doc/tazlito.fr.html"
 		>Tazlito manuel</a> -  Createur de LiveCD SliTaz</li>
-	<li><a href="http://hg.slitaz.org/tazusb/raw-file/tip/doc/tazusb.en.html"
+	<li><a href="http://hg.slitaz.org/tazusb/raw-file/tip/doc/tazusb.fr.html"
 		>TazUSB manuel</a> -  Créateur de LiveUSB SliTaz</li>
 	<li><a href="http://hg.slitaz.org/cookutils/raw-file/tip/doc/cookutils.en.html"
 		>Cookutils manuel</a> -  Constructeur de paquets SliTaz</li>

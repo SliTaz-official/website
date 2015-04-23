@@ -36,9 +36,9 @@ include("../lib/lang.php");
 
 <!-- Featured sponsor -->
 <div id="sponsor">
-	<p><strong>Featured sponsor</strong></p>
+	<p><strong>Notre sponsor</strong></p>
 	<?php include("../lib/rand-sponsor.php"); ?>
-	<p><a href="/en/sponsor/">Become a sponsor</a></p>
+	<p><a href="/fr/sponsor/">Devenir sponsor</a></p>
 </div>
 
 <!--

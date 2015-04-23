@@ -46,7 +46,7 @@ del proyecto SliTaz. Las imágenes son gratuitas, podiendo usarlas para
 hacer tu propio fondo de pantalla o mostrar un logo en tu página web
 para publicitar el proyecto. Los logos e iconos de SliTaz están
 disponibles en muchos tamaños y se pueden descargar directamente a
-través del directorio <a href="/images/artwork/">artwork</a>. 
+través del directorio <a href="#logos">artwork</a>. 
 También encontrarás aquí algunas <a href="/en/artwork/screenshots.php">capturas</a> 
 de pantalla hechas con mtPaint y The Gimp.
 </p>
