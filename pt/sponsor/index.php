@@ -1,10 +1,10 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt">
 <head>
+	<meta charset="utf-8"/>
 	<title>SliTaz - Patrocínio</title>
-	<meta charset="utf-8" />
-	<meta name="description" content="SliTaz GNU/Linux asso sponsor" />
-	<meta name="keywords" lang="pt" content="slitaz pro, slitaz patrocínio, suporte" />
+	<meta name="description" content="SliTaz GNU/Linux asso sponsor"/>
+	<meta name="keywords" lang="pt" content="slitaz pro, slitaz patrocínio, suporte"/>
 	<meta name="author" content="Claudinei Pereira"/>
 	<?php include("../../lib/html/meta-link.html") ?>
 </head>

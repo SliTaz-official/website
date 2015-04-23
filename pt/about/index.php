@@ -1,11 +1,11 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt">
 <head>
-	<meta charset="utf-8" />
+	<meta charset="utf-8"/>
 	<title>SliTaz - Sobre o Projeto</title>
-	<meta name="description" content="Informações gerais sobre o SliTaz GNU/Linux" />
-	<meta name="keywords" lang="pt" content="sobre slitaz, gnu, linux, mini distro, livecd" />
-	<meta name="author" content="Claudinei Pereira" />
+	<meta name="description" content="Informações gerais sobre o SliTaz GNU/Linux"/>
+	<meta name="keywords" lang="pt" content="sobre slitaz, gnu, linux, mini distro, livecd"/>
+	<meta name="author" content="Claudinei Pereira"/>
 	<?php include("../../lib/html/meta-link.html") ?>
 </head>
 <body>

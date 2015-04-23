@@ -1,11 +1,10 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<!DOCTYPE html>
+<html lang="ru">
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta charset="utf-8"/>
 	<title>О проекте | SliTaz</title>
-	<meta name="description" content="Общие сведения о проекте SliTaz GNU/Linux" />
-	<meta name="keywords" lang="ru" content="о SliTaz, Gnu, Linux, мини дистрибутив, LiveCD" />
+	<meta name="description" content="Общие сведения о проекте SliTaz GNU/Linux"/>
+	<meta name="keywords" lang="ru" content="о SliTaz, Gnu, Linux, мини дистрибутив, LiveCD"/>
 	<meta name="author" content="Christophe Lincoln"/>
 	<?php include("../../lib/html/meta-link.html"); ?>
 </head>
@@ -38,11 +37,12 @@
 
 <h2 id="intro">Введение в проект</h2>
 
-<p>SliTaz GNU/Linux — это свободная операционная система, которая полностью
-	помещается в памяти и может запускаться со съемных носителей, таких
-	как компакт-диск или USB-флеш. SliTaz легкий, быстрый и может быть
+<p>SliTaz GNU/Linux — это свободная операционная система, которая может целиком
+	поместиться в ОЗУ и работать без установки, и может запускаться со съемных
+	носителей, таких
+	как CD или USB-флеш-накопитель. SliTaz легкий, быстрый и может быть
 	целиком установлен на жесткий диск. SliTaz распространяется в виде
-	ISO-образа LiveCD, который легко можно записать на компакт-диск
+	ISO-образа Live CD, который легко можно записать на компакт-диск
 	и загрузиться с него. После того как система загрузилась, диск можно извлечь
 	из привода и использовать привод для других дисков. Live-система
 	представляет собой полнофункциональный графический дистрибутив, способный
@@ -61,7 +61,7 @@
 <h2 id="overview">Общие сведения</h2>
 
 <ul>
-	<li>Корневая файловая система занимает до 100 МБ, а образ ISO — около
+	<li>Корневая файловая система занимает до 100 МБ, а образ Live CD — около
 		30 МБ.</li>
 	<li>Готовый к использованию веб-сервер, основанный на LightTPD с CGI
 		и поддержкой PHP.</li>

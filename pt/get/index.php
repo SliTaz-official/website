@@ -1,11 +1,11 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt">
 <head>
-	<meta charset="utf-8" />
+	<meta charset="utf-8"/>
 	<title>SliTaz (pt) - Downloads</title>
-	<meta name="description" content="SliTaz GNU/Linux LiveCD free download" />
-	<meta name="keywords" lang="pt" content="fonte, iso, livecd, obter, livre" />
-	<meta name="author" content="Claudinei Pereira" />
+	<meta name="description" content="SliTaz GNU/Linux LiveCD free download"/>
+	<meta name="keywords" lang="pt" content="fonte, iso, livecd, obter, livre"/>
+	<meta name="author" content="Claudinei Pereira"/>
 	<?php include("../../lib/html/meta-link.html") ?>
 </head>
 <body>

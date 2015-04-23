@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-	<meta charset="utf-8" />
+	<meta charset="utf-8"/>
 	<title>SliTaz (fr) - LiveCD Flavors</title>
-	<meta name="description" content="saveur LiveCD slitaz personnalisé" />
-	<meta name="keywords" lang="fr" content="linux gnu live slitaz" />
+	<meta name="description" content="saveur LiveCD slitaz personnalisé"/>
+	<meta name="keywords" lang="fr" content="linux gnu live slitaz"/>
 	<meta name="author" content="Christophe Lincoln"/>
 	<?php include("../../lib/html/meta-link.html"); ?>
 </head>

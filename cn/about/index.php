@@ -1,12 +1,11 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cn" lang="cn">
+<!DOCTYPE html>
+<html lang="cn">
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta charset="utf-8"/>
 	<title>SliTaz - 关于</title>
-	<meta name="description" content="SliTaz GNU/Linux 关于信息" />
-	<meta name="keywords" lang="cn" content="about slitaz, gnu, linux, mini distro, livecd, 关于Slitaz, Slitaz是什么, 介绍" />
-	<meta name="author" content="Draplater" />
+	<meta name="description" content="SliTaz GNU/Linux 关于信息"/>
+	<meta name="keywords" lang="cn" content="about slitaz, gnu, linux, mini distro, livecd, 关于Slitaz, Slitaz是什么, 介绍"/>
+	<meta name="author" content="Draplater"/>
 	<?php include("../../lib/html/meta-link.html"); ?>
 </head>
 <body>

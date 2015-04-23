@@ -1,11 +1,11 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt">
 <head>
-	<meta charset="utf-8" />
+	<meta charset="utf-8"/>
 	<title>SliTaz GNU/Linux (pt)</title>
-	<meta name="description" content="Site em português do SliTaz GNU/Linux" />
-	<meta name="keywords" lang="pt" content="sistema, livre, gnu, linux, software opensource, livecd LINUX na RAM" />
-	<meta name="author" content="Claudinei Pereira" />
+	<meta name="description" content="Site em português do SliTaz GNU/Linux"/>
+	<meta name="keywords" lang="pt" content="sistema, livre, gnu, linux, software opensource, livecd LINUX na RAM"/>
+	<meta name="author" content="Claudinei Pereira"/>
 	<?php include("../lib/html/meta-link.html") ?>
 </head>
 <body>
@@ -58,9 +58,9 @@ include("../lib/lang.php");
         <span>- 10 de abril de 2012</span></li>
     <li><strong><a href="news/">Arquivo dos lançamentos anteriores</a></strong>
         <span>- 2007-2013</span></li>   
-</ul>        
+</ul>
 
-<!-- Enf of news -->
+<!-- End of news -->
 </div>
 
 <h2>Atalho para downloads</h2>

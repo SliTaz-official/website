@@ -1,11 +1,10 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<!DOCTYPE html>
+<html lang="ru">
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta charset="utf-8"/>
 	<title>Архив новостей за 2007 год | SliTaz</title>
-	<meta name="description" content="Архив новостей SliTaz за 2007 год" />
-	<meta name="keywords" lang="ru" content="система, свободная, Gnu, Linux, открытое ПО, Livecd в RAM" />
+	<meta name="description" content="Архив новостей SliTaz за 2007 год"/>
+	<meta name="keywords" lang="ru" content="система, свободная, Gnu, Linux, открытое ПО, Livecd в RAM"/>
 	<meta name="author" content="Christophe Lincoln"/>
 	<?php include("../../lib/html/meta-link.html"); ?>
 </head>
@@ -21,7 +20,7 @@
 		<h4>Архивы новостей</h4>
 		<p>Архивы новостей сайта по годам. Обратите внимание, что некоторые
 			ссылки могут быть испорчены из-за изменения структуры сайта
-			(в основном это документы, которые перемещены в свой ​​собственный
+			(в основном это документы, которые перемещены в свой собственный
 			домен).</p>
 		<p><img src="/images/news.png" alt="*" />
 			2007 | <a href="2008.php">2008</a> |
@@ -79,7 +78,7 @@
 			чтобы предоставить вам надежную стабильную версию со всеми этими
 			новыми возможностями и более чем 240 пакетами в репозитории. Так
 			вот, в этом новом релизе SliTaz вы найдёте Alsa с его регулятором
-			громкости, Alsaplayer, mpg123, Gcolor2, pcmciautils и новое ядро​​.
+			громкости, Alsaplayer, mpg123, Gcolor2, pcmciautils и новое ядро.
 			SliTaz предоставляет новые параметры, которые можно использовать во
 			время загрузки и ISAPNPTOOLS для очень старого оборудования, такого
 			как IBM GL300 6272/6282 или P133/32M. Всё это помещается в образе

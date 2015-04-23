@@ -1,11 +1,10 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<!DOCTYPE html>
+<html lang="ru">
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta charset="utf-8"/>
 	<title>Ассоциация | SliTaz</title>
-	<meta name="description" content="SliTaz GNU/Linux asso non-profit donate" />
-	<meta name="author" content="Christophe Lincoln" />
+	<meta name="description" content="SliTaz GNU/Linux asso non-profit donate"/>
+	<meta name="author" content="Christophe Lincoln"/>
 	<?php include("../../lib/html/meta-link.html"); ?>
 </head>
 <body>
@@ -51,8 +50,8 @@
 
 <h3 id="overview">Обзор</h3>
 
-<p>SliTaz GNU/Linux является международной ассоциацией, основанной в Швейцарии
-	и уважающй Гражданский кодекс Швейцарии. Ассоциация состоит из комитета и
+<p>SliTaz GNU/Linux — международная ассоциация, основанная в Швейцарии
+	и уважающая Гражданский кодекс Швейцарии. Ассоциация состоит из комитета и
 	участников, и обеспечивает финансовые вопросы и оплату труда персонала.
 	Участники встречаются один раз в год на общем собрании и принимают решения,
 	например, о деятельности ассоциации или членских взносах. Каждый участник

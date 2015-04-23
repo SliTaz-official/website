@@ -1,11 +1,10 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cn" lang="cn">
+<!DOCTYPE html>
+<html lang="cn">
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta charset="utf-8"/>
 	<title>SliTaz GNU/Linux 中文网站</title>
-	<meta name="description" content="SliTaz GNU/Linux LiveCD" />
-	<meta name="keywords" lang="cn" content="System, free, gnu, linux, software opensource, livecd LINUX in RAM" />
+	<meta name="description" content="SliTaz GNU/Linux LiveCD"/>
+	<meta name="keywords" lang="cn" content="System, free, gnu, linux, software opensource, livecd LINUX in RAM"/>
 	<meta name="author" content="Chen Yufei"/>
 	<?php include("../lib/html/meta-link.html"); ?>
 </head>

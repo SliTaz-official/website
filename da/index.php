@@ -1,12 +1,11 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="da" lang="da">
+<!DOCTYPE html>
+<html lang="da">
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta charset="utf-8"/>
 	<title>SliTaz GNU/Linux (en)</title>
-	<meta name="description" content="SliTaz GNU/Linux LiveCD" />
-	<meta name="keywords" lang="en" content="System, free, gnu, linux, software opensource, livecd LINUX in RAM" />
-	<meta name="author" content="Bo Vagner Højer" />
+	<meta name="description" content="SliTaz GNU/Linux LiveCD"/>
+	<meta name="keywords" lang="en" content="System, free, gnu, linux, software opensource, livecd LINUX in RAM"/>
+	<meta name="author" content="Bo Vagner Højer"/>
 	<?php include("../lib/html/meta-link.html"); ?>
 </head>
 <body>

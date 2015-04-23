@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8" />
+	<meta charset="utf-8"/>
 	<title>SliTaz - Forge (en)</title>
-	<meta name="description" content="slitaz developers forge" />
-	<meta name="keywords" lang="en" content="slitaz, devel, hg, bugs" />
+	<meta name="description" content="slitaz developers forge"/>
+	<meta name="keywords" lang="en" content="slitaz, devel, hg, bugs"/>
 	<meta name="author" content="Christophe Lincoln"/>
 	<?php include("../../lib/html/meta-link.html"); ?>
 </head>

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-	<meta charset="utf-8" />
+	<meta charset="utf-8"/>
 	<title>SliTaz - Support (fr)</title>
-	<meta name="description" content="slitaz support en français" />
-	<meta name="keywords" content="slitaz liste irc support commercial" lang="fr" />
-	<meta name="author" content="Christophe Lincoln" />
+	<meta name="description" content="slitaz support en français"/>
+	<meta name="keywords" content="slitaz liste irc support commercial" lang="fr"/>
+	<meta name="author" content="Christophe Lincoln"/>
 	<?php include("../lib/html/meta-link.html"); ?>
 </head>
 <body>

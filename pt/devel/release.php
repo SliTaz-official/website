@@ -1,10 +1,10 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt">
 <head>
-	<meta charset="utf-8" />
+	<meta charset="utf-8"/>
 	<title>SliTaz - Guia de Lançamento</title>
-	<meta name="description" content="guia de lançamento para desenvolvedores do slitaz" />
-	<meta name="keywords" lang="en" content="slitaz, devel, tazdev, cooking, source" />
+	<meta name="description" content="guia de lançamento para desenvolvedores do slitaz"/>
+	<meta name="keywords" lang="en" content="slitaz, devel, tazdev, cooking, source"/>
 	<meta name="author" content="Claudinei Pereira"/>
 	<?php include("../../lib/html/meta-link.html"); ?>
 </head>

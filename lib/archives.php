@@ -1,8 +1,8 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
+	<meta charset="utf-8"/>
 	<title>lists.tuxfamily.org/slitaz mailing list</title>
-	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 	<!-- link rel="stylesheet" type="text/css" href="/slitaz.css" / -->
 	<style type="text/css">
 body {

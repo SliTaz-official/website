@@ -1,12 +1,11 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+<!DOCTYPE html>
+<html lang="it">
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta charset="utf-8"/>
 	<title>SliTaz - Mailing list (it)</title>
-	<meta name="description" content="slitaz users developpers mailing list" />
-	<meta name="keywords" content="slitaz list mail discussione" lang="it" />
-	<meta name="author" content="Giovanni Santini" />
+	<meta name="description" content="slitaz users developpers mailing list"/>
+	<meta name="keywords" content="slitaz list mail discussione" lang="it"/>
+	<meta name="author" content="Giovanni Santini"/>
 	<?php include("../lib/html/meta-link.html"); ?>
 </head>
 <body>

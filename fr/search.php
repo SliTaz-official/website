@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-	<meta charset="utf-8" />
+	<meta charset="utf-8"/>
 	<title>SliTaz - Search</title>
-	<meta name="description" content="SliTaz GNU/Linux custom search engine" />
-	<meta name="keywords" lang="fr" content="System, free, gnu, linux, software opensource, livecd LINUX in RAM" />
+	<meta name="description" content="SliTaz GNU/Linux custom search engine"/>
+	<meta name="keywords" lang="fr" content="System, free, gnu, linux, software opensource, livecd LINUX in RAM"/>
 	<meta name="author" content="Christophe Lincoln"/>
 	<?php include("../lib/html/meta-link.html"); ?>
 </head>

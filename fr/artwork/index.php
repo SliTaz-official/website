@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-	<meta charset="utf-8" />
+	<meta charset="utf-8"/>
 	<title>SliTaz Art et graphisme</title>
-	<meta name="description" content="SliTaz artwork images logo graphisme wallpaper" />
-	<meta name="keywords" lang="fr" content="opensource, image, logo, slitaz, spider" />
+	<meta name="description" content="SliTaz artwork images logo graphisme wallpaper"/>
+	<meta name="keywords" lang="fr" content="opensource, image, logo, slitaz, spider"/>
 	<meta name="author" content="Christophe Lincoln"/>
 	<?php include("../../lib/html/meta-link.html"); ?>
 </head>

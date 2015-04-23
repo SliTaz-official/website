@@ -1,10 +1,10 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt">
 <head>
+	<meta charset="utf-8"/>
 	<title>SliTaz - Arquivo de notícias (2008)</title>
-	<meta charset="utf-8" />
-	<meta name="description" content="SliTaz news archives info release" />
-	<meta name="keywords" lang="pt" content="sistema, livre, gnu, linux, opensource software, livecd na RAM" />
+	<meta name="description" content="SliTaz news archives info release"/>
+	<meta name="keywords" lang="pt" content="sistema, livre, gnu, linux, opensource software, livecd na RAM"/>
 	<meta name="author" content="Claudinei Pereira"/>
 	<?php include("../../lib/html/meta-link.html") ?>
 </head>
@@ -68,7 +68,7 @@ include("../../lib/lang.php");
 	serviço oferece a possibilidade de usar o SliTaz em modo Live (totalmente
 	carregado na memória RAM), usando a opção LIVE para guardar todos os seus
 	dados permanentemente e pré-configurar o sistema. Esta nova versão possui
-	3 Mb a mais, então pudemos incluir o player multimí­dia MPlayer, um gerenciador
+	3 Mb a mais, então pudemos incluir o player multimídia MPlayer, um gerenciador
 	de notas (Notecase), uma versão do gerenciador de pacotes Tazpkg que possui
 	suporte a md5sum, suporte ao sistema de arquivos XFS diretamente no Kernel,
 	o comando "man" e algumas atualizações. Esta versão requer ao menos 160 Mb
@@ -85,8 +85,8 @@ include("../../lib/lang.php");
 	uma generosa seleção de aplicativos para os mais diversificados usos.
 	O SliTaz GNU/Linux 1.0 usa o Kernel Linux 2.6.24.2, oferece o Firefox 2.0.0.12,
 	Rsync 3.0.0, Gparted 0.3.5 e suporte a som com o Alsa 1.0.16. A distribuição
-	permite a você ouvir música, navegar na web, editar ví­deos e muito mais por
-	meio dos 448 pacotes (programas) disponí­veis que podem ser instalados com o
+	permite a você ouvir música, navegar na web, editar vídeos e muito mais por
+	meio dos 448 pacotes (programas) disponíveis que podem ser instalados com o
 	gerenciador de pacotes tazpkg. O LiveCD permite a você criar uma distribuição
 	personalizada ou um dispositivo LiveUSB em um simples comando. Atualizações
 	de segurança são fornecidas pelo projeto e pacotes populares como o Firefox

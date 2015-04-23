@@ -1,13 +1,12 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+<!DOCTYPE html>
+<html lang="es">
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta charset="utf-8"/>
 	<title>SliTaz GNU/Linux (es)</title>
-	<meta name="description" content="SliTaz GNU/Linux LiveCD" />
-	<meta name="keywords" lang="es" content="system linux RAM" />
-	<meta name="author" content="Eduardo Suarez-Santana" />
-	<meta name="google-site-verification" content="Fls4e5hWEiUAy1fSbF-01IByDMzZdxlVh26jQP1rwis" />
+	<meta name="description" content="SliTaz GNU/Linux LiveCD"/>
+	<meta name="keywords" lang="es" content="system linux RAM"/>
+	<meta name="author" content="Eduardo Suarez-Santana"/>
+	<meta name="google-site-verification" content="Fls4e5hWEiUAy1fSbF-01IByDMzZdxlVh26jQP1rwis"/>
 	<?php include("../lib/html/meta-link.html"); ?>
 </head>
 <body>

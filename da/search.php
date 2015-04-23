@@ -1,11 +1,10 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="da" lang="da">
+<!DOCTYPE html>
+<html lang="da">
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta charset="utf-8"/>
 	<title>SliTaz - Search</title>
-	<meta name="description" content="SliTaz GNU/Linux søgemaskine" />
-	<meta name="keywords" lang="da" content="operativsystem, fri, gratis, gnu, linux, åben kildekode, livecd LINUX i hukommelse" />
+	<meta name="description" content="SliTaz GNU/Linux søgemaskine"/>
+	<meta name="keywords" lang="da" content="operativsystem, fri, gratis, gnu, linux, åben kildekode, livecd LINUX i hukommelse"/>
 	<meta name="author" content="Linux User"/>
 	<?php include("../lib/html/meta-link.html"); ?>
 </head>

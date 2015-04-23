@@ -1,10 +1,10 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt">
 <head>
+	<meta charset="utf-8"/>
 	<title>SliTaz - Arquivo de notícias (2012)</title>
-	<meta charset="utf-8" />
-	<meta name="description" content="SliTaz news archives info release" />
-	<meta name="keywords" lang="pt" content="sistema, livre, gnu, linux, opensource software, livecd na RAM" />
+	<meta name="description" content="SliTaz news archives info release"/>
+	<meta name="keywords" lang="pt" content="sistema, livre, gnu, linux, opensource software, livecd na RAM"/>
 	<meta name="author" content="Claudinei Pereira"/>
 	<?php include("../../lib/html/meta-link.html") ?>
 </head>

@@ -1,11 +1,10 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html lang="bs">
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta charset="utf-8"/>
 	<title>SliTaz - Sponzorstvo</title>
-	<meta name="description" content="SliTaz GNU/Linux asso sponsor" />
-	<meta name="keywords" lang="en" content="slitaz pro, slitaz sponsor, support" />
+	<meta name="description" content="SliTaz GNU/Linux asso sponsor"/>
+	<meta name="keywords" lang="en" content="slitaz pro, slitaz sponsor, support"/>
 	<meta name="author" content="Christophe Lincoln"/>
 	<?php include("../../lib/html/meta-link.html"); ?>
 </head>
@@ -56,7 +55,7 @@
 <h3>Monetarna podrška programera</h3>
 
 <p>
-	Koristite li SliTaz u svoj ​​projekt i želite vidjeti distribuciju 
+	Koristite li SliTaz u svoj projekt i želite vidjeti distribuciju 
 	dobivanje još više profesionalno sa glavnim programerima koji rade na 
 	projektu sa punim radnim vremenom? Ako je tako, možete sponzorirati 
 	SliTaz Asocijaciju udruge koja će platiti programera za rad u potpunosti 
@@ -102,7 +101,7 @@
 	slitaz.org&gt; ili preko <a href="../asso/#postal">postova</a>.
 </p>
 <p>
-	Sponzoriranje SliTaz projekta ćete dobiti svoj ​​logotip i web stranice 
+	Sponzoriranje SliTaz projekta ćete dobiti svoj logotip i web stranice 
 	URL, na ovoj stranici koja je povezana sa svim drugim stranicama na 
 	SliTaz web stranici. Također ćete biti u mogućnosti da se javno tvrde svoje 
 	sudjelovanje u čistom Open Source projektu i dobiti više pozornosti 

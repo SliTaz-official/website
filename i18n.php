@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8" />
+	<meta charset="utf-8"/>
 	<title>SliTaz - Internationalization</title>
-	<meta name="description" content="SliTaz GNU/Linux languages" />
-	<meta name="keywords" lang="en" content="SliTaz POT, gettext, translation" />
+	<meta name="description" content="SliTaz GNU/Linux languages"/>
+	<meta name="keywords" lang="en" content="SliTaz POT, gettext, translation"/>
 	<meta name="author" content="Christophe Lincoln"/>
 	<?php include("lib/html/meta-link.html"); ?>
 	<style type="text/css">

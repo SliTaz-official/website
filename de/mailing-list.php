@@ -1,11 +1,10 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+<!DOCTYPE html>
+<html lang="de">
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta charset="utf-8"/>
 	<title>SliTaz (de) - Mailing list</title>
-	<meta name="description" content="SliTaz GNU/Linux LiveCD" />
-	<meta name="keywords" lang="en" content="slitaz download, get slitaz" />
+	<meta name="description" content="SliTaz GNU/Linux LiveCD"/>
+	<meta name="keywords" lang="en" content="slitaz download, get slitaz"/>
 	<meta name="author" content="F Steiner (Sevala)"/>
 	<?php include("../lib/html/meta-link.html"); ?>
 </head>
