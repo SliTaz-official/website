@@ -88,6 +88,35 @@
 			команды через наш IRC, рассылку, форум, или написав электронное
 			письмо мэйнтейнерам пакетов. Мы надеемся, вам понравится этот новый
 			<a href="../get/">релиз</a>!</p></li>
+	<li id="d20140216">
+		<strong>16 Feb 2014 - New SliTaz Cooking Release</strong>
+	<p>
+		The Slitaz team is proud to announce the release of a new Cooking
+		version which paves the road to SliTaz 5.0. This new Cooking includes
+		almost 2 years of work and has an incredible ChangeLog. All our home
+		made tools have been improved with some great new tools such as 
+		'frugal' or 'decode'. We focused a lot of work on Desktop integration
+		to provide a finer user experience and have largely improved the Linux
+		Kernel (3.2.53) configuration.
+	</p>
+	<p>
+		On the packages side we updated all existing packages and also added
+		a bunch of new packages to reach more than 4200 packages in the 
+		Cooking database. Lots of work has also been done on the SliTaz 
+		installer which provides a new Ncurses/text front-end.
+	</p>
+	<p>
+		The LiveCD will now ask for language settings before booting so users
+		can get directly to the Desktop after boot scripts have been executed.
+		The size of the ISO image has grown a little due to better hardware
+		support and new functions. You can download the ISO image from a SliTaz
+		mirror (40 Mb): 
+		<a href="http://mirror.slitaz.org/iso/cooking/slitaz-cooking.iso"
+			>slitaz-cooking.iso</a>
+		[ <a href="http://mirror.slitaz.org/iso/cooking/slitaz-cooking.md5"
+			>md5</a> ]
+	</p>
+	</li>
 </ul>
 
 <!-- End of content -->

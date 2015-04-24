@@ -90,7 +90,7 @@ include("../../lib/html/header.html");
 	Observa que todas estas utilidades vienen instaladas por defecto en SliTaz
 	y su fuente está comentado en inglés. Descarga los fuentes por
 	<a href="http://mirror.slitaz.org/sources/">HTTP</a> o por
-	<a href="ftp://mirror.slitaz.org/sources/">FTP</a>.
+	<a href="http://mirror.slitaz.org/sources/">FTP</a>.
 </p>
 
 <h2 id="stable">LiveCD - Versión estable</h2>
