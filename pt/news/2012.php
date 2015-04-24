@@ -64,7 +64,7 @@ include("../../lib/lang.php");
 	</p>
 	</li>
     
-	<li id="d20120410"><strong>03 Mar 2012 - SliTaz 4.0-RC2</strong>
+	<li id="d20120303"><strong>03 Mar 2012 - SliTaz 4.0-RC2</strong>
 	<p>
 		A equipe do SliTaz tem o prazer de anunciar a disponibilidade do
 		segundo "Release Candidate" (RC) para a versão 4.0. Nós tivemos 
@@ -91,7 +91,7 @@ include("../../lib/lang.php");
 	</p>
 	</li>
 
-	<li id="d20120410"><strong>23 Feb 2012 -  SliTaz 4.0 RC1</strong>
+	<li id="d20120323"><strong>23 Feb 2012 -  SliTaz 4.0 RC1</strong>
 	<p>
 		O time de desenvolvedores do SliTaz anuncia a disponibilidade do primeiro
 		"Release Candidate (RC)" para a versão 4.0. Sua inicialização é rápida,

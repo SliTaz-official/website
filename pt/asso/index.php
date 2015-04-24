@@ -48,7 +48,7 @@ include("../../lib/lang.php");
 	<li><a href="#overview">Introdução.</a></li>
 	<li><a href="#goals">Objetivos Atuais.</a></li>
 	<li><a href="#members">Membros.</a></li>
-	<li><a href="#sponsors">Patrocinadores.</a></li>
+	<li><a href="#sponsor">Patrocinadores.</a></li>
 	<li><a href="#donation">Doações.</a></li>
 	<li><a href="#postal">Endereço Postal.</a></li>
 </ul>
