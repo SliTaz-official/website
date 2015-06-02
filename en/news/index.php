@@ -39,7 +39,7 @@ include("../../lib/lang.php");
 		be rebuilt from source by advanced users.
 	</p>
 	<p>
-		We have reshaped Tazpanel and add multi user support. The default user is
+		We have reshaped Tazpanel and added multi user support. The default user is
 		nobody with some disabled menus. The login button provides more priviledges.
 	</p>
 	<p>
