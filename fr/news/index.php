@@ -28,11 +28,6 @@ include("../../lib/lang.php");
 	<li id="d20150520">
 		<strong>20 mai 2015 - Publication de SliTaz 5.0 -RC-3</strong>
 		<p>
-			Télécharger: 
-			<a href="http://mirror.slitaz.org/iso/5.0/slitaz-5.0-rc3.iso">slitaz-5-0-rc3.iso</a>
-			[ <a href="http://mirror.slitaz.org/iso/5.0/slitaz-5.0-rc3.md5">md5</a> ]
-		</p>
-		<p>
 			L'équipe SliTaz est heureuse d'annoncer la publication de SliTaz 
 			GNU/Linux 5.0 RC3. Nous avons fait un enorme travail pour corriger
 			les bugs de la version RC2 avec environ 2500 commits dans note dépôt
@@ -44,6 +39,11 @@ include("../../lib/lang.php");
 			Nous avons retravaillé Tazpanel et ajouté la gestion multi utilisateurs.
 			L'utilisateur par défault est nobody avec certains menus désactivés.
 			Le bouton de login donne accés à plus de privilèges.
+		</p>
+		<p>
+			Télécharger: 
+			<a href="http://mirror.slitaz.org/iso/5.0/slitaz-5.0-rc3.iso">slitaz-5-0-rc3.iso</a>
+			[ <a href="http://mirror.slitaz.org/iso/5.0/slitaz-5.0-rc3.md5">md5</a> ]
 		</p>
 	</li>
 	

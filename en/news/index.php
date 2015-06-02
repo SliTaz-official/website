@@ -32,12 +32,6 @@ include("../../lib/lang.php");
 	<li id="d20150520">
 		<strong>20 May 2015 - SliTaz 5.0 RC-3 release</strong>
 	<p>
-		Download: <a href="http://mirror.slitaz.org/iso/5.0/slitaz-5.0-rc3.iso"
-			>slitaz-5.0-rc3.iso</a>
-		[ <a href="http://mirror.slitaz.org/iso/5.0/slitaz-5.0-rc3.md5"
-			>md5</a> ]
-	</p>
-	<p>
 		The Slitaz team is pleased to announce the new SliTaz 5.0-RC3 release 
 		candidate. We have done a huge amount of work fixing bugs from RC2 with
 		about 2500 commits in our Mercurial repositories. All the 4800 packages
@@ -47,6 +41,12 @@ include("../../lib/lang.php");
 	<p>
 		We have reshaped Tazpanel and add multi user support. The default user is
 		nobody with some disabled menu. The login button provides more priviledges.
+	</p>
+	<p>
+		Download: <a href="http://mirror.slitaz.org/iso/5.0/slitaz-5.0-rc3.iso"
+			>slitaz-5.0-rc3.iso</a>
+		[ <a href="http://mirror.slitaz.org/iso/5.0/slitaz-5.0-rc3.md5"
+			>md5</a> ]
 	</p>
 	</li>
 	
