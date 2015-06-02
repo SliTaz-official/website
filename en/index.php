@@ -51,6 +51,8 @@ include("../lib/lang.php");
 <h2>Latest Release</h2>
 
 <ul>
+	<li><strong><a href="news/#d20150520">SliTaz 5.0 RC-3 release</a></strong>
+		<span>- 20 May 2015</span></li>
 	<li><strong><a href="news/#d20140519">SliTaz 5.0 RC-2 release</a></strong>
 		<span>- 19 May 2014</span></li>
 	<li><strong><a href="news/#d20140502">SliTaz 5.0 RC-1 release</a></strong>

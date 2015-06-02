@@ -34,6 +34,16 @@ include("../../lib/lang.php");
 <div class="news">
 
 <ul>
+	<li id="d20150520">
+		<strong>20 de maio de 2015 - Lançamento do SliTaz 5.0 RC-3</strong>
+	<p>
+		Download: <a href="http://mirror.slitaz.org/iso/5.0/slitaz-5.0-rc3.iso"
+			>slitaz-5.0-rc3.iso</a>
+		[ <a href="http://mirror.slitaz.org/iso/5.0/slitaz-5.0-rc3.md5"
+			>md5</a> ]
+	</p>
+	</li>
+    
 	<li id="d20140519">
 		<strong>19 de maio de 2014 - Lançamento do SliTaz 5.0 RC-2</strong>
 	<p>

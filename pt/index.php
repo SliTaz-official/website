@@ -46,6 +46,8 @@ include("../lib/lang.php");
 <h2>Últimos lançamentos</h2>
 
 <ul>
+    <li><strong><a href="news/#d20150520">Lançamento do SliTaz 5.0 RC-3</a></strong>
+        <span>- 20 de maio de  2015</span></li>
     <li><strong><a href="news/#d20140519">Lançamento do SliTaz 5.0 RC-2</a></strong>
         <span>- 19 de maio de  2014</span></li>
     <li><strong><a href="news/#d20140502">Lançamento do SliTaz 5.0 RC-1</a></strong>

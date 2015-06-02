@@ -25,8 +25,59 @@ include("../../lib/lang.php");
 <div class="news">
 <ul>
 	
+	<li id="d20150520">
+		<strong>20 mai 2015 - Publication de SliTaz 5.0 -RC-3</strong>
+		<p>
+			Télécharger: 
+			<a href="http://mirror.slitaz.org/iso/5.0/slitaz-5.0-rc3.iso">slitaz-5-0-rc3.iso</a>
+			[ <a href="http://mirror.slitaz.org/iso/5.0/slitaz-5.0-rc3.md5">md5</a> ]
+		</p>
+		<p>
+			L'équipe SliTaz est heureuse d'annoncer la publication de SliTaz 
+			GNU/Linux 5.0 RC3. Nous avons fait un enorme travail pour corriger
+			les bugs de la version RC2 avec environ 2500 commits dans note dépôt
+			Mercurial. Les 4800 paquets ont été reconstruits pour trouver et
+			corriger les bugs et garantir que tout peut être recontruit à
+			partir des sources par des utilisateurs avancés.
+		</p>
+		<p>
+			Nous avons retravaillé Tazpanel et ajouté la gestion multi utilisateurs.
+			L'utilisateur par défault est nobody avec certains menus désactivés.
+			Le bouton de login donne accés à plus de privilèges.
+		</p>
+	</li>
+	
+	<li id="d20140519">
+		<strong>19 mai 2014 - Publication de SliTaz 5.0 -RC-2</strong>
+		<p>
+			L'équipe SliTaz est heureuse d'annoncer la publication de SliTaz 
+			GNU/Linux 5.0 RC2. Nous avons fait un enorme travail pour corriger
+			les bugs de la version RC1 avec environ 500 commits dans note dépôt
+			Mercurial. Les 4300 paquets ont été reconstruits pour trouver et
+			corriger les bugs et garantir que tout peut être recontruit à
+			partir des sources par des utilisateurs avancés.
+		</p>
+		<p>
+			Nous avons pris beaucoup de temps à améliorer l'utilsation de
+			nos bureaux LXDE par défault et personalisé. Les configurations
+			de polkit et d'udisks ont été corrigées pour gérer correctement
+			les périphériques externes et les partitions des disques internes.
+		</p>
+		<p>
+			La RC2 supporte une nouvelle méthode d'installation. SliTaz peut
+			être installée dans un répertoire sans repartitionner de disque
+			dur et cette technique fonctionne avec tous les systèmes de fichier
+			y compris NTFS et FAT32.
+		</p>
+		<p>
+			Télécharger: 
+			<a href="http://mirror.slitaz.org/iso/5.0/slitaz-5.0-rc2.iso">slitaz-5-0-rc2.iso</a>
+			[ <a href="http://mirror.slitaz.org/iso/5.0/slitaz-5.0-rc2.md5">md5</a> ]
+		</p>
+	</li>
+	
 	<li id="d20140502">
-		<strong>Publication de SliTaz 5.0 -RC-1</strong>
+		<strong>2 mai 2014 - Publication de SliTaz 5.0 -RC-1</strong>
 		<p>
 			L'équipe SliTaz est heureuse d'annoncer la publication de SliTaz 
 			GNU/Linux 5.0 RC1. Cette relase est très mature, mais nous 
@@ -59,6 +110,7 @@ include("../../lib/lang.php");
 		<p>
 			Télécharger: 
 			<a href="http://mirror.slitaz.org/iso/5.0/slitaz-5.0-rc1.iso">slitaz-5-0-rc1.iso</a>
+			[ <a href="http://mirror.slitaz.org/iso/5.0/slitaz-5.0-rc1.md5">md5</a> ]
 		</p>
 	</li>
 	
