@@ -40,7 +40,7 @@ include("../../lib/lang.php");
 	</p>
 	<p>
 		We have reshaped Tazpanel and add multi user support. The default user is
-		nobody with some disabled menu. The login button provides more priviledges.
+		nobody with some disabled menus. The login button provides more priviledges.
 	</p>
 	<p>
 		Download: <a href="http://mirror.slitaz.org/iso/5.0/slitaz-5.0-rc3.iso"

@@ -37,6 +37,15 @@ include("../../lib/lang.php");
 	<li id="d20150520">
 		<strong>20 de maio de 2015 - Lançamento do SliTaz 5.0 RC-3</strong>
 	<p>
+        Os desenvolvedores do SliTaz anunciam a disponibilidade da segunda
+        versão de testes em preparamento à próxima versão estável. Ela traz
+        as mudanças feitas desde a segunda versão de testes, que corrigiram
+        diversos bugs detectados, num total de 2500 alterações em nossos 
+        repositório de desenvolvimento. Todos os 4800 pacotes foram recompilados
+        de forma a buscar por bugs e garantir que usuários avançados possam 
+        compilar seus programas à partir dos fontes.
+	</p>
+	<p>
 		Download: <a href="http://mirror.slitaz.org/iso/5.0/slitaz-5.0-rc3.iso"
 			>slitaz-5.0-rc3.iso</a>
 		[ <a href="http://mirror.slitaz.org/iso/5.0/slitaz-5.0-rc3.md5"
