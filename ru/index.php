@@ -78,15 +78,6 @@
 
 <?php require_once("../lib/get-feeds.php"); ?>
 
-<div class="activity">
-	<p><img src="/images/users.png" alt="*" />
-		Сейчас в сообществе…
-		<?php get_feed("scn.xml"); ?>
-	</div>
-	<p class="activity_more">
-		<a href="http://scn.slitaz.org/?log">Ещё…</a>
-	</p>
-</div>
 
 <div class="activity">
 	<p><img src="/images/support.png" alt="*" />
@@ -106,14 +97,6 @@
 	<p class="activity_more">
 		<a href="http://hg.slitaz.org/?sort=lastchange">Ещё…</a>
 	</p>
-</div>
-
-
-<!-- SCN blog posts -->
-<h2>Последние записи в блоге</h2>
-
-<div class="news">
-	<?php get_feed_blog("blog.xml"); ?>
 </div>
 
 

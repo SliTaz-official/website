@@ -46,8 +46,7 @@
 		</div>
 		Искать:
 		<select name="object">
-			<option value="Package">пакет</option>
-			<option value="Desc">описание</option>
+			<option value="Desc">пакет/описание</option>
 			<option value="Tags">теги</option>
 			<option value="Depends">зависимости</option>
 			<option value="BuildDepends">зависимости сборки</option>
@@ -57,8 +56,10 @@
 		</select>
 		в
 		<select name="version">
-			<option value="cooking">Cooking</option>
-			<option value="stable">Stable</option>
+			<option value="cooking">5.0 Cooking</option>
+			<option value="stable">4.0 Stable</option>
+			<option value="backports">4.0 backports</option>
+			<option value="3.0">3.0</option>
 			<option value="2.0">2.0</option>
 			<option value="1.0">1.0</option>
 		</select>
