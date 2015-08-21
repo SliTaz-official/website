@@ -129,7 +129,7 @@ include("../../lib/lang.php");
 				and clutter, lots of goodies and real privacy.
 			</td>
 		</tr>
-		<tr>
+		<!-- <tr>
 			<td style="width: 120px; height: 100px;">
 				<a href="http://cosi.clarkson.edu"><img
 				src="/images/sponsor/cosi.png" alt="Clarkson Open Source Institute"
@@ -143,19 +143,7 @@ include("../../lib/lang.php");
 				and support for student projects. A huge thanks to the team
 				at COSI for the support and fast response to any of our requests.
 			</td>
-		</tr>
-		<tr>
-			<td style="width: 120px; height: 100px;">
-				<a href="http://webconverger.com"><img
-				src="/images/sponsor/webc.png" alt="Webconverger Project"
-				style="float: left;" /></a>
-			</td>
-			<td>
-				The Webconverger project monetarily sponsors the SliTaz project
-				via a monthly donation. Hugs to the Webconverger team for
-				their support!
-			</td>
-		</tr>
+		</tr> -->
 	</tbody>
 </table>
 
