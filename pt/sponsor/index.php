@@ -131,7 +131,7 @@ include("../../lib/lang.php");
 				privacidade ao usuário.
 			</td>
 		</tr>
-		<tr>
+		<!-- <tr>
 			<td style="width: 120px; height: 100px;">
 				<a href="http://cosi.clarkson.edu"><img
 				src="/images/sponsor/cosi.png" alt="Clarkson Open Source Institute"
@@ -146,18 +146,7 @@ include("../../lib/lang.php");
 				agradecimentos ao pessoal do COSI pelo suporte e por
 				responder prontamente aos nossos pedidos.
 			</td>
-		</tr> 
-        <tr>
-			<td style="width: 120px; height: 100px;">
-				<a href="http://webconverger.com"><img
-				src="/images/sponsor/webc.png" alt="Webconverger Project"
-				style="float: left;" /></a>
-			</td>
-			<td>
-                O Projeto Webconverger patrocina o SliTaz com uma doação mensal.
-                Agradecemos o pessoal do Webconverger pelo suporte!
-			</td>
-		</tr>
+		</tr> -->
 	</tbody>
 </table>
 

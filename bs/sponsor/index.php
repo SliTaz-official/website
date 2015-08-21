@@ -142,7 +142,7 @@
 				i pravi korisnicima privatnost.
 			</td>
 		</tr>
-		<tr>
+		<!-- <tr>
 			<td style="width: 120px; height: 100px;">
 				<a href="http://cosi.clarkson.edu"><img
 				src="/images/sponsor/cosi.png" alt="Clarkson Open Source Institute"
@@ -156,19 +156,7 @@
 				studentske projekte. Zahvaljujući tim COSI za podršku 
 				i brzu reakciju na bilo koji naših zahtjeva.
 			</td>
-		</tr>
-		<tr>
-			<td style="width: 120px; height: 100px;">
-				<a href="http://webconverger.com"><img
-				src="/images/sponsor/webc.png" alt="Webconverger Project"
-				style="float: left;" /></a>
-			</td>
-			<td>
-				Webconverger projekt novčano sponzorira SliTaz projekt 
-				putem mjesečne donacije. Hvala puno tim Webconverger 
-				za njihovu podršku!
-			</td>
-		</tr>
+		</tr> -->
 	</tbody>
 </table>
 

@@ -132,7 +132,7 @@
 				ответов, меньше спама и беспорядка, много вкусностей и реальную
 				защиту вашей приватности.</td>
 		</tr>
-		<tr>
+		<!-- <tr>
 			<td style="width: 120px; height: 100px;">
 				<a href="http://cosi.clarkson.edu"><img
 				src="/images/sponsor/cosi.png" alt="Clarkson Open Source Institute"
@@ -146,17 +146,7 @@
 				с открытым исходным кодом (OSS) и для обеспечения оборудованием
 				и поддержки студенческих проектов. Огромное спасибо команде COSI
 				за поддержку и быстрое реагирование на любые наши запросы.</td>
-		</tr>
-		<tr>
-			<td style="width: 120px; height: 100px;">
-				<a href="http://webconverger.com"><img
-				src="/images/sponsor/webc.png" alt="Webconverger Project"
-				style="float: left;" /></a>
-			</td>
-			<td>Проект Webconverger поддерживает SliTaz ежемесячными денежными
-				пожертвованиями. Большое спасибо команде Webconverger за
-				поддержку!</td>
-		</tr>
+		</tr> -->
 	</tbody>
 </table>
 
