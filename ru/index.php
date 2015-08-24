@@ -31,21 +31,22 @@
 
 <?php include("../lib/lang.php"); ?>
 
-
 <!-- Content -->
 <div id="content">
 
-<div class="box">
+<h2>Welcome to SliTaz</h2>
+
+<p>
+	SliTaz — свободная операционная система с открытыми исходниками.
+</p>
+
+<!--<div class="box">
 	<a href="http://www.gofundme.com/slitaz2014?utm_medium=wdgt"
 		title="Посетить кампанию"><img src="../images/gofundme.png"></a>
 	Ознакомьтесь с кампанией по сбору средств
 	<a href="http://www.gofundme.com/slitaz2014?utm_medium=wdgt">
 		SliTaz 2014!</a>
-</div>
-
-<!--
-	SliTaz news starting.
--->
+</div>-->
 
 <!-- Featured sponsor -->
 <div id="sponsor">
@@ -53,6 +54,10 @@
 	<?php include("../lib/rand-sponsor.php"); ?>
 	<p><a href="/ru/sponsor/">Стать спонсором</a></p>
 </div>
+
+<!--
+	SliTaz news starting.
+-->
 
 <!-- We just keep the last 3 web site news -->
 <div class="news" style="margin-right: 220px;">
@@ -73,11 +78,19 @@
 <!-- End of news -->
 </div>
 
+<h2>быстрая загрузка</h2>
+
+<div class="dldiv">
+	<p><?php echo "<a class='dlbutton nav1' href='$stable_iso'>SliTaz $stable_ver</a>
+	<a class='dlbutton nav2' href='$cooking_iso'>SliTaz $cooking</a>"; ?>
+	<a class='dlbutton navpi' href='http://arm.slitaz.org/rpi/'>SliTaz Raspberry Pi</a>
+	<a class='dlbutton nav2' href='http://mirror.slitaz.org/iso/rolling/slitaz-rolling.iso'>SliTaz weekly 32bits</a>
+	<a class='dlbutton nav1' href='http://mirror.slitaz.org/iso/rolling/slitaz-rolling-core64.iso'>SliTaz weekly 64bits</a></p>
+</div>
 
 <h2>Сейчас в проекте…</h2>
 
 <?php require_once("../lib/get-feeds.php"); ?>
-
 
 <div class="activity">
 	<p><img src="/images/support.png" alt="*" />

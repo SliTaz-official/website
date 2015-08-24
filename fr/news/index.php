@@ -22,6 +22,11 @@ include("../../lib/lang.php");
 
 <h2>Actualité du projet</h2>
 
+<p>
+	Les news plus spécifiques sont publiées sur notre blog communautaire:
+	<a href="http://scn.slitaz.org/">Slitaz Community blog</a>
+</p>
+
 <div class="news">
 <ul>
 	
