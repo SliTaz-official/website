@@ -113,7 +113,7 @@
 <table>
 	<tbody>
 		<tr>
-			<td style="width: 120px; height: 100px;">
+			<td style="width: 140px; height: 80px;">
 				<a href="http://www.ads-lu.com/"><img
 				src="/images/sponsor/ads.png" alt="Allied Data Sys"
 				style="float: left;" /></a>
@@ -127,7 +127,7 @@
 			</td>
 		</tr>
 		<tr>
-			<td style="width: 120px; height: 100px;">
+			<td style="width: 140px; height: 80px;">
 				<a href="https://duckduckgo.com/?t=slitaz"><img
 				src="/images/sponsor/ddg.png" alt="DuckDuckGo"
 				style="float: left;" /></a>
@@ -142,21 +142,20 @@
 				i pravi korisnicima privatnost.
 			</td>
 		</tr>
-		<!-- <tr>
-			<td style="width: 120px; height: 100px;">
-				<a href="http://cosi.clarkson.edu"><img
-				src="/images/sponsor/cosi.png" alt="Clarkson Open Source Institute"
+		<tr>
+			<td style="width: 140px; height: 80px;">
+				<a href="https://www.security-audit.com"><img
+				src="/images/sponsor/security-audit.png" 
+				alt="Website penetration testing"
 				style="float: left;" /></a>
 			</td>
 			<td>
-				The Clarkson Open Source Institute - COSI sponzorira naš 
-				klen server i nudi nam puni pristup virtualnom kompjuteru. 
-				Mi smo ponosni raditi sa COSI koja je osnovana za promicanje 
-				Open Source softvera (OSS) i osiguraje opremu i podršku za 
-				studentske projekte. Zahvaljujući tim COSI za podršku 
-				i brzu reakciju na bilo koji naših zahtjeva.
+				Security Audit Systems provide independent website penetration
+				testing services for businesses around the world.  One of UK's
+				leading website security providers that offers a range of 
+				website security testing services.
 			</td>
-		</tr> -->
+		</tr>
 	</tbody>
 </table>
 

@@ -40,7 +40,7 @@ include("../../lib/lang.php");
 	<li><a href="#overview">Vue d'ensemble</a></li>
 	<li><a href="#goals">Objectifs actuels</a></li>
 	<li><a href="#members">Membres</a></li>
-	<li><a href="#sponsors">Sponsors</a></li>
+	<li><a href="../sponsor/">Sponsors</a></li>
 	<li><a href="#donation">Donation</a></li>
 	<li><a href="#postal">Adresse postale</a></li>
 </ul>
@@ -119,27 +119,6 @@ de spécifier :
 	<li>Adresse complète</li>
 	<li>Pays</li>
 </ul>
-
-<h3 id="sponsors">Sponsors</h3>
-
-<p>
-L'association SliTaz a aussi pour buts de fournir et maintenir un système
-de base de haute qualité, stable et fiable, afin de permettre aux organismes
-publics (Ecoles, Universités, Ministères) et aux entreprises d'utiliser
-la distribution dans un contexte professionnel.
-</p>
-<p>
-Si vous proposez des solutions commerciales utilisant SliTaz, vous pouvez
-devenir sponsor de l'association afin de soutenir et d'assurer la pérennité
-de la distribution et obtenir des services professionels. Nous proposons
-des services de support, conseils et développement par des collaborateurs
-salariés de l'association. Pour de plus amples informations vous pouvez
-contacter l'association par courrier, ou mail : asso at slitaz.org
-</p>
-<p>
-	Plus d'information sur le sponsoring en anglais:
-	<a href="/en/sponsor/">SliTaz sponsor</a>
-</p>
 
 <h3 id="donation">Donation</h3>
 

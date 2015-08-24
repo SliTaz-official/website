@@ -102,7 +102,7 @@ include("../../lib/lang.php");
 <table>
 	<tbody>
 		<tr>
-			<td style="width: 120px; height: 100px;">
+			<td style="width: 140px; height: 80px;">
 				<a href="http://www.ads-lu.com/"><img
 				src="/images/sponsor/ads.png" alt="Allied Data Sys"
 				style="float: left;" /></a>
@@ -116,7 +116,7 @@ include("../../lib/lang.php");
 			</td>
 		</tr>
 		<tr>
-			<td style="width: 120px; height: 100px;">
+			<td style="width: 140px; height: 80px;">
 				<a href="https://duckduckgo.com/?t=slitaz"><img
 				src="/images/sponsor/ddg.png" alt="DuckDuckGo"
 				style="float: left;" /></a>
@@ -131,22 +131,20 @@ include("../../lib/lang.php");
 				privacidade ao usuário.
 			</td>
 		</tr>
-		<!-- <tr>
-			<td style="width: 120px; height: 100px;">
-				<a href="http://cosi.clarkson.edu"><img
-				src="/images/sponsor/cosi.png" alt="Clarkson Open Source Institute"
+		<tr>
+			<td style="width: 140px; height: 80px;">
+				<a href="https://www.security-audit.com"><img
+				src="/images/sponsor/security-audit.png" 
+				alt="Website penetration testing"
 				style="float: left;" /></a>
 			</td>
 			<td>
-				Clarkson Open Source Institute - O Cosi fornece nosso servidor
-				Chub, oferecendo acesso total a uma máquina virtual. Nos
-				orgulhamos pela parceria com a Universidade Clarkson, que foi
-				fundada para promover Software Open Source, fornecendo
-				equipamento e suporte para projetos de estudantes. Nossos
-				agradecimentos ao pessoal do COSI pelo suporte e por
-				responder prontamente aos nossos pedidos.
+				Security Audit Systems provide independent website penetration
+				testing services for businesses around the world.  One of UK's
+				leading website security providers that offers a range of 
+				website security testing services.
 			</td>
-		</tr> -->
+		</tr>
 	</tbody>
 </table>
 

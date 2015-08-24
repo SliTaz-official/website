@@ -19,9 +19,9 @@ case 2:
 	$url  = "https://duckduckgo.com/?t=slitaz";
 	break;
 case 3:
-	$name = "Clarkson Open Source Institute";
-	$img  = "cosi.png";
-	$url  = "http://cosi.clarkson.edu/";
+	$name = "Website penetration testing";
+	$img  = "security-audit.png";
+	$url  = "https://www.security-audit.com/";
 	break;
 }
 

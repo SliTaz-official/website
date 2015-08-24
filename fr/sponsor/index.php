@@ -21,12 +21,12 @@ include("../../lib/lang.php");
 	
 <!-- Featured sponsor -->
 <div id="sponsor">
-	<p><strong>Featured sponsor</strong></p>
+	<p><strong>Notre sponsor</strong></p>
 	<?php include("../../lib/rand-sponsor.php"); ?>
 	<p><?php echo "<a href='$url'>$name</a>" ?></p>
 </div>
 
-<h2>Sponsoring SliTaz</h2>
+<h2 style="margin-right: 220px;">Sponsoriser SliTaz</h2>
 
 <p>
 	SliTaz est un projet à but non lucratif et nous sommes toujours à
@@ -108,9 +108,9 @@ include("../../lib/lang.php");
 <table>
 	<tbody>
 		<tr>
-			<td style="width: 120px; height: 100px;">
+			<td style="width: 140px; height: 80px;">
 				<a href="http://www.ads-lu.com/"><img
-				src="/images/sponsor/ads.jpg" alt="Allied Data Sys"
+				src="/images/sponsor/ads.png" alt="Allied Data Sys"
 				style="float: left; " /></a>
 			</td>
 			<td>
@@ -124,7 +124,7 @@ include("../../lib/lang.php");
 			</td>
 		</tr>
 		<tr>
-			<td style="width: 120px; height: 100px;">
+			<td style="width: 140px; height: 80px;">
 				<a href="https://duckduckgo.com/?t=slitaz"><img
 				src="/images/sponsor/ddg.png" alt="DuckDuckGo"
 				style="float: left;" /></a>
@@ -141,31 +141,17 @@ include("../../lib/lang.php");
 			</td>
 		</tr>
 		<tr>
-			<td style="width: 120px; height: 100px;">
-				<a href="http://cosi.clarkson.edu"><img
-				src="/images/sponsor/cosi.png" alt="Clarkson Open Source Institute"
+			<td style="width: 140px; height: 80px;">
+				<a href="https://www.security-audit.com"><img
+				src="/images/sponsor/security-audit.png" 
+				alt="Website penetration testing"
 				style="float: left;" /></a>
 			</td>
 			<td>
-				Le Clarkson Open Source Institute - COSI sponsorise notre
-				serveur Chub et offre un accés complet à la machine virtuelle.
-				Nous sommes fiers de travailler avec COSI qui à été fondé
-				pour promouvoir le logiciel open source (OSS) et fournit
-				équipement et support aux projets étudiant. Un énorme
-				merci à l'équipe de COSI pour le support et les réponses
-				rapides à nos requêtes.
-			</td>
-		</tr>
-		<tr>
-			<td style="width: 120px; height: 100px;">
-				<a href="http://webconverger.com"><img
-				src="/images/sponsor/webc.png" alt="Webconverger Project"
-				style="float: left;" /></a>
-			</td>
-			<td>
-				Le projet Webconverger supporte financièrement le projet
-				SliTaz avec une donation mensuelle. Bises à l'équipe
-				Webconverger pour leur support !
+				Security Audit Systems provide independent website penetration
+				testing services for businesses around the world.  One of UK's
+				leading website security providers that offers a range of 
+				website security testing services.
 			</td>
 		</tr>
 	</tbody>

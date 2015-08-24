@@ -107,7 +107,7 @@ switch($page)
 		break;
 	case "sponsor":
 		$url  = "/LANG/sponsor/";
-		$lang = "bs en pt ru";
+		$lang = "bs en pt ru fr";
 		break;
 	default:
 		$url  = "/LANG/";

@@ -105,7 +105,7 @@
 <table>
 	<tbody>
 		<tr>
-			<td style="width: 120px; height: 100px;">
+			<td style="width: 140px; height: 80px;">
 				<a href="http://www.ads-lu.com/"><img
 				src="/images/sponsor/ads.png" alt="Allied Data Sys"
 				style="float: left;" /></a>
@@ -118,7 +118,7 @@
 				реагирование на любые наши вопросы и запросы.</td>
 		</tr>
 		<tr>
-			<td style="width: 120px; height: 100px;">
+			<td style="width: 140px; height: 80px;">
 				<a href="https://duckduckgo.com/?t=slitaz"><img
 				src="/images/sponsor/ddg.png" alt="DuckDuckGo"
 				style="float: left;" /></a>
@@ -132,21 +132,20 @@
 				ответов, меньше спама и беспорядка, много вкусностей и реальную
 				защиту вашей приватности.</td>
 		</tr>
-		<!-- <tr>
-			<td style="width: 120px; height: 100px;">
-				<a href="http://cosi.clarkson.edu"><img
-				src="/images/sponsor/cosi.png" alt="Clarkson Open Source Institute"
+		<tr>
+			<td style="width: 140px; height: 80px;">
+				<a href="https://www.security-audit.com"><img
+				src="/images/sponsor/security-audit.png" 
+				alt="Website penetration testing"
 				style="float: left;" /></a>
 			</td>
-			<td>Кларксоновский Институт открытого программного обеспечения —
-				<abbr title="Clarkson Open Source Institute">COSI</abbr>
-				является спонсором нашего сервера Chub и обеспечивает нам полный
-				доступ к виртуальной машине. Мы гордимся сотрудничеством с COSI,
-				который был основан для продвижения программного обеспечения
-				с открытым исходным кодом (OSS) и для обеспечения оборудованием
-				и поддержки студенческих проектов. Огромное спасибо команде COSI
-				за поддержку и быстрое реагирование на любые наши запросы.</td>
-		</tr> -->
+			<td>
+				Security Audit Systems provide independent website penetration
+				testing services for businesses around the world.  One of UK's
+				leading website security providers that offers a range of 
+				website security testing services.
+			</td>
+		</tr>
 	</tbody>
 </table>
 
