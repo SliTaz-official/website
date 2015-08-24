@@ -4,29 +4,17 @@
 	<meta charset="utf-8"/>
 	<title>Поддержи нас | SliTaz</title>
 	<meta name="description" content="SliTaz GNU/Linux asso sponsor"/>
-	<meta name="keywords" lang="en" content="slitaz pro, slitaz sponsor, support"/>
+	<meta name="keywords" lang="ru" content="slitaz pro, slitaz sponsor, support"/>
 	<meta name="author" content="Christophe Lincoln"/>
 	<?php include("../../lib/html/meta-link.html"); ?>
 </head>
 <body>
 
-<?php include("../../lib/html/header.ru.html"); ?>
-
-<!-- Block -->
-<div id="block">
-	<?php include("../../lib/html/nav.ru.html"); ?>
-	<!-- Information/image -->
-	<div id="block_info">
-		<h4>Спонсорство</h4>
-		<p>SliTaz является проектом на некоммерческой основе, и мы всегда ищем
-			новые возможности денежной поддержки проекта и получения нового
-			оборудования.</p>
-		<p>Помогите проекту небольшим пожертвованием:</p>
-		<?php include("../../lib/html/donate.html"); ?>
-	</div>
-</div>
-
-<?php include("../../lib/lang.php"); ?>
+<?php 
+include("../../lib/html/header.ru.html");
+include("../../lib/html/nav.ru.html"); 
+include("../../lib/lang.php");
+?>
 
 <!-- Content -->
 <div id="content">
@@ -39,6 +27,12 @@
 </div>
 
 <h2 style="margin-right: 220px;">Спонсирование SliTaz</h2>
+
+<p>
+	SliTaz является проектом на некоммерческой основе, и мы всегда ищем
+	новые возможности денежной поддержки проекта и получения нового
+	оборудования.
+</p>
 
 <p>Во-первых, огромное спасибо нашим <a href="#cur">текущим спонсорам</a>
 	и всем тем людям, которые поддерживают нас небольшими, но очень важными

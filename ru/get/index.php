@@ -13,32 +13,20 @@
 <?php
 include("../../config.php");
 include("../../lib/html/header.ru.html");
+include("../../lib/html/nav.ru.html"); 
+include("../../lib/lang.php"); 
 ?>
-
-<!-- Block -->
-<div id="block">
-	<?php include("../../lib/html/nav.ru.html"); ?>
-	<!-- Information/image -->
-	<div id="block_info">
-		<h4>Загрузка</h4>
-		<p>Загрузите последнюю стабильную версию для производственных целей,
-			или, когда вам нужно надежное рабочее место. Тестируйте
-			«готовящуюся» версию, чтобы помочь нам улучшить дистрибутив.</p>
-		<div class="button">
-			<img src="/images/download-30.png" />
-			<?php echo "<a href='$stable_iso'>SliTaz $stable_ver</a>
-				<a href='$cooking_iso'>SliTaz $cooking</a>"; ?>
-		</div>
-	</div>
-</div>
-
-<?php include("../../lib/lang.php"); ?>
 
 <!-- Content -->
 <div id="content">
 
-
 <h2>Загрузка SliTaz</h2>
+
+<p>
+	Загрузите последнюю стабильную версию для производственных целей,
+	или, когда вам нужно надежное рабочее место. Тестируйте
+	«готовящуюся» версию, чтобы помочь нам улучшить дистрибутив.
+</p>
 
 <ul>
 	<li><a href="#stable">LiveCD стабильная версия</a> — загрузочный образ ISO

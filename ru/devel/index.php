@@ -10,36 +10,29 @@
 </head>
 <body>
 
-<?php include("../../lib/html/header.ru.html"); ?>
-
-<!-- Block -->
-<div id="block">
-	<?php include("../../lib/html/nav.ru.html"); ?>
-	<!-- Information/image -->
-	<div id="block_info">
-		<h4>Разработка</h4>
-		<p>SliTaz — дистрибутив сообщества, созданный многими людьми по всему
-			миру; все желающие могут помочь и влиться в проект.</p>
-		<p>
-			<img src="/images/users.png" alt="*" />
-			Присоединяйтесь к нам <a href="http://scn.slitaz.org/">на SCN</a>
-			и <a href="../mailing-list.php">в рассылке</a>
-		</p>
-	</div>
-</div>
-
-<?php include("../../lib/lang.php"); ?>
+<?php 
+include("../../lib/html/header.ru.html");
+include("../../lib/html/nav.ru.html"); 
+include("../../lib/lang.php");
+?>
 
 <!-- Content -->
 <div id="content">
 
-<h2>Уголок разработчика</h2>
+<h2>Разработка</h2>
+
+<p>
+	SliTaz — дистрибутив сообщества, созданный многими людьми по всему
+	миру; все желающие могут помочь и влиться в проект.
+</p>
 
 <ul>
 	<li><a href="forge.php">Кузница</a> — Совместное управление, KISS, принципы,
-		репозитории Mercurial, сайт и другие сервисы.</li>
+	репозитории Mercurial, сайт и другие сервисы.</li>
 	<li><a href="/i18n.php">Проект интернационализации</a> — Перевод, цели
-		и управление.</li>
+	и управление.</li>
+	<li><a href="../artwork/">Artwork</a> - SliTaz logo, spider and art
+	information and download</li>
 	<li><a href="http://hg.slitaz.org/" >Репозитории Mercurial</a></li>
 	<li><a href="http://bugs.slitaz.org/">Баг-трекер SliTaz</a></li>
 </ul>

@@ -9,23 +9,11 @@
 </head>
 <body>
 
-<?php include("../../lib/html/header.ru.html"); ?>
-
-<!-- Block -->
-<div id="block">
-	<?php include("../../lib/html/nav.ru.html"); ?>
-	<!-- Information/image -->
-	<div id="block_info">
-		<h4>Ассоциация</h4>
-		<p>Ассоциация SliTaz GNU/Linux является некоммерческой организацией,
-			поддерживающей и управляющей проектом. Ее миссия заключается
-			в обеспечении инфраструктуры и долговечности проекта.</p>
-		<p>Помогите проекту небольшим пожертвованием:</p>
-		<?php include("../../lib/html/donate.html"); ?>
-	</div>
-</div>
-
-<?php include("../../lib/lang.php"); ?>
+<?php 
+include("../../lib/html/header.ru.html");
+include("../../lib/html/nav.ru.html"); 
+include("../../lib/lang.php");
+?>
 
 <!-- Content -->
 <div id="content">
@@ -37,7 +25,13 @@
 	<p><?php echo "<a href='$url'>$name</a>" ?></p>
 </div>
 
-<h2>Инфраструктура и услуги</h2>
+<h2 style="margin-right: 220px;">Инфраструктура и услуги</h2>
+
+<p>
+	Ассоциация SliTaz GNU/Linux является некоммерческой организацией,
+	поддерживающей и управляющей проектом. Ее миссия заключается
+	в обеспечении инфраструктуры и долговечности проекта.
+</p>
 
 <ul>
 	<li><a href="#overview">Обзор</a></li>

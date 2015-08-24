@@ -8,28 +8,12 @@
 </head>
 <body>
 
-<?php include("../config.php"); include("../lib/html/header.ru.html"); ?>
-
-
-<!-- Block -->
-<div id="block">
-	<?php include("../lib/html/nav.ru.html"); ?>
-	<!-- Information/image -->
-	<div id="block_info">
-		<h4>SliTaz по-русски</h4>
-		<p>SliTaz — свободная операционная система с открытыми исходниками.
-			Это полнофункциональный рабочий стол или сервер размером менее чем
-			40 МБ. Система проста в использовании, быстрая, безопасная и
-			стабильная. <a href="about/">Узнать больше…</a></p>
-		<div class="button" style="text-align: left; margin-top: 15px;">
-			<img src="/images/download-30.png" />
-			<?php echo "<a href='$stable_iso'>SliTaz $stable_ver</a>
-				<a href='http://mirror.slitaz.org/iso/rolling/slitaz-rolling.iso'>SliTaz rolling</a>"; ?>
-		</div>
-	</div>
-</div>
-
-<?php include("../lib/lang.php"); ?>
+<?php
+include("../config.php");
+include("../lib/html/header.ru.html");
+include("../lib/html/nav.ru.html"); 
+include("../lib/lang.php");
+?>
 
 <!-- Content -->
 <div id="content">
@@ -158,6 +142,12 @@
 <p><img src="../images/users.png" alt="*" />
 	<a href="http://scn.slitaz.org/groups/i18n/">Присоединиться к группе i18n
 	на SCN</a></p>
+	
+<h2>Графика</h2>
+
+<p>
+	SliTaz <a href="/ru/artwork/">Графика</a>, logo, wallpapers
+</p>
 
 <!-- End of content  -->
 </div>

@@ -14,31 +14,22 @@
 </head>
 <body>
 
-<?php include("../lib/html/header.ru.html"); ?>
-
-<!-- Block -->
-<div id="block">
-	<?php include("../lib/html/nav.ru.html"); ?>
-	<!-- Information/image -->
-	<div id="block_info">
-		<h4>Рассылка</h4>
-		<p>Обсуждения и анонсы команды SliTaz (а также поддержка и разработка).
-			Всё это — части рассылки — присоединяйтесь, чтобы получить помощь
-			или влиться в проект.</p>
-		<p><img src="/images/users.png" alt="*" />
-			Также вы можете присоединиться к нам на <a
-			href="http://scn.slitaz.org/">SCN</a>, получить поддержку на <a
-			href="http://forum.slitaz.org/">форуме</a>, или:</p>
-		<?php include("../lib/html/follow.html"); ?>
-	</div>
-</div>
-
-<?php include("../lib/lang.php"); ?>
+<?php 
+include("../lib/html/header.ru.html");
+include("../lib/html/nav.ru.html"); 
+include("../lib/lang.php");
+?>
 
 <!-- Content -->
 <div id="content">
 
 <h2>Рассылка SliTaz</h2>
+
+<p>
+	Обсуждения и анонсы команды SliTaz (а также поддержка и разработка).
+	Всё это — части рассылки — присоединяйтесь, чтобы получить помощь
+	или влиться в проект.
+</p>
 
 <ul>
 	<li><a href="#about">О рассылке</a> — Поддержка и разработка.</li>
@@ -46,7 +37,6 @@
 	<li><a href="#archives">Архив рассылки</a> — Читать и искать в архиве
 		сообщений.</li>
 </ul>
-
 
 <h3 id="about">О рассылке</h3>
 

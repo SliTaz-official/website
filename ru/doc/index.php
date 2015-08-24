@@ -10,31 +10,27 @@
 </head>
 <body>
 
-<?php include("../../lib/html/header.ru.html"); ?>
-
-<!-- Block -->
-<div id="block">
-	<?php include("../../lib/html/nav.ru.html"); ?>
-	<!-- Information/image -->
-	<div id="block_info">
-		<h4>Документация</h4>
-		<p>Официальная документация SliTaz доступна на сайте Wiki сообщества.
-			Каждый LiveCD SliTaz комплектуется инструкциями и руководством
-			по началу работы, которые доступны через меню «Документация».</p>
-		<ul>
-			<li><a href="http://doc.slitaz.org/en:start">Wiki сообщества</a></li>
-			<li><a
-				href="http://hg.slitaz.org/slitaz-doc/raw-file/tip/slitaz/index.ru.html"
-				>Руководство по началу работы</a></li>
-		</ul>
-	</div>
-</div>
-
-<?php include("../../lib/lang.php"); ?>
+<?php 
+include("../../lib/html/header.ru.html");
+include("../../lib/html/nav.ru.html"); 
+include("../../lib/lang.php");
+?>
 
 <!-- Content -->
 <div id="content">
 
+<h2>Документация</h2>
+
+<p>Официальная документация SliTaz доступна на сайте Wiki сообщества.
+	Каждый LiveCD SliTaz комплектуется инструкциями и руководством
+	по началу работы, которые доступны через меню «Документация».
+</p>
+
+<ul>
+	<li><a href="http://doc.slitaz.org/ru:start">Wiki сообщества</a></li>
+	<li><a href="http://hg.slitaz.org/slitaz-doc/raw-file/tip/slitaz/index.ru.html"
+		>Руководство по началу работы</a></li>
+</ul>
 
 <h2>Handbook и Cookbook</h2>
 

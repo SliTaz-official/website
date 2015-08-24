@@ -10,31 +10,14 @@
 </head>
 <body>
 
-<?php include("../../lib/html/header.ru.html"); ?>
-
-<!-- Block -->
-<div id="block">
-	<?php include("../../lib/html/nav.ru.html"); ?>
-	<!-- Information/image -->
-	<div id="block_info">
-		<h4>Графика</h4>
-		<p>Находите, наслаждайтесь, обсуждайте, загружайте и делитесь графикой
-			SliTaz! Присоединяйтесь к группе Artwork на <a
-			href="http://scn.slitaz.org/groups/artwork/">SCN</a>. Ваши работы
-			могут быть использованы в релизах Cooking.</p>
-		<ul>
-			<li><a href="#art4taz">Графика и дизайн</a></li>
-			<li><a href="#logos">Логотипы и паучок</a></li>
-			<li><a href="screenshots.php">Скриншоты</a></li>
-		</ul>
-	</div>
-</div>
-
-<?php include("../../lib/lang.php"); ?>
+<?php 
+include("../../lib/html/header.ru.html");
+include("../../lib/html/nav.ru.html"); 
+include("../../lib/lang.php");
+?>
 
 <!-- Content -->
 <div id="content">
-
 
 <h2 id="art4taz">Графика и дизайн</h2>
 
@@ -43,8 +26,7 @@
 	разместить логотип на вашем сайте, чтобы помочь популяризации проекта.
 	Логотипы и значки SliTaz доступны для скачивания в формате SVG. Здесь вы
 	также найдете некоторые <a href="screenshots.php">скриншоты</a>, сделанные
-	с помощью mtPaint и Gimp. Команда Artwork имеет свою платформу в <a
-	href="http://scn.slitaz.org/">сети сообщества SliTaz</a>.</p>
+	с помощью mtPaint и Gimp.</p>
 
 
 <h3>Графика для SliTaz</h3>

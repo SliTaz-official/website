@@ -94,7 +94,7 @@ include("../../lib/lang.php");
 
 <h2>News archives</h2>
 <p>
-	please note that some links may be broken due to website structure 
+	Please note that some links may be broken due to website structure 
 	changes (mainly the docs that moved to their own domain).
 </p>
 <p>

@@ -10,27 +10,12 @@
 </head>
 <body>
 
-<?php include("../../lib/html/header.ru.html"); ?>
-
-<!-- Block -->
-<div id="block">
-	<?php include("../../lib/html/nav.ru.html"); ?>
-	<!-- Information/image -->
-	<div id="block_info">
-		<h4>Архивы новостей</h4>
-		<p>Архивы новостей сайта по годам. Обратите внимание, что некоторые
-			ссылки могут быть испорчены из-за изменения структуры сайта
-			(в основном это документы, которые перемещены в свой собственный
-			домен).</p>
-		<p><img src="/images/news.png" alt="*" />
-			<a href="2007.php">2007</a> | <a href="2008.php">2008</a> |
-			<a href="2009.php">2009</a> | <a href="2010.php">2010</a> |
-			<a href="2011.php">2011</a> | 2012 |
-			<a href="./">2014</a></p>
-	</div>
-</div>
-
-<?php include("../../lib/lang.php"); ?>
+<?php
+include("../../config.php");
+include("../../lib/html/header.ru.html");
+include("../../lib/html/nav.ru.html"); 
+include("../../lib/lang.php"); 
+?>
 
 <!-- Content -->
 <div id="content">
@@ -105,7 +90,17 @@
 	</li>
 </ul>
 
+<!-- End of news -->
 </div>
+
+<h2>News archives</h2>
+<p>
+	Please note that some links may be broken due to website structure 
+	changes (mainly the docs that moved to their own domain).
+</p>
+<p>
+	<a href="index.php#archives">Archives by year</a>
+</p>
 
 <!-- End of content -->
 </div>

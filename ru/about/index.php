@@ -10,30 +10,27 @@
 </head>
 <body>
 
-<?php include("../../lib/html/header.ru.html"); ?>
-
-<!-- Block -->
-<div id="block">
-	<?php include("../../lib/html/nav.ru.html"); ?>
-	<!-- Information/image -->
-	<div id="block_info">
-		<h4>О проекте</h4>
-		<p>Маленький, быстрый, стабильный и простой в использовании!</p>
-		<ul>
-			<li><a href="#intro">Введение</a></li>
-			<li><a href="#overview">Общие сведения</a></li>
-			<li><a href="#website">Веб-сайт и i18n</a></li>
-			<li><a href="#reviews">Обзоры</a></li>
-			<li><a href="../asso/">Ассоциация</a></li>
-		</ul>
-	</div>
-</div>
-
-<?php include("../../lib/lang.php"); ?>
+<?php 
+include("../../lib/html/header.ru.html");
+include("../../lib/html/nav.ru.html"); 
+include("../../lib/lang.php");
+?>
 
 <!-- Content -->
 <div id="content">
 
+<h2>О проекте</h2>
+<p>
+	Маленький, быстрый, стабильный и простой в использовании!
+</p>
+
+<ul>
+	<li><a href="#intro">Введение</a></li>
+	<li><a href="#overview">Общие сведения</a></li>
+	<li><a href="#website">Веб-сайт и i18n</a></li>
+	<li><a href="#reviews">Обзоры</a></li>
+	<li><a href="../asso/">Ассоциация</a></li>
+</ul>
 
 <h2 id="intro">Введение в проект</h2>
 

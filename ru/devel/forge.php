@@ -10,24 +10,11 @@
 </head>
 <body>
 
-<?php include("../../lib/html/header.ru.html"); ?>
-
-<!-- Block -->
-<div id="block">
-	<?php include("../../lib/html/nav.ru.html"); ?>
-	<!-- Information/image -->
-	<div id="block_info">
-		<h4>Кузница</h4>
-		<p>Разнообразные утилиты, принципы и сервисы, используемые для создания
-			SliTaz.</p>
-		<p><img src="/images/users.png" alt="*" />
-			Присоединяйтесь к нам <a href="http://scn.slitaz.org/">на SCN</a>
-			и <a href="../mailing-list.php">в рассылке</a>
-		</p>
-	</div>
-</div>
-
-<?php include("../../lib/lang.php"); ?>
+<?php 
+include("../../lib/html/header.ru.html");
+include("../../lib/html/nav.ru.html"); 
+include("../../lib/lang.php");
+?>
 
 <!-- Content -->
 <div id="content">

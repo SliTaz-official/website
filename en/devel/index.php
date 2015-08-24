@@ -63,8 +63,7 @@ include("../../lib/lang.php");
 	For artists there is a dedicated website, simply create an account and 
 	post your graphics or pictures. The site is managed by the community. If 
 	you want to lend a hand to administer the site, please contact a 
-	contributor or e-mail the discussion list. Join the SliTaz Community 
-	<a href="http://scn.slitaz.org/groups/artwork/">Artwork group</a>
+	contributor or e-mail the discussion list.
 </p>
 
 <h2>Activity</h2>

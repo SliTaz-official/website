@@ -10,32 +10,19 @@
 </head>
 <body>
 
-<?php include("../../lib/html/header.ru.html"); ?>
-
-<!-- Block -->
-<div id="block">
-	<?php include("../../lib/html/nav.ru.html"); ?>
-	<!-- Information/image -->
-	<div id="block_info">
-		<h4>Архивы новостей</h4>
-		<p>Архивы новостей сайта по годам. Обратите внимание, что некоторые
-			ссылки могут быть испорчены из-за изменения структуры сайта
-			(в основном это документы, которые перемещены в свой собственный
-			домен).</p>
-		<p><img src="/images/news.png" alt="*" />
-			<a href="2007.php">2007</a> | 2008 |
-			<a href="2009.php">2009</a> | <a href="2010.php">2010</a> |
-			<a href="2011.php">2011</a> | <a href="2012.php">2012</a> |
-			<a href="./">2014</a></p>
-	</div>
-</div>
-
-<?php include("../../lib/lang.php"); ?>
+<?php
+include("../../config.php");
+include("../../lib/html/header.ru.html");
+include("../../lib/html/nav.ru.html"); 
+include("../../lib/lang.php"); 
+?>
 
 <!-- Content -->
 <div id="content">
 
 <h2>2008</h2>
+
+<div class="news">
 
 <ul>
 	<li>
@@ -73,6 +60,18 @@
 		<p>Paving the road to a stable release, we published a new Cooking ISO with many bug fixes and some new features. We added Asunder for audio CD ripping, Burnbox to burn ISO images, a new boot option to let you load Kernel modules at boot time (<code>modprobe=modules</code>) and the LiveCD now uses Xvesa from Xorg 7.2. All the SliTaz tools and utilities have been updated with new features. Tazpkg can repack packages from a running system, Tazlito can generate a LiveCD distribution flavor with a few commands and Tazwok can check for build dependencies when building a package from source. Please check <a href="../get/#cooking">downloads area</a> to get a copy of SliTaz LiveCD.</p>
 	</li>
 </ul>
+
+<!-- End of news -->
+</div>
+
+<h2>News archives</h2>
+<p>
+	Please note that some links may be broken due to website structure 
+	changes (mainly the docs that moved to their own domain).
+</p>
+<p>
+	<a href="index.php#archives">Archives by year</a>
+</p>
 
 <!-- End of content -->
 </div>

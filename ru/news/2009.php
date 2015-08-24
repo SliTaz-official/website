@@ -10,32 +10,19 @@
 </head>
 <body>
 
-<?php include("../../lib/html/header.ru.html"); ?>
-
-<!-- Block -->
-<div id="block">
-	<?php include("../../lib/html/nav.ru.html"); ?>
-	<!-- Information/image -->
-	<div id="block_info">
-		<h4>Архивы новостей</h4>
-		<p>Архивы новостей сайта по годам. Обратите внимание, что некоторые
-			ссылки могут быть испорчены из-за изменения структуры сайта
-			(в основном это документы, которые перемещены в свой собственный
-			домен).</p>
-		<p><img src="/images/news.png" alt="*" />
-			<a href="2007.php">2007</a> | <a href="2008.php">2008</a> |
-			2009 | <a href="2010.php">2010</a> |
-			<a href="2011.php">2011</a> | <a href="2012.php">2012</a> |
-			<a href="./">2014</a></p>
-	</div>
-</div>
-
-<?php include("../../lib/lang.php"); ?>
+<?php
+include("../../config.php");
+include("../../lib/html/header.ru.html");
+include("../../lib/html/nav.ru.html"); 
+include("../../lib/lang.php"); 
+?>
 
 <!-- Content -->
 <div id="content">
 
 <h2>2009</h2>
+
+<div class="news">
 
 <ul>
 	<li>
@@ -70,6 +57,18 @@
 		<p>Getting ready for the next stable release! - The SliTaz project is proud to publish a new Cooking version with a lot of bug fixes, updates, improvements and new features. PCI/USB device auto-detection is now handled by Tazhw and firmware can be installed in one click through a graphical interface. Tazndis also has a simple GUI which lets you manage Windows drivers in a user friendly interface. The graphical packages manager is also much simpler to use and LiveUSB media such as a USB key can easily be created through a box. Netbox displays all interfaces and the new Wifibox can connect to wireless essids, manage favorite networks and configure card drivers manually or through Tazhw. The desktop has a GUI to enable or disable applications started with an Openbox session and Ivman with desktopkbox provides a lightweight notification system. You can <a href="../get/#cooking">download</a> this new ISO image from one of the official mirrors of the website.</p>
 	</li>
 </ul>
+
+<!-- End of news -->
+</div>
+
+<h2>News archives</h2>
+<p>
+	Please note that some links may be broken due to website structure 
+	changes (mainly the docs that moved to their own domain).
+</p>
+<p>
+	<a href="index.php#archives">Archives by year</a>
+</p>
 
 <!-- End of content -->
 </div>
