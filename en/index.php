@@ -159,8 +159,8 @@ include("../lib/lang.php");
 <h2>Artwork</h2>
 
 <p>
-	You can get SliTaz logo, screenshots and wallpapers and you can get 
-	involved in SliTaz Artwork team to help with default artwork provided
+	You can get SliTaz logos, screenshots and wallpapers and get 
+	involved in the SliTaz Artwork team to help with default artwork provided
 	with the distibution ISO images. More information in
 	<a href="artwork/">the Artwork section</a>.
 </p>
