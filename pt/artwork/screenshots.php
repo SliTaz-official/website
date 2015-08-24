@@ -26,11 +26,6 @@ include("../../lib/lang.php");
     lançadas até hoje. Você pode procurar, discutir e
     compartilhar suas próprias capturas.
 </p>
-<p>
-    <img src="/images/users.png" alt="[ ]" />
-    <a href="http://scn.slitaz.org/image/">Entre no SCN</a>
-    (SliTaz Community Network).
-</p>
 
 <div id="gallery">
 

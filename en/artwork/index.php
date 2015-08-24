@@ -28,7 +28,7 @@ include("../../lib/lang.php");
 	The SliTaz logos and icons are available for download in SVG format. You
 	will also find here some <a href="screenshots.php">screenshots</a> made
 	with mtPaint and The Gimp. The Artwork team has its own platform on
-	the <a href="http://scn.slitaz.org/">SliTaz Community Network</a>.
+	the <a href="http://forum.slitaz.org/forum/artwork">SliTaz Forum</a>.
 </p>
 
 <h3>Artwork for SliTaz</h3>

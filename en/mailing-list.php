@@ -10,34 +10,22 @@
 </head>
 <body>
 
-<?php include("../lib/html/header.html"); ?>
-
-<!-- Block -->
-<div id="block">
-	<?php include("../lib/html/nav.en.html"); ?>
-	<!-- Information/image -->
-	<div id="block_info">
-		<h4>Mailing list</h4>
-		<p>
-			SliTaz contributors discussions and announcements (inc.
-			support and development). All this is part of the mailing
-			list - Join now to get help or involved in the project.
-		</p>
-		<p>
-			<img src="/images/users.png" alt="[ ]" />
-			Also you can <a href="http://scn.slitaz.org/">join us on SCN</a>
-			and the <a href="http://forum.slitaz.org/">forum</a>.
-		</p>
-		
-	</div>
-</div>
-
-<?php include("../lib/lang.php"); ?>
+<?php 
+include("../lib/html/header.html");
+include("../lib/html/nav.html"); 
+include("../lib/lang.php");
+?>
 
 <!-- Content -->
 <div id="content">
 
-<h2>SliTaz list</h2>
+<h2>SliTaz Mailing list</h2>
+
+<p>
+	Users support, general information, SliTaz contributors discussions and
+	announcements (inc. support and development). All this is part of the
+	mailing list - Join now to get help or involved in the project.
+</p>
 
 <ul>
 	<li><a href="#about">About the list</a> - Support and development.</li>

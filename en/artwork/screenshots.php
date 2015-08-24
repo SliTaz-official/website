@@ -10,30 +10,21 @@
 </head>
 <body>
 
-<?php include("../../lib/html/header.html"); ?>
-
-<!-- Block -->
-<div id="block">
-	<?php include("../../lib/html/nav.en.html"); ?>
-	<!-- Information/image -->
-	<div id="block_info">
-		<h4>Screenshots</h4>
-		<p>
-			Pictures say more than a thousand words... Screenshots of 
-			the latest Stable and Cooking versions. You may also want to
-			find, discuss, upload and share SliTaz Artwork!
-		</p>
-		<p>
-			<img src="/images/users.png" alt="[ ]" />
-			<a href="http://scn.slitaz.org/groups/artwork/">Join us on SCN</a>
-		</p>
-	</div>
-</div>
-
-<?php include("../../lib/lang.php"); ?>
+<?php 
+include("../../lib/html/header.html");
+include("../../lib/html/nav.html"); 
+include("../../lib/lang.php"); 
+?>
 
 <!-- Content -->
 <div id="content">
+
+<h2>Screenshots</h2>
+
+<p style="text-align: center;">
+	Pictures say more than a thousand words... Screenshots of the latest
+	Stable and Cooking versions.
+</p>
 
 <div id="gallery">
 

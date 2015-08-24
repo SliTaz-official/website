@@ -150,10 +150,19 @@ include("../lib/lang.php");
 <h2>Internationalization</h2>
 
 <p>
-The SliTaz web site is available in several languages and maintained by the
-<a href="../i18n.php">internationalization</a> team (i18n). Help is often
-needed and you're welcome to join us if you would like to see the website
-translated into your language.
+	The SliTaz web site is available in several languages and maintained by the
+	<a href="../i18n.php">internationalization</a> team (i18n). Help is often
+	needed and you're welcome to join us if you would like to see the website
+	translated into your language.
+</p>
+
+<h2>Artwork</h2>
+
+<p>
+	You can get SliTaz logo, screenshots and wallpapers and you can get 
+	involved in SliTaz Artwork team to help with default artwork provided
+	with the distibution ISO images. More information in
+	<a href="artwork/">the Artwork section</a>.
 </p>
 
 <!-- End of content  -->

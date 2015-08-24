@@ -39,6 +39,11 @@ include("../lib/lang.php");
 </div>
 
 <div class="box">
+	<img src="../images/mail.png" alt="mail" />
+	Mail: <a href="mailing-list.php">Liste de discussion</a>
+</div>
+
+<div class="box">
 	<img src="../images/irc.png" alt="irc" />
 	Canal IRC: <a href="http://irc.slitaz.org">irc.slitaz.org</a>
 	#slitaz sur irc.freenode.net

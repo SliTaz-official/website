@@ -18,12 +18,12 @@ include("../../lib/lang.php");
 
 <!-- Content -->
 <div id="content">
-	
-<p>
-	Une image dit parfois plus que mille mots...
-	Captures d'écran de la version stable et cooking.
-	Vous aurez peut-être aussi envie de trouver ou partager
-	des images pour SliTaz!
+
+<h2>Captures d'écran</h2>
+
+<p style="text-align: center;">
+	Une image dit parfois plus que mille mots... Captures d'écran de la
+	version stable et cooking.
 </p>
 
 <div id="gallery">
