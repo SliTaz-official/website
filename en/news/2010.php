@@ -22,6 +22,8 @@ include("../../lib/lang.php");
 
 <h2>2010</h2>
 
+<div class="news">
+
 <ul>
 	<li id="d20101104">
 		<strong>4 November 2010 - New Cooking 20101104</strong>
@@ -107,6 +109,9 @@ include("../../lib/lang.php");
 	on the SliTaz forum.</p>
 	</li>
 </ul>
+
+<!-- End of news -->
+</div>
 
 <h2>News archives</h2>
 <p>

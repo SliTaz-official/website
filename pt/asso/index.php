@@ -19,12 +19,12 @@ include("../../lib/lang.php");
 <!-- Content -->
 <section id="content">
 
-<div class="box-up">
+<!--<div class="box-up">
     <a href="http://www.gofundme.com/slitaz2014?utm_medium=wdgt"
         title="Visite esta página"><img src="../../images/gofundme.png"></a>
     <a href="http://www.gofundme.com/slitaz2014?utm_medium=wdgt">
         	Participe das doações para o SliTaz em 2014!</a>
-</div>
+</div>-->
 
 <!-- Featured Sponsor -->
 <div id="sponsor">
@@ -33,7 +33,7 @@ include("../../lib/lang.php");
     <p><a href="/pt/sponsor/">Torne-se um patrocinador!</a></p>
 </div>
 
-<h2>Associação</h2>
+<h2 style="margin-right: 220px;">Associação</h2>
 <p>
     A Associação SliTaz GNU/Linux é uma entidade sem fins 
     lucrativos que mantem e gerencia o projeto, sendo sua 
@@ -42,15 +42,13 @@ include("../../lib/lang.php");
     desenvolvedores e empresas que utilizam a distribuição.
 </p>
 
-<h2>Infraestrutura e Serviços</h2>
-
 <ul>
-	<li><a href="#overview">Introdução.</a></li>
-	<li><a href="#goals">Objetivos Atuais.</a></li>
-	<li><a href="#members">Membros.</a></li>
-	<li><a href="#sponsor">Patrocinadores.</a></li>
-	<li><a href="#donation">Doações.</a></li>
-	<li><a href="#postal">Endereço Postal.</a></li>
+	<li><a href="#overview">Introdução</a></li>
+	<li><a href="#goals">Objetivos Atuais</a></li>
+	<li><a href="#members">Membros</a></li>
+	<li><a href="../sponsor/">Patrocinadores</a></li>
+	<li><a href="#donation">Doações</a></li>
+	<li><a href="#postal">Endereço Postal</a></li>
 </ul>
 
 <h3 id="overview">Introdução</h3>

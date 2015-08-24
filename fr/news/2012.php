@@ -10,28 +10,12 @@
 </head>
 <body>
 
-<?php include("../../lib/html/header.html"); ?>
-
-<!-- Block -->
-<div id="block">
-	<?php include("../../lib/html/nav.fr.html"); ?>
-	<!-- Information/image -->
-	<div id="block_info">
-		<h4>Archives des news</h4>
-		<p>
-			Les archives de l'actualité du site classée par année.
-		</p>
-		<p>
-			<img src="/images/news.png" alt="[ News ]" />
-			<a href="2007.php">2007</a> | <a href="2008.php">2008</a>
-			| <a href="2009.php">2009</a> | <a href="2010.php">2010</a>
-			| <a href="2011.php">2011</a> | <a href="2012.php">2012</a>
-			| <a href="./">2014</a>
-		</p>
-	</div>
-</div>
-
-<?php include("../../lib/lang.php"); ?>
+<?php
+include("../../config.php");
+include("../../lib/html/header.fr.html"); 
+include("../../lib/html/nav.fr.html"); 
+include("../../lib/lang.php");
+?>
 
 <!-- Content -->
 <div id="content">
@@ -131,6 +115,15 @@
 
 <!-- End of news -->
 </div>
+
+<h2>Archives des news</h2>
+<p>
+	A noter que certains liens sont peut-ête cassés du à des changements
+	de structure dans le site au fil du temps.
+</p>
+<p>
+	<a href="index.php#archives">Archives par année</a>
+</p>
 
 <!-- End of content  -->
 </div>

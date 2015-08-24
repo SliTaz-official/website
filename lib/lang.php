@@ -21,6 +21,10 @@ switch($page)
 		$url  = "/LANG/mailing-list.php";
 		$lang = "cn da de en es fr id it pt ru";
 		break;
+	case "support":
+		$url  = "/LANG/support.php";
+		$lang = "en fr pt";
+		break;
 	case "search":
 		$url  = "/LANG/search.php";
 		$lang = "cn da de en es fr pt ru";
@@ -43,7 +47,7 @@ switch($page)
 		break;
 	case "asso":
 		$url  = "/LANG/asso/";
-		$lang = "en es fr pt ru";
+		$lang = "en es fr pt ru bs da";
 		break;
 	case "statutes":
 		$url  = "/LANG/asso/statutes.php";

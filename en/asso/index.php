@@ -38,7 +38,7 @@ include("../../lib/lang.php");
 	<li><a href="#overview">Overview</a></li>
 	<li><a href="#goals">Current objectives</a></li>
 	<li><a href="#members">Members</a></li>
-	<li><a href="../sponsor/">Sponsors</a></li>
+	<li><a href="../../en/sponsor/">Sponsors</a></li>
 	<li><a href="#donation">Donations</a></li>
 	<li><a href="#postal">Postal Address</a></li>
 </ul>

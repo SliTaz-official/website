@@ -26,7 +26,7 @@ include("../../lib/lang.php");
 	<p><?php echo "<a href='$url'>$name</a>" ?></p>
 </div>
 
-<h2>Patrocinando o SliTaz</h2>
+<h2 style="margin-right: 220px;">Patrocinando o SliTaz</h2>
 
 <p>
     O SliTaz é uma organização sem fins comerciais, que procura formas

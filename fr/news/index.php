@@ -12,8 +12,8 @@
 
 <?php
 include("../../config.php");
-include("../../lib/html/header.html");
-include("../../lib/html/nav-ng.fr.html"); 
+include("../../lib/html/header.fr.html"); 
+include("../../lib/html/nav.fr.html"); 
 include("../../lib/lang.php");
 ?>
 
@@ -26,7 +26,7 @@ include("../../lib/lang.php");
 <ul>
 	
 	<li id="d20150520">
-		<strong>20 mai 2015 - Publication de SliTaz 5.0 -RC-3</strong>
+		<strong>20 mai 2015 - Publication de SliTaz 5.0 RC-3</strong>
 		<p>
 			L'équipe SliTaz est heureuse d'annoncer la publication de SliTaz 
 			GNU/Linux 5.0 RC3. Nous avons fait un enorme travail pour corriger
@@ -48,7 +48,7 @@ include("../../lib/lang.php");
 	</li>
 	
 	<li id="d20140519">
-		<strong>19 mai 2014 - Publication de SliTaz 5.0 -RC-2</strong>
+		<strong>19 mai 2014 - Publication de SliTaz 5.0 RC-2</strong>
 		<p>
 			L'équipe SliTaz est heureuse d'annoncer la publication de SliTaz 
 			GNU/Linux 5.0 RC2. Nous avons fait un enorme travail pour corriger
@@ -77,7 +77,7 @@ include("../../lib/lang.php");
 	</li>
 	
 	<li id="d20140502">
-		<strong>2 mai 2014 - Publication de SliTaz 5.0 -RC-1</strong>
+		<strong>2 mai 2014 - Publication de SliTaz 5.0 RC-1</strong>
 		<p>
 			L'équipe SliTaz est heureuse d'annoncer la publication de SliTaz 
 			GNU/Linux 5.0 RC1. Cette relase est très mature, mais nous 
@@ -120,9 +120,9 @@ include("../../lib/lang.php");
 
 <h2 id="archives">Archives des news</h2>
 <p>
-	Les archives de l'actualité du site classée par année. A noter que certain
-	sont peut-ête cassé du à des changements de structure dan le site avec 
-	le temps.
+	Les archives de l'actualité du site classée par année. A noter que
+	certains liens sont peut-ête cassés du à des changements de structure
+	dans le site au fil du temps.
 </p>
 <p>
 	<a href="2007.php">2007</a> | <a href="2008.php">2008</a>

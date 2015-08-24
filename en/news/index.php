@@ -169,6 +169,7 @@ include("../../lib/lang.php");
 	</li>
 </ul>
 
+<!-- End of news -->
 </div>
 
 <h2 id="archives">News archives</h2>

@@ -22,6 +22,8 @@ include("../../lib/lang.php");
 
 <h2>2008</h2>
 
+<div class="news">
+
 <ul>
 	<li>
 		<strong>31 Dec 2008 - Cooking 20081231 - Wifi and NTFS support</strong>
@@ -155,6 +157,9 @@ include("../../lib/lang.php");
 	check <a href="../get/#cooking">downloads area</a> to get a copy of SliTaz
 	LiveCD.</p></li>
 </ul>
+
+<!-- End of news -->
+</div>
 
 <h2>News archives</h2>
 <p>

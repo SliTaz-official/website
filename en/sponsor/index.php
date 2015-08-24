@@ -26,7 +26,7 @@ include("../../lib/lang.php");
 	<p><?php echo "<a href='$url'>$name</a>" ?></p>
 </div>
 
-<h2>Sponsoring SliTaz</h2>
+<h2 style="margin-right: 220px;">Sponsoring SliTaz</h2>
 
 <p>
 	SliTaz is a non-profit based project and we are always looking for

@@ -22,6 +22,8 @@ include("../../lib/lang.php");
 
 <h2>2011</h2>
 
+<div class="news">
+
 <ul>
 	<li id="d20110531">
 		<strong>31 May 2011 - New and fresh Cooking 20110531</strong>
@@ -80,6 +82,9 @@ include("../../lib/lang.php");
 	</p>
 	</li>
 </ul>
+
+<!-- End of news -->
+</div>
 
 <h2>News archives</h2>
 <p>

@@ -22,6 +22,8 @@ include("../../lib/lang.php");
 
 <h2>2012</h2>
 
+<div class="news">
+
 <ul>
 	<li id="d20120410">
 		<strong>10 Apr 2012 - SliTaz GNU/Linux 4.0 Release</strong>
@@ -97,6 +99,9 @@ include("../../lib/lang.php");
 	</p>
 	</li>
 </ul>
+
+<!-- End of news -->
+</div>
 
 <h2>News archives</h2>
 <p>

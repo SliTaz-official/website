@@ -22,6 +22,8 @@ include("../../lib/lang.php");
 
 <h2>2009</h2>
 
+<div class="news">
+
 <ul>
 	<li>
 		<strong>4 November 2009 - New Cooking 20091104</strong>
@@ -143,6 +145,9 @@ include("../../lib/lang.php");
 	official mirrors of the website.
 	</p></li>
 </ul>
+
+<!-- End of news -->
+</div>
 
 <h2>News archives</h2>
 <p>

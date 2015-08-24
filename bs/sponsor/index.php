@@ -40,7 +40,7 @@
 	<p><?php echo "<a href='$url'>$name</a>" ?></p>
 </div>
 
-<h2>SliTaz Sponzorstvo</h2>
+<h2 style="margin-right: 220px;">SliTaz Sponzorstvo</h2>
 
 <p>
 	Prvo, velika zahvala našim <a href="#cur">trenutnim sponzorima</a> i 
@@ -49,8 +49,6 @@
 	razvoja smo odrasli i postali profesionalni operativni sustav koji 
 	je siguran za korištenje u proizvodnim okruženjima.
 </p>
-
-
 
 <h3>Monetarna podrška programera</h3>
 

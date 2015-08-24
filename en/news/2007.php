@@ -22,6 +22,8 @@ include("../../lib/lang.php");
 
 <h2>2007</h2>
 
+<div class="news">
+
 <ul>
 	<li>
 		<strong>16 Dec 2007 - SliTaz English forum</strong>
@@ -86,6 +88,9 @@ include("../../lib/lang.php");
 	SliTaz (cooking) LiveCD can be obtained for free
 	from TuxFamily mirror.  <a href="../get/#cooking">Download</a>.</p></li>
 </ul>
+
+<!-- End of news -->
+</div>
 
 <h2>News archives</h2>
 <p>
