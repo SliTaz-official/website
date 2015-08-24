@@ -45,9 +45,6 @@ include("../../lib/lang.php");
 	<li><a href="#postal">Adresse postale</a></li>
 </ul>
 
-<p>Aidez le projet via un petit don:
-	<?php include("../../lib/html/donate.html"); ?></p>
-
 <h3 id="overview">Vue d'ensemble</h3>
 
 <p>
@@ -110,9 +107,8 @@ cotisation annuelle.
 Pour devenir membre, il vous suffit d'envoyer un courrier, ou un mail à 
 l'adresse : asso (at) slitaz.org. Vous recevrez alors un mail avec toutes
 les informations utiles, les moyens de paiement de la cotisation et 
-une copie des statuts. La cotisation de base a été fixée à 40 Euro (60 CHF)
-pour l'année 2009-2010. Dans le contenu du courrier ou mail, vous êtes priés
-de spécifier :
+une copie des statuts. La cotisation de base a été fixée à 40 Euro (60 CHF).
+Dans le contenu du courrier ou mail, vous êtes priés de spécifier :
 </p>
 <ul>
 	<li>Nom et Prénom</li>

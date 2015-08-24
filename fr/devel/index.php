@@ -34,11 +34,11 @@ include("../../lib/lang.php");
     La <em>mailing list</em> est le moyen de collaboration principale.</li>
     <li><a href="/i18n.php">Internationalisation du projet</a> -
     Traduction, buts et fonctionnement (en).</li>
-    <li><a href="http://doc.slitaz.org/fr:cookbook:wok">Wok &amp; Tools</a> -
-    La doc au sujet de l'utilisation du wok et des outils SliTaz pour
-    développeurs.</li>
-    <li><a href="http://hg.slitaz.org" >Mercurial Repositories</a></li>
-    <li><a href="http://labs.slitaz.org/">SliTaz Laboratories</a></li>
+    <li><a href="../artwork/">Artwork</a> - SliTaz logo, spider et info</li>
+    <li><a href="http://hg.slitaz.org/" >Mercurial Repositories</a>
+	- Source code repositories</li>
+	<li><a href="http://bugs.slitaz.org/">SliTaz Bug Tracker</a> -
+	Our custom CGI/SHell bug tracker</li>
 </ul>
 
 <h3>Participer et contribuer</h3>
@@ -66,8 +66,7 @@ include("../../lib/lang.php");
 	poster vos images ou thèmes graphique. Le site est géré par la communauté,
 	si vous avez envie de donner un coup de main pour l'administration du site,
 	n'hésitez pas à contacter un contributeur ou envoyer un mail sur la liste
-	de discussion. Le site scn.slitaz.org: 
-	<a href="http://scn.slitaz.org/">SliTaz Community</a>
+	de discussion.
 </p>
 
 <h3>Cycle de publication</h3>
