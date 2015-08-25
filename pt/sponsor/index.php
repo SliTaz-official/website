@@ -140,7 +140,7 @@ include("../../lib/lang.php");
 			</td>
 			<td>
 				Security Audit Systems provide independent website penetration
-				testing services for businesses around the world.  One of UK's
+				testing services for businesses around the world.  One of the UK's
 				leading website security providers that offers a range of 
 				website security testing services.
 			</td>
