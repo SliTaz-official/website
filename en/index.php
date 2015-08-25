@@ -100,7 +100,7 @@ include("../lib/lang.php");
 		<?php get_feed("wok.xml"); ?>
 	</div>
 	<p class="activity_more">
-		<a href="http://hg.slitaz.org/">More commits</a>
+		<a href="http://hg.slitaz.org/?sort=lastchange">More commits</a>
 	</p>
 </div>
 
@@ -151,7 +151,7 @@ include("../lib/lang.php");
 
 <p>
 	The SliTaz web site is available in several languages and maintained by the
-	<a href="../i18n.php">internationalization</a> team (i18n). Help is often
+	<a href="/i18n.php">internationalization</a> team (i18n). Help is often
 	needed and you're welcome to join us if you would like to see the website
 	translated into your language.
 </p>

@@ -143,7 +143,7 @@ include("../lib/lang.php");
 	en à des amis, sur Twitter ou encore Facebook. Rejoignez nous!
 </p>
 
-<?php include("../lib/html/social.html"); ?>
+<?php include("../lib/html/social.fr.html"); ?>
 
 <h2>Internationalization</h2>
 
