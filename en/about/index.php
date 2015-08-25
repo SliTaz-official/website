@@ -36,7 +36,7 @@ include("../../lib/lang.php");
 
 <p>
 SliTaz GNU/Linux is a free operating system working completely in memory from  
-removable media such as a cdrom or USB key.  It is light, speedy and fully installable
+removable media such as a CD-ROM or USB key. It is light, speedy and fully installable
 on a hard drive. SliTaz is distributed in the form of a LiveCD that you can easily
 burn to a cdrom and boot from. When the system is running you can eject the LiveCD
 and use your CD drive for other tasks. The Live system provides a fully-featured, 
@@ -71,10 +71,10 @@ panel.
 <p>
 We provide a base system and a stripped down X system from where you can 
 build your own customized distro. The custom system can then be used 
-from a cdrom, usb stick, sdcard, installed to HD or booted from the web.
+from a CD-ROM, USB stick, SD Card, installed to HD or booted from the web.
 </p>
 <p>
-Follow UNIX philosophy: ie. everything is a text file. Our packages manager
+Follow UNIX philosophy: i.e. everything is a text file. Our packages manager
 and all system settings are stored in simple text files for easy 
 customization and human readable configurations. SHell scripting is 
 used for most tools, again for easy customization and development.
@@ -85,8 +85,8 @@ system, handle boot options, manage networking and run local commands.
 SliTaz loads the minimal resources and lets users control everything else.
 </p>
 <p>
-Be able to run completely in RAM memory from a LiveCD, a usb stick or
-frugal HD install. This mod allows you to save documents on a mounted
+Be able to run completely in RAM memory from a LiveCD, a USB stick or
+frugal HD install. This mode allows you to save documents on a mounted
 partition while the system stays super fast and responsive.
 </p>
 <p>
@@ -109,7 +109,7 @@ tools such as the bug tracker and the cookutils.
 	<li>Tools to create, edit or burn CD or DVD images.</li>
 	<li>Elegant desktop with Openbox running on the top of Xorg/Xvesa (X server).</li>
 	<li>Homemade graphical boxes to command line utilities.</li>
-	<li>3345 packages easily installable from the mirror.</li>
+	<li>4967 packages easily installable from the mirror.</li>
 	<li>Active and friendly community.</li>
 </ul>
 
