@@ -77,7 +77,7 @@ include("../../lib/lang.php");
 </p>
 <pre class="script">
 [ui]
-username = FirstName LastName &lt;you@example.org&gt;
+username = FirstName LastName &lt;you@example.com&gt;
 </pre>
 
 <h4>Clone, modify, commit and push</h4>

@@ -17,7 +17,7 @@ include("../../lib/lang.php");
 ?>
 
 <!-- Content -->
-<div id="content">
+<section id="content">
 
 <h2 id="art4taz">Artwork &amp; Design</h2>
 
@@ -77,7 +77,7 @@ include("../../lib/lang.php");
 </div>
 
 <!-- End of content -->
-</div>
+</section>
 
 <?php include("../../lib/html/footer.html"); ?>
 

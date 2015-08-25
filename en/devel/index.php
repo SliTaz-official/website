@@ -59,7 +59,7 @@ include("../../lib/lang.php");
 	developers who are active on the <a href="http://forum.slitaz.org/">forum</a>
 	and the <a href="../mailing-list.php">Mailing List</a>.
 </p>
-<p>
+<p><!-- which one? -->
 	For artists there is a dedicated website, simply create an account and 
 	post your graphics or pictures. The site is managed by the community. If 
 	you want to lend a hand to administer the site, please contact a 
