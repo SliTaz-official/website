@@ -140,6 +140,7 @@ pre {
 }
 
 .dlbutton { 
+	display: inline-block;
 	background: #333 url("/images/download-30.png") no-repeat 4px center;
 	padding-left: 38px;
 	-webkit-transition: background-color 0.6s;

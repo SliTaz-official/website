@@ -26,7 +26,7 @@ include("../lib/lang.php");
 SliTaz — безопасная и производительная операционная система на основе ядра Linux и программного обеспечения GNU.
 </p>
 
-<!--<div class="box">
+<!--<div class="box-up">
 	<a href="http://www.gofundme.com/slitaz2014?utm_medium=wdgt"
 		title="Посетить кампанию"><img src="../images/gofundme.png"></a>
 	Ознакомьтесь с кампанией по сбору средств
@@ -74,13 +74,11 @@ SliTaz — безопасная и производительная опера�
 <h2>Быстрая загрузка</h2>
 
 <div class="dldiv">
-<p>
 <?php echo "<a class='dlbutton nav1' href='$stable_iso'>SliTaz $stable_ver</a>
 <a class='dlbutton nav2' href='$cooking_iso'>SliTaz $cooking</a>"; ?>
 <a class='dlbutton navpi' href='http://arm.slitaz.org/rpi/'>SliTaz Raspberry Pi</a>
 <a class='dlbutton nav2' href='http://mirror.slitaz.org/iso/rolling/slitaz-rolling.iso'>еженедельный SliTaz 32 бит</a>
 <a class='dlbutton nav1' href='http://mirror.slitaz.org/iso/rolling/slitaz-rolling-core64.iso'>еженедельный SliTaz 64 бит</a>
-</p>
 </div>
 
 <h2>Сейчас в проекте…</h2>
@@ -88,7 +86,7 @@ SliTaz — безопасная и производительная опера�
 <?php require_once("../lib/get-feeds.php"); ?>
 
 <div class="activity">
-	<p><img src="/images/support.png" alt="*" />
+	<p><a href="http://forum.slitaz.org/"><img src="/images/support.png" alt="*" /></a>
 		Сейчас на форуме…
 		<?php get_feed_forum("forum.xml"); ?>
 	</div>
@@ -98,7 +96,7 @@ SliTaz — безопасная и производительная опера�
 </div>
 
 <div class="activity">
-	<p><img src="/images/development.png" alt="*" />
+	<p><a href="http://hg.slitaz.org/"><img src="/images/development.png" alt="*" /></a>
 		Последние коммиты в wok
 		<?php get_feed("wok.xml"); ?>
 	</div>

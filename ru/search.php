@@ -18,42 +18,41 @@ include("../lib/lang.php");
 
 <!-- Content -->
 <div id="content">
-<h2>Пакеты Поиск</h2>
+<h2>Поиск пакетов</h2>
 
 <p>
-	Search for <a href="http://pkgs.slitaz.org/">packages</a>,
-	files, build logs, receipts, etc. All packages are installable
-	via the package manager Tazpkg using the GUI or the command 
-	<code>tazpkg get-install pkgname</code>.
+Ищите <a href="http://pkgs.slitaz.org/">пакеты</a>, файлы, журналы сборки, рецепты и т.п.
+Любой пакет можно установить при помощи менеджера пакетов TazPkg — через GUI или в командной строке командой
+<code>tazpkg get-install pkgname</code>.
 </p>
 
 <div style="text-align: center; margin-bottom: 40px;">
 	<form method="post" action="http://pkgs.slitaz.org/">
 		<div class="searchbox">
 			<p>
-				<input type="hidden" name="lang" value="en" />
+				<input type="hidden" name="lang" value="ru" />
 				<input type="text" name="query" size="24" style="width: 80%;" />
 				<input type="submit" name="search" value="Search" />
 			</p>
 		</div>
-		Search for:
+		Искать:
 		<select name="object">
-			<option value="Desc">Package+Description</option>
-			<option value="Package">Package(exact name)</option>
-			<option value="Desc">Description</option>
-			<option value="Tags">Tags</option>
-			<option value="Arch">Arch</option>
-			<option value="Bugs">Bugs</option>
-			<option value="Depends">Depends</option>
-			<option value="BuildDepends">BuildDepends</option>
-			<option value="File">File</option>
-			<option value="File_list">File list</option>
-			<option value="FileOverlap">common files</option>
-			<option value="Category">Category</option>
-			<option value="Maintainer">Maintainer</option>
-			<option value="License">License</option>
+			<option value="Desc">название и описание</option>
+			<option value="Package">название (точное соответствие)</option>
+			<option value="Desc">описание</option>
+			<option value="Tags">ярлык</option>
+			<option value="Arch">архитектуру</option>
+			<option value="Bugs">баги</option>
+			<option value="Depends">зависимости</option>
+			<option value="BuildDepends">зависимости сборки</option>
+			<option value="File">файл</option>
+			<option value="File_list">список файлов</option>
+			<option value="FileOverlap">общие файлы</option>
+			<option value="Category">категорию</option>
+			<option value="Maintainer">мэйнтейнера</option>
+			<option value="License">лицензию</option>
 		</select>
-		in
+		в
 		<select name="version">
 			<option value="cooking">cooking</option>
 			<option value="stable">stable</option>
@@ -67,15 +66,12 @@ include("../lib/lang.php");
 	</form>
 </div>
 
-<h2>Google Поиск</h2>
+
+<h2>Поиск Google</h2>
 
 <p>
-	Эта страница позволяет выполнить поиск по всему сайту SliTaz
-	GNU/Linux, в <a href="http://doc.slitaz.org/">документации</a> вики,
-	в архиве <a href="mailing-list.php">рассылки</a>, а также на <a
-	href="http://forum.slitaz.org/">форуме</a>. Эта поисковая система
-	была создана специально для SliTaz на основе пользовательского
-	поиска Google™.
+Эта страница позволяет выполнить поиск по всему сайту SliTaz GNU/Linux, в <a href="http://doc.slitaz.org/">документации</a> вики, в архиве <a href="mailing-list.php">рассылки</a>, а также на <a href="http://forum.slitaz.org/">форуме</a>.
+Эта поисковая система была создана специально для SliTaz на основе пользовательского поиска Google™.
 </p>
 
 <div class="searchbox">
