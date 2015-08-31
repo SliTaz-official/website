@@ -141,12 +141,13 @@ pre {
 
 .dlbutton { 
 	display: inline-block;
+	margin: 0.5ex;
 	background: #333 url("/images/download-30.png") no-repeat 4px center;
 	padding-left: 38px;
 	-webkit-transition: background-color 0.6s;
 	transition: background-color 0.5s;
 }
-.dldiv { margin: 30px 0; }
+.dldiv { margin: 30px 0; text-align: center; }
 
 /* 
  * 
