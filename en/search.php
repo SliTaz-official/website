@@ -39,8 +39,7 @@ include("../lib/lang.php");
 		</div>
 		Search for:
 		<select name="object">
-			<option value="Desc">Package+Description</option>
-			<option value="Package">Package(exact name)</option>
+			<option value="Package">Package</option>
 			<option value="Desc">Description</option>
 			<option value="Tags">Tags</option>
 			<option value="Arch">Arch</option>

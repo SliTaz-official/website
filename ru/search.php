@@ -21,8 +21,8 @@ include("../lib/lang.php");
 <h2>Поиск пакетов</h2>
 
 <p>
-Ищите <a href="http://pkgs.slitaz.org/">пакеты</a>, файлы, журналы сборки, рецепты и т.п.
-Любой пакет можно установить при помощи менеджера пакетов TazPkg — через GUI или в командной строке командой
+Ищите <a href="http://pkgs.slitaz.org/">пакеты</a>, файлы, журналы сборки, рецепты и т.п.
+Любой пакет можно установить при помощи менеджера пакетов TazPkg — через GUI или в командной строке командой
 <code>tazpkg get-install pkgname</code>.
 </p>
 
@@ -37,25 +37,24 @@ include("../lib/lang.php");
 		</div>
 		Искать:
 		<select name="object">
-			<option value="Desc">название и описание</option>
-			<option value="Package">название (точное соответствие)</option>
+			<option value="Package">название пакета</option>
 			<option value="Desc">описание</option>
 			<option value="Tags">ярлык</option>
-			<option value="Arch">архитектуру</option>
+			<option value="Arch">архитектурa</option>
 			<option value="Bugs">баги</option>
 			<option value="Depends">зависимости</option>
 			<option value="BuildDepends">зависимости сборки</option>
-			<option value="File">файл</option>
-			<option value="File_list">список файлов</option>
-			<option value="FileOverlap">общие файлы</option>
-			<option value="Category">категорию</option>
-			<option value="Maintainer">мэйнтейнера</option>
-			<option value="License">лицензию</option>
+			<option value="File">файл</option>
+			<option value="File_list">список файлов</option>
+			<option value="FileOverlap">общие файлы</option>
+			<option value="Category">категория</option>
+			<option value="Maintainer">мэйнтейнер</option>
+			<option value="License">лицензия</option>
 		</select>
 		в
 		<select name="version">
-			<option value="cooking">cooking</option>
-			<option value="stable">stable</option>
+			<option value="5.0 cooking">cooking</option>
+			<option value="4.0 stable">stable</option>
 			<option value="backports">backports</option>
 			<option value="3.0">3.0</option>
 			<option value="2.0">2.0</option>
@@ -70,8 +69,8 @@ include("../lib/lang.php");
 <h2>Поиск Google</h2>
 
 <p>
-Эта страница позволяет выполнить поиск по всему сайту SliTaz GNU/Linux, в <a href="http://doc.slitaz.org/">документации</a> вики, в архиве <a href="mailing-list.php">рассылки</a>, а также на <a href="http://forum.slitaz.org/">форуме</a>.
-Эта поисковая система была создана специально для SliTaz на основе пользовательского поиска Google™.
+Эта страница позволяет выполнить поиск по всему сайту SliTaz GNU/Linux, в <a href="http://doc.slitaz.org/">документации</a> вики, в архиве <a href="mailing-list.php">рассылки</a>, а также на <a href="http://forum.slitaz.org/">форуме</a>.
+Эта поисковая система была создана специально для SliTaz на основе пользовательского поиска GoogleTM.
 </p>
 
 <div class="searchbox">
