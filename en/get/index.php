@@ -31,8 +31,8 @@ include("../../lib/lang.php");
 <ul>
 	<li><a href="#stable">LiveCD Stable version</a> - 
 		Bootable ISO image of the current stable version</li>
-	<li><a href="#cooking">LiveCD Cooking version</a> - 
-		Bootable ISO image of the cooking version</li>
+	<li><a href="#rolling">LiveCD Rolling version</a> - 
+		Bootable ISO image of the rolling version</li>
 	<li><a href="#floppy">Floppy disk</a> - Bootable 
 		startup disk to launch the LiveCD, a USB stick, etc</li>
 	<li><a href="flavors.php">LiveCD to taste</a> - Custom flavors and loram</li>
@@ -118,7 +118,7 @@ include("../../lib/lang.php");
 </p></div>
 
 <p>
-	A bootable CDROM image of all available packages for the stable version
+	A bootable CD-ROM image of all available packages for the stable version
 	is generated every day. It also contains a copy of the website and can
 	be used without an internet connection via the install.sh script.
 </p>
@@ -141,21 +141,27 @@ include("../../lib/lang.php");
 	slitaz-$stable_ver.zip</a>"; ?>
 </p></div>
 
-<h2 id="cooking">LiveCD - Cooking version</h2>
+<h2 id="rolling">LiveCD - Rolling version</h2>
 
 <p>
-	SliTaz "Cooking" LiveCD is a constantly evolving version, fully usable,
+	SliTaz Rolling LiveCD is a constantly evolving version, fully usable,
 	it allows you to test the latest improvements and packages, ask for new
 	features or report bugs to help us to prepare for the stable version.
+	SliTaz Rolling ISO released weekly.
 </p>
 
 <div class="box-dl"><p>
-	<?php echo "SliTaz GNU/Linux Cooking $cooking_ver ($cooking_size) - 
-	<a href='$cooking_iso'>slitaz-$cooking.iso</a>
-	[ <a href='$cooking_md5'>md5</a> ]"; ?>
+	<?php echo "SliTaz GNU/Linux Rolling (43 MB) - 
+	<a href='$mirror/rolling/slitaz-rolling.iso'>slitaz-rolling.iso</a>
+	[ <a href='$mirror/rolling/slitaz-rolling.md5'>md5</a> ]"; ?>
 </p></div>
 
 <p>
+	Rolling flavors can be found <a href="http://mirror.slitaz.org/iso/rolling/"
+	target="_blank">on mirror</a>.
+</p>
+
+<!-- p>
 	A bootable DVD image of all available packages for the Cooking version
 	is generated every day. It also contains a copy of the website and can
 	be used without an internet connection via the install.sh script.
@@ -168,7 +174,7 @@ include("../../lib/lang.php");
 	<?php echo "Collection of SliTaz GNU/Linux Cooking packages ($cooking_pkgs)
 	- <a href='$pkgs_mirror/cooking/packages-cooking.iso'>packages-cooking.iso</a>
 	[ <a href='$pkgs_mirror/cooking/packages-cooking.md5'>md5</a> ]"; ?>
-</p></div>
+</p></div -->
 
 <h2 id="floppy">Floppy boot disk</h2>
 

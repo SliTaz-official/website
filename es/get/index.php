@@ -29,7 +29,7 @@ include("../../lib/html/header.html");
 		<div class="button">
 			Quick Download:
 			<?php echo "<a href='$stable_iso'>SliTaz $stable_ver</a>
-				<a href='$cooking_iso'>SliTaz $cooking</a>"; ?>
+				<a href='$mirror/rolling/slitaz-rolling.iso'>SliTaz Rolling</a>"; ?>
 		</div>
 	</div>
 </div>
@@ -44,8 +44,8 @@ include("../../lib/html/header.html");
 <ul>
 	<li><a href="#stable">LiveCD Versión Estable</a> -
 		Imagen ISO de autoarranque con la última versión estable.</li>
-	<li><a href="#cooking">LiveCD Versión Cooking</a> -
-		Imagen ISO de autoarranque con la versión Cooking.</li>
+	<li><a href="#rolling">LiveCD Versión Rolling</a> -
+		Imagen ISO de autoarranque con la versión Rolling.</li>
 	<li><a href="/en/get/flavors.php">LiveCD al gusto</a> (en) -
 		Varias modalides como loram.</li>
 </ul>
@@ -123,22 +123,28 @@ include("../../lib/html/header.html");
 	[ <a href='$pkgs_mirror/$stable_ver/packages-$stable_ver.md5'>md5</a> ]"; ?>
 </p></div>
 
-<h2 id="cooking">LiveCD - Versión Cooking</h2>
+<h2 id="rolling">LiveCD - Versión Rolling</h2>
 
 <p>
-	El LiveCD SliTaz "Cooking" es una versión dinámica y totalmente funcional que
+	El LiveCD SliTaz Rolling es una versión dinámica y totalmente funcional que
 	te permite probar los últimos paquetes y mejoras, solicitar nueva
 	funcionalidad o generar incidencias que nos ayuden a preparar la próxima
 	versión estable.
+	SliTaz Rolling ISO released weekly.
 </p>
 
 <div class="box-dl"><p>
-	<?php echo "SliTaz GNU/Linux Cooking $cooking_ver ($cooking_size) - 
-	<a href='$cooking_iso'>slitaz-$cooking.iso</a>
-	[ <a href='$cooking_md5'>md5</a> ]"; ?>
+	<?php echo "SliTaz GNU/Linux Rolling (43 MB) - 
+	<a href='$mirror/rolling/slitaz-rolling.iso'>slitaz-rolling.iso</a>
+	[ <a href='$mirror/rolling/slitaz-rolling.md5'>md5</a> ]"; ?>
 </p></div>
 
 <p>
+	Rolling flavors can be found <a href="http://mirror.slitaz.org/iso/rolling/"
+	target="_blank">on mirror</a>.
+</p>
+
+<!-- p>
 	Diariamente se genera una imagen de DVD autoarrancable con todos los paquetes
 	disponibles para la versión Cooking. También contiene una copia de esta página
 	web, con lo que puede ser consultada sin conexión a internet usando el script
@@ -149,7 +155,7 @@ include("../../lib/html/header.html");
 	<?php echo "Colección de paquetes de SliTaz GNU/Linux Cooking ($cooking_pkgs)
 	- <a href='$pkgs_mirror/cooking/packages-cooking.iso'>packages-cooking.iso</a>
 	[ <a href='$pkgs_mirror/cooking/packages-cooking.md5'>md5</a> ]"; ?>
-</p></div>
+</p></div -->
 
 <!-- End of content -->
 </div>

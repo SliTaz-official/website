@@ -31,7 +31,7 @@ include("../../lib/html/header.da.html");
 		<div class="button">
 			Hent:
 			<?php echo "<a href='$stable_iso'>SliTaz $stable_ver</a>
-				<a href='$cooking_iso'>SliTaz $cooking</a>"; ?>
+				<a href='$mirror/rolling/slitaz-rolling.iso'>SliTaz Rolling</a>"; ?>
 		</div>
 	</div>
 </div>
@@ -46,7 +46,7 @@ include("../../lib/html/header.da.html");
 <ul>
 	<li><a href="#stable">LiveCD Stabil version</a> - 
 		Startbar cdrom med den seneste stabile version.</li>
-	<li><a href="#cooking">LiveCD udviklingsversion</a> - 
+	<li><a href="#rolling">LiveCD udviklingsversion</a> - 
 		Startbar cdrom med den seneste udviklingsversion.</li>
 	<li><a href="#floppy">diskette</a> - Opstartsdiskette til at
 		affyre LiveCDen, en usb-pind eller lignende</li>
@@ -138,22 +138,28 @@ include("../../lib/html/header.da.html");
 	[ <a href='$pkgs_mirror/$stable_ver/packages-$stable_ver.md5'>md5</a> ]"; ?>
 </p></div>
 
-<h2 id="cooking">LiveCD - udviklingsversion</h2>
+<h2 id="rolling">LiveCD - udviklingsversion</h2>
 
 <p>
-	SliTaz "Cooking" LiveCD  er en fuldt brugbar, men konstant udviklet 
+	SliTaz Rolling LiveCD  er en fuldt brugbar, men konstant udviklet 
 	version. Den lader dig teste de seneste forbedringer og programpakker,
 	efterspørge nye funktioner eller reportere fejl for at hjælpe os med 
 	at forberede den næste stabile version.
+	SliTaz Rolling ISO released weekly.
 </p>
 
 <div class="box-dl"><p>
-	<?php echo "SliTaz GNU/Linux Cooking $cooking_ver ($cooking_size) - 
-	<a href='$cooking_iso'>slitaz-$cooking.iso</a>
-	[ <a href='$cooking_md5'>md5</a> ]"; ?>
+	<?php echo "SliTaz GNU/Linux Rolling (43 MB) - 
+	<a href='$mirror/rolling/slitaz-rolling.iso'>slitaz-rolling.iso</a>
+	[ <a href='$mirror/rolling/slitaz-rolling.md5'>md5</a> ]"; ?>
 </p></div>
 
 <p>
+	Rolling flavors can be found <a href="http://mirror.slitaz.org/iso/rolling/"
+	target="_blank">on mirror</a>.
+</p>
+
+<!-- p>
 	En startbar dvd med alle tilgængelige programpakker for udviklingsversionen
 	genereres hver dag. Den indeholder også en kopi af denne hjemmeside og
 	kan benyttes uden en internetforbindelse via install.sh scriptet.
@@ -166,7 +172,7 @@ include("../../lib/html/header.da.html");
 	<?php echo "Samling af SliTaz GNU/Linux Cooking programpakker ($cooking_pkgs)
 	- <a href='$pkgs_mirror/cooking/packages-cooking.iso'>packages-cooking.iso</a>
 	[ <a href='$pkgs_mirror/cooking/packages-cooking.md5'>md5</a> ]"; ?>
-</p></div>
+</p></div -->
 
 <h2 id="floppy">Floppy startdisk</h2> 
 

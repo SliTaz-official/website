@@ -32,7 +32,7 @@ include("../../lib/lang.php");
 <ul>
 	<li><a href="#stable">Versão stable (estável) do LiveCD</a> -
 		Imagem ISO inicializável da versão estável mais recente.</li>
-	<li><a href="#cooking">Versão cooking (testes) do LiveCD</a> -
+	<li><a href="#rolling">Versão rolling (testes) do LiveCD</a> -
 		Imagem ISO inicializável da versão de testes mais recente.</li>
 	<li><a href="#floppy">Versão em disquete</a> - Disquete de boot que pode iniciar
 		a versão LiveCD, uma mídia USB, etc.</li>
@@ -133,22 +133,28 @@ include("../../lib/lang.php");
 	[ <a href='$pkgs_mirror/$stable_ver/packages-$stable_ver.md5'>md5</a> ]"; ?>
 </p></div>
 
-<h2 id="cooking">Versão cooking (testes) do LiveCD</h2>
+<h2 id="rolling">Versão rolling (testes) do LiveCD</h2>
 
 <p>
 	A versão de testes do SliTaz é constantemente desenvolvida, totalmente usável.
 	Permite a você testar as ultimas melhorias e pacotes, solicitar novas
 	funcionalidades ou reportar algum bug para nos ajudar na preparação de uma
 	versão estável.
+	SliTaz Rolling ISO released weekly.
 </p>
 
 <div class="box-dl"><p>
-	<?php echo "SliTaz GNU/Linux Cooking $cooking_ver ($cooking_size) - 
-	<a href='$cooking_iso'>slitaz-$cooking.iso</a>
-	[ <a href='$cooking_md5'>md5</a> ]"; ?>
+	<?php echo "SliTaz GNU/Linux Rolling (43 MB) - 
+	<a href='$mirror/rolling/slitaz-rolling.iso'>slitaz-rolling.iso</a>
+	[ <a href='$mirror/rolling/slitaz-rolling.md5'>md5</a> ]"; ?>
 </p></div>
 
 <p>
+	Rolling flavors can be found <a href="http://mirror.slitaz.org/iso/rolling/"
+	target="_blank">on mirror</a>.
+</p>
+
+<!-- p>
 Uma imagem de DVD bootável com todos os pacotes disponíveis da versão Cooking é
 gerada todos os dias. Ela também contém uma cópia do website e possibilita a
 instalação de pacotes sem a necessidade de conexão com a internet, por meio do
@@ -161,7 +167,7 @@ porém isto irá sobrescrever qualquer dado existente na mídia.
 	<?php echo "Coleção dos pacotes da versão Cooking do SliTaz GNU/Linux ($cooking_pkgs)
 	- <a href='$pkgs_mirror/cooking/packages-cooking.iso'>packages-cooking.iso</a>
 	[ <a href='$pkgs_mirror/cooking/packages-cooking.md5'>md5</a> ]"; ?>
-</p></div>
+</p></div -->
 
 <h2 id="floppy">Disquete de boot</h2>
 

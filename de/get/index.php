@@ -29,7 +29,7 @@ include("../../lib/html/header.html");
 		<div class="button">
 			Quick Download:
 			<?php echo "<a href='$stable_iso'>SliTaz $stable_ver</a>
-				<a href='$cooking_iso'>SliTaz $cooking</a>"; ?>
+				<a href='$mirror/rolling/slitaz-rolling.iso'>SliTaz Rolling</a>"; ?>
 		</div>
 	</div>
 </div>
@@ -44,8 +44,8 @@ include("../../lib/html/header.html");
 <ul>
 	<li><a href="#stable">Live-CD Stabile Version</a> -
 		Bootfähiges ISO Image der aktuellen stabilen Version.</li>
-	<li><a href="#cooking">Live-CD Cooking Version</a> -
-		Bootfähiges ISO Image der aktuellen Cooking-Version.</li>
+	<li><a href="#rolling">Live-CD Rolling Version</a> -
+		Bootfähiges ISO Image der aktuellen Rolling-Version.</li>
 	<li><a href="flavors.php">Live-CD Derivate</a> -
 		SliTaz-Derivate und Loram-Version.</li>
 </ul>
@@ -123,29 +123,35 @@ er kann von einem der folgenden Mirrors heruntergeladen werden:
 	[ <a href='$pkgs_mirror/$stable_ver/packages-$stable_ver.md5'>md5</a> ]"; ?>
 </p></div>
 
-<h2 id="cooking">LiveCD - Cooking version</h2>
+<h2 id="rolling">LiveCD - Rolling version</h2>
 
 <p>
-SliTaz "Cooking" ist ein "Snapshot" der laufenden Entwicklung von SliTaz.
+SliTaz Rolling ist ein "Snapshot" der laufenden Entwicklung von SliTaz.
 Es ist vollständig benutzbar und erlaubt das Testen der <a href="http://slitaz.org/de">
 neuesten Veränderungen und Anwendungen</a>. Anfrage nach neuen Features oder das
 Berichten von Bugs helfen uns die nächste stabile Version zu verbessern. Die
 <a href="http://doc.slitaz.org/de:vocab:vocab">
 Paket-CD</a> enthält alle verfügbaren Pakete, sodass sie Software auch ohne lokale
 Internetanbindung installieren können.
+	SliTaz Rolling ISO released weekly.
 </p>
 
 <div class="box-dl"><p>
-	<?php echo "SliTaz GNU/Linux Cooking $cooking_ver ($cooking_size) - 
-	<a href='$cooking_iso'>slitaz-$cooking.iso</a>
-	[ <a href='$cooking_md5'>md5</a> ]"; ?>
+	<?php echo "SliTaz GNU/Linux Rolling (43 MB) - 
+	<a href='$mirror/rolling/slitaz-rolling.iso'>slitaz-rolling.iso</a>
+	[ <a href='$mirror/rolling/slitaz-rolling.md5'>md5</a> ]"; ?>
 </p></div>
 
-<div class="box-dl"><p>
+<p>
+	Rolling flavors can be found <a href="http://mirror.slitaz.org/iso/rolling/"
+	target="_blank">on mirror</a>.
+</p>
+
+<!-- div class="box-dl"><p>
 	<?php echo "Paket-CD; alle Pakete der Version SliTaz GNU/Linux Cooking ($cooking_pkgs)
 	- <a href='$pkgs_mirror/cooking/packages-cooking.iso'>packages-cooking.iso</a>
 	[ <a href='$pkgs_mirror/cooking/packages-cooking.md5'>md5</a> ]"; ?>
-</p></div>
+</p></div -->
 
 <!-- End of content -->
 </div>

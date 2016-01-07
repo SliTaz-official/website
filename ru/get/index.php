@@ -31,7 +31,7 @@ include("../../lib/lang.php");
 <ul>
 	<li><a href="#stable">LiveCD стабильная версия</a> — загрузочный образ ISO
 		текущей стабильной версии.</li>
-	<li><a href="#cooking">LiveCD версия Cooking</a> — загрузочный образ ISO
+	<li><a href="#rolling">LiveCD версия Rolling</a> — загрузочный образ ISO
 		нестабильной («готовящейся») версии.</li>
 	<li><a href="#floppy">Дискета</a> — загрузочная дискета для запуска LiveCD,
 		флешки и т.п.</li>
@@ -122,20 +122,27 @@ include("../../lib/lang.php");
 </p></div>
 
 
-<h2 id="cooking">LiveCD — нестабильная версия (Cooking)</h2>
+<h2 id="rolling">LiveCD — нестабильная версия (Rolling)</h2>
 
-<p>LiveCD SliTaz версии «Cooking» — постоянно развивающаяся версия, полностью
+<p>LiveCD SliTaz версии Rolling — постоянно развивающаяся версия, полностью
 	пригодная к использованию, что позволяет вам протестировать последние
 	улучшения и пакеты, запрашивать новые функции или сообщать об ошибках,
-	чтобы помочь нам подготовиться к стабильной версии.</p>
+	чтобы помочь нам подготовиться к стабильной версии.
+	Образ SliTaz Rolling выпускается еженедельно.
+	</p>
 
 <div class="box-dl"><p>
-	<?php echo "SliTaz GNU/Linux «Cooking» $cooking_ver ($cooking_size) —
-	<a href='$cooking_iso'>slitaz-$cooking.iso</a>
-	[ <a href='$cooking_md5'>md5</a> ]"; ?>
+	<?php echo "SliTaz GNU/Linux Rolling (43 MB) - 
+	<a href='$mirror/rolling/slitaz-rolling.iso'>slitaz-rolling.iso</a>
+	[ <a href='$mirror/rolling/slitaz-rolling.md5'>md5</a> ]"; ?>
 </p></div>
 
-<p>Загрузочный образ DVD со всеми доступными пакетами версии «Cooking»
+<p>
+	Различные редакции Rolling можно найти <a href="http://mirror.slitaz.org/iso/rolling/"
+	target="_blank">на зеркале</a>.
+</p>
+
+<!-- p>Загрузочный образ DVD со всеми доступными пакетами версии «Cooking»
 	создается каждый день. Он также содержит копию сайта и может быть
 	использован при помощи скрипта install.sh без подключения к Интернету.
 	Примечание: этот образ также может быть <a
@@ -147,7 +154,7 @@ include("../../lib/lang.php");
 	<?php echo "Коллекция пакетов SliTaz GNU/Linux версии «Cooking» ($cooking_pkgs) —
 	<a href='$pkgs_mirror/cooking/packages-cooking.iso'>packages-cooking.iso</a>
 	[ <a href='$pkgs_mirror/cooking/packages-cooking.md5'>md5</a> ]"; ?>
-</p></div>
+</p></div -->
 
 
 <h2 id="floppy">Загрузочная дискета</h2>

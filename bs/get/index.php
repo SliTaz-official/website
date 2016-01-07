@@ -29,7 +29,7 @@ include("../../lib/html/header.bs.html");
 		<div class="button">
 			Brzo Preuzimanje:
 			<?php echo "<a href='$stable_iso'>SliTaz $stable_ver</a>
-				<a href='$cooking_iso'>SliTaz $cooking</a>"; ?>
+				<a href='$mirror/rolling/slitaz-rolling.iso'>SliTaz Rolling</a>"; ?>
 		</div>
 	</div>
 </div>
@@ -44,8 +44,8 @@ include("../../lib/html/header.bs.html");
 <ul>
 	<li><a href="#stable">LiveCD Stabilna verzija.</a> - 
 		Bootable ISO slika trenutne stabilne verzije.</li>
-	<li><a href="#cooking">LiveCD Kuhanje verzija</a> - 
-		Bootable ISO slika od kuhanja verzije.</li>
+	<li><a href="#rolling">LiveCD Rolling verzija</a> - 
+		Bootable ISO slika od rolling verzije.</li>
 	<li><a href="#floppy">Floppy disketa</a> - Bootable 
 		pokretanje diska za pokretanje LiveCD, USB ključa, itd.</li>
 	<li><a href="flavors.php">LiveCD za ukus</a> - Okusi i loram.</li>
@@ -141,22 +141,28 @@ graditelja), Tazusb (LiveUSB Tool) i SliTaz Alati tarballs se može skinuti sa
 	[ <a href='$pkgs_mirror/$stable_ver/packages-$stable_ver.md5'>md5</a> ]"; ?>
 </p></div>
 
-<h2 id="cooking">LiveCD - Kuhanje verzija</h2>
+<h2 id="rolling">LiveCD - Rolling verzija</h2>
 
 <p>
-	SliTaz "Kuhanje" LiveCD se stalno razvija, u potpunosti 
+	SliTaz Rolling LiveCD se stalno razvija, u potpunosti 
 	iskorištena, to vam omogućuje da treba testirati najnovije poboljšanja i 
 	pakete, tražiti nove značajke ili prijaviti bugove koji nam pomažu 
 	da se pripremi za stabilnu verziju.
+	SliTaz Rolling ISO released weekly.
 </p>
 
 <div class="box-dl"><p>
-	<?php echo "SliTaz GNU/Linux Cooking $cooking_ver ($cooking_size) - 
-	<a href='$cooking_iso'>slitaz-$cooking.iso</a>
-	[ <a href='$cooking_md5'>md5</a> ]"; ?>
+	<?php echo "SliTaz GNU/Linux Rolling (43 MB) - 
+	<a href='$mirror/rolling/slitaz-rolling.iso'>slitaz-rolling.iso</a>
+	[ <a href='$mirror/rolling/slitaz-rolling.md5'>md5</a> ]"; ?>
 </p></div>
 
 <p>
+	Rolling flavors can be found <a href="http://mirror.slitaz.org/iso/rolling/"
+	target="_blank">on mirror</a>.
+</p>
+
+<!-- p>
 	Bootable DVD slika svih dostupnih paketa za kuhanje verzije je 
 	generirana svaki dan. Ona također sadrži kopiju web stranice i može
     se koristiti bez internetske veze putem install.sh skripte. 
@@ -169,7 +175,7 @@ graditelja), Tazusb (LiveUSB Tool) i SliTaz Alati tarballs se može skinuti sa
 	<?php echo "Collection of SliTaz GNU/Linux Cooking packages ($cooking_pkgs)
 	- <a href='$pkgs_mirror/cooking/packages-cooking.iso'>packages-cooking.iso</a>
 	[ <a href='$pkgs_mirror/cooking/packages-cooking.md5'>md5</a> ]"; ?>
-</p></div>
+</p></div -->
 
 <h2 id="floppy">Floppy boot disketa</h2>
 

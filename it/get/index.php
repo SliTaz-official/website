@@ -29,7 +29,7 @@ include("../../lib/html/header.html");
 		<div class="button">
 			Download veloce:
 			<?php echo "<a href='$stable_iso'>SliTaz $stable_ver</a>
-				<a href='$cooking_iso'>SliTaz $cooking</a>"; ?>
+				<a href='$mirror/rolling/slitaz-rolling.iso'>SliTaz Rolling</a>"; ?>
 		</div>
 	</div>
 </div>
@@ -44,8 +44,8 @@ include("../../lib/html/header.html");
 <ul>
 	<li><a href="#stable">LiveCD Versione Stabile</a> - 
 		ISO avviabile della versione stabile corrente.</li>
-	<li><a href="#cooking">LiveCD Versione Cooking</a> - 
-		ISO avviabile della versione Cooking corrente.</li>
+	<li><a href="#rolling">LiveCD Versione Rolling</a> - 
+		ISO avviabile della versione Rolling corrente.</li>
 	<li><a href="#floppy">Disco Floppy</a> -
 		Disco d'avvio per lanciare il il LiveCD, una chiavetta USB ecc.</li>
 	<li><a href="/en/get/flavors.php">LiveCD di gusto</a> (en) - Sapori.</li>
@@ -145,22 +145,28 @@ include("../../lib/html/header.html");
 	[ <a href='$pkgs_mirror/$stable_ver/packages-$stable_ver.md5'>md5</a> ]"; ?>
 </p></div>
 
-<h2 id="cooking">LiveCD - Versione Cooking</h2>
+<h2 id="rolling">LiveCD - Versione Rolling</h2>
 
 <p>
-SliTaz "Cooking" LiveCD è una versione in evoluzione costante, completamente
+SliTaz Rolling LiveCD è una versione in evoluzione costante, completamente
 usabile, essa vi permette di testare gli ultimi miglioramenti e pacchetti,
 chiedere per nuove funzionalità o riportare bugs per aiutare a prepararci
 una versione stabile.
+	SliTaz Rolling ISO released weekly.
 </p>
 
 <div class="box-dl"><p>
-	<?php echo "SliTaz GNU/Linux Cooking $cooking_ver ($cooking_size) - 
-	<a href='$cooking_iso'>slitaz-$cooking.iso</a>
-	[ <a href='$cooking_md5'>md5</a> ]"; ?>
+	<?php echo "SliTaz GNU/Linux Rolling (43 MB) - 
+	<a href='$mirror/rolling/slitaz-rolling.iso'>slitaz-rolling.iso</a>
+	[ <a href='$mirror/rolling/slitaz-rolling.md5'>md5</a> ]"; ?>
 </p></div>
 
 <p>
+	Rolling flavors can be found <a href="http://mirror.slitaz.org/iso/rolling/"
+	target="_blank">on mirror</a>.
+</p>
+
+<!-- p>
 	Un'immagine DVD avviabile di tutti i pacchetti per la versione Cooking viene
 	generata ogni giorno. Essa contiene anche una copia del sito web e può essere
 	utilizzata senza una connessione ad internet tramite lo script install.sh.
@@ -173,7 +179,7 @@ una versione stabile.
 	<?php echo "Collezione dei pacchetti SliTaz GNU/Linux Cooking ($cooking_pkgs)
 	- <a href='$pkgs_mirror/cooking/packages-cooking.iso'>packages-cooking.iso</a>
 	[ <a href='$pkgs_mirror/cooking/packages-cooking.md5'>md5</a> ]"; ?>
-</p></div>
+</p></div -->
 
 <h2 id="floppy">Disco di avvio Floppy</h2>
 

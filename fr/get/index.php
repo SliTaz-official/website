@@ -32,7 +32,7 @@ include("../../lib/lang.php");
 <ul>
 	<li><a href="#stable">LiveCD version Stable</a> - Image ISO du
 		LiveCD de la version stable de SliTaz.</li>
-	<li><a href="#cooking">LiveCD version Cooking</a> - Image ISO du
+	<li><a href="#rolling">LiveCD version Rolling</a> - Image ISO du
 		LiveCD de SliTaz en cuisson.</li>
 	<li><a href="flavors.php">LiveCD à saveur</a> - Saveurs, dont les 'loram'.</li>
 	<li><a href="#floppy">Disquette de démarrage</a> - Image de disquette pour
@@ -139,22 +139,28 @@ include("../../lib/lang.php");
 	slitaz-$stable_ver.zip</a>"; ?>
 </p></div>
 
-<h2 id="cooking">LiveCD version Cooking</h2>
+<h2 id="rolling">LiveCD version Rolling</h2>
 
 <p>
-	La version Cooking "en cuisson" est une version en constante évolution,
+	La version Rolling "en cuisson" est une version en constante évolution,
 	utilisable, elle permet de tester les dernières nouveautés, de nous faire
 	des retours d'expériences, des demandes de fonctionnalités et des signalements
 	de bugs.
+	SliTaz Rolling ISO released weekly.
 </p>
 
 <div class="box-dl"><p>
-	<?php echo "SliTaz GNU/Linux Cooking $cooking_ver ($cooking_size) -
-	<a href='$cooking_iso'>slitaz-$cooking.iso</a>
-	[ <a href='$cooking_md5'>md5</a> ]"; ?>
+	<?php echo "SliTaz GNU/Linux Rolling (43 MB) - 
+	<a href='$mirror/rolling/slitaz-rolling.iso'>slitaz-rolling.iso</a>
+	[ <a href='$mirror/rolling/slitaz-rolling.md5'>md5</a> ]"; ?>
 </p></div>
 
 <p>
+	Rolling flavors can be found <a href="http://mirror.slitaz.org/iso/rolling/"
+	target="_blank">on mirror</a>.
+</p>
+
+<!-- p>
 	Une image DVD bootable de tous les paquets disponibles pour la version
 	Cooking est générée chaque jour. Elle contient aussi une copie du site Web
 	et permet grâce au script install.sh, une utilisation sans connexion Internet.<br />
@@ -168,7 +174,7 @@ include("../../lib/lang.php");
 	<?php echo "Ensemble de paquets SliTaz GNU/Linux Cooking ($cooking_pkgs)
 	- <a href='$pkgs_mirror/cooking/packages-cooking.iso'>packages-cooking.iso</a>
 	[ <a href='$pkgs_mirror/cooking/packages-cooking.md5'>md5</a> ]"; ?>
-</p></div>
+</p></div -->
 
 <h2 id="floppy">Disquette de démarrage</h2>
 
