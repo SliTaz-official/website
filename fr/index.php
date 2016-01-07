@@ -51,6 +51,12 @@ include("../lib/lang.php");
 <h2>Dernière publications</h2>
 
 <ul>
+	<li><strong>Publication de SliTaz Rolling</strong> (hebdo) <span>- <?php
+		$rol_date_file = '/var/cache/slitaz/website/rolling-date.txt';
+		if (file_exists("$rol_date_file")) {
+			$rol_date = file_get_contents("/var/cache/slitaz/website/rolling-date.txt");
+			print $rol_date;
+		} ?></span></li>
 	<li><strong><a href="/en/news/#d20150520">Publication de SliTaz 5.0 RC-3</a></strong>
 		<span>- 20 Mai 2015</span></li>
 	<li><strong><a href="/en/news/#d20140519">Publication de SliTaz 5.0 RC-2</a></strong>
@@ -69,8 +75,8 @@ include("../lib/lang.php");
 <h2>Téléchargement rapide</h2>
 
 <div class="dldiv">
-	<p><?php echo "<a class='dlbutton nav1' href='$stable_iso'>SliTaz $stable_ver</a>
-	<a class='dlbutton nav2' href='$cooking_iso'>SliTaz $cooking</a>"; ?>
+	<p><?php echo "<a class='dlbutton nav2' href='$stable_iso'>SliTaz $stable_ver</a>"; ?>
+	<!-- a class='dlbutton nav2' href='$cooking_iso'>SliTaz $cooking</a>"; ? -->
 	<a class='dlbutton navpi' href='http://arm.slitaz.org/rpi/'>SliTaz Raspberry Pi</a>
 	<a class='dlbutton nav2' href='http://mirror.slitaz.org/iso/rolling/slitaz-rolling.iso'>SliTaz hebdo 32bits</a>
 	<a class='dlbutton nav1' href='http://mirror.slitaz.org/iso/rolling/slitaz-rolling-core64.iso'>SliTaz hebdo 64bits</a></p>

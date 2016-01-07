@@ -1,7 +1,7 @@
 #!/bin/sh
-# 
+#
 # Get latest commits and feeds to display on the website main page.
-# On Tank, this script is executed by cron each hour.
+# On the server, this script is executed by cron each hour.
 #
 
 CACHE="/var/cache/slitaz/website"
@@ -11,6 +11,7 @@ SCN_FEED='http://scn.slitaz.org/activity/feed/'
 BLOG_FEED='http://scn.slitaz.org/category/news/feed/'
 WOK_FEED='http://hg.slitaz.org/wok/rss-log'
 FORUM_FEED='http://forum.slitaz.org/rss'
+ROLLING_DATE='http://mirror1.slitaz.org/rolling-date.sh'
 
 # Clean cache
 mkdir -p $CACHE && cd $CACHE
@@ -22,6 +23,7 @@ wget -O scn.xml $SCN_FEED 2>/dev/null
 wget -O wok.xml $WOK_FEED 2>/dev/null
 wget -O blog.xml $BLOG_FEED 2>/dev/null
 wget -O forum.xml $FORUM_FEED 2>/dev/null
+wget -O rolling-date.txt $ROLLING_DATE 2>/dev/null
 echo "Done"
 
 exit 0
