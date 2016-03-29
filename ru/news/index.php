@@ -22,7 +22,7 @@ include("../../lib/lang.php");
 
 <h2>SliTaz новостей</h2>
 <p>
-	Check out <a href="http://scn.slitaz.org/">Slitaz Community blog</a>
+	Check out <a href="http://scn.slitaz.org/">SliTaz Community blog</a>
 	for specific and small news about the project.
 </p>
 
@@ -32,7 +32,7 @@ include("../../lib/lang.php");
 	<li id="d20140216">
 		<strong>16 Feb 2014 - New SliTaz Cooking Release</strong>
 	<p>
-		The Slitaz team is proud to announce the release of a new Cooking
+		The SliTaz team is proud to announce the release of a new Cooking
 		version which paves the road to SliTaz 5.0. This new Cooking includes
 		almost 2 years of work and has an incredible ChangeLog. All our home
 		made tools have been improved with some great new tools such as 

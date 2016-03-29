@@ -22,7 +22,7 @@ include("../../lib/lang.php");
 <h2>Gestion collaborative du développement</h2>
 
 <p>
-	Les outils et services utilisés pour forger Slitaz :-)
+	Les outils et services utilisés pour forger SliTaz :-)
 </p>
 
 <ul>

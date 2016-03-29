@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8"/>
+	<meta charset="UTF-8">
 	<title>SliTaz - English documentation</title>
-	<meta name="description" content="SliTaz GNU/Linux English documentationx part livecd tazpkg packages"/>
-	<meta name="keywords" lang="en" content="System, free, gnu, linux, opensource software, livecd in RAM"/>
-	<meta name="author" content="Christophe Lincoln"/>
+	<meta name="description" content="SliTaz GNU/Linux English documentationx part livecd tazpkg packages">
+	<meta name="keywords" lang="en" content="System, free, gnu, linux, opensource software, livecd in RAM">
+	<meta name="author" content="Christophe Lincoln">
 	<?php include("../../lib/html/meta-link.html"); ?>
 </head>
 <body>
@@ -62,7 +62,7 @@ include("../../lib/lang.php");
 <p>
 	SliTaz <a href="scratchbook/">Original Scratchbook</a> -
 	Describes the stages of creating the very first SliTaz distribution 
-	commencing with instructions on compiling the Linux kernel, installing
+	commencing with instructions on compiling the Linux Kernel, installing
 	the graphical server (Xvesa) and GTK applications, etc. It contains
 	techniques requiring time and motivation that enable you to build a
 	GNU/Linux system from source.
@@ -86,7 +86,7 @@ include("../../lib/lang.php");
 <p>
 SliTaz Release Notes provide detailed information about the stable version
 and give a few useful tips to help you start using the system. On the core
-LiveCD, Release Notes are installed and available through the "Documentation"
+LiveCD, Release Notes are installed and available through the “Documentation”
 menu.
 </p>
 

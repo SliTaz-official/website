@@ -36,7 +36,7 @@ include("../../lib/lang.php");
 <ul>
 	<li id="d20081231"><strong>31 Dez 2008 - Cooking 20081231 - Wifi e suporte a NTFS </strong>
 	<p>
-	O projeto Slitaz tem o prazer de apresentar a nova imagem ISO da versão
+	O projeto SliTaz tem o prazer de apresentar a nova imagem ISO da versão
 	cooking do LiveCD. Ela permite que seja utilizado e testado todo o
 	trabalho realizado durante os últimos meses. Inclui muitas
 	características novas, correções de bugs e inúmeras atualizações. A

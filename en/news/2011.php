@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8"/>
+	<meta charset="UTF-8">
 	<title>SliTaz - News archives 2011</title>
-	<meta name="description" content="SliTaz news archives info release"/>
-	<meta name="keywords" lang="en" content="System, free, gnu, linux, opensource software, livecd in RAM"/>
-	<meta name="author" content="Christophe Lincoln"/>
+	<meta name="description" content="SliTaz news archives info release">
+	<meta name="keywords" lang="en" content="System, free, gnu, linux, opensource software, livecd in RAM">
+	<meta name="author" content="Christophe Lincoln">
 	<?php include("../../lib/html/meta-link.html"); ?>
 </head>
 <body>
@@ -28,7 +28,7 @@ include("../../lib/lang.php");
 	<li id="d20110531">
 		<strong>31 May 2011 - New and fresh Cooking 20110531</strong>
 	<p>
-		The Slitaz team is proud to announce the release of a new Cooking version
+		The SliTaz team is proud to announce the release of a new Cooking version
 		built with our new and fresh packages from cookutils. Cookutils is one of
 		the new generation of tools to build SliTaz packages and provides a Build
 		Bot with a nice web interface that works out-of-the-box on any SliTaz

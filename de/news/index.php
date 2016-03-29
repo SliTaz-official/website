@@ -264,7 +264,7 @@
 	Busybox 1.7.2, ein neues GTK-Theme, Tango-Icon-Theme und ein neues Wallpaper.
 	Zum kostenlosen <a href="/de/get/#cooking">Download</a>  gibt es SliTaz wie immer vom TuxFamily Mirror.
 	Feedback ist willkommen, nutzt dazu bitte die Mailing List oder eine normale
-	E-Mail an &lt;devel at Slitaz.org&gt;.
+	E-Mail an &lt;devel at SliTaz.org&gt;.
 	</p></li>
 
 	<li>

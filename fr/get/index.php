@@ -179,8 +179,8 @@ include("../../lib/lang.php");
 <h2 id="floppy">Disquette de démarrage</h2>
 
 <p>
-	Cette disquette permet de lancer Slitaz sur des PC anciens ou dépourvus de
-	lecteur de CD-ROM. Il est possible de démarrer Slitaz depuis un CD-ROM/DVD,
+	Cette disquette permet de lancer SliTaz sur des PC anciens ou dépourvus de
+	lecteur de CD-ROM. Il est possible de démarrer SliTaz depuis un CD-ROM/DVD,
 	une clé USB, un disque dur, le réseau LAN par PXE et même le réseau
 	<a href="http://boot.slitaz.org/">Internet avec gPXE</a>.
 </p>
@@ -192,7 +192,7 @@ include("../../lib/lang.php");
 </p></div>
 
 <p>
-	Vous pouvez écrire cette image avec l'outil Slitaz bootfloppybox,
+	Vous pouvez écrire cette image avec l'outil SliTaz bootfloppybox,
 	<a href="http://en.wikipedia.org/wiki/RaWrite">Windows rawrite</a>
 	ou simplement dd (dd if=floppy-grub4dos of=/dev/fd0).
 </p>

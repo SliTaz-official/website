@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
 	<atom:link href="http://www.slitaz.org/rss.xml" rel="self" type="application/rss+xml" />
-	<title>Slitaz GNU/Linux Feed</title>
+	<title>SliTaz GNU/Linux Feed</title>
 	<link>http://www.slitaz.org/rss.xml</link>
 	<language>en</language>
 	<description>SliTaz GNU/Linux official news feed</description>
@@ -11,7 +11,7 @@
 	<lastBuildDate>Sat, 19 May 2012 19:00:00 GMT</lastBuildDate>
 
 	<image>
-		<title>Slitaz GNU/Linux</title>
+		<title>SliTaz GNU/Linux</title>
 		<url>http://www.slitaz.org/images/logo.png</url>
 		<link>http://www.slitaz.org/</link>
 	</image>
@@ -50,7 +50,7 @@
 	</item>
 
 	<item>
-		<title>Getting ready for Slitaz Pro</title>
+		<title>Getting ready for SliTaz Pro</title>
 		<link>http://pro.slitaz.org/</link>
 		<guid isPermaLink="true">http://pro.slitaz.org/en/</guid>
 		<pubDate>Wed, 14 Mar 2012 14:50:00 GMT</pubDate>

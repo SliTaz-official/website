@@ -19,7 +19,7 @@
 	<div id="block_info">
 		<h4>Mailing list</h4>
 		<p>
-			Annunci e discussioni dei collaboratori di Slitaz (inclusi
+			Annunci e discussioni dei collaboratori di SliTaz (inclusi
 			supporto e sviluppo). Tutto ciò fa parte della mailing list
 			(sottoscrizione via email). Partecipaci ora per aiuto o per aderire al progetto.
 		</p>

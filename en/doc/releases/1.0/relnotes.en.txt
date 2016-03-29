@@ -18,18 +18,18 @@ SliTaz GNU/Linux 1.0 - Releases Notes                                March 2008
 Overview
 --------
 SliTaz GNU/Linux is a free, open source community project. Version 1.0 was 
-released on March 22 2008 after two years of hard work. Slitaz comprises of 448 
+released on March 22 2008 after two years of hard work. SliTaz comprises of 448 
 software packages easily installed via the "Tazpkg" package manager. The LiveCD
 can be fully configured to taste, to easily create a custom distribution 
 specifically for tasks such as multimedia, graphics or development. 
 
-Slitaz can also be installed to your hard drive, or used with USB media - with
+SliTaz can also be installed to your hard drive, or used with USB media - with
 "TazUSB" you are only a few simple commands away from a fully formatted and 
 configured USB device, ready to boot.
 
 Technical support is provided to users via the mailing list and the official
-forum. The "Slitaz Handbook" is an instructive manual on how to use and finely
-configure the system. Slitaz can be updated easily via the graphic installer or
+forum. The "SliTaz Handbook" is an instructive manual on how to use and finely
+configure the system. SliTaz can be updated easily via the graphic installer or
 by using the simple fast text installer. 
 
 
@@ -41,7 +41,7 @@ processors. A minimum 128MB of memory is recommended to use the main LiveCD.
 "slitaz-loram-cdrom" flavor.
 
 With the slitaz-loram flavour, the system is less responsive, but allows you to
-graphically install SliTaz on very old machines. Once installed, Slitaz works
+graphically install SliTaz on very old machines. Once installed, SliTaz works
 well with a minimum of 16MB memory, but forget about using Firefox to surf the 
 web - you'll have to use the text based 'links' for example.  
 
@@ -83,7 +83,7 @@ co-exist with a previously installed operating system, such as Windows.
 
 Linux Kernel
 ------------
-Slitaz GNU/Linux is distributed with the Linux Kernel 2.6.24.2, patched for
+SliTaz GNU/Linux is distributed with the Linux Kernel 2.6.24.2, patched for
 LZMA compression support and display correction for the virtual console. The
 support for IDE and SCSI is integrated, as are the filesystems ext2 and ext3.
 
@@ -109,7 +109,7 @@ machine to a complete graphical desktop (e17), a graphics studio with The Gimp
 or Inkscape, or to a video editor with Kino. You can experience the world wide
 web with instant messaging, VOIP, email and of course through a web browser. 
 
-Slitaz is also designed to function as a powerful web server, using the stable
+SliTaz is also designed to function as a powerful web server, using the stable
 LightTPD/PHP package (installed by default), supporting CGI, Perl and Python.
  
 Rsync is used for incremental backup and iptables functions as the firewall. 
@@ -125,7 +125,7 @@ The binary packages on the mirror can all be compiled by using the "wok" or
 
 Graphical Desktops
 ------------------
-By default, the Slitaz LiveCD uses the very light and stable JWM window manager.
+By default, the SliTaz LiveCD uses the very light and stable JWM window manager.
 The integration of the taskbar "LXpanel" makes it possible to dynamically 
 provide a menu based on the Freedesktop standards. The principle is to have a 
 small menu accessible via a screen click with the favourites, windows effects,
@@ -148,7 +148,7 @@ to some degree. The Handbook is also available on the web site. The manuals
 of the various tools are installed on the system and are available through the
 documentation menu - they describe all the various commands made possible by
 the tools. The development of the operating system and the use of the wok and
-receipts are described in the "Slitaz Cookbook". The books, manuals and memos
+receipts are described in the "SliTaz Cookbook". The books, manuals and memos
 are all available online: http://www.slitaz.org/doc/
 
 

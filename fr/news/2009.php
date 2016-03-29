@@ -40,7 +40,7 @@ include("../../lib/lang.php");
 	pour Openbox, GTK et un set d'icones aux couleurs du projet. Nous avons aussi
 	supprimé ePDFview pour un lecteur PDF en ligne mais l'image ISO dépasse 30
 	Mb (31,5) à cause d'un plus gros noyau et de dépendances supplémentaires.</p>
-	<p>Dans l'actualité principale le projet Slitaz a un nouveau
+	<p>Dans l'actualité principale le projet SliTaz a un nouveau
 	<a href="http://forum.slitaz.org/">forum de support</a>
 	et une nouvelle <a href="http://scn.slitaz.org/">platforme communautaire</a>
 	ou tout le monde est le bienvenu pour partager et participer ! Cette nouvelle

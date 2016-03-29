@@ -1,23 +1,22 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>SliTaz Scratchbook - Xorg</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="" />
-    <meta name="expires" content="never" />
-    <meta name="modified" content="2008-11-22 17:00:00" />
-    <meta name="publisher" content="www.slitaz.org" />
-    <meta name="author" content="Christophe Lincoln"/>
-    <link rel="shortcut icon" href="favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="book.css" />
+	<meta charset="UTF-8">
+	<title>SliTaz Scratchbook - Xorg</title>
+	<meta name="description" content="">
+	<meta name="expires" content="never">
+	<meta name="modified" content="2008-11-22 17:00:00">
+	<meta name="publisher" content="www.slitaz.org">
+	<meta name="author" content="Christophe Lincoln">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="book.css">
 </head>
-<body bgcolor="#ffffff">
+<body>
 
 <!-- Header and quick navigation -->
 <div id="header">
 <div id="quicknav" align="right">
-    <a name="top"></a>
+    <span id="top"></span>
     <a href="index.html">Table of contents</a>
 </div>
 <h1><font color="#3e1220">SliTaz Scratchbook</font></h1>
@@ -41,8 +40,7 @@ developers and contributors to the project, but it may be useful to all those se
 Xorg and Xlib libraries from source generating a minimum of dependencies.
 </p>
 
-<a name="woking"></a>
-<h3>Build Xorg automatically with Tazwok</h3>
+<h3 id="woking">Build Xorg automatically with Tazwok</h3>
 <p>
 On SliTaz, if you have Tazwok installed, you can rebuild Xorg with a few commands. 
 The wok contains a package called <code>xorg</code> and another named <code>xorg-dev</code>, 
@@ -60,8 +58,7 @@ starting with the protos' (xproto, etc):
  # tazwok cook xorg-dev
 </pre>
 
-<a name="get"></a>
-<h3>Download Xorg (7.2) using wget</h3>
+<h3 id="get">Download Xorg (7.2) using wget</h3>
 <p>
 Xorg is distributed in the form of modules, which is handy because you can only install what you want, 
 but it takes a lot of downloads. To help, we have created a small script that downloads the minimum 
@@ -76,8 +73,8 @@ To use the script, it must be placed in the directory where you want to download
  # cp slitaz-tools-1.1/utils/getXorg-7.2.sh .
  # ./getXorg-7.2.sh
 </pre>
-<a name="make"></a>
-<h3>Compile Xorg by hand</h3>
+
+<h3 id="make">Compile Xorg by hand</h3>
 <p>
 Compiling Xorg can take a long time, there are many packages. To commence you need to 
 compile the downloaded proto packages. You can use the command <code>make DESTDIR=$PWD/_pkg install</code> to 

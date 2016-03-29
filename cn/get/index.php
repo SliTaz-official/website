@@ -23,7 +23,7 @@ include("../../lib/html/header.html");
 		<h4>下载</h4>
 		<p>
 			你可以下载最新的稳定版来得到一个稳定的桌面环境，满足日常生活需要。
-			或者使用开发版来测试心软件或者帮助我们改进Slitaz。
+			或者使用开发版来测试心软件或者帮助我们改进SliTaz。
 		</p>
 		<div class="button">
 			Quick Download:
@@ -59,12 +59,12 @@ include("../../lib/html/header.html");
 	
 <h3>下载提示</h3>
 <p>
-在下载Slitaz之前，最好先浏览<a href="http://wiki.slitaz.org/doku.php?id=lang:cn:handbook">相关文档</a>，了解Slitaz的特性以及使用方式，以便将来的使用。
+在下载SliTaz之前，最好先浏览<a href="http://wiki.slitaz.org/doku.php?id=lang:cn:handbook">相关文档</a>，了解SliTaz的特性以及使用方式，以便将来的使用。
 </p>
 
 <h3>软件源</h3>
 <p>
-Slitaz的软件源在法国、瑞士、中国均有分布。在法国由<a href="http://www.ads-lu.com/" target="_blank">ADS</a>、Mésobius和<a href="http://www.tuxfamily.org/">TuxFamily</a>提供，在瑞士由<a href="http://mirror.switch.ch/">SWITCHmirror</a>提供，在中国由<a href="http://www.lupaworld.com/">LupaWorld</a>提供。感谢这些网站对Slitaz的支持。
+SliTaz的软件源在法国、瑞士、中国均有分布。在法国由<a href="http://www.ads-lu.com/" target="_blank">ADS</a>、Mésobius和<a href="http://www.tuxfamily.org/">TuxFamily</a>提供，在瑞士由<a href="http://mirror.switch.ch/">SWITCHmirror</a>提供，在中国由<a href="http://www.lupaworld.com/">LupaWorld</a>提供。感谢这些网站对SliTaz的支持。
 </p>
 
 <ul>
@@ -90,9 +90,9 @@ Slitaz的软件源在法国、瑞士、中国均有分布。在法国由<a href=
 
 <h3 id="sources">源码</h3>
 <p>
-Tazpkg（软件包管理器）、Tazlito（Slitaz Live工具）、Tazwok（软件包制作）、
-Tazusb（LiveUSB工具）和一些其他的Slitaz小工具可以在Slitaz软件源里下载。
-所有小工具Slitaz都默认安装有，源代码的注释是用英文书写的。
+Tazpkg（软件包管理器）、Tazlito（SliTaz Live工具）、Tazwok（软件包制作）、
+Tazusb（LiveUSB工具）和一些其他的SliTaz小工具可以在SliTaz软件源里下载。
+所有小工具SliTaz都默认安装有，源代码的注释是用英文书写的。
 你可以在软件源的sources文件夹里找到这些源码。
 <a href="http://mirror.slitaz.org/sources/">HTTP</a>
 <a href="http://mirror.slitaz.org/sources/">FTP</a>
@@ -100,7 +100,7 @@ Tazusb（LiveUSB工具）和一些其他的Slitaz小工具可以在Slitaz软件�
 
 <h2 id="stable">LiveCD - 稳定版</h2>
 <p>
-	Slitaz稳定版提供一个成熟的操作系统。这个操作系统已经经过严格的测试，基本上没有BUG。
+	SliTaz稳定版提供一个成熟的操作系统。这个操作系统已经经过严格的测试，基本上没有BUG。
 	LiveCD。这个版本选择了许多有用的软件，是一个用途广泛、强大的操作系统。这个版本较为稳定，
 	不过更新频率较慢。建议服务器用户或追求稳定的个人用户使用这个版本。
 	<?php echo "当前最新的稳定版本是".$stable_ver."版， ".$stable_rel." 发布。"; ?>
@@ -114,7 +114,7 @@ Tazusb（LiveUSB工具）和一些其他的Slitaz小工具可以在Slitaz软件�
 
 <p>
 提供给<?php echo "$stable_ver"; ?>版本的，包含所有软件包的可启动CD镜像每天都会创建。
-它也包含Slitaz官方网站的副本，在无网络的情况下可以通过install.sh使用。
+它也包含SliTaz官方网站的副本，在无网络的情况下可以通过install.sh使用。
 </p>
 
 <div class="box-dl"><p>
@@ -125,7 +125,7 @@ Tazusb（LiveUSB工具）和一些其他的Slitaz小工具可以在Slitaz软件�
 
 <h2 id="cooking">LiveCD - 开发版</h2>
 <p>
-Slitaz开发版LiveCD是一个在不断开发的版本，也是可以使用的。它包含的软件包比稳定版多，包含的新特性和新改善也很多，更新时间也较快。不过因为更新较快，不稳定因素也多了许多。建议个人用户使用这个版本。
+SliTaz开发版LiveCD是一个在不断开发的版本，也是可以使用的。它包含的软件包比稳定版多，包含的新特性和新改善也很多，更新时间也较快。不过因为更新较快，不稳定因素也多了许多。建议个人用户使用这个版本。
 </p>
 
 <div class="box-dl"><p>
@@ -135,7 +135,7 @@ Slitaz开发版LiveCD是一个在不断开发的版本，也是可以使用的�
 </p></div>
 
 <p>
-提供给开发版的，包含所有软件包的可启动DVD镜像每天都会创建。它也包含Slitaz官方网站的副本，
+提供给开发版的，包含所有软件包的可启动DVD镜像每天都会创建。它也包含SliTaz官方网站的副本，
 在无网络的情况下可以通过install.sh使用。这个镜像可以安装到USB设备中，不过会格式化U盘。
 </p>
 
@@ -147,7 +147,7 @@ Slitaz开发版LiveCD是一个在不断开发的版本，也是可以使用的�
 
 <h2 id="floppy">启动软盘</h2>
 <p>
-这个软盘镜像可以启动在旧电脑中的Slitaz，有没有CD-ROM都可以。它可以启动在USB设备、SlitazCD/DVD、硬盘中的Slitaz，还可以通过网络启动。
+这个软盘镜像可以启动在旧电脑中的SliTaz，有没有CD-ROM都可以。它可以启动在USB设备、SliTazCD/DVD、硬盘中的SliTaz，还可以通过网络启动。
 </p>
 
 <div class="box-dl"><p>

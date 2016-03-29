@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8"/>
+	<meta charset="UTF-8">
 	<title>SliTaz LiveCD Flavors</title>
-	<meta name="description" content="SliTaz GNU/Linux LiveCD"/>
-	<meta name="keywords" lang="en" content="System, free, gnu, linux, software opensource, livecd LINUX in RAM"/>
-	<meta name="author" content="Christophe Lincoln"/>
+	<meta name="description" content="SliTaz GNU/Linux LiveCD">
+	<meta name="keywords" lang="en" content="System, free, gnu, linux, software opensource, livecd LINUX in RAM">
+	<meta name="author" content="Christophe Lincoln">
 	<?php include("../../lib/html/meta-link.html"); ?>
 </head>
 <body>
@@ -74,14 +74,14 @@ include("../../lib/html/header.html");
 	<a href="http://mirror.slitaz.org/iso/4.0/flavors/slitaz-4.0-loram.iso">
 		slitaz-4.0-loram.iso</a>
 	[41.0M] - Loram flavor that can start SliTaz on machines with very limited
-	resources and needs only 128MB without disabling the cdrom
+	resources and needs only 128MB without disabling the CD-ROM
 </p></div>
 
 <div class="box-dl"><p>
 	<a href="http://mirror.slitaz.org/iso/4.0/flavors/slitaz-4.0-loram-cdrom.iso">
 		slitaz-4.0-loram-cdrom.iso</a>
 	[163.0M] - Loram flavor that can boot with only 24 MB and a little swap
-	memory, but is unable to release the cdrom
+	memory, but is unable to release the CD-ROM
 </p></div>
 
 <div class="box-dl"><p>

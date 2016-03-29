@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8"/>
+	<meta charset="UTF-8">
 	<title>SliTaz - Developers corner</title>
-	<meta name="description" content="SliTaz GNU/Linux project information overview"/>
-	<meta name="keywords" lang="en" content="about slitaz, gnu, linux, mini distro, livecd"/>
-	<meta name="author" content="Christophe Lincoln"/>
+	<meta name="description" content="SliTaz GNU/Linux project information overview">
+	<meta name="keywords" lang="en" content="about slitaz, gnu, linux, mini distro, livecd">
+	<meta name="author" content="Christophe Lincoln">
 	<?php include("../../lib/html/meta-link.html"); ?>
 </head>
 <body>

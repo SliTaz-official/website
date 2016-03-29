@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8"/>
+	<meta charset="UTF-8">
 	<title>SliTaz - Forge (en)</title>
-	<meta name="description" content="slitaz developers forge"/>
-	<meta name="keywords" lang="en" content="slitaz, devel, hg, bugs"/>
-	<meta name="author" content="Christophe Lincoln"/>
+	<meta name="description" content="slitaz developers forge">
+	<meta name="keywords" lang="en" content="slitaz, devel, hg, bugs">
+	<meta name="author" content="Christophe Lincoln">
 	<?php include("../../lib/html/meta-link.html"); ?>
 </head>
 <body>
@@ -90,7 +90,7 @@ Clone a repo, example for wok:
 </pre>
 <p>
 Change directory to wok, note you must be in the repository to be able
-to use 'hg' commands. To check all logs or just the last log:
+to use ‘hg’ commands. To check all logs or just the last log:
 </p>
 <pre>
  $ hg log
@@ -283,7 +283,7 @@ int main(int argc, char *argv[])
 <p>
 	To view text that can be copied and pasted, such as scripts,
 	bits of code, sample configuration files, etc - we also use
-	<code>&lt;pre&gt;</code>, but with a CSS class named "script". Example:
+	<code>&lt;pre&gt;</code>, but with a CSS class named “script”. Example:
 </p>
 <pre class="script">
 &lt;pre class="script"&gt;

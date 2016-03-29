@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8"/>
+	<meta charset="UTF-8">
 	<title>SliTaz Screenshots</title>
-	<meta name="description" content="SliTaz GNU/Linux project artwok images logos"/>
-	<meta name="keywords" lang="en" content="about slitaz, gnu, linux, mini distro, livecd"/>
-	<meta name="author" content="Christophe Lincoln, Paul Issot"/>
+	<meta name="description" content="SliTaz GNU/Linux project artwok images logos">
+	<meta name="keywords" lang="en" content="about slitaz, gnu, linux, mini distro, livecd">
+	<meta name="author" content="Christophe Lincoln, Paul Issot">
 	<?php include("../../lib/html/meta-link.html"); ?>
 </head>
 <body>
@@ -22,7 +22,7 @@ include("../../lib/lang.php");
 <h2>Screenshots</h2>
 
 <p style="text-align: center;">
-	Pictures say more than a thousand words... Screenshots of the latest
+	Pictures say more than a thousand words… Screenshots of the latest
 	Stable and Cooking versions.
 </p>
 

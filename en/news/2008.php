@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8"/>
+	<meta charset="UTF-8">
 	<title>SliTaz - News archives 2008</title>
-	<meta name="description" content="SliTaz news archives info release"/>
-	<meta name="keywords" lang="en" content="System, free, gnu, linux, opensource software, livecd in RAM"/>
-	<meta name="author" content="Christophe Lincoln"/>
+	<meta name="description" content="SliTaz news archives info release">
+	<meta name="keywords" lang="en" content="System, free, gnu, linux, opensource software, livecd in RAM">
+	<meta name="author" content="Christophe Lincoln">
 	<?php include("../../lib/html/meta-link.html"); ?>
 </head>
 <body>
@@ -75,7 +75,7 @@ include("../../lib/lang.php");
 	modules, linux package was also split to have a fairly modular Kernel.
 	Default user has changed to <code>tux</code> and the new option
 	<code>user=name</code> lets you choose the default user name. Most
-	of the Slitaz utils and tools have been improved: tazpkgbox provides
+	of the SliTaz utils and tools have been improved: tazpkgbox provides
 	some new commands for package management and bootfloppybox can be used in
 	text mode, Netbox wifi and PPPoE support are now both working well and
 	a new function called zeroconf is available. Most packages are up-to-date

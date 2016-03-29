@@ -140,7 +140,7 @@ include("../../lib/html/header.html");
 </p>
 
 <div class="box-dl"><p>
-	<?php echo "Collezione dei pacchetti Slitaz GNU/Linux $stable_ver ($stable_pkgs)
+	<?php echo "Collezione dei pacchetti SliTaz GNU/Linux $stable_ver ($stable_pkgs)
 	- <a href='$pkgs_mirror/$stable_ver/packages-$stable_ver.iso'>packages-$stable_ver.iso</a>
 	[ <a href='$pkgs_mirror/$stable_ver/packages-$stable_ver.md5'>md5</a> ]"; ?>
 </p></div>

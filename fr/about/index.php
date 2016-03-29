@@ -134,7 +134,7 @@ documents, les visites ont commencé à augmenter et les statistiques de
 téléchargement aussi. Quatre mois après la première version, une nouvelle
 Cooking est publiée en juin 2007, plus d'attention a été donnée au graphisme
 et aux corrections, mais sans gros changements sur le liveCD. C'est par contre
-depuis ce moment-là que Slitaz a été capable de se reconstruire par elle-même.
+depuis ce moment-là que SliTaz a été capable de se reconstruire par elle-même.
 C'est à dire que SliTaz peut recompiler tous les paquets depuis les sources.
 En août une nouvelle ISO Cooking avec les nouvelles versions des outils SliTaz,
 dont le gestionnaire de paquets. Une liste de discussion est ouverte, nous sommes
@@ -174,7 +174,7 @@ une base professionelle à nos utilisateurs, membres et sponsors.
 </p>
 <p>
 Cela dit, tout le travail sur SliTaz est bénévole et réalisé par une
-communauté active et réactive. Slitaz sera toujours gratuite, redistribuée
+communauté active et réactive. SliTaz sera toujours gratuite, redistribuée
 avec son code source et ouverte à la communauté, comme spécifié dans les
 statuts de l'association gérant le projet.
 </p>
@@ -183,7 +183,7 @@ statuts de l'association gérant le projet.
 
 <p>
 SliTaz est libre, modifiable, recopiable, téléchargeable, et cela gratuitement.
-Slitaz GNU/Linux est distribuée sans aucune garantie, publiée car potentiellement
+SliTaz GNU/Linux est distribuée sans aucune garantie, publiée car potentiellement
 utile. SliTaz n'a aucune prétention, nous ne sommes que des passionnés par
 l'informatique libre, et qui aimons la liberté. SliTaz est publiée sous
 <a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>.

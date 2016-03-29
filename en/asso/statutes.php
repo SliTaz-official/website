@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8"/>
+	<meta charset="UTF-8">
 	<title>SliTaz - Association statutes</title>
-	<meta name="description" content="SliTaz GNU/Linux asso non-profit donate"/>
-	<meta name="keywords" lang="en" content="about slitaz, gnu, linux, mini distro, livecd"/>
-	<meta name="author" content="Christophe Lincoln"/>
+	<meta name="description" content="SliTaz GNU/Linux asso non-profit donate">
+	<meta name="keywords" lang="en" content="about slitaz, gnu, linux, mini distro, livecd">
+	<meta name="author" content="Christophe Lincoln">
 	<?php include("../../lib/html/meta-link.html"); ?>
 </head>
 <body>
@@ -34,7 +34,7 @@ include("../../lib/lang.php");
 <h4>Article 1: Name, location and duration</h4>
 
 <p>
-The "SliTaz GNU/Linux Association" is a non-profit, politically and 
+The “SliTaz GNU/Linux Association” is a non-profit, politically and 
 religiously neutral association, corporately organized in line with 
 article 60 of the Swiss Civil Code. The headquarters of the Association 
 are based in Montpreveyres Switzerland. Its duration is unlimited.
@@ -103,7 +103,7 @@ The bodies of the Association are:
 The supreme body of the Association is the General Assembly. It takes place 
 each year and consists of all members of the Association. The agenda
 and date must be communicated in writing to members at least eight weeks 
-in advance. It can occur at the same time as a 'SliTazDays' or 
+in advance. It can occur at the same time as a ‘SliTazDays’ or 
 via videoconference.
 </p>
 <p>

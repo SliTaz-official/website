@@ -205,7 +205,7 @@ include("../../lib/lang.php");
 	fournir un livre complet, de haute qualité, facilement consultable et
 	fournissant des réponses rapides sur un sujet spécifique. A noter que le
 	terme Handbook est une suite logique au Cookbook (le livre de cuisine), le
-	projet Slitaz centralise la majorité de sa documentation dans ces deux
+	projet SliTaz centralise la majorité de sa documentation dans ces deux
 	livres.
 	</li>
 

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8"/>
+	<meta charset="UTF-8">
 	<title>SliTaz - Release Guide</title>
-	<meta name="description" content="slitaz developers release guide cooking stable packages"/>
-	<meta name="keywords" lang="en" content="slitaz, devel, tazdev, cooking, source"/>
-	<meta name="author" content="Christophe Lincoln"/>
+	<meta name="description" content="slitaz developers release guide cooking stable packages">
+	<meta name="keywords" lang="en" content="slitaz, devel, tazdev, cooking, source">
+	<meta name="author" content="Christophe Lincoln">
 	<?php include("../../lib/html/meta-link.html"); ?>
 </head>
 <body>
@@ -50,8 +50,8 @@ include("../../lib/lang.php");
 
 <p>
 	SliTaz sub projects are individually released using the SliTaz developers
-	tool aka 'tazdev'. Here is a handy cmdline guide to release a project.
-	In this guide we are going to release 'spk' 1.0:
+	tool aka ‘tazdev’. Here is a handy cmdline guide to release a project.
+	In this guide we are going to release ‘spk’ 1.0:
 </p>
 
 <pre>

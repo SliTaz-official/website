@@ -43,12 +43,12 @@
 	Was wäre eine Linux-Distributions-Seite ohne eine Artwork-Sektion?
 	Jeder - auch wir - will Screenshots sehen, bevor er Anwendungen 
 	herunterlädt. Deswegen möchten auch wir 
-	<a href="screenshots.php">Screenshots</a> des Slitaz-Desktops 
+	<a href="screenshots.php">Screenshots</a> des SliTaz-Desktops 
 	zeigen. Desweiteren findet ihr hier noch SliTaz-Hintergrundbilder
 	und Logos.
 </p>
 <p>
-	Falls Ihr uns weitere Slitaz-bezogene Wallpaper oder Kunstwerke zur 
+	Falls Ihr uns weitere SliTaz-bezogene Wallpaper oder Kunstwerke zur 
 	erfügung stellen wollt, nehmen wir das gerne an. Falls das 
 	Hintergrundbild für die Live-CD verwendet werden soll, nehmt bitte
 	zur Kenntnis, dass einerseits zwei Formate benötigt werden 

@@ -70,7 +70,7 @@
 	računalima, ali mi ponekad moramo promijeniti naše osobne sustave i 
 	zatim treba novi hardver. Mi također ne možemo testirati distribuciju na 
 	nekim specifičnim računalima zato što ih nemamo. 
-	Ako ste proizvođač hardvera i želite vidjeti Slitaz da radi "out-of-the-box" 
+	Ako ste proizvođač hardvera i želite vidjeti SliTaz da radi "out-of-the-box" 
 	na računalima, možete nam poslati računalo, tako da možemo raditi 
 	i testirati na njemu.
 </p>

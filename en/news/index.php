@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8"/>
+	<meta charset="UTF-8">
 	<title>SliTaz - News</title>
-	<meta name="description" content="SliTaz news archives info release"/>
-	<meta name="keywords" lang="en" content="System, free, gnu, linux, opensource software, livecd in RAM"/>
-	<meta name="author" content="Christophe Lincoln"/>
+	<meta name="description" content="SliTaz news archives info release">
+	<meta name="keywords" lang="en" content="System, free, gnu, linux, opensource software, livecd in RAM">
+	<meta name="author" content="Christophe Lincoln">
 	<?php include("../../lib/html/meta-link.html"); ?>
 </head>
 <body>
@@ -22,7 +22,7 @@ include("../../lib/lang.php");
 
 <h2>SliTaz News</h2>
 <p>
-	Check out <a href="http://scn.slitaz.org/">Slitaz Community blog</a>
+	Check out <a href="http://scn.slitaz.org/">SliTaz Community blog</a>
 	for specific and small news about the project.
 </p>
 
@@ -32,7 +32,7 @@ include("../../lib/lang.php");
 	<li id="d20150520">
 		<strong>20 May 2015 - SliTaz 5.0 RC-3 release</strong>
 	<p>
-		The Slitaz team is pleased to announce the new SliTaz 5.0-RC3 release 
+		The SliTaz team is pleased to announce the new SliTaz 5.0-RC3 release 
 		candidate. We have done a huge amount of work fixing bugs from RC2 with
 		about 2500 commits in our Mercurial repositories. All the 4800 packages
 		have been rebuilt to find and fix bugs and to ensure everything can
@@ -53,7 +53,7 @@ include("../../lib/lang.php");
 	<li id="d20140519">
 		<strong>19 May 2014 - SliTaz 5.0 RC-2 release</strong>
 	<p>
-		The Slitaz team is pleased to announce the new SliTaz 5.0-RC2 release 
+		The SliTaz team is pleased to announce the new SliTaz 5.0-RC2 release 
 		candidate. We have done a huge amount of work fixing bugs from RC1 with
 		about 500 commits in our Mercurial repositories. All the 4300 packages
 		have been rebuilt to find and fix bugs and to ensure everything can
@@ -80,7 +80,7 @@ include("../../lib/lang.php");
 	<li id="d20140502">
 		<strong>02 May 2014 - SliTaz 5.0 RC-1 release</strong>
 	<p>
-		The Slitaz team is pleased to announce the availability of the SliTaz
+		The SliTaz team is pleased to announce the availability of the SliTaz
 		GNU/Linux 5.0 Release Candidate 1 (RC-1)! It's very mature, but still
 		requires intensive testing before we'll be able to release a fully
 		stable version.
@@ -141,7 +141,7 @@ include("../../lib/lang.php");
 	<li id="d20140216">
 		<strong>16 Feb 2014 - New SliTaz Cooking Release</strong>
 	<p>
-		The Slitaz team is proud to announce the release of a new Cooking
+		The SliTaz team is proud to announce the release of a new Cooking
 		version which paves the road to SliTaz 5.0. This new Cooking includes
 		almost 2 years of work and has an incredible ChangeLog. All our home
 		made tools have been improved with some great new tools such as 

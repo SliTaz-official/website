@@ -41,7 +41,7 @@
 	<li>
 		<strong>28 de febrero de 2008 - Cooking 20090228</strong>
 	<p>
-	¡Preparándonos para la próxima versión estable! El proyecto Slitaz se
+	¡Preparándonos para la próxima versión estable! El proyecto SliTaz se
 	complace en anunciar la publicación de una nueva versión Cooking cargada
 	de correcciones, actualizaciones, mejoras y nuevas funcionalidades. La
 	autodetección PCI/USB es ahora gestionada por Tazhw y el firmware puede
@@ -107,7 +107,7 @@
 	Los participantes en el proyecto SliTaz se enorgullecen en anunciar la
 	publicación de SliTaz GNU/Linux 1.0. Esta es la primera versión estable tras
 	dos años de trabajo. El sistema se distribuye como un LiveCD de 24.8 MiB que
-	trae todo un entorno de escritorio y una amplia gama de aplicaciones. Slitaz
+	trae todo un entorno de escritorio y una amplia gama de aplicaciones. SliTaz
 	GNU/Linux 1.0 usa el kernel 2.6.24.2, incluye firefox 2.0.0.12, rsync 3.0.0,
 	gparted 0.3.5 y soporte para sonido mediante alsa 1.0.16. Con esta
 	distribución puedes escuchar tu música preferida, navegar por internet, y

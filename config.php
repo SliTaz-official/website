@@ -1,6 +1,6 @@
 <?php
 
-// Slitaz Website configuration
+// SliTaz Website configuration
 $mirror       = "http://mirror.slitaz.org/iso";
 $pkgs_mirror  = "http://mirror.switch.ch/ftp/mirror/slitaz/iso";
 

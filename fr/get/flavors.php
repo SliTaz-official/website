@@ -70,7 +70,7 @@ include("../../lib/lang.php");
 	votre fichier de saveur sur <a href="../mailing-list.php">la liste de discussion</a> 
 	afin qu'il soit testé et inclus dans les saveurs officielles. 
 	Vous avez aussi la possibilité de soumettre ou lister votre travail sur 
-	<a href="http://labs.slitaz.org/projects/show/flavors">les laboratoires Slitaz</a>.
+	<a href="http://labs.slitaz.org/projects/show/flavors">les laboratoires SliTaz</a>.
 	Le système des saveurs peut se comparer aux paquets, chaque saveur à son
 	mainteneur.
 </p>

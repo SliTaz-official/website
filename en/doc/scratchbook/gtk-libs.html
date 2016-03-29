@@ -1,23 +1,22 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>SliTaz Scratchbook - GTK+ Libraries</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="" />
-    <meta name="expires" content="never" />
-    <meta name="modified" content="2008-11-22 17:00:00" />
-    <meta name="publisher" content="www.slitaz.org" />
-    <meta name="author" content="Christophe Lincoln"/>
-    <link rel="shortcut icon" href="favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="book.css" />
+	<meta charset="UTF-8">
+	<title>SliTaz Scratchbook - GTK+ Libraries</title>
+	<meta name="description" content="">
+	<meta name="expires" content="never">
+	<meta name="modified" content="2008-11-22 17:00:00">
+	<meta name="publisher" content="www.slitaz.org">
+	<meta name="author" content="Christophe Lincoln">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="book.css">
 </head>
-<body bgcolor="#ffffff">
+<body>
 
 <!-- Header and quick navigation -->
 <div id="header">
 <div id="quicknav" align="right">
-	<a name="top"></a>
+	<span id="top"></span>
 	<a href="x-window-system.html">X window system</a> |
 	<a href="index.html">Table of contents</a> |
 	<a href="gtk-apps.html">GTK+ apps</a>
@@ -43,8 +42,8 @@ Compilation and installation of GTK+ packages and libraries.
 	<li><a href="#gtk">gtk-2.8.20</a> - The GIMP Toolkit.</li>
 	<li><a href="#initramfs-iso">Generate the initramfs and an ISO image.</a></li>
 </ul>
-<a name="about"></a>
-<h3><font color="#6c0023">About</font></h3>
+
+<h3 id="about">About</h3>
 <p>
 This chapter describes the installation and configuration of GTK libraries 
 on SliTaz used by lots of free software. Note that you can simply compile and 
@@ -69,8 +68,8 @@ To check:
 </p>
 <pre> # echo $fs
 </pre>
-<a name="cairo"></a>
-<h3><font color="#6c0023">cairo-1.2.6 - 2D graphics library</font></h3>
+
+<h3 id="cairo">cairo-1.2.6 - 2D graphics library</h3>
 <p>
 We begin with libcairo (<a href="http://www.cairographics.org/">http://www.cairographics.org/</a>) 
 used to compile pango:
@@ -88,8 +87,8 @@ used to compile pango:
 <h4>Install in rootfs</h4>
 <pre> # cp -av _pkg/usr/lib/*.so* $fs/usr/lib
 </pre>
-<a name="glib"></a>
-<h3><font color="#6c0023">glib-2.12.4 - C routines</font></h3>
+
+<h3 id="glib">glib-2.12.4 - C routines</h3>
 <pre> # cd ..
  # wget ftp://ftp.gtk.org/pub/glib/2.12/glib-2.12.4.tar.bz2
  # tar xjf glib-2.12.4.tar.bz2
@@ -111,8 +110,8 @@ Option: the utilities glib-genmarshal and gobject-query need the /lib/tls/librt.
  The binaries and options:
  # cp -a _pkg/usr/bin/* $fs/usr/bin
 </pre>
-<a name="pango"></a>
-<h3><font color="#6c0023">pango-1.14.8 - Library for layout and rendering of text</font></h3>
+
+<h3 id="pango">pango-1.14.8 - Library for layout and rendering of text</h3>
 <pre> # cd ..
  # wget ftp://ftp.gtk.org/pub/pango/1.14/pango-1.14.8.tar.bz2
  # tar xjf pango-1.14.8.tar.bz2
@@ -139,8 +138,8 @@ Create /etc/pango.modules via chroot in the rootfs (pango-querymodules uses libr
  /# pango-querymodules &gt; /etc/pango/pango.modules
  # exit
 </pre>
-<a name="atk"></a>
-<h3><font color="#6c0023">atk-1.12.4 - Accessibility toolkit</font></h3>
+
+<h3 id="atk">atk-1.12.4 - Accessibility toolkit</h3>
 <pre> # cd ..
  # wget http://ftp.gnome.org/pub/gnome/sources/atk/1.12/atk-1.12.4.tar.bz2
  # tar xjf atk-1.12.4.tar.bz2
@@ -155,8 +154,8 @@ Create /etc/pango.modules via chroot in the rootfs (pango-querymodules uses libr
 <pre> # cp -a _pkg/usr/lib/*.so* $fs/usr/lib
  # cp -a _pkg/usr/share/locale/fr $fs/usr/share/locale
 </pre>
-<a name="gtk"></a>
-<h3><font color="#6c0023">gtk+-2.8.20 -  The GIMP Toolkit</font></h3>
+
+<h3 id="gtk">gtk+-2.8.20 - The GIMP Toolkit</h3>
 <pre> # cd ..
  # wget ftp://ftp.gtk.org/pub/gtk/v2.8/gtk+-2.8.20.tar.bz2
  # tar xjf gtk+-2.8.20.tar.bz2
@@ -201,17 +200,17 @@ Create files /etc/gtk-2.0/gtk.immodules and gdk-pixbuf.loaders via a chroot in t
  # exit
 </pre>
 <p>
-At this stage you can test GTK+ with the 'gtk-demo' application by creating an ISO and using qemu. 
+At this stage you can test GTK+ with the ‘gtk-demo’ application by creating an ISO and using qemu. 
 You can also compile a small GTK application such as LeafPad and test! The compiliation and installation 
 of GTK+ applications distributed by default with SliTaz are described in the next chapter
-<a href="http://www.slitaz.org/doc/scratchbook/gtk-apps.html">GTK apps</a>.
+<a href="gtk-apps.html">GTK apps</a>.
 </p>
-<a name="initramfs-iso"></a>
-<h3><font color="#6c0023">Generate the initramfs and an ISO image</font></h3>
+
+<h3 id="initramfs-iso">Generate the initramfs and an ISO image</h3>
 <p>
-To create a new ISO image, you can use 'mktaziso' in 
+To create a new ISO image, you can use ‘mktaziso’ in 
 <a href="http://doc.slitaz.org/en:cookbook:slitaztools">SliTaz tools</a> .  
-Or you can create a new initramfs image, copy it to /boot in the root of the cdrom
+Or you can create a new initramfs image, copy it to /boot in the root of the CD-ROM
 (rootcd) and finally generate an ISO image with genisoimage:
 </p>
 <pre> # cd $fs

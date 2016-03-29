@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8"/>
+	<meta charset="UTF-8">
 	<title>SliTaz - News archives 2009</title>
-	<meta name="description" content="SliTaz news archives info release"/>
-	<meta name="keywords" lang="en" content="System, free, gnu, linux, opensource software, livecd in RAM"/>
-	<meta name="author" content="Christophe Lincoln"/>
+	<meta name="description" content="SliTaz news archives info release">
+	<meta name="keywords" lang="en" content="System, free, gnu, linux, opensource software, livecd in RAM">
+	<meta name="author" content="Christophe Lincoln">
 	<?php include("../../lib/html/meta-link.html"); ?>
 </head>
 <body>
@@ -36,7 +36,7 @@ include("../../lib/lang.php");
 	the LiveCD such as Firefox have been updated to the current stable version.
 	Home-made GUI boxes have been enhanced. Tazpkg packages manager supports new
 	features including the conversion of deb/rpm/arch/slackware/ipk packages to
-	Slitaz native format. The ISO image includes a new Openbox, GTK and icons
+	SliTaz native format. The ISO image includes a new Openbox, GTK and icons
 	theme for an elegant and more beautiful desktop. We have also removed
 	ePDFview and switched to an online PDF viewer. This ISO image, however,
 	is a bit bigger than 30 Mb (31.5) due to a bigger Kernel and many new

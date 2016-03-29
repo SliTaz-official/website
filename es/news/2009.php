@@ -51,7 +51,7 @@
 	última versión estable. Se han mejorado también las ventanas de diálogo
 	de la casa, así como el administrador de paquetes, que incluye entre sus
 	nuevas características la posibilidad de convertir de los formatos deb,
-	rpm, arch, slackware e ipk al formato nativo de Slitaz. La imagen ISO
+	rpm, arch, slackware e ipk al formato nativo de SliTaz. La imagen ISO
 	incluye además nuevos iconos y un nuevo estilo visual para Openbox y
 	Gtk, haciéndola aún más agradable. Se ha eliminado el ePDFview
 	cambiándolo por un visor de PDFs online. La imagen ha quedado esta
@@ -66,13 +66,13 @@
 	</li>
 
 	<li>
-		<strong>19 de mayo de 2009 - Slitaz en LinuxDays 2009 (Ginebra)</strong>
+		<strong>19 de mayo de 2009 - SliTaz en LinuxDays 2009 (Ginebra)</strong>
 	<p>
 	En la feria LinuxDays que se celebrará en Suiza, la asociación
 	tendrá un puesto en la Association Village además de una charla el
 	miércoles por la mañana. La charla será de un caso de estudio desde
 	un punto de vista corporativo, basado en el uso de un "Servidor
-	Slitaz para Empresas" con centralita, ERP integrado, correo, LDAP, etc...
+	SliTaz para Empresas" con centralita, ERP integrado, correo, LDAP, etc...
 	</p>
 	<p>
 	Durante los tres días, el stand contará con miembros del proyecto
@@ -117,7 +117,7 @@
 	<p>
 	Buscando contínuamente mejorar la distribución y los servicios que
 	proporcionamos, nos complace anunciar el lanzamiento de los laboratorios
-	Slitaz o <a href="http://labs.slitaz.org/">SliTaz Labs</a>.
+	SliTaz o <a href="http://labs.slitaz.org/">SliTaz Labs</a>.
 	Esta plataforma comunitaria permite a los miembros
 	que contribuyen al proyecto colaborar más eficazmente, notificar errores
 	más fácilmente o solicitar nuevas funcionalidades. Los laboratorios

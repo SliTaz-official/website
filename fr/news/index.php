@@ -24,7 +24,7 @@ include("../../lib/lang.php");
 
 <p>
 	Les news plus spécifiques sont publiées sur notre blog communautaire:
-	<a href="http://scn.slitaz.org/">Slitaz Community blog</a>
+	<a href="http://scn.slitaz.org/">SliTaz Community blog</a>
 </p>
 
 <div class="news">

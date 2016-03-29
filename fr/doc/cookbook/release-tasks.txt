@@ -16,7 +16,7 @@ Les choses à faire avant de publier un nouvelles version.
    outils (slitaz-tools). Les permissions devraient être vérifiée. Le Cookbook
    en parle : http://www.slitaz.org/doc/cookbook/hacker.txt
 
- * Checker la version de Slitaz spécifiée dans le message : /etc/issue
+ * Checker la version de SliTaz spécifiée dans le message : /etc/issue
    Il faut que se soit la même que dans le fichier isolinux.msg affiché en
    premier au démarrage et dans le fichiers de configuration du miroir pour
    Tazpkg : /var/lib/tazpkg/mirror.

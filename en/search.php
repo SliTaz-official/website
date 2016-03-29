@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8"/>
+	<meta charset="UTF-8">
 	<title>SliTaz - Search</title>
-	<meta name="description" content="SliTaz GNU/Linux custom search engine"/>
-	<meta name="keywords" lang="en" content="System, free, gnu, linux, software opensource, livecd LINUX in RAM"/>
-	<meta name="author" content="Christophe Lincoln"/>
+	<meta name="description" content="SliTaz GNU/Linux custom search engine">
+	<meta name="keywords" lang="en" content="System, free, gnu, linux, software opensource, livecd LINUX in RAM">
+	<meta name="author" content="Christophe Lincoln">
 	<?php include("../lib/html/meta-link.html"); ?>
 </head>
 <body>
@@ -70,7 +70,7 @@ include("../lib/lang.php");
 <h2>Google Search</h2>
 
 <p>
-	This page lets you also search the entire website Slitaz GNU/Linux,
+	This page lets you also search the entire website SliTaz GNU/Linux,
 	the <a href="http://doc.slitaz.org/">documentation</a> wiki and in
 	the archives of the <a href="mailing-list.php">Mailing List</a>
 	and also in the <a href="http://forum.slitaz.org/">Forum</a>.

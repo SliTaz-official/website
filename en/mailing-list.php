@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8"/>
+	<meta charset="UTF-8">
 	<title>SliTaz - Mailing list</title>
-	<meta name="description" content="slitaz users developpers mailing list"/>
-	<meta name="keywords" content="slitaz list mail discuss" lang="en"/>
-	<meta name="author" content="Christophe Lincoln"/>
+	<meta name="description" content="slitaz users developpers mailing list">
+	<meta name="keywords" content="slitaz list mail discuss" lang="en">
+	<meta name="author" content="Christophe Lincoln">
 	<?php include("../lib/html/meta-link.html"); ?>
 </head>
 <body>
@@ -39,7 +39,7 @@ include("../lib/lang.php");
 
 <p>
 The discussion/distribution (mailing list) is the main form of communication
-in the Slitaz community.  The list is open to everyone, you are free to
+in the SliTaz community.  The list is open to everyone, you are free to
 subscribe, unsubscribe  at any time.  It is a very effective means of
 collaboration, and is used to provide free technical support to users of
 SliTaz. Developers, advanced users, proofreaders, etc, use the same list to
@@ -63,7 +63,7 @@ all messages posted by other members. Messages are sent by the list engine of
 The mailing list is used by some often passionate and sensitive people.
 Make an extra effort to treat others with respect, even if you feel badly
 treated yourself. If you have something negative or critical to say, please
-do not post. If a person looks inappropriate contact a Slitaz developer.
+do not post. If a person looks inappropriate contact a SliTaz developer.
 </p>
 
 <h3 id="usage">Using the list</h3>

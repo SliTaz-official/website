@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8"/>
+	<meta charset="UTF-8">
 	<title>SliTaz - Downloads</title>
-	<meta name="description" content="SliTaz GNU/Linux LiveCD free download"/>
-	<meta name="keywords" lang="en" content="source, iso, livecd, get, free"/>
-	<meta name="author" content="Christophe Lincoln, Paul Issot"/>
+	<meta name="description" content="SliTaz GNU/Linux LiveCD free download">
+	<meta name="keywords" lang="en" content="source, iso, livecd, get, free">
+	<meta name="author" content="Christophe Lincoln, Paul Issot">
 	<?php include("../../lib/html/meta-link.html"); ?>
 </head>
 <body>

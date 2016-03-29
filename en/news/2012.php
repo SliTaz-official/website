@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8"/>
+	<meta charset="UTF-8">
 	<title>SliTaz - News archives 2011</title>
-	<meta name="description" content="SliTaz news archives info release"/>
-	<meta name="keywords" lang="en" content="System, free, gnu, linux, opensource software, livecd in RAM"/>
-	<meta name="author" content="Christophe Lincoln"/>
+	<meta name="description" content="SliTaz news archives info release">
+	<meta name="keywords" lang="en" content="System, free, gnu, linux, opensource software, livecd in RAM">
+	<meta name="author" content="Christophe Lincoln">
 	<?php include("../../lib/html/meta-link.html"); ?>
 </head>
 <body>
@@ -53,7 +53,7 @@ include("../../lib/lang.php");
 	<li id="d20120303">
 		<strong>03 Mar 2012 - SliTaz 4.0-RC2 is out</strong>
 	<p>
-		The Slitaz team is pleased to announce the new SliTaz 4.0-RC2 release
+		The SliTaz team is pleased to announce the new SliTaz 4.0-RC2 release
 		candidate. We have done a huge amount of work fixing bugs from RC1 and
 		on end-user home made tools such as TazPKG, TazPanel and TazUSB. Wifi
 		connection is made easier via TazPanel or the new wifibox. TazPKG has

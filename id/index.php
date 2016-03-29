@@ -66,14 +66,14 @@ include("../lib/html/header.html");
 	<li id="d20120410">
 		<strong>10 Apr 2012 - SliTaz GNU/Linux 4.0 Release</strong>
 	<p>
-		Para kontributor Slitaz dengan bangga mengumumkan tentang rilis
-		GNU/Linux Slitaz 4.0, versi stabil terbaru dari distribusi yang ada.
+		Para kontributor SliTaz dengan bangga mengumumkan tentang rilis
+		GNU/Linux SliTaz 4.0, versi stabil terbaru dari distribusi yang ada.
 		Usaha komunitas selama dua tahun telah menghasilkan sistem produksi
 		yang stabil dengan kemampuan startup yang lebih cepat dan lebih dari
 		1000 paket baru yang bisa diinstal.
 	</p>
 	<p>
-		Slitaz menawarkan sebuah desktop grafis yang lengkap dalam kapasitas
+		SliTaz menawarkan sebuah desktop grafis yang lengkap dalam kapasitas
 		35MB, didukung dengan OpenBox dan LXDE yang bisa bekerja sepenuhnya di
 		RAM dengan hanya 192MB. Pengaturan baru 4 in 1 memungkinkan untuk
 		menginstalnya di harddisk yang hanya memiliki kapasitas 48MB dengan
@@ -90,7 +90,7 @@ include("../lib/html/header.html");
 	<li>
 		<strong>03 Mar 2012 - SliTaz 4.0-RC2</strong>
 	<p>
-		Tim Slitaz dengan bahagia mengumumkan rilis terbarunya Slitaz 4.0-RC2.
+		Tim SliTaz dengan bahagia mengumumkan rilis terbarunya SliTaz 4.0-RC2.
 		Kami telah melakukan perbaikan pada bugs dari RC1 dan pada beberapa
 		tools bikinan pengguna akhir seperti TazPKG, TazPanel dan TazUSB.
 		Koneksi Wifi akan lebih mudah dilakukan lewat TazPanel atau wifibox
@@ -105,7 +105,7 @@ include("../lib/html/header.html");
 		inti, jadi kita bisa memasukkan Lxrandr, Parcellite dan klien
 		BiTorrent (transmission). Kami ingin berterima kasih kepada semua yang
 		telah mencoba RC yang pertama, dan RC2 ini udah mendekati rencana
-		rilis Slitaz 4.0 dalam 2 minggu ke depan. Download image ISO RC2 dari
+		rilis SliTaz 4.0 dalam 2 minggu ke depan. Download image ISO RC2 dari
 		mirror kami:
 		<a href="http://mirror.slitaz.org/iso/cooking/slitaz-4.0-RC2.iso">SliTaz 4.0-RC2</a>
 	</p>

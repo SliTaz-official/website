@@ -19,7 +19,7 @@
 	<div id="block_info">
 		<h4>主页</h4>
 		<p>
-			Slitaz是一个免费的操作系统，它能在完全地内存中运行，也可以从CD－ROM、U盘等可移动介质中启动。Slitaz以LiveCD的形式发布，并且不超过30MB，快速、稳定而易用。Slitaz还拥有小巧、直观的桌面，以及易用的设置工具。
+			SliTaz是一个免费的操作系统，它能在完全地内存中运行，也可以从CD－ROM、U盘等可移动介质中启动。SliTaz以LiveCD的形式发布，并且不超过30MB，快速、稳定而易用。SliTaz还拥有小巧、直观的桌面，以及易用的设置工具。
 			<a href="about/">更多信息...</a> 
 		</p>
 	</div>
@@ -44,7 +44,7 @@
 
 <h2>头条</h2>
 <p>
-	Slitaz网站提供Slitaz计划的主要新闻和<a href="http://labs.slitaz.org/">Slitaz实验室</a>里各种子计划的新闻. 它们都通过 <a href="/rss.xml"> XML feed</a>的形式提供。我们还提供一份简单的每月时讯。网站<a href="../">首页</a>将给出消息、修改、软件包、Tweets的最新情况。
+	SliTaz网站提供SliTaz计划的主要新闻和<a href="http://labs.slitaz.org/">SliTaz实验室</a>里各种子计划的新闻. 它们都通过 <a href="/rss.xml"> XML feed</a>的形式提供。我们还提供一份简单的每月时讯。网站<a href="../">首页</a>将给出消息、修改、软件包、Tweets的最新情况。
 </p>
 
 <div class="box">
@@ -72,14 +72,14 @@
 	</li>
 	
 	<li><strong>2010年5月8日 － 文档之夏</strong>
-	<p>5月10日到6月10日，Slitaz开发小组将组织“文档之夏”活动。
-			这个活动将把所有的Slitaz文档集中起来并重新审查，同时也将更新这些文档。
+	<p>5月10日到6月10日，SliTaz开发小组将组织“文档之夏”活动。
+			这个活动将把所有的SliTaz文档集中起来并重新审查，同时也将更新这些文档。
 			详情请见：<a href="http://doc.slitaz.org/">doc.slitaz.org</a>。
-			我们希望用户能通过增加或更新文档来为Slitaz做贡献。</p>
+			我们希望用户能通过增加或更新文档来为SliTaz做贡献。</p>
 	</li>
 	
 	<li><strong>2010年3月28日 新的SliTaz 3.0</strong>
-	<p>SliTaz GNU/Linux 3.0操作系统即将发布。Slitaz 3.0保留了简单、小巧
+	<p>SliTaz GNU/Linux 3.0操作系统即将发布。SliTaz 3.0保留了简单、小巧
 	快速、强大、容易定制的特性，还提供了功能强大的桌面支持，
 	默认采用Xorg 7.4, Openbox, LXDE组件和自制工具。使你更容易
 	听音乐、管理照片，或者使用Midori进行网上冲浪。默认的核心系统镜像大小控制在35 MB，

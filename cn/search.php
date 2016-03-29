@@ -4,7 +4,7 @@
 	<meta charset="utf-8"/>
 	<title>SliTaz - 搜索</title>
 	<meta name="description" content="SliTaz GNU/Linux 自定义搜索引擎"/>
-	<meta name="keywords" lang="cn" content="about slitaz, gnu, linux, mini distro, livecd, 关于Slitaz, Slitaz是什么, 介绍"/>
+	<meta name="keywords" lang="cn" content="about slitaz, gnu, linux, mini distro, livecd, 关于SliTaz, SliTaz是什么, 介绍"/>
 	<meta name="author" content="Draplater"/>
 	<?php include("../lib/html/meta-link.html"); ?>
 </head>
@@ -19,8 +19,8 @@
 	<div id="block_info">
 		<h4>搜索</h4>
 		<p>
-			这个网页可以搜索Slitaz网站、邮件列表、论坛中的内容。
-			这个网页由Google自定义搜索为Slitaz创建。
+			这个网页可以搜索SliTaz网站、邮件列表、论坛中的内容。
+			这个网页由Google自定义搜索为SliTaz创建。
 		</p>
 	</div>
 </div>

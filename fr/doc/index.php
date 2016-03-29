@@ -45,7 +45,7 @@ include("../../lib/lang.php");
 </p>
 <p>
 	<a href="http://doc.slitaz.org/fr:cookbook:start">Cookbook</a> -
-	Le livre de cuisine de Slitaz. informations au sujet de la gestion,
+	Le livre de cuisine de SliTaz. informations au sujet de la gestion,
 	du fonctionnement et du développement de la distribution. Création
 	de paquets, description des recettes, du wok, des scripts de 
 	démarrages, etc.

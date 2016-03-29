@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
+	<meta charset="UTF-8">
 	<title>SliTaz GNU/Linux 2.0 - Release Notes</title>
 	<meta name="description" content="slitaz doc system releases notes information cooking">
 	<meta name="expires" content="never">
 	<meta name="modified" content="2009-03-28 11:30:00">
 	<meta name="publisher" content="www.slitaz.org">
 	<meta name="author" content="Paul Issot">
-	<link rel="shortcut icon" href="/favicon.ico"/>
-	<link rel="stylesheet" type="text/css" href="/relnotes.css"/>
+	<link rel="shortcut icon" href="/favicon.ico">
+	<link rel="stylesheet" href="/relnotes.css">
 </head>
-<body bgcolor="#ffffff">
+<body>
 
 <!-- Header -->
 <div id="header">
@@ -43,7 +43,7 @@
 <p>
 SliTaz GNU/Linux Version 2.0 was released on April 16 2009 after a year
 of hard work. Based on Version 1.0 (published 22 March 2008), SliTaz comprises
-of 1400 (up 900) software packages easily installable via the "Tazpkg"
+of 1400 (up 900) software packages easily installable via the “Tazpkg”
 package manager. The LiveCD can be fully configured to taste, to easily
 create a custom distribution specifically for tasks such as multimedia,
 graphics or development. Some of the new features in this release include:
@@ -59,16 +59,16 @@ graphics or development. Some of the new features in this release include:
 </ul>
 <p>
 Technical support is provided to users via the mailing list and the official
-forum. The "SliTaz Handbook" is an instructive manual on how to use and finely
+forum. The “SliTaz Handbook” is an instructive manual on how to use and finely
 configure the system. SliTaz can be updated easily via the graphic installer or
 by using the simple and fast text installer.
 SliTaz can also be installed to your hard drive, or used with USB media
-- with "TazUSB" or the GUI "TazUSBbox" you are only a few simple commands
+- with “TazUSB” or the GUI “TazUSBbox” you are only a few simple commands
 away from a fully formatted and configured USB device, ready to boot.
 </p>
 <p>
 The system is now configurable via a graphical control center and
-packages can be managed with the "Tazpkgbox" GUI package manager. The
+packages can be managed with the “Tazpkgbox” GUI package manager. The
 project has also created several different GUIs to command line tools to
 facilitate the use of the system.
 </p>
@@ -95,14 +95,14 @@ drives can be easily browsed through the file manager.
 <p>
 SliTaz GNU/Linux supports all machines based on i486 or x86 Intel compatible
 processors. A minimum 256MB of memory is recommended to use the main LiveCD.
-64MB is needed for the "slitaz-loram" flavor and 16MB for the
-"slitaz-loram-cdrom" flavor.
+64MB is needed for the “slitaz-loram” flavor and 16MB for the
+“slitaz-loram-cdrom” flavor.
 </p>
 <p>
 With the slitaz-loram flavor, the system is less responsive, but allows you to
 graphically install SliTaz on very old machines. Once installed, SliTaz works
 well with a minimum of 16MB memory, but forget about using Firefox to surf the
-web - you'll have to use the text based 'links' for example.
+web - you'll have to use the text based ‘links’ for example.
 </p>
 <p>
 SliTaz 2.0 provides partial support for wireless network cards (WiFi), some
@@ -113,8 +113,8 @@ installed using a GUI created for the distribution.
 <p>
 Most network and sound card drivers are supported in the Kernel. Presently,
 power management is enabled by default with ACPI and support for laptops is
-enabled with the "ac" and "battery" modules ("thermal", "processor" and "dock"
-are built into the kernel; "fan" and "button" are also available as modules).
+enabled with the “ac” and “battery” modules (“thermal”, “processor” and “dock”
+are built into the kernel; “fan” and “button” are also available as modules).
 </p>
 
 <h3 id="livecd">LiveCD Flavors</h3>
@@ -125,7 +125,7 @@ graphically install to the hard drive and retain the use of your previous
 system including all settings, applications, documents, etc.
 </p>
 <p>
-The project distributes an ISO image called "core", which is the body of the
+The project distributes an ISO image called “core”, which is the body of the
 system, providing a selection of multi-use packages for surfing the web,
 listening to music, audio editing, image manipulation, developing (including
 PHP/SQL), editing ISOs or burning to optical media. It's just one click in the
@@ -139,10 +139,10 @@ standard drag and drop with GTK2 libraries and tools for installing additional
 applications with a few clicks of the mouse.
 </p>
 <p>
-The "core" LiveCD can also be customised and rebuilt both graphically or from
+The “core” LiveCD can also be customised and rebuilt both graphically or from
 the command line. Install your own custom set of packages, or simply use one
 of the preset flavors on the mirror. Then simply generate your distribution
-with the "Tazlito" tool.
+with the “Tazlito” tool.
 </p>
 
 <h3 id="gpxe">Network startup (gPXE)</h3>
@@ -164,7 +164,7 @@ Manual and Handbook.
 <p>
 If you want to partition a disk before installation, you can quickly use
 Gparted in LiveCD mode or use a flavor containing the partitioning tool. At
-the end of the installation it is possible to setup the "GRUB" bootloader which
+the end of the installation it is possible to setup the “GRUB” bootloader which
 is capable of starting almost all operating systems. This allows SliTaz to
 co-exist with a previously installed operating system, such as Windows.
 </p>
@@ -182,13 +182,13 @@ dependancies are handled automatically.
 </p>
 <p>
 Most network cards are supported either directly or as loadable modules with
-'modprobe'. Video capture, if needed, requires the ieee1394, raw1394 and
+‘modprobe’. Video capture, if needed, requires the ieee1394, raw1394 and
 ohci1394 modules installed. The management of the sound card drivers is obtained
-with 'soundconf'.
+with ‘soundconf’.
 </p>
 <p>
 The configuration of startup modules is located in /etc/rcS.conf. In
-LiveCD/LiveUSB mode you can use 'modprobe=mod1, mod2' to load various modules
+LiveCD/LiveUSB mode you can use ‘modprobe=mod1, mod2’ to load various modules
 at boot time.
 </p>
 <p>
@@ -200,7 +200,7 @@ The Linux Kernel configuration of SliTaz is available in the compressed file
 
 <p>
 The management of software packages is done with the custom package manager
-"Tazpkg". It's simple, fast, stable and offers an interactive mode. Among the
+“Tazpkg”. It's simple, fast, stable and offers an interactive mode. Among the
 1400 packages available you will find anything you need to transform your
 machine to a complete graphical desktop (e17), a graphics studio with The Gimp
 or Inkscape, or to a video editor with Kino. You can experience the world wide
@@ -219,9 +219,9 @@ libraries. Packages can be found through the search function of Tazpkg or via
 the website: <a href="/en/packages/">www.slitaz.org/en/packages/</a>
 </p>
 <p>
-The binary packages on the mirror can all be compiled by using the "wok" or
-"Tazwok" to cook. All of the developer documentation is contained in the
-"SliTaz Cookbook" and is available online.
+The binary packages on the mirror can all be compiled by using the “wok” or
+“Tazwok” to cook. All of the developer documentation is contained in the
+“SliTaz Cookbook” and is available online.
 </p>
 
 <h3 id="desktop">Graphical Desktops</h3>
@@ -229,7 +229,7 @@ The binary packages on the mirror can all be compiled by using the "wok" or
 <p>
 By default, the SliTaz LiveCD uses the very light and stable Openbox window manager.
 Openbox is widely themeable and configurable using the ObConf utility.
-The integration of the taskbar "LXpanel" makes it possible to dynamically
+The integration of the taskbar “LXpanel” makes it possible to dynamically
 provide a menu based on the Freedesktop standards. The principle is to have a
 small menu accessible via a screen click with the favorites, windows effects,
 LiveCD and LiveUSB tools, Openbox configuration and system actions made available.
@@ -239,8 +239,8 @@ managment of the Desktop and icons are entrusted to the file manager PCmanFM.
 <p>
 Through the support of a LiveCD flavor or an installed system you can install
 the Enlightenment (e17) desktop environment or the window managers JWM and DWM .
-The different sessions can be selected via the F1 key when using the "Slim"
-login window. To change the default session you can use 'tazx' or manually edit
+The different sessions can be selected via the F1 key when using the “Slim”
+login window. To change the default session you can use ‘tazx’ or manually edit
 the ~/.Xinitrc file.
 </p>
 
@@ -254,7 +254,7 @@ to some degree. The Handbook is also available on the web site. The manuals
 of the standard tools are installed on the system and are available through the
 documentation menu - they describe all the various commands made possible by
 the tools. The development of the operating system and the use of the wok and
-receipts are described in the "SliTaz Cookbook". The books, manuals and release notes
+receipts are described in the “SliTaz Cookbook”. The books, manuals and release notes
 are all available online:
 <a href="/en/doc/">www.slitaz.org/en/doc/</a>
 </p>
@@ -277,8 +277,8 @@ Security.
 
 <p>
 The SliTaz GNU/linux installer offers an update function allowing you to
-upgrade from a '1.0' to '2.0' version. To upgrade the system you first
-need to boot the 'Stable' LiveCD, launch the installer, select upgrade and then
+upgrade from a ‘1.0’ to ‘2.0’ version. To upgrade the system you first
+need to boot the ‘Stable’ LiveCD, launch the installer, select upgrade and then
 specify the partition containing the system that you want to update. The
 installer will then clean out the system and reinstall all the packages not
 present on the CD from the mirror. When this has finished you can reboot
@@ -291,8 +291,8 @@ Note that the installer will keep a copy of the list of packages and a complete
 archive of the /etc directory (etc.tar.gz) in /var/lib/slitaz-install.
 </p>
 <p>
-To upgrade a 1.0 to 2.0 it is also possible to use the package manager "Tazpkg"
-via the 'set-release' function, but beware this is not yet proven and may require some
+To upgrade a 1.0 to 2.0 it is also possible to use the package manager “Tazpkg”
+via the ‘set-release’ function, but beware this is not yet proven and may require some
 manual intervention.
 </p>
 

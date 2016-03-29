@@ -4,7 +4,7 @@
 	<meta charset="utf-8"/>
 	<title>SliTaz - 美术资源</title>
 	<meta name="description" content="SliTaz GNU/Linux 关于信息"/>
-	<meta name="keywords" lang="cn" content="about slitaz, gnu, linux, mini distro, livecd, 关于Slitaz, Slitaz是什么, 介绍"/>
+	<meta name="keywords" lang="cn" content="about slitaz, gnu, linux, mini distro, livecd, 关于SliTaz, SliTaz是什么, 介绍"/>
 	<meta name="author" content="Draplater"/>
 	<?php include("../../lib/html/meta-link.html"); ?>
 </head>
@@ -25,7 +25,7 @@
 			Your work may be used on a Cooking release.
 		</p>
 		<ul>
-			<li><a href="#art4taz">Slitaz美术资源</a></li>
+			<li><a href="#art4taz">SliTaz美术资源</a></li>
 			<li><a href="#logos">Logo和图标</a></li>
 			<li><a href="screenshots.php">截图</a></li>
 		</ul>
@@ -40,18 +40,18 @@
 <h2>美化和设计</h2>
 
 <p>
-这个页面向您介绍Slitaz工作组的美术资源。这些页面上的图片都是自由的，你可以使用它们来制作壁纸或者放到你的网站上来推广Slitaz。各种Slitaz的Logo和图标可以通过<a href="../../images/artwork/">artwork</a>文件夹直接下载。你也可以看看<a href="screenshots.php">截图</a>
+这个页面向您介绍SliTaz工作组的美术资源。这些页面上的图片都是自由的，你可以使用它们来制作壁纸或者放到你的网站上来推广SliTaz。各种SliTaz的Logo和图标可以通过<a href="../../images/artwork/">artwork</a>文件夹直接下载。你也可以看看<a href="screenshots.php">截图</a>
 这些截图是用mtPaint和The Gimp软件制作的。
 </p>
 
-<h3 id="art4taz">Slitaz美术资源</h3>
+<h3 id="art4taz">SliTaz美术资源</h3>
 <p>
-我们会把Slitaz的所有图片、Logo、主题和墙纸都提供给开发者，我们也一直在坚持优雅、实用、高质量的设计。如果你对美术感兴趣，你可以以制作Logo、墙纸的方式来参与Slitaz的开发，而不是写枯燥的代码或者文档。如果你想制作Slitaz的美术作品，建议你加入我们的邮件列表。最好不要直接传送文件，因为文件的体积可能会很大。
+我们会把SliTaz的所有图片、Logo、主题和墙纸都提供给开发者，我们也一直在坚持优雅、实用、高质量的设计。如果你对美术感兴趣，你可以以制作Logo、墙纸的方式来参与SliTaz的开发，而不是写枯燥的代码或者文档。如果你想制作SliTaz的美术作品，建议你加入我们的邮件列表。最好不要直接传送文件，因为文件的体积可能会很大。
 </p>
 
 <h4>LiveCD美术资源</h4>
 <p>
-要想节约LiveCD资源，图片最好不要超过200K，并且要在1024x768的分辨率下正常显示。每个新的版最终本发布时，墙纸或主题都会更换，更换的主题都遵循一个标准，都要在Slitaz能正常使用，最好使用Slitaz中的软件制作。Slitaz里已经配有mtPaint，在安装好的系统里你也可以安装Gimp。制作的图像最好使用PNG格式。
+要想节约LiveCD资源，图片最好不要超过200K，并且要在1024x768的分辨率下正常显示。每个新的版最终本发布时，墙纸或主题都会更换，更换的主题都遵循一个标准，都要在SliTaz能正常使用，最好使用SliTaz中的软件制作。SliTaz里已经配有mtPaint，在安装好的系统里你也可以安装Gimp。制作的图像最好使用PNG格式。
 </p>
 
 <h3 id="logos">Logo和图标</h3>

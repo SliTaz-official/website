@@ -1,23 +1,22 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>SliTaz Scratchbook - GTK+ Applications</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="" />
-    <meta name="expires" content="never" />
-    <meta name="modified" content="2008-11-22 17:00:00" />
-    <meta name="publisher" content="www.slitaz.org" />
-    <meta name="author" content="Christophe Lincoln"/>
-    <link rel="shortcut icon" href="favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="book.css" />
+	<meta charset="UTF-8">
+	<title>SliTaz Scratchbook - GTK+ Applications</title>
+	<meta name="description" content="">
+	<meta name="expires" content="never">
+	<meta name="modified" content="2008-11-22 17:00:00">
+	<meta name="publisher" content="www.slitaz.org">
+	<meta name="author" content="Christophe Lincoln">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="book.css">
 </head>
-<body bgcolor="#ffffff">
+<body>
 
 <!-- Header and quick navigation -->
 <div id="header">
 <div id="quicknav" align="right">
-    <a name="top"></a>
+    <span id="top"></span>
     <a href="gtk-libs.html">Gtk-libs</a> |
     <a href="index.html">Table of contents</a>
 </div>
@@ -45,8 +44,8 @@ Compiliation and installation of applications using GTK+.
     <li><a href="#gftp">gftp-2.0.18</a> - Fast and simple FTP client.</li>
     <li><a href="#xpad">xpad-2.12</a> - Mini note taking application.</li>
 </ul>
-<a name="about"></a>
-<h3><font color="#6c0023">About</font></h3>
+
+<h3 id="about">About</h3>
 <p>
 This chapter describes the commands for the compilation and installation of
 GTK+ applications distributed by default on the SliTaz LiveCD. The installation 
@@ -64,8 +63,8 @@ To check:
 </p>
 <pre> # echo $fs
 </pre>
-<a name="leafpad"></a>
-<h3><font color="#6c0023">leafpad-0.8.10 - Simple text editor</font></h3>
+
+<h3 id="leafpad">leafpad-0.8.10 - Simple text editor</h3>
 <p>
 Website: <a href="http://tarot.freeshell.org/leafpad/">http://tarot.freeshell.org/leafpad/</a>
 </p>
@@ -82,8 +81,8 @@ Website: <a href="http://tarot.freeshell.org/leafpad/">http://tarot.freeshell.or
  # cp _pkg/usr/share/pixmaps/leafpad.png $fs/usr/share/pixmaps
  # cp -a _pkg/usr/share/locale/fr $fs/usr/share/locale
 </pre>
-<a name="gitmail"></a>
-<h3><font color="#6c0023">gitmail-0.4 - Ghost In The Mail, mail client</font></h3>
+
+<h3 id="gitmail">gitmail-0.4 - Ghost In The Mail, mail client</h3>
 <p>
 Ghost in the mail allows users to quickly and easily send mail via SMTP.
 </p>
@@ -103,8 +102,8 @@ Website: <a href="http://gitmail.sourceforge.net/">http://gitmail.sourceforge.ne
 <h4>Install in rootfs</h4>
 <pre> # cp _pkg/usr/bin/* $fs/usr/bin
 </pre>
-<a name="gqview"></a>
-<h3><font color="#6c0023">gqview-2.0.4 - Images Manager</font></h3>
+
+<h3 id="gqview">gqview-2.0.4 - Images Manager</h3>
 <p>
 Website: <a href="http://gqview.sourceforge.net/">http://gqview.sourceforge.net/</a>
 </p>
@@ -121,8 +120,8 @@ Website: <a href="http://gqview.sourceforge.net/">http://gqview.sourceforge.net/
  # cp _pkg/usr/share/pixmaps/* $fs/usr/share/pixmaps
  # cp -a _pkg/usr/share/locale/fr $fs/usr/share/locale
 </pre>
-<a name="mtpaint"></a>
-<h3><font color="#6c0023">mtpaint-3.11 - Image creation and processing</font></h3>
+
+<h3 id="mtpaint">mtpaint-3.11 - Image creation and processing</h3>
 <p>
 Website: <a href="http://mtpaint.sourceforge.net/">http://mtpaint.sourceforge.net/</a>
 </p>
@@ -138,8 +137,8 @@ Website: <a href="http://mtpaint.sourceforge.net/">http://mtpaint.sourceforge.ne
  # cp po/fr.mo $fs/usr/share/locale/fr/LC_MESSAGES/mtpaint.mo
  # cp src/icons1/icon.xpm $fs/usr/share/pixmaps/mtpaint.xpm
 </pre>
-<a name="transmission"></a>
-<h3><font color="#6c0023">Transmission-0.72 - Lightweight BitTorrent client</font></h3>
+
+<h3 id="transmission">Transmission-0.72 - Lightweight BitTorrent client</h3>
 <p>
 Tranmission BitTorrent client is fast, lightweight and easy to use. The compiled package provides 
 the command line client (transmissioncli) and a GTK+ client (transmission-gtk). We install the GTK+ client, 
@@ -165,8 +164,8 @@ Website: <a href="http://transmission.m0k.org/">http://transmission.m0k.org/</a>
  # cp gtk/transmission.png $fs/usr/share/pixmaps
  # cp gtk/po/fr.mo $fs/usr/share/locale/fr/LC_MESSAGES/transmission-gtk.mo
 </pre>
-<a name="emelfm2"></a>
-<h3><font color="#6c0023">emelfm2-0.3.5 - File Manager</font></h3>
+
+<h3 id="emelfm2">emelfm2-0.3.5 - File Manager</h3>
 <p>
 The emelFM2 application is a file manager providing lots of useful functions, 
 such as the mounting of devices, a text viewer, opening a terminal in the current 
@@ -192,8 +191,8 @@ Website: <a href="http://emelfm2.net/">http://emelfm2.net/</a>
  # cp -a _pkg/usr/share/pixmaps $fs/usr/share
  # cp -a _pkg/usr/share/locale/fr $fs/usr/share/locale
 </pre>
-<a name="geany"></a>
-<h3><font color="#6c0023">geany-0.11 - Integrated Development Environment</font></h3>
+
+<h3 id="geany">geany-0.11 - Integrated Development Environment</h3>
 <p>
 Geany is a simple, fast and light IDE offering colored syntax, tabs, autocompletion, aids to scripts and much more.
 </p>
@@ -222,11 +221,11 @@ Note: The force is with you, if you activate it via the option --enable-the-forc
  # cp _pkg/usr/share/pixmaps/geany.png $fs/usr/share/pixmaps
  # cp -a _pkg/usr/share/locale/fr $fs/usr/share/locale
 </pre>
-<a name="gftp"></a>
-<h3><font color="#6c0023">gftp-2.0.18 - Fast and simple FTP client</font></h3>
+
+<h3 id="gftp">gftp-2.0.18 - Fast and simple FTP client</h3>
 <p>
 The gFTP application is a fast and efficient FTP client with a GTK+ graphical interface. 
-Note that we compile without support for a text interface and ssl support. Get, untar, 
+Note that we compile without support for a text interface and SSL support. Get, untar, 
 configure, compile and install.
 </p>
 <p>
@@ -254,12 +253,12 @@ script that detects the environment (console or X) and launches the right interf
  # cp -a _pkg/usr/share/locale/fr $fs/usr/share/locale
 </pre>
 <p>
-To save a little space and avoid duplication, you can delete 'COPYING' (17 KB) 
+To save a little space and avoid duplication, you can delete ‘COPYING’ (17 KB)
 included in /usr/share/gftp. The GNU licence is already present in /usr/share/licence, 
 if you want to create a symbolic link.
 </p>
-<a name="xpad"></a>
-<h3><font color="#6c0023">xpad-2.12 - Mini note taking application</font></h3>
+
+<h3 id="xpad">xpad-2.12 - Mini note taking application</h3>
 <p>
 The Xpad application can quickly take notes via various customizable (GTK+) windows.
 </p>

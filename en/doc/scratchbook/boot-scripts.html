@@ -1,23 +1,22 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>SliTaz Scratchbook - Boot Scripts</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="" />
-    <meta name="expires" content="never" />
-    <meta name="modified" content="2008-11-22 17:00:00" />
-    <meta name="publisher" content="www.slitaz.org" />
-    <meta name="author" content="Christophe Lincoln"/>
-    <link rel="shortcut icon" href="favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="book.css" />
+	<meta charset="UTF-8">
+	<title>SliTaz Scratchbook - Boot Scripts</title>
+	<meta name="description" content="">
+	<meta name="expires" content="never">
+	<meta name="modified" content="2008-11-22 17:00:00">
+	<meta name="publisher" content="www.slitaz.org">
+	<meta name="author" content="Christophe Lincoln">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="book.css">
 </head>
-<body bgcolor="#ffffff">
+<body>
 
 <!-- Header and quick navigation -->
 <div id="header">
 <div align="right" id="quicknav">
-    <a name="top"></a>
+    <span id="top"></span>
     <a href="locale.html">Locale &amp; i18n</a> |
     <a href="index.html">Table of contents</a> |
     <a href="x-window-system.html">X window system</a>
@@ -43,8 +42,7 @@ The startup and shutdown scripts with their configuration files.
 	<li><a href="#inittab">/etc/inittab</a> - Configuration file init.</li>
 </ul>
 
-<a name="intro"></a>
-<h3><font color="#6c0023">SliTaz and startup</font></h3>
+<h3 id="intro">SliTaz and startup</h3>
 
 <p>
 SliTaz does not use a level of execution (runlevel), the
@@ -54,12 +52,11 @@ scripts which deal with the internationalization or the
 commands placed for the system to start.
 </p>
 
-<a name="init.d"></a>
-<h3><font color="#6c0023">/etc/init.d/* - Directory of scripts and daemons</font></h3>
+<h3 id="init.d">/etc/init.d/* - Directory of scripts and daemons</h3>
 <p>
 The directory /etc/init.d contains all of the rc scripts,
-scripts finishing with '.sh' are simple shell scripts and
-daemons such as 'dropbear' or 'lighttpd' are scripts
+scripts finishing with ‘.sh’ are simple shell scripts and
+daemons such as ‘dropbear’ or ‘lighttpd’ are scripts
 that launch a service. The daemon scripts can start, stop or
 restart through the command:
 </p>
@@ -74,8 +71,7 @@ in rc scripts. SliTaz uses a function <code>status</code> to check whether
 the previous command has succeeded (0) or not.
 </p>
 
-<a name="rcS"></a>
-<h3><font color="#6c0023">/etc/init.d/rcS - Primary initialization script</font></h3>
+<h3 id="rcS">/etc/init.d/rcS - Primary initialization script</h3>
 <p>
 The <code>/etc/init.d/rcS</code> script configures all the 
 basic services and initializes the base system. It begins by 
@@ -89,8 +85,7 @@ to know which commands are executed:
 </pre>
 
 
-<a name="rc-scripts"></a>
-<h3><font color="#6c0023">Specific scripts and daemons</font></h3>
+<h3 id="rc-scripts">Specific scripts and daemons</h3>
 
 <h4>bootopts.sh - LiveCD mode options</h4>
 <p>
@@ -120,8 +115,8 @@ SliTaz backs up the configuration of the default locale in
 /etc/locale.conf which is read by /etc/profile at each 
 login. The /etc/locale.conf is generated during boot time
 thanks to the /etc/i18n.sh script. This script launches the
-'tazlocale' application if /etc/locale.conf doesn't exist. 
-We use the same process for the keyboard layout using 'tazkmap' 
+‘tazlocale’ application if /etc/locale.conf doesn't exist.
+We use the same process for the keyboard layout using ‘tazkmap’
 and the /etc/kmap.conf configuration file. Both applications 
 are installed and located in /sbin and use dialog and the 
 ncurses library. The script also checks whether the 
@@ -151,8 +146,7 @@ It also stops all daemons via the variable RUN_DAEMONS in
 the primary <code>/etc/rcS.conf</code> configuration file.
 </p>
 
-<a name="inittab"></a>
-<h3><font color="#6c0023">/etc/inittab - Configuration file init</font></h3>
+<h3 id="inittab">/etc/inittab - Configuration file init</h3>
 <p>
 The first file read by the Kernel at boot. It defines the 
 initialization script (/etc/init.d/rcS), shells (ttys) and

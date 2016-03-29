@@ -87,7 +87,7 @@ podrás seguir las últimas noticias, commits y tweets.</p>
 	<li>
 		<strong>16 de febrero de 2014 - Nueva Cooking 20140216</strong>
 	<p>
-	El equipo de Slitaz se complace en anunciar la publicación de una nueva versión 
+	El equipo de SliTaz se complace en anunciar la publicación de una nueva versión 
 	Cooking que prepara el camino para SliTaz 5.0. Esta nueva Cooking incluye casi 
 	dos años de trabajo y tiene un ChangeLog increíble. Nuestras herramientas caseras 
 	han sido mejoradas con nuevas herramientas estupendas tales como 'frugal' o 'decode'. 
@@ -167,7 +167,7 @@ podrás seguir las últimas noticias, commits y tweets.</p>
 	<li>
 		<strong>23 de febrero de 2012 - SliTaz 4.0-RC1 disponible</strong>
 	<p>
-	Al equipo de Slitaz le complace anunciar la disponibilidad inmediata
+	Al equipo de SliTaz le complace anunciar la disponibilidad inmediata
 	de la primera Release Candidate de SliTaz 4.0. SliTaz puede arrancar
 	en 10-12 segundos en hardware relativamente nuevo, y con la nueva ISO
 	4 en 1 puedes instalar un ordenador de escritorio con todo SliTaz con
@@ -195,7 +195,7 @@ podrás seguir las últimas noticias, commits y tweets.</p>
 	<li>
 		<strong>31 de mayo de 2011 - Nueva y radiante Cooking 20110531</strong>
 	<p>
-	El equipo de Slitaz se enorgullece en anunciar la liberación de una
+	El equipo de SliTaz se enorgullece en anunciar la liberación de una
 	nueva versión Cooking hecha con nuestros nuevos y frescos paquetes de
 	cookutils. Cookutils es una de las herramientas de nueva generación para
 	hacer paquetes de SliTaz, proporcionando un Build Bot con una agradable

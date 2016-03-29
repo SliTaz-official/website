@@ -68,7 +68,7 @@ plus de 4 GB n'ont pas démarré et le temps a manqué pour investir davantage.
 Nous avons eu la chance de discuter avec des personnes travaillant pour 
 le canton de Genève et qui ont oeuvré pour l'adoption de formats ouverts au sein de
 l'Administration. Les écoles genevoises utilisent GNU/Linux dans les 
-salles de cours. Slitaz serait par exemple une distribution idéale pour
+salles de cours. SliTaz serait par exemple une distribution idéale pour
 des clés USB bootables, permettant aux élèves de travailler sur leurs
 documents, indépendamment de la machine utilisée.
 </p>

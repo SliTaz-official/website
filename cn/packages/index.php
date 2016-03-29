@@ -19,7 +19,7 @@
 	<div id="block_info">
 		<h4>软件包</h4>
 		<p>
-			这个页面可以显示Slitaz软件源上的所有软件包，并且会每天自动更新。你可以使用图形界面工具“软件之盒”或命令<code>tazpkg get-install pkgname</code>安装软件包。
+			这个页面可以显示SliTaz软件源上的所有软件包，并且会每天自动更新。你可以使用图形界面工具“软件之盒”或命令<code>tazpkg get-install pkgname</code>安装软件包。
 		</p>
 		<p>
 			Browse the packages web interface:

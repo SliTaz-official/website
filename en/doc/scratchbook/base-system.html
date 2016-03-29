@@ -1,23 +1,22 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>SliTaz Scratchbook - Base System</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="" />
-    <meta name="expires" content="never" />
-    <meta name="modified" content="2008-11-22 17:00:00" />
-    <meta name="publisher" content="www.slitaz.org" />
-    <meta name="author" content="Christophe Lincoln"/>
-    <link rel="shortcut icon" href="favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="book.css" />
+	<meta charset="UTF-8">
+	<title>SliTaz Scratchbook - Base System</title>
+	<meta name="description" content="">
+	<meta name="expires" content="never">
+	<meta name="modified" content="2008-11-22 17:00:00">
+	<meta name="publisher" content="www.slitaz.org">
+	<meta name="author" content="Christophe Lincoln">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="book.css">
 </head>
-<body bgcolor="#ffffff">
+<body>
 
 <!-- Header and quick navigation -->
 <div id="header">
 <div align="right" id="quicknav">
-    <a name="top"></a>
+    <span id="top"></span>
     <a href="index.html">Table of contents</a> |
     <a href="base-apps.html">Base apps</a>
 </div>
@@ -36,22 +35,22 @@ Build a SliTaz GNU/Linux distro running in RAM and using BusyBox.
 <ul>
     <li><a href="#about">About.</a></li>
     <li><a href="#src">Wget src.</a></li>
-    <li><a href="#prepa">Unpack and prepare the Linux kernel.</a></li>
+    <li><a href="#prepa">Unpack and prepare the Linux Kernel.</a></li>
     <li><a href="#rootfs">Creation of the Root System</a>, the root
      file System (rootfs).</li>
     <li><a href="#config">Configure the box.</a></li>
     <li><a href="#initramfs">Generate the initramfs</a>, compressed cpio archive.</li>
-    <li><a href="#rootcd">Construction of the root of the cdrom</a> (rootcd), and the 
+    <li><a href="#rootcd">Construction of the root of the CD-ROM</a> (rootcd), and the 
     configuration files of Syslinux.</li>
     <li><a href="#mkiso">Create an ISO image with genisoimage or mkisofs.</a></li>
     <li><a href="#testiso">Burn or test the ISO with Qemu.</a></li>
 </ul>
-<a name="about"></a>
-<h3><font color="#6c0023">About</font></h3>
+
+<h3 id="about">About</h3>
 <p>
 This document describes the construction of the SliTaz base system and why we use a
 Linux Kernel, BusyBox and Syslinux to boot the system. SliTaz uses an initramfs 
-archive unpacked in RAM by the kernel at boot. We will create a box to hold a 
+archive unpacked in RAM by the Kernel at boot. We will create a box to hold a 
 root of 3 to 4MB and use strip on the libraries and binaries to save space.
 </p>
 <p>
@@ -62,8 +61,8 @@ The scripts and configuration files are created with GNU nano, using the keystro
 This document is based on a howto found in the archive of BusyBox, which is itself based on 
 a paper presented by Erik Anderson in the Embedded Systems Conference in 2001.
 </p>
-<a name="src"></a>
-<h3><font color="#6c0023">Wget src</font></h3>
+
+<h3 id="src">Wget src</h3>
 <p>
 Create a src directory for downloading and compiling:
 </p>
@@ -88,22 +87,22 @@ Create a src directory for downloading and compiling:
  # tar xzf slitaz-tools-1.1.tar.gz</pre>
     </li>
 </ul>
-<a name="prepa"></a>
-<h3><font color="#6c0023">Unpack and prepare the Linux Kernel</font></h3>
+
+<h3 id="prepa">Unpack and prepare the Linux Kernel</h3>
 <p>
-We will begin by compiling a Linux kernel, which may take a little time.
+We will begin by compiling a Linux Kernel, which may take a little time.
 </p>
 <h4>Linux Kernel</h4>
 <p>
-Your kernel must support the intramfs filesystem, otherwise the cdrom will not start. You can 
+Your Kernel must support the intramfs filesystem, otherwise the CD-ROM will not start. You can 
 also install the modules in a directory so as not to touch the host system. The configuration 
 of the Linux kernel sources is done by <code>make menuconfig</code> using ncurses or graphically 
 with <code>make gconfig</code> or <code>make xconfig</code> using GTK development packages and/or 
-QT respectively. You can find in <a href="http://doc.slitaz.org/en:cookbook:slitaztools">SliTaz tools</a>,
+Qt respectively. You can find in <a href="http://doc.slitaz.org/en:cookbook:slitaztools">SliTaz tools</a>,
 Makefiles for the various 2.6.xx kernels.
 </p>
 <p>
-A feature of the 2.6 kernels is that if we make menuconfig, xconfig or config for the first time, 
+A feature of the 2.6 Kernels is that if we make menuconfig, xconfig or config for the first time, 
 the setup menu is displayed based on the configuration of our current kernel.
 </p>
 <p>
@@ -126,20 +125,20 @@ configuration interface: gconfig, xconfig, menuconfig or oldconfig:
  # cd ..
 </pre>
 <p>
-If you want more info on compiling kernels, there are many textbooks. Note that you can install the 
-kernel and after rebooting, you can compile your own kernel following the same instructions.
+If you want more info on compiling Kernels, there are many textbooks. Note that you can install the 
+Kernel and after rebooting, you can compile your own Kernel following the same instructions.
 </p>
-<a name="rootfs"></a>
-<h3><font color="#6c0023">Creation of the root system (rootfs)</font></h3>
+
+<h3 id="rootfs">Creation of the root system (rootfs)</h3>
 <p>
-The next step will create a file named 'rootfs' - Root File System, in the working directory SliTaz/:
+The next step will create a file named ‘rootfs’ - Root File System, in the working directory SliTaz/:
 </p>
 <pre> # mkdir ../rootfs
 </pre>
 <h4>Install BusyBox</h4>
 <p>
 BusyBox (<a href="http://www.busybox.net/">www.busybox.net</a>) is a single executable offering 
-versions of the main tools necessary to use a Linux kernel. It is (mainly) intended to be used 
+versions of the main tools necessary to use a Linux Kernel. It is (mainly) intended to be used 
 embedded and can do almost anything. As well as proposing (coreutils) shell commands and a daemons 
 system, it also provides a websever and client/server (DHCP, udhcpc).
 </p>
@@ -179,7 +178,7 @@ initrd support in Busybox. We'll delete the linuxrc link and create a link for i
 <p>
 The ldd command can show any libraries used by a program. Libraries used by Busybox may differ 
 depending on the host system. On Debian for example, copying the libraries in /lib/tls. The following 
-commands are given using 'v' for verbose mode. To eliminate the symbols of executable binaries
+commands are given using ‘v’ for verbose mode. To eliminate the symbols of executable binaries
 and shared libraries we can utilize strip. Note you may also use the mklibs or uClibc libraries.
 </p>
 <pre> # mkdir lib
@@ -232,7 +231,7 @@ Setting up glibc - note /etc/ld.so.conf and /etc/rpc are not essential for a mic
 </pre>
 <h4>Create the devices in /dev</h4>
 <p>
-This can be done with the script 'mkdevs.sh' found in BusyBox, or with our script 'mktazdevs.sh' in
+This can be done with the script ‘mkdevs.sh’ found in BusyBox, or with our script ‘mktazdevs.sh’ in
 SliTaz tools. If you want more details, read the scripts. If you used the BusyBox version, we must
 still create the pts directory:
 </p>
@@ -255,8 +254,8 @@ name resolution and are cleaned with strip:
  # cp /lib/libresolv.so.2 lib
  # strip -v lib/*.so*
 </pre>
-<a name="config"></a>
-<h3><font color="#6c0023">Configuration of your box</font></h3>
+
+<h3 id="config">Configuration of your box</h3>
 <p>
 Create the necessary files in /etc. For more info, just look at the contents of the files. 
 We start by creating some files relevant to the core operating system.
@@ -511,11 +510,10 @@ you will find information to install in the source tarball. You can also install
 files from SliTaz tools, such as the licence.
 </p>
 
-<a name="initramfs"></a>
-<h3><font color="#6c0023">Build an initramfs cpio archive</font></h3>
+<h3 id="initramfs">Build an initramfs cpio archive</h3>
 <p>
 The initramfs is a <code>cpio</code> archive generated from the root of the system, 
-it is decompressed in RAM by the Linux kernel at boot to create the filesystem (also in RAM). 
+it is decompressed in RAM by the Linux Kernel at boot to create the filesystem (also in RAM). 
 To generate an initramfs archive, using the root directory of system files (rootfs), we 
 facilitate a search with <code>find</code> and add some pipes <code>|</code>. 
 Then we create a cpio archive using <code>gzip</code> which we put in the working directory.
@@ -539,11 +537,11 @@ and create a new image with <code>genisoimage</code> or <code>mkisofs</code>. Fo
 use <strong>mktaziso</strong> within SliTaz tools. This script will check if the directories are present, 
 create a new compressed cpio archive and generate a new bootable ISO image.
 </p>
-<a name="rootcd"></a>
-<h3><font color="#6c0023">Make rootcd files</font></h3>
+
+<h3 id="rootcd">Make rootcd files</h3>
 <p>
 The following steps will help you create the root of the bootable CD-ROM. We begin by creating the rootcd, 
-boot and isolinux directories for the cd-rom files:
+boot and isolinux directories for the CD-ROM files:
 </p>
 <pre> # cd ..
  # mkdir -p rootcd/boot/isolinux
@@ -551,10 +549,10 @@ boot and isolinux directories for the cd-rom files:
 <p>
 Optionally, you can create some other directories in which to place various data, such as HTML documents or packages.
 </p>
-<a name="linux"></a>
-<h4>Copy the kernel</h4>
+
+<h4 id="linux">Copy the Kernel</h4>
 <p>
-Just copy the kernel previously compiled to rootcd/boot:
+Just copy the Kernel previously compiled to rootcd/boot:
 </p>
 <pre> # cp src/linux-2.6.20/arch/i386/boot/bzImage rootcd/boot
 </pre>
@@ -596,7 +594,7 @@ Here are some changes that you might like to make in isolinux.cfg:
 <ul>
     <li>The timeout value is the number of seconds to wait before booting 
 	You can make it 0 or delete the line to start instantly, or choose to wait as long as 10s.</li>
-    <li>prompt can be set to 0 to disable the 'boot:' prompt.</li>
+    <li>prompt can be set to 0 to disable the ‘boot:’ prompt.</li>
     <li>You can add more lines to view the contents of several text files when the user presses F1, F2, F3, etc.</li>
 </ul>
 <h4>display.txt</h4>
@@ -605,7 +603,8 @@ A small welcome note, powered by isolinux, you can modify this file if you wish:
 </p>
 <pre> # nano rootcd/boot/isolinux/display.txt
 </pre>
-<pre class="script">/*       _\|/_
+<pre class="script">
+/*       _\|/_
          (o o)
  +----oOO-{_}-OOo---------------------------------------------------+
      ____  _ _ _____
@@ -620,8 +619,8 @@ A small welcome note, powered by isolinux, you can modify this file if you wish:
 
                                                                    */
 </pre>
-<a name="mkiso"></a>
-<h3><font color="#6c0023">Create an ISO image with genisoimage or mkisofs</font></h3>
+
+<h3 id="mkiso">Create an ISO image with genisoimage or mkisofs</h3>
 <pre> # genisoimage -R -o slitaz-cooking.iso -b boot/isolinux/isolinux.bin \
    -c boot/isolinux/boot.cat -no-emul-boot -boot-load-size 4 \
    -V "SliTaz" -input-charset iso8859-1 -boot-info-table rootcd
@@ -633,10 +632,10 @@ For each change in the root of the box, you must create a new ISO image.
 You can create a small script that will generate a new compressed cpio archive and a new image, 
 or use mktaziso within SliTaz tools. Note that you can also use GRUB to boot the box.
 </p>
-<a name="testiso"></a>
-<h3><font color="#6c0023">Burn or test ISO image with Qemu</font></h3>
+
+<h3 id="testiso">Burn or test ISO image with Qemu</h3>
 <p>
-You can burn the ISO image with Graveman, k3b or wodim and boot it. Simple burning command using wodim (also valid for cdrecord), with a 2.6.XX. kernel:
+You can burn the ISO image with Graveman, k3b or wodim and boot it. Simple burning command using wodim (also valid for cdrecord), with a 2.6.XX. Kernel:
 </p>
 <pre># wodim -v -speed=24 -data slitaz-cooking.iso
 </pre>

@@ -101,7 +101,7 @@
 	<li id="d20120303">
 		<strong>03 Mar 2012 - SliTaz 4.0-RC2</strong>
 	<p>
-		Slitaz tim sa zadovoljstvom najavljuje novi SliTaz 4.0-RC2 
+		SliTaz tim sa zadovoljstvom najavljuje novi SliTaz 4.0-RC2 
 		kandidat. Mi smo učinili veliku količinu posla popravljajući grešaka 
 		iz RC1 i na krajnjeg korisnika domaćeg alata kao što su TazPKG, 
 		TazPanel i TazUSB. WiFi veza je lakše preko TazPanel ili novog 

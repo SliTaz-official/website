@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8"/>
+	<meta charset="UTF-8">
 	<title>SliTaz 3.0 Release Notes</title>
-	<meta name="description" content="slitaz doc system releases notes information cooking"/>
-	<meta name="expires" content="never"/>
-	<meta name="modified" content="2010-03-22 22:10:00"/>
-	<meta name="publisher" content="www.slitaz.org"/>
-	<meta name="author" content="Christophe Lincoln"/>
-	<link rel="shortcut icon" href="/favicon.ico"/>
-	<link rel="stylesheet" type="text/css" href="/relnotes.css"/>
+	<meta name="description" content="slitaz doc system releases notes information cooking">
+	<meta name="expires" content="never">
+	<meta name="modified" content="2010-03-22 22:10:00">
+	<meta name="publisher" content="www.slitaz.org">
+	<meta name="author" content="Christophe Lincoln">
+	<link rel="shortcut icon" href="/favicon.ico">
+	<link rel="stylesheet" href="/relnotes.css">
 </head>
 <body>
 
@@ -64,7 +64,7 @@ SliTaz stable version is now out after one year of development.
 	<li>Faster virtualization with lguest</li>
 	<li>SliTaz pro: OpenERP, LAMP, GLPI and more</li>
 	<li>Easier to customize LiveCD and LiveUSB (tazlitobox and tazusbbox)</li>
-	<li>Tazpkg supports new features including the conversion of deb/rpm/arch/slackware/ipk packages to Slitaz native format</li>
+	<li>Tazpkg supports new features including the conversion of deb/rpm/arch/slackware/ipk packages to SliTaz native format</li>
 	<li>Packages are now automatically built by a build bot (Tazbb)</li>
 	<li>More contributors and stronger community</li>
 	<li>900 packages added to the database and many updates</li>
@@ -80,14 +80,14 @@ forum: <a href="http://forum.slitaz.org/">forum.slitaz.org</a>
 <p>
 SliTaz GNU/Linux supports all machines based on the i486 or x86 Intel compatible
 processors. A minimum 192MB of memory is recommended to use the core LiveCD.
-80MB is needed for the "slitaz-loram" flavor and 16MB for the
-"slitaz-loram-cdrom" flavor.
+80MB is needed for the “slitaz-loram” flavor and 16MB for the
+“slitaz-loram-cdrom” flavor.
 </p>
 <p>
 With the slitaz-loram flavor, the system is less responsive, but allows you to
 graphically install SliTaz on very old machines with limited resources. Once installed, SliTaz works
 well with a minimum of 16MB memory, but forget about using Firefox to surf the
-web - you'll have to use the text based 'links' for example.
+web - you'll have to use the text based ‘links’ for example.
 </p>
 <p>
 SliTaz 3.0 provides all needed drivers and tools such as 915resolution to
@@ -98,18 +98,18 @@ have support for a wide range of netbooks (Eeepc, HP mini, Aspire One, etc).
 
 <p>
 SliTaz GNU/Linux is distributed as a bootable LiveCD. You can use the LiveCD
-as a normal system or you can graphically install Slitaz to the hard drive.
-Installing/upgrading Slitaz retains your previous system's settings, applications
+as a normal system or you can graphically install SliTaz to the hard drive.
+Installing/upgrading SliTaz retains your previous system's settings, applications
 and documents.
 </p>
 <p>
 The LiveCD can also be customised and easily rebuilt both graphically or from
 the command line. Install your own custom set of packages, or simply use one
 of the preset flavors on the mirror. Then simply generate your distribution
-with the "Tazlito" tool.
+with the “Tazlito” tool.
 </p>
 <p>
-The ISO image now uses a 'hybrid' system: it can also be copied onto a USB stick
+The ISO image now uses a ‘hybrid’ system: it can also be copied onto a USB stick
 without formating it (using <code>dd</code>).
 </p>
 
@@ -128,7 +128,7 @@ The new toolchain comprises of: Binutils 2.19.1, GCC 4.4.1, Glibc 2.10.1
 <h3 id="utf-8">UTF-8 support</h3>
 
 <p>
-With this release, the Slitaz community can enjoy full UTF-8 support.
+With this release, the SliTaz community can enjoy full UTF-8 support.
 SliTaz uses standard PO files for the translation of all SliTaz related tools, boxes and utilities.
 With better internationalization support (russian, portuguese, chinese, and many more),
 contributors can now use graphical tools such as poedit to make translations using GNU gettext standards.
@@ -167,13 +167,13 @@ has detected the device before mounting it on / (root).
 <p>
 SliTaz 3.0 has around 2300 packages in the database. A wide variety of packages
 have been commited and the Tazpkg package manager can now convert
-deb/rpm/arch/slackware/ipk packages to Slitaz native format (.tazpkg).
+deb/rpm/arch/slackware/ipk packages to SliTaz native format (.tazpkg).
 A lot of time was also spent maintaining professional grade software
 such as OpenERP, MySQL, GLPI.
 </p>
 <p>
 On the update side, mostly all the packages have been updated, including
-the kernel, toolchain, Xorg (7.4), GTK and QT. The package format has
+the kernel, toolchain, Xorg (7.4), GTK and Qt. The package format has
 also changed to support lzma for better compression and faster
 downloads. Packages are also checked by Tazwok to ensure the FHS is followed
 and packages are now built automatically by the SliTaz Build Bot:
@@ -197,7 +197,7 @@ installed software by category.
 <h3 id="security">Security</h3>
 
 <p>
-Slitaz is more secure and robust now and the firewall rules have been updated. A
+SliTaz is more secure and robust now and the firewall rules have been updated. A
 firewall can be installed using the graphical tazhw box, and serverbox can help
 to maintain the installed firewall. Mountbox can manage crypto devices with
 devmapper and the crypt setup tools allow encryption of block devices.
@@ -207,8 +207,8 @@ devmapper and the crypt setup tools allow encryption of block devices.
 
 <p>
 The SliTaz GNU/linux installer offers an update function allowing you to
-upgrade from a '2.0' to '3.0' version. To upgrade the system you first
-need to boot the 'Stable' LiveCD, launch the installer, select upgrade and then
+upgrade from a ‘2.0’ to ‘3.0’ version. To upgrade the system you first
+need to boot the ‘Stable’ LiveCD, launch the installer, select upgrade and then
 specify the partition containing the system that you want to update. The
 installer will then clean out the system and reinstall all the packages not
 present on the CD from the mirror. When this has finished you can reboot
@@ -219,10 +219,10 @@ Note that the installer will keep a copy of the list of packages and a complete
 archive of the /etc directory (etc.tar.gz) in /var/lib/slitaz-install.
 </p>
 <p>
-To upgrade a 2.0 to 3.0 it is also possible to use the package manager "Tazpkg"
-via the 'set-release' function, but beware this is not yet proven and may
+To upgrade a 2.0 to 3.0 it is also possible to use the package manager “Tazpkg”
+via the ‘set-release’ function, but beware this is not yet proven and may
 require some manual intervention. If you choose this method you must first
-install 'tazpkg' from 3.0, because the package format has changed.
+install ‘tazpkg’ from 3.0, because the package format has changed.
 </p>
 
 <h3 id="people">People of the Project</h3>

@@ -1,23 +1,22 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>SliTaz Scratchbook - Base Ncurses</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="" />
-    <meta name="expires" content="never" />
-    <meta name="modified" content="2008-11-22 17:00:00" />
-    <meta name="publisher" content="www.slitaz.org" />
-    <meta name="author" content="Christophe Lincoln"/>
-    <link rel="shortcut icon" href="favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="book.css" />
+	<meta charset="UTF-8">
+	<title>SliTaz Scratchbook - Base Ncurses</title>
+	<meta name="description" content="">
+	<meta name="expires" content="never">
+	<meta name="modified" content="2008-11-22 17:00:00">
+	<meta name="publisher" content="www.slitaz.org">
+	<meta name="author" content="Christophe Lincoln">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="book.css">
 </head>
-<body bgcolor="#ffffff">
+<body>
 
 <!-- Header and quick navigation -->
 <div id="header">
 <div align="right" id="quicknav">
-    <a name="top"></a>
+    <span id="top"></span>
     <a href="base-apps.html">Base apps</a> |
     <a href="index.html">Table of contents</a> |
     <a href="locale.html">Locale &amp; i18n</a>
@@ -49,21 +48,21 @@ Installation and configuration of ncurses libraries and applications.
     <li><a href="#rhapsody">rhapsody-0.28b</a> - IRC chat client.</li>
     <li><a href="#initramfs-iso">Generate the initramfs and an ISO image.</a></li>
 </ul>
-<a name="about"></a>
-<h3><font color="#6c0023">About</font></h3>
+
+<h3 id="about">About</h3>
 <p>
 This chapter describes the construction and installation of some ncurses applications 
 and libraries in SliTaz. The procedure consists of moving into the /src directory, 
 downloading the sources for the application in question, unpacking, reading the README or 
 INSTALL file(s), compiling and installing the binary in SliTaz. Once the applications 
-are installed, we can create a new initramfs, copy it to the root of the cdrom and generate 
+are installed, we can create a new initramfs, copy it to the root of the CD-ROM and generate 
 a new ISO image. For this you can also use <code>mktaziso</code> in 
 <a href="http://doc.slitaz.org/en:cookbook:slitaztools">SliTaz tools</a>.
 </p>
 <h4>Assign an environment variable ($fs)</h4>
 <p>
 An environmental variable can't specify the path to the directory, just the name of the directory. 
-We will affect a variable '$fs' to indicate the path to the root filesystem
+We will affect a variable ‘$fs’ to indicate the path to the root filesystem
 (rootfs). To do this, we venture into the working directory SliTaz/, and type:
 </p>
 <pre> # export fs=$PWD/rootfs
@@ -73,8 +72,8 @@ To check:
 </p>
 <pre> # echo $fs
 </pre>
-<a name="ncurses"></a>
-<h3><font color="#6c0023">ncurses-5.6 - Terminal utilities and libraries</font></h3>
+
+<h3 id="ncurses">ncurses-5.6 - Terminal utilities and libraries</h3>
 <p>
 ncurses (<a href="http://dickey.his.com/ncurses/">dickey.his.com/ncurses/</a>) contains 
 functions to display text in different ways on the screen of a Linux terminal and also provides 
@@ -124,8 +123,8 @@ Copy the tabset files:
 </p>
 <pre> # cp -a _pkg/usr/share/tabset $fs/usr/share
 </pre>
-<a name="clex"></a>
-<h3><font color="#6c0023">clex-3.16 - File Manager</font></h3>
+
+<h3 id="clex">clex-3.16 - File Manager</h3>
 <p>
 CLEX (<a href="http://www.clex.sk/">http://www.clex.sk/</a>) is a small ncurses file 
 manager (160 KB). The configuration file (rc) is ~/clexrc; ~/.clexbm is used for 
@@ -154,8 +153,8 @@ If we execute the <code>ldd</code> command on clex, the following dependancies s
         libc.so.6 =&gt; /lib/libc.so.6 (0x40064000)
         /lib/ld-linux.so.2 =&gt; /lib/ld-linux.so.2 (0x40000000)
 </pre>
-<a name="nano"></a>
-<h3><font color="#6c0023">nano-2.0.6 - Advanced Text Editor</font></h3>
+
+<h3 id="nano">nano-2.0.6 - Advanced Text Editor</h3>
 <p>
 GNU nano (<a href="http://www.nano-editor.org/">www.nano-editor.org</a>)  is a well known, 
 fast, effective GNU/Linux text editor that supports colored syntax.
@@ -211,8 +210,8 @@ For a system configuration file, you can copy the file in SliTaz tools to /etc i
 <pre> # cd ..
  # cp -a slitaz-tools-1.1/etc/nanorc $fs/etc
 </pre>
-<a name="retawq"></a>
-<h3><font color="#6c0023">retawq-0.2.6c - Text mode Web browser</font></h3>
+
+<h3 id="retawq">retawq-0.2.6c - Text mode Web browser</h3>
 <p>
 retawq (<a href="http://retawq.sourceforge.net/">retawq.sourceforge.net</a>) 
 is a small text-only web browser. We only flag a few useful options when configuring, 
@@ -260,10 +259,9 @@ examples/ in the archive of retawq (or SliTaz tools) containing a bookmarks.html
 page with a list of favorite web sites. You can also copy the docs (/documents) from retawq 
 to /usr/share/doc/retawq.
 </p>
-<a name="htop"></a>
-<h3><font color="#6c0023">htop-6.0.5 - System process viewer</font></h3>
-<p>
 
+<h3 id="htop">htop-6.0.5 - System process viewer</h3>
+<p>
 htop (<a href="http://htop.sourceforge.net/">htop.sourceforge.net/</a>) is software 
 that displays system processes using ncurses.
 </p>
@@ -293,10 +291,9 @@ You can still copy the htop icon found in: _pkg/usr/share/pixmaps.
         libc.so.6 =&gt; /lib/libc.so.6 (0xb7e20000)
         /lib/ld-linux.so.2 =&gt; /lib/ld-linux.so.2 (0xb7fc9000)
 </pre>
-<a name="dialog"></a>
-<h3><font color="#6c0023">dialog-1.1.20070409 - GUI shell scripts</font></h3>
-<p>
 
+<h3 id="dialog">dialog-1.1.20070409 - GUI shell scripts</h3>
+<p>
 dialog (<a href="http://invisible-island.net/dialog/dialog.html">invisible-island.net/dialog/dialog.html</a>), 
 is a utility to build GUI-based consoles:
 </p>
@@ -331,10 +328,9 @@ You can install locale files if you wish:
 The dialog configuration file is /etc/dialogrc and/or ~/.dialogrc for each user.
 There are also full examples of scripts in the /sample directory in the sources of dialog.
 </p>
-<a name="ninvaders"></a>
-<h3><font color="#6c0023">Ninvaders-0.1.1 - Space Invaders clone</font></h3>
-<p>
 
+<h3 id="ninvaders">Ninvaders-0.1.1 - Space Invaders clone</h3>
+<p>
 ninvaders (<a href="http://ninvaders.sourceforge.net/">http://ninvaders.sourceforge.net/</a>) 
 is a clone of the popular Space Invaders game (46 KB). We begin by placing ourselves in the 
 /src directory, then we download, untar, compile, clean using strip and copy the nInvaders binary 
@@ -348,8 +344,8 @@ in /usr/games of SliTaz:
  # strip -v nInvaders
  # cp nInvaders $fs/usr/games
 </pre>
-<a name="bastet"></a>
-<h3><font color="#6c0023">bastet-0.41 -  Bastard Tetris clone</font></h3>
+
+<h3 id="bastet">bastet-0.41 - Bastard Tetris clone</h3>
 <p>
 A game of Tetris (17 KB):
 </p>
@@ -363,8 +359,8 @@ A game of Tetris (17 KB):
  # touch $fs/var/games/bastet.scores
  # chmod 666 $fs/var/games/bastet.scores
 </pre>
-<a name="rhapsody"></a>
-<h3><font color="#6c0023">rhapsody-0.28b - IRC chat client</font></h3>
+
+<h3 id="rhapsody">rhapsody-0.28b - IRC chat client</h3>
 <p>
 Rhapsody (<a href="http://rhapsody.sourceforge.net/">http://rhapsody.sourceforge.net/</a>) 
 is a fast and lightweight chat client supporting the IRC protocol. It provides a menu for 
@@ -399,11 +395,11 @@ Rhapsody uses the following libraries:
 <p>
 You can customize rhapsody via ~/.rhapsodyrc or use &lt;Ctrl+T&gt;  for options:
 </p>
-<a name="initramfs-iso"></a>
-<h3><font color="#6c0023">Generate the initramfs and an ISO image</font></h3>
+
+<h3 id="initramfs-iso">Generate the initramfs and an ISO image</h3>
 <p>
-To create a new ISO image, you can use 'mktaziso' in SliTaz tools.  
-Or you can create a new initramfs image, copy it to /boot in the root of the cdrom
+To create a new ISO image, you can use ‘mktaziso’ in SliTaz tools.
+Or you can create a new initramfs image, copy it to /boot in the root of the CD-ROM
 (rootcd) and finally generate an ISO image with genisoimage:
 </p>
 <pre> # cd $fs
