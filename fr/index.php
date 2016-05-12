@@ -51,7 +51,7 @@ include("../lib/lang.php");
 <h2>Dernière publications</h2>
 
 <ul>
-	<li><strong><a href="http://mirror.slitaz.org/iso/rolling/">Publication de SliTaz Rolling</a></strong> (hebdo) 
+	<li><strong><a href="http://mirror.slitaz.org/iso/rolling/">Publication de SliTaz 5.0 Rolling</a></strong> (hebdo) 
 		<span>- <?php
 		$rol_date_file = '/var/cache/slitaz/website/rolling-date.txt';
 		if (file_exists("$rol_date_file")) {

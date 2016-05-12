@@ -60,6 +60,15 @@
 	<!-- <li><strong>Date - Title</strong>
 	<p></p>
 	</li> -->
+
+        <li><strong><a href="http://mirror.slitaz.org/iso/rolling/">SliTaz 5.0 Rolling release</a></strong> (weekly)  
+    <span>- <?php
+    $rol_date_file = '/var/cache/slitaz/website/rolling-date.txt';
+    if (file_exists("$rol_date_file")) {
+            $rol_date = file_get_contents("/var/cache/slitaz/website/rolling-date.txt");
+            print $rol_date;
+    } ?></span></li>
+
 	
 	<li><strong>2010年11月4日 － 新的Cooking版本——20101104</strong>
 	<p>	新的Cooking版本光盘镜像已经发布。新版本拥有超过2600个安装包的仓库，

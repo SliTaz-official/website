@@ -51,7 +51,7 @@ SliTaz — безопасная и производительная опера�
 <h2>Последние релизы</h2>
 
 <ul>
-	<li><strong><a href="http://mirror.slitaz.org/iso/rolling/">Выпуск SliTaz Rolling</a></strong> (weekly) (еженедельный)
+	<li><strong><a href="http://mirror.slitaz.org/iso/rolling/">Выпуск SliTaz 5.0 Rolling</a></strong> (weekly) (еженедельный)
 	     <span>— <?php
 		$rol_date_file = '/var/cache/slitaz/website/rolling-date.txt';
 		if (file_exists("$rol_date_file")) {

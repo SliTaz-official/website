@@ -73,6 +73,13 @@
 		<strong>Date - Title</strong>
 	<p></p>
 	</li> -->
+        <li><strong><a href="http://mirror.slitaz.org/iso/rolling/">SliTaz 5.0 Rolling release</a></strong> (weekly)
+                <span>- <?php
+                $rol_date_file = '/var/cache/slitaz/website/rolling-date.txt';
+                if (file_exists("$rol_date_file")) {
+                        $rol_date = file_get_contents("/var/cache/slitaz/website/rolling-date.txt");
+                        print $rol_date;
+                } ?></span></li>
 
 	<li id="d20120410">
 		<strong>10 Apr 2012 - SliTaz GNU/Linux 4.0</strong>

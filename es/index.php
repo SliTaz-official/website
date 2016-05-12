@@ -59,7 +59,7 @@ podrás seguir las últimas noticias, commits y tweets.</p>
 	<p></p>
 	</li> -->
 
-        <li><strong><a href="http://mirror.slitaz.org/iso/rolling/">SliTaz Rolling release</a></strong> (weekly)  
+        <li><strong><a href="http://mirror.slitaz.org/iso/rolling/">SliTaz 5.0 Rolling release</a></strong> (weekly)  
                 <span>- <?php
                 $rol_date_file = '/var/cache/slitaz/website/rolling-date.txt';
                 if (file_exists("$rol_date_file")) {
