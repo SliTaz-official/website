@@ -74,7 +74,7 @@ include("../../lib/html/header.html");
 
 <p>
 	SliTaz è attualmente offerto da fonti Francesi come
-	<a href="http://www.ads-lu.com/" target="_blank">ADS</a>, and
+	<a href="http://www.ads-lu.com/" target="_blank" rel="noopener noreferrer">ADS</a>, and
 	<a href="http://www.tuxfamily.org/">TuxFamily</a>. Da fonti Svizzere
 	come <a href="http://mirror.switch.ch/">SWITCHmirror</a>,
 	Cinesi come LupaWorld, Americane come
@@ -163,7 +163,7 @@ una versione stabile.
 
 <p>
 	Rolling flavors can be found <a href="http://mirror.slitaz.org/iso/rolling/"
-	target="_blank">on mirror</a>.
+	target="_blank" rel="noopener noreferrer">on mirror</a>.
 </p>
 
 <!-- p>

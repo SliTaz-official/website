@@ -65,7 +65,7 @@ include("../../lib/lang.php");
 	O SliTaz possui mirrors no Brasil oferecido pelo
 	<a href="http://www.c3sl.ufpr.br/">Centro de Computação Científica
 	e Software Livre</a> (Agradecimentos a Carlos Carvalho, da UFPR),
-	na França, por <a href="http://www.ads-lu.com/" target="_blank">ADS</a>
+	na França, por <a href="http://www.ads-lu.com/" target="_blank" rel="noopener noreferrer">ADS</a>
 	e <a href="http://www.tuxfamily.org/">TuxFamily</a>. Na Suiça por
 	<a href="http://mirror.switch.ch/">SWITCHmirror</a> e na China por
 	LupaWorls.
@@ -151,7 +151,7 @@ include("../../lib/lang.php");
 
 <p>
 	Rolling flavors can be found <a href="http://mirror.slitaz.org/iso/rolling/"
-	target="_blank">on mirror</a>.
+	target="_blank" rel="noopener noreferrer">on mirror</a>.
 </p>
 
 <!-- p>

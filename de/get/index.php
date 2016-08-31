@@ -144,7 +144,7 @@ Internetanbindung installieren können.
 
 <p>
 	Rolling flavors can be found <a href="http://mirror.slitaz.org/iso/rolling/"
-	target="_blank">on mirror</a>.
+	target="_blank" rel="noopener noreferrer">on mirror</a>.
 </p>
 
 <!-- div class="box-dl"><p>

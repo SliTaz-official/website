@@ -149,25 +149,25 @@ Magazinen berichtet (Auswahl).
 <h3>1.0 - March 2008</h3>
 
 <ul>
-	<li><a href="http://distrowatch.com/weekly.php?issue=20080331" target="_blank"
+	<li><a href="http://distrowatch.com/weekly.php?issue=20080331" target="_blank" rel="noopener noreferrer"
 		>Distrowatch</a>- Von Ladislav Bodnar.</li>
-	<li><a href="http://www.junauza.com/2008/03/slitaz-gnulinux-smallest-desktop-distro.html" target="_blank"
+	<li><a href="http://www.junauza.com/2008/03/slitaz-gnulinux-smallest-desktop-distro.html" target="_blank" rel="noopener noreferrer"
 		>Tech Source</a> - Von Jun Auza.</li>
-	<li><a href="http://beranger.org/index.php?page=diary&amp;2008/03/31/07/04/42-a-quick-look-over-slitaz-1-0" target="_blank"
+	<li><a href="http://beranger.org/index.php?page=diary&amp;2008/03/31/07/04/42-a-quick-look-over-slitaz-1-0" target="_blank" rel="noopener noreferrer"
 		>Planet Béranger</a> - Von Béranger.</li>
-	<li><a href="http://kmandla.wordpress.com/2008/04/02/slitaz-10-on-450mhz-k6-2-256mb/" target="_blank"
+	<li><a href="http://kmandla.wordpress.com/2008/04/02/slitaz-10-on-450mhz-k6-2-256mb/" target="_blank" rel="noopener noreferrer"
 		>K.Mandla Blog</a> - Von K.Mandla.</li>
-	<li><a href="http://reddevil62-techhead.blogspot.com/2008/04/damn-minuscule-linux-first-look-at.html" target="_blank"
+	<li><a href="http://reddevil62-techhead.blogspot.com/2008/04/damn-minuscule-linux-first-look-at.html" target="_blank" rel="noopener noreferrer"
 		>Red Devil's Tech Blog</a> - Von Steve Lawson.</li>
-	<li><a href="http://www.linuxinfusion.com/slitaz-a-light-weight-gnulinux-distribution" target="_blank"
+	<li><a href="http://www.linuxinfusion.com/slitaz-a-light-weight-gnulinux-distribution" target="_blank" rel="noopener noreferrer"
 		>Linux Infusion</a> - Von Moparx.</li>	
-	<li><a href="http://www.insidesocal.com/click/2008/06/a-second-look-at-slitaz-10.html" target="_blank"
+	<li><a href="http://www.insidesocal.com/click/2008/06/a-second-look-at-slitaz-10.html" target="_blank" rel="noopener noreferrer"
 		>Dailynews Blog</a> - Von Steven Rosenberg.</li>	
-	<li><a href="http://www.linux.com/feature/140573" target="_blank"
+	<li><a href="http://www.linux.com/feature/140573" target="_blank" rel="noopener noreferrer"
 		>Linux.com</a> - Von Dennis L. Ericson.</li>
-	<li><a href="http://www.freesoftwaremagazine.com/columns/slitaz_live_cd_small_beautifully_marked" target="_blank"
+	<li><a href="http://www.freesoftwaremagazine.com/columns/slitaz_live_cd_small_beautifully_marked" target="_blank" rel="noopener noreferrer"
 		>Free Software Magazine</a> - Von Gary Richmond.</li>
-	<li><a href="http://www.linux-magazine.com/issues/2008/97/slitaz" target="_blank"
+	<li><a href="http://www.linux-magazine.com/issues/2008/97/slitaz" target="_blank" rel="noopener noreferrer"
 		>Linux Pro Magazine</a> - Von Dimitri Popov.</li>
 </ul>
 <p>

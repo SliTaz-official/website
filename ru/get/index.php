@@ -139,7 +139,7 @@ include("../../lib/lang.php");
 
 <p>
 	Различные редакции Rolling можно найти <a href="http://mirror.slitaz.org/iso/rolling/"
-	target="_blank">на зеркале</a>.
+	target="_blank" rel="noopener noreferrer">на зеркале</a>.
 </p>
 
 <!-- p>Загрузочный образ DVD со всеми доступными пакетами версии «Cooking»

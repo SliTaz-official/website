@@ -64,7 +64,7 @@ include("../../lib/lang.php");
 <p>
 	Un grand merci à l'équipe de <a href="http://www.tuxfamily.org/">TuxFamily</a>,
 	à <a href="http://mirror.switch.ch/">SWITCHmirror</a> et à
-	<a href="http://www.ads-lu.com/" target="_blank">ADS</a>
+	<a href="http://www.ads-lu.com/" target="_blank" rel="noopener noreferrer">ADS</a>
 	qui hébergent les miroirs principaux de SliTaz, en Suisse et en France, et
 	en Chine à <a href="http://mirror.lupaworld.com/">LupaWorld</a> :
 	les services sont de très haute qualité et sans vous, rien ne serait
@@ -157,7 +157,7 @@ include("../../lib/lang.php");
 
 <p>
 	Rolling flavors can be found <a href="http://mirror.slitaz.org/iso/rolling/"
-	target="_blank">on mirror</a>.
+	target="_blank" rel="noopener noreferrer">on mirror</a>.
 </p>
 
 <!-- p>

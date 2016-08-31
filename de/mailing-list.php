@@ -63,9 +63,9 @@ ein wenig Humor schadet niemandem.
 Die <em>Mailing Liste</em> verschickt und empfängt Mails. Das heißt, dass
 jedes eingetragenes Mitglied jede verschickte Mail empfängt und erhält.
 Die Nachrichten werden über die Mailing-Listen-Engine von
-<a href="http://www.tuxfamily.org/"  target="_blank">TuxFamily</a> versendet, welche
+<a href="http://www.tuxfamily.org/"  target="_blank" rel="noopener noreferrer">TuxFamily</a> versendet, welche
 von
-<a href="http://www.vhffs.org/"  target="_blank">VHFFS</a> unterstützt wird.
+<a href="http://www.vhffs.org/"  target="_blank" rel="noopener noreferrer">VHFFS</a> unterstützt wird.
 </p>
 
 <h4>Höflichkeit</h4>
