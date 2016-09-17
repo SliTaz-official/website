@@ -134,10 +134,10 @@ SliTaz Tools|slitaz-tools|4|$S/slitaz-boxes||applications
 |slitaz-tools||$S/slitaz-tools||
 |slitaz-tools||$S/tazbox||
 |slitaz-tools||$S/tazdrop||
-SSFS|ssfs|2|$S/server||data
+SSFS|ssfs|2|$S/ssfs-server||data
 |ssfs||$S/ssfs||
 TazBug|tazbug||$S||data
-TazLito|tazlito||$S/tazlito-wiz|$D|applications
+TazLito|tazlito||$S|$D|applications
 TazPanel|tazpanel||$S|$D|data
 TazPkg|tazpkg||$S|$D|applications
 TazUsb|tazusb|2|$S/tazusb|$D|applications
@@ -146,9 +146,10 @@ TazInst|tazinst|3|$S/installer||applications
 |tazinst||$S/slitaz-installer||
 |tazinst||$S/tazinst|$D|
 TazWeb|tazweb||$S|$D|data
+TazIRC|tazirc||$S||data
 CookUtils|cookutils||$S|$D|data
-SliTaz boot scripts|slitaz-boot-scripts||||applications
-SliTaz Configs|slitaz-configs|3|||rootfs/usr/share/applications
+SliTaz boot scripts|slitaz-boot-scripts||||usr/share/applications
+SliTaz Configs|slitaz-configs|3|$S||rootfs/usr/share/applications
 |slitaz-configs||||rootfs/etc/xdg/openbox
 |slitaz-configs||||rootfs/usr/share/webhome
 SliTaz Doc|slitaz-doc|||slitaz|applications"
