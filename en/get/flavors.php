@@ -13,28 +13,22 @@
 <?php
 include("../../config.php");
 include("../../lib/html/header.html");
+include("../../lib/html/nav.html"); 
+include("../../lib/lang.php"); 
 ?>
-
-<!-- Block -->
-<div id="block">
-	<?php include("../../lib/html/nav.en.html"); ?>
-	<!-- Information/image -->
-	<div id="block_info">
-		<h4>Download flavors</h4>
-		<p>
-			The system of LiveCD flavors is a simple means for the community 
-			to generate ISO images for certain tasks by offering a selection
-			of specific packages. There are two possibilities to create a 
-			flavor, use a flavor made by the community or create your own 
-			via a simple to use graphical interface.
-		</p>
-	</div>
-</div>
-
-<?php include("../../lib/lang.php"); ?>
 
 <!-- Content -->
 <div id="content">
+
+<h2>Download flavors</h2>
+
+<p>
+	The system of LiveCD flavors is a simple means for the community 
+	to generate ISO images for certain tasks by offering a selection
+	of specific packages. There are two possibilities to create a 
+	flavor, use a flavor made by the community or create your own 
+	via a simple to use graphical interface.
+</p>
 
 <h2>LiveCD ISO Image to taste</h2>
 
