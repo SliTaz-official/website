@@ -10,21 +10,12 @@
 </head>
 <body>
 
-<?php include("../../lib/html/header.html"); ?>
-
-<!-- Block -->
-<div id="block">
-	<?php include("../../lib/html/nav.de.html"); ?>
-	<!-- Information/image -->
-	<div id="block_info">
-		<h4>Flavors Downloaden</h4>
-		<p>
-			Get a LiveCD of your taste
-		</p>
-	</div>
-</div>
-
-<?php include("../../lib/lang.php"); ?>
+<?php
+include("../../config.php");
+include("../../lib/html/header.html");
+include("../../lib/html/nav.de.html");
+include("../../lib/lang.php");
+?>
 
 <!-- Content -->
 <div id="content">

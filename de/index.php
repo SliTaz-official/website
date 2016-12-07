@@ -13,50 +13,34 @@
 <?php
 include("../config.php");
 include("../lib/html/header.html");
+include("../lib/html/nav.de.html");
+include("../lib/lang.php");
 ?>
 
-<!-- Block -->
-<div id="block">
-	<?php include("../lib/html/nav.de.html"); ?>
-	<!-- Information/image -->
-	<div id="block_info">
-		<h4>Startseite</h4>
-		<p>
-			SliTaz ist eine minimale, freie GNU/Linux Distribution.
-			SliTaz's CD-Image wird nie eine Größe von 35 MB übersteigen
-			- bei einer sinnvollen Auswahl nützlicher Software.
-			<a href="about/">Mehr erfahren...</a>
-		</p>
-		<div class="button" style="text-align: left; margin-top: 15px;">
-			<img src="/images/download-30.png" />
-			<?php echo "<a href='$stable_iso'>SliTaz $stable_ver</a>
-				<a href='$cooking_iso'>SliTaz $cooking</a>"; ?>
-		</div>
-	</div>
-</div>
-
-<?php include("../lib/lang.php"); ?>
-
 <!-- Content -->
-<div id="content">
+<section id="content">
 
 <div class="box-up">
-	
-	<a href="http://www.gofundme.com/slitaz2014?utm_medium=wdgt"
-		title="Visit this page now."><img src="../images/gofundme.png"></a>
-	<a href="http://www.gofundme.com/slitaz2014?utm_medium=wdgt">
-		Check out our new SliTaz 2014 fundraising!</a>
-	
 	<p>
 		SliTaz German website needs a new maintainer and contributors. You
 		can contact us on the
-		<a href="http://scn.slitaz.org/groups/i18n/">i18n group</a>.
+		<a href="mailing-list.php">mailing list</a>.
 	</p>
-
 </div>
 
-<div class="news">
-	
+<!-- Featured sponsor -->
+<div id="sponsor">
+	<p><strong>Featured sponsor</strong></p>
+	<?php include("../lib/rand-sponsor.php"); ?>
+	<p><a href="/en/sponsor/">Become a sponsor</a></p>
+</div>
+
+<!--
+    SliTaz news starting.
+-->
+
+<!-- We just keep the last 3 web site news -->
+<div class="news" style="margin-right: 220px;">
 
 <h2>Neuigkeiten</h2>
 
@@ -64,45 +48,13 @@ include("../lib/html/header.html");
 	<!-- <li><strong>Date - Title</strong>
 	<p></p>
 	</li> -->
-        <li><strong><a href="http://mirror.slitaz.org/iso/rolling/">SliTaz 5.0 Rolling release</a></strong> (weekly)  
-                <span>- <?php
-                $rol_date_file = '/var/cache/slitaz/website/rolling-date.txt';
-                if (file_exists("$rol_date_file")) {
-                        $rol_date = file_get_contents("/var/cache/slitaz/website/rolling-date.txt");
-                        print $rol_date;
-                } ?></span></li>
-	<li id="d20140216">
-		<strong>16. Februar 2014 - Neue Cooking-Version (20140216)</strong>
-	<p>
- 	Das SliTaz-Team ist stolz, die Veröffentlichung einer neuen Cooking
-	Release bekannt geben zu können, die den Weg zu SliTaz 5.0 ebnen wird.
-	Diese neue Cooking Release enthält fast zwei Jahre Arbeit und hat ein
-	unglaubliches Änderungsprotokoll. Alle unsere hausgemachten Werkzeuge
-	wurden verbessert und neue großartige Tools wie "frugal" oder
-	"decode" hinzufügt. Wir konzentrierten unsere Arbeit auf die 
-	Desktop-Integration um die Anwenderfreundlichkeit zu und verbesserten 
-	die Konfiguration des Linux-Kernels (3.2.53).
-	</p>
-	<p>
-	Wir haben die Paketlisten erneuert, alle vorhandenen Pakete
-	aktualisiert und wir eine Reihe von neuen hinzugefügt um mehr als
- 	4200 Pakete in der Cooking-Relase Datenbank zu erreichen.
-	Viele Arbeit wurde auch an dem SliTaz Installationsassistent getan
-	der nun ein neues Ncurses/Text-Frontend bereitstellt.
-	</p>
-	<p>
-	Die LiveCD wird jetzt vor dem Booten nach den Spracheinstellungen
-	fragen, so dass Sie als Benutzer wird direkt auf den Desktop bekommen, 
-	nachdem alle Boot-Skripte ausgeführt wurden. Die Größe des ISO-Image 
-	ist etwas für eine bessere hadware Unterstützung und neue Funktionen 
-	gewachsen. Sie können das ISO-Image von folgendem SliTaz Mirror herunterladen:
-	<a href="http://mirror.slitaz.org/iso/cooking/slitaz-cooking.iso"
-		>slitaz-cooking.iso</a>
-	[ <a href="http://mirror.slitaz.org/iso/cooking/slitaz-cooking.md5"
-		>md5</a> ]
-	</p>
-	</li>
-
+    <li><strong><a href="http://mirror.slitaz.org/iso/rolling/">SliTaz 5.0 Rolling release</a></strong> (weekly)  
+            <span>- <?php
+            $rol_date_file = '/var/cache/slitaz/website/rolling-date.txt';
+            if (file_exists("$rol_date_file")) {
+                    $rol_date = file_get_contents("/var/cache/slitaz/website/rolling-date.txt");
+                    print $rol_date;
+            } ?></span></li>
 	<li>Neuigkeiten Archiv: <a href="news/">2007-2009</a></li>
 </ul>
 

@@ -10,36 +10,23 @@
 </head>
 <body>
 
-<?php 
+<?php
 include("../../config.php");
 include("../../lib/html/header.html");
+include("../../lib/html/nav.de.html");
+include("../../lib/lang.php");
 ?>
-
-<!-- Block -->
-<div id="block">
-	<?php include("../../lib/html/nav.de.html"); ?>
-	<!-- Information/image -->
-	<div id="block_info">
-		<h4>Downloadsektion</h4>
-		<p>
-			Laden Sie die neueste stabile Version für deren Produktion 
-			oder einem festen Desktop-Umgebung. Verwenden Sie das Kochen
-			Version zu testen und uns bei der Verbesserung der Distribution.
-		</p>
-		<div class="button">
-			Quick Download:
-			<?php echo "<a href='$stable_iso'>SliTaz $stable_ver</a>
-				<a href='$mirror/rolling/slitaz-rolling.iso'>SliTaz Rolling</a>"; ?>
-		</div>
-	</div>
-</div>
-
-<?php include("../../lib/lang.php"); ?>
 
 <!-- Content -->
 <div id="content">
 
 <h2>Download SliTaz</h2>
+
+<p>
+	Laden Sie die neueste stabile Version für deren Produktion 
+	oder einem festen Desktop-Umgebung. Verwenden Sie das Kochen
+	Version zu testen und uns bei der Verbesserung der Distribution.
+</p>
 
 <ul>
 	<li><a href="#stable">Live-CD Stabile Version</a> -

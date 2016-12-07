@@ -10,31 +10,27 @@
 </head>
 <body>
 
-<?php include("../../lib/html/header.html"); ?>
-
-<!-- Block -->
-<div id="block">
-	<?php include("../../lib/html/nav.de.html"); ?>
-	<!-- Information/image -->
-	<div id="block_info">
-		<h4>Über SliTaz</h4>
-		<p>
-			Small, fast, stable and easy to use!
-		</p>
-		<ul>
-			<li><a href="#intro">Introduction</a></li>
-			<li><a href="#overview">Steckbrief</a></li>
-			<li><a href="#website">Web site &amp; i18n</a></li>
-			<li><a href="#reviews">Reviews</a></li>
-			<li><a href="/en/asso/">Association (en)</a></li>
-		</ul>
-	</div>
-</div>
-
-<?php include("../../lib/lang.php"); ?>
+<?php
+include("../../config.php");
+include("../../lib/html/header.html");
+include("../../lib/html/nav.de.html");
+include("../../lib/lang.php");
+?>
 
 <!-- Content -->
 <div id="content">
+
+<h2>Über SliTaz</h2>
+<p>
+	Small, fast, stable and easy to use!
+</p>
+<ul>
+	<li><a href="#intro">Introduction</a></li>
+	<li><a href="#overview">Steckbrief</a></li>
+	<li><a href="#website">Web site &amp; i18n</a></li>
+	<li><a href="#reviews">Reviews</a></li>
+	<li><a href="/en/asso/">Association (en)</a></li>
+</ul>
 
 <h2 id="intro">Introduction</h2>
 
