@@ -10,33 +10,24 @@
 </head>
 <body>
 
-<?php include("../../lib/html/header.html"); ?>
-
-<!-- Block -->
-<div id="block">
-	<?php include("../../lib/html/nav.de.html"); ?>
-	<!-- Information/image -->
-	<div id="block_info">
-		<h4>Entwicklung</h4>
-		<p>
-			SliTaz is a community based distribution made by many
-			people all over the world and everyone is welcome to help
-			and get involve in the project.
-		</p>
-		<p>
-			<img src="/images/users.png" alt="[ ]" />
-			<a href="http://scn.slitaz.org/">Join us on SCN</a> and
-			the <a href="../mailing-list.php">mailing list</a>
-		</p>
-	</div>
-</div>
-
-<?php include("../../lib/lang.php"); ?>
+<?php
+include("../../config.php");
+include("../../lib/html/header.html");
+include("../../lib/html/nav.de.html");
+include("../../lib/lang.php");
+?>
 
 <!-- Content -->
 <div id="content">
 
 <h2>Entwicklung von SliTaz</h2>
+
+<p>
+	SliTaz is a community based distribution made by many people all over 
+	the world and everyone is welcome to help and get involve in the project.
+	<a href="http://scn.slitaz.org/">Join us on SCN</a> and the 
+	<a href="../mailing-list.php">mailing list</a>
+</p>
 
 <ul>
 	<li><a href="#repos">Mercurial Repositories.</a></li>
@@ -150,12 +141,8 @@ wieder rückgängig gemacht werden.
 <h2 id="pkgs">Tazpkg Pakete</h2>
 
 <p>
-Tazpkg Pakete werden bei SliTaz automatisch via Tazwok und einem "Rezept"
-generiert. Im Wiki entsteht gerade eine Referenz von
-<a href="http://hg.slitaz.org/tazwok/raw-file/tip/doc/tazwok.en.html">Tazwok</a>, den
-<a href="http://doc.slitaz.org/en:cookbook:receipts">Rezepten</a> sowie ein
-<a href="http://doc.slitaz.org/en:cookbook:wok">Manual</a>.
-Kenntnisse dieser Anleitungen werden vorrausgesetzt.
+Tazpkg Pakete werden bei SliTaz automatisch via Cookutils und einem "Rezept"
+generiert.
 </p>
 <p>
 Zuerst zur Auswahl des Paketes. Es sollen nur Pakete angeboten werden,
