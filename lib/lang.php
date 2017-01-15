@@ -13,29 +13,29 @@ if (!empty($addr[3]))
 
 echo "<!-- " . $_SERVER['REQUEST_URI'] . " : " . $cur . " : " . $page . " -->\n";
 
-$native  = array ("bs"=>"Bosanski", "da"=>"Dansk", "de"=>"Deutsch", "en"=>"English", "es"=>"Español", "fr"=>"Français", "id"=>"Indonesian", "it"=>"Italiano", "pt"=>"Português", "ru"=>"Русский", "cn"=>"中文");
+$native  = array ("bs"=>"Bosanski", "da"=>"Dansk", "de"=>"Deutsch", "en"=>"English", "es"=>"Español", "fr"=>"Français", "id"=>"Indonesian", "it"=>"Italiano", "pt"=>"Português", "ru"=>"Русский", "cn"=>"中文", "ja"=>"日本語");
 
 switch($page)
 {
 	case "mailing-list":
 		$url  = "/LANG/mailing-list.php";
-		$lang = "cn da de en es fr id it pt ru";
+		$lang = "cn da de en es fr id it ja pt ru";
 		break;
 	case "support":
 		$url  = "/LANG/support.php";
-		$lang = "en fr pt";
+		$lang = "en fr ja pt";
 		break;
 	case "search":
 		$url  = "/LANG/search.php";
-		$lang = "cn da de en es fr pt ru";
+		$lang = "cn da de en es fr ja pt ru";
 		break;
 	case "about":
 		$url  = "/LANG/about/";
-		$lang = "bs cn da de en es fr pt ru";
+		$lang = "bs cn da de en es fr ja pt ru";
 		break;
 	case "artwork":
 		$url  = "/LANG/artwork/";
-		$lang = "cn da de en es fr pt ru";
+		$lang = "cn da de en es fr ja pt ru";
 		break;
 	case "events":
 		$url  = "/LANG/about/events.php";
@@ -43,7 +43,7 @@ switch($page)
 		break;
 	case "screenshots":
 		$url  = "/LANG/artwork/screenshots.php";
-		$lang = "cn da de en fr pt ru";
+		$lang = "cn da de en fr ja pt ru";
 		break;
 	case "asso":
 		$url  = "/LANG/asso/";
@@ -107,15 +107,15 @@ switch($page)
 		break;
 	case "packages":
 		$url  = "/LANG/packages/";
-		$lang = "cn da de en es fr it pt ru";
+		$lang = "cn da de en es fr it ja pt ru";
 		break;
 	case "sponsor":
 		$url  = "/LANG/sponsor/";
-		$lang = "bs en pt ru fr";
+		$lang = "bs en ja pt ru fr";
 		break;
 	default:
 		$url  = "/LANG/";
-		$lang = "bs cn da de en es fr id it pt ru";
+		$lang = "bs cn da de en es fr id it ja pt ru";
 		break;
 }
 
