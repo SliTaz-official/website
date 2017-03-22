@@ -25,7 +25,7 @@ include("../../lib/lang.php");
 <p>
 	Die offizielle SliTaz-Dokumentation befindet sich im Wiki der
 	SliTaz-Nutzergemeinschaft. Handbücher und eine Einführung werden mit jedem
-	SliTaz-Direktstart-Datentrager ausgeliefert und sind über das Menü
+	SliTaz-Direktstart-Datenträger ausgeliefert und sind über das Menü
 	"Dokumentation" zugänglich.
 </p>
 <ul>
@@ -61,7 +61,7 @@ include("../../lib/lang.php");
 	<a href="http://doc.slitaz.org/de:scratchbook:start">Konzeptbuch der Nutzergemeinschaft</a>
 </p>
 <p>
-	Das <a href="scratchbook/">originale SliTaz-Konzeptbuch</a> -
+	Das <a href="../en/doc/scratchbook/">originale SliTaz-Konzeptbuch</a> -
 	beschreibt die Entstehungsphasen der ersten SliTaz-Distribution, 
 	beginnend mit den Anweisungen für die Übersetzung des Linux-Kerns, die Installation
 	des Grafik-Servers (Xvesa) und von GTK-Anwendungen usw. Hier sind auch aufwendige Techniken
@@ -100,7 +100,7 @@ zugreifbar.
 	}
 	foreach ($relnotes as $release) {
 		print "	<li><a href=\"".$release["file"]."\">SliTaz GNU/Linux ".$release["release"]." -\n";
-		print "		Notes de publication</a></li>\n";
+		print "		Freigabemitteilung</a></li>\n";
 	}
 ?>
 </ul>
