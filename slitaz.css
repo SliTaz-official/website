@@ -9,7 +9,7 @@ html {
 body {
 	background: #ffffff;
 	color: black;
-	font: 13px sans-serif, vernada, arial;
+	font: 100% sans-serif, vernada, arial;
 	margin: 0;
 	min-width: 780px;
 	height: 100%;
@@ -158,7 +158,7 @@ pre {
  * */
 
 nav {
-	font-size: 120%;
+	font-size: 96%;
 	min-height: 100px;
 	background: #ddd; 
 	padding: 56px 6% 0;
