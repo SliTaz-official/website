@@ -22,7 +22,7 @@ function updated() {
 
 // Read RSS Feed
 function get_feed($feed) {
-	$cache = '/var/cache/slitaz/website';
+	$cache = '../cache';
 	$entries = 4;
 	// no follow all links, but hg commits
 	if ($feed == "wok.xml")
@@ -56,7 +56,7 @@ function get_feed($feed) {
 
 // Read Blog RSS Feed
 function get_feed_blog($feed) {
-	$cache = '/var/cache/slitaz/website';
+	$cache = '../cache';
 	$entries = 4;
 	// have the page displayed even if any xml file
 	if ( ! file_exists("$cache/$feed")) {
@@ -88,7 +88,7 @@ function get_feed_blog($feed) {
 
 // Read Forum Feed
 function get_feed_forum($feed) {
-	$cache = '/var/cache/slitaz/website';
+	$cache = '../cache';
 	$entries = 4;
 	// have the page displayed even if any xml file
 	if ( ! file_exists("$cache/$feed")) {
