@@ -23,15 +23,15 @@ include("../lib/lang.php");
 <div class="box-up">
 	<p>
 		Die deutsche Internetpräsenz von SliTaz braucht einen neuen Betreuer und Mitwirkende.
-		Interessenten können sich über die <a href="mailing-list.php">Mailing-Liste</a> melden.
+		Interessenten können sich über die <a href="mailing-list.php">„Mailing-Liste“</a> melden.
 	</p>
 </div>
 
 <!-- Featured sponsor -->
 <div id="sponsor">
-	<p><strong>Featured sponsor</strong></p>
+	<p><strong>besondere Förderer</strong></p>
 	<?php include("../lib/rand-sponsor.php"); ?>
-	<p><a href="../en/sponsor/">Become a sponsor</a></p>
+	<p><a href="../en/sponsor/">Fördern Sie uns</a></p>
 </div>
 
 <!--
@@ -100,20 +100,13 @@ include("../lib/lang.php");
 		<?php get_feed("wok.xml"); ?>
 	</div>
 	<p class="activity_more">
-		<a href="http://hg.slitaz.org/">Mehr Aufträge</a>
+		<a href="http://hg.slitaz.org/">Weitere Aufträge</a>
 	</p>
 </div>
 
-<!-- SCN blog posts 
-<h2>Blog Posts</h2>
-
-<div class="news">
-	<?php get_feed_blog("blog.xml"); ?>
-</div>-->
-
 <!-- Twitter  -->
 <div id="twitter">
-<a class="twitter-timeline"  href="https://twitter.com/slitaz"
+<a class="twitter-timeline"  href="https://twitter.com/slitaz" 
 	data-widget-id="420830244551938048">Tweets bei @slitaz</a>
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 </div>
@@ -129,7 +122,7 @@ include("../lib/lang.php");
 	<a href="http://scn.slitaz.org/">„SliTaz Community Network“</a> mitwirken.
 </p>
 <p>
-	Sie können auch ein offizieller Förderer werden, indem Sie eine monatlische Spende leisten oder
+	Sie können auch ein offizieller Förderer werden, indem Sie eine monatliche Spende leisten oder
 	uns mit Hardware oder Rechnerleistung versorgen.
 	<a href="../en/sponsor/">Weitere Informationen</a>
 </p>
@@ -140,8 +133,8 @@ include("../lib/lang.php");
 
 <p>
 	Sie können uns helfen, indem Sie SliTaz noch bekannter machen.
-	„Bloggen“ oder „Tweeten“ Sie diese Seite, teilen Sie sie und reden Sie über das Projekt. SliTaz
-	ist auch gesellig, Sie können beitreten und Beiträge jeder Art liefern über das
+	„Bloggen“ oder „tweeten“ Sie diese Seite, teilen Sie sie und reden Sie über das Projekt.
+	SliTaz ist auch gesellig, Sie können beitreten und Beiträge jeder Art liefern über das
 	<a href="http://scn.slitaz.org/">„SliTaz Community Network“</a>,
 	die offizielle SliTaz Facebook-Seite „liken“ und mitarbeiten!
 </p>
@@ -151,9 +144,9 @@ include("../lib/lang.php");
 <h2>Internationalisierung</h2>
 
 <p>
-	Die SliTaz website ist in mehreren Sprachen vorhanden und wird vom
+	Die SliTaz-Internetpräsenz liegt in mehreren Sprachen vor und wird vom
 	<a href="/i18n.php">Internationalisierungsteam</a> (i18n) betreut. Hier wird viel Mithilfe
-	benötigt. Daher ist jeder willkommen, der beitragen möchte, dass die website auch in seine
+	benötigt. Daher ist jeder willkommen, der beitragen möchte, dass die „website“ auch in seine
 	Muttersprache übersetzt wird.
 </p>
 
