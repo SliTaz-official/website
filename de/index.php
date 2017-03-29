@@ -3,16 +3,16 @@
 <head>
 	<meta charset="utf-8"/>
 	<title>SliTaz GNU/Linux (de)</title>
-	<meta name="description" content="SliTaz GNU/Linux LiveCD"/>
+	<meta name="description" content="SliTaz GNU/Linux German Website"/>
 	<meta name="keywords" lang="en" content="System, free, gnu, linux, software opensource, livecd LINUX in RAM"/>
-	<meta name="author" content="F Steiner (Sevala), François (oui)"/>
+	<meta name="author" content="F Steiner (Sevala), François (oui), HGT"/>
 	<?php include("../lib/html/meta-link.html"); ?>
 </head>
 <body>
 
 <?php
 include("../config.php");
-include("../lib/html/header.html");
+include("../lib/html/header.de.html");
 include("../lib/html/nav.de.html");
 include("../lib/lang.php");
 ?>
@@ -22,9 +22,8 @@ include("../lib/lang.php");
 
 <div class="box-up">
 	<p>
-		SliTaz German website needs a new maintainer and contributors. You
-		can contact us on the
-		<a href="mailing-list.php">mailing list</a>.
+		Die deutsche Internetpräsenz von SliTaz braucht einen neuen Betreuer und Mitwirkende.
+		Interessenten können sich über die <a href="mailing-list.php">Mailing-Liste</a> melden.
 	</p>
 </div>
 
@@ -32,7 +31,7 @@ include("../lib/lang.php");
 <div id="sponsor">
 	<p><strong>Featured sponsor</strong></p>
 	<?php include("../lib/rand-sponsor.php"); ?>
-	<p><a href="/en/sponsor/">Become a sponsor</a></p>
+	<p><a href="../en/sponsor/">Become a sponsor</a></p>
 </div>
 
 <!--
@@ -42,23 +41,39 @@ include("../lib/lang.php");
 <!-- We just keep the last 3 web site news -->
 <div class="news" style="margin-right: 220px;">
 
-<h2>Neuigkeiten</h2>
+<h2>Die letzten Freigaben</h2>
 
 <ul>
-	<!-- <li><strong>Date - Title</strong>
-	<p></p>
-	</li> -->
-    <li><strong><a href="http://mirror.slitaz.org/iso/rolling/">SliTaz 5.0 Rolling release</a></strong> (weekly)  
+	<li><strong><a href="http://mirror.slitaz.org/iso/rolling/">SliTaz 5.0 wöchentliche Freigabe</a></strong>
             <span>- <?php
             $rol_date_file = '/var/cache/slitaz/website/rolling-date.txt';
             if (file_exists("$rol_date_file")) {
                     $rol_date = file_get_contents("/var/cache/slitaz/website/rolling-date.txt");
                     print $rol_date;
             } ?></span></li>
-	<li>Neuigkeiten Archiv: <a href="news/">2007-2009</a></li>
+	<li><strong><a href="../en/news/#d20150520">SliTaz 5.0 RC-3 Freigabe</a></strong>
+		<span>- 20. Mai 2015</span></li>
+	<li><strong><a href="../en/news/#d20140519">SliTaz 5.0 RC-2 Freigabe</a></strong>
+		<span>- 19. Mai 2014</span></li>
+	<li><strong><a href="../en/news/#d20140502">SliTaz 5.0 RC-1 Freigabe</a></strong>
+		<span>- 2. Mai 2014</span></li>
+	<li><strong><a href="../en/news/#d20140329">SliTaz Raspberry Pi Freigabe</a></strong>
+		<span>- 29. März 2014</span></li>
+	<li><strong><a href="../en/news/">Archiv der Freigabemitteilungen</a></strong>
+		<span>- 2007-2013</span></li>
 </ul>
 
 <!-- End of news -->
+</div>
+
+<h2>Sofort-Transfer</h2>
+
+<div class="dldiv">
+	<p><?php echo "<a class='dlbutton nav2' href='$stable_iso'>SliTaz $stable_ver</a>"; ?>
+	<!-- a class='dlbutton nav2' href='$cooking_iso'>SliTaz $cooking</a>"; ? -->
+	<a class='dlbutton navpi' href='http://arm.slitaz.org/rpi/'>SliTaz Raspberry Pi</a>
+	<a class='dlbutton nav2' href='http://mirror.slitaz.org/iso/rolling/slitaz-rolling.iso'>SliTaz wöchentlich 32 bit</a>
+	<a class='dlbutton nav1' href='http://mirror.slitaz.org/iso/rolling/slitaz-rolling-core64.iso'>SliTaz wöchentlich 64 bit</a></p>
 </div>
 
 <h2>Projekt-Aktivität</h2>
@@ -67,25 +82,13 @@ include("../lib/lang.php");
 
 <div class="activity">
 	<p>
-		<a href="http://scn.slitaz.org/?log"><img 
-			src="/images/users.png" alt="[ ]" /></a>
-		Community activity
-		<?php get_feed("scn.xml"); ?>
-	</div>
-	<p class="activity_more">
-		<a href="http://scn.slitaz.org/?log">Mehr Aktivität</a>
-	</p>
-</div>
-
-<div class="activity">
-	<p>
 		<a href="http://forum.slitaz.org/"><img 
 			src="/images/support.png" alt="[ ]" /></a>
-		Forum activity
+		Aktivität im Forum
 		<?php get_feed_forum("forum.xml"); ?>
 	</div>
 	<p class="activity_more">
-		<a href="http://forum.slitaz.org/">More support</a>
+		<a href="http://forum.slitaz.org/">Mehr Unterstützung</a>
 	</p>
 </div>
 
@@ -93,37 +96,77 @@ include("../lib/lang.php");
 	<p>
 		<a href="http://hg.slitaz.org/">
 			<img src="/images/development.png" alt="[ ]" /></a>
-		Latest commits in wok
+		Letzte Aufträge im wok
 		<?php get_feed("wok.xml"); ?>
 	</div>
 	<p class="activity_more">
-		<a href="http://hg.slitaz.org/">Mehr Commits</a>
+		<a href="http://hg.slitaz.org/">Mehr Aufträge</a>
 	</p>
 </div>
 
-<!-- SCN blog posts  -->
+<!-- SCN blog posts 
 <h2>Blog Posts</h2>
 
 <div class="news">
 	<?php get_feed_blog("blog.xml"); ?>
-</div>
+</div>-->
 
 <!-- Twitter  -->
 <div id="twitter">
-<a class="twitter-timeline"  href="https://twitter.com/slitaz"  data-widget-id="420830244551938048">Tweets by @slitaz</a>
+<a class="twitter-timeline"  href="https://twitter.com/slitaz"
+	data-widget-id="420830244551938048">Tweets bei @slitaz</a>
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 </div>
 
-<h3>Donate</h3>
+<h2>Unterstützen Sie uns</h2>
+
+<p>
+	Verbreiten Sie SliTaz weiter oder spenden Sie. Sie können „PayPal“
+	oder „Flattr micropayment“ verwenden, um uns finanziell zu unterstützen. Sie können über alle
+	möglichen Kanäle Ihre Meinung über das Projekt verbreiten und so dazu beitragen,
+	den Bekanntheitsgrad von SliTaz zu erhöhen. Sie können sich auch selbst an dem
+	Projekt beteiligen und in dem 
+	<a href="http://scn.slitaz.org/">„SliTaz Community Network“</a> mitwirken.
+</p>
+<p>
+	Sie können auch ein offizieller Förderer werden, indem Sie eine monatlische Spende leisten oder
+	uns mit Hardware oder Rechnerleistung versorgen.
+	<a href="../en/sponsor/">Weitere Informationen</a>
+</p>
 
 <?php include("../lib/html/donate.html"); ?>
 
-<h3>Twitter &amp; Facebook</h3>
+<h2>Verbreiten Sie SliTaz</h2>
+
+<p>
+	Sie können uns helfen, indem Sie SliTaz noch bekannter machen.
+	„Bloggen“ oder „Tweeten“ Sie diese Seite, teilen Sie sie und reden Sie über das Projekt. SliTaz
+	ist auch gesellig, Sie können beitreten und Beiträge jeder Art liefern über das
+	<a href="http://scn.slitaz.org/">„SliTaz Community Network“</a>,
+	die offizielle SliTaz Facebook-Seite „liken“ und mitarbeiten!
+</p>
 
 <?php include("../lib/html/social.html"); ?>
 
+<h2>Internationalisierung</h2>
+
+<p>
+	Die SliTaz website ist in mehreren Sprachen vorhanden und wird vom
+	<a href="/i18n.php">Internationalisierungsteam</a> (i18n) betreut. Hier wird viel Mithilfe
+	benötigt. Daher ist jeder willkommen, der beitragen möchte, dass die website auch in seine
+	Muttersprache übersetzt wird.
+</p>
+
+<h2>Bebilderung</h2>
+
+<p>
+	Sie können SliTaz-Symbole und Hintergrundbilder
+	im SliTaz-Designteam bearbeiten. Weitere Informationen in der
+	<a href="artwork/">Design-Abteilung</a>.
+</p>
+
 <!-- End of content  -->
-</div>
+</section>
 
 <?php include("../lib/html/footer.html"); ?>
 
