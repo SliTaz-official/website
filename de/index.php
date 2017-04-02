@@ -100,7 +100,7 @@ include("../lib/lang.php");
 		<?php get_feed("wok.xml"); ?>
 	</div>
 	<p class="activity_more">
-		<a href="http://hg.slitaz.org/">Weitere Aufträge</a>
+		<a href="http://hg.slitaz.org/?sort=lastchange">Weitere Aufträge</a>
 	</p>
 </div>
 

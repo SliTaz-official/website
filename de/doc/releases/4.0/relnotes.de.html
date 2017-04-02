@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset="UTF-8">
+	<title>SliTaz 4.0 Freigabemitteilung</title>
+	<link rel="shortcut icon" href="/favicon.ico">
+	<link rel="stylesheet" href="/relnotes.css">
+</head>
+<body>
+
+<!-- Header -->
+<div id="header">
+	<h1>SliTaz 4.0 Freigabemitteilung</h1>
+</div>
+
+<!-- Languages -->
+<div id="lang">
+	<a href="http://www.slitaz.org//i18n.php">
+		<img src="/images/locale.png" alt="Lokalisierung:" /></a>
+	<strong>de</strong>
+	<a href="/en/doc/releases/4.0/relnotes.en.html">en</a>
+	<a href="/fr/doc/releases/4.0/relnotes.fr.html">fr</a>
+	<a href="/pt/doc/releases/4.0/relnotes.pt_BR.html">pt_BR</a>
+	<a href="/ru/doc/releases/4.0/relnotes.ru.html">ru</a>
+</div>
+
+<!-- Content -->
+<div id="content">
+
+<h2>Freigabemitteilung</h2>
+
+<p>
+	Die neue, stabile SliTaz-Version 4.0 ist da! Modern, sicher, robust, schnell und flexibel
+	für Rechner im Produktivbetrieb.
+</p>
+
+<ul>
+	<li>Mehr als 6500 Übergaben im wok</li>
+	<li>Mehr als 1000 neue Pakete im Depot</li>
+	<li>Systemladen in weniger als 10 Sekunden auf den neuesten Rechnermodellen</li>
+	<li>Zentrale Konfiguration mit der neuen Steuerungsoberfläche</li>
+	<li>Neue Erstellungsprozedur, womit SliTaz-Pakete in einer Minute erstellt werden können</li>
+	<li>Nach jeder Paketerzeugung wird ein aktuelles ISO-Abbild erstellt</li>
+	<li>4 Distributionen in einem Direktstart-ISO-Abbild (Die Russischen Puppen)</li>
+	<li>Neue grafische Installations- und Aktualisierungsprozedur</li>
+	<li>Neue grafische Werkzeuge zum Erstellen von Direktstart-ISO-Abbildern</li>
+	<li>Verbessertes Starten über Netzwerk: <a href="http://boot.slitaz.org/" target="_blank" rel="noopener noreferrer">boot.slitaz.org</a></li>
+	<li><a href="http://doc.slitaz.org/de:releases:4.0:errata" target="_blank" rel="noopener noreferrer">Fehler in SliTaz 4.0</a>
+		im Wiki</li>
+</ul>
+
+<h3>Erstellungswerkzeuge</h3>
+<p>
+	SliTaz 4.0 wurde mit unseren neuen Erstellungswerkzeugen („cookutils”) erstellt. Wir
+	haben neue Werkzeuge erstellt, mit denen die etwa 3300 Paketabhängigkeiten
+	einfach und konsistent behandelt werden können. Damit können auch neue
+	SliTaz-Pakete schneller denn je erstellt werden.
+	Die Werkzeuge und die zugehörige Dokumentation sind in jedem SliTaz-System installiert.
+</p>
+
+<h3>Unterstützte Hardware</h3>
+<p>
+	SliTaz GNU/Linux 4.0 unterstützt die meisten Rechner, die auf i486- oder x86-Intel-kompatiblen
+	Prozessoren aufbauen. Für den Betrieb der „core”-Variante des Direktstart-ISO-Abbildes wird ein
+	Arbeitsspeicher von mindestens 192 MiB empfohlen. Das System der russischen Puppen erkennt die
+	Arbeitsspeichergröße und lädt bei kleinerem Arbeitsspeicher automatisch eine Variante mit geringeren
+	Arbeitsspeicheranforderungen.
+	Das Standard-Direktstart-ISO-Abbild enthält mit der „core”-Variante ein System mit voller Grafik-Funktionalität,
+	eine Variante nur mit GTK, eine Variante nur mit X-Windows und eine Variante, die nur Textmodus ermöglicht,
+	sich aber auch mit 48 MiB Arbeitsspeicher begnügt.
+</p>
+
+
+<h3>Direktstart-ISO-Abbilder</h3>
+<p>
+	Die „core”-Variante des SliTaz 4.0 Direktstart-ISO-Abbildes enthält tatsächlich vier
+	verschachtelte Varianten, wovon	diejenige verwendet wird, die die Hardware zuläßt.
+	Die Auswahl der Variante (anhand der Arbeitsspeichergröße) kann dem Urlader überlassen
+	werden, oder es kann manuell aus einem Menü eine Variante ausgewählt werden und die
+	Ladeoptionen können bearbeitet werden.
+	Aus dem Lademenü kann auch in den Kommandomodus gewechselt werden.
+	Es gibt auch die Möglichkeit, über das Netzwerk zu laden. Das Menü bietet auch Anwendungshilfen
+	und die Auswahl verschiedener Sprachen. Wenn wegen sehr kleiner Arbeitsspeichergröße das Laden
+	nur im Textmodus möglich ist, kann dennoch eine Installation auf Platte vorgenommen werden.
+</p>
+
+
+<h3>Installation</h3>
+<p>
+	Die Installation ist vollständig automatisiert und kann im Grafik- oder im Textmodus
+	durchgeführt werden. Die SliTaz-Installationsprozedur <code>tazinst</code> ermöglicht die
+	Installation auf Platte, egal ob SliTaz von einem optischen Datenträger, einem USB-Datenträger,
+	einem lokalen ISO-Abbild oder über das Netzwerk geladen wurde. Weitere Erläuterungen finden sich
+	in den Handbüchern.
+</p>
+<p>
+	Wenn eine Platte vor der Installation partitioniert werden soll, können Sie im Direktstartmodus
+	Gparted benutzen. Zum Abschluss der Installation kann auch der Urlader GRUB installiert werden,
+	der fast jedes Betriebssystem laden kann.
+	Dadurch kann SliTaz alternativ zu einem bereits installierten Betriebssystem wie etwa Windows
+	geladen werden.
+</p>
+
+
+<h3>Pakete</h3>
+<p>
+	Unter den 3350 Paketen im Depot von SliTaz 4.0 finden Sie alles um Ihren Rechner 
+	voll grafikfähig zu machen (e17), ein Grafikstudio mit Gimp oder Inkscape einzurichten oder
+	Videos zu bearbeiten, etwa mit Kino.
+	Zur Nutzung des weltweiten Netzes (www) stehen „instant messaging”, VoIP, email
+	und selbstverständlich Webbrowser zur Verfügung. Sie können Pakete suchen mit den Suchfunktionen von
+	Tazpkg und Tazpanel oder bei:
+	<a href="http://pkgs.slitaz.org/" target="_blank" rel="noopener noreferrer">http://pkgs.slitaz.org/</a>
+</p>
+<p>
+	Mit dem (standardmäßig nicht installierten) stabilen Paket LightTPD/PHP, können Sie
+	einen mächtigen Webserver betreiben, der CGI, Perl und Python unterstützt.
+	Apache und Squid sind auch verfügbar. Die Möglichkeit zur sicheren Nutzung des Internets über
+	das Tor-Netzwerk ist ebenfalls gegeben.
+</p>
+<p>
+	SliTaz kann natürlich auch als komplette Entwicklungsumgebung eingerichtet werden mit
+	dem C-Übersetzer GCC, der Geany-Entwicklungsumgebung, dem Versionskontrollsystem Mercurial und allen
+	für die Entwicklung benötigten Bibliotheken.
+</p>
+<p>
+	Pakete werden jetzt automatisch von dem Slitaz „Build Bot” erzeugt:
+	<a href="http://cook.slitaz.org/" target="_blank" rel="noopener noreferrer">http://cook.slitaz.org/</a>
+	und werden von „Cookutils” auf FHS-Konformität geprüft.
+</p>
+
+<h3>Administration</h3>
+<p>
+	TazPanel ist die neue Administrationsoberfläche für SliTaz 4.0.
+	Diese ist web-basiert, nutzt CGI, und kann im Design modifiziert werden. Sämtliche Systemverwaltungsarbeiten
+	können darüber abgewickelt werden, wie etwa Paketverwaltung, Benutzerverwaltung, Erstellung von
+	Direktstart-ISO-Abbildern und vieles mehr.
+	Auf jeder Seite findet sich eine kurze Beschreibung der möglichen Funktionen, die Ihnen die
+	Systemverwaltung erleichtern soll.
+	Sie erreichen die Administrationsoberfläche über das Menü „Systemwerkzeuge” oder über diesen
+	URL: <a href="http://tazpanel:82" target="_blank" rel="noopener noreferrer">http://tazpanel:82</a>
+</p>
+
+<h3>grafische Oberfläche</h3>
+<p>
+	Viel Aufmerksamkeit wurde auf die grundlegende grafische Oberfläche verwandt. Alle Anwendungen
+	sind gut integriert und es wurde ein besonderes SliTaz-Design erstellt (Symbole, Openbox, GTK).
+</p>
+<p>
+	Das SliTaz-Direktstart-ISO-Abbild verwendet standardmäßig die sehr genügsame und stabile
+	Fensterverwaltung Openbox.
+	Openbox kann mit ObConf sehr umfangreich im Erscheinungsbild verändert und konfiguriert werden.
+	Durch die Integration der Taskleiste „LXpanel” können dynamisch Menüs nach den
+	„Freedesktop”-Standards angeboten werden.
+	Das Prinzip ist, mit einem Klick ein kleines Menü zu erhalten, das eine Auswahl der
+	bevorzugten Anwendungen, an Fenstereffekten, an Werkzeugen zur Erstellung von Direktstart-ISO-Abbildern,
+	Openbox-Konfigurationsmöglichkeiten und Systemverwaltungsfunktionen bereitstellt.
+	Über das von „LXpanel” angebotene Menü können auch Applikationen gestartet werden.
+	Die Verwaltung der grafischen Oberfläche und der Symbole obliegt der Dateiverwaltung PCManFM.
+</p>
+<p>
+	Aus einem Direkstart-System oder einem installierten System können Sie auch die grafische Oberfläche
+	Enlightenment (e17) oder die Fensterverwaltungen XFCE, Pekwm, JWM oder DWM installieren.
+	Zwischen den unterschiedlichen Sitzungen können Sie dann im „SLiM”-Anmeldefenster mit der F1-Taste
+	wechseln. Zum Einstellen der Standard-Sitzung können sie <code>tazx</code> verwenden oder manuell
+	die Datei <code>~/.Xinitrc</code> bearbeiten.
+</p>
+
+<h3>SliTaz-Nutzergemeinschaft</h3>
+<p>
+	Seit Version 3.0 wurden alle Angebote geändert und verbessert und es wurde ein
+	„SliTaz community network” (SCN) eingerichtet, womit Nutzern, Mitwirkenden und
+	Entwicklern die Kommunikation und das Verbreiten von Ideen bezüglich SliTaz erleichtert werden soll.
+	Es besteht aus einer Anschlagtafel, wiki-basierter Dokumentation, einem Forum
+	und einem Fehlerverfolgungssystem. Damit können jetzt Entwickler, Designer, Autoren von Dokumentation,
+	Fehlermelder und jeder, der eien guten Vorschlag machen möchte, einander helfen,
+	sich beteiligen und zusammenarbeiten um das Projekt zu verbessern.
+	Das „SliTaz community network” (SCN), die Internetpräsenz und die Mercurial-Depots
+	verwenden alle dasselbe Layout um die Navigation zwischen ihnen zu erleichtern.
+</p>
+
+<h3>Versionsaktualisierung von 3.0 nach 4.0</h3>
+<p>
+	Die SliTaz GNU/Linux-Installationsprozedur enthält eine Funktion zum Aktualisieren
+	von einer Version 3.0 auf 4.0. Zur Versionsaktualisierung muss zunächst SliTaz von der stabilen Variante
+	des Direktstart-ISO-Abbildes geladen werden. Dann wird die Installationsprozedur gestartet (per Kommando
+	oder über Tazpanel), „upgrade” ausgewählt und die Partition angegeben, die das zu aktualisierende System
+	enthält. Die Installationsprozedur entfernt dann das existierende System und installiert alle Pakete neu,
+	wobei diejenigen, die nicht auf dem Datenträger vorhanden sind, von dem Depot transferiert werden.
+	Anschließend kann die neue SliTaz-Version (von Platte) geladen werden.
+</p>
+<p>
+	Die Versionsaktualisierung von 3.0 nach 4.0 kann auch mit <code>tazpkg</code> über die
+	Funktion <code>set-release</code> vorgenommen werden. Beachten Sie jedoch, dass dieses Verfahren
+	noch nicht erprobt ist und manuelle Eingriffe erfordern kann.
+</p>
+
+<h3>Menschen hinter dem Projekt</h3>
+<p>
+	SliTaz präsentiert sich stolz als internationales Gemeinschaftsprojekt.
+	Über die Welt verstreut wird entwickelt, die Website verwaltet und die Dokumentation geschrieben.
+	Von der Schweiz über Frankreich, Brasilien, Quebec, China,
+	Indien, Russland, Ukraine, England bis USA.
+</p>
+
+<ul>
+	<li>Christophe Lincoln</li>
+	<li>Pascal Bellard</li>
+	<li>Eric Joseph-Alexandre</li>
+	<li>Paul Issott</li>
+	<li>Claudinei Pereira</li>
+	<li>Dominique Corbex</li>
+	<li>Brenton Edgar Scott</li>
+	<li>Christopher Rogers</li>
+	<li>Aleksej Bobylev</li>
+	<li>Samuel Trassare</li>
+	<li>Christian Mesh</li>
+	<li>Alexander Medvedev</li>
+    <li>Richard Dunbar</li>
+	<li>...</li>
+</ul>
+
+<!-- End of content -->
+</div>
+
+<div id="footer">
+	Copyright © 2012 <a href="http://www.slitaz.org/" target="_blank" rel="noopener noreferrer">SliTaz GNU/Linux</a>
+</div>
+
+</body>
+</html>
