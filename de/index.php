@@ -31,7 +31,7 @@ include("../lib/lang.php");
 <div id="sponsor">
 	<p><strong>besondere Förderer</strong></p>
 	<?php include("../lib/rand-sponsor.php"); ?>
-	<p><a href="../en/sponsor/">Fördern Sie uns</a></p>
+	<p><a href="/de/sponsor/">Fördern Sie uns</a></p>
 </div>
 
 <!--
@@ -124,7 +124,7 @@ include("../lib/lang.php");
 <p>
 	Sie können auch ein offizieller Förderer werden, indem Sie eine monatliche Spende leisten oder
 	uns mit Hardware oder Rechnerleistung versorgen.
-	<a href="../en/sponsor/">Weitere Informationen</a>
+	<a href="/de/sponsor/">Weitere Informationen</a>
 </p>
 
 <?php include("../lib/html/donate.html"); ?>
