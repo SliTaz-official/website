@@ -47,7 +47,7 @@ switch($page)
 		break;
 	case "asso":
 		$url  = "/LANG/asso/";
-		$lang = "en es fr pt ru bs da";
+		$lang = "de en es fr pt ru bs da";
 		break;
 	case "statutes":
 		$url  = "/LANG/asso/statutes.php";
@@ -111,7 +111,7 @@ switch($page)
 		break;
 	case "sponsor":
 		$url  = "/LANG/sponsor/";
-		$lang = "bs en ja pt ru fr";
+		$lang = "bs de en ja pt ru fr";
 		break;
 	default:
 		$url  = "/LANG/";

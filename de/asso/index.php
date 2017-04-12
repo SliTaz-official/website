@@ -22,7 +22,7 @@ include("../../lib/lang.php");
 <!-- Featured sponsor -->
 <div id="sponsor">
 	<p><strong>besondere Förderer</strong></p>
-	<?php include("../lib/rand-sponsor.php"); ?>
+	<?php include("../../lib/rand-sponsor.php"); ?>
 	<p><a href="/de/sponsor/">Fördern Sie uns</a></p>
 </div>
 
@@ -74,7 +74,7 @@ PDF-Version kann jederzeit eingesehen werden:
 
 <p>
 SliTaz benutzt das Modell der offenen Entwicklung, wobei alle Arbeit 
-von einer Freiwilligengemeinschaft geleistet wird. Es ist unser Ziel, Beiträge zu
+von einer Freiwilligengemeinschaft geleistet wird. Es ist unser Ziel, deren Beiträge zu
 verbessern und besser zu organisieren. Weitere Punkte des Projekts, die wir
 professioneller gestalten möchten, sind: Benutzerfreundlichkeit, Unterstützung,
 Aktualisierungen, Wartungsdienste, technische Unterstützung und Verwaltungsteams.
