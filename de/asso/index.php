@@ -2,7 +2,7 @@
 <html lang="de">
 <head>
 	<meta charset="UTF-8">
-	<title>SliTaz - Gesellschaft</title>
+	<title>SliTaz - Verein</title>
 	<meta name="description" content="SliTaz GNU/Linux asso non-profit donate">
 	<meta name="keywords" lang="en" content="about slitaz, gnu, linux, mini distro, livecd">
 	<meta name="author" content="Christophe Lincoln, HGT">
@@ -26,12 +26,12 @@ include("../../lib/lang.php");
 	<p><a href="/de/sponsor/">Fördern Sie uns</a></p>
 </div>
 
-<h2 style="margin-right: 220px;">SliTaz-Gesellschaft</h2>
+<h2 style="margin-right: 220px;">SliTaz-Verein</h2>
 
 <p>
-	Die SliTaz GNU/Linux-Gesellschaft ist eine nicht-gewinnorientierte Körperschaft,
-	die das Projekt unterhält und verwaltet. Ihr Auftrag ist es, die Beständigkeit
-	des Projekts sicherzustellen und die Infrastruktur bereitzustellen.	
+	Der SliTaz GNU/Linux-Verein ist ein nicht wirtschaftlicher Verein,
+	der das Projekt unterhält und verwaltet. Seine Aufgabe ist es, den Bestand
+	des Projekts sicherzustellen und die Infrastruktur bereitzustellen.
 </p>
 		
 <ul>
@@ -46,19 +46,19 @@ include("../../lib/lang.php");
 <h3 id="overview">Übersicht</h3>
 
 <p>
-Die SliTaz GNU/Linux-Gesellschaft ist eine internationale Gesellschaft mit Sitz in
-der Schweiz, die dem Schweizer Zivilrecht unterliegt. Die Gesellschaft besteht 
-aus einem Komitee und Mitgliedern und finanziert das Projekt mitsamt der Gehälter.
-Die Mitglieder treffen sich einmal im Jahr bei einer Mitgliederversammlung und
-entscheiden beispielsweise über die Aktivitäten der Gesellschaft oder die
+Der SliTaz GNU/Linux-Verein ist ein internationaler Verein mit Sitz in
+der Schweiz nach den Artikeln 60 ff. des Schweizerischen Zivilgesetzbuches. Der Verein besteht 
+aus dem Vorstand und den Mitgliedern; er finanziert das Projekt mitsamt der Gehälter.
+Die Mitglieder treffen sich einmal im Jahr bei einer Vereinsversammlung und
+entscheiden beispielsweise über die Aktivitäten des Vereins oder die
 Mitgliedsbeiträge. Jedes Mitglied ist stimmberechtigt bei individuellen Vorschlägen und
-darf die Hardware (inklusive Datenträger, T-shirts) der Gesellschaft benutzen um eine
+darf die Hardware (inklusive Datenträger, T-shirts) des Vereins benutzen, um eine
 Arbeitsgruppe zur Organisation von Veranstaltungen einzurichten.
 </p>
 <p>
 Das Projekt erreicht immer häufiger professionelle Ausmaße, womit auch die
-Anforderungen entsprechend steigen, weshalb die Gründung der Gesellschaft als
-Notwendigkeit angesehen wurde. Wir haben das wirtschaftliche Modell einer Gesellschaft
+Anforderungen entsprechend steigen, weshalb die Gründung des Vereins als
+Notwendigkeit angesehen wurde. Wir haben das rechtliche Modell eines Vereins
 gewählt, um den Erfordernissen des Projekts gerecht zu werden und auch um unseren
 Nutzern und Geschäftspartnern, die das Projekt fördern möchten, solide und hochwertige
 Dienstleistungen zur Verfügung stellen zu können.
@@ -66,15 +66,15 @@ Dienstleistungen zur Verfügung stellen zu können.
 <p>
 Bei der Anmeldung erhält jedes Mitglied eine Kopie der Satzung. Eine
 PDF-Version kann jederzeit eingesehen werden: 
-<a href="/fr/asso/status-association-slitaz.pdf">status-association-slitaz.pdf</a> |
-<a href="/en/asso/statutes.php">Englische Übersetzung</a>.
+<a href="/fr/asso/status-association-slitaz.pdf">status-association-slitaz.pdf</a> (in Französisch)
+oder die <a href="/en/asso/statutes.php">Englische Übersetzung</a>.
 </p>
 
 <h3 id="goals">Derzeitige Ziele</h3>
 
 <p>
 SliTaz benutzt das Modell der offenen Entwicklung, wobei alle Arbeit 
-von einer Freiwilligengemeinschaft geleistet wird. Es ist unser Ziel, deren Beiträge zu
+von einer Gemeinschaft Freiwilliger geleistet wird. Es ist unser Ziel, deren Beiträge zu
 verbessern und besser zu organisieren. Weitere Punkte des Projekts, die wir
 professioneller gestalten möchten, sind: Benutzerfreundlichkeit, Unterstützung,
 Aktualisierungen, Wartungsdienste, technische Unterstützung und Verwaltungsteams.
@@ -90,14 +90,14 @@ würden wesentlich häufiger freigegeben werden können.
 <h3 id="members">Mitglieder</h3>
 
 <p>
-Die Gesellschaft steht jedem offen. Durch eine Mitgliedschaft unterstützen Sie
-das Projekt durch Ihren Jahresbeitrag und machen es zukunftssicher.
+Der Verein steht jedem offen. Sie unterstützen das Projekt durch Ihre Mitgliedschaft
+über den Jahresbeitrag und machen es zukunftssicher.
 </p>
 <p>
 Ihren Beitritt können Sie per Brief oder email: asso(at)slitaz.org erklären. Sie
 erhalten dann ein Informationspaket, Einzelheiten über den Mitgliedsbeitrag und 
 eine Kopie der Satzung. Der Mindestbeitrag wurde für das Jahr 2009-10 auf 40 Euro
-festgesetzt. Geben Sie in der email bitte an:
+festgesetzt. Geben Sie in Ihrem Schreiben bitte an:
 </p>
 <ul>
 	<li>vollständigen Namen</li>
@@ -108,8 +108,8 @@ festgesetzt. Geben Sie in der email bitte an:
 <h3 id="donation">Spenden</h3>
 
 <p>
-Es gibt verschiedene Möglichkeiten, die Gesellschaft finanziell zu unterstützen:
-Mitglied oder Förderer werden oder eine Einmalzahlung über PayPal oder per
+Es gibt verschiedene Möglichkeiten, den Verein finanziell zu unterstützen:
+Sie können Mitglied oder Förderer werden oder eine Einmalzahlung über PayPal oder per
 Banküberweisung leisten. Für eine Kleinspende können Sie Flattr verwenden,
 was unter dem „open source“-Aspekt ein sehr schöner Dienst ist. Das Projekt kann
 auch materiell unterstützt werden: Jede gut funktionierende Hardware ist willkommen.
@@ -123,7 +123,7 @@ auch materiell unterstützt werden: Jede gut funktionierende Hardware ist willko
 Association SliTaz<br />
 Rue du Village 40<br />
 1081 Montpreveyres<br />
-Switzerland
+Suisse
 </div>
 
 <!-- End of content -->
