@@ -5,104 +5,138 @@
 	<title>SliTaz - Über SliTaz</title>
 	<meta name="description" content="SliTaz GNU/Linux LiveCD"/>
 	<meta name="keywords" lang="en" content="System, free, gnu, linux, software opensource, livecd LINUX in RAM"/>
-	<meta name="author" content="F Steiner (Sevala)"/>
+	<meta name="author" content="F Steiner (Sevala), HGT"/>
 	<?php include("../../lib/html/meta-link.html"); ?>
 </head>
 <body>
 
 <?php
 include("../../config.php");
-include("../../lib/html/header.html");
+include("../../lib/html/header.de.html");
 include("../../lib/html/nav.de.html");
 include("../../lib/lang.php");
 ?>
 
 <!-- Content -->
-<div id="content">
+<section id="content">
 
 <h2>Über SliTaz</h2>
 <p>
-	Small, fast, stable and easy to use!
+	Klein, schnell, stabil und anwenderfreundlich!
 </p>
 <ul>
-	<li><a href="#intro">Introduction</a></li>
+	<li><a href="#intro">Einführung</a></li>
+	<li><a href="#spec">SliTaz Spezifikationen</a></li>
 	<li><a href="#overview">Steckbrief</a></li>
-	<li><a href="#website">Web site &amp; i18n</a></li>
-	<li><a href="#reviews">Reviews</a></li>
-	<li><a href="/en/asso/">Association (en)</a></li>
+	<li><a href="#website">Internetpräsenz &amp; i18n</a></li>
+	<li><a href="#reviews">Rezensionen</a></li>
+	<li><a href="../asso/">Verein</a></li>
 </ul>
 
-<h2 id="intro">Introduction</h2>
+<h2 id="intro">Einführung</h2>
 
 <p>
-SliTaz GNU/Linux ist ein freies und kostenloses Betriebssystem. Es arbeitet vollständig aus 
-dem Arbeitsspeicher und wird von einem externen Speichermedium wie einer CD oder einem
-USB-Stick gebootet. Die Installation auf der Festplatte ist ebenfalls 
-möglich. SliTaz wird als ISO-Image veröffentlicht. Auf CD gebrannt bootet SliTaz 
-selbständig. Sobald das System hochgefahren ist, können Sie die CD entfernen und das Laufwerk 
-für andere Zwecke benutzen. SliTaz ist klein, schnell und leichtgewichtig, bietet aber trotzdem eine 
-vollständige, leicht erweiterbare grafische Oberfläche. Sicherheitsupdates werden für 
-die aktuellen Veröffentlichungen angeboten. Sofern Sie die Live-CD gebrauchen 
-(der Live-USB-Stick kann die persönlichen Daten natürlich selber speichern)  
-können Sie das gesamte Home-Verzeichnis auf einem externen Medium sichern. So erhalten Sie sich 
-alle persönlichen Einstellungen und Dokumente für den nächsten Systemstart.<br />
-Eine Übersicht über die enthaltenen Programme gibt es im 
-<a href="http://doc.slitaz.org/de:start">
-Wiki</a>.
+SliTaz GNU/Linux ist ein freies und kostenloses Betriebssystem. Es wird von einem externen Speichermedium
+(optischer Datenträger oder USB-Datenträger) vollständig in den Arbeitsspeicher geladen.
+Die Installation auf Platte ist ebenfalls möglich. SliTaz wird als ISO-Abbild ausgeliefert, das sehr einfach
+auf optische Datenträger geschrieben werden kann. Wenn SliTaz geladen ist, kann der Datenträger
+entfernt werden und das Laufwerk für andere Zwecke genutzt werden. Der SliTaz-Direktstart-Datenträger
+enthält eine vollständige grafische Oberfläche und ermöglicht es, eigene Daten und Einstellungen auf
+USB-Datenträgern permanent zu speichern. Mit der Paketverwaltung <tt>tazpkg</tt> kann das System erweitert
+werden. Sicherheitsaktualisierungen werden für die aktuelle und die stabilen Versionen angeboten.
 </p>
 
 <p>
-Das SliTaz Projekt bietet kostenlosen technischen Support an. Dazu stehen
-Ihnen die <a href="../mailing-list.php">Mailing Listen</a> (i18n list)
-sowie die mehrsprachigen Foren (<a href="http://forum.slitaz.org/">deutsches Forum</a>) 
-zur Verfügung. Häufig kann auch das <a href="http://doc.slitaz.org/de:handbook:start">
-SliTaz Handbuch</a> oder allgemein das <a href="http://doc.slitaz.org/de:start">Wiki</a> 
-weiterhelfen.
+Das SliTaz-Projekt bietet kostenlose technische Unterstützung an. Dazu stehen
+Ihnen die <a href="../mailing-list.php">„Mailing List“</a> (i18n list) und das
+(<a href="http://forum.slitaz.org/">Benutzerforum</a>) 
+zur Verfügung.
 Für Anregungen, Anfragen und mehr Informationen stehen wir Ihnen auch 
 gerne per Mail zur Verfügung: &lt;devel at slitaz.org&gt;
+</p>
+
+<h2 id="spec">SliTaz-Spezifikationen</h2>
+
+<p>
+Das Standard ISO-Abbild enthält 4 Varianten: „base", „just-x", „gtk-only" und die
+Variante mit vollständiger grafische Oberfläche. SliTaz kann auch über das Netzwerk geladen werden.
+Es kann den verschiedensten Anforderungen angepasst werden und auf vielerlei Hardware installiert werden:
+auf alten Rechner bis hin zu leistungsstarken Rechnern und kleinen Rechner mit ARM-Architektur, wie
+Raspberry Pi.
+</p>
+
+<p>
+SliTaz ist auch für Linux-Anfänger leicht zu benutzen: es bietet eine vollständige und
+moderne grafische Oberfläche, die den „Freedesktop“-Standards entspricht und selbstentwickelte 
+Werkzeuge für die grafische Konfigurierung des gesamten Systems enthält. Mit unserer
+web-basierten Konfigurierung kann das System sogar von einem anderen Rechner aus gesteuert werden.
+</p>
+
+<p>
+Wir liefern eine „base"- und eine „just-x"-Variante, von denen ausgehend Sie Ihre eigene, angepasste
+Variante erstellen können. Ein derart angepasstes System kann dann zum Laden von
+optischen Datenträgern, USB-Datenträgern, SD-Karten, Platte oder über das Netzwerk verwendet werden.
+</p>
+
+<p>
+SlTaz folgt der UNIX-Philosophie: d.h. alles ist eine Textdatei. Die Paketverwaltung
+und alle Systemeinstellungen werden in einfachen Textdateien gespeichert. Damit sind sie
+leicht zu modifizieren und gut lesbar. Die meisten Werkzeuge sind als Kommandoprozeduren
+realisiert, auch dies um Anpassung und Entwicklung zu erleichtern.
+</p>
+
+<p>
+Radikal vereinfachte Systemeinleitung mit 4 Kommandoprozeduren zum Konfigurieren des gesamten
+Systems, die Ladeoptionen zu verarbeiten, das Netzwerk zu verwalten und weitere Kommandos auszuführen.
+SliTaz lädt nur ein Minimum an Betriebsmitteln und überlässt die weitere Kontrolle dem Benutzer.
+</p>
+
+<p>
+Wenn SliTaz von einem Direktstart-Datenträger oder von Platte in einer „sparsamen" Installation geladen wurde,
+kann es vollständig im Arbeitsspeicher ablaufen. In dieser Betriebsart können Benutzerdaten in einer
+eingehängten Partition eines (externen) datenträgers gespeichert werden, während das System sehr schnell
+und reaktionsschnell bleibt.
+</p>
+
+<p>
+Strukturiertes Netzwerk tief in SliTaz integriert zur einfachen Navigation zwischen allen Rechnern
+im Netzwerk. Strukturierte Entwicklung mit Mercurial und eigenen Werkzeugen wie <tt>bug tracker</tt>
+und <tt>cookutils</tt>.
 </p>
 
 <h2 id="overview">Steckbrief</h2>
 
 <ul>
-	<li>Das installierte Betriebssystem umfasst etwa 100 MB, das ISO-Image etwa 30 MB.</li>
-	<li>Geringe Hardwareanforderungen (Pentium I und mindestens 256 MB RAM, in Sonderausführung noch weniger)</li>
-	<li>Eleganter Desktop mit Openbox, Xserver Xorg/XVesa.</li>
-	<li>Internetanwendungen wie Midori oder Retawq.</li>
-	<li>Soundunterstützung mit Alsa, Audioplayer, CD-Ripper und -Encoder.</li>
-	<li>Tools zum Generieren, Editieren und Brennen von ISO-Images auf CD oder DVD.</li>
-	<li>Chat-, Mail- und FTP-Client integriert.</li>
-	<li>SSH-Client and -Server, powered by Dropbear.</li>
-	<li>Datenbank-Engine SQLite.</li>
-	<li>Webserver (LightTPD mit CGI und PHP-Support)</li>
-	<li>Leicht zu bedienender Paketmanager</li>
-	<li>Tool zum Generieren einer Live-USB Version.</li>
-	<li>Weitere, eigens erstellte, nützliche Tools.</li>
-	<li>Mehr als 2300 Pakete (Cooking 2400), leicht installierbar über einen Paketmanager.</li>
-	<li>Aktive und freundliche Community.</li>
+	<li>Das installierte Betriebssystem umfasst etwa 100 MB, das ISO-Abbild weniger als 40 MB.</li>
+	<li>Vorinstallierte Webserver mit CGI-Unterstützung und FTP-Server in Busybox</li>
+	<li>Browser wie Midori, Firefox oder Lynx (im Textmodus).</li>
+	<li>Audiounterstützung mit Alsa mixer, Audioplayer, CD-Ripper und -Encoder.</li>
+	<li>Chat-, Mail- und FTP-Klienten.</li>
+	<li>SSH-Client und -Server vermöge Dropbear.</li>
+	<li>Datenbanksystem SQLite.</li>
+	<li>Werkzeuge zum Generieren von Direktstart-ISO-Abbildern.</li>
+	<li>Programme zum Schreiben von ISO-Abbildern auf optische Datenträger.</li>
+	<li>Elegante grafische Oberfläche mit Openbox auf dem X-Server Xorg oder Xvesa.</li>
+	<li>Selbsterstellte grafische Werkzeuge zum Ausführen von Kommandoprozeduren.</li>
+	<li>4967 Pakete, die leicht aus einem Depot installiert werden können.</li>
+	<li>Aktive und freundliche Nutzergemeinschaft.</li>
 </ul>
 
-<h2 id="website">Websites &amp; i18n - Internationalisierung</h2>
+<h2 id="website">Internetpräsenz &amp; i18n</h2>
 
 <p>
-SliTaz's Website gibt es ebenso auf <a href="/fr/">Französisch</a>,
-<a href="/en/">
-Englisch</a> und <a href="/pt/">Portugiesisch</a>. SliTaz ist
-Teil des <a href="/i18n.php">"internationalization project"</a>. 
-Die deutsche Sprache wird noch nicht vollständig unterstützt. Jeder, 
-der ein Linux-System schon einmal bedient hat und/oder geringe 
-Englischkenntnisse besitzt, wird aber mit SliTaz problemlos klarkommen. 
-Im Gegensatz zur französischen und englischen Seite, ist die 
-<a href="http://doc.slitaz.org/de:handbook:start">deutsche Dokumentation</a>
-vollständig in das Wiki verlegt. Weitere Hilfe auf deutsch erhalten 
-Sie sonst im <a href="http://forum.slitaz.org/">Forum</a>.
+Die SliTaz-Internetpräsenz gibt es in mehreren Sprachen und ist Bestandteil
+des <a href="/i18n.php">"Internationalisierungs-Projekts"</a>. Von hier aus können Sie auch
+SliTaz-ISO-Abbilder <a href="http://www.slitaz.org/de/get/">transferieren</a> oder uns bei
+der Entwicklung helfen.
+Sie können die <a href="http://www.slitaz.org/de/doc">deutsche Dokumentation</a> ansehen,
+wo Sie lesen können, wie ein Direktstart-Datenräger verwendet und das System konfiguriert wird.
 </p>
 
-<h2 id="reviews">Reviews</h2>
+<h2 id="reviews">Rezensionen</h2>
 
 <p>
-Über SliTaz GNU/Linux wurde auf einigen Websites und in einigen 
-Magazinen berichtet (Auswahl).
+Über SliTaz GNU/Linux wurde an verschiedenen Stellen berichtet. Wir danken allen für die Unterstützung.
 </p>
 
 <h3>4.0 - April 2012</h3>
@@ -116,7 +150,7 @@ Magazinen berichtet (Auswahl).
 		>Weblog</a> (fr) - Von Frederic Bezies.</li>
 </ul>
 
-<h3>3.0 - March 2010 &amp; Cooking - Jan 2010</h3>
+<h3>3.0 - März 2010 &amp; Entwicklung - Jan 2010</h3>
 
 <ul>
 	<li><a href="http://kmandla.wordpress.com/2010/03/29/greetings-from-slitaz-3-0/"
@@ -124,7 +158,7 @@ Magazinen berichtet (Auswahl).
 	<li><a href="http://www.linuxjournal.com/content/spotlight-linux-slitaz-gnulinux-30"
 		>Linux Journal</a> - Von Susan Linton.</li>
 	<li><a href="http://distrowatch.com/weekly.php?issue=20100111#feature"
-		>Distrowatch</a> - Von Jesse Smith (Cooking just before 3.0).</li>
+		>Distrowatch</a> - Von Jesse Smith (Entwicklungsversion kurz vor 3.0).</li>
 </ul>
 
 <h3>2.0 - April 2009</h3>
@@ -166,12 +200,9 @@ Magazinen berichtet (Auswahl).
 	<li><a href="http://www.linux-magazine.com/issues/2008/97/slitaz" target="_blank" rel="noopener noreferrer"
 		>Linux Pro Magazine</a> - Von Dimitri Popov.</li>
 </ul>
-<p>
-Dankeschön an alle für ihre Unterstützung.
-</p>
 
 <!-- End of content -->
-</div>
+</section>
 
 <?php include("../../lib/html/footer.html"); ?>
 
