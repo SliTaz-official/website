@@ -23,7 +23,7 @@ switch($page)
 		break;
 	case "support":
 		$url  = "/LANG/support.php";
-		$lang = "en fr ja pt";
+		$lang = "de en fr ja pt";
 		break;
 	case "search":
 		$url  = "/LANG/search.php";

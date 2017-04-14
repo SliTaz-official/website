@@ -49,17 +49,16 @@ werden. Sicherheitsaktualisierungen werden für die aktuelle und die stabilen Ve
 <p>
 Das SliTaz-Projekt bietet kostenlose technische Unterstützung an. Dazu stehen
 Ihnen die <a href="../mailing-list.php">„Mailing List“</a> (i18n list) und das
-(<a href="http://forum.slitaz.org/">Benutzerforum</a>) 
-zur Verfügung.
+<a href="http://forum.slitaz.org/">Benutzerforum</a> zur Verfügung.
 Für Anregungen, Anfragen und mehr Informationen stehen wir Ihnen auch 
-gerne per Mail zur Verfügung: &lt;devel at slitaz.org&gt;
+gerne per Mail zur Verfügung: &lt;devel(at)slitaz.org&gt;
 </p>
 
 <h2 id="spec">SliTaz-Spezifikationen</h2>
 
 <p>
 Das Standard ISO-Abbild enthält 4 Varianten: „base", „just-x", „gtk-only" und die
-Variante mit vollständiger grafische Oberfläche. SliTaz kann auch über das Netzwerk geladen werden.
+Variante mit vollständiger grafischer Oberfläche. SliTaz kann auch über das Netzwerk geladen werden.
 Es kann den verschiedensten Anforderungen angepasst werden und auf vielerlei Hardware installiert werden:
 auf alten Rechner bis hin zu leistungsstarken Rechnern und kleinen Rechner mit ARM-Architektur, wie
 Raspberry Pi.
@@ -94,7 +93,7 @@ SliTaz lädt nur ein Minimum an Betriebsmitteln und überlässt die weitere Kont
 <p>
 Wenn SliTaz von einem Direktstart-Datenträger oder von Platte in einer „sparsamen" Installation geladen wurde,
 kann es vollständig im Arbeitsspeicher ablaufen. In dieser Betriebsart können Benutzerdaten in einer
-eingehängten Partition eines (externen) datenträgers gespeichert werden, während das System sehr schnell
+eingehängten Partition eines (externen) Datenträgers gespeichert werden, während das System sehr schnell
 und reaktionsschnell bleibt.
 </p>
 
@@ -130,7 +129,7 @@ des <a href="/i18n.php">"Internationalisierungs-Projekts"</a>. Von hier aus kön
 SliTaz-ISO-Abbilder <a href="http://www.slitaz.org/de/get/">transferieren</a> oder uns bei
 der Entwicklung helfen.
 Sie können die <a href="http://www.slitaz.org/de/doc">deutsche Dokumentation</a> ansehen,
-wo Sie lesen können, wie ein Direktstart-Datenräger verwendet und das System konfiguriert wird.
+wo Sie lesen können, wie ein Direktstart-Datenträger verwendet und das System konfiguriert wird.
 </p>
 
 <h2 id="reviews">Rezensionen</h2>
@@ -150,7 +149,7 @@ wo Sie lesen können, wie ein Direktstart-Datenräger verwendet und das System k
 		>Weblog</a> (fr) - Von Frederic Bezies.</li>
 </ul>
 
-<h3>3.0 - März 2010 &amp; Entwicklung - Jan 2010</h3>
+<h3>3.0 - März 2010 &amp; Entwicklung - Januar 2010</h3>
 
 <ul>
 	<li><a href="http://kmandla.wordpress.com/2010/03/29/greetings-from-slitaz-3-0/"
@@ -176,7 +175,7 @@ wo Sie lesen können, wie ein Direktstart-Datenräger verwendet und das System k
 		>Linuxologist</a> - Von Brie Gordon.</li>
 </ul>
 
-<h3>1.0 - March 2008</h3>
+<h3>1.0 - März 2008</h3>
 
 <ul>
 	<li><a href="http://distrowatch.com/weekly.php?issue=20080331" target="_blank" rel="noopener noreferrer"
