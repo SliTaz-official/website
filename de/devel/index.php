@@ -66,22 +66,6 @@ sind im <a href="http://forum.slitaz.org/">Forum</a> und der
 	schreiben Sie an die „Mailing“-Liste.
 </p>
 
-<h2>Aktivitäten</h2>
-
-<?php require_once("../../lib/get-feeds.php"); ?>
-
-<div class="activity">
-	<p>
-		<a href="http://hg.slitaz.org/"><img 
-			src="/images/development.png" alt="[ ]" /></a>
-		Letzte Übergaben im Wok
-		<?php get_feed("wok.xml"); ?>
-	</div>
-	<p class="activity_more">
-		<a href="http://hg.slitaz.org/">Mehr Übergaben</a>
-	</p>
-</div>
-
 <!-- End of content -->
 </section>
 

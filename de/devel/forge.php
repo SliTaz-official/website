@@ -34,11 +34,11 @@ include("../../lib/lang.php");
 <h2 id="kiss">„KISS“ und Standards respektieren</h2>
 
 <p>
-	„Keep it simple (KISS)“: befolgen Sie die besten Standards, entwerfen und schreiben
+	„Keep it small and simple (KISS)“: befolgen Sie die besten Standards, entwerfen und schreiben
 	Sie sorgfältig Dokumentation von hoher Qualität, erzeugen Sie ein stabiles und robustes System und
 	halten Sie das Wurzeldateisystem <code>rootfs</code> in dem Direktstatrt-ISO-Abbild so klein, dass
 	es auf Rechnern mit mindestens 128 MiB Arbeitsspeicher geladen werden kann. Dennoch ist es möglich
-	GTK+2, Dialog, Kommandoprozeduren oder PHP-Werkzeuge in die Distribution zu übernehmen. Die Idee ist
+	GTK+2, Dialog, Kommandoprozeduren oder PHP-Werkzeuge in die Distribution zu übernehmen. Die Idee ist,
 	keine Doppelarbeit zu leisten und nicht schmalspurig zu denken...
 </p>
 
@@ -46,7 +46,7 @@ include("../../lib/lang.php");
 
 <p>
 	Jeder Mitwirkende kann sich über einen sicheren Zugang an dem Projekt-Rechner anmelden, kann dort
-	Plattenplatz belegen, ein Verzeichnis <code>Public</code> anlegen und all Entwicklerwerkzeuge nutzen.
+	Plattenplatz belegen, ein Verzeichnis <code>Public</code> anlegen und alle Entwicklerwerkzeuge nutzen.
 	Entwickler können Pakete erzeugen und Verwalter der Spiegel-Depots können diese synchronisieren.
 	Auf diesem Rechner befindet sich auch der Kompilierungsautomat, die Dateien zum Laden über das
 	Netzwerk und „SliTaz Pro“: <a href="http://tank.slitaz.org/">tank.slitaz.org</a>
@@ -97,8 +97,8 @@ Jetzt muss das Verzeichnis <code>wok</code> als Arbeitsverzeichnis eingestellt w
  $ hg head
 </pre>
 <p>
-Nach dem Hinzufügen oder Ändern von einer oder auch mehrerer Dateien den Änderungsstatus anzeigen und die Änderungen
-lokal übernehmen:
+Nach dem Hinzufügen oder Ändern von einer oder auch mehrerer Dateien den Änderungsstatus anzeigen
+und die Änderungen lokal übernehmen:
 </p>
 <pre>
  $ hg add
@@ -191,7 +191,8 @@ int main(int argc, char *argv[])
 	bei der „Mailing“-Liste zur Diskussion stellen.
 	Wenn Sie nur eine einfache grafische Oberfläche brauchen, können Sie sich <code>tazbox</code> im
 	Depot <code>slitaz-tools</code> ansehen; das Paket enthält kleine Programme für die grafische Oberfläche
-	wie z.B. ein Abmeldefenster. TazWeb ist das erste Teilprojekt von SliTaz, das in reinem GTK geschrieben wurde.
+	wie z.B. ein Abmeldefenster. TazWeb ist das erste Teilprojekt von SliTaz, das in reinem GTK geschrieben
+	wurde.
 	Sie können es ansehen um zu lernen, wie man die Funktion <code>system()</code> in einer grafischen
 	Oberfläche verwenden kann. So verwendet TazWeb beispielsweise <code>wget</code> zum Dateitransfer und
 	<code>sed</code> um Lesezeichen hinzuzufügen.
@@ -213,9 +214,10 @@ int main(int argc, char *argv[])
 <h2 id="pkgs">SliTaz-Pakete erzeugen</h2>
 
 <p>
-	Für die offizielle Paketerzeugung werden die Kochwerkzeuge verwendet. Diese sind in dem Paket <code>cookutils</code>
-	enthalten, das in jedem SliTaz-System installiert ist, wie auch das 
-	<a href="http://hg.slitaz.org/cookutils/raw-file/tip/doc/cookutils.de.html">Kochwerkzeuge-Handbuch</a> für die Verwendung der Kochwerkzeuge. Damit werden Pakete erzeugt, die von TazPKG verwaltet werden können.
+	Für die offizielle Paketerzeugung werden die Kochwerkzeuge verwendet. Diese sind in dem Paket
+	<code>cookutils</code> enthalten, das in jedem SliTaz-System installiert ist, wie auch das 
+	<a href="http://hg.slitaz.org/cookutils/raw-file/tip/doc/cookutils.de.html">Kochwerkzeuge-Handbuch</a>
+	für die Verwendung der Kochwerkzeuge. Damit werden Pakete erzeugt, die von Tazpkg verwaltet werden können.
 </p>
 <p>
 	Die Pakete werden bei SliTaz automatisch von <a href="http://cook.slitaz.org/">„Cooker“</a> aus einem
@@ -230,18 +232,18 @@ int main(int argc, char *argv[])
 	Es sollten nicht mehrere Pakete mit gleicher Funktionalität erstellt werden.
 	Die aktuelle Auswahl der Pakete ist aber nicht festgeschrieben. Wenn es eine Alternative zu einem Paket
 	gibt, die noch kleiner ist, mehr Funktionen enthält oder mit ein paar KB mehr <em>attraktiver</em> ist,
-	kann die Übernahme bei der „Mailing-Liste“ diskutiert werden.
+	kann die Übernahme bei der „Mailing“-Liste diskutiert werden.
 	Besondere Anforderungen werden an Pakete gestellt, die in Direktstart-ISO-Abbilder
 	übernommen werden sollen. Bei diesen sollten Symbolinformationen aus den Objektprogrammen
 	sowie unnötige Abhängigkeiten und Übersetzeroptionen entfernt werden.
-	Im Allgemeinen werden solche Pakete vor der Freigabe ebenfalls bei der „Mailing-Liste“ zur
+	Im Allgemeinen werden solche Pakete vor der Freigabe ebenfalls bei der „Mailing“-Liste zur
 	Diskussion gestellt.
 </p>
 <p>
 	Bevor Sie beginnen, Pakete für SliTaz zu übersetzen und erzeugen, stellen Sie zur Vermeidung von
 	Doppelarbeit sicher, dass es etwas entsprechendes nicht schon im
 	<a href="http://download.tuxfamily.org/slitaz/packages/undigest/">inoffiziellen Wok</a>
-	gibt. Die Mitglieder der „Mailing-Liste“ geben gerne Hinweise und das
+	gibt. Die Mitglieder der „Mailing“-Liste geben gerne Hinweise und das
 	<a href="http://hg.slitaz.org/cookutils/raw-file/tip/doc/cookutils.de.html">Kochwerkzeuge-Handbuch</a>
 	sollte für Anfänger hilfreich sein.
 </p>
@@ -258,8 +260,8 @@ int main(int argc, char *argv[])
 <h2 id="website">Verwaltung der Internetpräsenz</h2>
 
 <p>
-	Die Internetpräsenz wird über das Mercurial-Depot <code>website</code> administriert. Dieses kann dupliziert
-	werden mit:
+	Die Internetpräsenz wird über das Mercurial-Depot <code>website</code> administriert. Dieses kann
+	dupliziert werden mit:
 </p>
 <pre>
  $ hg clone http://hg.slitaz.org/website

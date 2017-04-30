@@ -41,7 +41,7 @@ include("../../lib/lang.php");
 	Symbols, eines Hintergrundbildes oder anderer Grafik kann man sich an dem Projekt beteiligen,
 	ohne sich die Hände mit Programmierung oder dem Korrekturlesen von xHTML-Dokumenten schmutzig zu machen.
 	Wenn Sie sich beteiligen möchten, sollten Sie zunächst über die
-	<a href="../mailing-list.php">„Mailing-Liste“</a> mit uns Verbindung aufnehmen.
+	<a href="../mailing-list.php">„Mailing“-Liste</a> mit uns Verbindung aufnehmen.
 	Bitte schicken Sie keine allzugroßen Dateien.
 </p>
 

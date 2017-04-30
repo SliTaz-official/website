@@ -2,86 +2,78 @@
 <html lang="de">
 <head>
 	<meta charset="utf-8"/>
-	<title>SliTaz (de) - Screenshots</title>
-	<meta name="description" content="SliTaz GNU/Linux LiveCD"/>
-	<meta name="keywords" lang="en" content="slitaz download, get slitaz, slitaz logo, spider"/>
-	<meta name="author" content="F Steiner (Sevala)"/>
+	<title>SliTaz-Bildschirmfotos</title>
+	<meta name="description" content="SliTaz GNU/Linux Bildschirmfoto"/>
+	<meta name="keywords" lang="en" content="slitaz logo, spider"/>
+	<meta name="author" content="F Steiner (Sevala), HGT"/>
 	<?php include("../../lib/html/meta-link.html"); ?>
 </head>
 <body>
 
-<?php include("../../lib/html/header.html"); ?>
-
-<!-- Block -->
-<div id="block">
-	<?php include("../../lib/html/nav.de.html"); ?>
-	<!-- Information/image -->
-	<div id="block_info">
-		<h4>Screenshots</h4>
-		<p>
-			Bilder sagen mehr als tausend Worte... Die Screenshots 
-			wurden in den beiden aktuellen Versionen, Stable und 
-			Cooking, erstellt.
-		</p>
-		<p>
-			<img src="/images/users.png" alt="[ ]" />
-			<a href="http://scn.slitaz.org/groups/artwork/">Join us on SCN</a>
-		</p>
-	</div>
-</div>
-
-<?php include("../../lib/lang.php"); ?>
+<?php
+include("../../lib/html/header.de.html");
+include("../../lib/html/nav.de.html");
+include("../../lib/lang.php");
+?>
 
 <!-- Content -->
-<div id="content">
+<section id="content">
+
+<h2>Bildschirmfotos</h2>
+
+<p style="text-align: center;">
+	Bilder sagen mehr als tausend Worte... Die Bildschirmfotos 
+	wurden in den beiden aktuellen Versionen, Stabil und 
+	Entwicklung, erstellt.
+</p>
 
 <div id="gallery">
 
 <div><a href="/images/screenshots/slitaz-4.0.png">
 <img src="/images/screenshots/slitaz-4.0.png"
-	alt="Stable 4.0" /></a><br />
-	Stable 4.0</div>
+	alt="Stabil 4.0" /></a><br />
+	Stabil 4.0</div>
 
 <div><a href="/images/screenshots/slitaz-3.0.png">
 <img src="/images/screenshots/slitaz-3.0.png"
-	alt="Stable 3.0" /></a><br />
-	Stable 3.0</div>
+	alt="Stabil 3.0" /></a><br />
+	Stabil 3.0</div>
 
 <div><a href="/images/screenshots/slitaz_2.png">
 <img src="/images/screenshots/slitaz_2.png"
-	alt="Stable 2.0" /></a><br />
-	Stable 2.0</div>
+	alt="Stabil 2.0" /></a><br />
+	Stabil 2.0</div>
 
 <div><a href="/images/screenshots/index-desktop.png">
 <img src="/images/screenshots/index-desktop.png"
-	alt="Stable 1.0" /></a><br />
-	Stable 1.0</div>
+	alt="Stabil 1.0" /></a><br />
+	Stabil 1.0</div>
 
 <div><img src="/images/screenshots/cooking-geany.png"
-	alt="Cooking - Geany and GPicview" /><br />
-	Cooking - Geany and GPicview</div>
+	alt="Entwicklung - Geany und GPicview" /><br />
+	Entwicklung - Geany und GPicview</div>
 
 <div><img src="/images/screenshots/cooking-conky.png"
-	alt="Cooking - Conky" /><br />
-	Cooking - Conky</div>
+	alt="Entwicklung - Conky" /><br />
+	Entwicklung - Conky</div>
 
 <div><img src="/images/screenshots/cooking-mplayer.png"
-	alt="Cooking - Multimediaplayer MPlayer" /><br />
-	Cooking - Multimediaplayer MPlayer</div>
+	alt="Entwicklung - Multimediaprogramm MPlayer" /><br />
+	Entwicklung - Multimediaprogramm MPlayer</div>
 
 <div><img src="/images/screenshots/cooking-superuserpcmanfm.png"
-	alt="Cooking - Dateimanager PCManFM" /><br />
-	Cooking - Dateimanager PCManFM</div>
+	alt="Entwicklung - Dateiverwaltung PCManFM" /><br />
+	Entwicklung - Dateiverwaltung PCManFM</div>
 
 <div><img src="/images/screenshots/e17.png"
-	alt="Stable - E17" /><br />
-	Stable - E17</div>
+	alt="Stabil - E17" /><br />
+	Stabil - E17</div>
 
 <!-- Gallery end -->
 </div>
 
 <!-- End of content -->
-</div>
+</section>
 
 <?php include("../../lib/html/footer.html"); ?>
 
