@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-	<meta charset="utf-8"/>
-	<title>SliTaz - Flavors Downloaden</title>
-	<meta name="description" content="SliTaz GNU/Linux LiveCD"/>
-	<meta name="keywords" lang="en" content="slitaz download, get slitaz"/>
-	<meta name="author" content="F Steiner (Sevala)"/>
+	<meta charset="UTF-8"/>
+	<title>SliTaz-Varianten</title>
+	<meta name="description" content="SliTaz GNU/Linux Direktstart Variante"/>
+	<meta name="keywords" lang="en" content="slitaz download, get slitaz, flavor"/>
+	<meta name="author" content="F Steiner (Sevala), HGT"/>
 	<?php include("../../lib/html/meta-link.html"); ?>
 </head>
 <body>
 
 <?php
 include("../../config.php");
-include("../../lib/html/header.html");
+include("../../lib/html/header.de.html");
 include("../../lib/html/nav.de.html");
 include("../../lib/lang.php");
 ?>
@@ -20,56 +20,103 @@ include("../../lib/lang.php");
 <!-- Content -->
 <div id="content">
 
-<h2>Live-CD Flavors</h2>
+<h2>Varianten transferieren</h2>
 
 <p>
-Flavors sind SliTaz Derivate, die mit Tazlito und einer *.flavor-Datei erstellt wurden.  
-Mit Tazlito besteht eine einfache Möglichkeit für bestimmte Zwecke angepasste ISO-Images
-zu erstellen. Um dieses Image zu erzeugen benötigt Tazlito eine .flavor-Datei. 
-Auf ihr sind alle Anweisungen enthalten, welche Pakete und Konfigurationsdateien das ISO-Image des 
-Flavors einst enthalten soll. Man kann wahlweise eine eigene .flavor-Datei kreieren, oder eine 
-vorgefertigte, die z.B. von der Community zur Verfügung gestellt wird verwenden.
+Varianten von SliTaz sind ISO-Abbilder, die von der Nutzergemeinschaft für spezielle Aufgaben
+durch eine angepasste Auswahl von Paketen erstellt wurden.
+Man kann wahlweise eine eigene Variante über eine benutzerfreundliche grafische Oberfläche erzeugen
+oder eine von der Nutzergemeinschaft vorgefertigte Variante einsetzen.
 </p>
 
-<h3>Live-CD ISO Images</h3>
+<h3>Direktstart-ISO-Abbilder zum Ausprobieren</h3>
 
 <p>
-Diese Flavors werden vom SliTaz-Team veröffentlicht. Sie basieren auf der 
-Cooking-Version. 
-</p>
-<p>Das <em>Loram</em> Flavor startet SliTaz auf Rechnern mit älterer Hardware,
-benötigt werden blos 128 MB RAM.  Das
-<em>Loram-cdrom</em> Flavor benötigt nur  24 MB Arbeitsspeicher und eine 
-kleine Swap -Partition, 
-allerdings kann die CD nicht mehr dem Laufwerk entnommen werden.
-</p>
-<p>
-<a href="http://mirror.slitaz.org/iso/4.0/flavors/">Ein fertiges Flavor-Image downloaden</a>
+Diese Varianten der stabilen und der Entwicklungs-Version schägt das SliTaz-Team vor:
 </p>
 
-<h3>Eine .flavor Datei generieren</h3>
+<div class="box-dl"><p>
+	<a href="http://mirror.slitaz.org/iso/3.0/flavors/slitaz-3.0-xvesa.iso">
+		slitaz-3.0-xvesa.iso</a>
+	[29 MB] - mit vollständiger grafischer Oberfläche unter Verwendung des winzigen Xvesa-Grafik-Servers
+	und einem Bündel an Software für alltägliche Aufgaben</p>
+</div>
+
+<div class="box-dl"><p>
+	<a href="http://mirror.slitaz.org/iso/4.0/flavors/slitaz-4.0-firefox.iso">
+		slitaz-4.0-firefox.iso</a>
+	[43 MB] - kleine grafische Oberfläche mit Mozilla Firefox</p>
+</div>
+
+<div class="box-dl"><p>
+	<a href="http://mirror.slitaz.org/iso/4.0/flavors/slitaz-4.0-justx.iso">
+		slitaz-4.0-justx.iso</a>
+	[16,1 MB] - kleine grafische Oberfläche unter Verwendung von Xorg und Openbox, wobei nur
+	eine X-Umgebung mit Werkzeugen zum Erstellen einer eigenen grafischen Oberfläche bereitgestellt wird</p>
+</div>
+
+<div class="box-dl"><p>
+	<a href="http://mirror.slitaz.org/iso/4.0/flavors/slitaz-4.0-base.iso">
+		slitaz-4.0-base.iso</a>
+	[8,1 MB] - Basissystem im Text-Modus mit nützlichen Dienstprogrammen.
+	Diese Variante empfiehlt sich für einen „Server“</p>
+</div>
+
+<div class="box-dl"><p>
+	<a href="http://mirror.slitaz.org/iso/4.0/flavors/slitaz-4.0-loram.iso">
+		slitaz-4.0-loram.iso</a>
+	[41 MB] - Mit der Loram-Variante kann SliTaz auf Rechnern mit sehr beschränkten
+	Betriebsmitteln geladen werden. Diese Variante benötigt nur 128 MiB Arbeitsspeicher
+	und der Datenträger, von dem geladen wurde, kann nach dem Laden entfernt werden.</p>
+</div>
+
+<div class="box-dl"><p>
+	<a href="http://mirror.slitaz.org/iso/4.0/flavors/slitaz-4.0-loram-cdrom.iso">
+		slitaz-4.0-loram-cdrom.iso</a>
+	[163 MB] - Mit dieser Loram-Variante kann SliTaz auf Rechnern mit nur 24 MiB Arbeitsspeicher
+	und etwas Seitenwechselspeicher geladen werden,
+	allerdings kann der Datenträger, von dem geladen wurde, nicht mehr dem Laufwerk entnommen werden.</p>
+</div>
+
+<div class="box-dl"><p>
+	<a href="http://mirror.slitaz.org/iso/4.0/slitaz-4.0.iso">
+		slitaz-4.0.iso</a>
+	[34,7 MB] - 4in1-Variante, die die Varianten „base“, „justx“, „gtkonly“ und „core“ enthält</p>
+</div>
+
+<div class="box">
+	<img src="/images/network.png" alt="[ ]" />
+	Sehen Sie sich die Varianten im Depot an:
+	<a href="http://mirror.slitaz.org/iso/stable/flavors/">Stabil</a> |
+	<a href="http://mirror.slitaz.org/iso/cooking/flavors/">Entwicklung</a>
+</div>
+
+<h2>Eine vorgefertigte Variante transferieren und eine Variante erzeugen</h2>
 
 <p>
-Mit dem grafischen Tool Tazlitobox können Sie mit einigen wenigen Mouseklicks eine .flavor Datei 
-erstellen. Das Tazlito-Manual (Achtung: noch keine vollständige Übersetzung) 
-und das <a href="http://doc.slitaz.org/de:start">Wiki</a> im Allgemeinen bieten ausführliche 
-Anweisungen zum Erzeugen einer .flavor-Datei. Über die Shell können Sie mit dem Befehl
-<code>tazlito list-flavors</code> eine Liste der verfügbaren Dateien anzeigen lassen.
+	Eine Variante wird mithilfe einer Datei <code>.flavor</code> erzeugt.
+	Mit dem grafischen Werkzeug Tazlitobox kann eine Variante mit wenigen
+	Mausklicks erzeugt werden. Das  
+	<a href="http://hg.slitaz.org/tazlito/raw-file/tip/doc/tazlito.de.html">Tazlito-Handbuch</a> 
+	und die <a href="http://doc.slitaz.org/de:handbook:genlivecd">Dokumentation</a>
+	enthalten detaillierte Anleitungen für die Erzeugung einer Variante. Mit dem Kommando 
+	<code>tazlito list-flavors</code> erhalten Sie eine Liste der vorhandenen Varianten.
 </p>
 
-<h3>Das Flavor (-Image) erzeugen und verteilen</h3>
+<h3>Eine eigene Variante erzeugen und publizieren</h3>
 
 <p>
-Von SliTaz Stable und Cooking gibt es ein <em>core</em> Flavor auf dem Mirror. 
-Es kann gut als Basis für eigene Flavors genutzt werden. 
-Weitere Informationen und Anweisungen finden Sie auch im 
-<a href="http://doc.slitaz.org/de:start">SliTaz Wiki</a>.
+Von der stabilen und der Entwicklungs-Version von SliTaz gibt es im Depot eine „core“-Variante. 
+Diese eignet sich gut als Basis für die Erzeugung eigener Varianten. 
+Das Handbuch zum <a href="http://doc.slitaz.org/de:handbook:genlivecd">
+Erzeugen einer eigenen Variante eines Direktstart-ISO-Abbildes</a>.
+enthält alle dazu nötigen Anleitungen.
 </p>
+
 <p>
-Erstellte Flavors können gerne über die 
-<a href="../mailing-list.php">Mailing Liste</a> eingesandt werden, 
-getested und für gut befunden wird das Flavor auf dem offiziellen 
-Mirror veröffentlicht.
+Nach Ihrem Geschmack erstellte Varianten können Sie gerne an die 
+<a href="../mailing-list.php">Diskussionsrunde</a> zum Testen übermitteln.
+Für gut befundene Varianten können als offizielle Varianten übernommen werden. 
 </p>
 
 <!-- End of content -->
