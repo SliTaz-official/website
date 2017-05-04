@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>SliTaz - News archives 2011</title>
+	<title>SliTaz - News archives 2012</title>
 	<meta name="description" content="SliTaz news archives info release">
 	<meta name="keywords" lang="en" content="System, free, gnu, linux, opensource software, livecd in RAM">
 	<meta name="author" content="Christophe Lincoln">

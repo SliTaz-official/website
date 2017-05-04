@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-	<meta charset="utf-8"/>
-	<title>SliTaz (de) - Mailing list</title>
-	<meta name="description" content="SliTaz GNU/Linux LiveCD"/>
-	<meta name="keywords" lang="en" content="slitaz download, get slitaz"/>
-	<meta name="author" content="F Steiner (Sevala)"/>
+	<meta charset="UTF-8"/>
+	<title>SliTaz - Diskussionsrunde</title>
+	<meta name="description" content="slitaz users developpers mailing list"/>
+	<meta name="keywords" lang="en" content="slitaz list mail discuss"/>
+	<meta name="author" content="F Steiner (Sevala), HGT"/>
 	<?php include("../lib/html/meta-link.html"); ?>
 </head>
 <body>
 
 <?php
 include("../config.php");
-include("../lib/html/header.html");
+include("../lib/html/header.de.html");
 include("../lib/html/nav.de.html");
 include("../lib/lang.php");
 ?>
@@ -20,94 +20,91 @@ include("../lib/lang.php");
 <!-- Content -->
 <div id="content">
 
-<h2>SliTaz list</h2>
+<h2>SliTaz-Diskussionsrunde</h2>
 
 <p>
-	SliTaz contributors discussions and announcements (inc. support and 
-	development). All this is part of the mailing list - Join now to get
-	help or involved in the project.
+	Unterstützung für Nutzer, allgemeine Informationen, Ankündigungen und Diskussionen von Mitwirkenden
+	(einschließlich technischer Unterstützung und Entwicklung). All dies findet in der Diskussionsrunde statt.
+	Tragen Sie sich ein, wenn Sie Hilfe suchen oder sich an dem Projekt beteiligen wollen.
 </p>
 
 <ul>
-	<li><a href="#about">Über die Liste</a> - Support und Entwicklung.</li>
-	<li><a href="#usage">Gebrauch der Liste</a> - Eintragen/Austragen in die Liste
-	und Gebrauch.</li>
-	<li><a href="#archives">Archive der Liste</a> - Lesen und Durchsuchen
-	der Archive.</li>
+	<li><a href="#about">Über die Liste</a> - Unterstützung und Entwicklung.</li>
+	<li><a href="#usage">Gebrauch der Liste</a> - Eintragen, Austragen und Handhabung.</li>
+	<li><a href="#archives">Archive der Liste</a> - Lesen und Durchsuchen der Nachrichtenarchive.</li>
 </ul>
 
 <h3 id="about">Über die Liste</h3>
 
 <p>
-Die Diskussionsliste (Mailing list) ist das Hauptkommunikationsmittel
-der SliTaz Community. Jeder kann und darf sich auf ihr ein- und austragen.
-Eine Mailing-Liste ist ein effektives Mittel für die Zusammenarbeit,
-die Entwicklung und den Support der User. Alle nutzen die selbe Liste, was zu
+Die Diskussionsrunde („Mailing“-Liste) ist das Hauptkommunikationsmittel
+der SliTaz-Nutzergemeinschaft. Jeder kann und darf sich in ihr ein- und austragen.
+Sie ist ein sehr effektives Mittel der Zusammenarbeit und wird für die kostenfreie
+technische Unterstützung der SliTaz-Anwender genutzt. Entwickler, fortgeschrittene Anwender,
+Korrektoren usw. - sie alle nutzen dieselbe Liste zur Entwicklung des Projektes.
+Dadurch wird ein größeres Publikum erreicht, was zu
 einer schnelleren und präziseren Lösung der Aufgaben führt.<br />
-Die Mitglieder der Mailing-Liste sind alles Freiwillige und sie
-tun ihr bestes, entsprechend ihrer Freizeit. Höflichkeit ist Pflicht, und
+Die Mitglieder der Diskussionsrunde sind alle Freiwillige und sie
+tun ihr bestes, entsprechend ihrer verfügbaren Zeit. Höflichkeit ist Pflicht, und
 ein wenig Humor schadet niemandem.
 </p>
 <p>
-Die <em>Mailing Liste</em> verschickt und empfängt Mails. Das heißt, dass
-jedes eingetragenes Mitglied jede verschickte Mail empfängt und erhält.
-Die Nachrichten werden über die Mailing-Listen-Engine von
-<a href="http://www.tuxfamily.org/"  target="_blank" rel="noopener noreferrer">TuxFamily</a> versendet, welche
-von
-<a href="http://www.vhffs.org/"  target="_blank" rel="noopener noreferrer">VHFFS</a> unterstützt wird.
+Die Diskussionsrunde verschickt und empfängt Nachrichten (e-mails). Das heißt, dass
+jedes eingetragene Mitglied Nachrichten verschicken kann und alle Nachrichten aller anderen
+Mitglieder erhält.
+Die Nachrichten werden über den Listenversand von <a href="http://www.tuxfamily.org/">TuxFamily</a> versendet,
+welcher von <a href="http://www.vhffs.org/">VHFFS</a> ermöglicht wird.
 </p>
 
 <h4>Höflichkeit</h4>
 
 <p>
-Diese Mailing-List wird auch von sensibleren Personen genutzt.
-Behandelt euch bitte mit Respekt, auch wenn ihr euch schlecht behandelt fühlt.
-Beschimpfungen und Beleidigungen über das Projekt sind nicht erwünscht,
-solcherlei Kritik lasst ihr bitte woanders los.
-Wenn sich jemand unangebracht verhält, meldet es bitte einem SliTaz-Entwickler.
+Diese Diskussionsrunde wird auch von empfindlichen Personen genutzt.
+Behandeln Sie deshalb andere aüßerst respektvoll, auch wenn Sie sich selbst schlecht behandelt fühlen.
+Beschimpfungen und Beleidigungen sind nicht erwünscht.
+Wenn sich jemand unangebracht verhält, melden Sie es bitte einem SliTaz-Entwickler.
 </p>
 
 <h3 id="usage">Gebrauch der Liste</h3>
 
 <p>
-Um auf der Liste zu posten, müssen Sie zuerst sich auf ihr eintragen.
-Sie werden dann eine Nachricht mit Bitte um Bestätigung erhalten.
-Diese Nachricht enthält eine Nummer, die zu dem Administrator zurück
-geschickt werden muss (beugt Spam vor). Sie werden dann posten können
-und alle Posts erhalten. Eventuell wird die Mailing-List von ihrem
-Spam-Filter abgehalten, achten sie darauf.<br />
-Um einem Post zu antworten, benutzt bitte die "Antwort"-Funktion, so
-bleibt der Verlauf des Gespräches erhalten.
+Um Nachrichten an die Diskussionsrunde senden zu können, müssen Sie sich zuerst anmelden.
+Sie erhalten dann eine Nachricht mit Bitte um Bestätigung.
+Diese Nachricht enthält eine Nummer, die an den Administrator zurückgeschickt
+werden muss (beugt „Spam“ vor). Sodann können Sie Nachrichten senden und
+erhalten alle Nachrichten, die von anderen geschickt wurden. Beachten Sie, dass eventuell Nachrichten
+von ihrem „Spam“-Filter ausgefiltert werden.<br />
+Wenn Sie bei der Beantwortung von Nachrichten die „Antwort“-Funktion benutzen, kann die
+Diskussion eines Themas besser verfolgt werden.
 </p>
 <ul>
-	<li>Administrations Addresse :
-		<a href="mailto:slitaz-request@lists.tuxfamily.org"
+	<li>Administrations-Addresse:<a href="mailto:slitaz-request@lists.tuxfamily.org"
 		>slitaz-request@lists.tuxfamily.org</a></li>
-	<li>Eintragen mit folgendem Betreff : subscribe</li>
-	<li>Austragen mit folgendem Betreff : unsubscribe</li>
-	<li>Hilfe mit folgendem Betreff : help</li>
-	<li>Eine Nachricht an die Mailing-Liste verschicken :
+	<li>Eintragen mit dem Betreff: subscribe</li>
+	<li>Austragen mit dem Betreff: unsubscribe</li>
+	<li>Hilfe anfordern mit dem Betreff: help</li>
+	<li>Eine Nachricht an die Diskussionsrunde verschicken:
 		<a href="mailto:slitaz@lists.tuxfamily.org">slitaz@lists.tuxfamily.org</a></li>
 </ul>
 
 <h4>Format</h4>
 
 <p>
-Nachrichten sollten als reiner Text versendet werden, und nicht als HTML.
-Bitte die Zeilenlänge auf 72-80 Buchstaben beschränken, so dass alle Nutzer
-die Mail problemlos lesen können. Bitte hängt auch keine großen Dateien an, nicht
-jeder hat eine schnelle Internetverbindung.
+Nachrichten sollten als reiner Text und nicht als HTML versendet werden.
+Die Zeilenlänge sollte auf 72-80 Zeichen beschränkt sein, damit alle Nutzer
+die Nachricht problemlos lesen können. Unnötige Zitate sollten entfernt werden und
+das Anhängen von großen Dateien sollte unterbleiben.
 </p>
 
-<h3 id="archives">Archive</h3>
+<h3 id="archives">Nachrichtenarchive</h3>
 
 <p>
-Die Mailing-Liste ist öffentlich, jeder post wird archiviert
-und kann online durchsucht werden. Durchsucht also die Posts nach
-Fragestellungen, bevor ihr dieselbe Frage noch einmal stellt.
-Nachrichten werden nach Datum oder Betreff geordnet; ihr findet das Archiv
-<a href="http://listengine.tuxfamily.org/lists.tuxfamily.org/slitaz/"
- >hier</a> oder unterhalb.
+Die Diskussionsrunde ist öffentlich. Jede Nachricht wird archiviert und die Archive können
+über das Internet durchsucht werden. Damit ist es auch Nicht-Mitgliedern
+möglich, die Archive als Informationsquelle über spezielle Themen zu nutzen.
+Die Archivierung findet täglich statt. Nachrichten können nach Datum, Betreff oder Thema geordnet
+in den <a href="http://listengine.tuxfamily.org/lists.tuxfamily.org/slitaz/"
+ >Archiven der Diskussionsrunde</a> angezeigt werden.
 </p>
 
 <div>
