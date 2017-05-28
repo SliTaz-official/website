@@ -51,15 +51,15 @@ include("../lib/lang.php");
                     $rol_date = file_get_contents("/var/cache/slitaz/website/rolling-date.txt");
                     print $rol_date;
             } ?></span></li>
-	<li><strong><a href="../en/news/#d20150520">SliTaz 5.0 RC-3 Freigabe</a></strong>
+	<li><strong><a href="news/#d20150520">SliTaz 5.0 RC-3 Freigabe</a></strong>
 		<span>- 20. Mai 2015</span></li>
-	<li><strong><a href="../en/news/#d20140519">SliTaz 5.0 RC-2 Freigabe</a></strong>
+	<li><strong><a href="news/#d20140519">SliTaz 5.0 RC-2 Freigabe</a></strong>
 		<span>- 19. Mai 2014</span></li>
-	<li><strong><a href="../en/news/#d20140502">SliTaz 5.0 RC-1 Freigabe</a></strong>
+	<li><strong><a href="news/#d20140502">SliTaz 5.0 RC-1 Freigabe</a></strong>
 		<span>- 2. Mai 2014</span></li>
-	<li><strong><a href="../en/news/#d20140329">SliTaz Raspberry Pi Freigabe</a></strong>
+	<li><strong><a href="news/#d20140329">SliTaz Raspberry Pi Freigabe</a></strong>
 		<span>- 29. März 2014</span></li>
-	<li><strong><a href="../en/news/">Archiv der Freigabemitteilungen</a></strong>
+	<li><strong><a href="news/">Archiv der Freigabemitteilungen</a></strong>
 		<span>- 2007-2013</span></li>
 </ul>
 
