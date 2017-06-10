@@ -53,9 +53,9 @@ include("../lib/lang.php");
 <ul>
 	<li><strong><a href="http://mirror.slitaz.org/iso/rolling/">SliTaz 5.0 Rolling release</a></strong> (weekly)
 		<span>- <?php
-		$rol_date_file = '/var/cache/slitaz/website/rolling-date.txt';
+		$rol_date_file = '../cache/rolling-date.txt';
 		if (file_exists("$rol_date_file")) {
-			$rol_date = file_get_contents("/var/cache/slitaz/website/rolling-date.txt");
+			$rol_date = file_get_contents("../cache/rolling-date.txt");
 			print $rol_date;
 		} ?></span></li>
 	<li><strong><a href="news/#d20150520">SliTaz 5.0 RC-3 release</a></strong>
