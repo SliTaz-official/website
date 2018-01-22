@@ -74,7 +74,7 @@ include("../../lib/html/header.bs.html");
 <p>
 	SliTaz je miroran upravo u Francuskoj <a href="http://www.ads-lu.com/">ADS</a>,
 	i <a href="http://www.tuxfamily.org/">TuxFamily</a>. U Švicarskoj od
-	<a href="http://mirror.switch.ch/">SWITCHmirror</a>, U Kini od LupaWorld,
+	<a href="http://mirror.switch.ch/">SWITCHmirror</a>, <!-- U Kini od LupaWorld, -->
 	u USA od <a href="http://distro.ibiblio.org/pub/linux/distributions/">Ibiblio</a>
 	i u Brazilu od <a href="http://www.c3sl.ufpr.br/en/index.html">UFPR</a>. Ogromno hvala!
 </p>
@@ -88,8 +88,8 @@ include("../../lib/html/header.bs.html");
 	<a href="http://download.tuxfamily.org/slitaz/">HTTP</a> ili
 	<a href="ftp://download.tuxfamily.org/slitaz/">FTP</a></li>
 
-	<li>Kina - Mirror hostiran od LupaWorld
-	<a href="http://mirror.lupaworld.com/slitaz/">HTTP</a></li>
+	<!-- li>Kina - Mirror hostiran od LupaWorld
+	<a href="http://mirror.lupaworld.com/slitaz/">HTTP</a></li -->
 
 	<li>USA - Mirror hostiran od Ibiblio preko
 	<a href="http://distro.ibiblio.org/pub/linux/distributions/slitaz/">HTTP</a> ili

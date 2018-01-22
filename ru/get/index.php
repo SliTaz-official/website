@@ -59,7 +59,7 @@ include("../../lib/lang.php");
 <p>SliTaz зеркалируется во Франции компаниями <a
 	href="http://www.ads-lu.com/">ADS</a> и <a href="http://www.tuxfamily.org/"
 	>TuxFamily</a>, в Швейцарии — <a href="http://mirror.switch.ch/"
-	>SWITCHmirror</a>, в Китае — LupaWorld, в США — <a
+	>SWITCHmirror</a>, <!-- в Китае — LupaWorld, --> в США — <a
 	href="http://distro.ibiblio.org/pub/linux/distributions/">Ibiblio</a> и в
 	Бразилии — <a href="http://www.c3sl.ufpr.br/en/index.html">UFPR</a>.
 	Большое им спасибо!</p>
@@ -71,8 +71,8 @@ include("../../lib/lang.php");
 	<li>Франция — зеркало предоставлено <b>TuxFamily</b> [
 		<a href="http://download.tuxfamily.org/slitaz/">HTTP</a> или
 		<a href="ftp://download.tuxfamily.org/slitaz/">FTP</a> ]</li>
-	<li>Китай — зеркало предоставлено <b>LupaWorld</b> [
-		<a href="http://mirror.lupaworld.com/slitaz/">HTTP</a> ]</li>
+	<!-- li>Китай — зеркало предоставлено <b>LupaWorld</b> [
+		<a href="http://mirror.lupaworld.com/slitaz/">HTTP</a> ]</li -->
 	<li>США — зеркало предоставлено <b>Ibiblio</b> [
 		<a href="http://distro.ibiblio.org/pub/linux/distributions/slitaz/"
 		>HTTP</a> или <a

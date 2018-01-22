@@ -64,7 +64,7 @@ include("../../lib/html/header.html");
 
 <h3>软件源</h3>
 <p>
-SliTaz的软件源在法国、瑞士、中国均有分布。在法国由<a href="http://www.ads-lu.com/" target="_blank" rel="noopener noreferrer">ADS</a>、Mésobius和<a href="http://www.tuxfamily.org/">TuxFamily</a>提供，在瑞士由<a href="http://mirror.switch.ch/">SWITCHmirror</a>提供，在中国由<a href="http://www.lupaworld.com/">LupaWorld</a>提供。感谢这些网站对SliTaz的支持。
+SliTaz的软件源在法国、瑞士、中国均有分布。在法国由<a href="http://www.ads-lu.com/" target="_blank" rel="noopener noreferrer">ADS</a>、Mésobius和<a href="http://www.tuxfamily.org/">TuxFamily</a>提供，在瑞士由<a href="http://mirror.switch.ch/">SWITCHmirror</a>提供<!-- ，在中国由<a href="http://www.lupaworld.com/">LupaWorld</a>提供 -->。感谢这些网站对SliTaz的支持。
 </p>
 
 <ul>
@@ -76,8 +76,8 @@ SliTaz的软件源在法国、瑞士、中国均有分布。在法国由<a href=
 	<a href="http://download.tuxfamily.org/slitaz/">HTTP</a>
 	<a href="ftp://download.tuxfamily.org/slitaz/">FTP</a></li>
 
-	<li>中国 - LupaWorld提供的软件源
-	<a href="http://mirror.lupaworld.com/slitaz/">HTTP</a></li>
+	<!-- li>中国 - LupaWorld提供的软件源
+	<a href="http://mirror.lupaworld.com/slitaz/">HTTP</a></li -->
 
 	<li>美国 - Ibiblio提供的软件源
 	<a href="http://distro.ibiblio.org/pub/linux/distributions/slitaz/">HTTP</a>

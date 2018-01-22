@@ -67,8 +67,8 @@ include("../../lib/lang.php");
 	e Software Livre</a> (Agradecimentos a Carlos Carvalho, da UFPR),
 	na França, por <a href="http://www.ads-lu.com/" target="_blank" rel="noopener noreferrer">ADS</a>
 	e <a href="http://www.tuxfamily.org/">TuxFamily</a>. Na Suiça por
-	<a href="http://mirror.switch.ch/">SWITCHmirror</a> e na China por
-	LupaWorls.
+	<a href="http://mirror.switch.ch/">SWITCHmirror</a><!-- e na China por
+	LupaWorls -->.
 </p>
 
 <ul>
@@ -87,8 +87,8 @@ include("../../lib/lang.php");
 	<a href="http://download.tuxfamily.org/slitaz/">HTTP</a> ou
 	<a href="ftp://download.tuxfamily.org/slitaz/">FTP</a></li>
 
-	<li>China - Mirror hospedado LupaWorld
-	<a href="http://mirror.lupaworld.com/slitaz/">HTTP</a></li>
+	<!-- li>China - Mirror hospedado LupaWorld
+	<a href="http://mirror.lupaworld.com/slitaz/">HTTP</a></li -->
 </ul>
 
 <h3 id="sources">Fontes</h3>

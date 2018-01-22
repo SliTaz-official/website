@@ -77,7 +77,7 @@ include("../../lib/html/header.html");
 	<a href="http://www.ads-lu.com/" target="_blank" rel="noopener noreferrer">ADS</a>, and
 	<a href="http://www.tuxfamily.org/">TuxFamily</a>. Da fonti Svizzere
 	come <a href="http://mirror.switch.ch/">SWITCHmirror</a>,
-	Cinesi come LupaWorld, Americane come
+	<!-- Cinesi come LupaWorld, --> Americane come
 	<a href="http://distro.ibiblio.org/pub/linux/distributions/">Ibiblio</a>
 	e Brasiliane come <a href="http://www.c3sl.ufpr.br/en/">UFPR</a>.
 	Un grazie enorme.
@@ -92,8 +92,8 @@ include("../../lib/html/header.html");
 	<a href="http://download.tuxfamily.org/slitaz/">HTTP</a> or
 	<a href="ftp://download.tuxfamily.org/slitaz/">FTP</a></li>
 
-	<li>Cina - Offerto da LupaWorld
-	<a href="http://mirror.lupaworld.com/slitaz/">HTTP</a></li>
+	<!-- li>Cina - Offerto da LupaWorld
+	<a href="http://mirror.lupaworld.com/slitaz/">HTTP</a></li -->
 
 	<li>America - Offerto da Ibiblio via
 	<a href="http://distro.ibiblio.org/pub/linux/distributions/slitaz/">HTTP</a> or

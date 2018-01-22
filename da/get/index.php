@@ -70,7 +70,7 @@ include("../../lib/html/header.da.html");
 	SliTaz er spejlet i Frankrig af <a href="http://www.ads-lu.com/">ADS</a>
 	og <a href="http://www.tuxfamily.org/">TuxFamily</a>. I Schwietz af
 	<a href="http://mirror.switch.ch/">SWITCHmirror</a>,
-	i Kina af LupaWorld, i USA af
+	<!-- i Kina af LupaWorld, --> i USA af
 	<a href="http://distro.ibiblio.org/pub/linux/distributions/">Ibiblio</a>
 	og i Brasilien af <a href="http://www.c3sl.ufpr.br/en/">UFPR</a>. Kæmpe 
 	stor tak til værterne.
@@ -85,8 +85,8 @@ include("../../lib/html/header.da.html");
 	<a href="http://download.tuxfamily.org/slitaz/">HTTP</a> eller
 	<a href="ftp://download.tuxfamily.org/slitaz/">FTP</a></li>
 
-	<li>Kina - filspejl beværtet af LupaWorld via
-	<a href="http://mirror.lupaworld.com/slitaz/">HTTP</a></li>
+	<!-- li>Kina - filspejl beværtet af LupaWorld via
+	<a href="http://mirror.lupaworld.com/slitaz/">HTTP</a></li -->
 
 	<li>USA - filspejl beværtet af by Ibiblio via
 	<a href="http://distro.ibiblio.org/pub/linux/distributions/slitaz/">HTTP</a> eller

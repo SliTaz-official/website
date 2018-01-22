@@ -65,8 +65,8 @@ include("../../lib/lang.php");
 	Un grand merci à l'équipe de <a href="http://www.tuxfamily.org/">TuxFamily</a>,
 	à <a href="http://mirror.switch.ch/">SWITCHmirror</a> et à
 	<a href="http://www.ads-lu.com/" target="_blank" rel="noopener noreferrer">ADS</a>
-	qui hébergent les miroirs principaux de SliTaz, en Suisse et en France, et
-	en Chine à <a href="http://mirror.lupaworld.com/">LupaWorld</a> :
+	qui hébergent les miroirs principaux de SliTaz, en Suisse et en France<!-- , et
+	en Chine à <a href="http://mirror.lupaworld.com/">LupaWorld</a> --> :
 	les services sont de très haute qualité et sans vous, rien ne serait
 	possible.
 </p>
@@ -83,8 +83,8 @@ include("../../lib/lang.php");
 	<a href="http://download.tuxfamily.org/slitaz/">HTTP</a> ou
 	<a href="ftp://download.tuxfamily.org/slitaz/">FTP</a></li>
 
-	<li>Chine - Miroir hébergé par LupaWorld
-	<a href="http://mirror.lupaworld.com/slitaz/">HTTP</a></li>
+	<!-- li>Chine - Miroir hébergé par LupaWorld
+	<a href="http://mirror.lupaworld.com/slitaz/">HTTP</a></li -->
 </ul>
 
 <h3 id="sources">Sources</h3>
