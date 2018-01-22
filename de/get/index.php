@@ -29,8 +29,8 @@ include("../../lib/lang.php");
 </p>
 
 <ul>
-	<li><a href="#stable">Direktstart-ISO-Abbild Stabile Version</a> -
-		Urladefähiges ISO-Abbild mit der aktuellen stabilen Version.</li>
+	<!-- li><a href="#stable">Direktstart-ISO-Abbild Stabile Version</a> -
+		Urladefähiges ISO-Abbild mit der aktuellen stabilen Version.</li -->
 	<li><a href="#rolling">Direktstart-ISO-Abbild der Version in Entwicklung</a> -
 		Urladefähiges ISO-Abbild mit der aktuellen Version in Entwicklung.</li>
 	<li><a href="#floppy">Diskette</a> - Urladefähiges Diskettenabbild zum Starten 
@@ -101,6 +101,7 @@ Quellcode kann aus dem Depot transferiert werden mit:
 <a href="ftp://mirror.slitaz.org/sources/">FTP</a>
 </p>
 
+<!--
 <h2 id="stable">Direktstart-ISO-Abbild - Stabile Version</h2>
 
 <p>
@@ -108,13 +109,13 @@ Quellcode kann aus dem Depot transferiert werden mit:
 	Nutzergemeinschaft getestet wurde. Es enthält eine Vielzahl nützlicher
 	Anwendungen, die sorgfältig in eine benutzerfreundliche Oberfläche integriert wurden, woraus ein
 	schlüssiges und robustes System resultiert.
-	<?php echo "Die aktuelle stabile Freigabe $stable_ver wurde am $stable_rel freigegeben."; ?>
+	< ?php echo "Die aktuelle stabile Freigabe $stable_ver wurde am $stable_rel freigegeben."; ? >
 </p>
 
 <div class="box-dl"><p>
-	<?php echo "SliTaz GNU/Linux $stable_ver ($stable_size) - 
+	< ?php echo "SliTaz GNU/Linux $stable_ver ($stable_size) - 
 	<a href='$stable_iso'>slitaz-$stable_ver.iso</a>
-	[ <a href='$mirror/$stable_ver/slitaz-$stable_ver.md5'>md5</a> ]"; ?>
+	[ <a href='$mirror/$stable_ver/slitaz-$stable_ver.md5'>md5</a> ]"; ? >
 </p></div>
 
 <p>
@@ -124,9 +125,9 @@ Quellcode kann aus dem Depot transferiert werden mit:
 </p>
 
 <div class="box-dl"><p>
-	<?php echo "Sammlung aller Pakete der SliTaz-GNU/Linux-Version $stable_ver ($stable_pkgs)
+	< ?php echo "Sammlung aller Pakete der SliTaz-GNU/Linux-Version $stable_ver ($stable_pkgs)
 	- <a href='$pkgs_mirror/$stable_ver/packages-$stable_ver.iso'>packages-$stable_ver.iso</a>
-	[ <a href='$pkgs_mirror/$stable_ver/packages-$stable_ver.md5'>md5</a> ]"; ?>
+	[ <a href='$pkgs_mirror/$stable_ver/packages-$stable_ver.md5'>md5</a> ]"; ? >
 </p></div>
 
 <p>
@@ -136,10 +137,11 @@ Quellcode kann aus dem Depot transferiert werden mit:
 </p>
 
 <div class="box-dl"><p>
-	<?php echo "SliTaz GNU/Linux $stable_ver Archive (51 MB) - 
+	< ?php echo "SliTaz GNU/Linux $stable_ver Archive (51 MB) - 
 	<a href='http://mirror.slitaz.org/iso/$stable_ver/slitaz-$stable_ver.zip'>
-	slitaz-$stable_ver.zip</a>"; ?>
+	slitaz-$stable_ver.zip</a>"; ? >
 </p></div>
+-->
 
 <h2 id="rolling">Direktstart-ISO-Abbild - Entwicklungsversion</h2>
 

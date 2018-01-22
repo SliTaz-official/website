@@ -106,17 +106,17 @@
 <h2>Project Activity</h2>
 <?php require_once("../lib/get-feeds.php"); ?>
 
-<div class="activity">
+<!-- div class="activity">
 	<p>
 		<a href="http://scn.slitaz.org/?log"><img 
 			src="/images/users.png" alt="[ ]" /></a>
 		Community activity
-		<?php get_feed("scn.xml"); ?>
+		< ?php get_feed("scn.xml"); ? >
 	</div>
 	<p class="activity_more">
 		<a href="http://scn.slitaz.org/?log">More activity</a>
 	</p>
-</div>
+</div -->
 
 <div class="activity">
 	<p>

@@ -28,7 +28,7 @@ include("../../lib/html/header.bs.html");
 		</p>
 		<div class="button">
 			Brzo Preuzimanje:
-			<?php echo "<a href='$stable_iso'>SliTaz $stable_ver</a>
+			<?php echo "<!-- a href='$stable_iso'>SliTaz $stable_ver</a -->
 				<a href='$mirror/rolling/slitaz-rolling.iso'>SliTaz Rolling</a>"; ?>
 		</div>
 	</div>
@@ -42,8 +42,8 @@ include("../../lib/html/header.bs.html");
 <h2>Preuzmi SliTaz</h2>
 
 <ul>
-	<li><a href="#stable">LiveCD Stabilna verzija.</a> - 
-		Bootable ISO slika trenutne stabilne verzije.</li>
+	<!-- li><a href="#stable">LiveCD Stabilna verzija.</a> - 
+		Bootable ISO slika trenutne stabilne verzije.</li -->
 	<li><a href="#rolling">LiveCD Rolling verzija</a> - 
 		Bootable ISO slika od rolling verzije.</li>
 	<li><a href="#floppy">Floppy disketa</a> - Bootable 
@@ -113,6 +113,7 @@ graditelja), Tazusb (LiveUSB Tool) i SliTaz Alati tarballs se može skinuti sa
 	<a href="http://mirror.slitaz.org/sources/">FTP</a>
 </p>
 
+<!--
 <h2 id="stable">LiveCD - Stabilna verzija</h2>
 
 <p>
@@ -120,13 +121,13 @@ graditelja), Tazusb (LiveUSB Tool) i SliTaz Alati tarballs se može skinuti sa
 	testiran od aktivne zajednice. Jezgra LiveCD vam nudi veliki
     izbor višenamjenski paketa pažljivo integrirani u distribuciji, što je 
     rezultiralo u koherentan i robustan sustav.
-	<?php echo "Current $stable_ver stable version was released on $stable_rel."; ?>
+	< ?php echo "Current $stable_ver stable version was released on $stable_rel."; ? >
 </p>
 
 <div class="box-dl"><p>
-	<?php echo "SliTaz GNU/Linux $stable_ver ($stable_size) - 
+	< ?php echo "SliTaz GNU/Linux $stable_ver ($stable_size) - 
 	<a href='$stable_iso'>slitaz-$stable_ver.iso</a>
-	[ <a href='$mirror/$stable_ver/slitaz-$stable_ver.md5'>md5</a> ]"; ?>
+	[ <a href='$mirror/$stable_ver/slitaz-$stable_ver.md5'>md5</a> ]"; ? >
 </p></div>
 
 <p>
@@ -136,10 +137,11 @@ graditelja), Tazusb (LiveUSB Tool) i SliTaz Alati tarballs se može skinuti sa
 </p>
 
 <div class="box-dl"><p>
-	<?php echo "Collection of SliTaz GNU/Linux $stable_ver packages ($stable_pkgs)
+	< ?php echo "Collection of SliTaz GNU/Linux $stable_ver packages ($stable_pkgs)
 	- <a href='$pkgs_mirror/$stable_ver/packages-$stable_ver.iso'>packages-$stable_ver.iso</a>
-	[ <a href='$pkgs_mirror/$stable_ver/packages-$stable_ver.md5'>md5</a> ]"; ?>
+	[ <a href='$pkgs_mirror/$stable_ver/packages-$stable_ver.md5'>md5</a> ]"; ? >
 </p></div>
+-->
 
 <h2 id="rolling">LiveCD - Rolling verzija</h2>
 
@@ -172,9 +174,9 @@ graditelja), Tazusb (LiveUSB Tool) i SliTaz Alati tarballs se može skinuti sa
 </p>
 
 <div class="box-dl"><p>
-	<?php echo "Collection of SliTaz GNU/Linux Cooking packages ($cooking_pkgs)
+	< ?php echo "Collection of SliTaz GNU/Linux Cooking packages ($cooking_pkgs)
 	- <a href='$pkgs_mirror/cooking/packages-cooking.iso'>packages-cooking.iso</a>
-	[ <a href='$pkgs_mirror/cooking/packages-cooking.md5'>md5</a> ]"; ?>
+	[ <a href='$pkgs_mirror/cooking/packages-cooking.md5'>md5</a> ]"; ? >
 </p></div -->
 
 <h2 id="floppy">Floppy boot disketa</h2>

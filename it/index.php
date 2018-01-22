@@ -121,17 +121,17 @@
 
 <?php require_once("../lib/get-feeds.php"); ?>
 
-<div class="activity">
+<!-- div class="activity">
 	<p>
 		<a href="http://scn.slitaz.org/?log"><img
 			src="/images/users.png" alt="[ ]" /></a>
 		Bacheca degli Sviluppatori
-		<?php get_feed("scn.xml"); ?>
+		< ?php get_feed("scn.xml"); ? >
 	</div>
 	<p class="activity_more">
 		<a href="http://scn.slitaz.org/?log">Più Attività</a>
 	</p>
-</div>
+</div -->
 
 <div class="activity">
 	<p>

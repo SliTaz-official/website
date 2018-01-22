@@ -29,8 +29,8 @@ include("../../lib/lang.php");
 </p>
 
 <ul>
-	<li><a href="#stable">LiveCD Stable version</a> - 
-		Bootable ISO image of the current stable version</li>
+	<!-- li><a href="#stable">LiveCD Stable version</a> - 
+		Bootable ISO image of the current stable version</li -->
 	<li><a href="#rolling">LiveCD Rolling version</a> - 
 		Bootable ISO image of the rolling version</li>
 	<li><a href="#floppy">Floppy disk</a> - Bootable 
@@ -101,6 +101,7 @@ include("../../lib/lang.php");
 	<a href="http://mirror.slitaz.org/sources/">FTP</a>
 </p>
 
+<!--
 <h2 id="stable">LiveCD - Stable version</h2>
 
 <p>
@@ -108,13 +109,13 @@ include("../../lib/lang.php");
 	tested by an active community. The core LiveCD offers you a large 
 	selection of multi-use packages carefully integrated into the 
 	distribution, thus resulting in a coherent and robust system.
-	<?php echo "Current $stable_ver stable version was released on $stable_rel."; ?>
+	< ?php echo "Current $stable_ver stable version was released on $stable_rel."; ? >
 </p>
 
 <div class="box-dl"><p>
-	<?php echo "SliTaz GNU/Linux $stable_ver ($stable_size) - 
+	< ?php echo "SliTaz GNU/Linux $stable_ver ($stable_size) - 
 	<a href='$stable_iso'>slitaz-$stable_ver.iso</a>
-	[ <a href='$mirror/$stable_ver/slitaz-$stable_ver.md5'>md5</a> ]"; ?>
+	[ <a href='$mirror/$stable_ver/slitaz-$stable_ver.md5'>md5</a> ]"; ? >
 </p></div>
 
 <p>
@@ -124,9 +125,9 @@ include("../../lib/lang.php");
 </p>
 
 <div class="box-dl"><p>
-	<?php echo "Collection of SliTaz GNU/Linux $stable_ver packages ($stable_pkgs)
+	< ?php echo "Collection of SliTaz GNU/Linux $stable_ver packages ($stable_pkgs)
 	- <a href='$pkgs_mirror/$stable_ver/packages-$stable_ver.iso'>packages-$stable_ver.iso</a>
-	[ <a href='$pkgs_mirror/$stable_ver/packages-$stable_ver.md5'>md5</a> ]"; ?>
+	[ <a href='$pkgs_mirror/$stable_ver/packages-$stable_ver.md5'>md5</a> ]"; ? >
 </p></div>
 
 <p>
@@ -136,10 +137,11 @@ include("../../lib/lang.php");
 </p>
 
 <div class="box-dl"><p>
-	<?php echo "SliTaz GNU/Linux $stable_ver archive (51 Mb) - 
+	< ?php echo "SliTaz GNU/Linux $stable_ver archive (51 Mb) - 
 	<a href='http://mirror.slitaz.org/iso/$stable_ver/slitaz-$stable_ver.zip'>
-	slitaz-$stable_ver.zip</a>"; ?>
+	slitaz-$stable_ver.zip</a>"; ? >
 </p></div>
+-->
 
 <h2 id="rolling">LiveCD - Rolling version</h2>
 
@@ -171,9 +173,9 @@ include("../../lib/lang.php");
 </p>
 
 <div class="box-dl"><p>
-	<?php echo "Collection of SliTaz GNU/Linux Cooking packages ($cooking_pkgs)
+	< ?php echo "Collection of SliTaz GNU/Linux Cooking packages ($cooking_pkgs)
 	- <a href='$pkgs_mirror/cooking/packages-cooking.iso'>packages-cooking.iso</a>
-	[ <a href='$pkgs_mirror/cooking/packages-cooking.md5'>md5</a> ]"; ?>
+	[ <a href='$pkgs_mirror/cooking/packages-cooking.md5'>md5</a> ]"; ? >
 </p></div -->
 
 <h2 id="floppy">Floppy boot disk</h2>

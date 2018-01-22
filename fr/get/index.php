@@ -30,8 +30,8 @@ include("../../lib/lang.php");
 </p>
 
 <ul>
-	<li><a href="#stable">LiveCD version Stable</a> - Image ISO du
-		LiveCD de la version stable de SliTaz.</li>
+	<!-- li><a href="#stable">LiveCD version Stable</a> - Image ISO du
+		LiveCD de la version stable de SliTaz.</li -->
 	<li><a href="#rolling">LiveCD version Rolling</a> - Image ISO du
 		LiveCD de SliTaz en cuisson.</li>
 	<li><a href="flavors.php">LiveCD à saveur</a> - Saveurs, dont les 'loram'.</li>
@@ -98,6 +98,7 @@ include("../../lib/lang.php");
 	<a href="http://labs.slitaz.org/projects">les SliTaz Labs</a> (laboratoires).
 </p>
 
+<!--
 <h2 id="stable">LiveCD version Stable</h2>
 
 <p>
@@ -105,13 +106,13 @@ include("../../lib/lang.php");
 	largement testé par une communauté active, elle propose une sélection
 	de paquets finement intégrés à la distribution, résultant dans un
 	système cohérent et robuste. La version Stable actuelle est la version
-	<?php echo "$stable_ver publiée le $stable_rel."; ?>
+	< ?php echo "$stable_ver publiée le $stable_rel."; ? >
 </p>
 
 <div class="box-dl"><p>
-	<?php echo "SliTaz GNU/Linux $stable_ver ($stable_size) -
+	< ?php echo "SliTaz GNU/Linux $stable_ver ($stable_size) -
 	<a href='$stable_iso'>slitaz-$stable_ver.iso</a>
-	[ <a href='$mirror/$stable_ver/slitaz-$stable_ver.md5'>md5</a> ]"; ?>
+	[ <a href='$mirror/$stable_ver/slitaz-$stable_ver.md5'>md5</a> ]"; ? >
 </p></div>
 
 <p>
@@ -122,9 +123,9 @@ include("../../lib/lang.php");
 </p>
 
 <div class="box-dl"><p>
-	<?php echo "Ensemble des paquets SliTaz GNU/Linux $stable_ver ($stable_pkgs)
+	< ?php echo "Ensemble des paquets SliTaz GNU/Linux $stable_ver ($stable_pkgs)
 	- <a href='$pkgs_mirror/$stable_ver/packages-$stable_ver.iso'>packages-$stable_ver.iso</a>
-	[ <a href='$pkgs_mirror/$stable_ver/packages-$stable_ver.md5'>md5</a> ]"; ?>
+	[ <a href='$pkgs_mirror/$stable_ver/packages-$stable_ver.md5'>md5</a> ]"; ? >
 </p></div>
 
 <p>
@@ -134,10 +135,11 @@ include("../../lib/lang.php");
 </p>
 
 <div class="box-dl"><p>
-	<?php echo "SliTaz GNU/Linux $stable_ver archive (51 Mb) - 
+	< ?php echo "SliTaz GNU/Linux $stable_ver archive (51 Mb) - 
 	<a href='http://mirror.slitaz.org/iso/$stable_ver/slitaz-$stable_ver.zip'>
-	slitaz-$stable_ver.zip</a>"; ?>
+	slitaz-$stable_ver.zip</a>"; ? >
 </p></div>
+-->
 
 <h2 id="rolling">LiveCD version Rolling</h2>
 
@@ -171,9 +173,9 @@ include("../../lib/lang.php");
 </p>
 
 <div class="box-dl"><p>
-	<?php echo "Ensemble de paquets SliTaz GNU/Linux Cooking ($cooking_pkgs)
+	< ?php echo "Ensemble de paquets SliTaz GNU/Linux Cooking ($cooking_pkgs)
 	- <a href='$pkgs_mirror/cooking/packages-cooking.iso'>packages-cooking.iso</a>
-	[ <a href='$pkgs_mirror/cooking/packages-cooking.md5'>md5</a> ]"; ?>
+	[ <a href='$pkgs_mirror/cooking/packages-cooking.md5'>md5</a> ]"; ? >
 </p></div -->
 
 <h2 id="floppy">Disquette de démarrage</h2>

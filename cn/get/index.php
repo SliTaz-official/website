@@ -27,7 +27,7 @@ include("../../lib/html/header.html");
 		</p>
 		<div class="button">
 			Quick Download:
-			<?php echo "<a href='$stable_iso'>SliTaz $stable_ver</a>
+			<?php echo "<!-- a href='$stable_iso'>SliTaz $stable_ver</a -->
 				<a href='$cooking_iso'>SliTaz $cooking</a>"; ?>
 		</div>
 	</div>
@@ -41,8 +41,8 @@ include("../../lib/html/header.html");
 <h2>下载SliTaz</h2>
 
 <ul>
-	<li><a href="#stable">LiveCD稳定版</a> -
-	当前稳定版的可启动ISO镜像。</li>
+	<!-- li><a href="#stable">LiveCD稳定版</a> -
+	当前稳定版的可启动ISO镜像。</li -->
 	<li><a href="#cooking">LiveCD开发版</a> -
 	当前开发版的可启动ISO镜像。</li>
 	<li><a href="#floppy">软盘</a> -
@@ -98,30 +98,32 @@ Tazusb（LiveUSB工具）和一些其他的SliTaz小工具可以在SliTaz软件�
 <a href="http://mirror.slitaz.org/sources/">FTP</a>
 </p>
 
+<!--
 <h2 id="stable">LiveCD - 稳定版</h2>
 <p>
 	SliTaz稳定版提供一个成熟的操作系统。这个操作系统已经经过严格的测试，基本上没有BUG。
 	LiveCD。这个版本选择了许多有用的软件，是一个用途广泛、强大的操作系统。这个版本较为稳定，
 	不过更新频率较慢。建议服务器用户或追求稳定的个人用户使用这个版本。
-	<?php echo "当前最新的稳定版本是".$stable_ver."版， ".$stable_rel." 发布。"; ?>
+	< ?php echo "当前最新的稳定版本是".$stable_ver."版， ".$stable_rel." 发布。"; ? >
 </p>
 
 <div class="box-dl"><p>
-	<?php echo "SliTaz GNU/Linux $stable_ver ($stable_size) - 
+	< ?php echo "SliTaz GNU/Linux $stable_ver ($stable_size) - 
 	<a href='$stable_iso'>slitaz-$stable_ver.iso</a>
-	[ <a href='$mirror/$stable_ver/slitaz-$stable_ver.md5'>md5</a> ]"; ?>
+	[ <a href='$mirror/$stable_ver/slitaz-$stable_ver.md5'>md5</a> ]"; ? >
 </p></div>
 
 <p>
-提供给<?php echo "$stable_ver"; ?>版本的，包含所有软件包的可启动CD镜像每天都会创建。
+提供给< ?php echo "$stable_ver"; ? >版本的，包含所有软件包的可启动CD镜像每天都会创建。
 它也包含SliTaz官方网站的副本，在无网络的情况下可以通过install.sh使用。
 </p>
 
 <div class="box-dl"><p>
-	<?php echo "SliTaz GNU/Linux $stable_ver 软件包集合 ($stable_pkgs)
+	< ?php echo "SliTaz GNU/Linux $stable_ver 软件包集合 ($stable_pkgs)
 	- <a href='$pkgs_mirror/$stable_ver/packages-$stable_ver.iso'>packages-$stable_ver.iso</a>
-	[ <a href='$pkgs_mirror/$stable_ver/packages-$stable_ver.md5'>md5</a> ]"; ?>
+	[ <a href='$pkgs_mirror/$stable_ver/packages-$stable_ver.md5'>md5</a> ]"; ? >
 </p></div>
+-->
 
 <h2 id="cooking">LiveCD - 开发版</h2>
 <p>

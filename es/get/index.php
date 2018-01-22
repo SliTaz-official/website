@@ -28,7 +28,7 @@ include("../../lib/html/header.html");
 		</p>
 		<div class="button">
 			Quick Download:
-			<?php echo "<a href='$stable_iso'>SliTaz $stable_ver</a>
+			<?php echo "<!-- a href='$stable_iso'>SliTaz $stable_ver</a -->
 				<a href='$mirror/rolling/slitaz-rolling.iso'>SliTaz Rolling</a>"; ?>
 		</div>
 	</div>
@@ -42,8 +42,8 @@ include("../../lib/html/header.html");
 <h2>Descargas</h2>
 
 <ul>
-	<li><a href="#stable">LiveCD Versión Estable</a> -
-		Imagen ISO de autoarranque con la última versión estable.</li>
+	<!-- li><a href="#stable">LiveCD Versión Estable</a> -
+		Imagen ISO de autoarranque con la última versión estable.</li -->
 	<li><a href="#rolling">LiveCD Versión Rolling</a> -
 		Imagen ISO de autoarranque con la versión Rolling.</li>
 	<li><a href="/en/get/flavors.php">LiveCD al gusto</a> (en) -
@@ -93,6 +93,7 @@ include("../../lib/html/header.html");
 	<a href="http://mirror.slitaz.org/sources/">FTP</a>.
 </p>
 
+<!--
 <h2 id="stable">LiveCD - Versión estable</h2>
 
 <p>
@@ -101,13 +102,13 @@ include("../../lib/html/header.html");
 	selección de paquetes cuidadosamente integrados en la distribución, resultando
 	en un sistema coherente y, sobre todo, robusto. La versión estable actual fue
 	liberada el:
-	<?php echo "$stable_rel."; ?>
+	< ?php echo "$stable_rel."; ? >
 </p>
 
 <div class="box-dl"><p>
-	<?php echo "SliTaz GNU/Linux $stable_ver ($stable_size) - 
+	< ?php echo "SliTaz GNU/Linux $stable_ver ($stable_size) - 
 	<a href='$stable_iso'>slitaz-$stable_ver.iso</a>
-	[ <a href='$mirror/$stable_ver/slitaz-$stable_ver.md5'>md5</a> ]"; ?>
+	[ <a href='$mirror/$stable_ver/slitaz-$stable_ver.md5'>md5</a> ]"; ? >
 </p></div>
 
 <p>
@@ -118,10 +119,11 @@ include("../../lib/html/header.html");
 </p>
 
 <div class="box-dl"><p>
-	<?php echo "Colección de paquetes de SliTaz GNU/Linux $stable_ver ($stable_pkgs)
+	< ?php echo "Colección de paquetes de SliTaz GNU/Linux $stable_ver ($stable_pkgs)
 	- <a href='$pkgs_mirror/$stable_ver/packages-$stable_ver.iso'>packages-$stable_ver.iso</a>
-	[ <a href='$pkgs_mirror/$stable_ver/packages-$stable_ver.md5'>md5</a> ]"; ?>
+	[ <a href='$pkgs_mirror/$stable_ver/packages-$stable_ver.md5'>md5</a> ]"; ? >
 </p></div>
+-->
 
 <h2 id="rolling">LiveCD - Versión Rolling</h2>
 
@@ -152,9 +154,9 @@ include("../../lib/html/header.html");
 </p>
 
 <div class="box-dl"><p>
-	<?php echo "Colección de paquetes de SliTaz GNU/Linux Cooking ($cooking_pkgs)
+	< ?php echo "Colección de paquetes de SliTaz GNU/Linux Cooking ($cooking_pkgs)
 	- <a href='$pkgs_mirror/cooking/packages-cooking.iso'>packages-cooking.iso</a>
-	[ <a href='$pkgs_mirror/cooking/packages-cooking.md5'>md5</a> ]"; ?>
+	[ <a href='$pkgs_mirror/cooking/packages-cooking.md5'>md5</a> ]"; ? >
 </p></div -->
 
 <!-- End of content -->

@@ -30,8 +30,8 @@ include("../../lib/lang.php");
 <h2>Downloads</h2>
 
 <ul>
-	<li><a href="#stable">Versão stable (estável) do LiveCD</a> -
-		Imagem ISO inicializável da versão estável mais recente.</li>
+	<!-- li><a href="#stable">Versão stable (estável) do LiveCD</a> -
+		Imagem ISO inicializável da versão estável mais recente.</li -->
 	<li><a href="#rolling">Versão rolling (testes) do LiveCD</a> -
 		Imagem ISO inicializável da versão de testes mais recente.</li>
 	<li><a href="#floppy">Versão em disquete</a> - Disquete de boot que pode iniciar
@@ -104,6 +104,7 @@ include("../../lib/lang.php");
 	<a href="http://mirror.slitaz.org/sources/">FTP</a>
 </p>
 
+<!--
 <h2 id="stable">Versão stable (estável) do LiveCD</h2>
 
 <p>
@@ -111,13 +112,13 @@ include("../../lib/lang.php");
 	testado por uma comunidade ativa. O LiveCD base oferece uma grande seleção
 	de pacotes variados cuidadosamente integrados à distribuiçao, o que resulta
 	num sistema coerente e robusto.
-	<?php echo "A atual versão estável $stable_ver lançada em: $stable_rel."; ?>
+	< ?php echo "A atual versão estável $stable_ver lançada em: $stable_rel."; ? >
 </p>
 
 <div class="box-dl"><p>
-	<?php echo "SliTaz GNU/Linux $stable_ver ($stable_size) - 
+	< ?php echo "SliTaz GNU/Linux $stable_ver ($stable_size) - 
 	<a href='$stable_iso'>slitaz-$stable_ver.iso</a>
-	[ <a href='$mirror/$stable_ver/slitaz-$stable_ver.md5'>md5</a> ]"; ?>
+	[ <a href='$mirror/$stable_ver/slitaz-$stable_ver.md5'>md5</a> ]"; ? >
 </p></div>
 
 <p>
@@ -128,10 +129,11 @@ include("../../lib/lang.php");
 </p>
 
 <div class="box-dl"><p>
-	<?php echo "Coleção dos pacotes da versão $stable_ver do SliTaz GNU/Linux ($stable_pkgs)
+	< ?php echo "Coleção dos pacotes da versão $stable_ver do SliTaz GNU/Linux ($stable_pkgs)
 	- <a href='$pkgs_mirror/$stable_ver/packages-$stable_ver.iso'>packages-$stable_ver.iso</a>
-	[ <a href='$pkgs_mirror/$stable_ver/packages-$stable_ver.md5'>md5</a> ]"; ?>
+	[ <a href='$pkgs_mirror/$stable_ver/packages-$stable_ver.md5'>md5</a> ]"; ? >
 </p></div>
+-->
 
 <h2 id="rolling">Versão rolling (testes) do LiveCD</h2>
 
@@ -164,9 +166,9 @@ porém isto irá sobrescrever qualquer dado existente na mídia.
 </p>
 
 <div class="box-dl"><p>
-	<?php echo "Coleção dos pacotes da versão Cooking do SliTaz GNU/Linux ($cooking_pkgs)
+	< ?php echo "Coleção dos pacotes da versão Cooking do SliTaz GNU/Linux ($cooking_pkgs)
 	- <a href='$pkgs_mirror/cooking/packages-cooking.iso'>packages-cooking.iso</a>
-	[ <a href='$pkgs_mirror/cooking/packages-cooking.md5'>md5</a> ]"; ?>
+	[ <a href='$pkgs_mirror/cooking/packages-cooking.md5'>md5</a> ]"; ? >
 </p></div -->
 
 <h2 id="floppy">Disquete de boot</h2>

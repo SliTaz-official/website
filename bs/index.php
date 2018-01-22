@@ -173,17 +173,17 @@
 
 <?php require_once("../lib/get-feeds.php"); ?>
 
-<div class="activity">
+<!-- div class="activity">
 	<p>
 		<a href="http://scn.slitaz.org/?log"><img
 			src="/images/users.png" alt="[ ]" /></a>
 		Zajednička aktivnost
-		<?php get_feed("scn.xml"); ?>
+		< ?php get_feed("scn.xml"); ? >
 	</div>
 	<p class="activity_more">
 		<a href="http://scn.slitaz.org/?log">Više akcije</a>
 	</p>
-</div>
+</div -->
 
 <div class="activity">
 	<p>

@@ -30,7 +30,7 @@ include("../../lib/html/header.da.html");
 		</p>
 		<div class="button">
 			Hent:
-			<?php echo "<a href='$stable_iso'>SliTaz $stable_ver</a>
+			<?php echo "<!-- a href='$stable_iso'>SliTaz $stable_ver</a -->
 				<a href='$mirror/rolling/slitaz-rolling.iso'>SliTaz Rolling</a>"; ?>
 		</div>
 	</div>
@@ -44,8 +44,8 @@ include("../../lib/html/header.da.html");
 <h2>Hent SliTaz</h2>
 
 <ul>
-	<li><a href="#stable">LiveCD Stabil version</a> - 
-		Startbar cdrom med den seneste stabile version.</li>
+	<!-- li><a href="#stable">LiveCD Stabil version</a> - 
+		Startbar cdrom med den seneste stabile version.</li -->
 	<li><a href="#rolling">LiveCD udviklingsversion</a> - 
 		Startbar cdrom med den seneste udviklingsversion.</li>
 	<li><a href="#floppy">diskette</a> - Opstartsdiskette til at
@@ -110,6 +110,7 @@ include("../../lib/html/header.da.html");
 	<a href="http://mirror.slitaz.org/sources/">FTP</a>
 </p>
 
+<!--
 <h2 id="stable">LiveCD - Stabil version</h2>
 
 <p>
@@ -117,13 +118,13 @@ include("../../lib/html/header.da.html");
 	en aktiv brugerskare. Kerne LiveCDen tilbyder dig et stort udvalg 
 	universelt anvendelige programpakker omhyggeligt integreret til denne
 	distribution, således at du får et sammenhængende og robust system.
-	<?php echo "Nuværende stabile version $stable_ver blev frigivet den: $stable_rel."; ?>
+	< ?php echo "Nuværende stabile version $stable_ver blev frigivet den: $stable_rel."; ? >
 </p>
 
 <div class="box-dl"><p>
-	<?php echo "SliTaz GNU/Linux $stable_ver ($stable_size) - 
+	< ?php echo "SliTaz GNU/Linux $stable_ver ($stable_size) - 
 	<a href='$stable_iso'>slitaz-$stable_ver.iso</a>
-	[ <a href='$mirror/$stable_ver/slitaz-$stable_ver.md5'>md5</a> ]"; ?>
+	[ <a href='$mirror/$stable_ver/slitaz-$stable_ver.md5'>md5</a> ]"; ? >
 </p></div>
 
 <p>
@@ -133,10 +134,11 @@ include("../../lib/html/header.da.html");
 </p>
 
 <div class="box-dl"><p>
-	<?php echo "Samling af SliTaz GNU/Linux $stable_ver programpakker ($stable_pkgs)
+	< ?php echo "Samling af SliTaz GNU/Linux $stable_ver programpakker ($stable_pkgs)
 	- <a href='$pkgs_mirror/$stable_ver/packages-$stable_ver.iso'>packages-$stable_ver.iso</a>
-	[ <a href='$pkgs_mirror/$stable_ver/packages-$stable_ver.md5'>md5</a> ]"; ?>
+	[ <a href='$pkgs_mirror/$stable_ver/packages-$stable_ver.md5'>md5</a> ]"; ? >
 </p></div>
+-->
 
 <h2 id="rolling">LiveCD - udviklingsversion</h2>
 
@@ -169,9 +171,9 @@ include("../../lib/html/header.da.html");
 </p>
 
 <div class="box-dl"><p>
-	<?php echo "Samling af SliTaz GNU/Linux Cooking programpakker ($cooking_pkgs)
+	< ?php echo "Samling af SliTaz GNU/Linux Cooking programpakker ($cooking_pkgs)
 	- <a href='$pkgs_mirror/cooking/packages-cooking.iso'>packages-cooking.iso</a>
-	[ <a href='$pkgs_mirror/cooking/packages-cooking.md5'>md5</a> ]"; ?>
+	[ <a href='$pkgs_mirror/cooking/packages-cooking.md5'>md5</a> ]"; ? >
 </p></div -->
 
 <h2 id="floppy">Floppy startdisk</h2> 

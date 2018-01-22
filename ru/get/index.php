@@ -25,14 +25,14 @@ include("../../lib/lang.php");
 <p>
 	Загрузите последнюю стабильную версию для производственных целей,
 	или, когда вам нужно надежное рабочее место. Тестируйте
-	«готовящуюся» версию, чтобы помочь нам улучшить дистрибутив.
+	версию Rolling, чтобы помочь нам улучшить дистрибутив.
 </p>
 
 <ul>
-	<li><a href="#stable">LiveCD стабильная версия</a> — загрузочный образ ISO
-		текущей стабильной версии.</li>
+	<!-- li><a href="#stable">LiveCD стабильная версия</a> — загрузочный образ ISO
+		текущей стабильной версии.</li -->
 	<li><a href="#rolling">LiveCD версия Rolling</a> — загрузочный образ ISO
-		нестабильной («готовящейся») версии.</li>
+		версии Rolling.</li>
 	<li><a href="#floppy">Дискета</a> — загрузочная дискета для запуска LiveCD,
 		флешки и т.п.</li>
 	<li><a href="flavors.php">LiveCD на любой вкус</a> — редакции и loram.</li>
@@ -94,7 +94,7 @@ include("../../lib/lang.php");
 	href="http://mirror.slitaz.org/sources/">HTTP</a> или <a
 	href="http://mirror.slitaz.org/sources/">FTP</a> ]</p>
 
-
+<!--
 <h2 id="stable">LiveCD — стабильная версия</h2>
 
 <p>SliTaz стабильной версии — это зрелая операционная система, основательно
@@ -102,13 +102,13 @@ include("../../lib/lang.php");
 	широкий выбор многофункциональных пакетов, тщательно интегрированных
 	в дистрибутив, в результате чего получилась самодостаточная и надежная
 	система.
-	<?php echo "Текущая стабильная версия $stable_ver была выпущена
-		$stable_rel."; ?></p>
+	< ?php echo "Текущая стабильная версия $stable_ver была выпущена
+		$stable_rel."; ? ></p>
 
 <div class="box-dl"><p>
-	<?php echo "SliTaz GNU/Linux $stable_ver ($stable_size) —
+	< ?php echo "SliTaz GNU/Linux $stable_ver ($stable_size) —
 	<a href='$stable_iso'>slitaz-$stable_ver.iso</a>
-	[ <a href='$mirror/$stable_ver/slitaz-$stable_ver.md5'>md5</a> ]"; ?>
+	[ <a href='$mirror/$stable_ver/slitaz-$stable_ver.md5'>md5</a> ]"; ? >
 </p></div>
 
 <p>Загрузочный образ компакт-диска со всеми доступными пакетами стабильной
@@ -116,13 +116,13 @@ include("../../lib/lang.php");
 	использован при помощи скрипта install.sh без подключения к Интернету.</p>
 
 <div class="box-dl"><p>
-	<?php echo "Коллекция пакетов SliTaz GNU/Linux версии $stable_ver ($stable_pkgs) —
+	< ?php echo "Коллекция пакетов SliTaz GNU/Linux версии $stable_ver ($stable_pkgs) —
 	<a href='$pkgs_mirror/$stable_ver/packages-$stable_ver.iso'>packages-$stable_ver.iso</a>
-	[ <a href='$pkgs_mirror/$stable_ver/packages-$stable_ver.md5'>md5</a> ]"; ?>
+	[ <a href='$pkgs_mirror/$stable_ver/packages-$stable_ver.md5'>md5</a> ]"; ? >
 </p></div>
+-->
 
-
-<h2 id="rolling">LiveCD — нестабильная версия (Rolling)</h2>
+<h2 id="rolling">LiveCD — версия Rolling</h2>
 
 <p>LiveCD SliTaz версии Rolling — постоянно развивающаяся версия, полностью
 	пригодная к использованию, что позволяет вам протестировать последние
@@ -151,9 +151,9 @@ include("../../lib/lang.php");
 	ней всю информацию.</p>
 
 <div class="box-dl"><p>
-	<?php echo "Коллекция пакетов SliTaz GNU/Linux версии «Cooking» ($cooking_pkgs) —
+	< ?php echo "Коллекция пакетов SliTaz GNU/Linux версии «Cooking» ($cooking_pkgs) —
 	<a href='$pkgs_mirror/cooking/packages-cooking.iso'>packages-cooking.iso</a>
-	[ <a href='$pkgs_mirror/cooking/packages-cooking.md5'>md5</a> ]"; ?>
+	[ <a href='$pkgs_mirror/cooking/packages-cooking.md5'>md5</a> ]"; ? >
 </p></div -->
 
 

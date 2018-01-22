@@ -81,7 +81,7 @@ SliTaz — безопасная и производительная опера�
 <h2>Быстрая загрузка</h2>
 
 <div class="dldiv">
-<?php echo "<a class='dlbutton nav1' href='$stable_iso'>SliTaz $stable_ver</a>"; ?>
+<!-- ?php echo "<a class='dlbutton nav1' href='$stable_iso'>SliTaz $stable_ver</a>"; ? -->
 <!-- a class='dlbutton nav2' href='$cooking_iso'>SliTaz $cooking</a>"; ? -->
 <a class='dlbutton navpi' href='http://arm.slitaz.org/rpi/'>SliTaz Raspberry Pi</a>
 <a class='dlbutton nav2' href='http://mirror.slitaz.org/iso/rolling/slitaz-rolling.iso'>еженедельный SliTaz 32 бит</a>
