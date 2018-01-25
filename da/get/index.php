@@ -43,7 +43,7 @@ include("../../lib/html/header.da.html");
 
 <h2>Hent SliTaz</h2>
 
-<div class="box-warning">Før du bruger SliTaz - læs venligst dette indlæg: <a href="http://forum.slitaz.org/topic/-important-info-about-meltdown-and-spectre-">Important info about Meltdown and Spectre</a></div>
+<div class="box-warning"><p>Før du bruger SliTaz - læs venligst dette indlæg: <a href="http://forum.slitaz.org/topic/-important-info-about-meltdown-and-spectre-">Important info about Meltdown and Spectre</a></p></div>
 
 <ul>
 	<!-- li><a href="#stable">LiveCD Stabil version</a> - 

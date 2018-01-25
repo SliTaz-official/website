@@ -41,7 +41,7 @@ include("../../lib/html/header.html");
 
 <h2>Ottieni SliTaz</h2>
 
-<div class="box-warning">Prima di utilizzare SliTaz, leggere questo post: <a href="http://forum.slitaz.org/topic/-important-info-about-meltdown-and-spectre-">Important info about Meltdown and Spectre</a></div>
+<div class="box-warning"><p>Prima di utilizzare SliTaz, leggere questo post: <a href="http://forum.slitaz.org/topic/-important-info-about-meltdown-and-spectre-">Important info about Meltdown and Spectre</a></p></div>
 
 <ul>
 	<!-- li><a href="#stable">LiveCD Versione Stabile</a> - 

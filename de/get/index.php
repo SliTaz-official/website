@@ -28,7 +28,7 @@ include("../../lib/lang.php");
 	Version in Entwicklung zum Testen und helfen Sie uns damit bei der Verbesserung der Distribution.
 </p>
 
-<div class="box-warning">Vor der Verwendung von SliTaz - bitte lesen Sie diesen Post: <a href="http://forum.slitaz.org/topic/-important-info-about-meltdown-and-spectre-">Important info about Meltdown and Spectre</a></div>
+<div class="box-warning"><p>Vor der Verwendung von SliTaz - bitte lesen Sie diesen Post: <a href="http://forum.slitaz.org/topic/-important-info-about-meltdown-and-spectre-">Important info about Meltdown and Spectre</a></p></div>
 
 <ul>
 	<!-- li><a href="#stable">Direktstart-ISO-Abbild Stabile Version</a> -

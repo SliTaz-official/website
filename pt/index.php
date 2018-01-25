@@ -76,7 +76,7 @@ include("../lib/lang.php");
 
 <h2>Atalho para downloads</h2>
 
-<div class="box-warning">Antes de usar o SliTaz - leia esta publicação: <a href="http://forum.slitaz.org/topic/-important-info-about-meltdown-and-spectre-">Important info about Meltdown and Spectre</a></div>
+<div class="box-warning"><p>Antes de usar o SliTaz - leia esta publicação: <a href="http://forum.slitaz.org/topic/-important-info-about-meltdown-and-spectre-">Important info about Meltdown and Spectre</a></p></div>
 
 <div class="dldiv">
 	<p><!-- ?php echo "<a class='dlbutton nav2' href='$stable_iso'>SliTaz $stable_ver</a>"; ? -->

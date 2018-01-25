@@ -28,7 +28,7 @@ include("../../lib/lang.php");
 	версию Rolling, чтобы помочь нам улучшить дистрибутив.
 </p>
 
-<div class="box-warning">Пожалуйста, прочитайте перед использованием SliTaz: <a href="http://forum.slitaz.org/topic/-important-info-about-meltdown-and-spectre-">Important info about Meltdown and Spectre</a></div>
+<div class="box-warning"><p>Пожалуйста, прочитайте перед использованием SliTaz: <a href="http://forum.slitaz.org/topic/-important-info-about-meltdown-and-spectre-">Important info about Meltdown and Spectre</a></p></div>
 
 <ul>
 	<!-- li><a href="#stable">LiveCD стабильная версия</a> — загрузочный образ ISO

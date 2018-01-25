@@ -80,7 +80,7 @@ SliTaz — безопасная и производительная опера�
 
 <h2>Быстрая загрузка</h2>
 
-<div class="box-warning">Пожалуйста, прочитайте перед использованием SliTaz: <a href="http://forum.slitaz.org/topic/-important-info-about-meltdown-and-spectre-">Important info about Meltdown and Spectre</a></div>
+<div class="box-warning"><p>Пожалуйста, прочитайте перед использованием SliTaz: <a href="http://forum.slitaz.org/topic/-important-info-about-meltdown-and-spectre-">Important info about Meltdown and Spectre</a></p></div>
 
 <div class="dldiv">
 <!-- ?php echo "<a class='dlbutton nav1' href='$stable_iso'>SliTaz $stable_ver</a>"; ? -->
