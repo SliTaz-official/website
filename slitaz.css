@@ -260,7 +260,7 @@ nav p { padding: 8px; color: #333; font-size: 90%; }
 	border: 1px solid #ddd;
 }
 
-.box-dl, .box-up {
+.box-dl, .box-up, .box-warning {
 	margin: 20px 0;
 	min-height: 48px;
 	border: 1px solid #ddd;
@@ -272,6 +272,10 @@ nav p { padding: 8px; color: #333; font-size: 90%; }
 }
 .box-up {
 	background: url("/images/update.png") no-repeat 12px center;
+	padding: 16px 16px 16px 62px;
+}
+.box-warning {
+	background: url("/images/warning.png") no-repeat 12px center;
 	padding: 16px 16px 16px 62px;
 }
 .box-dl a { font-weight: bold; text-decoration: none; }

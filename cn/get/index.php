@@ -40,6 +40,8 @@ include("../../lib/html/header.html");
 
 <h2>下载SliTaz</h2>
 
+<div class="box-warning">使用SliTaz之前请阅读这篇文章： <a href="http://forum.slitaz.org/topic/-important-info-about-meltdown-and-spectre-">Important info about Meltdown and Spectre</a></div>
+
 <ul>
 	<!-- li><a href="#stable">LiveCD稳定版</a> -
 	当前稳定版的可启动ISO镜像。</li -->

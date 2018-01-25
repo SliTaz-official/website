@@ -28,6 +28,8 @@ include("../../lib/lang.php");
 	test and help us improve the distribution.
 </p>
 
+<div class="box-warning">Before using SliTaz — please read this post: <a href="http://forum.slitaz.org/topic/-important-info-about-meltdown-and-spectre-">Important info about Meltdown and Spectre</a></div>
+
 <ul>
 	<!-- li><a href="#stable">LiveCD Stable version</a> - 
 		Bootable ISO image of the current stable version</li -->

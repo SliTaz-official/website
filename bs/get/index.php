@@ -41,6 +41,8 @@ include("../../lib/html/header.bs.html");
 
 <h2>Preuzmi SliTaz</h2>
 
+<div class="box-warning">Prije korištenja SliTaz — pročitajte ovaj post: <a href="http://forum.slitaz.org/topic/-important-info-about-meltdown-and-spectre-">Important info about Meltdown and Spectre</a></div>
+
 <ul>
 	<!-- li><a href="#stable">LiveCD Stabilna verzija.</a> - 
 		Bootable ISO slika trenutne stabilne verzije.</li -->

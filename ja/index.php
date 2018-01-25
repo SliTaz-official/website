@@ -74,6 +74,8 @@ include("../lib/lang.php");
 
 <h2>クイックダウンロード</h2>
 
+<div class="box-warning">SliTazを使用する前にこの記事をお読みください： <a href="http://forum.slitaz.org/topic/-important-info-about-meltdown-and-spectre-">Important info about Meltdown and Spectre</a></div>
+
 <div class="dldiv">
 	<p><!-- ?php echo "<a class='dlbutton nav2' href='$stable_iso'>SliTaz $stable_ver</a>"; ? -->
 	<!-- a class='dlbutton nav2' href='$cooking_iso'>SliTaz $cooking</a>"; ? -->

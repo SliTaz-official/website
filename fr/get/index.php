@@ -29,6 +29,8 @@ include("../../lib/lang.php");
 	la distribution.
 </p>
 
+<div class="box-warning">Avant d'utiliser SliTaz - veuillez lire ce post: <a href="http://forum.slitaz.org/topic/-important-info-about-meltdown-and-spectre-">Important info about Meltdown and Spectre</a></div>
+
 <ul>
 	<!-- li><a href="#stable">LiveCD version Stable</a> - Image ISO du
 		LiveCD de la version stable de SliTaz.</li -->

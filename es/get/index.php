@@ -41,6 +41,8 @@ include("../../lib/html/header.html");
 
 <h2>Descargas</h2>
 
+<div class="box-warning">Antes de usar SliTaz, lea esta publicación: <a href="http://forum.slitaz.org/topic/-important-info-about-meltdown-and-spectre-">Important info about Meltdown and Spectre</a></div>
+
 <ul>
 	<!-- li><a href="#stable">LiveCD Versión Estable</a> -
 		Imagen ISO de autoarranque con la última versión estable.</li -->

@@ -29,6 +29,8 @@ include("../../lib/lang.php");
 
 <h2>Downloads</h2>
 
+<div class="box-warning">Antes de usar o SliTaz - leia esta publicação: <a href="http://forum.slitaz.org/topic/-important-info-about-meltdown-and-spectre-">Important info about Meltdown and Spectre</a></div>
+
 <ul>
 	<!-- li><a href="#stable">Versão stable (estável) do LiveCD</a> -
 		Imagem ISO inicializável da versão estável mais recente.</li -->
