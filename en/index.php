@@ -62,7 +62,7 @@ include("../lib/lang.php");
 		Link to a SCN blog post or announce on website ?-->
 	
 	SliTaz is now a rolling distro with 2 branch</strong> We provide a 
-	stable version and a cooking (in development) version. Stable will get 
+	stable version and a cooking (development) version. Stable will get 
 	small improvmements and security update. As usual the Cooking version
 	brings you latest improvements made by SliTaz developpers.
 	
