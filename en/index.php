@@ -58,16 +58,17 @@ include("../lib/lang.php");
 			$rol_date = file_get_contents("../cache/rolling-date.txt");
 			print $rol_date;
 		} ?></span></li>
-	<li><strong><a href="news/#d20150520">SliTaz 5.0 RC-3 release</a></strong>
-		<span>- 20 May 2015</span></li>
-	<li><strong><a href="news/#d20140519">SliTaz 5.0 RC-2 release</a></strong>
-		<span>- 19 May 2014</span></li>
-	<li><strong><a href="news/#d20140502">SliTaz 5.0 RC-1 release</a></strong>
-		<span>- 2 May 2014</span></li>
-	<li><strong><a href="news/#d20140329">SliTaz Raspberry Pi release</a></strong>
-		<span>- 29 Mar 2014</span></li>
-	<li><strong><a href="news/">Release news archives</a></strong>
-		<span>- 2007-2013</span></li>
+	<li><strong><!-- <a href="news/#d20180316"></a> 
+		Link to a SCN blog post or announce on website ?-->
+	
+	SliTaz is now a rolling distro with 2 branch</strong> We provide a 
+	stable version and a cooking (in development) version. Stable will get 
+	small improvmements and security update. As usual the Cooking version
+	brings you latest improvements made by SliTaz developpers.
+	
+		<span>- 16 March 2018</span></li>
+	<li><strong><a href="news/">Website news archives</a></strong>
+		<span>- from 2007 to 2018</span></li>
 </ul>
 
 <!-- End of news -->
@@ -131,7 +132,7 @@ include("../lib/lang.php");
 
 <p>
 	Make SliTaz even more popular or make a donation. You can use PayPal
-	or a Flattr micropayment to monetary support us. You can Blog, Tweet,
+	or cryptocurency to monetary support us. You can Blog, Tweet,
 	share and talk about the project to help spread SliTaz. You can also
 	join the project to connect and share or get involved on the SliTaz
 	<a href="http://scn.slitaz.org/">Community Network</a>.
