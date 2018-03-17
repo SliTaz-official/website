@@ -61,10 +61,10 @@ include("../lib/lang.php");
 	<li><strong><!-- <a href="news/#d20180316"></a> 
 		Link to a SCN blog post or announce on website ?-->
 	
-	SliTaz is now a rolling distro with 2 branch</strong> We provide a 
+	SliTaz is now a rolling distro with 2 branches</strong> We provide a 
 	stable version and a cooking (development) version. Stable will get 
-	small improvmements and security update. As usual the Cooking version
-	brings you latest improvements made by SliTaz developpers.
+	small refinements and security updates. As usual the Cooking version
+	brings you the latest improvements made by SliTaz developers.
 	
 		<span>- 16 March 2018</span></li>
 	<li><strong><a href="news/">Website news archives</a></strong>
