@@ -132,7 +132,7 @@ include("../lib/lang.php");
 
 <p>
 	Make SliTaz even more popular or make a donation. You can use PayPal
-	or cryptocurency to monetary support us. You can Blog, Tweet,
+	or cryptocurrency to monetary support us. You can Blog, Tweet,
 	share and talk about the project to help spread SliTaz. You can also
 	join the project to connect and share or get involved on the SliTaz
 	<a href="http://scn.slitaz.org/">Community Network</a>.
