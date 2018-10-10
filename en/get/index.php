@@ -64,17 +64,12 @@ include("../../lib/lang.php");
 
 <p>
 	SliTaz is mirrored actually in France by <a href="http://www.ads-lu.com/">ADS</a>,
-	and <a href="http://www.tuxfamily.org/">TuxFamily</a>. In Switzerland by
-	<a href="http://mirror.switch.ch/">SWITCHmirror</a>, <!-- in China by LupaWorld, -->
-	in the USA by <a href="http://distro.ibiblio.org/pub/linux/distributions/">Ibiblio</a>
+	and <a href="http://www.tuxfamily.org/">TuxFamily</a>.
+	In the USA by <a href="http://distro.ibiblio.org/pub/linux/distributions/">Ibiblio</a>
 	and in Brazil by <a href="http://www.c3sl.ufpr.br/en/index.html">UFPR</a>. Huge thanks.
 </p>
 
 <ul>
-	<li>Switzerland - Mirror hosted by SWITCHmirror (10 Gbit/s)
-	<a href="http://mirror.switch.ch/ftp/mirror/slitaz/">HTTP</a> or
-	<a href="ftp://mirror.switch.ch/mirror/slitaz/">FTP</a></li>
-
 	<li>France - Mirror hosted by TuxFamily via
 	<a href="http://download.tuxfamily.org/slitaz/">HTTP</a> or
 	<a href="ftp://download.tuxfamily.org/slitaz/">FTP</a></li>

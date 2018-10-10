@@ -65,18 +65,13 @@ Sie auch im <a href="http://forum.slitaz.org/forum/de">deutschen Forum</a> von S
 
 <p>
 SliTaz wird momentan in Frankreich von <a href="http://www.ads-lu.com/">ADS</a> und
-<a href="http://www.tuxfamily.org/">TuxFamily</a> bereitgestellt, in der Schweiz von
-<a href="http://mirror.switch.ch/">SWITCHmirror</a>, <!-- in China von LupaWorld, -->
+<a href="http://www.tuxfamily.org/">TuxFamily</a> bereitgestellt,
 in den USA von <a href="http://distro.ibiblio.org/pub/linux/distributions/">Ibiblio</a>
 und in Brasilien von <a href="http://www.c3sl.ufpr.br/en/index.html">UFPR</a>.
 Herzlichen Dank.
 </p>
 
 <ul>
-	<li>Schweiz - Depot bereitgestellt von SWITCHmirror (10 Gbit/s)
-	<a href="http://mirror.switch.ch/ftp/mirror/slitaz/">HTTP</a> oder
-	<a href="ftp://mirror.switch.ch/mirror/slitaz/">FTP</a></li>
-
 	<li>Frankreich - Depot bereitgestellt von TuxFamily
 	<a href="http://download.tuxfamily.org/slitaz/">HTTP</a> oder
 	<a href="ftp://download.tuxfamily.org/slitaz/">FTP</a></li>

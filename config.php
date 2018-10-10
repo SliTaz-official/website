@@ -2,7 +2,7 @@
 
 // SliTaz Website configuration
 $mirror       = "http://mirror.slitaz.org/iso";
-$pkgs_mirror  = "http://mirror.switch.ch/ftp/mirror/slitaz/iso";
+$pkgs_mirror  = "http://mirror.slitaz.org/iso";
 
 // Stable release
 $stable_rel   = "10 April 2012";

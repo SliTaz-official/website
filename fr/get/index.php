@@ -64,20 +64,15 @@ include("../../lib/lang.php");
 <h3>Miroirs et torrents</h3>
 
 <p>
-	Un grand merci à l'équipe de <a href="http://www.tuxfamily.org/">TuxFamily</a>,
-	à <a href="http://mirror.switch.ch/">SWITCHmirror</a> et à
+	Un grand merci à l'équipe de <a href="http://www.tuxfamily.org/">TuxFamily</a>
+	et à
 	<a href="http://www.ads-lu.com/" target="_blank" rel="noopener noreferrer">ADS</a>
-	qui hébergent les miroirs principaux de SliTaz, en Suisse et en France<!-- , et
-	en Chine à <a href="http://mirror.lupaworld.com/">LupaWorld</a> --> :
+	qui hébergent les miroirs principaux de SliTaz en France :
 	les services sont de très haute qualité et sans vous, rien ne serait
 	possible.
 </p>
 
 <ul>
-	<li>Suisse - Miroir hébergé par SWITCHmirror (10 Gbit/s)
-	<a href="http://mirror.switch.ch/ftp/mirror/slitaz/">HTTP</a> ou
-	<a href="ftp://mirror.switch.ch/mirror/slitaz/">FTP</a></li>
-
 	<li>France - Miroir hébergé par Mésobius (100 Mps)
 	<a href="http://slitazmirror.linuxembarque.com">HTTP</a></li>
 

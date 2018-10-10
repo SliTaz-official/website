@@ -68,16 +68,10 @@ include("../../lib/lang.php");
 	<a href="http://www.c3sl.ufpr.br/">Centro de Computação Científica
 	e Software Livre</a> (Agradecimentos a Carlos Carvalho, da UFPR),
 	na França, por <a href="http://www.ads-lu.com/" target="_blank" rel="noopener noreferrer">ADS</a>
-	e <a href="http://www.tuxfamily.org/">TuxFamily</a>. Na Suiça por
-	<a href="http://mirror.switch.ch/">SWITCHmirror</a><!-- e na China por
-	LupaWorls -->.
+	e <a href="http://www.tuxfamily.org/">TuxFamily</a>.
 </p>
 
 <ul>
-	<li>Suiça - Mirror hospedado por SWITCHmirror (10 Gbit/s)
-	<a href="http://mirror.switch.ch/ftp/mirror/slitaz/">HTTP</a> ou
-	<a href="ftp://mirror.switch.ch/mirror/slitaz/">FTP</a></li>
-
 	<li>Brasil - Mirror hospedado pela UFPR (2 Gbit/s)
 	<a href="http://slitaz.c3sl.ufpr.br/">HTTP</a> ou
 	<a href="ftp://slitaz.c3sl.ufpr.br/slitaz/">FTP</a></li>
