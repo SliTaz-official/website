@@ -81,7 +81,7 @@ out_doc()
 		# second part of filename, faq.en -> en
 		NAME_DOC2=$(echo $NAME_DOC | cut -d"." -f2)
 		# if filename have only [lang] then rename it to doc.[lang]
-		if [ "$NAME_DOC1" == "$NAME_DOC2" ]; then
+		if [ "$NAME_DOC1" = "$NAME_DOC2" ]; then
 			NAME_DOC1="doc"
 		fi
 		# not print 'linked' common documents, only localized ones
@@ -101,7 +101,7 @@ out_app()
 	PAGE=$(wget $APP_DIR -q -O -)
 	LINKS=$(echo "$PAGE" | grep -A 1 "filename" | grep "href" | wc -l)
 	# plural form
-	if [ "$LINKS" == "1" ]; then
+	if [ "$LINKS" = "1" ]; then
 		APP_TEXT="1<br/>item"
 	else
 		APP_TEXT="$LINKS<br/>items"
