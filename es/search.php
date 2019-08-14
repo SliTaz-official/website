@@ -32,6 +32,7 @@
 <div id="content">
 
 <div class="searchbox">
+<?php if (false) { ?>
 	<div id="cse-search-form" style="width: 100%;"><img
 		src="/images/loader.gif" alt="*" /> Loading</div>
 	<script src="http://www.google.com/jsapi" type="text/javascript"></script>
@@ -45,6 +46,11 @@
 		customSearchControl.draw('cse', options);
 		}, true);
 	</script>
+<?php } if (true) { ?>
+	<iframe src="https://duckduckgo.com/search.html?t=slitaz&kl=es-es&duck=yes&site=www.slitaz.org,doc.slitaz.org,forum.slitaz.org,https://listengine.tuxfamily.org/lists.tuxfamily.org/slitaz/&prefill=Búsqueda personalizada de DuckDuckGo"
+	 style="overflow:hidden;margin:0;padding:0;width:603px;height:60px;" frameborder="0">
+	</iframe>
+<?php } ?>
 </div>
 
 <div id="cse"></div>

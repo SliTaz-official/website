@@ -22,12 +22,14 @@
 	<div id="block_info">
 		<h4>Søgning</h4>
 		<p>
-		Denne side tillader dig at gennemsøge hele SliTa GNU/Linux hjemmesiden,
+		Denne side tillader dig at gennemsøge hele SliTaz GNU/Linux hjemmesiden,
 		 <a href="http://doc.slitaz.org/">vejledningswikien</a>,  i
 		 <a href="mailing-list.php">postlistens arkiver</a>
 		og i  <a href="http://forum.slitaz.org/">forumet</a>.
+<?php if (false) { ?>
       Denne søgemaskine er lavet for SliTaz af  Google Co-op custom
 		søgemaskinen.
+<?php } ?>
 	</p>
 	</div>
 </div>
@@ -38,6 +40,7 @@
 <div id="content">
 
 <div class="searchbox">
+<?php if (false) { ?>
 	<div id="cse-search-form" style="width: 100%;"><img
 		src="/images/loader.gif" alt="*" /> Loading</div>
 	<script src="http://www.google.com/jsapi" type="text/javascript"></script>
@@ -51,6 +54,11 @@
 		customSearchControl.draw('cse', options);
 		}, true);
 	</script>
+<?php } if (true) { ?>
+	<iframe src="https://duckduckgo.com/search.html?t=slitaz&kl=dk-da&duck=yes&site=www.slitaz.org,doc.slitaz.org,forum.slitaz.org,https://listengine.tuxfamily.org/lists.tuxfamily.org/slitaz/&prefill=Tilpasset søgning"
+	 style="overflow:hidden;margin:0;padding:0;width:603px;height:60px;" frameborder="0">
+	</iframe>
+<?php } ?>
 </div>
 
 <div id="cse"></div>

@@ -68,6 +68,7 @@ include("../lib/lang.php");
 	</form>
 </div>
 
+<?php if (false) { ?>
 <h2>Busca do Google</h2>
 
 <p>
@@ -93,6 +94,22 @@ include("../lib/lang.php");
 		}, true);
 	</script>
 </div>
+<?php } if (true) { ?>
+<h2>Busca do DuckDuckGo</h2>
+
+<p>
+    Esta página também permite buscar termos no website do projeto, na
+    <a href="http://doc.slitaz.org/">documentação</a>, nos arquivos da
+    <a href="mailing-list.php">lista de discussão</a> e também no 
+    <a href="http://forum.slitaz.org/">Fórum</a>.
+</p>
+
+<div class="searchbox">
+	<iframe src="https://duckduckgo.com/search.html?t=slitaz&kl=pt-pt&duck=yes&site=www.slitaz.org,doc.slitaz.org,forum.slitaz.org,https://listengine.tuxfamily.org/lists.tuxfamily.org/slitaz/&prefill=Pesquisa personalizada"
+	 style="overflow:hidden;margin:0;padding:0;width:603px;height:60px;" frameborder="0">
+	</iframe>
+</div>
+<?php } ?>
 
 <div id="cse"></div>
 

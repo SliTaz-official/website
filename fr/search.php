@@ -12,7 +12,8 @@
 
 <?php 
 include("../lib/html/header.html");
-include("../lib/html/nav-ng.fr.html"); 
+include("../lib/html/nav.fr.html"); 
+// include("../lib/html/nav-ng.fr.html"); 
 include("../lib/lang.php");
 ?>
 
@@ -68,6 +69,7 @@ include("../lib/lang.php");
 	</form>
 </div>
 
+<?php if (false) { ?>
 <h2>Recherche Google</h2>
 
 <p>
@@ -96,6 +98,23 @@ include("../lib/lang.php");
 		}, true);
 	</script>
 </div>
+<?php } if (true) { ?>
+<h2>Recherche DuckDuckGo</h2>
+
+<p>
+	Cette page vous permet de lancer une recherche, sur 
+	l'ensemble du site web de SliTaz GNU/Linux, le wiki de
+	<a href="http://doc.slitaz.org/">documentation</a>, dans
+	l'archive de <a href="mailing-list.php">la liste de discussion</a>
+	et dans <a href="http://forum.slitaz.org/">le forum</a>.
+</p>
+
+<div class="searchbox">
+	<iframe src="https://duckduckgo.com/search.html?t=slitaz&kl=fr-fr&duck=yes&site=www.slitaz.org,doc.slitaz.org,forum.slitaz.org,https://listengine.tuxfamily.org/lists.tuxfamily.org/slitaz/&prefill=Recherche personnalisée"
+	 style="overflow:hidden;margin:0;padding:0;width:603px;height:60px;" frameborder="0">
+	</iframe>
+</div>
+<?php } ?>
 
 <div id="cse"></div>
  

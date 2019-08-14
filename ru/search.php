@@ -66,6 +66,7 @@ include("../lib/lang.php");
 </div>
 
 
+<?php if (false) { ?>
 <h2>Поиск Google</h2>
 
 <p>
@@ -88,6 +89,20 @@ include("../lib/lang.php");
 		}, true);
 	</script>
 </div>
+<?php } if (true) { ?>
+<h2>Поиск DuckDuckGo</h2>
+
+<p>
+Эта страница позволяет выполнить поиск по всему сайту SliTaz GNU/Linux, в <a href="http://doc.slitaz.org/">документации</a> вики, в архиве <a href="mailing-list.php">рассылки</a>, а также на <a href="http://forum.slitaz.org/">форуме</a>.
+Эта поисковая система была создана специально для SliTaz на основе пользовательского поиска DuckDuckGoTM.
+</p>
+
+<div class="searchbox">
+	<iframe src="https://duckduckgo.com/search.html?t=slitaz&kl=ru-ru&duck=yes&site=www.slitaz.org,doc.slitaz.org,forum.slitaz.org,https://listengine.tuxfamily.org/lists.tuxfamily.org/slitaz/&prefill=Пользовательский поиск"
+	 style="overflow:hidden;margin:0;padding:0;width:603px;height:60px;" frameborder="0">
+	</iframe>
+</div>
+<?php } ?>
 
 <div id="cse"></div>
  

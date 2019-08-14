@@ -67,6 +67,7 @@ include("../lib/lang.php");
 	</form>
 </div>
 
+<?php if (false) { ?>
 <h2>Google 検索</h2>
 
 <p>
@@ -89,6 +90,20 @@ include("../lib/lang.php");
 		}, true);
 	</script>
 </div>
+<?php } if (true) { ?>
+<h2>DuckDuckGo 検索</h2>
+
+<p>
+	DuckDuckGo 検索では、ウェブサイトSliTaz GNU/Linux 全体、<a href="http://doc.slitaz.org/">ドキュメント</a> Wiki、<a href="mailing-list.php">メーリングリスト</a> のアーカイブ、<a href="http://forum.slitaz.org/">フォーラム</a> も検索することができます。
+	この検索エンジンは、DuckDuckGo Co-op カスタム検索エンジンによって SliTaz 用に作成されました。
+</p>
+
+<div class="searchbox">
+	<iframe src="https://duckduckgo.com/search.html?t=slitaz&kl=jp-jp&duck=yes&site=www.slitaz.org,doc.slitaz.org,forum.slitaz.org,https://listengine.tuxfamily.org/lists.tuxfamily.org/slitaz/&prefill=Search DuckDuckGo"
+	 style="overflow:hidden;margin:0;padding:0;width:603px;height:60px;" frameborder="0">
+	</iframe>
+</div>
+<?php } ?>
 
 <div id="cse"></div>
  

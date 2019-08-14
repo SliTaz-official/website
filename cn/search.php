@@ -11,6 +11,7 @@
 <body>
 
 <?php include("../lib/html/header.html"); ?>
+<?php $engine="DuckDuckGo"; ?>
 
 <!-- Block -->
 <div id="block">
@@ -20,7 +21,7 @@
 		<h4>搜索</h4>
 		<p>
 			这个网页可以搜索SliTaz网站、邮件列表、论坛中的内容。
-			这个网页由Google自定义搜索为SliTaz创建。
+			这个网页由<?php echo $engine; ?>自定义搜索为SliTaz创建。
 		</p>
 	</div>
 </div>
@@ -30,6 +31,7 @@
 <!-- Content -->
 <div id="content">
 
+<?php if ($engine == "Google") { ?>
 <div class="searchbox">
 	<div id="cse-search-form" style="width: 100%;"><img
 		src="/images/loader.gif" alt="*" /> Loading</div>
@@ -45,6 +47,13 @@
 	  }, true);
 	</script>
 </div>
+<?php } if ($engine == "DuckDuckGo") { ?>
+<div class="searchbox">
+	<iframe src="https://duckduckgo.com/search.html?&kl=cn-zh&t=slitaz&duck=yes&site=www.slitaz.org,doc.slitaz.org,forum.slitaz.org,https://listengine.tuxfamily.org/lists.tuxfamily.org/slitaz/&prefill=Search DuckDuckGo"
+	 style="overflow:hidden;margin:0;padding:0;width:603px;height:60px;" frameborder="0">
+	</iframe>
+</div>
+<?php } ?>
 
 <div id="cse" style="width:100%;"></div>
 
