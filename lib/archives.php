@@ -129,17 +129,17 @@ function translate($word)
 
 echo '<h4>'.translate("Archives").' 2007-'.date('Y')."</h4>\n";
 
-$url = "http://listengine.tuxfamily.org/lists.tuxfamily.org/slitaz/";
+$url = "://listengine.tuxfamily.org/lists.tuxfamily.org/slitaz/";
 
 $script  = "-e '/<table/,/<\/table>/!d' ";
 $script .= "-e 's|html\"|html\" target=\"_blank\"|g' ";
-$script .= "-e 's|href=\"|href=\"$url|g' ";
+$script .= "-e 's|https*$url||g' -e 's|href=\"|href=\"https$url|g' ";
 foreach (array("Archive","View by","Number","Total size",
 	       "Messages count", "Month/Year",
 	       "Thread"," or ","Date") as $word) {
 	$script .= "-e 's|".$word."|".translate($word)."|' ";
 }
-system("wget -q -O - $url | sed $script");
+system("wget -q --no-check-certificate -O - https$url | sed $script");
 ?>
 </body>
 </html>
