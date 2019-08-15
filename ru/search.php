@@ -71,7 +71,7 @@ include("../lib/lang.php");
 
 <p>
 Эта страница позволяет выполнить поиск по всему сайту SliTaz GNU/Linux, в <a href="http://doc.slitaz.org/">документации</a> вики, в архиве <a href="mailing-list.php">рассылки</a>, а также на <a href="http://forum.slitaz.org/">форуме</a>.
-Эта поисковая система была создана специально для SliTaz на основе пользовательского поиска GoogleTM.
+Эта поисковая система была создана специально для SliTaz на основе пользовательского поиска Google™.
 </p>
 
 <div class="searchbox">
@@ -94,7 +94,7 @@ include("../lib/lang.php");
 
 <p>
 Эта страница позволяет выполнить поиск по всему сайту SliTaz GNU/Linux, в <a href="http://doc.slitaz.org/">документации</a> вики, в архиве <a href="mailing-list.php">рассылки</a>, а также на <a href="http://forum.slitaz.org/">форуме</a>.
-Эта поисковая система была создана специально для SliTaz на основе пользовательского поиска DuckDuckGoTM.
+Эта поисковая система была создана специально для SliTaz на основе пользовательского поиска DuckDuckGo™.
 </p>
 
 <div class="searchbox">
