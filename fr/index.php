@@ -27,6 +27,14 @@ include("../lib/lang.php");
 	basé sur le noyau Linux et les logiciels GNU.
 </p>
 
+<div class="box-up">
+	
+	Rejoingez nous sur <a href="https://whaleshares.io/@slitaz">Whaleshares</a>.
+	Partager autour de SliTaz, recevez et donnez des récompensens aux developper
+	sur une blockchain open-source!
+	
+</div>
+
 <!-- <div class="box-up">
 	<a href="http://www.gofundme.com/slitaz2014?utm_medium=wdgt"
 		title="Visit this page now."><img src="../images/gofundme.png"></a>
@@ -58,24 +66,16 @@ include("../lib/lang.php");
 			$rol_date = file_get_contents("../cache/rolling-date.txt");
 			print $rol_date;
 		} ?></span></li>
-	<li><strong><a href="/en/news/#d20150520">Publication de SliTaz 5.0 RC-3</a></strong>
-		<span>- 20 Mai 2015</span></li>
-	<li><strong><a href="/en/news/#d20140519">Publication de SliTaz 5.0 RC-2</a></strong>
-		<span>- 19 Mai 2014</span></li>
-	<li><strong><a href="news/#d20140502">Publication de SliTaz 5.0 RC-1</a></strong>
-		<span>- 2 Mai 2014</span></li>
 	<li><strong><a href="http://arm.slitaz.org/rpi/">Publication de SliTaz Raspberry Pi</a></strong>
 		<span>- 29 Mar 2014</span></li>
 	<li><strong><a href="news/">Archives des nouvelles publications</a></strong>
-		<span>- 2007-2013</span></li>
+		<span>- 2007-2019</span></li>
 </ul>
 
 <!-- End of news -->
 </div>
 
 <h2>Téléchargement rapide</h2>
-
-<div class="box-warning"><p>Avant d'utiliser SliTaz - veuillez lire ce post: <a href="http://forum.slitaz.org/topic/-important-info-about-meltdown-and-spectre-">Important info about Meltdown and Spectre</a></p></div>
 
 <div class="dldiv">
 	<p><!-- ?php echo "<a class='dlbutton nav2' href='$stable_iso'>SliTaz $stable_ver</a>"; ? -->
