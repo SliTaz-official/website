@@ -30,7 +30,7 @@ include("../lib/lang.php");
 <div class="box-up">
 	
 	Rejoingez nous sur <a href="https://whaleshares.io/@slitaz">Whaleshares</a>.
-	Partager autour de SliTaz, recevez et donnez des récompensens aux developper
+	Partager autour de SliTaz, recevez et donnez des récompenses aux développeurs
 	sur une blockchain open-source!
 	
 </div>
@@ -69,7 +69,7 @@ include("../lib/lang.php");
 	<li><strong><a href="http://arm.slitaz.org/rpi/">Publication de SliTaz Raspberry Pi</a></strong>
 		<span>- 29 Mar 2014</span></li>
 	<li><strong><a href="news/">Archives des nouvelles publications</a></strong>
-		<span>- 2007-2019</span></li>
+		<span>- 2007-<?php echo date('Y'); ?></span></li>
 </ul>
 
 <!-- End of news -->

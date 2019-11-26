@@ -68,7 +68,7 @@ include("../lib/lang.php");
     <li><strong><a href="news/2012.php#d20120410">Lançamento do SliTaz 4.0</a></strong>
         <span>- 10 de abril de 2012</span></li>
     <li><strong><a href="news/">Arquivo dos lançamentos anteriores</a></strong>
-        <span>- 2007-2013</span></li>   
+	<span>- 2007-<?php echo date('Y'); ?></span></li>
 </ul>
 
 <!-- End of news -->

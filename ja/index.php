@@ -66,7 +66,7 @@ include("../lib/lang.php");
 	<li><strong><a href="news/#d20140329">SliTaz Raspberry Pi 公開</a></strong>
 		<span>- 2014年3月29日</span></li>
 	<li><strong><a href="news/">過去のニュースリリース</a></strong>
-		<span>- 2007〜2013</span></li>
+		<span>- 2007〜<?php echo date('Y'); ?></span></li>
 </ul>
 
 <!-- End of news -->

@@ -68,7 +68,7 @@ include("../lib/lang.php");
 	
 		<span>- 16 March 2018</span></li>
 	<li><strong><a href="news/">Website news archives</a></strong>
-		<span>- from 2007 to 2018</span></li>
+		<span>- 2007-<?php echo date('Y'); ?></span></li>
 </ul>
 
 <!-- End of news -->

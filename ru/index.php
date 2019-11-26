@@ -71,7 +71,7 @@ SliTaz — безопасная и производительная опера�
 <strong><a href="news/#d20140329">Выпуск SliTaz Raspberry Pi</a></strong> <span>— 29 марта 2014</span>
 </li>
 <li>
-<strong><a href="news/">Архив новостей</a></strong> <span>— 2007­–2013</span>
+<strong><a href="news/">Архив новостей</a></strong> <span>— 2007­–<?php echo date('Y'); ?></span>
 </li>
 </ul>
 

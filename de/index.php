@@ -60,7 +60,7 @@ include("../lib/lang.php");
 	<li><strong><a href="news/#d20140329">SliTaz Raspberry Pi Freigabe</a></strong>
 		<span>- 29. März 2014</span></li>
 	<li><strong><a href="news/">Archiv der Freigabemitteilungen</a></strong>
-		<span>- 2007-2013</span></li>
+		<span>- 2007-<?php echo date('Y'); ?></span></li>
 </ul>
 
 <!-- End of news -->
