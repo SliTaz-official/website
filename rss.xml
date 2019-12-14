@@ -20,11 +20,11 @@
 
 	<item>
 		<title>New SliTaz Pizza</title>
-		<link>http://pizza.slitaz.me/</link>
-		<guid isPermaLink="true">http://pizza.slitaz.me/?help</guid>
+		<link>http://mypizza.slitaz.org/</link>
+		<guid isPermaLink="true">http://mypizza.slitaz.org/?help</guid>
 		<pubDate>Sat, 19 May 2012 19:00:00 GMT</pubDate>
 		<description>
-			Help us test Pizza :-) Our new online SliTaz ISO builder: http://pizza.slitaz.me/
+			Help us test Pizza :-) Our new online SliTaz ISO builder: http://mypizza.slitaz.org/
 		</description>
 	</item>
 
