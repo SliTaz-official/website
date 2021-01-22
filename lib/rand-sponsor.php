@@ -19,9 +19,9 @@ case 2:
 	$url  = "https://duckduckgo.com/?t=slitaz";
 	break;
 case 3:
-	$name = "Website penetration testing";
-	$img  = "security-audit.png";
-	$url  = "https://www.security-audit.com/";
+	$name = "Balinor Technologies";
+	$img  = "balinor_logo.png";
+	$url  = "https://www.linkedin.com/company/balinor-technologies";
 	break;
 }
 
