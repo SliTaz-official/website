@@ -90,6 +90,9 @@ include("../lib/lang.php");
 
 <?php require_once("../lib/get-feeds.php"); ?>
 
+<!-- Look like the function don't work anymore and may finaly not be so important,
+	in all case, it break the website actually 22.01.2021 (pankso)
+
 <div class="activity">
 	<p>
 		<a href="http://forum.slitaz.org/"><img
@@ -100,7 +103,7 @@ include("../lib/lang.php");
 	<p class="activity_more">
 		<a href="http://forum.slitaz.org/">More support</a>
 	</p>
-</div>
+</div> -->
 
 <div class="activity">
 	<p>
