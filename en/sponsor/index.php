@@ -101,6 +101,18 @@ include("../../lib/lang.php");
 	<tbody>
 		<tr>
 			<td style="width: 140px; height: 80px;">
+				<a href="https://www.linkedin.com/company/balinor-technologies/"><img
+				src="/images/sponsor/balinor_logo.png" 
+				alt="Balinor Technologies"
+				style="float: left;" /></a>
+			</td>
+			<td>
+				Balinor Technologies - Focus on your business, let's automate 
+				your IT "Knowledge is worth nothing if it's not shared"
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 140px; height: 80px;">
 				<a href="http://www.ads-lu.com/"><img
 				src="/images/sponsor/ads.png" alt="Allied Data Sys"
 				style="float: left; " /></a>
@@ -127,20 +139,6 @@ include("../../lib/lang.php");
 				revenue so using DDG in SliTaz helps both projects. DuckDuckGo
 				is a search engine with way more instant answers, less spam
 				and clutter, lots of goodies and real privacy.
-			</td>
-		</tr>
-		<tr>
-			<td style="width: 140px; height: 80px;">
-				<a href="https://www.security-audit.com"><img
-				src="/images/sponsor/security-audit.png" 
-				alt="Website penetration testing"
-				style="float: left;" /></a>
-			</td>
-			<td>
-				Security Audit Systems provide independent website penetration
-				testing services for businesses around the world.  One of the UK's
-				leading website security providers that offers a range of 
-				website security testing services.
 			</td>
 		</tr>
 	</tbody>
