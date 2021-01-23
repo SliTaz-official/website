@@ -32,7 +32,7 @@ include("../lib/lang.php");
 		title="Visit this page now."><img src="../images/gofundme.png"></a>
 	<a href="http://www.gofundme.com/slitaz2014?utm_medium=wdgt">
 		Check out our new SliTaz 2014 fundraising!</a>
-</div>-->
+</div> -->
 
 <!-- Featured sponsor -->
 <div id="sponsor">
@@ -98,7 +98,9 @@ include("../lib/lang.php");
 		<a href="http://forum.slitaz.org/"><img
 			src="/images/support.png" alt="[ ]" /></a>
 		Forum activity
-		<?php get_feed_forum("forum.xml"); ?>
+		
+		<?php // get_feed_forum("forum.xml"); ?>
+		
 	</div>
 	<p class="activity_more">
 		<a href="http://forum.slitaz.org/">More support</a>
