@@ -102,7 +102,7 @@ include("../../lib/lang.php");
 		<tr>
 			<td style="width: 140px; height: 80px;">
 				<a href="https://www.linkedin.com/company/balinor-technologies/"><img
-				src="/images/sponsor/balinor_logo.png" 
+				src="/images/sponsor/balinor_technologies.png" 
 				alt="Balinor Technologies"
 				style="float: left;" /></a>
 			</td>
