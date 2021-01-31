@@ -90,8 +90,8 @@ include("../lib/lang.php");
 
 <?php require_once("../lib/get-feeds.php"); ?>
 
-<!-- Look like the function don't work anymore and may finaly not be so important,
-	in all case, it break the website actually 22.01.2021 (pankso)
+<!-- Looks like the function doesn't work anymore and may finally not be so important,
+	in all cases, it breaks the website actually 22.01.2021 (pankso)
 
 <div class="activity">
 	<p>

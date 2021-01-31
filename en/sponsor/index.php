@@ -108,7 +108,7 @@ include("../../lib/lang.php");
 			</td>
 			<td>
 				Balinor Technologies - Focus on your business, let's automate 
-				your IT "Knowledge is worth nothing if it's not shared"
+				your IT: "Knowledge is worth nothing if it's not shared"
 			</td>
 		</tr>
 		<tr>
