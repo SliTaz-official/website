@@ -6,6 +6,7 @@
 	<meta name="description" content="SliTaz GNU/Linux English Website">
 	<meta name="keywords" lang="en" content="System, free, gnu, linux, software opensource, livecd LINUX in RAM">
 	<meta name="author" content="Paul Issot">
+	<meta name="flattr:id" content="mk2ndx">
 	<?php include("../lib/html/meta-link.html"); ?>
 </head>
 <body>
