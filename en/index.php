@@ -87,12 +87,14 @@ include("../lib/lang.php");
 	<a class='dlbutton nav1' href='http://mirror.slitaz.org/iso/rolling/slitaz-rolling-core64.iso'>SliTaz weekly 64bits</a></p>
 </div>
 
-<h2>Project Activity</h2>
-
-<?php require_once("../lib/get-feeds.php"); ?>
 
 <!-- Looks like the function doesn't work anymore and may finally not be so important,
-	in all cases, it breaks the website actually 22.01.2021 (pankso)
+	in all cases, it breaks the website actually 20.09.2022 (pankso)
+	
+
+<h2>Project Activity</h2>
+
+<?php //require_once("../lib/get-feeds.php"); ?>
 
 <div class="activity">
 	<p>
@@ -106,26 +108,26 @@ include("../lib/lang.php");
 	<p class="activity_more">
 		<a href="http://forum.slitaz.org/">More support</a>
 	</p>
-</div> -->
+</div>
 
 <div class="activity">
 	<p>
 		<a href="http://hg.slitaz.org/">
 			<img src="/images/development.png" alt="[ ]" /></a>
 		Latest commits in wok
-		<?php get_feed("wok.xml"); ?>
+		<?php //get_feed("wok.xml"); ?>
 	</div>
 	<p class="activity_more">
 		<a href="http://hg.slitaz.org/?sort=lastchange">More commits</a>
 	</p>
 </div>
 
-<!-- SCN blog posts  
+SCN blog posts  
 <h2>Blog Posts</h2>
 
 <div class="news">
 	<?php //get_feed_blog("blog.xml"); ?>
-</div>-->
+</div> -->
 
 <!-- Twitter  -->
 <div id="twitter">
