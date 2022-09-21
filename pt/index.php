@@ -43,32 +43,27 @@ include("../lib/lang.php");
 <!-- We just keep the last 3 web site news -->
 <div class="news" style="margin-right: 220px;">
 
-<h2>Últimos lançamentos</h2>
+<h2>Latest Release</h2>
 
 <ul>
-
-
-        <li><strong><a href="http://mirror.slitaz.org/iso/rolling/">Lançamento do SliTaz 5.0 Rolling</a></strong> (weekly)
-                <span>- <?php
+	<li><strong><a href="http://mirror.slitaz.org/iso/rolling/">SliTaz 5.0 Rolling release</a></strong> (weekly)
+		<span>- <?php
 		$rol_date_file = '../cache/rolling-date.txt';
 		if (file_exists("$rol_date_file")) {
 			$rol_date = file_get_contents("../cache/rolling-date.txt");
 			print $rol_date;
 		} ?></span></li>
-    <li><strong><a href="news/#d20150520">Lançamento do SliTaz 5.0 RC-3</a></strong>
-        <span>- 20 de maio de  2015</span></li>
-    <li><strong><a href="news/#d20140519">Lançamento do SliTaz 5.0 RC-2</a></strong>
-        <span>- 19 de maio de  2014</span></li>
-    <li><strong><a href="news/#d20140502">Lançamento do SliTaz 5.0 RC-1</a></strong>
-        <span>- 02 de maio de 2014</span></li>
-    <li><strong><a href="news/#d20140329">Lançamento do SliTaz Raspberry Pi</a></strong>
-        <span>- 29 de março de 2014</span></li>
-    <li><strong><a href="news/#d20140216">Novo SliTaz Cooking</a></strong>
-        <span>- 16 de fevereiro de 2014</span></li>
-    <li><strong><a href="news/2012.php#d20120410">Lançamento do SliTaz 4.0</a></strong>
-        <span>- 10 de abril de 2012</span></li>
-    <li><strong><a href="news/">Arquivo dos lançamentos anteriores</a></strong>
-	<span>- 2007-<?php echo date('Y'); ?></span></li>
+	<li><strong><!-- <a href="news/#d20180316"></a> 
+		Link to a SCN blog post or announce on website ?-->
+	
+	SliTaz is now a rolling distro with 2 branches</strong> We provide a 
+	stable version and a cooking (development) version. Stable will get 
+	small refinements and security updates. As usual the Cooking version
+	brings you the latest improvements made by SliTaz developers.
+	
+		<span>- 16 March 2018</span></li>
+	<li><strong><a href="news/">Website news archives</a></strong>
+		<span>- 2007-<?php echo date('Y'); ?></span></li>
 </ul>
 
 <!-- End of news -->

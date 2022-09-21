@@ -48,35 +48,28 @@ SliTaz — безопасная и производительная опера�
 <!-- We just keep the last 3 web site news -->
 <div class="news" style="margin-right: 220px;">
 
-<h2>Последние релизы</h2>
+<h2>Latest Release</h2>
 
 <ul>
-	<li><strong><a href="http://mirror.slitaz.org/iso/rolling/">Выпуск SliTaz 5.0 Rolling</a></strong> (weekly) (еженедельный)
-	     <span>— <?php
+	<li><strong><a href="http://mirror.slitaz.org/iso/rolling/">SliTaz 5.0 Rolling release</a></strong> (weekly)
+		<span>- <?php
 		$rol_date_file = '../cache/rolling-date.txt';
 		if (file_exists("$rol_date_file")) {
 			$rol_date = file_get_contents("../cache/rolling-date.txt");
 			print $rol_date;
 		} ?></span></li>
-<li>
-<strong><a href="news/#d20150520">Выпуск SliTaz 5.0 RC3</a></strong> <span>— 20 мая 2015</span>
-</li>
-<li>
-<strong><a href="news/#d20140519">Выпуск SliTaz 5.0 RC2</a></strong> <span>— 19 мая 2014</span>
-</li>
-<li>
-<strong><a href="news/#d20140502">Выпуск SliTaz 5.0 RC1</a></strong> <span>— 2 мая 2014</span>
-</li>
-<li>
-<strong><a href="news/#d20140329">Выпуск SliTaz Raspberry Pi</a></strong> <span>— 29 марта 2014</span>
-</li>
-<li>
-<strong><a href="news/">Архив новостей</a></strong> <span>— 2007­–<?php echo date('Y'); ?></span>
-</li>
+	<li><strong><!-- <a href="news/#d20180316"></a> 
+		Link to a SCN blog post or announce on website ?-->
+	
+	SliTaz is now a rolling distro with 2 branches</strong> We provide a 
+	stable version and a cooking (development) version. Stable will get 
+	small refinements and security updates. As usual the Cooking version
+	brings you the latest improvements made by SliTaz developers.
+	
+		<span>- 16 March 2018</span></li>
+	<li><strong><a href="news/">Website news archives</a></strong>
+		<span>- 2007-<?php echo date('Y'); ?></span></li>
 </ul>
-
-<!-- End of news -->
-</div>
 
 <h2>Быстрая загрузка</h2>
 
@@ -91,13 +84,13 @@ SliTaz — безопасная и производительная опера�
 </div>
 
 <h2>Сейчас в проекте…</h2>
-
+<!-- 
 <?php require_once("../lib/get-feeds.php"); ?>
 
 <div class="activity">
 	<p><a href="http://forum.slitaz.org/"><img src="/images/support.png" alt="*" /></a>
 		Сейчас на форуме…
-		<?php get_feed_forum("forum.xml"); ?>
+		<?php //get_feed_forum("forum.xml"); ?>
 	</div>
 	<p class="activity_more">
 		<a href="http://forum.slitaz.org/">Ещё…</a>
@@ -107,12 +100,12 @@ SliTaz — безопасная и производительная опера�
 <div class="activity">
 	<p><a href="http://hg.slitaz.org/"><img src="/images/development.png" alt="*" /></a>
 		Последние коммиты в wok
-		<?php get_feed("wok.xml"); ?>
+		<?php //get_feed("wok.xml"); ?>
 	</div>
 	<p class="activity_more">
 		<a href="http://hg.slitaz.org/?sort=lastchange">Ещё…</a>
 	</p>
-</div>
+</div> -->
 
 
 <!-- Twitter -->

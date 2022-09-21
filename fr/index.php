@@ -56,19 +56,26 @@ include("../lib/lang.php");
 <!-- We just keep the last 3 web site news -->
 <div class="news" style="margin-right: 220px;">
 
-<h2>Dernière publications</h2>
+<h2>Dernières publication</h2>
 
 <ul>
-	<li><strong><a href="http://mirror.slitaz.org/iso/rolling/">Publication de SliTaz 5.0 Rolling</a></strong> (hebdo) 
+	<li><strong><a href="http://mirror.slitaz.org/iso/rolling/">SliTaz 5.0 Rolling release</a></strong> (weekly)
 		<span>- <?php
 		$rol_date_file = '../cache/rolling-date.txt';
 		if (file_exists("$rol_date_file")) {
 			$rol_date = file_get_contents("../cache/rolling-date.txt");
 			print $rol_date;
 		} ?></span></li>
-	<li><strong><a href="http://arm.slitaz.org/rpi/">Publication de SliTaz Raspberry Pi</a></strong>
-		<span>- 29 Mar 2014</span></li>
-	<li><strong><a href="news/">Archives des nouvelles publications</a></strong>
+	<li><strong><!-- <a href="news/#d20180316"></a> 
+		Link to a SCN blog post or announce on website ?-->
+	
+	SliTaz is now a rolling distro with 2 branches</strong> We provide a 
+	stable version and a cooking (development) version. Stable will get 
+	small refinements and security updates. As usual the Cooking version
+	brings you the latest improvements made by SliTaz developers.
+	
+		<span>- 16 March 2018</span></li>
+	<li><strong><a href="news/">Website news archives</a></strong>
 		<span>- 2007-<?php echo date('Y'); ?></span></li>
 </ul>
 
