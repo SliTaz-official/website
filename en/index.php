@@ -28,12 +28,12 @@ include("../lib/lang.php");
 	Linux Kernel and GNU software.
 </p>
 
-<!--<div class="box-up">
-	<a href="http://www.gofundme.com/slitaz2014?utm_medium=wdgt"
+<div class="box-up">
+	<a href="https://gofund.me/7eca40ed"
 		title="Visit this page now."><img src="../images/gofundme.png"></a>
-	<a href="http://www.gofundme.com/slitaz2014?utm_medium=wdgt">
-		Check out our new SliTaz 2014 fundraising!</a>
-</div> -->
+	<a href="https://gofund.me/7eca40ed">
+		Check out our new SliTaz 2022 fundraising!</a>
+</div>
 
 <!-- Featured sponsor -->
 <div id="sponsor">
@@ -76,8 +76,6 @@ include("../lib/lang.php");
 </div>
 
 <h2>Quick Download</h2>
-
-<div class="box-warning"><p>Before using SliTaz — please read this post: <a href="http://forum.slitaz.org/topic/-important-info-about-meltdown-and-spectre-">Important info about Meltdown and Spectre</a></p></div>
 
 <div class="dldiv">
 	<p><!-- ?php echo "<a class='dlbutton nav2' href='$stable_iso'>SliTaz $stable_ver</a>"; ? -->
@@ -129,11 +127,15 @@ SCN blog posts
 	<?php //get_feed_blog("blog.xml"); ?>
 </div> -->
 
+<div style="margin: auto;">
+
 <!-- Twitter  -->
 <div id="twitter">
 <a class="twitter-timeline"  href="https://twitter.com/slitaz"  
 	data-widget-id="420830244551938048">Tweets by @slitaz</a>
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</div>
+
 </div>
 
 <h2>Support us</h2>
