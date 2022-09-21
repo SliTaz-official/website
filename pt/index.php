@@ -23,10 +23,10 @@ include("../lib/lang.php");
 <h2>Bem vindo ao SliTaz</h2>
 
 <div class="box-up">
-    <a href="http://www.gofundme.com/slitaz2014?utm_medium=wdgt"
+    <a href="https://gofund.me/7eca40ed"
         title="Visite esta página"><img src="../images/gofundme.png"></a>
-    <a href="http://www.gofundme.com/slitaz2014?utm_medium=wdgt">
-		Participe das doações para o SliTaz em 2014!</a>
+    <a href="https://gofund.me/7eca40ed">
+		Participe das doações para o SliTaz em 2022!</a>
 </div>
 
 <!-- Featured Sponsor -->

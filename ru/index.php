@@ -26,13 +26,13 @@ include("../lib/lang.php");
 SliTaz — безопасная и производительная операционная система на основе ядра Linux и программного обеспечения GNU.
 </p>
 
-<!--<div class="box-up">
-	<a href="http://www.gofundme.com/slitaz2014?utm_medium=wdgt"
+<div class="box-up">
+	<a href="https://gofund.me/7eca40ed"
 		title="Посетить кампанию"><img src="../images/gofundme.png"></a>
 	Ознакомьтесь с кампанией по сбору средств
-	<a href="http://www.gofundme.com/slitaz2014?utm_medium=wdgt">
-		SliTaz 2014!</a>
-</div>-->
+	<a href="https://gofund.me/7eca40ed">
+		SliTaz 2022!</a>
+</div>
 
 <!-- Featured sponsor -->
 <div id="sponsor">

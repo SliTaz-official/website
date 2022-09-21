@@ -35,12 +35,12 @@ include("../lib/lang.php");
 	
 </div>
 
-<!-- <div class="box-up">
-	<a href="http://www.gofundme.com/slitaz2014?utm_medium=wdgt"
+<div class="box-up">
+	<a href="https://gofund.me/7eca40ed"
 		title="Visit this page now."><img src="../images/gofundme.png"></a>
-	<a href="http://www.gofundme.com/slitaz2014?utm_medium=wdgt">
-		Jetez un oeil à la campagne de dons 2014 de SliTaz!</a>
-</div>-->
+	<a href="https://gofund.me/7eca40ed">
+		Jetez un oeil à la campagne de dons 2022 de SliTaz!</a>
+</div>
 
 <!-- Featured sponsor -->
 <div id="sponsor">

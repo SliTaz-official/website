@@ -27,6 +27,13 @@ include("../lib/lang.php");
 	</p>
 </div>
 
+<div class="box-up">
+	<a href="https://gofund.me/7eca40ed"
+		title="Visit this page now."><img src="../images/gofundme.png"></a>
+	<a href="https://gofund.me/7eca40ed">
+		Check out our new SliTaz 2022 fundraising!</a>
+</div>
+
 <!-- Featured sponsor -->
 <div id="sponsor">
 	<p><strong>besondere Förderer</strong></p>
